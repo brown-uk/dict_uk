@@ -1,0 +1,180 @@
+# http://www.linguist.univ.kiev.ua/WINS/pidruchn/adjectif/tbladjec.htm
+
+# Прикметники без чергування
+
+group adj
+
+лиций:
+ий	ього			#   білолицього 	          @ adj:m:v_rod/v_zna//n:v_rod
+ий	ьому			#   білолицьому 	          @ adj:m:v_dav/v_mis//n:v_rod/v_mis
+ий	им			#   відісланим 	      @ adj:m:v_oru//n:v_oru//p:v_dav
+ий	ім			#   відісланім 		        @ adj:m:v_mis//n:v_mis
+ий	я			#   білолиця 	                    @ adj:f:v_naz
+ий	ьої			#   білолицьої 	            @ adj:f:v_rod
+ий	ій			#   відісланій 	            @ adj:f:v_dav/v_mis
+ий	ю			#   білолицю 	                    @ adj:f:v_zna
+ий	ьою			#   білолицьою 	            @ adj:f:v_oru
+ий	е			#   відіслане 	            @ adj:n:v_naz/v_zna
+ий	і			#   відіслані 	            @ adj:p:v_naz/v_zna
+ий	их			#   відісланих 	            @ adj:p:v_rod/v_zna/v_mis
+ий	ими			#   відісланими 	            @ adj:p:v_oru
+
+ий: -лиций:
+ий	ого			#   відісланого 	          @ adj:m:v_rod/v_zna//n:v_rod
+ий	ому			#   відісланому 	          @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ий	им			#   відісланим 	      @ adj:m:v_oru//n:v_oru//p:v_dav
+ий	ім			#   відісланім 		        @ adj:m:v_mis//n:v_mis
+ий	а			#   відіслана 	            @ adj:f:v_naz
+ий	ої			#   відісланої 	            @ adj:f:v_rod
+ий	ій			#   відісланій 	            @ adj:f:v_dav/v_mis
+ий	у			#   відіслану 	            @ adj:f:v_zna
+ий	ою			#   відісланою 	            @ adj:f:v_oru
+ий	е			#   відіслане 	            @ adj:n:v_naz/v_zna
+ий	і			#   відіслані 	            @ adj:p:v_naz/v_zna
+ий	их			#   відісланих 	            @ adj:p:v_rod/v_zna/v_mis
+ий	ими			#   відісланими 	            @ adj:p:v_oru
+
+ій:
+ій	ього			#   синього 	                    @ adj:m:v_rod/v_zna//n:v_rod
+ій	ьому			#   синьому 	                    @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ій	ім			#   синім 		     @ adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
+ій	я			#   синя 		                    @ adj:f:v_naz
+ій	ьої			#   синьої		            @ adj:f:v_rod
+ій	ю			#   синю 		                    @ adj:f:v_zna
+ій	ьою			#   синьою		            @ adj:f:v_oru
+ій	є			#   синє 		                    @ adj:n:v_naz/v_zna
+
+[ії]й:
+й	0			#   сині 		                    @ adj:p:v_naz/v_zna
+й	х			#   синіх 		        @ adj:p:v_rod/v_zna/v_mis
+й	ми			#   синіми		            @ adj:p:v_oru
+
+їй:
+їй	його			#   безкрайого 	          @ adj:m:v_rod/v_zna//n:v_rod
+їй	йому			#   безкрайому 	          @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+їй	їм			#   безкраїм 		   @ adj:m:v_oru/v_zna//n:v_oru/v_zna//p:v_dav
+їй	я			#   безкрая 		            @ adj:f:v_naz
+їй	йої			#   безкрайої		            @ adj:f:v_rod
+їй	ю			#   безкраю 		            @ adj:f:v_zna
+їй	йою			#   безкрайою		            @ adj:f:v_oru
+їй	є			#   безкрає 		            @ adj:n:v_naz/v_zna
+
+#  середнього роду
+е:
+е	ого			#   дизпального 	          @ adj:n:v_rod:np
+е	ому			#   дизпальному 	          @ adj:n:v_dav/v_mis:np
+е	им			#   дизпальним 	            @ adj:n:v_oru:np
+е	ім			#   дизпальнім 	            @ adj:n:v_mis:np
+є:
+є	ього			#   полуднього 	          @ adj:n:v_rod:np
+є	ьому			#   полудньому 	          @ adj:n:v_dav/v_mis:np
+є	ім			#   полуднім 	            @ adj:n:v_oru/v_mis:np
+
+#  жіночого роду
+а:
+а	ої		#   супернової 	              @ adj:f:v_rod
+а	ій		#   суперновій 	              @ adj:f:v_dav/v_mis
+а	у		#   супернову 	                @ adj:f:v_zna
+а	ою		#   суперновою 	              @ adj:f:v_oru
+а	і			#   супернові 	            @ adj:p:v_naz/v_zna
+а	им			#   суперновим 	            @ adj:p:v_dav
+а	их			#   супернових 	            @ adj:p:v_rod/v_zna/v_mis
+а	ими			#   суперновими 	            @ adj:p:v_oru
+
+
+я:
+я	ьої		#   незаміжньої 	            @ adj:f:v_rod
+я	ій		#   незаміжній 	              @ adj:f:v_dav/v_mis
+я	ю		#   незаміжню 	                @ adj:f:v_zna
+я	ьою		#   незаміжньою 	            @ adj:f:v_oru
+
+#  множина
+і:
+і	их			#   відісланих 	            @ adj:p:v_rod/v_zna/v_mis:ns
+і	им			#   відісланим 	            @ adj:p:v_dav:ns
+і	ими			#   відісланими 	            @ adj:p:v_oru:ns
+
+
+# Присвійні прикметники
+#  http://www.linguist.univ.kiev.ua/WINS/pidruchn/adjectif/adjecvyd.htm#vyd_8
+
+#  прикметники від іменників 1-ої відміни - назв людей
+
+[іїи]н:
+0	ого			#   сестриного				@ adj:m:v_rod/v_zna//n:v_rod
+0	ому			#   сестриному				@ adj:m:v_dav/v_mis//n:v_dav/v_mis
+0	им			#   сестриним			@ adj:m:v_oru//n:v_oru//p:v_dav
+0	ім			#   сестринім				@ adj:m:v_mis//n:v_mis
+0	а			#   сестрина 		            @ adj:f:v_naz
+0	ої			#   сестриної		            @ adj:f:v_rod
+0	ій			#   сестриній 		          @ adj:f:v_dav/v_mis
+0	у			#   сестрину		            @ adj:f:v_zna
+0	ою			#   сестриною		            @ adj:f:v_oru
+0	е			#   сестрине 		            @ adj:n:v_naz/v_zna
+0	і			#   сестрині 		            @ adj:p:v_naz/v_zna
+0	их			#   сестриних 		          @ adj:p:v_rod/v_zna
+0	ими			#   сестриними		            @ adj:p:v_oru
+
+#  прикметники від іменників 2-ої відміни 
+
+ів:
+ів	ового			#   братового		            @ adj:m:v_rod/v_zna//n:v_rod
+ів	овому			#   братовому		            @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ів	овим			#   братовим		      @ adj:m:v_oru//n:v_oru//p:v_dav
+ів	овім			#   братовім				@ adj:m:v_mis//n:v_mis
+ів	ова		#   братова 		            @ adj:f:v_naz
+ів	ової			#   братової		            @ adj:f:v_rod
+ів	овій			#   братовій 		          @ adj:f:v_dav/v_mis
+ів	ову		#   братову		            @ adj:f:v_zna
+ів	овою			#   братовою		            @ adj:f:v_oru
+ів	ове			#   братове 		    @ adj:n:v_naz/v_zna
+ів	ові			#   братові 		    @ adj:p:v_naz/v_zna
+ів	ових			#   братових 		          @ adj:p:v_rod/v_zna/v_mis
+ів	овими			#   братовими		            @ adj:p:v_oru
+
+їв:
+їв	євого			#   Сергієвого		            @ adj:m:v_rod/v_zna//n:v_rod
+їв	євому			#   Сергієвому		            @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+їв	євим			#   Сергієвим		      @ adj:m:v_oru//n:v_oru//p:v_dav
+їв	євім			#   Сергієвім				@ adj:m:v_mis//n:v_mis
+їв	єва			#   Сергієва 		            @ adj:f:v_naz
+їв	євої			#   Сергієвої		            @ adj:f:v_rod
+їв	євій			#   Сергієвій 		          @ adj:f:v_dav/v_mis
+їв	єву			#   Сергієву		            @ adj:f:v_zna
+їв	євою			#   Сергієвою		            @ adj:f:v_oru
+їв	єве			#   Сергієве 		            @ adj:n:v_naz/v_zna
+їв	єві			#   Сергієві 		            @ adj:p:v_naz
+їв	євих			#   Сергієвих 		          @ adj:p:v_rod/v_zna/v_mis
+їв	євими			#   Сергієвими		            @ adj:p:v_oru
+
+
+# (Тимчасово?) Утворення прислівників від прикметників
+
+subgroup adj.adv
+
+# SFX W
+ий	о	[^жшщ]ий	#  швидкий швидко                   @ adv
+ій	ьо	ій		#  синій  синьо                     @ adv
+їй	йо	їй		#  безкраїй  безкрайо               @ adv
+
+
+# Прикметники з чергуванням -ів/-ев
+
+group adj_ev
+
+#  група присвійних прикм. утворених від м'якої чи мішаної групи -ів -> -ев
+
+ів:
+ів	евого			#   лікаревого		            @ adj:m:v_rod/v_zna//n:v_rod
+ів	евому			#   лікаревому		            @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ів	евим			#   лікаревим		      @ adj:m:v_oru//n:v_oru//p:v_dav
+ів	евім			#   лікаревім				@ adj:m:v_mis//n:v_mis
+ів	ева			#   лікарева 		    @ adj:f:v_naz
+ів	евої			#   лікаревої		            @ adj:f:v_rod
+ів	евій			#   лікаревій 		          @ adj:f:v_dav/v_mis
+ів	еву			#   лікареву		    @ adj:f:v_zna
+ів	евою			#   лікаревою		            @ adj:f:v_oru
+ів	еве			#   лікареве 		    @ adj:n:v_naz/v_zna
+ів	еві			#   лікареві 	          @ adj:p:v_naz/v_zna
+ів	евих			#   лікаревих 		(Р.З.М.         @ adj:p:v_rod/v_zna/v_mis
+ів	евими			#   лікаревими		            @ adj:p:v_oru

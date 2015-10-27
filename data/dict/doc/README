@@ -1,0 +1,46 @@
+Опис файлів у цьому каталозі:
+Description of files in this directory:
+
+
+base.lst	-- base file for the dictionary
+base-abbr.lst 	-- general abbriviations
+base-compound.lst	compound words with/without hyphen, see http://www.nas.gov.ua/institutes/ium/Structure/Documents/2010_1.pdf
+colors.lst 	-- colors
+computer.lst 	-- computing related terms
+dstu_kds.lst	-- countries from DSTU and their derivatives
+lang.lst	-- language names
+geography.lst   -- geographical names
+names.lst	-- personal names
+science.lst	-- scientific terms
+
+exceptions.lst	-- words that decline under unknown/undefined rules (not sorted)
+pronouns.lst	-- pronouns with all their forms (not sorted), some other POS
+
+slang.lst	-- slang
+
+rare.lst	-- rare, obsolete, dialect (not used for spellchecking)
+verify.lst	-- waiting to be moved somewhere else (not used for spellchecking)
+twisters.lst	-- bad words and suggestions for replacement (not used for spellchecking)
+
+tags.lst	-- additional tags for POS
+
+composite.lst   composite words via hyphen
+
+ignored.lst   common mistakes
+
+
+Additional flags for LanguageTool that won't be used in spell-uk:
+  affix "-" extra line just for tag dictionary (ignored altogether for spell-uk)
+  affix "<" creature, live being, person
+  affix "<>" creature, live being
+  affix "+" last name
+  affix "@" другий знахідний із закінченням -а/-я
+  affix :+m додатковий чоловічий рід
+  affix :+f додатковий жіночий рід
+  affix ^noun форсування частини мови (напр. "дорослий/V< ^noun" тут буде згенеровано іменник)
+  affix ^noun:m форсування роду (на ч.р.)
+
+Після слів можуть йти коментарі (після символа ґратки #), після #> можна записувати кращі відповідники,
+  які будуть рекомендовані в LT (м’яка рекомендація, на противагу жорсткій для слів в twisters.lst)
+
+A. Rysin (Андрій Рисін) 2015
