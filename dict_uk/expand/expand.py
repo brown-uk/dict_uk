@@ -22,10 +22,9 @@ from util import re_match
 import util
 
 
-
-logging.basicConfig(filename="expand.log", level=logging.DEBUG, filemode="w")
+if "-debug" in sys.argv:
+    logging.basicConfig(filename="expand.log", level=logging.DEBUG, filemode="w")
 logger = logging.getLogger("expand")
-#logger.setLevel(logging.DEBUG)
 
 locale.setlocale(locale.LC_ALL, "uk_UA")
 
