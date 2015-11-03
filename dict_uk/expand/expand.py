@@ -11,9 +11,6 @@ import collections
 import time
 
 import affix
-from affix import SuffixGroup
-from affix import Suffix
-from affix import affixMap
 import base_tags
 
 from util import re_sub
@@ -81,23 +78,23 @@ def expand_suffixes(word, affixFlags, modifiers, extra):
     
       appliedCnts[affixFlag2] = 0
       
-      if not affixFlag2 in affixMap:
+      if not affixFlag2 in affix.affixMap:
          raise Exception("could not find affix flag " + affixFlag2)
     
     
-      affixGroupMap = affixMap[affixFlag2]
+      affixGroupMap = affix.affixMap[affixFlag2]
     
       for match, affixGroup in affixGroupMap.items():
         if affixGroup.matches(word):
     
-            for affix in affixGroup.affixes:
+            for affix_item in affixGroup.affixes:
               # DL - не додавати незавершену форму дієприслівника для завершеної форми дієслова
-                if pos.startswith("verb") and ":perf" in extra and (affix.tags.startswith("advp:imperf") or affix.tags.startswith("advp:rev:imperf")):
+                if pos.startswith("verb") and ":perf" in extra and (affix_item.tags.startswith("advp:imperf") or affix_item.tags.startswith("advp:rev:imperf")):
                     appliedCnts[ affixFlag2 ] = 1000
                     continue
                 
-                deriv = affix.apply(word)
-                tags = affix.tags
+                deriv = affix_item.apply(word)
+                tags = affix_item.tags
                 
                 if affixFlag2 == "n.patr":
                     tags += ":patr"
@@ -159,25 +156,23 @@ def get_modifiers(mod_flags, flags, word):
     mod_set = mod_flags.split()
     
     for mod in mod_set:
-      if mod[0] == "^":
-          if mod.startswith("^adjp"):
-            mods["pos"] = mod[1:]
-          else:
-            mod_tags = mod[1:].split(":")
-            mods["pos"] = mod_tags[0]
-            if len(mod_tags) > 1 and mod_tags[0] == "noun":
-                if len(mod_tags[1]) != 1:
-                    raise Exception("Bad gender override: " + str(mod) + " -- " + str(mod_tags))
-                mods["force_gen"] = mod_tags[1]
-                 
-        #else:
-         #     mods["pos"] = POS_MAP[ mod[1:2] ]
-      elif mod[:2] == "g=":
-        mods["gen"] = re_sub("g=([^ ])", "\\1", mod)    #mod[2:3]
-      elif mod[:2] == "p=":
-        mods["pers"] = mod[2:3]
-      elif mod.startswith("tag="):
-        mods["tag"] = mod[4:]
+        if mod[0] == "^":
+            if mod.startswith("^adjp"):
+                mods["pos"] = mod[1:]
+            else:
+                mod_tags = mod[1:].split(":")
+                mods["pos"] = mod_tags[0]
+                if len(mod_tags) > 1 and mod_tags[0] == "noun":
+                    if len(mod_tags[1]) != 1:
+                        raise Exception("Bad gender override: " + str(mod) + " -- " + str(mod_tags))
+                    mods["force_gen"] = mod_tags[1]
+                   
+        elif mod[:2] == "g=":
+            mods["gen"] = re_sub("g=([^ ])", "\\1", mod)    #mod[2:3]
+        elif mod[:2] == "p=":
+            mods["pers"] = mod[2:3]
+        elif mod.startswith("tag="):
+            mods["tag"] = mod[4:]
       
     if "<+m" in flags or "<m" in flags:
         mods["force_gen"] = "m"
@@ -623,10 +618,10 @@ def post_process(lines):
 #                line = re_sub("(.*) .* (advp.*)", "\\1 \\1 \\2", line)
         else:
             if ":&adjp" in line and ":comp" in line:
-              #  if ":comp" in line or ":super" in line:
+                #  if ":comp" in line or ":super" in line:
                 line = re_sub(" (adj:.:v_...:)(.*):(comp[br]|super)(.*)", " \\1\\3:\\2\\4", line)
 
-         #   out_lines.append(line)
+                #   out_lines.append(line)
 
 # TODO: extra :coll
 #            if "сь advp" in line:
@@ -744,9 +739,6 @@ def expand_line(line, flush_stdout):
     global main_flag
     global last_adv
 
-    if "-d" in sys.argv:
-        print("@", line)
-
     lines = preprocess(line)
     
     out_lines = []
@@ -844,43 +836,16 @@ def cleanup(line):
     return re_sub(":xs.", "", line)
 
 
-def log_usage():
-    with open("usage.txt", "w") as f:
-        for affixFlag, affixGroups in affixMap.items():
-            print("Flag", affixFlag, "has", len(affixGroups), "groups", file=f)
-            for match, affixGroup in affixGroups.items():
-                print("\t", match, ":", affixGroup.counter, "\t\t", len(affixGroup.affixes), "patterns", file=f)
-
-
-
-
-#----------
-# main code
-#----------
-if __name__ == "__main__":
-
-    flush_stdout = False
-    mode = "expand"
-    arg_idx = 1
-    
-    if len(sys.argv) > arg_idx and sys.argv[arg_idx] in ["-f", "--flush"]:
-        flush_stdout=True
-        arg_idx += 1
-    
-    aff_arg_idx = sys.argv.index("-aff") if "-aff" in sys.argv else -1
-    if aff_arg_idx != -1:
-        affix_filename = sys.argv[aff_arg_idx+1]
-    else:
-    #    affix_filename = os.path.dirname(os.path.abspath(__file__)) + "/affix/all.aff"
-        affix_filename = "affix/all.aff"
-    
-    affix.load_affixes(affix_filename)
-    
+def process_input(in_lines, flush_stdout_):
     time1 = time.time()
-    
+
+    global flush_stdout
+    flush_stdout = flush_stdout_
+
     multiline = ""
     all_lines = []
-    for line in sys.stdin:
+    
+    for line in in_lines:
         if "#" in line:
             line = line.split("#")[0]
           
@@ -900,9 +865,8 @@ if __name__ == "__main__":
         try:
             tag_lines = expand_line(line, flush_stdout)
         except:
-            print("Exception in line: "" + line + """, file=sys.stderr)
+            print("Exception in line: \"" + line + "\"", file=sys.stderr)
             raise
-        
         
         if flush_stdout:
             sorted_lines = util.sort_all_lines(tag_lines)
@@ -911,11 +875,10 @@ if __name__ == "__main__":
         else:
             all_lines.extend(tag_lines)
 
-
-
-    time2 = time.time()
-    print("Total lines", len(all_lines), file=sys.stderr)
-    print("Processing time: {0:.3f}".format(time2-time1), file=sys.stderr)
+    if not flush_stdout:
+        time2 = time.time()
+        print("Total out_lines", len(all_lines), file=sys.stderr)
+        print("Processing time: {0:.3f}".format(time2-time1), file=sys.stderr)
     
     
     if not flush_stdout:
@@ -927,15 +890,17 @@ if __name__ == "__main__":
 
 
 
-        time3 = time.time()
-        print("Sorting time 1: {0:.3f}".format(time3-time2), file=sys.stderr)
+        if not flush_stdout:
+            time3 = time.time()
+            print("Sorting time 1: {0:.3f}".format(time3-time2), file=sys.stderr)
     
         if "-indent" in sys.argv:
             # to sort newely promoted lemmas
             sorted_lines = util.sort_all_lines(list(set(sorted_lines)))
 
-            time4 = time.time()
-            print("Sorting time 2: {0:.3f}".format(time4-time3), file=sys.stderr)
+            if not flush_stdout:
+                time4 = time.time()
+                print("Sorting time 2: {0:.3f}".format(time4-time3), file=sys.stderr)
           
     #        print ("\n-- ".join( ln for ln in sorted_lines if ln.startswith("Венед") ), file=sys.stderr)
 
@@ -953,3 +918,33 @@ if __name__ == "__main__":
     if "--log-usage" in sys.argv:
         log_usage()
 
+
+def log_usage():
+    with open("usage.txt", "w") as f:
+        for affixFlag, affixGroups in affix.affixMap.items():
+            print("Flag", affixFlag, "has", len(affixGroups), "groups", file=f)
+            for match, affixGroup in affixGroups.items():
+                print("\t", match, ":", affixGroup.counter, "\t\t", len(affixGroup.affixes), "patterns", file=f)
+
+
+
+
+#----------
+# main code
+#----------
+if __name__ == "__main__":
+
+    flush_stdout = False
+    if "-f" in sys.argv or "--flush" in sys.argv:
+        flush_stdout=True
+    
+    if "-aff" in sys.argv:
+        aff_arg_idx = sys.argv.index("-aff")
+        affix_filename = sys.argv[aff_arg_idx + 1]
+    else:
+    #    affix_filename = os.path.dirname(os.path.abspath(__file__)) + "/affix/all.aff"
+        affix_filename = "affix/all.aff"
+    
+    affix.load_affixes(affix_filename)
+    
+    process_input(sys.stdin, flush_stdout)

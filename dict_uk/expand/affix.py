@@ -232,28 +232,24 @@ def load_affix_file(aff_file):
 #@profile
 def load_affixes(filename):
 
-  affixFlag = ""
-
-
-  if os.path.isdir(filename):
-    aff_files = onlyfiles = [ f for f in os.listdir(filename) if os.path.isfile(os.path.join(filename, f)) and f.endswith(".aff") ]
-    print("Loading affixes from directory", filename, file=sys.stderr)
-
-    for aff_filename in aff_files:
-        aff_filename = os.path.join(filename, aff_filename)
-        with open(aff_filename, "r", encoding="utf-8") as aff_file:
+    if os.path.isdir(filename):
+        aff_files = [ f for f in os.listdir(filename) if os.path.isfile(os.path.join(filename, f)) and f.endswith(".aff") ]
+        print("Loading affixes from directory", filename, file=sys.stderr)
+    
+        for aff_filename in aff_files:
+            aff_filename = os.path.join(filename, aff_filename)
+            with open(aff_filename, "r", encoding="utf-8") as aff_file:
+                load_affix_file(aff_file)
+    else:
+        with open(filename, "r", encoding="utf-8") as aff_file:
             load_affix_file(aff_file)
-  else:
-    with open(filename, "r", encoding="utf-8") as aff_file:
-      load_affix_file(aff_file)
-
-
-  if len(affixMap) == 0:
-    print("ERROR: Failed to load affixes from", filename, file=sys.stderr)
-    sys.exit(1)
-
-#  print("Loaded", len(affixMap), "affixes", ", prefixes:", prefixes, file=sys.stderr)
-#  logger.debug("Loaded: %s", affixMap)
-  print("Loaded: ", affixMap.keys(), file=sys.stderr)
-
+    
+    
+    if len(affixMap) == 0:
+        print("ERROR: Failed to load affixes from", filename, file=sys.stderr)
+        sys.exit(1)
+    
+    #  print("Loaded", len(affixMap), "affixes", ", prefixes:", prefixes, file=sys.stderr)
+    #  logger.debug("Loaded: %s", affixMap)
+    print("Loaded: ", affixMap.keys(), file=sys.stderr)
 
