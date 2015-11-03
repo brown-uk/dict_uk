@@ -3,10 +3,10 @@
 
 Частоти за тегами:
 adj 40478
-     super 2283
-     nv 40
-     compr 761
      compb 752
+     compr 761
+     nv 40
+     super 2283
 adjp 11442
      imperf 40
      perf 168
@@ -19,10 +19,10 @@ conj 106
 excl 480
 insert 51
 noun 88679
-     lname 19083
      anim 33491
-     inanim 55183
      fname 2099
+     inanim 55183
+     lname 19083
      nv 7720
      patr 614
 numr 132

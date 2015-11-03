@@ -272,8 +272,10 @@ def print_stats(cnt, cnt_std, pos_stat, sub_pos_stat, letter_stat):
         ordered_pos_freq = sorted(pos_stat.keys())
         for pos in ordered_pos_freq:
             print(pos, pos_stat[pos], file=stat_f)
-            for sub_pos in sub_pos_stat[pos]:
-                print("    ", sub_pos, sub_pos_stat[pos][sub_pos], file=stat_f)
+            
+            current_sub_pos_stat = sub_pos_stat[pos]
+            for sub_pos in sorted(current_sub_pos_stat):
+                print("    ", sub_pos, current_sub_pos_stat[sub_pos], file=stat_f)
 
         print("\nЧастоти за літерами:", cnt, file=stat_f)
 

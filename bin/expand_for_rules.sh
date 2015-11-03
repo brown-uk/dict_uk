@@ -7,7 +7,7 @@ BASE=..
 CODE_BASE=$BASE/dict_uk
 OUT_DIR=$BASE/out
 
-FLAGS=""
+FLAGS="-time"
 #FLAGS="-mfl"
 
 cd $OUT_DIR

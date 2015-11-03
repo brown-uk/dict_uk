@@ -7,8 +7,8 @@ BASE=..
 CODE_BASE=$BASE/dict_uk
 OUT_DIR=$BASE/out
 
-FLAGS="-corp -indent --log-usage"
-FLAGS="$FLAGS -stats -mfl"
+FLAGS="-corp -indent -mfl"
+FLAGS="$FLAGS -stats -time --log-usage"
 
 DICT_CORP_VIS=dict_corp_vis.txt
 DICT_CORP_LT=dict_corp_lt.txt

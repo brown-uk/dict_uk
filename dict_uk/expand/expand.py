@@ -767,10 +767,10 @@ def expand_line(line, flush_stdout):
             if "/" in line:
                 exp_lines = affix.expand_alts([line], "//")  # TODO: change this to some single-char splitter?
                 try:
-                  exp_lines = affix.expand_alts(exp_lines, "/")
+                    exp_lines = affix.expand_alts(exp_lines, "/")
                 except:
-                  print("Failed to expand", exp_lines, file=sys.stderr)
-                  raise
+                    print("Failed to expand", exp_lines, file=sys.stderr)
+                    raise
             else:
                 exp_lines = [ line ]
 
@@ -813,7 +813,7 @@ def expand_line(line, flush_stdout):
                 out_lines.extend( sublines )
             
                 if ".adv" in line and "/adj" in line:
-                    for i, inflected_line in enumerate(inflected_lines):
+                    for inflected_line in inflected_lines:
                         if " adv" in inflected_line:
                             last_adv = inflected_line.split()[0]
                             cs_lines = expand_subposition_adv(last_adv, sub_line, extra_flags)
@@ -875,7 +875,7 @@ def process_input(in_lines, flush_stdout_):
         else:
             all_lines.extend(tag_lines)
 
-    if not flush_stdout:
+    if "-time" in sys.argv:
         time2 = time.time()
         print("Total out_lines", len(all_lines), file=sys.stderr)
         print("Processing time: {0:.3f}".format(time2-time1), file=sys.stderr)
@@ -890,7 +890,7 @@ def process_input(in_lines, flush_stdout_):
 
 
 
-        if not flush_stdout:
+        if "-time" in sys.argv:
             time3 = time.time()
             print("Sorting time 1: {0:.3f}".format(time3-time2), file=sys.stderr)
     
@@ -898,7 +898,7 @@ def process_input(in_lines, flush_stdout_):
             # to sort newely promoted lemmas
             sorted_lines = util.sort_all_lines(list(set(sorted_lines)))
 
-            if not flush_stdout:
+            if "-time" in sys.argv:
                 time4 = time.time()
                 print("Sorting time 2: {0:.3f}".format(time4-time3), file=sys.stderr)
           
