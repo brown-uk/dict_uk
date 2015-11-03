@@ -1,16 +1,19 @@
 #!/bin/sh
+#
+# Generates tagged dictionary (both LT version) for the grammar/style rule check
+#
 
 BASE=..
 CODE_BASE=$BASE/dict_uk
 OUT_DIR=$BASE/out
 
 FLAGS=""
+#FLAGS="-mfl"
 
 cd $OUT_DIR
 
 DICT_RULES_LT=dict_rules_lt.txt
 
-#FLAGS="-mfl"
 
-$CODE_BASE/expand.py -aff $BASE/data/affix $FLAGS $@ < uk_words.lst > $DICT_RULES_LT && \
+$CODE_BASE/expand/expand_all.py -aff $BASE/data/affix -dict $BASE/data/dict $FLAGS > $DICT_RULES_LT && \
 (echo "Diffing..."; diff prev/$DICT_RULES_LT $DICT_RULES_LT > $DICT_RULES_LT.diff)

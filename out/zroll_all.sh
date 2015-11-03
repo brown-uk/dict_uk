@@ -2,7 +2,8 @@
 
 # Rotates all newely generated files into prev/ directory for the following regression checking
 
-FILE="dict_corp_vis.txt dict_corp_lt.txt"
+FILES="dict_corp_vis.txt dict_corp_lt.txt"
 
-mv -f $FILE prev/$FILE
+#mv -f *.dups *.uniq prev/
+mv -f $FILES prev/
 mv dict_stats.txt stats/

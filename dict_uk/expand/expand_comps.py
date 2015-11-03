@@ -4,12 +4,9 @@
 
 import sys
 import re
-import os
-import locale
 
 import affix
 import expand
-
 
 
 
@@ -56,9 +53,7 @@ def match_comps(lefts, rights):
 
         vidm = rrr.group(1)
         if left_gen != "" and vidm[0] in "mfn":
-          vidm = left_gen + vidm[1:]
-        
-#         print("-", vidm, file=sys.stderr)
+            vidm = left_gen + vidm[1:]
         
         if not vidm in left_v:
             continue
@@ -79,24 +74,24 @@ def match_comps(lefts, rights):
 
 def expand_composite_line(line):
         if not " - " in line:
-          return [line]
+            return [line]
         
         if " :" in line:
-          parts_all = line.split(" :")
-          line = parts_all[0]
-          parts_all[1] = ":" + parts_all[1]
+            parts_all = line.split(" :")
+            line = parts_all[0]
+            parts_all[1] = ":" + parts_all[1]
         elif " ^" in line:
-          parts_all = line.split(" ^")
-          line = parts_all[0]
-          parts_all[1] = "^" + parts_all[1]
+            parts_all = line.split(" ^")
+            line = parts_all[0]
+            parts_all[1] = "^" + parts_all[1]
         else:
-          parts_all = [line]
+            parts_all = [line]
         
         parts = line.split(" - ")
         print(parts, file=sys.stderr)
         
         if not "/" in parts[1]:
-          parts[1] += " noun:m:nv"
+            parts[1] += " noun:m:nv"
         
         if len(parts_all) > 1:
             extra_tags = parts_all[1]
@@ -112,6 +107,24 @@ def expand_composite_line(line):
 
         return comps
 
+
+def process_input(out_lines):
+    out = []
+    
+    for line in out_lines:
+    
+        line = line.strip()
+        if len(line) == 0 or line[0] == "#":
+            continue
+        
+        try:
+            comps = expand_composite_line(line)
+            out.extend(comps)
+        except:
+            print("Failed at", line, file=sys.stderr)
+            raise
+    
+    return out
 
 
 # --------------
@@ -130,22 +143,6 @@ if __name__ == "__main__":
     
     affix.load_affixes(affix_filename)
 
-    
-    if True or "-" in sys.argv:
-      ifile = sys.stdin
-      ofile = sys.stdout
-    
-    for line in ifile:
-    
-        line = line.strip()
-        if len(line) == 0 or line[0] == "#":
-          continue
-        
-        try:
-          comps = expand_composite_line(line)
-        except:
-          print("Failed at", line, file=sys.stderr)
-          raise
-
-        ofile.write("\n".join(comps) + "\n")
+    comps = process_input(sys.stdin)
+    sys.stdout.write("\n".join(comps) + "\n")
 
