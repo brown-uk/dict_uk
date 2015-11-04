@@ -3,11 +3,11 @@
 # Generates tagged dictionary (both LT and visual versions) for the corpus
 #
 
-BASE=..
+BASE=$(dirname $0)/..
 CODE_BASE=$BASE/dict_uk
 OUT_DIR=$BASE/out
 
-FLAGS="-corp -indent -mfl"
+FLAGS="-corp -indent -mfl -wordlist"
 FLAGS="$FLAGS -stats -time --log-usage"
 
 DICT_CORP_VIS=dict_corp_vis.txt

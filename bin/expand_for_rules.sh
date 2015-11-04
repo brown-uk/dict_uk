@@ -3,7 +3,7 @@
 # Generates tagged dictionary (both LT version) for the grammar/style rule check
 #
 
-BASE=..
+BASE=$(dirname $0)/..
 CODE_BASE=$BASE/dict_uk
 OUT_DIR=$BASE/out
 

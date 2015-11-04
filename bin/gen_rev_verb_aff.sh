@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BIN=../dict_uk/expand
+BIN=$(dirname $0)/../dict_uk/expand
 AFF_DIR=../data/affix
 
 $BIN/verb_reverse.py < $AFF_DIR/v.aff > $AFF_DIR/vr.aff

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BASE=..
+BASE=$(dirname $0)/..
 CODE_BASE=$BASE/dict_uk
 CODE_BASE_PROF=$BASE/dict_uk.prof
 OUT_DIR=$BASE/out
