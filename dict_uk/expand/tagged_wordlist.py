@@ -8,7 +8,7 @@ import re
 
 except_base_tag = ""
 
-def process_line_exceptions(line, extra_tags):
+def process_line_exceptions(line):
     global except_base_tag
 
     if not " " in line or re.match(".*[а-яіїєґА-ЯІЇЄҐ] /.*", line):
@@ -27,7 +27,7 @@ def process_line_exceptions(line, extra_tags):
     if base.endswith("ся"):
         except_base_tag2 = except_base_tag.replace("verb:", "verb:rev:")
       
-    out_line = re.sub("([^ ]+) ?", "\\1 " + base + " " + except_base_tag2 + "unknown" + extra_tags + "\n", line)
+    out_line = re.sub("([^ ]+) ?", "\\1 " + base + " " + except_base_tag2 + "unknown\n", line)
     
     if except_base_tag in ("verb:imperf:", "verb:perf:"):
         out_line = re.sub("(verb:(?:rev:)?)((im)?perf:)", "\\1inf:\\2", out_line, 1)
@@ -118,7 +118,7 @@ def process_input(files):
                     continue
             
                 if filename.endswith( "exceptions.lst" ):
-                    lines = process_line_exceptions(line, extra_tags)
+                    lines = process_line_exceptions(line)
                     if lines:
                         out_lines.extend( lines )
                 else:

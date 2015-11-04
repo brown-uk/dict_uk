@@ -836,6 +836,28 @@ def cleanup(line):
     return re_sub(":xs.", "", line)
 
 
+def print_word_list(sorted_lines):
+    words = set()
+    lemmas = set()
+    tags = set()
+    
+    for line in sorted_lines:
+        word, lemma, tag = line.split()
+        words.add(word)
+        lemmas.add(lemma)
+        tags.add(tag)
+        
+    with open("words.txt", "w") as f:
+        f.write("\n".join(sorted(words, key=locale.strxfrm)))
+                
+    with open("lemmas.txt", "w") as f:
+        f.write("\n".join(sorted(lemmas, key=locale.strxfrm)))
+        
+    with open("tags.txt", "w") as f:
+        f.write("\n".join(sorted(tags)))
+    
+
+
 def process_input(in_lines, flush_stdout_):
     time1 = time.time()
 
@@ -905,6 +927,9 @@ def process_input(in_lines, flush_stdout_):
     #        print ("\n-- ".join( ln for ln in sorted_lines if ln.startswith("Венед") ), file=sys.stderr)
 
         sorted_lines = [ cleanup(line) for line in sorted_lines ]
+
+        if "-wordlist" in sys.argv:
+            print_word_list(sorted_lines)
 
         if "-indent" in sys.argv:
             if "-mfl" in sys.argv:

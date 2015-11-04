@@ -78,3 +78,20 @@ subgroup v2.advp
 #SFX M   гнати	женучи	гнати		#  гнати  женучи		           @ advp:imperf
 #SFX M   сти	дучи	[еая]сти		#  вести  ведучи		           @ advp:imperf
 #SFX M   сти	м	[ії]сти		#  їсти  їм		           @ advp:imperf
+
+
+# Дієприслівники від дієслів в групі v3
+
+subgroup v3.advp
+
+#SFX 6 Y 1
+
+ити     'ючи    вити            #  вити  в'ючи                   @ advp:imperf
+# Дієприслівники від дієслів в групі v2
+
+
+subgroup v5.advp
+
+#SFX Q Y 8
+
+яти	ючи	[аяіо]яти	#  віяти  віючи 		         @ advp:imperf

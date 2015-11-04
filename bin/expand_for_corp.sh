@@ -3,6 +3,14 @@
 # Generates tagged dictionary (both LT and visual versions) for the corpus
 #
 
+
+function diff_u() {
+    FIL="$1"
+    diff -u prev/$FIL $FIL > $FIL.diff
+    return $?
+}
+
+
 BASE=$(dirname $0)/..
 CODE_BASE=$BASE/dict_uk
 OUT_DIR=$BASE/out
@@ -16,6 +24,5 @@ DICT_CORP_LT=dict_corp_lt.txt
 cd $OUT_DIR
 
 $CODE_BASE/expand/expand_all.py -aff $BASE/data/affix -dict $BASE/data/dict $FLAGS > $DICT_CORP_VIS && \
-(echo "Diffing..."; diff prev/$DICT_CORP_VIS $DICT_CORP_VIS > $DICT_CORP_VIS.diff; diff -u prev/$DICT_CORP_LT $DICT_CORP_LT > $DICT_CORP_LT.diff) && \
+(echo "Diffing..."; diff_u $DICT_CORP_VIS; diff_u $DICT_CORP_LT; diff_u words.txt; diff_u lemmas.txt; diff_u tags.txt; diff_u word_list.txt; /bin/true) && \
 diff stats/dict_stats.txt dict_stats.txt > dict_stats.txt.diff
-

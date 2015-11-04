@@ -11,7 +11,7 @@ import sys
 
 class VerbReverse(object):
     """
-    classdocs
+    Generates affix file for reverse verb forms 
     """
 
 
@@ -29,38 +29,38 @@ class VerbReverse(object):
         left = line_parts[0]
         
         if len(line_parts) > 1:
-          comment = line_parts[1]
+            comment = line_parts[1]
         else:
-          comment = ""
+            comment = ""
 
         if "group v" in left:
-          line = line.replace("group v", "group vr")
-          if left.startswith("group v"):
-            line += "\n\n# Зворотня форма дієслів (-ся та -сь)\n"
-            line += "ся\tсь	тися		#  ~тися  ~тись    @ verb:rev:inf\n\n"
+            line = line.replace("group v", "group vr")
+            if left.startswith("group v"):
+                line += "\n\n# Зворотня форма дієслів (-ся та -сь)\n"
+                line += "ся\tсь	тися		#  ~тися  ~тись    @ verb:rev:inf\n\n"
 
-          return line
+            return line
 
         if left.strip().endswith(":"):
-          return line.replace("ти:", "тися:")
+            return line.replace("ти:", "тися:")
           
         columns = left.split()
           
         if len(columns) < 2:
-          return line
+            return line
           
         dual = False
         if "advp" in comment:
-          suff = "сь"
+            suff = "сь"
         elif re.match(".*те$", columns[1]) and ":s:3" in comment:
-          suff = "ться"
+            suff = "ться"
         elif self.RE_GENERIC.match(columns[1]):
-          dual = True
-          suff = "ся"
+            dual = True
+            suff = "ся"
         elif re.match(".*[еє]$", columns[1]):
-          suff = "ться"
+            suff = "ться"
         else:
-          suff = "ся"
+            suff = "ся"
           
         columns = self.convert_left(columns, suff)
         
@@ -70,11 +70,11 @@ class VerbReverse(object):
         out_line = "\t".join(columns) + "\t\t#\t\t" + comment
         
         if dual:
-          columns[1] = re.sub("ся$", "сь", columns[1])
+            columns[1] = re.sub("ся$", "сь", columns[1])
 
-          out_line += "\n"
-          comment = comment.replace("ся\t", "сь\t")
-          out_line += "\t".join(columns) + "\t\t#\t\t" + comment
+            out_line += "\n"
+            comment = comment.replace("ся\t", "сь\t")
+            out_line += "\t".join(columns) + "\t\t#\t\t" + comment
         
         return out_line
         
@@ -96,17 +96,17 @@ class VerbReverse(object):
         
     def convert_left(self, columns, suff):
         if columns[0] == "0":
-          columns[0] = "ся"
+            columns[0] = "ся"
         else:
-          columns[0] += "ся"
+            columns[0] += "ся"
 
         if columns[1] == "0":
-          columns[1] = "ся"
+            columns[1] = "ся"
         else:
-          columns[1] += suff
+            columns[1] += suff
         
         if len(columns) > 2:
-          columns[2] += "ся"
+            columns[2] += "ся"
         
         return columns
           
@@ -114,8 +114,18 @@ class VerbReverse(object):
 
 if __name__ == "__main__":
 
-  cnv = VerbReverse()
+    cnv = VerbReverse()
 
-  for line in sys.stdin:
-      line = cnv.generate_rev(line)
-      print(line)
+    convert = True
+    for line in sys.stdin:
+        
+        if convert:
+            line = cnv.generate_rev(line)
+            print(line)
+        else:
+            if "ся " in line:
+                print(line)
+
+        # v5 is special - don't generate reverse affixes for it
+        if "group " in line:
+            convert = not " v5" in line

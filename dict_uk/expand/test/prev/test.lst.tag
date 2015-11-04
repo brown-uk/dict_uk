@@ -1057,6 +1057,7 @@
   веслах noun:inanim:p:v_mis
 вести verb:inf
   веди verb:impr:s:2
+  ведім verb:impr:p:1
   ведімо verb:impr:p:1
   ведіть verb:impr:p:2
   веду verb:pres:s:1
@@ -1402,6 +1403,7 @@
   вильотах noun:inanim:p:v_mis
 вимести verb:perf:inf
   вимети verb:perf:impr:s:2
+  виметім verb:perf:impr:p:1
   виметімо verb:perf:impr:p:1
   виметіть verb:perf:impr:p:2
   вимету verb:perf:futr:s:1
@@ -1422,6 +1424,7 @@
   виметися verb:rev:perf:impr:s:2
   виметімось verb:rev:perf:impr:p:1
   виметімося verb:rev:perf:impr:p:1
+  виметімся verb:rev:perf:impr:p:1
   виметіться verb:rev:perf:impr:p:2
   виметусь verb:rev:perf:futr:s:1
   виметуся verb:rev:perf:futr:s:1
@@ -2272,6 +2275,7 @@
   задихаймося verb:rev:perf:impr:p:1
   задишімось verb:rev:perf:impr:p:1
   задишімося verb:rev:perf:impr:p:1
+  задишімся verb:rev:perf:impr:p:1
   задихайтесь verb:rev:perf:impr:p:2
   задихайтеся verb:rev:perf:impr:p:2
   задишіться verb:rev:perf:impr:p:2
@@ -2368,6 +2372,7 @@
   колисай verb:imperf:impr:s:2
   колиши verb:imperf:impr:s:2
   колисаймо verb:imperf:impr:p:1
+  колишім verb:imperf:impr:p:1
   колишімо verb:imperf:impr:p:1
   колисайте verb:imperf:impr:p:2
   колишіть verb:imperf:impr:p:2

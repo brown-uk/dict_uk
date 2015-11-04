@@ -11,8 +11,8 @@ from compar_forms import COMPAR_SOFT_BASE
 locale.setlocale(locale.LC_ALL, 'uk_UA')
 
 
-RE_DIR=re.compile("[ACEGIKMOQSW0-3]")
-RE_REV=re.compile("[BDFHJLNPR]")
+RE_DIR=re.compile("[ACEGIKMOQSW680-3]")
+RE_REV=re.compile("[BDFHJLNPR79]")
 
 def combine(word, out_flags, flags, extra):
 
@@ -46,10 +46,10 @@ def rep_a(word, flags):
     out_flags = []
     extra = []
 
-    if "V" in flags and "9" in flags:
+    if "V" in flags and "4" in flags:
         out_flags.append("adj")
         extra.append("g=fp")
-        flags.remove("9")
+        flags.remove("4")
         flags.remove("V")
 
     if "9" in flags: out_flags.append("adj"); extra.append("g=f"); flags.remove("9")
@@ -259,11 +259,11 @@ def rep_n2n(word, flags, extra_flags):
     flags_str = ''.join(flags)
       
     if "i" in flags: 
-      if re.search('[вкнт]е$', word):
-        out_flags.append("n2adj1")
-      else:
-        out_flags.append("n2n")
-      flags.remove("i")
+        if re.search('[вкнт]е$', word):
+            out_flags.append("n2adj1")
+        else:
+            out_flags.append("n2n")
+        flags.remove("i")
     elif "e" in flags: 
         out_flags.append("n2n")
         out_flags.append("ovi")
@@ -371,17 +371,17 @@ def rep_n4(word, flags):
 def rep_v(word, flags):
     lines = []
     
-    if RE_REV.search(''.join(flags)):
-      if word.endswith("ти"):
-        rev_word = re.sub('ти$', 'тися', word)
-        rev_flags = list(RE_DIR.sub('', ''.join(flags)))
-        flags = list(RE_REV.sub('', ''.join(flags)))
-      else:
-        rev_word = word
-        rev_flags = flags
-
-      cnv = rep_v_rev(rev_word, rev_flags)
-      lines.append(cnv)
+    if RE_REV.search(''.join(flags)) and not flags[0] == "S":
+        if word.endswith("ти"):
+            rev_word = re.sub('ти$', 'тися', word)
+            rev_flags = list(RE_DIR.sub('', ''.join(flags)))
+            flags = list(RE_REV.sub('', ''.join(flags)))
+        else:
+            rev_word = word
+            rev_flags = flags
+        
+        cnv = rep_v_rev(rev_word, rev_flags)
+        lines.append(cnv)
        
     if RE_DIR.search(''.join(flags)):
         cnv = rep_v_dir(word, flags)
@@ -400,6 +400,7 @@ def rep_v_rev(word, flags):
     if "L" in flags: out_flags_A.append("vr3"); flags.remove("L")
     if "N" in flags: out_flags_A.append("vr4"); flags.remove("N")
     if "T" in flags: out_flags_A.append("vr5"); flags.remove("T")
+    if "9" in flags: out_flags_A.append("vr6"); flags.remove("9")
 
     if out_flags_A:
         main_out_flags = out_flags_A
@@ -412,6 +413,7 @@ def rep_v_rev(word, flags):
     
     if "P" in flags: out_flags_A.append("advp"); flags.remove("P")
     if "R" in flags: out_flags_I.append("advp"); flags.remove("R")
+    if "7" in flags: out_flags_A.append("advp"); flags.remove("7")
 
     line = combine2(word, flags, out_flags_A, out_flags_I, extra, main_out_flags)
     
@@ -440,12 +442,15 @@ def rep_v_dir(word, flags):
     if "I" in flags: out_flags_I.append("v2"); flags.remove("I")
     if "K" in flags: out_flags_A.append("v3"); flags.remove("K")
     if "M" in flags: out_flags_A.append("v4"); flags.remove("M")
+    if "8" in flags: out_flags_A.append("v6"); flags.remove("8")
     if "S" in flags:
         if word.endswith("ся"):
             out_flags_A.append("vr5")
         else:
             out_flags_A.append("v5")
         flags.remove("S")
+        if "5" in flags: out_flags_A.append("cf"); flags.remove("5")
+        if "R" in flags: out_flags_A.append("advp"); flags.remove("R")
     
     if out_flags_A:
         main_out_flags = out_flags_A
@@ -460,11 +465,11 @@ def rep_v_dir(word, flags):
             out_flags_A.append("imprt0")
         flags.remove("C")
     if "E" in flags: out_flags_A.append("imprt1"); flags.remove("E")
-    if "8" in flags: out_flags_A.append("cf"); flags.remove("8")
     if "G" in flags: main_out_flags.append("cf"); flags.remove("G")
     
     if "O" in flags: out_flags_A.append("advp"); flags.remove("O")
     if "Q" in flags: out_flags_I.append("advp"); flags.remove("Q")
+    if "6" in flags: out_flags_A.append("advp"); flags.remove("6")
     
     for xx in "W01234":
         if xx in flags: main_out_flags.append("impers"+xx); flags.remove(xx)
@@ -483,36 +488,36 @@ def convert(line):
       
       
     if flags[0] == "X":
-      line = combine(word, [], flags, [])
-    elif re.search("/[VU9]", line):
-      line = rep_a(word, flags)
+        line = combine(word, [], flags, [])
+    elif re.search("/[VU4]", line):
+        line = rep_a(word, flags)
     elif re.search("[иі]й/ij?|а/ij?|/j|ів/l|ін/i", line):
-      line = rep_adj_n(word, flags)
+        line = rep_adj_n(word, flags)
     elif re.search("[ая]/a|[аиіїя]/[bo]", line):
-      line = rep_n10(word, flags)
+        line = rep_n10(word, flags)
     elif re.search("[^ая]/a", line):
-      line = rep_non10(word, flags)
+        line = rep_non10(word, flags)
     elif re.search("[оея]/i|о/ej", line):
-      line, extra = rep_n2n(word, flags, extra)
+        line, extra = rep_n2n(word, flags, extra)
     elif re.search("/[uv]", line):
-      line = rep_n23(word, flags)
+        line = rep_n23(word, flags)
     elif re.search("ко/eo", line):
-      line = rep_n2n(word, flags, extra)
+        line = rep_n2n(word, flags, extra)
     elif re.search("/[ef]", line):
-      line = rep_n20(word, flags)
+        line = rep_n20(word, flags)
     elif re.search("р/l|[іо][дкнрт]/l|ень/l|[еє]ць/l|осен/l", line):
-      line = rep_n24(word, flags)
+        line = rep_n24(word, flags)
     elif re.search("ість/l", line) or re.search("[ьчжшщ]/i", line) or re.search("[ьчжшщ]/l", line):
-      line = rep_n3(word, flags)
+        line = rep_n3(word, flags)
     elif re.search("матір/r|ь/r", line):
-      line = rep_n31(word, flags)
+        line = rep_n31(word, flags)
     elif re.search("[^ії][бвфм]/i|[чь]/l|[рш]/i", line):
-      line = rep_n32(word, flags)
+        line = rep_n32(word, flags)
     elif re.search("[ая]/l", line):
-      line = rep_n4(word, flags)
-    elif re.search("/[A-T]", line):
-      lines = rep_v(word, flags)
-      line = (' '+extra+'\n').join(lines)
+        line = rep_n4(word, flags)
+    elif re.search("/[A-T6789]", line):
+        lines = rep_v(word, flags)
+        line = (' '+extra+'\n').join(lines)
 
     line = line.replace("  ", " ")
     return line + ' ' + extra
@@ -798,6 +803,9 @@ if __name__ == "__main__":
 #      if line.lstrip().startswith("#") or not re.search("[а-яіїєґА-ЯІЇЄҐ](/[a-zA-Z]|-? <|[а-яіїєґ] [a-z:]+ [а-яіїєґ])", line):
       if line.lstrip().startswith("#"):
           out_lines.append(line)
+          continue
+
+      if "spell-only" in line:
           continue
     
       if line.endswith("-"):
