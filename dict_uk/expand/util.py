@@ -222,6 +222,10 @@ def indent_lines(lines):
         except:
             print("Failed to fine tag key", line, file=sys.stderr)
 
+        if ":x" in line:
+            x_idx = line.index(":x")
+            key += line[x_idx: x_idx+4]
+
         if ":nv" in line:
             key += ":nv"
         
@@ -284,6 +288,7 @@ def print_stats(cnt, cnt_std, pos_stat, sub_pos_stat, letter_stat):
             print(k, letter_stat[k], file=stat_f)
 
 
+re_xv_sub = re.compile("^([^:]+)(.*)(:x.[1-9])")
 
 #@profile
 def tag_sort_key(tags, word):
@@ -349,6 +354,9 @@ def tag_sort_key(tags, word):
     if gen_match:
         gen = gen_match.group(1)
         tags = GEN_RE.sub(":"+GEN_ORDER[gen]+"\\2", tags, count=1)
+
+    if ":x" in tags:
+        tags = re_xv_sub.sub("\\1\\3\\2", tags)
 
     return tags
 

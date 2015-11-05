@@ -217,3 +217,7 @@
 
 прощавати /v2 tag=:impr|:inf :imperf
 стривати /v2 tag=:impr|:inf :imperf
+
+# багатозначні слова
+бар /n20.p :xp1
+бар /n20.a.p :xp2

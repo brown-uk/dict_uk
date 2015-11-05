@@ -377,24 +377,43 @@
 стривати /v2 tag=:impr|:inf :imperf
 прощавати /v2 tag=:impr|:inf :imperf
 
-ввити ввити verb:inf
-ввий ввити verb:impr:s:2
-ввиймо ввити verb:impr:p:1
-ввийте ввити verb:impr:p:2
-ввию ввити verb:pres:s:1
-ув'ю ввити verb:pres:s:1
-ув'єш ввити verb:pres:s:2
-ув'є ввити verb:pres:s:3
-ув'єм ввити verb:pres:p:1
-ув'ємо ввити verb:pres:p:1
-ув'єте ввити verb:pres:p:2
-ув'ють ввити verb:pres:p:3
-ввив ввити verb:past:m
-ввила ввити verb:past:f
-ввило ввити verb:past:n
-ввили ввити verb:past:p
-ввивши ввити advp:perf
-ввито ввити verb:impers
+ввити ввити verb:inf:perf
+ввий ввити verb:impr:s:2:perf
+ввиймо ввити verb:impr:p:1:perf
+ввийте ввити verb:impr:p:2:perf
+ввию ввити verb:pres:s:1:perf
+ув'ю ввити verb:pres:s:1:perf
+ув'єш ввити verb:pres:s:2:perf
+ув'є ввити verb:pres:s:3:perf
+ув'єм ввити verb:pres:p:1:perf
+ув'ємо ввити verb:pres:p:1:perf
+ув'єте ввити verb:pres:p:2:perf
+ув'ють ввити verb:pres:p:3:perf
+ввив ввити verb:past:m:perf
+ввила ввити verb:past:f:perf
+ввило ввити verb:past:n:perf
+ввили ввити verb:past:p:perf
+ввивши ввити advp:perf:perf
+ввито ввити verb:impers:perf
+
+ввитися ввитися verb:rev:inf:perf
+ввитись ввитися verb:rev:inf:perf
+ввийсь ввитися verb:rev:impr:s:2:perf
+ввийся ввитися verb:rev:impr:s:2:perf
+ввиймось ввитися verb:rev:impr:p:1:perf
+ввиймося ввитися verb:rev:impr:p:1:perf
+ввийтесь ввитися verb:rev:impr:p:2:perf
+ввийтеся ввитися verb:rev:impr:p:2:perf
+ввивсь ввитися verb:rev:past:m:perf
+ввився ввитися verb:rev:past:m:perf
+ввилась ввитися verb:rev:past:f:perf
+ввилася ввитися verb:rev:past:f:perf
+ввилось ввитися verb:rev:past:n:perf
+ввилося ввитися verb:rev:past:n:perf
+ввились ввитися verb:rev:past:p:perf
+ввилися ввитися verb:rev:past:p:perf
+ввившись ввитися advp:rev:perf
+
 
 # гнисти - гнию
 # !verb:imperf
@@ -566,20 +585,20 @@
 срібен срібний adj:m:v_naz/v_zna:contr
 чорен чорний adj:m:v_naz/v_zna:contr
 ясен ясний adj:m:v_naz/v_zna:contr
-більше багато adv:compr
-найбільш багато adv:super
-менш мало adv:compr
-щонайбільше багато adv:super
-щонайбільш багато adv:super
-якнайбільше багато adv:super
-якнайменше мало adv:super
-більш багато adv:compr
-якнайбільш багато adv:super
-якнайменш мало adv:super
 найменш мало adv:super
-щонайменш мало adv:super
-щонайменше мало adv:super
-заслабши заслабти adv:perf
+найбільш багато adv:super
+якнайбільш багато adv:super
 менше мало adv:compr
-найбільше багато adv:super
+більш багато adv:compr
+щонайменш мало adv:super
+заслабши заслабти adv:perf
+менш мало adv:compr
+якнайменш мало adv:super
+щонайменше мало adv:super
+якнайменше мало adv:super
+більше багато adv:compr
+щонайбільш багато adv:super
 найменше мало adv:super
+найбільше багато adv:super
+щонайбільше багато adv:super
+якнайбільше багато adv:super
