@@ -2,6 +2,7 @@
 
 import sys
 import os
+import locale
 
 import expand
 import affix
@@ -39,6 +40,7 @@ if __name__ == "__main__":
         if "composite.lst" in dic_filename:
             with open(fullname, "r", encoding="utf-8") as dic_file:
                 out = expand_comps.process_input(dic_file)
+                out = sorted(out, key=locale.strxfrm)   # just to have consistent output in word_list.txt
         else:
             out = tagged_wordlist.process_input([fullname])
             
