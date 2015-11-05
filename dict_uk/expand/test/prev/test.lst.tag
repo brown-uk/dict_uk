@@ -170,6 +170,36 @@
   багатії noun:anim:m:v_mis
   багатію noun:anim:m:v_mis
   багатію noun:anim:m:v_kly
+бар noun:inanim:m:v_naz:xp1
+  бару noun:inanim:m:v_rod:xp1
+  барові noun:inanim:m:v_dav:xp1
+  бару noun:inanim:m:v_dav:xp1
+  бар noun:inanim:m:v_zna:xp1
+  баром noun:inanim:m:v_oru:xp1
+  барі noun:inanim:m:v_mis:xp1
+  барові noun:inanim:m:v_mis:xp1
+  бару noun:inanim:m:v_mis:xp1
+  бари noun:inanim:p:v_naz:xp1
+  барів noun:inanim:p:v_rod:xp1
+  барам noun:inanim:p:v_dav:xp1
+  бари noun:inanim:p:v_zna:xp1
+  барами noun:inanim:p:v_oru:xp1
+  барах noun:inanim:p:v_mis:xp1
+бар noun:inanim:m:v_naz:xp2
+  бара noun:inanim:m:v_rod:xp2
+  барові noun:inanim:m:v_dav:xp2
+  бару noun:inanim:m:v_dav:xp2
+  бар noun:inanim:m:v_zna:xp2
+  баром noun:inanim:m:v_oru:xp2
+  барі noun:inanim:m:v_mis:xp2
+  барові noun:inanim:m:v_mis:xp2
+  бару noun:inanim:m:v_mis:xp2
+  бари noun:inanim:p:v_naz:xp2
+  барів noun:inanim:p:v_rod:xp2
+  барам noun:inanim:p:v_dav:xp2
+  бари noun:inanim:p:v_zna:xp2
+  барами noun:inanim:p:v_oru:xp2
+  барах noun:inanim:p:v_mis:xp2
 бентеживши advp:perf
 бентежити verb:inf
   бентеж verb:impr:s:2

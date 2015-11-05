@@ -3,17 +3,25 @@ This is a project to generate POS tag dictionary for Ukrainian language.
 Це — проект генерування словника з тегами частин мови для української мови.
 
 
-Опис:
+Description:
 
     dict_uk/expand/expand_all.py -aff data/affix -dict data/dict
 
-    Для всіх файлів слів в data/dict за допомогою правил генерування афіксів в data/affix 
-    згенерує всі можливі словоформи з тегами частин мови.
+    For all files in data/dict the project genereates all possible word forms with POS tags
+    by using affix rules from files in data/affix.
 
 
-Виходові файли програми (каталог out/):
+How to run:
 
-    * dict_rules_lt.txt - Файл для LT (LanguageTool) для перевірки правил
-    * dict_corp_lt.txt - файл для LT для генерування тегів корпусу
-    * dict_corp_vis.txt - файл для перегляду та опрацювання лем (корпусна версія словника)
+    # dict_uk/expand/expand_all.py -aff data/affix -dict data/dict -corp -indent -mfl -wordlist
+    Output:
+
+        * dict_corp_vis.txt - Dictionary in visual (indented) format for review, analysis or conversion
+        * dict_corp_lt.txt - Dictionary for LT for annotating the corpus
+        * words.txt, lemmas.txt, tags.txt - list of all uniq words, lemmas and tags
+
+    # dict_uk/expand/expand_all.py -aff data/affix -dict data/dict
+    Output:
+
+        * dict_rules_lt.txt - Dictionary file for LT (LanguageTool) used for grammar rules checking
 

@@ -18,14 +18,14 @@ if __name__ == "__main__":
     else:
         raise Exception(usage)
     
-    affix.load_affixes(affix_filename)
-    
     if "-dict" in sys.argv:
         dic_arg_idx = sys.argv.index("-dict")
         dict_dirname = sys.argv[dic_arg_idx + 1]
     else:
         raise Exception(usage)
     
+
+    affix.load_affixes(affix_filename)
     
     dic_files = [ f for f in os.listdir(dict_dirname) if os.path.isfile(os.path.join(dict_dirname, f)) and f.endswith(".lst") ]
 
@@ -42,6 +42,7 @@ if __name__ == "__main__":
         else:
             out = tagged_wordlist.process_input([fullname])
             
+        print("\tgot {} lines".format(len(out)), file=sys.stderr)
         out_lines.extend(out)
 
 
@@ -49,4 +50,13 @@ if __name__ == "__main__":
     with open("word_list.txt", "w") as out_file:
         out_file.write("\n".join(out_lines))
 
-    expand.process_input(out_lines, flush_stdout_=False)
+    out_lines = expand.process_input(out_lines, flush_stdout_=False)
+
+    if "-corp" in sys.argv:
+        filename = "dict_corp_vis.txt"
+    else:
+        filename = "dict_rules_lt.txt"
+
+    with open(filename, "w", encoding="utf-8") as out_file:
+       for line in out_lines:
+            out_file.write(line + "\n")

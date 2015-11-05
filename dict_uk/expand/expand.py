@@ -702,7 +702,7 @@ def expand_subposition_adv_main(main_word, line, extra_tags):
 
 
 def expand_subposition_adv(last_adv, line, extra_tags):
-    print("+.adv", last_adv, file=sys.stderr)
+#    print("+.adv", last_adv, file=sys.stderr)
     
     out_lines = []
     
@@ -724,7 +724,7 @@ def expand_subposition_adv(last_adv, line, extra_tags):
     adv_super3 = "якнай" + word + " "  + last_adv + " adv:super" + extra_tags
     out_lines.extend( (adv_super, adv_super2, adv_super3) )
     
-    print("...", w1, adv_super, file=sys.stderr)
+#    print("...", w1, adv_super, file=sys.stderr)
     
     return out_lines
 
@@ -937,11 +937,11 @@ def process_input(in_lines, flush_stdout_):
                     f.write("\n".join(sorted_lines))
         
             sorted_lines = util.indent_lines(sorted_lines)
-          
-        print("\n".join(sorted_lines))
     
-    if "--log-usage" in sys.argv:
-        log_usage()
+        if "--log-usage" in sys.argv:
+            log_usage()
+          
+        return sorted_lines
 
 
 def log_usage():
@@ -972,4 +972,7 @@ if __name__ == "__main__":
     
     affix.load_affixes(affix_filename)
     
-    process_input(sys.stdin, flush_stdout)
+    out_lines = process_input(sys.stdin, flush_stdout)
+    
+    for line in out_lines:
+        print(out_lines)
