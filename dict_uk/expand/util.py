@@ -244,8 +244,9 @@ def indent_lines(lines):
             if "m:v_naz" in line:
                 sub_stat("adj", "super", line, sub_pos_stat)
                 sub_stat("adj", "compr", line, sub_pos_stat)
-                if ":compr" in line or ":super" in line:
-                    cnt_std += 1 
+# for -corp compr/super are now separe lemmas
+#                if ":compr" in line or ":super" in line:
+#                    cnt_std += 1
             
         out_lines.append(line)
         
@@ -314,11 +315,11 @@ def tag_sort_key(tags, word):
             else:
                 tags = tags.replace("adj:", "adj:compb:")
         else:
-            # відокремлюємо різні порівняльні форми коли сортуємо: гладий/гладкіший
+            # відокремлюємо різні порівняльні форми коли сортуємо: гладкий/гладкіший
             if ":super" in tags:
-                tags = re.sub("(:super)(.*)(:xs.)", "\\3\\1\\2", tags)
+                tags = re.sub("(:super)(.*)(:xx.)", "\\3\\1\\2", tags)
             if ":compr" in tags:
-                tags = re.sub("(:compr)(.*)(:xs.)", "\\3\\1\\2", tags)
+                tags = re.sub("(:compr)(.*)(:xx.)", "\\3\\1\\2", tags)
 
             if ":super" in tags:
                 if word.startswith("що"):

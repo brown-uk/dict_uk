@@ -648,7 +648,7 @@ def replace_base(line, base):
 
 
 def expand_subposition(main_word, line, extra_tags, idx):
-    idx = ":xs" + str(idx)
+    idx = ":xx" + str(idx)
     logger.debug("expanding sub " + idx + " " + main_word + ": " + line)
     if line.startswith(" +cs"):
         if " +cs=" in line:
@@ -675,11 +675,18 @@ def expand_subposition(main_word, line, extra_tags, idx):
         word_forms_super = expand(word_jak, "/adj :super" + idx + extra_tags, flush_stdout)
         word_forms.extend(word_forms_super)
 
-        word_forms = [ replace_base(line, main_word) for line in word_forms ]
+        if not "-corp" in sys.argv:
+            word_forms = [ replace_base(line, main_word) for line in word_forms ]
         
         return word_forms
  
     raise "Unknown subposition for " + line + "(" + main_word + ")"
+
+
+def compose_compar(word, main_word, tags):
+    if "-corp" in sys.argv:
+        main_word = word
+    return word + " "  + main_word + " " + tags
 
 
 def expand_subposition_adv_main(main_word, line, extra_tags):
@@ -690,11 +697,10 @@ def expand_subposition_adv_main(main_word, line, extra_tags):
         else:
             word = main_word[:-1] + "іше"
             
-
-        adv_compr = word + " "  + main_word + " adv:compr" + extra_tags
-        adv_super = "най" + word + " "  + main_word + " adv:super" + extra_tags
-        adv_super2 = "щонай" + word + " "  + main_word + " adv:super" + extra_tags
-        adv_super3 = "якнай" + word + " "  + main_word + " adv:super" + extra_tags
+        adv_compr = compose_compar(word, main_word, "adv:compr" + extra_tags)
+        adv_super = compose_compar("най" + word, main_word, "adv:super" + extra_tags)
+        adv_super2 = compose_compar("щонай" + word, main_word, "adv:super" + extra_tags)
+        adv_super3 = compose_compar("якнай" + word, main_word, "adv:super" + extra_tags)
 
         return [adv_compr, adv_super, adv_super2, adv_super3]
  
@@ -716,12 +722,12 @@ def expand_subposition_adv(last_adv, line, extra_tags):
         extra_tags = re_sub(r":&?adjp(:pasv|:actv|:pres|:past|:perf|:imperf)+", "", extra_tags)
 
     
-    w1 = word + " " + last_adv + " adv:compr" + extra_tags
+    w1 = compose_compar(word, last_adv, "adv:compr" + extra_tags)
     out_lines.append( w1 )
     
-    adv_super = "най" + word + " " + last_adv + " adv:super" + extra_tags
-    adv_super2 = "щонай" + word + " "  + last_adv + " adv:super" + extra_tags
-    adv_super3 = "якнай" + word + " "  + last_adv + " adv:super" + extra_tags
+    adv_super = compose_compar("най" + word, last_adv, "adv:super" + extra_tags)
+    adv_super2 = compose_compar("щонай" + word, last_adv, "adv:super" + extra_tags)
+    adv_super3 = compose_compar("якнай" + word, last_adv, "adv:super" + extra_tags)
     out_lines.extend( (adv_super, adv_super2, adv_super3) )
     
 #    print("...", w1, adv_super, file=sys.stderr)
@@ -833,7 +839,7 @@ def expand_line(line, flush_stdout):
 
 
 def cleanup(line):
-    return re_sub(":xs.", "", line)
+    return re_sub(":xx.", "", line)
 
 
 def print_word_list(sorted_lines):
@@ -975,4 +981,4 @@ if __name__ == "__main__":
     out_lines = process_input(sys.stdin, flush_stdout)
     
     for line in out_lines:
-        print(out_lines)
+        print(line)
