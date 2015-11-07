@@ -40,7 +40,7 @@ if __name__ == "__main__":
         if "composite.lst" in dic_filename:
             with open(fullname, "r", encoding="utf-8") as dic_file:
                 out = expand_comps.process_input(dic_file)
-                out = sorted(out, key=locale.strxfrm)   # just to have consistent output in word_list.txt
+#                out = sorted(out, key=locale.strxfrm)   # just to have consistent output in word_list.txt
         else:
             out = tagged_wordlist.process_input([fullname])
             
@@ -49,8 +49,8 @@ if __name__ == "__main__":
 
 
     print("Expanding {} lines".format(len(out_lines)), file=sys.stderr)
-    with open("word_list.txt", "w") as out_file:
-        out_file.write("\n".join(out_lines))
+#    with open("word_list.txt", "w") as out_file:
+#        out_file.write("\n".join(out_lines))
 
     out_lines = expand.process_input(out_lines, flush_stdout_=False)
 

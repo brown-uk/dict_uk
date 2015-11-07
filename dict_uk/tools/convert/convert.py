@@ -768,7 +768,7 @@ def convert_line(line, out_lines):
                 out_line = RE_EXTRA_FLAGS_SPACE.sub(" /\\1", out_line)
 
 
-        if "/V" in line and not "<" in line and (not " ^adjp" in line or ":&adj" in line) and not "&pron" in line:
+        if "/V" in line and not "<" in line and (not " ^adjp" in line or ":&adj" in line) and not "&pron" in line and not "-nosort" in sys.argv:
             w = out_line.split(' ', 1)[0]
             if "Y" in line:
                 delayed_adj_cs[w] = out_line
@@ -777,7 +777,7 @@ def convert_line(line, out_lines):
 
             if comment:
                 delayed_comment[w] = comment
-        elif re.search('[ ^]adv($|[ :])', line):
+        elif re.search('[ ^]adv($|[ :])', line) and not "-nosort" in sys.argv:
             w = out_line.split(' ', 1)[0]
             delayed_adv[w] = line
 
@@ -818,13 +818,13 @@ if __name__ == "__main__":
       else:
         convert_line(line, out_lines)
     
-    out_adj_lines = post_process_adj(delayed_adj, delayed_adj_cs)
-    out_lines.extend(out_adj_lines)
-
-    out_adv_lines = post_process_adv(delayed_adv, delayed_adj, delayed_adj_cs)
-    out_lines.extend(out_adv_lines)
-    
     if not "-nosort" in sys.argv:
+        out_adj_lines = post_process_adj(delayed_adj, delayed_adj_cs)
+        out_lines.extend(out_adj_lines)
+
+        out_adv_lines = post_process_adv(delayed_adv, delayed_adj, delayed_adj_cs)
+        out_lines.extend(out_adv_lines)
+    
         out_lines = sorted(out_lines, key=locale.strxfrm)
     
     re_bad = re.compile('[а-яїієґ]/', re.IGNORECASE)

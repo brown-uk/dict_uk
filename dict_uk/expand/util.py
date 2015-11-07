@@ -235,15 +235,17 @@ def indent_lines(lines):
             
             cnt += 1
             if not "advp" in line:
-                cnt_std += 1 
+                cnt_std += 1
             
+            sub_stat("adj", "super", line, sub_pos_stat)
+            sub_stat("adj", "compr", line, sub_pos_stat)
 #            dbg("new key", key)
         else:
             line = DERIV_PADDING + word + " " + tags
 
-            if "m:v_naz" in line:
-                sub_stat("adj", "super", line, sub_pos_stat)
-                sub_stat("adj", "compr", line, sub_pos_stat)
+#            if "m:v_naz" in line:
+#                sub_stat("adj", "super", line, sub_pos_stat)
+#                sub_stat("adj", "compr", line, sub_pos_stat)
 # for -corp compr/super are now separe lemmas
 #                if ":compr" in line or ":super" in line:
 #                    cnt_std += 1
