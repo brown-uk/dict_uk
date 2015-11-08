@@ -843,25 +843,44 @@ def cleanup(line):
 
 
 def print_word_list(sorted_lines):
+    print("Collecting words, lemmas, and tags...", file=sys.stderr)
+
     words = set()
+    spell_words = set()
     lemmas = set()
     tags = set()
     
     for line in sorted_lines:
         word, lemma, tag = line.split()
+
         words.add(word)
         lemmas.add(lemma)
         tags.add(tag)
-        
+
+        if not ":bad" in tag and not ":alt" in tag:
+            spell_words.add(word)
+
+
+    words = sorted(words, key=locale.strxfrm)
+
     with open("words.txt", "w") as f:
-        f.write("\n".join(sorted(words, key=locale.strxfrm)))
-                
+        for word in words:
+            f.write(word + "\n")
+
+    spell_words = sorted(spell_words, key=locale.strxfrm)
+
+    with open("words_spell.txt", "w") as f:
+        for word in spell_words:
+            f.write(word + "\n")
+
     with open("lemmas.txt", "w") as f:
-        f.write("\n".join(sorted(lemmas, key=locale.strxfrm)))
-        
+        lemmas = sorted(lemmas, key=locale.strxfrm)
+        for lemma in lemmas:
+            f.write(lemma + "\n")
+
     with open("tags.txt", "w") as f:
         f.write("\n".join(sorted(tags)))
-    
+
 
 
 def process_input(in_lines, flush_stdout_):

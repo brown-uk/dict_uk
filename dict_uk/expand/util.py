@@ -179,7 +179,7 @@ vb_tag_key_map = {
 }
 
 GEN_RE = re.compile(":([mfnsp])(:|$)")
-VIDM_RE = re.compile(":(v_...)((:alt|:rare|:coll)*)") # |:contr
+VIDM_RE = re.compile(":(v_...)((:alt|:rare|:coll)*)") # |:short
 
 
 
@@ -311,9 +311,9 @@ def tag_sort_key(tags, word):
 
     if tags.startswith("adj:"):
         if not ":comp" in tags and not ":supe" in tags:
-            # make sure :contr without :combp sorts ok with adjective base that has compb
-            if ":contr" in tags:
-                tags = tags.replace(":contr", "").replace("adj:", "adj:compc")
+            # make sure :short without :combp sorts ok with adjective base that has compb
+            if ":short" in tags:
+                tags = tags.replace(":short", "").replace("adj:", "adj:compc")
             else:
                 tags = tags.replace("adj:", "adj:compb:")
         else:

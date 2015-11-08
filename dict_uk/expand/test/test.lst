@@ -25,7 +25,7 @@
  +cs=удатніше
 дивний /adj.adv \
  +cs=дивніший
-дивен дивний adj:m:v_naz/v_zna:contr
+дивен дивний adj:m:v_naz/v_zna:short
 
 вимниста /adj g=fp
 
@@ -34,7 +34,7 @@
 
 # Скорочені форми
 
-годен годний adj:m:v_naz/v_zna:contr:coll
+годен годний adj:m:v_naz/v_zna:short:coll
 годний /adj :coll
 
 
