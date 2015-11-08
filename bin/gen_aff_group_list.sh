@@ -1,5 +1,10 @@
 #!/bin/sh
 
+#
+# Generate short description summary for affix groups
+#
+
+
 BASE=$(dirname $0)/..
 OUT_FILE=$BASE/doc/affix_groups.txt
 

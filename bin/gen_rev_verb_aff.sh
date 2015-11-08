@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#
+# Generates reverse verb affixes from direct affixes
+#
+
 BIN=$(dirname $0)/../dict_uk/expand
 AFF_DIR=../data/affix
 

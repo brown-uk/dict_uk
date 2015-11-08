@@ -1,6 +1,8 @@
 #!/bin/sh
 
+#
 # Expands a single word and a flag to a set of tagged forms
+#
 
 [ "$2" == "" ] && {
     echo "Usage: $0 <word> </flag>"

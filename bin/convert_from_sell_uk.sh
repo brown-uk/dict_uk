@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#
+# Converts source dictionary files from spell-uk project to dict_uk
+#
+
 SPELL_UK_DIR=../../spell-uk
 DICT_SRC_DIR=$SPELL_UK_DIR/src/Dictionary
 

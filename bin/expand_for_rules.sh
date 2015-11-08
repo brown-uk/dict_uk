@@ -1,4 +1,5 @@
 #!/bin/sh
+
 #
 # Generates tagged dictionary (both LT version) for the grammar/style rule check
 #
