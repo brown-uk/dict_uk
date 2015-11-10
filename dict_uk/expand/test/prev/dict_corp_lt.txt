@@ -1561,8 +1561,8 @@
 годні годний adj:p:v_zna:coll
 годними годний adj:p:v_oru:coll
 годних годний adj:p:v_mis:coll
-годен годний adj:m:v_naz:contr:coll
-годен годний adj:m:v_zna:contr:coll
+годен годний adj:m:v_naz:short:coll
+годен годний adj:m:v_zna:short:coll
 горнична горнична noun:anim:f:v_naz:bad
 горничної горнична noun:anim:f:v_rod:bad
 горничній горнична noun:anim:f:v_dav:bad
@@ -1656,8 +1656,8 @@
 дивні дивний adj:compb:p:v_zna
 дивними дивний adj:compb:p:v_oru
 дивних дивний adj:compb:p:v_mis
-дивен дивний adj:m:v_naz:contr
-дивен дивний adj:m:v_zna:contr
+дивен дивний adj:m:v_naz:short
+дивен дивний adj:m:v_zna:short
 дивніше дивніше adv:compr
 дивніший дивніший adj:compr:m:v_naz
 дивнішого дивніший adj:compr:m:v_rod
