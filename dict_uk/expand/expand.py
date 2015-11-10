@@ -999,5 +999,6 @@ if __name__ == "__main__":
     
     out_lines = process_input(sys.stdin, flush_stdout)
     
-    for line in out_lines:
-        print(line)
+    if not flush_stdout:
+        for line in out_lines:
+            print(line)
