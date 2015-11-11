@@ -230,16 +230,32 @@ def load_affix_file(aff_file):
 
 
 #@profile
+
+def check_files(dirname, aff_files):
+    verb_affix_files = {}
+    for aff_filename in aff_files:
+        if aff_filename.startswith("v"):
+            verb_affix_files[aff_filename] = os.path.getmtime(os.path.join(dirname, aff_filename))
+    
+    if verb_affix_files["v.aff"] > verb_affix_files["vr.aff"] \
+            or verb_affix_files["v_advp.aff"] > verb_affix_files["vr_advp.aff"]:
+        raise Exception("Reverse verb affix files older than the direct ones!")
+
+
 def load_affixes(filename):
 
+    
     if os.path.isdir(filename):
         aff_files = [ f for f in os.listdir(filename) if os.path.isfile(os.path.join(filename, f)) and f.endswith(".aff") ]
         print("Loading affixes from directory", filename, file=sys.stderr)
+
+        check_files(filename, aff_files)
     
         for aff_filename in aff_files:
             aff_filename = os.path.join(filename, aff_filename)
             with open(aff_filename, "r", encoding="utf-8") as aff_file:
                 load_affix_file(aff_file)
+                
     else:
         with open(filename, "r", encoding="utf-8") as aff_file:
             load_affix_file(aff_file)
