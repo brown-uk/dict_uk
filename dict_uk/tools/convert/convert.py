@@ -829,7 +829,7 @@ if __name__ == "__main__":
     
     re_bad = re.compile('[а-яїієґ]/', re.IGNORECASE)
     for line in out_lines:
-        if not line.startswith("#") and re_bad.search(line):
+        if not line.startswith("#") and re_bad.search(line.split('#', maxsplit=1)[0]):
             raise Exception("Failed to convert " + line)
         
         print(line)
