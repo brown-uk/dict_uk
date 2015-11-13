@@ -7,6 +7,7 @@ base-abbr.lst 	-- general abbriviations
 base-compound.lst	compound words with/without hyphen, see http://www.nas.gov.ua/institutes/ium/Structure/Documents/2010_1.pdf
 colors.lst 	-- colors
 computer.lst 	-- computing related terms
+dot-abbr.lst -- abbreviations with dots
 dstu_kds.lst	-- countries from DSTU and their derivatives
 lang.lst	-- language names
 geography.lst   -- geographical names
@@ -14,6 +15,7 @@ names.lst	-- personal names
 science.lst	-- scientific terms
 
 exceptions.lst	-- words that decline under unknown/undefined rules (not sorted)
+exceptions2.lst	-- words that don't come from spell-uk
 pronouns.lst	-- pronouns with all their forms (not sorted), some other POS
 
 slang.lst	-- slang

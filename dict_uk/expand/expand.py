@@ -473,21 +473,21 @@ def preprocess(line):
 def preprocess2(line):
     out_lines = []
 
-    if "/v-u" in line or ".v-u" in line:
-        if "/v-u" in line:
-            line = re_sub(r"(?i)^([а-яіїєґ\"-]+) /v-u ?\^?", "\\1 ", line).replace(" :", ":")
-        else:
-            line = re_sub("\.v-u", "", line)
-            
-        space = " "
-        if " :" in line or not " /" in line:
-            space = ""
-        line = line + space + ":v-u"
-        line1 = re_sub("(^| )в", "\\1у", line)
-        out_lines = [line, line1]
-        logger.debug("v-u: " + str(out_lines))
+#     if "/v-u" in line or ".v-u" in line:
+#         if "/v-u" in line:
+#             line = re_sub(r"(?i)^([а-яіїєґ\"-]+) /v-u ?\^?", "\\1 ", line).replace(" :", ":")
+#         else:
+#             line = re_sub("\.v-u", "", line)
+#             
+#         space = " "
+#         if " :" in line or not " /" in line:
+#             space = ""
+#         line = line + space + ":v-u"
+#         line1 = re_sub("(^| )в", "\\1у", line)
+#         out_lines = [line, line1]
+#         logger.debug("v-u: " + str(out_lines))
 
-    elif "/<" in line:
+    if "/<" in line:
         if "<+" in line:
             extra_tag = ":anim:lname"
         else:
