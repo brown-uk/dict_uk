@@ -863,22 +863,22 @@ def print_word_list(sorted_lines):
 
     words = sorted(words, key=locale.strxfrm)
 
-    with open("words.txt", "w") as f:
+    with open("words.txt", "w", encoding="utf-8") as f:
         for word in words:
             f.write(word + "\n")
 
     spell_words = sorted(spell_words, key=locale.strxfrm)
 
-    with open("words_spell.txt", "w") as f:
+    with open("words_spell.txt", "w", encoding="utf-8") as f:
         for word in spell_words:
             f.write(word + "\n")
 
-    with open("lemmas.txt", "w") as f:
+    with open("lemmas.txt", "w", encoding="utf-8") as f:
         lemmas = sorted(lemmas, key=locale.strxfrm)
         for lemma in lemmas:
             f.write(lemma + "\n")
 
-    with open("tags.txt", "w") as f:
+    with open("tags.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(sorted(tags)))
 
 
@@ -958,7 +958,7 @@ def process_input(in_lines, flush_stdout_):
 
         if "-indent" in sys.argv:
             if "-mfl" in sys.argv:
-                with open("dict_corp_lt.txt", "w") as f:
+                with open("dict_corp_lt.txt", "w", encoding="utf-8") as f:
                     f.write("\n".join(sorted_lines))
         
             sorted_lines = util.indent_lines(sorted_lines)
@@ -970,7 +970,7 @@ def process_input(in_lines, flush_stdout_):
 
 
 def log_usage():
-    with open("usage.txt", "w") as f:
+    with open("usage.txt", "w", encoding="utf-8") as f:
         for affixFlag, affixGroups in affix.affixMap.items():
             print("Flag", affixFlag, "has", len(affixGroups), "groups", file=f)
             for match, affixGroup in affixGroups.items():

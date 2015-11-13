@@ -10,6 +10,9 @@ import expand_comps
 import tagged_wordlist
 
 
+locale.setlocale(locale.LC_ALL, "uk_UA")
+
+
 if __name__ == "__main__":
     usage = "Usage: expand_all.py -aff <affix_dir> -dict <dictionary dir>"
 

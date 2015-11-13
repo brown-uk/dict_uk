@@ -2462,19 +2462,6 @@
   тюрмах noun:inanim:p:v_mis
 удатніше adv:compr:v-u
 удатно adv:compb:v-u
-ужаливши advp:perf:v-u
-ужалити verb:perf:inf:v-u
-  ужалю verb:perf:futr:s:1:v-u
-  ужалиш verb:perf:futr:s:2:v-u
-  ужалить verb:perf:futr:s:3:v-u
-  ужалим verb:perf:futr:p:1:v-u
-  ужалимо verb:perf:futr:p:1:v-u
-  ужалите verb:perf:futr:p:2:v-u
-  ужалять verb:perf:futr:p:3:v-u
-  ужалив verb:perf:past:m:v-u
-  ужалила verb:perf:past:f:v-u
-  ужалило verb:perf:past:n:v-u
-  ужалили verb:perf:past:p:v-u
 уже adv:v-u
 уживаний adj:compb:m:v_naz:v-u
   уживаного adj:compb:m:v_rod:v-u
@@ -2560,100 +2547,6 @@
   уживаніші adj:compr:p:v_zna:v-u
   уживанішими adj:compr:p:v_oru:v-u
   уживаніших adj:compr:p:v_mis:v-u
-узувавшись advp:rev:imperf:v-u
-узуватися verb:rev:imperf:inf:v-u
-  узуватись verb:rev:imperf:inf:v-u
-  узувайсь verb:rev:imperf:impr:s:2:v-u
-  узувайся verb:rev:imperf:impr:s:2:v-u
-  узуваймось verb:rev:imperf:impr:p:1:v-u
-  узуваймося verb:rev:imperf:impr:p:1:v-u
-  узувайтесь verb:rev:imperf:impr:p:2:v-u
-  узувайтеся verb:rev:imperf:impr:p:2:v-u
-  узуваюсь verb:rev:imperf:pres:s:1:v-u
-  узуваюся verb:rev:imperf:pres:s:1:v-u
-  узуваєшся verb:rev:imperf:pres:s:2:v-u
-  узувається verb:rev:imperf:pres:s:3:v-u
-  узуваємось verb:rev:imperf:pres:p:1:v-u
-  узуваємося verb:rev:imperf:pres:p:1:v-u
-  узуваємся verb:rev:imperf:pres:p:1:v-u
-  узуваєтесь verb:rev:imperf:pres:p:2:v-u
-  узуваєтеся verb:rev:imperf:pres:p:2:v-u
-  узуваються verb:rev:imperf:pres:p:3:v-u
-  узуватимусь verb:rev:imperf:futr:s:1:v-u
-  узуватимуся verb:rev:imperf:futr:s:1:v-u
-  узуватимешся verb:rev:imperf:futr:s:2:v-u
-  узуватиметься verb:rev:imperf:futr:s:3:v-u
-  узуватимемось verb:rev:imperf:futr:p:1:v-u
-  узуватимемося verb:rev:imperf:futr:p:1:v-u
-  узуватимемся verb:rev:imperf:futr:p:1:v-u
-  узуватиметесь verb:rev:imperf:futr:p:2:v-u
-  узуватиметеся verb:rev:imperf:futr:p:2:v-u
-  узуватимуться verb:rev:imperf:futr:p:3:v-u
-  узувавсь verb:rev:imperf:past:m:v-u
-  узувався verb:rev:imperf:past:m:v-u
-  узувалась verb:rev:imperf:past:f:v-u
-  узувалася verb:rev:imperf:past:f:v-u
-  узувалось verb:rev:imperf:past:n:v-u
-  узувалося verb:rev:imperf:past:n:v-u
-  узувались verb:rev:imperf:past:p:v-u
-  узувалися verb:rev:imperf:past:p:v-u
-узуваючись advp:rev:imperf:v-u
-узувши advp:perf:v-u
-узувшись advp:rev:perf:v-u
-узути verb:perf:inf:v-u
-  узуй verb:perf:impr:s:2:v-u
-  узуймо verb:perf:impr:p:1:v-u
-  узуйте verb:perf:impr:p:2:v-u
-  узую verb:perf:futr:s:1:v-u
-  узуєш verb:perf:futr:s:2:v-u
-  узує verb:perf:futr:s:3:v-u
-  узуєм verb:perf:futr:p:1:v-u
-  узуємо verb:perf:futr:p:1:v-u
-  узуєте verb:perf:futr:p:2:v-u
-  узують verb:perf:futr:p:3:v-u
-  узув verb:perf:past:m:v-u
-  узула verb:perf:past:f:v-u
-  узуло verb:perf:past:n:v-u
-  узули verb:perf:past:p:v-u
-  узуто verb:perf:impers:v-u
-узутися verb:rev:perf:inf:v-u
-  узутись verb:rev:perf:inf:v-u
-  узуйсь verb:rev:perf:impr:s:2:v-u
-  узуйся verb:rev:perf:impr:s:2:v-u
-  узуймось verb:rev:perf:impr:p:1:v-u
-  узуймося verb:rev:perf:impr:p:1:v-u
-  узуйтесь verb:rev:perf:impr:p:2:v-u
-  узуйтеся verb:rev:perf:impr:p:2:v-u
-  узуюсь verb:rev:perf:futr:s:1:v-u
-  узуюся verb:rev:perf:futr:s:1:v-u
-  узуєшся verb:rev:perf:futr:s:2:v-u
-  узується verb:rev:perf:futr:s:3:v-u
-  узуємось verb:rev:perf:futr:p:1:v-u
-  узуємося verb:rev:perf:futr:p:1:v-u
-  узуємся verb:rev:perf:futr:p:1:v-u
-  узуєтесь verb:rev:perf:futr:p:2:v-u
-  узуєтеся verb:rev:perf:futr:p:2:v-u
-  узуються verb:rev:perf:futr:p:3:v-u
-  узувсь verb:rev:perf:past:m:v-u
-  узувся verb:rev:perf:past:m:v-u
-  узулась verb:rev:perf:past:f:v-u
-  узулася verb:rev:perf:past:f:v-u
-  узулось verb:rev:perf:past:n:v-u
-  узулося verb:rev:perf:past:n:v-u
-  узулись verb:rev:perf:past:p:v-u
-  узулися verb:rev:perf:past:p:v-u
-усеношна noun:inanim:f:v_naz:v-u
-  усеношної noun:inanim:f:v_rod:v-u
-  усеношній noun:inanim:f:v_dav:v-u
-  усеношну noun:inanim:f:v_zna:v-u
-  усеношною noun:inanim:f:v_oru:v-u
-  усеношній noun:inanim:f:v_mis:v-u
-  усеношні noun:inanim:p:v_naz:v-u
-  усеношних noun:inanim:p:v_rod:v-u
-  усеношним noun:inanim:p:v_dav:v-u
-  усеношні noun:inanim:p:v_zna:v-u
-  усеношними noun:inanim:p:v_oru:v-u
-  усеношних noun:inanim:p:v_mis:v-u
 усюди noun:inanim:p:v_naz:ns
   усюд noun:inanim:p:v_rod:ns
   усюдів noun:inanim:p:v_rod:ns

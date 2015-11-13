@@ -269,7 +269,7 @@ def indent_lines(lines):
 
 
 def print_stats(cnt, cnt_std, pos_stat, sub_pos_stat, letter_stat):
-    with open("dict_stats.txt", "w") as stat_f:
+    with open("dict_stats.txt", "w", encoding="utf-8") as stat_f:
         print("Всього лем:", cnt, file=sys.stderr)
         print("Всього лем:", cnt, file=stat_f)
         print("  словникових лем (без advp, з compr/super)", cnt_std, file=stat_f)

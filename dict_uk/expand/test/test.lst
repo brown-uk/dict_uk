@@ -43,7 +43,7 @@
 важкопоранений /adj.< g=mfp ^noun
 військовий /adj.< ^noun g=mp
 вихідний /adj ^noun g=mp
-всеношна /adj.v-u ^noun g=fp
+всеношна /adj ^noun g=fp :v-u
 
 
 # Іменники
@@ -142,8 +142,8 @@
 
 
 # Невідмінювані
-# TODO: забрати /v-u (його не буде)
-вже /v-u adv
+вже adv:v-u
+уже adv:v-u
 жаско adv
 
 весь весь adj:m:v_naz/v_zna:&pron:dem
@@ -187,12 +187,12 @@
 засвітати /v2.cf p=3 :imperf # TODO: advp?? засвітавши, засвітаючи
 засвітати /v2 p=3 :perf
 вечоріти /v5.cf :imperf
-взуватися /vr2.cf.advp.v-u :imperf
-взути /v2.impers2.v-u :perf
-взутися /vr2.v-u :perf
+взуватися /vr2.cf.advp :imperf:v-u
+взути /v2.impers2 :perf:v-u
+взутися /vr2 :perf:v-u
 задихатися /vr1.vr2 :perf
 бентежити /v1.imprt0
-вжалити /v1.v-u :perf
+вжалити /v1 :perf:v-u
 вести /v4
 
 вимести /v1.impers1 :perf
