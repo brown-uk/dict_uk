@@ -194,18 +194,7 @@ def derived_plural(key, prev_key):
     return "name" in key and ":p:" in key and \
         re.search(":[mf]:", prev_key) and re.sub(":[mf]:", ":p:", prev_key) == key
 
-def sub_stat(pos, sub_pos, line, sub_pos_stat):
-    if ":" + sub_pos in line:
-        if not pos in sub_pos_stat:
-            sub_pos_stat[pos] = collections.defaultdict(int)
-        sub_pos_stat[pos][sub_pos] += 1
-
 def indent_lines(lines):
-    pos_stat = collections.defaultdict(int)
-    sub_pos_stat = collections.defaultdict(list)
-    letter_stat = collections.defaultdict(int)
-    cnt = 0
-    cnt_std = 0
     out_lines = []
     prev_key = ""
     
@@ -232,13 +221,6 @@ def indent_lines(lines):
         if key != prev_key and not derived_plural(key, prev_key):
             prev_key = key
             line = word + " " + tags
-            
-            cnt += 1
-            if not "advp" in line:
-                cnt_std += 1
-            
-            sub_stat("adj", "super", line, sub_pos_stat)
-            sub_stat("adj", "compr", line, sub_pos_stat)
 #            dbg("new key", key)
         else:
             line = DERIV_PADDING + word + " " + tags
@@ -252,27 +234,57 @@ def indent_lines(lines):
             
         out_lines.append(line)
         
-        if line[0] != " ":
-            pos_tag = tags.split(":", 1)[0]
-            pos_stat[pos_tag] += 1
-            letter_stat[word[0].lower()] += 1
-
-            for sub_pos in ["inanim", "anim", "lname", "fname", "patr", "nv", "perf", "imperf", "compb"]:
-                sub_stat(pos_tag, sub_pos, line, sub_pos_stat)
-            
-    
-    if "-stats" in sys.argv:
-        print_stats(cnt, cnt_std, pos_stat, sub_pos_stat, letter_stat)
-        
 
     return out_lines
 
 
-def print_stats(cnt, cnt_std, pos_stat, sub_pos_stat, letter_stat):
+def sub_stat(pos, sub_pos, line, sub_pos_stat):
+    if ":" + sub_pos in line:
+        if not pos in sub_pos_stat:
+            sub_pos_stat[pos] = collections.defaultdict(int)
+        sub_pos_stat[pos][sub_pos] += 1
+
+def print_stats(lines, double_form_cnt):
+    pos_stat = collections.defaultdict(int)
+    sub_pos_stat = collections.defaultdict(list)
+    letter_stat = collections.defaultdict(int)
+    cnt = 0
+    cnt_std = 0
+    proper_noun_cnt = 0
+    
+    for line in lines:
+        if line[0] == " ":
+            continue
+
+        cnt += 1
+        if not "advp" in line:
+            cnt_std += 1
+
+        if line[0].isupper() and not line[1].isupper():
+            proper_noun_cnt += 1
+
+        try:
+            word, tags = line.split()
+        except:
+            print("Choke on", line, file=sys.stderr)
+            raise
+        
+        pos_tag = tags.split(":", 1)[0]
+        pos_stat[pos_tag] += 1
+        letter_stat[word[0].lower()] += 1
+        
+        if tags.startswith("adj"):
+            sub_stat("adj", "super", line, sub_pos_stat)
+            sub_stat("adj", "compr", line, sub_pos_stat)
+
+        for sub_pos in ["inanim", "anim", "lname", "fname", "patr", "nv", "perf", "imperf", "compb"]:
+            sub_stat(pos_tag, sub_pos, line, sub_pos_stat)
+
+    
     with open("dict_stats.txt", "w", encoding="utf-8") as stat_f:
         print("Всього лем:", cnt, file=sys.stderr)
         print("Всього лем:", cnt, file=stat_f)
-        print("  словникових лем (без advp, з compr/super)", cnt_std, file=stat_f)
+        print("  словникових лем (без advp, без омонімів imperf/perf та adjp/adj, з compr/super)", cnt_std - double_form_cnt, file=stat_f)
 
         print("\nЧастоти за тегами:", file=stat_f)
     
@@ -284,7 +296,9 @@ def print_stats(cnt, cnt_std, pos_stat, sub_pos_stat, letter_stat):
             for sub_pos in sorted(current_sub_pos_stat):
                 print("    ", sub_pos, current_sub_pos_stat[sub_pos], file=stat_f)
 
-        print("\nЧастоти за літерами:", cnt, file=stat_f)
+        print("\nВласних назв (без абревіатур):", proper_noun_cnt, file=stat_f)
+
+        print("\nЧастоти літер на початку слова", file=stat_f)
 
         keys = sorted(letter_stat, key=letter_stat.get, reverse=True)
         for k in keys:

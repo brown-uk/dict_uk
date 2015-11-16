@@ -891,6 +891,7 @@ def process_input(in_lines, flush_stdout_):
 
     multiline = ""
     all_lines = []
+    double_form_cnt = 0
     
     for line in in_lines:
         if "#" in line:
@@ -908,6 +909,10 @@ def process_input(in_lines, flush_stdout_):
             if multiline:
                 line = multiline + line
             multiline = ""
+        
+        if ("/v" in line and ":imperf:perf" in line) \
+                or ("/adjp" in line and "&adj" in line):
+            double_form_cnt += 1
         
         try:
             tag_lines = expand_line(line, flush_stdout)
@@ -963,6 +968,10 @@ def process_input(in_lines, flush_stdout_):
         
             sorted_lines = util.indent_lines(sorted_lines)
     
+        
+            if "-stats" in sys.argv:
+                util.print_stats(sorted_lines, double_form_cnt)
+
         if "--log-usage" in sys.argv:
             log_usage()
           
@@ -971,7 +980,8 @@ def process_input(in_lines, flush_stdout_):
 
 def log_usage():
     with open("usage.txt", "w", encoding="utf-8") as f:
-        for affixFlag, affixGroups in affix.affixMap.items():
+        for affixFlag in sorted(affix.affixMap.keys()):
+            affixGroups = affix.affixMap[affixFlag]
             print("Flag", affixFlag, "has", len(affixGroups), "groups", file=f)
             for match, affixGroup in affixGroups.items():
                 print("\t", match, ":", affixGroup.counter, "\t\t", len(affixGroup.affixes), "patterns", file=f)

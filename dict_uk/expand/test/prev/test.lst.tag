@@ -171,7 +171,7 @@
   багатію noun:anim:m:v_mis
   багатію noun:anim:m:v_kly
 бар noun:inanim:m:v_naz:xp1
-  бару noun:inanim:m:v_rod:xp1
+  бара noun:inanim:m:v_rod:xp1
   барові noun:inanim:m:v_dav:xp1
   бару noun:inanim:m:v_dav:xp1
   бар noun:inanim:m:v_zna:xp1
@@ -186,7 +186,7 @@
   барами noun:inanim:p:v_oru:xp1
   барах noun:inanim:p:v_mis:xp1
 бар noun:inanim:m:v_naz:xp2
-  бара noun:inanim:m:v_rod:xp2
+  бару noun:inanim:m:v_rod:xp2
   барові noun:inanim:m:v_dav:xp2
   бару noun:inanim:m:v_dav:xp2
   бар noun:inanim:m:v_zna:xp2

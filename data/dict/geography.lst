@@ -35,6 +35,7 @@
 агарянин /n20.a.pyn.ke.<
 агарянка /n10.p2.ko.<
 агарянський /adj
+Ага /n10    # річка
 агулка /n10.p2.ko.<
 агульський /adj
 Агул /n20
@@ -67,9 +68,9 @@
 азорський /adj
 Айдахо noun:m:nv:np
 Айдін /n20.a
-аймара noun:f:nv:anim:xp1
-аймара noun:f:nv:np:xp2
-аймара noun:m:nv:anim:xp1
+аймара noun:f:nv:anim:xp1    # представниця
+аймара noun:f:nv:np:xp2    # мова
+аймара noun:m:nv:anim:xp1    # представник
 айни /np2
 айнський /adj
 Айова /n10
