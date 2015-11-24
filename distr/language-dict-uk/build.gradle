@@ -88,7 +88,7 @@ task createSynthDict(type: JavaExec, dependsOn: prepareDict) {
 
 
 task createSpellDict(type: Exec) {
-    def srcDict="${inputDir}/words.txt"
+    def srcDict="${inputDir}/words_spell.txt"
     def spellOutDir="${outputDir}/hunspell"
     def outFile="${spellOutDir}/uk_UA.dict"
     def tmpFile="${tmpDir}/all.words.tmp"
@@ -107,7 +107,7 @@ task createSpellDict(type: Exec) {
 
     def cmd = "cat ${srcDict} | grep -v '\\.\$' | iconv -f ${srcEncoding} -t ${dstEncoding} | LC_ALL=POSIX sort -u > ${tmpFile} &&"
     cmd += " java -cp ${classpath} org.languagetool.tools.SpellDictionaryBuilder"
-    cmd += " -i ${tmpFile} -info src/main/resources/" + packageDir + "/hunspell/uk_UA.info -freq ${freqFile} -o ${outFile}"
+    cmd += " -i ${tmpFile} -info ${resourceDir}/hunspell/uk_UA.info -freq ${freqFile} -o ${outFile}"
 
     commandLine 'sh', '-c', "${cmd}"
 }
