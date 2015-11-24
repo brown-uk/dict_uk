@@ -33,6 +33,23 @@ dependencies {
 }
 
 
+task createTagList(type: Exec) {
+    def srcDict="${inputDir}/dict_rules_lt.txt"
+    def outFile="${outputDir}/ukrainian_tags.txt"
+
+    inputs.file srcDict
+    outputs.file outFile
+
+    workingDir "$projectDir"
+
+    doFirst {
+        new File(outputDir).mkdirs()
+    }
+
+    def cmd = "cat ${srcDict} | awk '{ print \$3 }' | sort -u > ${outFile}"
+
+    commandLine "bash", "-c", "${cmd}"
+}
 
 task prepareDict(type: Exec) {
     def srcDict="${inputDir}/dict_rules_lt.txt"
@@ -44,12 +61,10 @@ task prepareDict(type: Exec) {
     workingDir "$projectDir"
 
     doFirst {
-        new File(outputDir).mkdirs()
         new File(tmpDir).mkdirs()
     }
 
     def cmd = "cat ${srcDict} | iconv -f ${srcEncoding} -t ${dstEncoding} | tr ' ' '\\t' | LC_ALL=POSIX sort -u > ${outFile}"
-    cmd += " ; cat ${srcDict} | awk '{ print \$3 }' | sort | uniq > ${outputDir}/ukrainian_tags.txt"
 
     commandLine "bash", "-c", "${cmd}"
 }
@@ -57,10 +72,14 @@ task prepareDict(type: Exec) {
 task createPOSDict(type: JavaExec, dependsOn: prepareDict) {
     def outputDict="${outputDir}/ukrainian.dict"
 
-    inputs.file tasks.prepareDict.outputs.files
+    inputs.file tasks.prepareDict.outputs.files[0]
     outputs.file outputDict
 
     workingDir "$projectDir"
+
+    doFirst {
+        new File(outputDir).mkdirs()
+    }
 
     classpath = files(configurations.provided.files)
     main = 'org.languagetool.tools.POSDictionaryBuilder'
@@ -73,10 +92,14 @@ task createPOSDict(type: JavaExec, dependsOn: prepareDict) {
 task createSynthDict(type: JavaExec, dependsOn: prepareDict) {
     def outputDict="${outputDir}/ukrainian_synth.dict"
 
-    inputs.file tasks.prepareDict.outputs.files
+    inputs.file tasks.prepareDict.outputs.files[0]
     outputs.file outputDict
 
     workingDir "$projectDir"
+
+    doFirst {
+        new File(outputDir).mkdirs()
+    }
 
     classpath = files(configurations.provided.files)
     main = 'org.languagetool.tools.SynthDictionaryBuilder'
@@ -86,16 +109,33 @@ task createSynthDict(type: JavaExec, dependsOn: prepareDict) {
     args "-o", "${outputDict}"
 }
 
-
-task createSpellDict(type: Exec) {
+task prepareSpellDict(type: Exec) {
     def srcDict="${inputDir}/words_spell.txt"
-    def spellOutDir="${outputDir}/hunspell"
-    def outFile="${spellOutDir}/uk_UA.dict"
     def tmpFile="${tmpDir}/all.words.tmp"
+
+    inputs.file srcDict
+    outputs.file tmpFile
+
+    workingDir "$projectDir"
+
+    doFirst {
+        new File(tmpDir).mkdirs()
+    }
+
+    def cmd = "cat ${srcDict} | iconv -f ${srcEncoding} -t ${dstEncoding} | LC_ALL=POSIX sort -u > ${tmpFile}"
+
+    commandLine "bash", "-c", "${cmd}"
+}
+
+
+task createSpellDict(type: JavaExec, dependsOn: prepareSpellDict) {
+    def srcDict=tasks.prepareSpellDict.outputs.files[0]
+    def spellOutDir="${outputDir}/hunspell"
+    def outputDict="${spellOutDir}/uk_UA.dict"
     def freqFile="src/main/data/uk_wordlist.xml"
 
     inputs.file srcDict
-    outputs.file outFile
+    outputs.file outputDict
 
     workingDir "$projectDir"
 
@@ -103,14 +143,18 @@ task createSpellDict(type: Exec) {
         new File(spellOutDir).mkdirs()
     }
 
-    def classpath = configurations.provided.files.join(":")
+    classpath = files(configurations.provided.files)
+    main = 'org.languagetool.tools.SpellDictionaryBuilder'
 
-    def cmd = "cat ${srcDict} | grep -v '\\.\$' | iconv -f ${srcEncoding} -t ${dstEncoding} | LC_ALL=POSIX sort -u > ${tmpFile} &&"
-    cmd += " java -cp ${classpath} org.languagetool.tools.SpellDictionaryBuilder"
-    cmd += " -i ${tmpFile} -info ${resourceDir}/hunspell/uk_UA.info -freq ${freqFile} -o ${outFile}"
-
-    commandLine 'sh', '-c', "${cmd}"
+    args "-i", "${srcDict}"
+    args "-info", "${resourceDir}/hunspell/uk_UA.info"
+    args "-o", "${outputDict}"
+    args "-freq", "${freqFile}"
 }
+
+
+processResources.dependsOn(createPOSDict, createSynthDict, createSpellDict, createTagList)
+
 
 jar {
     manifest {
@@ -118,8 +162,6 @@ jar {
                    'Implementation-Version': version
     }
 }
-
-processResources.dependsOn(createPOSDict, createSynthDict, createSpellDict)
 
 publishing {
     repositories {
