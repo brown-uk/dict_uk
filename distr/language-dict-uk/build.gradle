@@ -2,14 +2,18 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
-version = '0.9.1-SNAPSHOT'
+version = '3.2-SNAPSHOT'
 group = 'org.languagetool'
 
+String langCode="uk"
+String packageDir="org/languagetool/resource/" + langCode
+String resourceDir="src/main/resources/" + packageDir
+String outputDir="build/resources/main/" + packageDir
 
-String outputDir="build/resources/main/org/languagetool/resource/uk"
 String inputDir="../../out/prev"
 String dstEncoding="cp1251"
 String srcEncoding="utf-8"
+
 String tmpDir="build/tmp"
 
 
@@ -26,7 +30,6 @@ configurations{
 
 dependencies {
     provided 'org.languagetool:languagetool-tools:3.2-SNAPSHOT'
-//    provided 'org.languagetool:language-uk:3.2-SNAPSHOT'
 }
 
 
@@ -40,10 +43,10 @@ task prepareDict(type: Exec) {
 
     workingDir "$projectDir"
 
-    new File(outputDir).mkdirs()
-    new File(tmpDir).mkdirs()
-
-    println "Preparing data..."
+    doFirst {
+        new File(outputDir).mkdirs()
+        new File(tmpDir).mkdirs()
+    }
 
     def cmd = "cat ${srcDict} | iconv -f ${srcEncoding} -t ${dstEncoding} | tr ' ' '\\t' | LC_ALL=POSIX sort -u > ${outFile}"
     cmd += " ; cat ${srcDict} | awk '{ print \$3 }' | sort | uniq > ${outputDir}/ukrainian_tags.txt"
@@ -51,13 +54,7 @@ task prepareDict(type: Exec) {
     commandLine "bash", "-c", "${cmd}"
 }
 
-task createPOSDict(type: Exec, dependsOn: prepareDict) {
-    def HOME = System.properties['user.home']
-    def MFL_JAR_DIR="${HOME}/work/ukr/spelling/grammar/morfologik-distribution-1.9.0"
-    def MFL_JAR="morfologik-tools-*.jar"
-    def MFL_CMD="java -jar ${MFL_JAR_DIR}/${MFL_JAR}"
-    def FSA_FLAGS="-f cfsa2"
-
+task createPOSDict(type: JavaExec, dependsOn: prepareDict) {
     def outputDict="${outputDir}/ukrainian.dict"
 
     inputs.file tasks.prepareDict.outputs.files
@@ -65,19 +62,15 @@ task createPOSDict(type: Exec, dependsOn: prepareDict) {
 
     workingDir "$projectDir"
 
-    def cmd = "${MFL_CMD} tab2morph -i ${inputs.files[0]} |"
-    cmd += " ${MFL_CMD} fsa_build ${FSA_FLAGS} -o ${outputDict} 2>&1 | iconv -f ${dstEncoding} > fsa_build.out"
+    classpath = files(configurations.provided.files)
+    main = 'org.languagetool.tools.POSDictionaryBuilder'
 
-    commandLine "bash", "-c", "${cmd}"
+    args "-i", "${tmpDir}/all.tagged.tmp"
+    args "-info", "${resourceDir}/ukrainian.info"
+    args "-o", "${outputDict}"
 }
 
-task createSynthDict(type: Exec) {
-    def HOME = System.properties['user.home']
-    def MFL_JAR_DIR="${HOME}/work/ukr/spelling/grammar/morfologik-distribution-1.9.0"
-    def MFL_JAR="morfologik-tools-*.jar"
-    def MFL_CMD="java -jar ${MFL_JAR_DIR}/${MFL_JAR}"
-    def FSA_FLAGS="-f cfsa2"
-
+task createSynthDict(type: JavaExec, dependsOn: prepareDict) {
     def outputDict="${outputDir}/ukrainian_synth.dict"
 
     inputs.file tasks.prepareDict.outputs.files
@@ -85,33 +78,36 @@ task createSynthDict(type: Exec) {
 
     workingDir "$projectDir"
 
-    def cmd = "cat ${tmpDir}/all.tagged.tmp | " + 'awk -F "\t" \'{print $2"|"$3"\t"$1"\t"}\' |'
-    cmd += " ${MFL_CMD} tab2morph |"
-    cmd += " ${MFL_CMD} fsa_build ${FSA_FLAGS} -o ${outputDict} 2>&1 | iconv -f ${dstEncoding} > fsa_build_sync.out "
+    classpath = files(configurations.provided.files)
+    main = 'org.languagetool.tools.SynthDictionaryBuilder'
 
-    commandLine "bash", "-c", "${cmd}"
+    args "-i", "${tmpDir}/all.tagged.tmp"
+    args "-info", "src/main/resources/" + packageDir + "/ukrainian_synth.info"
+    args "-o", "${outputDict}"
 }
+
 
 task createSpellDict(type: Exec) {
     def srcDict="${inputDir}/words.txt"
     def spellOutDir="${outputDir}/hunspell"
     def outFile="${spellOutDir}/uk_UA.dict"
     def tmpFile="${tmpDir}/all.words.tmp"
+    def freqFile="src/main/data/uk_wordlist.xml"
 
     inputs.file srcDict
     outputs.file outFile
 
     workingDir "$projectDir"
 
-    new File(spellOutDir).mkdirs()
+    doFirst {
+        new File(spellOutDir).mkdirs()
+    }
 
     def classpath = configurations.provided.files.join(":")
 
     def cmd = "cat ${srcDict} | grep -v '\\.\$' | iconv -f ${srcEncoding} -t ${dstEncoding} | LC_ALL=POSIX sort -u > ${tmpFile} &&"
-    cmd += " java -cp ${classpath} org.languagetool.dev.SpellDictionaryBuilder"
-    cmd += " uk-UA ${tmpFile} src/main/resources/org/languagetool/resource/uk/hunspell/uk_UA.info src/main/data/uk_wordlist.xml -o ${outFile}"
-
-//    println cmd
+    cmd += " java -cp ${classpath} org.languagetool.tools.SpellDictionaryBuilder"
+    cmd += " -i ${tmpFile} -info src/main/resources/" + packageDir + "/hunspell/uk_UA.info -freq ${freqFile} -o ${outFile}"
 
     commandLine 'sh', '-c', "${cmd}"
 }
