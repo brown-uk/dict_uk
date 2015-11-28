@@ -6,15 +6,17 @@ version = '3.2-SNAPSHOT'
 group = 'org.languagetool'
 
 String langCode="uk"
+
 String packageDir="org/languagetool/resource/" + langCode
-String resourceDir="src/main/resources/" + packageDir
-String outputDir="build/resources/main/" + packageDir
+String resourceDir=sourceSets.main.resources.srcDirs[0].toString() + "/" + packageDir
+String outputDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageDir
+String tmpDir="build/tmp"
 
 String inputDir="../../out/prev"
+
 String dstEncoding="cp1251"
 String srcEncoding="utf-8"
 
-String tmpDir="build/tmp"
 
 
 repositories {
@@ -33,7 +35,7 @@ dependencies {
 }
 
 
-task createTagList(type: Exec) {
+task createTagList(type: Exec, dependsOn: processResources) {
     def srcDict="${inputDir}/dict_rules_lt.txt"
     def outFile="${outputDir}/ukrainian_tags.txt"
 
@@ -42,16 +44,12 @@ task createTagList(type: Exec) {
 
     workingDir "$projectDir"
 
-    doFirst {
-        new File(outputDir).mkdirs()
-    }
-
     def cmd = "cat ${srcDict} | awk '{ print \$3 }' | sort -u > ${outFile}"
 
-    commandLine "bash", "-c", "${cmd}"
+    commandLine "sh", "-c", "${cmd}"
 }
 
-task prepareDict(type: Exec) {
+task prepareDict(type: Exec, dependsOn: processResources) {
     def srcDict="${inputDir}/dict_rules_lt.txt"
     def outFile="${tmpDir}/all.tagged.tmp"
 
@@ -66,20 +64,16 @@ task prepareDict(type: Exec) {
 
     def cmd = "cat ${srcDict} | iconv -f ${srcEncoding} -t ${dstEncoding} | tr ' ' '\\t' | LC_ALL=POSIX sort -u > ${outFile}"
 
-    commandLine "bash", "-c", "${cmd}"
+    commandLine "sh", "-c", "${cmd}"
 }
 
 task createPOSDict(type: JavaExec, dependsOn: prepareDict) {
     def outputDict="${outputDir}/ukrainian.dict"
 
-    inputs.file tasks.prepareDict.outputs.files[0]
+    inputs.file tasks.prepareDict.outputs.files
     outputs.file outputDict
 
     workingDir "$projectDir"
-
-    doFirst {
-        new File(outputDir).mkdirs()
-    }
 
     classpath = files(configurations.provided.files)
     main = 'org.languagetool.tools.POSDictionaryBuilder'
@@ -92,29 +86,26 @@ task createPOSDict(type: JavaExec, dependsOn: prepareDict) {
 task createSynthDict(type: JavaExec, dependsOn: prepareDict) {
     def outputDict="${outputDir}/ukrainian_synth.dict"
 
-    inputs.file tasks.prepareDict.outputs.files[0]
+    inputs.file tasks.prepareDict.outputs.files
     outputs.file outputDict
 
     workingDir "$projectDir"
-
-    doFirst {
-        new File(outputDir).mkdirs()
-    }
 
     classpath = files(configurations.provided.files)
     main = 'org.languagetool.tools.SynthDictionaryBuilder'
 
     args "-i", "${tmpDir}/all.tagged.tmp"
-    args "-info", "src/main/resources/" + packageDir + "/ukrainian_synth.info"
+    args "-info", "${resourceDir}/ukrainian_synth.info"
     args "-o", "${outputDict}"
 }
 
-task prepareSpellDict(type: Exec) {
+
+task prepareSpellWords(type: Exec, dependsOn: processResources) {
     def srcDict="${inputDir}/words_spell.txt"
-    def tmpFile="${tmpDir}/all.words.tmp"
+    def outFile="${tmpDir}/all.words.tmp"
 
     inputs.file srcDict
-    outputs.file tmpFile
+    outputs.file outFile
 
     workingDir "$projectDir"
 
@@ -122,38 +113,29 @@ task prepareSpellDict(type: Exec) {
         new File(tmpDir).mkdirs()
     }
 
-    def cmd = "cat ${srcDict} | iconv -f ${srcEncoding} -t ${dstEncoding} | LC_ALL=POSIX sort -u > ${tmpFile}"
+    def cmd = "cat ${srcDict} | iconv -f ${srcEncoding} -t ${dstEncoding} | LC_ALL=POSIX sort -u > ${outFile}"
 
-    commandLine "bash", "-c", "${cmd}"
+    commandLine "sh", "-c", "${cmd}"
 }
 
-
-task createSpellDict(type: JavaExec, dependsOn: prepareSpellDict) {
-    def srcDict=tasks.prepareSpellDict.outputs.files[0]
+task createSpellDict(type: JavaExec, dependsOn: prepareSpellWords) {
     def spellOutDir="${outputDir}/hunspell"
-    def outputDict="${spellOutDir}/uk_UA.dict"
+    def outFile="${spellOutDir}/uk_UA.dict"
     def freqFile="src/main/data/uk_wordlist.xml"
 
-    inputs.file srcDict
-    outputs.file outputDict
+    inputs.file tasks.prepareSpellWords.outputs.files
+    outputs.file outFile
 
     workingDir "$projectDir"
-
-    doFirst {
-        new File(spellOutDir).mkdirs()
-    }
 
     classpath = files(configurations.provided.files)
     main = 'org.languagetool.tools.SpellDictionaryBuilder'
 
-    args "-i", "${srcDict}"
+    args "-i", "${tmpDir}/all.words.tmp"
     args "-info", "${resourceDir}/hunspell/uk_UA.info"
-    args "-o", "${outputDict}"
+    args "-o", "${outFile}"
     args "-freq", "${freqFile}"
 }
-
-
-processResources.dependsOn(createPOSDict, createSynthDict, createSpellDict, createTagList)
 
 
 jar {
@@ -162,6 +144,10 @@ jar {
                    'Implementation-Version': version
     }
 }
+
+classes.dependsOn(createPOSDict, createSynthDict, createTagList, createSpellDict)
+compileJava.enabled = false
+
 
 publishing {
     repositories {
