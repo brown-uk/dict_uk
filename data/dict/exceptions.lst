@@ -296,6 +296,7 @@
 галай-балай галай-балай noun:m:v_naz/v_zna
 усюди /np2.np1
 
+ван ван part:pers
 дель дель part:pers
 фон фон part:pers
 бен бен part:pers
@@ -538,11 +539,19 @@
 
 # чергування с->з появою і
 
+# обмежені форми
+вивітрити вивітрити verb:inf:perf:xp2    # зруйнувати  про дію вітру
+вивітрить вивітрити verb:futr:s:3:perf:xp2
+вивітрило вивітрити verb:past:n:perf:xp2
+
+
+варт варт predic
 
 # короткі прикметники
 безвинен безвинний adj:m:v_naz/v_zna:short
 благословен благословенний adj:m:v_naz/v_zna:short
 #блажен блаженний adj:m:v_naz/v_zna:short
+варт вартий adj:m:v_naz/v_zna:short
 винен винний adj:m:v_naz/v_zna:short
 #вістен вістний adj:m:v_naz/v_zna:short
 вістен вісний adj:m:v_naz/v_zna:short:rare

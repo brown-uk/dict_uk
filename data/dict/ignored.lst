@@ -1,5 +1,5 @@
 алегретто adv
-грунтований /adj ^adjp:pasv:past
+грунтований /adj ^adjp:pasv:imperf    # :past
 грунтовий /adj
 грунтовний /adj.adv \
  +cs=грунтовніший
@@ -13,9 +13,9 @@
 згвалтування /n2n.p1
 згвалтувати /v1.impers0 :perf
 локоть /n22.p
-негрунтований /adj ^adjp:pasv:past
-необгрунтований /adj.adv ^adjp:pasv:past
-обгрунтований /adj.adv ^adjp:pasv:past
+негрунтований /adj ^adjp:pasv:imperf    # :past
+необгрунтований /adj.adv ^adjp:pasv:perf    # :past
+обгрунтований /adj.adv ^adjp:pasv:perf    # :past
 обгрунтованість /n30
 обгрунтовувати /v1.cf.advp :imperf
 обгрунтовуватися /vr1.cf.advp :imperf
