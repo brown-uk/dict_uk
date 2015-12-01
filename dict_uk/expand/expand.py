@@ -857,7 +857,7 @@ def print_word_list(sorted_lines):
         lemmas.add(lemma)
         tags.add(tag)
 
-        if not ":bad" in tag and not ":alt" in tag:
+        if not ":bad" in tag and not ":alt" in tag and not word.endswith("."):
             spell_words.add(word)
 
 
