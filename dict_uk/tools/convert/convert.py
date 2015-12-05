@@ -259,7 +259,7 @@ def rep_n2n(word, flags, extra_flags):
     flags_str = ''.join(flags)
       
     if "i" in flags: 
-        if re.search('[вкнт]е$', word):
+        if re.search('[вдкнт]е$', word):
             out_flags.append("n2adj1")
         else:
             out_flags.append("n2n")
