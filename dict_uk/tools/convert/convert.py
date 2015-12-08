@@ -186,6 +186,9 @@ def rep_non10(word, flags):
         if "e" in flags:
             out_flags_2 = ["n20"]
             flags.remove("e")
+            if "f" in flags:
+                out_flags_2.append("p")
+                flags.remove("f")
         
     if "b" in flags: out_flags.append("p"); flags.remove('b')
     if "c" in flags: out_flags.append("a"); flags.remove('c')
