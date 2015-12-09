@@ -69,7 +69,6 @@ advp    дієприслівник
 
 prep    прийменник
     Вимагає відмінка:
-        rv_naz
         rv_rod
         rv_dav
         rv_zna

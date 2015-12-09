@@ -359,7 +359,7 @@
 віщось щось noun:n:v_zna:inanim:&pron:ind
 віщо що noun:n:v_zna:inanim:&pron:int:rel
 власне insert|part
-властиво part|predic
+властиво part|insert|predic
 внаслідок внаслідок prep:rv_rod:v-u
 во во prep:rv_zna:rv_mis:rare
 вона вона noun:f:v_naz:&pron:pers:3
@@ -434,6 +434,7 @@
 дванадцятеро дванадцятеро numr:p:v_naz/v_zna
 два-три numr:p:v_naz/v_zna
 дві два numr:f:v_naz/v_zna
+двійко двійко numr:p:nv:coll
 двісті двісті numr:p:v_naz
 дві-три numr:p:v_naz/v_zna
 двоє двоє numr:p:v_naz/v_zna
@@ -1047,6 +1048,7 @@
 п'ятисот п'ятсот numr:p:v_rod
 п'ятистам п'ятсот numr:p:v_dav
 п'ятистах п'ятсот numr:p:v_mis
+п'ятірко п'ятірко numr:p:nv:coll
 п'ятнадцятеро п'ятнадцятеро numr:p:v_naz/v_zna
 п'ятсот п'ятсот numr:p:v_naz/v_zna
 п'ятьмастами п'ятсот numr:p:v_oru

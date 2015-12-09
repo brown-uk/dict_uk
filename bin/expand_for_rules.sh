@@ -8,7 +8,7 @@ BASE=$(dirname $0)/..
 CODE_BASE=$BASE/dict_uk
 OUT_DIR=$BASE/out
 
-FLAGS="-time"
+FLAGS="-time -wordlist"
 #FLAGS="-mfl"
 
 cd $OUT_DIR

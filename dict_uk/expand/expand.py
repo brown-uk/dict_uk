@@ -4,6 +4,7 @@
 # This script loads hunspell-like affixes and allows to perform some actions
 
 import sys
+import os
 import re
 import logging
 import locale
@@ -883,6 +884,30 @@ def print_word_list(sorted_lines):
 
 
 
+WORD_RE=re.compile("[А-ЯІЇЄҐ]{2,}|[а-яіїєґА-ЯІЇЄҐ][а-яіїєґ']*(-[а-яіїєґА-ЯІЇЄҐ][а-яіїєґ']+)*")
+ALLOWED_TAGS=[]
+
+__location__ = os.path.realpath(
+    os.path.join(os.getcwd(), os.path.dirname(__file__)))
+
+with open(__location__ + '/tagset.txt') as tagsetfile:
+    ALLOWED_TAGS = [ln.strip() for ln in tagsetfile.readlines()]
+    print("Read {0} allowed tags".format(len(ALLOWED_TAGS)), file=sys.stderr)
+
+def check_lines(lines):
+    for line in lines:
+        word, lemma, tags = line.split()
+    
+        if not WORD_RE.match(word) or not WORD_RE.match(lemma):
+            raise Exception("Invalid pattern in word or lemma: " + line)
+
+        taglist = tags.split(":")
+        for tag in taglist:
+            if not tag in ALLOWED_TAGS:
+                raise Exception("Invalid tag " + tag + ": " + line)
+
+
+
 def process_input(in_lines, flush_stdout_):
     time1 = time.time()
 
@@ -916,6 +941,7 @@ def process_input(in_lines, flush_stdout_):
         
         try:
             tag_lines = expand_line(line, flush_stdout)
+            check_lines(tag_lines)
         except:
             print("Exception in line: \"" + line + "\"", file=sys.stderr)
             raise
