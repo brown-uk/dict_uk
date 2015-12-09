@@ -138,6 +138,18 @@ task createSpellDict(type: JavaExec, dependsOn: prepareSpellWords) {
 }
 
 
+task copyDictFiles(type: Copy, dependsOn: classes) {
+    from outputDir
+    into "${languagetoolDictDestDir}"
+
+    includeEmptyDirs = false
+
+//    with dataContent
+}
+
+
+
+
 jar {
     manifest {
         attributes 'Implementation-Title': 'Ukrainian dictionary for LanguageTool',
