@@ -826,7 +826,7 @@ def expand_line(line, flush_stdout):
                             cs_lines = expand_subposition_adv(last_adv, sub_line, extra_flags)
                             out_lines.extend(cs_lines)
                             break
-                    print(".adv", last_adv, file=sys.stderr)
+#                    print(".adv", last_adv, file=sys.stderr)
 
                 idx += 1
         

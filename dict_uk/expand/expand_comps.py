@@ -88,7 +88,7 @@ def expand_composite_line(line):
             parts_all = [line]
         
         parts = line.split(" - ")
-        print(parts, file=sys.stderr)
+#        print(parts, file=sys.stderr)
         
         if not "/" in parts[1]:
             parts[1] += " noun:m:nv"

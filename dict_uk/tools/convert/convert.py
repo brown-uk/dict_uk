@@ -205,7 +205,14 @@ def rep_n20(word, flags):
     out_flags = []
     extra = []
       
-    if flags[0] == 'f': out_flags.append("np2"); flags.remove('f')
+    if flags[0] == 'f':
+        out_flags.append("np2")
+        flags.remove('f')
+        
+        if "s" in flags:
+            out_flags.append("np3")
+            flags.remove("s")
+        
     if "e" in flags: out_flags.append("n20"); flags.remove("e")
     if "g" in flags: out_flags.append("a"); flags.remove("g")
     if "f" in flags: out_flags.append("p"); flags.remove("f")
