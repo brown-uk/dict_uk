@@ -40,6 +40,8 @@ noun
 np
 ns
 numr
+&numr
+&^numr
 nv
 p
 part
