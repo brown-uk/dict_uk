@@ -70,6 +70,7 @@ slang
 subord
 super
 transl
+uncontr
 v_dav
 verb
 v_kly
