@@ -4,6 +4,8 @@ import sys
 import re
 import locale
 import collections
+import platform
+import functools
 
 from compar_forms import COMPAR_FORMS
 from compar_forms import COMPAR_SOFT_BASE
@@ -797,6 +799,41 @@ def convert_line(line, out_lines):
             out_lines.append(out_line + comment)
 
 
+def get_sort_key():
+    if platform.system() == "Darwin":  # see http://bugs.python.org/issue23195
+        return functools.cmp_to_key(mimic_strxfrm_cmp)
+    else:
+        return locale.strxfrm
+
+
+def mimic_strxfrm_cmp(a, b):
+    if a == b:
+        return 0
+    a_norm = re.sub('\W', '', a).lower()
+    b_norm = re.sub('\W', '', b).lower()
+    if a_norm == b_norm:
+        return mimic_strxfrm_sort_key(a) > mimic_strxfrm_sort_key(b) and 1 or -1
+    
+    return mimic_strxfrm_sort_key(a_norm) > mimic_strxfrm_sort_key(b_norm) and 1 or -1
+
+
+UK_ALPHABET_MAP = {key: value for value, key in enumerate(
+    "-'АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя")}
+
+
+def mimic_strxfrm_sort_key(word):
+    out = []
+    for c in word:
+        if c in UK_ALPHABET_MAP:
+            out.append(UK_ALPHABET_MAP[c])
+        elif re.match("[a-zA-Z0-9_]", c):
+            out.append(len(UK_ALPHABET_MAP) + ord(c))
+        else:
+            out.append(len(UK_ALPHABET_MAP) + ord(c) + ord("z"))
+            
+    return out
+
+
 #----------
 # main code
 #----------
@@ -834,8 +871,8 @@ if __name__ == "__main__":
 
         out_adv_lines = post_process_adv(delayed_adv, delayed_adj, delayed_adj_cs)
         out_lines.extend(out_adv_lines)
-    
-        out_lines = sorted(out_lines, key=locale.strxfrm)
+
+        out_lines = sorted(out_lines, key=get_sort_key())
     
     re_bad = re.compile('[а-яїієґ]/', re.IGNORECASE)
     for line in out_lines:
