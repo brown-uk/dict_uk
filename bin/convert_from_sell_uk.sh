@@ -13,6 +13,18 @@ INDICT=`grep -E "^INDICT" $DICT_SRC_DIR/dictionaries.mk.inc | sed -r "s/INDICT=/
 CODE_BASE=$(dirname $0)/../dict_uk/tools/convert
 OUT_DIR=$(dirname $0)/../data/dict
 
+to_check=`ls -1 $DICT_SRC_DIR/*.lst | grep -v composite.lst`
+
+grep -Ei "^[^#]*[а-яіїєґ] *$" $to_check && {
+    exit 1
+}
+
+grep -Ei "[a-z]'?[а-яіїєґ]|[а-яіїєґ]['-]?[a-z]" $DICT_SRC_DIR/*.lst && {
+    exit 1
+}
+
+
+
 echo "Files: $INDICT $TAGS_ONLY"
 
 for file in $INDICT $TAGS_ONLY; do
