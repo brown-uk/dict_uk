@@ -7,8 +7,16 @@
 SPELL_UK_DIR=../../spell-uk
 DICT_SRC_DIR=$SPELL_UK_DIR/src/Dictionary
 
-TAGS_ONLY=`grep "^TAGS_ONLY" $DICT_SRC_DIR/dictionaries.mk.inc | sed -r "s/TAGS_ONLY=//"`
-INDICT=`grep -E "^INDICT" $DICT_SRC_DIR/dictionaries.mk.inc | sed -r "s/INDICT=//"`
+if [[ `uname` == "Darwin" ]]; then  # Mac
+    type gsed >/dev/null 2>&1 || { echo >&2 "Please install GNU version of sed (gsed) e.g. \"brew install gnu-sed\""; exit 1; }
+    SED="gsed"
+else
+    SED="sed"
+fi
+    
+
+TAGS_ONLY=`grep "^TAGS_ONLY" $DICT_SRC_DIR/dictionaries.mk.inc | $SED -r "s/TAGS_ONLY=//"`
+INDICT=`grep -E "^INDICT" $DICT_SRC_DIR/dictionaries.mk.inc | $SED -r "s/INDICT=//"`
 
 CODE_BASE=$(dirname $0)/../dict_uk/tools/convert
 OUT_DIR=$(dirname $0)/../data/dict
