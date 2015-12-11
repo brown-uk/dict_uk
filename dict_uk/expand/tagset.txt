@@ -41,7 +41,7 @@ np
 ns
 numr
 &numr
-&^numr
+&_numr
 nv
 p
 part
