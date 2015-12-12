@@ -906,6 +906,9 @@ def check_lines(lines):
             if not tag in ALLOWED_TAGS:
                 raise Exception("Invalid tag " + tag + ": " + line)
 
+        dup_tags = [item for item, count in collections.Counter(taglist).items() if count > 1]
+        if dup_tags:
+            raise Exception("Duplicate tags " + dup_tags.join(":") + ": " + line)
 
 
 def process_input(in_lines, flush_stdout_):

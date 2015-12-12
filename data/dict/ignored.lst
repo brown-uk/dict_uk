@@ -5,12 +5,13 @@
 грунтовний /adj.adv \
  +cs=грунтовніший
 грунтовність /n30
-грунтувати /v1.cf.advp.impersW :imperf
+грунтувати /v1.cf.advp.impers0 :imperf
 грунтуватися /vr1.cf.advp :imperf
 грунт /n20.p
 зберігтись verb:rev:inf:perf
 зберігтися verb:rev:inf:perf
 зберігти verb:inf:perf
+згвалтований /adj ^adjp:pasv:perf
 згвалтування /n2n.p1
 згвалтувати /v1.impers0 :perf
 локоть /n22.p
@@ -27,6 +28,7 @@
 підгрунтя /n2n
 прихватизатор /n20.a.p.ke.<
 прихватизація /n10
+прихватизований /adj ^adjp:pasv:perf
 прихватизувати /v1.impers0 :perf
 прихватизуватися /vr1 :perf
 п'яніна /n10

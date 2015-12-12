@@ -28,7 +28,7 @@
 пров. noun:m:nv
 п. noun:m:nv
 реж. noun:m:nv
-рр. noun:p:nv
+рр. noun:p:nv:ns
 рт. adj:nv
 руб. noun:n:nv
 р. noun:m:nv:np|noun:f:nv:np    # рік, річка
@@ -42,6 +42,6 @@
 франц. adj:nv
 фр. adj:nv
 чайн. adj:nv
-чол. adj:nv|noun:p:nv
+чол. adj:nv|noun:m:nv
 ч. noun:f:nv|adj:nv    # частина, чайний
 шт. noun:f:nv

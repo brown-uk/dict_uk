@@ -68,10 +68,10 @@
 магайбі excl
 майбуть майбуть insert
 мізок /n22
-мість prep
+мість prep:rv_rod
 можний /adj
 мо мо insert
-навперед prep:coll
+навперед prep:rv_rod:coll
 навручки навручки adv
 надцять /numr
 намість намість adv
@@ -101,23 +101,23 @@
 оба numr:m:v_naz/v_zna
 обікласти verb:inf:perf
 обі numr:f:v_naz/v_zna
-обсіч adv:rare
+обсіч adv
 одітий /adj ^adjp:pasv:perf    # :past
 озутий /adj ^adjp:pasv:perf    # :past
-окроме prep
+окроме prep:rv_rod
 онакий /adj :&pron:def
 опірений /adj ^adjp:pasv:perf    # :past
-опостін prep
-опріче prep
-опроче prep
+опостін prep:rv_rod
+опріче prep:rv_rod
+опроче prep:rv_rod
 осьмий /adj
 оттим conj:subord
 памка /n10
 печально adv
-півперек prep
+півперек prep:rv_rod
 півтретя numr:f:v_naz/v_zna
 підсичувати /v1.cf.advp :imperf
-подовш prep
+подовш prep:rv_rod
 полегша /n10.p1
 помісь conj:subord
 помісь part
@@ -125,10 +125,10 @@
 посереду prep:rv_rod
 почерез prep:rv_zna
 притім conj:subord:bad
-пріч prep:coll
+пріч prep:rv_rod:coll
 простибіг простибіг insert
 простибі простибі insert
-против prep:rare
+против prep:rv_rod
 рибно рибно adv
 рік-річно рік-річно adv
 святешний /adj
@@ -148,14 +148,14 @@
 скілька скілька numr:nv:coll
 скілько numr:p:v_naz/v_zna
 спечно спечно adv
-споміж prep:coll
-спосеред prep:coll
+споміж prep:rv_rod:coll
+спосеред prep:rv_rod:coll
 стосувати /v1.cf.advp :imperf
 сього сей adj:m:v_rod/v_zna//n:v_rod:&pron:dem
 сьому сей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
 сю сей adj:f:v_zna:&pron:dem
 ся сей adj:f:v_naz:&pron:dem
-таже conj:subord:rare|part
+таже conj:subord|part
 таж conj:subord|part
 трепетати /v1.cf :imperf
 тридесять numr:p:v_naz/v_zna
