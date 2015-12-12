@@ -5,7 +5,7 @@
 group adj
 
 лиций:
-ий	ього			#   білолицього 	          @ adj:m:v_rod/v_zna//n:v_rod
+ий	ього			#   білолицього 	          @ adj:m:v_rod//m:v_zna:ranim//n:v_rod
 ий	ьому			#   білолицьому 	          @ adj:m:v_dav/v_mis//n:v_rod/v_mis
 ий	им			#   відісланим 	      @ adj:m:v_oru//n:v_oru//p:v_dav
 ий	ім			#   відісланім 		        @ adj:m:v_mis//n:v_mis

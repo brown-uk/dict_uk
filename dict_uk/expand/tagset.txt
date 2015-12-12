@@ -55,6 +55,7 @@ predic
 prep
 pres
 &pron
+ranim
 rare
 refl
 rel
