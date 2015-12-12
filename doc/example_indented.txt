@@ -1,0 +1,54 @@
+з prep:rv_rod:rv_zna:rv_oru
+за prep:rv_rod:rv_zna:rv_oru
+заавансований adjp:pasv:perf:m:v_naz
+  заавансованого adjp:pasv:perf:m:v_rod
+  заавансованому adjp:pasv:perf:m:v_dav
+  заавансований adjp:pasv:perf:m:v_zna
+  заавансованого adjp:pasv:perf:m:v_zna
+  заавансованим adjp:pasv:perf:m:v_oru
+  заавансованім adjp:pasv:perf:m:v_mis
+  заавансованому adjp:pasv:perf:m:v_mis
+  заавансована adjp:pasv:perf:f:v_naz
+  заавансованої adjp:pasv:perf:f:v_rod
+  заавансованій adjp:pasv:perf:f:v_dav
+  заавансовану adjp:pasv:perf:f:v_zna
+  заавансованою adjp:pasv:perf:f:v_oru
+  заавансованій adjp:pasv:perf:f:v_mis
+  заавансоване adjp:pasv:perf:n:v_naz
+  заавансованого adjp:pasv:perf:n:v_rod
+  заавансованому adjp:pasv:perf:n:v_dav
+  заавансоване adjp:pasv:perf:n:v_zna
+  заавансованим adjp:pasv:perf:n:v_oru
+  заавансованім adjp:pasv:perf:n:v_mis
+  заавансованому adjp:pasv:perf:n:v_mis
+  заавансовані adjp:pasv:perf:p:v_naz
+  заавансованих adjp:pasv:perf:p:v_rod
+  заавансованим adjp:pasv:perf:p:v_dav
+  заавансованих adjp:pasv:perf:p:v_zna
+  заавансовані adjp:pasv:perf:p:v_zna
+  заавансованими adjp:pasv:perf:p:v_oru
+  заавансованих adjp:pasv:perf:p:v_mis
+заавансованість noun:inanim:f:v_naz
+  заавансованості noun:inanim:f:v_rod
+  заавансованости noun:inanim:f:v_rod:alt
+  заавансованості noun:inanim:f:v_dav
+  заавансованість noun:inanim:f:v_zna
+  заавансованістю noun:inanim:f:v_oru
+  заавансованості noun:inanim:f:v_mis
+заавансувавши advp:perf
+заавансувати verb:perf:inf
+  заавансуй verb:perf:impr:s:2
+  заавансуймо verb:perf:impr:p:1
+  заавансуйте verb:perf:impr:p:2
+  заавансую verb:perf:futr:s:1
+  заавансуєш verb:perf:futr:s:2
+  заавансує verb:perf:futr:s:3
+  заавансуєм verb:perf:futr:p:1
+  заавансуємо verb:perf:futr:p:1
+  заавансуєте verb:perf:futr:p:2
+  заавансують verb:perf:futr:p:3
+  заавансував verb:perf:past:m
+  заавансувала verb:perf:past:f
+  заавансувало verb:perf:past:n
+  заавансували verb:perf:past:p
+  заавансовано verb:perf:impers
