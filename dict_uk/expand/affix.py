@@ -112,7 +112,7 @@ def expand_prefixes(word, affixFlags):
 
 re_alts_slash = re.compile("^([^/]+:)([^:]+)(:[^/]+)?$")
 re_alts_vert = re.compile("^(.* )(.*)$")
-re_alts_dbl_slash = re.compile("^(.* .+?:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...)(?:/(?:nv|v_...))*)+)(:[^/]+)?$")
+re_alts_dbl_slash = re.compile("^(.* .+?:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...(?::ranim)?)(?:/(?:nv|v_...))*)+)(:[^/]+)?$")
 
 def expand_alts(lines, splitter):
   out = []
