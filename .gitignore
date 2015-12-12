@@ -3,3 +3,6 @@
 **/*.diff
 /build/
 **/tmp/
+out/prev/*
+out/*.txt
+.*
