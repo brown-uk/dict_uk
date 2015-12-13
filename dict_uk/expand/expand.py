@@ -434,8 +434,26 @@ def expand(word, flags, flush_stdout):
         sfx_lines = [word + " " + word + " " + flags]
 
 
+    sfx_lines = [ line.replace("v_zna", "v_zn1") if "adj:m:v_rod/v_zna" in line else line for line in sfx_lines ]
+
     sfx_lines = affix.expand_alts(sfx_lines, "//")  # TODO: change this to some single-char splitter?
     sfx_lines = affix.expand_alts(sfx_lines, "/")
+
+    if "/adj" in flags:
+        out_lines = []
+        for line in sfx_lines:
+            if "v_zn1" in line:
+                if "^noun" in flags or "<" in flags:
+                    line = line.replace("v_zn1", "v_zna")
+                else:
+                    line = line.replace("v_zn1", "v_zna:ranim")
+            elif "v_zn2" in line:
+                if "^noun" in flags or "<" in flags:
+                    line = line.replace("v_zn2", "v_zna")
+                else:
+                    line = line.replace("v_zn2", "v_zna:rinanim")
+            out_lines.append(line)
+        sfx_lines = out_lines
 
     if main_flag[0] != "/":
         sfx_lines = util.expand_nv(sfx_lines)
@@ -591,6 +609,14 @@ def post_process(lines):
 
         if " adv" in line and not "advp" in line and not ":compr" in line and not ":super" in line:
             line = promote(line)
+
+        if not "-corp" in sys.argv:
+            if "uncontr" in line:    # we don't need uncontr for rules LT
+                continue
+            if "ranim" in line:    # we can't handle it yet in LT
+                line = line.replace(":ranim", "")
+            elif "rinanim" in line:    # we can't handle it yet in LT
+                line = line.replace(":rinanim", "")
 
         if "-corp" in sys.argv:
             if "advp" in line:
@@ -858,28 +884,34 @@ def print_word_list(sorted_lines):
         lemmas.add(lemma)
         tags.add(tag)
 
-        if not ":bad" in tag and not ":alt" in tag and not word.endswith("."):
+        if not ":bad" in tag and not ":alt" in tag and not ":uncontr" in tag and not word.endswith("."):
             spell_words.add(word)
-
+            
+    suff = ""
+    if not "-corp" in sys.argv:
+        suff = "_rules"
 
     words = sorted(words, key=locale.strxfrm)
 
-    with open("words.txt", "w", encoding="utf-8") as f:
-        for word in words:
-            f.write(word + "\n")
+    if "-corp" in sys.argv:
+        with open("words.txt", "w", encoding="utf-8") as f:
+            for word in words:
+                f.write(word + "\n")
 
-    spell_words = sorted(spell_words, key=locale.strxfrm)
 
-    with open("words_spell.txt", "w", encoding="utf-8") as f:
-        for word in spell_words:
-            f.write(word + "\n")
+    if not "-corp" in sys.argv:
+        spell_words = sorted(spell_words, key=locale.strxfrm)
+        with open("words_spell.txt", "w", encoding="utf-8") as f:
+            for word in spell_words:
+                f.write(word + "\n")
 
-    with open("lemmas.txt", "w", encoding="utf-8") as f:
-        lemmas = sorted(lemmas, key=locale.strxfrm)
-        for lemma in lemmas:
-            f.write(lemma + "\n")
+    if "-corp" in sys.argv:
+        with open("lemmas.txt", "w", encoding="utf-8") as f:
+            lemmas = sorted(lemmas, key=locale.strxfrm)
+            for lemma in lemmas:
+                f.write(lemma + "\n")
 
-    with open("tags.txt", "w", encoding="utf-8") as f:
+    with open("tags"+suff+".txt", "w", encoding="utf-8") as f:
         f.write("\n".join(sorted(tags)))
 
 

@@ -313,8 +313,8 @@
 вагомий adj:compb:m:v_naz
   вагомого adj:compb:m:v_rod
   вагомому adj:compb:m:v_dav
-  вагомий adj:compb:m:v_zna
-  вагомого adj:compb:m:v_zna
+  вагомого adj:compb:m:v_zna:ranim
+  вагомий adj:compb:m:v_zna:rinanim
   вагомим adj:compb:m:v_oru
   вагомім adj:compb:m:v_mis
   вагомому adj:compb:m:v_mis
@@ -342,8 +342,8 @@
 вагоміший adj:compr:m:v_naz
   вагомішого adj:compr:m:v_rod
   вагомішому adj:compr:m:v_dav
-  вагоміший adj:compr:m:v_zna
-  вагомішого adj:compr:m:v_zna
+  вагомішого adj:compr:m:v_zna:ranim
+  вагоміший adj:compr:m:v_zna:rinanim
   вагомішим adj:compr:m:v_oru
   вагомішім adj:compr:m:v_mis
   вагомішому adj:compr:m:v_mis
@@ -429,34 +429,62 @@
   вайлах noun:anim:p:v_mis
   вайла noun:anim:p:v_kly
   вайли noun:anim:p:v_kly
-варений adjp:pasv:past:m:v_naz:&adj
-  вареного adjp:pasv:past:m:v_rod:&adj
-  вареному adjp:pasv:past:m:v_dav:&adj
-  варений adjp:pasv:past:m:v_zna:&adj
-  вареного adjp:pasv:past:m:v_zna:&adj
-  вареним adjp:pasv:past:m:v_oru:&adj
-  варенім adjp:pasv:past:m:v_mis:&adj
-  вареному adjp:pasv:past:m:v_mis:&adj
-  варена adjp:pasv:past:f:v_naz:&adj
-  вареної adjp:pasv:past:f:v_rod:&adj
-  вареній adjp:pasv:past:f:v_dav:&adj
-  варену adjp:pasv:past:f:v_zna:&adj
-  вареною adjp:pasv:past:f:v_oru:&adj
-  вареній adjp:pasv:past:f:v_mis:&adj
-  варене adjp:pasv:past:n:v_naz:&adj
-  вареного adjp:pasv:past:n:v_rod:&adj
-  вареному adjp:pasv:past:n:v_dav:&adj
-  варене adjp:pasv:past:n:v_zna:&adj
-  вареним adjp:pasv:past:n:v_oru:&adj
-  варенім adjp:pasv:past:n:v_mis:&adj
-  вареному adjp:pasv:past:n:v_mis:&adj
-  варені adjp:pasv:past:p:v_naz:&adj
-  варених adjp:pasv:past:p:v_rod:&adj
-  вареним adjp:pasv:past:p:v_dav:&adj
-  варених adjp:pasv:past:p:v_zna:&adj
-  варені adjp:pasv:past:p:v_zna:&adj
-  вареними adjp:pasv:past:p:v_oru:&adj
-  варених adjp:pasv:past:p:v_mis:&adj
+варений adj:m:v_naz
+  вареного adj:m:v_rod
+  вареному adj:m:v_dav
+  вареного adj:m:v_zna:ranim
+  варений adj:m:v_zna:rinanim
+  вареним adj:m:v_oru
+  варенім adj:m:v_mis
+  вареному adj:m:v_mis
+  варена adj:f:v_naz
+  вареної adj:f:v_rod
+  вареній adj:f:v_dav
+  варену adj:f:v_zna
+  вареною adj:f:v_oru
+  вареній adj:f:v_mis
+  варене adj:n:v_naz
+  вареного adj:n:v_rod
+  вареному adj:n:v_dav
+  варене adj:n:v_zna
+  вареним adj:n:v_oru
+  варенім adj:n:v_mis
+  вареному adj:n:v_mis
+  варені adj:p:v_naz
+  варених adj:p:v_rod
+  вареним adj:p:v_dav
+  варених adj:p:v_zna
+  варені adj:p:v_zna
+  вареними adj:p:v_oru
+  варених adj:p:v_mis
+варений adjp:pasv:imperf:m:v_naz
+  вареного adjp:pasv:imperf:m:v_rod
+  вареному adjp:pasv:imperf:m:v_dav
+  вареного adjp:pasv:imperf:m:v_zna:ranim
+  варений adjp:pasv:imperf:m:v_zna:rinanim
+  вареним adjp:pasv:imperf:m:v_oru
+  варенім adjp:pasv:imperf:m:v_mis
+  вареному adjp:pasv:imperf:m:v_mis
+  варена adjp:pasv:imperf:f:v_naz
+  вареної adjp:pasv:imperf:f:v_rod
+  вареній adjp:pasv:imperf:f:v_dav
+  варену adjp:pasv:imperf:f:v_zna
+  вареною adjp:pasv:imperf:f:v_oru
+  вареній adjp:pasv:imperf:f:v_mis
+  варене adjp:pasv:imperf:n:v_naz
+  вареного adjp:pasv:imperf:n:v_rod
+  вареному adjp:pasv:imperf:n:v_dav
+  варене adjp:pasv:imperf:n:v_zna
+  вареним adjp:pasv:imperf:n:v_oru
+  варенім adjp:pasv:imperf:n:v_mis
+  вареному adjp:pasv:imperf:n:v_mis
+  варені adjp:pasv:imperf:p:v_naz
+  варених adjp:pasv:imperf:p:v_rod
+  вареним adjp:pasv:imperf:p:v_dav
+  варених adjp:pasv:imperf:p:v_zna
+  варені adjp:pasv:imperf:p:v_zna
+  вареними adjp:pasv:imperf:p:v_oru
+  варених adjp:pasv:imperf:p:v_mis
 вбивця noun:anim:m:v_naz
   вбивці noun:anim:m:v_rod
   вбивці noun:anim:m:v_dav
@@ -481,8 +509,8 @@
 вбитий adjp:pasv:past:m:v_naz
   вбитого adjp:pasv:past:m:v_rod
   вбитому adjp:pasv:past:m:v_dav
-  вбитий adjp:pasv:past:m:v_zna
-  вбитого adjp:pasv:past:m:v_zna
+  вбитого adjp:pasv:past:m:v_zna:ranim
+  вбитий adjp:pasv:past:m:v_zna:rinanim
   вбитим adjp:pasv:past:m:v_oru
   вбитім adjp:pasv:past:m:v_mis
   вбитому adjp:pasv:past:m:v_mis
@@ -509,8 +537,8 @@
 вбогий adj:compb:m:v_naz:v-u
   вбогого adj:compb:m:v_rod:v-u
   вбогому adj:compb:m:v_dav:v-u
-  вбогий adj:compb:m:v_zna:v-u
-  вбогого adj:compb:m:v_zna:v-u
+  вбогого adj:compb:m:v_zna:ranim:v-u
+  вбогий adj:compb:m:v_zna:rinanim:v-u
   вбогим adj:compb:m:v_oru:v-u
   вбогім adj:compb:m:v_mis:v-u
   вбогому adj:compb:m:v_mis:v-u
@@ -538,8 +566,8 @@
 вбогіший adj:compr:m:v_naz:v-u
   вбогішого adj:compr:m:v_rod:v-u
   вбогішому adj:compr:m:v_dav:v-u
-  вбогіший adj:compr:m:v_zna:v-u
-  вбогішого adj:compr:m:v_zna:v-u
+  вбогішого adj:compr:m:v_zna:ranim:v-u
+  вбогіший adj:compr:m:v_zna:rinanim:v-u
   вбогішим adj:compr:m:v_oru:v-u
   вбогішім adj:compr:m:v_mis:v-u
   вбогішому adj:compr:m:v_mis:v-u
@@ -576,20 +604,11 @@
   вбоїська noun:inanim:p:v_zna
   вбоїськами noun:inanim:p:v_oru
   вбоїськах noun:inanim:p:v_mis
-ввити verb:perf:inf:unknown
-  ввив verb:perf:unknown
-  ввивши verb:perf:unknown
-  ввий verb:perf:unknown
-  ввиймо verb:perf:unknown
-  ввийте verb:perf:unknown
-  ввила verb:perf:unknown
-  ввили verb:perf:unknown
-  ввило verb:perf:unknown
 ведучий adj:m:v_naz
   ведучого adj:m:v_rod
   ведучому adj:m:v_dav
-  ведучий adj:m:v_zna
-  ведучого adj:m:v_zna
+  ведучого adj:m:v_zna:ranim
+  ведучий adj:m:v_zna:rinanim
   ведучим adj:m:v_oru
   ведучім adj:m:v_mis
   ведучому adj:m:v_mis
@@ -719,8 +738,8 @@
 Венедиктів adj:m:v_naz
   Венедиктового adj:m:v_rod
   Венедиктовому adj:m:v_dav
-  Венедиктів adj:m:v_zna
-  Венедиктового adj:m:v_zna
+  Венедиктового adj:m:v_zna:ranim
+  Венедиктів adj:m:v_zna:rinanim
   Венедиктовим adj:m:v_oru
   Венедиктовім adj:m:v_mis
   Венедиктовому adj:m:v_mis
@@ -950,8 +969,8 @@
 вживаний adj:compb:m:v_naz:v-u
   вживаного adj:compb:m:v_rod:v-u
   вживаному adj:compb:m:v_dav:v-u
-  вживаний adj:compb:m:v_zna:v-u
-  вживаного adj:compb:m:v_zna:v-u
+  вживаного adj:compb:m:v_zna:ranim:v-u
+  вживаний adj:compb:m:v_zna:rinanim:v-u
   вживаним adj:compb:m:v_oru:v-u
   вживанім adj:compb:m:v_mis:v-u
   вживаному adj:compb:m:v_mis:v-u
@@ -978,8 +997,8 @@
 вживаний adjp:pasv:pres:past:m:v_naz:v-u
   вживаного adjp:pasv:pres:past:m:v_rod:v-u
   вживаному adjp:pasv:pres:past:m:v_dav:v-u
-  вживаний adjp:pasv:pres:past:m:v_zna:v-u
-  вживаного adjp:pasv:pres:past:m:v_zna:v-u
+  вживаного adjp:pasv:pres:past:m:v_zna:ranim:v-u
+  вживаний adjp:pasv:pres:past:m:v_zna:rinanim:v-u
   вживаним adjp:pasv:pres:past:m:v_oru:v-u
   вживанім adjp:pasv:pres:past:m:v_mis:v-u
   вживаному adjp:pasv:pres:past:m:v_mis:v-u
@@ -1007,8 +1026,8 @@
 вживаніший adj:compr:m:v_naz:v-u
   вживанішого adj:compr:m:v_rod:v-u
   вживанішому adj:compr:m:v_dav:v-u
-  вживаніший adj:compr:m:v_zna:v-u
-  вживанішого adj:compr:m:v_zna:v-u
+  вживанішого adj:compr:m:v_zna:ranim:v-u
+  вживаніший adj:compr:m:v_zna:rinanim:v-u
   вживанішим adj:compr:m:v_oru:v-u
   вживанішім adj:compr:m:v_mis:v-u
   вживанішому adj:compr:m:v_mis:v-u
@@ -1449,8 +1468,8 @@
 гладкий adj:compb:m:v_naz
   гладкого adj:compb:m:v_rod
   гладкому adj:compb:m:v_dav
-  гладкий adj:compb:m:v_zna
-  гладкого adj:compb:m:v_zna
+  гладкого adj:compb:m:v_zna:ranim
+  гладкий adj:compb:m:v_zna:rinanim
   гладким adj:compb:m:v_oru
   гладкім adj:compb:m:v_mis
   гладкому adj:compb:m:v_mis
@@ -1478,8 +1497,8 @@
 гладкіший adj:compr:m:v_naz
   гладкішого adj:compr:m:v_rod
   гладкішому adj:compr:m:v_dav
-  гладкіший adj:compr:m:v_zna
-  гладкішого adj:compr:m:v_zna
+  гладкішого adj:compr:m:v_zna:ranim
+  гладкіший adj:compr:m:v_zna:rinanim
   гладкішим adj:compr:m:v_oru
   гладкішім adj:compr:m:v_mis
   гладкішому adj:compr:m:v_mis
@@ -1508,8 +1527,8 @@
 гладший adj:compr:m:v_naz
   гладшого adj:compr:m:v_rod
   гладшому adj:compr:m:v_dav
-  гладший adj:compr:m:v_zna
-  гладшого adj:compr:m:v_zna
+  гладшого adj:compr:m:v_zna:ranim
+  гладший adj:compr:m:v_zna:rinanim
   гладшим adj:compr:m:v_oru
   гладшім adj:compr:m:v_mis
   гладшому adj:compr:m:v_mis
@@ -1536,8 +1555,8 @@
 годний adj:m:v_naz:coll
   годного adj:m:v_rod:coll
   годному adj:m:v_dav:coll
-  годний adj:m:v_zna:coll
-  годного adj:m:v_zna:coll
+  годного adj:m:v_zna:ranim:coll
+  годний adj:m:v_zna:rinanim:coll
   годним adj:m:v_oru:coll
   годнім adj:m:v_mis:coll
   годному adj:m:v_mis:coll
@@ -1631,8 +1650,8 @@
 дивний adj:compb:m:v_naz
   дивного adj:compb:m:v_rod
   дивному adj:compb:m:v_dav
-  дивний adj:compb:m:v_zna
-  дивного adj:compb:m:v_zna
+  дивного adj:compb:m:v_zna:ranim
+  дивний adj:compb:m:v_zna:rinanim
   дивним adj:compb:m:v_oru
   дивнім adj:compb:m:v_mis
   дивному adj:compb:m:v_mis
@@ -1662,8 +1681,8 @@
 дивніший adj:compr:m:v_naz
   дивнішого adj:compr:m:v_rod
   дивнішому adj:compr:m:v_dav
-  дивніший adj:compr:m:v_zna
-  дивнішого adj:compr:m:v_zna
+  дивнішого adj:compr:m:v_zna:ranim
+  дивніший adj:compr:m:v_zna:rinanim
   дивнішим adj:compr:m:v_oru
   дивнішім adj:compr:m:v_mis
   дивнішому adj:compr:m:v_mis
@@ -1921,8 +1940,8 @@
 крутий adj:compb:m:v_naz
   крутого adj:compb:m:v_rod
   крутому adj:compb:m:v_dav
-  крутий adj:compb:m:v_zna
-  крутого adj:compb:m:v_zna
+  крутого adj:compb:m:v_zna:ranim
+  крутий adj:compb:m:v_zna:rinanim
   крутим adj:compb:m:v_oru
   крутім adj:compb:m:v_mis
   крутому adj:compb:m:v_mis
@@ -1949,8 +1968,8 @@
 крутіший adj:compr:m:v_naz
   крутішого adj:compr:m:v_rod
   крутішому adj:compr:m:v_dav
-  крутіший adj:compr:m:v_zna
-  крутішого adj:compr:m:v_zna
+  крутішого adj:compr:m:v_zna:ranim
+  крутіший adj:compr:m:v_zna:rinanim
   крутішим adj:compr:m:v_oru
   крутішім adj:compr:m:v_mis
   крутішому adj:compr:m:v_mis
@@ -1985,8 +2004,8 @@
 лікарів adj:m:v_naz
   лікаревого adj:m:v_rod
   лікаревому adj:m:v_dav
-  лікаревого adj:m:v_zna
-  лікарів adj:m:v_zna
+  лікаревого adj:m:v_zna:ranim
+  лікарів adj:m:v_zna:rinanim
   лікаревим adj:m:v_oru
   лікаревім adj:m:v_mis
   лікаревому adj:m:v_mis
@@ -2051,8 +2070,8 @@
 найвагоміший adj:super:m:v_naz
   найвагомішого adj:super:m:v_rod
   найвагомішому adj:super:m:v_dav
-  найвагоміший adj:super:m:v_zna
-  найвагомішого adj:super:m:v_zna
+  найвагомішого adj:super:m:v_zna:ranim
+  найвагоміший adj:super:m:v_zna:rinanim
   найвагомішим adj:super:m:v_oru
   найвагомішім adj:super:m:v_mis
   найвагомішому adj:super:m:v_mis
@@ -2080,8 +2099,8 @@
 найвбогіший adj:super:m:v_naz:v-u
   найвбогішого adj:super:m:v_rod:v-u
   найвбогішому adj:super:m:v_dav:v-u
-  найвбогіший adj:super:m:v_zna:v-u
-  найвбогішого adj:super:m:v_zna:v-u
+  найвбогішого adj:super:m:v_zna:ranim:v-u
+  найвбогіший adj:super:m:v_zna:rinanim:v-u
   найвбогішим adj:super:m:v_oru:v-u
   найвбогішім adj:super:m:v_mis:v-u
   найвбогішому adj:super:m:v_mis:v-u
@@ -2109,8 +2128,8 @@
 найвживаніший adj:super:m:v_naz:v-u
   найвживанішого adj:super:m:v_rod:v-u
   найвживанішому adj:super:m:v_dav:v-u
-  найвживаніший adj:super:m:v_zna:v-u
-  найвживанішого adj:super:m:v_zna:v-u
+  найвживанішого adj:super:m:v_zna:ranim:v-u
+  найвживаніший adj:super:m:v_zna:rinanim:v-u
   найвживанішим adj:super:m:v_oru:v-u
   найвживанішім adj:super:m:v_mis:v-u
   найвживанішому adj:super:m:v_mis:v-u
@@ -2138,8 +2157,8 @@
 найгладкіший adj:super:m:v_naz
   найгладкішого adj:super:m:v_rod
   найгладкішому adj:super:m:v_dav
-  найгладкіший adj:super:m:v_zna
-  найгладкішого adj:super:m:v_zna
+  найгладкішого adj:super:m:v_zna:ranim
+  найгладкіший adj:super:m:v_zna:rinanim
   найгладкішим adj:super:m:v_oru
   найгладкішім adj:super:m:v_mis
   найгладкішому adj:super:m:v_mis
@@ -2167,8 +2186,8 @@
 найгладший adj:super:m:v_naz
   найгладшого adj:super:m:v_rod
   найгладшому adj:super:m:v_dav
-  найгладший adj:super:m:v_zna
-  найгладшого adj:super:m:v_zna
+  найгладшого adj:super:m:v_zna:ranim
+  найгладший adj:super:m:v_zna:rinanim
   найгладшим adj:super:m:v_oru
   найгладшім adj:super:m:v_mis
   найгладшому adj:super:m:v_mis
@@ -2196,8 +2215,8 @@
 найдивніший adj:super:m:v_naz
   найдивнішого adj:super:m:v_rod
   найдивнішому adj:super:m:v_dav
-  найдивніший adj:super:m:v_zna
-  найдивнішого adj:super:m:v_zna
+  найдивнішого adj:super:m:v_zna:ranim
+  найдивніший adj:super:m:v_zna:rinanim
   найдивнішим adj:super:m:v_oru
   найдивнішім adj:super:m:v_mis
   найдивнішому adj:super:m:v_mis
@@ -2224,8 +2243,8 @@
 найкрутіший adj:super:m:v_naz
   найкрутішого adj:super:m:v_rod
   найкрутішому adj:super:m:v_dav
-  найкрутіший adj:super:m:v_zna
-  найкрутішого adj:super:m:v_zna
+  найкрутішого adj:super:m:v_zna:ranim
+  найкрутіший adj:super:m:v_zna:rinanim
   найкрутішим adj:super:m:v_oru
   найкрутішім adj:super:m:v_mis
   найкрутішому adj:super:m:v_mis
@@ -2253,8 +2272,8 @@
 найуживаніший adj:super:m:v_naz:v-u
   найуживанішого adj:super:m:v_rod:v-u
   найуживанішому adj:super:m:v_dav:v-u
-  найуживаніший adj:super:m:v_zna:v-u
-  найуживанішого adj:super:m:v_zna:v-u
+  найуживанішого adj:super:m:v_zna:ranim:v-u
+  найуживаніший adj:super:m:v_zna:rinanim:v-u
   найуживанішим adj:super:m:v_oru:v-u
   найуживанішім adj:super:m:v_mis:v-u
   найуживанішому adj:super:m:v_mis:v-u
@@ -2345,8 +2364,8 @@
 синій adj:m:v_naz
   синього adj:m:v_rod
   синьому adj:m:v_dav
-  синій adj:m:v_zna
-  синього adj:m:v_zna
+  синього adj:m:v_zna:ranim
+  синій adj:m:v_zna:rinanim
   синім adj:m:v_oru
   синім adj:m:v_mis
   синьому adj:m:v_mis
@@ -2466,8 +2485,8 @@
 уживаний adj:compb:m:v_naz:v-u
   уживаного adj:compb:m:v_rod:v-u
   уживаному adj:compb:m:v_dav:v-u
-  уживаний adj:compb:m:v_zna:v-u
-  уживаного adj:compb:m:v_zna:v-u
+  уживаного adj:compb:m:v_zna:ranim:v-u
+  уживаний adj:compb:m:v_zna:rinanim:v-u
   уживаним adj:compb:m:v_oru:v-u
   уживанім adj:compb:m:v_mis:v-u
   уживаному adj:compb:m:v_mis:v-u
@@ -2494,8 +2513,8 @@
 уживаний adjp:pasv:pres:past:m:v_naz:v-u
   уживаного adjp:pasv:pres:past:m:v_rod:v-u
   уживаному adjp:pasv:pres:past:m:v_dav:v-u
-  уживаний adjp:pasv:pres:past:m:v_zna:v-u
-  уживаного adjp:pasv:pres:past:m:v_zna:v-u
+  уживаного adjp:pasv:pres:past:m:v_zna:ranim:v-u
+  уживаний adjp:pasv:pres:past:m:v_zna:rinanim:v-u
   уживаним adjp:pasv:pres:past:m:v_oru:v-u
   уживанім adjp:pasv:pres:past:m:v_mis:v-u
   уживаному adjp:pasv:pres:past:m:v_mis:v-u
@@ -2522,8 +2541,8 @@
 уживаніший adj:compr:m:v_naz:v-u
   уживанішого adj:compr:m:v_rod:v-u
   уживанішому adj:compr:m:v_dav:v-u
-  уживаніший adj:compr:m:v_zna:v-u
-  уживанішого adj:compr:m:v_zna:v-u
+  уживанішого adj:compr:m:v_zna:ranim:v-u
+  уживаніший adj:compr:m:v_zna:rinanim:v-u
   уживанішим adj:compr:m:v_oru:v-u
   уживанішім adj:compr:m:v_mis:v-u
   уживанішому adj:compr:m:v_mis:v-u
@@ -2612,8 +2631,8 @@
 щонайвагоміший adj:super:m:v_naz
   щонайвагомішого adj:super:m:v_rod
   щонайвагомішому adj:super:m:v_dav
-  щонайвагоміший adj:super:m:v_zna
-  щонайвагомішого adj:super:m:v_zna
+  щонайвагомішого adj:super:m:v_zna:ranim
+  щонайвагоміший adj:super:m:v_zna:rinanim
   щонайвагомішим adj:super:m:v_oru
   щонайвагомішім adj:super:m:v_mis
   щонайвагомішому adj:super:m:v_mis
@@ -2641,8 +2660,8 @@
 щонайвбогіший adj:super:m:v_naz:v-u
   щонайвбогішого adj:super:m:v_rod:v-u
   щонайвбогішому adj:super:m:v_dav:v-u
-  щонайвбогіший adj:super:m:v_zna:v-u
-  щонайвбогішого adj:super:m:v_zna:v-u
+  щонайвбогішого adj:super:m:v_zna:ranim:v-u
+  щонайвбогіший adj:super:m:v_zna:rinanim:v-u
   щонайвбогішим adj:super:m:v_oru:v-u
   щонайвбогішім adj:super:m:v_mis:v-u
   щонайвбогішому adj:super:m:v_mis:v-u
@@ -2670,8 +2689,8 @@
 щонайвживаніший adj:super:m:v_naz:v-u
   щонайвживанішого adj:super:m:v_rod:v-u
   щонайвживанішому adj:super:m:v_dav:v-u
-  щонайвживаніший adj:super:m:v_zna:v-u
-  щонайвживанішого adj:super:m:v_zna:v-u
+  щонайвживанішого adj:super:m:v_zna:ranim:v-u
+  щонайвживаніший adj:super:m:v_zna:rinanim:v-u
   щонайвживанішим adj:super:m:v_oru:v-u
   щонайвживанішім adj:super:m:v_mis:v-u
   щонайвживанішому adj:super:m:v_mis:v-u
@@ -2699,8 +2718,8 @@
 щонайгладкіший adj:super:m:v_naz
   щонайгладкішого adj:super:m:v_rod
   щонайгладкішому adj:super:m:v_dav
-  щонайгладкіший adj:super:m:v_zna
-  щонайгладкішого adj:super:m:v_zna
+  щонайгладкішого adj:super:m:v_zna:ranim
+  щонайгладкіший adj:super:m:v_zna:rinanim
   щонайгладкішим adj:super:m:v_oru
   щонайгладкішім adj:super:m:v_mis
   щонайгладкішому adj:super:m:v_mis
@@ -2728,8 +2747,8 @@
 щонайгладший adj:super:m:v_naz
   щонайгладшого adj:super:m:v_rod
   щонайгладшому adj:super:m:v_dav
-  щонайгладший adj:super:m:v_zna
-  щонайгладшого adj:super:m:v_zna
+  щонайгладшого adj:super:m:v_zna:ranim
+  щонайгладший adj:super:m:v_zna:rinanim
   щонайгладшим adj:super:m:v_oru
   щонайгладшім adj:super:m:v_mis
   щонайгладшому adj:super:m:v_mis
@@ -2757,8 +2776,8 @@
 щонайдивніший adj:super:m:v_naz
   щонайдивнішого adj:super:m:v_rod
   щонайдивнішому adj:super:m:v_dav
-  щонайдивніший adj:super:m:v_zna
-  щонайдивнішого adj:super:m:v_zna
+  щонайдивнішого adj:super:m:v_zna:ranim
+  щонайдивніший adj:super:m:v_zna:rinanim
   щонайдивнішим adj:super:m:v_oru
   щонайдивнішім adj:super:m:v_mis
   щонайдивнішому adj:super:m:v_mis
@@ -2785,8 +2804,8 @@
 щонайкрутіший adj:super:m:v_naz
   щонайкрутішого adj:super:m:v_rod
   щонайкрутішому adj:super:m:v_dav
-  щонайкрутіший adj:super:m:v_zna
-  щонайкрутішого adj:super:m:v_zna
+  щонайкрутішого adj:super:m:v_zna:ranim
+  щонайкрутіший adj:super:m:v_zna:rinanim
   щонайкрутішим adj:super:m:v_oru
   щонайкрутішім adj:super:m:v_mis
   щонайкрутішому adj:super:m:v_mis
@@ -2814,8 +2833,8 @@
 щонайуживаніший adj:super:m:v_naz:v-u
   щонайуживанішого adj:super:m:v_rod:v-u
   щонайуживанішому adj:super:m:v_dav:v-u
-  щонайуживаніший adj:super:m:v_zna:v-u
-  щонайуживанішого adj:super:m:v_zna:v-u
+  щонайуживанішого adj:super:m:v_zna:ranim:v-u
+  щонайуживаніший adj:super:m:v_zna:rinanim:v-u
   щонайуживанішим adj:super:m:v_oru:v-u
   щонайуживанішім adj:super:m:v_mis:v-u
   щонайуживанішому adj:super:m:v_mis:v-u
@@ -2843,8 +2862,8 @@
 якнайвагоміший adj:super:m:v_naz
   якнайвагомішого adj:super:m:v_rod
   якнайвагомішому adj:super:m:v_dav
-  якнайвагоміший adj:super:m:v_zna
-  якнайвагомішого adj:super:m:v_zna
+  якнайвагомішого adj:super:m:v_zna:ranim
+  якнайвагоміший adj:super:m:v_zna:rinanim
   якнайвагомішим adj:super:m:v_oru
   якнайвагомішім adj:super:m:v_mis
   якнайвагомішому adj:super:m:v_mis
@@ -2872,8 +2891,8 @@
 якнайвбогіший adj:super:m:v_naz:v-u
   якнайвбогішого adj:super:m:v_rod:v-u
   якнайвбогішому adj:super:m:v_dav:v-u
-  якнайвбогіший adj:super:m:v_zna:v-u
-  якнайвбогішого adj:super:m:v_zna:v-u
+  якнайвбогішого adj:super:m:v_zna:ranim:v-u
+  якнайвбогіший adj:super:m:v_zna:rinanim:v-u
   якнайвбогішим adj:super:m:v_oru:v-u
   якнайвбогішім adj:super:m:v_mis:v-u
   якнайвбогішому adj:super:m:v_mis:v-u
@@ -2901,8 +2920,8 @@
 якнайвживаніший adj:super:m:v_naz:v-u
   якнайвживанішого adj:super:m:v_rod:v-u
   якнайвживанішому adj:super:m:v_dav:v-u
-  якнайвживаніший adj:super:m:v_zna:v-u
-  якнайвживанішого adj:super:m:v_zna:v-u
+  якнайвживанішого adj:super:m:v_zna:ranim:v-u
+  якнайвживаніший adj:super:m:v_zna:rinanim:v-u
   якнайвживанішим adj:super:m:v_oru:v-u
   якнайвживанішім adj:super:m:v_mis:v-u
   якнайвживанішому adj:super:m:v_mis:v-u
@@ -2930,8 +2949,8 @@
 якнайгладкіший adj:super:m:v_naz
   якнайгладкішого adj:super:m:v_rod
   якнайгладкішому adj:super:m:v_dav
-  якнайгладкіший adj:super:m:v_zna
-  якнайгладкішого adj:super:m:v_zna
+  якнайгладкішого adj:super:m:v_zna:ranim
+  якнайгладкіший adj:super:m:v_zna:rinanim
   якнайгладкішим adj:super:m:v_oru
   якнайгладкішім adj:super:m:v_mis
   якнайгладкішому adj:super:m:v_mis
@@ -2959,8 +2978,8 @@
 якнайгладший adj:super:m:v_naz
   якнайгладшого adj:super:m:v_rod
   якнайгладшому adj:super:m:v_dav
-  якнайгладший adj:super:m:v_zna
-  якнайгладшого adj:super:m:v_zna
+  якнайгладшого adj:super:m:v_zna:ranim
+  якнайгладший adj:super:m:v_zna:rinanim
   якнайгладшим adj:super:m:v_oru
   якнайгладшім adj:super:m:v_mis
   якнайгладшому adj:super:m:v_mis
@@ -2988,8 +3007,8 @@
 якнайдивніший adj:super:m:v_naz
   якнайдивнішого adj:super:m:v_rod
   якнайдивнішому adj:super:m:v_dav
-  якнайдивніший adj:super:m:v_zna
-  якнайдивнішого adj:super:m:v_zna
+  якнайдивнішого adj:super:m:v_zna:ranim
+  якнайдивніший adj:super:m:v_zna:rinanim
   якнайдивнішим adj:super:m:v_oru
   якнайдивнішім adj:super:m:v_mis
   якнайдивнішому adj:super:m:v_mis
@@ -3016,8 +3035,8 @@
 якнайкрутіший adj:super:m:v_naz
   якнайкрутішого adj:super:m:v_rod
   якнайкрутішому adj:super:m:v_dav
-  якнайкрутіший adj:super:m:v_zna
-  якнайкрутішого adj:super:m:v_zna
+  якнайкрутішого adj:super:m:v_zna:ranim
+  якнайкрутіший adj:super:m:v_zna:rinanim
   якнайкрутішим adj:super:m:v_oru
   якнайкрутішім adj:super:m:v_mis
   якнайкрутішому adj:super:m:v_mis
@@ -3045,8 +3064,8 @@
 якнайуживаніший adj:super:m:v_naz:v-u
   якнайуживанішого adj:super:m:v_rod:v-u
   якнайуживанішому adj:super:m:v_dav:v-u
-  якнайуживаніший adj:super:m:v_zna:v-u
-  якнайуживанішого adj:super:m:v_zna:v-u
+  якнайуживанішого adj:super:m:v_zna:ranim:v-u
+  якнайуживаніший adj:super:m:v_zna:rinanim:v-u
   якнайуживанішим adj:super:m:v_oru:v-u
   якнайуживанішім adj:super:m:v_mis:v-u
   якнайуживанішому adj:super:m:v_mis:v-u

@@ -75,10 +75,10 @@ class Suffix(object):
     def apply(self, word):
 #      return word[:self.sub_from_len] + self.to
 #      print("applying:", self.sub_from_sfx, self.to, word, file=sys.stderr)
-      ret, repl_cnt = re.subn(self.sub_from_sfx, self.to, word)
-      if repl_cnt == 0:
-           raise Exception("Failed to apply {} -> {} to {}".format(self.fromm, self.to, word))
-      return ret
+        ret, repl_cnt = re.subn(self.sub_from_sfx, self.to, word)
+        if repl_cnt == 0:
+            raise Exception("Failed to apply {} -> {} to {}".format(self.fromm, self.to, word))
+        return ret
 
 
 prefixes = []
@@ -112,7 +112,7 @@ def expand_prefixes(word, affixFlags):
 
 re_alts_slash = re.compile("^([^/]+:)([^:]+)(:[^/]+)?$")
 re_alts_vert = re.compile("^(.* )(.*)$")
-re_alts_dbl_slash = re.compile("^(.* .+?:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...(?::ranim)?)(?:/(?:nv|v_...))*)+)(:[^/]+)?$")
+re_alts_dbl_slash = re.compile("^(.* .+?:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...)(?:/(?:nv|v_...))*)+)(:[^/]+)?$")
 
 def expand_alts(lines, splitter):
   out = []
@@ -137,7 +137,8 @@ def expand_alts(lines, splitter):
       end = groups[2]
 
     for split_ in split1:
-      out.append( base + split_ + end )
+      out_line = base + split_ + end
+      out.append( out_line  )
 
   return out
 

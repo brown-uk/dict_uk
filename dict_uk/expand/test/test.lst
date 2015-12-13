@@ -82,7 +82,7 @@
 ворітця /np3
 вугіль /n22
 вбивця /n10.p2.< :+m
-варений /adj ^adjp:pasv:past:&adj
+варений /adj :&adjp:pasv:imperf    # :past
 вагонопотік /n21
 вбоїсько /n2n.p1
 вовчище /n2n.p1.ovi.<> ^noun:m
@@ -200,18 +200,6 @@
 
 колисати /v1.cf.advp /v2.advp :imperf
 оскіритися /vr1 :perf:coll
-
-# TODO: забрати коли позбудемося unknown
-
-ввив ввити verb:perf:unknown
-ввивши ввити verb:perf:unknown
-ввий ввити verb:perf:unknown
-ввиймо ввити verb:perf:unknown
-ввийте ввити verb:perf:unknown
-ввила ввити verb:perf:unknown
-ввили ввити verb:perf:unknown
-ввило ввити verb:perf:unknown
-ввити ввити verb:inf:perf:unknown
 
 # обмежені форми
 

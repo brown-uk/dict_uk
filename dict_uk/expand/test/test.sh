@@ -21,3 +21,6 @@ diff_u words.txt && \
 diff_u tags.txt && \
 echo "No regressions" && rm $FILE.tag $CORP_LT_FILE *.diff
 
+../expand.py -aff $BASE/data/affix -mfl < $FILE > ${FILE}_rules.tag && \
+diff -u prev/${FILE}_rules.tag ${FILE}_rules.tag > ${FILE}_rules.tag.diff && \
+echo "No regressions" && rm $FILE.tag $CORP_LT_FILE *.diff

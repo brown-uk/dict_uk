@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import sys
 import re
 
 import util
@@ -49,11 +48,15 @@ def get_base_tags(word, affixFlag, allAffixFlags, extra):
             tag = ":m:v_naz/v_zna//f:v_dav/v_mis"
             if util.istota(allAffixFlags):
                 tag = tag.replace(":m:v_naz/v_zna", ":m:v_naz")
+            else:
+                tag = tag.replace("v_zna", "v_zn2")
         else:
             if util.istota(allAffixFlags):
                 tag = ":m:v_naz"
             else:
                 tag = ":m:v_naz/v_zna"
+                if not "^noun" in extra:
+                    tag = tag.replace("v_zna", "v_zn2")
         
 #        if "\\" in extra:
 #            tag += ":compb"
