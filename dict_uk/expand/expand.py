@@ -385,7 +385,12 @@ def adjust_affix_tags(lines, main_flag, flags, modifiers):
             
         elif ":perf" in flags and ":pres" in line:
             line = line.replace(":pres", ":futr")
+            
         elif main_flag.startswith("/adj"):
+            if "<" in flags or "^noun" in flags:
+                if ":uncontr" in line:
+                    continue
+                
             if "<" in flags:
                 if not ">" in flags and ":p:v_naz/v_zna" in line:
                     line = line.replace("v_naz/v_zna", "v_naz/v_kly")
@@ -396,6 +401,7 @@ def adjust_affix_tags(lines, main_flag, flags, modifiers):
                     line = line.replace("v_rod/v_zna", "v_rod")
                 elif ":p:v_rod/v_zna" in line:
                     line = line.replace("v_rod/v_zna", "v_rod")
+
     
 #            if "<" in flags:
 #                if util.person(flags):
