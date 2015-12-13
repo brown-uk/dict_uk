@@ -1,5 +1,5 @@
 Всього лем: 245612
-  словникових лем (без advp, без омонімів imperf/perf та adjp/adj, з compr/super) 197613
+  словникових лем (без advp, без омонімів imperf/perf та adjp/adj, з compr/super) 197612
 
 Частоти за тегами:
 adj 44778
@@ -12,18 +12,18 @@ adjp 11905
      perf 8380
 adv 8907
      compb 668
-advp 46724
-     imperf 30038
+advp 46725
+     imperf 30039
      perf 16687
 conj 107
 excl 490
 insert 55
-noun 99947
-     anim 33684
+noun 99946
+     anim 33683
      fname 2129
      inanim 66258
      lname 19127
-     nv 7742
+     nv 7741
      patr 618
 numr 131
      nv 23
@@ -40,8 +40,8 @@ verb 32133
 Частоти літер на початку слова
 п 41024
 в 23474
-з 19451
-н 16592
+з 19450
+н 16593
 с 15665
 к 14730
 д 12455
