@@ -1,29 +1,26 @@
-#!/home/arysin/bin/groovy
+#!/usr/bin/env groovy
 
 // Checks for mismatch of perf/imperf between adjp and impers
 // Usage: adjp_impers_check.groovy < dict_corp_lt.txt
 
 import groovy.transform.CompileStatic
+import groovy.transform.Immutable
+
 
 @CompileStatic
+@Immutable
 class DicEntry {
-    final String word
-    final String lemma
-    final List<String> tags
+    String word
+    String lemma
+    List<String> tags
 
-    public DicEntry(String word, String lemma, List<String> tags) {
-	    this.word = word
-	    this.lemma = lemma
-	    this.tags = tags
-	}
-
-    
     public static DicEntry fromLine(String line) {
       def parts = line.split()
-      
+
       return new DicEntry(parts[0], parts[1], Arrays.asList(parts[2].split(":")))
     }
 }
+
 
 def adjpMap = [:]
 def advpMap = [:]
@@ -35,28 +32,24 @@ def dicEntryMap = [:]
 def add(String line, Map<String, List> theMap) {
     def dicEntry = DicEntry.fromLine(line)
 
-    theMap[dicEntry.word] = []
-    if( "imperf" in dicEntry.tags )
-        theMap[dicEntry.word] << "imperf"
-    if( "perf" in dicEntry.tags )
-        theMap[dicEntry.word] << "perf"
+    theMap[dicEntry.word] = dicEntry.tags.grep(["imperf", "perf"])
 
 	return dicEntry        
 }
 
 
 System.in.readLines().each {
-    if( it ==~ /.*impers.*/ ) {
+    if( it.contains("impers" ) ) {
         def dicEntry = add(it, impersMap)
         dicEntryMap[dicEntry.word] = dicEntry
     }
 
-    if( it ==~ /.* adjp.*/ && it.contains("m:v_naz") ) {
+    if( it.contains(" adjp") && it.contains("m:v_naz") ) {
         def dicEntry = add(it, adjpMap)
         dicEntryMap[dicEntry.word] = dicEntry
     }
 
-    if( it ==~ /.*advp.*/ ) {
+    if( it.contains("advp") ) {
         def dicEntry = add(it, advpMap)
         dicEntryMap[dicEntry.word] = dicEntry
     }
