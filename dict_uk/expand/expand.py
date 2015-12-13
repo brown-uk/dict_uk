@@ -610,9 +610,10 @@ def post_process(lines):
         if " adv" in line and not "advp" in line and not ":compr" in line and not ":super" in line:
             line = promote(line)
 
-        if not "-corp" in sys.argv:
+        if not "--uncontr" in sys.argv:
             if "uncontr" in line:    # we don't need uncontr for rules LT
                 continue
+        if not "-corp" in sys.argv:
             if "ranim" in line:    # we can't handle it yet in LT
                 line = line.replace(":ranim", "")
             elif "rinanim" in line:    # we can't handle it yet in LT
