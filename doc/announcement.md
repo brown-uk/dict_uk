@@ -40,13 +40,14 @@ Natural Language Processing. Над словником працювало баг
 було успішно застосовано в ПЗ.
 
 Більше:
+
 Документація:
-https://github.com/arysin/dict_uk/tree/master/doc
+* https://github.com/arysin/dict_uk/tree/master/doc
 Приклад виходу:
-https://github.com/arysin/dict_uk/blob/master/doc/example_indented.txt
-https://github.com/arysin/dict_uk/blob/master/doc/example_tabular.txt
+* https://github.com/arysin/dict_uk/blob/master/doc/example_indented.txt
+* https://github.com/arysin/dict_uk/blob/master/doc/example_tabular.txt
 Поточна статистика:
-https://github.com/arysin/dict_uk/blob/master/out/stats/dict_stats.txt
+* https://github.com/arysin/dict_uk/blob/master/out/stats/dict_stats.txt
 
 Що далі: словник постійно поповнюють та вдосконалюють (додають нові інформативні теги, виправляють 
 помилки, вводять формати виводу тощо). У планах: створити веб-інтерфейс для користування словником, 
