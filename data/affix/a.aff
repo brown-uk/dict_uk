@@ -10,12 +10,16 @@ group adj
 ий	им			#   відісланим 	      @ adj:m:v_oru//n:v_oru//p:v_dav
 ий	ім			#   відісланім 		        @ adj:m:v_mis//n:v_mis
 ий	я			#   білолиця 	                    @ adj:f:v_naz
+ий	яя			#   білолицяя 	                    @ adj:f:v_naz:uncontr
 ий	ьої			#   білолицьої 	            @ adj:f:v_rod
 ий	ій			#   відісланій 	            @ adj:f:v_dav/v_mis
 ий	ю			#   білолицю 	                    @ adj:f:v_zna
+ий	юю			#   білолицюю 	                    @ adj:f:v_zna:uncontr
 ий	ьою			#   білолицьою 	            @ adj:f:v_oru
 ий	е			#   відіслане 	            @ adj:n:v_naz/v_zna
+ий	еє			#   відісланеє 	            @ adj:n:v_naz/v_zna:uncontr
 ий	і			#   відіслані 	            @ adj:p:v_naz/v_zna
+ий	ії			#   відісланії 	            @ adj:p:v_naz/v_zna:uncontr
 ий	их			#   відісланих 	            @ adj:p:v_rod/v_zna/v_mis
 ий	ими			#   відісланими 	            @ adj:p:v_oru
 
@@ -25,12 +29,16 @@ group adj
 ий	им			#   відісланим 	      @ adj:m:v_oru//n:v_oru//p:v_dav
 ий	ім			#   відісланім 		        @ adj:m:v_mis//n:v_mis
 ий	а			#   відіслана 	            @ adj:f:v_naz
+ий	ая			#   відісланая 	            @ adj:f:v_naz:uncontr
 ий	ої			#   відісланої 	            @ adj:f:v_rod
 ий	ій			#   відісланій 	            @ adj:f:v_dav/v_mis
 ий	у			#   відіслану 	            @ adj:f:v_zna
+ий	ую			#   відісланую 	            @ adj:f:v_zna:uncontr
 ий	ою			#   відісланою 	            @ adj:f:v_oru
 ий	е			#   відіслане 	            @ adj:n:v_naz/v_zna
+ий	еє			#   відісланеє 	            @ adj:n:v_naz/v_zna:uncontr
 ий	і			#   відіслані 	            @ adj:p:v_naz/v_zna
+ий	ії			#   відісланії 	            @ adj:p:v_naz/v_zna:uncontr
 ий	их			#   відісланих 	            @ adj:p:v_rod/v_zna/v_mis
 ий	ими			#   відісланими 	            @ adj:p:v_oru
 
@@ -39,13 +47,17 @@ group adj
 ій	ьому			#   синьому 	                    @ adj:m:v_dav/v_mis//n:v_dav/v_mis
 ій	ім			#   синім 		     @ adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
 ій	я			#   синя 		                    @ adj:f:v_naz
+ій	яя			#   синяя 		                    @ adj:f:v_naz:uncontr
 ій	ьої			#   синьої		            @ adj:f:v_rod
 ій	ю			#   синю 		                    @ adj:f:v_zna
+ій	юю			#   синюю 		                    @ adj:f:v_zna:uncontr
 ій	ьою			#   синьою		            @ adj:f:v_oru
 ій	є			#   синє 		                    @ adj:n:v_naz/v_zna
+ій	єє			#   синєє 		                    @ adj:n:v_naz/v_zna:uncontr
 
 [ії]й:
 й	0			#   сині 		                    @ adj:p:v_naz/v_zna
+й	ї			#   синії 		                    @ adj:p:v_naz/v_zna:uncontr
 й	х			#   синіх 		        @ adj:p:v_rod/v_zna/v_mis
 й	ми			#   синіми		            @ adj:p:v_oru
 
@@ -54,10 +66,13 @@ group adj
 їй	йому			#   безкрайому 	          @ adj:m:v_dav/v_mis//n:v_dav/v_mis
 їй	їм			#   безкраїм 		   @ adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
 їй	я			#   безкрая 		            @ adj:f:v_naz
+їй	яя			#   безкраяя 		            @ adj:f:v_naz:uncontr
 їй	йої			#   безкрайої		            @ adj:f:v_rod
 їй	ю			#   безкраю 		            @ adj:f:v_zna
+їй	юю			#   безкраюю 		            @ adj:f:v_zna:uncontr
 їй	йою			#   безкрайою		            @ adj:f:v_oru
 їй	є			#   безкрає 		            @ adj:n:v_naz/v_zna
+їй	єє			#   безкраєє 		            @ adj:n:v_naz/v_zna:uncontr
 
 #  середнього роду
 е:
@@ -75,10 +90,13 @@ group adj
 а	ої		#   супернової 	              @ adj:f:v_rod
 а	ій		#   суперновій 	              @ adj:f:v_dav/v_mis
 а	у		#   супернову 	                @ adj:f:v_zna
+а	ую		#   суперновую 	                @ adj:f:v_zna:uncontr
 а	ою		#   суперновою 	              @ adj:f:v_oru
 а	і			#   супернові 	            @ adj:p:v_naz/v_zna
+а	ії			#   суперновії 	            @ adj:p:v_naz/v_zna:uncontr
 а	им			#   суперновим 	            @ adj:p:v_dav
 а	их			#   супернових 	            @ adj:p:v_rod/v_zna/v_mis
+а	іїх			#   суперновіїх 	            @ adj:p:v_zna:uncontr
 а	ими			#   суперновими 	            @ adj:p:v_oru
 
 
@@ -86,6 +104,7 @@ group adj
 я	ьої		#   незаміжньої 	            @ adj:f:v_rod
 я	ій		#   незаміжній 	              @ adj:f:v_dav/v_mis
 я	ю		#   незаміжню 	                @ adj:f:v_zna
+я	юю		#   незаміжнюю 	                @ adj:f:v_zna:uncontr
 я	ьою		#   незаміжньою 	            @ adj:f:v_oru
 
 #  множина
