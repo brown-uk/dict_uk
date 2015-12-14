@@ -63,5 +63,5 @@ if __name__ == "__main__":
         filename = "dict_rules_lt.txt"
 
     with open(filename, "w", encoding="utf-8") as out_file:
-       for line in out_lines:
+        for line in out_lines:
             out_file.write(line + "\n")
