@@ -48,6 +48,9 @@ Natural Language Processing. Над словником працювало баг
 * https://github.com/arysin/dict_uk/blob/master/doc/example_indented.txt
 * https://github.com/arysin/dict_uk/blob/master/doc/example_tabular.txt
 
+Повний виходовий файл у форматі з відступами можна стягнути у розділі випусків (dict_corp_vis.txt.bz2):
+* https://github.com/arysin/dict_uk/releases
+
 Поточна статистика:
 * https://github.com/arysin/dict_uk/blob/master/out/stats/dict_stats.txt
 
