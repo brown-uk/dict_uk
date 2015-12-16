@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #
-# Converts source dictionary files from spell-uk project to dict_uk
+# Converts source dictionary files from spell-uk project (https://github.com/arysin/spell-uk) to dict_uk
 #
 
 SPELL_UK_DIR=../../spell-uk
