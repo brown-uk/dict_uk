@@ -376,6 +376,7 @@ def rep_n4(word, flags):
       
     if "l" in flags: out_flags.append("n40"); flags.remove("l")
     if "m" in flags: out_flags.append("p"); flags.remove("m")
+    if "j" in flags: out_flags.append("p"); flags.remove("j")
     
     return combine(word, out_flags, flags, extra)
 
