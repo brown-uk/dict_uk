@@ -37,7 +37,7 @@ echo "Files: $INDICT $TAGS_ONLY"
 
 for file in $INDICT $TAGS_ONLY; do
     FLAGS=""
-    [ $file == "exceptions.lst" ] && FLAGS="-nosort"
+    ([ $file == "exceptions.lst" ] || [ $file == "pronouns.lst" ] || [ $file == "lang.lst" ]) && FLAGS="-nosort"
     $CODE_BASE/convert.py $FLAGS < $DICT_SRC_DIR/$file > $OUT_DIR/$file || exit 1
 done
 
