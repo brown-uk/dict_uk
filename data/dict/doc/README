@@ -4,7 +4,8 @@ Description of files in this directory:
 
 base.lst	-- base file for the dictionary
 base-abbr.lst 	-- general abbriviations
-base-compound.lst	compound words with/without hyphen, see http://www.nas.gov.ua/institutes/ium/Structure/Documents/2010_1.pdf
+base-compound.lst	compound words with/without hyphen, 
+    see http://irbis-nbuv.gov.ua/cgi-bin/irbis_nbuv/cgiirbis_64.exe?C21COM=2&I21DBN=UJRN&P21DBN=UJRN&IMAGE_FILE_DOWNLOAD=1&Image_file_name=PDF/Ukrm_2010_1_33.pdf
 colors.lst 	-- colors
 computer.lst 	-- computing related terms
 dot-abbr.lst -- abbreviations with dots
