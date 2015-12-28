@@ -956,7 +956,6 @@
 Верхньоторецького Верхньоторецьке noun:inanim:n:v_rod
 Верхньоторецькому Верхньоторецьке noun:inanim:n:v_dav
 Верхньоторецьке Верхньоторецьке noun:inanim:n:v_zna
-Верхньоторецького Верхньоторецьке noun:inanim:n:v_zna
 Верхньоторецьким Верхньоторецьке noun:inanim:n:v_oru
 Верхньоторецькому Верхньоторецьке noun:inanim:n:v_mis
 Верьовка Верьовка noun:anim:m:v_naz:lname
@@ -1731,9 +1730,11 @@
 джерелах джерело noun:inanim:p:v_mis
 дзиґа дзиґа noun:inanim:f:v_naz
 дзиґи дзиґа noun:inanim:f:v_rod
+дзидзі дзиґа noun:inanim:f:v_dav
 дзизі дзиґа noun:inanim:f:v_dav
 дзиґу дзиґа noun:inanim:f:v_zna
 дзиґою дзиґа noun:inanim:f:v_oru
+дзидзі дзиґа noun:inanim:f:v_mis
 дзизі дзиґа noun:inanim:f:v_mis
 дзиґи дзиґа noun:inanim:p:v_naz
 дзиґ дзиґа noun:inanim:p:v_rod
