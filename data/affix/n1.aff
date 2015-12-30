@@ -62,7 +62,8 @@ subgroup n10.p1
 а	і		# їжа  їжі 	                        @ noun:p:v_naz
 
 [^жчшщ]а:
-а	и		# хата  хати 	                    @ noun:p:v_naz/v_kly
+а	и		# хата  хати 	                    @ noun:p:v_naz
+#/v_kly
 
 [^ійеиаоу'ь]я:
 я	і		# вишня  вишні 	                    @ noun:p:v_naz
