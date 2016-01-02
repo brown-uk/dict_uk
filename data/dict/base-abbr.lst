@@ -185,8 +185,8 @@
 кДж noun:m:nv
 КДКА noun:f:nv
 КДМА noun:f:nv:np
-КД noun:f:nv
-КД noun:m:nv
+КД noun:f:nv:xp2    # конструкторська документація
+КД noun:m:nv:xp1    # компактдиск
 ккал noun:f:nv
 ККД noun:m:nv
 КМДА noun:f:nv:np
