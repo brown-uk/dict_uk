@@ -71,9 +71,7 @@
 губів губа noun:p:v_rod
 зморщок зморшка noun:p:v_rod
 легенів легеня noun:p:v_rod
-льоту літ noun:m:v_rod/v_dav/v_mis
 панотче панотець noun:m:v_kly:anim
-персні перстень noun:p:v_naz/v_zna
 старче старець noun:m:v_kly:anim
 чернець ченець noun:m:v_naz:anim
 мамів мама noun:p:v_rod:anim
@@ -496,13 +494,13 @@
 
 
 жати /v6 :imperf
-жатися /vr6 :imperf
+жатися /vr6 :imperf    # жну
 нажати /v6 :perf
-нажатися /vr6 :perf
+нажатися /vr6 :perf    # нажну
 пожати /v6 :perf
-пожатися /vr6 :perf
+пожатися /vr6 :perf    # пожну
 пережати /v6 :perf
-пережатися /vr6 :perf
+пережатися /vr6 :perf    # пережну
 
 # !verb:perf
 #зжати/89
