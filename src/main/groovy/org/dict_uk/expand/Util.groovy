@@ -304,19 +304,19 @@ class Util {
 		return out_lines
 	}
 
-	def sub_stat(pos, sub_pos, line, sub_pos_stat) {
+	def sub_stat(String pos, String sub_pos, line, sub_pos_stat) {
 		if( ":" + sub_pos in line) {
-			if( ! pos in sub_pos_stat) {
-				sub_pos_stat[pos] = collections.defaultdict(int)
+			if( ! (pos in sub_pos_stat) ) {
+				sub_pos_stat[pos] = [:].withDefault{ 0 }
 			}
 			sub_pos_stat[pos][sub_pos] += 1
 		}
 	}
 
 	def print_stats(List<String> lines, int double_form_cnt) {
-		def pos_stat = [] //collections.defaultdict(int)
-		def sub_pos_stat = [] //collections.defaultdict(list)
-		def letter_stat = [] //collections.defaultdict(int)
+		def pos_stat = [:].withDefault { 0 } //collections.defaultdict(int)
+		def sub_pos_stat = [:].withDefault { [] } //collections.defaultdict(list)
+		def letter_stat = [:].withDefault { 0 } //collections.defaultdict(int)
 		def cnt = 0
 		def cnt_std = 0
 		def proper_noun_cnt = 0
@@ -330,7 +330,7 @@ class Util {
 				cnt_std += 1
 			}
 
-			if( line[0].isupper() && ! line[1].isupper()) {
+			if( line.charAt(0).isUpperCase() && ! line.charAt(1).isUpperCase() ) {
 				proper_noun_cnt += 1
 			}
 
@@ -338,14 +338,10 @@ class Util {
 				def parts = line.split()
 				def word = parts[0]
 				def tags = parts[1]
-			}
-			catch(Exception e) {
-				throw new Exception("Choked on " + line, e)
-			}
 
-			def pos_tag = tags.split(":", 2)[0]
-			pos_stat[pos_tag] += 1
-			letter_stat[word[0].lower()] += 1
+			    def pos_tag = tags.split(":", 2)[0]
+			    pos_stat[pos_tag] += 1
+			    letter_stat[word[0].toLowerCase()] += 1
 
 			if( tags.startsWith("adj") ) {
 				sub_stat("adj", "super", line, sub_pos_stat)
@@ -365,6 +361,10 @@ class Util {
 			for( sub_pos in stat_keys ) {
 				sub_stat(pos_tag, sub_pos, line, sub_pos_stat)
 			}
+			}
+			catch(Exception e) {
+				throw new Exception("Choked on " + line, e)
+			}
 		}
 
 		log.info("Всього лем: %d\n", cnt)
@@ -375,11 +375,11 @@ class Util {
 		
 		        stat_f.printf("\nЧастоти за тегами:\n")
 		
-		        ordered_pos_freq = pos_stat.keys().sort()
+		        def ordered_pos_freq = pos_stat.keySet().toList().sort()
 		        for( pos in ordered_pos_freq ){
 		            stat_f.printf(pos, pos_stat[pos])
 		
-		            current_sub_pos_stat = sub_pos_stat[pos]
+		            def current_sub_pos_stat = sub_pos_stat[pos]
 		            for( sub_pos in current_sub_pos_stat.sort() ) {
 		                stat_f.printf("    ", sub_pos, current_sub_pos_stat[sub_pos])
 		            }
@@ -525,7 +525,7 @@ class Util {
 	
 	@TypeChecked
 	void print_word_list(List<String> sorted_lines) {
-		log.info("Collecting words, lemmas, && tags...")
+		log.info("Collecting words, lemmas, and tags...")
 
 		HashSet<String> words = new HashSet<>()
 		HashSet<String> spell_words = new HashSet<>()
