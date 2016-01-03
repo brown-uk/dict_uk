@@ -1,0 +1,99 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+
+version = '1.0'
+group = 'org.dict_uk'
+
+String langCode="uk"
+
+String affixDir="data/affix"
+
+String outputDir="out"
+String prevDir="../../out/prev"
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.5'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.5'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.5'
+    testCompile 'junit:junit:4.12'
+}
+
+task reverseVerbs (type: JavaExec, dependsOn: classes) {
+    def inputFile = "$affixDir/v.aff"
+    inputs.file inputFile
+    outputs.file "$affixDir/vr.aff"
+
+    classpath = sourceSets.main.runtimeClasspath
+    main = "org.dict_uk.expand.VerbReverse"
+    args file(inputFile), file(outputs.files[0])
+
+//    standardInput = file(inputFile).newInputStream()
+//    standardOutput = file(outputs.files[0]).newOutputStream()
+}
+
+task reverseAdvp (type: JavaExec, dependsOn: classes) {
+    def inputFile = "$affixDir/v_advp.aff"
+    inputs.file inputFile
+    outputs.file "$affixDir/vr_advp.aff"
+
+    classpath = sourceSets.main.runtimeClasspath
+    main = "org.dict_uk.expand.VerbReverse"
+
+    args file(inputFile), file(outputs.files[0])
+}
+
+task expandForCorp(type: JavaExec, dependsOn: [reverseVerbs, reverseAdvp]) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = "org.dict_uk.expand.ExpandAll"
+
+    workingDir = file(outputDir)
+
+//    def opts = "--corp --indent --mfl --uncontr --stats --wordlist --time"
+    def opts = "--corp --indent --mfl --stats --wordlist --time"
+    args "-aff", "../data/affix"
+    args "-dict", "../data/dict"
+    args opts.split()
+//    jvmArgs "-agentlib:jdwp=transport=dt_socket,server=y,address=8000,suspend=n"
+}
+
+task expandForRules(type: JavaExec, dependsOn: [reverseVerbs, reverseAdvp]) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = "org.dict_uk.expand.ExpandAll"
+
+    workingDir = file(outputDir)
+
+    def opts = "--mfl --time"
+    args "-aff", "../data/affix"
+    args "-dict", "../data/dict"
+    args opts.split()
+}
+
+task testForCorp(type: JavaExec, dependsOn: [reverseVerbs, reverseAdvp]) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = "org.dict_uk.expand.ExpandAll"
+
+    workingDir = file("out/test")
+
+    def opts = "--corp --indent --mfl --uncontr --stats --wordlist"
+    args "-aff", "../../data/affix"
+    args "-dict", "."
+    args opts.split()
+}
+
+task testForRules(type: JavaExec, dependsOn: [reverseVerbs, reverseAdvp]) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = "org.dict_uk.expand.ExpandAll"
+
+    workingDir = file("out/test")
+
+    def opts = "--mfl"
+    args "-aff", "../../data/affix"
+    args "-dict", "."
+    args opts.split()
+}

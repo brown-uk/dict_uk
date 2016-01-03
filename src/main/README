@@ -1,0 +1,7 @@
+NOTE: groovy code has been quickly converted from python and still needs to be adjusted, cleaned up, and optimized
+
+Advantages of groovy over python:
+* ~40% faster (for almost identical codepath)
+* can be easily converted to use parallel processing (still TODO)
+* more platform-independent
+* integrating nicely with gradle
