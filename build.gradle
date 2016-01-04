@@ -48,21 +48,24 @@ task reverseAdvp (type: JavaExec, dependsOn: classes) {
     args file(inputFile), file(outputs.files[0])
 }
 
-task expandForCorp(type: JavaExec, dependsOn: [reverseVerbs, reverseAdvp]) {
+task reverseAffix (dependsOn: [reverseVerbs, reverseAdvp]) {
+}
+
+task expandForCorp(type: JavaExec, dependsOn: reverseAffix) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
 
     workingDir = file(outputDir)
 
 //    def opts = "--corp --indent --mfl --uncontr --stats --wordlist --time"
-    def opts = "--corp --indent --mfl --stats --wordlist --time"
+    def opts = "--corp --indent --mfl --stats --wordlist --time --log-usage"
     args "-aff", "../data/affix"
     args "-dict", "../data/dict"
     args opts.split()
 //    jvmArgs "-agentlib:jdwp=transport=dt_socket,server=y,address=8000,suspend=n"
 }
 
-task expandForRules(type: JavaExec, dependsOn: [reverseVerbs, reverseAdvp]) {
+task expandForRules(type: JavaExec, dependsOn: reverseAffix) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
 
@@ -74,7 +77,7 @@ task expandForRules(type: JavaExec, dependsOn: [reverseVerbs, reverseAdvp]) {
     args opts.split()
 }
 
-task testForCorp(type: JavaExec, dependsOn: [reverseVerbs, reverseAdvp]) {
+task testForCorp(type: JavaExec, dependsOn: reverseAffix) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
 
@@ -86,7 +89,7 @@ task testForCorp(type: JavaExec, dependsOn: [reverseVerbs, reverseAdvp]) {
     args opts.split()
 }
 
-task testForRules(type: JavaExec, dependsOn: [reverseVerbs, reverseAdvp]) {
+task testForRules(type: JavaExec, dependsOn: reverseAffix) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
 
