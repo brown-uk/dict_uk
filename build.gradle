@@ -109,7 +109,7 @@ task testForRules(type: JavaExec, dependsOn: reverseAffix) {
 
     workingDir = file("out/test")
 
-    def opts = "--mfl"
+    def opts = "--mfl --log-usage"
     args "-aff", "../../data/affix"
     args "-dict", "."
     args opts.split()

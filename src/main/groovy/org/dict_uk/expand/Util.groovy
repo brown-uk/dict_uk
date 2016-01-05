@@ -600,14 +600,18 @@ class Util {
 	}
 
 	def log_usage(affix) {
-		new File("affix_usage.txt").withWriter("utf-8") { f ->
-			for( affixFlag in sorted(affix.affixMap.keys())) {
-				affixGroups = affix.affixMap[affixFlag]
-				f.printf("Flag %s has %d groups\n", affixFlag, affixGroups.size())
+	   def affixMap = affix.affixMap.sort()
+		new File("affix_usage.txt").withWriter("utf-8") { usageFile ->
+			for( e in affixMap ) {
+				def affixGroups = e.value
+				def s1 = sprintf("Flag %s has %d groups\n", e.key, affixGroups.size())
+				usageFile.print(s1)
 				
-				for( ent in affixGroups) {
-					(match, affixGroup) = [ent.key, ent.value]
-					f.printf("\t%s : %d\t\t%d patterns", match, affixGroup.counter, affixGroup.affixes.size())
+				for( ent in affixGroups ) {
+					def match = ent.key
+					def affixGroup = ent.value
+					def s2 = sprintf("\t%s : %d\t\t%d patterns\n", match, affixGroup.counter, affixGroup.affixes.size())
+					usageFile.print(s2)
 				}
 			}
 		}

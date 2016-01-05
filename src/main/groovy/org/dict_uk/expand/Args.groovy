@@ -37,7 +37,7 @@ class Args {
 			args.stats = true
 		if( "--wordlist" in argv )
 			args.wordlist = true
-		if( "--log_usage" in argv )
+		if( "--log-usage" in argv )
 			args.log_usage = true
 		if( "--uncontr" in argv )
 			args.removeWithTags.remove("uncontr")
