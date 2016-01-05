@@ -24,6 +24,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+//
+// Auxilliary targets
+//
+
 task reverseVerbs (type: JavaExec, dependsOn: classes) {
     def inputFile = "$affixDir/v.aff"
     inputs.file inputFile
@@ -51,6 +55,11 @@ task reverseAdvp (type: JavaExec, dependsOn: classes) {
 task reverseAffix (dependsOn: [reverseVerbs, reverseAdvp]) {
 }
 
+
+//
+// Main targets
+//
+
 task expandForCorp(type: JavaExec, dependsOn: reverseAffix) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
@@ -58,7 +67,7 @@ task expandForCorp(type: JavaExec, dependsOn: reverseAffix) {
     workingDir = file(outputDir)
 
 //    def opts = "--corp --indent --mfl --uncontr --stats --wordlist --time"
-    def opts = "--corp --indent --mfl --stats --wordlist --time --log-usage"
+    def opts = "--corp --indent --mfl --stats --wordlist --time"
     args "-aff", "../data/affix"
     args "-dict", "../data/dict"
     args opts.split()
@@ -71,11 +80,16 @@ task expandForRules(type: JavaExec, dependsOn: reverseAffix) {
 
     workingDir = file(outputDir)
 
-    def opts = "--mfl --time"
+    def opts = "--mfl --time --log-usage"
     args "-aff", "../data/affix"
     args "-dict", "../data/dict"
     args opts.split()
 }
+
+
+//
+// Testing targets
+//
 
 task testForCorp(type: JavaExec, dependsOn: reverseAffix) {
     classpath = sourceSets.main.runtimeClasspath
