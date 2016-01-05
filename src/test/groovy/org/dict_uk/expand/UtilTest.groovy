@@ -40,6 +40,10 @@ def linesToSort =
 Абалкіним Абалкін noun:m:v_oru:anim:lname
 Абалкіні Абалкін noun:m:v_mis:anim:lname
 Абалкіну Абалкін noun:m:v_mis:anim:lname
+азотистоводневий азотистоводневий adj:m:v_naz
+азотистоводневого азотистоводневий adj:m:v_rod
+азотисто-водневий азотисто-водневий adj:m:v_naz
+азотисто-водневого азотисто-водневий adj:m:v_rod
 '''.trim().split("\n")
 	
 	

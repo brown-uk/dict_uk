@@ -97,6 +97,7 @@ public class UkDictComparator implements Comparator<String> {
 		
 		normChars.append(" ");
 		tailCaps.append(" ");
+		ignoreChars.append(" ");
 		
 		return normChars.toString() + tailCaps.toString() + ignoreChars.toString();
 	}
