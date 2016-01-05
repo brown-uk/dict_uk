@@ -1126,7 +1126,7 @@ class Expand {
 				throw new Exception("Exception in line: \"" + line + "\"", e)
 			}
 
-			if( flush_stdout) {
+			if( flush_stdout ) {
 				def sorted_lines = util.sort_all_lines(tag_lines)
 				println(sorted_lines.join("\n"))
 				System.out.flush()
@@ -1134,6 +1134,7 @@ class Expand {
 				all_lines.addAll(tag_lines)
 			}
 		}
+		
 		def time2
 		if( Args.args.time ) {
 			time2 = System.currentTimeMillis()
@@ -1167,6 +1168,7 @@ class Expand {
 			if( Args.args.wordlist ) {
 				util.print_word_list(sorted_lines)
 			}
+			
 			if( Args.args.indent ) {
 				if( Args.args.mfl ) {
 					new File("dict_corp_lt.txt").withWriter("utf-8") {  f ->
@@ -1180,9 +1182,11 @@ class Expand {
 					util.print_stats(sorted_lines, double_form_cnt)
 				}
 			}
+			
 			if( Args.args.log_usage ) {
 				util.log_usage(affix)
 			}
+			
 			return sorted_lines
 		}
 	}

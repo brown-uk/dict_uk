@@ -315,7 +315,7 @@ class Util {
 
 	def print_stats(List<String> lines, int double_form_cnt) {
 		def pos_stat = [:].withDefault { 0 } //collections.defaultdict(int)
-		def sub_pos_stat = [:].withDefault { [] } //collections.defaultdict(list)
+		def sub_pos_stat = [:].withDefault { [:] } //collections.defaultdict(list)
 		def letter_stat = [:].withDefault { 0 } //collections.defaultdict(int)
 		def cnt = 0
 		def cnt_std = 0
@@ -369,30 +369,30 @@ class Util {
 
 		log.info("Всього лем: %d\n", cnt)
 		
-		    new File("dict_stats.txt").withWriter("utf-8") { stat_f ->
-		        stat_f.printf("Всього лем: %d\n", cnt)
-		        stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf та adjp/adj, з compr/super)\n", cnt_std - double_form_cnt)
-		
-		        stat_f.printf("\nЧастоти за тегами:\n")
-		
-		        def ordered_pos_freq = pos_stat.keySet().toList().sort()
-		        for( pos in ordered_pos_freq ){
-		            stat_f.printf(pos, pos_stat[pos])
-		
-		            def current_sub_pos_stat = sub_pos_stat[pos]
-		            for( sub_pos in current_sub_pos_stat.sort() ) {
-		                stat_f.printf("    ", sub_pos, current_sub_pos_stat[sub_pos])
-		            }
-		        }
-		        stat_f.printf("\nВласних назв (без абревіатур):\n", proper_noun_cnt)
-		
-//		        stat_f.printf("\nЧастоти літер на початку слова\n")
-//		
-//		        keys = sorted(letter_stat, letter_stat.get)
-//		        for( k in keys ){
-//		            stat_f.printf(k, letter_stat[k], file=stat_f)
-//		        }
-		    }
+		new File("dict_stats.txt").withWriter("utf-8") { stat_f ->
+			stat_f.printf("Всього лем: %d\n", cnt)
+			stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf та adjp/adj, з compr/super) %d\n", (cnt_std - double_form_cnt))
+			stat_f.print("\nЧастоти за тегами:\n")
+
+			def ordered_pos_freq = pos_stat.keySet().toList().sort()
+			for( pos in ordered_pos_freq ){
+				stat_f.println(pos + " " + pos_stat[pos])
+
+				Map current_sub_pos_stat = sub_pos_stat[pos]
+				def sub_pos_keys = current_sub_pos_stat.keySet().toList().sort()
+				for( sub_pos in sub_pos_keys ) {
+					stat_f.println("     " + sub_pos + " " + current_sub_pos_stat[sub_pos])
+				}
+			}
+			stat_f.printf("\nВласних назв (без абревіатур): %d\n", proper_noun_cnt)
+
+			stat_f.print("\nЧастоти літер на початку слова\n")
+
+			def letter_map = letter_stat.sort { -it.value }
+			for( e in letter_map ){
+				stat_f.println(e.key + " " + e.value)
+			}
+		}
 	}
 
 	static final Pattern re_xv_sub = Pattern.compile("^([^:]+)(.*)(:x.[1-9])")
@@ -600,7 +600,7 @@ class Util {
 	}
 
 	def log_usage(affix) {
-		new File("usage.txt").withWriter("utf-8") { f ->
+		new File("affix_usage.txt").withWriter("utf-8") { f ->
 			for( affixFlag in sorted(affix.affixMap.keys())) {
 				affixGroups = affix.affixMap[affixFlag]
 				f.printf("Flag %s has %d groups\n", affixFlag, affixGroups.size())
