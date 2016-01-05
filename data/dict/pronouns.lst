@@ -1068,7 +1068,8 @@
 дев'яноста дев'яносто numr:p:v_rod/v_dav/v_oru/v_mis
 
 сто сто numr:p:v_naz/v_zna
-ста сто numr:p:v_rod
+ста сто numr:p:v_rod/v_dav/v_oru/v_mis
+
 двісті двісті numr:p:v_naz
 двохсот двісті numr:p:v_rod/v_zna
 двомстам двісті numr:p:v_dav

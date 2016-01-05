@@ -13,8 +13,5 @@ group numr
 0 ьма сят     # п'ятдесят  п'ятдесятьма       @ numr:p:v_oru
 0 ьома  сят   # п'ятдесят  п'ятдесятьома        @ numr:p:v_oru
 0 ьох сят     # п'ятдесят  п'ятдесятох        @ numr:p:v_rod/v_zna/v_mis
-о а сто       # сто  ста                        @ numr:p:v_rod/v_dav/v_oru/v_mis
 
-#SFX a   о  ам  сто   # сто  стам                       @ numr:p:v_dav
-#SFX a   о  ами сто   # сто  стами                        @ numr:p:v_oru
-#SFX a   о  ах  сто   # сто  стах                       @ numr:p:v_mis
+#о а сто       # сто  ста                        @ numr:p:v_rod/v_dav/v_oru/v_mis
