@@ -100,3 +100,6 @@ task testForRules(type: JavaExec, dependsOn: reverseAffix) {
     args "-dict", "."
     args opts.split()
 }
+
+task testExpand(dependsOn: [testForCorp, testForRules]) {
+}
