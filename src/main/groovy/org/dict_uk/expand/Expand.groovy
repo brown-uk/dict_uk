@@ -651,7 +651,8 @@ class Expand {
 		}
 		else if( ":imperf:perf" in line ) {
 			def line1 = line.replace(":perf", "")
-			def line2 = line.replace(":imperf", "").replace(".cf", "")  //.replace(".advp")  // so we don"t get two identical advp:perf lines
+			def line2 = line.replace(":imperf", "").replace(".cf", "").replace(".adv ", " ") // so we don't duplicate cf and adv
+			//.replace(".advp")  // so we don"t get two identical advp:perf lines
 			out_lines = [line1, line2]
 		}
 		else if( ":&adj" in line && ! (" :&adj" in line) ) {
