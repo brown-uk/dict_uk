@@ -138,8 +138,6 @@ class VerbReverse {
 
     def convert = true
     
-    System.err.println("args " + argv)
-    
     def input = argv.size() > 0 ? new File(argv[0]).newInputStream() : System.in
     //def output = argv.size() > 1 ? new File(argv[1]).newOutputStream() : System.out
     

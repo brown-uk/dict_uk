@@ -15,34 +15,17 @@ import org.dict_uk.expand.Args
 class ExpandAll {
 	static Logger log = LogManager.getFormatterLogger(ExpandAll.class);
 	
-	private static final String usage = "Usage: ExpandAll.groovy -aff <affix_dir> -dict <dictionary dir>"
-
 	static void main(argv) {
 		Args.parse(argv)
 
-
-		assert "-aff" in argv, usage
-
-
-		def aff_arg_idx = Arrays.asList(argv).indexOf("-aff")
-		def affix_filename = argv[aff_arg_idx + 1]
-
-		assert "-dict" in argv, usage
-
-		def dic_arg_idx = Arrays.asList(argv).indexOf("-dict")
-		def dict_dirname = argv[dic_arg_idx + 1]
-
 		def expand = new Expand()
-		expand.affix.load_affixes(affix_filename)
+		expand.affix.load_affixes(Args.args.affixDir)
 
 
 		def out_lines = []
 
-		//    def dic_files = new File(dict_dirname).eachFileMatch {getName().endsWith('.lst')} { dic_file ->
-		def dic_files = new File(dict_dirname).eachFileMatch { true } { dic_file ->
-			if( ! dic_file.getName().endsWith('.lst') )
-				return
-
+		def dictFilePattern = ~/.*\.lst/
+		def dic_files = new File(Args.args.dictDir).eachFileMatch(dictFilePattern) { dic_file ->
 			def out
 			if( dic_file.getName() == "composite.lst" ) {
 				def expand_comps = new ExpandComps(expand)

@@ -109,12 +109,12 @@ class Expand {
 					for( affix_item in affixGroup.affixes) {
 						// DL - не додавати незавершену форму дієприслівника для завершеної форми дієслова
 						if( pos.startsWith("verb") && ":perf" in extra
-						  && (affix_item.tags.startsWith("advp:imperf")
-						  || affix_item.tags.startsWith("advp:rev:imperf"))) {
+						&& (affix_item.tags.startsWith("advp:imperf")
+						|| affix_item.tags.startsWith("advp:rev:imperf"))) {
 							appliedCnts[ affixFlag2 ] = 1000
 							continue
 						}
-						
+
 						String deriv = affix_item.apply(word)
 						String tags = affix_item.tags
 
@@ -124,7 +124,7 @@ class Expand {
 						if( affixFlag2 == "n.patr") {
 							tags += ":patr"
 						}
-						
+
 						words.add(deriv + " " + word + " " + tags)
 						appliedCnt += 1
 						appliedCnts[affixFlag2] += 1
@@ -141,7 +141,7 @@ class Expand {
 				throw new Exception("FATAL: Flag " + affixFlag2 + " of " + affixFlags + " ! applicable to " + word)
 			}
 		}
-		
+
 		def dups = words.findAll { words.count(it) > 1 }.unique()
 		if( dups.size() > 0) {
 			log.warn("duplicates: " + dups)
@@ -720,6 +720,32 @@ class Expand {
 		return line
 	}
 
+	boolean isRemoveLine(String line) {
+		for( removeWithTag in Args.args.removeWithTags ) {
+			if( ":" + removeWithTag in line )
+				return true
+		}
+		return false
+	}
+	
+	private String removeTags(String line) {
+		for( removeTag in Args.args.removeTags ) {
+			if( ":" + removeTag in line ) {
+				line = line.replace(":" + removeTag, "")
+			}
+		}
+		return line
+	}
+	
+	private String promoteLemmaForTags(String line) {
+		for( lemmaTag in Args.args.lemmaForTags ) {
+			if( lemmaTag == "advp" && lemmaTag in line ) {
+				line = promote(line)
+			}
+		}
+		return line
+	}
+
 	//@profile
 	@TypeChecked
 	List<String> post_process(List<String> lines) {
@@ -730,21 +756,15 @@ class Expand {
 			if( " adv" in line && ! ("advp" in line) && ! (":compr" in line) && ! (":super" in line) )
 				line = promote(line)
 
-			if( "uncontr" in Args.args.removeWithTags ) {
-				if( "uncontr" in line)     // we don't need uncontr for rules LT
-					continue
-			}
-			if( ! Args.args.corp ) {
-				if( "ranim" in line)     // we can't handle it yet in LT
-					line = line.replace(":ranim", "")
-				else if( "rinanim" in line )    // we can't handle it yet in LT
-					line = line.replace(":rinanim", "")
-			}
+			if( isRemoveLine(line) )
+				continue
 
+			line = removeTags(line)
+
+			line = promoteLemmaForTags(line)
+			
 			if( Args.args.corp ) {
-				if( "advp" in line)
-					line = promote(line)
-				else if( "noun" in line ) {
+				if( "noun" in line ) {
 					if( ":anim" in line)
 						line = line.replace(":anim", "").replace("noun:", "noun:anim:")
 					else if( ":inanim" in line )
@@ -848,7 +868,7 @@ class Expand {
 			if( ! Args.args.corp ) {
 				word_forms = word_forms.collect { replace_base(it, main_word) }
 			}
-			
+
 			return word_forms
 		}
 		assert false, "Unknown subposition for " + line + "(" + main_word + ")"
@@ -1134,7 +1154,7 @@ class Expand {
 				all_lines.addAll(tag_lines)
 			}
 		}
-		
+
 		def time2
 		if( Args.args.time ) {
 			time2 = System.currentTimeMillis()
@@ -1168,7 +1188,7 @@ class Expand {
 			if( Args.args.wordlist ) {
 				util.print_word_list(sorted_lines)
 			}
-			
+
 			if( Args.args.indent ) {
 				if( Args.args.mfl ) {
 					new File("dict_corp_lt.txt").withWriter("utf-8") {  f ->
@@ -1182,11 +1202,11 @@ class Expand {
 					util.print_stats(sorted_lines, double_form_cnt)
 				}
 			}
-			
+
 			if( Args.args.log_usage ) {
 				util.log_usage(affix)
 			}
-			
+
 			return sorted_lines
 		}
 	}
