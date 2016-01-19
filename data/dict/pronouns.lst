@@ -257,9 +257,9 @@
 його його adj:m:nv//n:nv:&pron:pos
 її її adj:f:nv:&pron:pos
 
-себе себе noun:m:v_rod/v_zna//n:v_rod/v_zna:&pron:refl
-собі себе noun:m:v_dav/v_mis//n:v_dav/v_mis:&pron:refl
-собою себе noun:m:v_oru//n:v_oru:&pron:refl
+себе себе noun:v_rod/v_zna:&pron:refl
+собі себе noun:v_dav/v_mis:&pron:refl
+собою себе noun:v_oru:&pron:refl
 
 сам сам adj:m:v_naz/v_zna:&pron:def
 самого сам adj:m:v_rod/v_zna//n:v_rod:&pron:def
