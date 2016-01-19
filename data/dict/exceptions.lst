@@ -51,7 +51,6 @@
 відьом відьма noun:p:v_rod/v_zna:anim
 одіж одежа noun:f:v_naz/v_zna
 воріженьки вороженько noun:p:v_naz:anim:rare
-очки очко noun:p:v_naz
 воєн війна noun:p:v_rod
 грошима гроші noun:p:v_oru:ns
 грішми гроші noun:p:v_oru:ns
@@ -181,6 +180,35 @@
 леті літ noun:m:v_mis
 
 окові око noun:n:v_dav
+
+очко очко noun:n:v_naz:xp1    # о́чко (від око)
+очка очко noun:n:v_rod:xp1
+очку очко noun:n:v_dav:xp1
+очко очко noun:n:v_zna:xp1
+очком очко noun:n:v_oru:xp1
+очку очко noun:n:v_mis:xp1
+очка очко noun:p:v_naz:xp1
+очки очко noun:p:v_naz:xp1
+очок очко noun:p:v_rod:xp1
+очкам очко noun:p:v_dav:xp1
+очка очко noun:p:v_zna:xp1
+очки очко noun:p:v_zna:xp1
+очками очко noun:p:v_oru:xp1
+очках очко noun:p:v_mis:xp1
+
+очко очко noun:n:v_naz:xp2    # очко́ (в грі)
+очка очко noun:n:v_rod:xp2
+очку очко noun:n:v_dav:xp2
+очко очко noun:n:v_zna:xp2
+очком очко noun:n:v_oru:xp2
+очку очко noun:n:v_mis:xp2
+очки очко noun:p:v_naz:xp2
+очок очко noun:p:v_rod:xp1
+очкам очко noun:p:v_dav:xp2
+очки очко noun:p:v_zna:xp2
+очками очко noun:p:v_oru:xp2
+очках очко noun:p:v_mis:xp2
+
 
 Господь Господь noun:m:v_naz:anim
 Господа Господь noun:m:v_rod:anim
