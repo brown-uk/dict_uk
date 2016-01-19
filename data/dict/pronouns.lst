@@ -748,17 +748,17 @@
 тих-таки той-таки adj:p:v_rod/v_zna/v_mis:&pron:dem
 тими-таки той-таки adj:p:v_oru:&pron:dem
 
-такий-то такий-то adj:m:v_naz/v_zna:&pron:def
-такого-то такий-то adj:m:v_rod/v_zna//n:v_rod:&pron:def
-такому-то такий-то adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:def
-таким-то такий-то adj:m:v_oru//n:v_oru//p:v_dav:&pron:def
-такім-то такий-то adj:m:v_mis//n:v_mis:&pron:def
-така-то такий-то adj:f:v_naz:&pron:def
-такої-то такий-то adj:f:v_rod:&pron:def
-такій-то такий-то adj:f:v_dav/v_mis:&pron:def
-таку-то такий-то adj:f:v_zna:&pron:def
-такою-то такий-то adj:f:v_oru:&pron:def
-таке-то такий-то adj:n:v_naz/v_zna:&pron:def
+такий-то такий-то adj:m:v_naz/v_zna:&pron:dem
+такого-то такий-то adj:m:v_rod/v_zna//n:v_rod:&pron:dem
+такому-то такий-то adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
+таким-то такий-то adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+такім-то такий-то adj:m:v_mis//n:v_mis:&pron:dem
+така-то такий-то adj:f:v_naz:&pron:dem
+такої-то такий-то adj:f:v_rod:&pron:dem
+такій-то такий-то adj:f:v_dav/v_mis:&pron:dem
+таку-то такий-то adj:f:v_zna:&pron:dem
+такою-то такий-то adj:f:v_oru:&pron:dem
+таке-то такий-то adj:n:v_naz/v_zna:&pron:dem
 
 сам-самісінький сам-самісінький adj:m:v_naz/v_zna:&pron:def
 самого-самісінького сам-самісінький adj:m:v_rod/v_zna//n:v_rod:&pron:def
