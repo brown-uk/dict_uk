@@ -447,20 +447,20 @@
 отих отой adj:p:v_rod/v_zna/v_mis:&pron:dem
 отими отой adj:p:v_oru:&pron:dem
 
-чий чий adj:m:v_naz/v_zna:&pron:int/rel
-чийого чий adj:m:v_rod/v_zna//n:v_rod:&pron:int/rel
-чийому чий adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:int/rel
-чиєму чий adj:m:v_dav/v_mis//n:v_mis:&pron:int/rel
-чиїм чий adj:m:v_oru//n:v_oru/v_mis:&pron:int/rel
-чия чий adj:f:v_naz:&pron:int/rel
-чиєї чий adj:f:v_rod:&pron:int/rel
-чиїй чий adj:f:v_dav/v_mis:&pron:int/rel
-чию чий adj:f:v_zna:&pron:int/rel
-чиєю чий adj:f:v_oru:&pron:int/rel
-чиє чий adj:n:v_naz/v_zna:&pron:int/rel
-чиї чий adj:p:v_naz/v_zna:&pron:int/rel
-чиїх чий adj:p:v_rod/v_zna/v_mis:&pron:int/rel
-чиїми чий adj:p:v_oru:&pron:int/rel
+чий чий adj:m:v_naz/v_zna:&pron:int:rel
+чийого чий adj:m:v_rod/v_zna//n:v_rod:&pron:int:rel
+чийому чий adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:int:rel
+чиєму чий adj:m:v_dav/v_mis//n:v_mis:&pron:int:rel
+чиїм чий adj:m:v_oru//n:v_oru/v_mis:&pron:int:rel
+чия чий adj:f:v_naz:&pron:int:rel
+чиєї чий adj:f:v_rod:&pron:int:rel
+чиїй чий adj:f:v_dav/v_mis:&pron:int:rel
+чию чий adj:f:v_zna:&pron:int:rel
+чиєю чий adj:f:v_oru:&pron:int:rel
+чиє чий adj:n:v_naz/v_zna:&pron:int:rel
+чиї чий adj:p:v_naz/v_zna:&pron:int:rel
+чиїх чий adj:p:v_rod/v_zna/v_mis:&pron:int:rel
+чиїми чий adj:p:v_oru:&pron:int:rel
 
 нічий нічий adj:m:v_naz/v_zna:&pron:neg
 нічийого нічий adj:m:v_rod/v_zna//n:v_rod:&pron:neg
