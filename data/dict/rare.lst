@@ -82,21 +82,22 @@
 немать немать predic
 неможний /adj
 немощний /adj
-неякась неякийсь adj:f:v_naz:&pron:ind
-неякесь неякийсь adj:n:v_naz/v_zna:&pron:ind
-неякийсь неякийсь adj:m:v_naz/v_zna:&pron:ind
-неякимись неякийсь adj:p:v_oru:&pron:ind
-неякимось неякийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
-неякимсь неякийсь adj:m:v_oru:&pron:ind
-неякихось неякийсь adj:p:v_rod/v_zna/v_mis:&pron:ind
-неякійсь неякийсь adj:f:v_dav/v_mis:&pron:ind
-неякісь неякийсь adj:p:v_naz/v_zna:&pron:ind
-неякогось неякийсь adj:m:v_rod/v_zna//n:v_rod:&pron:ind
-неякоїсь неякийсь adj:f:v_rod:&pron:ind
-неякомусь неякийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-неякоюсь неякийсь adj:f:v_oru:&pron:ind
-неякусь неякийсь adj:f:v_zna:&pron:ind
+неякась неякийсь adj:f:v_naz:&pron:neg
+неякесь неякийсь adj:n:v_naz/v_zna:&pron:neg
+неякийсь неякийсь adj:m:v_naz/v_zna:&pron:neg
+неякимись неякийсь adj:p:v_oru:&pron:neg
+неякимось неякийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:neg
+неякимсь неякийсь adj:m:v_oru:&pron:neg
+неякихось неякийсь adj:p:v_rod/v_zna/v_mis:&pron:neg
+неякійсь неякийсь adj:f:v_dav/v_mis:&pron:neg
+неякісь неякийсь adj:p:v_naz/v_zna:&pron:neg
+неякогось неякийсь adj:m:v_rod/v_zna//n:v_rod:&pron:neg
+неякоїсь неякийсь adj:f:v_rod:&pron:neg
+неякомусь неякийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:neg
+неякоюсь неякийсь adj:f:v_oru:&pron:neg
+неякусь неякийсь adj:f:v_zna:&pron:neg
 ніже conj:coord
+нікоторий /adj :&pron:neg
 нітелень нітелень predic:coll
 ніт ніт part
 оба numr:m:v_naz/v_zna
@@ -106,13 +107,59 @@
 одітий /adj ^adjp:pasv:perf    # :past
 озутий /adj ^adjp:pasv:perf    # :past
 окроме prep:rv_rod
+однакий /adj
 онакий /adj :&pron:def
 опірений /adj ^adjp:pasv:perf    # :past
 опостін prep:rv_rod
 опріче prep:rv_rod
 опроче adv|prep:rv_rod
 осьмий /adj
+отсей отсей adj:m:v_naz/v_zna:&pron:dem
+отсього отсей adj:m:v_rod/v_zna//n:v_rod:&pron:dem
+отсьому отсей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
+отсим отсей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+отсім отсей adj:m:v_mis//n:v_mis:&pron:dem
+отся отсей adj:f:v_naz:&pron:dem
+отсієї отсей adj:f:v_rod:&pron:dem
+отсій отсей adj:f:v_dav/v_mis:&pron:dem
+отсю отсей adj:f:v_zna:&pron:dem
+отсією отсей adj:f:v_oru:&pron:dem
+отсе отсей adj:n:v_zna:&pron:dem
+отсі отсей adj:p:v_naz/v_zna/v_mis:&pron:dem
+отсих отсей adj:p:v_rod/v_zna/v_mis:&pron:dem
+отсими отсей adj:p:v_oru:&pron:dem
+оттакий /adj :&pron:dem
 оттим conj:subord
+оттой оттой adj:m:v_naz/v_zna:&pron:dem
+оттого оттой adj:m:v_rod/v_zna//n:v_rod:&pron:dem
+оттому оттой adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
+оттим оттой adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+оттім оттой adj:m:v_mis//n:v_mis:&pron:dem
+отта оттой adj:f:v_naz:&pron:dem
+оттої оттой adj:f:v_rod:&pron:dem
+оттієї оттой adj:f:v_rod:&pron:dem
+оттій оттой adj:f:v_dav/v_mis:&pron:dem
+отту оттой adj:f:v_zna:&pron:dem
+оттією оттой adj:f:v_oru:&pron:dem
+оттою оттой adj:f:v_oru:&pron:dem
+отте оттой adj:n:v_naz/v_zna:&pron:dem
+отті оттой adj:p:v_naz/v_zna:&pron:dem
+оттих оттой adj:p:v_rod/v_zna/v_mis:&pron:dem
+оттими оттой adj:p:v_oru:&pron:dem
+отцей отцей adj:m:v_naz/v_zna:&pron:dem
+отцього отцей adj:m:v_rod/v_zna//n:v_rod:&pron:dem
+отцьому отцей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
+отцим отцей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+отцім отцей adj:m:v_mis//n:v_mis:&pron:dem
+отця отцей adj:f:v_naz:&pron:dem
+отцієї отцей adj:f:v_rod:&pron:dem
+отцій отцей adj:f:v_dav/v_mis:&pron:dem
+отцю отцей adj:f:v_zna:&pron:dem
+отцією отцей adj:f:v_oru:&pron:dem
+отце отцей adj:n:v_zna:&pron:dem
+отці отцей adj:p:v_naz/v_zna/v_mis:&pron:dem
+отцих отцей adj:p:v_rod/v_zna/v_mis:&pron:dem
+отцими отцей adj:p:v_oru:&pron:dem
 памка /n10
 печально adv
 півперек prep:rv_rod
