@@ -926,23 +926,23 @@
 
 # Числівники
 
-один один numr:m:v_naz/v_zna
-одного один numr:m:v_rod/v_zna//n:v_rod
-одному один numr:m:v_dav/v_mis//n:v_dav/v_mis
-одним один numr:m:v_oru//n:v_oru
-однім один numr:m:v_mis//n:v_mis
-одна один numr:f:v_naz
-одної один numr:f:v_rod
-однієї один numr:f:v_rod
-одній один numr:f:v_dav/v_mis
-однією один numr:f:v_oru
-одною один numr:f:v_oru
-одну один numr:f:v_zna
-одні один numr:p:v_naz/v_zna
-одними один numr:p:v_oru
-одних один numr:p:v_rod/v_zna/v_mis
-одне один numr:n:v_naz/v_zna
-одно один numr:n:v_naz
+один один numr:m:v_naz/v_zna&adj:pron:dem/ind
+одного один numr:m:v_rod/v_zna//n:v_rod&adj:pron:dem/ind
+одному один numr:m:v_dav/v_mis//n:v_dav/v_mis&adj:pron:dem/ind
+одним один numr:m:v_oru//n:v_oru&adj:pron:dem/ind
+однім один numr:m:v_mis//n:v_mis&adj:pron:dem/ind
+одна один numr:f:v_naz&adj:pron:dem/ind
+одної один numr:f:v_rod&adj:pron:dem/ind
+однієї один numr:f:v_rod&adj:pron:dem/ind
+одній один numr:f:v_dav/v_mis&adj:pron:dem/ind
+однією один numr:f:v_oru&adj:pron:dem/ind
+одною один numr:f:v_oru&adj:pron:dem/ind
+одну один numr:f:v_zna&adj:pron:dem/ind
+одні один numr:p:v_naz/v_zna&adj:pron:dem/ind
+одними один numr:p:v_oru&adj:pron:dem/ind
+одних один numr:p:v_rod/v_zna/v_mis&adj:pron:dem/ind
+одне один numr:n:v_naz/v_zna&adj:pron:dem/ind
+одно один numr:n:v_naz&adj:pron:dem/ind
 
 один-єдиний один-єдиний adj:m:v_naz/v_zna
 одного-єдиного один-єдиний adj:m:v_rod/v_zna//n:v_rod
