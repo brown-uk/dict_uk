@@ -4,6 +4,7 @@
 package org.dict_uk.expand
 
 import groovy.transform.TypeChecked
+import groovyx.gpars.ParallelEnhancer
 
 import java.util.regex.*
 
@@ -1150,7 +1151,9 @@ class Expand {
 		}
 
 		
-		all_lines = prepared_lines.collect { String line ->
+		ParallelEnhancer.enhanceInstance(prepared_lines)
+
+		all_lines = prepared_lines.collectParallel { String line ->
 
 			try {
 				def tag_lines = expand_line(line, flush_stdout)
