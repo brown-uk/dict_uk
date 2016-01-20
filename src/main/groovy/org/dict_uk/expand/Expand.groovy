@@ -57,7 +57,8 @@ class Expand {
 
 	@TypeChecked
 	List<String> expand_suffixes(String word, String affixFlags, Map<String,String> modifiers, String extra) {
-		//	util.dbg(affixFlags)
+//		log.info("%s %s %s %s\n", word, affixFlags, modifiers, extra)
+		
 		def affixSubGroups = affixFlags.split("\\.")
 		def mainGroup = affixSubGroups[0]
 
@@ -493,7 +494,7 @@ class Expand {
 	List<String> expand(String word, String flags, boolean flush_stdout) {
 		def flag_set = flags.split(" ", 2)
 
-		main_flag = flag_set[0]
+		def main_flag = flag_set[0]
 
 		def extra = flag_set.size() > 1 ? flag_set[1] : ""
 
@@ -727,7 +728,7 @@ class Expand {
 		}
 		return false
 	}
-	
+
 	private String removeTags(String line) {
 		for( removeTag in Args.args.removeTags ) {
 			if( ":" + removeTag in line ) {
@@ -736,7 +737,7 @@ class Expand {
 		}
 		return line
 	}
-	
+
 	private String promoteLemmaForTags(String line) {
 		for( lemmaTag in Args.args.lemmaForTags ) {
 			if( lemmaTag == "advp" && lemmaTag in line ) {
@@ -762,7 +763,7 @@ class Expand {
 			line = removeTags(line)
 
 			line = promoteLemmaForTags(line)
-			
+
 			if( Args.args.corp ) {
 				if( "noun" in line ) {
 					if( ":anim" in line)
@@ -820,9 +821,6 @@ class Expand {
 
 		return out_lines
 	}
-
-	String main_word=""
-	String main_flag=""
 
 	@TypeChecked
 	def replace_base(String line, String base) {
@@ -910,7 +908,7 @@ class Expand {
 	}
 
 	@TypeChecked
-	def expand_subposition_adv(String last_adv, String line, String extra_tags) {
+	def expand_subposition_adv(String last_adv, String line, String extra_tags, String main_word) {
 		def out_lines = []
 
 		String word
@@ -950,6 +948,7 @@ class Expand {
 	List<String> expand_line(String line_, boolean flush_stdout) {
 		List<String> lines = preprocess(line_)
 
+		def main_word = ""
 		def out_lines = []
 
 		for( line in lines) {
@@ -1041,7 +1040,7 @@ class Expand {
 						for( inflected_line in inflected_lines) {
 							if( " adv" in inflected_line) {
 								def last_adv = inflected_line.split()[0]
-								def cs_lines = expand_subposition_adv(last_adv, sub_line, extra_flags)
+								def cs_lines = expand_subposition_adv(last_adv, sub_line, extra_flags, main_word)
 								out_lines.addAll(cs_lines)
 								break
 								//                    print(".adv", last_adv, file=sys.stderr)
@@ -1069,7 +1068,7 @@ class Expand {
 
 	static final Pattern WORD_RE = Pattern.compile("[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ']*(-[а-яіїєґА-ЯІЇЄҐ']*)*|[А-ЯІЇЄҐ][А-ЯІЇЄҐ-]+|[а-яіїєґ]+\\.",)
 
-	List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
+	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
 
 	public Expand() {
 		log.info("Read %d allowed tags\n", ALLOWED_TAGS.size())
@@ -1099,8 +1098,7 @@ class Expand {
 
 	boolean flush_stdout
 
-	@TypeChecked
-	List<String> process_input(List<String> in_lines, boolean flush_stdout_) {
+	List<String> process_input(in_lines, boolean flush_stdout_) {
 		def time1 = System.currentTimeMillis()
 
 		boolean flush_stdout = flush_stdout_
@@ -1108,8 +1106,8 @@ class Expand {
 		def multiline = ""
 		def all_lines = []
 		def double_form_cnt = 0
+		def prepared_lines = []
 
-		//    for( line in in_lines) {
 		in_lines.each{ String line ->
 			line = line.replaceFirst("#.*", "")
 
@@ -1137,23 +1135,36 @@ class Expand {
 				double_form_cnt += 1
 			}
 
-			List<String> tag_lines
-			try {
+				
+			if( flush_stdout ) {
 				tag_lines = expand_line(line, flush_stdout)
 				check_lines(tag_lines)
+
+				def sorted_lines = util.sort_all_lines(tag_lines)
+				println(sorted_lines.join("\n"))
+				System.out.flush()
+			}
+			else {
+				prepared_lines << line
+			}
+		}
+
+		
+		all_lines = prepared_lines.collect { String line ->
+
+			try {
+				def tag_lines = expand_line(line, flush_stdout)
+				check_lines(tag_lines)
+				
+				tag_lines
+				
 			}
 			catch(Exception e) {
 				throw new Exception("Exception in line: \"" + line + "\"", e)
 			}
 
-			if( flush_stdout ) {
-				def sorted_lines = util.sort_all_lines(tag_lines)
-				println(sorted_lines.join("\n"))
-				System.out.flush()
-			} else {
-				all_lines.addAll(tag_lines)
-			}
-		}
+		}.flatten()
+
 
 		def time2
 		if( Args.args.time ) {
