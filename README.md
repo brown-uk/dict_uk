@@ -5,23 +5,21 @@ This is a project to generate POS tag dictionary for Ukrainian language.
 
 Description:
 
-    dict_uk/expand/expand_all.py -aff data/affix -dict data/dict
-
-    For all files in data/dict the project genereates all possible word forms with POS tags
+    For all files in data/dict the project generates all possible word forms with POS tags
     by using affix rules from files in data/affix.
 
 
 How to run:
 
-    # dict_uk/expand/expand_all.py -aff data/affix -dict data/dict -corp -indent -mfl -wordlist
+    # gradle expandForCorp
     Output:
 
-        * dict_corp_vis.txt - Dictionary in visual (indented) format for review, analysis or conversion
-        * dict_corp_lt.txt - Dictionary for LT for annotating the corpus
-        * words.txt, lemmas.txt, tags.txt - list of all uniq words, lemmas and tags
+        * out/dict_corp_vis.txt - Dictionary in visual (indented) format for review, analysis or conversion
+        * out/dict_corp_lt.txt - Dictionary for LT for annotating the corpus
+        * out/words.txt, out/lemmas.txt, out/tags.txt - list of all unique words, lemmas and tags
 
-    # dict_uk/expand/expand_all.py -aff data/affix -dict data/dict
+    # gradle expandForRules
     Output:
 
-        * dict_rules_lt.txt - Dictionary file for LT (LanguageTool) used for grammar rules checking
+        * out/dict_rules_lt.txt - Dictionary file for LT (LanguageTool) used for grammar rules checking
 
