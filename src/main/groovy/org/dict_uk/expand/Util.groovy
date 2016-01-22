@@ -386,12 +386,12 @@ class Util {
 			}
 			stat_f.printf("\nВласних назв (без абревіатур): %d\n", proper_noun_cnt)
 
-			stat_f.print("\nЧастоти літер на початку слова\n")
-
-			def letter_map = letter_stat.sort { -it.value }
-			for( e in letter_map ){
-				stat_f.println(e.key + " " + e.value)
-			}
+//			stat_f.print("\nЧастоти літер на початку слова\n")
+//
+//			def letter_map = letter_stat.sort { -it.value }
+//			for( e in letter_map ){
+//				stat_f.println(e.key + " " + e.value)
+//			}
 		}
 	}
 
