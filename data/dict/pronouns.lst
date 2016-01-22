@@ -257,9 +257,9 @@
 його його adj:m:nv//n:nv:&pron:pos
 її її adj:f:nv:&pron:pos
 
-себе себе noun:m:v_rod/v_zna//n:v_rod/v_zna:&pron:refl
-собі себе noun:m:v_dav/v_mis//n:v_dav/v_mis:&pron:refl
-собою себе noun:m:v_oru//n:v_oru:&pron:refl
+себе себе noun:v_rod/v_zna:&pron:refl
+собі себе noun:v_dav/v_mis:&pron:refl
+собою себе noun:v_oru:&pron:refl
 
 сам сам adj:m:v_naz/v_zna:&pron:def
 самого сам adj:m:v_rod/v_zna//n:v_rod:&pron:def
@@ -447,20 +447,20 @@
 отих отой adj:p:v_rod/v_zna/v_mis:&pron:dem
 отими отой adj:p:v_oru:&pron:dem
 
-чий чий adj:m:v_naz/v_zna:&pron:ind
-чийого чий adj:m:v_rod/v_zna//n:v_rod:&pron:ind
-чийому чий adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-чиєму чий adj:m:v_dav/v_mis//n:v_mis:&pron:ind
-чиїм чий adj:m:v_oru//n:v_oru/v_mis:&pron:ind
-чия чий adj:f:v_naz:&pron:ind
-чиєї чий adj:f:v_rod:&pron:ind
-чиїй чий adj:f:v_dav/v_mis:&pron:ind
-чию чий adj:f:v_zna:&pron:ind
-чиєю чий adj:f:v_oru:&pron:ind
-чиє чий adj:n:v_naz/v_zna:&pron:ind
-чиї чий adj:p:v_naz/v_zna:&pron:ind
-чиїх чий adj:p:v_rod/v_zna/v_mis:&pron:ind
-чиїми чий adj:p:v_oru:&pron:ind
+чий чий adj:m:v_naz/v_zna:&pron:int:rel
+чийого чий adj:m:v_rod/v_zna//n:v_rod:&pron:int:rel
+чийому чий adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:int:rel
+чиєму чий adj:m:v_dav/v_mis//n:v_mis:&pron:int:rel
+чиїм чий adj:m:v_oru//n:v_oru/v_mis:&pron:int:rel
+чия чий adj:f:v_naz:&pron:int:rel
+чиєї чий adj:f:v_rod:&pron:int:rel
+чиїй чий adj:f:v_dav/v_mis:&pron:int:rel
+чию чий adj:f:v_zna:&pron:int:rel
+чиєю чий adj:f:v_oru:&pron:int:rel
+чиє чий adj:n:v_naz/v_zna:&pron:int:rel
+чиї чий adj:p:v_naz/v_zna:&pron:int:rel
+чиїх чий adj:p:v_rod/v_zna/v_mis:&pron:int:rel
+чиїми чий adj:p:v_oru:&pron:int:rel
 
 нічий нічий adj:m:v_naz/v_zna:&pron:neg
 нічийого нічий adj:m:v_rod/v_zna//n:v_rod:&pron:neg
@@ -477,7 +477,7 @@
 нічиїх нічий adj:p:v_rod/v_zna/v_mis:&pron:neg
 нічиїми нічий adj:p:v_oru:&pron:neg
 
-дечий дечий adj:m:v_naz/v_zna:&pron:neg
+дечий дечий adj:m:v_naz/v_zna:&pron:ind
 дечийого дечий adj:m:v_rod/v_zna//n:v_rod:&pron:ind
 дечийому дечий adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
 дечиєму дечий adj:m:v_dav/v_mis//n:v_mis:&pron:ind
@@ -492,47 +492,47 @@
 дечиїх дечий adj:p:v_rod/v_zna/v_mis:&pron:ind
 дечиїми дечий adj:p:v_oru:&pron:ind
 
-весь весь adj:m:v_naz/v_zna:&pron:dem
-всього весь adj:m:v_rod/v_zna//n:v_rod:&pron:dem
-всьому весь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
-всім весь adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:dem
-вся весь adj:f:v_naz:&pron:dem
-всієї весь adj:f:v_rod:&pron:dem
-всій весь adj:f:v_dav/v_mis:&pron:dem
-всю весь adj:f:v_zna:&pron:dem
-всією весь adj:f:v_oru:&pron:dem
-все весь adj:n:v_naz/v_zna:&pron:dem
-всі весь adj:p:v_naz/v_zna:&pron:dem
-всіх весь adj:p:v_rod/v_zna/v_mis:&pron:dem
-всіма весь adj:p:v_oru:&pron:dem
+весь весь adj:m:v_naz/v_zna:&pron:gen
+всього весь adj:m:v_rod/v_zna//n:v_rod:&pron:gen
+всьому весь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:gen
+всім весь adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:gen
+вся весь adj:f:v_naz:&pron:gen
+всієї весь adj:f:v_rod:&pron:gen
+всій весь adj:f:v_dav/v_mis:&pron:gen
+всю весь adj:f:v_zna:&pron:gen
+всією весь adj:f:v_oru:&pron:gen
+все весь adj:n:v_naz/v_zna:&pron:gen
+всі весь adj:p:v_naz/v_zna:&pron:gen
+всіх весь adj:p:v_rod/v_zna/v_mis:&pron:gen
+всіма весь adj:p:v_oru:&pron:gen
 
-увесь увесь adj:m:v_naz/v_zna:&pron:dem
-усього увесь adj:m:v_rod/v_zna//n:v_rod:&pron:dem
-усьому увесь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
-усім увесь adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:dem
-уся увесь adj:f:v_naz:&pron:dem
-усієї увесь adj:f:v_rod:&pron:dem
-усій увесь adj:f:v_dav/v_mis:&pron:dem
-усією увесь adj:f:v_oru:&pron:dem
-усю увесь adj:f:v_zna:&pron:dem
-усе увесь adj:n:v_naz/v_zna:&pron:dem
-усі увесь adj:p:v_naz/v_zna:&pron:dem
-усіх увесь adj:p:v_rod/v_zna/v_mis:&pron:dem
-усіма увесь adj:p:v_oru:&pron:dem
+увесь увесь adj:m:v_naz/v_zna:&pron:gen
+усього увесь adj:m:v_rod/v_zna//n:v_rod:&pron:gen
+усьому увесь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:gen
+усім увесь adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:gen
+уся увесь adj:f:v_naz:&pron:gen
+усієї увесь adj:f:v_rod:&pron:gen
+усій увесь adj:f:v_dav/v_mis:&pron:gen
+усією увесь adj:f:v_oru:&pron:gen
+усю увесь adj:f:v_zna:&pron:gen
+усе увесь adj:n:v_naz/v_zna:&pron:gen
+усі увесь adj:p:v_naz/v_zna:&pron:gen
+усіх увесь adj:p:v_rod/v_zna/v_mis:&pron:gen
+усіма увесь adj:p:v_oru:&pron:gen
 
-ввесь ввесь adj:m:v_naz/v_zna:&pron:dem
-всього ввесь adj:m:v_rod/v_zna//n:v_rod:&pron:dem
-всьому ввесь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
-всім ввесь adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:dem
-вся ввесь adj:f:v_naz:&pron:dem
-всієї ввесь adj:f:v_rod:&pron:dem
-всій ввесь adj:f:v_dav/v_zna:&pron:dem
-всією ввесь adj:f:v_oru:&pron:dem
-всю ввесь adj:f:v_zna:&pron:dem
-все ввесь adj:n:v_naz/v_zna:&pron:dem
-всі ввесь adj:p:v_naz/v_zna:&pron:dem
-всіх ввесь adj:p:v_rod/v_zna/v_mis:&pron:dem
-всіма ввесь adj:p:v_oru:&pron:dem
+ввесь ввесь adj:m:v_naz/v_zna:&pron:gen
+всього ввесь adj:m:v_rod/v_zna//n:v_rod:&pron:gen
+всьому ввесь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:gen
+всім ввесь adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:gen
+вся ввесь adj:f:v_naz:&pron:gen
+всієї ввесь adj:f:v_rod:&pron:gen
+всій ввесь adj:f:v_dav/v_zna:&pron:gen
+всією ввесь adj:f:v_oru:&pron:gen
+всю ввесь adj:f:v_zna:&pron:gen
+все ввесь adj:n:v_naz/v_zna:&pron:gen
+всі ввесь adj:p:v_naz/v_zna:&pron:gen
+всіх ввесь adj:p:v_rod/v_zna/v_mis:&pron:gen
+всіма ввесь adj:p:v_oru:&pron:gen
 
 все adv:v-u|conj:coord:v-u|part:v-u
 усе adv:v-u|conj:coord:v-u|part:v-u
@@ -610,6 +610,21 @@
 хтозна-чиї хтозна-чий adj:p:v_naz/v_zna:&pron:ind
 хтозна-чиїх хтозна-чий adj:p:v_rod/v_zna/v_mis:&pron:ind
 хтозна-чиїми хтозна-чий adj:p:v_oru:&pron:ind
+
+казна-чий казна-чий adj:m:v_naz/v_zna:&pron:ind
+казна-чийого казна-чий adj:m:v_rod/v_zna//n:v_rod:&pron:ind
+казна-чийому казна-чий adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
+казна-чиєму казна-чий adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
+казна-чиїм казна-чий adj:m:v_oru//n:v_oru:&pron:ind
+казна-чия казна-чий adj:f:v_naz:&pron:ind
+казна-чиєї казна-чий adj:f:v_rod:&pron:ind
+казна-чиїй казна-чий adj:f:v_dav/v_mis:&pron:ind
+казна-чию казна-чий adj:f:v_zna:&pron:ind
+казна-чиєю казна-чий adj:f:v_oru:&pron:ind
+казна-чиє казна-чий adj:n:v_naz/v_zna:&pron:ind
+казна-чиї казна-чий adj:p:v_naz/v_zna:&pron:ind
+казна-чиїх казна-чий adj:p:v_rod/v_zna/v_mis:&pron:ind
+казна-чиїми казна-чий adj:p:v_oru:&pron:ind
 
 чийсь чийсь adj:m:v_naz/v_zna:&pron:ind
 чийогось чийсь adj:m:v_rod/v_zna//n:v_rod:&pron:ind
@@ -748,17 +763,17 @@
 тих-таки той-таки adj:p:v_rod/v_zna/v_mis:&pron:dem
 тими-таки той-таки adj:p:v_oru:&pron:dem
 
-такий-то такий-то adj:m:v_naz/v_zna:&pron:def
-такого-то такий-то adj:m:v_rod/v_zna//n:v_rod:&pron:def
-такому-то такий-то adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:def
-таким-то такий-то adj:m:v_oru//n:v_oru//p:v_dav:&pron:def
-такім-то такий-то adj:m:v_mis//n:v_mis:&pron:def
-така-то такий-то adj:f:v_naz:&pron:def
-такої-то такий-то adj:f:v_rod:&pron:def
-такій-то такий-то adj:f:v_dav/v_mis:&pron:def
-таку-то такий-то adj:f:v_zna:&pron:def
-такою-то такий-то adj:f:v_oru:&pron:def
-таке-то такий-то adj:n:v_naz/v_zna:&pron:def
+такий-то такий-то adj:m:v_naz/v_zna:&pron:dem
+такого-то такий-то adj:m:v_rod/v_zna//n:v_rod:&pron:dem
+такому-то такий-то adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
+таким-то такий-то adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+такім-то такий-то adj:m:v_mis//n:v_mis:&pron:dem
+така-то такий-то adj:f:v_naz:&pron:dem
+такої-то такий-то adj:f:v_rod:&pron:dem
+такій-то такий-то adj:f:v_dav/v_mis:&pron:dem
+таку-то такий-то adj:f:v_zna:&pron:dem
+такою-то такий-то adj:f:v_oru:&pron:dem
+таке-то такий-то adj:n:v_naz/v_zna:&pron:dem
 
 сам-самісінький сам-самісінький adj:m:v_naz/v_zna:&pron:def
 самого-самісінького сам-самісінький adj:m:v_rod/v_zna//n:v_rod:&pron:def
@@ -774,11 +789,6 @@
 саму-самісіньку сам-самісінький adj:f:v_zna:&pron:def
 саме-самісіньке сам-самісінький adj:n:v_naz/v_zna:&pron:def
 само-самісіньке сам-самісінький adj:n:v_naz:&pron:def
-
-нікоторий /adj :&pron:neg:rare
-однакий /adj :&pron:rare
-оттакий /adj :&pron:dem:rare
-
 
 кудись adv:&pron:ind
 звідкись adv:&pron:ind
@@ -926,23 +936,23 @@
 
 # Числівники
 
-один один numr:m:v_naz/v_zna
-одного один numr:m:v_rod/v_zna//n:v_rod
-одному один numr:m:v_dav/v_mis//n:v_dav/v_mis
-одним один numr:m:v_oru//n:v_oru
-однім один numr:m:v_mis//n:v_mis
-одна один numr:f:v_naz
-одної один numr:f:v_rod
-однієї один numr:f:v_rod
-одній один numr:f:v_dav/v_mis
-однією один numr:f:v_oru
-одною один numr:f:v_oru
-одну один numr:f:v_zna
-одні один numr:p:v_naz/v_zna
-одними один numr:p:v_oru
-одних один numr:p:v_rod/v_zna/v_mis
-одне один numr:n:v_naz/v_zna
-одно один numr:n:v_naz
+один один numr:m:v_naz/v_zna|adj:m:v_naz/v_zna&pron:dem:ind
+одного один numr:m:v_rod/v_zna//n:v_rod|adj:m:v_rod/v_zna//n:v_rod&pron:dem:ind
+одному один numr:m:v_dav/v_mis//n:v_dav/v_mis|adj:m:v_dav/v_mis//n:v_dav/v_mis&pron:dem:ind
+одним один numr:m:v_oru//n:v_oru|adj:m:v_oru//n:v_oru&pron:dem:ind
+однім один numr:m:v_mis//n:v_mis|adj:m:v_mis//n:v_mis&pron:dem:ind
+одна один numr:f:v_naz|adj:f:v_naz&pron:dem:ind
+одної один numr:f:v_rod|adj:f:v_rod&pron:dem:ind
+однієї один numr:f:v_rod|adj:f:v_rod&pron:dem:ind
+одній один numr:f:v_dav/v_mis|adj:f:v_dav/v_mis&pron:dem:ind
+однією один numr:f:v_oru|adj:f:v_oru&pron:dem:ind
+одною один numr:f:v_oru|adj:f:v_oru&pron:dem:ind
+одну один numr:f:v_zna|adj:f:v_zna&pron:dem:ind
+одні один numr:p:v_naz/v_zna|adj:p:v_naz/v_zna&pron:dem:ind
+одними один numr:p:v_oru|adj:p:v_oru&pron:dem:ind
+одних один numr:p:v_rod/v_zna/v_mis|adj:p:v_rod/v_zna/v_mis&pron:dem:ind
+одне один numr:n:v_naz/v_zna|adj:n:v_naz/v_zna&pron:dem:ind
+одно один numr:n:v_naz/v_zna|adj:n:v_naz/v_zna&pron:dem:ind
 
 один-єдиний один-єдиний adj:m:v_naz/v_zna
 одного-єдиного один-єдиний adj:m:v_rod/v_zna//n:v_rod

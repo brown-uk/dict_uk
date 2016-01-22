@@ -586,14 +586,14 @@
 єхиден єхидний adj:m:v_naz/v_zna:short
 жаден жадний adj:m:v_naz/v_zna:short:rare:&pron:neg
 жив живий adj:m:v_naz/v_zna:short
-жоден жодний adj:m:v_naz/v_zna:short
+жоден жодний adj:m:v_naz/v_zna:short:&pron:neg
 звістен звісний adj:m:v_naz/v_zna:short
 згоден згодний adj:m:v_naz/v_zna:short
 здатен здатний adj:m:v_naz/v_zna:short
 здоров здоровий adj:m:v_naz/v_zna:short
 зелен зелений adj:m:v_naz/v_zna:short
 золот золотий adj:m:v_naz/v_zna:short
-кожен кожний adj:m:v_naz/v_zna:short
+кожен кожний adj:m:v_naz/v_zna:short:&pron:gen
 красен красний adj:m:v_naz/v_zna:short
 ладен ладний adj:m:v_naz/v_zna:short
 молод молодий adj:m:v_naz/v_zna:short
