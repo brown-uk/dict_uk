@@ -12,7 +12,7 @@ String resourceDir=sourceSets.main.resources.srcDirs[0].toString() + "/" + packa
 String outputDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageDir
 String tmpDir="build/tmp"
 
-String inputDir="../../out/prev"
+String inputDir="../../out"
 
 String dstEncoding="cp1251"
 String srcEncoding="utf-8"
