@@ -515,8 +515,11 @@ class Expand {
 
 		if( "/adj" in flags) {
 			sfx_lines = sfx_lines.collect{
-				it.contains("adj:m:v_rod/v_zna")
-						? it.replace("v_zna", "v_zn1") : it
+				if( it.contains("adj:m:v_rod/v_zna") || it.contains("adj:p:v_rod/v_zna") )
+					it = it.replace("v_zna", "v_zn1")
+				else if( it.contains("adj:p:v_naz/v_zna") )
+					it = it.replace("v_zna", "v_zn2")
+				return it
 			}
 		}
 		sfx_lines = affix.expand_alts(sfx_lines, "//")  // TODO: change this to some single-char splitter?
@@ -748,6 +751,9 @@ class Expand {
 		return line
 	}
 
+	
+	Pattern imperf_move_pattern = ~/(verb(?::rev)?)(.*)(:(im)?perf)/
+	
 	//@profile
 	@TypeChecked
 	List<String> post_process(List<String> lines) {
@@ -765,18 +771,32 @@ class Expand {
 
 			line = promoteLemmaForTags(line)
 
-			if( Args.args.corp ) {
-				if( "noun" in line ) {
-					if( ":anim" in line)
-						line = line.replace(":anim", "").replace("noun:", "noun:anim:")
-					else if( ":inanim" in line )
-						line = line.replace(":inanim", "").replace("noun:", "noun:inanim:")
-					else if( ! ("&pron" in line ) )
-						line = line.replace("noun:", "noun:inanim:")
+			if( "noun" in line ) {
+				if( ":anim" in line )
+					line = line.replace(":anim", "").replace("noun:", "noun:anim:")
+				else if( ":inanim" in line )
+					line = line.replace(":inanim", "").replace("noun:", "noun:inanim:")
+				else if( ! ("&pron" in line ) )
+					line = line.replace("noun:", "noun:inanim:")
+			}
+			else
+			if( "verb" in line ) {
+				line = imperf_move_pattern.matcher(line).replaceFirst('$1$3$2')
+			}
+			else
+			if( " adj" in line ) {
+				if( "v_zn1" in line ) {
+					line = line.replace("v_zn1", "v_zna:ranim")
 				}
-				else if( "verb" in line )
-					line = util.re_sub("(verb(?::rev)?)(.*)(:(im)?perf)", '$1$3$2', line)
-				else if( "adj" in line ) {
+				else if( "v_zn2" in line ) {
+					line = line.replace("v_zn2", "v_zna:rinanim")
+				}
+			}
+
+			if( Args.args.corp ) {
+//				else if( "verb" in line )
+//					line = util.re_sub("(verb(?::rev)?)(.*)(:(im)?perf)", '$1$3$2', line)
+				if( "adj" in line ) {
 					if( ":comp" in line || ":super" in line) {
 						line = util.re_sub(" (adj:)(.*):(comp[br]|super)(.*)", ' $1$3:$2$4', line)
 					}

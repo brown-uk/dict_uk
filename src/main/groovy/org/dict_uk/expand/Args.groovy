@@ -92,7 +92,7 @@ class Args {
 			if( rules ) {
 				removeWithTags = ["uncontr"]
 				//TODO: we can't handle those yet in LT
-				removeTags = ["ranim", "rinanim"]
+				//removeTags = ["ranim", "rinanim"]
 			}
 			
 			if( corp ) {
