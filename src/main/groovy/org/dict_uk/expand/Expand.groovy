@@ -801,10 +801,10 @@ class Expand {
 						line = util.re_sub(" (adj:)(.*):(comp[br]|super)(.*)", ' $1$3:$2$4', line)
 					}
 					if( ":&adjp" in line) {
-						def adjp_line = re.sub(" (adj(?::compb|:compr|:super)?)(.*):&(adjp(?::pasv|:actv|:past|:pres|:perf|:imperf)+)(.*)", ' $3$2$4', line)
+						def adjp_line = re.sub(" (adj(?::compb)?)(.*):&(adjp(?::pasv|:actv|:perf|:imperf)+)(.*)", ' $3$2$4', line)
 						out_lines.add(adjp_line)
 
-						line = re.sub(":&adjp(:pasv|:actv|:past|:pres|:perf|:imperf)+", "", line)
+						line = re.sub(":&adjp(:pasv|:actv|:perf|:imperf)+", "", line)
 						//                    util.dbg("-1-", line)
 					}
 					//            if( "advp" in line) {
@@ -814,7 +814,7 @@ class Expand {
 			else {
 				if( ":&adjp" in line && ":comp" in line) {
 					//  if( ":comp" in line || ":super" in line) {
-					line = util.re_sub(" (adj:.:v_...:)(.*):(comp[br]|super)(.*)", ' $1$3:$2$4', line)
+					line = util.re_sub(" (adj:.:v_...:)(.*):(compb)(.*)", ' $1$3:$2$4', line)
 				}
 			}
 			//   out_lines.add(line)
