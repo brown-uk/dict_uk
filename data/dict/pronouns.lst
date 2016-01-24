@@ -254,8 +254,8 @@
 # Примкетникові займенники
 
 # Присвійні займенники його, її є незмінними
-його його adj:m:nv//n:nv:&pron:pos
-її її adj:f:nv:&pron:pos
+його його adj:m:nv//f:nv//n:nv:&pron:pos
+її її adj:m:nv//f:nv//n:nv:&pron:pos
 
 себе себе noun:v_rod/v_zna:&pron:refl
 собі себе noun:v_dav/v_mis:&pron:refl
