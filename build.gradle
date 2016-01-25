@@ -102,6 +102,16 @@ task rulesDiff(type: Exec) {
     commandLine "sh", "-c", "${cmd}"
 }
 
+task corpDiff(type: Exec) {
+    def dictFile="dict_corp_lt.txt"
+    def cmd = "diff -u $outputDir/prev/$dictFile $outputDir/$dictFile > $outputDir/${dictFile}.diff || echo 'Files differ (LT)!'"
+    
+    dictFile="dict_corp_vis.txt"
+    cmd += "; diff -u $outputDir/prev/$dictFile $outputDir/$dictFile > $outputDir/${dictFile}.diff || echo 'Files differ (VIS)!'"
+
+    commandLine "sh", "-c", "${cmd}"
+}
+
 //
 // Testing targets
 //
