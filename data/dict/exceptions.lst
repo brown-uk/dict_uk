@@ -326,26 +326,6 @@
 бен бен part:pers
 
 
-# Прислівники
-
-більше багато adv:compr
-більш багато adv:compr
-найбільше багато adv:super
-найбільш багато adv:super
-щонайбільше багато adv:super
-щонайбільш багато adv:super
-якнайбільше багато adv:super
-якнайбільш багато adv:super
-менше мало adv:compr
-менш мало adv:compr
-найменше мало adv:super
-найменш мало adv:super
-щонайменше мало adv:super
-щонайменш мало adv:super
-якнайменше мало adv:super
-якнайменш мало adv:super
-
-
 #
 # Дієслова
 #
