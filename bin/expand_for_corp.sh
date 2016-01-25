@@ -23,6 +23,6 @@ DICT_CORP_LT=dict_corp_lt.txt
 
 cd $OUT_DIR
 
-$CODE_BASE/expand/expand_all.py -aff $BASE/data/affix -dict $BASE/data/dict $FLAGS && \
+time $CODE_BASE/expand/expand_all.py -aff $BASE/data/affix -dict $BASE/data/dict $FLAGS && \
 (echo "Diffing..."; diff_u $DICT_CORP_VIS; diff_u $DICT_CORP_LT; diff_u words.txt; diff_u lemmas.txt; diff_u tags.txt; /bin/true) && \
 diff stats/dict_stats.txt dict_stats.txt > dict_stats.txt.diff
