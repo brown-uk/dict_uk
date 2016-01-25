@@ -95,6 +95,12 @@ task expandForRules(type: JavaExec, dependsOn: reverseAffix) {
     args opts.split()
 }
 
+task rulesDiff(type: Exec) {
+    def dictFile="dict_rules_lt.txt"
+    def cmd = "diff -u $outputDir/prev/$dictFile $outputDir/$dictFile > $outputDir/${dictFile}.diff || echo 'Files differ!'"
+
+    commandLine "sh", "-c", "${cmd}"
+}
 
 //
 // Testing targets
