@@ -89,7 +89,7 @@ task expandForRules(type: JavaExec, dependsOn: reverseAffix) {
 
     workingDir = file(outputDir)
 
-    def opts = "--rules --mfl --time --log-usage"
+    def opts = "--rules --mfl --wordlist --time --log-usage"
     args "-aff", "../data/affix"
     args "-dict", "../data/dict"
     args opts.split()
