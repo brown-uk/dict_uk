@@ -503,6 +503,8 @@
 
 жати /v6 :imperf
 жатися /vr6 :imperf    # жну
+зажати /v6 :perf:xp2        # зажну
+зажати /v3.impers2 :perf:xp1    # зажну
 нажати /v6 :perf
 нажатися /vr6 :perf    # нажну
 пожати /v6 :perf
@@ -530,12 +532,6 @@
 # !verb:imperf
 #шлю шле шлете шли шлімо шлемо шлем шліть шлють шлеш  # spell-only
 
-# !verb:perf
-
-# !verb:perf
-
-
-# !verb:perf
 
 # поява і
 
