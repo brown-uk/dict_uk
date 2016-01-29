@@ -1,5 +1,6 @@
 алегретто adv
 вогниво /n2n.p1 :rare    # xv2
+грунт /n20.p
 грунтований /adj ^adjp:pasv:imperf    # :past
 грунтовий /adj
 грунтовний /adj.adv \
@@ -7,10 +8,9 @@
 грунтовність /n30
 грунтувати /v1.cf.advp.impers0 :imperf
 грунтуватися /vr1.cf.advp :imperf
-грунт /n20.p
+зберігти verb:inf:perf
 зберігтись verb:rev:inf:perf
 зберігтися verb:rev:inf:perf
-зберігти verb:inf:perf
 згвалтований /adj ^adjp:pasv:perf
 згвалтування /n2n.p1
 згвалтувати /v1.impers0 :perf

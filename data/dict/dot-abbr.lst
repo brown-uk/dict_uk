@@ -1,17 +1,17 @@
 авт. noun:m:v_naz    # автор, напр. "Сьогодні (у четвер.  Авт.), вранці."
 англ. adj:nv
-близьк. adv
 бл. adv
+близьк. adv
 вірм. adj:nv
 вул. noun:f:nv    # вулиця
-грецьк. adj:nv
 грец. adj:nv
+грецьк. adj:nv
 давньогрец. adj:nv
 див. verb:rev:imperf:impr:p:2 # дивіться
 дол. noun:m:nv
 досл. adv
-ел. adj:nv
 е. noun:f:nv    # ера
+ел. adj:nv
 жін. adj:nv
 зав. noun:m:nv|noun:f:nv    # завідувач, завідувачка
 заст. noun:m:nv|adj:nv    # заступник, застарілий
@@ -25,25 +25,25 @@
 м. noun:n:nv:np    # місто
 н. adj:nv    # наша (ера)
 обл. noun:f:nv
+п. noun:m:nv
 перекл. noun:m:nv:np
 пл. noun:f:nv:np
 пров. noun:m:nv
-п. noun:m:nv
 ред. noun:m:v_naz|noun:f:nv:np    # редактор, напр. "Сьогодні (у четвер.  Ред.), вранці.", редакція
 реж. noun:m:nv
 рр. noun:p:nv:ns
+р. noun:m:nv:np|noun:f:nv:np    # рік, річка
 рт. adj:nv
 руб. noun:n:nv
-р. noun:m:nv:np|noun:f:nv:np    # рік, річка
+с. noun:n:nv:np
 стол. adj:nv
 стор. noun:f:nv
 ст. noun:f:nv|noun:n:nv|adj:nv    # стаття, століття, столовий
-с. noun:n:nv:np
 тел. noun:m:nv
 тис. numr:f:nv
 укр. adj:nv
-франц. adj:nv
 фр. adj:nv
+франц. adj:nv
 чайн. adj:nv
 чол. adj:nv|noun:m:nv
 ч. noun:f:nv|adj:nv    # частина, чайний
