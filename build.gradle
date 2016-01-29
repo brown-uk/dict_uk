@@ -65,6 +65,19 @@ task reverseAffix (dependsOn: [reverseVerbs, reverseAdvp]) {
 }
 
 
+task sortDict(type: JavaExec) {
+	classpath = sourceSets.main.runtimeClasspath
+	main = "org.dict_uk.tools.Sort"
+
+	workingDir = file("data/dict")
+	
+	def files = "alt.lst base-abbr.lst base.lst base-compound.lst colors.lst dot-abbr.lst geography.lst "
+	files += "slang.lst twisters.lst composite.lst ignored.lst names.lst rare.lst tags.lst"
+
+	args files.split()
+}
+
+
 //
 // Main targets
 //
