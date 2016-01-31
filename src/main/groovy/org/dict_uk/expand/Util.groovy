@@ -550,6 +550,14 @@ class Util {
 
 
 		if( Args.args.corp ) {
+			def lemmaList = lemmas.toList()
+			lemmaList.sort(new UkDictComparator())
+			new File("lemmas.txt").withWriter("utf-8") { f ->
+				for(lemma in lemmaList) {
+					f << lemma << "\n"
+				}
+			}
+
 			def wordList = words.toList()
 			wordList.sort(new UkDictComparator())
 			
@@ -566,16 +574,6 @@ class Util {
 			new File("words_spell.txt").withWriter("utf-8") { f ->
 				for(word in spellWordList) {
 					f << word << "\n"
-				}
-			}
-		}
-		
-		if( Args.args.corp ) {
-			def lemmaList = lemmas.toList()
-			lemmaList.sort(new UkDictComparator())
-			new File("lemmas.txt").withWriter("utf-8") { f ->
-				for(lemma in lemmaList) {
-					f << lemma << "\n"
 				}
 			}
 		}
