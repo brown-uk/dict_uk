@@ -106,7 +106,6 @@
 бельмес бельмес noun:m:v_naz:rare
 бельмеса бельмес noun:m:v_rod
 язицех язик noun:p:v_mis
-властен властен predic
 
 давніх-давен давніх-давен noun:p:v_rod:ns
 
@@ -550,11 +549,12 @@
 # короткі прикметники
 безвинен безвинний adj:m:v_naz/v_zna:short
 благословен благословенний adj:m:v_naz/v_zna:short
-#блажен блаженний adj:m:v_naz/v_zna:short
+блажен блаженний adj:m:v_naz/v_zna:short
 варт вартий adj:m:v_naz/v_zna:short
 винен винний adj:m:v_naz/v_zna:short
 #вістен вістний adj:m:v_naz/v_zna:short
 вістен вісний adj:m:v_naz/v_zna:short:rare
+властен власний adj:m:v_naz/v_zna:short:rare
 годен годний adj:m:v_naz/v_zna:short:coll
 дивен дивний adj:m:v_naz/v_zna:short
 достоїн достойний adj:m:v_naz/v_zna:short
@@ -582,8 +582,8 @@
 ненавистен ненависний adj:m:v_naz/v_zna:short
 певен певний adj:m:v_naz/v_zna:short
 повен повний adj:m:v_naz/v_zna:short
-#повинен повинний adj:m:v_naz/v_zna:short
-#потрібен потрібний adj:m:v_naz/v_zna:short
+повинен повинний adj:m:v_naz/v_zna:short
+потрібен потрібний adj:m:v_naz/v_zna:short
 прекрасен прекрасний adj:m:v_naz/v_zna:short
 привинен привинний adj:m:v_naz/v_zna:short
 провинен провинний adj:m:v_naz/v_zna:short
