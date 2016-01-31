@@ -225,13 +225,21 @@
 нікому ніхто noun:v_dav:anim:&pron:neg
 ніким ніхто noun:v_oru:anim:&pron:neg
 
-нічого нічого predic
 нічого нічого adv
+нічого нічого predic
+
+нікого нікого noun:v_rod/v_zna:anim:&pron:emph
+нікому нікому noun:v_dav:anim:&pron:emph
+ніким ніким noun:v_oru:anim:&pron:emph
 
 ніщо ніщо noun:v_naz/v_zna:inanim:&pron:neg
 нічого ніщо noun:v_rod/v_zna:inanim:&pron:neg
 нічому ніщо noun:v_dav:inanim:&pron:neg
 нічим ніщо noun:v_oru:inanim:&pron:neg
+
+нічого нічого noun:v_rod/v_zna:inanim:&pron:emph
+нічому нічому noun:v_dav:inanim:&pron:emph
+нічим нічим noun:v_oru:inanim:&pron:emph
 
 дехто дехто noun:v_naz:anim:&pron:ind
 декого дехто noun:v_rod/v_zna:anim:&pron:ind
