@@ -108,19 +108,30 @@ task expandForRules(type: JavaExec, dependsOn: reverseAffix) {
     args opts.split()
 }
 
+def get_diff_cmd(outputDir, file) {
+    return "diff -u $outputDir/prev/$file $outputDir/$file > $outputDir/${file}.diff || echo 'File $file differs!'"
+}
+
+
 task rulesDiff(type: Exec) {
     def dictFile="dict_rules_lt.txt"
-    def cmd = "diff -u $outputDir/prev/$dictFile $outputDir/$dictFile > $outputDir/${dictFile}.diff || echo 'Files differ!'"
+
+    def cmd = get_diff_cmd(outputDir, dictFile)
+    cmd += "; " + get_diff_cmd(outputDir, 'words_spell.txt')
 
     commandLine "sh", "-c", "${cmd}"
 }
 
 task corpDiff(type: Exec) {
     def dictFile="dict_corp_lt.txt"
-    def cmd = "diff -u $outputDir/prev/$dictFile $outputDir/$dictFile > $outputDir/${dictFile}.diff || echo 'Files differ (LT)!'"
+
+    def cmd = get_diff_cmd(outputDir, dictFile)
+    cmd += "; " + get_diff_cmd(outputDir, 'words.txt')
+    cmd += "; " + get_diff_cmd(outputDir, 'lemmas.txt')
+    cmd += "; " + get_diff_cmd(outputDir, 'tags.txt')
     
     dictFile="dict_corp_vis.txt"
-    cmd += "; diff -u $outputDir/prev/$dictFile $outputDir/$dictFile > $outputDir/${dictFile}.diff || echo 'Files differ (VIS)!'"
+    cmd += "; " + get_diff_cmd(outputDir, dictFile)
 
     commandLine "sh", "-c", "${cmd}"
 }

@@ -13,6 +13,8 @@ String outputDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageD
 String tmpDir="build/tmp"
 
 String inputDir="../../out"
+String inputDictFile="dict_rules_lt.txt"
+//String inputDictFile="dict_corp_lt.txt"
 
 String dstEncoding="cp1251"
 String srcEncoding="utf-8"
@@ -36,7 +38,7 @@ dependencies {
 
 
 task createTagList(type: Exec, dependsOn: processResources) {
-    def srcDict="${inputDir}/dict_rules_lt.txt"
+    def srcDict="${inputDir}/$inputDictFile"
     def outFile="${outputDir}/ukrainian_tags.txt"
 
     inputs.file srcDict
@@ -50,7 +52,7 @@ task createTagList(type: Exec, dependsOn: processResources) {
 }
 
 task prepareDict(type: Exec, dependsOn: processResources) {
-    def srcDict="${inputDir}/dict_rules_lt.txt"
+    def srcDict="${inputDir}/$inputDictFile"
     def outFile="${tmpDir}/all.tagged.tmp"
 
     inputs.file srcDict
