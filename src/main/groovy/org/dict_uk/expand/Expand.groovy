@@ -319,7 +319,7 @@ class Expand {
 						line = line.replace(":perf", "")
 				}
 				else if( "adj.adv" in flags && " adv" in line )
-					extra_flags2 = util.re_sub(/:&?adjp(:pasv|:actv|:pres|:past|:perf|:imperf)+/, "", extra_flags2)
+					extra_flags2 = util.re_sub(/:&?adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_flags2)
 				else if( ":+m" in extra_flags ) {
 					extra_flags2 = extra_flags2.replace(":+m", "")
 
@@ -867,7 +867,7 @@ class Expand {
 				word = main_word[0..<-2] + "іший"
 
 			if( "&adjp" in extra_tags) {
-				extra_tags = util.re_sub(/:&adjp(:pasv|:actv|:pres|:past|:perf|:imperf)+/, "", extra_tags)
+				extra_tags = util.re_sub(/:&adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_tags)
 			}
 
 			def word_forms = expand(word, "/adj :compr" + idx + extra_tags, flush_stdout)
@@ -943,7 +943,7 @@ class Expand {
 			word = main_word[0..<-2] + "е"
 
 		if( "adjp" in extra_tags) {
-			extra_tags = util.re_sub(/:&?adjp(:pasv|:actv|:pres|:past|:perf|:imperf)+/, "", extra_tags)
+			extra_tags = util.re_sub(/:&?adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_tags)
 		}
 
 		def w1 = compose_compar(word, last_adv, "adv:compr" + extra_tags)
