@@ -108,8 +108,9 @@ class Util {
 	]
 
 
+    def POS_PATTERN = ~ /[\._].*/
 	def get_pos(posFlag, modifiers) {
-		posFlag = re_sub(/[\._].*/, "", posFlag)
+		posFlag = POS_PATTERN.matcher(posFlag).replaceAll("")
 		//    logger.info("\t\t"  + posFlag + ", " + modifiers)
 
 		def pos
