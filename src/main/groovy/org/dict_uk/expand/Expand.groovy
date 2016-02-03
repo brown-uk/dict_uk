@@ -784,7 +784,7 @@ class Expand {
 				line = imperf_move_pattern.matcher(line).replaceFirst('$1$3$2')
 			}
 			else
-			if( " adj" in line ) {
+			if( " adj" in line || " numr" in line ) {
 				if( "v_zn1" in line ) {
 					line = line.replace("v_zn1", "v_zna:ranim")
 				}

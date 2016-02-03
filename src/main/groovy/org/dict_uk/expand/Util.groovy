@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.regex.*
 
 import groovy.transform.TypeChecked
+import groovyx.gpars.ParallelEnhancer
+import static groovyx.gpars.GParsPool.withPool
 
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
@@ -468,8 +470,7 @@ class Util {
 				tags = tags.replace(tg, vb_tag_key_map[tg])
 			}
 			else {
-				if( ! (tags ==~ "verb:(rev:)?(im)?perf:unknown") )
-					System.err.print("no verb match " + tags)
+				log.error("no verb match: " + tags)
 			}
 		}
 
@@ -493,12 +494,6 @@ class Util {
 			if( "verb:rev" in tags && "inf" in tags && word.endsWith("сь") )
 				tags = tags.replace("inf", "inz")
 
-//			if( "-" in lemma )
-//				lemma += "я"
-//
-//			if( "'" in lemma )
-//				lemma += "я"
-
 			//    return locale.strxfrm(lemma) + "_" + tag_sort_key(tags, word) + "_" + locale.strxfrm(word)
 			return UkDictComparator.getSortKey(lemma) + "_" + tag_sort_key(tags, word) + "_" + UkDictComparator.getSortKey(word)
 		}
@@ -515,15 +510,39 @@ class Util {
 	//	}
 
 	List<String> sort_all_lines(Collection<String> all_lines) {
-		def map = all_lines.collectEntries {
-			[(line_key(it)): it]
-		}
-		map = map.sort()
+//		def map = all_lines.collectEntries {
+//			[(line_key(it)): it]
+//		}
 
+		ParallelEnhancer.enhanceInstance(all_lines)
+		def entries = all_lines.collectParallel {
+				[(line_key(it)): it]
+		}
+		
+		def map = entries.collectEntries {
+			it
+		}
+		
+		map = map.sort()
+		
 		return new ArrayList<String>(map.values())
 	}
-	
-	@TypeChecked
+
+	def quickUkSort(collection) {
+		ParallelEnhancer.enhanceInstance(collection)
+		
+		def entries = collection.collectParallel {
+			[ (UkDictComparator.getSortKey(it)): it]
+		}
+
+		def map = entries.collectEntries {
+			it
+		}
+
+		return map.sort().values()
+	}
+		
+//	@TypeChecked
 	void print_word_list(List<String> sorted_lines) {
 		log.info("Collecting words, lemmas, and tags...")
 
@@ -538,17 +557,19 @@ class Util {
 			def lemma = dicEntry.lemma
 			def tag = dicEntry.tagStr
 
-			words.add(dicEntry.word)
-			lemmas.add(dicEntry.lemma)
-			tags.add(dicEntry.tagStr)
-
-
-			if( ! (":bad" in tag) && ! (":alt" in tag) && ! (":uncontr" in tag) && ! (word.endsWith(".")) ) {
-				spell_words.add(word)
+			if( Args.args.corp ) {
+				words.add(dicEntry.word)
+				lemmas.add(dicEntry.lemma)
 			}
+			else {
+				if( ! (":bad" in tag) && ! (":alt" in tag) && ! (":uncontr" in tag) && ! (word.endsWith(".")) ) {
+					spell_words.add(word)
+				}
+			}
+			
+			tags.add(dicEntry.tagStr)
 		}
-
-
+		
 		if( Args.args.corp ) {
 			def lemmaList = lemmas.toList()
 			lemmaList.sort(new UkDictComparator())
@@ -558,8 +579,10 @@ class Util {
 				}
 			}
 
-			def wordList = words.toList()
-			wordList.sort(new UkDictComparator())
+//			List<String> wordList = words.toList()
+			//wordList.sort(new UkDictComparator())
+			
+			def wordList = quickUkSort(words)
 			
 			new File("words.txt").withWriter("utf-8") { f ->
 				for(word in wordList) {
@@ -567,10 +590,12 @@ class Util {
 				}
 			}
 		}
-
-		if( ! Args.args.corp ) {
-			def spellWordList = spell_words.toList()
-			spellWordList.sort(new UkDictComparator())
+		else {
+//			def spellWordList = spell_words.toList()
+//			spellWordList.sort(new UkDictComparator())
+			
+			def spellWordList = quickUkSort(spell_words)
+			
 			new File("words_spell.txt").withWriter("utf-8") { f ->
 				for(word in spellWordList) {
 					f << word << "\n"

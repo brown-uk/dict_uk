@@ -77,6 +77,37 @@ task sortDict(type: JavaExec) {
 	args files.split()
 }
 
+//
+// Testing targets
+//
+
+task testForCorp(type: JavaExec, dependsOn: [reverseAffix, classes]) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = "org.dict_uk.expand.ExpandAll"
+
+    workingDir = file("out/test")
+
+    def opts = "--corp --indent --mfl --stats --wordlist"
+    args "-aff", "../../data/affix"
+    args "-dict", "."
+    args opts.split()
+}
+
+task testForRules(type: JavaExec, dependsOn: [reverseAffix, classes]) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = "org.dict_uk.expand.ExpandAll"
+
+    workingDir = file("out/test")
+
+    def opts = "--rules --mfl --wordlist --log-usage"
+    args "-aff", "../../data/affix"
+    args "-dict", "."
+    args opts.split()
+}
+
+task testExpand(dependsOn: [testForCorp, testForRules]) {
+}
+
 
 //
 // Main targets
@@ -96,7 +127,7 @@ task expandForCorp(type: JavaExec, dependsOn: reverseAffix) {
 //    jvmArgs "-agentlib:jdwp=transport=dt_socket,server=y,address=8000,suspend=n"
 }
 
-task expandForRules(type: JavaExec, dependsOn: reverseAffix) {
+task expandForRules(type: JavaExec, dependsOn: [reverseAffix, testForRules]) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
 
@@ -149,37 +180,6 @@ task expandForCorpInteractive(type: JavaExec, dependsOn: reverseAffix) {
     args opts.split()
 }
 
-
-//
-// Testing targets
-//
-
-task testForCorp(type: JavaExec, dependsOn: reverseAffix) {
-    classpath = sourceSets.main.runtimeClasspath
-    main = "org.dict_uk.expand.ExpandAll"
-
-    workingDir = file("out/test")
-
-    def opts = "--corp --indent --mfl --stats --wordlist"
-    args "-aff", "../../data/affix"
-    args "-dict", "."
-    args opts.split()
-}
-
-task testForRules(type: JavaExec, dependsOn: reverseAffix) {
-    classpath = sourceSets.main.runtimeClasspath
-    main = "org.dict_uk.expand.ExpandAll"
-
-    workingDir = file("out/test")
-
-    def opts = "--rules --mfl --log-usage"
-    args "-aff", "../../data/affix"
-    args "-dict", "."
-    args opts.split()
-}
-
-task testExpand(dependsOn: [testForCorp, testForRules]) {
-}
 
 //
 // deploy LT dict
