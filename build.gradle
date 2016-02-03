@@ -115,7 +115,7 @@ task testForRules(type: JavaExec, dependsOn: [reverseAffix, classes]) {
     args opts.split()
 
     doLast {
-        def file="dict_corp_rules.txt"
+        def file="dict_rules_lt.txt"
         assert new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text
     }
 }
