@@ -12,6 +12,8 @@ String affixDir="data/affix"
 String outputDir="out"
 String prevDir="../../out/prev"
 
+String testOutputDir="$outputDir/test"
+String testPrevDir="$testOutputDir/prev"
 
 repositories {
     mavenCentral()
@@ -91,6 +93,14 @@ task testForCorp(type: JavaExec, dependsOn: [reverseAffix, classes]) {
     args "-aff", "../../data/affix"
     args "-dict", "."
     args opts.split()
+
+    doLast {
+        def file="dict_corp_lt.txt"
+        assert new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text
+        
+        file="dict_corp_vis.txt"
+        assert new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text
+    }
 }
 
 task testForRules(type: JavaExec, dependsOn: [reverseAffix, classes]) {
@@ -103,6 +113,11 @@ task testForRules(type: JavaExec, dependsOn: [reverseAffix, classes]) {
     args "-aff", "../../data/affix"
     args "-dict", "."
     args opts.split()
+
+    doLast {
+        def file="dict_corp_rules.txt"
+        assert new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text
+    }
 }
 
 task testExpand(dependsOn: [testForCorp, testForRules]) {
@@ -113,7 +128,7 @@ task testExpand(dependsOn: [testForCorp, testForRules]) {
 // Main targets
 //
 
-task expandForCorp(type: JavaExec, dependsOn: reverseAffix) {
+task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, testForCorp]) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
 
