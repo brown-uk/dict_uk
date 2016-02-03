@@ -136,6 +136,20 @@ task corpDiff(type: Exec) {
     commandLine "sh", "-c", "${cmd}"
 }
 
+
+task expandForCorpInteractive(type: JavaExec, dependsOn: reverseAffix) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = "org.dict_uk.expand.Expand"
+
+    workingDir = file(outputDir)
+
+    def opts = "--corp --indent -f"
+    args "-aff", "../data/affix"
+//    args "-dict", "../data/dict"
+    args opts.split()
+}
+
+
 //
 // Testing targets
 //
@@ -165,4 +179,18 @@ task testForRules(type: JavaExec, dependsOn: reverseAffix) {
 }
 
 task testExpand(dependsOn: [testForCorp, testForRules]) {
+}
+
+//
+// deploy LT dict
+//
+
+task deployToLT(type: GradleBuild) {
+    dir = 'distr/language-dict-uk'
+    tasks = ['copyDictFiles']
+}
+
+task deployCorpToLT(type: GradleBuild) {
+    dir = 'distr/language-dict-uk'
+    tasks = ['switchToCorp', 'copyDictFiles']
 }

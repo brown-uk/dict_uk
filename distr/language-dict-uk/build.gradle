@@ -14,7 +14,7 @@ String tmpDir="build/tmp"
 
 String inputDir="../../out"
 String inputDictFile="dict_rules_lt.txt"
-//String inputDictFile="dict_corp_lt.txt"
+String inputDictFileCorp="dict_corp_lt.txt"
 
 String dstEncoding="cp1251"
 String srcEncoding="utf-8"
@@ -34,6 +34,11 @@ configurations{
 
 dependencies {
     provided 'org.languagetool:languagetool-tools:3.2-SNAPSHOT'
+}
+
+
+task switchToCorp() << {
+    inputDictFile = inputDictFileCorp
 }
 
 
@@ -148,7 +153,6 @@ task copyDictFiles(type: Copy, dependsOn: classes) {
 
 //    with dataContent
 }
-
 
 
 
