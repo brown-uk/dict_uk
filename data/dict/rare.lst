@@ -70,8 +70,8 @@
 майбуть майбуть insert
 мізок /n22
 мість prep:rv_rod
-можний /adj
 мо мо insert
+можний /adj
 навперед prep:rv_rod:coll
 навручки навручки adv
 надцять /numr
@@ -98,8 +98,8 @@
 неякусь неякийсь adj:f:v_zna:&pron:neg
 ніже conj:coord
 нікоторий /adj :&pron:neg
-нітелень нітелень predic:coll
 ніт ніт part
+нітелень нітелень predic:coll
 оба numr:m:v_naz/v_zna
 обі numr:f:v_naz/v_zna
 обікласти verb:inf:perf
@@ -114,48 +114,48 @@
 опріче prep:rv_rod
 опроче adv|prep:rv_rod
 осьмий /adj
-отсей отсей adj:m:v_naz/v_zna:&pron:dem
 отсе отсей adj:n:v_zna:&pron:dem
-отсими отсей adj:p:v_oru:&pron:dem
+отсей отсей adj:m:v_naz/v_zna:&pron:dem
 отсим отсей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+отсими отсей adj:p:v_oru:&pron:dem
 отсих отсей adj:p:v_rod/v_zna/v_mis:&pron:dem
+отсі отсей adj:p:v_naz/v_zna/v_mis:&pron:dem
 отсієї отсей adj:f:v_rod:&pron:dem
 отсією отсей adj:f:v_oru:&pron:dem
 отсій отсей adj:f:v_dav/v_mis:&pron:dem
 отсім отсей adj:m:v_mis//n:v_mis:&pron:dem
-отсі отсей adj:p:v_naz/v_zna/v_mis:&pron:dem
 отсього отсей adj:m:v_rod/v_zna//n:v_rod:&pron:dem
 отсьому отсей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
 отсю отсей adj:f:v_zna:&pron:dem
 отся отсей adj:f:v_naz:&pron:dem
-оттакий /adj :&pron:dem
 отта оттой adj:f:v_naz:&pron:dem
+оттакий /adj :&pron:dem
 отте оттой adj:n:v_naz/v_zna:&pron:dem
 оттим conj:subord
-оттими оттой adj:p:v_oru:&pron:dem
 оттим оттой adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+оттими оттой adj:p:v_oru:&pron:dem
 оттих оттой adj:p:v_rod/v_zna/v_mis:&pron:dem
+отті оттой adj:p:v_naz/v_zna:&pron:dem
 оттієї оттой adj:f:v_rod:&pron:dem
 оттією оттой adj:f:v_oru:&pron:dem
 оттій оттой adj:f:v_dav/v_mis:&pron:dem
 оттім оттой adj:m:v_mis//n:v_mis:&pron:dem
-отті оттой adj:p:v_naz/v_zna:&pron:dem
 оттого оттой adj:m:v_rod/v_zna//n:v_rod:&pron:dem
 оттої оттой adj:f:v_rod:&pron:dem
 оттой оттой adj:m:v_naz/v_zna:&pron:dem
 оттому оттой adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
 оттою оттой adj:f:v_oru:&pron:dem
 отту оттой adj:f:v_zna:&pron:dem
-отцей отцей adj:m:v_naz/v_zna:&pron:dem
 отце отцей adj:n:v_zna:&pron:dem
-отцими отцей adj:p:v_oru:&pron:dem
+отцей отцей adj:m:v_naz/v_zna:&pron:dem
 отцим отцей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+отцими отцей adj:p:v_oru:&pron:dem
 отцих отцей adj:p:v_rod/v_zna/v_mis:&pron:dem
+отці отцей adj:p:v_naz/v_zna/v_mis:&pron:dem
 отцієї отцей adj:f:v_rod:&pron:dem
 отцією отцей adj:f:v_oru:&pron:dem
 отцій отцей adj:f:v_dav/v_mis:&pron:dem
 отцім отцей adj:m:v_mis//n:v_mis:&pron:dem
-отці отцей adj:p:v_naz/v_zna/v_mis:&pron:dem
 отцього отцей adj:m:v_rod/v_zna//n:v_rod:&pron:dem
 отцьому отцей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
 отцю отцей adj:f:v_zna:&pron:dem
@@ -174,25 +174,25 @@
 почерез prep:rv_zna
 притім conj:subord:bad
 пріч prep:rv_rod:coll
-простибіг простибіг insert
 простибі простибі insert
+простибіг простибіг insert
 против prep:rv_rod
 рибно рибно adv
 рік-річно рік-річно adv
 святешний /adj
-сей сей adj:m:v_naz/v_zna:&pron:dem
 се сей adj:n:v_naz/v_zna:&pron:dem
+сей сей adj:m:v_naz/v_zna:&pron:dem
 силяти /v2.cf.advp :imperf
-сими сей adj:p:v_oru:&pron:dem
 сим сей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+сими сей adj:p:v_oru:&pron:dem
 сих сей adj:p:v_rod/v_zna/v_mis:&pron:dem
+сі сей adj:p:v_naz/v_zna/v_mis:&pron:dem
 сієї сей adj:f:v_rod:&pron:dem
 сією сей adj:f:v_oru:&pron:dem
 сій сей adj:f:v_dav/v_mis:&pron:dem
 сількось сількось adv
 сількось сількось insert
 сім сей adj:m:v_mis//n:v_mis:&pron:dem
-сі сей adj:p:v_naz/v_zna/v_mis:&pron:dem
 скілька скілька numr:nv:coll
 скілько numr:p:v_naz/v_zna
 спечно спечно adv
@@ -235,11 +235,11 @@
 хотя part
 хресійбо excl
 цьоця /n10.<
+чортма чортма predic:coll
+чорт-ма чорт-ма predic:coll
 чортмає чортмає predic:coll
 чорт-мало чорт-мало predic:coll
 чорт-матиме чорт-матиме predic:coll
-чортма чортма predic:coll
-чорт-ма чорт-ма predic:coll
 чуткість /n30
 шияка /n10
 шкварко adv

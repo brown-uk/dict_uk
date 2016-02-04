@@ -1,5 +1,5 @@
-АВТА noun:f:nv    # асоціація власників транзитних авто
 АВТ noun:f:nv    # АВТ "Баварія"
+АВТА noun:f:nv    # асоціація власників транзитних авто
 АЕС noun:f:nv
 АЗС noun:f:nv
 АйБіЕм noun:f:nv
@@ -183,11 +183,11 @@
 кг noun:m:nv
 КГЗКОР noun:m:nv
 кГц noun:m:nv
+КД noun:m:nv:xp1    # компактдиск
+КД noun:f:nv:xp2    # конструкторська документація
 КДБ noun:m:nv
 кДж noun:m:nv
 КДКА noun:f:nv
-КД noun:m:nv:xp1    # компактдиск
-КД noun:f:nv:xp2    # конструкторська документація
 КДМА noun:f:nv:np
 ккал noun:f:nv
 ККД noun:m:nv

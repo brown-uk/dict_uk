@@ -29,22 +29,22 @@
 перекл. noun:m:nv:np
 пл. noun:f:nv:np
 пров. noun:m:nv
+р. noun:m:nv:np|noun:f:nv:np    # рік, річка
 ред. noun:m:v_naz|noun:f:nv:np    # редактор, напр. "Сьогодні (у четвер.  Ред.), вранці.", редакція
 реж. noun:m:nv
 рр. noun:p:nv:ns
-р. noun:m:nv:np|noun:f:nv:np    # рік, річка
 рт. adj:nv
 руб. noun:n:nv
 с. noun:n:nv:np
+ст. noun:f:nv|noun:n:nv|adj:nv    # стаття, століття, столовий
 стол. adj:nv
 стор. noun:f:nv
-ст. noun:f:nv|noun:n:nv|adj:nv    # стаття, століття, столовий
 тел. noun:m:nv
 тис. numr:f:nv
 укр. adj:nv
 фр. adj:nv
 франц. adj:nv
+ч. noun:f:nv|adj:nv    # частина, чайний
 чайн. adj:nv
 чол. adj:nv|noun:m:nv
-ч. noun:f:nv|adj:nv    # частина, чайний
 шт. noun:f:nv

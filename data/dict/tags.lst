@@ -1,3 +1,5 @@
+# ліса ліс noun:m:v_rod:obs
+# світа світ noun:m:v_rod:obs
 барлогу барліг noun:m:v_rod
 білячий /adj ^adjp:actv:imperf :bad
 бісячий /adj ^adjp:actv:imperf :bad
@@ -12,7 +14,6 @@
 їдучий /adj ^adjp:actv:imperf :bad
 киплячий /adj ^adjp:actv:imperf :bad
 лежачий /adj ^adjp:actv:imperf :bad
-# ліса ліс noun:m:v_rod:obs
 люблячий /adj ^adjp:actv:imperf :bad
 мати мати noun:f:v_naz/v_kly:anim
 мосту міст noun:m:v_rod
@@ -23,7 +24,6 @@
 плоту пліт noun:m:v_rod
 порогу поріг noun:m:v_rod
 свистячий /adj ^adjp:actv:imperf :bad
-# світа світ noun:m:v_rod:obs
 сидячий /adj ^adjp:actv:imperf :bad
 скриплячий /adj ^adjp:actv:imperf :bad
 смердячий /adj ^adjp:actv:imperf :bad

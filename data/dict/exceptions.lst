@@ -500,23 +500,6 @@
 підтяти /v1.impers2 :perf
 
 
-жати /v6 :imperf
-жатися /vr6 :imperf    # жну
-зажати /v6 :perf:xp2        # зажну
-зажати /v3.impers2 :perf:xp1    # зажну
-нажати /v6 :perf
-нажатися /vr6 :perf    # нажну
-пожати /v6 :perf
-пожатися /vr6 :perf    # пожну
-пережати /v6 :perf
-пережатися /vr6 :perf    # пережну
-
-# !verb:perf
-#зжати/89
-
-
-
-
 
 відвологти відвологти verb:inf:perf
 
