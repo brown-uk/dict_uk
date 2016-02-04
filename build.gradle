@@ -139,6 +139,8 @@ task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, testForCorp]) {
     args "-aff", "../data/affix"
     args "-dict", "../data/dict"
     args opts.split()
+
+    jvmArgs "-Xmx5g"
 //    jvmArgs "-agentlib:jdwp=transport=dt_socket,server=y,address=8000,suspend=n"
 }
 
@@ -152,6 +154,8 @@ task expandForRules(type: JavaExec, dependsOn: [reverseAffix, testForRules]) {
     args "-aff", "../data/affix"
     args "-dict", "../data/dict"
     args opts.split()
+
+    jvmArgs "-Xmx4g"
 }
 
 def get_diff_cmd(outputDir, file) {
