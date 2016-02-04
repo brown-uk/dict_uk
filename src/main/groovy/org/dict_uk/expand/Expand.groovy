@@ -256,12 +256,12 @@ class Expand {
 				continue
 			}
 			if( "pos" in modifiers) {
-				line = util.re_sub(" [^ :]+:", " " + modifiers["pos"] + ":", line)
+				line = line.replaceAll(" [^ :]+:", " " + modifiers["pos"] + ":")
 				//            util.debug("pos repl %s in %s", modifiers["pos"], line)
 			}
 			if( "force_gen" in modifiers && ! (":patr" in line)) {
 				def force_gen = modifiers["force_gen"]
-				line = util.re_sub(/:[mfn](:|$)/,  ":" + force_gen + /$1/, line)
+				line = line.replaceAll(/:[mfn](:|$)/,  ":" + force_gen + /$1/)
 				//            util.debug("gen repl: %s in %s", force_gen, line)
 			}
 
@@ -394,7 +394,7 @@ class Expand {
 
 				def word
 				String base_word
-				if( main_flag.startsWith("/n2") && util.re_search("^/n2[01234]", main_flag)) {
+				if( main_flag.startsWith("/n2") && main_flag =~ "^/n2[01234]" ) {
 					//                base_word = lines[0].split()[0]
 					base_word = line.split()[1]
 
