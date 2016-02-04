@@ -32,7 +32,10 @@ class Sort {
 
 		def lines = text.split("\n")
 
-		lines = lines.toSorted(new UkDictComparator())
+//		lines = lines.toSorted(new UkDictComparator())
+		lines = lines.toSorted {
+		    UkDictComparator.getSortKey( it.split()[0] )
+		}
 
 		text = lines.join("\n")
 		
