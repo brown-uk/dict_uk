@@ -96,10 +96,12 @@ task testForCorp(type: JavaExec, dependsOn: [reverseAffix, classes]) {
 
     doLast {
         def file="dict_corp_lt.txt"
-        assert new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text
+        def noTestOutputChange = (new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text)
+        assert noTestOutputChange
         
         file="dict_corp_vis.txt"
-        assert new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text
+        noTestOutputChange = (new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text)
+        assert noTestOutputChange
     }
 }
 
@@ -116,7 +118,8 @@ task testForRules(type: JavaExec, dependsOn: [reverseAffix, classes]) {
 
     doLast {
         def file="dict_rules_lt.txt"
-        assert new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text
+        def noTestOutputChange = (new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text)
+        assert noTestOutputChange
     }
 }
 
