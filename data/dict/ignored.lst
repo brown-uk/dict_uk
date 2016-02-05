@@ -1,7 +1,7 @@
 алегретто adv
 вогниво /n2n.p1 :rare    # xv2
 грунт /n20.p
-грунтований /adj ^adjp:pasv:imperf    # :past
+грунтований /adj :&adjp:pasv:imperf    # :past
 грунтовий /adj
 грунтовний /adj.adv \
  +cs=грунтовніший
@@ -11,13 +11,13 @@
 зберігти verb:inf:perf
 зберігтись verb:rev:inf:perf
 зберігтися verb:rev:inf:perf
-згвалтований /adj ^adjp:pasv:perf
+згвалтований /adj :&adjp:pasv:perf
 згвалтування /n2n.p1
 згвалтувати /v1.impers0 :perf
 локоть /n22.p
-негрунтований /adj ^adjp:pasv:imperf    # :past
-необгрунтований /adj.adv ^adjp:pasv:perf    # :past
-обгрунтований /adj.adv ^adjp:pasv:perf    # :past
+негрунтований /adj :&adjp:pasv:imperf    # :past
+необгрунтований /adj.adv :&adjp:pasv:perf    # :past
+обгрунтований /adj.adv :&adjp:pasv:perf    # :past
 обгрунтованість /n30
 обгрунтовувати /v1.cf.advp :imperf
 обгрунтовуватися /vr1.cf.advp :imperf
@@ -28,7 +28,7 @@
 підгрунтя /n2n
 прихватизатор /n20.a.p.ke.<
 прихватизація /n10
-прихватизований /adj ^adjp:pasv:perf
+прихватизований /adj :&adjp:pasv:perf
 прихватизувати /v1.impers0 :perf
 прихватизуватися /vr1 :perf
 п'яніна /n10

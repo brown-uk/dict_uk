@@ -45,7 +45,7 @@
 лавреат /n20.a.p.ke.<
 лямпа /n10.p1
 матеріял /n20.p
-матеріялізований /adj ^adjp:pasv:imperf:perf
+матеріялізований /adj :&adjp:pasv:imperf:perf
 матеріялізувати /v1.cf.advp.impers0 :imperf:perf
 матеріялізуватися /vr1.cf.advp :imperf:perf
 матеріяльний /adj
@@ -54,7 +54,7 @@
 мітинґ /n20.p
 мітичний /adj
 ориґінальний /adj
-переинакшений /adj ^adjp:pasv:perf
+переинакшений /adj :&adjp:pasv:perf
 переинакшити /v1.impers0 :perf
 переинакшитися /vr1 :perf
 плагіят /n20

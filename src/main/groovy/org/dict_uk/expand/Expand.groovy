@@ -319,7 +319,7 @@ class Expand {
 						line = line.replace(":perf", "")
 				}
 				else if( "adj.adv" in flags && " adv" in line )
-					extra_flags2 = util.re_sub(/:&?adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_flags2)
+					extra_flags2 = util.re_sub(/:&_?adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_flags2)
 				else if( ":+m" in extra_flags ) {
 					extra_flags2 = extra_flags2.replace(":+m", "")
 
@@ -753,6 +753,7 @@ class Expand {
 
 	
 	Pattern imperf_move_pattern = ~/(verb(?::rev)?)(.*)(:(im)?perf)/
+	Pattern reorder_comp_with_adjp = ~/ (adj:.:v_...(?::ranim|:rinanim)?)(.*)(:compb)(.*)/
 	
 	//@profile
 	@TypeChecked
@@ -785,6 +786,10 @@ class Expand {
 			}
 			else
 			if( " adj" in line || " numr" in line ) {
+				if( ":&_adjp" in line && ":comp" in line) {
+					line = reorder_comp_with_adjp.matcher(line).replaceFirst(' $1$3$2$4')
+				}
+				
 				if( "v_zn1" in line ) {
 					line = line.replace("v_zn1", "v_zna:ranim")
 				}
@@ -793,30 +798,26 @@ class Expand {
 				}
 			}
 
-			if( Args.args.corp ) {
+//			if( Args.args.corp ) {
 //				else if( "verb" in line )
 //					line = util.re_sub("(verb(?::rev)?)(.*)(:(im)?perf)", '$1$3$2', line)
-				if( "adj" in line ) {
+//				if( "adj" in line ) {
 //					if( ":comp" in line || ":super" in line) {
 //						line = util.re_sub(" (adj:)(.*):(comp[br]|super)(.*)", ' $1$3:$2$4', line)
 //					}
-					if( ":&adjp" in line) {
-						def adjp_line = re.sub(" (adj(?::compb)?)(.*):&(adjp(?::pasv|:actv|:perf|:imperf)+)(.*)", ' $3$2$4', line)
-						out_lines.add(adjp_line)
-
-						line = re.sub(":&adjp(:pasv|:actv|:perf|:imperf)+", "", line)
-						//                    util.dbg("-1-", line)
-					}
-					//            if( "advp" in line) {
+//					if( ":&adjp" in line) {
+//						def adjp_line = re.sub(" (adj(?::compb)?)(.*):&(adjp(?::pasv|:actv|:perf|:imperf)+)(.*)", ' $3$2$4', line)
+//						out_lines.add(adjp_line)
+//
+//						line = re.sub(":&adjp(:pasv|:actv|:perf|:imperf)+", "", line)
+//						//                    util.dbg("-1-", line)
+//					}
+					//            if( "advp" in line)
 					//                line = util.re_sub("(.*) .* (advp.*)", "$1 $1 $2", line)
-				}
-			}
-			else {
-				if( ":&adjp" in line && ":comp" in line) {
-					//  if( ":comp" in line || ":super" in line) {
-					line = util.re_sub(" (adj:.:v_...:)(.*):(compb)(.*)", ' $1$3:$2$4', line)
-				}
-			}
+//				}
+//			}
+//			else {
+//			}
 			//   out_lines.add(line)
 
 			// TODO: extra :coll
@@ -866,8 +867,8 @@ class Expand {
 			else
 				word = main_word[0..<-2] + "іший"
 
-			if( "&adjp" in extra_tags) {
-				extra_tags = util.re_sub(/:&adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_tags)
+			if( "&_adjp" in extra_tags) {
+				extra_tags = util.re_sub(/:&_?adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_tags)
 			}
 
 			def word_forms = expand(word, "/adj :compr" + idx + extra_tags, flush_stdout)
@@ -943,7 +944,7 @@ class Expand {
 			word = main_word[0..<-2] + "е"
 
 		if( "adjp" in extra_tags) {
-			extra_tags = util.re_sub(/:&?adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_tags)
+			extra_tags = util.re_sub(/:&_?adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_tags)
 		}
 
 		def w1 = compose_compar(word, last_adv, "adv:compr" + extra_tags)
@@ -1151,8 +1152,8 @@ class Expand {
 				}
 				multiline = ""
 			}
-			if( ("/v" in line && ":imperf:perf" in line) \
-                || ("/adjp" in line && "&adj" in line) ) {
+			if( ("/v" in line && ":imperf:perf" in line) ) {
+//                || ("/adjp" in line && "&adj" in line) ) {
 				double_form_cnt += 1
 			}
 
