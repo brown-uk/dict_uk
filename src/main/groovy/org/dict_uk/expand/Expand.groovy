@@ -58,8 +58,8 @@ class Expand {
 
 	@TypeChecked
 	List<String> expand_suffixes(String word, String affixFlags, Map<String,String> modifiers, String extra) {
-//		log.info("%s %s %s %s\n", word, affixFlags, modifiers, extra)
-		
+		//		log.info("%s %s %s %s\n", word, affixFlags, modifiers, extra)
+
 		def affixSubGroups = affixFlags.split("\\.")
 		def mainGroup = affixSubGroups[0]
 
@@ -492,7 +492,7 @@ class Expand {
 
 	//@profile
 	@TypeChecked
-	List<String> expand(String word, String flags, boolean flush_stdout) {
+	List<String> expand(String word, String flags) {
 		def flag_set = flags.split(" ", 2)
 
 		def main_flag = flag_set[0]
@@ -751,10 +751,10 @@ class Expand {
 		return line
 	}
 
-	
+
 	Pattern imperf_move_pattern = ~/(verb(?::rev)?)(.*)(:(im)?perf)/
 	Pattern reorder_comp_with_adjp = ~/ (adj:.:v_...(?::ranim|:rinanim)?)(.*)(:compb)(.*)/
-	
+
 	//@profile
 	@TypeChecked
 	List<String> post_process(List<String> lines) {
@@ -789,7 +789,7 @@ class Expand {
 				if( ":&_adjp" in line && ":comp" in line) {
 					line = reorder_comp_with_adjp.matcher(line).replaceFirst(' $1$3$2$4')
 				}
-				
+
 				if( "v_zn1" in line ) {
 					line = line.replace("v_zn1", "v_zna:ranim")
 				}
@@ -798,26 +798,26 @@ class Expand {
 				}
 			}
 
-//			if( Args.args.corp ) {
-//				else if( "verb" in line )
-//					line = util.re_sub("(verb(?::rev)?)(.*)(:(im)?perf)", '$1$3$2', line)
-//				if( "adj" in line ) {
-//					if( ":comp" in line || ":super" in line) {
-//						line = util.re_sub(" (adj:)(.*):(comp[br]|super)(.*)", ' $1$3:$2$4', line)
-//					}
-//					if( ":&adjp" in line) {
-//						def adjp_line = re.sub(" (adj(?::compb)?)(.*):&(adjp(?::pasv|:actv|:perf|:imperf)+)(.*)", ' $3$2$4', line)
-//						out_lines.add(adjp_line)
-//
-//						line = re.sub(":&adjp(:pasv|:actv|:perf|:imperf)+", "", line)
-//						//                    util.dbg("-1-", line)
-//					}
-					//            if( "advp" in line)
-					//                line = util.re_sub("(.*) .* (advp.*)", "$1 $1 $2", line)
-//				}
-//			}
-//			else {
-//			}
+			//			if( Args.args.corp ) {
+			//				else if( "verb" in line )
+			//					line = util.re_sub("(verb(?::rev)?)(.*)(:(im)?perf)", '$1$3$2', line)
+			//				if( "adj" in line ) {
+			//					if( ":comp" in line || ":super" in line) {
+			//						line = util.re_sub(" (adj:)(.*):(comp[br]|super)(.*)", ' $1$3:$2$4', line)
+			//					}
+			//					if( ":&adjp" in line) {
+			//						def adjp_line = re.sub(" (adj(?::compb)?)(.*):&(adjp(?::pasv|:actv|:perf|:imperf)+)(.*)", ' $3$2$4', line)
+			//						out_lines.add(adjp_line)
+			//
+			//						line = re.sub(":&adjp(:pasv|:actv|:perf|:imperf)+", "", line)
+			//						//                    util.dbg("-1-", line)
+			//					}
+			//            if( "advp" in line)
+			//                line = util.re_sub("(.*) .* (advp.*)", "$1 $1 $2", line)
+			//				}
+			//			}
+			//			else {
+			//			}
 			//   out_lines.add(line)
 
 			// TODO: extra :coll
@@ -871,18 +871,18 @@ class Expand {
 				extra_tags = util.re_sub(/:&_?adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_tags)
 			}
 
-			def word_forms = expand(word, "/adj :compr" + idx + extra_tags, flush_stdout)
+			def word_forms = expand(word, "/adj :compr" + idx + extra_tags)
 
 			word = "най" + word
-			def word_forms_super = expand(word, "/adj :super" + idx + extra_tags, flush_stdout)
+			def word_forms_super = expand(word, "/adj :super" + idx + extra_tags)
 			word_forms.addAll(word_forms_super)
 
 			def word_scho = "що" + word
-			word_forms_super = expand(word_scho, "/adj :super" + idx + extra_tags, flush_stdout)
+			word_forms_super = expand(word_scho, "/adj :super" + idx + extra_tags)
 			word_forms.addAll(word_forms_super)
 
 			def word_jak = "як" + word
-			word_forms_super = expand(word_jak, "/adj :super" + idx + extra_tags, flush_stdout)
+			word_forms_super = expand(word_jak, "/adj :super" + idx + extra_tags)
 			word_forms.addAll(word_forms_super)
 
 			if( ! Args.args.corp ) {
@@ -967,7 +967,7 @@ class Expand {
 
 
 	@TypeChecked
-	List<String> expand_line(String line_, boolean flush_stdout) {
+	List<String> expand_line(String line_) {
 		List<String> lines = preprocess(line_)
 
 		def main_word = ""
@@ -1032,7 +1032,7 @@ class Expand {
 
 			main_word = word
 
-			def inflected_lines = expand(word, flags, flush_stdout)
+			def inflected_lines = expand(word, flags)
 
 			if( sub_lines) {
 				def idx = 0
@@ -1093,7 +1093,7 @@ class Expand {
 	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
 
 	public Expand() {
-		log.info("Read %d allowed tags\n", ALLOWED_TAGS.size())
+		log.debug("Read %d allowed tags\n", ALLOWED_TAGS.size())
 	}
 
 	@TypeChecked
@@ -1118,12 +1118,10 @@ class Expand {
 		}
 	}
 
-	boolean flush_stdout
 
-	List<String> process_input(in_lines, boolean flush_stdout_) {
+	//	@TypeChecked
+	List<String> process_input(List<String> in_lines) {
 		def time1 = System.currentTimeMillis()
-
-		boolean flush_stdout = flush_stdout_
 
 		def multiline = ""
 		def all_lines = []
@@ -1153,13 +1151,13 @@ class Expand {
 				multiline = ""
 			}
 			if( ("/v" in line && ":imperf:perf" in line) ) {
-//                || ("/adjp" in line && "&adj" in line) ) {
+				//                || ("/adjp" in line && "&adj" in line) ) {
 				double_form_cnt += 1
 			}
 
-				
-			if( flush_stdout ) {
-				tag_lines = expand_line(line, flush_stdout)
+
+			if( Args.args.flush ) {
+				def tag_lines = expand_line(line)
 				check_lines(tag_lines)
 
 				def sorted_lines = util.sort_all_lines(tag_lines)
@@ -1171,17 +1169,17 @@ class Expand {
 			}
 		}
 
-		
+
 		ParallelEnhancer.enhanceInstance(prepared_lines)
 
 		all_lines = prepared_lines.collectParallel { String line ->
 
 			try {
-				def tag_lines = expand_line(line, flush_stdout)
+				def tag_lines = expand_line(line)
 				check_lines(tag_lines)
-				
+
 				tag_lines
-				
+
 			}
 			catch(Exception e) {
 				throw new Exception("Exception in line: \"" + line + "\"", e)
@@ -1197,7 +1195,7 @@ class Expand {
 			log.info("Processing time: %,d\n", (time2-time1))
 		}
 
-		if( ! flush_stdout) {
+		if( ! Args.args.flush) {
 			List<String> sorted_lines = util.sort_all_lines(all_lines)
 			sorted_lines = post_process_sorted(sorted_lines)
 
@@ -1247,41 +1245,29 @@ class Expand {
 	}
 
 
-	Map sys = [:]
-
 	//----------
 	// main code
 	//----------
 	@TypeChecked
 	static void main(String[] argv) {
+		Args.parse(argv)
+
 		def expand = new Expand()
 
-		expand.sys.argv = argv
+		expand.affix.load_affixes(Args.args.affixDir)
 
-		def flush_stdout = false
-		if( "-f" in argv || "--flush" in argv) {
-			flush_stdout=true
-		}
-
-		def affix_filename
-		if( "-aff" in argv) {
-			def aff_arg_idx = Arrays.asList(argv).indexOf("-aff")
-			affix_filename = argv[aff_arg_idx + 1]
-		}
-		else {
-			affix_filename = "../data/affix"
-		}
-
-		expand.affix.load_affixes(affix_filename)
-
-		def out_lines = expand.process_input(System.in.readLines(), flush_stdout)
-
-		//    def out_lines = expand.process_input(System.in, flush_stdout)
-
-		if( ! flush_stdout ) {
-			for( line in out_lines ) {
-				println(line)
+		log.info("Parsing stdin...")
+		
+		
+		System.in.eachLine { line->
+//			println "Expanding $line"
+			if( line.trim() ) {
+				def out_lines = expand.process_input([line])
+				if( out_lines ) {
+					println out_lines.join("\n")
+				}
 			}
+
 		}
 	}
 

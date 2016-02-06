@@ -15,6 +15,7 @@ class Args {
 	boolean stats
 	boolean log_usage
 	boolean wordlist
+	boolean flush
 	String affixDir
 	String dictDir
 	List<String> removeWithTags = []
@@ -65,6 +66,8 @@ class Args {
 		cli._(longOpt:'removeTags', type: String, args: 1, argName:'tags', 'Remove listed tags (comma separated) from generated forms')
 		cli._(longOpt:'lemmaForTags', type: String, args: 1, argName:'tags', 'Promote generated forms with listed tags (comma separated) to separate lemmas (supported tags: advp, compr)')
 
+		cli.f(longOpt:'flush', 'Flush output after each input line (interactive mode)')
+		
 		cli.h(longOpt: 'help', 'Help - Usage Information')
 
 
@@ -85,6 +88,7 @@ class Args {
 			stats = options.stats
 			log_usage = options['log-usage']
 			wordlist = options.wordlist
+			flush = options.flush
 
 			affixDir = options.aff
 			dictDir = options.dict

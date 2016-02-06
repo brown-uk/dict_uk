@@ -52,7 +52,7 @@ class ExpandAll {
 		//    with open("word_list.txt", "w") as out_file:
 		//        out_file.write("\n".join(out_lines))
 
-		out_lines = expand.process_input(out_lines, false)
+		out_lines = expand.process_input(out_lines)
 
 		def filename
 		if( Args.args.corp ) {

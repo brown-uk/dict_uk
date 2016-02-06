@@ -195,10 +195,11 @@ task expandForCorpInteractive(type: JavaExec, dependsOn: reverseAffix) {
     main = "org.dict_uk.expand.Expand"
 
     workingDir = file(outputDir)
+    standardInput = System.in
 
     def opts = "--corp --indent -f"
     args "-aff", "../data/affix"
-//    args "-dict", "../data/dict"
+    args "-dict", "-"
     args opts.split()
 }
 
