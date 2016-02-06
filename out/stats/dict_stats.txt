@@ -1,39 +1,37 @@
-Всього лем: 246237
-  словникових лем (без advp, без омонімів imperf/perf та adjp/adj, з compr/super) 198125
+Всього лем: 245974
+  словникових лем (без advp, без омонімів imperf/perf та adjp/adj, з compr/super) 197833
 
 Частоти за тегами:
-adj 44794
+adj 56370
      compb 759
      compr 767
-     nv 40
-     super 2301
-adjp 11930
-     compb 49
      imperf 3463
+     nv 40
      perf 8467
-adv 8926
-     compb 668
-advp 46835
-     imperf 30081
-     perf 16755
+     super 2301
+adv 8938
+     compb 670
+advp 46864
+     imperf 30087
+     perf 16778
 conj 107
 excl 491
-insert 55
-noun 100304
-     anim 33860
-     fname 2137
-     inanim 66439
-     lname 19158
-     nv 7758
+insert 56
+noun 100323
+     anim 33868
+     fname 2138
+     inanim 66450
+     lname 19159
+     nv 7759
      patr 618
 numr 131
      nv 23
 part 150
-predic 118
+predic 119
 prep 164
 transl 4
-verb 32228
-     imperf 15516
-     perf 16712
+verb 32257
+     imperf 15522
+     perf 16735
 
-Власних назв (без абревіатур): 37495
+Власних назв (без абревіатур): 37502
