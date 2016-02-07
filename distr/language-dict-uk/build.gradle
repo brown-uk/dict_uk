@@ -39,6 +39,7 @@ dependencies {
 
 task switchToCorp() << {
     inputDictFile = inputDictFileCorp
+    println "Switched source file to: $inputDictFile"
 }
 
 
@@ -66,6 +67,7 @@ task prepareDict(type: Exec, dependsOn: processResources) {
     workingDir "$projectDir"
 
     doFirst {
+        println "Preparing dict file $inputDictFile"
         new File(tmpDir).mkdirs()
     }
 
