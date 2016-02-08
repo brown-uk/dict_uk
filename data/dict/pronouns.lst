@@ -1295,6 +1295,7 @@
 ззаду ззаду prep:rv_rod
 зсередини зсередини prep:rv_rod
 ізсередини ізсередини prep:rv_rod
+кінець кінець prep:rv_rod
 коло коло prep:rv_rod
 край край prep:rv_rod
 крізь крізь prep:rv_zna
@@ -1548,6 +1549,8 @@
 щоби conj:subord|part
 щоб conj:subord|part
 щойно adv|conj:subord|part
+іно adv:rare|conj:subord:rare
+йно adv:rare|conj:subord:rare
 щоправда conj:subord
 якби conj:subord
 як-от part

@@ -615,14 +615,13 @@ class Expand {
 				extra_tag = ":anim:fname"
 
 			if( ! ("<m" in line) && ! ("<+m" in line) ) {
-				//            tag = "noun:f:v_naz/v_rod/v_dav/v_zna/v_oru/v_mis/k_kly"
 				def tag = "noun:f:nv:np"
-				def line1 = util.re_sub("/<\\+?f?", tag + extra_tag, line)
+				def line1 = util.re_sub("/<\\+?f?( (:[^ ]+))?", tag + extra_tag + '$2', line)
 				out_lines.add(line1)
 			}
 			if( ! ("<f" in line) && ! ("<+f" in line) ) {
 				def tag = "noun:m:nv:np"
-				def line1 = util.re_sub("/<\\+?m?", tag + extra_tag, line)
+				def line1 = util.re_sub("/<\\+?m?( (:[^ ]+))?", tag + extra_tag + '$2', line)
 				out_lines.add(line1)
 			}
 		}
