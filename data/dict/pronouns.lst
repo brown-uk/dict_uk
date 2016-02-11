@@ -1300,6 +1300,8 @@
 край край prep:rv_rod
 крізь крізь prep:rv_zna
 крім крім prep:rv_rod
+круг круг prep:rv_rod
+кругом кругом prep:rv_rod
 між між prep:rv_rod:rv_zna:rv_oru
 проміж проміж prep:rv_rod:rv_zna:rv_oru
 поміж поміж prep:rv_rod:rv_zna:rv_oru
