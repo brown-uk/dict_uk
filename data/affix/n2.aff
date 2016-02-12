@@ -691,6 +691,11 @@ group n23
 іг	егом	іг		#         оберегом	            @ noun:m:v_oru
 іг	езі	іг		#         оберезі	            @ noun:m:v_mis
 
+іт	ету	іт		#         лету	          @ noun:m:v_dav/v_mis
+іт	етові	іт		#         леті	            @ noun:m:v_dav/v_mis
+іт	етом	іт		#         летом	            @ noun:m:v_oru
+#іт	еті	іт		#         леті	            @ noun:m:v_mis
+
 іс	есу	іс		#         протесу	          @ noun:m:v_dav/v_mis
 іс	есові	іс		#         протесові	            @ noun:m:v_dav/v_mis
 іс	есом	іс		#         протесом	            @ noun:m:v_oru
