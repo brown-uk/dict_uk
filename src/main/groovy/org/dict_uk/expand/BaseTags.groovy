@@ -41,37 +41,38 @@ class BaseTags {
 				v_kly_for_anim = "/v_kly"
 		}
 
-		//        if( affixFlag == "U" && "+" in allAffixFlags )
-		//            tag = word + " " + word + " noun )m:v_naz"
-		//        else if( affixFlag == "U" && word.endsWith("ий") )
-		//            tag = word + " " + word + " adj )m:v_naz/v_zna )np"
 		if( affixFlag.startsWith("adj") ) {
-			if( word.endsWith("е") )
-				tag = ":n:v_naz/v_zna"
-			else if( word.endsWith("і") )
-				tag = ":p:v_naz/v_zna:ns"
+		    def v_kly = ""
+		    if( ! allAffixFlags.contains("<+") ) {
+    			v_kly = "/v_kly"
+    		}
+
+			if( word.endsWith("е") ) {
+				tag = ":n:v_naz/v_zna$v_kly"
+		    }
+			else if( word.endsWith("і") ) {
+				tag = ":p:v_naz/v_zna$v_kly:ns"
+			}
 			else if( word.endsWith("а") ) {
-				tag = ":f:v_naz"
-				if( ! allAffixFlags.contains("<+") )
-					tag += v_kly_for_anim
+				tag = ":f:v_naz$v_kly"
 			}
 			else if( word.endsWith("ій") ) {
-				tag = ":m:v_naz/v_zna//f:v_dav/v_mis"
+				tag = ":m:v_naz/v_zna$v_kly//f:v_dav/v_mis$v_kly"
 				if( util.istota(allAffixFlags) )
 					tag = tag.replace(":m:v_naz/v_zna", ":m:v_naz")
 				else
 					tag = tag.replace("v_zna", "v_zn2")
 			}
 			else {
-				if( util.istota(allAffixFlags) )
-					tag = ":m:v_naz"
-				else {
-					tag = ":m:v_naz/v_zna"
-					if( ! extra.contains("^noun") )
-						tag = tag.replace("v_zna", "v_zn2")
+				if( util.istota(allAffixFlags) ) {
+					tag = ":m:v_naz$v_kly"
 				}
-				//        if( "\\" in extra )
-				//            tag += ":compb"
+				else {
+					tag = ":m:v_naz/v_zna$v_kly"
+					if( ! extra.contains("^noun") ) {
+						tag = tag.replace("v_zna", "v_zn2")
+					}
+				}
 			}
 
 			return tag

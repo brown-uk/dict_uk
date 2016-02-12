@@ -15,7 +15,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.util.regex.*;
+
 public class Affix {
+	static Logger log = LogManager.getFormatterLogger(Affix.class);
 	//	private final ArrayList<> prefixes = new ArrayList<>();
 	private final Map<String, Map<String, SuffixGroup>> affixMap = new HashMap<>();
 
@@ -209,7 +215,7 @@ public class Affix {
 			throw new RuntimeException("ERROR: Failed to load affixes from " + filename);
 		}
 
-		System.err.println("Loaded: " + affixMap.keySet());
+		log.debug("Loaded: " + affixMap.keySet());
 		
 		return affixMap;
 	}
