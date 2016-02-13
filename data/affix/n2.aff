@@ -594,25 +594,27 @@ subgroup n22.a
 group n23
 
 
-іж	ежу	іж		#         рубежу	          @ noun:m:v_dav/v_mis
-іж	ежеві	іж		#         рубежеві	            @ noun:m:v_dav/v_mis
-іж	ежем	іж		#         рубежем	            @ noun:m:v_oru
-іж	ежі	іж		#         рубежі	            @ noun:m:v_mis
+і[жш]:
+і(.)	е\1у		#         рубежу	          @ noun:m:v_dav/v_mis
+і(.)	е\1еві		#         рубежеві	            @ noun:m:v_dav/v_mis
+і(.)	е\1ем		#         рубежем	            @ noun:m:v_oru
+і(.)	е\1і		#         рубежі	            @ noun:m:v_mis
 
-ір	еру	ір		#         паперу	          @ noun:m:v_dav/v_mis
-ір	ерові	ір		#         паперові	            @ noun:m:v_dav/v_mis
-ір	ером	ір		#         папером	            @ noun:m:v_oru
-ір	ері	ір		#         папері	            @ noun:m:v_mis
+і[блнпрс]:
+і(.)	е\1у		#         паперу	          @ noun:m:v_dav/v_mis
+і(.)	е\1ові		#         паперові	            @ noun:m:v_dav/v_mis
+і(.)	е\1ом		#         папером	            @ noun:m:v_oru
+і(.)	е\1і		#         папері	            @ noun:m:v_mis
 
-іп	епу	іп		#         причепу	          @ noun:m:v_dav/v_mis
-іп	епові	іп		#         причепові	            @ noun:m:v_dav/v_mis
-іп	епом	іп		#         причепом	            @ noun:m:v_oru
-іп	епі	іп		#         причепі	            @ noun:m:v_mis
+#іп	епу	іп		#         причепу	          @ noun:m:v_dav/v_mis
+#іп	епові	іп		#         причепові	            @ noun:m:v_dav/v_mis
+#іп	епом	іп		#         причепом	            @ noun:m:v_oru
+#іп	епі	іп		#         причепі	            @ noun:m:v_mis
 
-іб	ебу	іб		#         погребу	          @ noun:m:v_dav/v_mis
-іб	ебові	іб		#         погребові	            @ noun:m:v_dav/v_mis
-іб	ебом	іб		#         погребом	            @ noun:m:v_oru
-іб	ебі	іб		#         погребі	            @ noun:m:v_mis
+#іб	ебу	іб		#         погребу	          @ noun:m:v_dav/v_mis
+#іб	ебові	іб		#         погребові	            @ noun:m:v_dav/v_mis
+#іб	ебом	іб		#         погребом	            @ noun:m:v_oru
+#іб	ебі	іб		#         погребі	            @ noun:m:v_mis
 
 іг	егу	іг		#         оберегу	          @ noun:m:v_dav/v_mis
 іг	егові	іг		#         оберегові	            @ noun:m:v_dav/v_mis
@@ -624,35 +626,36 @@ group n23
 іт	етом	іт		#         летом	            @ noun:m:v_oru
 #іт	еті	іт		#         леті	            @ noun:m:v_mis
 
-іс	есу	іс		#         протесу	          @ noun:m:v_dav/v_mis
-іс	есові	іс		#         протесові	            @ noun:m:v_dav/v_mis
-іс	есом	іс		#         протесом	            @ noun:m:v_oru
-іс	есі	іс		#         протесі	            @ noun:m:v_mis
+#іс	есу	іс		#         протесу	          @ noun:m:v_dav/v_mis
+#іс	есові	іс		#         протесові	            @ noun:m:v_dav/v_mis
+#іс	есом	іс		#         протесом	            @ noun:m:v_oru
+#іс	есі	іс		#         протесі	            @ noun:m:v_mis
 
-іш	ешу	іш		#         кулешу	          @ noun:m:v_dav/v_mis
-іш	ешеві	іш		#         кулешеві	            @ noun:m:v_dav/v_mis
-іш	ешем	іш		#         кулешем	            @ noun:m:v_oru
-іш	еші	іш		#         кулеші	            @ noun:m:v_mis
+#іш	ешу	іш		#         кулешу	          @ noun:m:v_dav/v_mis
+#іш	ешеві	іш		#         кулешеві	            @ noun:m:v_dav/v_mis
+#іш	ешем	іш		#         кулешем	            @ noun:m:v_oru
+#іш	еші	іш		#         кулеші	            @ noun:m:v_mis
 
-іл	елу	іл		#         попелу	          @ noun:m:v_dav/v_mis
-іл	елові	іл		#         попелові	            @ noun:m:v_dav/v_mis
-іл	елом	іл		#         попелом	            @ noun:m:v_oru
-іл	елі	іл		#         попелі	            @ noun:m:v_mis
+#іл	елу	іл		#         попелу	          @ noun:m:v_dav/v_mis
+#іл	елові	іл		#         попелові	            @ noun:m:v_dav/v_mis
+#іл	елом	іл		#         попелом	            @ noun:m:v_oru
+#іл	елі	іл		#         попелі	            @ noun:m:v_mis
 
-інь	еню	інь		# корінь  кореню	    @ noun:m:v_dav/v_mis
-інь	еневі	інь		# корінь  кореневі	    @ noun:m:v_dav/v_mis
-інь	енем	інь		# корінь  коренем	    @ noun:m:v_oru
-інь	ені	інь		# корінь  корені	    @ noun:m:v_mis
+і[длн]ь:
+і(.)ь	е\1ю		# корінь  кореню	    @ noun:m:v_dav/v_mis
+і(.)ь	е\1еві		# корінь  кореневі	    @ noun:m:v_dav/v_mis
+і(.)ь	е\1ем		# корінь  коренем	    @ noun:m:v_oru
+і(.)ь	е\1і		# корінь  корені	    @ noun:m:v_mis
 
-ідь	едю	ідь		# ведмідь  ведмедю	    @ noun:m:v_dav/v_mis/v_kly
-ідь	едеві	ідь		# ведмідь  ведмедеві	    @ noun:m:v_dav/v_mis
-ідь	едем	ідь		# ведмідь  ведмедем	    @ noun:m:v_oru
-ідь	еді	ідь		# ведмідь  ведмеді	    @ noun:m:v_mis
+#ідь	едю	ідь		# ведмідь  ведмедю	    @ noun:m:v_dav/v_mis/v_kly
+#ідь	едеві	ідь		# ведмідь  ведмедеві	    @ noun:m:v_dav/v_mis
+#ідь	едем	ідь		# ведмідь  ведмедем	    @ noun:m:v_oru
+#ідь	еді	ідь		# ведмідь  ведмеді	    @ noun:m:v_mis
 
-іль	елю	іль		# важіль  важелю      	    @ noun:m:v_dav/v_kly
-іль	елеві	іль		# важіль  важелеві	    @ noun:m:v_dav/v_mis
-іль	елем	іль		# важіль  важелем	    @ noun:m:v_oru
-іль	елі	іль		# важіль  важелі	    @ noun:m:v_mis
+#іль	елю	іль		# важіль  важелю      	    @ noun:m:v_dav/v_kly
+#іль	елеві	іль		# важіль  важелеві	    @ noun:m:v_dav/v_mis
+#іль	елем	іль		# важіль  важелем	    @ noun:m:v_oru
+#іль	елі	іль		# важіль  важелі	    @ noun:m:v_mis
 
 ій	ею	ій		# іній  інею	    @ noun:m:v_dav/v_mis
 ій	еєві	ій		# іній  інеєві	    @ noun:m:v_dav/v_mis
@@ -689,7 +692,7 @@ subgroup n23.p
 і(.)	е\1ах		# папір  паперах		                   @ noun:p:v_mis
 
 # Іменники із закінченням на -інь з чергуванням -і -е
-і[ндл]ь:
+і[длн]ь:
 і(.)ь	е\1і		# корінь  корені	                   @ noun:p:v_naz
 і(.)ь	е\1ів		# корінь  коренів	                   @ noun:p:v_rod
 і(.)ь	е\1ям		# корінь  кореням	                   @ noun:p:v_dav
