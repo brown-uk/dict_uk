@@ -108,8 +108,9 @@ task testForCorp(type: JavaExec, dependsOn: [reverseAffix, classes]) {
 task testForRules(type: JavaExec, dependsOn: [reverseAffix, classes]) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
-
     workingDir = file("out/test")
+    inputs.file "$workingDir/test.lst"
+
 
     def opts = "--rules --mfl --wordlist --log-usage"
     args "-aff", "../../data/affix"
