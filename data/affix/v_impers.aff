@@ -2,12 +2,7 @@
 
 subgroup v.impersW
 
-#SFX W
-
 ти      но      ти              #  казати казано                    @ verb:impers
-
-
-#SFX 0 Y 24
 
 
 # Безособова форма дієслів
@@ -50,7 +45,6 @@ subgroup v.impers0
 
 subgroup v.impers1
 
-#SFX 1 Y 2
 сти	тено	сти	                #  мести метено              @ verb:impers
 гнути	жено	гнути	            #  вивергнути вивержено           @ verb:impers
 
@@ -59,8 +53,6 @@ subgroup v.impers1
 
 subgroup v.impers2
 
-#SFX 2 Y 1
-
 ти	то	ти	                #  вимити вимито              @ verb:impers
 
 
@@ -68,6 +60,5 @@ subgroup v.impers2
 
 subgroup v.impers3
 
-#SFX 3 Y 1
 сти	дено	сти	                #  ввести введено              @ verb:impers
 
