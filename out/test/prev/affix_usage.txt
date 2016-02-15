@@ -49,42 +49,32 @@ Flag n10 has 12 groups
 	[^к]ка : 3		1 patterns
 	я : 4		1 patterns
 Flag n10.ko has 4 groups
+	[дзлнцрт]я : 2		1 patterns
 	[жчшщ]а : 0		1 patterns
 	['ьійеиаоу]я : 1		1 patterns
 	[^жчшщ]а : 1		1 patterns
-	[длнцт]я : 2		1 patterns
-Flag n10.p1 has 27 groups
-	ья : 0		1 patterns
-	[^клн]а : 1		1 patterns
-	[жчшщ]а : 0		1 patterns
-	[^жчшщ]а : 1		1 patterns
-	[^о]стя : 0		1 patterns
-	[^ст]ла : 0		1 patterns
-	еря : 0		1 patterns
-	[аеєиіїоуюяс]ка : 0		1 patterns
-	[ая] : 2		3 patterns
-	[^е]ря : 0		1 patterns
-	адя : 0		1 patterns
-	[^ійеиаоу'ь]я : 1		1 patterns
-	[аеєиіїоуюяск]ля : 0		1 patterns
-	ття : 0		1 patterns
+Flag n10.p1 has 15 groups
 	роділля : 1		1 patterns
-	[кх]ня : 0		1 patterns
-	[^сжзвм]на : 0		1 patterns
 	[аеєиіїоуюя]ня : 0		1 patterns
 	[^тс]тя : 0		1 patterns
-	аддя : 0		1 patterns
-	изна : 0		1 patterns
+	[жчшщ]а : 0		1 patterns
 	[цс]я : 0		1 patterns
-	[^р]'я : 0		1 patterns
+	[^жчшщ]а : 1		1 patterns
+	[^о]стя : 0		1 patterns
 	['ьйіеиаоу]я : 0		1 patterns
-	остя : 0		1 patterns
+	а : 1		1 patterns
+	еря : 0		1 patterns
+	[ая] : 3		3 patterns
+	[^е]ря : 0		1 patterns
+	[^ійеиаоу'ь]я : 2		1 patterns
 	[іеиаоу]я : 0		1 patterns
-	лля : 1		1 patterns
-Flag n10.p2 has 28 groups
+	[аеєиіїоуюяск]ля : 0		1 patterns
+Flag n10.p2 has 36 groups
+	ья : 0		1 patterns
 	[жчшщ]а : 0		1 patterns
 	ця : 1		1 patterns
 	о[бвгдклнпрстх]а : 1		1 patterns
+	м'я : 0		1 patterns
 	[^жчшщ]а : 3		1 patterns
 	рга : 0		1 patterns
 	ьоза : 0		1 patterns
@@ -92,24 +82,30 @@ Flag n10.p2 has 28 groups
 	[^аеєиіїоуюялск]ля : 0		1 patterns
 	[ст]ла : 0		1 patterns
 	[ая] : 5		3 patterns
+	адя : 0		1 patterns
 	[^ійеиаоу'ь]я : 2		1 patterns
 	оря : 0		1 patterns
 	еза : 0		1 patterns
+	ддя : 0		1 patterns
+	ття : 0		1 patterns
 	тра : 0		1 patterns
+	[кх]ня : 0		1 patterns
 	рма : 1		1 patterns
 	[^ь]оза : 0		1 patterns
 	[^о]ва : 0		1 patterns
 	[влр]ійня : 0		1 patterns
 	[чш]а : 0		1 patterns
 	['ьйіеиаоу]я : 0		1 patterns
+	остя : 0		1 patterns
 	ьня : 0		1 patterns
 	[^от]ра : 0		1 patterns
 	озна : 0		1 patterns
 	[сжвм]на : 0		1 patterns
 	[^влр]ійня : 0		1 patterns
 	иня : 0		1 patterns
-	[^аеєиіїоуюя]ка : 1		1 patterns
 	[^аеєиіїйоуюякнхь]ня : 0		1 patterns
+	[^аеєиіїоуюя]ка : 1		1 patterns
+	лля : 1		1 patterns
 Flag n10.piv has 1 groups
 	[ая] : 1		1 patterns
 Flag n20 has 9 groups
@@ -125,11 +121,14 @@ Flag n20 has 9 groups
 Flag n20.a has 2 groups
 	[йь] : 1		1 patterns
 	[^аєиійоуьюя] : 6		1 patterns
-Flag n20.ke has 4 groups
-	[^аєиійоуьюякг] : 2		1 patterns
-	[уая]к : 0		1 patterns
-	[еуо]г : 0		1 patterns
-	[рлщ]о : 4		1 patterns
+Flag n20.ke has 5 groups
+	[^аєиійоуьюякгх] : 2		1 patterns
+	г : 0		1 patterns
+	х : 0		1 patterns
+	к : 0		1 patterns
+	о : 4		1 patterns
+Flag n20.ku has 1 groups
+	[^уая] : 0		1 patterns
 Flag n20.p has 6 groups
 	[жчшщ] : 0		1 patterns
 	й : 0		5 patterns
@@ -137,222 +136,133 @@ Flag n20.p has 6 groups
 	ь : 0		5 patterns
 	о : 2		5 patterns
 	[^аєиіїйоуьюяжчшщ] : 4		1 patterns
+Flag n20.p1 has 1 groups
+	н : 0		5 patterns
 Flag n20.po has 3 groups
 	сько : 1		3 patterns
 	ло : 2		2 patterns
 	о : 3		3 patterns
 Flag n20.pyn has 1 groups
 	ин : 0		5 patterns
-Flag n20.zi has 4 groups
-	ґ : 0		1 patterns
+Flag n20.zi has 3 groups
 	г : 0		1 patterns
 	х : 0		1 patterns
 	к : 0		1 patterns
-Flag n21 has 18 groups
+Flag n21 has 15 groups
+	.і[бвджзлмнпрстш] : 7		1 patterns
 	ій : 0		4 patterns
-	ізд : 0		4 patterns
-	іст : 1		1 patterns
-	ірт : 1		4 patterns
-	^.і[бвдзжлмнпрстш] : 3		1 patterns
-	іс[кт] : 1		3 patterns
-	..і[бвджзлмнпрстш] : 4		1 patterns
+	і[зрс][дт] : 2		1 patterns
+	і[зрс][дкт] : 2		3 patterns
 	і[бдгзклмнпрст] : 6		1 patterns
 	рік : 0		1 patterns
 	потік : 1		1 patterns
 	і[жш] : 2		3 patterns
-	кінь : 1		4 patterns
+	інь : 1		4 patterns
+	іль : 0		4 patterns
 	і[бвдгзклмнпрстч] : 6		2 patterns
 	стік : 0		1 patterns
 	івш : 0		4 patterns
 	ість : 0		4 patterns
-	[^г]іль : 0		4 patterns
 	іг : 0		1 patterns
-Flag n21.a has 9 groups
+Flag n21.a has 6 groups
 	ій : 0		1 patterns
-	ізд : 0		1 patterns
 	і[бвдгжзклмнпрстш] : 4		1 patterns
-	кінь : 1		1 patterns
-	ірт : 1		1 patterns
-	іс[кт] : 1		1 patterns
-	івш : 0		1 patterns
+	інь : 1		1 patterns
+	іль : 0		1 patterns
+	і[взрс][дктш] : 2		1 patterns
 	ість : 0		1 patterns
-	[^г]іль : 0		1 patterns
-Flag n21.ke has 28 groups
-	[^тб]іж : 0		1 patterns
-	[^пг]лід : 0		1 patterns
-	ріг : 0		1 patterns
-	іб : 0		1 patterns
-	ів : 0		1 patterns
-	[^л]ід : 0		1 patterns
-	із : 0		1 patterns
-	е[тб]іж : 0		1 patterns
-	ізд : 0		1 patterns
-	ік : 0		1 patterns
-	іл : 0		1 patterns
-	ім : 0		1 patterns
-	ін : 0		1 patterns
-	іст : 1		1 patterns
-	[пг]лід : 0		1 patterns
-	іп : 0		1 patterns
-	[^п]літ : 0		1 patterns
-	іс : 0		1 patterns
-	[^л]ір : 0		1 patterns
-	ет : 0		1 patterns
-	[^л]іт : 0		1 patterns
-	лір : 0		1 patterns
-	[п]літ : 0		1 patterns
-	[^е][тб]іж : 0		1 patterns
-	[^р]іг : 0		1 patterns
-	їв : 0		1 patterns
-	івш : 0		1 patterns
-	іск : 0		1 patterns
-Flag n21.p has 11 groups
+Flag n21.ke has 2 groups
+	і[взрс][дктш] : 1		1 patterns
+	і[бвгджзклмнпрстш] : 0		1 patterns
+Flag n21.p has 9 groups
 	ій : 0		5 patterns
-	ізд : 0		5 patterns
 	і[жш] : 1		1 patterns
 	і[бвдгжзклмнпрстш] : 3		4 patterns
+	іль : 0		5 patterns
 	кінь : 1		6 patterns
-	ірт : 1		5 patterns
-	іс[кт] : 1		5 patterns
+	і[зрс][дкт] : 2		5 patterns
 	і[бвдгзклмнпрст] : 2		1 patterns
 	івш : 0		5 patterns
 	ість : 0		5 patterns
-	[^г]іль : 0		5 patterns
-Flag n22 has 14 groups
+Flag n22 has 8 groups
 	о[вклмнр] : 0		2 patterns
-	[аеєиіїоуюя]рець : 0		4 patterns
-	[^аеєиіїоуюя]рець : 0		4 patterns
-	[^л][іео][лнт]ь : 2		4 patterns
 	ей : 0		4 patterns
-	о[влмнр] : 0		1 patterns
-	[аеєиіїуюягор][нв]ець : 0		4 patterns
-	єць : 0		4 patterns
-	[^аеєиіїоуюягр][вн]ець : 0		4 patterns
 	о[клмнр] : 0		1 patterns
-	лень : 0		4 patterns
-	[^лрнв]ець : 0		4 patterns
-	лець : 0		4 patterns
+	о[влмнр] : 0		1 patterns
+	ле[нц]ь : 0		4 patterns
+	єць : 0		4 patterns
 	е[лмнрст] : 1		4 patterns
-Flag n22.a has 16 groups
-	о[вклмнр] : 0		1 patterns
-	[ое]ль : 0		1 patterns
-	[аеєиіїоуюя]рець : 0		1 patterns
-	[^аеєиіїоуюя]рець : 0		1 patterns
+	[^л][іео][лнтц]ь : 2		4 patterns
+Flag n22.a has 5 groups
 	ей : 0		1 patterns
-	[аеєиіїуюягор][нв]ець : 0		1 patterns
+	[ео][вклмнрст] : 0		1 patterns
+	ле[нц]ь : 0		1 patterns
 	єць : 0		1 patterns
-	гіль : 0		1 patterns
-	[^аеєиіїоуюяг][вн]ець : 0		1 patterns
-	[^л][ео]нь : 1		1 patterns
-	лень : 0		1 patterns
-	оть : 0		1 patterns
-	[^лрнв]ець : 0		1 patterns
-	рінь : 0		1 patterns
-	лець : 0		1 patterns
-	е[лмнрст] : 0		1 patterns
-Flag n22.ke has 4 groups
-	ор : 0		1 patterns
-	ел : 0		1 patterns
-	ер : 0		1 patterns
-	ол : 0		1 patterns
-Flag n22.p has 14 groups
-	о[вклмнр] : 0		5 patterns
-	[аеєиіїоуюя]рець : 0		5 patterns
-	[^аеєиіїоуюя]рець : 0		5 patterns
+	[^л][іео][лнтц]ь : 1		1 patterns
+Flag n22.ke has 1 groups
+	[ео][вклмнрст] : 0		1 patterns
+Flag n22.p has 5 groups
 	ей : 0		5 patterns
+	[^л][іое][лнтц]ь : 1		5 patterns
+	[ео][вклмнрст] : 1		5 patterns
+	ле[нц]ь : 0		5 patterns
 	єць : 0		5 patterns
-	[аеєиіїоуюягр][нв]ець : 0		5 patterns
-	[^аеєиіїоуюягр][вн]ець : 0		5 patterns
-	[^л][ео]нь : 1		5 patterns
-	лень : 0		5 patterns
-	[^лрнв]ець : 0		5 patterns
-	рінь : 0		5 patterns
-	лець : 0		5 patterns
-	е[лмнрст] : 1		5 patterns
-	[іое][лт]ь : 0		5 patterns
-Flag n23 has 15 groups
-	іж : 0		4 patterns
+Flag n23 has 7 groups
+	і[блнпрст] : 1		4 patterns
 	ій : 0		4 patterns
-	іл : 0		4 patterns
-	іп : 1		4 patterns
-	ір : 0		4 patterns
-	іс : 0		4 patterns
-	іт : 0		3 patterns
-	іш : 0		4 patterns
-	інь : 0		4 patterns
-	іль : 0		4 patterns
-	іб : 0		4 patterns
+	і[длн]ь : 0		4 patterns
+	і[жш] : 0		4 patterns
 	їв : 0		3 patterns
 	ів : 0		3 patterns
 	іг : 0		4 patterns
-	ідь : 0		4 patterns
-Flag n23.a has 12 groups
-	іж : 0		1 patterns
-	іш : 0		1 patterns
-	інь : 0		1 patterns
-	іль : 0		1 patterns
-	іп : 1		1 patterns
-	ір : 0		1 patterns
-	іб : 0		1 patterns
-	іс : 0		1 patterns
+Flag n23.a has 3 groups
+	і[длн]ь : 0		1 patterns
+	і[бвгжнпрстш] : 1		1 patterns
 	їв : 0		1 patterns
-	ів : 0		1 patterns
-	іг : 0		1 patterns
-	ідь : 0		1 patterns
-Flag n23.ke has 1 groups
+Flag n23.ke has 4 groups
+	і[длн]ь : 0		0 patterns
+	і[бвгжнпрстш] : 0		1 patterns
 	їв : 0		1 patterns
-Flag n23.p has 5 groups
-	ій : 0		1 patterns
+	іне : 0		1 patterns
+Flag n23.p has 4 groups
+	і[^жш] : 1		1 patterns
+	і[длн]ь : 0		5 patterns
 	і[жш] : 0		1 patterns
-	і[бгжнпрсш] : 1		4 patterns
-	і[^жн] : 1		1 patterns
-	і[ндл]ь : 0		5 patterns
-Flag n24 has 15 groups
+	і[бвгжнпрстш] : 1		4 patterns
+Flag n24 has 9 groups
+	[^аеєиіїоуюя][рвн]ець : 0		4 patterns
+	яр : 0		4 patterns
 	боєць : 0		4 patterns
-	одець : 0		4 patterns
-	овець : 1		4 patterns
-	ін : 0		4 patterns
-	лід : 0		3 patterns
-	день : 0		4 patterns
-	ір : 0		4 patterns
-	[аиуяео]р : 0		3 patterns
-	[аиуео]р : 0		1 patterns
-	яр : 0		1 patterns
 	осен : 1		4 patterns
-	літ : 1		4 patterns
-	онець : 0		4 patterns
+	[аеиоу]р : 0		4 patterns
+	[тд]ень : 0		4 patterns
 	елок : 0		3 patterns
-	тень : 0		4 patterns
-Flag n24.a has 11 groups
+	о[вдн]ець : 1		4 patterns
+	лі[длнрт] : 1		4 patterns
+Flag n24.a has 9 groups
+	[дт]ень : 0		1 patterns
 	[аиуео]р : 0		1 patterns
 	яр : 0		1 patterns
 	боєць : 0		1 patterns
-	одець : 0		1 patterns
 	осен : 1		1 patterns
-	літ : 0		1 patterns
-	овець : 1		1 patterns
-	день : 0		1 patterns
-	онець : 0		1 patterns
+	[^аеєиіїоуюяг][внр]ець : 0		1 patterns
 	елок : 0		1 patterns
-	тень : 0		1 patterns
-Flag n24.ke has 1 groups
+	о[вдн]ець : 1		1 patterns
+	лі[длнрт] : 0		1 patterns
+Flag n24.ke has 3 groups
+	[^аеєиіїоуюяг][внр]ець : 0		1 patterns
 	[аиуяо]р : 0		1 patterns
-Flag n24.p has 15 groups
-	[аиуяе]р : 0		1 patterns
+	лі[длнрт] : 0		1 patterns
+Flag n24.p has 9 groups
+	[дт]ень : 0		5 patterns
+	яр : 0		5 patterns
 	оєць : 0		1 patterns
 	боєць : 0		4 patterns
-	одець : 0		5 patterns
-	овець : 1		5 patterns
-	ін : 0		5 patterns
-	лід : 0		5 patterns
-	день : 0		5 patterns
-	[аиуе]р : 0		4 patterns
-	яр : 0		4 patterns
-	лір : 0		5 patterns
-	літ : 1		5 patterns
-	онець : 0		5 patterns
+	[аеиоу]р : 0		5 patterns
 	елок : 0		5 patterns
-	тень : 0		5 patterns
+	о[вдн]ець : 1		5 patterns
+	[^аеєиіїоуюягр][внр]ець : 0		5 patterns
+	лі[длнрт] : 1		5 patterns
 Flag n2adj1 has 2 groups
 	[вдкнт]е : 1		3 patterns
 	ін : 0		6 patterns
@@ -380,51 +290,46 @@ Flag n2n.ke has 1 groups
 Flag n2n.ovi has 2 groups
 	е : 2		1 patterns
 	о : 5		1 patterns
-Flag n2n.p1 has 28 groups
-	[ьоаеиіу]ко : 3		1 patterns
-	[^с]ерце : 0		1 patterns
-	[^к]о : 5		1 patterns
-	[^ийрсь]це : 0		1 patterns
+Flag n2n.p1 has 18 groups
 	[^д]дя : 0		1 patterns
 	[^жчшщц]е : 0		1 patterns
 	[^жчшщ]е : 0		3 patterns
-	'я : 0		1 patterns
-	[у]жжя : 0		1 patterns
+	[^т]тя : 0		1 patterns
 	[жчшщ]е : 2		3 patterns
 	че : 0		1 patterns
+	це : 0		1 patterns
 	я : 0		3 patterns
-	ісце : 0		1 patterns
-	[^у]жжя : 0		1 patterns
 	[жшщ]е : 2		1 patterns
+	о : 10		5 patterns
+	ння : 0		1 patterns
 	ття : 0		1 patterns
 	ддя : 0		1 patterns
-	шшя : 0		1 patterns
-	ьце : 0		1 patterns
-	[^т]тя : 0		1 patterns
-	серце : 0		1 patterns
-	ице : 0		1 patterns
-	йце : 0		1 patterns
-	о : 8		4 patterns
-	ння : 0		1 patterns
 	лля : 0		1 patterns
 	ччя : 0		1 patterns
+	шшя : 0		1 patterns
 	сся : 0		1 patterns
-Flag n2n.p2 has 15 groups
+	жжя : 0		1 patterns
+Flag n2n.p2 has 20 groups
 	тря : 0		1 patterns
 	[бдкпст]ло : 1		1 patterns
-	тра : 0		1 patterns
+	[^с]ерце : 0		1 patterns
+	[^йрсь]це : 0		1 patterns
+	[жт]я : 1		1 patterns
 	[кг]но : 0		1 patterns
-	[з]ло : 0		1 patterns
-	тя : 1		1 patterns
+	'я : 0		1 patterns
+	зло : 0		1 patterns
+	ьце : 0		1 patterns
 	[дб]ро : 0		1 patterns
 	[дтрв]но : 0		1 patterns
+	це : 0		3 patterns
 	я : 1		3 patterns
-	[аяий]ло : 2		1 patterns
 	рмо : 0		1 patterns
 	смо : 0		1 patterns
 	[еіо][влтс]о : 0		1 patterns
 	[жзлмрчтьш]ко : 1		1 patterns
-	о : 4		4 patterns
+	серце : 0		1 patterns
+	йце : 0		1 patterns
+	о : 2		4 patterns
 Flag n2n.piv has 1 groups
 	о : 0		5 patterns
 Flag n30 has 13 groups

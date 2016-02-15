@@ -2,7 +2,7 @@
 
 синій /adj
 лікарів /adj_ev
-вбитий /adj ^adjp:pasv:perf
+вбитий /adj :&adjp:pasv:perf
 варений /adj :&_adjp:pasv:imperf    # :past
 
 # Порівняльні форми
@@ -94,7 +94,7 @@
 
 дітиська /np1.<
 хірт /n21.p.a.<>
-екс-суддя /n10.p2.piv.ko :+m
+екс-суддя /n10.p1.piv.ko :+m
 залізко /n2n.p2
 меживузля /n2n
 тюрма /n10.p2
@@ -107,7 +107,7 @@
 
 хрін /n20 /n21
 хосен /n24.a :np
-породілля /n10.p1.ko.<
+породілля /n10.p1.p2.ko.<
 вігонь /n32.p.<>
 усюди /np2.np1
 суміш /n32.p
@@ -191,9 +191,9 @@
 взути /v2.impers2 :perf:v-u
 взутися /vr2 :perf:v-u
 задихатися /vr1.vr2 :perf
-бентежити /v1.imprt0
+бентежити /v1.imprt0 :imperf
 вжалити /v1 :perf:v-u
-вести /v4
+вести /v4 :imperf
 
 вимести /v1.impers1 :perf
 виместися /vr1 :perf

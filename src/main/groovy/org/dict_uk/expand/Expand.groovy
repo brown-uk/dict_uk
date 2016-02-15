@@ -1087,8 +1087,9 @@ class Expand {
 	}
 
 
-	static final Pattern WORD_RE = Pattern.compile("[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ']*(-[а-яіїєґА-ЯІЇЄҐ']*)*|[А-ЯІЇЄҐ][А-ЯІЇЄҐ-]+|[а-яіїєґ]+\\.",)
-
+	static final Pattern WORD_RE = Pattern.compile("[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ']*(-[а-яіїєґА-ЯІЇЄҐ']*)*|[А-ЯІЇЄҐ][А-ЯІЇЄҐ-]+|[а-яіїєґ]+\\.")
+	static final Pattern POS_RE = Pattern.compile("(noun:(in)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|excl|conj:|predic|insert|transl).*")
+	
 	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
 
 	public Expand() {
@@ -1102,10 +1103,14 @@ class Expand {
 			DicEntry dicEntry = DicEntry.fromLine(line)
 			def word = dicEntry.word
 			def lemma = dicEntry.lemma
+			def tags = dicEntry.tagStr
 
 			if( ! WORD_RE.matcher(word).matches() || ! WORD_RE.matcher(lemma).matches() )
-				throw new Exception("Invalid pattern in word || lemma: " + line)
+				throw new Exception("Invalid pattern in word or lemma: " + line)
 
+			if( ! POS_RE.matcher(tags).matches() )
+				throw new Exception("Invalid main postag in word: " + line)
+			
 			//        def taglist = tags.split(":")
 			for( tag in dicEntry.tags) {
 				if( ! tag in ALLOWED_TAGS)
