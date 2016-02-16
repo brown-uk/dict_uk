@@ -41,9 +41,9 @@
 Євангелії Євангеліє noun:n:v_mis
 Євангелієм Євангеліє noun:n:v_oru
 Євангелій Євангеліє noun:p:v_rod
-Євангеліям Євангеліє noun:n:v_dav
-Євангеліями Євангеліє noun:n:v_oru
-Євангеліях Євангеліє noun:n:v_mis
+Євангеліям Євангеліє noun:p:v_dav
+Євангеліями Євангеліє noun:p:v_oru
+Євангеліях Євангеліє noun:p:v_mis
 
 
 # додаткові форми
@@ -200,7 +200,7 @@
 очком очко noun:n:v_oru:xp2
 очку очко noun:n:v_mis:xp2
 очки очко noun:p:v_naz:xp2
-очок очко noun:p:v_rod:xp1
+очок очко noun:p:v_rod:xp2
 очкам очко noun:p:v_dav:xp2
 очки очко noun:p:v_zna:xp2
 очками очко noun:p:v_oru:xp2
