@@ -2,18 +2,17 @@
   словникових лем (без advp, без омонімів imperf/perf та adjp/adj, з compr/super) 219
 
 Частоти за тегами:
-adj 50
+adj 51
      compb 7
      compr 8
      imperf 3
-     super 24
-adjp 1
      perf 1
+     super 24
 adv 38
      compb 6
 advp 20
-     imperf 9
-     perf 11
+     imperf 11
+     perf 9
 noun 107
      anim 59
      fname 5
@@ -25,7 +24,7 @@ numr 2
      nv 1
 prep 1
 verb 21
-     imperf 9
+     imperf 11
      perf 10
 
 Власних назв (без абревіатур): 31

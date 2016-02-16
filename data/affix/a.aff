@@ -80,10 +80,16 @@ group adj
 е	ому			#   дизпальному 	          @ adj:n:v_dav/v_mis:np
 е	им			#   дизпальним 	            @ adj:n:v_oru:np
 е	ім			#   дизпальнім 	            @ adj:n:v_mis:np
-є:
+
+[^']є:
 є	ього			#   полуднього 	          @ adj:n:v_rod:np
 є	ьому			#   полудньому 	          @ adj:n:v_dav/v_mis:np
-є	ім			#   полуднім 	            @ adj:n:v_oru/v_mis:np
+є	ім			    #   полуднім 	            @ adj:n:v_oru/v_mis:np
+
+'є:
+є	його			#   Остап'його 	          @ adj:n:v_rod:np
+є	йому			#   Остап'йому 	          @ adj:n:v_dav/v_mis:np
+є	їм			    #   Остап'їм 	            @ adj:n:v_oru/v_mis:np
 
 #  жіночого роду
 а:

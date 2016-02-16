@@ -97,7 +97,6 @@
 дошками дошка noun:p:v_oru
 дошках дошка noun:p:v_mis
 
-
 Божечко Божечко noun:m:v_kly:anim
 Божечку Божечко noun:m:v_kly:anim
 
@@ -110,7 +109,6 @@
 давніх-давен давніх-давен noun:p:v_rod:ns
 
 Руси Русь noun:f:v_rod:alt
-Кишиневі Кишинів noun:m:v_mis
 роб роб noun:m:v_naz/v_zna
 робом роб noun:m:v_oru
 
@@ -239,8 +237,25 @@
 четвергом четвер noun:m:v_oru
 четверги четвер noun:p:v_naz/v_zna
 четвергах четвер noun:p:v_mis
+четвергами четвер noun:p:v_oru
 четвергів четвер noun:p:v_rod
 четвергам четвер noun:p:v_dav
+
+мати мати noun:anim:f:v_naz
+матір мати noun:anim:f:v_naz:rare
+матері мати noun:anim:f:v_rod
+матері мати noun:anim:f:v_dav
+матір мати noun:anim:f:v_zna
+матір'ю мати noun:anim:f:v_oru
+матері мати noun:anim:f:v_mis
+мати мати noun:anim:f:v_kly
+матері мати noun:anim:p:v_naz
+матерів мати noun:anim:p:v_rod
+матерям мати noun:anim:p:v_dav
+матерів мати noun:anim:p:v_zna
+матерями мати noun:anim:p:v_oru
+матерях мати noun:anim:p:v_mis
+матері мати noun:anim:p:v_kly
 
 плечі плече noun:p:v_naz/v_zna
 плечей плече noun:p:v_rod

@@ -266,22 +266,22 @@
   бари noun:inanim:p:v_zna:xp2
   барами noun:inanim:p:v_oru:xp2
   барах noun:inanim:p:v_mis:xp2
-бентеживши advp:perf
-бентежити verb:inf
-  бентеж verb:impr:s:2
-  бентежмо verb:impr:p:1
-  бентежте verb:impr:p:2
-  бентежу verb:pres:s:1
-  бентежиш verb:pres:s:2
-  бентежить verb:pres:s:3
-  бентежим verb:pres:p:1
-  бентежимо verb:pres:p:1
-  бентежите verb:pres:p:2
-  бентежать verb:pres:p:3
-  бентежив verb:past:m
-  бентежила verb:past:f
-  бентежило verb:past:n
-  бентежили verb:past:p
+бентеживши advp:imperf
+бентежити verb:imperf:inf
+  бентеж verb:imperf:impr:s:2
+  бентежмо verb:imperf:impr:p:1
+  бентежте verb:imperf:impr:p:2
+  бентежу verb:imperf:pres:s:1
+  бентежиш verb:imperf:pres:s:2
+  бентежить verb:imperf:pres:s:3
+  бентежим verb:imperf:pres:p:1
+  бентежимо verb:imperf:pres:p:1
+  бентежите verb:imperf:pres:p:2
+  бентежать verb:imperf:pres:p:3
+  бентежив verb:imperf:past:m
+  бентежила verb:imperf:past:f
+  бентежило verb:imperf:past:n
+  бентежили verb:imperf:past:p
 біб noun:inanim:m:v_naz
   боба noun:inanim:m:v_rod
   бобові noun:inanim:m:v_dav
@@ -557,38 +557,38 @@
   вбивцями noun:anim:p:v_oru
   вбивцях noun:anim:p:v_mis
   вбивці noun:anim:p:v_kly
-вбитий adjp:pasv:perf:m:v_naz
-  вбитого adjp:pasv:perf:m:v_rod
-  вбитому adjp:pasv:perf:m:v_dav
-  вбитого adjp:pasv:perf:m:v_zna:ranim
-  вбитий adjp:pasv:perf:m:v_zna:rinanim
-  вбитим adjp:pasv:perf:m:v_oru
-  вбитім adjp:pasv:perf:m:v_mis
-  вбитому adjp:pasv:perf:m:v_mis
-  вбитий adjp:pasv:perf:m:v_kly
-  вбита adjp:pasv:perf:f:v_naz
-  вбитої adjp:pasv:perf:f:v_rod
-  вбитій adjp:pasv:perf:f:v_dav
-  вбиту adjp:pasv:perf:f:v_zna
-  вбитою adjp:pasv:perf:f:v_oru
-  вбитій adjp:pasv:perf:f:v_mis
-  вбита adjp:pasv:perf:f:v_kly
-  вбите adjp:pasv:perf:n:v_naz
-  вбитого adjp:pasv:perf:n:v_rod
-  вбитому adjp:pasv:perf:n:v_dav
-  вбите adjp:pasv:perf:n:v_zna
-  вбитим adjp:pasv:perf:n:v_oru
-  вбитім adjp:pasv:perf:n:v_mis
-  вбитому adjp:pasv:perf:n:v_mis
-  вбите adjp:pasv:perf:n:v_kly
-  вбиті adjp:pasv:perf:p:v_naz
-  вбитих adjp:pasv:perf:p:v_rod
-  вбитим adjp:pasv:perf:p:v_dav
-  вбитих adjp:pasv:perf:p:v_zna:ranim
-  вбиті adjp:pasv:perf:p:v_zna:rinanim
-  вбитими adjp:pasv:perf:p:v_oru
-  вбитих adjp:pasv:perf:p:v_mis
-  вбиті adjp:pasv:perf:p:v_kly
+вбитий adj:m:v_naz:&adjp:pasv:perf
+  вбитого adj:m:v_rod:&adjp:pasv:perf
+  вбитому adj:m:v_dav:&adjp:pasv:perf
+  вбитого adj:m:v_zna:ranim:&adjp:pasv:perf
+  вбитий adj:m:v_zna:rinanim:&adjp:pasv:perf
+  вбитим adj:m:v_oru:&adjp:pasv:perf
+  вбитім adj:m:v_mis:&adjp:pasv:perf
+  вбитому adj:m:v_mis:&adjp:pasv:perf
+  вбитий adj:m:v_kly:&adjp:pasv:perf
+  вбита adj:f:v_naz:&adjp:pasv:perf
+  вбитої adj:f:v_rod:&adjp:pasv:perf
+  вбитій adj:f:v_dav:&adjp:pasv:perf
+  вбиту adj:f:v_zna:&adjp:pasv:perf
+  вбитою adj:f:v_oru:&adjp:pasv:perf
+  вбитій adj:f:v_mis:&adjp:pasv:perf
+  вбита adj:f:v_kly:&adjp:pasv:perf
+  вбите adj:n:v_naz:&adjp:pasv:perf
+  вбитого adj:n:v_rod:&adjp:pasv:perf
+  вбитому adj:n:v_dav:&adjp:pasv:perf
+  вбите adj:n:v_zna:&adjp:pasv:perf
+  вбитим adj:n:v_oru:&adjp:pasv:perf
+  вбитім adj:n:v_mis:&adjp:pasv:perf
+  вбитому adj:n:v_mis:&adjp:pasv:perf
+  вбите adj:n:v_kly:&adjp:pasv:perf
+  вбиті adj:p:v_naz:&adjp:pasv:perf
+  вбитих adj:p:v_rod:&adjp:pasv:perf
+  вбитим adj:p:v_dav:&adjp:pasv:perf
+  вбитих adj:p:v_zna:ranim:&adjp:pasv:perf
+  вбиті adj:p:v_zna:rinanim:&adjp:pasv:perf
+  вбитими adj:p:v_oru:&adjp:pasv:perf
+  вбитих adj:p:v_mis:&adjp:pasv:perf
+  вбиті adj:p:v_kly:&adjp:pasv:perf
 вбогий adj:m:v_naz:compb:v-u
   вбогого adj:m:v_rod:compb:v-u
   вбогому adj:m:v_dav:compb:v-u
@@ -1001,22 +1001,22 @@
   весла noun:inanim:p:v_zna
   веслами noun:inanim:p:v_oru
   веслах noun:inanim:p:v_mis
-вести verb:inf
-  веди verb:impr:s:2
-  ведім verb:impr:p:1
-  ведімо verb:impr:p:1
-  ведіть verb:impr:p:2
-  веду verb:pres:s:1
-  ведеш verb:pres:s:2
-  веде verb:pres:s:3
-  ведем verb:pres:p:1
-  ведемо verb:pres:p:1
-  ведете verb:pres:p:2
-  ведуть verb:pres:p:3
-  вів verb:past:m
-  вела verb:past:f
-  вело verb:past:n
-  вели verb:past:p
+вести verb:imperf:inf
+  веди verb:imperf:impr:s:2
+  ведім verb:imperf:impr:p:1
+  ведімо verb:imperf:impr:p:1
+  ведіть verb:imperf:impr:p:2
+  веду verb:imperf:pres:s:1
+  ведеш verb:imperf:pres:s:2
+  веде verb:imperf:pres:s:3
+  ведем verb:imperf:pres:p:1
+  ведемо verb:imperf:pres:p:1
+  ведете verb:imperf:pres:p:2
+  ведуть verb:imperf:pres:p:3
+  вів verb:imperf:past:m
+  вела verb:imperf:past:f
+  вело verb:imperf:past:n
+  вели verb:imperf:past:p
 весь adj:m:v_naz:&pron:dem
   весь adj:m:v_zna:&pron:dem
 вечоріти verb:imperf:inf
@@ -1330,7 +1330,7 @@
   вихідними noun:inanim:p:v_oru
   вихідних noun:inanim:p:v_mis
   вихідні noun:inanim:p:v_kly
-вівши advp:perf
+вівши advp:imperf
 вігонь noun:anim:f:v_naz
   вігоні noun:anim:f:v_rod
   вігоні noun:anim:f:v_dav
