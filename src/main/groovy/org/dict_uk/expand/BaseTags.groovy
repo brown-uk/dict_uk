@@ -47,13 +47,13 @@ class BaseTags {
     			v_kly = "/v_kly"
     		}
 
-			if( word.endsWith("е") ) {
+			if( word.endsWith("е") || word.endsWith("є") ) {
 				tag = ":n:v_naz/v_zna$v_kly"
 		    }
 			else if( word.endsWith("і") ) {
 				tag = ":p:v_naz/v_zna$v_kly:ns"
 			}
-			else if( word.endsWith("а") ) {
+			else if( word.endsWith("а") || word.endsWith("я") ) {
 				tag = ":f:v_naz$v_kly"
 			}
 			else if( word.endsWith("ій") ) {

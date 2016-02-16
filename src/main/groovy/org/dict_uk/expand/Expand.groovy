@@ -5,6 +5,7 @@ package org.dict_uk.expand
 
 import groovy.transform.TypeChecked
 import groovyx.gpars.ParallelEnhancer
+import groovyx.gpars.GParsPool
 
 import java.util.regex.*
 
@@ -1091,6 +1092,7 @@ class Expand {
 	static final Pattern POS_RE = Pattern.compile("(noun:(in)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|excl|conj:|predic|insert|transl).*")
 	
 	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
+	int fatalErrorCount = 0
 
 	public Expand() {
 		log.debug("Read %d allowed tags\n", ALLOWED_TAGS.size())
@@ -1105,23 +1107,82 @@ class Expand {
 			def lemma = dicEntry.lemma
 			def tags = dicEntry.tagStr
 
-			if( ! WORD_RE.matcher(word).matches() || ! WORD_RE.matcher(lemma).matches() )
-				throw new Exception("Invalid pattern in word or lemma: " + line)
+			if( ! WORD_RE.matcher(word).matches() || ! WORD_RE.matcher(lemma).matches() ) {
+				log.error("Invalid pattern in word or lemma: " + line)
+				fatalErrorCount++
+			}
 
-			if( ! POS_RE.matcher(tags).matches() )
-				throw new Exception("Invalid main postag in word: " + line)
+			if( ! POS_RE.matcher(tags).matches() ) {
+				log.error("Invalid main postag in word: " + line)
+				fatalErrorCount++
+			}
 			
 			//        def taglist = tags.split(":")
 			for( tag in dicEntry.tags) {
-				if( ! tag in ALLOWED_TAGS)
-					throw new Exception("Invalid tag " + tag + ": " + line)
+				if( ! tag in ALLOWED_TAGS ) {
+					log.error("Invalid tag " + tag + ": " + line)
+					fatalErrorCount++
+				}
 			}
 			def dup_tags = dicEntry.tags.findAll { dicEntry.tags.count(it) > 1 }.unique()
-			if( dup_tags)
-				throw new Exception("Duplicate tags " + dup_tags.join(":") + ": " + line)
+			if( dup_tags) {
+				log.error("Duplicate tags " + dup_tags.join(":") + ": " + line)
+				fatalErrorCount++
+			}
 		}
 	}
 
+	static final List<String> ALL_V_TAGS = ["v_naz", "v_rod", "v_dav", "v_zna", "v_oru", "v_mis"]
+	
+//	@TypeChecked
+	void check_indented_lines(List<String> lines) {
+		String gender = ""
+		HashSet<String> subtagSet = new HashSet<String>()
+		String lemmaLine
+		
+//		ParallelEnhancer.enhanceInstance(lines)
+
+		lines.each { String line ->
+			if( ! line.startsWith(" ") ) {
+				if (gender) {
+					checkVTagSet(gender, subtagSet, lemmaLine)
+				}
+
+				subtagSet.clear()
+				gender = ""
+				lemmaLine = line
+			}
+			
+			if( line.contains(" noun") && ! line.contains("&pron") ) {
+				def parts = line.trim().split(" ")
+				def tags = parts[1].split(":")
+
+				def gen = tags.find { it.size() == 1 && "mfnp".contains(it) }
+				assert gen : "Cound not find gen in " + tags + " for " + line
+				
+				if( gen != gender ) {
+					if (gender) {
+						checkVTagSet(gender, subtagSet, lemmaLine)
+					}
+					gender = gen
+					subtagSet.clear()
+				}
+				
+				String v_tag = tags.find { it.startsWith("v_") }
+//				System.err.println("v_tag " + v_tag + " of " + tags)
+				subtagSet.add( v_tag )
+			}
+		}
+	}
+
+	private checkVTagSet(String gender, HashSet subtagSet, String line) {
+//		System.err.println("checking gen: " + gender + ", tags: " + subtagSet)
+		if( ! subtagSet.containsAll(ALL_V_TAGS) ) {
+			log.error("v_ set is not complete, missing " + (ALL_V_TAGS - subtagSet) + " on gender " + gender + " for: " + line)
+			fatalErrorCount++
+//			assert false
+		}
+	}
 
 	//	@TypeChecked
 	List<String> process_input(List<String> in_lines) {
@@ -1192,6 +1253,12 @@ class Expand {
 		}.flatten()
 
 
+		if( fatalErrorCount > 0 ) {
+			log.fatal(String.format("%d fatal errors found, see above, exiting...", fatalErrorCount))
+			System.exit(1)
+		}
+		
+		
 		def time2
 		if( Args.args.time ) {
 			time2 = System.currentTimeMillis()
@@ -1234,7 +1301,13 @@ class Expand {
 				}
 				sorted_lines = util.indent_lines(sorted_lines)
 
-
+				check_indented_lines(sorted_lines)
+	
+				if( fatalErrorCount > 0 ) {
+					log.fatal(String.format("%d non-fatal errors found, see above", fatalErrorCount))
+//					System.exit(1)
+				}
+	
 				if( Args.args.stats ) {
 					util.print_stats(sorted_lines, double_form_cnt)
 				}
