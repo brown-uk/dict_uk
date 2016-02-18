@@ -26,16 +26,6 @@ class Util {
 	final String DERIV_PADDING="  "
 
 
-	// generic util methods
-
-//	def dbg(Object... args) {
-//		System.err.println("--- " + args.join(" "))
-//	}
-//
-//	def debug(Object... args) {
-//		System.err.println(args.join(" "))
-//	}
-
 	Map<String, Pattern> regex_map = [:]
 
 	def re_sub(regex, repl, txt) {
@@ -55,14 +45,14 @@ class Util {
 		//return matcher
 	}
 
-	Matcher re_match(regex, txt) {
-		if( ! (regex in regex_map) ) {
-			regex_map[regex] = Pattern.compile(regex)
-		}
-		def matcher = regex_map[regex].matcher(txt)
-		matcher.matches()
-		return matcher
-	}
+//	Matcher re_match(regex, txt) {
+//		if( ! (regex in regex_map) ) {
+//			regex_map[regex] = Pattern.compile(regex)
+//		}
+//		def matcher = regex_map[regex].matcher(txt)
+//		matcher.matches()
+//		return matcher
+//	}
 
 	def tail_tag(line, tags) {
 		for( tag in tags ){
@@ -374,7 +364,7 @@ class Util {
 		
 		new File("dict_stats.txt").withWriter("utf-8") { stat_f ->
 			stat_f.printf("Всього лем: %d\n", cnt)
-			stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf та adjp/adj, з compr/super) %d\n", (cnt_std - double_form_cnt))
+			stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf та adjp/adj) %d\n", (cnt_std - double_form_cnt))
 			stat_f.print("\nЧастоти за тегами:\n")
 
 			def ordered_pos_freq = pos_stat.keySet().toList().sort()
@@ -433,17 +423,17 @@ class Util {
 			}
 			else {
 				// відокремлюємо різні порівняльні форми коли сортуємо: гладкий/гладкіший
-				if( ":super" in tags)
-					tags = re_sub("(:super)(.*)(:xx.)", '$3$1$2', tags)
-				if( ":compr" in tags)
-					tags = re_sub("(:compr)(.*)(:xx.)", '$3$1$2', tags)
-
-				if( ":super" in tags) {
-					if( word.startsWith("що"))
-						tags = tags.replace(":super", ":supes")
-					else if( word.startsWith("як"))
-						tags = tags.replace(":super", ":supet")
-				}
+//				if( ":super" in tags)
+//					tags = re_sub("(:super)(.*)(:xx.)", '$3$1$2', tags)
+//				if( ":compr" in tags)
+//					tags = re_sub("(:compr)(.*)(:xx.)", '$3$1$2', tags)
+//
+//				if( ":super" in tags) {
+//					if( word.startsWith("що"))
+//						tags = tags.replace(":super", ":supes")
+//					else if( word.startsWith("як"))
+//						tags = tags.replace(":super", ":supet")
+//				}
 			}
 		}
 		else if( tags.startsWith("advp") ) {
@@ -502,13 +492,6 @@ class Util {
 			throw new Exception("failed on " + txt, e)
 		}
 	}
-
-	//	List<String> sort_all_lines_old(List<String> all_lines) {
-	//		def sorted_lines = all_lines.sort { x, y ->
-	//			line_key(x).compareTo( line_key(y) )
-	//		}
-	//		return sorted_lines
-	//	}
 
 	List<String> sort_all_lines(Collection<String> all_lines) {
 //		def map = all_lines.collectEntries {
