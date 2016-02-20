@@ -266,6 +266,7 @@
 бари бар noun:inanim:p:v_zna:xp2
 барами бар noun:inanim:p:v_oru:xp2
 барах бар noun:inanim:p:v_mis:xp2
+бентеживши бентеживши advp:imperf
 бентежити бентежити verb:imperf:inf
 бентеж бентежити verb:imperf:impr:s:2
 бентежмо бентежити verb:imperf:impr:p:1
@@ -281,7 +282,6 @@
 бентежила бентежити verb:imperf:past:f
 бентежило бентежити verb:imperf:past:n
 бентежили бентежити verb:imperf:past:p
-бентеживши бентежити advp:imperf
 біб біб noun:inanim:m:v_naz
 боба біб noun:inanim:m:v_rod
 бобові біб noun:inanim:m:v_dav
@@ -911,6 +911,8 @@
 Верещагу Верещага noun:anim:f:v_zna:lname
 Верещагою Верещага noun:anim:f:v_oru:lname
 Верещазі Верещага noun:anim:f:v_mis:lname
+верифікувавши верифікувавши advp:imperf
+верифікувавши верифікувавши advp:perf
 верифікувати верифікувати verb:imperf:inf
 верифікуй верифікувати verb:imperf:impr:s:2
 верифікуймо верифікувати verb:imperf:impr:p:1
@@ -950,8 +952,6 @@
 верифікувало верифікувати verb:perf:past:n
 верифікували верифікувати verb:perf:past:p
 верифіковано верифікувати verb:perf:impers
-верифікувавши верифікувати advp:imperf
-верифікувавши верифікувати advp:perf
 Вернадський Вернадський noun:anim:m:v_naz:lname
 Вернадського Вернадський noun:anim:m:v_rod:lname
 Вернадському Вернадський noun:anim:m:v_dav:lname
@@ -1017,13 +1017,13 @@
 вела вести verb:imperf:past:f
 вело вести verb:imperf:past:n
 вели вести verb:imperf:past:p
-вівши вести advp:imperf
 весь весь adj:m:v_naz:&pron:dem
 весь весь adj:m:v_zna:&pron:dem
 вечоріти вечоріти verb:imperf:inf
 вечоріє вечоріти verb:imperf:pres:s:3
 вечорітиме вечоріти verb:imperf:futr:s:3
 вечоріло вечоріти verb:imperf:past:n
+вжаливши вжаливши advp:perf:v-u
 вжалити вжалити verb:perf:inf:v-u
 вжалю вжалити verb:perf:futr:s:1:v-u
 вжалиш вжалити verb:perf:futr:s:2:v-u
@@ -1036,7 +1036,6 @@
 вжалила вжалити verb:perf:past:f:v-u
 вжалило вжалити verb:perf:past:n:v-u
 вжалили вжалити verb:perf:past:p:v-u
-вжаливши вжалити advp:perf:v-u
 вже вже adv:v-u
 вживаний вживаний adj:m:v_naz:compb:&_adjp:pasv:imperf:v-u
 вживаного вживаний adj:m:v_rod:compb:&_adjp:pasv:imperf:v-u
@@ -1106,6 +1105,7 @@
 вживано вживано adv:compb:v-u
 вздовж вздовж adv:v-u
 вздовж вздовж prep:rv_rod:v-u
+взувавшись взувавшись advp:rev:imperf:v-u
 взуватися взуватися verb:rev:imperf:inf:v-u
 взуватись взуватися verb:rev:imperf:inf:v-u
 взувайсь взуватися verb:rev:imperf:impr:s:2:v-u
@@ -1142,8 +1142,9 @@
 взувалося взуватися verb:rev:imperf:past:n:v-u
 взувались взуватися verb:rev:imperf:past:p:v-u
 взувалися взуватися verb:rev:imperf:past:p:v-u
-взувавшись взуватися advp:rev:imperf:v-u
-взуваючись взуватися advp:rev:imperf:v-u
+взуваючись взуваючись advp:rev:imperf:v-u
+взувши взувши advp:perf:v-u
+взувшись взувшись advp:rev:perf:v-u
 взути взути verb:perf:inf:v-u
 взуй взути verb:perf:impr:s:2:v-u
 взуймо взути verb:perf:impr:p:1:v-u
@@ -1160,7 +1161,6 @@
 взуло взути verb:perf:past:n:v-u
 взули взути verb:perf:past:p:v-u
 взуто взути verb:perf:impers:v-u
-взувши взути advp:perf:v-u
 взутися взутися verb:rev:perf:inf:v-u
 взутись взутися verb:rev:perf:inf:v-u
 взуйсь взутися verb:rev:perf:impr:s:2:v-u
@@ -1187,7 +1187,6 @@
 взулося взутися verb:rev:perf:past:n:v-u
 взулись взутися verb:rev:perf:past:p:v-u
 взулися взутися verb:rev:perf:past:p:v-u
-взувшись взутися advp:rev:perf:v-u
 вибір вибір noun:inanim:m:v_naz
 вибору вибір noun:inanim:m:v_rod
 виборові вибір noun:inanim:m:v_dav
@@ -1258,7 +1257,6 @@
 вимело вимести verb:perf:past:n
 вимели вимести verb:perf:past:p
 виметено вимести verb:perf:impers
-вимівши вимести advp:perf
 виместися виместися verb:rev:perf:inf
 виместись виместися verb:rev:perf:inf
 виметись виместися verb:rev:perf:impr:s:2
@@ -1285,7 +1283,6 @@
 вимелося виместися verb:rev:perf:past:n
 вимелись виместися verb:rev:perf:past:p
 вимелися виместися verb:rev:perf:past:p
-вимівшись виместися advp:rev:perf
 вимисел вимисел noun:inanim:m:v_naz
 вимислу вимисел noun:inanim:m:v_rod
 вимислові вимисел noun:inanim:m:v_dav
@@ -1301,6 +1298,8 @@
 вимисли вимисел noun:inanim:p:v_zna
 вимислами вимисел noun:inanim:p:v_oru
 вимислах вимисел noun:inanim:p:v_mis
+вимівши вимівши advp:perf
+вимівшись вимівшись advp:rev:perf
 вимниста вимниста adj:f:v_naz
 вимнистої вимниста adj:f:v_rod
 вимнистій вимниста adj:f:v_dav
@@ -1331,6 +1330,7 @@
 вихідними вихідний noun:inanim:p:v_oru
 вихідних вихідний noun:inanim:p:v_mis
 вихідні вихідний noun:inanim:p:v_kly
+вівши вівши advp:imperf
 вігонь вігонь noun:anim:f:v_naz
 вігоні вігонь noun:anim:f:v_rod
 вігоні вігонь noun:anim:f:v_dav
@@ -1874,6 +1874,7 @@
 жита жита noun:inanim:p:v_zna:ns
 житами жита noun:inanim:p:v_oru:ns
 житах жита noun:inanim:p:v_mis:ns
+задихавшись задихавшись advp:rev:perf
 задихатися задихатися verb:rev:perf:inf
 задихатись задихатися verb:rev:perf:inf
 задихайсь задихатися verb:rev:perf:impr:s:2
@@ -1915,7 +1916,6 @@
 задихалося задихатися verb:rev:perf:past:n
 задихались задихатися verb:rev:perf:past:p
 задихалися задихатися verb:rev:perf:past:p
-задихавшись задихатися advp:rev:perf
 залізко залізко noun:inanim:n:v_naz
 залізка залізко noun:inanim:n:v_rod
 залізку залізко noun:inanim:n:v_dav
@@ -1976,6 +1976,7 @@
 кіньми кінь noun:anim:p:v_oru
 конями кінь noun:anim:p:v_oru
 конях кінь noun:anim:p:v_mis
+колисавши колисавши advp:imperf
 колисати колисати verb:imperf:inf
 колисай колисати verb:imperf:impr:s:2
 колиши колисати verb:imperf:impr:s:2
@@ -2009,9 +2010,8 @@
 колисала колисати verb:imperf:past:f
 колисало колисати verb:imperf:past:n
 колисали колисати verb:imperf:past:p
-колисавши колисати advp:imperf
-колисаючи колисати advp:imperf
-колишучи колисати advp:imperf
+колисаючи колисаючи advp:imperf
+колишучи колишучи advp:imperf
 краяння краяння noun:inanim:n:v_naz
 краяння краяння noun:inanim:n:v_rod
 краянню краяння noun:inanim:n:v_dav
@@ -2430,6 +2430,7 @@
 ніжність ніжність noun:inanim:f:v_zna
 ніжністю ніжність noun:inanim:f:v_oru
 ніжності ніжність noun:inanim:f:v_mis
+оскірившись оскірившись advp:rev:perf:coll
 оскіритися оскіритися verb:rev:perf:inf:coll
 оскіритись оскіритися verb:rev:perf:inf:coll
 оскірюсь оскіритися verb:rev:perf:futr:s:1:coll
@@ -2450,7 +2451,6 @@
 оскірилося оскіритися verb:rev:perf:past:n:coll
 оскірились оскіритися verb:rev:perf:past:p:coll
 оскірилися оскіритися verb:rev:perf:past:p:coll
-оскірившись оскіритися advp:rev:perf:coll
 породілля породілля noun:anim:f:v_naz
 породіллі породілля noun:anim:f:v_rod
 породіллі породілля noun:anim:f:v_dav
@@ -2467,6 +2467,7 @@
 породіллями породілля noun:anim:p:v_oru
 породіллях породілля noun:anim:p:v_mis
 породіллі породілля noun:anim:p:v_kly
+пострілявши пострілявши advp:perf
 постріляти постріляти verb:perf:inf
 постріляй постріляти verb:perf:impr:s:2
 постріляймо постріляти verb:perf:impr:p:1
@@ -2482,7 +2483,6 @@
 постріляла постріляти verb:perf:past:f
 постріляло постріляти verb:perf:past:n
 постріляли постріляти verb:perf:past:p
-пострілявши постріляти advp:perf
 прощавати прощавати verb:imperf:inf
 прощавай прощавати verb:imperf:impr:s:2
 прощаваймо прощавати verb:imperf:impr:p:1
@@ -2524,6 +2524,8 @@
 стривай стривати verb:imperf:impr:s:2
 стриваймо стривати verb:imperf:impr:p:1
 стривайте стривати verb:imperf:impr:p:2
+стрілявши стрілявши advp:imperf
+стрілявшись стрілявшись advp:rev:imperf
 стріляти стріляти verb:imperf:inf
 стріляй стріляти verb:imperf:impr:s:2
 стріляймо стріляти verb:imperf:impr:p:1
@@ -2547,7 +2549,6 @@
 стріляло стріляти verb:imperf:past:n
 стріляли стріляти verb:imperf:past:p
 стріляно стріляти verb:imperf:impers
-стрілявши стріляти advp:imperf
 стрілятися стрілятися verb:rev:imperf:inf
 стрілятись стрілятися verb:rev:imperf:inf
 стріляйсь стрілятися verb:rev:imperf:impr:s:2
@@ -2584,8 +2585,7 @@
 стрілялося стрілятися verb:rev:imperf:past:n
 стрілялись стрілятися verb:rev:imperf:past:p
 стрілялися стрілятися verb:rev:imperf:past:p
-стрілявшись стрілятися advp:rev:imperf
-стріляючись стрілятися advp:rev:imperf
+стріляючись стріляючись advp:rev:imperf
 суміш суміш noun:inanim:f:v_naz
 суміші суміш noun:inanim:f:v_rod
 суміші суміш noun:inanim:f:v_dav

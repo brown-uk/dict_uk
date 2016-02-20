@@ -93,16 +93,13 @@ class Args {
 			affixDir = options.aff
 			dictDir = options.dict
 
-			if( rules ) {
-				removeWithTags = ["uncontr"]
-				//TODO: we can't handle those yet in LT
-				//removeTags = ["ranim", "rinanim"]
-			}
-			
 			if( corp ) {
 				removeWithTags = ["uncontr"]
-				// for corpus advp and comparative forms are separate lemmas
-				lemmaForTags = ["advp", "compr", "super"]
+				lemmaForTags = ["advp"]
+			}
+			if( rules ) {
+				removeWithTags = ["uncontr"]
+				lemmaForTags = ["advp"]
 			}
 			
 			if( options.removeWithTags )
