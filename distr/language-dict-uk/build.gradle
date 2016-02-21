@@ -2,8 +2,10 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
-version = '3.2-SNAPSHOT'
+version = '3.3-SNAPSHOT'
 group = 'org.languagetool'
+
+String ltVersion = '3.3-SNAPSHOT'
 
 String langCode="uk"
 
@@ -33,7 +35,7 @@ configurations{
 }
 
 dependencies {
-    provided 'org.languagetool:languagetool-tools:3.2-SNAPSHOT'
+    provided 'org.languagetool:languagetool-tools:' + ltVersion
 }
 
 
@@ -68,7 +70,7 @@ task prepareDict(type: Exec, dependsOn: processResources) {
 
     doFirst {
         println "Preparing dict file $inputDictFile"
-        new File(tmpDir).mkdirs()
+        new File("$workingDir/$tmpDir").mkdirs()
     }
 
     def cmd = "cat ${srcDict} | iconv -f ${srcEncoding} -t ${dstEncoding} | tr ' ' '\\t' | LC_ALL=POSIX sort -u > ${outFile}"
