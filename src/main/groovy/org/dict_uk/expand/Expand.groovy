@@ -141,7 +141,8 @@ class Expand {
 			}
 
 			if( appliedCnts[ affixFlag2 ] == 0 ) {
-				throw new Exception("FATAL: Flag " + affixFlag2 + " of " + affixFlags + " ! applicable to " + word)
+				log.fatal("FATAL: Flag " + affixFlag2 + " of " + affixFlags + " not applicable to " + word)
+				System.exit(1)
 			}
 		}
 
