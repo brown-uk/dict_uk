@@ -9,6 +9,11 @@ Description:
     by using affix rules from files in data/affix.
 
 
+Required software:
+    * java (>=1.8)
+    * gradle
+
+
 How to run:
 
     # gradle expandForCorp
