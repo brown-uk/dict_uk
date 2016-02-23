@@ -45,6 +45,24 @@
 Євангеліями Євангеліє noun:p:v_oru
 Євангеліях Євангеліє noun:p:v_mis
 
+чернець чернець noun:anim:m:v_naz
+ченця чернець noun:anim:m:v_rod
+ченцеві чернець noun:anim:m:v_dav
+ченцю чернець noun:anim:m:v_dav
+ченця чернець noun:anim:m:v_zna
+ченцем чернець noun:anim:m:v_oru
+ченцеві чернець noun:anim:m:v_mis
+ченці чернець noun:anim:m:v_mis
+ченцю чернець noun:anim:m:v_mis
+ченче чернець noun:anim:m:v_kly
+ченці чернець noun:anim:p:v_naz
+ченців чернець noun:anim:p:v_rod
+ченцям чернець noun:anim:p:v_dav
+ченців чернець noun:anim:p:v_zna
+ченцями чернець noun:anim:p:v_oru
+ченцях чернець noun:anim:p:v_mis
+ченці чернець noun:anim:p:v_kly
+
 
 # додаткові форми
 сосон сосна noun:p:v_rod
@@ -72,7 +90,6 @@
 легенів легеня noun:p:v_rod
 панотче панотець noun:m:v_kly:anim
 старче старець noun:m:v_kly:anim
-чернець ченець noun:m:v_naz:anim
 мамів мама noun:p:v_rod:anim
 
 панове пан noun:p:v_kly:anim
@@ -232,10 +249,11 @@
 
 четвер четвер noun:m:v_naz/v_zna
 четверга четвер noun:m:v_rod
-четвергу четвер noun:m:v_dav/v_mis
+четвергу четвер noun:m:v_dav/v_mis/v_kly
 четвергові четвер noun:m:v_dav
 четвергом четвер noun:m:v_oru
-четверги четвер noun:p:v_naz/v_zna
+четверже четвер noun:m:v_kly
+четверги четвер noun:p:v_naz/v_zna/v_kly
 четвергах четвер noun:p:v_mis
 четвергами четвер noun:p:v_oru
 четвергів четвер noun:p:v_rod
