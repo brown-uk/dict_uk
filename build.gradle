@@ -98,10 +98,14 @@ task testForCorp(type: JavaExec, dependsOn: [reverseAffix, classes]) {
         def file="dict_corp_lt.txt"
         def noTestOutputChange = (new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text)
         assert noTestOutputChange
-        
+
         file="dict_corp_vis.txt"
-        noTestOutputChange = (new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text)
-        assert noTestOutputChange
+        def noTestVisOutputChange = (new File("$testOutputDir/$file").text == new File("$testPrevDir/$file").text)
+        assert noTestVisOutputChange
+
+        file="dict_corp_vis.txt"
+        def noTestTagsOutputChange = (new File("$testOutputDir/tags.txt").text == new File("$testPrevDir/tags.txt").text)
+        assert noTestTagsOutputChange
     }
 }
 
@@ -124,7 +128,7 @@ task testForRules(type: JavaExec, dependsOn: [reverseAffix, classes]) {
     }
 }
 
-task testExpand(dependsOn: [testForCorp, testForRules]) {
+task testExpand(dependsOn: [testForCorp]) {
 }
 
 
@@ -176,7 +180,7 @@ task rulesDiff(type: Exec) {
     commandLine "sh", "-c", "${cmd}"
 }
 
-task corpDiff(type: Exec) {
+task diff(type: Exec) {
     def dictFile="dict_corp_lt.txt"
 
     def cmd = get_diff_cmd(outputDir, dictFile)
@@ -188,6 +192,9 @@ task corpDiff(type: Exec) {
     cmd += "; " + get_diff_cmd(outputDir, dictFile)
 
     commandLine "sh", "-c", "${cmd}"
+}
+
+task expand(dependsOn: expandForCorp) {
 }
 
 
@@ -214,7 +221,7 @@ task deployToLT(type: GradleBuild) {
     tasks = ['copyDictFiles']
 }
 
-task deployCorpToLT(type: GradleBuild) {
-    dir = 'distr/language-dict-uk'
-    tasks = ['switchToCorp', 'copyDictFiles']
-}
+//task deployCorpToLT(type: GradleBuild) {
+//    dir = 'distr/language-dict-uk'
+//    tasks = ['switchToCorp', 'copyDictFiles']
+//}
