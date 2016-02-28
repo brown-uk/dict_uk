@@ -97,8 +97,9 @@ class Expand {
 			appliedCnts[affixFlag2] = 0
 
 			//util.dbg(affix.affixMap.keySet())
-			if( ! (affixFlag2 in affix.affixMap.keySet()) )
-				throw new Exception("could not find affix flag " + affixFlag2)
+			if( ! (affixFlag2 in affix.affixMap.keySet()) ) {
+				assert false : "could not find affix flag " + affixFlag2
+			}
 
 
 			Map<String, SuffixGroup> affixGroupMap = affix.affixMap[affixFlag2]
@@ -122,7 +123,7 @@ class Expand {
 						String tags = affix_item.tags
 
 						if( deriv =~ /[а-яіїєґ][a-z0-9]/ )
-							throw new Exception("-- latin mix in " + deriv)
+							assert false : "-- latin mix in " + deriv
 
 						if( affixFlag2 == "n.patr") {
 							tags += ":patr"
@@ -197,8 +198,7 @@ class Expand {
 					mods["pos"] = mod_tags[0]
 					if( mod_tags && mod_tags[0] == "noun") {
 						if( mod_tags.size() > 1 ) {
-							if( mod_tags[1].size() != 1)
-								throw new Exception("Bad gender override: " + mod + " -- " + mod_tags)
+							assert mod_tags[1].size() == 1 : "Bad gender override: " + mod + " -- " + mod_tags
 
 							mods["force_gen"] = mod_tags[1]
 						}
@@ -268,8 +268,7 @@ class Expand {
 			out.add(line)
 		}
 
-		if( out.size() == 0)
-			throw new Exception("emtpy output for "+ lines + " && " + modifiers)
+		assert out.size() > 0 : "emtpy output for "+ lines + " && " + modifiers
 
 		return out
 	}
@@ -641,10 +640,12 @@ class Expand {
 		else {
 			out_lines = [line]
 		}
-		
+
 		return out_lines
 	}
 
+	Pattern PATTR_BASE_LEMMAN_PATTERN = ~ ":[mf]:v_naz:.*patr"
+	
 	@TypeChecked
 	List<String> post_process_sorted(List<String> lines) {
 		def out_lines = []
@@ -653,7 +654,7 @@ class Expand {
 		def last_lema
 		for( line in lines) {
 			if( "patr" in line) {
-				if( util.re_search(":[mf]:v_naz:.*patr", line)) {
+				if( PATTR_BASE_LEMMAN_PATTERN.matcher(line).find() ) {
 					last_lema = line.split()[0]
 					//                System.err.printf("promoting patr to lemma %s for %s\n", last_lema, line)
 				}
@@ -783,9 +784,9 @@ class Expand {
 
 	//@TypeChecked
 	def expand_subposition(String main_word, String line, String extra_tags, int idx_) {
-//		String idx = ":xx" + idx_
+		//		String idx = ":xx" + idx_
 		String idx = ""
-		
+
 		if( line.startsWith(" +cs")) {
 			String word
 
@@ -822,7 +823,7 @@ class Expand {
 
 			return word_forms
 		}
-		
+
 		assert false, "Unknown subposition for " + line + "(" + main_word + ")"
 	}
 
@@ -1017,13 +1018,13 @@ class Expand {
 	@TypeChecked
 	String cleanup(String line) {
 		return line
-//		return util.re_sub(":xx.", "", line)
+		//		return util.re_sub(":xx.", "", line)
 	}
 
 
 	static final Pattern WORD_RE = Pattern.compile("[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ']*(-[а-яіїєґА-ЯІЇЄҐ']*)*|[А-ЯІЇЄҐ][А-ЯІЇЄҐ-]+|[а-яіїєґ]+\\.")
 	static final Pattern POS_RE = Pattern.compile("(noun:(in)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|excl|conj:|predic|insert|transl).*")
-	
+
 	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
 	int fatalErrorCount = 0
 
@@ -1049,7 +1050,7 @@ class Expand {
 				log.error("Invalid main postag in word: " + line)
 				fatalErrorCount++
 			}
-			
+
 			//        def taglist = tags.split(":")
 			for( tag in dicEntry.tags) {
 				if( ! tag in ALLOWED_TAGS ) {
@@ -1066,14 +1067,14 @@ class Expand {
 	}
 
 	static final List<String> ALL_V_TAGS = ["v_naz", "v_rod", "v_dav", "v_zna", "v_oru", "v_mis"]
-	
-//	@TypeChecked
+
+	//	@TypeChecked
 	void check_indented_lines(List<String> lines) {
 		String gender = ""
 		HashSet<String> subtagSet = new HashSet<String>()
 		String lemmaLine
-		
-//		ParallelEnhancer.enhanceInstance(lines)
+
+		//		ParallelEnhancer.enhanceInstance(lines)
 
 		lines.each { String line ->
 			if( ! line.startsWith(" ") ) {
@@ -1085,14 +1086,14 @@ class Expand {
 				gender = ""
 				lemmaLine = line
 			}
-			
+
 			if( line.contains(" noun") && ! line.contains("&pron") ) {
 				def parts = line.trim().split(" ")
 				def tags = parts[1].split(":")
 
 				def gen = tags.find { it.size() == 1 && "mfnp".contains(it) }
 				assert gen : "Cound not find gen in " + tags + " for " + line
-				
+
 				if( gen != gender ) {
 					if (gender) {
 						checkVTagSet(gender, subtagSet, lemmaLine)
@@ -1100,20 +1101,20 @@ class Expand {
 					gender = gen
 					subtagSet.clear()
 				}
-				
+
 				String v_tag = tags.find { it.startsWith("v_") }
-//				System.err.println("v_tag " + v_tag + " of " + tags)
+				//				System.err.println("v_tag " + v_tag + " of " + tags)
 				subtagSet.add( v_tag )
 			}
 		}
 	}
 
 	private checkVTagSet(String gender, HashSet subtagSet, String line) {
-//		System.err.println("checking gen: " + gender + ", tags: " + subtagSet)
+		//		System.err.println("checking gen: " + gender + ", tags: " + subtagSet)
 		if( ! subtagSet.containsAll(ALL_V_TAGS) ) {
 			log.error("v_ set is not complete, missing " + (ALL_V_TAGS - subtagSet) + " on gender " + gender + " for: " + line)
 			fatalErrorCount++
-//			assert false
+			//			assert false
 		}
 	}
 
@@ -1190,8 +1191,8 @@ class Expand {
 			log.fatal(String.format("%d fatal errors found, see above, exiting...", fatalErrorCount))
 			System.exit(1)
 		}
-		
-		
+
+
 		def time2
 		if( Args.args.time ) {
 			time2 = System.currentTimeMillis()
@@ -1235,12 +1236,12 @@ class Expand {
 				sorted_lines = util.indent_lines(sorted_lines)
 
 				check_indented_lines(sorted_lines)
-	
+
 				if( fatalErrorCount > 0 ) {
 					log.fatal(String.format("%d non-fatal errors found, see above", fatalErrorCount))
-//					System.exit(1)
+					//					System.exit(1)
 				}
-	
+
 				if( Args.args.stats ) {
 					util.print_stats(sorted_lines, double_form_cnt)
 				}
@@ -1267,10 +1268,10 @@ class Expand {
 		expand.affix.load_affixes(Args.args.affixDir)
 
 		log.info("Parsing stdin...")
-		
-		
+
+
 		System.in.eachLine { line->
-//			println "Expanding $line"
+			//			println "Expanding $line"
 			if( line.trim() ) {
 				def out_lines = expand.process_input([line])
 				if( out_lines ) {
