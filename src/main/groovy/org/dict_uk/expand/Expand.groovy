@@ -98,7 +98,7 @@ class Expand {
 
 			//util.dbg(affix.affixMap.keySet())
 			if( ! (affixFlag2 in affix.affixMap.keySet()) ) {
-				assert false : "could not find affix flag " + affixFlag2
+				throw new Exception("Could not find affix flag " + affixFlag2)
 			}
 
 
@@ -142,8 +142,7 @@ class Expand {
 			}
 
 			if( appliedCnts[ affixFlag2 ] == 0 ) {
-				log.fatal("FATAL: Flag " + affixFlag2 + " of " + affixFlags + " not applicable to " + word)
-				System.exit(1)
+				throw new Exception("Flag " + affixFlag2 + " of " + affixFlags + " not applicable to " + word)
 			}
 		}
 
@@ -1027,7 +1026,8 @@ class Expand {
 
 	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
 	int fatalErrorCount = 0
-
+	int nonFatalErrorCount = 0
+	
 	public Expand() {
 		log.debug("Read %d allowed tags\n", ALLOWED_TAGS.size())
 	}
@@ -1110,11 +1110,9 @@ class Expand {
 	}
 
 	private checkVTagSet(String gender, HashSet subtagSet, String line) {
-		//		System.err.println("checking gen: " + gender + ", tags: " + subtagSet)
 		if( ! subtagSet.containsAll(ALL_V_TAGS) ) {
 			log.error("v_ set is not complete, missing " + (ALL_V_TAGS - subtagSet) + " on gender " + gender + " for: " + line)
-			fatalErrorCount++
-			//			assert false
+			nonFatalErrorCount++
 		}
 	}
 
@@ -1130,8 +1128,8 @@ class Expand {
 		in_lines.each{ String line ->
 			line = line.replaceFirst("#.*", "")
 
-			if( "#" in line)
-				line = line.split("#")[0]
+//			if( "#" in line)
+//				line = line.split("#")[0]
 
 			if( ! line.trim())
 				return // continue
@@ -1156,18 +1154,26 @@ class Expand {
 
 
 			if( Args.args.flush ) {
-				def tag_lines = expand_line(line)
-				check_lines(tag_lines)
+				try {
+					def tag_lines = expand_line(line)
+					check_lines(tag_lines)
 
-				def sorted_lines = util.sort_all_lines(tag_lines)
-				println(sorted_lines.join("\n"))
-				System.out.flush()
+					def sorted_lines = util.sort_all_lines(tag_lines)
+					println(sorted_lines.join("\n"))
+					System.out.flush()
+					return
+				}catch(Exception e) {
+					log.error("Failed to expand \"" + line + "\": " + e.getMessage())
+				}
 			}
 			else {
 				prepared_lines << line
 			}
 		}
 
+		if( Args.args.flush )
+			return
+			
 
 		ParallelEnhancer.enhanceInstance(prepared_lines)
 
@@ -1237,9 +1243,8 @@ class Expand {
 
 				check_indented_lines(sorted_lines)
 
-				if( fatalErrorCount > 0 ) {
+				if( nonFatalErrorCount > 0 ) {
 					log.fatal(String.format("%d non-fatal errors found, see above", fatalErrorCount))
-					//					System.exit(1)
 				}
 
 				if( Args.args.stats ) {
@@ -1273,6 +1278,9 @@ class Expand {
 		System.in.eachLine { line->
 			//			println "Expanding $line"
 			if( line.trim() ) {
+				if( line == "exit" )
+					System.exit(0)
+				
 				def out_lines = expand.process_input([line])
 				if( out_lines ) {
 					println out_lines.join("\n")

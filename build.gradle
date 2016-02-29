@@ -198,7 +198,7 @@ task expand(dependsOn: expandForCorp) {
 }
 
 
-task expandForCorpInteractive(type: JavaExec, dependsOn: reverseAffix) {
+task expandInteractive(type: JavaExec, dependsOn: reverseAffix) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.Expand"
 
@@ -221,7 +221,3 @@ task deployToLT(type: GradleBuild) {
     tasks = ['copyDictFiles']
 }
 
-//task deployCorpToLT(type: GradleBuild) {
-//    dir = 'distr/language-dict-uk'
-//    tasks = ['switchToCorp', 'copyDictFiles']
-//}
