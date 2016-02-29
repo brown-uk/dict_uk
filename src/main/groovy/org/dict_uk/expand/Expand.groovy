@@ -282,8 +282,14 @@ class Expand {
 				throw new Exception("Not found extra flags in " + flags)
 			extra_flags = matcher.group(1)
 		}
-		if( "<" in flags || "patr" in flags)
-			extra_flags += ":anim"
+		if( "<" in flags || "patr" in flags) {
+		    if( flags.contains(">>") ) {
+    			extra_flags += ":unanim"
+			}
+			else {
+			    extra_flags += ":anim"
+			}
+		}
 		if( "<+" in flags)
 			extra_flags += ":lname"
 
@@ -717,15 +723,17 @@ class Expand {
 
 	Pattern imperf_move_pattern = ~/(verb(?::rev)?)(.*)(:(im)?perf)/
 	Pattern reorder_comp_with_adjp = ~/ (adj:.:v_...(?::ranim|:rinanim)?)(.*)(:compb)(.*)/
+	Pattern any_anim = ~/:([iu]n)?anim/
 
-	@TypeChecked
+	//@TypeChecked
 	List<String> post_process(List<String> lines) {
 		def out_lines = []
 
 		for( line in lines) {
 
-			if( " adv" in line && ! ("advp" in line) && ! (":compr" in line) && ! (":super" in line) )
+			if( line.contains(" adv") && ! line.contains("advp") && ! line.contains(":compr") && ! line.contains(":super") ) {
 				line = promote(line)
+			}
 
 			if( isRemoveLine(line) )
 				continue
@@ -735,12 +743,13 @@ class Expand {
 			line = promoteLemmaForTags(line)
 
 			if( "noun" in line ) {
-				if( ":anim" in line )
-					line = line.replace(":anim", "").replace("noun:", "noun:anim:")
-				else if( ":inanim" in line )
-					line = line.replace(":inanim", "").replace("noun:", "noun:inanim:")
-				else if( ! ("&pron" in line ) )
-					line = line.replace("noun:", "noun:inanim:")
+			    def anim_matcher = any_anim.matcher(line)
+				if( anim_matcher ) {
+					line = anim_matcher.replaceFirst("").replace("noun", "noun" + anim_matcher[0][0])
+				}
+                else if( ! line.contains("&pron") ) {
+                    line = line.replace("noun:", "noun:inanim:")
+                }
 			}
 			else
 			if( "verb" in line ) {
@@ -1022,7 +1031,7 @@ class Expand {
 
 
 	static final Pattern WORD_RE = Pattern.compile("[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ']*(-[а-яіїєґА-ЯІЇЄҐ']*)*|[А-ЯІЇЄҐ][А-ЯІЇЄҐ-]+|[а-яіїєґ]+\\.")
-	static final Pattern POS_RE = Pattern.compile("(noun:(in)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|excl|conj:|predic|insert|transl).*")
+	static final Pattern POS_RE = Pattern.compile("(noun:([iu]n)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|excl|conj:|predic|insert|transl).*")
 
 	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
 	int fatalErrorCount = 0

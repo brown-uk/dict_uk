@@ -2520,6 +2520,22 @@
   синіми adj:p:v_oru
   синіх adj:p:v_mis
   сині adj:p:v_kly
+стафілокок noun:unanim:m:v_naz
+  стафілокока noun:unanim:m:v_rod
+  стафілококові noun:unanim:m:v_dav
+  стафілококу noun:unanim:m:v_dav
+  стафілокок noun:unanim:m:v_zna
+  стафілокока noun:unanim:m:v_zna
+  стафілококом noun:unanim:m:v_oru
+  стафілококові noun:unanim:m:v_mis
+  стафілококу noun:unanim:m:v_mis
+  стафілококи noun:unanim:p:v_naz
+  стафілококів noun:unanim:p:v_rod
+  стафілококам noun:unanim:p:v_dav
+  стафілококи noun:unanim:p:v_zna
+  стафілококів noun:unanim:p:v_zna
+  стафілококами noun:unanim:p:v_oru
+  стафілококах noun:unanim:p:v_mis
 стривати verb:imperf:inf
   стривай verb:imperf:impr:s:2
   стриваймо verb:imperf:impr:p:1

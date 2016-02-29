@@ -72,6 +72,7 @@ slang
 subord
 super
 transl
+unanim
 uncontr
 v_dav
 verb

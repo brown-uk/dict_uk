@@ -201,9 +201,10 @@ Flag n22.a has 5 groups
 	ле[нц]ь : 0		1 patterns
 	єць : 0		1 patterns
 	[^л][іео][лнтц]ь : 1		1 patterns
-Flag n22.ke has 2 groups
+Flag n22.ke has 3 groups
+	[^л]ець : 0		1 patterns
 	[ео][вклмнрст] : 0		1 patterns
-	ець : 0		1 patterns
+	лець : 0		1 patterns
 Flag n22.p has 5 groups
 	ей : 0		5 patterns
 	[^л][іое][лнтц]ь : 1		5 patterns
@@ -326,6 +327,7 @@ Flag n2n.p2 has 20 groups
 	ьце : 0		1 patterns
 	це : 0		3 patterns
 	я : 1		3 patterns
+	[вдтрс]но : 0		1 patterns
 	рмо : 0		1 patterns
 	смо : 0		1 patterns
 	[бдт]ро : 0		1 patterns
@@ -333,7 +335,6 @@ Flag n2n.p2 has 20 groups
 	[жзлмрчтьш]ко : 1		1 patterns
 	серце : 0		1 patterns
 	йце : 0		1 patterns
-	[вдтр]но : 0		1 patterns
 	о : 2		4 patterns
 Flag n2n.piv has 1 groups
 	о : 0		5 patterns
