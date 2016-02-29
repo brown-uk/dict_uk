@@ -33,7 +33,7 @@ class BaseTags {
 		def v_zna_for_inanim = ""
 		def v_kly_for_anim = ""
 
-		if( ! util.istota(allAffixFlags) ) {
+		if( ! util.istota(allAffixFlags) || util.bacteria(allAffixFlags) ) {
 			v_zna_for_inanim = "/v_zna"
 		}
 		else {

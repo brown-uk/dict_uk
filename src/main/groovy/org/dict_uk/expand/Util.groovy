@@ -65,6 +65,10 @@ class Util {
 		return line
 	}
 
+	def bacteria(allAffixFlags) {
+		return ">>" in allAffixFlags
+	}
+
 	def istota(allAffixFlags) {
 		return "patr" in allAffixFlags || "<" in allAffixFlags
 	}
@@ -267,15 +271,16 @@ class Util {
 					key_rr.find()
 					key = key_rr.group(1)
 				}
+				
+				if( ":x" in line) {
+					int x_idx = line.indexOf(":x")
+					key += line[x_idx..<x_idx+4]
+				}
 			}
 			catch(Exception e) {
 				throw new RuntimeException("Failed to find tag key in " + line, e)
 			}
 
-			if( ":x" in line) {
-				int x_idx = line.indexOf(":x")
-				key += line[x_idx..<x_idx+4]
-			}
 			if( ":nv" in line) {
 				key += ":nv"
 			}

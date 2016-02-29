@@ -1061,6 +1061,7 @@ class Expand {
 			def dup_tags = dicEntry.tags.findAll { dicEntry.tags.count(it) > 1 }.unique()
 			if( dup_tags) {
 				log.error("Duplicate tags " + dup_tags.join(":") + ": " + line)
+				if( !("coll" in dup_tags) )
 				fatalErrorCount++
 			}
 		}
