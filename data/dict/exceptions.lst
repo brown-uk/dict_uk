@@ -483,6 +483,35 @@
 ввилися ввитися verb:rev:past:p:perf
 ввившись ввитися advp:rev:perf
 
+обіклавшись обіклавшись advp:rev:perf
+обікластися обікластися verb:rev:inf:perf
+обкластись обікластися verb:rev:inf:perf
+обкладись обікластися verb:rev:impr:s:2:perf
+обкладися обікластися verb:rev:impr:s:2:perf
+обкладімось обікластися verb:rev:impr:p:1:perf
+обкладімося обікластися verb:rev:impr:p:1:perf
+обкладімся обікластися verb:rev:impr:p:1:perf
+обкладіться обікластися verb:rev:impr:p:2:perf
+обкладусь обікластися verb:rev:pres:s:1:perf
+обкладуся обікластися verb:rev:pres:s:1:perf
+обкладешся обікластися verb:rev:pres:s:2:perf
+обкладеться обікластися verb:rev:pres:s:3:perf
+обкладемось обікластися verb:rev:pres:p:1:perf
+обкладемося обікластися verb:rev:pres:p:1:perf
+обкладемся обікластися verb:rev:pres:p:1:perf
+обкладетесь обікластися verb:rev:pres:p:2:perf
+обкладетеся обікластися verb:rev:pres:p:2:perf
+обкладуться обікластися verb:rev:pres:p:3:perf
+обіклавсь обікластися verb:rev:past:m:perf
+обіклався обікластися verb:rev:past:m:perf
+обіклалась обікластися verb:rev:past:f:perf
+обіклалася обікластися verb:rev:past:f:perf
+обіклалось обікластися verb:rev:past:n:perf
+обіклалося обікластися verb:rev:past:n:perf
+обіклались обікластися verb:rev:past:p:perf
+обіклалися обікластися verb:rev:past:p:perf
+
+
 вити /v3.cf.impers2 :imperf
 в'ючи вити advp:imperf
 

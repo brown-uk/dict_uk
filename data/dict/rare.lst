@@ -106,15 +106,18 @@
 оба numr:m:v_naz/v_zna
 обі numr:f:v_naz/v_zna
 обікласти verb:inf:perf
+обруч adv
 обсіч adv
+оглав /n20.p
+одвір adv
 одітий /adj :&adjp:pasv:perf    # :past
 однакий /adj
 озутий /adj :&adjp:pasv:perf    # :past
 окроме prep:rv_rod
 онакий /adj :&pron:def
 опірений /adj :&adjp:pasv:perf    # :past
-опостін prep:rv_rod
-опріче prep:rv_rod
+опостін adv|prep:rv_rod
+опріче adv|prep:rv_rod
 опроче adv|prep:rv_rod
 осьмий /adj
 отсе отсей adj:n:v_zna:&pron:dem
