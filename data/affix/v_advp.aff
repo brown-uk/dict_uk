@@ -2,8 +2,6 @@
 
 subgroup v1.advp
 
-#SFX O Y 42
-
 вати	ючи	[ауюя]вати	#  абонувати  абонуючи 		     @ advp:imperf
 ати	учи	[рз]вати	#  рвати  рвучи			     @ advp:imperf
 зати	жучи	зати		#  казати  кажучи 	                     @ advp:imperf
@@ -60,8 +58,6 @@ subgroup v1.advp
 
 subgroup v2.advp
 
-#SFX Q Y 8
-
 яти	ючи	[аяіо]яти	#  віяти  віючи 		         @ advp:imperf
 ти	ючи	[илнрцду]яти	#  ганяти  ганяючи 	         @ advp:imperf
 ти	ючи	[аіу]ти		#  вбивати  вбиваючи 	                 @ advp:imperf
@@ -71,28 +67,34 @@ subgroup v2.advp
 ти	вучи	жити		#  жити  живучи		                 @ advp:imperf
 ти	учи	сти		#  пасти  пасучи		                 @ advp:imperf
 
-#SFX K   ати	мучи	жати		#  жати  жмучи 		             @ advp:imperf
-#SFX K   олоти	елючи	олоти		#  молоти  мелючи		             @ advp:imperf
-#SFX M   ати	учи	ржати		#  ржати  ржучи 		           @ advp:imperf
-#SFX M   ти	дучи	[йі]ти		#  йти  йдучи	           @ advp:imperf
-#SFX M   хати	дучи	хати		#  їхати  їдучи	 	           @ advp:imperf
-#SFX M   гнати	женучи	гнати		#  гнати  женучи		           @ advp:imperf
-#SFX M   сти	дучи	[еая]сти		#  вести  ведучи		           @ advp:imperf
-#SFX M   сти	м	[ії]сти		#  їсти  їм		           @ advp:imperf
+#ати	мучи	жати		#  жати  жмучи 		             @ advp:imperf
+#олоти	елючи	олоти		#  молоти  мелючи		             @ advp:imperf
+#ати	учи	ржати		#  ржати  ржучи 		           @ advp:imperf
+#ти	дучи	[йі]ти		#  йти  йдучи	           @ advp:imperf
+#хати	дучи	хати		#  їхати  їдучи	 	           @ advp:imperf
+#гнати	женучи	гнати		#  гнати  женучи		           @ advp:imperf
+#сти	дучи	[еая]сти		#  вести  ведучи		           @ advp:imperf
+#сти	м	[ії]сти		#  їсти  їм		           @ advp:imperf
 
 
 # Дієприслівники від дієслів в групі v3
 
 subgroup v3.advp
 
-#SFX 6 Y 1
-
 ити     'ючи    вити            #  вити  в'ючи                   @ advp:imperf
-# Дієприслівники від дієслів в групі v2
+
+
+
+# Дієприслівники від дієслів в групі v4
+
+subgroup v4.advp
+
+ати     учи     жати            #  іржати іржучи                   @ advp:imperf
+
+
+# Дієприслівники від дієслів в групі v5
 
 
 subgroup v5.advp
-
-#SFX Q Y 8
 
 яти	ючи	[аяіо]яти	#  віяти  віючи 		         @ advp:imperf
