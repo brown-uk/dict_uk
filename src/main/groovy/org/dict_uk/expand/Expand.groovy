@@ -1254,7 +1254,7 @@ class Expand {
 				check_indented_lines(sorted_lines)
 
 				if( nonFatalErrorCount > 0 ) {
-					log.fatal(String.format("%d non-fatal errors found, see above", fatalErrorCount))
+					log.fatal(String.format("%d non-fatal errors found, see above", nonFatalErrorCount))
 				}
 
 				if( Args.args.stats ) {

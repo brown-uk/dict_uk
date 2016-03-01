@@ -337,9 +337,9 @@ class Util {
 				continue
 
 			cnt += 1
-			//			if( ! ("advp" in line) ) {
-			//				cnt_std += 1
-			//			}
+			if( ! ("advp" in line) ) {
+				cnt_std += 1
+			}
 
 			if( line.charAt(0).isUpperCase() && ! line.charAt(1).isUpperCase() ) {
 				proper_noun_cnt += 1

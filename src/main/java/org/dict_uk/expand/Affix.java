@@ -165,7 +165,7 @@ public class Affix {
 
 
 			if( parts.length > 3) {
-				System.err.println("WARNING: extra fields in suffix description " + parts);
+				System.err.println("WARNING: extra fields in suffix description " + affixes);
 			}
 
 			String tags;
