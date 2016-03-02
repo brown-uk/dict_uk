@@ -715,10 +715,13 @@ verb:rev:perf:futr:s:3
 verb:rev:perf:futr:s:3:coll
 verb:rev:perf:futr:s:3:v-u
 verb:rev:perf:impr:p:1
+verb:rev:perf:impr:p:1:coll
 verb:rev:perf:impr:p:1:v-u
 verb:rev:perf:impr:p:2
+verb:rev:perf:impr:p:2:coll
 verb:rev:perf:impr:p:2:v-u
 verb:rev:perf:impr:s:2
+verb:rev:perf:impr:s:2:coll
 verb:rev:perf:impr:s:2:v-u
 verb:rev:perf:inf
 verb:rev:perf:inf:coll

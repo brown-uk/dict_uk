@@ -1025,6 +1025,9 @@
 вечоріло вечоріти verb:imperf:past:n
 вжаливши вжаливши advp:perf:v-u
 вжалити вжалити verb:perf:inf:v-u
+вжаль вжалити verb:perf:impr:s:2:v-u
+вжальмо вжалити verb:perf:impr:p:1:v-u
+вжальте вжалити verb:perf:impr:p:2:v-u
 вжалю вжалити verb:perf:futr:s:1:v-u
 вжалиш вжалити verb:perf:futr:s:2:v-u
 вжалить вжалити verb:perf:futr:s:3:v-u
@@ -2433,6 +2436,11 @@
 оскірившись оскірившись advp:rev:perf:coll
 оскіритися оскіритися verb:rev:perf:inf:coll
 оскіритись оскіритися verb:rev:perf:inf:coll
+оскірся оскіритися verb:rev:perf:impr:s:2:coll
+оскірмось оскіритися verb:rev:perf:impr:p:1:coll
+оскірмося оскіритися verb:rev:perf:impr:p:1:coll
+оскіртесь оскіритися verb:rev:perf:impr:p:2:coll
+оскіртеся оскіритися verb:rev:perf:impr:p:2:coll
 оскірюсь оскіритися verb:rev:perf:futr:s:1:coll
 оскірюся оскіритися verb:rev:perf:futr:s:1:coll
 оскіришся оскіритися verb:rev:perf:futr:s:2:coll

@@ -195,14 +195,14 @@
 взутися /vr2 :perf:v-u
 задихатися /vr1.vr2 :perf
 бентежити /v1.imprt0 :imperf
-вжалити /v1 :perf:v-u
+вжалити /v1.imprt0 :perf:v-u
 вести /v4 :imperf
 
 вимести /v1.impers1 :perf
 виместися /vr1 :perf
 
 колисати /v1.cf.advp /v2.advp :imperf
-оскіритися /vr1 :perf:coll
+оскіритися /vr1.imprt0 :perf:coll
 
 # обмежені форми
 

@@ -233,7 +233,7 @@
 
 
 Господь Господь noun:m:v_naz:anim
-Господа Господь noun:m:v_rod:anim
+Господа Господь noun:m:v_rod/v_zna:anim
 Господові Господь noun:m:v_dav/v_mis:anim
 Господеві Господь noun:m:v_dav/v_mis:anim
 Господу Господь noun:m:v_dav:anim
@@ -518,6 +518,8 @@
 витися /vr3.cf :imperf
 в'ючись витися advp:rev:imperf
 
+велено веліти verb:imperf:impers
+
 
 # з -ну- та без
 
@@ -595,6 +597,7 @@
 вивітрити вивітрити verb:inf:perf:xp2    # зруйнувати  про дію вітру
 вивітрить вивітрити verb:futr:s:3:perf:xp2
 вивітрило вивітрити verb:past:n:perf:xp2
+
 
 
 варт варт predic

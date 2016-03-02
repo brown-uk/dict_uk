@@ -21,6 +21,7 @@ class Expand {
 	private final Util util = new Util()
 	private final Affix affix = new Affix()
 	private final BaseTags base_tags = new BaseTags()
+	private final List<String> limitedVerbLemmas = new ArrayList<>();
 
 	static class Re {
 		def match(String regex, String str) {
@@ -973,6 +974,10 @@ class Expand {
 
 			main_word = word
 
+			if( flags.contains("/v5") || flags.contains("/vr5") || line.contains(" p=") || line.contains(" tag=") ) {
+				limitedVerbLemmas.add(word)
+			}
+			
 			def inflected_lines = expand(word, flags)
 
 			if( sub_lines) {
@@ -1077,12 +1082,20 @@ class Expand {
 	}
 
 	static final List<String> ALL_V_TAGS = ["v_naz", "v_rod", "v_dav", "v_zna", "v_oru", "v_mis"]
+	static final List<String> ALL_VERB_TAGS = ["inf", 
+//			"impr:s:2", "impr:p:1", "impr:p:2", \
+	        "pres:s:1", "pres:s:2", "pres:s:3", \
+	        "pres:p:1", "pres:p:2", "pres:p:3", \
+	        "past:m", "past:f", "past:n", "past:p", \
+	         ]
+    static final Pattern VERB_CHECK_PATTERN = ~/inf|impr:s:2|impr:p:[12]|(?:pres|futr):[sp]:[123]|past:[mfnp]/
 
 	//	@TypeChecked
 	void check_indented_lines(List<String> lines) {
 		String gender = ""
 		HashSet<String> subtagSet = new HashSet<String>()
 		String lemmaLine
+		List<String> lastVerbTags = null
 
 		//		ParallelEnhancer.enhanceInstance(lines)
 
@@ -1091,10 +1104,23 @@ class Expand {
 				if (gender) {
 					checkVTagSet(gender, subtagSet, lemmaLine)
 				}
+				else if( lastVerbTags ) {
+    	    		log.error("verb lemma is missing " + (lastVerbTags) + " for: " + lemmaLine)
+	    	    	nonFatalErrorCount++
+	    	    	lastVerbTags = null
+				}
 
 				subtagSet.clear()
 				gender = ""
 				lemmaLine = line
+				
+				if( line.contains(" verb:") && ! lemmaLine.contains(":inf:dimin") && ! (lemmaLine.split()[0] in limitedVerbLemmas) ) {
+				    def time = line.contains(":imperf") ? "pres" : "futr"
+				    lastVerbTags = ALL_VERB_TAGS.collect { it.replace("pres", time) }
+				}
+				else {
+					lastVerbTags = null
+				}
 			}
 
 			if( line.contains(" noun") && ! line.contains("&pron") ) {
@@ -1116,12 +1142,18 @@ class Expand {
 				//				System.err.println("v_tag " + v_tag + " of " + tags)
 				subtagSet.add( v_tag )
 			}
+			else if ( lastVerbTags ) {
+			    def tagg = VERB_CHECK_PATTERN.matcher(line)
+			    if( tagg ) {
+			        lastVerbTags.remove(tagg[0])
+			    }
+			}
 		}
 	}
 
 	private checkVTagSet(String gender, HashSet subtagSet, String line) {
-		if( ! subtagSet.containsAll(ALL_V_TAGS) ) {
-			log.error("v_ set is not complete, missing " + (ALL_V_TAGS - subtagSet) + " on gender " + gender + " for: " + line)
+		if( ! subtagSet.containsAll(ALL_V_TAGS) && ! line.contains(". ") ) {
+			log.error("noun lemma missing " + (ALL_V_TAGS - subtagSet) + " on gender " + gender + " for: " + line)
 			nonFatalErrorCount++
 		}
 	}
