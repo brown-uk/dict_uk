@@ -542,14 +542,14 @@
 вбивцю вбивця noun:anim:m:v_zna
 вбивцею вбивця noun:anim:m:v_oru
 вбивці вбивця noun:anim:m:v_mis
-вбивцю вбивця noun:anim:m:v_kly
+вбивце вбивця noun:anim:m:v_kly
 вбивця вбивця noun:anim:f:v_naz
 вбивці вбивця noun:anim:f:v_rod
 вбивці вбивця noun:anim:f:v_dav
 вбивцю вбивця noun:anim:f:v_zna
 вбивцею вбивця noun:anim:f:v_oru
 вбивці вбивця noun:anim:f:v_mis
-вбивцю вбивця noun:anim:f:v_kly
+вбивце вбивця noun:anim:f:v_kly
 вбивці вбивця noun:anim:p:v_naz
 вбивець вбивця noun:anim:p:v_rod
 вбивцям вбивця noun:anim:p:v_dav

@@ -625,6 +625,12 @@ class Expand {
 				out_lines = [line]
 			}
 		}
+		else if( "/n10" in line ) {
+			if( line.contains(".<") && ! line.contains(">") && ! line.contains(".ko") && ! line.contains(".ku") ) {
+			    line = line.replace(".<", ".ko.<")
+			}
+				out_lines = [line]
+		}
 		else if( "/np" in line ) {
 			def space = " "
 			if( " :" in line || ! (" /" in line)) {
