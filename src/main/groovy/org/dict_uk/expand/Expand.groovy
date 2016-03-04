@@ -626,8 +626,10 @@ class Expand {
 			}
 		}
 		else if( "/n10" in line ) {
-			if( line.contains(".<") && ! line.contains(">") && ! line.contains(".ko") && ! line.contains(".ku") ) {
-			    line = line.replace(".<", ".ko.<")
+			if( line.contains(".<") /*&& ! line.contains(">")*/ && ! line.contains(".ko") && ! line.contains(".ku") ) {
+			    def parts = line.split()
+			    parts[1] += ".ko"
+			    line = parts.join(" ")
 			}
 				out_lines = [line]
 		}

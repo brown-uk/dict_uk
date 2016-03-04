@@ -303,6 +303,7 @@
   блоху noun:anim:f:v_zna
   блохою noun:anim:f:v_oru
   блосі noun:anim:f:v_mis
+  блохо noun:anim:f:v_kly
   блохи noun:anim:p:v_naz
   бліх noun:anim:p:v_rod
   блохам noun:anim:p:v_dav
