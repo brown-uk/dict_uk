@@ -1417,6 +1417,7 @@
   вовчищем noun:anim:m:v_oru
   вовчищі noun:anim:m:v_mis
   вовчищу noun:anim:m:v_mis
+  вовчище noun:anim:m:v_kly
   вовчища noun:anim:p:v_naz
   вовчищ noun:anim:p:v_rod
   вовчищам noun:anim:p:v_dav
@@ -2757,12 +2758,43 @@
   хроні noun:inanim:m:v_mis
   хронові noun:inanim:m:v_mis
   хрону noun:inanim:m:v_mis
+чапленя noun:anim:n:v_naz
+  чапленяти noun:anim:n:v_rod
+  чапленяті noun:anim:n:v_dav
+  чапленя noun:anim:n:v_zna
+  чапленям noun:anim:n:v_oru
+  чапленяті noun:anim:n:v_mis
+  чапленя noun:anim:n:v_kly
+  чапленята noun:anim:p:v_naz
+  чапленят noun:anim:p:v_rod
+  чапленятам noun:anim:p:v_dav
+  чапленят noun:anim:p:v_zna
+  чапленята noun:anim:p:v_zna
+  чапленятами noun:anim:p:v_oru
+  чапленятах noun:anim:p:v_mis
+  чапленята noun:anim:p:v_kly
 шуканка noun:inanim:f:v_naz
   шуканки noun:inanim:f:v_rod
   шуканці noun:inanim:f:v_dav
   шуканку noun:inanim:f:v_zna
   шуканкою noun:inanim:f:v_oru
   шуканці noun:inanim:f:v_mis
+щенятко noun:anim:n:v_naz
+  щенятка noun:anim:n:v_rod
+  щеняткові noun:anim:n:v_dav
+  щенятку noun:anim:n:v_dav
+  щенятко noun:anim:n:v_zna
+  щенятком noun:anim:n:v_oru
+  щеняткові noun:anim:n:v_mis
+  щенятку noun:anim:n:v_mis
+  щенятко noun:anim:n:v_kly
+  щенятка noun:anim:p:v_naz
+  щеняток noun:anim:p:v_rod
+  щеняткам noun:anim:p:v_dav
+  щенятка noun:anim:p:v_zna
+  щеняток noun:anim:p:v_zna
+  щенятками noun:anim:p:v_oru
+  щенятках noun:anim:p:v_mis
 щонайвагоміше adv:super
 щонайвагоміший adj:m:v_naz:super
   щонайвагомішого adj:m:v_rod:super

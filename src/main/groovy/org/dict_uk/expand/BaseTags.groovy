@@ -36,9 +36,8 @@ class BaseTags {
 		if( ! util.istota(allAffixFlags) || util.bacteria(allAffixFlags) ) {
 			v_zna_for_inanim = "/v_zna"
 		}
-		else {
-			if( ! allAffixFlags.contains(".ko") && ! allAffixFlags.contains(".ke") )
-				v_kly_for_anim = "/v_kly"
+		if( util.istota(allAffixFlags) && ! allAffixFlags.contains(".ko") && ! allAffixFlags.contains(".ke") ) {
+			v_kly_for_anim = "/v_kly"
 		}
 
 		if( affixFlag.startsWith("adj") ) {
@@ -85,13 +84,13 @@ class BaseTags {
 
 		if( affixFlag.startsWith("n2n") ) {
 			if( ending_i_nnia_re.matcher(word).matches() ) {
-				tag = ":n:v_naz/v_rod/v_zna//p:v_naz"
+				tag = ":n:v_naz/v_rod/v_zna$v_kly_for_anim//p:v_naz$v_kly_for_anim"
 			}
 			else {
-				tag = ":n:v_naz/v_zna"
-				if( util.person(allAffixFlags) && word[-2..-1] in ["ще", "ко", "ло"] )// && not util.lastname(allAffixFlags) )
-					tag += "/v_kly"
-				//        if( affixFlag in "bfox":
+				tag = ":n:v_naz/v_zna$v_kly_for_anim"
+//				if( util.person(allAffixFlags) && word[-2..-1] in ["ще", "ко", "ло"] )// && not util.lastname(allAffixFlags) )
+//					tag += "/v_kly"
+//				//        if( affixFlag in "bfox":
 			}
 		}
 		else if( affixFlag.startsWith("np") )

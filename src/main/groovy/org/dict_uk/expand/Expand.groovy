@@ -436,7 +436,9 @@ class Expand {
 					if( main_flag.startsWith("/n1")) { // Єремія /n10.ko.patr.<
 						base_word = line.split()[1]
 					}
-					if( ("<+" in flags && ! (":p:" in line)) || ! util.person(flags) \
+					if( ("<+" in flags && ! (":p:" in line)) \
+					    || (main_flag =~ "/n2n|/n4" && ! util.istota(flags)) \
+					    || (! (main_flag =~ "/n2n|/n4") && ! util.person(flags) ) \
                         || (! (":patr" in line) && (flags.contains(".ko") || flags.contains(".ke")) ) \
                         || (":m:" in line && ("<+" in flags)) \
                         || (main_flag.startsWith("/n20") && base_word.endsWith("ло") && "v_dav" in line) ) {
