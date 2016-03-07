@@ -1239,7 +1239,9 @@ class Expand {
 
 			}
 			catch(Exception e) {
-				throw new Exception("Exception in line: \"" + line + "\"", e)
+//				throw new Exception("Exception in line: \"" + line + "\"", e)
+				log.error("Failed to expand: \"" + line + "\": " + e.getMessage())
+				fatalErrorCount++
 			}
 
 		}.flatten()
