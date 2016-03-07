@@ -1506,7 +1506,7 @@
   гарикалі noun:anim:n:v_mis
   гарикалові noun:anim:n:v_mis
   гарикалу noun:anim:n:v_mis
-  гарикале noun:anim:n:v_kly
+  гарикало noun:anim:n:v_kly
   гарикала noun:anim:p:v_naz
   гарикал noun:anim:p:v_rod
   гарикалам noun:anim:p:v_dav
