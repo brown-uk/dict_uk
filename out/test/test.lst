@@ -185,22 +185,22 @@
 
 # Дієслова
 
-верифікувати /v1.cf.impers0 :imperf:perf
-стріляти /v2.cf.impersW :imperf
+верифікувати /v1.cf.imprs0 :imperf:perf
+стріляти /v2.cf.imprsNo :imperf
 стрілятися /vr2.cf.advp :imperf
 постріляти /v2 :perf
 засвітати /v2.cf p=3 :imperf # TODO: advp?? засвітавши, засвітаючи
 засвітати /v2 p=3 :perf
 вечоріти /v5.cf :imperf
 взуватися /vr2.cf.advp :imperf:v-u
-взути /v2.impers2 :perf:v-u
+взути /v2.imprsTo :perf:v-u
 взутися /vr2 :perf:v-u
 задихатися /vr1.vr2 :perf
 бентежити /v1.imprt0 :imperf
 вжалити /v1.imprt0 :perf:v-u
 вести /v4 :imperf
 
-вимести /v1.impers1 :perf
+вимести /v1.imprs1 :perf
 виместися /vr1 :perf
 
 колисати /v1.cf.advp /v2.advp :imperf

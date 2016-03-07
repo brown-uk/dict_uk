@@ -1,13 +1,20 @@
 # Безособова форма дієслів -ти -> -но
 
-subgroup v.impersW
+subgroup v.imprsNo
 
 ти      но      ти              #  казати казано                    @ verb:impers
 
 
+# Безособова форма дієслів -ти -> -то
+
+subgroup v.imprsTo
+
+ти	то	ти	                #  вимити вимито              @ verb:impers
+
+
 # Безособова форма дієслів
 
-subgroup v.impers0
+subgroup v.imprs0
 
 # формування безособової форми дієслова
 увати   овано   увати           #  фарбувати фарбовано               @ verb:impers
@@ -43,22 +50,15 @@ subgroup v.impers0
 
 # Безособова форма дієслів -ти -> -но (чергування)
 
-subgroup v.impers1
+subgroup v.imprs1
 
 сти	тено	сти	                #  мести метено              @ verb:impers
 гнути	жено	гнути	            #  вивергнути вивержено           @ verb:impers
 
 
-# Безособова форма дієслів -ти -> -то
-
-subgroup v.impers2
-
-ти	то	ти	                #  вимити вимито              @ verb:impers
-
-
 # Безособова форма дієслів -сти -> -дено
 
-subgroup v.impers3
+subgroup v.imprs3
 
 сти	дено	сти	                #  ввести введено              @ verb:impers
 

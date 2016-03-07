@@ -265,16 +265,16 @@ group v6
 Файл: v_impers.aff:
 
 # Безособова форма дієслів -ти -> -но
-subgroup v.impersW
+subgroup v.imprsNo
 
 # Безособова форма дієслів
-subgroup v.impers0
+subgroup v.imprs0
 
 # Безособова форма дієслів -ти -> -но (чергування)
-subgroup v.impers1
+subgroup v.imprs1
 
 # Безособова форма дієслів -ти -> -то
-subgroup v.impers2
+subgroup v.imprsTo
 
 # Безособова форма дієслів -сти -> -дено
 subgroup v.impers3

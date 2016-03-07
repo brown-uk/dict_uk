@@ -531,7 +531,7 @@
 обіклали обікласти verb:rev:past:p:perf:rare
 
 
-вити /v3.cf.impers2 :imperf
+вити /v3.cf.imprsTo :imperf
 в'ючи вити advp:imperf
 
 витися /vr3.cf :imperf
@@ -585,10 +585,10 @@
 
 # перетин з довшими формами з -ну- в теперішньому
 тяти /v1.cf :imperf
-витяти /v1.impers2 :perf
+витяти /v1.imprsTo :perf
 витятися /vr1 :perf
 дотяти /v1 :perf
-підтяти /v1.impers2 :perf
+підтяти /v1.imprsTo :perf
 
 
 

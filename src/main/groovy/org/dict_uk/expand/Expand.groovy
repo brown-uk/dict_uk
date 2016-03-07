@@ -49,8 +49,8 @@ class Expand {
 		if( ".cf" in affixFlag2) {
 			affixFlag2 = util.re_sub(/(vr?)[1-4]\.cf/, /$1.cf/, affixFlag2) // v5.cf is special
 		}
-		if( ".impers" in affixFlag2) {
-			affixFlag2 = util.re_sub(/(vr?)[1-9]\.impers/, /$1.impers/, affixFlag2)
+		if( ".imprs" in affixFlag2) {
+			affixFlag2 = util.re_sub(/(vr?)[1-9]\.imprs/, /$1.imprs/, affixFlag2)
 		}
 		if( ".patr" in affixFlag2) {
 			affixFlag2 = util.re_sub(/n[0-9]+\.patr/, "n.patr", affixFlag2)
