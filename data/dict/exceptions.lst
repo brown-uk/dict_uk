@@ -492,16 +492,16 @@
 обкладімося обікластися verb:rev:impr:p:1:perf:rare
 обкладімся обікластися verb:rev:impr:p:1:perf:rare
 обкладіться обікластися verb:rev:impr:p:2:perf:rare
-обкладусь обікластися verb:rev:pres:s:1:perf:rare
-обкладуся обікластися verb:rev:pres:s:1:perf:rare
-обкладешся обікластися verb:rev:pres:s:2:perf:rare
-обкладеться обікластися verb:rev:pres:s:3:perf:rare
-обкладемось обікластися verb:rev:pres:p:1:perf:rare
-обкладемося обікластися verb:rev:pres:p:1:perf:rare
-обкладемся обікластися verb:rev:pres:p:1:perf:rare
-обкладетесь обікластися verb:rev:pres:p:2:perf:rare
-обкладетеся обікластися verb:rev:pres:p:2:perf:rare
-обкладуться обікластися verb:rev:pres:p:3:perf:rare
+обкладусь обікластися verb:rev:futr:s:1:perf:rare
+обкладуся обікластися verb:rev:futr:s:1:perf:rare
+обкладешся обікластися verb:rev:futr:s:2:perf:rare
+обкладеться обікластися verb:rev:futr:s:3:perf:rare
+обкладемось обікластися verb:rev:futr:p:1:perf:rare
+обкладемося обікластися verb:rev:futr:p:1:perf:rare
+обкладемся обікластися verb:rev:futr:p:1:perf:rare
+обкладетесь обікластися verb:rev:futr:p:2:perf:rare
+обкладетеся обікластися verb:rev:futr:p:2:perf:rare
+обкладуться обікластися verb:rev:futr:p:3:perf:rare
 обіклавсь обікластися verb:rev:past:m:perf:rare
 обіклався обікластися verb:rev:past:m:perf:rare
 обіклалась обікластися verb:rev:past:f:perf:rare
@@ -518,13 +518,13 @@
 обкладімо обікласти verb:rev:impr:p:1:perf:rare
 обкладім обікласти verb:rev:impr:p:1:perf:rare
 обкладіть обікласти verb:rev:impr:p:2:perf:rare
-обкладу обікласти verb:rev:pres:s:1:perf:rare
-обкладеш обікласти verb:rev:pres:s:2:perf:rare
-обкладеть обікласти verb:rev:pres:s:3:perf:rare
-обкладемо обікласти verb:rev:pres:p:1:perf:rare
-обкладем обікласти verb:rev:pres:p:1:perf:rare
-обкладете обікласти verb:rev:pres:p:2:perf:rare
-обкладуть обікласти verb:rev:pres:p:3:perf:rare
+обкладу обікласти verb:rev:futr:s:1:perf:rare
+обкладеш обікласти verb:rev:futr:s:2:perf:rare
+обкладеть обікласти verb:rev:futr:s:3:perf:rare
+обкладемо обікласти verb:rev:futr:p:1:perf:rare
+обкладем обікласти verb:rev:futr:p:1:perf:rare
+обкладете обікласти verb:rev:futr:p:2:perf:rare
+обкладуть обікласти verb:rev:futr:p:3:perf:rare
 обіклав обікласти verb:rev:past:m:perf:rare
 обіклала обікласти verb:rev:past:f:perf:rare
 обіклало обікласти verb:rev:past:n:perf:rare
@@ -538,24 +538,8 @@
 в'ючись витися advp:rev:imperf
 
 велено веліти verb:imperf:impers
-
-
-# перетин з довшими формами з -ну- в теперішньому
-тяти /v1.cf :imperf
-витяти /v1.imprsTo :perf
-витятися /vr1 :perf
-дотяти /v1 :perf
-підтяти /v1.imprsTo :perf
-
-
-
-# не працюють правила при повній заміні слів (чергування з початку слова)
-
-гнати /v3.cf :imperf
-гнатися /vr3.cf :imperf
-
-слати /v1.cf :imperf
-
+проклято проклясти verb:perf:impers
+розіп'ято розіп'ясти verb:perf:impers
 
 
 варт варт predic
