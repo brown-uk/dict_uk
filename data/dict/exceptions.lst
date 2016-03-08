@@ -540,49 +540,6 @@
 велено веліти verb:imperf:impers
 
 
-# з -ну- та без
-
-засохти засохти verb:inf:perf
-загрузти загрузти verb:inf:perf
-заслабти заслабти verb:inf:perf
-досохти досохти verb:inf:perf
-замерзти замерзти verb:inf:perf
-вимокти вимокти verb:inf:perf
-заклякти заклякти verb:inf:perf
-вичахти вичахти verb:inf:perf
-замокти замокти verb:inf:perf
-
-засохши засохти advp:perf
-загрузши загрузти advp:perf
-заслабши заслабти advp:perf
-досохши досохти advp:perf
-замерзши замерзти advp:perf
-вимокши вимокти advp:perf
-заклякши заклякти advp:perf
-вичахши вичахти advp:perf
-замокши замокти advp:perf
-
-# основа з -ну- а м.ч. без
-виникнути виникнути verb:inf:perf
-виникну виникнути verb:futr:s:1:perf
-виникнеш виникнути verb:futr:s:2:perf
-виникне виникнути verb:futr:s:3:perf
-виникнем виникнути verb:futr:p:1:perf
-виникнемо виникнути verb:futr:p:1:perf
-виникнете виникнути verb:futr:p:2:perf
-виникнуть виникнути verb:futr:p:3:perf
-виник виникнути verb:past:m:perf
-#виникнув виникнути verb:past:m:perf
-виникла виникнути verb:past:f:perf
-#виникнула виникнути verb:past:f:perf
-виникло виникнути verb:past:n:perf
-#виникнуло виникнути verb:past:n:perf
-виникли виникнути verb:past:p:perf
-#виникнули виникнути verb:past:p:perf
-виникнувши виникнути advp:perf
-виникши виникнути advp:perf
-
-
 # перетин з довшими формами з -ну- в теперішньому
 тяти /v1.cf :imperf
 витяти /v1.imprsTo :perf
@@ -590,9 +547,6 @@
 дотяти /v1 :perf
 підтяти /v1.imprsTo :perf
 
-
-
-відвологти відвологти verb:inf:perf
 
 
 # не працюють правила при повній заміні слів (чергування з початку слова)
