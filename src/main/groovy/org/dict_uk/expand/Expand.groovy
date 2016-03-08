@@ -84,13 +84,13 @@ class Expand {
 				continue
 
 			if( affixFlag2 != mainGroup) {
-				if( ! (affixFlag2 in ["v2", "vr2"]) ) {  // курликати /v1.v2.cf       задихатися /vr1.vr2
+//				if( ! (affixFlag2 in ["v2", "vr2"]) ) {  // курликати /v1.v2.cf       задихатися /vr1.vr2
 					affixFlag2 = mainGroup + "." + affixFlag2
 					if( affixFlag2 == "v3.advp")
 						affixFlag2 = "v1.advp"
 					else if( affixFlag2 == "v3.imprt0" )
 						affixFlag2 = "v1.imprt0"
-				}
+//				}
 
 				affixFlag2 = adjustCommonFlag(affixFlag2)
 			}
@@ -149,7 +149,9 @@ class Expand {
 
 		def dups = words.findAll { words.count(it) > 1 }.unique()
 		if( dups.size() > 0) {
-			log.warn("duplicates: " + dups)
+		    if( ! (affixFlags =~ /p1\.p2|p2\.piv/) ) {
+			    log.warn("duplicates: " + dups + " for " + word + " " + affixFlags)
+			}
 		}
 
 		return words
@@ -1114,7 +1116,7 @@ class Expand {
 				if (gender) {
 					checkVTagSet(gender, subtagSet, lemmaLine)
 				}
-				else if( lastVerbTags ) {
+				else if( lastVerbTags && ! line.contains(". ") ) {
     	    		log.error("verb lemma is missing " + (lastVerbTags) + " for: " + lemmaLine)
 	    	    	nonFatalErrorCount++
 	    	    	lastVerbTags = null
@@ -1163,7 +1165,7 @@ class Expand {
 
 	private checkVTagSet(String gender, HashSet subtagSet, String line) {
 		if( ! subtagSet.containsAll(ALL_V_TAGS) && ! line.contains(". ") ) {
-			log.error("noun lemma missing " + (ALL_V_TAGS - subtagSet) + " on gender " + gender + " for: " + line)
+			log.error("noun lemma is missing " + (ALL_V_TAGS - subtagSet) + " on gender " + gender + " for: " + line)
 			nonFatalErrorCount++
 		}
 	}
