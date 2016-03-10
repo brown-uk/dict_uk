@@ -1,39 +1,28 @@
 # ліса ліс noun:m:v_rod:obs
 # світа світ noun:m:v_rod:obs
-барлогу барліг noun:m:v_rod
-білячий /adj :&adjp:actv:imperf :bad
-бісячий /adj :&adjp:actv:imperf :bad
-болячий /adj :&adjp:actv:imperf :bad
-боці бік noun:m:v_mis
-бродячий /adj :&adjp:actv:imperf :bad
-варіанту варіант noun:m:v_rod
-везучий /adj :&adjp:actv:imperf :bad
-висячий /adj :&adjp:actv:imperf :bad
-дзвенячий /adj :&adjp:actv:imperf :bad
-дрижачий /adj :&adjp:actv:imperf :bad
-їдучий /adj :&adjp:actv:imperf :bad
-киплячий /adj :&adjp:actv:imperf :bad
-лежачий /adj :&adjp:actv:imperf :bad
-люблячий /adj :&adjp:actv:imperf :bad
-мосту міст noun:m:v_rod
-нев'янучий /adj :&adjp:actv:imperf :bad
-немеркнучий /adj :&adjp:actv:imperf :bad
-паркану паркан noun:m:v_rod
-пливучий /adj :&adjp:actv:imperf :bad
-плоду плід noun:inanim:m:v_rod:xp1
-плоту пліт noun:m:v_rod
-порогу поріг noun:m:v_rod
-свистячий /adj :&adjp:actv:imperf :bad
-сидячий /adj :&adjp:actv:imperf :bad
-скриплячий /adj :&adjp:actv:imperf :bad
-смердячий /adj :&adjp:actv:imperf :bad
-сплячий /adj :&adjp:actv:imperf :bad
-столу стіл noun:m:v_rod
-стоячий /adj :&adjp:actv:imperf :bad
-таранячий /adj :&adjp:actv:imperf :bad
+білячий /adj :&adjp:actv:imperf:bad
+бісячий /adj :&adjp:actv:imperf:bad
+болячий /adj :&adjp:actv:imperf:bad
+бродячий /adj :&adjp:actv:imperf:bad
+везучий /adj :&adjp:actv:imperf:bad
+висячий /adj :&adjp:actv:imperf:bad
+дзвенячий /adj :&adjp:actv:imperf:bad
+дрижачий /adj :&adjp:actv:imperf:bad
+їдучий /adj :&adjp:actv:imperf:bad
+киплячий /adj :&adjp:actv:imperf:bad
+лежачий /adj :&adjp:actv:imperf:bad
+люблячий /adj :&adjp:actv:imperf:bad
+нев'янучий /adj :&adjp:actv:imperf:bad
+немеркнучий /adj :&adjp:actv:imperf:bad
+пливучий /adj :&adjp:actv:imperf:bad
+свистячий /adj :&adjp:actv:imperf:bad
+сидячий /adj :&adjp:actv:imperf:bad
+скриплячий /adj :&adjp:actv:imperf:bad
+смердячий /adj :&adjp:actv:imperf:bad
+сплячий /adj :&adjp:actv:imperf:bad
+стоячий /adj :&adjp:actv:imperf:bad
+таранячий /adj :&adjp:actv:imperf:bad
 телемосту телеміст noun:m:v_rod
-тремтячий /adj :&adjp:actv:imperf :bad
-ходячий /adj :&adjp:actv:imperf :bad
-шинку шинок noun:m:v_rod
-шиплячий /adj :&adjp:actv:imperf :bad
-шлунку шлунок noun:m:v_rod
+тремтячий /adj :&adjp:actv:imperf:bad
+ходячий /adj :&adjp:actv:imperf:bad
+шиплячий /adj :&adjp:actv:imperf:bad
