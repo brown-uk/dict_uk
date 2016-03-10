@@ -170,3 +170,42 @@ subgroup n2n.piv
 о	ам	#  ікло  іклам	            @ noun:p:v_dav
 о	ами	#  ікло  іклами	            @ noun:p:v_oru
 о	ах	#  ікло  іклах	            @ noun:p:v_mis
+
+
+group n2nf
+
+ще:
+е	і		# бородище 	                        @ noun:f:v_rod/v_dav/v_mis
+е	ею		# бородищею 	                    @ noun:f:v_oru
+
+
+
+subgroup n2nf.p
+
+ще:
+е	і		    # бородище бородищі 	                                   @ noun:p:v_naz
+е	0		    # бородище бородищ 	                                       @ noun:p:v_rod
+е	ам			# бородище  бородищам 	                                   @ noun:p:v_dav
+е	ами			# бородище  бородищами                                     @ noun:p:v_oru
+е	ах			# бородище  бородищах 	                                   @ noun:p:v_mis
+
+
+
+group n2nm
+
+
+ще:
+е а    #  вовчище  вовчища                 @ noun:m:v_rod
+е у    #  вовчище  вовчищу                 @ noun:m:v_dav/v_mis
+е ем   #  вовчище  вовчищем                @ noun:m:v_oru
+е і    #  вовчище  вовчищі                 @ noun:m:v_mis
+
+
+subgroup n2nm.p
+
+ще:
+е а     #  вовчище  вовчища              @ noun:p:v_naz
+е 0          #  вовчище  вовчищам        @ noun:p:v_rod
+е ам         #  вовчище  вовчищам        @ noun:p:v_dav
+е ами        #  вовчище  вовчищами       @ noun:p:v_oru
+е ах         #  вовчище  вовчищах        @ noun:p:v_mis

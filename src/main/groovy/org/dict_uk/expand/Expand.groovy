@@ -149,7 +149,7 @@ class Expand {
 
 		def dups = words.findAll { words.count(it) > 1 }.unique()
 		if( dups.size() > 0) {
-		    if( ! (affixFlags =~ /p1\.p2|p2\.piv/) ) {
+		    if( ! (affixFlags =~ /p1\.p2|p[12]\.piv/) ) {
 			    log.warn("duplicates: " + dups + " for " + word + " " + affixFlags)
 			}
 		}
@@ -419,6 +419,13 @@ class Expand {
 						}
 					}
 				}
+				else if( main_flag.startsWith("/n2nm") ) {
+					if( util.istota(flags)) {
+						if( "m:v_rod" in line && ! ("/v_zna" in line) ) {
+							line = line.replace("m:v_rod", "m:v_rod/v_zna")
+						}
+					}
+				}
 				if( main_flag.startsWith("/n2") && "@" in flags) {
 					word = line.split(" ", 2)[0]
 					if( word[-1..-1] in "ая" && "m:v_rod" in line) {
@@ -630,7 +637,7 @@ class Expand {
 			}
 		}
 		else if( line.contains("/n10") || line.contains("/n3") ) {
-			if( /*line.contains(".<") && ! line.contains(">") &&*/ ! line.contains(".k") ) {
+			if( /*line.contains(".<") && ! line.contains(">") &&*/ ! line.contains(".k") && ! line.contains("ще ") ) {
 			    def parts = line.split()
 			    parts[1] += line.contains("/n10") ? ".ko" : ".ke"
 			    line = parts.join(" ")

@@ -2685,6 +2685,35 @@
   суміші noun:inanim:p:v_zna
   сумішами noun:inanim:p:v_oru
   сумішах noun:inanim:p:v_mis
+сутяжище noun:anim:f:v_naz:xp1
+  сутяжищі noun:anim:f:v_rod:xp1
+  сутяжищі noun:anim:f:v_dav:xp1
+  сутяжище noun:anim:f:v_zna:xp1
+  сутяжищею noun:anim:f:v_oru:xp1
+  сутяжищі noun:anim:f:v_mis:xp1
+  сутяжище noun:anim:f:v_kly:xp1
+  сутяжищі noun:anim:p:v_naz:xp1
+  сутяжищ noun:anim:p:v_rod:xp1
+  сутяжищам noun:anim:p:v_dav:xp1
+  сутяжищ noun:anim:p:v_zna:xp1
+  сутяжищами noun:anim:p:v_oru:xp1
+  сутяжищах noun:anim:p:v_mis:xp1
+  сутяжищі noun:anim:p:v_kly:xp1
+сутяжище noun:anim:m:v_naz:xp2
+  сутяжища noun:anim:m:v_rod:xp2
+  сутяжищу noun:anim:m:v_dav:xp2
+  сутяжища noun:anim:m:v_zna:xp2
+  сутяжищем noun:anim:m:v_oru:xp2
+  сутяжищі noun:anim:m:v_mis:xp2
+  сутяжищу noun:anim:m:v_mis:xp2
+  сутяжище noun:anim:m:v_kly:xp2
+  сутяжища noun:anim:p:v_naz:xp2
+  сутяжищ noun:anim:p:v_rod:xp2
+  сутяжищам noun:anim:p:v_dav:xp2
+  сутяжищ noun:anim:p:v_zna:xp2
+  сутяжищами noun:anim:p:v_oru:xp2
+  сутяжищах noun:anim:p:v_mis:xp2
+  сутяжища noun:anim:p:v_kly:xp2
 тюрма noun:inanim:f:v_naz
   тюрми noun:inanim:f:v_rod
   тюрмі noun:inanim:f:v_dav

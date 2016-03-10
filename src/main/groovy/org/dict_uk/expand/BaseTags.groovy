@@ -83,7 +83,15 @@ class BaseTags {
 		}
 
 		if( affixFlag.startsWith("n2n") ) {
-			if( ending_i_nnia_re.matcher(word).matches() ) {
+		    if( affixFlag.startsWith("n2nm") ) {
+			    tag = ":m:v_naz" + v_zna_for_inanim
+			    tag += "/v_kly"
+		    }
+		    else if( affixFlag.startsWith("n2nf") ) {
+			    tag = ":f:v_naz" + v_zna_for_inanim
+			    tag += "/v_zna/v_kly"
+		    }
+		    else if( ending_i_nnia_re.matcher(word).matches() ) {
 				tag = ":n:v_naz/v_rod/v_zna/v_kly//p:v_naz/v_kly"
 			}
 			else {
@@ -101,8 +109,9 @@ class BaseTags {
 			if( affixFlag.startsWith("n20") && util.person(allAffixFlags) && (word[-2..-1] == "ло") )// && not util.lastname(allAffixFlags) )
 				tag += "/v_kly"
 		}
-		else if( affixFlag[0..<2] == "n1" )
+		else if( affixFlag[0..<2] == "n1" ) {
 			tag = ":f:v_naz"
+		}
 		else if( affixFlag[0..<2] == "n4" )
 			tag = ":n:v_naz/v_zna/v_kly"// + v_kly_for_anim
 		else if( affixFlag[0..<2] == "n3" )

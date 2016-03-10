@@ -26,13 +26,6 @@
 Великоднями Великдень noun:p:v_oru
 Великоднях Великдень noun:p:v_mis
 
-# 0 - о (р.в.мн.)
-судорги судорга noun:p:v_naz/v_zna
-судорог судорга noun:p:v_rod
-судоргам судорга noun:p:v_dav
-судоргами судорга noun:p:v_oru
-судоргах судорга noun:p:v_mis
-
 
 # власні
 Євангеліє Євангеліє noun:n:v_naz/v_zna
@@ -69,73 +62,6 @@
 стеклами скло noun:p:v_oru          #> склами
 стеклах скло noun:p:v_mis           #> склах
 
-
-# додаткові форми
-сосон сосна noun:p:v_rod
-відьом відьма noun:p:v_rod/v_zna:anim
-одіж одежа noun:f:v_naz/v_zna
-воріженьки вороженько noun:p:v_naz:anim:rare
-воєн війна noun:p:v_rod
-грошима гроші noun:p:v_oru:ns
-грішми гроші noun:p:v_oru:ns
-#басищеві басище noun:m:v_dav//n:v_dav  # в ГС цієї форми немає
-дровець дрівця noun:p:v_rod:ns
-
-плахіт плахта noun:p:v_rod
-плахот плахта noun:p:v_rod
-
-крильми крило noun:p:v_oru
-слізьми сльоза noun:p:v_oru
-коліньми коліно noun:p:v_oru
-гістьми гість noun:p:v_oru:anim
-кістьми кість noun:p:v_oru
-свиньми свиня noun:p:v_oru:anim
-ворітьми ворота noun:p:v_oru:ns
-воротям ворота noun:p:v_dav:ns
-воротях ворота noun:p:v_mis:ns
-
-губів губа noun:p:v_rod
-зморщок зморшка noun:p:v_rod
-легенів легеня noun:p:v_rod
-панотче панотець noun:m:v_kly:anim
-старче старець noun:m:v_kly:anim
-мамів мама noun:p:v_rod:anim
-
-панове пан noun:p:v_kly:anim
-
-яловець ялівець noun:m:v_naz/v_zna
-
-відом відом noun:m:v_naz:rare
-відома відом noun:m:v_rod
-відому відом noun:m:v_dav:rare
-відом відом noun:m:v_zna:rare
-відомом відом noun:m:v_oru
-відомі відом noun:m:v_mis:rare
-
-штаням штани noun:p:v_dav:ns
-штаньми штани noun:p:v_oru:ns
-штанями штани noun:p:v_oru:ns
-штанях штани noun:p:v_mis:ns
-
-дошки дошка noun:p:v_naz/v_zna
-дощок дошка noun:p:v_rod
-дошкам дошка noun:p:v_dav
-дошками дошка noun:p:v_oru
-дошках дошка noun:p:v_mis
-
-Божечко /n20.<
-Божечко Божечко noun:m:v_kly:anim:fname
-
-# давні форми
-бельмес бельмес noun:m:v_naz:rare
-бельмеса бельмес noun:m:v_rod
-язицех язик noun:p:v_mis
-
-давніх-давен давніх-давен noun:p:v_rod:ns
-
-Руси Русь noun:f:v_rod:alt
-роб роб noun:m:v_naz/v_zna
-робом роб noun:m:v_oru
 
 очі око noun:p:v_naz/v_zna
 очей око noun:p:v_rod
@@ -249,12 +175,6 @@
 Христі Христос noun:m:v_mis:anim
 Христе Христос noun:m:v_kly:anim
 
-Донець Донець noun:m:v_naz/v_zna
-Дінця Донець noun:m:v_rod
-Дінцю Донець noun:m:v_dav/v_mis
-Дінцем Донець noun:m:v_oru
-Дінці Донець noun:m:v_mis
-
 четвер четвер noun:m:v_naz/v_zna
 четверга четвер noun:m:v_rod
 четвергу четвер noun:m:v_dav/v_mis/v_kly
@@ -302,18 +222,21 @@
 хабарах хабар noun:p:v_mis
 хабарі хабар noun:p:v_naz
 хабарі хабар noun:p:v_zna
+
 комарів комар noun:p:v_rod:anim
 комарів комар noun:p:v_zna:anim
 комарам комар noun:p:v_dav:anim
 комарами комар noun:p:v_oru:anim
 комарах комар noun:p:v_mis:anim
 комарі комар noun:p:v_naz:anim
+
 пластирів пластир noun:p:v_rod
 пластирам пластир noun:p:v_dav
 пластирами пластир noun:p:v_oru
 пластирах пластир noun:p:v_mis
 пластирі пластир noun:p:v_naz
 пластирі пластир noun:p:v_zna
+
 лейкопластирів лейкопластир noun:p:v_rod
 лейкопластирам лейкопластир noun:p:v_dav
 лейкопластирами лейкопластир noun:p:v_oru
@@ -353,6 +276,65 @@
 війю війя noun:n:v_dav/v_mis
 війям війя noun:n:v_oru
 війї війя noun:n:v_mis
+
+відом відом noun:m:v_naz:rare
+відома відом noun:m:v_rod
+відому відом noun:m:v_dav:rare
+відом відом noun:m:v_zna:rare
+відомом відом noun:m:v_oru
+відомі відом noun:m:v_mis:rare
+
+штаням штани noun:p:v_dav:ns
+штаньми штани noun:p:v_oru:ns
+штанями штани noun:p:v_oru:ns
+штанях штани noun:p:v_mis:ns
+
+дошки дошка noun:p:v_naz/v_zna
+дощок дошка noun:p:v_rod
+дошкам дошка noun:p:v_dav
+дошками дошка noun:p:v_oru
+дошках дошка noun:p:v_mis
+
+
+# додаткові форми
+
+сосон сосна noun:p:v_rod
+воріженьки вороженько noun:p:v_naz:anim:rare
+дровець дрівця noun:p:v_rod:ns
+судорог судорга noun:p:v_rod:bad
+плахіт плахта noun:p:v_rod
+плахот плахта noun:p:v_rod
+
+грошима гроші noun:p:v_oru:ns
+грішми гроші noun:p:v_oru:ns
+крильми крило noun:p:v_oru
+слізьми сльоза noun:p:v_oru
+коліньми коліно noun:p:v_oru
+гістьми гість noun:p:v_oru:anim
+кістьми кість noun:p:v_oru
+свиньми свиня noun:p:v_oru:anim
+ворітьми ворота noun:p:v_oru:ns
+
+воротям ворота noun:p:v_dav:ns
+воротях ворота noun:p:v_mis:ns
+
+зморщок зморшка noun:p:v_rod
+
+панове пан noun:p:v_kly:anim
+
+Божечко /n20.<
+Божечко Божечко noun:m:v_kly:anim:fname
+
+# давні форми
+бельмес бельмес noun:m:v_naz:rare
+бельмеса бельмес noun:m:v_rod
+язицех язик noun:p:v_mis
+
+давніх-давен давніх-давен noun:p:v_rod:ns
+
+Руси Русь noun:f:v_rod:alt
+роб роб noun:m:v_naz/v_zna
+робом роб noun:m:v_oru
 
 кінця-краю кінця-краю noun:m:v_rod
 предку-віку предку-віку noun:m:v_zna
