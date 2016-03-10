@@ -48,6 +48,7 @@
   автом noun:inanim:n:v_oru
   авті noun:inanim:n:v_mis
   авту noun:inanim:n:v_mis
+  авто noun:inanim:n:v_kly
   авта noun:inanim:p:v_naz
   авт noun:inanim:p:v_rod
   автам noun:inanim:p:v_dav
@@ -662,6 +663,7 @@
   вбоїсько noun:inanim:n:v_zna
   вбоїськом noun:inanim:n:v_oru
   вбоїську noun:inanim:n:v_mis
+  вбоїсько noun:inanim:n:v_kly
   вбоїська noun:inanim:p:v_naz
   вбоїськ noun:inanim:p:v_rod
   вбоїськам noun:inanim:p:v_dav
@@ -996,6 +998,7 @@
   веслом noun:inanim:n:v_oru
   веслі noun:inanim:n:v_mis
   веслу noun:inanim:n:v_mis
+  весло noun:inanim:n:v_kly
   весла noun:inanim:p:v_naz
   весел noun:inanim:p:v_rod
   веслам noun:inanim:p:v_dav
@@ -1217,12 +1220,14 @@
   викриттям noun:inanim:n:v_oru
   викритті noun:inanim:n:v_mis
   викриттю noun:inanim:n:v_mis
+  викриття noun:inanim:n:v_kly
   викриття noun:inanim:p:v_naz
   викриттів noun:inanim:p:v_rod
   викриттям noun:inanim:p:v_dav
   викриття noun:inanim:p:v_zna
   викриттями noun:inanim:p:v_oru
   викриттях noun:inanim:p:v_mis
+  викриття noun:inanim:p:v_kly
 вила noun:inanim:p:v_naz:ns
   вил noun:inanim:p:v_rod:ns
   вилам noun:inanim:p:v_dav:ns
@@ -1341,6 +1346,7 @@
   вігонь noun:anim:f:v_zna
   вігонню noun:anim:f:v_oru
   вігоні noun:anim:f:v_mis
+  вігоне noun:anim:f:v_kly
   вігоні noun:anim:p:v_naz
   вігоней noun:anim:p:v_rod
   вігоням noun:anim:p:v_dav
@@ -1403,6 +1409,7 @@
   вітрилом noun:inanim:n:v_oru
   вітрилі noun:inanim:n:v_mis
   вітрилу noun:inanim:n:v_mis
+  вітрило noun:inanim:n:v_kly
   вітрила noun:inanim:p:v_naz
   вітрил noun:inanim:p:v_rod
   вітрилам noun:inanim:p:v_dav
@@ -1521,6 +1528,7 @@
   гирлом noun:inanim:n:v_oru
   гирлі noun:inanim:n:v_mis
   гирлу noun:inanim:n:v_mis
+  гирло noun:inanim:n:v_kly
   гирла noun:inanim:p:v_naz
   гирл noun:inanim:p:v_rod
   гирлам noun:inanim:p:v_dav
@@ -1707,6 +1715,7 @@
   джерелом noun:inanim:n:v_oru
   джерелі noun:inanim:n:v_mis
   джерелу noun:inanim:n:v_mis
+  джерело noun:inanim:n:v_kly
   джерела noun:inanim:p:v_naz
   джерел noun:inanim:p:v_rod
   джерелам noun:inanim:p:v_dav
@@ -1721,6 +1730,7 @@
   дзиґою noun:inanim:f:v_oru
   дзизі noun:inanim:f:v_mis:bad
   дзидзі noun:inanim:f:v_mis
+  дзиґо noun:inanim:f:v_kly
   дзиґи noun:inanim:p:v_naz
   дзиґ noun:inanim:p:v_rod
   дзиґам noun:inanim:p:v_dav
@@ -1927,6 +1937,7 @@
   залізко noun:inanim:n:v_zna
   залізком noun:inanim:n:v_oru
   залізку noun:inanim:n:v_mis
+  залізко noun:inanim:n:v_kly
   залізка noun:inanim:p:v_naz
   залізок noun:inanim:p:v_rod
   залізкам noun:inanim:p:v_dav
@@ -2024,6 +2035,7 @@
   краянням noun:inanim:n:v_oru
   краянні noun:inanim:n:v_mis
   краянню noun:inanim:n:v_mis
+  краяння noun:inanim:n:v_kly
 крутий adj:m:v_naz:compb
   крутого adj:m:v_rod:compb
   крутому adj:m:v_dav:compb
@@ -2088,6 +2100,35 @@
   крутішими adj:p:v_oru:compr
   крутіших adj:p:v_mis:compr
   крутіші adj:p:v_kly:compr
+ладо noun:anim:m:v_naz
+  лада noun:anim:m:v_rod
+  ладові noun:anim:m:v_dav
+  ладу noun:anim:m:v_dav
+  лада noun:anim:m:v_zna
+  ладом noun:anim:m:v_oru
+  ладі noun:anim:m:v_mis
+  ладові noun:anim:m:v_mis
+  ладу noun:anim:m:v_mis
+  ладу noun:anim:m:v_kly
+  ладо noun:anim:n:v_naz
+  лада noun:anim:n:v_rod
+  ладу noun:anim:n:v_dav
+  ладо noun:anim:n:v_zna
+  ладом noun:anim:n:v_oru
+  ладі noun:anim:n:v_mis
+  ладу noun:anim:n:v_mis
+  ладо noun:anim:n:v_kly
+  лада noun:anim:p:v_naz
+  лади noun:anim:p:v_naz
+  лад noun:anim:p:v_rod
+  ладів noun:anim:p:v_rod
+  ладам noun:anim:p:v_dav
+  лад noun:anim:p:v_zna
+  ладів noun:anim:p:v_zna
+  ладами noun:anim:p:v_oru
+  ладах noun:anim:p:v_mis
+  лада noun:anim:p:v_kly
+  лади noun:anim:p:v_kly
 лепешняк noun:inanim:m:v_naz
   лепешняка noun:inanim:m:v_rod
   лепешнякові noun:inanim:m:v_dav
@@ -2135,6 +2176,7 @@
   людяність noun:inanim:f:v_zna
   людяністю noun:inanim:f:v_oru
   людяності noun:inanim:f:v_mis
+  людяносте noun:inanim:f:v_kly
 м. noun:inanim:n:v_naz:nv:np:abbr
   м. noun:inanim:n:v_rod:nv:np:abbr
   м. noun:inanim:n:v_dav:nv:np:abbr
@@ -2148,6 +2190,7 @@
   меживузлям noun:inanim:n:v_oru
   меживузлі noun:inanim:n:v_mis
   меживузлю noun:inanim:n:v_mis
+  меживузля noun:inanim:n:v_kly
 міняйло noun:anim:m:v_naz
   міняйла noun:anim:m:v_rod
   міняйлові noun:anim:m:v_dav
@@ -2435,6 +2478,7 @@
   ніжність noun:inanim:f:v_zna
   ніжністю noun:inanim:f:v_oru
   ніжності noun:inanim:f:v_mis
+  ніжносте noun:inanim:f:v_kly
 оскірившись advp:rev:perf:coll
 оскіритися verb:rev:perf:inf:coll
   оскіритись verb:rev:perf:inf:coll
@@ -2461,6 +2505,22 @@
   оскірилося verb:rev:perf:past:n:coll
   оскірились verb:rev:perf:past:p:coll
   оскірилися verb:rev:perf:past:p:coll
+паркан noun:inanim:m:v_naz
+  паркана noun:inanim:m:v_rod
+  паркану noun:inanim:m:v_rod
+  парканові noun:inanim:m:v_dav
+  паркану noun:inanim:m:v_dav
+  паркан noun:inanim:m:v_zna
+  парканом noun:inanim:m:v_oru
+  паркані noun:inanim:m:v_mis
+  парканові noun:inanim:m:v_mis
+  паркану noun:inanim:m:v_mis
+  паркани noun:inanim:p:v_naz
+  парканів noun:inanim:p:v_rod
+  парканам noun:inanim:p:v_dav
+  паркани noun:inanim:p:v_zna
+  парканами noun:inanim:p:v_oru
+  парканах noun:inanim:p:v_mis
 породілля noun:anim:f:v_naz
   породіллі noun:anim:f:v_rod
   породіллі noun:anim:f:v_dav
@@ -2618,6 +2678,7 @@
   суміш noun:inanim:f:v_zna
   сумішшю noun:inanim:f:v_oru
   суміші noun:inanim:f:v_mis
+  суміше noun:inanim:f:v_kly
   суміші noun:inanim:p:v_naz
   сумішей noun:inanim:p:v_rod
   сумішам noun:inanim:p:v_dav
@@ -2630,6 +2691,7 @@
   тюрму noun:inanim:f:v_zna
   тюрмою noun:inanim:f:v_oru
   тюрмі noun:inanim:f:v_mis
+  тюрмо noun:inanim:f:v_kly
   тюрми noun:inanim:p:v_naz
   тюрем noun:inanim:p:v_rod
   тюрмам noun:inanim:p:v_dav
@@ -2779,6 +2841,7 @@
   шуканку noun:inanim:f:v_zna
   шуканкою noun:inanim:f:v_oru
   шуканці noun:inanim:f:v_mis
+  шуканко noun:inanim:f:v_kly
 щенятко noun:anim:n:v_naz
   щенятка noun:anim:n:v_rod
   щеняткові noun:anim:n:v_dav

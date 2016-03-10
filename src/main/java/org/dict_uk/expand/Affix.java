@@ -133,7 +133,9 @@ public class Affix {
 				}
 
 				if( affixGroupMap.containsKey(match) ) {
-					System.err.println("WARNING: overlapping match " + match + " in " + affixFlag + ":\n\t" + line);
+				    if( ! affixFlag.equals("vr2") || ! match.equals("тися") ) {
+					    System.err.println("WARNING: overlapping match " + match + " in " + affixFlag + ":\n\t" + line);
+					}
 					affixGroup = affixGroupMap.get(match);
 				}
 				else {

@@ -527,6 +527,7 @@ noun:inanim:m:v_zna:xp2
 noun:inanim:n:v_dav
 noun:inanim:n:v_dav:nv
 noun:inanim:n:v_dav:nv:np:abbr
+noun:inanim:n:v_kly
 noun:inanim:n:v_mis
 noun:inanim:n:v_mis:nv
 noun:inanim:n:v_mis:nv:np:abbr

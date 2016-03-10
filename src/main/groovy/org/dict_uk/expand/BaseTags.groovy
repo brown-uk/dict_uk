@@ -84,17 +84,14 @@ class BaseTags {
 
 		if( affixFlag.startsWith("n2n") ) {
 			if( ending_i_nnia_re.matcher(word).matches() ) {
-				tag = ":n:v_naz/v_rod/v_zna$v_kly_for_anim//p:v_naz$v_kly_for_anim"
+				tag = ":n:v_naz/v_rod/v_zna/v_kly//p:v_naz/v_kly"
 			}
 			else {
-				tag = ":n:v_naz/v_zna$v_kly_for_anim"
-//				if( util.person(allAffixFlags) && word[-2..-1] in ["ще", "ко", "ло"] )// && not util.lastname(allAffixFlags) )
-//					tag += "/v_kly"
-//				//        if( affixFlag in "bfox":
+				tag = ":n:v_naz/v_zna/v_kly"
 			}
 		}
 		else if( affixFlag.startsWith("np") )
-			tag = ":p:v_naz" // + v_zna_for_inanim + v_kly_for_anim
+			tag = ":p:v_naz/v_kly" // + v_zna_for_inanim + v_kly_for_anim
 		else if( affixFlag.startsWith("n2adj1") && word.endsWith("е") )
 			tag = ":n:v_naz" + v_zna_for_inanim
 		else if( affixFlag.startsWith("n2adj") )
@@ -107,7 +104,7 @@ class BaseTags {
 		else if( affixFlag[0..<2] == "n1" )
 			tag = ":f:v_naz"
 		else if( affixFlag[0..<2] == "n4" )
-			tag = ":n:v_naz/v_zna" + v_kly_for_anim
+			tag = ":n:v_naz/v_zna/v_kly"// + v_kly_for_anim
 		else if( affixFlag[0..<2] == "n3" )
 			tag = ":f:v_naz/v_zna"
 		else

@@ -37,23 +37,6 @@ class Util {
 		return regex_map[regex].matcher(txt).replaceAll(repl)
 	}
 
-	def re_search(regex, txt) {
-		if( ! (regex in regex_map) ) {
-			regex_map[regex] = Pattern.compile(regex)
-		}
-		def matcher = regex_map[regex].matcher(txt)
-		return matcher.find()
-		//return matcher
-	}
-
-	//	Matcher re_match(regex, txt) {
-	//		if( ! (regex in regex_map) ) {
-	//			regex_map[regex] = Pattern.compile(regex)
-	//		}
-	//		def matcher = regex_map[regex].matcher(txt)
-	//		matcher.matches()
-	//		return matcher
-	//	}
 
 	def tail_tag(line, tags) {
 		for( tag in tags ){
@@ -551,7 +534,8 @@ class Util {
 			words.add(dicEntry.word)
 			lemmas.add(dicEntry.lemma)
 
-			if( ! (":bad" in tag) && ! (":alt" in tag) && ! (":uncontr" in tag) && ! (word.endsWith(".")) ) {
+			if( ! (":bad" in tag) && ! (":alt" in tag) && ! (":uncontr" in tag) && ! (word.endsWith(".")) \
+			        && ! (":inanim" in tag && ":v_kly" in tag) ) {
 				spell_words.add(word)
 			}
 

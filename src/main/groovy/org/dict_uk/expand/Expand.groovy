@@ -230,11 +230,11 @@ class Expand {
 	boolean filter_word(String w, Map modifiers) {
 		if( "gen" in modifiers) {
 			//        util.dbg("filter by gen", modifiers, w)
-			if( ! util.re_search(":[" + modifiers["gen"] + "]:", w))
+			if( ! (w =~ (":[" + modifiers["gen"] + "]:") ) )
 				return false
 		}
-		if( "pers" in modifiers && ! re.search(":(inf|past)", w)) {
-			if( ! util.re_search(":[" + modifiers["pers"] + "]", w))
+		if( "pers" in modifiers && ! ( w =~ ":(inf|past)") ) {
+			if( ! (w =~ ":[" + modifiers["pers"] + "]") )
 				return false
 		}
 		if( "tag" in modifiers) {
@@ -439,7 +439,7 @@ class Expand {
 						base_word = line.split()[1]
 					}
 					if( ("<+" in flags && ! (":p:" in line)) \
-					    || (main_flag =~ "/n2n|/n4" && ! util.istota(flags)) \
+//					    || (main_flag =~ "/n2n|/n4" && ! util.istota(flags)) \
 					    || (! (main_flag =~ "/n2n|/n4") && ! util.person(flags) ) \
                         || (! (":patr" in line) && (flags.contains(".ko") || flags.contains(".ke")) ) \
                         || (":m:" in line && ("<+" in flags)) \
@@ -629,13 +629,13 @@ class Expand {
 				out_lines = [line]
 			}
 		}
-		else if( "/n10" in line ) {
-			if( line.contains(".<") /*&& ! line.contains(">")*/ && ! line.contains(".ko") && ! line.contains(".ku") ) {
+		else if( line.contains("/n10") || line.contains("/n3") ) {
+			if( /*line.contains(".<") && ! line.contains(">") &&*/ ! line.contains(".k") ) {
 			    def parts = line.split()
-			    parts[1] += ".ko"
+			    parts[1] += line.contains("/n10") ? ".ko" : ".ke"
 			    line = parts.join(" ")
 			}
-				out_lines = [line]
+			out_lines = [line]
 		}
 		else if( "/np" in line ) {
 			def space = " "

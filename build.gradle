@@ -140,6 +140,7 @@ task diff(type: Exec) {
 
     def cmd = get_diff_cmd(outputDir, dictFile)
     cmd += "; " + get_diff_cmd(outputDir, 'words.txt')
+    cmd += "; " + get_diff_cmd(outputDir, 'words_spell.txt')
     cmd += "; " + get_diff_cmd(outputDir, 'lemmas.txt')
     cmd += "; " + get_diff_cmd(outputDir, 'tags.txt')
     
