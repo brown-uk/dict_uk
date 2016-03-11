@@ -1123,7 +1123,7 @@ class Expand {
 				if (gender) {
 					checkVTagSet(gender, subtagSet, lemmaLine)
 				}
-				else if( lastVerbTags && ! line.contains(". ") ) {
+				else if( lastVerbTags && ! lemmaLine.contains(". ") ) {
     	    		log.error("verb lemma is missing " + (lastVerbTags) + " for: " + lemmaLine)
 	    	    	nonFatalErrorCount++
 	    	    	lastVerbTags = null
