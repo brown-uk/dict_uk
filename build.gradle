@@ -120,8 +120,9 @@ task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, testExpand]) {
 
     workingDir = file(outputDir)
 
-//    def opts = "--corp --indent --mfl --uncontr --stats --wordlist --time"
     def opts = "--corp --indent --mfl --stats --wordlist --time"
+    // opts += "--removeWithRegex verb.*:inf.*:coll"            // remove colloquial verb forms
+
     args "-aff", "../data/affix"
     args "-dict", "../data/dict"
     args opts.split()

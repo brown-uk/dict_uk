@@ -719,6 +719,10 @@ class Expand {
 			if( ":" + removeWithTag in line )
 				return true
 		}
+		
+		if( Args.args.removeWithRegex && Args.args.removeWithRegex.matcher(line) )
+			return true
+			
 		return false
 	}
 

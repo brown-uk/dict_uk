@@ -204,17 +204,17 @@ class Util {
 		"v_kly": "70"
 	]
 
-	static final Pattern re_verb = Pattern.compile("(in[fz]:coll|in[fz]|impr|pres|futr|past|impers)")
+	static final Pattern re_verb = Pattern.compile("(in[fz]|impr|pres|futr|past|impers)")
 	static final Map<String,String> vb_tag_key_map = [
-		"inf": "_1",
-		"inz": "_2",
-		"inf:coll": "_3",
-		"inz:coll": "_4",
-		"impr": "_5",
-		"pres": "_6",
-		"futr": "_7",
-		"past": "_8",
-		"impers": "_9"
+		"inf": 1,
+		"inz": 2,
+//		"inf:coll": 3,
+//		"inz:coll": 4,
+		"impr": 5,
+		"pres": 6,
+		"futr": 7,
+		"past": 8,
+		"impers": 9
 	]
 
 	static final Pattern GEN_RE = Pattern.compile(/:([mfnsp])(:|$)/)
@@ -450,7 +450,11 @@ class Util {
 			def verb_match = re_verb.matcher(tags)
 			if( verb_match.find() ) {
 				def tg = verb_match.group(0)
-				tags = tags.replace(tg, vb_tag_key_map[tg])
+				def order = vb_tag_key_map[tg]
+				if( tags.contains(":coll") ) {
+				    order += 1
+				}
+				tags = tags.replace(tg, "_"+order)
 			}
 			else {
 				log.error("no verb match: " + tags)
@@ -474,7 +478,8 @@ class Util {
 		try {
 			def (word, lemma, tags) = txt.split()
 
-			if( "verb:rev" in tags && ":inf" in tags && word.endsWith("сь") ) {
+			if( "verb:rev" in tags && ":inf" in tags \
+			        && (word.endsWith("сь") || word.endsWith("ться")) ) {
 				tags = tags.replace("inf", "inz")
 			}
 
@@ -535,7 +540,7 @@ class Util {
 			lemmas.add(dicEntry.lemma)
 
 			if( ! (":bad" in tag) && ! (":alt" in tag) && ! (":uncontr" in tag) && ! (word.endsWith(".")) \
-			        && ! (":inanim" in tag && ":v_kly" in tag) ) {
+			        && ! (":coll" in tag) && ! (":inanim" in tag && ":v_kly" in tag) ) {
 				spell_words.add(word)
 			}
 
@@ -556,6 +561,7 @@ class Util {
 				f << word << "\n"
 			}
 		}
+		log.info("%d total word forms", wordList.size())
 
 		def spellWordList = quickUkSort(spell_words)
 
@@ -564,6 +570,7 @@ class Util {
 				f << word << "\n"
 			}
 		}
+		log.info("%d spelling word forms", spellWordList.size())
 
 		def tagList = tags.toList().toSorted()
 		new File("tags.txt").withWriter("utf-8") { f ->

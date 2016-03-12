@@ -1,8 +1,9 @@
 package org.dict_uk.expand
 
-import org.apache.commons.cli.Option;
+import org.apache.commons.cli.Option
 
 import groovy.transform.TypeChecked
+import java.util.regex.Pattern
 
 
 //@TypeChecked
@@ -19,31 +20,14 @@ class Args {
 	String affixDir
 	String dictDir
 	List<String> removeWithTags = []
+	Pattern removeWithRegex
 	List<String> removeTags = []
 	List<String> lemmaForTags = []
 
 
 	public static Args args;
 
-	//    public static parse_old(String[] argv) {
-	//		if( "--corp" in argv )
-	//			args.corp = true
-	//		if( "--mfl" in argv )
-	//			args.mfl = true
-	//		if( "--indent" in argv )
-	//			args.indent = true
-	//		if( "--time" in argv )
-	//			args.time = true
-	//		if( "--stats" in argv )
-	//			args.stats = true
-	//		if( "--wordlist" in argv )
-	//			args.wordlist = true
-	//		if( "--log-usage" in argv )
-	//			args.log_usage = true
-	//		if( "--uncontr" in argv )
-	//			args.removeWithTags.remove("uncontr")
-	//	}
-
+	
 	public static parse(String[] argv) {
 		def cli = new CliBuilder(usage: 'expandAll <flags> or expandAll -h')
 
@@ -63,6 +47,7 @@ class Args {
 		cli._(longOpt:'log-usage', 'Generate affix usage statistics file')
 
 		cli._(longOpt:'removeWithTags', type: String, args: 1, argName:'tags', 'Remove forms with listed tags (comma separated)')
+		cli._(longOpt:'removeWithRegex', type: String, args: 1, argName:'regex', 'Remove forms that match regular expression')
 		cli._(longOpt:'removeTags', type: String, args: 1, argName:'tags', 'Remove listed tags (comma separated) from generated forms')
 		cli._(longOpt:'lemmaForTags', type: String, args: 1, argName:'tags', 'Promote generated forms with listed tags (comma separated) to separate lemmas (supported tags: advp, compr)')
 
@@ -102,9 +87,15 @@ class Args {
 				lemmaForTags = ["advp"]
 			}
 			
-			if( options.removeWithTags )
+			if( options.removeWithTags ) {
 				removeWithTags = options.removeWithTags.split(",")
+			}
 
+			if( options.removeWithRegex ) {
+				removeWithRegex = ~options.removeWithRegex
+				System.err.println("got removeWithRegex " + removeWithRegex + " - " + options.removeWithRegex)
+			}
+			
 			if( options.removeTags )
 				removeTags = options.removeTags.split(",")
 				
