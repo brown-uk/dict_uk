@@ -134,9 +134,9 @@ class ExpandComps {
 			parts[1] += " " + extra_tags
 		}
 
-		def lefts = expand.expand_line(parts[0], true)
+		def lefts = expand.expand_line(parts[0]) //, true)
 
-		def rights = expand.expand_line(parts[1], true)
+		def rights = expand.expand_line(parts[1]) //, true)
 
 		def comps = match_comps(lefts, rights)
 

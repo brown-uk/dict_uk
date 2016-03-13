@@ -2,8 +2,10 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
-version = '3.2-SNAPSHOT'
+version = '3.3-SNAPSHOT'
 group = 'org.languagetool'
+
+String ltVersion = '3.3-SNAPSHOT'
 
 String langCode="uk"
 
@@ -13,8 +15,7 @@ String outputDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageD
 String tmpDir="build/tmp"
 
 String inputDir="../../out"
-String inputDictFile="dict_rules_lt.txt"
-//String inputDictFile="dict_corp_lt.txt"
+String inputDictFile="dict_corp_lt.txt"
 
 String dstEncoding="cp1251"
 String srcEncoding="utf-8"
@@ -33,7 +34,7 @@ configurations{
 }
 
 dependencies {
-    provided 'org.languagetool:languagetool-tools:3.2-SNAPSHOT'
+    provided 'org.languagetool:languagetool-tools:' + ltVersion
 }
 
 
@@ -46,7 +47,7 @@ task createTagList(type: Exec, dependsOn: processResources) {
 
     workingDir "$projectDir"
 
-    def cmd = "cat ${srcDict} | awk '{ print \$3 }' | sort -u > ${outFile}"
+    def cmd = "cat ${srcDict} | awk '{ print \$3 }' | grep -v 'verb.*:inf.*:coll' | sort -u > ${outFile}"
 
     commandLine "sh", "-c", "${cmd}"
 }
@@ -61,7 +62,8 @@ task prepareDict(type: Exec, dependsOn: processResources) {
     workingDir "$projectDir"
 
     doFirst {
-        new File(tmpDir).mkdirs()
+        println "Preparing dict file $inputDictFile"
+        new File("$workingDir/$tmpDir").mkdirs()
     }
 
     def cmd = "cat ${srcDict} | iconv -f ${srcEncoding} -t ${dstEncoding} | tr ' ' '\\t' | LC_ALL=POSIX sort -u > ${outFile}"
@@ -148,7 +150,6 @@ task copyDictFiles(type: Copy, dependsOn: classes) {
 
 //    with dataContent
 }
-
 
 
 

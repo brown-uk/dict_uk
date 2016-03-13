@@ -25,7 +25,7 @@ class ExpandAll {
 		def out_lines = []
 
 		def dictFilePattern = ~/.*\.lst/
-		def dic_files = new File(Args.args.dictDir).eachFileMatch(dictFilePattern) { dic_file ->
+		new File(Args.args.dictDir).eachFileMatch(dictFilePattern) { dic_file ->
 			def out
 			if( dic_file.getName() == "composite.lst" ) {
 				def expand_comps = new ExpandComps(expand)
@@ -43,11 +43,16 @@ class ExpandAll {
 			out_lines.addAll(out)
 		}
 
+		if( out_lines.size() == 0 ) {
+			log.error("No valid input lines found in \"%s\"", Args.args.dictDir)
+			System.exit(1)
+		}
+		
 		log.info("Expanding %d lines", out_lines.size())
 		//    with open("word_list.txt", "w") as out_file:
 		//        out_file.write("\n".join(out_lines))
 
-		out_lines = expand.process_input(out_lines, false)
+		out_lines = expand.process_input(out_lines)
 
 		def filename
 		if( Args.args.corp ) {

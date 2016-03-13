@@ -10,13 +10,13 @@
 ваганки /np2
 вазка /n10
 варівко варівко adv
-вигибти verb:inf:perf
+вигибти /v3 :perf
 вилочний /adj
 виміна /n10
 винаймити /v1 :perf
 випендрюватися /vr1.cf.advp :imperf
 вирощати /v2 :imperf
-висказати /v1.impersW :perf
+висказати /v1.imprsNo :perf
 висказатися /vr1 :perf
 висмівати /v2 :imperf
 висміватися /vr2 :imperf
@@ -28,7 +28,7 @@
 вколо вколо prep:rv_rod|adv
 вліжно вліжно adv
 воркотливий /adj
-вхорканий /adj ^adjp:pasv:perf :v-u    # :past
+вхорканий /adj :&adjp:pasv:perf :v-u    # :past
 гейби conj:subord
 глупий /adj :xv1
 головочка /n10
@@ -53,7 +53,7 @@
 змирятися /vr2.cf.advp :imperf
 змисл /n20
 з-позаду з-позаду adv
-йменований /adj ^adjp:pasv:imperf
+йменований /adj :&adjp:pasv:imperf
 кабацький /adj
 кально кально adv
 катмає катмає predic:coll
@@ -70,13 +70,14 @@
 майбуть майбуть insert
 мізок /n22
 мість prep:rv_rod
-можний /adj
 мо мо insert
+можний /adj
 навперед prep:rv_rod:coll
 навручки навручки adv
 надцять /numr
 намість намість adv
-напуцований /adj ^adjp:pasv:perf    # :past
+напуцований /adj :&adjp:pasv:perf    # :past
+нарід /n21
 невпам'ятку невпам'ятку predic:coll
 невпотріб невпотріб predic
 немать немать predic
@@ -96,66 +97,71 @@
 неякомусь неякийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:neg
 неякоюсь неякийсь adj:f:v_oru:&pron:neg
 неякусь неякийсь adj:f:v_zna:&pron:neg
+нігде adv:&pron:emph:xp1
+нігде adv:&pron:neg:xp2
 ніже conj:coord
 нікоторий /adj :&pron:neg
-нітелень нітелень predic:coll
 ніт ніт part
+нітелень нітелень predic:coll
 оба numr:m:v_naz/v_zna
 обі numr:f:v_naz/v_zna
-обікласти verb:inf:perf
+обруч adv
 обсіч adv
-одітий /adj ^adjp:pasv:perf    # :past
+оглав /n20.p
+одвір adv
+одіж /n32
+одітий /adj :&adjp:pasv:perf    # :past
 однакий /adj
-озутий /adj ^adjp:pasv:perf    # :past
+озутий /adj :&adjp:pasv:perf    # :past
 окроме prep:rv_rod
 онакий /adj :&pron:def
-опірений /adj ^adjp:pasv:perf    # :past
-опостін prep:rv_rod
-опріче prep:rv_rod
+опірений /adj :&adjp:pasv:perf    # :past
+опостін adv|prep:rv_rod
+опріче adv|prep:rv_rod
 опроче adv|prep:rv_rod
 осьмий /adj
-отсей отсей adj:m:v_naz/v_zna:&pron:dem
 отсе отсей adj:n:v_zna:&pron:dem
-отсими отсей adj:p:v_oru:&pron:dem
+отсей отсей adj:m:v_naz/v_zna:&pron:dem
 отсим отсей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+отсими отсей adj:p:v_oru:&pron:dem
 отсих отсей adj:p:v_rod/v_zna/v_mis:&pron:dem
+отсі отсей adj:p:v_naz/v_zna/v_mis:&pron:dem
 отсієї отсей adj:f:v_rod:&pron:dem
 отсією отсей adj:f:v_oru:&pron:dem
 отсій отсей adj:f:v_dav/v_mis:&pron:dem
 отсім отсей adj:m:v_mis//n:v_mis:&pron:dem
-отсі отсей adj:p:v_naz/v_zna/v_mis:&pron:dem
 отсього отсей adj:m:v_rod/v_zna//n:v_rod:&pron:dem
 отсьому отсей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
 отсю отсей adj:f:v_zna:&pron:dem
 отся отсей adj:f:v_naz:&pron:dem
-оттакий /adj :&pron:dem
 отта оттой adj:f:v_naz:&pron:dem
+оттакий /adj :&pron:dem
 отте оттой adj:n:v_naz/v_zna:&pron:dem
 оттим conj:subord
-оттими оттой adj:p:v_oru:&pron:dem
 оттим оттой adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+оттими оттой adj:p:v_oru:&pron:dem
 оттих оттой adj:p:v_rod/v_zna/v_mis:&pron:dem
+отті оттой adj:p:v_naz/v_zna:&pron:dem
 оттієї оттой adj:f:v_rod:&pron:dem
 оттією оттой adj:f:v_oru:&pron:dem
 оттій оттой adj:f:v_dav/v_mis:&pron:dem
 оттім оттой adj:m:v_mis//n:v_mis:&pron:dem
-отті оттой adj:p:v_naz/v_zna:&pron:dem
 оттого оттой adj:m:v_rod/v_zna//n:v_rod:&pron:dem
 оттої оттой adj:f:v_rod:&pron:dem
 оттой оттой adj:m:v_naz/v_zna:&pron:dem
 оттому оттой adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
 оттою оттой adj:f:v_oru:&pron:dem
 отту оттой adj:f:v_zna:&pron:dem
-отцей отцей adj:m:v_naz/v_zna:&pron:dem
 отце отцей adj:n:v_zna:&pron:dem
-отцими отцей adj:p:v_oru:&pron:dem
+отцей отцей adj:m:v_naz/v_zna:&pron:dem
 отцим отцей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+отцими отцей adj:p:v_oru:&pron:dem
 отцих отцей adj:p:v_rod/v_zna/v_mis:&pron:dem
+отці отцей adj:p:v_naz/v_zna/v_mis:&pron:dem
 отцієї отцей adj:f:v_rod:&pron:dem
 отцією отцей adj:f:v_oru:&pron:dem
 отцій отцей adj:f:v_dav/v_mis:&pron:dem
 отцім отцей adj:m:v_mis//n:v_mis:&pron:dem
-отці отцей adj:p:v_naz/v_zna/v_mis:&pron:dem
 отцього отцей adj:m:v_rod/v_zna//n:v_rod:&pron:dem
 отцьому отцей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
 отцю отцей adj:f:v_zna:&pron:dem
@@ -165,34 +171,35 @@
 півперек prep:rv_rod
 півтретя numr:f:v_naz/v_zna
 підсичувати /v1.cf.advp :imperf
-подовш prep:rv_rod
+подовш adv|prep:rv_rod
 полегша /n10.p1
 помісь conj:subord
 помісь part
 попсути /v2 :perf
 посереду prep:rv_rod
+посланіє /n2n
 почерез prep:rv_zna
 притім conj:subord:bad
 пріч prep:rv_rod:coll
-простибіг простибіг insert
 простибі простибі insert
+простибіг простибіг insert
 против prep:rv_rod
 рибно рибно adv
 рік-річно рік-річно adv
 святешний /adj
-сей сей adj:m:v_naz/v_zna:&pron:dem
 се сей adj:n:v_naz/v_zna:&pron:dem
+сей сей adj:m:v_naz/v_zna:&pron:dem
 силяти /v2.cf.advp :imperf
-сими сей adj:p:v_oru:&pron:dem
 сим сей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+сими сей adj:p:v_oru:&pron:dem
 сих сей adj:p:v_rod/v_zna/v_mis:&pron:dem
+сі сей adj:p:v_naz/v_zna/v_mis:&pron:dem
 сієї сей adj:f:v_rod:&pron:dem
 сією сей adj:f:v_oru:&pron:dem
 сій сей adj:f:v_dav/v_mis:&pron:dem
 сількось сількось adv
 сількось сількось insert
 сім сей adj:m:v_mis//n:v_mis:&pron:dem
-сі сей adj:p:v_naz/v_zna/v_mis:&pron:dem
 скілька скілька numr:nv:coll
 скілько numr:p:v_naz/v_zna
 спечно спечно adv
@@ -224,26 +231,26 @@
 упоминатися /vr2 :imperf
 упомки упомки predic
 упруг /n20.a
-урадуваний /adj ^adjp:pasv:perf    # :past
-уряджений /adj ^adjp:pasv:perf    # :past
-успокоєний /adj ^adjp:pasv:perf    # :past
-ухорканий /adj ^adjp:pasv:perf :v-u    # :past
+урадуваний /adj :&adjp:pasv:perf    # :past
+уряджений /adj :&adjp:pasv:perf    # :past
+успокоєний /adj :&adjp:pasv:perf    # :past
+ухорканий /adj :&adjp:pasv:perf :v-u    # :past
 фашистівський /adj
 хватаний /adj
 хоть conj:subord
 хоть part
 хотя part
 хресійбо excl
-цьоця /n10.<
+цьоця /n10.ku.<
+чортма чортма predic:coll
+чорт-ма чорт-ма predic:coll
 чортмає чортмає predic:coll
 чорт-мало чорт-мало predic:coll
 чорт-матиме чорт-матиме predic:coll
-чортма чортма predic:coll
-чорт-ма чорт-ма predic:coll
 чуткість /n30
 шияка /n10
 шкварко adv
-шкло /n2n :np
+шкло /n2n :np               #> скло
 штири numr:p:v_naz/v_zna
 штирнадцять штирнадцять numr:nv
 шушон /n20.a

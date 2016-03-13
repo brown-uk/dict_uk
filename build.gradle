@@ -12,6 +12,8 @@ String affixDir="data/affix"
 String outputDir="out"
 String prevDir="../../out/prev"
 
+String testDir="test"
+String testPrevDir="$testDir/prev"
 
 repositories {
     mavenCentral()
@@ -77,35 +79,56 @@ task sortDict(type: JavaExec) {
 	args files.split()
 }
 
+//
+// Testing targets
+//
+
+task testExpand(type: JavaExec, dependsOn: [reverseAffix, classes]) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = "org.dict_uk.expand.ExpandAll"
+
+    workingDir = file(testDir)
+
+    def opts = "--corp --indent --mfl --stats --wordlist"
+    args "-aff", "../data/affix"
+    args "-dict", "."
+    args opts.split()
+
+    doLast {
+        def file="dict_corp_lt.txt"
+        def noTestOutputChange = (new File("$testDir/$file").text == new File("$testPrevDir/$file").text)
+        assert noTestOutputChange
+
+        file="dict_corp_vis.txt"
+        def noTestVisOutputChange = (new File("$testDir/$file").text == new File("$testPrevDir/$file").text)
+        assert noTestVisOutputChange
+
+        file="dict_corp_vis.txt"
+        def noTestTagsOutputChange = (new File("$testDir/tags.txt").text == new File("$testPrevDir/tags.txt").text)
+        assert noTestTagsOutputChange
+    }
+}
+
 
 //
 // Main targets
 //
 
-task expandForCorp(type: JavaExec, dependsOn: reverseAffix) {
+task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, testExpand]) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
 
     workingDir = file(outputDir)
 
-//    def opts = "--corp --indent --mfl --uncontr --stats --wordlist --time"
     def opts = "--corp --indent --mfl --stats --wordlist --time"
+    // opts += "--removeWithRegex verb.*:inf.*:coll"            // remove colloquial verb forms
+
     args "-aff", "../data/affix"
     args "-dict", "../data/dict"
     args opts.split()
+
+    jvmArgs "-Xmx5g"
 //    jvmArgs "-agentlib:jdwp=transport=dt_socket,server=y,address=8000,suspend=n"
-}
-
-task expandForRules(type: JavaExec, dependsOn: reverseAffix) {
-    classpath = sourceSets.main.runtimeClasspath
-    main = "org.dict_uk.expand.ExpandAll"
-
-    workingDir = file(outputDir)
-
-    def opts = "--rules --mfl --wordlist --time --log-usage"
-    args "-aff", "../data/affix"
-    args "-dict", "../data/dict"
-    args opts.split()
 }
 
 def get_diff_cmd(outputDir, file) {
@@ -113,20 +136,12 @@ def get_diff_cmd(outputDir, file) {
 }
 
 
-task rulesDiff(type: Exec) {
-    def dictFile="dict_rules_lt.txt"
-
-    def cmd = get_diff_cmd(outputDir, dictFile)
-    cmd += "; " + get_diff_cmd(outputDir, 'words_spell.txt')
-
-    commandLine "sh", "-c", "${cmd}"
-}
-
-task corpDiff(type: Exec) {
+task diff(type: Exec) {
     def dictFile="dict_corp_lt.txt"
 
     def cmd = get_diff_cmd(outputDir, dictFile)
     cmd += "; " + get_diff_cmd(outputDir, 'words.txt')
+    cmd += "; " + get_diff_cmd(outputDir, 'words_spell.txt')
     cmd += "; " + get_diff_cmd(outputDir, 'lemmas.txt')
     cmd += "; " + get_diff_cmd(outputDir, 'tags.txt')
     
@@ -136,33 +151,30 @@ task corpDiff(type: Exec) {
     commandLine "sh", "-c", "${cmd}"
 }
 
-//
-// Testing targets
-//
+task expand(dependsOn: expandForCorp) {
+}
 
-task testForCorp(type: JavaExec, dependsOn: reverseAffix) {
+
+task expandInteractive(type: JavaExec, dependsOn: reverseAffix) {
     classpath = sourceSets.main.runtimeClasspath
-    main = "org.dict_uk.expand.ExpandAll"
+    main = "org.dict_uk.expand.Expand"
 
-    workingDir = file("out/test")
+    workingDir = file(outputDir)
+    standardInput = System.in
 
-    def opts = "--corp --indent --mfl --stats --wordlist"
-    args "-aff", "../../data/affix"
-    args "-dict", "."
+    def opts = "--corp --indent -f"
+    args "-aff", "../data/affix"
+    args "-dict", "-"
     args opts.split()
 }
 
-task testForRules(type: JavaExec, dependsOn: reverseAffix) {
-    classpath = sourceSets.main.runtimeClasspath
-    main = "org.dict_uk.expand.ExpandAll"
 
-    workingDir = file("out/test")
+//
+// deploy LT dict
+//
 
-    def opts = "--rules --mfl --log-usage"
-    args "-aff", "../../data/affix"
-    args "-dict", "."
-    args opts.split()
+task deployToLT(type: GradleBuild) {
+    dir = 'distr/language-dict-uk'
+    tasks = ['copyDictFiles']
 }
 
-task testExpand(dependsOn: [testForCorp, testForRules]) {
-}

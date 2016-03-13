@@ -26,6 +26,8 @@ class DicEntry {
 	  }
 		
 	  def parts = line.split()
+	  assert parts.size() == 3
+	  	
 
 	  return new DicEntry(parts[0], parts[1], Arrays.asList(parts[2].split(":")), parts[2], comment_)
 	}

@@ -1,0 +1,30 @@
+Всього лем: 247
+  словникових лем (без advp, без омонімів imperf/perf та adjp/adj) 226
+
+Частоти за тегами:
+adj 51
+     compb 7
+     compr 8
+     imperf 3
+     perf 1
+     super 24
+adv 38
+     compb 6
+advp 20
+     imperf 11
+     perf 9
+noun 114
+     anim 64
+     fname 5
+     inanim 49
+     lname 20
+     nv 9
+     patr 4
+numr 2
+     nv 1
+prep 1
+verb 21
+     imperf 11
+     perf 10
+
+Власних назв (без абревіатур): 31

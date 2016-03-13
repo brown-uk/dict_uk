@@ -26,13 +26,6 @@
 Великоднями Великдень noun:p:v_oru
 Великоднях Великдень noun:p:v_mis
 
-# 0 - о (р.в.мн.)
-судорги судорга noun:p:v_naz/v_zna
-судорог судорга noun:p:v_rod
-судоргам судорга noun:p:v_dav
-судоргами судорга noun:p:v_oru
-судоргах судорга noun:p:v_mis
-
 
 # власні
 Євангеліє Євангеліє noun:n:v_naz/v_zna
@@ -41,79 +34,44 @@
 Євангелії Євангеліє noun:n:v_mis
 Євангелієм Євангеліє noun:n:v_oru
 Євангелій Євангеліє noun:p:v_rod
-Євангеліям Євангеліє noun:n:v_dav
-Євангеліями Євангеліє noun:n:v_oru
-Євангеліях Євангеліє noun:n:v_mis
+Євангеліям Євангеліє noun:p:v_dav
+Євангеліями Євангеліє noun:p:v_oru
+Євангеліях Євангеліє noun:p:v_mis
 
+преподобіє преподобіє noun:n:v_naz/v_zna
+преподобія преподобіє noun:n:v_rod//p:v_naz/v_zna
+преподобію преподобіє noun:n:v_dav/v_mis
+преподобії преподобіє noun:n:v_mis
+преподобієм преподобіє noun:n:v_oru
+преподобій преподобіє noun:p:v_rod
+преподобіям преподобіє noun:p:v_dav
+преподобіями преподобіє noun:p:v_oru
+преподобіях преподобіє noun:p:v_mis
 
-# додаткові форми
-сосон сосна noun:p:v_rod
-відьом відьма noun:p:v_rod/v_zna:anim
-одіж одежа noun:f:v_naz/v_zna
-воріженьки вороженько noun:p:v_naz:anim:rare
-воєн війна noun:p:v_rod
-грошима гроші noun:p:v_oru:ns
-грішми гроші noun:p:v_oru:ns
-#басищеві басище noun:m:v_dav//n:v_dav  # в ГС цієї форми немає
-дровець дрівця noun:p:v_rod:ns
+чернець чернець noun:anim:m:v_naz
+ченця чернець noun:anim:m:v_rod
+ченцеві чернець noun:anim:m:v_dav
+ченцю чернець noun:anim:m:v_dav
+ченця чернець noun:anim:m:v_zna
+ченцем чернець noun:anim:m:v_oru
+ченцеві чернець noun:anim:m:v_mis
+ченці чернець noun:anim:m:v_mis
+ченцю чернець noun:anim:m:v_mis
+ченче чернець noun:anim:m:v_kly
+ченці чернець noun:anim:p:v_naz
+ченців чернець noun:anim:p:v_rod
+ченцям чернець noun:anim:p:v_dav
+ченців чернець noun:anim:p:v_zna
+ченцями чернець noun:anim:p:v_oru
+ченцях чернець noun:anim:p:v_mis
+ченці чернець noun:anim:p:v_kly
 
-крильми крило noun:p:v_oru
-слізьми сльоза noun:p:v_oru
-коліньми коліно noun:p:v_oru
-гістьми гість noun:p:v_oru:anim
-кістьми кість noun:p:v_oru
-свиньми свиня noun:p:v_oru:anim
-ворітьми ворота noun:p:v_oru:ns
-воротям ворота noun:p:v_dav:ns
-воротях ворота noun:p:v_mis:ns
+стекла скло noun:p:v_naz/v_zna      #> скла
+стекол скло noun:p:v_rod            #> скел
+стеклам скло noun:p:v_dav/v_mis     #> склам
+стеклами скло noun:p:v_oru          #> склами
+стеклах скло noun:p:v_mis           #> склах
 
-губів губа noun:p:v_rod
-зморщок зморшка noun:p:v_rod
-легенів легеня noun:p:v_rod
-панотче панотець noun:m:v_kly:anim
-старче старець noun:m:v_kly:anim
-чернець ченець noun:m:v_naz:anim
-мамів мама noun:p:v_rod:anim
-
-панове пан noun:p:v_kly:anim
-
-яловець ялівець noun:m:v_naz/v_zna
-
-відом відом noun:m:v_naz:rare
-відома відом noun:m:v_rod
-відому відом noun:m:v_dav:rare
-відом відом noun:m:v_zna:rare
-відомом відом noun:m:v_oru
-відомі відом noun:m:v_mis:rare
-
-штаням штани noun:p:v_dav:ns
-штаньми штани noun:p:v_oru:ns
-штанями штани noun:p:v_oru:ns
-штанях штани noun:p:v_mis:ns
-
-дошки дошка noun:p:v_naz/v_zna
-дощок дошка noun:p:v_rod
-дошкам дошка noun:p:v_dav
-дошками дошка noun:p:v_oru
-дошках дошка noun:p:v_mis
-
-
-Божечко Божечко noun:m:v_kly:anim
-Божечку Божечко noun:m:v_kly:anim
-
-# давні форми
-житіє житіє noun:n:v_naz/v_zna
-бельмес бельмес noun:m:v_naz:rare
-бельмеса бельмес noun:m:v_rod
-язицех язик noun:p:v_mis
-властен властен predic
-
-давніх-давен давніх-давен noun:p:v_rod:ns
-
-Руси Русь noun:f:v_rod:alt
-Кишиневі Кишинів noun:m:v_mis
-роб роб noun:m:v_naz/v_zna
-робом роб noun:m:v_oru
 
 очі око noun:p:v_naz/v_zna
 очей око noun:p:v_rod
@@ -203,7 +161,7 @@
 очком очко noun:n:v_oru:xp2
 очку очко noun:n:v_mis:xp2
 очки очко noun:p:v_naz:xp2
-очок очко noun:p:v_rod:xp1
+очок очко noun:p:v_rod:xp2
 очкам очко noun:p:v_dav:xp2
 очки очко noun:p:v_zna:xp2
 очками очко noun:p:v_oru:xp2
@@ -211,7 +169,7 @@
 
 
 Господь Господь noun:m:v_naz:anim
-Господа Господь noun:m:v_rod:anim
+Господа Господь noun:m:v_rod/v_zna:anim
 Господові Господь noun:m:v_dav/v_mis:anim
 Господеві Господь noun:m:v_dav/v_mis:anim
 Господу Господь noun:m:v_dav:anim
@@ -227,21 +185,33 @@
 Христі Христос noun:m:v_mis:anim
 Христе Христос noun:m:v_kly:anim
 
-Донець Донець noun:m:v_naz/v_zna
-Дінця Донець noun:m:v_rod
-Дінцю Донець noun:m:v_dav/v_mis
-Дінцем Донець noun:m:v_oru
-Дінці Донець noun:m:v_mis
-
 четвер четвер noun:m:v_naz/v_zna
 четверга четвер noun:m:v_rod
-четвергу четвер noun:m:v_dav/v_mis
+четвергу четвер noun:m:v_dav/v_mis/v_kly
 четвергові четвер noun:m:v_dav
 четвергом четвер noun:m:v_oru
-четверги четвер noun:p:v_naz/v_zna
+четверже четвер noun:m:v_kly
+четверги четвер noun:p:v_naz/v_zna/v_kly
 четвергах четвер noun:p:v_mis
+четвергами четвер noun:p:v_oru
 четвергів четвер noun:p:v_rod
 четвергам четвер noun:p:v_dav
+
+мати мати noun:anim:f:v_naz
+матір мати noun:anim:f:v_naz:rare
+матері мати noun:anim:f:v_rod
+матері мати noun:anim:f:v_dav
+матір мати noun:anim:f:v_zna
+матір'ю мати noun:anim:f:v_oru
+матері мати noun:anim:f:v_mis
+мати мати noun:anim:f:v_kly
+матері мати noun:anim:p:v_naz
+матерів мати noun:anim:p:v_rod
+матерям мати noun:anim:p:v_dav
+матерів мати noun:anim:p:v_zna
+матерями мати noun:anim:p:v_oru
+матерях мати noun:anim:p:v_mis
+матері мати noun:anim:p:v_kly
 
 плечі плече noun:p:v_naz/v_zna
 плечей плече noun:p:v_rod
@@ -262,18 +232,21 @@
 хабарах хабар noun:p:v_mis
 хабарі хабар noun:p:v_naz
 хабарі хабар noun:p:v_zna
+
 комарів комар noun:p:v_rod:anim
 комарів комар noun:p:v_zna:anim
 комарам комар noun:p:v_dav:anim
 комарами комар noun:p:v_oru:anim
 комарах комар noun:p:v_mis:anim
 комарі комар noun:p:v_naz:anim
+
 пластирів пластир noun:p:v_rod
 пластирам пластир noun:p:v_dav
 пластирами пластир noun:p:v_oru
 пластирах пластир noun:p:v_mis
 пластирі пластир noun:p:v_naz
 пластирі пластир noun:p:v_zna
+
 лейкопластирів лейкопластир noun:p:v_rod
 лейкопластирам лейкопластир noun:p:v_dav
 лейкопластирами лейкопластир noun:p:v_oru
@@ -314,6 +287,65 @@
 війям війя noun:n:v_oru
 війї війя noun:n:v_mis
 
+відом відом noun:m:v_naz:rare
+відома відом noun:m:v_rod
+відому відом noun:m:v_dav:rare
+відом відом noun:m:v_zna:rare
+відомом відом noun:m:v_oru
+відомі відом noun:m:v_mis:rare
+
+штаням штани noun:p:v_dav:ns
+штаньми штани noun:p:v_oru:ns
+штанями штани noun:p:v_oru:ns
+штанях штани noun:p:v_mis:ns
+
+дошки дошка noun:p:v_naz/v_zna
+дощок дошка noun:p:v_rod
+дошкам дошка noun:p:v_dav
+дошками дошка noun:p:v_oru
+дошках дошка noun:p:v_mis
+
+
+# додаткові форми
+
+сосон сосна noun:p:v_rod
+воріженьки вороженько noun:p:v_naz:anim:rare
+дровець дрівця noun:p:v_rod:ns
+судорог судорга noun:p:v_rod:bad
+плахіт плахта noun:p:v_rod
+плахот плахта noun:p:v_rod
+
+грошима гроші noun:p:v_oru:ns
+грішми гроші noun:p:v_oru:ns
+крильми крило noun:p:v_oru
+слізьми сльоза noun:p:v_oru
+коліньми коліно noun:p:v_oru
+гістьми гість noun:p:v_oru:anim
+кістьми кість noun:p:v_oru
+свиньми свиня noun:p:v_oru:anim
+ворітьми ворота noun:p:v_oru:ns
+
+воротям ворота noun:p:v_dav:ns
+воротях ворота noun:p:v_mis:ns
+
+зморщок зморшка noun:p:v_rod
+
+панове пан noun:p:v_kly:anim
+
+Божечко /n20.<
+Божечко Божечко noun:m:v_kly:anim:fname
+
+# давні форми
+бельмес бельмес noun:m:v_naz:rare
+бельмеса бельмес noun:m:v_rod
+язицех язик noun:p:v_mis
+
+давніх-давен давніх-давен noun:p:v_rod:ns
+
+Руси Русь noun:f:v_rod:alt
+роб роб noun:m:v_naz/v_zna
+робом роб noun:m:v_oru
+
 кінця-краю кінця-краю noun:m:v_rod
 предку-віку предку-віку noun:m:v_zna
 
@@ -351,6 +383,23 @@
 будьмо бути verb:impr:p:2:imperf
 будьте бути verb:impr:p:3:imperf
 бувши бути advp:imperf
+
+пробути пробути verb:inf:perf
+пробуду пробути verb:futr:s:1:perf
+пробудеш пробути verb:futr:s:2:perf
+пробуде пробути verb:futr:s:3:perf
+пробудемо пробути verb:futr:p:1:perf
+пробудем пробути verb:futr:p:1:perf
+пробудете пробути verb:futr:p:2:perf
+пробудуть пробути verb:futr:p:3:perf
+пробув пробути verb:past:m:perf
+пробула пробути verb:past:f:perf
+пробуло пробути verb:past:n:perf
+пробули пробути verb:past:p:perf
+пробудь пробути verb:impr:s:2:perf
+пробудьмо пробути verb:impr:p:2:perf
+пробудьте пробути verb:impr:p:3:perf
+пробувши пробути advp:perf
 
 боронь боронити verb:impr:s:2:imperf:coll
 
@@ -443,106 +492,15 @@
 ввилися ввитися verb:rev:past:p:perf
 ввившись ввитися advp:rev:perf
 
-вити /v3.cf.impers2 :imperf
+вити /v3.cf.imprsTo :imperf
 в'ючи вити advp:imperf
 
 витися /vr3.cf :imperf
 в'ючись витися advp:rev:imperf
 
-
-# з -ну- та без
-
-засохти засохти verb:inf:perf
-загрузти загрузти verb:inf:perf
-заслабти заслабти verb:inf:perf
-досохти досохти verb:inf:perf
-замерзти замерзти verb:inf:perf
-вимокти вимокти verb:inf:perf
-заклякти заклякти verb:inf:perf
-вичахти вичахти verb:inf:perf
-замокти замокти verb:inf:perf
-
-засохши засохти advp:perf
-загрузши загрузти advp:perf
-заслабши заслабти advp:perf
-досохши досохти advp:perf
-замерзши замерзти advp:perf
-вимокши вимокти advp:perf
-заклякши заклякти advp:perf
-вичахши вичахти advp:perf
-замокши замокти advp:perf
-
-# основа з -ну- а м.ч. без
-виникнути виникнути verb:inf:perf
-виникну виникнути verb:futr:s:1:perf
-виникнеш виникнути verb:futr:s:2:perf
-виникне виникнути verb:futr:s:3:perf
-виникнем виникнути verb:futr:p:1:perf
-виникнемо виникнути verb:futr:p:1:perf
-виникнете виникнути verb:futr:p:2:perf
-виникнуть виникнути verb:futr:p:3:perf
-виник виникнути verb:past:m:perf
-#виникнув виникнути verb:past:m:perf
-виникла виникнути verb:past:f:perf
-#виникнула виникнути verb:past:f:perf
-виникло виникнути verb:past:n:perf
-#виникнуло виникнути verb:past:n:perf
-виникли виникнути verb:past:p:perf
-#виникнули виникнути verb:past:p:perf
-виникнувши виникнути advp:perf
-виникши виникнути advp:perf
-
-
-# перетин з довшими формами з -ну- в теперішньому
-тяти /v1.cf :imperf
-витяти /v1.impers2 :perf
-витятися /vr1 :perf
-дотяти /v1 :perf
-підтяти /v1.impers2 :perf
-
-
-жати /v6 :imperf
-жатися /vr6 :imperf    # жну
-зажати /v6 :perf:xp2        # зажну
-зажати /v3.impers2 :perf:xp1    # зажну
-нажати /v6 :perf
-нажатися /vr6 :perf    # нажну
-пожати /v6 :perf
-пожатися /vr6 :perf    # пожну
-пережати /v6 :perf
-пережатися /vr6 :perf    # пережну
-
-# !verb:perf
-#зжати/89
-
-
-
-
-
-відвологти відвологти verb:inf:perf
-
-
-# не працюють правила при повній заміні слів (чергування з початку слова)
-
-гнати /v3.cf :imperf
-гнатися /vr3.cf :imperf
-
-слати /v1.cf :imperf
-
-# !verb:imperf
-#шлю шле шлете шли шлімо шлемо шлем шліть шлють шлеш  # spell-only
-
-
-# поява і
-
-# вві -> в, уві -> у + поява е
-
-# чергування с->з появою і
-
-# обмежені форми
-вивітрити вивітрити verb:inf:perf:xp2    # зруйнувати  про дію вітру
-вивітрить вивітрити verb:futr:s:3:perf:xp2
-вивітрило вивітрити verb:past:n:perf:xp2
+велено веліти verb:imperf:impers
+проклято проклясти verb:perf:impers
+розіп'ято розіп'ясти verb:perf:impers
 
 
 варт варт predic
@@ -550,11 +508,12 @@
 # короткі прикметники
 безвинен безвинний adj:m:v_naz/v_zna:short
 благословен благословенний adj:m:v_naz/v_zna:short
-#блажен блаженний adj:m:v_naz/v_zna:short
+блажен блаженний adj:m:v_naz/v_zna:short
 варт вартий adj:m:v_naz/v_zna:short
 винен винний adj:m:v_naz/v_zna:short
 #вістен вістний adj:m:v_naz/v_zna:short
 вістен вісний adj:m:v_naz/v_zna:short:rare
+властен власний adj:m:v_naz/v_zna:short:rare
 годен годний adj:m:v_naz/v_zna:short:coll
 дивен дивний adj:m:v_naz/v_zna:short
 достоїн достойний adj:m:v_naz/v_zna:short
@@ -582,8 +541,8 @@
 ненавистен ненависний adj:m:v_naz/v_zna:short
 певен певний adj:m:v_naz/v_zna:short
 повен повний adj:m:v_naz/v_zna:short
-#повинен повинний adj:m:v_naz/v_zna:short
-#потрібен потрібний adj:m:v_naz/v_zna:short
+повинен повинний adj:m:v_naz/v_zna:short
+потрібен потрібний adj:m:v_naz/v_zna:short
 прекрасен прекрасний adj:m:v_naz/v_zna:short
 привинен привинний adj:m:v_naz/v_zna:short
 провинен провинний adj:m:v_naz/v_zna:short
@@ -613,7 +572,6 @@
 жнучи жати advp:imperf
 зболівши зболіти advp:perf
 ідучи іти advp:imperf
-іржучи іржати advp:imperf
 їдучи їхати advp:imperf
 йдучи йти advp:imperf
 кладучи класти advp:imperf

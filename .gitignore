@@ -6,3 +6,6 @@
 out/prev/*
 out/*.txt
 .*
+.classpath
+.project
+.pydevproject

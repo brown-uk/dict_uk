@@ -9,17 +9,17 @@ group adj
 ий	ьому			#   білолицьому 	          @ adj:m:v_dav/v_mis//n:v_dav/v_mis
 ий	им			#   відісланим 	      @ adj:m:v_oru//n:v_oru//p:v_dav
 ий	ім			#   відісланім 		        @ adj:m:v_mis//n:v_mis
-ий	я			#   білолиця 	                    @ adj:f:v_naz
-ий	яя			#   білолицяя 	                    @ adj:f:v_naz:uncontr
+ий	я			#   білолиця 	                    @ adj:f:v_naz/v_kly
+ий	яя			#   білолицяя 	                    @ adj:f:v_naz/v_kly:uncontr
 ий	ьої			#   білолицьої 	            @ adj:f:v_rod
 ий	ій			#   відісланій 	            @ adj:f:v_dav/v_mis
 ий	ю			#   білолицю 	                    @ adj:f:v_zna
 ий	юю			#   білолицюю 	                    @ adj:f:v_zna:uncontr
 ий	ьою			#   білолицьою 	            @ adj:f:v_oru
-ий	е			#   відіслане 	            @ adj:n:v_naz/v_zna
-ий	еє			#   відісланеє 	            @ adj:n:v_naz/v_zna:uncontr
-ий	і			#   відіслані 	            @ adj:p:v_naz/v_zna
-ий	ії			#   відісланії 	            @ adj:p:v_naz/v_zna:uncontr
+ий	е			#   відіслане 	            @ adj:n:v_naz/v_zna/v_kly
+ий	еє			#   відісланеє 	            @ adj:n:v_naz/v_zna/v_kly:uncontr
+ий	і			#   відіслані 	            @ adj:p:v_naz/v_zna/v_kly
+ий	ії			#   відісланії 	            @ adj:p:v_naz/v_zna/v_kly:uncontr
 ий	их			#   відісланих 	            @ adj:p:v_rod/v_zna/v_mis
 ий	ими			#   відісланими 	            @ adj:p:v_oru
 
@@ -28,17 +28,17 @@ group adj
 ий	ому			#   відісланому 	          @ adj:m:v_dav/v_mis//n:v_dav/v_mis
 ий	им			#   відісланим 	      @ adj:m:v_oru//n:v_oru//p:v_dav
 ий	ім			#   відісланім 		        @ adj:m:v_mis//n:v_mis
-ий	а			#   відіслана 	            @ adj:f:v_naz
-ий	ая			#   відісланая 	            @ adj:f:v_naz:uncontr
+ий	а			#   відіслана 	            @ adj:f:v_naz/v_kly
+ий	ая			#   відісланая 	            @ adj:f:v_naz/v_kly:uncontr
 ий	ої			#   відісланої 	            @ adj:f:v_rod
 ий	ій			#   відісланій 	            @ adj:f:v_dav/v_mis
 ий	у			#   відіслану 	            @ adj:f:v_zna
 ий	ую			#   відісланую 	            @ adj:f:v_zna:uncontr
 ий	ою			#   відісланою 	            @ adj:f:v_oru
-ий	е			#   відіслане 	            @ adj:n:v_naz/v_zna
-ий	еє			#   відісланеє 	            @ adj:n:v_naz/v_zna:uncontr
-ий	і			#   відіслані 	            @ adj:p:v_naz/v_zna
-ий	ії			#   відісланії 	            @ adj:p:v_naz/v_zna:uncontr
+ий	е			#   відіслане 	            @ adj:n:v_naz/v_zna/v_kly
+ий	еє			#   відісланеє 	            @ adj:n:v_naz/v_zna/v_kly:uncontr
+ий	і			#   відіслані 	            @ adj:p:v_naz/v_zna/v_kly
+ий	ії			#   відісланії 	            @ adj:p:v_naz/v_zna/v_kly:uncontr
 ий	их			#   відісланих 	            @ adj:p:v_rod/v_zna/v_mis
 ий	ими			#   відісланими 	            @ adj:p:v_oru
 
@@ -46,18 +46,18 @@ group adj
 ій	ього			#   синього 	                    @ adj:m:v_rod/v_zna//n:v_rod
 ій	ьому			#   синьому 	                    @ adj:m:v_dav/v_mis//n:v_dav/v_mis
 ій	ім			#   синім 		     @ adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
-ій	я			#   синя 		                    @ adj:f:v_naz
-ій	яя			#   синяя 		                    @ adj:f:v_naz:uncontr
+ій	я			#   синя 		                    @ adj:f:v_naz/v_kly
+ій	яя			#   синяя 		                    @ adj:f:v_naz/v_kly:uncontr
 ій	ьої			#   синьої		            @ adj:f:v_rod
 ій	ю			#   синю 		                    @ adj:f:v_zna
 ій	юю			#   синюю 		                    @ adj:f:v_zna:uncontr
 ій	ьою			#   синьою		            @ adj:f:v_oru
-ій	є			#   синє 		                    @ adj:n:v_naz/v_zna
-ій	єє			#   синєє 		                    @ adj:n:v_naz/v_zna:uncontr
+ій	є			#   синє 		                    @ adj:n:v_naz/v_zna/v_kly
+ій	єє			#   синєє 		                    @ adj:n:v_naz/v_zna/v_kly:uncontr
 
 [ії]й:
-й	0			#   сині 		                    @ adj:p:v_naz/v_zna
-й	ї			#   синії 		                    @ adj:p:v_naz/v_zna:uncontr
+й	0			#   сині 		                    @ adj:p:v_naz/v_zna/v_kly
+й	ї			#   синії 		                    @ adj:p:v_naz/v_zna/v_kly:uncontr
 й	х			#   синіх 		        @ adj:p:v_rod/v_zna/v_mis
 й	ми			#   синіми		            @ adj:p:v_oru
 
@@ -65,14 +65,14 @@ group adj
 їй	його			#   безкрайого 	          @ adj:m:v_rod/v_zna//n:v_rod
 їй	йому			#   безкрайому 	          @ adj:m:v_dav/v_mis//n:v_dav/v_mis
 їй	їм			#   безкраїм 		   @ adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
-їй	я			#   безкрая 		            @ adj:f:v_naz
-їй	яя			#   безкраяя 		            @ adj:f:v_naz:uncontr
+їй	я			#   безкрая 		            @ adj:f:v_naz/v_kly
+їй	яя			#   безкраяя 		            @ adj:f:v_naz/v_kly:uncontr
 їй	йої			#   безкрайої		            @ adj:f:v_rod
 їй	ю			#   безкраю 		            @ adj:f:v_zna
 їй	юю			#   безкраюю 		            @ adj:f:v_zna:uncontr
 їй	йою			#   безкрайою		            @ adj:f:v_oru
-їй	є			#   безкрає 		            @ adj:n:v_naz/v_zna
-їй	єє			#   безкраєє 		            @ adj:n:v_naz/v_zna:uncontr
+їй	є			#   безкрає 		            @ adj:n:v_naz/v_zna/v_kly
+їй	єє			#   безкраєє 		            @ adj:n:v_naz/v_zna/v_kly:uncontr
 
 #  середнього роду
 е:
@@ -80,10 +80,16 @@ group adj
 е	ому			#   дизпальному 	          @ adj:n:v_dav/v_mis:np
 е	им			#   дизпальним 	            @ adj:n:v_oru:np
 е	ім			#   дизпальнім 	            @ adj:n:v_mis:np
-є:
+
+[^']є:
 є	ього			#   полуднього 	          @ adj:n:v_rod:np
 є	ьому			#   полудньому 	          @ adj:n:v_dav/v_mis:np
-є	ім			#   полуднім 	            @ adj:n:v_oru/v_mis:np
+є	ім			    #   полуднім 	            @ adj:n:v_oru/v_mis:np
+
+'є:
+є	його			#   Остап'його 	          @ adj:n:v_rod:np
+є	йому			#   Остап'йому 	          @ adj:n:v_dav/v_mis:np
+є	їм			    #   Остап'їм 	            @ adj:n:v_oru/v_mis:np
 
 #  жіночого роду
 а:
@@ -92,8 +98,8 @@ group adj
 а	у		#   супернову 	                @ adj:f:v_zna
 а	ую		#   суперновую 	                @ adj:f:v_zna:uncontr
 а	ою		#   суперновою 	              @ adj:f:v_oru
-а	і			#   супернові 	            @ adj:p:v_naz/v_zna
-а	ії			#   суперновії 	            @ adj:p:v_naz/v_zna:uncontr
+а	і			#   супернові 	            @ adj:p:v_naz/v_zna/v_kly
+а	ії			#   суперновії 	            @ adj:p:v_naz/v_zna/v_kly:uncontr
 а	им			#   суперновим 	            @ adj:p:v_dav
 а	их			#   супернових 	            @ adj:p:v_rod/v_zna/v_mis
 а	іїх			#   суперновіїх 	            @ adj:p:v_zna:uncontr
@@ -124,13 +130,13 @@ group adj
 0	ому			#   сестриному				@ adj:m:v_dav/v_mis//n:v_dav/v_mis
 0	им			#   сестриним			@ adj:m:v_oru//n:v_oru//p:v_dav
 0	ім			#   сестринім				@ adj:m:v_mis//n:v_mis
-0	а			#   сестрина 		            @ adj:f:v_naz
+0	а			#   сестрина 		            @ adj:f:v_naz/v_kly
 0	ої			#   сестриної		            @ adj:f:v_rod
 0	ій			#   сестриній 		          @ adj:f:v_dav/v_mis
 0	у			#   сестрину		            @ adj:f:v_zna
 0	ою			#   сестриною		            @ adj:f:v_oru
-0	е			#   сестрине 		            @ adj:n:v_naz/v_zna
-0	і			#   сестрині 		            @ adj:p:v_naz/v_zna
+0	е			#   сестрине 		            @ adj:n:v_naz/v_zna/v_kly
+0	і			#   сестрині 		            @ adj:p:v_naz/v_zna/v_kly
 0	их			#   сестриних 		          @ adj:p:v_rod/v_zna
 0	ими			#   сестриними		            @ adj:p:v_oru
 
@@ -141,13 +147,13 @@ group adj
 ів	овому			#   братовому		            @ adj:m:v_dav/v_mis//n:v_dav/v_mis
 ів	овим			#   братовим		      @ adj:m:v_oru//n:v_oru//p:v_dav
 ів	овім			#   братовім				@ adj:m:v_mis//n:v_mis
-ів	ова		#   братова 		            @ adj:f:v_naz
+ів	ова		#   братова 		            @ adj:f:v_naz/v_kly
 ів	ової			#   братової		            @ adj:f:v_rod
 ів	овій			#   братовій 		          @ adj:f:v_dav/v_mis
 ів	ову		#   братову		            @ adj:f:v_zna
 ів	овою			#   братовою		            @ adj:f:v_oru
-ів	ове			#   братове 		    @ adj:n:v_naz/v_zna
-ів	ові			#   братові 		    @ adj:p:v_naz/v_zna
+ів	ове			#   братове 		    @ adj:n:v_naz/v_zna/v_kly
+ів	ові			#   братові 		    @ adj:p:v_naz/v_zna/v_kly
 ів	ових			#   братових 		          @ adj:p:v_rod/v_zna/v_mis
 ів	овими			#   братовими		            @ adj:p:v_oru
 
@@ -156,13 +162,13 @@ group adj
 їв	євому			#   Сергієвому		            @ adj:m:v_dav/v_mis//n:v_dav/v_mis
 їв	євим			#   Сергієвим		      @ adj:m:v_oru//n:v_oru//p:v_dav
 їв	євім			#   Сергієвім				@ adj:m:v_mis//n:v_mis
-їв	єва			#   Сергієва 		            @ adj:f:v_naz
+їв	єва			#   Сергієва 		            @ adj:f:v_naz/v_kly
 їв	євої			#   Сергієвої		            @ adj:f:v_rod
 їв	євій			#   Сергієвій 		          @ adj:f:v_dav/v_mis
 їв	єву			#   Сергієву		            @ adj:f:v_zna
 їв	євою			#   Сергієвою		            @ adj:f:v_oru
-їв	єве			#   Сергієве 		            @ adj:n:v_naz/v_zna
-їв	єві			#   Сергієві 		            @ adj:p:v_naz
+їв	єве			#   Сергієве 		            @ adj:n:v_naz/v_zna/v_kly
+їв	єві			#   Сергієві 		            @ adj:p:v_naz/v_kly
 їв	євих			#   Сергієвих 		          @ adj:p:v_rod/v_zna/v_mis
 їв	євими			#   Сергієвими		            @ adj:p:v_oru
 
@@ -188,12 +194,12 @@ group adj_ev
 ів	евому			#   лікаревому		            @ adj:m:v_dav/v_mis//n:v_dav/v_mis
 ів	евим			#   лікаревим		      @ adj:m:v_oru//n:v_oru//p:v_dav
 ів	евім			#   лікаревім				@ adj:m:v_mis//n:v_mis
-ів	ева			#   лікарева 		    @ adj:f:v_naz
+ів	ева			#   лікарева 		    @ adj:f:v_naz/v_kly
 ів	евої			#   лікаревої		            @ adj:f:v_rod
 ів	евій			#   лікаревій 		          @ adj:f:v_dav/v_mis
 ів	еву			#   лікареву		    @ adj:f:v_zna
 ів	евою			#   лікаревою		            @ adj:f:v_oru
-ів	еве			#   лікареве 		    @ adj:n:v_naz/v_zna
-ів	еві			#   лікареві 	          @ adj:p:v_naz/v_zna
+ів	еве			#   лікареве 		    @ adj:n:v_naz/v_zna/v_kly
+ів	еві			#   лікареві 	          @ adj:p:v_naz/v_zna/v_kly
 ів	евих			#   лікаревих 		(Р.З.М.         @ adj:p:v_rod/v_zna/v_mis
 ів	евими			#   лікаревими		            @ adj:p:v_oru

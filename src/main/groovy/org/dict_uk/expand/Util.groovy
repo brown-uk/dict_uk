@@ -3,7 +3,10 @@ package org.dict_uk.expand
 import java.util.List;
 import java.util.regex.*
 
+import groovy.transform.CompileStatic
 import groovy.transform.TypeChecked
+import groovyx.gpars.ParallelEnhancer
+import static groovyx.gpars.GParsPool.withPool
 
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
@@ -24,16 +27,6 @@ class Util {
 	final String DERIV_PADDING="  "
 
 
-	// generic util methods
-
-//	def dbg(Object... args) {
-//		System.err.println("--- " + args.join(" "))
-//	}
-//
-//	def debug(Object... args) {
-//		System.err.println(args.join(" "))
-//	}
-
 	Map<String, Pattern> regex_map = [:]
 
 	def re_sub(regex, repl, txt) {
@@ -44,23 +37,6 @@ class Util {
 		return regex_map[regex].matcher(txt).replaceAll(repl)
 	}
 
-	def re_search(regex, txt) {
-		if( ! (regex in regex_map) ) {
-			regex_map[regex] = Pattern.compile(regex)
-		}
-		def matcher = regex_map[regex].matcher(txt)
-		return matcher.find()
-		//return matcher
-	}
-
-	Matcher re_match(regex, txt) {
-		if( ! (regex in regex_map) ) {
-			regex_map[regex] = Pattern.compile(regex)
-		}
-		def matcher = regex_map[regex].matcher(txt)
-		matcher.matches()
-		return matcher
-	}
 
 	def tail_tag(line, tags) {
 		for( tag in tags ){
@@ -70,6 +46,10 @@ class Util {
 			}
 		}
 		return line
+	}
+
+	def bacteria(allAffixFlags) {
+		return ">>" in allAffixFlags
 	}
 
 	def istota(allAffixFlags) {
@@ -87,8 +67,9 @@ class Util {
 		//and affixFlag != "p" \
 	}
 
+	def DUAL_LAST_NAME_PATTERN = ~ ".*(о|ич|ук|юк|як|аш|яш|сь|ун|ин|сон) "
 	def dual_last_name_ending(line) {
-		return "+d" in line || re_search(".*(о|ич|ук|юк|як|аш|яш|сь|ун|ин|сон) ", line)
+		return "+d" in line || DUAL_LAST_NAME_PATTERN.matcher(line)
 	}
 
 	// dictionary-related methods
@@ -106,8 +87,9 @@ class Util {
 	]
 
 
+	def POS_PATTERN = ~ /[\._].*/
 	def get_pos(posFlag, modifiers) {
-		posFlag = re_sub(/[\._].*/, "", posFlag)
+		posFlag = POS_PATTERN.matcher(posFlag).replaceAll("")
 		//    logger.info("\t\t"  + posFlag + ", " + modifiers)
 
 		def pos
@@ -160,7 +142,7 @@ class Util {
 				for( v in VIDM_LIST ){
 					if( v == "v_kly" && (! (":anim" in line) || ":lname" in line) )
 						continue
-						
+
 					lines.add(parts[0] + ":" + v + ":nv" + part2)
 				}
 
@@ -222,17 +204,17 @@ class Util {
 		"v_kly": "70"
 	]
 
-	static final Pattern re_verb = Pattern.compile("(in[fz]:coll|in[fz]|impr|pres|futr|past|impers)")
+	static final Pattern re_verb = Pattern.compile("(in[fz]|impr|pres|futr|past|impers)")
 	static final Map<String,String> vb_tag_key_map = [
-		"inf": "_1",
-		"inz": "_2",
-		"inf:coll": "_3",
-		"inz:coll": "_4",
-		"impr": "_5",
-		"pres": "_6",
-		"futr": "_7",
-		"past": "_8",
-		"impers": "_9"
+		"inf": 1,
+		"inz": 2,
+//		"inf:coll": 3,
+//		"inz:coll": 4,
+		"impr": 5,
+		"pres": 6,
+		"futr": 7,
+		"past": 8,
+		"impers": 9
 	]
 
 	static final Pattern GEN_RE = Pattern.compile(/:([mfnsp])(:|$)/)
@@ -272,15 +254,16 @@ class Util {
 					key_rr.find()
 					key = key_rr.group(1)
 				}
+				
+				if( ":x" in line) {
+					int x_idx = line.indexOf(":x")
+					key += line[x_idx..<x_idx+4]
+				}
 			}
 			catch(Exception e) {
 				throw new RuntimeException("Failed to find tag key in " + line, e)
 			}
 
-			if( ":x" in line) {
-				int x_idx = line.indexOf(":x")
-				key += line[x_idx..<x_idx+4]
-			}
 			if( ":nv" in line) {
 				key += ":nv"
 			}
@@ -313,10 +296,21 @@ class Util {
 		}
 	}
 
+	def stat_keys = [
+		"inanim",
+		"anim",
+		"lname",
+		"fname",
+		"patr",
+		"nv",
+		"perf",
+		"imperf",
+		"compb"]
+
 	def print_stats(List<String> lines, int double_form_cnt) {
-		def pos_stat = [:].withDefault { 0 } //collections.defaultdict(int)
-		def sub_pos_stat = [:].withDefault { [:] } //collections.defaultdict(list)
-		def letter_stat = [:].withDefault { 0 } //collections.defaultdict(int)
+		def pos_stat = [:].withDefault { 0 }
+		def sub_pos_stat = [:].withDefault { [:] }
+		def letter_stat = [:].withDefault { 0 }
 		def cnt = 0
 		def cnt_std = 0
 		def proper_noun_cnt = 0
@@ -335,32 +329,20 @@ class Util {
 			}
 
 			try {
-				def parts = line.split()
-				def word = parts[0]
-				def tags = parts[1]
+				def (word, tags) = line.split()
 
-			    def pos_tag = tags.split(":", 2)[0]
-			    pos_stat[pos_tag] += 1
-			    letter_stat[word[0].toLowerCase()] += 1
+				def pos_tag = tags.split(":", 2)[0]
+				pos_stat[pos_tag] += 1
+				letter_stat[word[0].toLowerCase()] += 1
 
-			if( tags.startsWith("adj") ) {
-				sub_stat("adj", "super", line, sub_pos_stat)
-				sub_stat("adj", "compr", line, sub_pos_stat)
-			}
-			
-			def stat_keys = [
-				"inanim",
-				"anim",
-				"lname",
-				"fname",
-				"patr",
-				"nv",
-				"perf",
-				"imperf",
-				"compb"]
-			for( sub_pos in stat_keys ) {
-				sub_stat(pos_tag, sub_pos, line, sub_pos_stat)
-			}
+				if( tags.startsWith("adj") ) {
+					sub_stat("adj", "super", line, sub_pos_stat)
+					sub_stat("adj", "compr", line, sub_pos_stat)
+				}
+
+				for( sub_pos in stat_keys ) {
+					sub_stat(pos_tag, sub_pos, line, sub_pos_stat)
+				}
 			}
 			catch(Exception e) {
 				throw new Exception("Choked on " + line, e)
@@ -368,10 +350,10 @@ class Util {
 		}
 
 		log.info("Всього лем: %d\n", cnt)
-		
+
 		new File("dict_stats.txt").withWriter("utf-8") { stat_f ->
 			stat_f.printf("Всього лем: %d\n", cnt)
-			stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf та adjp/adj, з compr/super) %d\n", (cnt_std - double_form_cnt))
+			stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf та adjp/adj) %d\n", (cnt_std - double_form_cnt))
 			stat_f.print("\nЧастоти за тегами:\n")
 
 			def ordered_pos_freq = pos_stat.keySet().toList().sort()
@@ -386,22 +368,23 @@ class Util {
 			}
 			stat_f.printf("\nВласних назв (без абревіатур): %d\n", proper_noun_cnt)
 
-//			stat_f.print("\nЧастоти літер на початку слова\n")
-//
-//			def letter_map = letter_stat.sort { -it.value }
-//			for( e in letter_map ){
-//				stat_f.println(e.key + " " + e.value)
-//			}
+			//			stat_f.print("\nЧастоти літер на початку слова\n")
+			//
+			//			def letter_map = letter_stat.sort { -it.value }
+			//			for( e in letter_map ){
+			//				stat_f.println(e.key + " " + e.value)
+			//			}
 		}
 	}
 
 	static final Pattern re_xv_sub = Pattern.compile("^([^:]+)(.*)(:x.[1-9])")
 
-	//@profile
+	//	@CompileStatic
 	@TypeChecked
 	def tag_sort_key(String tags, String word) {
-		if( ":v-u" in tags)
+		if( tags.contains(":v-u") ) {
 			tags = tags.replace(":v-u", "")
+		}
 
 		if( "v_" in tags) {
 			def vidm_match = VIDM_RE.matcher(tags)
@@ -428,26 +411,26 @@ class Util {
 					tags = tags.replace("adj:", "adj:compb:")
 				}
 			}
-			else {
-				// відокремлюємо різні порівняльні форми коли сортуємо: гладкий/гладкіший
-				if( ":super" in tags)
-					tags = re_sub("(:super)(.*)(:xx.)", '$3$1$2', tags)
-				if( ":compr" in tags)
-					tags = re_sub("(:compr)(.*)(:xx.)", '$3$1$2', tags)
-
-				if( ":super" in tags) {
-					if( word.startsWith("що"))
-						tags = tags.replace(":super", ":supes")
-					else if( word.startsWith("як"))
-						tags = tags.replace(":super", ":supet")
-				}
-			}
+			//			else {
+			// відокремлюємо різні порівняльні форми коли сортуємо: гладкий/гладкіший
+			//				if( ":super" in tags)
+			//					tags = re_sub("(:super)(.*)(:xx.)", '$3$1$2', tags)
+			//				if( ":compr" in tags)
+			//					tags = re_sub("(:compr)(.*)(:xx.)", '$3$1$2', tags)
+			//
+			//				if( ":super" in tags) {
+			//					if( word.startsWith("що"))
+			//						tags = tags.replace(":super", ":supes")
+			//					else if( word.startsWith("як"))
+			//						tags = tags.replace(":super", ":supet")
+			//				}
+			//			}
 		}
-		else if( tags.startsWith("advp") ) {
-			tags = tags.replace("advp", "verz")  // put advp after verb
-			if( ":coll" in tags )
-				tags = tags.replace("perf", "perz")
-		}
+		//		else if( tags.startsWith("advp") ) {
+		//			tags = tags.replace("advp", "verz")  // put advp after verb
+		//			if( ":coll" in tags )
+		//				tags = tags.replace("perf", "perz")
+		//		}
 		else if( tags.startsWith("noun")) {
 			if ("name" in tags || "patr" in tags) {
 				tags = re_person_name_key_tag.matcher(tags).replaceAll('$1$3$2')
@@ -455,21 +438,26 @@ class Util {
 					tags = tags.replace(":f:", ":9:")
 				}
 			}
-			if( ":nv" in tags )
+			if( ":nv" in tags ) {
 				tags = tags.replace(":nv", "").replace("anim", "anim:nv")
+			}
 
-			if( ":np" in tags || ":ns" in tags )
+			if( ":np" in tags || ":ns" in tags ) {
 				tags = tags.replace(":np", "").replace(":ns", "")
+			}
 		}
 		else if( tags.startsWith("verb")) {
 			def verb_match = re_verb.matcher(tags)
 			if( verb_match.find() ) {
 				def tg = verb_match.group(0)
-				tags = tags.replace(tg, vb_tag_key_map[tg])
+				def order = vb_tag_key_map[tg]
+				if( tags.contains(":coll") ) {
+				    order += 1
+				}
+				tags = tags.replace(tg, "_"+order)
 			}
 			else {
-				if( ! (tags ==~ "verb:(rev:)?(im)?perf:unknown") )
-					System.err.print("no verb match " + tags)
+				log.error("no verb match: " + tags)
 			}
 		}
 
@@ -490,16 +478,11 @@ class Util {
 		try {
 			def (word, lemma, tags) = txt.split()
 
-			if( "verb:rev" in tags && "inf" in tags && word.endsWith("сь") )
+			if( "verb:rev" in tags && ":inf" in tags \
+			        && (word.endsWith("сь") || word.endsWith("ться")) ) {
 				tags = tags.replace("inf", "inz")
+			}
 
-//			if( "-" in lemma )
-//				lemma += "я"
-//
-//			if( "'" in lemma )
-//				lemma += "я"
-
-			//    return locale.strxfrm(lemma) + "_" + tag_sort_key(tags, word) + "_" + locale.strxfrm(word)
 			return UkDictComparator.getSortKey(lemma) + "_" + tag_sort_key(tags, word) + "_" + UkDictComparator.getSortKey(word)
 		}
 		catch(Exception e) {
@@ -507,25 +490,40 @@ class Util {
 		}
 	}
 
-	//	List<String> sort_all_lines_old(List<String> all_lines) {
-	//		def sorted_lines = all_lines.sort { x, y ->
-	//			line_key(x).compareTo( line_key(y) )
-	//		}
-	//		return sorted_lines
-	//	}
-
 	List<String> sort_all_lines(Collection<String> all_lines) {
-		def map = all_lines.collectEntries {
+		ParallelEnhancer.enhanceInstance(all_lines)
+		def entries = all_lines.collectParallel {
 			[(line_key(it)): it]
 		}
+
+		def map = entries.collectEntries {
+			it
+		}
+
 		map = map.sort()
 
-		return new ArrayList<String>(map.values())
+		return map.values().toList()
 	}
-	
-	@TypeChecked
+
+	def quickUkSort(collection) {
+		ParallelEnhancer.enhanceInstance(collection)
+
+		def entries = collection.collectParallel {
+			[ (UkDictComparator.getSortKey(it)): it]
+		}
+
+		def map = entries.collectEntries {
+			it
+		}
+
+		return map.sort().values()
+	}
+
+	//	@TypeChecked
 	void print_word_list(List<String> sorted_lines) {
 		log.info("Collecting words, lemmas, and tags...")
+
+		def time1 = System.currentTimeMillis()
 
 		HashSet<String> words = new HashSet<>()
 		HashSet<String> spell_words = new HashSet<>()
@@ -540,71 +538,62 @@ class Util {
 
 			words.add(dicEntry.word)
 			lemmas.add(dicEntry.lemma)
-			tags.add(dicEntry.tagStr)
 
-
-			if( ! (":bad" in tag) && ! (":alt" in tag) && ! (":uncontr" in tag) && ! (word.endsWith(".")) ) {
+			if( ! (":bad" in tag) && ! (":alt" in tag) && ! (":uncontr" in tag) && ! (word.endsWith(".")) \
+			        && ! (":coll" in tag) && ! (":inanim" in tag && ":v_kly" in tag) ) {
 				spell_words.add(word)
 			}
+
+			tags.add(dicEntry.tagStr)
 		}
 
-
-		if( Args.args.corp ) {
-			def lemmaList = lemmas.toList()
-			lemmaList.sort(new UkDictComparator())
-			new File("lemmas.txt").withWriter("utf-8") { f ->
-				for(lemma in lemmaList) {
-					f << lemma << "\n"
-				}
-			}
-
-			def wordList = words.toList()
-			wordList.sort(new UkDictComparator())
-			
-			new File("words.txt").withWriter("utf-8") { f ->
-				for(word in wordList) {
-					f << word << "\n"
-				}
+		def lemmaList = quickUkSort(lemmas)
+		new File("lemmas.txt").withWriter("utf-8") { f ->
+			for(lemma in lemmaList) {
+				f << lemma << "\n"
 			}
 		}
 
-		if( ! Args.args.corp ) {
-			def spellWordList = spell_words.toList()
-			spellWordList.sort(new UkDictComparator())
-			new File("words_spell.txt").withWriter("utf-8") { f ->
-				for(word in spellWordList) {
-					f << word << "\n"
-				}
+		def wordList = quickUkSort(words)
+
+		new File("words.txt").withWriter("utf-8") { f ->
+			for(word in wordList) {
+				f << word << "\n"
 			}
 		}
-		
-		def suff = ""
-		if( ! Args.args.corp ) {
-			suff = "_rules"
+		log.info("%d total word forms", wordList.size())
+
+		def spellWordList = quickUkSort(spell_words)
+
+		new File("words_spell.txt").withWriter("utf-8") { f ->
+			for(word in spellWordList) {
+				f << word << "\n"
+			}
+		}
+		log.info("%d spelling word forms", spellWordList.size())
+
+		def tagList = tags.toList().toSorted()
+		new File("tags.txt").withWriter("utf-8") { f ->
+			for(tag in tagList) {
+				f << tag << "\n"
+			}
 		}
 
-		new File("tags"+suff+".txt").withWriter("utf-8") { f ->
-			f.write(tags.toList().sort().join("\n"))
+		if( Args.args.time ) {
+			def time2 = System.currentTimeMillis()
+			log.info("Word list time: %,d\n", (time2-time1))
 		}
-	}
-	
-	private List<String> sorted(List<String> all_lines, keyFunc) {
-		def map = all_lines.collectEntries {
-			[(keyFunc(it)): it]
-		}
-		map = map.sort()
 
-		return new ArrayList<String>(map.values())
 	}
 
 	def log_usage(affix) {
-	   def affixMap = affix.affixMap.sort()
+		def affixMap = affix.affixMap.sort()
 		new File("affix_usage.txt").withWriter("utf-8") { usageFile ->
 			for( e in affixMap ) {
 				def affixGroups = e.value
 				def s1 = sprintf("Flag %s has %d groups\n", e.key, affixGroups.size())
 				usageFile.print(s1)
-				
+
 				for( ent in affixGroups ) {
 					def match = ent.key
 					def affixGroup = ent.value
