@@ -325,6 +325,11 @@
 свиньми свиня noun:p:v_oru:anim
 ворітьми ворота noun:p:v_oru:ns
 
+сімені сім'я noun:inanim:n:v_rod/v_dav/v_mis:xp2
+сіменем сім'я noun:inanim:n:v_oru:xp2
+
+стіп стопа noun:p:v_rod:xp1
+
 воротям ворота noun:p:v_dav:ns
 воротях ворота noun:p:v_mis:ns
 
