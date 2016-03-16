@@ -644,6 +644,14 @@ class Expand {
 			}
 			out_lines = [line]
 		}
+		else if( line =~ ' /n2[0-4]' && ! line.contains(".k") ) {
+			if( line =~ '[бвджзлмнпстфц] /n2' ) {
+			    def parts = line.split()
+			    parts[1] += ".ke"
+			    line = parts.join(" ")
+		    }
+			out_lines = [line]
+		}
 		else if( "/np" in line ) {
 			def space = " "
 			if( " :" in line || ! (" /" in line)) {
@@ -1113,7 +1121,7 @@ class Expand {
 	         ]
     static final Pattern VERB_CHECK_PATTERN = ~/inf|impr:s:2|impr:p:[12]|(?:pres|futr):[sp]:[123]|past:[mfnp]/
 
-	//	@TypeChecked
+	@TypeChecked
 	void check_indented_lines(List<String> lines) {
 		String gender = ""
 		HashSet<String> subtagSet = new HashSet<String>()
@@ -1162,7 +1170,6 @@ class Expand {
 				}
 
 				String v_tag = tags.find { it.startsWith("v_") }
-				//				System.err.println("v_tag " + v_tag + " of " + tags)
 				subtagSet.add( v_tag )
 			}
 			else if ( lastVerbTags ) {
@@ -1224,7 +1231,17 @@ class Expand {
 					check_lines(tag_lines)
 
 					def sorted_lines = util.sort_all_lines(tag_lines)
-					println(sorted_lines.join("\n"))
+					
+					List<String> indented_lines = util.indent_lines(sorted_lines)
+				
+	    			check_indented_lines(indented_lines)
+				
+		    		if( Args.args.indent ) {
+				        sorted_lines = indented_lines
+			       	}
+
+					println(sorted_lines.join("\n") + "\n")
+					
 					System.out.flush()
 					return
 				}catch(Exception e) {
@@ -1336,22 +1353,19 @@ class Expand {
 		Args.parse(argv)
 
 		def expand = new Expand()
-
+		Util util = new Util()
+		
 		expand.affix.load_affixes(Args.args.affixDir)
 
-		log.info("Parsing stdin...")
+		log.info("Введіть слово з прапорцями...")
 
 
 		System.in.eachLine { line->
-			//			println "Expanding $line"
 			if( line.trim() ) {
 				if( line == "exit" )
 					System.exit(0)
 				
-				def out_lines = expand.process_input([line])
-				if( out_lines ) {
-					println out_lines.join("\n")
-				}
+				expand.process_input([line])
 			}
 
 		}

@@ -54,15 +54,7 @@ class ExpandAll {
 
 		out_lines = expand.process_input(out_lines)
 
-		def filename
-		if( Args.args.corp ) {
-			filename = "dict_corp_vis.txt"
-		}
-		else {
-			filename = "dict_rules_lt.txt"
-		}
-
-		new File(filename).withWriter("utf-8") { out_file ->
+		new File("dict_corp_vis.txt").withWriter("utf-8") { out_file ->
 			for( line in out_lines ) {
 				out_file.write(line + "\n")
 			}

@@ -1,9 +1,15 @@
 Щоб швидко протестувати парпорці для нових слів можна запустити expand в інтерактивному режимі:
 
-gradle expandInteractive
+  gradle -q expandInteractive
 
 потім на вхід подавати рядки, напр.:
 
 річка /n10
 
+Вивід буде в індентованому форматі. Для плоского формату потрібно додати "-Pflat=true":
+
+  gradle -q -Pflat=true expandInteractive
+
+
 Для виходу набрати exit або Ctrl+C
+

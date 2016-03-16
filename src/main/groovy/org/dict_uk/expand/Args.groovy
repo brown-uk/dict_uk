@@ -9,7 +9,6 @@ import java.util.regex.Pattern
 //@TypeChecked
 class Args {
 	boolean corp
-	boolean rules
 	boolean mfl
 	boolean indent
 	boolean time
@@ -35,7 +34,6 @@ class Args {
 		cli._(longOpt:'dict', args:1, required: true, 'Dictionary dir')
 
 		cli._(longOpt:'corp', 'Generate corpus version of the dictionary (implies: --lemmaWithTags advp,compr,super)')
-		cli._(longOpt:'rules', 'Generate check rules version of the dictionary (implies: --removeTags ranim,rianim)')
 		cli._(longOpt:'mfl', 'Generate morfologik format of the dictionary')
 		
 		cli._(longOpt:'indent', 'Generate indented format of the dictionary')
@@ -66,7 +64,6 @@ class Args {
 		args = new Args()
 		args.with {
 			corp = options.corp
-			rules = options.rules
 			mfl = options.mfl
 			indent = options.indent
 			time = options.time
@@ -79,10 +76,6 @@ class Args {
 			dictDir = options.dict
 
 			if( corp ) {
-				removeWithTags = ["uncontr"]
-				lemmaForTags = ["advp"]
-			}
-			if( rules ) {
 				removeWithTags = ["uncontr"]
 				lemmaForTags = ["advp"]
 			}

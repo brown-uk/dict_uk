@@ -532,6 +532,7 @@ noun:inanim:m:v_dav:np
 noun:inanim:m:v_dav:xp1
 noun:inanim:m:v_dav:xp2
 noun:inanim:m:v_kly
+noun:inanim:m:v_kly:np
 noun:inanim:m:v_mis
 noun:inanim:m:v_mis:np
 noun:inanim:m:v_mis:xp1

@@ -16,6 +16,7 @@
   абордажеві noun:inanim:m:v_mis
   абордажі noun:inanim:m:v_mis
   абордажу noun:inanim:m:v_mis
+  абордаже noun:inanim:m:v_kly
 Августо noun:anim:m:v_naz:nv:np:fname
   Августо noun:anim:m:v_rod:nv:np:fname
   Августо noun:anim:m:v_dav:nv:np:fname
@@ -76,6 +77,7 @@
   автопричепі noun:inanim:m:v_mis
   автопричепові noun:inanim:m:v_mis
   автопричепу noun:inanim:m:v_mis
+  автопричепе noun:inanim:m:v_kly
   автопричепи noun:inanim:p:v_naz
   автопричепів noun:inanim:p:v_rod
   автопричепам noun:inanim:p:v_dav
@@ -293,6 +295,7 @@
   бобі noun:inanim:m:v_mis
   бобові noun:inanim:m:v_mis
   бобу noun:inanim:m:v_mis
+  бобе noun:inanim:m:v_kly
   боби noun:inanim:p:v_naz
   бобів noun:inanim:p:v_rod
   бобам noun:inanim:p:v_dav
@@ -743,6 +746,7 @@
   велосипеді noun:inanim:m:v_mis
   велосипедові noun:inanim:m:v_mis
   велосипеду noun:inanim:m:v_mis
+  велосипеде noun:inanim:m:v_kly
   велосипеди noun:inanim:p:v_naz
   велосипедів noun:inanim:p:v_rod
   велосипедам noun:inanim:p:v_dav
@@ -1251,6 +1255,7 @@
   вильоті noun:inanim:m:v_mis
   вильотові noun:inanim:m:v_mis
   вильоту noun:inanim:m:v_mis
+  вильоте noun:inanim:m:v_kly
   вильоти noun:inanim:p:v_naz
   вильотів noun:inanim:p:v_rod
   вильотам noun:inanim:p:v_dav
@@ -1309,6 +1314,7 @@
   вимислі noun:inanim:m:v_mis
   вимислові noun:inanim:m:v_mis
   вимислу noun:inanim:m:v_mis
+  вимисле noun:inanim:m:v_kly
   вимисли noun:inanim:p:v_naz
   вимислів noun:inanim:p:v_rod
   вимислам noun:inanim:p:v_dav
@@ -1386,6 +1392,7 @@
   волі noun:anim:m:v_mis
   волові noun:anim:m:v_mis
   волу noun:anim:m:v_mis
+  воле noun:anim:m:v_kly
   воли noun:anim:p:v_naz
   волів noun:anim:p:v_rod
   волам noun:anim:p:v_dav
@@ -1496,6 +1503,7 @@
   гамма-ножеві noun:inanim:m:v_mis
   гамма-ножі noun:inanim:m:v_mis
   гамма-ножу noun:inanim:m:v_mis
+  гамма-ноже noun:inanim:m:v_kly
   гамма-ножі noun:inanim:p:v_naz
   гамма-ножів noun:inanim:p:v_rod
   гамма-ножам noun:inanim:p:v_dav
@@ -1986,6 +1994,7 @@
   коні noun:inanim:m:v_mis
   конові noun:inanim:m:v_mis
   кону noun:inanim:m:v_mis
+  коне noun:inanim:m:v_kly
 кінь noun:anim:m:v_naz
   коня noun:anim:m:v_rod
   коневі noun:anim:m:v_dav
@@ -2528,6 +2537,7 @@
   паркані noun:inanim:m:v_mis
   парканові noun:inanim:m:v_mis
   паркану noun:inanim:m:v_mis
+  паркане noun:inanim:m:v_kly
   паркани noun:inanim:p:v_naz
   парканів noun:inanim:p:v_rod
   парканам noun:inanim:p:v_dav
@@ -2835,6 +2845,7 @@
   хорті noun:anim:m:v_mis
   хортові noun:anim:m:v_mis
   хорту noun:anim:m:v_mis
+  хорте noun:anim:m:v_kly
   хорти noun:anim:p:v_naz
   хортів noun:anim:p:v_rod
   хортам noun:anim:p:v_dav
@@ -2851,6 +2862,7 @@
   хісні noun:inanim:m:v_mis:np
   хіснові noun:inanim:m:v_mis:np
   хісну noun:inanim:m:v_mis:np
+  хісне noun:inanim:m:v_kly:np
 хрін noun:inanim:m:v_naz
   хріну noun:inanim:m:v_rod
   хрону noun:inanim:m:v_rod
@@ -2867,6 +2879,8 @@
   хроні noun:inanim:m:v_mis
   хронові noun:inanim:m:v_mis
   хрону noun:inanim:m:v_mis
+  хріне noun:inanim:m:v_kly
+  хроне noun:inanim:m:v_kly
 чапленя noun:anim:n:v_naz
   чапленяти noun:anim:n:v_rod
   чапленяті noun:anim:n:v_dav

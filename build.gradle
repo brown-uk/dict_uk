@@ -162,7 +162,10 @@ task expandInteractive(type: JavaExec, dependsOn: reverseAffix) {
     workingDir = file(outputDir)
     standardInput = System.in
 
-    def opts = "--corp --indent -f"
+    def opts = "--corp -f"
+    if( ! project.hasProperty('flat') ) {
+        opts += " --indent"
+    }
     args "-aff", "../data/affix"
     args "-dict", "-"
     args opts.split()
