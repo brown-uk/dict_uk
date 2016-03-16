@@ -9,7 +9,8 @@
 якорю якір noun:m:v_dav/v_mis
 якорем якір noun:m:v_oru
 якореві якір noun:m:v_dav
-якорі якір noun:m:v_mis//p:v_naz/v_zna
+якорі якір noun:m:v_mis//p:v_naz/v_zna/v_kly
+якоре якір noun:m:v_kly
 якорів якір noun:p:v_rod
 якорям якір noun:p:v_dav
 якорями якір noun:p:v_oru
@@ -100,7 +101,8 @@
 вівсу овес noun:m:v_dav
 вівсом овес noun:m:v_oru
 вівсі овес noun:m:v_mis
-вівси овес noun:p:v_naz/v_zna
+овесе овес noun:m:v_kly
+вівси овес noun:p:v_naz/v_zna/v_kly
 вівсів овес noun:p:v_rod
 вівсам овес noun:p:v_dav
 вівсами овес noun:p:v_oru
@@ -112,10 +114,6 @@
 вівцями вівця noun:p:v_oru:anim
 вівцях вівця noun:p:v_mis:anim
 
-
-дідуньо дідунь noun:m:v_naz:anim
-татуньо татунь noun:m:v_naz:anim
-татусьо татусь noun:m:v_naz:anim
 
 ігри гра noun:p:v_naz/v_zna
 ігор гра noun:p:v_rod
@@ -190,6 +188,7 @@
 четвергу четвер noun:m:v_dav/v_mis/v_kly
 четвергові четвер noun:m:v_dav
 четвергом четвер noun:m:v_oru
+четверге четвер noun:m:v_kly
 четверже четвер noun:m:v_kly
 четверги четвер noun:p:v_naz/v_zna/v_kly
 четвергах четвер noun:p:v_mis
