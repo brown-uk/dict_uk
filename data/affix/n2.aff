@@ -8,17 +8,15 @@ group n20
 о		ові			#  батькові                     @ noun:m:v_dav/v_mis
 о		ом			#  батьком 	                @ noun:m:v_oru
 
+[^кь]о:
+о	і			#  вайлі 	                @ noun:m:v_mis
+
 ьо:
 ьо		я			#  дідуня 	                @ noun:m:v_rod
 ьо		ю			#  дідуню 	            @ noun:m:v_dav/v_mis/v_kly
 ьо		еві			#  дідуневі                     @ noun:m:v_dav/v_mis
 ьо		ем			#  дідунем 	                @ noun:m:v_oru
-
-[^кь]о:
-о	і			#  вайлі 	                @ noun:m:v_mis
-
-ьо:
-ьо	і			#  дідуні 	                @ noun:m:v_mis
+ьо	    і			#  дідуні 	                @ noun:m:v_mis
 
 [^аеєиійоуьюя]:
 0	у			#  заводу 	        @ noun:m:v_dav/v_mis/v_kly
