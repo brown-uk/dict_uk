@@ -15,6 +15,7 @@ class ExpandComps {
 	static Logger log = LogManager.getFormatterLogger(ExpandAll.class);
 
 	final Pattern tags_re = Pattern.compile("(.*:)[mfnp]:v_...(.*)")
+	final Pattern gen_vidm_pattern = Pattern.compile(":(.:v_...(:r(in)?anim)?)")
 	final Expand expand
 
 	static {
@@ -37,7 +38,6 @@ class ExpandComps {
 		def left_wn
 		def left_tags
 
-		def gen_vidm_pattern = Pattern.compile(":(.:v_...)")
 
 		for( ln in lefts ) {
 			def parts = ln.split(" ")
@@ -86,16 +86,10 @@ class ExpandComps {
 			for(String left_wi in left_v[vidm] ) {
 				String w_infl = left_wi + "-" + parts[0]
 				String lemma = left_wn + "-" + parts[1]
-				//            if( "-spell" in sys.argv ) {
-				//                def str = w_infl
-				//                if( !( str in outs) )
-				//                    outs.add(str)
-				//            }
-				//            else {
+				
 				def str = w_infl + " " + lemma + " " +
 						tags_re.matcher(left_tags).replaceAll('$1'+vidm+'$2')
 				outs.add(str)
-				//            }
 			}
 		}
 
