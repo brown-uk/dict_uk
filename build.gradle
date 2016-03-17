@@ -79,6 +79,21 @@ task sortDict(type: JavaExec) {
 	args files.split()
 }
 
+task dups << {
+	def dictDir = file("data/dict")
+	
+	def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') }
+	
+	def lines = files.collect {  it.text.split("\n")  }.flatten().collect { it.trim().replaceAll(/\s*#.*/, '') }.grep { it && ! it.startsWith("+cs") }
+
+    lines = lines.grep { ! it.startsWith('#') }
+
+    def dups = lines.countBy{it}.grep{it.value > 1 }.collect{it.key}
+
+    println "Found ${dups.size} dups"
+	println dups.toSorted().join("\n")
+}
+
 //
 // Testing targets
 //
