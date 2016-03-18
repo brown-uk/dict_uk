@@ -1,12 +1,12 @@
 package org.dict_uk.expand
 
 import groovy.transform.Field
-import groovy.transform.TypeChecked;
+import groovy.transform.TypeChecked
 
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 
-import java.util.regex.*;
+import java.util.regex.*
 
 class BaseTags {
 	static Logger log = LogManager.getFormatterLogger(BaseTags.class);
@@ -98,12 +98,23 @@ class BaseTags {
 				tag = ":n:v_naz/v_zna/v_kly"
 			}
 		}
-		else if( affixFlag.startsWith("np") )
-			tag = ":p:v_naz/v_kly" // + v_zna_for_inanim + v_kly_for_anim
-		else if( affixFlag.startsWith("n2adj1") && word.endsWith("е") )
-			tag = ":n:v_naz" + v_zna_for_inanim
-		else if( affixFlag.startsWith("n2adj") )
-			tag = ":m:v_naz"
+		else if( affixFlag.startsWith("np") ) {
+			tag = ":p:v_naz/v_kly" // + v_zna_for_inanim
+		}
+		else if( affixFlag.startsWith("n2adj1") ) {
+		    if( word.endsWith("е") || word.endsWith("є") ) {
+			    tag = ":n:v_naz/v_kly" + v_zna_for_inanim
+			}
+		    else if( word.endsWith("а") || word.endsWith("я") ) {
+			    tag = ":f:v_naz/v_kly"
+			}
+			else {
+    			tag = ":m:v_naz/v_kly" + v_zna_for_inanim
+			}
+	    }
+		else if( affixFlag.startsWith("n2adj2") ) {
+   			tag = ":m:v_naz" + v_zna_for_inanim
+		}
 		else if( affixFlag[0..<2] == "n2" ) {
 			tag = ":m:v_naz" + v_zna_for_inanim
 			if( affixFlag.startsWith("n20") && util.person(allAffixFlags) && (word[-2..-1] == "ло") )// && not util.lastname(allAffixFlags) )
@@ -112,13 +123,13 @@ class BaseTags {
 		else if( affixFlag[0..<2] == "n1" ) {
 			tag = ":f:v_naz"
 		}
-		else if( affixFlag[0..<2] == "n4" )
+		else if( affixFlag[0..<2] == "n4" ) {
 			tag = ":n:v_naz/v_zna/v_kly"// + v_kly_for_anim
-		else if( affixFlag[0..<2] == "n3" )
+		}
+		else if( affixFlag[0..<2] == "n3" ) {
 			tag = ":f:v_naz/v_zna"
+		}
 		else
-			//        tag = word + " " + word + " unknown"
-			//        print(tag, "---", word, affixFlag)
 			assert "Unkown base for " + word + " " + allAffixFlags
 
 		return tag

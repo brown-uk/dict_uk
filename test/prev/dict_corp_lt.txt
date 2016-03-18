@@ -5,6 +5,13 @@
 Абалкіним Абалкін noun:anim:m:v_oru:lname
 Абалкіні Абалкін noun:anim:m:v_mis:lname
 Абалкіну Абалкін noun:anim:m:v_mis:lname
+Абатський Абатський noun:inanim:m:v_naz
+Абатського Абатський noun:inanim:m:v_rod
+Абатському Абатський noun:inanim:m:v_dav
+Абатський Абатський noun:inanim:m:v_zna
+Абатським Абатський noun:inanim:m:v_oru
+Абатському Абатський noun:inanim:m:v_mis
+Абатський Абатський noun:inanim:m:v_kly
 абичийого абичий adj:m:v_zna:ranim:&pron:ind
 абичий абичий adj:m:v_zna:rinanim:&pron:ind
 абордаж абордаж noun:inanim:m:v_naz
@@ -992,6 +999,7 @@
 Верхньоторецьке Верхньоторецьке noun:inanim:n:v_zna
 Верхньоторецьким Верхньоторецьке noun:inanim:n:v_oru
 Верхньоторецькому Верхньоторецьке noun:inanim:n:v_mis
+Верхньоторецьке Верхньоторецьке noun:inanim:n:v_kly
 Верьовка Верьовка noun:anim:m:v_naz:lname
 Верьовки Верьовка noun:anim:m:v_rod:lname
 Верьовці Верьовка noun:anim:m:v_dav:lname
@@ -1459,6 +1467,13 @@
 ворота ворота noun:inanim:p:v_zna:ns
 воротами ворота noun:inanim:p:v_oru:ns
 воротах ворота noun:inanim:p:v_mis:ns
+Всевишній Всевишній noun:anim:m:v_naz:fname
+Всевишнього Всевишній noun:anim:m:v_rod:fname
+Всевишньому Всевишній noun:anim:m:v_dav:fname
+Всевишнього Всевишній noun:anim:m:v_zna:fname
+Всевишнім Всевишній noun:anim:m:v_oru:fname
+Всевишньому Всевишній noun:anim:m:v_mis:fname
+Всевишній Всевишній noun:anim:m:v_kly:fname
 всеношна всеношна noun:inanim:f:v_naz:v-u
 всеношної всеношна noun:inanim:f:v_rod:v-u
 всеношній всеношна noun:inanim:f:v_dav:v-u

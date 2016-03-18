@@ -419,6 +419,13 @@ class Expand {
 						}
 					}
 				}
+				else if( main_flag.startsWith("/n2adj") ) {
+					if( ! util.istota(flags)) {
+						if( "v_rod/v_zna" in line ) {
+							line = line.replace("/v_zna", "")
+						}
+					}
+				}
 				else if( main_flag.startsWith("/n2nm") ) {
 					if( util.istota(flags)) {
 						if( "m:v_rod" in line && ! ("/v_zna" in line) ) {
@@ -447,7 +454,7 @@ class Expand {
 					}
 					if( ("<+" in flags && ! (":p:" in line)) \
 //					    || (main_flag =~ "/n2n|/n4" && ! util.istota(flags)) \
-					    || (! (main_flag =~ "/n2n|/n4") && ! util.person(flags) ) \
+					    || (! (main_flag =~ "/n2n|/n2adj1|/n4") && ! util.person(flags) ) \
                         || (! (":patr" in line) && (flags.contains(".ko") || flags.contains(".ke")) ) \
                         || (":m:" in line && ("<+" in flags)) \
                         || (main_flag.startsWith("/n20") && base_word.endsWith("ло") && "v_dav" in line) ) {
