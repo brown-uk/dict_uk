@@ -20,5 +20,8 @@ How to run:
     Output:
 
         * out/dict_corp_vis.txt - Dictionary in visual (indented) format for review, analysis or conversion
-        * out/dict_corp_lt.txt - Dictionary for LT for annotating the corpus
-        * out/words.txt, out/words_spell.txt, out/lemmas.txt, out/tags.txt - list of all unique words, words valid for spelling, lemmas and tags
+        * out/dict_corp_lt.txt - Dictionary in flat format (is used for preparing morfologik dictionary that can be used by LanguageTool)
+        * out/words.txt - list of all unique known words
+        * out/words_spell.txt - words valid for spelling
+        * out/lemmas.txt - list of unique lemmas
+        * out/tags.txt - list of unique tags
