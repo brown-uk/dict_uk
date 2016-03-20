@@ -106,13 +106,21 @@ def process_line(line, extra_tags) {
 def process_input(files) {
     def out_lines = []
     for( filename in files ) {
-    
+
+		def detectProperNoun = false
+		
         def fn = re.sub(".*/", "", filename)
 		def extra_tags
-        if( fn in extra_tag_map )
+        if( fn in extra_tag_map ) {
             extra_tags = extra_tag_map[fn]
-        else
+        }
+        else {
+			if( fn in ["geography.lst", "names.lst"] ) {
+				detectProperNoun = true
+			}
+			
             extra_tags = ""
+        }
     
 //		System.err.println("---" + filename)
         new File(filename).withReader("utf-8") { reader ->
@@ -129,13 +137,24 @@ def process_input(files) {
                     out_lines.add( line )
                     continue
                 }
+				
                 if( filename.endsWith( "exceptions.lst" ) ) {
                     def lines = process_line_exceptions(line)
                     if( lines )
                         out_lines.addAll( lines )
                 }
 			    else {
-                    def out_line = process_line(line, extra_tags)
+					
+					def extra_tags2 = extra_tags;
+					
+					if( detectProperNoun ) {
+						if( Character.isUpperCase(line.charAt(0))
+								&& (line.contains(" /n") || line.contains(" ^noun") || line.contains(" noun:")) ) {
+							extra_tags2 += ":prop"
+						}
+					}
+					
+                    def out_line = process_line(line, extra_tags2)
                     if( out_line.trim() )
                         out_lines.add( out_line )
                 }
