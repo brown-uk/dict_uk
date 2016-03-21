@@ -1346,6 +1346,17 @@
   вимнистими adj:p:v_oru
   вимнистих adj:p:v_mis
   вимнисті adj:p:v_kly
+вим'я noun:inanim:n:v_naz
+  вимені noun:inanim:n:v_rod
+  вим'я noun:inanim:n:v_rod
+  вимені noun:inanim:n:v_dav
+  вим'ю noun:inanim:n:v_dav
+  вим'я noun:inanim:n:v_zna
+  вименем noun:inanim:n:v_oru
+  вим'ям noun:inanim:n:v_oru
+  вимені noun:inanim:n:v_mis
+  вим'ю noun:inanim:n:v_mis
+  вим'я noun:inanim:n:v_kly
 вихідний noun:inanim:m:v_naz
   вихідного noun:inanim:m:v_rod
   вихідному noun:inanim:m:v_dav
@@ -2630,6 +2641,15 @@
   синіми adj:p:v_oru
   синіх adj:p:v_mis
   сині adj:p:v_kly
+сім'я noun:inanim:n:v_naz
+  сімені noun:inanim:n:v_rod
+  сім'я noun:inanim:n:v_rod
+  сімені noun:inanim:n:v_dav
+  сім'я noun:inanim:n:v_zna
+  сіменем noun:inanim:n:v_oru
+  сім'ям noun:inanim:n:v_oru
+  сімені noun:inanim:n:v_mis
+  сім'я noun:inanim:n:v_kly
 стафілокок noun:unanim:m:v_naz
   стафілокока noun:unanim:m:v_rod
   стафілококові noun:unanim:m:v_dav

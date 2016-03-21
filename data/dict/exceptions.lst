@@ -28,27 +28,6 @@
 Великоднях Великдень noun:p:v_mis
 
 
-# власні
-Євангеліє Євангеліє noun:n:v_naz/v_zna
-Євангелія Євангеліє noun:n:v_rod//p:v_naz/v_zna
-Євангелію Євангеліє noun:n:v_dav/v_mis
-Євангелії Євангеліє noun:n:v_mis
-Євангелієм Євангеліє noun:n:v_oru
-Євангелій Євангеліє noun:p:v_rod
-Євангеліям Євангеліє noun:p:v_dav
-Євангеліями Євангеліє noun:p:v_oru
-Євангеліях Євангеліє noun:p:v_mis
-
-преподобіє преподобіє noun:n:v_naz/v_zna
-преподобія преподобіє noun:n:v_rod//p:v_naz/v_zna
-преподобію преподобіє noun:n:v_dav/v_mis
-преподобії преподобіє noun:n:v_mis
-преподобієм преподобіє noun:n:v_oru
-преподобій преподобіє noun:p:v_rod
-преподобіям преподобіє noun:p:v_dav
-преподобіями преподобіє noun:p:v_oru
-преподобіях преподобіє noun:p:v_mis
-
 чернець чернець noun:anim:m:v_naz
 ченця чернець noun:anim:m:v_rod
 ченцеві чернець noun:anim:m:v_dav
@@ -74,23 +53,19 @@
 стеклах скло noun:p:v_mis           #> склах
 
 
-очі око noun:p:v_naz/v_zna
-очей око noun:p:v_rod
-очам око noun:p:v_dav
-очима око noun:p:v_oru
-очах око noun:p:v_mis
-вічі око noun:p:v_zna
-
 вісь вісь noun:f:v_naz/v_zna
-осі вісь noun:f:v_rod/v_dav/v_mis//p:v_naz/v_zna
+осі вісь noun:f:v_rod/v_dav/v_mis//p:v_naz/v_zna/v_kly
+осе вісь noun:f:v_kly
 віссю вісь noun:f:v_oru
 осей вісь noun:p:v_rod
 осям вісь noun:p:v_dav
 осях вісь noun:p:v_mis
 осями вісь noun:p:v_oru
+
 піввісь піввісь noun:f:v_naz/v_zna
-півосі піввісь noun:f:v_rod/v_dav/v_mis//p:v_naz/v_zna
+півосі піввісь noun:f:v_rod/v_dav/v_mis//p:v_naz/v_zna/v_kly
 піввіссю піввісь noun:f:v_oru
+півосе піввісь noun:f:v_kly
 півосей піввісь noun:p:v_rod
 півосям піввісь noun:p:v_dav
 півосях піввісь noun:p:v_mis
@@ -98,29 +73,32 @@
 
 овес овес noun:m:v_naz/v_zna
 вівса овес noun:m:v_rod//p:v_naz/v_zna
-вівсу овес noun:m:v_dav
+вівсу овес noun:m:v_dav/v_mis
+вівсові овес noun:m:v_dav/v_mis
 вівсом овес noun:m:v_oru
 вівсі овес noun:m:v_mis
-овесе овес noun:m:v_kly
+вівсе овес noun:m:v_kly
 вівси овес noun:p:v_naz/v_zna/v_kly
+вівса овес noun:p:v_naz/v_zna/v_kly
 вівсів овес noun:p:v_rod
 вівсам овес noun:p:v_dav
 вівсами овес noun:p:v_oru
 вівсах овес noun:p:v_mis
 
-вівці вівця noun:p:v_naz/v_zna:anim
+вівці вівця noun:p:v_naz/v_zna/v_kly:anim
 овець вівця noun:p:v_rod/v_zna:anim
 вівцям вівця noun:p:v_dav:anim
 вівцями вівця noun:p:v_oru:anim
 вівцях вівця noun:p:v_mis:anim
 
 
-ігри гра noun:p:v_naz/v_zna
+ігри гра noun:p:v_naz/v_zna/v_kly
 ігор гра noun:p:v_rod
 іграм гра noun:p:v_dav
 іграми гра noun:p:v_oru
 іграх гра noun:p:v_mis
-відеоігри відеогра noun:p:v_naz/v_zna
+
+відеоігри відеогра noun:p:v_naz/v_zna/v_kly
 відеоігор відеогра noun:p:v_rod
 відеоіграм відеогра noun:p:v_dav
 відеоіграми відеогра noun:p:v_oru
@@ -129,22 +107,30 @@
 літ літ noun:m:v_naz/v_zna
 лету літ noun:m:v_rod/v_dav/v_mis
 льоту літ noun:m:v_rod/v_dav/v_mis
-летові літ noun:m:v_dav
+летові літ noun:m:v_dav/v_mis
+льотові літ noun:m:v_dav/v_mis
 летом літ noun:m:v_oru
 льотом літ noun:m:v_oru
 льоті літ noun:m:v_mis
 леті літ noun:m:v_mis
+льоте літ noun:m:v_kly
+лете літ noun:m:v_kly
 
 окові око noun:n:v_dav
+очі око noun:p:v_naz/v_zna/v_kly
+очей око noun:p:v_rod
+очам око noun:p:v_dav
+очима око noun:p:v_oru
+очах око noun:p:v_mis
+вічі око noun:p:v_zna
 
-очко очко noun:n:v_naz:xp1    # о́чко (від око)
+очко очко noun:n:v_naz/v_zna/v_kly:xp1    # о́чко (від око)
 очка очко noun:n:v_rod:xp1
 очку очко noun:n:v_dav:xp1
-очко очко noun:n:v_zna:xp1
 очком очко noun:n:v_oru:xp1
 очку очко noun:n:v_mis:xp1
 очка очко noun:p:v_naz:xp1
-очки очко noun:p:v_naz:xp1
+очки очко noun:p:v_naz/v_kly:xp1
 очок очко noun:p:v_rod:xp1
 очкам очко noun:p:v_dav:xp1
 очка очко noun:p:v_zna:xp1
@@ -152,13 +138,12 @@
 очками очко noun:p:v_oru:xp1
 очках очко noun:p:v_mis:xp1
 
-очко очко noun:n:v_naz:xp2    # очко́ (в грі)
+очко очко noun:n:v_naz/v_zna/v_kly:xp2    # очко́ (в грі)
 очка очко noun:n:v_rod:xp2
 очку очко noun:n:v_dav:xp2
-очко очко noun:n:v_zna:xp2
 очком очко noun:n:v_oru:xp2
 очку очко noun:n:v_mis:xp2
-очки очко noun:p:v_naz:xp2
+очки очко noun:p:v_naz/v_kly:xp2
 очок очко noun:p:v_rod:xp2
 очкам очко noun:p:v_dav:xp2
 очки очко noun:p:v_zna:xp2
@@ -166,22 +151,22 @@
 очках очко noun:p:v_mis:xp2
 
 
-Господь Господь noun:m:v_naz:anim
-Господа Господь noun:m:v_rod/v_zna:anim
-Господові Господь noun:m:v_dav/v_mis:anim
-Господеві Господь noun:m:v_dav/v_mis:anim
-Господу Господь noun:m:v_dav:anim
-Господом Господь noun:m:v_oru:anim
-Господі Господь noun:m:v_mis:anim
-Господи Господь noun:m:v_kly:anim
+Господь Господь noun:m:v_naz:anim:prop
+Господа Господь noun:m:v_rod/v_zna:anim:prop
+Господові Господь noun:m:v_dav/v_mis:anim:prop
+Господеві Господь noun:m:v_dav/v_mis:anim:prop
+Господу Господь noun:m:v_dav:anim:prop
+Господом Господь noun:m:v_oru:anim:prop
+Господі Господь noun:m:v_mis:anim:prop
+Господи Господь noun:m:v_kly:anim:prop
 
-Христос Христос noun:m:v_naz:anim
-Христа Христос noun:m:v_rod/v_zna:anim
-Христу Христос noun:m:v_dav:anim
-Христові Христос noun:m:v_dav/v_mis:anim
-Христом Христос noun:m:v_oru:anim
-Христі Христос noun:m:v_mis:anim
-Христе Христос noun:m:v_kly:anim
+Христос Христос noun:m:v_naz:anim:prop
+Христа Христос noun:m:v_rod/v_zna:anim:prop
+Христу Христос noun:m:v_dav:anim:prop
+Христові Христос noun:m:v_dav/v_mis:anim:prop
+Христом Христос noun:m:v_oru:anim:prop
+Христі Христос noun:m:v_mis:anim:prop
+Христе Христос noun:m:v_kly:anim:prop
 
 четвер четвер noun:m:v_naz/v_zna
 четверга четвер noun:m:v_rod
@@ -195,77 +180,70 @@
 четвергів четвер noun:p:v_rod
 четвергам четвер noun:p:v_dav
 
-мати мати noun:anim:f:v_naz
+мати мати noun:anim:f:v_naz/v_kly
 матір мати noun:anim:f:v_naz:rare
 матері мати noun:anim:f:v_rod
 матері мати noun:anim:f:v_dav
 матір мати noun:anim:f:v_zna
 матір'ю мати noun:anim:f:v_oru
 матері мати noun:anim:f:v_mis
-мати мати noun:anim:f:v_kly
-матері мати noun:anim:p:v_naz
+матері мати noun:anim:p:v_naz/v_kly
 матерів мати noun:anim:p:v_rod
 матерям мати noun:anim:p:v_dav
 матерів мати noun:anim:p:v_zna
 матерями мати noun:anim:p:v_oru
 матерях мати noun:anim:p:v_mis
-матері мати noun:anim:p:v_kly
 
-плечі плече noun:p:v_naz/v_zna
+плечі плече noun:p:v_naz/v_zna/v_kly
 плечей плече noun:p:v_rod
 пліч плече noun:p:v_rod
 плечам плече noun:p:v_dav
 плечима плече noun:p:v_oru
 плечах плече noun:p:v_mis
 
-зябра зябра noun:p:v_naz/v_zna
+зябра зябра noun:p:v_naz/v_zna/v_kly
 зябер зябра noun:p:v_rod
 зябрам зябра noun:p:v_dav
 зябрами зябра noun:p:v_oru
 зябрах зябра noun:p:v_mis
 
+хабарі хабар noun:p:v_naz/v_zna/v_kly
 хабарів хабар noun:p:v_rod
 хабарам хабар noun:p:v_dav
 хабарами хабар noun:p:v_oru
 хабарах хабар noun:p:v_mis
-хабарі хабар noun:p:v_naz
-хабарі хабар noun:p:v_zna
 
+комарі комар noun:p:v_naz/v_kly:anim
 комарів комар noun:p:v_rod:anim
 комарів комар noun:p:v_zna:anim
 комарам комар noun:p:v_dav:anim
 комарами комар noun:p:v_oru:anim
 комарах комар noun:p:v_mis:anim
-комарі комар noun:p:v_naz:anim
 
+пластирі пластир noun:p:v_naz/v_zna/v_kly
 пластирів пластир noun:p:v_rod
 пластирам пластир noun:p:v_dav
 пластирами пластир noun:p:v_oru
 пластирах пластир noun:p:v_mis
-пластирі пластир noun:p:v_naz
-пластирі пластир noun:p:v_zna
 
+лейкопластирі лейкопластир noun:p:v_naz/v_zna/v_kly
 лейкопластирів лейкопластир noun:p:v_rod
 лейкопластирам лейкопластир noun:p:v_dav
 лейкопластирами лейкопластир noun:p:v_oru
 лейкопластирах лейкопластир noun:p:v_mis
-лейкопластирі лейкопластир noun:p:v_naz
-лейкопластирі лейкопластир noun:p:v_zna
 
-гребню гребінь noun:m:v_dav
-гребню гребінь noun:m:v_mis
+гребня гребінь noun:m:v_rod
+гребню гребінь noun:m:v_dav/v_mis
 гребневі гребінь noun:m:v_dav
 гребнем гребінь noun:m:v_oru
 гребні гребінь noun:m:v_mis
-гребні гребінь noun:p:v_naz
-гребні гребінь noun:p:v_zna
+гребні гребінь noun:p:v_naz/v_zna/v_kly
 гребнів гребінь noun:p:v_rod
 гребням гребінь noun:p:v_dav
 гребнями гребінь noun:p:v_oru
 гребнях гребінь noun:p:v_mis
-гребня гребінь noun:m:v_rod
 
-чоботи чобіт noun:p:v_naz/v_zna
+чоботи чобіт noun:p:v_naz/v_zna/v_kly
 чобіт чобіт noun:p:v_rod
 чоботам чобіт noun:p:v_dav
 чоботям чобіт noun:p:v_dav
@@ -274,21 +252,20 @@
 чоботах чобіт noun:p:v_mis
 чоботях чобіт noun:p:v_mis
 
-горщок горщок noun:m:v_naz/v_zna
+горщок горщок noun:m:v_naz/v_zna/v_kly
 горшка горщок noun:m:v_rod
 горшку горщок noun:m:v_dav/v_mis
 горшкові горщок noun:m:v_dav
 горшком горщок noun:m:v_oru
 
-війя війя noun:n:v_naz/v_rod/v_zna
+війя війя noun:n:v_naz/v_rod/v_zna/v_kly
 війю війя noun:n:v_dav/v_mis
 війям війя noun:n:v_oru
 війї війя noun:n:v_mis
 
-відом відом noun:m:v_naz:rare
+відом відом noun:m:v_naz/v_zna/v_kly:rare
 відома відом noun:m:v_rod
 відому відом noun:m:v_dav:rare
-відом відом noun:m:v_zna:rare
 відомом відом noun:m:v_oru
 відомі відом noun:m:v_mis:rare
 
@@ -297,7 +274,7 @@
 штанями штани noun:p:v_oru:ns
 штанях штани noun:p:v_mis:ns
 
-дошки дошка noun:p:v_naz/v_zna
+дошки дошка noun:p:v_naz/v_zna/v_kly
 дощок дошка noun:p:v_rod
 дошкам дошка noun:p:v_dav
 дошками дошка noun:p:v_oru
@@ -323,9 +300,6 @@
 свиньми свиня noun:p:v_oru:anim
 ворітьми ворота noun:p:v_oru:ns
 
-сімені сім'я noun:inanim:n:v_rod/v_dav/v_mis:xp2
-сіменем сім'я noun:inanim:n:v_oru:xp2
-
 стіп стопа noun:p:v_rod:xp1
 
 воротям ворота noun:p:v_dav:ns
@@ -335,8 +309,8 @@
 
 панове пан noun:p:v_kly:anim
 
-Божечко /n20.< :xp2
-Божечко Божечко noun:m:v_kly:anim:fname:xp2
+Божечко /n20.< :xp2:prop
+Божечко Божечко noun:m:v_kly:anim:fname:xp2:prop
 
 # давні форми
 бельмес бельмес noun:m:v_naz:rare
