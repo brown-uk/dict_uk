@@ -85,7 +85,7 @@ task dups << {
 	def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') }
 	
 	def lines = files.collect {  it.text.split("\n")  }.flatten() \
-	    .collect { it.trim().replaceAll(/\s*#.*/, '').replaceAll(/\.[^ ]+/, '') } \
+	    .collect { it.trim().replaceAll(/\s*#.*/, '').replaceAll(/\.[^< ]+/, '...') } \
 	    .grep { it && ! it.startsWith("+cs") }
 
     lines = lines.grep { ! it.startsWith('#') }

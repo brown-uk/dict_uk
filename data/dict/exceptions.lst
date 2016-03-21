@@ -232,17 +232,6 @@
 лейкопластирами лейкопластир noun:p:v_oru
 лейкопластирах лейкопластир noun:p:v_mis
 
-гребня гребінь noun:m:v_rod
-гребню гребінь noun:m:v_dav/v_mis
-гребневі гребінь noun:m:v_dav
-гребнем гребінь noun:m:v_oru
-гребні гребінь noun:m:v_mis
-гребні гребінь noun:p:v_naz/v_zna/v_kly
-гребнів гребінь noun:p:v_rod
-гребням гребінь noun:p:v_dav
-гребнями гребінь noun:p:v_oru
-гребнях гребінь noun:p:v_mis
-
 чоботи чобіт noun:p:v_naz/v_zna/v_kly
 чобіт чобіт noun:p:v_rod
 чоботам чобіт noun:p:v_dav
@@ -308,9 +297,6 @@
 зморщок зморшка noun:p:v_rod
 
 панове пан noun:p:v_kly:anim
-
-Божечко /n20.< :xp2:prop
-Божечко Божечко noun:m:v_kly:anim:fname:xp2:prop
 
 # давні форми
 бельмес бельмес noun:m:v_naz:rare
