@@ -22,7 +22,7 @@ noun 104103
      fname 2238
      inanim 68878
      lname 19768
-     nv 7987
+     nv 7985
      patr 628
 numr 131
      nv 23
