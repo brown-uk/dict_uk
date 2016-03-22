@@ -2,6 +2,8 @@ apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'eclipse'
 
+compileJava.options.encoding = 'UTF-8'
+
 version = '1.0'
 group = 'org.dict_uk'
 
