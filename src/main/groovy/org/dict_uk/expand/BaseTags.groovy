@@ -42,9 +42,9 @@ class BaseTags {
 
 		if( affixFlag.startsWith("adj") ) {
 		    def v_kly = ""
-		    if( ! allAffixFlags.contains("<+") ) {
+//		    if( ! allAffixFlags.contains("<+") ) {
     			v_kly = "/v_kly"
-    		}
+//    		}
 
 			if( word.endsWith("е") || word.endsWith("є") ) {
 				tag = ":n:v_naz/v_zna$v_kly"

@@ -24,13 +24,13 @@
   абордажі noun:inanim:m:v_mis
   абордажу noun:inanim:m:v_mis
   абордаже noun:inanim:m:v_kly
-Августо noun:anim:m:v_naz:nv:np:fname
-  Августо noun:anim:m:v_rod:nv:np:fname
-  Августо noun:anim:m:v_dav:nv:np:fname
-  Августо noun:anim:m:v_zna:nv:np:fname
-  Августо noun:anim:m:v_oru:nv:np:fname
-  Августо noun:anim:m:v_mis:nv:np:fname
-  Августо noun:anim:m:v_kly:nv:np:fname
+Августо noun:anim:m:v_naz:nv:np:fname:prop
+  Августо noun:anim:m:v_rod:nv:np:fname:prop
+  Августо noun:anim:m:v_dav:nv:np:fname:prop
+  Августо noun:anim:m:v_zna:nv:np:fname:prop
+  Августо noun:anim:m:v_oru:nv:np:fname:prop
+  Августо noun:anim:m:v_mis:nv:np:fname:prop
+  Августо noun:anim:m:v_kly:nv:np:fname:prop
 авеню noun:inanim:f:v_naz:nv
   авеню noun:inanim:f:v_rod:nv
   авеню noun:inanim:f:v_dav:nv
@@ -43,12 +43,13 @@
   авеню noun:inanim:p:v_zna:nv
   авеню noun:inanim:p:v_oru:nv
   авеню noun:inanim:p:v_mis:nv
-Аверянова noun:anim:f:v_naz:lname
-  Аверянової noun:anim:f:v_rod:lname
-  Аверяновій noun:anim:f:v_dav:lname
-  Аверянову noun:anim:f:v_zna:lname
-  Аверяновою noun:anim:f:v_oru:lname
-  Аверяновій noun:anim:f:v_mis:lname
+Аверянова noun:anim:f:v_naz:prop:lname
+  Аверянової noun:anim:f:v_rod:prop:lname
+  Аверяновій noun:anim:f:v_dav:prop:lname
+  Аверянову noun:anim:f:v_zna:prop:lname
+  Аверяновою noun:anim:f:v_oru:prop:lname
+  Аверяновій noun:anim:f:v_mis:prop:lname
+  Аверянова noun:anim:f:v_kly:prop:lname
 авто noun:inanim:n:v_naz
   авта noun:inanim:n:v_rod
   авту noun:inanim:n:v_dav
@@ -892,6 +893,7 @@
   Вербицьким noun:anim:m:v_oru:lname
   Вербицькім noun:anim:m:v_mis:lname
   Вербицькому noun:anim:m:v_mis:lname
+  Вербицький noun:anim:m:v_kly:lname
   Вербицькі noun:anim:p:v_naz:lname
   Вербицьких noun:anim:p:v_rod:lname
   Вербицьким noun:anim:p:v_dav:lname
@@ -969,13 +971,14 @@
   верифікувало verb:perf:past:n
   верифікували verb:perf:past:p
   верифіковано verb:perf:impers
-Вернадський noun:anim:m:v_naz:lname
-  Вернадського noun:anim:m:v_rod:lname
-  Вернадському noun:anim:m:v_dav:lname
-  Вернадського noun:anim:m:v_zna:lname
-  Вернадським noun:anim:m:v_oru:lname
-  Вернадськім noun:anim:m:v_mis:lname
-  Вернадському noun:anim:m:v_mis:lname
+Вернадський noun:anim:m:v_naz:prop:lname
+  Вернадського noun:anim:m:v_rod:prop:lname
+  Вернадському noun:anim:m:v_dav:prop:lname
+  Вернадського noun:anim:m:v_zna:prop:lname
+  Вернадським noun:anim:m:v_oru:prop:lname
+  Вернадськім noun:anim:m:v_mis:prop:lname
+  Вернадському noun:anim:m:v_mis:prop:lname
+  Вернадський noun:anim:m:v_kly:prop:lname
 вертихвіст noun:anim:m:v_naz
   вертихвоста noun:anim:m:v_rod
   вертихвостові noun:anim:m:v_dav
