@@ -18,8 +18,6 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.regex.*;
-
 public class Affix {
 	static Logger log = LogManager.getFormatterLogger(Affix.class);
 	//	private final ArrayList<> prefixes = new ArrayList<>();
@@ -103,7 +101,7 @@ public class Affix {
 		try {
 			readAllLines = Files.readAllLines(Paths.get(aff_file.getAbsolutePath()));
 		} catch (IOException e) {
-			throw new RuntimeException(e);
+			throw new RuntimeException("Error reading affix file " + aff_file, e);
 		}
 		
 		for(String line: readAllLines) {

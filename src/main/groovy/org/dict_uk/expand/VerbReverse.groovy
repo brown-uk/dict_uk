@@ -141,7 +141,7 @@ class VerbReverse {
     def input = argv.size() > 0 ? new File(argv[0]).newInputStream() : System.in
     //def output = argv.size() > 1 ? new File(argv[1]).newOutputStream() : System.out
     
-    new File(argv[1]).withWriter{ output ->
+    new File(argv[1]).withWriter("UTF-8") { output ->
     
     input.readLines().each { line ->
         
