@@ -3230,6 +3230,16 @@
   щонайуживанішими adj:p:v_oru:super:v-u
   щонайуживаніших adj:p:v_mis:super:v-u
   щонайуживаніші adj:p:v_kly:super:v-u
+Ягайло noun:anim:m:v_naz:prop:fname
+  Ягайла noun:anim:m:v_rod:prop:fname
+  Ягайлові noun:anim:m:v_dav:prop:fname
+  Ягайлу noun:anim:m:v_dav:prop:fname
+  Ягайла noun:anim:m:v_zna:prop:fname
+  Ягайлом noun:anim:m:v_oru:prop:fname
+  Ягайлі noun:anim:m:v_mis:prop:fname
+  Ягайлові noun:anim:m:v_mis:prop:fname
+  Ягайлу noun:anim:m:v_mis:prop:fname
+  Ягайло noun:anim:m:v_kly:prop:fname
 якнайвагоміше adv:super
 якнайвагоміший adj:m:v_naz:super
   якнайвагомішого adj:m:v_rod:super

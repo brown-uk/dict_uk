@@ -6,6 +6,7 @@ actv
 adj
 adjp
 &adjp
+&_adjp
 adv
 advp
 alt
@@ -19,6 +20,7 @@ coord
 def
 dem
 dimin
+emph
 excl
 f
 fname
@@ -55,6 +57,7 @@ predic
 prep
 pres
 &pron
+prop
 ranim
 rinanim
 rare
@@ -87,7 +90,6 @@ xp1
 xp2
 xp3
 xp4
+xp5
 xv1
 xv2
-xx0
-xx1

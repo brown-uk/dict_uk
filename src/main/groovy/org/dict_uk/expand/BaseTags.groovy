@@ -31,20 +31,12 @@ class BaseTags {
 			return tag
 
 		def v_zna_for_inanim = ""
-		def v_kly_for_anim = ""
 
 		if( ! util.istota(allAffixFlags) || util.bacteria(allAffixFlags) ) {
 			v_zna_for_inanim = "/v_zna"
 		}
-		if( util.istota(allAffixFlags) && ! allAffixFlags.contains(".ko") && ! allAffixFlags.contains(".ke") ) {
-			v_kly_for_anim = "/v_kly"
-		}
 
 		if( affixFlag.startsWith("adj") ) {
-//		    def v_kly = ""
-//		    if( ! allAffixFlags.contains("<+") ) {
-//    			v_kly = "/v_kly"
-//    		}
 
 			if( word.endsWith("е") || word.endsWith("є") ) {
 				tag = ":n:v_naz/v_zna/v_kly"
@@ -83,11 +75,11 @@ class BaseTags {
 		}
 
 		if( affixFlag.startsWith("n2n") ) {
-		    if( affixFlag.startsWith("n2nm") ) {
+		    if( affixFlag.startsWith("n2nm") ) { // сутяжище /n2nm.p.<
 			    tag = ":m:v_naz" + v_zna_for_inanim
 			    tag += "/v_kly"
 		    }
-		    else if( affixFlag.startsWith("n2nf") ) {
+		    else if( affixFlag.startsWith("n2nf") ) { // сутяжище /n2nf.p.<
 			    tag = ":f:v_naz" + v_zna_for_inanim
 			    tag += "/v_zna/v_kly"
 		    }
@@ -117,14 +109,15 @@ class BaseTags {
 		}
 		else if( affixFlag[0..<2] == "n2" ) {
 			tag = ":m:v_naz" + v_zna_for_inanim
-			if( affixFlag.startsWith("n20") && util.person(allAffixFlags) && (word[-2..-1] == "ло") )// && not util.lastname(allAffixFlags) )
+			if( affixFlag.startsWith("n20") && util.person(allAffixFlags) && (word[-2..-1] == "ло") && ! allAffixFlags.contains(".k") ) {
 				tag += "/v_kly"
+			}
 		}
 		else if( affixFlag[0..<2] == "n1" ) {
 			tag = ":f:v_naz"
 		}
 		else if( affixFlag[0..<2] == "n4" ) {
-			tag = ":n:v_naz/v_zna/v_kly"// + v_kly_for_anim
+			tag = ":n:v_naz/v_zna/v_kly"
 		}
 		else if( affixFlag[0..<2] == "n3" ) {
 			tag = ":f:v_naz/v_zna"
