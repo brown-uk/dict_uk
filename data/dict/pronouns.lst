@@ -891,10 +891,10 @@
 багатьом багато numr:p:v_dav:&pron:ind
 багатьма багато numr:p:v_oru:&pron:ind
 
-декілька numr:p:v_naz/v_zna:&pron:ind
-декількох numr:p:v_rod/v_zna/v_mis:&pron:ind
-декільком numr:p:v_dav:&pron:ind
-декількома numr:p:v_oru:&pron:ind
+декілька декілька numr:p:v_naz/v_zna:&pron:ind
+декількох декілька numr:p:v_rod/v_zna/v_mis:&pron:ind
+декільком декілька numr:p:v_dav:&pron:ind
+декількома декілька numr:p:v_oru:&pron:ind
 
 кілька кілька numr:p:v_naz/v_zna:&pron:ind
 кількох кілька numr:p:v_rod/v_zna/v_mis:&pron:ind
@@ -907,21 +907,21 @@
 скількомсь скількись numr:v_dav:&pron:ind
 скількомась скількись numr:v_oru:&pron:ind
 
-скільки numr:p:v_naz/v_zna:&pron:ind
-скількох numr:p:v_rod/v_zna/v_mis:&pron:ind
-скільком numr:p:v_dav:&pron:ind
-скількома numr:p:v_oru:&pron:ind
+скільки скільки numr:p:v_naz/v_zna:&pron:int
+скількох скільки numr:p:v_rod/v_zna/v_mis:&pron:int
+скільком скільки numr:p:v_dav:&pron:int
+скількома скільки numr:p:v_oru:&pron:int
 
 стільки adv
-стільки numr:p:v_naz/v_zna:&pron:ind
-стількох numr:p:v_rod/v_zna/v_mis:&pron:ind
-стільком numr:p:v_dav:&pron:ind
-стількома numr:p:v_oru:&pron:ind
+стільки стільки numr:p:v_naz/v_zna:&pron:dem
+стількох стільки numr:p:v_rod/v_zna/v_mis:&pron:dem
+стільком стільки numr:p:v_dav:&pron:dem
+стількома стільки numr:p:v_oru:&pron:dem
 
-скільки-небудь numr:p:v_naz/v_zna:&pron:ind
-скількох-небудь numr:p:v_rod/v_zna/v_mis:&pron:ind
-скільком-небудь numr:p:v_dav:&pron:ind
-скількома-небудь numr:p:v_oru:&pron:ind
+скільки-небудь скільки-небудь numr:p:v_naz/v_zna:&pron:ind
+скількох-небудь скільки-небудь numr:p:v_rod/v_zna/v_mis:&pron:ind
+скільком-небудь скільки-небудь numr:p:v_dav:&pron:ind
+скількома-небудь скільки-небудь numr:p:v_oru:&pron:ind
 
 хтозна-скільки adv
 хтозна-скільки хтозна-скільки numr:v_naz/v_zna:&pron:ind
@@ -1161,12 +1161,12 @@
 півста numr:nv:np:coll
 півтораста numr:p:nv
 
-один-два numr:p:v_naz/v_zna
-два-три numr:p:v_naz/v_zna
-дві-три numr:p:v_naz/v_zna
-двома-трьома numr:p:v_oru
-двох-трьох numr:p:v_rod/v_zna/v_mis
-три-чотири numr:p:v_naz/v_zna
+один-два один-два numr:p:v_naz/v_zna
+два-три два-три numr:p:v_naz/v_zna
+дві-три два-три numr:p:v_naz/v_zna
+двома-трьома два-три numr:p:v_oru
+двох-трьох два-три numr:p:v_rod/v_zna/v_mis
+три-чотири три-чотири numr:p:v_naz/v_zna
 
 
 # Прислівники
