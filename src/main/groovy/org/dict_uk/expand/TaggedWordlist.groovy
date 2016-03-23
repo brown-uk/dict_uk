@@ -109,7 +109,8 @@ def process_input(files) {
 
 		def detectProperNoun = false
 		
-        def fn = re.sub(".*/", "", filename)
+        def fn = new File(filename).name
+		
 		def extra_tags
         if( fn in extra_tag_map ) {
             extra_tags = extra_tag_map[fn]
