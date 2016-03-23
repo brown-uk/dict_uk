@@ -143,7 +143,7 @@ class VerbReverse {
     
     new File(argv[1]).withWriter("UTF-8") { output ->
     
-    input.readLines().each { line ->
+    input.readLines("UTF-8").each { line ->
         
         try {
         if( convert ) {

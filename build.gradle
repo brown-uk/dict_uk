@@ -14,8 +14,6 @@ String affixDir="data/affix"
 String outputDir="out"
 String prevDir="../../out/prev"
 
-String testDir="test"
-String testPrevDir="$testDir/prev"
 
 repositories {
     mavenCentral()
@@ -106,7 +104,7 @@ task testExpand(type: JavaExec, dependsOn: [reverseAffix, classes]) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
 
-    workingDir = file(testDir)
+    workingDir = file('test')
 
     def opts = "--corp --indent --mfl --stats --wordlist"
     args "-aff", "../data/affix"
@@ -115,15 +113,14 @@ task testExpand(type: JavaExec, dependsOn: [reverseAffix, classes]) {
 
     doLast {
         def file="dict_corp_lt.txt"
-        def noTestOutputChange = (new File("$testDir/$file").text == new File("$testPrevDir/$file").text)
+        def noTestOutputChange = (new File("$workingDir/$file").text == new File("$workingDir/prev/$file").text)
         assert noTestOutputChange
 
         file="dict_corp_vis.txt"
-        def noTestVisOutputChange = (new File("$testDir/$file").text == new File("$testPrevDir/$file").text)
+        def noTestVisOutputChange = (new File("$workingDir/$file").text == new File("$workingDir/prev/$file").text)
         assert noTestVisOutputChange
 
-        file="dict_corp_vis.txt"
-        def noTestTagsOutputChange = (new File("$testDir/tags.txt").text == new File("$testPrevDir/tags.txt").text)
+        def noTestTagsOutputChange = (new File("$workingDir/tags.txt").text == new File("$workingDir/prev/tags.txt").text)
         assert noTestTagsOutputChange
     }
 }
