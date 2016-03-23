@@ -362,6 +362,7 @@ noun:anim:f:v_dav:xp1
 noun:anim:f:v_kly
 noun:anim:f:v_kly:bad
 noun:anim:f:v_kly:lname
+noun:anim:f:v_kly:nv:np:lname
 noun:anim:f:v_kly:patr
 noun:anim:f:v_kly:prop:lname
 noun:anim:f:v_kly:xp1
@@ -414,6 +415,7 @@ noun:anim:m:v_kly
 noun:anim:m:v_kly:fname
 noun:anim:m:v_kly:lname
 noun:anim:m:v_kly:nv:np:fname:prop
+noun:anim:m:v_kly:nv:np:lname
 noun:anim:m:v_kly:patr
 noun:anim:m:v_kly:prop:lname
 noun:anim:m:v_kly:slang
@@ -524,6 +526,7 @@ noun:inanim:f:v_dav:bad
 noun:inanim:f:v_dav:nv
 noun:inanim:f:v_dav:v-u
 noun:inanim:f:v_kly
+noun:inanim:f:v_kly:nv
 noun:inanim:f:v_kly:v-u
 noun:inanim:f:v_mis
 noun:inanim:f:v_mis:bad
@@ -572,6 +575,7 @@ noun:inanim:n:v_dav
 noun:inanim:n:v_dav:nv
 noun:inanim:n:v_dav:nv:np:abbr
 noun:inanim:n:v_kly
+noun:inanim:n:v_kly:nv
 noun:inanim:n:v_mis
 noun:inanim:n:v_mis:nv
 noun:inanim:n:v_mis:nv:np:abbr
@@ -594,6 +598,7 @@ noun:inanim:p:v_dav:v-u
 noun:inanim:p:v_dav:xp1
 noun:inanim:p:v_dav:xp2
 noun:inanim:p:v_kly
+noun:inanim:p:v_kly:nv
 noun:inanim:p:v_kly:v-u
 noun:inanim:p:v_mis
 noun:inanim:p:v_mis:ns
@@ -639,6 +644,7 @@ noun:unanim:p:v_rod
 noun:unanim:p:v_zna
 numr:p:v_dav
 numr:p:v_dav:nv:coll
+numr:p:v_kly:nv:coll
 numr:p:v_mis
 numr:p:v_mis:nv:coll
 numr:p:v_naz

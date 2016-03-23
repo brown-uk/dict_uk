@@ -37,12 +37,14 @@
   авеню noun:inanim:f:v_zna:nv
   авеню noun:inanim:f:v_oru:nv
   авеню noun:inanim:f:v_mis:nv
+  авеню noun:inanim:f:v_kly:nv
   авеню noun:inanim:p:v_naz:nv
   авеню noun:inanim:p:v_rod:nv
   авеню noun:inanim:p:v_dav:nv
   авеню noun:inanim:p:v_zna:nv
   авеню noun:inanim:p:v_oru:nv
   авеню noun:inanim:p:v_mis:nv
+  авеню noun:inanim:p:v_kly:nv
 Аверянова noun:anim:f:v_naz:prop:lname
   Аверянової noun:anim:f:v_rod:prop:lname
   Аверяновій noun:anim:f:v_dav:prop:lname
@@ -70,12 +72,14 @@
   авто noun:inanim:n:v_zna:nv
   авто noun:inanim:n:v_oru:nv
   авто noun:inanim:n:v_mis:nv
+  авто noun:inanim:n:v_kly:nv
   авто noun:inanim:p:v_naz:nv
   авто noun:inanim:p:v_rod:nv
   авто noun:inanim:p:v_dav:nv
   авто noun:inanim:p:v_zna:nv
   авто noun:inanim:p:v_oru:nv
   авто noun:inanim:p:v_mis:nv
+  авто noun:inanim:p:v_kly:nv
 автопричіп noun:inanim:m:v_naz
   автопричепа noun:inanim:m:v_rod
   автопричепові noun:inanim:m:v_dav
@@ -112,6 +116,7 @@
   Адамишин noun:anim:f:v_zna:nv:np:lname
   Адамишин noun:anim:f:v_oru:nv:np:lname
   Адамишин noun:anim:f:v_mis:nv:np:lname
+  Адамишин noun:anim:f:v_kly:nv:np:lname
 Адамишина noun:anim:f:v_naz:lname
   Адамишиної noun:anim:f:v_rod:lname
   Адамишиній noun:anim:f:v_dav:lname
@@ -196,6 +201,7 @@
   Бабенко noun:anim:f:v_zna:nv:np:lname
   Бабенко noun:anim:f:v_oru:nv:np:lname
   Бабенко noun:anim:f:v_mis:nv:np:lname
+  Бабенко noun:anim:f:v_kly:nv:np:lname
 бабисько noun:anim:n:v_naz
   бабиська noun:anim:n:v_rod
   бабиськові noun:anim:n:v_dav
@@ -390,6 +396,7 @@
   Вагнер noun:anim:f:v_zna:nv:np:lname
   Вагнер noun:anim:f:v_oru:nv:np:lname
   Вагнер noun:anim:f:v_mis:nv:np:lname
+  Вагнер noun:anim:f:v_kly:nv:np:lname
 вагомий adj:m:v_naz:compb
   вагомого adj:m:v_rod:compb
   вагомому adj:m:v_dav:compb
@@ -873,12 +880,14 @@
   Вентурі noun:anim:m:v_zna:nv:np:lname
   Вентурі noun:anim:m:v_oru:nv:np:lname
   Вентурі noun:anim:m:v_mis:nv:np:lname
+  Вентурі noun:anim:m:v_kly:nv:np:lname
 Вентурі noun:anim:f:v_naz:nv:np:lname
   Вентурі noun:anim:f:v_rod:nv:np:lname
   Вентурі noun:anim:f:v_dav:nv:np:lname
   Вентурі noun:anim:f:v_zna:nv:np:lname
   Вентурі noun:anim:f:v_oru:nv:np:lname
   Вентурі noun:anim:f:v_mis:nv:np:lname
+  Вентурі noun:anim:f:v_kly:nv:np:lname
 Вербицька noun:anim:f:v_naz:lname
   Вербицької noun:anim:f:v_rod:lname
   Вербицькій noun:anim:f:v_dav:lname
@@ -1742,6 +1751,7 @@
   двойко numr:p:v_zna:nv:coll
   двойко numr:p:v_oru:nv:coll
   двойко numr:p:v_mis:nv:coll
+  двойко numr:p:v_kly:nv:coll
 дев'ять numr:p:v_naz
   дев'яти numr:p:v_rod
   дев'ятьох numr:p:v_rod

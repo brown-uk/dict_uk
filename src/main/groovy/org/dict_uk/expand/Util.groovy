@@ -140,7 +140,8 @@ class Util {
 
 
 				for( v in VIDM_LIST ){
-					if( v == "v_kly" && (! (":anim" in line) || ":lname" in line) )
+//					if( v == "v_kly" && (! (":anim" in line) || ":lname" in line) )
+					if( v == "v_kly" && line.contains(". ") )
 						continue
 
 					lines.add(parts[0] + ":" + v + ":nv" + part2)
@@ -149,9 +150,11 @@ class Util {
 				if( "noun" in line ) {
 					if( ! (":p" in line) && ! (":np" in line) && ! (":lname" in line)) {
 						for( v in VIDM_LIST ) {
-							if( v != "v_kly" || "anim" in line) {
-								lines.add(re_nv_vidm.matcher(line).replaceAll('$1:p:' + v + ':$2'))
-							}
+        					if( v == "v_kly" && line.contains(". ") )
+        					    continue
+//							if( v != "v_kly" || "anim" in line) {
+							lines.add(re_nv_vidm.matcher(line).replaceAll('$1:p:' + v + ':$2'))
+//							}
 						}
 					}
 				}
@@ -171,7 +174,8 @@ class Util {
 
 				for( g in gens ){
 					for( v in VIDM_LIST ){
-						if( v == "v_kly" && (! (":anim" in line) || ":lname" in line) )    // TODO: include v_kly? but ! for abbr like кв.
+//						if( v == "v_kly" && (! (":anim" in line) || ":lname" in line) )    // TODO: include v_kly? but ! for abbr like кв.
+        				if( v == "v_kly" && line.contains(". ") )
 							continue
 
 						lines.add(parts[0] + ":" + g + ":" + v + ":nv" + (parts.size()>1 ? parts[1] :""))

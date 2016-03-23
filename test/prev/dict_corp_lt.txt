@@ -37,12 +37,14 @@
 авеню авеню noun:inanim:f:v_zna:nv
 авеню авеню noun:inanim:f:v_oru:nv
 авеню авеню noun:inanim:f:v_mis:nv
+авеню авеню noun:inanim:f:v_kly:nv
 авеню авеню noun:inanim:p:v_naz:nv
 авеню авеню noun:inanim:p:v_rod:nv
 авеню авеню noun:inanim:p:v_dav:nv
 авеню авеню noun:inanim:p:v_zna:nv
 авеню авеню noun:inanim:p:v_oru:nv
 авеню авеню noun:inanim:p:v_mis:nv
+авеню авеню noun:inanim:p:v_kly:nv
 Аверянова Аверянова noun:anim:f:v_naz:prop:lname
 Аверянової Аверянова noun:anim:f:v_rod:prop:lname
 Аверяновій Аверянова noun:anim:f:v_dav:prop:lname
@@ -70,12 +72,14 @@
 авто авто noun:inanim:n:v_zna:nv
 авто авто noun:inanim:n:v_oru:nv
 авто авто noun:inanim:n:v_mis:nv
+авто авто noun:inanim:n:v_kly:nv
 авто авто noun:inanim:p:v_naz:nv
 авто авто noun:inanim:p:v_rod:nv
 авто авто noun:inanim:p:v_dav:nv
 авто авто noun:inanim:p:v_zna:nv
 авто авто noun:inanim:p:v_oru:nv
 авто авто noun:inanim:p:v_mis:nv
+авто авто noun:inanim:p:v_kly:nv
 автопричіп автопричіп noun:inanim:m:v_naz
 автопричепа автопричіп noun:inanim:m:v_rod
 автопричепові автопричіп noun:inanim:m:v_dav
@@ -112,6 +116,7 @@
 Адамишин Адамишин noun:anim:f:v_zna:nv:np:lname
 Адамишин Адамишин noun:anim:f:v_oru:nv:np:lname
 Адамишин Адамишин noun:anim:f:v_mis:nv:np:lname
+Адамишин Адамишин noun:anim:f:v_kly:nv:np:lname
 Адамишина Адамишина noun:anim:f:v_naz:lname
 Адамишиної Адамишина noun:anim:f:v_rod:lname
 Адамишиній Адамишина noun:anim:f:v_dav:lname
@@ -196,6 +201,7 @@
 Бабенко Бабенко noun:anim:f:v_zna:nv:np:lname
 Бабенко Бабенко noun:anim:f:v_oru:nv:np:lname
 Бабенко Бабенко noun:anim:f:v_mis:nv:np:lname
+Бабенко Бабенко noun:anim:f:v_kly:nv:np:lname
 бабисько бабисько noun:anim:n:v_naz
 бабиська бабисько noun:anim:n:v_rod
 бабиськові бабисько noun:anim:n:v_dav
@@ -390,6 +396,7 @@
 Вагнер Вагнер noun:anim:f:v_zna:nv:np:lname
 Вагнер Вагнер noun:anim:f:v_oru:nv:np:lname
 Вагнер Вагнер noun:anim:f:v_mis:nv:np:lname
+Вагнер Вагнер noun:anim:f:v_kly:nv:np:lname
 вагомий вагомий adj:m:v_naz:compb
 вагомого вагомий adj:m:v_rod:compb
 вагомому вагомий adj:m:v_dav:compb
@@ -873,12 +880,14 @@
 Вентурі Вентурі noun:anim:m:v_zna:nv:np:lname
 Вентурі Вентурі noun:anim:m:v_oru:nv:np:lname
 Вентурі Вентурі noun:anim:m:v_mis:nv:np:lname
+Вентурі Вентурі noun:anim:m:v_kly:nv:np:lname
 Вентурі Вентурі noun:anim:f:v_naz:nv:np:lname
 Вентурі Вентурі noun:anim:f:v_rod:nv:np:lname
 Вентурі Вентурі noun:anim:f:v_dav:nv:np:lname
 Вентурі Вентурі noun:anim:f:v_zna:nv:np:lname
 Вентурі Вентурі noun:anim:f:v_oru:nv:np:lname
 Вентурі Вентурі noun:anim:f:v_mis:nv:np:lname
+Вентурі Вентурі noun:anim:f:v_kly:nv:np:lname
 Вербицька Вербицька noun:anim:f:v_naz:lname
 Вербицької Вербицька noun:anim:f:v_rod:lname
 Вербицькій Вербицька noun:anim:f:v_dav:lname
@@ -1742,6 +1751,7 @@
 двойко двойко numr:p:v_zna:nv:coll
 двойко двойко numr:p:v_oru:nv:coll
 двойко двойко numr:p:v_mis:nv:coll
+двойко двойко numr:p:v_kly:nv:coll
 дев'ять дев'ять numr:p:v_naz
 дев'яти дев'ять numr:p:v_rod
 дев'ятьох дев'ять numr:p:v_rod
