@@ -66,6 +66,7 @@
 авта авто noun:inanim:p:v_zna
 автами авто noun:inanim:p:v_oru
 автах авто noun:inanim:p:v_mis
+авта авто noun:inanim:p:v_kly
 авто авто noun:inanim:n:v_naz:nv
 авто авто noun:inanim:n:v_rod:nv
 авто авто noun:inanim:n:v_dav:nv
@@ -96,6 +97,7 @@
 автопричепи автопричіп noun:inanim:p:v_zna
 автопричепами автопричіп noun:inanim:p:v_oru
 автопричепах автопричіп noun:inanim:p:v_mis
+автопричепи автопричіп noun:inanim:p:v_kly
 Адамишин Адамишин noun:anim:m:v_naz:prop:lname
 Адамишина Адамишин noun:anim:m:v_rod:prop:lname
 Адамишину Адамишин noun:anim:m:v_dav:prop:lname
@@ -262,12 +264,14 @@
 барі бар noun:inanim:m:v_mis:xp1
 барові бар noun:inanim:m:v_mis:xp1
 бару бар noun:inanim:m:v_mis:xp1
+баре бар noun:inanim:m:v_kly:xp1
 бари бар noun:inanim:p:v_naz:xp1
 барів бар noun:inanim:p:v_rod:xp1
 барам бар noun:inanim:p:v_dav:xp1
 бари бар noun:inanim:p:v_zna:xp1
 барами бар noun:inanim:p:v_oru:xp1
 барах бар noun:inanim:p:v_mis:xp1
+бари бар noun:inanim:p:v_kly:xp1
 бар бар noun:inanim:m:v_naz:xp2
 бару бар noun:inanim:m:v_rod:xp2
 барові бар noun:inanim:m:v_dav:xp2
@@ -277,12 +281,14 @@
 барі бар noun:inanim:m:v_mis:xp2
 барові бар noun:inanim:m:v_mis:xp2
 бару бар noun:inanim:m:v_mis:xp2
+баре бар noun:inanim:m:v_kly:xp2
 бари бар noun:inanim:p:v_naz:xp2
 барів бар noun:inanim:p:v_rod:xp2
 барам бар noun:inanim:p:v_dav:xp2
 бари бар noun:inanim:p:v_zna:xp2
 барами бар noun:inanim:p:v_oru:xp2
 барах бар noun:inanim:p:v_mis:xp2
+бари бар noun:inanim:p:v_kly:xp2
 бентеживши бентеживши advp:imperf
 бентежити бентежити verb:imperf:inf
 бентежить бентежити verb:imperf:inf:coll
@@ -316,6 +322,7 @@
 боби біб noun:inanim:p:v_zna
 бобами біб noun:inanim:p:v_oru
 бобах біб noun:inanim:p:v_mis
+боби біб noun:inanim:p:v_kly
 блоха блоха noun:anim:f:v_naz
 блохи блоха noun:anim:f:v_rod
 блосі блоха noun:anim:f:v_dav
@@ -330,6 +337,7 @@
 блохи блоха noun:anim:p:v_zna
 блохами блоха noun:anim:p:v_oru
 блохах блоха noun:anim:p:v_mis
+блохи блоха noun:anim:p:v_kly
 босовило босовило noun:anim:m:v_naz
 босовила босовило noun:anim:m:v_rod
 босовилові босовило noun:anim:m:v_dav
@@ -690,6 +698,7 @@
 вбоїська вбоїсько noun:inanim:p:v_zna
 вбоїськами вбоїсько noun:inanim:p:v_oru
 вбоїськах вбоїсько noun:inanim:p:v_mis
+вбоїська вбоїсько noun:inanim:p:v_kly
 ведучий ведучий adj:m:v_naz
 ведучого ведучий adj:m:v_rod
 ведучому ведучий adj:m:v_dav
@@ -769,6 +778,7 @@
 велосипеди велосипед noun:inanim:p:v_zna
 велосипедами велосипед noun:inanim:p:v_oru
 велосипедах велосипед noun:inanim:p:v_mis
+велосипеди велосипед noun:inanim:p:v_kly
 велосипедист велосипедист noun:anim:m:v_naz
 велосипедиста велосипедист noun:anim:m:v_rod
 велосипедистові велосипедист noun:anim:m:v_dav
@@ -920,12 +930,14 @@
 вересневі вересень noun:inanim:m:v_mis
 вересні вересень noun:inanim:m:v_mis
 вересню вересень noun:inanim:m:v_mis
+вересню вересень noun:inanim:m:v_kly
 вересні вересень noun:inanim:p:v_naz
 вереснів вересень noun:inanim:p:v_rod
 вересням вересень noun:inanim:p:v_dav
 вересні вересень noun:inanim:p:v_zna
 вереснями вересень noun:inanim:p:v_oru
 вереснях вересень noun:inanim:p:v_mis
+вересні вересень noun:inanim:p:v_kly
 Верещага Верещага noun:anim:m:v_naz:prop:lname
 Верещаги Верещага noun:anim:m:v_rod:prop:lname
 Верещазі Верещага noun:anim:m:v_dav:prop:lname
@@ -1033,6 +1045,7 @@
 весла весло noun:inanim:p:v_zna
 веслами весло noun:inanim:p:v_oru
 веслах весло noun:inanim:p:v_mis
+весла весло noun:inanim:p:v_kly
 вести вести verb:imperf:inf
 веди вести verb:imperf:impr:s:2
 ведім вести verb:imperf:impr:p:1
@@ -1267,6 +1280,7 @@
 вила вила noun:inanim:p:v_zna:ns
 вилами вила noun:inanim:p:v_oru:ns
 вилах вила noun:inanim:p:v_mis:ns
+вила вила noun:inanim:p:v_kly:ns
 виліт виліт noun:inanim:m:v_naz
 вильоту виліт noun:inanim:m:v_rod
 вильотові виліт noun:inanim:m:v_dav
@@ -1283,6 +1297,7 @@
 вильоти виліт noun:inanim:p:v_zna
 вильотами виліт noun:inanim:p:v_oru
 вильотах виліт noun:inanim:p:v_mis
+вильоти виліт noun:inanim:p:v_kly
 вимести вимести verb:perf:inf
 вимети вимести verb:perf:impr:s:2
 виметім вимести verb:perf:impr:p:1
@@ -1342,6 +1357,7 @@
 вимисли вимисел noun:inanim:p:v_zna
 вимислами вимисел noun:inanim:p:v_oru
 вимислах вимисел noun:inanim:p:v_mis
+вимисли вимисел noun:inanim:p:v_kly
 вимівши вимівши advp:perf
 вимівшись вимівшись advp:rev:perf
 вимниста вимниста adj:f:v_naz
@@ -1400,6 +1416,7 @@
 вігоні вігонь noun:anim:p:v_zna
 вігонями вігонь noun:anim:p:v_oru
 вігонях вігонь noun:anim:p:v_mis
+вігоні вігонь noun:anim:p:v_kly
 військовий військовий noun:anim:m:v_naz
 військового військовий noun:anim:m:v_rod
 військовому військовий noun:anim:m:v_dav
@@ -1432,6 +1449,7 @@
 волів віл noun:anim:p:v_zna
 волами віл noun:anim:p:v_oru
 волах віл noun:anim:p:v_mis
+воли віл noun:anim:p:v_kly
 вітренковець вітренковець noun:anim:m:v_naz:slang
 вітренківця вітренковець noun:anim:m:v_rod:slang
 вітренківцеві вітренковець noun:anim:m:v_dav:slang
@@ -1463,6 +1481,7 @@
 вітрила вітрило noun:inanim:p:v_zna
 вітрилами вітрило noun:inanim:p:v_oru
 вітрилах вітрило noun:inanim:p:v_mis
+вітрила вітрило noun:inanim:p:v_kly
 вовчище вовчище noun:anim:m:v_naz
 вовчища вовчище noun:anim:m:v_rod
 вовчищеві вовчище noun:anim:m:v_dav
@@ -1479,18 +1498,21 @@
 вовчища вовчище noun:anim:p:v_zna
 вовчищами вовчище noun:anim:p:v_oru
 вовчищах вовчище noun:anim:p:v_mis
+вовчища вовчище noun:anim:p:v_kly
 ворітця ворітця noun:inanim:p:v_naz:ns
 ворітець ворітця noun:inanim:p:v_rod:ns
 ворітцям ворітця noun:inanim:p:v_dav:ns
 ворітця ворітця noun:inanim:p:v_zna:ns
 ворітцями ворітця noun:inanim:p:v_oru:ns
 ворітцях ворітця noun:inanim:p:v_mis:ns
+ворітця ворітця noun:inanim:p:v_kly:ns
 ворота ворота noun:inanim:p:v_naz:ns
 воріт ворота noun:inanim:p:v_rod:ns
 воротам ворота noun:inanim:p:v_dav:ns
 ворота ворота noun:inanim:p:v_zna:ns
 воротами ворота noun:inanim:p:v_oru:ns
 воротах ворота noun:inanim:p:v_mis:ns
+ворота ворота noun:inanim:p:v_kly:ns
 Всевишній Всевишній noun:anim:m:v_naz:fname
 Всевишнього Всевишній noun:anim:m:v_rod:fname
 Всевишньому Всевишній noun:anim:m:v_dav:fname
@@ -1521,6 +1543,7 @@
 вуглеві вугіль noun:inanim:m:v_mis
 вуглі вугіль noun:inanim:m:v_mis
 вуглю вугіль noun:inanim:m:v_mis
+вуглю вугіль noun:inanim:m:v_kly
 Гавета Гавета noun:anim:m:v_naz:prop:lname
 Гавети Гавета noun:anim:m:v_rod:prop:lname
 Гаветі Гавета noun:anim:m:v_dav:prop:lname
@@ -1549,6 +1572,7 @@
 гамма-ножі гамма-ніж noun:inanim:p:v_zna
 гамма-ножами гамма-ніж noun:inanim:p:v_oru
 гамма-ножах гамма-ніж noun:inanim:p:v_mis
+гамма-ножі гамма-ніж noun:inanim:p:v_kly
 гарикало гарикало noun:anim:m:v_naz
 гарикала гарикало noun:anim:m:v_rod
 гарикалові гарикало noun:anim:m:v_dav
@@ -1590,6 +1614,7 @@
 гирла гирло noun:inanim:p:v_zna
 гирлами гирло noun:inanim:p:v_oru
 гирлах гирло noun:inanim:p:v_mis
+гирла гирло noun:inanim:p:v_kly
 гладкий гладкий adj:m:v_naz:compb
 гладкого гладкий adj:m:v_rod:compb
 гладкому гладкий adj:m:v_dav:compb
@@ -1778,6 +1803,7 @@
 джерела джерело noun:inanim:p:v_zna
 джерелами джерело noun:inanim:p:v_oru
 джерелах джерело noun:inanim:p:v_mis
+джерела джерело noun:inanim:p:v_kly
 дзиґа дзиґа noun:inanim:f:v_naz
 дзиґи дзиґа noun:inanim:f:v_rod
 дзизі дзиґа noun:inanim:f:v_dav:bad
@@ -1793,6 +1819,7 @@
 дзиґи дзиґа noun:inanim:p:v_zna
 дзиґами дзиґа noun:inanim:p:v_oru
 дзиґах дзиґа noun:inanim:p:v_mis
+дзиґи дзиґа noun:inanim:p:v_kly
 дивний дивний adj:m:v_naz:compb
 дивного дивний adj:m:v_rod:compb
 дивному дивний adj:m:v_dav:compb
@@ -1915,6 +1942,7 @@
 екс-судді екс-суддя noun:inanim:p:v_zna
 екс-суддями екс-суддя noun:inanim:p:v_oru
 екс-суддях екс-суддя noun:inanim:p:v_mis
+екс-судді екс-суддя noun:inanim:p:v_kly
 Єреміївна Єреміївна noun:anim:f:v_naz:patr:prop
 Єреміївни Єреміївна noun:anim:f:v_rod:patr:prop
 Єреміївні Єреміївна noun:anim:f:v_dav:patr:prop
@@ -1945,6 +1973,7 @@
 жита жита noun:inanim:p:v_zna:ns
 житами жита noun:inanim:p:v_oru:ns
 житах жита noun:inanim:p:v_mis:ns
+жита жита noun:inanim:p:v_kly:ns
 задихавшись задихавшись advp:rev:perf
 задихатися задихатися verb:rev:perf:inf
 задихатись задихатися verb:rev:perf:inf
@@ -2001,6 +2030,7 @@
 залізка залізко noun:inanim:p:v_zna
 залізками залізко noun:inanim:p:v_oru
 залізках залізко noun:inanim:p:v_mis
+залізка залізко noun:inanim:p:v_kly
 засвітати засвітати verb:imperf:inf
 засвітать засвітати verb:imperf:inf:coll
 засвітає засвітати verb:imperf:pres:s:3
@@ -2025,6 +2055,7 @@
 кайдани кайдани noun:inanim:p:v_zna:ns
 кайданами кайдани noun:inanim:p:v_oru:ns
 кайданах кайдани noun:inanim:p:v_mis:ns
+кайдани кайдани noun:inanim:p:v_kly:ns
 кін кін noun:inanim:m:v_naz
 кону кін noun:inanim:m:v_rod
 конові кін noun:inanim:m:v_dav
@@ -2044,6 +2075,7 @@
 коневі кінь noun:anim:m:v_mis
 коні кінь noun:anim:m:v_mis
 коню кінь noun:anim:m:v_mis
+коню кінь noun:anim:m:v_kly
 коні кінь noun:anim:p:v_naz
 коней кінь noun:anim:p:v_rod
 коням кінь noun:anim:p:v_dav
@@ -2052,6 +2084,7 @@
 кіньми кінь noun:anim:p:v_oru
 конями кінь noun:anim:p:v_oru
 конях кінь noun:anim:p:v_mis
+коні кінь noun:anim:p:v_kly
 колисавши колисавши advp:imperf
 колисати колисати verb:imperf:inf
 колисать колисати verb:imperf:inf:coll
@@ -2198,6 +2231,7 @@
 лепешняком лепешняк noun:inanim:m:v_oru
 лепешнякові лепешняк noun:inanim:m:v_mis
 лепешняку лепешняк noun:inanim:m:v_mis
+лепешняку лепешняк noun:inanim:m:v_kly
 лікарів лікарів adj:m:v_naz
 лікаревого лікарів adj:m:v_rod
 лікаревому лікарів adj:m:v_dav
@@ -2584,6 +2618,7 @@
 паркани паркан noun:inanim:p:v_zna
 парканами паркан noun:inanim:p:v_oru
 парканах паркан noun:inanim:p:v_mis
+паркани паркан noun:inanim:p:v_kly
 породілля породілля noun:anim:f:v_naz
 породіллі породілля noun:anim:f:v_rod
 породіллі породілля noun:anim:f:v_dav
@@ -2672,6 +2707,7 @@
 стафілококом стафілокок noun:unanim:m:v_oru
 стафілококові стафілокок noun:unanim:m:v_mis
 стафілококу стафілокок noun:unanim:m:v_mis
+стафілококу стафілокок noun:unanim:m:v_kly
 стафілококи стафілокок noun:unanim:p:v_naz
 стафілококів стафілокок noun:unanim:p:v_rod
 стафілококам стафілокок noun:unanim:p:v_dav
@@ -2679,6 +2715,7 @@
 стафілококів стафілокок noun:unanim:p:v_zna
 стафілококами стафілокок noun:unanim:p:v_oru
 стафілококах стафілокок noun:unanim:p:v_mis
+стафілококи стафілокок noun:unanim:p:v_kly
 стривати стривати verb:imperf:inf
 стривать стривати verb:imperf:inf:coll
 стривай стривати verb:imperf:impr:s:2
@@ -2761,6 +2798,7 @@
 суміші суміш noun:inanim:p:v_zna
 сумішами суміш noun:inanim:p:v_oru
 сумішах суміш noun:inanim:p:v_mis
+суміші суміш noun:inanim:p:v_kly
 сутяжище сутяжище noun:anim:f:v_naz:xp1
 сутяжищі сутяжище noun:anim:f:v_rod:xp1
 сутяжищі сутяжище noun:anim:f:v_dav:xp1
@@ -2803,6 +2841,7 @@
 тюрми тюрма noun:inanim:p:v_zna
 тюрмами тюрма noun:inanim:p:v_oru
 тюрмах тюрма noun:inanim:p:v_mis
+тюрми тюрма noun:inanim:p:v_kly
 удатніше удатніше adv:compr:v-u
 удатно удатно adv:compb:v-u
 уже уже adv:v-u
@@ -2877,6 +2916,7 @@
 усюди усюди noun:inanim:p:v_zna:ns
 усюдами усюди noun:inanim:p:v_oru:ns
 усюдах усюди noun:inanim:p:v_mis:ns
+усюди усюди noun:inanim:p:v_kly:ns
 Федорів Федорів noun:anim:m:v_naz:prop:lname
 Федорова Федорів noun:anim:m:v_rod:prop:lname
 Федорову Федорів noun:anim:m:v_dav:prop:lname
@@ -2901,6 +2941,7 @@
 хортів хірт noun:anim:p:v_zna
 хортами хірт noun:anim:p:v_oru
 хортах хірт noun:anim:p:v_mis
+хорти хірт noun:anim:p:v_kly
 хосен хосен noun:inanim:m:v_naz:np
 хісна хосен noun:inanim:m:v_rod:np
 хіснові хосен noun:inanim:m:v_dav:np
@@ -2967,6 +3008,7 @@
 щеняток щенятко noun:anim:p:v_zna
 щенятками щенятко noun:anim:p:v_oru
 щенятках щенятко noun:anim:p:v_mis
+щенятка щенятко noun:anim:p:v_kly
 щонайвагоміше щонайвагоміше adv:super
 щонайвагоміший щонайвагоміший adj:m:v_naz:super
 щонайвагомішого щонайвагоміший adj:m:v_rod:super
@@ -3509,3 +3551,4 @@
 ясна ясна noun:inanim:p:v_zna:ns
 яснами ясна noun:inanim:p:v_oru:ns
 яснах ясна noun:inanim:p:v_mis:ns
+ясна ясна noun:inanim:p:v_kly:ns

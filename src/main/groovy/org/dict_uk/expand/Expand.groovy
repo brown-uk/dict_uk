@@ -454,18 +454,20 @@ class Expand {
 					}
 					if( //("<+" in flags && ! (":p:" in line)) \
 //					    || (main_flag =~ "/n2n|/n4" && ! util.istota(flags)) \
-					     (! (main_flag =~ "/n2n|/n2adj1|/n4") && ! util.person(flags) ) \
-                        || (! (":patr" in line) && (flags.contains(".ko") || flags.contains(".ke")) ) \
-                        || (":m:" in line && ("<+" in flags)) \
+					     //(! (main_flag =~ "/n2n|/n2adj1|/n4") && ! util.person(flags) ) \
+                         (! (":patr" in line) && (flags.contains(".ko") || flags.contains(".ke")) ) \
+                        || (":m:" in line && "<+" in flags) \
                         || (main_flag.startsWith("/n20") && base_word.endsWith("ло") && "v_dav" in line) ) {
 						//                    util.debug("removing v_kly from: %s, %s", line, flags)
 						line = line.replace("/v_kly", "")
 					}
 				}
 				if( ".p" in main_flag || "np" in main_flag) {
-					if( util.person(flags)) {
+//					if( util.person(flags)) {
+					if( main_flag.contains(".") ) {
 						line = line.replace("p:v_naz", "p:v_naz/v_kly")
 					}
+					
 					if( util.istota(flags)) {
 						line = line.replace("p:v_rod", "p:v_rod/v_zna")
 						if( ">" in flags) { // animal
@@ -1118,7 +1120,7 @@ class Expand {
 		}
 	}
 
-	static final List<String> ALL_V_TAGS = ["v_naz", "v_rod", "v_dav", "v_zna", "v_oru", "v_mis"]
+	static final List<String> ALL_V_TAGS = ["v_naz", "v_rod", "v_dav", "v_zna", "v_oru", "v_mis"] //, "v_kly"]
 	static final List<String> ALL_VERB_TAGS = ["inf", 
 //			"impr:s:2", "impr:p:1", "impr:p:2", \
 	        "pres:s:1", "pres:s:2", "pres:s:3", \

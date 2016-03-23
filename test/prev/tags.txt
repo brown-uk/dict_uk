@@ -557,6 +557,8 @@ noun:inanim:m:v_dav:xp1
 noun:inanim:m:v_dav:xp2
 noun:inanim:m:v_kly
 noun:inanim:m:v_kly:np
+noun:inanim:m:v_kly:xp1
+noun:inanim:m:v_kly:xp2
 noun:inanim:m:v_mis
 noun:inanim:m:v_mis:np
 noun:inanim:m:v_mis:xp1
@@ -604,8 +606,11 @@ noun:inanim:p:v_dav:v-u
 noun:inanim:p:v_dav:xp1
 noun:inanim:p:v_dav:xp2
 noun:inanim:p:v_kly
+noun:inanim:p:v_kly:ns
 noun:inanim:p:v_kly:nv
 noun:inanim:p:v_kly:v-u
+noun:inanim:p:v_kly:xp1
+noun:inanim:p:v_kly:xp2
 noun:inanim:p:v_mis
 noun:inanim:p:v_mis:ns
 noun:inanim:p:v_mis:nv
@@ -637,12 +642,14 @@ noun:inanim:p:v_zna:v-u
 noun:inanim:p:v_zna:xp1
 noun:inanim:p:v_zna:xp2
 noun:unanim:m:v_dav
+noun:unanim:m:v_kly
 noun:unanim:m:v_mis
 noun:unanim:m:v_naz
 noun:unanim:m:v_oru
 noun:unanim:m:v_rod
 noun:unanim:m:v_zna
 noun:unanim:p:v_dav
+noun:unanim:p:v_kly
 noun:unanim:p:v_mis
 noun:unanim:p:v_naz
 noun:unanim:p:v_oru
