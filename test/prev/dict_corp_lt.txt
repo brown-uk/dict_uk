@@ -390,6 +390,7 @@
 Вагнері Вагнер noun:anim:m:v_mis:lname
 Вагнерові Вагнер noun:anim:m:v_mis:lname
 Вагнеру Вагнер noun:anim:m:v_mis:lname
+Вагнере Вагнер noun:anim:m:v_kly:lname
 Вагнер Вагнер noun:anim:f:v_naz:nv:np:lname
 Вагнер Вагнер noun:anim:f:v_rod:nv:np:lname
 Вагнер Вагнер noun:anim:f:v_dav:nv:np:lname
@@ -2636,7 +2637,6 @@
 синю синій adj:f:v_zna
 синьою синій adj:f:v_oru
 синій синій adj:f:v_mis
-синій синій adj:f:v_kly
 синя синій adj:f:v_kly
 синє синій adj:n:v_naz
 синього синій adj:n:v_rod

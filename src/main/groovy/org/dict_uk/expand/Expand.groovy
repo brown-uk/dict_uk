@@ -485,10 +485,10 @@ class Expand {
 						continue
 				}
 				if( "<" in flags) {
-					if( ! (">" in flags) && ":p:v_naz/v_zna" in line)
-						line = line.replace("v_naz/v_zna", "v_naz/v_kly")
-					if( ":m:v_naz" in line && ! ("<+" in flags))
-						line = line.replace("v_naz", "v_naz/v_kly")
+					if( ! flags.contains(">") && ":p:v_naz/v_zna" in line)
+						line = line.replace("v_naz/v_zna", "v_naz")
+//					if( ":m:v_naz" in line /*&& ! ("<+" in flags)*/)
+//						line = line.replace("v_naz", "v_naz/v_kly")
 				}
 				else if( "^noun" in flags ) {
 					if( ":m:v_rod/v_zna" in line)
