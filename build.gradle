@@ -113,14 +113,14 @@ task testExpand(type: JavaExec, dependsOn: [reverseAffix, classes]) {
 
     doLast {
         def file="dict_corp_lt.txt"
-        def noTestOutputChange = (new File("$workingDir/$file").text == new File("$workingDir/prev/$file").text)
+        def noTestOutputChange = (new File("$workingDir/$file").text.replace("\r\n", "\n") == new File("$workingDir/prev/$file").text)
         assert noTestOutputChange
 
         file="dict_corp_vis.txt"
-        def noTestVisOutputChange = (new File("$workingDir/$file").text == new File("$workingDir/prev/$file").text)
+        def noTestVisOutputChange = (new File("$workingDir/$file").text.replace("\r\n", "\n") == new File("$workingDir/prev/$file").text)
         assert noTestVisOutputChange
 
-        def noTestTagsOutputChange = (new File("$workingDir/tags.txt").text == new File("$workingDir/prev/tags.txt").text)
+        def noTestTagsOutputChange = (new File("$workingDir/tags.txt").text.replace("\r\n", "\n") == new File("$workingDir/prev/tags.txt").text)
         assert noTestTagsOutputChange
     }
 }
