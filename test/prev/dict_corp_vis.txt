@@ -1,10 +1,10 @@
-Абалкін noun:anim:m:v_naz:lname
-  Абалкіна noun:anim:m:v_rod:lname
-  Абалкіну noun:anim:m:v_dav:lname
-  Абалкіна noun:anim:m:v_zna:lname
-  Абалкіним noun:anim:m:v_oru:lname
-  Абалкіні noun:anim:m:v_mis:lname
-  Абалкіну noun:anim:m:v_mis:lname
+Абалкін noun:anim:m:v_naz:prop:lname
+  Абалкіна noun:anim:m:v_rod:prop:lname
+  Абалкіну noun:anim:m:v_dav:prop:lname
+  Абалкіна noun:anim:m:v_zna:prop:lname
+  Абалкіним noun:anim:m:v_oru:prop:lname
+  Абалкіні noun:anim:m:v_mis:prop:lname
+  Абалкіну noun:anim:m:v_mis:prop:lname
 Абатський noun:inanim:m:v_naz
   Абатського noun:inanim:m:v_rod
   Абатському noun:inanim:m:v_dav
@@ -96,20 +96,20 @@
   автопричепи noun:inanim:p:v_zna
   автопричепами noun:inanim:p:v_oru
   автопричепах noun:inanim:p:v_mis
-Адамишин noun:anim:m:v_naz:lname
-  Адамишина noun:anim:m:v_rod:lname
-  Адамишину noun:anim:m:v_dav:lname
-  Адамишина noun:anim:m:v_zna:lname
-  Адамишиним noun:anim:m:v_oru:lname
-  Адамишині noun:anim:m:v_mis:lname
-  Адамишину noun:anim:m:v_mis:lname
-  Адамишини noun:anim:p:v_naz:lname
-  Адамишиних noun:anim:p:v_rod:lname
-  Адамишиним noun:anim:p:v_dav:lname
-  Адамишиних noun:anim:p:v_zna:lname
-  Адамишиними noun:anim:p:v_oru:lname
-  Адамишиних noun:anim:p:v_mis:lname
-  Адамишини noun:anim:p:v_kly:lname
+Адамишин noun:anim:m:v_naz:prop:lname
+  Адамишина noun:anim:m:v_rod:prop:lname
+  Адамишину noun:anim:m:v_dav:prop:lname
+  Адамишина noun:anim:m:v_zna:prop:lname
+  Адамишиним noun:anim:m:v_oru:prop:lname
+  Адамишині noun:anim:m:v_mis:prop:lname
+  Адамишину noun:anim:m:v_mis:prop:lname
+  Адамишини noun:anim:p:v_naz:prop:lname
+  Адамишиних noun:anim:p:v_rod:prop:lname
+  Адамишиним noun:anim:p:v_dav:prop:lname
+  Адамишиних noun:anim:p:v_zna:prop:lname
+  Адамишиними noun:anim:p:v_oru:prop:lname
+  Адамишиних noun:anim:p:v_mis:prop:lname
+  Адамишини noun:anim:p:v_kly:prop:lname
 Адамишин noun:anim:f:v_naz:nv:np:lname
   Адамишин noun:anim:f:v_rod:nv:np:lname
   Адамишин noun:anim:f:v_dav:nv:np:lname
@@ -117,12 +117,12 @@
   Адамишин noun:anim:f:v_oru:nv:np:lname
   Адамишин noun:anim:f:v_mis:nv:np:lname
   Адамишин noun:anim:f:v_kly:nv:np:lname
-Адамишина noun:anim:f:v_naz:lname
-  Адамишиної noun:anim:f:v_rod:lname
-  Адамишиній noun:anim:f:v_dav:lname
-  Адамишину noun:anim:f:v_zna:lname
-  Адамишиною noun:anim:f:v_oru:lname
-  Адамишиній noun:anim:f:v_mis:lname
+Адамишина noun:anim:f:v_naz:prop:lname
+  Адамишиної noun:anim:f:v_rod:prop:lname
+  Адамишиній noun:anim:f:v_dav:prop:lname
+  Адамишину noun:anim:f:v_zna:prop:lname
+  Адамишиною noun:anim:f:v_oru:prop:lname
+  Адамишиній noun:anim:f:v_mis:prop:lname
 азотистоводневий adj:m:v_naz
   азотистоводневого adj:m:v_rod
   азотистоводневому adj:m:v_dav
@@ -187,14 +187,14 @@
   азотисто-водневими adj:p:v_oru
   азотисто-водневих adj:p:v_mis
   азотисто-водневі adj:p:v_kly
-Бабенко noun:anim:m:v_naz:lname
-  Бабенка noun:anim:m:v_rod:lname
-  Бабенкові noun:anim:m:v_dav:lname
-  Бабенку noun:anim:m:v_dav:lname
-  Бабенка noun:anim:m:v_zna:lname
-  Бабенком noun:anim:m:v_oru:lname
-  Бабенкові noun:anim:m:v_mis:lname
-  Бабенку noun:anim:m:v_mis:lname
+Бабенко noun:anim:m:v_naz:prop:lname
+  Бабенка noun:anim:m:v_rod:prop:lname
+  Бабенкові noun:anim:m:v_dav:prop:lname
+  Бабенку noun:anim:m:v_dav:prop:lname
+  Бабенка noun:anim:m:v_zna:prop:lname
+  Бабенком noun:anim:m:v_oru:prop:lname
+  Бабенкові noun:anim:m:v_mis:prop:lname
+  Бабенку noun:anim:m:v_mis:prop:lname
 Бабенко noun:anim:f:v_naz:nv:np:lname
   Бабенко noun:anim:f:v_rod:nv:np:lname
   Бабенко noun:anim:f:v_dav:nv:np:lname
@@ -381,16 +381,16 @@
   бурмилами noun:anim:p:v_oru
   бурмилах noun:anim:p:v_mis
   бурмила noun:anim:p:v_kly
-Вагнер noun:anim:m:v_naz:lname
-  Вагнера noun:anim:m:v_rod:lname
-  Вагнерові noun:anim:m:v_dav:lname
-  Вагнеру noun:anim:m:v_dav:lname
-  Вагнера noun:anim:m:v_zna:lname
-  Вагнером noun:anim:m:v_oru:lname
-  Вагнері noun:anim:m:v_mis:lname
-  Вагнерові noun:anim:m:v_mis:lname
-  Вагнеру noun:anim:m:v_mis:lname
-  Вагнере noun:anim:m:v_kly:lname
+Вагнер noun:anim:m:v_naz:prop:lname
+  Вагнера noun:anim:m:v_rod:prop:lname
+  Вагнерові noun:anim:m:v_dav:prop:lname
+  Вагнеру noun:anim:m:v_dav:prop:lname
+  Вагнера noun:anim:m:v_zna:prop:lname
+  Вагнером noun:anim:m:v_oru:prop:lname
+  Вагнері noun:anim:m:v_mis:prop:lname
+  Вагнерові noun:anim:m:v_mis:prop:lname
+  Вагнеру noun:anim:m:v_mis:prop:lname
+  Вагнере noun:anim:m:v_kly:prop:lname
 Вагнер noun:anim:f:v_naz:nv:np:lname
   Вагнер noun:anim:f:v_rod:nv:np:lname
   Вагнер noun:anim:f:v_dav:nv:np:lname
@@ -800,15 +800,15 @@
   велосипедистками noun:anim:p:v_oru
   велосипедистках noun:anim:p:v_mis
   велосипедистки noun:anim:p:v_kly
-Велько noun:anim:m:v_naz:fname
-  Велька noun:anim:m:v_rod:fname
-  Велькові noun:anim:m:v_dav:fname
-  Вельку noun:anim:m:v_dav:fname
-  Велька noun:anim:m:v_zna:fname
-  Вельком noun:anim:m:v_oru:fname
-  Велькові noun:anim:m:v_mis:fname
-  Вельку noun:anim:m:v_mis:fname
-  Вельку noun:anim:m:v_kly:fname
+Велько noun:anim:m:v_naz:prop:fname
+  Велька noun:anim:m:v_rod:prop:fname
+  Велькові noun:anim:m:v_dav:prop:fname
+  Вельку noun:anim:m:v_dav:prop:fname
+  Велька noun:anim:m:v_zna:prop:fname
+  Вельком noun:anim:m:v_oru:prop:fname
+  Велькові noun:anim:m:v_mis:prop:fname
+  Вельку noun:anim:m:v_mis:prop:fname
+  Вельку noun:anim:m:v_kly:prop:fname
 велярії noun:anim:p:v_naz:ns
   велярій noun:anim:p:v_rod:ns
   веляріям noun:anim:p:v_dav:ns
@@ -816,16 +816,16 @@
   веляріями noun:anim:p:v_oru:ns
   веляріях noun:anim:p:v_mis:ns
   велярії noun:anim:p:v_kly:ns
-Венедикт noun:anim:m:v_naz:fname
-  Венедикта noun:anim:m:v_rod:fname
-  Венедиктові noun:anim:m:v_dav:fname
-  Венедикту noun:anim:m:v_dav:fname
-  Венедикта noun:anim:m:v_zna:fname
-  Венедиктом noun:anim:m:v_oru:fname
-  Венедикті noun:anim:m:v_mis:fname
-  Венедиктові noun:anim:m:v_mis:fname
-  Венедикту noun:anim:m:v_mis:fname
-  Венедикте noun:anim:m:v_kly:fname
+Венедикт noun:anim:m:v_naz:prop:fname
+  Венедикта noun:anim:m:v_rod:prop:fname
+  Венедиктові noun:anim:m:v_dav:prop:fname
+  Венедикту noun:anim:m:v_dav:prop:fname
+  Венедикта noun:anim:m:v_zna:prop:fname
+  Венедиктом noun:anim:m:v_oru:prop:fname
+  Венедикті noun:anim:m:v_mis:prop:fname
+  Венедиктові noun:anim:m:v_mis:prop:fname
+  Венедикту noun:anim:m:v_mis:prop:fname
+  Венедикте noun:anim:m:v_kly:prop:fname
 Венедиктів adj:m:v_naz
   Венедиктового adj:m:v_rod
   Венедиктовому adj:m:v_dav
@@ -858,59 +858,59 @@
   Венедиктовими adj:p:v_oru
   Венедиктових adj:p:v_mis
   Венедиктові adj:p:v_kly
-Венедиктівна noun:anim:f:v_naz:patr
-  Венедиктівни noun:anim:f:v_rod:patr
-  Венедиктівні noun:anim:f:v_dav:patr
-  Венедиктівну noun:anim:f:v_zna:patr
-  Венедиктівною noun:anim:f:v_oru:patr
-  Венедиктівні noun:anim:f:v_mis:patr
-  Венедиктівно noun:anim:f:v_kly:patr
-Венедиктович noun:anim:m:v_naz:patr
-  Венедиктовича noun:anim:m:v_rod:patr
-  Венедиктовичеві noun:anim:m:v_dav:patr
-  Венедиктовичу noun:anim:m:v_dav:patr
-  Венедиктовича noun:anim:m:v_zna:patr
-  Венедиктовичем noun:anim:m:v_oru:patr
-  Венедиктовичеві noun:anim:m:v_mis:patr
-  Венедиктовичі noun:anim:m:v_mis:patr
-  Венедиктовичу noun:anim:m:v_mis:patr
-  Венедиктовичу noun:anim:m:v_kly:patr
-Вентурі noun:anim:m:v_naz:nv:np:lname
-  Вентурі noun:anim:m:v_rod:nv:np:lname
-  Вентурі noun:anim:m:v_dav:nv:np:lname
-  Вентурі noun:anim:m:v_zna:nv:np:lname
-  Вентурі noun:anim:m:v_oru:nv:np:lname
-  Вентурі noun:anim:m:v_mis:nv:np:lname
-  Вентурі noun:anim:m:v_kly:nv:np:lname
-Вентурі noun:anim:f:v_naz:nv:np:lname
-  Вентурі noun:anim:f:v_rod:nv:np:lname
-  Вентурі noun:anim:f:v_dav:nv:np:lname
-  Вентурі noun:anim:f:v_zna:nv:np:lname
-  Вентурі noun:anim:f:v_oru:nv:np:lname
-  Вентурі noun:anim:f:v_mis:nv:np:lname
-  Вентурі noun:anim:f:v_kly:nv:np:lname
-Вербицька noun:anim:f:v_naz:lname
-  Вербицької noun:anim:f:v_rod:lname
-  Вербицькій noun:anim:f:v_dav:lname
-  Вербицьку noun:anim:f:v_zna:lname
-  Вербицькою noun:anim:f:v_oru:lname
-  Вербицькій noun:anim:f:v_mis:lname
-  Вербицька noun:anim:f:v_kly:lname
-Вербицький noun:anim:m:v_naz:lname
-  Вербицького noun:anim:m:v_rod:lname
-  Вербицькому noun:anim:m:v_dav:lname
-  Вербицького noun:anim:m:v_zna:lname
-  Вербицьким noun:anim:m:v_oru:lname
-  Вербицькім noun:anim:m:v_mis:lname
-  Вербицькому noun:anim:m:v_mis:lname
-  Вербицький noun:anim:m:v_kly:lname
-  Вербицькі noun:anim:p:v_naz:lname
-  Вербицьких noun:anim:p:v_rod:lname
-  Вербицьким noun:anim:p:v_dav:lname
-  Вербицьких noun:anim:p:v_zna:lname
-  Вербицькими noun:anim:p:v_oru:lname
-  Вербицьких noun:anim:p:v_mis:lname
-  Вербицькі noun:anim:p:v_kly:lname
+Венедиктівна noun:anim:f:v_naz:patr:prop
+  Венедиктівни noun:anim:f:v_rod:patr:prop
+  Венедиктівні noun:anim:f:v_dav:patr:prop
+  Венедиктівну noun:anim:f:v_zna:patr:prop
+  Венедиктівною noun:anim:f:v_oru:patr:prop
+  Венедиктівні noun:anim:f:v_mis:patr:prop
+  Венедиктівно noun:anim:f:v_kly:patr:prop
+Венедиктович noun:anim:m:v_naz:patr:prop
+  Венедиктовича noun:anim:m:v_rod:patr:prop
+  Венедиктовичеві noun:anim:m:v_dav:patr:prop
+  Венедиктовичу noun:anim:m:v_dav:patr:prop
+  Венедиктовича noun:anim:m:v_zna:patr:prop
+  Венедиктовичем noun:anim:m:v_oru:patr:prop
+  Венедиктовичеві noun:anim:m:v_mis:patr:prop
+  Венедиктовичі noun:anim:m:v_mis:patr:prop
+  Венедиктовичу noun:anim:m:v_mis:patr:prop
+  Венедиктовичу noun:anim:m:v_kly:patr:prop
+Вентурі noun:anim:m:v_naz:nv:np:lname:prop
+  Вентурі noun:anim:m:v_rod:nv:np:lname:prop
+  Вентурі noun:anim:m:v_dav:nv:np:lname:prop
+  Вентурі noun:anim:m:v_zna:nv:np:lname:prop
+  Вентурі noun:anim:m:v_oru:nv:np:lname:prop
+  Вентурі noun:anim:m:v_mis:nv:np:lname:prop
+  Вентурі noun:anim:m:v_kly:nv:np:lname:prop
+Вентурі noun:anim:f:v_naz:nv:np:lname:prop
+  Вентурі noun:anim:f:v_rod:nv:np:lname:prop
+  Вентурі noun:anim:f:v_dav:nv:np:lname:prop
+  Вентурі noun:anim:f:v_zna:nv:np:lname:prop
+  Вентурі noun:anim:f:v_oru:nv:np:lname:prop
+  Вентурі noun:anim:f:v_mis:nv:np:lname:prop
+  Вентурі noun:anim:f:v_kly:nv:np:lname:prop
+Вербицька noun:anim:f:v_naz:prop:lname
+  Вербицької noun:anim:f:v_rod:prop:lname
+  Вербицькій noun:anim:f:v_dav:prop:lname
+  Вербицьку noun:anim:f:v_zna:prop:lname
+  Вербицькою noun:anim:f:v_oru:prop:lname
+  Вербицькій noun:anim:f:v_mis:prop:lname
+  Вербицька noun:anim:f:v_kly:prop:lname
+Вербицький noun:anim:m:v_naz:prop:lname
+  Вербицького noun:anim:m:v_rod:prop:lname
+  Вербицькому noun:anim:m:v_dav:prop:lname
+  Вербицького noun:anim:m:v_zna:prop:lname
+  Вербицьким noun:anim:m:v_oru:prop:lname
+  Вербицькім noun:anim:m:v_mis:prop:lname
+  Вербицькому noun:anim:m:v_mis:prop:lname
+  Вербицький noun:anim:m:v_kly:prop:lname
+  Вербицькі noun:anim:p:v_naz:prop:lname
+  Вербицьких noun:anim:p:v_rod:prop:lname
+  Вербицьким noun:anim:p:v_dav:prop:lname
+  Вербицьких noun:anim:p:v_zna:prop:lname
+  Вербицькими noun:anim:p:v_oru:prop:lname
+  Вербицьких noun:anim:p:v_mis:prop:lname
+  Вербицькі noun:anim:p:v_kly:prop:lname
 вересень noun:inanim:m:v_naz
   вересня noun:inanim:m:v_rod
   вересневі noun:inanim:m:v_dav
@@ -926,18 +926,18 @@
   вересні noun:inanim:p:v_zna
   вереснями noun:inanim:p:v_oru
   вереснях noun:inanim:p:v_mis
-Верещага noun:anim:m:v_naz:lname
-  Верещаги noun:anim:m:v_rod:lname
-  Верещазі noun:anim:m:v_dav:lname
-  Верещагу noun:anim:m:v_zna:lname
-  Верещагою noun:anim:m:v_oru:lname
-  Верещазі noun:anim:m:v_mis:lname
-Верещага noun:anim:f:v_naz:lname
-  Верещаги noun:anim:f:v_rod:lname
-  Верещазі noun:anim:f:v_dav:lname
-  Верещагу noun:anim:f:v_zna:lname
-  Верещагою noun:anim:f:v_oru:lname
-  Верещазі noun:anim:f:v_mis:lname
+Верещага noun:anim:m:v_naz:prop:lname
+  Верещаги noun:anim:m:v_rod:prop:lname
+  Верещазі noun:anim:m:v_dav:prop:lname
+  Верещагу noun:anim:m:v_zna:prop:lname
+  Верещагою noun:anim:m:v_oru:prop:lname
+  Верещазі noun:anim:m:v_mis:prop:lname
+Верещага noun:anim:f:v_naz:prop:lname
+  Верещаги noun:anim:f:v_rod:prop:lname
+  Верещазі noun:anim:f:v_dav:prop:lname
+  Верещагу noun:anim:f:v_zna:prop:lname
+  Верещагою noun:anim:f:v_oru:prop:lname
+  Верещазі noun:anim:f:v_mis:prop:lname
 верифікувавши advp:imperf
 верифікувавши advp:perf
 верифікувати verb:imperf:inf
@@ -1521,18 +1521,18 @@
   вуглеві noun:inanim:m:v_mis
   вуглі noun:inanim:m:v_mis
   вуглю noun:inanim:m:v_mis
-Гавета noun:anim:m:v_naz:lname
-  Гавети noun:anim:m:v_rod:lname
-  Гаветі noun:anim:m:v_dav:lname
-  Гавету noun:anim:m:v_zna:lname
-  Гаветою noun:anim:m:v_oru:lname
-  Гаветі noun:anim:m:v_mis:lname
-Гавета noun:anim:f:v_naz:lname
-  Гавети noun:anim:f:v_rod:lname
-  Гаветі noun:anim:f:v_dav:lname
-  Гавету noun:anim:f:v_zna:lname
-  Гаветою noun:anim:f:v_oru:lname
-  Гаветі noun:anim:f:v_mis:lname
+Гавета noun:anim:m:v_naz:prop:lname
+  Гавети noun:anim:m:v_rod:prop:lname
+  Гаветі noun:anim:m:v_dav:prop:lname
+  Гавету noun:anim:m:v_zna:prop:lname
+  Гаветою noun:anim:m:v_oru:prop:lname
+  Гаветі noun:anim:m:v_mis:prop:lname
+Гавета noun:anim:f:v_naz:prop:lname
+  Гавети noun:anim:f:v_rod:prop:lname
+  Гаветі noun:anim:f:v_dav:prop:lname
+  Гавету noun:anim:f:v_zna:prop:lname
+  Гаветою noun:anim:f:v_oru:prop:lname
+  Гаветі noun:anim:f:v_mis:prop:lname
 гамма-ніж noun:inanim:m:v_naz
   гамма-ножа noun:inanim:m:v_rod
   гамма-ножеві noun:inanim:m:v_dav
@@ -1739,13 +1739,13 @@
   грошеві noun:inanim:m:v_mis
   гроші noun:inanim:m:v_mis
   грошу noun:inanim:m:v_mis
-Данаїди noun:anim:p:v_naz:ns:fname
-  Данаїд noun:anim:p:v_rod:ns:fname
-  Данаїдам noun:anim:p:v_dav:ns:fname
-  Данаїд noun:anim:p:v_zna:ns:fname
-  Данаїдами noun:anim:p:v_oru:ns:fname
-  Данаїдах noun:anim:p:v_mis:ns:fname
-  Данаїди noun:anim:p:v_kly:ns:fname
+Данаїди noun:anim:p:v_naz:prop:ns:fname
+  Данаїд noun:anim:p:v_rod:prop:ns:fname
+  Данаїдам noun:anim:p:v_dav:prop:ns:fname
+  Данаїд noun:anim:p:v_zna:prop:ns:fname
+  Данаїдами noun:anim:p:v_oru:prop:ns:fname
+  Данаїдах noun:anim:p:v_mis:prop:ns:fname
+  Данаїди noun:anim:p:v_kly:prop:ns:fname
 двойко numr:p:v_naz:nv:coll
   двойко numr:p:v_rod:nv:coll
   двойко numr:p:v_dav:nv:coll
@@ -1915,29 +1915,29 @@
   екс-судді noun:inanim:p:v_zna
   екс-суддями noun:inanim:p:v_oru
   екс-суддях noun:inanim:p:v_mis
-Єреміївна noun:anim:f:v_naz:patr
-  Єреміївни noun:anim:f:v_rod:patr
-  Єреміївні noun:anim:f:v_dav:patr
-  Єреміївну noun:anim:f:v_zna:patr
-  Єреміївною noun:anim:f:v_oru:patr
-  Єреміївні noun:anim:f:v_mis:patr
-  Єреміївно noun:anim:f:v_kly:patr
-Єремійович noun:anim:m:v_naz:patr
-  Єремійовича noun:anim:m:v_rod:patr
-  Єремійовичеві noun:anim:m:v_dav:patr
-  Єремійовичу noun:anim:m:v_dav:patr
-  Єремійовича noun:anim:m:v_zna:patr
-  Єремійовичем noun:anim:m:v_oru:patr
-  Єремійовичеві noun:anim:m:v_mis:patr
-  Єремійовичу noun:anim:m:v_mis:patr
-  Єремійовичу noun:anim:m:v_kly:patr
-Єремія noun:anim:m:v_naz:fname
-  Єремії noun:anim:m:v_rod:fname
-  Єремії noun:anim:m:v_dav:fname
-  Єремію noun:anim:m:v_zna:fname
-  Єремією noun:anim:m:v_oru:fname
-  Єремії noun:anim:m:v_mis:fname
-  Єреміє noun:anim:m:v_kly:fname
+Єреміївна noun:anim:f:v_naz:patr:prop
+  Єреміївни noun:anim:f:v_rod:patr:prop
+  Єреміївні noun:anim:f:v_dav:patr:prop
+  Єреміївну noun:anim:f:v_zna:patr:prop
+  Єреміївною noun:anim:f:v_oru:patr:prop
+  Єреміївні noun:anim:f:v_mis:patr:prop
+  Єреміївно noun:anim:f:v_kly:patr:prop
+Єремійович noun:anim:m:v_naz:patr:prop
+  Єремійовича noun:anim:m:v_rod:patr:prop
+  Єремійовичеві noun:anim:m:v_dav:patr:prop
+  Єремійовичу noun:anim:m:v_dav:patr:prop
+  Єремійовича noun:anim:m:v_zna:patr:prop
+  Єремійовичем noun:anim:m:v_oru:patr:prop
+  Єремійовичеві noun:anim:m:v_mis:patr:prop
+  Єремійовичу noun:anim:m:v_mis:patr:prop
+  Єремійовичу noun:anim:m:v_kly:patr:prop
+Єремія noun:anim:m:v_naz:prop:fname
+  Єремії noun:anim:m:v_rod:prop:fname
+  Єремії noun:anim:m:v_dav:prop:fname
+  Єремію noun:anim:m:v_zna:prop:fname
+  Єремією noun:anim:m:v_oru:prop:fname
+  Єремії noun:anim:m:v_mis:prop:fname
+  Єреміє noun:anim:m:v_kly:prop:fname
 жаско adv
 жита noun:inanim:p:v_naz:ns
   житів noun:inanim:p:v_rod:ns
@@ -2877,13 +2877,13 @@
   усюди noun:inanim:p:v_zna:ns
   усюдами noun:inanim:p:v_oru:ns
   усюдах noun:inanim:p:v_mis:ns
-Федорів noun:anim:m:v_naz:lname
-  Федорова noun:anim:m:v_rod:lname
-  Федорову noun:anim:m:v_dav:lname
-  Федорова noun:anim:m:v_zna:lname
-  Федоровом noun:anim:m:v_oru:lname
-  Федорові noun:anim:m:v_mis:lname
-  Федорову noun:anim:m:v_mis:lname
+Федорів noun:anim:m:v_naz:prop:lname
+  Федорова noun:anim:m:v_rod:prop:lname
+  Федорову noun:anim:m:v_dav:prop:lname
+  Федорова noun:anim:m:v_zna:prop:lname
+  Федоровом noun:anim:m:v_oru:prop:lname
+  Федорові noun:anim:m:v_mis:prop:lname
+  Федорову noun:anim:m:v_mis:prop:lname
 хірт noun:anim:m:v_naz
   хорта noun:anim:m:v_rod
   хортові noun:anim:m:v_dav

@@ -149,7 +149,7 @@ def process_input(files) {
 					
 					if( detectProperNoun ) {
 						if( Character.isUpperCase(line.charAt(0))
-								&& (line.contains(" /n") || line.contains(" ^noun") || line.contains(" noun:")) ) {
+								&& line =~ " /n| /<|\\.<| ^noun| noun:" ) {
 							extra_tags2 += ":prop"
 						}
 					}
