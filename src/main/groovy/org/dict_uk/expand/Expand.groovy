@@ -285,7 +285,7 @@ class Expand {
 				throw new Exception("Not found extra flags in " + flags)
 			extra_flags = matcher.group(1)
 		}
-		if( "<" in flags || "patr" in flags) {
+		if( "<" in flags ) {
 		    if( flags.contains(">>") ) {
     			extra_flags += ":unanim"
 			}

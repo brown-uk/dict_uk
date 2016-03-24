@@ -53,16 +53,16 @@ class Util {
 	}
 
 	def istota(allAffixFlags) {
-		return "patr" in allAffixFlags || "<" in allAffixFlags
+		return "<" in allAffixFlags
 	}
 
 	def person(allAffixFlags) {
-		return "patr" in allAffixFlags || ("<" in allAffixFlags && ! (">" in allAffixFlags) )
+		return "<" in allAffixFlags && ! (">" in allAffixFlags)
 	}
 
 	@TypeChecked
 	def firstname(String word, String allAffixFlags) {
-		return ("patr" in allAffixFlags || ("<" in allAffixFlags && ! (">" in allAffixFlags))) && ! ("<+" in allAffixFlags) \
+		return ("<" in allAffixFlags && ! (">" in allAffixFlags)) && ! ("<+" in allAffixFlags) \
         && word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase()
 		//and affixFlag != "p" \
 	}
