@@ -116,12 +116,12 @@ def process_input(files) {
             extra_tags = extra_tag_map[fn]
         }
         else {
-			if( fn in ["geography.lst", "names.lst"] ) {
-				detectProperNoun = true
-			}
-			
             extra_tags = ""
         }
+
+		if( fn in ["geography.lst", "names.lst", "alt.lst", "composite.lst"] ) {
+			detectProperNoun = true
+		}
     
 //		System.err.println("---" + filename)
         new File(filename).withReader("utf-8") { reader ->
@@ -150,8 +150,14 @@ def process_input(files) {
 					
 					if( detectProperNoun ) {
 						if( Character.isUpperCase(line.charAt(0))
-								&& line =~ " /n| /<|\\.<| ^noun| noun:" ) {
+								&& ( (line.contains(" /n") && ! line.contains("<") && ! line.contains(".patr") ) 
+									|| (line.contains(" noun") && line.contains(":nv")) ) ) {
 							extra_tags2 += ":prop"
+						}
+					}
+					else if ( fn == "base.lst" ) {
+						if( line.contains(":fname") ) {
+							line = line.replace(":prop:fname", "")
 						}
 					}
 					

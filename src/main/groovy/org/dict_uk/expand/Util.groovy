@@ -62,7 +62,7 @@ class Util {
 
 	@TypeChecked
 	def firstname(String word, String allAffixFlags) {
-		return ("patr" in allAffixFlags || ("<" in allAffixFlags && ! (">" in allAffixFlags))) && ! ("+" in allAffixFlags) \
+		return ("patr" in allAffixFlags || ("<" in allAffixFlags && ! (">" in allAffixFlags))) && ! ("<+" in allAffixFlags) \
         && word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase()
 		//and affixFlag != "p" \
 	}
@@ -303,6 +303,7 @@ class Util {
 	def stat_keys = [
 		"inanim",
 		"anim",
+		"prop",
 		"lname",
 		"fname",
 		"patr",
@@ -328,7 +329,7 @@ class Util {
 				cnt_std += 1
 			}
 
-			if( line.charAt(0).isUpperCase() && ! line.charAt(1).isUpperCase() ) {
+			if( line.contains(":prop") ) {
 				proper_noun_cnt += 1
 			}
 

@@ -17,15 +17,15 @@
 якорях якір noun:p:v_mis
 
 # 0 - о
-Великдень Великдень noun:m:v_naz/v_zna
-Великодня Великдень noun:m:v_rod
-Великодню Великдень noun:m:v_dav/v_mis
-Великоднем Великдень noun:m:v_oru
-Великодні Великдень noun:p:v_naz/v_zna
-Великоднів Великдень noun:p:v_rod
-Великодням Великдень noun:p:v_dav
-Великоднями Великдень noun:p:v_oru
-Великоднях Великдень noun:p:v_mis
+Великдень Великдень noun:m:v_naz/v_zna:prop
+Великодня Великдень noun:m:v_rod:prop
+Великодню Великдень noun:m:v_dav/v_mis:prop
+Великоднем Великдень noun:m:v_oru:prop
+Великодні Великдень noun:p:v_naz/v_zna:prop
+Великоднів Великдень noun:p:v_rod:prop
+Великодням Великдень noun:p:v_dav:prop
+Великоднями Великдень noun:p:v_oru:prop
+Великоднях Великдень noun:p:v_mis:prop
 
 
 чернець чернець noun:anim:m:v_naz
@@ -160,13 +160,13 @@
 Господі Господь noun:m:v_mis:anim:prop
 Господи Господь noun:m:v_kly:anim:prop
 
-Христос Христос noun:m:v_naz:anim:prop
-Христа Христос noun:m:v_rod/v_zna:anim:prop
-Христу Христос noun:m:v_dav:anim:prop
-Христові Христос noun:m:v_dav/v_mis:anim:prop
-Христом Христос noun:m:v_oru:anim:prop
-Христі Христос noun:m:v_mis:anim:prop
-Христе Христос noun:m:v_kly:anim:prop
+Христос Христос noun:m:v_naz:anim:prop:fname
+Христа Христос noun:m:v_rod/v_zna:anim:prop:fname
+Христу Христос noun:m:v_dav:anim:prop:fname
+Христові Христос noun:m:v_dav/v_mis:anim:prop:fname
+Христом Христос noun:m:v_oru:anim:prop:fname
+Христі Христос noun:m:v_mis:anim:prop:fname
+Христе Христос noun:m:v_kly:anim:prop:fname
 
 четвер четвер noun:m:v_naz/v_zna
 четверга четвер noun:m:v_rod
@@ -305,7 +305,7 @@
 
 давніх-давен давніх-давен noun:p:v_rod:ns
 
-Руси Русь noun:f:v_rod:alt
+Руси Русь noun:f:v_rod:prop:alt
 роб роб noun:m:v_naz/v_zna
 робом роб noun:m:v_oru
 

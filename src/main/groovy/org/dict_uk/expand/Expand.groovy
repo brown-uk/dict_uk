@@ -127,7 +127,7 @@ class Expand {
 							assert false : "-- latin mix in " + deriv
 
 						if( affixFlag2 == "n.patr") {
-							tags += ":patr"
+							tags += ":prop:patr"
 						}
 
 						words.add(deriv + " " + word + " " + tags)
@@ -294,7 +294,7 @@ class Expand {
 			}
 		}
 		if( "<+" in flags)
-			extra_flags += ":lname"
+			extra_flags += ":prop:lname"
 
 		return extra_flags
 	}
@@ -317,7 +317,7 @@ class Expand {
 				String extra_flags2 = extra_flags
 
 				if( first_name_base && ! (":patr" in line) ) {
-					extra_flags2 += ":fname"
+					extra_flags2 += ":prop:fname"
 				}
 				if( " advp" in line) {
 					if( ":imperf" in line)
@@ -608,11 +608,16 @@ class Expand {
 		def out_lines = []
 
 		if( "/<" in line) {
-			def extra_tag
-			if( "<+" in line)
-				extra_tag = ":anim:lname"
-			else
-				extra_tag = ":anim:fname"
+		
+			def extra_tag = ":anim"
+			if( "<+" in line) {
+				extra_tag += ":prop:lname"
+			}
+			else {
+			    if( Character.isUpperCase(line.charAt(0)) ) {
+				    extra_tag += ":prop:fname"
+			    }
+			}
 
 			if( ! ("<m" in line) && ! ("<+m" in line) ) {
 				def tag = "noun:f:nv:np"
@@ -628,7 +633,15 @@ class Expand {
 		else if( "/n2" in line && "<+" in line ) {
 			if( ! ("<+m" in line) && util.dual_last_name_ending(line)) {
 				out_lines.add(line)
-				def line_fem_lastname = line.split()[0] + " noun:f:nv:np:anim:lname"
+				def line_fem_lastname = line.split()[0] + " noun:f:nv:np:anim:prop:lname"
+				
+                if( line.contains(" :") ) {
+                    def matcher = line =~ /:[^ ]+/
+                    matcher.find()
+                    def extra_tag2 = matcher.group(0).replaceAll(/:xp\d/, '')
+                    line_fem_lastname += extra_tag2
+                }
+
 				out_lines.add(line_fem_lastname)
 			}
 			else {

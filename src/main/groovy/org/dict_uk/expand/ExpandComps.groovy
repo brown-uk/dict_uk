@@ -149,6 +149,11 @@ class ExpandComps {
 
 			try {
 				def comps = expand_composite_line(line)
+				
+				if( Character.isUpperCase(line.charAt(0)) && ! line.contains("<") ) {
+				    comps = comps.collect { it + ":prop" }
+				}
+				
 				out.addAll(comps)
 			}
 			catch(e) {
