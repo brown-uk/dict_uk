@@ -208,8 +208,6 @@ String osName = System.getProperty("os.name").toLowerCase();
 if (osName.contains("windows")) {
     if( ! System.getProperty("JAVA_TOOL_OPTIONS", "").contains("-Dfile.encoding=UTF-8") ) {
         println "On Windows to get unicode handled correctly you need to run with this command: JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 gradle <task>"
-    }
-    else {
         tasks.each { task ->
             if( task instanceof JavaExec ) {
 //              println "Adding utf-8 jvm argument for task $task"
