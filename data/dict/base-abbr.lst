@@ -97,27 +97,27 @@
 ДАТ noun:n:nv
 дБ noun:m:nv
 ДБСТ noun:m:nv    # Дитячий будинок сімейного типу
-ДДСО noun:f:nv
-ДДТ noun:m:nv:np
-ДемПУ noun:f:nv:np
+ДДСО noun:f:nv:prop    # Державна служба охорони
+ДДТ noun:m:nv:np:prop    # (гурт)
+ДемПУ noun:f:nv:np:prop    # Демократична партія України
 Дж noun:m:nv
-ДІНЗ noun:f:nv
-ДКЦПФР noun:f:nv
+ДІНЗ noun:f:nv    #? Державна інспекція навчальних закладів
+ДКЦПФР noun:f:nv    #? Національна комісія з цінних паперів та фондового ринку
 ДЛК noun:m:nv
-дм noun:m:nv
+дм noun:m:nv:prop    # Донецький металургійний завод
 ДМЗ noun:f:nv
 ДМЗ noun:m:nv:np
-ДМСУ noun:f:nv
+ДМСУ noun:f:nv:prop    # Державна міграційна служба України
 ДНД noun:f:nv
 ДНК noun:f:nv
 дНТФ noun:m:nv
 ДОС noun:f:nv
 ДП noun:n:nv
 ДПА noun:f:nv
-ДПАУ noun:f:nv
-ДПЕК noun:m:nv
+ДПАУ noun:f:nv:prop    # Державна податкова адміністрація України
+ДПЕК noun:m:nv:prop    # Донбаської паливно-енергетичної компанії 
 ДПС noun:f:nv
-ДПСУ noun:f:nv
+ДПСУ noun:f:nv:prop
 д-р /n20.a.p.<
 ДРВ noun:f:nv
 ДРЕС noun:f:nv
@@ -127,7 +127,7 @@
 ДСК noun:f:nv
 ДСТУ noun:m:nv
 ДСУ noun:f:nv
-ДТЕК noun:f:nv
+ДТЕК noun:f:nv:prop    # Донбасская топливно-энергетическая компания (DTEK)
 ДТП noun:f:nv
 ДТРК noun:f:nv
 ДЮСШ noun:f:nv
@@ -504,7 +504,7 @@
 УКТЗЕД noun:f:nv:np
 УМВГ noun:f:nv
 УМВС noun:n:nv
-УМВСУ noun:n:nv
+УМВСУ noun:n:nv:prop
 УНА noun:f:nv:np:prop
 УНА-УНСО noun:f:nv:np:prop
 УНДО noun:n:nv
