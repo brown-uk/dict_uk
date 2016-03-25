@@ -97,27 +97,27 @@
 ДАТ noun:n:nv
 дБ noun:m:nv
 ДБСТ noun:m:nv    # Дитячий будинок сімейного типу
-ДДСО noun:f:nv
-ДДТ noun:m:nv:np
-ДемПУ noun:f:nv:np
+ДДСО noun:f:nv:prop    # Державна служба охорони
+ДДТ noun:m:nv:np:prop    # (гурт)
+ДемПУ noun:f:nv:np:prop    # Демократична партія України
 Дж noun:m:nv
-ДІНЗ noun:f:nv
-ДКЦПФР noun:f:nv
+ДІНЗ noun:f:nv    #? Державна інспекція навчальних закладів
+ДКЦПФР noun:f:nv    #? Національна комісія з цінних паперів та фондового ринку
 ДЛК noun:m:nv
 дм noun:m:nv
-ДМЗ noun:f:nv
+ДМЗ noun:f:nv:prop    # Донецький металургійний завод
 ДМЗ noun:m:nv:np
-ДМСУ noun:f:nv
+ДМСУ noun:f:nv:prop    # Державна міграційна служба України
 ДНД noun:f:nv
 ДНК noun:f:nv
 дНТФ noun:m:nv
 ДОС noun:f:nv
 ДП noun:n:nv
 ДПА noun:f:nv
-ДПАУ noun:f:nv
-ДПЕК noun:m:nv
+ДПАУ noun:f:nv:prop    # Державна податкова адміністрація України
+ДПЕК noun:m:nv:prop    # Донбаської паливно-енергетичної компанії 
 ДПС noun:f:nv
-ДПСУ noun:f:nv
+ДПСУ noun:f:nv:prop    # Державна прикордонна служба України
 д-р /n20.a.p.<
 ДРВ noun:f:nv
 ДРЕС noun:f:nv
@@ -127,7 +127,7 @@
 ДСК noun:f:nv
 ДСТУ noun:m:nv
 ДСУ noun:f:nv
-ДТЕК noun:f:nv
+ДТЕК noun:f:nv:prop    # Донбасская топливно-энергетическая компания (DTEK)
 ДТП noun:f:nv
 ДТРК noun:f:nv
 ДЮСШ noun:f:nv
@@ -136,7 +136,7 @@
 ЕОМ noun:f:nv
 ЄАНТК noun:m:nv
 ЄАР noun:f:nv
-ЄБРР noun:m:nv:prop
+ЄБРР noun:m:nv:prop    # Європейський банк реконструкції та розвитку
 ЄврАзЕС noun:n:nv:prop
 ЄВС noun:f:nv
 ЄДАПС noun:f:nv:prop
@@ -147,35 +147,35 @@
 ЄКА noun:n:nv
 ЄКРН noun:f:nv
 ЄС noun:n:nv:prop
-ЄСПЛ noun:m:nv
+ЄСПЛ noun:m:nv:prop    # Європейський суд з прав людини
 ЖБК noun:m:nv
-ЖДУ noun:m:nv
+ЖДУ noun:m:nv:prop    # Житомирський державний університет
 ЖЕК /n20.p
 ЖКГ noun:n:nv
 зав /n20.a
 ЗАТ noun:n:nv
 з-д /n20.a.p
-ЗЄС noun:m:nv
+ЗЄС noun:m:nv:prop    # Західноєвропейський союз
 ЗМІ noun:p:nv:ns
-ЗМОП noun:m:nv
+ЗМОП noun:m:nv    # загін міліції особливого призначення
 ЗНО noun:n:nv
 ЗПГ noun:m:nv
 ЗРК noun:m:nv
-ЗСУ noun:p:nv:ns
+ЗСУ noun:p:nv:ns:prop
 ЗУНР noun:f:nv:prop
-ІГХ noun:f:nv
-ІНК noun:m:nv
+ІГХ noun:f:nv    # Імуногістохімія
+ІНК noun:m:nv:prop    # Індійський національний конгрес
 ін-т /n20.p
-ІОЦ noun:m:nv
+ІОЦ noun:m:nv    # інформаційно-обчислювальний центр
 ІПС noun:f:nv
 ІРІ noun:f:nv
-ІСРП noun:f:nv
+ІСРП noun:f:nv:prop    # Іспанська соціалістична робітнича партія
 ІТ noun:p:nv:ns
 ІТАР-ТАРС noun:n:nv:np:prop
-ІТТ noun:m:nv
+ІТТ noun:m:nv    # ізолятор тимчасового тримання
 КАС /n20
 КАСКО noun:n:nv
-КАСУ noun:m:nv:np
+КАСУ noun:m:nv:np:prop    # Кодекс адміністративного судочинства України
 КБ noun:n:nv
 кб noun:m:nv
 кбайт noun:m:nv
@@ -183,11 +183,11 @@
 КВК noun:m:nv
 кВт noun:m:nv
 кг noun:m:nv
-КГЗКОР noun:m:nv
+КГЗКОР noun:m:nv:prop    # Криворізький гірничо-збагачувальний комбінат окислених руд
 кГц noun:m:nv
 КД noun:m:nv:xp1    # компактдиск
 КД noun:f:nv:xp2    # конструкторська документація
-КДБ noun:m:nv
+КДБ noun:m:nv:prop
 кДж noun:m:nv
 КДКА noun:f:nv
 КДМА noun:f:nv:np
@@ -218,7 +218,7 @@
 к-сть /n30.p
 КУІн noun:m:nv
 КУК noun:m:nv
-ЛАЗ /n20:prop
+ЛАЗ /n20 :prop
 ЛАК noun:f:nv
 ЛБД noun:f:nv
 ЛДПР noun:f:nv:np
@@ -504,7 +504,7 @@
 УКТЗЕД noun:f:nv:np
 УМВГ noun:f:nv
 УМВС noun:n:nv
-УМВСУ noun:n:nv
+УМВСУ noun:n:nv:prop
 УНА noun:f:nv:np:prop
 УНА-УНСО noun:f:nv:np:prop
 УНДО noun:n:nv
