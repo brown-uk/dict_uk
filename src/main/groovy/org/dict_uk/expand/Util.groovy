@@ -175,7 +175,7 @@ class Util {
 				for( g in gens ){
 					for( v in VIDM_LIST ){
 //						if( v == "v_kly" && (! (":anim" in line) || ":lname" in line) )    // TODO: include v_kly? but ! for abbr like кв.
-        				if( v == "v_kly" && line.contains(". ") )
+        				if( v == "v_kly" && (line.contains(". ") || line.contains("&pron")) )
 							continue
 
 						lines.add(parts[0] + ":" + g + ":" + v + ":nv" + (parts.size()>1 ? parts[1] :""))
