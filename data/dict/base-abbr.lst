@@ -3,30 +3,30 @@
 АЕС noun:f:nv
 АЗС noun:f:nv
 АйБіЕм noun:f:nv:prop
-АКШУ noun:f:nv
-АМКУ noun:m:nv:prop
+АКШУ noun:f:nv:prop    # Асоціація керівників шкіл України
+АМКУ noun:m:nv:prop    # Антимонопольний комітет України
 АМНУ noun:f:nv
 АН noun:f:nv
-АНДР noun:f:nv
+АНДР noun:f:nv:prop    # Алжирська Народна Демократична Республіка
 АНТК noun:m:nv:np
 АП noun:f:nv
 АПК noun:m:nv
 АРСР noun:f:nv:np:prop
-АСЕАН noun:f:nv:np
+АСЕАН noun:f:nv:np:prop    # Association of SouthEast Asian Nations
 АТ noun:n:nv
 АТЕК noun:m:nv:np:prop
 АТЗТ noun:n:nv
 АТП noun:n:nv
-АТР noun:m:nv
+АТР noun:m:nv:prop    # канал
 АТС noun:f:nv
-БАТЕ noun:m:nv:np:prop
+БАТЕ noun:m:nv:np:prop    # футбольний клуб
 б-во /n2n.p1
 БД noun:f:nv
 БК noun:m:nv
 б-ка /n10.p2
 БМД noun:m:nv
 БМП noun:f:nv
-БРІК noun:n:nv:np
+БРІК noun:n:nv:np:prop    # Brazil, Russia, India, China, South Africa
 БРСР noun:f:nv:np:prop
 БТР noun:m:nv
 БЮТ noun:m:nv:np:prop
@@ -37,40 +37,40 @@
 ВВ noun:p:nv:ns
 в-во /n2n.p1
 ВВП noun:m:nv
-ВГСУ noun:m:nv
+ВГСУ noun:m:nv:prop    # Вищий господарський суд України
 ВДНГ noun:f:nv:np
 вдсх noun:n:nv
-ВДЦП noun:m:nv
+ВДЦП noun:m:nv:prop    # Всеукраїнський депозитарій цінних паперів
 вид-во /n2n.p1
 ВИХ noun:m:nv
 ВІЛ noun:m:nv:np
 ВІЛ-СНІД noun:m:nv:np
 ВІНК noun:f:nv
-ВЛКСМ noun:f:nv:np
+ВЛКСМ noun:f:nv:np:prop    # Комсомол
 ВМГО noun:f:nv
 ВМС noun:p:nv:ns
-ВМСУ noun:p:nv:ns
+ВМСУ noun:p:nv:ns:prop    # Військово-Морські Сили Збройних Сил України
 ВНДІ noun:m:nv
 ВНЗ noun:m:nv
-ВНП noun:m:nv
+ВНП noun:m:nv    # Валовий національний продукт
 ВО noun:n:nv
-ВООЗ noun:f:nv
+ВООЗ noun:f:nv:prop    # Всесвітня організація охорони здоров’я
 ВПК noun:m:nv
 ВПС noun:p:nv:ns
 ВР noun:f:nv:np
-ВРУ noun:f:nv
+ВРУ noun:f:nv:prop
 ВССУ noun:m:nv
-ВТССУМ noun:m:nv
-ВУАН noun:f:nv
-ВУНАС noun:f:nv
-ВУФКУ noun:n:nv
-ВУЦВК noun:m:nv
-ВЦВК noun:m:nv
-ВЦРПС noun:f:nv
-ВЧК noun:f:nv:bad
+ВТССУМ noun:m:nv:prop    # Великий тлумачний словник сучасної української мови
+ВУАН noun:f:nv:prop    # Всеукраїнська академія наук (1921—1936)
+ВУНАС noun:f:nv: prop    # Всеукраїнська наукова асоціація сходознавства
+ВУФКУ noun:n:nv:prop    # Всеукраїнське фотокіноуправління (1922—1930)
+ВУЦВК noun:m:nv:prop    # Всеукраїнський центральний виконавчий комітет (1917—1938)
+ВЦВК noun:m:nv:prop    # Всеросійський центральний виконавчий комітет (1917—1937)
+ВЦРПС noun:f:nv:prop    # Всесоюзна центральна рада професійних спілок
+ВЧК noun:f:nv:prop:bad    # Всероссийская чрезвычайная комиссия
 г noun:m:nv
 ГАЕС noun:f:nv
-ГАТТ noun:f:nv
+ГАТТ noun:f:nv:prop    # Генеральна угода з тарифів і торгівлі (СОТ до 1995)
 Гб noun:m:nv
 Гбайт noun:m:nv
 Гбіт noun:m:nv
@@ -83,7 +83,7 @@
 госп-во /n2n
 ГПа noun:m:nv
 ГПО noun:n:nv
-ГПУ noun:f:nv:np
+ГПУ noun:f:nv:np:prop
 Гр noun:f:nv
 ГРВІ noun:f:nv
 грн noun:f:nv
@@ -91,12 +91,12 @@
 ГУАМ noun:f:nv:np:prop
 ГУБОЗ noun:n:nv:np
 ГУМВС noun:n:nv:np
-ГУУАМ noun:n:nv:np
+ГУУАМ noun:n:nv:np:prop    # ГУАМ після вступу Узбекистану
 Гц noun:m:nv
 ДАІ noun:f:nv
 ДАТ noun:n:nv
 дБ noun:m:nv
-ДБСТ noun:m:nv
+ДБСТ noun:m:nv    # Дитячий будинок сімейного типу
 ДДСО noun:f:nv
 ДДТ noun:m:nv:np
 ДемПУ noun:f:nv:np
@@ -137,16 +137,16 @@
 ЄАНТК noun:m:nv
 ЄАР noun:f:nv
 ЄБРР noun:m:nv:prop
-ЄврАзЕС noun:n:nv
+ЄврАзЕС noun:n:nv:prop
 ЄВС noun:f:nv
-ЄДАПС noun:f:nv
+ЄДАПС noun:f:nv:prop
 ЄДРПОУ noun:m:nv
 ЄЕП noun:m:nv
 ЄЕС noun:f:nv
-ЄЕСУ noun:p:nv:ns
+ЄЕСУ noun:p:nv:ns:prop
 ЄКА noun:n:nv
 ЄКРН noun:f:nv
-ЄС noun:n:nv
+ЄС noun:n:nv:prop
 ЄСПЛ noun:m:nv
 ЖБК noun:m:nv
 ЖДУ noun:m:nv
@@ -162,7 +162,7 @@
 ЗПГ noun:m:nv
 ЗРК noun:m:nv
 ЗСУ noun:p:nv:ns
-ЗУНР noun:f:nv
+ЗУНР noun:f:nv:prop
 ІГХ noun:f:nv
 ІНК noun:m:nv
 ін-т /n20.p
@@ -195,37 +195,37 @@
 ККД noun:m:nv
 км noun:m:nv
 КМДА noun:f:nv:np:prop
-КМІС noun:m:nv
+КМІС noun:m:nv:prop
 КМКФ noun:m:nv
-КМУ noun:m:nv
-КНЕУ noun:m:nv
-КНЛУ noun:m:nv
-КНР noun:f:nv:np
-КНУ noun:m:nv
-КНУКіМ noun:m:nv
+КМУ noun:m:nv:prop
+КНЕУ noun:m:nv:prop
+КНЛУ noun:m:nv:prop
+КНР noun:f:nv:np:prop
+КНУ noun:m:nv:prop
+КНУКіМ noun:m:nv:prop
 КОАТУУ noun:m:nv:np
 КП noun:m:nv
 кПа noun:m:nv
 КПВ noun:f:nv
 КПЗУ noun:f:nv
-КПІ noun:m:nv:np
+КПІ noun:m:nv:np:prop
 КПК noun:m:nv:np
 КПП noun:m:nv
-КПРС noun:f:nv:np
-КПРФ noun:f:nv:np
-КПУ noun:f:nv:np
+КПРС noun:f:nv:np:prop
+КПРФ noun:f:nv:np:prop
+КПУ noun:f:nv:np:prop
 крб noun:m:nv
 к-сть /n30.p
 КУІн noun:m:nv
 КУК noun:m:nv
-ЛАЗ /n20
+ЛАЗ /n20:prop
 ЛАК noun:f:nv
 ЛБД noun:f:nv
 ЛДПР noun:f:nv:np
-ЛДПУ noun:f:nv:np
+ЛДПУ noun:f:nv:np:prop
 ЛКСМУ noun:f:nv:np
 ЛНДР noun:f:nv
-ЛНУ noun:m:nv
+ЛНУ noun:m:nv:prop
 ЛОДА noun:f:nv
 ЛОМ noun:f:nv
 л-ра /n10 :np
@@ -233,7 +233,7 @@
 ЛуАЗ /n20
 м noun:m:nv
 МАГАТЕ noun:n:nv:np:prop
-МАУП noun:f:nv:np
+МАУП noun:f:nv:np:prop
 Мб noun:m:nv
 МБА noun:m:nv
 Мбайт noun:m:nv
@@ -241,9 +241,9 @@
 МБРР noun:m:nv:np:prop
 м-во /n2n.p1
 МВС noun:n:nv
-МВСУ noun:n:nv:np
+МВСУ noun:n:nv:np:prop
 МВт noun:m:nv
-МВФ noun:m:nv:np
+МВФ noun:m:nv:np:prop
 мг noun:m:nv
 МГД noun:m:nv
 МГц noun:m:nv
@@ -253,7 +253,7 @@
 мін-во /n2n.p1
 мкг noun:m:nv
 мкм noun:m:nv
-МКС noun:f:nv
+МКС noun:f:nv:prop
 мкс noun:f:nv
 мкФ noun:m:nv
 мл noun:m:nv
@@ -283,13 +283,13 @@
 НАН noun:f:nv
 НАНУ noun:f:nv:np:prop
 НАПН noun:f:nv
-НАСА noun:n:nv
+НАСА noun:n:nv:prop
 НАСК noun:f:nv
-НАТО noun:n:nv
-НаУКМА noun:f:nv:np
+НАТО noun:n:nv:prop
+НаУКМА noun:f:nv:np:prop
 НБА noun:f:nv
 НБУ noun:m:nv:np:prop
-НБУВ noun:f:nv
+НБУВ noun:f:nv:prop    # Національна бібліотека України імені В. І. Вернадського
 НВЦ noun:m:nv
 НДІ noun:m:nv
 НДО noun:f:nv
@@ -297,8 +297,8 @@
 НеоЛАЗ noun:m:nv
 НЕП /n20
 НКАУ noun:n:nv
-НКВД noun:n:nv:np
-НКВС noun:m:nv:np
+НКВД noun:n:nv:np:prop
+НКВС noun:m:nv:np:prop
 НКДБ noun:m:nv:np
 НКРЕ noun:f:nv:np
 НКРЗ noun:m:nv:np
@@ -309,36 +309,36 @@
 НРБ noun:m:nv
 НРКУ noun:f:nv
 НРП noun:f:nv
-НРУ noun:m:nv:np
+НРУ noun:m:nv:np:prop
 НСБ noun:f:nv
-НСДАП noun:f:nv:np
-НСЖУ noun:f:nv
+НСДАП noun:f:nv:np:prop    # Націонал-соціалістична робітнича партія Німеччини
+НСЖУ noun:f:nv:prop    # Національна спілка журналістів України
 НСК noun:m:nv:np
-НСКУ noun:f:nv:np
-НСМЕП noun:f:nv
-НСНУ noun:m:nv
+НСКУ noun:f:nv:np:prop
+НСМЕП noun:f:nv:prop    # Національна система масових електронних платежів
+НСНУ noun:m:nv:prop
 НСПУ noun:f:nv
-НСРА noun:f:nv
-НСТУ noun:f:nv
-НСХУ noun:f:nv
+НСРА noun:f:nv:prop    # Народна Соціалістична Республіка Албанія
+НСТУ noun:f:nv:prop    # Національна суспільна телерадіокомпанія України
+НСХУ noun:f:nv:prop    # Національна спілка художників України
 НТД noun:p:nv:ns
-НТКУ noun:f:nv
+НТКУ noun:f:nv:prop    # Національна телекомпанія України
 НТП noun:m:nv
-НТР noun:f:nv
-НТУУ noun:m:nv
-НТШ noun:n:nv
-НУНС noun:m:nv:np
-НУ-НС noun:m:nv:np
-НУХТ noun:m:nv
-НФЛ noun:f:nv
-НФПУ noun:m:nv
-НХЛ noun:f:nv:np
-НХМУ noun:m:nv
-ОАД noun:f:nv
-ОАЄ noun:f:nv
+НТР noun:f:nv    # Науково-технічна революція
+НТУУ noun:m:nv:prop    # Національний технічний університет України (КПІ)
+НТШ noun:n:nv:prop    # Наукове товариство імені Шевченка
+НУНС noun:m:nv:np:prop
+НУ-НС noun:m:nv:np:prop
+НУХТ noun:m:nv:prop    # Національний університет харчових технологій
+НФЛ noun:f:nv:prop    # Національна футбольна ліга
+НФПУ noun:m:nv:prop    # Національний форум профспілок України
+НХЛ noun:f:nv:np:prop    # Національна хокейна ліга
+НХМУ noun:m:nv:prop    # Національний художній музей України
+ОАД noun:f:nv:prop    # Організація Американських Держав
+ОАЄ noun:f:nv:prop
 ОАС noun:m:nv
 облУВС noun:n:nv
-ОБСЄ noun:f:nv:np
+ОБСЄ noun:f:nv:np:prop
 о-в /n20.a.p
 ОВДП noun:p:nv:ns
 ОВП noun:f:nv
@@ -354,10 +354,10 @@
 ОПЕК noun:f:nv:np
 ОРД noun:f:nv
 ОСББ noun:n:nv:np
-ОУН noun:f:nv:np
-ОУН-УПА noun:f:nv:np
+ОУН noun:f:nv:np:prop
+ОУН-УПА noun:f:nv:np:prop
 Па noun:m:nv
-ПАРЄ noun:f:nv:np
+ПАРЄ noun:f:nv:np:prop
 Пб noun:m:nv
 Пбайт noun:m:nv
 ПВХ noun:m:nv
@@ -384,14 +384,14 @@
 ПРП noun:f:nv
 пр-т /n20
 ПРУ noun:f:nv
-ПСПУ noun:f:nv
+ПСПУ noun:f:nv:prop
 ПТСР noun:m:nv
 ПТУ noun:n:nv
-ПУМБ noun:m:nv
+ПУМБ noun:m:nv:prop
 пФ noun:m:nv
 ПФТС noun:f:nv
 РАГС /n20
-РАЕС noun:f:nv
+РАЕС noun:f:nv:prop
 РАН noun:f:nv
 РАТАУ noun:n:nv
 РВВС noun:m:nv
@@ -402,7 +402,7 @@
 РЛС noun:f:nv
 р-н /n20.p
 РНБО noun:f:nv:np
-РНБОУ noun:f:nv:np
+РНБОУ noun:f:nv:np:prop
 РНГ noun:f:nv
 РНК noun:f:nv
 РПГ noun:m:nv
@@ -419,12 +419,12 @@
 САПР noun:n:nv
 САР noun:f:nv
 САУ noun:f:nv
-СБУ noun:f:nv
+СБУ noun:f:nv:prop
 СВАПО noun:f:nv
 св-во /n2n.p1
-СВУ noun:f:nv
+СВУ noun:f:nv:prop
 СДПН noun:f:nv
-СДПУ noun:f:nv
+СДПУ noun:f:nv:prop
 СДПФ noun:f:nv
 СДРПШ noun:f:nv
 сек noun:f:nv
@@ -487,7 +487,7 @@
 УБОЗ /n20
 УВКБ noun:n:nv
 УВКР noun:f:nv
-УГА noun:f:nv
+УГА noun:f:nv:prop
 УГВР noun:f:nv
 УГКЦ noun:f:nv:np
 УГС noun:f:nv
@@ -497,7 +497,7 @@
 УДСБЕЗ noun:n:nv
 УДСО noun:n:nv
 УДЦР noun:m:nv
-УЄФА noun:f:nv:np
+УЄФА noun:f:nv:np:prop
 УККА noun:m:nv
 УКП noun:f:nv
 УКСМ noun:f:nv
@@ -505,11 +505,11 @@
 УМВГ noun:f:nv
 УМВС noun:n:nv
 УМВСУ noun:n:nv
-УНА noun:f:nv:np
-УНА-УНСО noun:f:nv:np
+УНА noun:f:nv:np:prop
+УНА-УНСО noun:f:nv:np:prop
 УНДО noun:n:nv
 УНДП noun:f:nv:np
-УНІАН noun:n:nv:np
+УНІАН noun:n:nv:np:prop
 УНІТА noun:m:nv
 УНКВД noun:n:nv:np
 УНКМО noun:m:nv
@@ -523,8 +523,8 @@
 УПА noun:f:nv:np
 УПСР noun:f:nv
 УПЦ noun:f:nv:np
-УПЦ-КП noun:f:nv:np
-УПЦ-МП noun:f:nv:np
+УПЦ-КП noun:f:nv:np:prop
+УПЦ-МП noun:f:nv:np:prop
 УРДП noun:f:nv
 УРЕ noun:f:nv
 УРП noun:f:nv
@@ -533,8 +533,8 @@
 УСДП noun:f:nv
 УСДРП noun:f:nv
 УСПП noun:m:nv
-УСРР noun:f:nv
-УСС noun:p:nv:ns
+УСРР noun:f:nv:prop
+УСС noun:p:nv:ns:prop    # Українські січові стрільці
 УТН noun:p:nv:ns
 УТОГ noun:n:nv
 УТОС noun:n:nv
@@ -543,10 +543,10 @@
 у-ще /n2n
 ФАО noun:f:nv
 ФАТХ noun:m:nv:np
-ФБР noun:n:nv:np
+ФБР noun:n:nv:np:prop
 ФДМУ noun:m:nv
 ФІБА noun:f:nv
-ФІДЕ noun:f:nv
+ФІДЕ noun:f:nv:prop
 ФІЖ noun:f:nv
 ФІЛА noun:f:nv
 ФІНА noun:f:nv
@@ -560,15 +560,15 @@
 ФМШ noun:f:nv
 фоб noun:m:nv
 ФОС noun:m:nv
-ФРЕЛІМО noun:m:nv
-ФСБ noun:f:nv:np
+ФРЕЛІМО noun:m:nv:prop    # Frente de Libertação de Moçambique
+ФСБ noun:f:nv:np:prop
 ФСП noun:f:nv
 ф-т /n20.p
 ФФУ noun:f:nv:np
-ХАЕС noun:f:nv
-ХАМАС noun:m:nv:np
+ХАЕС noun:f:nv:prop
+ХАМАС noun:m:nv:np:prop
 хв noun:f:nv
-ХДПУ noun:f:nv
+ХДПУ noun:f:nv:prop    # Християнсько-демократична партія України
 ХЛПУ noun:f:nv
 ХНС noun:m:nv
 ХСС noun:m:nv
@@ -595,4 +595,4 @@
 ШВСМ noun:f:nv
 ЮНЕСКО noun:n:nv:np:prop
 ЮНІСЕФ noun:m:nv:np:prop
-ЯМР noun:m:nv
+ЯМР noun:m:nv    # Ядерний магнітний резонанс
