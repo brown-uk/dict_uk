@@ -100,6 +100,11 @@ task dups << {
 // Testing targets
 //
 
+def getAdjustedText(filename) {
+       new File(filename).text.replace("\r\n", "\n")
+}
+
+
 task testExpand(type: JavaExec, dependsOn: [reverseAffix, classes]) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
@@ -113,14 +118,14 @@ task testExpand(type: JavaExec, dependsOn: [reverseAffix, classes]) {
 
     doLast {
         def file="dict_corp_lt.txt"
-        def noTestOutputChange = (new File("$workingDir/$file").text.replace("\r\n", "\n") == new File("$workingDir/prev/$file").text)
+        def noTestOutputChange = getAdjustedText("$workingDir/$file") == getAdjustedText("$workingDir/prev/$file")
         assert noTestOutputChange
 
         file="dict_corp_vis.txt"
-        def noTestVisOutputChange = (new File("$workingDir/$file").text.replace("\r\n", "\n") == new File("$workingDir/prev/$file").text)
+        def noTestVisOutputChange = getAdjustedText("$workingDir/$file") == getAdjustedText("$workingDir/prev/$file")
         assert noTestVisOutputChange
 
-        def noTestTagsOutputChange = (new File("$workingDir/tags.txt").text.replace("\r\n", "\n") == new File("$workingDir/prev/tags.txt").text)
+        def noTestTagsOutputChange = getAdjustedText("$workingDir/tags.txt") == getAdjustedText("$workingDir/prev/tags.txt")
         assert noTestTagsOutputChange
     }
 }
