@@ -14,6 +14,34 @@
   Абатський noun:inanim:m:v_kly
 абичийого adj:m:v_zna:ranim:&pron:ind
   абичий adj:m:v_zna:rinanim:&pron:ind
+абиякий adj:m:v_naz:&pron:ind
+  абиякого adj:m:v_rod:&pron:ind
+  абиякому adj:m:v_dav:&pron:ind
+  абиякого adj:m:v_zna:ranim:&pron:ind
+  абиякий adj:m:v_zna:rinanim:&pron:ind
+  абияким adj:m:v_oru:&pron:ind
+  абиякім adj:m:v_mis:&pron:ind
+  абиякому adj:m:v_mis:&pron:ind
+  абияка adj:f:v_naz:&pron:ind
+  абиякої adj:f:v_rod:&pron:ind
+  абиякій adj:f:v_dav:&pron:ind
+  абияку adj:f:v_zna:&pron:ind
+  абиякою adj:f:v_oru:&pron:ind
+  абиякій adj:f:v_mis:&pron:ind
+  абияке adj:n:v_naz:&pron:ind
+  абиякого adj:n:v_rod:&pron:ind
+  абиякому adj:n:v_dav:&pron:ind
+  абияке adj:n:v_zna:&pron:ind
+  абияким adj:n:v_oru:&pron:ind
+  абиякім adj:n:v_mis:&pron:ind
+  абиякому adj:n:v_mis:&pron:ind
+  абиякі adj:p:v_naz:&pron:ind
+  абияких adj:p:v_rod:&pron:ind
+  абияким adj:p:v_dav:&pron:ind
+  абияких adj:p:v_zna:ranim:&pron:ind
+  абиякі adj:p:v_zna:rinanim:&pron:ind
+  абиякими adj:p:v_oru:&pron:ind
+  абияких adj:p:v_mis:&pron:ind
 абордаж noun:inanim:m:v_naz
   абордажу noun:inanim:m:v_rod
   абордажеві noun:inanim:m:v_dav

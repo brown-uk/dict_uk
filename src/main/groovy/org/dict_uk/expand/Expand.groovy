@@ -452,6 +452,7 @@ class Expand {
 					if( main_flag.startsWith("/n1")) { // Єремія /n10.ko.patr.<
 						base_word = line.split()[1]
 					}
+					
 					if( //("<+" in flags && ! (":p:" in line)) \
 //					    || (main_flag =~ "/n2n|/n4" && ! util.istota(flags)) \
 					     //(! (main_flag =~ "/n2n|/n2adj1|/n4") && ! util.person(flags) ) \
@@ -486,6 +487,12 @@ class Expand {
 					if( ":uncontr" in line)
 						continue
 				}
+
+				if( flags.contains(":&pron") ) {
+					line = line.replace("/v_kly", "")
+				}
+
+				
 				if( "<" in flags) {
 					if( ! flags.contains(">") && ":p:v_naz/v_zna" in line)
 						line = line.replace("v_naz/v_zna", "v_naz")
