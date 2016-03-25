@@ -109,9 +109,9 @@ class BaseTags {
 		}
 		else if( affixFlag[0..<2] == "n2" ) {
 			tag = ":m:v_naz" + v_zna_for_inanim
-			if( affixFlag.startsWith("n20") && util.person(allAffixFlags) && (word[-2..-1] == "ло") && ! allAffixFlags.contains(".k") ) {
-				tag += "/v_kly"
-			}
+//			if( affixFlag.startsWith("n20") && util.person(allAffixFlags) && (word[-2..-1] == "ло") && ! allAffixFlags.contains(".k") ) {
+//				tag += "/v_kly"
+//			}
 		}
 		else if( affixFlag[0..<2] == "n1" ) {
 			tag = ":f:v_naz"

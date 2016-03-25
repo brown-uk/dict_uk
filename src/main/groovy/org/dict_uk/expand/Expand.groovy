@@ -455,10 +455,10 @@ class Expand {
 					if( //("<+" in flags && ! (":p:" in line)) \
 //					    || (main_flag =~ "/n2n|/n4" && ! util.istota(flags)) \
 					     //(! (main_flag =~ "/n2n|/n2adj1|/n4") && ! util.person(flags) ) \
-                         (! (":patr" in line) && (flags.contains(".ko") || flags.contains(".ke")) ) \
+                         ( (flags.contains(".ko") || flags.contains(".ke")) && ! line.contains(":patr") ) \
                         || (":m:" in line && "<+" in flags) \
-                        || (main_flag.startsWith("/n20") && base_word.endsWith("ло") && "v_dav" in line) ) {
-						//                    util.debug("removing v_kly from: %s, %s", line, flags)
+                        ) {//|| (main_flag.startsWith("/n20") && base_word.endsWith("ло") && "v_dav" in line) ) {
+						//log.info("removing v_kly from: %s, %s", line, flags)
 						line = line.replace("/v_kly", "")
 					}
 				}
@@ -1133,7 +1133,7 @@ class Expand {
 		}
 	}
 
-	static final List<String> ALL_V_TAGS = ["v_naz", "v_rod", "v_dav", "v_zna", "v_oru", "v_mis"] //, "v_kly"]
+	static final List<String> ALL_V_TAGS = ["v_naz", "v_rod", "v_dav", "v_zna", "v_oru", "v_mis", "v_kly"]
 	static final List<String> ALL_VERB_TAGS = ["inf", 
 //			"impr:s:2", "impr:p:1", "impr:p:2", \
 	        "pres:s:1", "pres:s:2", "pres:s:3", \
@@ -1202,9 +1202,15 @@ class Expand {
 		}
 	}
 
+	def V_KLY_ONLY = new HashSet(Arrays.asList("v_kly"))
 	private checkVTagSet(String gender, HashSet subtagSet, String line) {
 		if( ! subtagSet.containsAll(ALL_V_TAGS) && ! line.contains(". ") ) {
-			log.error("noun lemma is missing " + (ALL_V_TAGS - subtagSet) + " on gender " + gender + " for: " + line)
+			def missingVSet = ALL_V_TAGS - subtagSet
+
+			if( missingVSet == ["v_kly"] && line.contains(":lname") )
+				return
+			
+			log.error("noun lemma is missing " + missingVSet + " on gender " + gender + " for: " + line)
 			nonFatalErrorCount++
 		}
 	}

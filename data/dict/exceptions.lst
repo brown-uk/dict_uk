@@ -19,9 +19,9 @@
 # 0 - о
 Великдень Великдень noun:m:v_naz/v_zna:prop
 Великодня Великдень noun:m:v_rod:prop
-Великодню Великдень noun:m:v_dav/v_mis:prop
+Великодню Великдень noun:m:v_dav/v_mis/v_kly:prop
 Великоднем Великдень noun:m:v_oru:prop
-Великодні Великдень noun:p:v_naz/v_zna:prop
+Великодні Великдень noun:p:v_naz/v_zna/v_kly:prop
 Великоднів Великдень noun:p:v_rod:prop
 Великодням Великдень noun:p:v_dav:prop
 Великоднями Великдень noun:p:v_oru:prop
@@ -46,7 +46,7 @@
 ченцях чернець noun:anim:p:v_mis
 ченці чернець noun:anim:p:v_kly
 
-стекла скло noun:p:v_naz/v_zna      #> скла
+стекла скло noun:p:v_naz/v_zna/v_kly      #> скла
 стекол скло noun:p:v_rod            #> скел
 стеклам скло noun:p:v_dav/v_mis     #> склам
 стеклами скло noun:p:v_oru          #> склами

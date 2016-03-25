@@ -512,6 +512,7 @@
   вагонопотокові noun:inanim:m:v_mis
   вагонопотоку noun:inanim:m:v_mis
   вагонопотоці noun:inanim:m:v_mis
+  вагонопоточе noun:inanim:m:v_kly
 важкопоранений noun:anim:m:v_naz
   важкопораненого noun:anim:m:v_rod
   важкопораненому noun:anim:m:v_dav
@@ -543,7 +544,7 @@
   вайлі noun:anim:m:v_mis
   вайлові noun:anim:m:v_mis
   вайлу noun:anim:m:v_mis
-  вайло noun:anim:m:v_kly
+  вайле noun:anim:m:v_kly
   вайло noun:anim:n:v_naz
   вайла noun:anim:n:v_rod
   вайлові noun:anim:n:v_dav
@@ -1287,6 +1288,7 @@
   виборі noun:inanim:m:v_mis
   виборові noun:inanim:m:v_mis
   вибору noun:inanim:m:v_mis
+  виборе noun:inanim:m:v_kly
 викидайло noun:anim:m:v_naz
   викидайла noun:anim:m:v_rod
   викидайлові noun:anim:m:v_dav
@@ -1802,6 +1804,7 @@
   грошеві noun:inanim:m:v_mis
   гроші noun:inanim:m:v_mis
   грошу noun:inanim:m:v_mis
+  грошу noun:inanim:m:v_kly
 Данаїди noun:anim:p:v_naz:ns:prop:fname
   Данаїд noun:anim:p:v_rod:ns:prop:fname
   Данаїдам noun:anim:p:v_dav:ns:prop:fname
@@ -3390,7 +3393,7 @@
   Ягайлі noun:anim:m:v_mis:prop:fname
   Ягайлові noun:anim:m:v_mis:prop:fname
   Ягайлу noun:anim:m:v_mis:prop:fname
-  Ягайло noun:anim:m:v_kly:prop:fname
+  Ягайлу noun:anim:m:v_kly:prop:fname
 якнайвагоміше adv:super
 якнайвагоміший adj:m:v_naz:super
   якнайвагомішого adj:m:v_rod:super
