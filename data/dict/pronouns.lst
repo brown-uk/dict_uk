@@ -1009,12 +1009,16 @@
 одне-однісіньке один-однісінький numr:n:v_naz/v_zna
 одно-однісіньке один-однісінький numr:n:v_naz
 
-обоє обоє numr:p:v_naz/v_zna
-обох обоє numr:p:v_rod/v_zna/v_mis
+обоє обоє numr:p:v_naz/v_zn2
+обох обоє numr:p:v_rod/v_zn1/v_mis
 обом обоє numr:p:v_dav
 обома обоє numr:p:v_oru
-обидва обидва numr:m:v_naz/v_zna
+
+обидва обидва numr:m:v_naz/v_zn2
 обидві обидва numr:f:v_naz/v_zna
+обох обидва numr:p:v_rod/v_zn1/v_mis
+обом обидва numr:p:v_dav
+обома обидва numr:p:v_oru
 
 годину-дві adv
 годину-другу adv
@@ -1026,14 +1030,14 @@
 
 
 # Числівники
-обидвоє обидвоє numr:p:v_naz/v_zna
-обидвох обидвоє numr:p:v_rod/v_zna/v_mis
-обидвом обидвоє numr:p:v_dav
-обидвома обидвоє numr:p:v_oru
+обидвоє обидвоє numr:p:v_naz/v_zn2:rare
+обидвох обидвоє numr:p:v_rod/v_zn1/v_mis:rare
+обидвом обидвоє numr:p:v_dav:rare
+обидвома обидвоє numr:p:v_oru:rare
 
-два два numr:m:v_naz/v_zna//n:v_naz/v_zna
+два два numr:m:v_naz/v_zn2//n:v_naz/v_zna
 дві два numr:f:v_naz/v_zna
-двох два numr:m:v_rod/v_zna/v_mis//n:v_rod/v_zna/v_mis//f:v_rod/v_zna/v_mis
+двох два numr:m:v_rod/v_zn1/v_mis//n:v_rod/v_zna/v_mis//f:v_rod/v_zna/v_mis
 двом два numr:m:v_dav//n:v_dav//f:v_dav
 двома два numr:m:v_oru//n:v_oru//f:v_oru
 

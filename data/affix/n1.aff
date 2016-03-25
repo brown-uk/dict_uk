@@ -11,7 +11,7 @@ group n10
 а	и		# хата  хати 	                    @ noun:f:v_rod
 а	ою		# хата  хатою 	                    @ noun:f:v_oru
 
-[^гґкхжчшщ]а:
+[^гГґкхжчшщ]а:
 а	і		# хата  хаті 	                    @ noun:f:v_dav/v_mis
 
 а:
@@ -21,6 +21,9 @@ group n10
 # тверда група в Називному відмінку однини з закінченням на -а перед 
 га:
 га	зі		# допомога допомозі 	          @ noun:f:v_dav/v_mis
+
+Га:
+Га	Зі		# А-Ба-Ба-Га-Ла-Ма-Га А-Ба-Ба-Га-Ла-Ма-Зі 	          @ noun:f:v_dav/v_mis
 
 # http://yak-my-hovorymo.wikidot.com/litera-za-yakoyu-yuzhat
 ґа:
