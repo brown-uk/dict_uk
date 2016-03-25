@@ -12,16 +12,16 @@ import org.apache.logging.log4j.Logger
 import org.dict_uk.expand.Expand
 
 class ExpandComps {
-	static Logger log = LogManager.getFormatterLogger(ExpandAll.class);
+	static Logger log = LogManager.getFormatterLogger(ExpandComps.class);
 
 	final Pattern tags_re = Pattern.compile("(.*:)[mfnp]:v_...(.*)")
 	final Pattern gen_vidm_pattern = Pattern.compile(":(.:v_...(:r(in)?anim)?)")
 	final Expand expand
 
-	static {
-		String.metaClass.isCase = { delegate.contains(it) }	// pythonize
-		assert "b" in "abc"
-	}
+//	static {
+//		String.metaClass.isCase = { delegate.contains(it) }	// pythonize
+//		assert "b" in "abc"
+//	}
 
 	public ExpandComps(Expand expand) {
 		this.expand = expand
@@ -48,7 +48,7 @@ class ExpandComps {
 			}
 
 			def vidm = rrr.group(1)
-			if( vidm[0] in "mfn" ) {
+			if( "mfn".contains(vidm[0]) ) {
 				if( !left_gen )
 					left_gen = vidm[0]
 				else
@@ -77,7 +77,7 @@ class ExpandComps {
 			}
 
 			def vidm = rrr.group(1)
-			if( left_gen != "" && vidm[0] in "mfn" )
+			if( left_gen != "" && "mfn".contains(vidm[0]) )
 				vidm = left_gen + vidm[1..-1]
 
 			if( !(vidm in left_v) )
@@ -98,16 +98,16 @@ class ExpandComps {
 
 	@TypeChecked
 	List<String> expand_composite_line(String line) {
-		if( ! (" - " in line) )
+		if( ! line.contains(" - ") )
 			return [line]
 
 		def parts_all
-		if( " :" in line ) {
+		if( line.contains(" :") ) {
 			parts_all = line.split(" :")
 			line = parts_all[0]
 			parts_all[1] = ":" + parts_all[1]
 		}
-		else if( " ^" in line ) {
+		else if( line.contains(" ^") ) {
 			parts_all = line.split(/ \^/)
 			line = parts_all[0]
 			parts_all[1] = "^" + parts_all[1]
@@ -119,7 +119,7 @@ class ExpandComps {
 		String[] parts = line.split(" - ")
 		//        print(parts, file=sys.stderr)
 
-		if( ! ("/" in parts[1]) )
+		if( ! parts[1].contains("/") )
 			parts[1] += " noun:m:nv"
 
 		if( parts_all.size() > 1 ) {

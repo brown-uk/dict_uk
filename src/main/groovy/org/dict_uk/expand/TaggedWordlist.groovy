@@ -20,7 +20,7 @@ def extra_tag_map = [
 private final Re re = new Re()
 
 static {
-	Locale.setDefault(new Locale("uk" , "UA"))
+//	Locale.setDefault(new Locale("uk" , "UA"))
 	String.metaClass.isCase = { delegate.contains(it) }	// pythonize
 	assert "b" in "abc"
 }
@@ -28,7 +28,7 @@ static {
 
 def process_line_exceptions(line) {
 
-    if( ! (" " in line) || line ==~ ".*[а-яіїєґА-ЯІЇЄҐ] /.*" )
+    if( ! line.contains(" ") || line ==~ ".*[а-яіїєґА-ЯІЇЄҐ] /.*" )
         return [line]
       
     if( line ==~ /[^ ]+ [^ ]+ [^:]?[a-z].*/ )
@@ -64,7 +64,7 @@ def process_line(line, extra_tags) {
 //    line = re.sub(/-$/, "", line)
     
 	def out_line
-    if( !(" " in line) || re.match('.*[а-яіїєґА-ЯІЇЄҐ] /.*', line) )
+    if( ! line.contains(" ") || re.match('.*[а-яіїєґА-ЯІЇЄҐ] /.*', line) )
         out_line = line
     else if( re.match(/^[^ ]+ [^ ]+ [^:]?[a-z].*$/, line) )
         out_line = line
@@ -78,13 +78,16 @@ def process_line(line, extra_tags) {
     }
 			
     //if extra_tags != "" && not re.match(".* [a-z].*$", out_line):
-    if( extra_tags != "" && (! re.search(" [:a-z]", out_line) || "g=" in out_line) )
+    if( extra_tags != "" && (! re.search(" [:a-z]", out_line) || out_line.contains("g=")) ) {
         extra_tags = " " + extra_tags
-    else if( line.startsWith(" +") )
+    }
+    else if( line.startsWith(" +") ) {
         extra_tags = ""
+    }
       
-    if( "|" in out_line )
+    if( out_line.contains("|") ) {
         out_line = out_line.replace("|", extra_tags + "|")
+    }
     
     //  if not "/" in out_line && not re.match("^[^ ]+ [^ ]+ [^ ]+$", out_line + extra_tags):
     //    print("bad line:", out_line + extra_tags, file=sys.stderr)
@@ -94,10 +97,12 @@ def process_line(line, extra_tags) {
     //      sys.exit(1)
     
     out_line = out_line + extra_tags
-    if( " \\ " in out_line )
+    if( out_line.contains(" \\ ") ) {
         out_line = out_line.replace(" \\ ", " ") + " \\"
-    else if( " \\:" in out_line )
+    }
+    else if( out_line.contains(" \\:") ) {
         out_line = out_line.replace(" \\:", ":") + " \\"
+    }
       
     return out_line
 }
@@ -169,14 +174,7 @@ def process_input(files) {
         }
     }
     return out_lines
-}   
+}
 
-
-//  static void main(argv) {
-//    def out_lines = process_input(sys.argv[1:])
-//    for out_line in out_lines ) {
-//        print(out_lines)
-//    }
-//  }
 
 }

@@ -38,7 +38,7 @@ class Expand {
 	private final Re re = new Re()
 
 	static {
-		Locale.setDefault(new Locale("uk" , "UA"))
+//		Locale.setDefault(new Locale("uk" , "UA"))
 		String.metaClass.isCase = { delegate.contains(it) }	// pythonize
 		assert "b" in "abc"
 	}
