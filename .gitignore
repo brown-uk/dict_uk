@@ -1,11 +1,10 @@
-**/__pycache__/
 **/*.log
 **/*.diff
 /build/
 **/tmp/
+test/*.txt
 out/prev/*
 out/*.txt
 .*
 .classpath
 .project
-.pydevproject
