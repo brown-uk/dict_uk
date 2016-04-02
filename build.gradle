@@ -205,8 +205,8 @@ task deployToLT(type: GradleBuild) {
 
 // windows have non-unicode encoding set by default
 String osName = System.getProperty("os.name").toLowerCase();
-if (true || osName.contains("windows")) {
-    if(true || ! "UTF-8".equals(System.getProperty("file.encoding")) ) {
+if ( osName.contains("windows")) {
+    if( ! "UTF-8".equals(System.getProperty("file.encoding")) ) {
         println "On Windows to get unicode handled correctly you need to set environment variable before running expand:"
         println "\tbash:"
         println "\t\texport JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8"
