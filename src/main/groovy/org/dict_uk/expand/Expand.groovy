@@ -19,6 +19,7 @@ class Expand {
 	static Logger log = LogManager.getFormatterLogger(Expand.class);
 
 	private final Util util = new Util()
+	private final DictSorter dictSorter = new DictSorter()
 	private final Affix affix = new Affix()
 	private final BaseTags base_tags = new BaseTags()
 	private final List<String> limitedVerbLemmas = new ArrayList<>();
@@ -1264,9 +1265,9 @@ class Expand {
 					def tag_lines = expand_line(line)
 					check_lines(tag_lines)
 
-					def sorted_lines = util.sort_all_lines(tag_lines)
+					def sorted_lines = dictSorter.sort_all_lines(tag_lines)
 					
-					List<String> indented_lines = util.indent_lines(sorted_lines)
+					List<String> indented_lines = dictSorter.indent_lines(sorted_lines)
 				
 	    			check_indented_lines(indented_lines)
 				
@@ -1325,7 +1326,7 @@ class Expand {
 		}
 
 		if( ! Args.args.flush) {
-			List<String> sorted_lines = util.sort_all_lines(all_lines)
+			List<String> sorted_lines = dictSorter.sort_all_lines(all_lines)
 			sorted_lines = post_process_sorted(sorted_lines)
 
 			def time3
@@ -1337,7 +1338,7 @@ class Expand {
 			if( Args.args.indent ) {
 				// to sort newely promoted lemmas
 				// sorted_lines.unique() is really slow
-				sorted_lines = util.sort_all_lines( sorted_lines.toSet() )
+				sorted_lines = dictSorter.sort_all_lines( sorted_lines.toSet() )
 
 				if( Args.args.time ) {
 					def time4 = System.currentTimeMillis()
@@ -1357,7 +1358,7 @@ class Expand {
 						sorted_lines.each{ f.println(it) }
 					}
 				}
-				sorted_lines = util.indent_lines(sorted_lines)
+				sorted_lines = dictSorter.indent_lines(sorted_lines)
 
 				check_indented_lines(sorted_lines)
 

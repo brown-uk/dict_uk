@@ -4,22 +4,22 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class UtilTest extends GroovyTestCase {
+public class DictSorterTest extends GroovyTestCase {
 	
-	Util util
+	DictSorter dictSorter
 	
 //	@Setup
 	@Override
 	void setUp() {
-		util = new Util()
+		dictSorter = new Util()
 	} 
 	
 	@Test
 	void testTagSortKey() {
-		assert util.tag_sort_key("noun:m:v_dav", "порт") == "noun:0:30"
+		assert dictSorter.tag_sort_key("noun:m:v_dav", "порт") == "noun:0:30"
 	}
 
-def linesToSort =
+	def linesToSort =
 '''
 А-Ба-Ба-Га-Ла-Ма-Га А-Ба-Ба-Га-Ла-Ма-Га noun:n:v_naz:nv:np
 А-Ба-Ба-Га-Ла-Ма-Га А-Ба-Ба-Га-Ла-Ма-Га noun:n:v_rod:nv:np
@@ -51,7 +51,7 @@ def linesToSort =
 	void testLineSortKey() {
 		def prevKey = ""
 		linesToSort.each{ line ->
-			def key = util.line_key(line)
+			def key = dictSorter.line_key(line)
 			assert key.compareTo(prevKey) > 0
 			prevKey = key 
 		}
@@ -59,6 +59,6 @@ def linesToSort =
 	
 	@Test
 	void testAllLines() {
-		assert ["а а excl", "а а part"] == util.sort_all_lines(["а а part", "а а excl"])
+		assert ["а а excl", "а а part"] == dictSorter.sort_all_lines(["а а part", "а а excl"])
 	}
 }
