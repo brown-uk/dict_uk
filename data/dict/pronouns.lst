@@ -106,7 +106,7 @@
 будь-ким будь-хто noun:v_oru:anim:&pron:ind
 будь-кім будь-хто noun:v_mis:anim:&pron:ind
 
-будь-що будь-що adv
+будь-що будь-що adv:&pron:ind
 будь-що будь-що noun:v_naz/v_zna:inanim:&pron:ind
 будь-чого будь-що noun:v_rod:inanim:&pron:ind
 будь-чому будь-що noun:v_dav/v_mis:inanim:&pron:ind
@@ -119,7 +119,7 @@
 будлі-ким будлі-хто noun:v_oru:anim:&pron:ind
 будлі-кім будлі-хто noun:v_mis:anim:&pron:ind
 
-будлі-що будлі-що adv
+будлі-що будлі-що adv:&pron:ind
 будлі-що будлі-що noun:v_naz/v_zna:inanim:&pron:ind
 будлі-чого будлі-що noun:v_rod:inanim:&pron:ind
 будлі-чому будлі-що noun:v_dav/v_mis:inanim:&pron:ind
@@ -247,7 +247,7 @@
 деким дехто noun:v_oru:anim:&pron:ind
 декім дехто noun:v_mis:anim:&pron:ind
 
-дещо дещо adv
+дещо дещо adv:&pron:ind
 дещо дещо noun:v_naz/v_zna:inanim:&pron:ind
 дечого дещо noun:v_rod:inanim:&pron:ind
 дечому дещо noun:v_dav/v_mis:inanim:&pron:ind
@@ -815,31 +815,31 @@
 кудись adv:&pron:ind
 звідкись adv:&pron:ind
 
-абиде adv
-абиколи adv
-абикуди adv
+абиде adv:&pron:ind
+абиколи adv:&pron:ind
+абикуди adv:&pron:ind
 
 аніде adv:&pron:neg
 анізащо adv:&pron:neg
 аніколи adv:&pron:neg
 
 бозна-де adv:&pron:ind:coll
-бозна-як adv
-бозна-коли adv
-бозна-куди adv
-бозна-звідки adv
+бозна-як adv:&pron:ind:coll
+бозна-коли adv:&pron:ind:coll
+бозна-куди adv:&pron:ind:coll
+бозна-звідки adv:&pron:ind:coll
 
 будь-де adv:&pron:ind
-будь-як adv
-будь-коли adv
-будь-куди adv
-будь-звідки adv
+будь-як adv:&pron:ind
+будь-коли adv:&pron:ind
+будь-куди adv:&pron:ind
+будь-звідки adv:&pron:ind
 
-будлі-де adv
-будлі-як adv
-будлі-коли adv
-будлі-куди adv
-будлі-звідки adv
+будлі-де adv:&pron:ind
+будлі-як adv:&pron:ind
+будлі-коли adv:&pron:ind
+будлі-куди adv:&pron:ind
+будлі-звідки adv:&pron:ind
 
 чортзна-де adv:&pron:ind
 чортзна-як adv:&pron:ind
@@ -860,15 +860,15 @@
 хтозна-відкіль adv:&pron:ind:coll
 хтозна-відколи adv:&pron:ind:coll
 
-невідь-де adv
-невідь-як adv
-невідь-коли adv
-невідь-куди adv
-невідь-звідки adv
+невідь-де adv:&pron:ind
+невідь-як adv:&pron:ind
+невідь-коли adv:&pron:ind
+невідь-куди adv:&pron:ind
+невідь-звідки adv:&pron:ind
 
 казна-де adv:&pron:ind
-казна-як adv
-казна-коли adv
+казна-як adv:&pron:ind
+казна-коли adv:&pron:ind
 казна-куди adv:&pron:ind
 казна-звідки adv:&pron:ind
 
@@ -901,7 +901,7 @@
 кільком кілька numr:p:v_dav:&pron:ind
 кількома кілька numr:p:v_oru:&pron:ind
 
-скількись adv
+скількись adv:&pron:ind
 скількись скількись numr:v_naz/v_zna:&pron:ind
 скількохсь скількись numr:v_rod/v_zna/v_mis:&pron:ind
 скількомсь скількись numr:v_dav:&pron:ind
@@ -912,7 +912,7 @@
 скільком скільки numr:p:v_dav:&pron:int
 скількома скільки numr:p:v_oru:&pron:int
 
-стільки adv
+стільки adv:&pron:dem
 стільки стільки numr:p:v_naz/v_zna:&pron:dem
 стількох стільки numr:p:v_rod/v_zna/v_mis:&pron:dem
 стільком стільки numr:p:v_dav:&pron:dem
@@ -923,31 +923,31 @@
 скільком-небудь скільки-небудь numr:p:v_dav:&pron:ind
 скількома-небудь скільки-небудь numr:p:v_oru:&pron:ind
 
-хтозна-скільки adv
+хтозна-скільки adv:&pron:ind
 хтозна-скільки хтозна-скільки numr:v_naz/v_zna:&pron:ind
 хтозна-скількох хтозна-скільки numr:v_rod/v_zna/v_mis:&pron:ind
 хтозна-скільком хтозна-скільки numr:v_dav:&pron:ind
 хтозна-скількома хтозна-скільки numr:v_oru:&pron:ind
 
-бозна-скільки adv
+бозна-скільки adv:&pron:ind
 бозна-скільки бозна-скільки numr:v_naz/v_zna:&pron:ind
 бозна-скількох бозна-скільки numr:v_rod/v_zna/v_mis:&pron:ind
 бозна-скільком бозна-скільки numr:v_dav:&pron:ind
 бозна-скількома бозна-скільки numr:v_oru:&pron:ind
 
-чортзна-скільки adv
+чортзна-скільки adv:&pron:ind
 чортзна-скільки чортзна-скільки numr:v_naz/v_zna:&pron:ind
 чортзна-скількох чортзна-скільки numr:v_rod/v_zna/v_mis:&pron:ind
 чортзна-скільком чортзна-скільки numr:v_dav:&pron:ind
 чортзна-скількома чортзна-скільки numr:v_oru:&pron:ind
 
-казна-скільки adv
+казна-скільки adv:&pron:ind
 казна-скільки казна-скільки numr:v_naz/v_zna:&pron:ind
 казна-скількох казна-скільки numr:v_rod/v_zna/v_mis:&pron:ind
 казна-скільком казна-скільки numr:v_dav:&pron:ind
 казна-скількома казна-скільки numr:v_oru:&pron:ind
 
-невідь-скільки adv
+невідь-скільки adv:&pron:ind
 невідь-скільки невідь-скільки numr:v_naz/v_zna:&pron:ind
 невідь-скількох невідь-скільки numr:v_rod/v_zna/v_mis:&pron:ind
 невідь-скільком невідь-скільки numr:v_dav:&pron:ind
