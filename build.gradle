@@ -205,12 +205,20 @@ task deployToLT(type: GradleBuild) {
 
 // windows have non-unicode encoding set by default
 String osName = System.getProperty("os.name").toLowerCase();
-if (osName.contains("windows")) {
-    if( ! System.getProperty("JAVA_TOOL_OPTIONS", "").contains("-Dfile.encoding=UTF-8") ) {
-        println "On Windows to get unicode handled correctly you need to set environment variable before running expand: set JAVA_TOOL_OPTIONS='-Dfile.encoding=UTF-8'"
+if (true || osName.contains("windows")) {
+    if(true || ! "UTF-8".equals(System.getProperty("file.encoding")) ) {
+        println "On Windows to get unicode handled correctly you need to set environment variable before running expand:"
+        println "\tbash:"
+        println "\t\texport JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8"
+        println "\tcmd:"
+        println "\t\t(change Font to 'Lucida Console' in cmd window properties)"
+        println "\t\tchcp 65001"
+        println "\t\tset JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8"
+        println "\n\tNOTE: bash shell (e.g. git bash) is recommended: only in bash the output will handle all cyrillics and expandInteractive only supported in bash"
+
+        // poor man's safety net (may work but still will not show all cyrillic characters)
         tasks.each { task ->
             if( task instanceof JavaExec ) {
-//              println "Adding utf-8 jvm argument for task $task"
                 task.jvmArgs '-Dfile.encoding=UTF-8'
             }
         }
