@@ -27,9 +27,9 @@ class Util {
 
 
 	def tail_tag(line, tags) {
-		for( tag in tags ){
+		for( tag in tags ) {
 			//        tag = ":" + tag
-			if( tag in line && ! line.endsWith(tag) ) {
+			if( line.contains(tag) && ! line.endsWith(tag) ) {
 				line = line.replace(tag, "") + tag
 			}
 		}
@@ -37,27 +37,27 @@ class Util {
 	}
 
 	def bacteria(allAffixFlags) {
-		return ">>" in allAffixFlags
+		return allAffixFlags.contains(">>")
 	}
 
 	def istota(allAffixFlags) {
-		return "<" in allAffixFlags
+		return allAffixFlags.contains("<")
 	}
 
 	def person(allAffixFlags) {
-		return "<" in allAffixFlags && ! (">" in allAffixFlags)
+		return allAffixFlags.contains("<") && ! allAffixFlags.contains(">")
 	}
 
 	@TypeChecked
 	def firstname(String word, String allAffixFlags) {
-		return ("<" in allAffixFlags && ! (">" in allAffixFlags)) && ! ("<+" in allAffixFlags) \
-        && word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase()
-		//and affixFlag != "p" \
+		return (allAffixFlags.contains("<") && ! allAffixFlags.contains(">")) \
+			&& ! allAffixFlags.contains("<+") \
+			&& word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase()
 	}
 
 	def DUAL_LAST_NAME_PATTERN = ~ ".*(о|ич|ук|юк|як|аш|яш|сь|ун|ин|сон) "
 	def dual_last_name_ending(line) {
-		return "+d" in line || DUAL_LAST_NAME_PATTERN.matcher(line)
+		return line.contains("+d") || DUAL_LAST_NAME_PATTERN.matcher(line)
 	}
 
 	// dictionary-related methods
@@ -120,7 +120,7 @@ class Util {
 		def lines = []
 
 		for( line in in_lines ){
-			if (("noun" in line || "numr" in line) && ":nv" in line && ! (":v_" in line) ) {
+			if ( ( line.contains("noun") || line.contains("numr") ) && line.contains(":nv") && ! line.contains(":v_") ) {
 				def parts = line.split(":nv")
 				def part2 = parts.size() > 1 ? parts[1] : ""
 
@@ -133,8 +133,8 @@ class Util {
 					lines.add(parts[0] + ":" + v + ":nv" + part2)
 				}
 
-				if( "noun" in line ) {
-					if( ! (":p" in line) && ! (":np" in line) && ! (":lname" in line)) {
+				if( line.contains("noun") ) {
+					if( ! line.contains(":p") && ! line.contains(":np") && ! line.contains(":lname") ) {
 						for( v in VIDM_LIST ) {
         					if( v == "v_kly" && line.contains(". ") )
         					    continue
@@ -146,7 +146,7 @@ class Util {
 				}
 			}
 			//        print("expand_nv", in_lines, "\n", lines, file=sys.stderr)
-			else if ("adj" in line && ":nv" in line && ! (":v_" in line) ) {
+			else if (line.contains("adj") && line.contains(":nv") && ! line.contains(":v_") ) {
 				def parts = line.split(":nv")
 
 				def gens
@@ -176,8 +176,8 @@ class Util {
 
 
 
-	def sub_stat(String pos, String sub_pos, line, sub_pos_stat) {
-		if( ":" + sub_pos in line) {
+	def sub_stat(String pos, String sub_pos, String line, sub_pos_stat) {
+		if( line.contains(":" + sub_pos) ) {
 			if( ! (pos in sub_pos_stat) ) {
 				sub_pos_stat[pos] = [:].withDefault{ 0 }
 			}
@@ -210,7 +210,7 @@ class Util {
 				continue
 
 			cnt += 1
-			if( ! ("advp" in line) ) {
+			if( ! line.contains("advp") ) {
 				cnt_std += 1
 			}
 
@@ -274,7 +274,7 @@ class Util {
 		HashSet<String> lemmas = new HashSet<>()
 		HashSet<String> tags = new HashSet<>()
 
-		for( line in sorted_lines) {
+		for( line in sorted_lines ) {
 			DicEntry dicEntry = DicEntry.fromLine(line)
 			def word = dicEntry.word
 			def lemma = dicEntry.lemma
@@ -283,8 +283,8 @@ class Util {
 			words.add(dicEntry.word)
 			lemmas.add(dicEntry.lemma)
 
-			if( ! (":bad" in tag) && ! (":alt" in tag) && ! (":uncontr" in tag) && ! (word.endsWith(".")) \
-			        && ! (":coll" in tag) && ! (":inanim" in tag && ":v_kly" in tag) ) {
+			if( ! tag.contains(":bad") && ! tag.contains(":alt") && ! tag.contains(":uncontr") && ! word.endsWith(".") \
+			        && ! tag.contains(":coll") && ! (tag.contains(":inanim") && tag.contains(":v_kly") ) ) {
 				spell_words.add(word)
 			}
 

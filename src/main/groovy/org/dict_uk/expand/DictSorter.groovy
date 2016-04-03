@@ -21,7 +21,7 @@ class DictSorter {
 	static Logger log = LogManager.getFormatterLogger(DictSorter.class);
 
 	static final String DERIV_PADDING="  "
-	
+
 	static final Map<String,String> GEN_ORDER = [
 		"m": "0",
 		"f": "1",
@@ -40,7 +40,6 @@ class DictSorter {
 		"v_kly": "70"
 	]
 
-	static final Pattern re_verb = Pattern.compile("(in[fz]|impr|pres|futr|past|impers)")
 	static final Map<String,String> vb_tag_key_map = [
 		"inf": 1,
 		"inz": 2,
@@ -53,8 +52,9 @@ class DictSorter {
 		"impers": 9
 	]
 
-
-//	static final Pattern re_person_name_key_tag = Pattern.compile("^([^:]+(?::anim|:inanim|:perf|:imperf)?)(.*?)(:lname|:fname|:patr)")
+	static final Pattern re_verb_tense = Pattern.compile("(in[fz]|impr|pres|futr|past|impers)")
+	
+	//	static final Pattern re_person_name_key_tag = Pattern.compile("^([^:]+(?::anim|:inanim|:perf|:imperf)?)(.*?)(:lname|:fname|:patr)")
 	static final Pattern re_person_name_key_tag = Pattern.compile("^(noun:anim)(.*?)(:lname|:fname|:patr)")
 
 	static final Pattern re_xv_sub = Pattern.compile("^([^:]+)(.*)(:x.[1-9])")
@@ -69,7 +69,7 @@ class DictSorter {
 			tags = tags.replace(":v-u", "")
 		}
 
-		if( "v_" in tags) {
+		if( tags.contains("v_") ) {
 			def vidm_match = VIDM_RE.matcher(tags)
 
 			if( vidm_match.find() ) {
@@ -86,9 +86,9 @@ class DictSorter {
 		}
 
 		if( tags.startsWith("adj:") ) {
-			if( ! (":comp" in tags) && ! (":supe" in tags) ) {
+			if( ! tags.contains(":comp") && ! tags.contains(":supe") ) {
 				// make sure :short without :combp sorts ok with adjective base that has compb
-				if( ":short" in tags) {
+				if( tags.contains(":short") ) {
 					tags = tags.replace(":short", "").replace("adj:", "adj:compc")
 				}
 				else {
@@ -97,23 +97,23 @@ class DictSorter {
 			}
 		}
 		else if( tags.startsWith("noun") ) {
-			if ("name" in tags || "patr" in tags) {
+			if (tags.contains("name") || tags.contains("patr") ) {
 				tags = re_person_name_key_tag.matcher(tags).replaceAll('$1$3$2')
-				if ( ("lname" in tags || "patr" in tags) && ":f:" in tags ) {// && ! ":nv" in tags:    // to put Адамишин :f: after Адамишини :p) {
+				if ( tags.contains("lname") || tags.contains("patr") && tags.contains(":f:") ) {// && ! ":nv" in tags:    // to put Адамишин :f: after Адамишини :p) {
 					tags = tags.replace(":f:", ":9:")
 				}
 			}
 
-			if( ":nv" in tags ) {
+			if( tags.contains(":nv") ) {
 				tags = tags.replace(":nv", "").replace("anim", "anim:nv")
 			}
 
-			if( ":np" in tags || ":ns" in tags ) {
+			if( tags.contains(":np") || tags.contains(":ns") ) {
 				tags = tags.replace(":np", "").replace(":ns", "")
 			}
 		}
 		else if( tags.startsWith("verb") ) {
-			def verb_match = re_verb.matcher(tags)
+			def verb_match = re_verb_tense.matcher(tags)
 			if( verb_match.find() ) {
 				def tg = verb_match.group(0)
 				def order = vb_tag_key_map[tg]
@@ -134,16 +134,16 @@ class DictSorter {
 			tags = GEN_RE.matcher(tags).replaceFirst(":"+GEN_ORDER[gen]+'$2')
 		}
 
-		if( ":x" in tags ) {
+		if( tags.contains(":x") ) {
 			tags = re_xv_sub.matcher(tags).replaceAll('$1$3$2')
 		}
-		
+
 		return tags
 	}
 
 
 	def derived_plural(key, prev_key) {
-		return "name" in key && ":p:" in key &&
+		return key.contains("name") && key.contains(":p:") &&
 				prev_key =~ ":[mf]:" && prev_key.replaceFirst(":[mf]:", ":p:") == key
 	}
 
@@ -164,7 +164,7 @@ class DictSorter {
 			String key
 
 			try {
-				if( "name" in tags || "patr" in tags) {
+				if( tags.contains("name") || tags.contains("patr") ) {
 					def key_rr = re_key_name.matcher(line)
 					key_rr.find()
 					key = key_rr.group(1) + key_rr.group(2)
@@ -175,7 +175,7 @@ class DictSorter {
 					key = key_rr.group(1)
 				}
 
-				if( ":x" in line) {
+				if( line.contains(":x") ) {
 					int x_idx = line.indexOf(":x")
 					key += line[x_idx..<x_idx+4]
 				}
@@ -184,23 +184,23 @@ class DictSorter {
 				throw new RuntimeException("Failed to find tag key in " + line, e)
 			}
 
-			if( ":nv" in line) {
+			if( line.contains(":nv") ) {
 				key += ":nv"
 			}
-			
+
 			if( key != prev_key && ! derived_plural(key, prev_key) ) {
 				prev_key = key
 				line = word + " " + tags
 			} else {
 				line = DERIV_PADDING + word + " " + tags
 			}
-			
+
 			out_lines.add(line)
 		}
 
 		return out_lines
 	}
-	
+
 	def line_key(txt) {
 		try {
 			def (word, lemma, tags) = txt.split()

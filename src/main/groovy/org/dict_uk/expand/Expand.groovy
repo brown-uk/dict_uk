@@ -50,13 +50,13 @@ class Expand {
 
 	@TypeChecked
 	def adjustCommonFlag(String affixFlag2) {
-		if( ".cf" in affixFlag2) {
+		if( affixFlag2.contains(".cf") ) {
 			affixFlag2 = cf_flag_pattern.matcher(affixFlag2).replaceFirst('$1.cf')
 		}
-		if( ".imprs" in affixFlag2) {
+		if( affixFlag2.contains(".imprs") ) {
 			affixFlag2 = imprs_pattern.matcher(affixFlag2).replaceFirst('$1.imprs')
 		}
-		if( ".patr" in affixFlag2) {
+		if( affixFlag2.contains(".patr") ) {
 			affixFlag2 = pattr_pattern.matcher(affixFlag2).replaceFirst('n.patr')
 		}
 		return affixFlag2
@@ -167,18 +167,18 @@ class Expand {
 
 		def mods = [:]
 
-		if( "/adj" in flags && "<" in flags) {
+		if( flags.contains("/adj") && flags.contains("<") ) {
 			mods["pos"] = "noun"
 
 			if( ! ("=" in mod_flags) ) {
-				if( "<+" in flags) {
+				if( flags.contains("<+") ) {
 					if( word.endsWith("а"))
 						mods["gen"] = "f"
 					else
 						mods["gen"] = "mfp"
 					return mods
 				}
-				if( "<" in flags) {
+				if( flags.contains("<") ) {
 					if( word.endsWith("а"))
 						mods["gen"] = "fp"
 					else
@@ -186,7 +186,7 @@ class Expand {
 					return mods
 				}
 			}
-			if( ! ("=" in mod_flags) ) {
+			if( ! mod_flags.contains("=") ) {
 				mods["gen"] = "mfp"
 				return mods
 			}
@@ -326,51 +326,51 @@ class Expand {
 				if( first_name_base && ! (":patr" in line) ) {
 					extra_flags2 += ":prop:fname"
 				}
-				if( " advp" in line) {
-					if( ":imperf" in line)
+				if( line.contains(" advp") ) {
+					if( line.contains(":imperf") )
 						extra_flags2 = perf_imperf_pattern.matcher(extra_flags2).replaceFirst("")
 					else
 						line = line.replace(":perf", "")
 				}
-				else if( "adj.adv" in flags && " adv" in line )
+				else if( flags.contains("adj.adv") && line.contains(" adv") )
 					extra_flags2 = and_adjp_pattern.matcher(extra_flags2).replaceFirst("")
-				else if( ":+m" in extra_flags ) {
+				else if( extra_flags.contains(":+m") ) {
 					extra_flags2 = extra_flags2.replace(":+m", "")
 
-					if( ":f:" in line) {
+					if( line.contains(":f:") ) {
 						def masc_line = line.replace(":f:", ":m:") + extra_flags2
 						extra_out_lines.add(masc_line)
 					}
-					else if( ":n:" in line ) {
+					else if( line.contains(":n:") ) {
 						def masc_line = line.replace(":n:", ":m:") + extra_flags2
 
 						if( util.istota(flags)) {
-							if( "m:v_rod" in masc_line) {
+							if( masc_line.contains("m:v_rod") ) {
 								def masc_line2 = masc_line.replace("m:v_rod", "m:v_zna")
 								extra_out_lines.add(masc_line2)
 							}
-							else if( "m:v_zna" in masc_line) {
+							else if( masc_line.contains("m:v_zna") ) {
 								masc_line = ""
 							}
-							if( "m:v_kly" in masc_line) {
+							if( masc_line.contains("m:v_kly") ) {
 								//                            word, lemma, tags = masc_line.split()
 								DicEntry dicEntry = DicEntry.fromLine(masc_line)
 								masc_line = dicEntry.word[0..<-1]+"е " + dicEntry.lemma + " " + dicEntry.tagStr
 							}
 						}
-						if( masc_line) {
+						if( masc_line ) {
 							extra_out_lines.add(masc_line)
 						}
 					}
 				}
-				else if( ":+f" in extra_flags ) {
+				else if( extra_flags.contains(":+f") ) {
 					extra_flags2 = extra_flags2.replace(":+f", "")
 
-					if( ":m:" in line) {
+					if( line.contains(":m:") ) {
 						def masc_line = line.replace(":m:", ":f:") + extra_flags2
 						extra_out_lines.add(masc_line)
 					}
-					else if( ":n:" in line ) {
+					else if( line.contains(":n:") ) {
 						def masc_line = line.replace(":n:", ":f:") + extra_flags2
 
 						//                     if( util.istota(flags)) {
@@ -385,7 +385,7 @@ class Expand {
 						}
 					}
 				}
-				else if( ":patr" in line && ":anim" in extra_flags2 ) {
+				else if( line.contains(":patr") && extra_flags2.contains(":anim") ) {
 					line = line.replace(":patr", ":anim:patr")
 					extra_flags2 = extra_flags2.replace(":anim", "")
 				}
@@ -404,24 +404,21 @@ class Expand {
 
 		for( line in lines) {
 			// DL-
-			if( main_flag[1] == "n") {
+			if( main_flag[1] == "n" ) {
 
 				def word
 				String base_word
 				if( main_flag.startsWith("/n2") && main_flag =~ "^/n2[01234]" ) {
-					//                base_word = lines[0].split()[0]
 					base_word = line.split()[1]
 
 					if( util.istota(flags)) {
-						if( "m:v_rod" in line && ! ("/v_zna" in line) ) {
+						if( line.contains("m:v_rod") && ! line.contains("/v_zna") ) {
 							line = line.replace("m:v_rod", "m:v_rod/v_zna")
 						}
 					}
-					if( ! (base_word[-1..-1] in "аеєиіїоюя") && ! (".a" in flags) ) {
-						//                    util.dbg("```", main_flag, line)
+					if( ! "аеєиіїоюя".contains(base_word[-1..-1]) && ! flags.contains(".a") ) {
 						word = line.split()[0]
-						if( word[-1..-1] in "ую") {
-							//                        util.debug("u/rod %s - %s", line, base_word)
+						if( "ую".contains(word[-1..-1]) ) {
 							line = line.replace("v_dav", "v_rod/v_dav")
 						}
 					}
@@ -440,22 +437,25 @@ class Expand {
 						}
 					}
 				}
+				
 				if( main_flag.startsWith("/n2") && "@" in flags) {
 					word = line.split(" ", 2)[0]
 					if( word[-1..-1] in "ая" && "m:v_rod" in line) {
 						line = line.replace("m:v_rod", "m:v_rod/v_zna")
 					}
 				}
+				
 				if( ! ("np" in main_flag) && ! (".p" in main_flag) && ! ("n2adj" in flags) ) {
 					if( ":p:" in line) {
 						// log.debug("skipping line with p: " + line)
 					}
-					else if( "//p:" in line ) {
+					else if( line.contains("//p:") ) {
 						line = line.replaceAll("//p:.*", "")
 						// log.debug("removing //p from: " + line)
 					}
 				}
-				if( "/v_kly" in line) {
+				
+				if( line.contains("/v_kly") ) {
 					if( main_flag.startsWith("/n1")) { // Єремія /n10.ko.patr.<
 						base_word = line.split()[1]
 					}
@@ -464,34 +464,36 @@ class Expand {
 //					    || (main_flag =~ "/n2n|/n4" && ! util.istota(flags)) \
 					     //(! (main_flag =~ "/n2n|/n2adj1|/n4") && ! util.person(flags) ) \
                          ( (flags.contains(".ko") || flags.contains(".ke")) && ! line.contains(":patr") ) \
-                        || (":m:" in line && "<+" in flags) \
+                        || (line.contains(":m:") && flags.contains("<+") ) \
                         ) {//|| (main_flag.startsWith("/n20") && base_word.endsWith("ло") && "v_dav" in line) ) {
 						//log.info("removing v_kly from: %s, %s", line, flags)
 						line = line.replace("/v_kly", "")
 					}
 				}
-				if( ".p" in main_flag || "np" in main_flag) {
+				
+				if( main_flag.contains(".p") || main_flag.contains("np") ) {
 //					if( util.person(flags)) {
 					if( main_flag.contains(".") ) {
 						line = line.replace("p:v_naz", "p:v_naz/v_kly")
 					}
 					
-					if( util.istota(flags)) {
+					if( util.istota(flags) ) {
 						line = line.replace("p:v_rod", "p:v_rod/v_zna")
-						if( ">" in flags) { // animal
+						if( flags.contains(">") ) { // animal
 							line = line.replace("p:v_naz", "p:v_naz/v_zna")
 						}
 					}
-					else
+					else {
 						line = line.replace("p:v_naz", "p:v_naz/v_zna")
+					}
 				}
 			}
-			else if( ":perf" in flags && ":pres" in line ) {
+			else if( flags.contains(":perf") && line.contains(":pres") ) {
 				line = line.replace(":pres", ":futr")
 			}
 			else if( main_flag.startsWith("/adj") ) {
-				if( "<" in flags || "^noun" in flags) {
-					if( ":uncontr" in line)
+				if( flags.contains("<") || flags.contains("^noun") ) {
+					if( line.contains(":uncontr") )
 						continue
 				}
 
@@ -500,20 +502,23 @@ class Expand {
 				}
 
 				
-				if( "<" in flags) {
+				if( flags.contains("<") ) {
 					if( ! flags.contains(">") && ":p:v_naz/v_zna" in line)
 						line = line.replace("v_naz/v_zna", "v_naz")
 //					if( ":m:v_naz" in line /*&& ! ("<+" in flags)*/)
 //						line = line.replace("v_naz", "v_naz/v_kly")
 				}
-				else if( "^noun" in flags ) {
-					if( ":m:v_rod/v_zna" in line)
+				else if( flags.contains("^noun") ) {
+					if( line.contains(":m:v_rod/v_zna") ) {
 						line = line.replace("v_rod/v_zna", "v_rod")
-					else if( ":p:v_rod/v_zna" in line )
+					}
+					else if( line.contains(":p:v_rod/v_zna") ) {
 						line = line.replace("v_rod/v_zna", "v_rod")
+					}
 				}
 
 			}
+			
 			lines2.add(line)
 		}
 		return lines2
@@ -553,16 +558,16 @@ class Expand {
 		sfx_lines = affix.expand_alts(sfx_lines, "//")  // TODO: change this to some single-char splitter?
 		sfx_lines = affix.expand_alts(sfx_lines, "/")
 
-		if( "/adj" in flags) {
+		if( flags.contains("/adj") ) {
 			def out_lines = []
 			for( line in sfx_lines) {
-				if( "v_zn1" in line) {
+				if( line.contains("v_zn1") ) {
 					if( "^noun" in flags || "<" in flags)
 						line = line.replace("v_zn1", "v_zna")
 					else
 						line = line.replace("v_zn1", "v_zna:ranim")
 				}
-				else if( "v_zn2" in line ) {
+				else if( line.contains("v_zn2") ) {
 					if( "^noun" in flags || "<" in flags)
 						line = line.replace("v_zn2", "v_zna")
 					else
@@ -584,8 +589,8 @@ class Expand {
 
 		words.each {
 			if( it =~ /[а-яіїєґ][a-z0-9]/ )
-				throw new Exception("latin mix in " + it) }
-
+				throw new Exception("latin mix in " + it) 
+		}
 
 		return words
 	}
@@ -732,25 +737,22 @@ class Expand {
 		def prev_line = ""
 		def last_lema
 		for( line in lines) {
-			if( "patr" in line) {
+			if( line.contains("patr") ) {
 				if( PATTR_BASE_LEMMAN_PATTERN.matcher(line).find() ) {
 					last_lema = line.split()[0]
 					//                System.err.printf("promoting patr to lemma %s for %s\n", last_lema, line)
 				}
 				line = replace_base(line, last_lema)
 			}
-			else if( "lname" in line && ":f:" in line && ! (":nv" in line) ) {
-				if( ":f:v_naz" in line) {
+			else if( line.contains("lname") && line.contains(":f:") && ! line.contains(":nv") ) {
+				if( line.contains(":f:v_naz") ) {
 					last_lema = line.split()[0]
 					//                System.err.printf("promoting f name to lemma %s for %s\n", last_lema, line)
 				}
 				line = replace_base(line, last_lema)
 			}
-			//        else if " adv" in line && ! " advp" in line && ! ":combr" in line && ! ":super" in line:
-			//            util.debug("promoting adv lemma %s", line)
-			//            line = replace_base(line, line.split()[0])
 
-			if( prev_line == line && ("advp:perf" in line || "advp:rev:perf" in line))
+			if( prev_line == line && (line.contains("advp:perf") || line.contains("advp:rev:perf")) )
 				continue
 
 			prev_line = line
@@ -770,7 +772,7 @@ class Expand {
 
 	boolean isRemoveLine(String line) {
 		for( removeWithTag in Args.args.removeWithTags ) {
-			if( ":" + removeWithTag in line )
+			if( line.contains(":" + removeWithTag) )
 				return true
 		}
 		
@@ -791,7 +793,7 @@ class Expand {
 
 	private String promoteLemmaForTags(String line) {
 		for( lemmaTag in Args.args.lemmaForTags ) {
-			if( lemmaTag == "advp" && lemmaTag in line ) {
+			if( lemmaTag == "advp" && line.contains(lemmaTag) ) {
 				line = promote(line)
 			}
 		}
@@ -820,7 +822,7 @@ class Expand {
 
 			line = promoteLemmaForTags(line)
 
-			if( "noun" in line ) {
+			if( line.contains("noun") ) {
 			    def anim_matcher = any_anim.matcher(line)
 				if( anim_matcher ) {
 					line = anim_matcher.replaceFirst("").replace("noun", "noun" + anim_matcher[0][0])
@@ -830,19 +832,19 @@ class Expand {
                 }
 			}
 			else
-			if( "verb" in line ) {
+			if( line.contains("verb") ) {
 				line = imperf_move_pattern.matcher(line).replaceFirst('$1$3$2')
 			}
 			else
-			if( " adj" in line || " numr" in line ) {
-				if( ":&_adjp" in line && ":comp" in line) {
+			if( line.contains(" adj") || line.contains(" numr") ) {
+				if( line.contains(":&_adjp") && line.contains(":comp") ) {
 					line = reorder_comp_with_adjp.matcher(line).replaceFirst(' $1$3$2$4')
 				}
 
-				if( "v_zn1" in line ) {
+				if( line.contains("v_zn1") ) {
 					line = line.replace("v_zn1", "v_zna:ranim")
 				}
-				else if( "v_zn2" in line ) {
+				else if( line.contains("v_zn2") ) {
 					line = line.replace("v_zn2", "v_zna:rinanim")
 				}
 			}
@@ -1340,7 +1342,7 @@ class Expand {
 		if( Args.args.time ) {
 			time2 = System.currentTimeMillis()
 			log.info("Total out_lines %,d\n", all_lines.size())
-			log.info("Processing time: %,d\n", (time2-time1))
+			log.info("Processing time: %,d", (time2-time1))
 		}
 
 		if( ! Args.args.flush) {
@@ -1350,7 +1352,7 @@ class Expand {
 			def time3
 			if( Args.args.time ) {
 				time3 = System.currentTimeMillis()
-				log.info("Sorting time 1: %,d\n", (time3-time2))
+				log.info("Sorting time 1: %,d", (time3-time2))
 			}
 
 			if( Args.args.indent ) {
@@ -1360,7 +1362,7 @@ class Expand {
 
 				if( Args.args.time ) {
 					def time4 = System.currentTimeMillis()
-					log.info("Sorting time 2: %,d\n", (time4-time3))
+					log.info("Sorting time 2: %,d", (time4-time3))
 				}
 			}
 
