@@ -1,11 +1,13 @@
 package org.dict_uk.expand
 
 import java.util.List;
+import java.util.concurrent.ExecutorService
 import java.util.regex.*
 
 import groovy.transform.CompileStatic
 import groovy.transform.TypeChecked
 import groovyx.gpars.ParallelEnhancer
+import groovyx.gpars.GParsExecutorsPool
 import static groovyx.gpars.GParsPool.withPool
 
 import org.apache.logging.log4j.LogManager
@@ -284,38 +286,49 @@ class Util {
 			tags.add(dicEntry.tagStr)
 		}
 
-		def lemmaList = DictSorter.quickUkSort(lemmas)
-		new File("lemmas.txt").withWriter("utf-8") { f ->
-			for(lemma in lemmaList) {
-				f << lemma << "\n"
+		GParsExecutorsPool.withPool {ExecutorService executorService ->
+//			AsyncInvokerUtil.doInParallel( {
+			executorService << { 
+				def lemmaList = DictSorter.quickUkSort(lemmas)
+				new File("lemmas.txt").withWriter("utf-8") { f ->
+					for(lemma in lemmaList) {
+						f << lemma << "\n"
+					}
+				}
+			}
+
+			executorService << { 
+				def wordList = DictSorter.quickUkSort(words)
+
+				new File("words.txt").withWriter("utf-8") { f ->
+					for(word in wordList) {
+						f << word << "\n"
+					}
+				}
+				log.info("%d total word forms", wordList.size())
+			}
+
+			executorService << { 
+				def spellWordList = DictSorter.quickUkSort(spell_words)
+
+				new File("words_spell.txt").withWriter("utf-8") { f ->
+					for(word in spellWordList) {
+						f << word << "\n"
+					}
+				}
+				log.info("%d spelling word forms", spellWordList.size())
+			}
+
+			executorService << { 
+				def tagList = tags.toList().toSorted()
+				new File("tags.txt").withWriter("utf-8") { f ->
+					for(tag in tagList) {
+						f << tag << "\n"
+					}
+				}
 			}
 		}
-
-		def wordList = DictSorter.quickUkSort(words)
-
-		new File("words.txt").withWriter("utf-8") { f ->
-			for(word in wordList) {
-				f << word << "\n"
-			}
-		}
-		log.info("%d total word forms", wordList.size())
-
-		def spellWordList = DictSorter.quickUkSort(spell_words)
-
-		new File("words_spell.txt").withWriter("utf-8") { f ->
-			for(word in spellWordList) {
-				f << word << "\n"
-			}
-		}
-		log.info("%d spelling word forms", spellWordList.size())
-
-		def tagList = tags.toList().toSorted()
-		new File("tags.txt").withWriter("utf-8") { f ->
-			for(tag in tagList) {
-				f << tag << "\n"
-			}
-		}
-
+	
 		if( Args.args.time ) {
 			def time2 = System.currentTimeMillis()
 			log.info("Word list time: %,d\n", (time2-time1))
