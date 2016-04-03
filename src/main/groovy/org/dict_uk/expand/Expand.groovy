@@ -44,17 +44,20 @@ class Expand {
 		assert "b" in "abc"
 	}
 
+	Pattern cf_flag_pattern = ~ /(vr?)[1-4]\.cf/	 // v5.cf is special
+	Pattern imprs_pattern = ~ /(vr?)[1-9]\.imprs/
+	Pattern pattr_pattern = ~ /n[0-9]+\.patr/
 
 	@TypeChecked
-	def adjustCommonFlag(affixFlag2) {
+	def adjustCommonFlag(String affixFlag2) {
 		if( ".cf" in affixFlag2) {
-			affixFlag2 = util.re_sub(/(vr?)[1-4]\.cf/, /$1.cf/, affixFlag2) // v5.cf is special
+			affixFlag2 = cf_flag_pattern.matcher(affixFlag2).replaceFirst('$1.cf')
 		}
 		if( ".imprs" in affixFlag2) {
-			affixFlag2 = util.re_sub(/(vr?)[1-9]\.imprs/, /$1.imprs/, affixFlag2)
+			affixFlag2 = imprs_pattern.matcher(affixFlag2).replaceFirst('$1.imprs')
 		}
 		if( ".patr" in affixFlag2) {
-			affixFlag2 = util.re_sub(/n[0-9]+\.patr/, "n.patr", affixFlag2)
+			affixFlag2 = pattr_pattern.matcher(affixFlag2).replaceFirst('n.patr')
 		}
 		return affixFlag2
 	}
@@ -209,7 +212,7 @@ class Expand {
 				}
 			}
 			else if( mod.size() >= 2 && mod[0..<2] == "g=" )
-				mods["gen"] = util.re_sub(/g=([^ ])/, /$1/, mod)    //mod[2:3]
+				mods["gen"] = mod.replaceFirst(/g=([^ ])/, '$1')    //mod[2:3]
 			else if( mod.size() >= 2 && mod[0..<2] == "p=" )
 				mods["pers"] = mod[2..2]
 			else if( mod.startsWith("tag=") )
@@ -299,6 +302,9 @@ class Expand {
 
 		return extra_flags
 	}
+	
+	Pattern perf_imperf_pattern = ~ ":(im)?perf"
+	Pattern and_adjp_pattern = ~ /:&_?adjp(:pasv|:actv|:perf|:imperf)+/
 
 	@TypeChecked
 	List<String> post_expand(List<String> lines, String flags) {
@@ -322,12 +328,12 @@ class Expand {
 				}
 				if( " advp" in line) {
 					if( ":imperf" in line)
-						extra_flags2 = util.re_sub(":(im)?perf", "", extra_flags2)
+						extra_flags2 = perf_imperf_pattern.matcher(extra_flags2).replaceFirst("")
 					else
 						line = line.replace(":perf", "")
 				}
 				else if( "adj.adv" in flags && " adv" in line )
-					extra_flags2 = util.re_sub(/:&_?adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_flags2)
+					extra_flags2 = and_adjp_pattern.matcher(extra_flags2).replaceFirst("")
 				else if( ":+m" in extra_flags ) {
 					extra_flags2 = extra_flags2.replace(":+m", "")
 
@@ -611,10 +617,20 @@ class Expand {
 		return out_lines
 	}
 
+	Pattern plus_f_pattern = ~ "/<\\+?f?( (:[^ ]+))?"
+	Pattern plus_m_pattern = ~ "/<\\+?m?( (:[^ ]+))?"
+	
 	@TypeChecked
 	def preprocess2(String line) {
 		def out_lines = []
 
+		// patronym plurals
+		// TODO: and we need to split lemmas
+//		if( line.contains(".patr") ) {
+//			line = line.replace(".patr", ".patr.patr_pl")
+//		}
+
+		
 		if( "/<" in line) {
 		
 			def extra_tag = ":anim"
@@ -629,12 +645,12 @@ class Expand {
 
 			if( ! ("<m" in line) && ! ("<+m" in line) ) {
 				def tag = "noun:f:nv:np"
-				def line1 = util.re_sub("/<\\+?f?( (:[^ ]+))?", tag + extra_tag + '$2', line)
+				def line1 = plus_f_pattern.matcher(line).replaceFirst(tag + extra_tag + '$2')
 				out_lines.add(line1)
 			}
 			if( ! ("<f" in line) && ! ("<+f" in line) ) {
 				def tag = "noun:m:nv:np"
-				def line1 = util.re_sub("/<\\+?m?( (:[^ ]+))?", tag + extra_tag + '$2', line)
+				def line1 = plus_m_pattern.matcher(line).replaceFirst(tag + extra_tag + '$2')
 				out_lines.add(line1)
 			}
 		}
@@ -703,7 +719,7 @@ class Expand {
 		else {
 			out_lines = [line]
 		}
-
+		
 		return out_lines
 	}
 
@@ -870,7 +886,7 @@ class Expand {
 				word = main_word[0..<-2] + "іший"
 
 			if( "&_adjp" in extra_tags) {
-				extra_tags = util.re_sub(/:&_?adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_tags)
+				extra_tags = and_adjp_pattern.matcher(extra_tags).replaceFirst('')
 			}
 
 			def word_forms = expand(word, "/adj :compr" + idx + extra_tags)
@@ -947,7 +963,7 @@ class Expand {
 			word = main_word[0..<-2] + "е"
 
 		if( "adjp" in extra_tags) {
-			extra_tags = util.re_sub(/:&_?adjp(:pasv|:actv|:perf|:imperf)+/, "", extra_tags)
+			extra_tags = and_adjp_pattern.matcher(extra_tags).replaceFirst('')
 		}
 
 		def w1 = compose_compar(word, last_adv, "adv:compr" + extra_tags)
@@ -1233,7 +1249,9 @@ class Expand {
 		def prepared_lines = []
 
 		in_lines.each{ String line ->
-			line = line.replaceFirst("#.*", "")
+			if( line.contains("#") ) {
+				line = line.replaceFirst("#.*", "")
+			}
 
 //			if( "#" in line)
 //				line = line.split("#")[0]

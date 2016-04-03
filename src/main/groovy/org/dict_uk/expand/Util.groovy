@@ -26,17 +26,6 @@ class Util {
 
 
 
-	Map<String, Pattern> regex_map = [:]
-
-	def re_sub(regex, repl, txt) {
-		//	dbg(regex, repl, txt)
-		if( ! (regex in regex_map) ) {
-			regex_map[regex] = Pattern.compile(regex)
-		}
-		return regex_map[regex].matcher(txt).replaceAll(repl)
-	}
-
-
 	def tail_tag(line, tags) {
 		for( tag in tags ){
 			//        tag = ":" + tag
