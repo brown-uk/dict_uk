@@ -18,10 +18,6 @@ class ExpandComps {
 	final Pattern gen_vidm_pattern = Pattern.compile(":(.:v_...(:r(in)?anim)?)")
 	final Expand expand
 
-//	static {
-//		String.metaClass.isCase = { delegate.contains(it) }	// pythonize
-//		assert "b" in "abc"
-//	}
 
 	public ExpandComps(Expand expand) {
 		this.expand = expand

@@ -18,13 +18,6 @@ import org.dict_uk.common.UkDictComparator
 class Util {
 	static Logger log = LogManager.getFormatterLogger(Util.class);
 
-	static {
-//		Locale.setDefault(new Locale("uk" , "UA"))
-		String.metaClass.isCase = { delegate.contains(it) }	// pythonize
-		assert "b" in "abc"
-	}
-
-
 
 	def tail_tag(line, tags) {
 		for( tag in tags ) {

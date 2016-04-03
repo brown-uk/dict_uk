@@ -4,8 +4,6 @@ import org.dict_uk.expand.Expand.Re;
 
 class TaggedWordlist {
 
-//def except_base_tag = ""
-
 
 def extra_tag_map = [
   "base-abbr.lst": ":abbr",
@@ -19,11 +17,6 @@ def extra_tag_map = [
 
 private final Re re = new Re()
 
-static {
-//	Locale.setDefault(new Locale("uk" , "UA"))
-	String.metaClass.isCase = { delegate.contains(it) }	// pythonize
-	assert "b" in "abc"
-}
 
 
 def process_line_exceptions(line) {
@@ -35,27 +28,6 @@ def process_line_exceptions(line) {
         return [line]
 
 	return line
-//    if( line.startsWith("# !") ) {
-//        except_base_tag = re.findall("![a-z:-]+", line)[0][1:] + ":"
-//        return []
-//    }
-    
-//    base = re.findall("^[^ ]+", line)[0]
-    
-//    except_base_tag2 = except_base_tag
-//    if( base.endswith("ся") )
-//        except_base_tag2 = except_base_tag.replace("verb:", "verb:rev:")
-      
-//    out_line = re.sub("([^ ]+) ?", "$1 " + base + " " + except_base_tag2 + "unknown\n", line)
-//    
-//    if( except_base_tag in ("verb:imperf:", "verb:perf:") ) {
-//        out_line = re.sub("(verb:(?:rev:)?)((im)?perf:)", "$1inf:$2", out_line, 1)
-//      
-//        out_lines = out_line.split("\n")
-//        out_lines[0] = out_lines[0].replace(":unknown", "")
-//        out_line = "\n".join(out_lines)
-//    }
-//    return out_line[:-1].split("\n")
 }
 
 def process_line(line, extra_tags) {
@@ -88,13 +60,6 @@ def process_line(line, extra_tags) {
     if( out_line.contains("|") ) {
         out_line = out_line.replace("|", extra_tags + "|")
     }
-    
-    //  if not "/" in out_line && not re.match("^[^ ]+ [^ ]+ [^ ]+$", out_line + extra_tags):
-    //    print("bad line:", out_line + extra_tags, file=sys.stderr)
-    
-    //  if len(out_line)> 100:
-    //      print(out_line, file=sys.stderr)
-    //      sys.exit(1)
     
     out_line = out_line + extra_tags
     if( out_line.contains(" \\ ") ) {
