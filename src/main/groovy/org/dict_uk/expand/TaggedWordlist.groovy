@@ -1,6 +1,5 @@
 package org.dict_uk.expand
 
-import org.dict_uk.expand.Expand.Re;
 
 class TaggedWordlist {
 
@@ -15,8 +14,6 @@ def extra_tag_map = [
   "alt.lst": ":alt"
 ]
 
-private final Re re = new Re()
-
 
 
 def process_line_exceptions(line) {
@@ -30,27 +27,30 @@ def process_line_exceptions(line) {
 	return line
 }
 
+def comment_re = ~ / *#.*$/
+def lemma_tag_re1 = ~ /^[^ ]+ [:^<a-z0-9_].*$/
+def lemma_tag_re2 = ~ /^([^ ]+) ([^<a-z].*)$/
+def with_flags_re = ~ '^[а-яіїєґА-ЯІЇЄҐ\'-]+ /'
+def word_lemma_tag_re = ~ /^[^ ]+ [^ ]+ [^:]?[a-z].*$/
+
 def process_line(line, extra_tags) {
-    line = re.sub(/ *#.*$/, "", line) // remove comments
-    
-//    line = re.sub(/-$/, "", line)
+    line = comment_re.matcher(line).replaceFirst("") // remove comments
     
 	def out_line
-    if( ! line.contains(" ") || re.match('.*[а-яіїєґА-ЯІЇЄҐ] /.*', line) )
+    if( ! line.contains(" ") \
+    		|| with_flags_re.matcher(line) \
+    		|| word_lemma_tag_re.matcher(line) ) {
         out_line = line
-    else if( re.match(/^[^ ]+ [^ ]+ [^:]?[a-z].*$/, line) )
-        out_line = line
-    else if( re.match(/^[^ ]+ [:^<a-z0-9_].*$/, line) )
-        out_line = re.sub(/^([^ ]+) ([^<a-z].*)$/, '$1 $1 $2', line)
+    }
+    else if( lemma_tag_re1.matcher(line) ) {
+        out_line = lemma_tag_re2.matcher(line).replaceFirst('$1 $1 $2')
+    }
     else {
         assert false, "hit unknown tag line: >>" + line + "<<"
-//        base = re.findall("^[^ ]+", line)[0]
-//        out_line = re.sub("([^ ]+) ?", "$1 " + base + " unknown" + extra_tags + "\n", line)
-//        return out_line[0..<-1]
     }
 			
     //if extra_tags != "" && not re.match(".* [a-z].*$", out_line):
-    if( extra_tags != "" && (! re.search(" [:a-z]", out_line) || out_line.contains("g=")) ) {
+    if( extra_tags != "" && (! (out_line =~ / [:a-z]/) || out_line.contains("g=")) ) {
         extra_tags = " " + extra_tags
     }
     else if( line.startsWith(" +") ) {

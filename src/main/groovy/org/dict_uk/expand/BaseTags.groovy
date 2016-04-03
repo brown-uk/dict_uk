@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger
 
 import java.util.regex.*
 
+
 class BaseTags {
 	static Logger log = LogManager.getFormatterLogger(BaseTags.class);
 

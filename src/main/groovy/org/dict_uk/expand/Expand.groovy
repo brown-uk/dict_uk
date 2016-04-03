@@ -22,21 +22,8 @@ class Expand {
 	private final DictSorter dictSorter = new DictSorter()
 	private final Affix affix = new Affix()
 	private final BaseTags base_tags = new BaseTags()
+	private final OutputValidator validator = new OutputValidator()
 	private final List<String> limitedVerbLemmas = new ArrayList<>();
-
-	static class Re {
-		def match(String regex, String str) {
-			Pattern.compile(regex).matcher(str).matches()
-		}
-		def search(String regex, String str) {
-			Pattern.compile(regex).matcher(str).find()
-		}
-		def sub(String regex, String repl, String str) {
-			Pattern.compile(regex).matcher(str).replaceAll(repl)
-		}
-	}
-
-	private final Re re = new Re()
 
 
 	Pattern cf_flag_pattern = ~ /(vr?)[1-4]\.cf/	 // v5.cf is special
@@ -629,8 +616,8 @@ class Expand {
 		return out_lines
 	}
 
-	Pattern plus_f_pattern = ~ "/<\\+?f?( (:[^ ]+))?"
-	Pattern plus_m_pattern = ~ "/<\\+?m?( (:[^ ]+))?"
+	final Pattern plus_f_pattern = ~ "/<\\+?f?( (:[^ ]+))?"
+	final Pattern plus_m_pattern = ~ "/<\\+?m?( (:[^ ]+))?"
 	
 	@TypeChecked
 	def preprocess2(String line) {
@@ -879,7 +866,6 @@ class Expand {
 
 	//@TypeChecked
 	def expand_subposition(String main_word, String line, String extra_tags, int idx_) {
-		//		String idx = ":xx" + idx_
 		String idx = ""
 
 		if( line.startsWith(" +cs")) {
@@ -889,7 +875,6 @@ class Expand {
 				Matcher matcher = (line =~ / \+cs=([^ ]+)/)
 				def m1 = matcher[0]
 				word = m1[1]
-				//			System.err.println("====" + word + "----" + m1)
 			}
 			else
 				word = main_word[0..<-2] + "іший"
@@ -1113,139 +1098,10 @@ class Expand {
 		return post_process(out_lines)
 	}
 
-	@TypeChecked
-	String cleanup(String line) {
-		return line
-		//		return util.re_sub(":xx.", "", line)
-	}
-
-
-	static final Pattern WORD_RE = Pattern.compile("[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ']*(-[а-яіїєґА-ЯІЇЄҐ']*)*|[А-ЯІЇЄҐ][А-ЯІЇЄҐ-]+|[а-яіїєґ]+\\.")
-	static final Pattern POS_RE = Pattern.compile("(noun:([iu]n)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|excl|conj:|predic|insert|transl).*")
-
-	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
 	int fatalErrorCount = 0
 	int nonFatalErrorCount = 0
+
 	
-	public Expand() {
-		log.debug("Read %d allowed tags\n", ALLOWED_TAGS.size())
-	}
-
-	@TypeChecked
-	void check_lines(List<String> lines) {
-
-		for( line in lines) {
-			DicEntry dicEntry = DicEntry.fromLine(line)
-			def word = dicEntry.word
-			def lemma = dicEntry.lemma
-			def tags = dicEntry.tagStr
-
-			if( ! WORD_RE.matcher(word).matches() || ! WORD_RE.matcher(lemma).matches() ) {
-				log.error("Invalid pattern in word or lemma: " + line)
-				fatalErrorCount++
-			}
-
-			if( ! POS_RE.matcher(tags).matches() ) {
-				log.error("Invalid main postag in word: " + line)
-				fatalErrorCount++
-			}
-
-			for( tag in dicEntry.tags) {
-				if( ! (tag in ALLOWED_TAGS) ) {
-					log.error("Invalid tag " + tag + ": " + line)
-					fatalErrorCount++
-				}
-			}
-			def dup_tags = dicEntry.tags.findAll { dicEntry.tags.count(it) > 1 }.unique()
-			if( dup_tags) {
-				log.error("Duplicate tags " + dup_tags.join(":") + ": " + line)
-				if( !("coll" in dup_tags) )
-				fatalErrorCount++
-			}
-		}
-	}
-
-	static final List<String> ALL_V_TAGS = ["v_naz", "v_rod", "v_dav", "v_zna", "v_oru", "v_mis", "v_kly"]
-	static final List<String> ALL_VERB_TAGS = ["inf", 
-//			"impr:s:2", "impr:p:1", "impr:p:2", \
-	        "pres:s:1", "pres:s:2", "pres:s:3", \
-	        "pres:p:1", "pres:p:2", "pres:p:3", \
-	        "past:m", "past:f", "past:n", "past:p", \
-	         ]
-    static final Pattern VERB_CHECK_PATTERN = ~/inf|impr:s:2|impr:p:[12]|(?:pres|futr):[sp]:[123]|past:[mfnp]/
-
-	@TypeChecked
-	void check_indented_lines(List<String> lines) {
-		String gender = ""
-		HashSet<String> subtagSet = new HashSet<String>()
-		String lemmaLine
-		List<String> lastVerbTags = null
-
-		//		ParallelEnhancer.enhanceInstance(lines)
-
-		lines.each { String line ->
-			if( ! line.startsWith(" ") ) {
-				if (gender) {
-					checkVTagSet(gender, subtagSet, lemmaLine)
-				}
-				else if( lastVerbTags && ! lemmaLine.contains(". ") ) {
-    	    		log.error("verb lemma is missing " + (lastVerbTags) + " for: " + lemmaLine)
-	    	    	nonFatalErrorCount++
-	    	    	lastVerbTags = null
-				}
-
-				subtagSet.clear()
-				gender = ""
-				lemmaLine = line
-				
-				if( line.contains(" verb:") && ! lemmaLine.contains(":inf:dimin") && ! (lemmaLine.split()[0] in limitedVerbLemmas) ) {
-				    def time = line.contains(":imperf") ? "pres" : "futr"
-				    lastVerbTags = ALL_VERB_TAGS.collect { it.replace("pres", time) }
-				}
-				else {
-					lastVerbTags = null
-				}
-			}
-
-			if( line.contains(" noun") && ! line.contains("&pron") ) {
-				def parts = line.trim().split(" ")
-				def tags = parts[1].split(":")
-
-				def gen = tags.find { it.size() == 1 && "mfnp".contains(it) }
-				assert gen : "Cound not find gen in " + tags + " for " + line
-
-				if( gen != gender ) {
-					if (gender) {
-						checkVTagSet(gender, subtagSet, lemmaLine)
-					}
-					gender = gen
-					subtagSet.clear()
-				}
-
-				String v_tag = tags.find { it.startsWith("v_") }
-				subtagSet.add( v_tag )
-			}
-			else if ( lastVerbTags ) {
-			    def tagg = VERB_CHECK_PATTERN.matcher(line)
-			    if( tagg ) {
-			        lastVerbTags.remove(tagg[0])
-			    }
-			}
-		}
-	}
-
-	def V_KLY_ONLY = new HashSet(Arrays.asList("v_kly"))
-	private checkVTagSet(String gender, HashSet subtagSet, String line) {
-		if( ! subtagSet.containsAll(ALL_V_TAGS) && ! line.contains(". ") ) {
-			def missingVSet = ALL_V_TAGS - subtagSet
-
-			if( missingVSet == ["v_kly"] && line.contains(":lname") )
-				return
-			
-			log.error("noun lemma is missing " + missingVSet + " on gender " + gender + " for: " + line)
-			nonFatalErrorCount++
-		}
-	}
 
 	//	@TypeChecked
 	List<String> process_input(List<String> in_lines) {
@@ -1290,13 +1146,14 @@ class Expand {
 			if( Args.args.flush ) {
 				try {
 					def tag_lines = expand_line(line)
-					check_lines(tag_lines)
+					
+					validator.check_lines(tag_lines)
 
 					def sorted_lines = dictSorter.sort_all_lines(tag_lines)
 					
 					List<String> indented_lines = dictSorter.indent_lines(sorted_lines)
 				
-	    			check_indented_lines(indented_lines)
+	    			validator.check_indented_lines(indented_lines, limitedVerbLemmas)
 				
 		    		if( Args.args.indent ) {
 				        sorted_lines = indented_lines
@@ -1325,7 +1182,7 @@ class Expand {
 
 			try {
 				def tag_lines = expand_line(line)
-				check_lines(tag_lines)
+				validator.check_lines(tag_lines)
 
 				tag_lines
 
@@ -1373,8 +1230,6 @@ class Expand {
 				}
 			}
 
-			sorted_lines = sorted_lines.collect { cleanup(it) }
-
 			if( Args.args.wordlist ) {
 				util.print_word_list(sorted_lines)
 			}
@@ -1387,7 +1242,7 @@ class Expand {
 				}
 				sorted_lines = dictSorter.indent_lines(sorted_lines)
 
-				check_indented_lines(sorted_lines)
+				validator.check_indented_lines(sorted_lines, limitedVerbLemmas)
 
 				if( nonFatalErrorCount > 0 ) {
 					log.fatal(String.format("%d non-fatal errors found, see above", nonFatalErrorCount))

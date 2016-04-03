@@ -40,7 +40,7 @@ class DictSorter {
 		"v_kly": "70"
 	]
 
-	static final Map<String,String> vb_tag_key_map = [
+	static final Map<String, Integer> vb_tag_key_map = [
 		"inf": 1,
 		"inz": 2,
 		//		"inf:coll": 3,
@@ -53,7 +53,7 @@ class DictSorter {
 	]
 
 	static final Pattern re_verb_tense = Pattern.compile("(in[fz]|impr|pres|futr|past|impers)")
-	
+
 	//	static final Pattern re_person_name_key_tag = Pattern.compile("^([^:]+(?::anim|:inanim|:perf|:imperf)?)(.*?)(:lname|:fname|:patr)")
 	static final Pattern re_person_name_key_tag = Pattern.compile("^(noun:anim)(.*?)(:lname|:fname|:patr)")
 
@@ -62,8 +62,8 @@ class DictSorter {
 	static final Pattern GEN_RE = Pattern.compile(/:([mfnsp])(:|$)/)
 	static final Pattern VIDM_RE = Pattern.compile(/:(v_...)((:alt|:rare|:coll)*)/) // |:short
 
-	//	@CompileStatic
-	@TypeChecked
+		@CompileStatic
+//	@TypeChecked
 	def tag_sort_key(String tags, String word) {
 		if( tags.contains(":v-u") ) {
 			tags = tags.replace(":v-u", "")
