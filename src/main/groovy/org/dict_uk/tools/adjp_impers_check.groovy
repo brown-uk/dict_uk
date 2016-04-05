@@ -34,7 +34,7 @@ System.in.readLines().each {
         dicEntryMap[dicEntry.word] = dicEntry
     }
 
-    if( it.contains(" adjp") && it.contains("m:v_naz") ) {
+    if( it.contains("adjp") && it.contains("m:v_naz") ) {
         def dicEntry = add(it, adjpMap)
         dicEntryMap[dicEntry.word] = dicEntry
     }
