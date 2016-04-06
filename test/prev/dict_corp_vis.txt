@@ -326,6 +326,14 @@
   барами noun:inanim:p:v_oru:xp2
   барах noun:inanim:p:v_mis:xp2
   бари noun:inanim:p:v_kly:xp2
+безчерепні noun:anim:p:v_naz:ns
+  безчерепних noun:anim:p:v_rod:ns
+  безчерепним noun:anim:p:v_dav:ns
+  безчерепних noun:anim:p:v_zna:ns
+  безчерепні noun:anim:p:v_zna:ns
+  безчерепними noun:anim:p:v_oru:ns
+  безчерепних noun:anim:p:v_mis:ns
+  безчерепні noun:anim:p:v_kly:ns
 бентеживши advp:imperf
 бентежити verb:imperf:inf
   бентежить verb:imperf:inf:coll

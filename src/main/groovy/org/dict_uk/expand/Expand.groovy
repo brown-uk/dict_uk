@@ -533,31 +533,28 @@ class Expand {
 			]
 		}
 
-		if( flags.contains("/adj") ) {
-			sfx_lines = sfx_lines.collect{
-				if( it.contains("adj:m:v_rod/v_zna") || it.contains("adj:p:v_rod/v_zna") )
-					it = it.replace("v_zna", "v_zn1")
-				else if( it.contains("adj:p:v_naz/v_zna") )
-					it = it.replace("v_zna", "v_zn2")
-				return it
-			}
-		}
 		sfx_lines = affix.expand_alts(sfx_lines, "//")  // TODO: change this to some single-char splitter?
 		sfx_lines = affix.expand_alts(sfx_lines, "/")
 
 		if( flags.contains("/adj") ) {
 			def out_lines = []
 			for( line in sfx_lines) {
-				if( line.contains("v_zn1") ) {
-					if( flags.contains("^noun") || flags.contains("<") ) {
-						line = line.replace("v_zn1", "v_zna")
+				if( line.contains("v_zn1") ) { // v_zna == v_rod
+                    if( flags.contains("<") ) {
+                        line = line.replace("v_zn1", "v_zna")
+                    }
+                    else if( flags.contains("^noun") ) {
+                        continue
 					}
 					else {
 						line = line.replace("v_zn1", "v_zna:ranim")
 					}
 				}
-				else if( line.contains("v_zn2") ) {
-					if( flags.contains("^noun") || flags.contains("<") ) {
+				else if( line.contains("v_zn2") ) { // v_zna = v_naz
+					if( flags.contains("<") && (! flags.contains(">") || line.contains(":m:")) ) {
+						continue
+					}
+					else if( flags.contains("^noun") ) {
 						line = line.replace("v_zn2", "v_zna")
 					}
 					else {
