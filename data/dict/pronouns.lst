@@ -193,6 +193,7 @@
 кимось хтось noun:v_oru:anim:&pron:ind
 кимсь хтось noun:v_oru:anim:&pron:ind
 кімсь хтось noun:v_mis:anim:&pron:ind
+кімось хтось noun:v_mis:anim:&pron:ind
 
 щось щось noun:n:v_naz/v_zna:inanim:&pron:ind
 чогось щось noun:n:v_rod/v_zna:inanim:&pron:ind
@@ -201,6 +202,7 @@
 чимось щось noun:n:v_oru:inanim:&pron:ind
 чимсь щось noun:n:v_oru:inanim:&pron:ind
 чімсь щось noun:n:v_mis:inanim:&pron:ind
+чімось щось noun:n:v_mis:inanim:&pron:ind
 
 неабищо неабищо noun:n:v_naz:inanim:&pron:neg
 неабичого неабищо noun:n:v_rod/v_zna:inanim:&pron:neg
@@ -514,14 +516,6 @@
 всіх весь adj:p:v_rod/v_zn1/v_mis:&pron:gen
 всіма весь adj:p:v_oru:&pron:gen
 
-#все весь noun:n:v_naz/v_zna:&pron:gen
-#всього весь noun:n:v_rod:&pron:gen
-#всьому весь noun:n:v_dav/v_mis:&pron:gen
-#всім весь noun:n:v_oru/v_mis//p:v_dav:&pron:gen
-#всі весь noun:p:v_naz:&pron:gen
-#всіх весь noun:p:v_rod/v_zna/v_mis:&pron:gen
-#всіма весь noun:p:v_oru:&pron:gen
-
 увесь увесь adj:m:v_naz/v_zn2:&pron:gen
 усього увесь adj:m:v_rod/v_zn1//n:v_rod:&pron:gen
 усьому увесь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:gen
@@ -631,7 +625,7 @@
 казна-чийого казна-чий adj:m:v_rod/v_zn1//n:v_rod:&pron:ind
 казна-чийому казна-чий adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
 казна-чиєму казна-чий adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-казна-чиїм казна-чий adj:m:v_oru//n:v_oru:&pron:ind
+казна-чиїм казна-чий adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
 казна-чия казна-чий adj:f:v_naz:&pron:ind
 казна-чиєї казна-чий adj:f:v_rod:&pron:ind
 казна-чиїй казна-чий adj:f:v_dav/v_mis:&pron:ind
@@ -646,7 +640,8 @@
 чийогось чийсь adj:m:v_rod/v_zn1//n:v_rod:&pron:ind
 чийомусь чийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
 чиємусь чийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-чиїмсь чийсь adj:m:v_oru//n:v_oru:&pron:ind
+чиїмсь чийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
+чиїмось чийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
 чиясь чийсь adj:f:v_naz:&pron:ind
 чиєїсь чийсь adj:f:v_rod:&pron:ind
 чиїйсь чийсь adj:f:v_dav/v_mis:&pron:ind
@@ -657,12 +652,11 @@
 чиїхсь чийсь adj:p:v_rod/v_zn1/v_mis:&pron:ind
 чиїхось чийсь adj:p:v_rod/v_zn1/v_mis:&pron:ind
 чиїмись чийсь adj:p:v_oru:&pron:ind
-чиїмось чийсь adj:p:v_oru:&pron:ind
 
 якийсь якийсь adj:m:v_naz/v_zn2:&pron:ind
 якогось якийсь adj:m:v_rod/v_zn1//n:v_rod:&pron:ind
 якомусь якийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-якимсь якийсь adj:m:v_oru:&pron:ind
+якимсь якийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
 якимось якийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
 якась якийсь adj:f:v_naz:&pron:ind
 якоїсь якийсь adj:f:v_rod:&pron:ind
@@ -671,6 +665,7 @@
 якоюсь якийсь adj:f:v_oru:&pron:ind
 якесь якийсь adj:n:v_naz/v_zna:&pron:ind
 якісь якийсь adj:p:v_naz/v_zn2:&pron:ind
+якихсь якийсь adj:p:v_rod/v_zn1/v_mis:&pron:ind
 якихось якийсь adj:p:v_rod/v_zn1/v_mis:&pron:ind
 якимись якийсь adj:p:v_oru:&pron:ind
 
@@ -678,6 +673,7 @@
 котрогось котрийсь adj:m:v_rod/v_zn1//n:v_rod:&pron:ind
 котромусь котрийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
 котримсь котрийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
+котримось котрийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
 котрімсь котрийсь adj:m:v_mis//n:v_mis:&pron:ind
 котрась котрийсь adj:f:v_naz:&pron:ind
 котроїсь котрийсь adj:f:v_rod:&pron:ind
@@ -687,6 +683,7 @@
 котресь котрийсь adj:n:v_naz/v_zna:&pron:ind
 котрісь котрийсь adj:p:v_naz/v_zn2:&pron:ind
 котрихсь котрийсь adj:p:v_rod/v_zn1/v_mis:&pron:ind
+котрихось котрийсь adj:p:v_rod/v_zn1/v_mis:&pron:ind
 котримись котрийсь adj:p:v_oru:&pron:ind
 
 котрий-небудь котрий-небудь adj:m:v_naz/v_zn2:&pron:ind
@@ -904,7 +901,9 @@
 скількись adv:&pron:ind
 скількись скількись numr:v_naz/v_zna:&pron:ind
 скількохсь скількись numr:v_rod/v_zna/v_mis:&pron:ind
+скількохось скількись numr:v_rod/v_zna/v_mis:&pron:ind
 скількомсь скількись numr:v_dav:&pron:ind
+скількомось скількись numr:v_dav:&pron:ind
 скількомась скількись numr:v_oru:&pron:ind
 
 скільки скільки numr:p:v_naz/v_zna:&pron:int
