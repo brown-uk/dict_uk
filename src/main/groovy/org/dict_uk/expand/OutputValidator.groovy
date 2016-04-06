@@ -18,6 +18,8 @@ class OutputValidator {
 	
 	static final Pattern WORD_RE = Pattern.compile("[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ']*(-[а-яіїєґА-ЯІЇЄҐ']*)*|[А-ЯІЇЄҐ][А-ЯІЇЄҐ-]+|[а-яіїєґ]+\\.")
 	static final Pattern POS_RE = Pattern.compile("(noun:([iu]n)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|excl|conj:|predic|insert|transl).*")
+    static final List<String> IGNORED_NOUNS = ["бельмес", "веб-сайта", "давніх-давен", "основанья", "предку-віку", "роб", "свободівець", "шатер",
+            "галай-балай", "вепр", "вихідець", "гратами", "мати-одиночка", "кінця-краю"]
 
 	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
 
@@ -63,6 +65,7 @@ class OutputValidator {
 	}
 
 	static final List<String> ALL_V_TAGS = ["v_naz", "v_rod", "v_dav", "v_zna", "v_oru", "v_mis", "v_kly"]
+	static final List<String> ADJ_PRON_V_TAGS = ["v_naz", "v_rod", "v_dav", "v_zna", "v_oru", "v_mis"]
 	static final List<String> ALL_VERB_TAGS = ["inf",
 //			"impr:s:2", "impr:p:1", "impr:p:2", \
 			"pres:s:1", "pres:s:2", "pres:s:3", \
@@ -105,7 +108,8 @@ class OutputValidator {
 				}
 			}
 
-			if( line.contains(" noun") && ! line.contains("&pron") ) {
+			if( ( line.contains(" noun") && ! line.contains("&pron") )
+			        || ( line.contains(" adj") && line.contains("&pron") ) ) {
 				def parts = line.trim().split(" ")
 				def tags = parts[1].split(":")
 
@@ -116,7 +120,12 @@ class OutputValidator {
 					if (gender) {
 						checkVTagSet(gender, subtagSet, lemmaLine)
 					}
-					gender = gen
+					if( line.contains(":short") ) {
+					    gender = ''
+					}
+					else {
+					    gender = gen
+					}
 					subtagSet.clear()
 				}
 
@@ -141,8 +150,12 @@ class OutputValidator {
 		if( ! subtagSet.containsAll(ALL_V_TAGS) && ! line.contains(". ") ) {
 			def missingVSet = ALL_V_TAGS - subtagSet
 
-			if( missingVSet == ["v_kly"] && line.contains(":lname") )
-				return
+			if( missingVSet == ["v_kly"] && (line.contains(":lname") 
+			        || (line.contains(" adj") && line.contains("&pron")) ) )
+				return nonFatalErrorCount
+			
+			if( line.split()[0] in IGNORED_NOUNS )
+			    return nonFatalErrorCount
 			
 			log.error("noun lemma is missing " + missingVSet + " on gender " + gender + " for: " + line)
 			nonFatalErrorCount++

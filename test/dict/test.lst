@@ -163,7 +163,6 @@
 уже adv:v-u
 жаско adv
 
-весь весь adj:m:v_naz/v_zna:&pron:dem
 вздовж вздовж prep:rv_rod:v-u|adv:v-u
 
 
@@ -214,7 +213,24 @@
 азотисто-водневий /adj
 азотистоводневий /adj
 
-абичий абичий adj:m:v_zn2:&pron:ind
-абичийого абичий adj:m:v_zn1:&pron:ind
+якийсь /adj :&pron:int:rel:def
+абичий /adj_pos :&pron:ind
+
+чийсь чийсь adj:m:v_naz/v_zn2:&pron:ind
+чийогось чийсь adj:m:v_rod/v_zn1//n:v_rod:&pron:ind
+чийомусь чийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
+чиємусь чийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
+чиїмсь чийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
+чиїмось чийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
+чиясь чийсь adj:f:v_naz:&pron:ind
+чиєїсь чийсь adj:f:v_rod:&pron:ind
+чиїйсь чийсь adj:f:v_dav/v_mis:&pron:ind
+чиюсь чийсь adj:f:v_zna:&pron:ind
+чиєюсь чийсь adj:f:v_oru:&pron:ind
+чиєсь чийсь adj:n:v_naz/v_zna:&pron:ind
+чиїсь чийсь adj:p:v_naz/v_zn2:&pron:ind
+чиїхсь чийсь adj:p:v_rod/v_zn1/v_mis:&pron:ind
+чиїхось чийсь adj:p:v_rod/v_zn1/v_mis:&pron:ind
+чиїмись чийсь adj:p:v_oru:&pron:ind
 
 

@@ -2,6 +2,7 @@ adj:f:v_dav
 adj:f:v_dav:&_adjp:pasv:imperf
 adj:f:v_dav:&adjp:pasv:perf
 adj:f:v_dav:&pron:ind
+adj:f:v_dav:&pron:int:rel:def
 adj:f:v_dav:coll
 adj:f:v_dav:compb
 adj:f:v_dav:compb:&_adjp:pasv:imperf:v-u
@@ -25,6 +26,7 @@ adj:f:v_mis
 adj:f:v_mis:&_adjp:pasv:imperf
 adj:f:v_mis:&adjp:pasv:perf
 adj:f:v_mis:&pron:ind
+adj:f:v_mis:&pron:int:rel:def
 adj:f:v_mis:coll
 adj:f:v_mis:compb
 adj:f:v_mis:compb:&_adjp:pasv:imperf:v-u
@@ -37,6 +39,7 @@ adj:f:v_naz
 adj:f:v_naz:&_adjp:pasv:imperf
 adj:f:v_naz:&adjp:pasv:perf
 adj:f:v_naz:&pron:ind
+adj:f:v_naz:&pron:int:rel:def
 adj:f:v_naz:coll
 adj:f:v_naz:compb
 adj:f:v_naz:compb:&_adjp:pasv:imperf:v-u
@@ -49,6 +52,7 @@ adj:f:v_oru
 adj:f:v_oru:&_adjp:pasv:imperf
 adj:f:v_oru:&adjp:pasv:perf
 adj:f:v_oru:&pron:ind
+adj:f:v_oru:&pron:int:rel:def
 adj:f:v_oru:coll
 adj:f:v_oru:compb
 adj:f:v_oru:compb:&_adjp:pasv:imperf:v-u
@@ -61,6 +65,7 @@ adj:f:v_rod
 adj:f:v_rod:&_adjp:pasv:imperf
 adj:f:v_rod:&adjp:pasv:perf
 adj:f:v_rod:&pron:ind
+adj:f:v_rod:&pron:int:rel:def
 adj:f:v_rod:coll
 adj:f:v_rod:compb
 adj:f:v_rod:compb:&_adjp:pasv:imperf:v-u
@@ -73,6 +78,7 @@ adj:f:v_zna
 adj:f:v_zna:&_adjp:pasv:imperf
 adj:f:v_zna:&adjp:pasv:perf
 adj:f:v_zna:&pron:ind
+adj:f:v_zna:&pron:int:rel:def
 adj:f:v_zna:coll
 adj:f:v_zna:compb
 adj:f:v_zna:compb:&_adjp:pasv:imperf:v-u
@@ -85,6 +91,7 @@ adj:m:v_dav
 adj:m:v_dav:&_adjp:pasv:imperf
 adj:m:v_dav:&adjp:pasv:perf
 adj:m:v_dav:&pron:ind
+adj:m:v_dav:&pron:int:rel:def
 adj:m:v_dav:coll
 adj:m:v_dav:compb
 adj:m:v_dav:compb:&_adjp:pasv:imperf:v-u
@@ -108,6 +115,7 @@ adj:m:v_mis
 adj:m:v_mis:&_adjp:pasv:imperf
 adj:m:v_mis:&adjp:pasv:perf
 adj:m:v_mis:&pron:ind
+adj:m:v_mis:&pron:int:rel:def
 adj:m:v_mis:coll
 adj:m:v_mis:compb
 adj:m:v_mis:compb:&_adjp:pasv:imperf:v-u
@@ -119,8 +127,8 @@ adj:m:v_mis:super:v-u
 adj:m:v_naz
 adj:m:v_naz:&_adjp:pasv:imperf
 adj:m:v_naz:&adjp:pasv:perf
-adj:m:v_naz:&pron:dem
 adj:m:v_naz:&pron:ind
+adj:m:v_naz:&pron:int:rel:def
 adj:m:v_naz:coll
 adj:m:v_naz:compb
 adj:m:v_naz:compb:&_adjp:pasv:imperf:v-u
@@ -135,6 +143,7 @@ adj:m:v_oru
 adj:m:v_oru:&_adjp:pasv:imperf
 adj:m:v_oru:&adjp:pasv:perf
 adj:m:v_oru:&pron:ind
+adj:m:v_oru:&pron:int:rel:def
 adj:m:v_oru:coll
 adj:m:v_oru:compb
 adj:m:v_oru:compb:&_adjp:pasv:imperf:v-u
@@ -147,6 +156,7 @@ adj:m:v_rod
 adj:m:v_rod:&_adjp:pasv:imperf
 adj:m:v_rod:&adjp:pasv:perf
 adj:m:v_rod:&pron:ind
+adj:m:v_rod:&pron:int:rel:def
 adj:m:v_rod:coll
 adj:m:v_rod:compb
 adj:m:v_rod:compb:&_adjp:pasv:imperf:v-u
@@ -155,11 +165,11 @@ adj:m:v_rod:compr
 adj:m:v_rod:compr:v-u
 adj:m:v_rod:super
 adj:m:v_rod:super:v-u
-adj:m:v_zna:&pron:dem
 adj:m:v_zna:ranim
 adj:m:v_zna:ranim:&_adjp:pasv:imperf
 adj:m:v_zna:ranim:&adjp:pasv:perf
 adj:m:v_zna:ranim:&pron:ind
+adj:m:v_zna:ranim:&pron:int:rel:def
 adj:m:v_zna:ranim:coll
 adj:m:v_zna:ranim:compb
 adj:m:v_zna:ranim:compb:&_adjp:pasv:imperf:v-u
@@ -172,6 +182,7 @@ adj:m:v_zna:rinanim
 adj:m:v_zna:rinanim:&_adjp:pasv:imperf
 adj:m:v_zna:rinanim:&adjp:pasv:perf
 adj:m:v_zna:rinanim:&pron:ind
+adj:m:v_zna:rinanim:&pron:int:rel:def
 adj:m:v_zna:rinanim:coll
 adj:m:v_zna:rinanim:compb
 adj:m:v_zna:rinanim:compb:&_adjp:pasv:imperf:v-u
@@ -186,6 +197,7 @@ adj:n:v_dav
 adj:n:v_dav:&_adjp:pasv:imperf
 adj:n:v_dav:&adjp:pasv:perf
 adj:n:v_dav:&pron:ind
+adj:n:v_dav:&pron:int:rel:def
 adj:n:v_dav:coll
 adj:n:v_dav:compb
 adj:n:v_dav:compb:&_adjp:pasv:imperf:v-u
@@ -209,6 +221,7 @@ adj:n:v_mis
 adj:n:v_mis:&_adjp:pasv:imperf
 adj:n:v_mis:&adjp:pasv:perf
 adj:n:v_mis:&pron:ind
+adj:n:v_mis:&pron:int:rel:def
 adj:n:v_mis:coll
 adj:n:v_mis:compb
 adj:n:v_mis:compb:&_adjp:pasv:imperf:v-u
@@ -221,6 +234,7 @@ adj:n:v_naz
 adj:n:v_naz:&_adjp:pasv:imperf
 adj:n:v_naz:&adjp:pasv:perf
 adj:n:v_naz:&pron:ind
+adj:n:v_naz:&pron:int:rel:def
 adj:n:v_naz:coll
 adj:n:v_naz:compb
 adj:n:v_naz:compb:&_adjp:pasv:imperf:v-u
@@ -233,6 +247,7 @@ adj:n:v_oru
 adj:n:v_oru:&_adjp:pasv:imperf
 adj:n:v_oru:&adjp:pasv:perf
 adj:n:v_oru:&pron:ind
+adj:n:v_oru:&pron:int:rel:def
 adj:n:v_oru:coll
 adj:n:v_oru:compb
 adj:n:v_oru:compb:&_adjp:pasv:imperf:v-u
@@ -245,6 +260,7 @@ adj:n:v_rod
 adj:n:v_rod:&_adjp:pasv:imperf
 adj:n:v_rod:&adjp:pasv:perf
 adj:n:v_rod:&pron:ind
+adj:n:v_rod:&pron:int:rel:def
 adj:n:v_rod:coll
 adj:n:v_rod:compb
 adj:n:v_rod:compb:&_adjp:pasv:imperf:v-u
@@ -257,6 +273,7 @@ adj:n:v_zna
 adj:n:v_zna:&_adjp:pasv:imperf
 adj:n:v_zna:&adjp:pasv:perf
 adj:n:v_zna:&pron:ind
+adj:n:v_zna:&pron:int:rel:def
 adj:n:v_zna:coll
 adj:n:v_zna:compb
 adj:n:v_zna:compb:&_adjp:pasv:imperf:v-u
@@ -269,6 +286,7 @@ adj:p:v_dav
 adj:p:v_dav:&_adjp:pasv:imperf
 adj:p:v_dav:&adjp:pasv:perf
 adj:p:v_dav:&pron:ind
+adj:p:v_dav:&pron:int:rel:def
 adj:p:v_dav:coll
 adj:p:v_dav:compb
 adj:p:v_dav:compb:&_adjp:pasv:imperf:v-u
@@ -292,6 +310,7 @@ adj:p:v_mis
 adj:p:v_mis:&_adjp:pasv:imperf
 adj:p:v_mis:&adjp:pasv:perf
 adj:p:v_mis:&pron:ind
+adj:p:v_mis:&pron:int:rel:def
 adj:p:v_mis:coll
 adj:p:v_mis:compb
 adj:p:v_mis:compb:&_adjp:pasv:imperf:v-u
@@ -304,6 +323,7 @@ adj:p:v_naz
 adj:p:v_naz:&_adjp:pasv:imperf
 adj:p:v_naz:&adjp:pasv:perf
 adj:p:v_naz:&pron:ind
+adj:p:v_naz:&pron:int:rel:def
 adj:p:v_naz:coll
 adj:p:v_naz:compb
 adj:p:v_naz:compb:&_adjp:pasv:imperf:v-u
@@ -316,6 +336,7 @@ adj:p:v_oru
 adj:p:v_oru:&_adjp:pasv:imperf
 adj:p:v_oru:&adjp:pasv:perf
 adj:p:v_oru:&pron:ind
+adj:p:v_oru:&pron:int:rel:def
 adj:p:v_oru:coll
 adj:p:v_oru:compb
 adj:p:v_oru:compb:&_adjp:pasv:imperf:v-u
@@ -328,6 +349,7 @@ adj:p:v_rod
 adj:p:v_rod:&_adjp:pasv:imperf
 adj:p:v_rod:&adjp:pasv:perf
 adj:p:v_rod:&pron:ind
+adj:p:v_rod:&pron:int:rel:def
 adj:p:v_rod:coll
 adj:p:v_rod:compb
 adj:p:v_rod:compb:&_adjp:pasv:imperf:v-u
@@ -340,6 +362,7 @@ adj:p:v_zna:ranim
 adj:p:v_zna:ranim:&_adjp:pasv:imperf
 adj:p:v_zna:ranim:&adjp:pasv:perf
 adj:p:v_zna:ranim:&pron:ind
+adj:p:v_zna:ranim:&pron:int:rel:def
 adj:p:v_zna:ranim:coll
 adj:p:v_zna:ranim:compb
 adj:p:v_zna:ranim:compb:&_adjp:pasv:imperf:v-u
@@ -352,6 +375,7 @@ adj:p:v_zna:rinanim
 adj:p:v_zna:rinanim:&_adjp:pasv:imperf
 adj:p:v_zna:rinanim:&adjp:pasv:perf
 adj:p:v_zna:rinanim:&pron:ind
+adj:p:v_zna:rinanim:&pron:int:rel:def
 adj:p:v_zna:rinanim:coll
 adj:p:v_zna:rinanim:compb
 adj:p:v_zna:rinanim:compb:&_adjp:pasv:imperf:v-u

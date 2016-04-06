@@ -23,7 +23,7 @@ class Expand {
 	private final Affix affix = new Affix()
 	private final BaseTags base_tags = new BaseTags()
 	private final OutputValidator validator = new OutputValidator()
-	private final List<String> limitedVerbLemmas = new ArrayList<>();
+	private final List<String> limitedVerbLemmas = ["житися", "забракнуло", "зберігти", "зберігтись", "зберігтися"];
 
 
 	Pattern cf_flag_pattern = ~ /(vr?)[1-4]\.cf/	 // v5.cf is special

@@ -24,9 +24,9 @@ group adj
 ий	ими			#   відісланими 	            @ adj:p:v_oru
 
 ий: -лиций:
-ий	ого			#   відісланого 	          @ adj:m:v_rod/v_zn1//n:v_rod
-ий	ому			#   відісланому 	          @ adj:m:v_dav/v_mis//n:v_dav/v_mis
-ий	им			#   відісланим 	      @ adj:m:v_oru//n:v_oru//p:v_dav
+ий	ого			#   відісланого 	        @ adj:m:v_rod/v_zn1//n:v_rod
+ий	ому			#   відісланому 	        @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ий	им			#   відісланим 	            @ adj:m:v_oru//n:v_oru//p:v_dav
 ий	ім			#   відісланім 		        @ adj:m:v_mis//n:v_mis
 ий	а			#   відіслана 	            @ adj:f:v_naz/v_kly
 ий	ая			#   відісланая 	            @ adj:f:v_naz/v_kly:uncontr
@@ -40,7 +40,28 @@ group adj
 ий	і			#   відіслані 	            @ adj:p:v_naz/v_zn2/v_kly
 ий	ії			#   відісланії 	            @ adj:p:v_naz/v_zn2/v_kly:uncontr
 ий	их			#   відісланих 	            @ adj:p:v_rod/v_zn1/v_mis
-ий	ими			#   відісланими 	            @ adj:p:v_oru
+ий	ими			#   відісланими 	        @ adj:p:v_oru
+
+ийсь:
+ийсь	огось			#   якогось 	        @ adj:m:v_rod/v_zn1//n:v_rod
+ийсь	омусь			#   якомусь 	        @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ийсь	имсь			#   якимсь 	            @ adj:m:v_oru//n:v_oru//p:v_dav
+ийсь	имось			#   якимось 	        @ adj:m:v_oru//n:v_oru//p:v_dav
+ийсь	імсь			#   якімсь		        @ adj:m:v_mis//n:v_mis
+ийсь	ась			    #   якась 	            @ adj:f:v_naz/v_kly
+ийсь	аясь			#   якаясь 	            @ adj:f:v_naz/v_kly:uncontr
+ийсь	оїсь			#   якоїсь 	            @ adj:f:v_rod
+ийсь	ійсь			#   якійсь 	            @ adj:f:v_dav/v_mis
+ийсь	усь			    #   якусь 	            @ adj:f:v_zna
+ийсь	уюсь			#   якуюсь 	            @ adj:f:v_zna:uncontr
+ийсь	оюсь			#   якоюсь 	            @ adj:f:v_oru
+ийсь	есь			    #   якесь 	            @ adj:n:v_naz/v_zna/v_kly
+ийсь	еєсь			#   якеєсь 	            @ adj:n:v_naz/v_zna/v_kly:uncontr
+ийсь	ісь			    #   якісь 	            @ adj:p:v_naz/v_zn2/v_kly
+ийсь	іїсь			#   якіїсь 	            @ adj:p:v_naz/v_zn2/v_kly:uncontr
+ийсь	ихсь			#   якихсь 	            @ adj:p:v_rod/v_zn1/v_mis
+ийсь	ихось			#   якихось 	        @ adj:p:v_rod/v_zn1/v_mis
+ийсь	имись			#   якимись 	        @ adj:p:v_oru
 
 ій:
 ій	ього			#   синього 	                    @ adj:m:v_rod/v_zn1//n:v_rod
@@ -203,3 +224,40 @@ group adj_ev
 ів	еві			#   лікареві 	          @ adj:p:v_naz/v_zn2/v_kly
 ів	евих			#   лікаревих 		(Р.З.М.         @ adj:p:v_rod/v_zn1/v_mis
 ів	евими			#   лікаревими		            @ adj:p:v_oru
+
+
+group adj_pos
+
+ий:
+ий	ийого			#   чийого 	            @ adj:m:v_rod/v_zn1//n:v_rod
+ий	ийому			#   чийому 	            @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ий	иєму			#   чиєму 	            @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ий	иїм			    #   чиїм 	            @ adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
+ий	ия			    #   чия 	            @ adj:f:v_naz
+ий	иєї			    #   чиєї 	            @ adj:f:v_rod
+ий	иїй			    #   чиїй 	            @ adj:f:v_dav/v_mis
+ий	ию			    #   чию 	            @ adj:f:v_zna
+ий	иєю			    #   чиєю 	            @ adj:f:v_oru
+ий	иє			    #   чиє 	            @ adj:n:v_naz/v_zna
+ий	иї			    #   чиї 	            @ adj:p:v_naz/v_zn2
+ий	иїх			    #   чиїх 	            @ adj:p:v_rod/v_zn1/v_mis
+ий	иїми			#   чиїми 	            @ adj:p:v_oru
+
+
+ийсь:
+ийсь	ийогось			#   чийогось 	            @ adj:m:v_rod/v_zn1//n:v_rod
+ийсь	ийомусь			#   чийомусь 	            @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ийсь	иємусь			#   чиємусь 	            @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ийсь	иїмсь			    #   чиїмсь 	            @ adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
+ийсь	иїмось			    #   чиїмось             @ adj:m:v_oru//n:v_oru//p:v_dav
+ийсь	иясь			    #   чиясь 	            @ adj:f:v_naz
+ийсь	иєїсь			    #   чиєїсь 	            @ adj:f:v_rod
+ийсь	иїйсь			    #   чиїйсь 	            @ adj:f:v_dav/v_mis
+ийсь	июсь			    #   чиюсь 	            @ adj:f:v_zna
+ийсь	иєюсь			    #   чиєюсь 	            @ adj:f:v_oru
+ийсь	иєсь			    #   чиєсь 	            @ adj:n:v_naz/v_zna
+ийсь	иїсь			    #   чиїсь 	            @ adj:p:v_naz/v_zn2
+ийсь	иїхсь			    #   чиїхсь 	            @ adj:p:v_rod/v_zn1/v_mis
+ийсь	иїхось			    #   чиїхось             @ adj:p:v_rod/v_zn1/v_mis
+ийсь	иїмись			#   чиїмись 	            @ adj:p:v_oru
+

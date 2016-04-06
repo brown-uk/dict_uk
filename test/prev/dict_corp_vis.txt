@@ -12,8 +12,38 @@
   Абатським noun:inanim:m:v_oru
   Абатському noun:inanim:m:v_mis
   Абатський noun:inanim:m:v_kly
-абичийого adj:m:v_zna:ranim:&pron:ind
+абичий adj:m:v_naz:&pron:ind
+  абичийого adj:m:v_rod:&pron:ind
+  абичиєму adj:m:v_dav:&pron:ind
+  абичийому adj:m:v_dav:&pron:ind
+  абичийого adj:m:v_zna:ranim:&pron:ind
   абичий adj:m:v_zna:rinanim:&pron:ind
+  абичиїм adj:m:v_oru:&pron:ind
+  абичиєму adj:m:v_mis:&pron:ind
+  абичиїм adj:m:v_mis:&pron:ind
+  абичийому adj:m:v_mis:&pron:ind
+  абичия adj:f:v_naz:&pron:ind
+  абичиєї adj:f:v_rod:&pron:ind
+  абичиїй adj:f:v_dav:&pron:ind
+  абичию adj:f:v_zna:&pron:ind
+  абичиєю adj:f:v_oru:&pron:ind
+  абичиїй adj:f:v_mis:&pron:ind
+  абичиє adj:n:v_naz:&pron:ind
+  абичийого adj:n:v_rod:&pron:ind
+  абичиєму adj:n:v_dav:&pron:ind
+  абичийому adj:n:v_dav:&pron:ind
+  абичиє adj:n:v_zna:&pron:ind
+  абичиїм adj:n:v_oru:&pron:ind
+  абичиєму adj:n:v_mis:&pron:ind
+  абичиїм adj:n:v_mis:&pron:ind
+  абичийому adj:n:v_mis:&pron:ind
+  абичиї adj:p:v_naz:&pron:ind
+  абичиїх adj:p:v_rod:&pron:ind
+  абичиїм adj:p:v_dav:&pron:ind
+  абичиїх adj:p:v_zna:ranim:&pron:ind
+  абичиї adj:p:v_zna:rinanim:&pron:ind
+  абичиїми adj:p:v_oru:&pron:ind
+  абичиїх adj:p:v_mis:&pron:ind
 абиякий adj:m:v_naz:&pron:ind
   абиякого adj:m:v_rod:&pron:ind
   абиякому adj:m:v_dav:&pron:ind
@@ -1137,8 +1167,6 @@
   вела verb:imperf:past:f
   вело verb:imperf:past:n
   вели verb:imperf:past:p
-весь adj:m:v_naz:&pron:dem
-  весь adj:m:v_zna:&pron:dem
 вечоріти verb:imperf:inf
   вечоріть verb:imperf:inf:coll
   вечоріє verb:imperf:pres:s:3
@@ -3126,6 +3154,42 @@
   чапленятами noun:anim:p:v_oru
   чапленятах noun:anim:p:v_mis
   чапленята noun:anim:p:v_kly
+чийсь adj:m:v_naz:&pron:ind
+  чийогось adj:m:v_rod:&pron:ind
+  чиємусь adj:m:v_dav:&pron:ind
+  чийомусь adj:m:v_dav:&pron:ind
+  чийогось adj:m:v_zna:ranim:&pron:ind
+  чийсь adj:m:v_zna:rinanim:&pron:ind
+  чиїмось adj:m:v_oru:&pron:ind
+  чиїмсь adj:m:v_oru:&pron:ind
+  чиємусь adj:m:v_mis:&pron:ind
+  чийомусь adj:m:v_mis:&pron:ind
+  чиясь adj:f:v_naz:&pron:ind
+  чиєїсь adj:f:v_rod:&pron:ind
+  чиїйсь adj:f:v_dav:&pron:ind
+  чиюсь adj:f:v_zna:&pron:ind
+  чиєюсь adj:f:v_oru:&pron:ind
+  чиїйсь adj:f:v_mis:&pron:ind
+  чиєсь adj:n:v_naz:&pron:ind
+  чийогось adj:n:v_rod:&pron:ind
+  чиємусь adj:n:v_dav:&pron:ind
+  чийомусь adj:n:v_dav:&pron:ind
+  чиєсь adj:n:v_zna:&pron:ind
+  чиїмось adj:n:v_oru:&pron:ind
+  чиїмсь adj:n:v_oru:&pron:ind
+  чиємусь adj:n:v_mis:&pron:ind
+  чийомусь adj:n:v_mis:&pron:ind
+  чиїсь adj:p:v_naz:&pron:ind
+  чиїхось adj:p:v_rod:&pron:ind
+  чиїхсь adj:p:v_rod:&pron:ind
+  чиїмось adj:p:v_dav:&pron:ind
+  чиїмсь adj:p:v_dav:&pron:ind
+  чиїхось adj:p:v_zna:ranim:&pron:ind
+  чиїхсь adj:p:v_zna:ranim:&pron:ind
+  чиїсь adj:p:v_zna:rinanim:&pron:ind
+  чиїмись adj:p:v_oru:&pron:ind
+  чиїхось adj:p:v_mis:&pron:ind
+  чиїхсь adj:p:v_mis:&pron:ind
 шуканка noun:inanim:f:v_naz
   шуканки noun:inanim:f:v_rod
   шуканці noun:inanim:f:v_dav
@@ -3430,6 +3494,40 @@
   Ягайлові noun:anim:m:v_mis:prop:fname
   Ягайлу noun:anim:m:v_mis:prop:fname
   Ягайлу noun:anim:m:v_kly:prop:fname
+якийсь adj:m:v_naz:&pron:int:rel:def
+  якогось adj:m:v_rod:&pron:int:rel:def
+  якомусь adj:m:v_dav:&pron:int:rel:def
+  якогось adj:m:v_zna:ranim:&pron:int:rel:def
+  якийсь adj:m:v_zna:rinanim:&pron:int:rel:def
+  якимось adj:m:v_oru:&pron:int:rel:def
+  якимсь adj:m:v_oru:&pron:int:rel:def
+  якімсь adj:m:v_mis:&pron:int:rel:def
+  якомусь adj:m:v_mis:&pron:int:rel:def
+  якась adj:f:v_naz:&pron:int:rel:def
+  якоїсь adj:f:v_rod:&pron:int:rel:def
+  якійсь adj:f:v_dav:&pron:int:rel:def
+  якусь adj:f:v_zna:&pron:int:rel:def
+  якоюсь adj:f:v_oru:&pron:int:rel:def
+  якійсь adj:f:v_mis:&pron:int:rel:def
+  якесь adj:n:v_naz:&pron:int:rel:def
+  якогось adj:n:v_rod:&pron:int:rel:def
+  якомусь adj:n:v_dav:&pron:int:rel:def
+  якесь adj:n:v_zna:&pron:int:rel:def
+  якимось adj:n:v_oru:&pron:int:rel:def
+  якимсь adj:n:v_oru:&pron:int:rel:def
+  якімсь adj:n:v_mis:&pron:int:rel:def
+  якомусь adj:n:v_mis:&pron:int:rel:def
+  якісь adj:p:v_naz:&pron:int:rel:def
+  якихось adj:p:v_rod:&pron:int:rel:def
+  якихсь adj:p:v_rod:&pron:int:rel:def
+  якимось adj:p:v_dav:&pron:int:rel:def
+  якимсь adj:p:v_dav:&pron:int:rel:def
+  якихось adj:p:v_zna:ranim:&pron:int:rel:def
+  якихсь adj:p:v_zna:ranim:&pron:int:rel:def
+  якісь adj:p:v_zna:rinanim:&pron:int:rel:def
+  якимись adj:p:v_oru:&pron:int:rel:def
+  якихось adj:p:v_mis:&pron:int:rel:def
+  якихсь adj:p:v_mis:&pron:int:rel:def
 якнайвагоміше adv:super
 якнайвагоміший adj:m:v_naz:super
   якнайвагомішого adj:m:v_rod:super
