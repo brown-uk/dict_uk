@@ -297,3 +297,68 @@ group adj_pos
 м:
 0       о       # само сам    @ adj:n:v_naz
 0       и       # сами сам    @ adj:p:v_naz
+
+
+ей:
+#цей цей adj:m:v_naz/v_zn2
+ей      ього    # цього цей    @ adj:m:v_rod/v_zn1//n:v_rod
+ей      ьому    # цьому цей    @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ей      им      # цим цей    @ adj:m:v_oru//n:v_oru//p:v_dav
+ей      ім      # цім цей    @ adj:m:v_mis//n:v_mis
+ей      я       # ця цей    @ adj:f:v_naz
+ей      ієї     # цієї цей    @ adj:f:v_rod
+ей      ій      # цій цей    @ adj:f:v_dav/v_mis
+ей      ю       # цю цей    @ adj:f:v_zna
+ей      ією     # цією цей    @ adj:f:v_oru
+ей      е       # це цей    @ adj:n:v_naz/v_zna
+ей      і       # ці цей    @ adj:p:v_naz/v_zn2/v_mis
+ей      их      # цих цей    @ adj:p:v_rod/v_zn1/v_mis
+ей      ими     # цими цей    @ adj:p:v_oru
+
+ой:
+#той той    @ adj:m:v_naz/v_zn2
+ой      ого     # того той    @ adj:m:v_rod/v_zn1//n:v_rod
+ой      ому     # тому той    @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ой      им      # тим той    @ adj:m:v_oru//n:v_oru//p:v_dav
+ой      ім      # тім той    @ adj:m:v_mis//n:v_mis
+ой      а       # та той    @ adj:f:v_naz
+ой      ої      # тої той    @ adj:f:v_rod
+ой      ієї     # тієї той    @ adj:f:v_rod
+ой      ій      # тій той    @ adj:f:v_dav/v_mis
+ой      у       # ту той    @ adj:f:v_zna
+ой      ією     # тією той    @ adj:f:v_oru
+ой      ою      # тою той    @ adj:f:v_oru
+ой      е       # те той    @ adj:n:v_naz/v_zna
+ой      і       # ті той    @ adj:p:v_naz/v_zn2
+ой      их      # тих той    @ adj:p:v_rod/v_zn1/v_mis
+ой      ими     # тими той    @ adj:p:v_oru
+
+.весь:
+#весь весь adj:m:v_naz/v_zn2
+весь     сього   # всього весь    @ adj:m:v_rod/v_zn1//n:v_rod
+весь     сьому   # всьому весь    @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+весь     сім     # всім весь    @ adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
+весь     ся      # вся весь    @ adj:f:v_naz
+весь     сієї    # всієї весь    @ adj:f:v_rod
+весь     сій     # всій весь    @ adj:f:v_dav/v_mis
+весь     сю      # всю весь    @ adj:f:v_zna
+весь     сією    # всією весь    @ adj:f:v_oru
+весь     се      # все весь    @ adj:n:v_naz/v_zna
+весь     сі      # всі весь    @ adj:p:v_naz/v_zn2
+весь     сіх     # всіх весь    @ adj:p:v_rod/v_zn1/v_mis
+весь     сіма    # всіма весь    @ adj:p:v_oru
+
+^весь:
+#весь весь adj:m:v_naz/v_zn2
+есь     сього   # всього весь    @ adj:m:v_rod/v_zn1//n:v_rod
+есь     сьому   # всьому весь    @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+есь     сім     # всім весь    @ adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
+есь     ся      # вся весь    @ adj:f:v_naz
+есь     сієї    # всієї весь    @ adj:f:v_rod
+есь     сій     # всій весь    @ adj:f:v_dav/v_mis
+есь     сю      # всю весь    @ adj:f:v_zna
+есь     сією    # всією весь    @ adj:f:v_oru
+есь     се      # все весь    @ adj:n:v_naz/v_zna
+есь     сі      # всі весь    @ adj:p:v_naz/v_zn2
+есь     сіх     # всіх весь    @ adj:p:v_rod/v_zn1/v_mis
+есь     сіма    # всіма весь    @ adj:p:v_oru

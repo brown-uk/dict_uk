@@ -275,163 +275,20 @@
 наш /adj_pos :&pron:pos
 ваш /adj_pos :&pron:pos
 
-цей цей adj:m:v_naz/v_zn2:&pron:dem
-цього цей adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
-цьому цей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
-цим цей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
-цім цей adj:m:v_mis//n:v_mis:&pron:dem
-ця цей adj:f:v_naz:&pron:dem
-цієї цей adj:f:v_rod:&pron:dem
-цій цей adj:f:v_dav/v_mis:&pron:dem
-цю цей adj:f:v_zna:&pron:dem
-цією цей adj:f:v_oru:&pron:dem
-це цей adj:n:v_naz/v_zna:&pron:dem
-ці цей adj:p:v_naz/v_zn2/v_mis:&pron:dem
-цих цей adj:p:v_rod/v_zn1/v_mis:&pron:dem
-цими цей adj:p:v_oru:&pron:dem
+цей /adj_pos :&pron:dem
+оцей /adj_pos :&pron:dem
 
-оцей оцей adj:m:v_naz/v_zn2:&pron:dem
-оцього оцей adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
-оцьому оцей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
-оцим оцей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
-оцім оцей adj:m:v_mis//n:v_mis:&pron:dem
-оця оцей adj:f:v_naz:&pron:dem
-оцієї оцей adj:f:v_rod:&pron:dem
-оцій оцей adj:f:v_dav/v_mis:&pron:dem
-оцю оцей adj:f:v_zna:&pron:dem
-оцією оцей adj:f:v_oru:&pron:dem
-оце оцей adj:n:v_naz/v_zna:&pron:dem
-оці оцей adj:p:v_naz/v_zn2/v_mis:&pron:dem
-оцих оцей adj:p:v_rod/v_zn1/v_mis:&pron:dem
-оцими оцей adj:p:v_oru:&pron:dem
+той /adj_pos :&pron:dem
+позатой /adj_pos :&pron:dem
+тамтой /adj_pos :&pron:dem
+отой /adj_pos :&pron:dem
 
-той той adj:m:v_naz/v_zn2:&pron:dem
-того той adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
-тому той adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
-тим той adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
-тім той adj:m:v_mis//n:v_mis:&pron:dem
-та той adj:f:v_naz:&pron:dem
-тої той adj:f:v_rod:&pron:dem
-тієї той adj:f:v_rod:&pron:dem
-тій той adj:f:v_dav/v_mis:&pron:dem
-ту той adj:f:v_zna:&pron:dem
-тією той adj:f:v_oru:&pron:dem
-тою той adj:f:v_oru:&pron:dem
-те той adj:n:v_naz/v_zna:&pron:dem
-ті той adj:p:v_naz/v_zn2:&pron:dem
-тих той adj:p:v_rod/v_zn1/v_mis:&pron:dem
-тими той adj:p:v_oru:&pron:dem
-
-позатой позатой adj:m:v_naz/v_zn2:&pron:dem
-позатого позатой adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
-позатому позатой adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
-позатим позатой adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
-позатім позатой adj:m:v_mis//n:v_mis:&pron:dem
-позата позатой adj:f:v_naz:&pron:dem
-позатої позатой adj:f:v_rod:&pron:dem
-позатієї позатой adj:f:v_rod:&pron:dem
-позатій позатой adj:f:v_dav/v_mis:&pron:dem
-позату позатой adj:f:v_zna:&pron:dem
-позатією позатой adj:f:v_oru:&pron:dem
-позатою позатой adj:f:v_oru:&pron:dem
-позате позатой adj:n:v_naz/v_zna:&pron:dem
-позаті позатой adj:p:v_naz/v_zn2:&pron:dem
-позатих позатой adj:p:v_rod/v_zn1/v_mis:&pron:dem
-позатими позатой adj:p:v_oru:&pron:dem
-
-тамтой тамтой adj:m:v_naz/v_zn2:&pron:dem
-тамтого тамтой adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
-тамтому тамтой adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
-тамтим тамтой adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
-тамтім тамтой adj:m:v_mis//n:v_mis:&pron:dem
-тамта тамтой adj:f:v_naz:&pron:dem
-тамтої тамтой adj:f:v_rod:&pron:dem
-тамтієї тамтой adj:f:v_rod:&pron:dem
-тамтій тамтой adj:f:v_dav/v_mis:&pron:dem
-тамту тамтой adj:f:v_zna:&pron:dem
-тамтією тамтой adj:f:v_oru:&pron:dem
-тамтою тамтой adj:f:v_oru:&pron:dem
-тамте тамтой adj:n:v_naz/v_zna:&pron:dem
-тамті тамтой adj:p:v_naz/v_zn2:&pron:dem
-тамтих тамтой adj:p:v_rod/v_zn1/v_mis:&pron:dem
-тамтими тамтой adj:p:v_oru:&pron:dem
-
-отой отой adj:m:v_naz/v_zn2:&pron:dem
-отого отой adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
-отому отой adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
-отим отой adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
-отім отой adj:m:v_mis//n:v_mis:&pron:dem
-ота отой adj:f:v_naz:&pron:dem
-отої отой adj:f:v_rod:&pron:dem
-отієї отой adj:f:v_rod:&pron:dem
-отій отой adj:f:v_dav/v_mis:&pron:dem
-оту отой adj:f:v_zna:&pron:dem
-отією отой adj:f:v_oru:&pron:dem
-оте отой adj:n:v_naz/v_zna:&pron:dem
-оті отой adj:p:v_naz/v_zn2:&pron:dem
-отих отой adj:p:v_rod/v_zn1/v_mis:&pron:dem
-отими отой adj:p:v_oru:&pron:dem
-
-весь весь adj:m:v_naz/v_zn2:&pron:gen
-всього весь adj:m:v_rod/v_zn1//n:v_rod:&pron:gen
-всьому весь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:gen
-всім весь adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:gen
-вся весь adj:f:v_naz:&pron:gen
-всієї весь adj:f:v_rod:&pron:gen
-всій весь adj:f:v_dav/v_mis:&pron:gen
-всю весь adj:f:v_zna:&pron:gen
-всією весь adj:f:v_oru:&pron:gen
-все весь adj:n:v_naz/v_zna:&pron:gen
-всі весь adj:p:v_naz/v_zn2:&pron:gen
-всіх весь adj:p:v_rod/v_zn1/v_mis:&pron:gen
-всіма весь adj:p:v_oru:&pron:gen
-
-увесь увесь adj:m:v_naz/v_zn2:&pron:gen
-усього увесь adj:m:v_rod/v_zn1//n:v_rod:&pron:gen
-усьому увесь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:gen
-усім увесь adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:gen
-уся увесь adj:f:v_naz:&pron:gen
-усієї увесь adj:f:v_rod:&pron:gen
-усій увесь adj:f:v_dav/v_mis:&pron:gen
-усією увесь adj:f:v_oru:&pron:gen
-усю увесь adj:f:v_zna:&pron:gen
-усе увесь adj:n:v_naz/v_zna:&pron:gen
-усі увесь adj:p:v_naz/v_zn2:&pron:gen
-усіх увесь adj:p:v_rod/v_zn1/v_mis:&pron:gen
-усіма увесь adj:p:v_oru:&pron:gen
-
-ввесь ввесь adj:m:v_naz/v_zn2:&pron:gen
-всього ввесь adj:m:v_rod/v_zn1//n:v_rod:&pron:gen
-всьому ввесь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:gen
-всім ввесь adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:gen
-вся ввесь adj:f:v_naz:&pron:gen
-всієї ввесь adj:f:v_rod:&pron:gen
-всій ввесь adj:f:v_dav/v_zna/v_mis:&pron:gen
-всією ввесь adj:f:v_oru:&pron:gen
-всю ввесь adj:f:v_zna:&pron:gen
-все ввесь adj:n:v_naz/v_zna:&pron:gen
-всі ввесь adj:p:v_naz/v_zn2:&pron:gen
-всіх ввесь adj:p:v_rod/v_zn1/v_mis:&pron:gen
-всіма ввесь adj:p:v_oru:&pron:gen
+весь /adj_pos :&pron:gen
+увесь /adj_pos :&pron:gen
+ввесь /adj_pos :&pron:gen
 
 все adv:v-u|conj:coord:v-u|part:v-u
 усе adv:v-u|conj:coord:v-u|part:v-u
-
-той-таки той-таки adj:m:v_naz/v_zn2:&pron:dem
-того-таки той-таки adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
-тому-таки той-таки adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
-тим-таки той-таки adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
-тім-таки той-таки adj:m:v_mis//n:v_mis:&pron:dem
-та-таки той-таки adj:f:v_naz:&pron:dem
-тої-таки той-таки adj:f:v_rod:&pron:dem
-тієї-таки той-таки adj:f:v_rod:&pron:dem
-тій-таки той-таки adj:f:v_dav/v_mis:&pron:dem
-ту-таки той-таки adj:f:v_zna:&pron:dem
-тією-таки той-таки adj:f:v_oru:&pron:dem
-те-таки той-таки adj:n:v_naz/v_zna:&pron:dem
-ті-таки той-таки adj:p:v_naz/v_zn2:&pron:dem
-тих-таки той-таки adj:p:v_rod/v_zn1/v_mis:&pron:dem
-тими-таки той-таки adj:p:v_oru:&pron:dem
 
 кудись adv:&pron:ind
 звідкись adv:&pron:ind
