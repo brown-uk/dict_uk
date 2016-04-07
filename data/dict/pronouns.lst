@@ -271,94 +271,9 @@
 його його adj:m:nv//f:nv//n:nv:&pron:pos
 її її adj:m:nv//f:nv//n:nv:&pron:pos
 
-сам сам adj:m:v_naz/v_zn2:&pron:def
-самого сам adj:m:v_rod/v_zn1//n:v_rod:&pron:def
-самому сам adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:def
-самим сам adj:m:v_oru//n:v_oru//p:v_dav:&pron:def
-самім сам adj:m:v_mis//n:v_mis:&pron:def
-сама сам adj:f:v_naz:&pron:def
-самої сам adj:f:v_rod:&pron:def
-самій сам adj:f:v_dav/v_mis:&pron:def
-саму сам adj:f:v_zna:&pron:def
-самою сам adj:f:v_oru:&pron:def
-саме сам adj:n:v_naz/v_zna:&pron:def
-само сам adj:n:v_naz:&pron:def
-сами сам adj:p:v_naz:&pron:def
-самі сам adj:p:v_naz/v_zn2:&pron:def
-самих сам adj:p:v_rod/v_zn1/v_mis:&pron:def
-самими сам adj:p:v_oru:&pron:def
-
-мій мій adj:m:v_naz/v_zn2:&pron:pos
-мого мій adj:m:v_rod/v_zn1//n:v_rod:&pron:pos
-моєму мій adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos
-моїм мій adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:pos
-моя мій adj:f:v_naz:&pron:pos
-моєї мій adj:f:v_rod:&pron:pos
-моїй мій adj:f:v_dav/v_mis:&pron:pos
-мою мій adj:f:v_zna:&pron:pos
-моєю мій adj:f:v_oru:&pron:pos
-моє мій adj:n:v_naz/v_zna:&pron:pos
-мої мій adj:p:v_naz/v_zn2:&pron:pos
-моїх мій adj:p:v_rod/v_zn1/v_mis:&pron:pos
-моїми мій adj:p:v_oru:&pron:pos
-
-твій твій adj:m:v_naz/v_zn2:&pron:pos
-твого твій adj:m:v_rod/v_zn1//n:v_rod:&pron:pos
-твоєму твій adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos
-твоїм твій adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:pos
-твоя твій adj:f:v_naz:&pron:pos
-твоєї твій adj:f:v_rod:&pron:pos
-твоїй твій adj:f:v_dav/v_mis:&pron:pos
-твою твій adj:f:v_zna:&pron:pos
-твоєю твій adj:f:v_oru:&pron:pos
-твоє твій adj:n:v_naz/v_zna:&pron:pos
-твої твій adj:p:v_naz/v_zn2:&pron:pos
-твоїх твій adj:p:v_rod/v_zn1/v_mis:&pron:pos
-твоїми твій adj:p:v_oru:&pron:pos
-
-свій свій adj:m:v_naz/v_zn2:&pron:pos
-свого свій adj:m:v_rod/v_zn1//n:v_rod:&pron:pos
-своєму свій adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos
-своїм свій adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:pos
-своя свій adj:f:v_naz:&pron:pos
-своєї свій adj:f:v_rod:&pron:pos
-своїй свій adj:f:v_dav/v_mis:&pron:pos
-свою свій adj:f:v_zna:&pron:pos
-своєю свій adj:f:v_oru:&pron:pos
-своє свій adj:n:v_naz/v_zna:&pron:pos
-свої свій adj:p:v_naz/v_zn2:&pron:pos
-своїх свій adj:p:v_rod/v_zn1/v_mis:&pron:pos
-своїми свій adj:p:v_oru:&pron:pos
-
-наш наш adj:m:v_naz/v_zn2:&pron:pos
-нашого наш adj:m:v_rod/v_zn1//n:v_rod:&pron:pos
-нашому наш adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos
-нашим наш adj:m:v_oru//n:v_oru//p:v_dav:&pron:pos
-нашім наш adj:m:v_mis//n:v_mis:&pron:pos
-наша наш adj:f:v_naz:&pron:pos
-нашої наш adj:f:v_rod:&pron:pos
-нашій наш adj:f:v_dav/v_mis:&pron:pos
-нашу наш adj:f:v_zna:&pron:pos
-нашою наш adj:f:v_oru:&pron:pos
-наше наш adj:n:v_naz/v_zna:&pron:pos
-наші наш adj:p:v_naz/v_zn2:&pron:pos
-нашими наш adj:p:v_oru:&pron:pos
-наших наш adj:p:v_rod/v_zn1/v_mis:&pron:pos
-
-ваш ваш adj:m:v_naz/v_zn2:&pron:pos
-вашого ваш adj:m:v_rod/v_zn1//n:v_rod:&pron:pos
-вашому ваш adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos
-вашим ваш adj:m:v_oru//n:v_oru//p:v_dav:&pron:pos
-вашім ваш adj:m:v_mis//n:v_mis:&pron:pos
-ваша ваш adj:f:v_naz:&pron:pos
-вашої ваш adj:f:v_rod:&pron:pos
-вашій ваш adj:f:v_dav/v_mis:&pron:pos
-вашу ваш adj:f:v_zna:&pron:pos
-вашою ваш adj:f:v_oru:&pron:pos
-ваше ваш adj:n:v_naz/v_zna:&pron:pos
-ваші ваш adj:p:v_naz/v_zn2:&pron:pos
-вашими ваш adj:p:v_oru:&pron:pos
-ваших ваш adj:p:v_rod/v_zn1/v_mis:&pron:pos
+сам /adj_pos :&pron:def
+наш /adj_pos :&pron:pos
+ваш /adj_pos :&pron:pos
 
 цей цей adj:m:v_naz/v_zn2:&pron:dem
 цього цей adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
@@ -518,24 +433,6 @@
 тих-таки той-таки adj:p:v_rod/v_zn1/v_mis:&pron:dem
 тими-таки той-таки adj:p:v_oru:&pron:dem
 
-сам-самісінький сам-самісінький adj:m:v_naz/v_zn2:&pron:def
-самого-самісінького сам-самісінький adj:m:v_rod/v_zn1//n:v_rod:&pron:def
-самому-самісінькому сам-самісінький adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:def
-самим-самісіньким сам-самісінький adj:m:v_oru//n:v_oru:&pron:def
-самім-самісінькім сам-самісінький adj:m:v_mis//n:v_mis//p:v_dav:&pron:def
-сама-самісінька сам-самісінький adj:f:v_naz:&pron:def
-самої-самісінької сам-самісінький adj:f:v_rod:&pron:def
-самієї-самісінької сам-самісінький adj:f:v_rod:&pron:def
-самій-самісінькій сам-самісінький adj:f:v_dav/v_mis:&pron:def
-самією-самісінькою сам-самісінький adj:f:v_oru:&pron:def
-самою-самісінькою сам-самісінький adj:f:v_oru:&pron:def
-саму-самісіньку сам-самісінький adj:f:v_zna:&pron:def
-саме-самісіньке сам-самісінький adj:n:v_naz/v_zna:&pron:def
-само-самісіньке сам-самісінький adj:n:v_naz:&pron:def
-самі-самісінькі сам-самісінький adj:p:v_naz/v_zn2:&pron:def
-самих-самісіньких сам-самісінький adj:p:v_rod/v_zn1/v_mis:&pron:def
-самими-самісінькими сам-самісінький adj:p:v_oru:&pron:def
-
 кудись adv:&pron:ind
 звідкись adv:&pron:ind
 
@@ -597,9 +494,10 @@
 казна-звідки adv:&pron:ind
 
 всяк adv:rare:v-u
-всяк всяк adj:m:v_naz/v_zn2:&pron:gen:v-u
 усяк adv:rare:v-u
-усяк усяк adj:m:v_naz/v_zn2:&pron:gen:v-u
+
+всяк всякий adj:m:v_naz/v_zn2:short:&pron:gen:v-u
+усяк усякий adj:m:v_naz/v_zn2:short:&pron:gen:v-u
 
 чомусь adv:&pron:ind
 

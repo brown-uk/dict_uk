@@ -49,7 +49,12 @@ class BaseTags {
 				tag = ":f:v_naz/v_kly"
 			}
 			else if( word.endsWith("ій") ) {
-				tag = ":m:v_naz/v_zn2/v_kly//f:v_dav/v_mis"
+				if( affixFlag.startsWith("adj_pos") ) {
+					tag = ":m:v_naz/v_zn2/v_kly"
+				}
+				else {
+					tag = ":m:v_naz/v_zn2/v_kly//f:v_dav/v_mis"
+				}
 			}
 			else {
 				tag = ":m:v_naz/v_zn2/v_kly"
