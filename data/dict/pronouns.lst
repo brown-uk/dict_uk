@@ -271,21 +271,21 @@
 його його adj:m:nv//f:nv//n:nv:&pron:pos
 її її adj:m:nv//f:nv//n:nv:&pron:pos
 
-сам /adj_pos :&pron:def
-наш /adj_pos :&pron:pos
-ваш /adj_pos :&pron:pos
+сам /adj_pron :&pron:def
+наш /adj_pron :&pron:pos
+ваш /adj_pron :&pron:pos
 
-цей /adj_pos :&pron:dem
-оцей /adj_pos :&pron:dem
+цей /adj_pron :&pron:dem
+оцей /adj_pron :&pron:dem
 
-той /adj_pos :&pron:dem
-позатой /adj_pos :&pron:dem
-тамтой /adj_pos :&pron:dem
-отой /adj_pos :&pron:dem
+той /adj_pron :&pron:dem
+позатой /adj_pron :&pron:dem
+тамтой /adj_pron :&pron:dem
+отой /adj_pron :&pron:dem
 
-весь /adj_pos :&pron:gen
-увесь /adj_pos :&pron:gen
-ввесь /adj_pos :&pron:gen
+весь /adj_pron :&pron:gen
+увесь /adj_pron :&pron:gen
+ввесь /adj_pron :&pron:gen
 
 все adv:v-u|conj:coord:v-u|part:v-u
 усе adv:v-u|conj:coord:v-u|part:v-u

@@ -226,7 +226,7 @@ group adj_ev
 ів	евими			#   лікаревими		            @ adj:p:v_oru
 
 
-group adj_pos
+group adj_pron
 
 ий:
 ий	ийого			#   чийого 	            @ adj:m:v_rod/v_zn1//n:v_rod

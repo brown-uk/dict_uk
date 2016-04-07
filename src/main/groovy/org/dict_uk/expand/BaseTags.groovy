@@ -49,7 +49,7 @@ class BaseTags {
 				tag = ":f:v_naz/v_kly"
 			}
 			else if( word.endsWith("ій") ) {
-				if( affixFlag.startsWith("adj_pos") ) {
+				if( affixFlag.startsWith("adj_pron") ) {
 					tag = ":m:v_naz/v_zn2/v_kly"
 				}
 				else {

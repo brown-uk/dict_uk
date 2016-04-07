@@ -87,7 +87,7 @@
 Рудня /n10 - Фасова /adj ^noun g=f
 Рудня /n10 - Хочинська /adj ^noun g=f
 Рудня /n10 - Шпилівська /adj ^noun g=f
-сам /adj_pos - самісінький /adj :&pron:def
+сам /adj_pron - самісінький /adj :&pron:def
 сила /n10 - силенна /adj g=f
 Склодовська /adj.<+ g=f - Кюрі /<f
 Слобідка /n10 - Малиновецька /adj ^noun g=f
@@ -118,11 +118,11 @@
 сякий /adj - такий /adj :&pron:def
 такий /adj - сякий /adj :&pron:def
 такий /adj - то :&pron:dem
-той /adj_pos - таки :&pron:dem
+той /adj_pron - таки :&pron:dem
 тьма /n10 - тьмуща /adj g=f
 фіглі /np2 - міглі /np2
-чий /adj_pos - небудь :&pron:ind
-чий /adj_pos - будь :&pron:ind
+чий /adj_pron - небудь :&pron:ind
+чий /adj_pron - будь :&pron:ind
 член /n20.a.p.< - кореспондент /n20.a.p.<
 чудо /n20.<> - юдо /n20.<> ^noun:n
 шапка /n10.p2 - невидимка /n10.p2
