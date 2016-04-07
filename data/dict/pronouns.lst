@@ -582,56 +582,8 @@
 
 # Числівники
 
-один один numr:m:v_naz/v_zn2|adj:m:v_naz/v_zn2:&pron:dem:ind
-одного один numr:m:v_rod/v_zn1//n:v_rod|adj:m:v_rod/v_zn1//n:v_rod:&pron:dem:ind
-одному один numr:m:v_dav/v_mis//n:v_dav/v_mis|adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem:ind
-одним один numr:m:v_oru//n:v_oru|adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem:ind
-однім один numr:m:v_mis//n:v_mis|adj:m:v_mis//n:v_mis:&pron:dem:ind
-одна один numr:f:v_naz|adj:f:v_naz:&pron:dem:ind
-одної один numr:f:v_rod|adj:f:v_rod:&pron:dem:ind
-однієї один numr:f:v_rod|adj:f:v_rod:&pron:dem:ind
-одній один numr:f:v_dav/v_mis|adj:f:v_dav/v_mis:&pron:dem:ind
-однією один numr:f:v_oru|adj:f:v_oru:&pron:dem:ind
-одною один numr:f:v_oru|adj:f:v_oru:&pron:dem:ind
-одну один numr:f:v_zna|adj:f:v_zna:&pron:dem:ind
-одні один numr:p:v_naz/v_zn2|adj:p:v_naz/v_zn2:&pron:dem:ind
-одними один numr:p:v_oru|adj:p:v_oru:&pron:dem:ind
-одних один numr:p:v_rod/v_zn1/v_mis|adj:p:v_rod/v_zn1/v_mis:&pron:dem:ind
-одне один numr:n:v_naz/v_zna|adj:n:v_naz/v_zna:&pron:dem:ind
-одно один numr:n:v_naz/v_zna|adj:n:v_naz/v_zna:&pron:dem:ind
-
-один-єдиний один-єдиний adj:m:v_naz/v_zn2
-одного-єдиного один-єдиний adj:m:v_rod/v_zn1//n:v_rod
-одному-єдиному один-єдиний adj:m:v_dav/v_mis//n:v_dav/v_mis
-одним-єдиним один-єдиний adj:m:v_oru//n:v_oru//p:v_dav
-однім-єдинім один-єдиний adj:m:v_mis//n:v_mis
-одна-єдина один-єдиний adj:f:v_naz
-одної-єдиної один-єдиний adj:f:v_rod
-однієї-єдиної один-єдиний adj:f:v_rod
-одній-єдиній один-єдиний adj:f:v_dav/v_mis
-однією-єдиною один-єдиний adj:f:v_oru
-одною-єдиною один-єдиний adj:f:v_oru
-одну-єдину один-єдиний adj:f:v_zna
-одне-єдине один-єдиний adj:n:v_naz/v_zna
-одно-єдине один-єдиний adj:n:v_naz/v_zna
-одні-єдині один-єдиний adj:p:v_naz/v_zn2
-одними-єдиними один-єдиний adj:p:v_oru
-одних-єдиних один-єдиний adj:p:v_rod/v_zn1/v_mis
-
-один-однісінький один-однісінький numr:m:v_naz/v_zn2
-одного-однісінького один-однісінький numr:m:v_rod/v_zn1//n:v_rod
-одному-однісінькому один-однісінький numr:m:v_dav/v_mis//n:v_dav/v_mis
-одним-однісіньким один-однісінький numr:m:v_oru//n:v_oru//p:v_dav
-однім-однісінькім один-однісінький numr:m:v_mis//n:v_mis
-одна-однісінька один-однісінький numr:f:v_naz
-одної-однісінької один-однісінький numr:f:v_rod
-однієї-однісінької один-однісінький numr:f:v_rod
-одній-однісінькій один-однісінький numr:f:v_dav/v_mis
-однією-однісінькою один-однісінький numr:f:v_oru
-одною-однісінькою один-однісінький numr:f:v_oru
-одну-однісіньку один-однісінький numr:f:v_zna
-одне-однісіньке один-однісінький numr:n:v_naz/v_zna
-одно-однісіньке один-однісінький numr:n:v_naz
+один /numr
+один /numr ^adj :&pron:dem:ind
 
 обоє обоє numr:p:v_naz/v_zna
 обох обоє numr:p:v_rod/v_zna/v_mis

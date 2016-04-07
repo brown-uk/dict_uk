@@ -64,7 +64,12 @@ class BaseTags {
 		}
 
 		if( affixFlag == "numr" ) {
-			tag = ":p:v_naz/v_zna"
+		    if( word.endsWith("ин") ) {
+		        tag = ":m:v_naz/v_zn2"
+		    }
+		    else {
+			    tag = ":p:v_naz/v_zna"
+			}
 			return tag
 		}
 

@@ -15,3 +15,23 @@ group numr
 0 ьох сят     # п'ятдесят  п'ятдесятох        @ numr:p:v_rod/v_zna/v_mis
 
 #о а сто       # сто  ста                        @ numr:p:v_rod/v_dav/v_oru/v_mis
+
+
+ин:
+#один один numr:m:v_naz/v_zn2
+ин      ного     # одного один    @ numr:m:v_rod/v_zn1//n:v_rod
+ин      ному     # одному один    @ numr:m:v_dav/v_mis//n:v_dav/v_mis
+ин      ним      # одним один    @ numr:m:v_oru//n:v_oru//p:v_dav
+ин      нім      # однім один    @ numr:m:v_mis//n:v_mis
+ин      на       # одна один    @ numr:f:v_naz
+ин      ної      # одної один    @ numr:f:v_rod
+ин      нієї     # однієї один    @ numr:f:v_rod
+ин      ній      # одній один    @ numr:f:v_dav/v_mis
+ин      нією     # однією один    @ numr:f:v_oru
+ин      ною      # одною один    @ numr:f:v_oru
+ин      ну       # одну один    @ numr:f:v_zna
+ин      не       # одне один    @ numr:n:v_naz/v_zna
+ин      но       # одно один    @ numr:n:v_naz/v_zna
+ин      ні       # одні один    @ numr:p:v_naz/v_zn2
+ин      них      # одних один    @ numr:p:v_rod/v_zn1/v_mis
+ин      ними     # одними один    @ numr:p:v_oru
