@@ -30,7 +30,6 @@ class ExpandComps {
 		def left_gen = ""
 		def mixed_gen = false
 
-
 		def left_wn
 		def left_tags
 
@@ -60,9 +59,14 @@ class ExpandComps {
 		}
 		if( mixed_gen ) {
 			left_gen = ""
-			//     print("left_gen", left_gen, "mixed_gen", mixed_gen, file=sys.stderr)
 		}
 
+		if( rights.size() == 1 ) {
+			return lefts.collect { 
+				def parts = it.split()
+				parts[0]+"-"+rights[0] + " " + parts[1]+"-"+rights[0] + " " + parts[2] 
+			}
+		}
 
 		for( rn in rights ) {
 			def parts = rn.split(" ")
@@ -113,20 +117,19 @@ class ExpandComps {
 		}
 
 		String[] parts = line.split(" - ")
-		//        print(parts, file=sys.stderr)
-
-		if( ! parts[1].contains("/") )
-			parts[1] += " noun:m:nv"
 
 		if( parts_all.size() > 1 ) {
 			def extra_tags = parts_all[1]
 			parts[0] += " " + extra_tags
-			parts[1] += " " + extra_tags
+			
+			if( parts[1].contains("/") ) {
+				parts[1] += " " + extra_tags
+			}
 		}
 
 		def lefts = expand.expand_line(parts[0]) //, true)
 
-		def rights = expand.expand_line(parts[1]) //, true)
+		def rights = parts[1].contains("/") ? expand.expand_line(parts[1]) : [parts[1]]
 
 		def comps = match_comps(lefts, rights)
 

@@ -502,80 +502,6 @@
 все adv:v-u|conj:coord:v-u|part:v-u
 усе adv:v-u|conj:coord:v-u|part:v-u
 
-котрий-небудь котрий-небудь adj:m:v_naz/v_zn2:&pron:ind
-котрого-небудь котрий-небудь adj:m:v_rod/v_zn1//n:v_rod:&pron:ind
-котрому-небудь котрий-небудь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-котрим-небудь котрий-небудь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
-котрім-небудь котрий-небудь adj:m:v_mis//n:v_mis:&pron:ind
-котра-небудь котрий-небудь adj:f:v_naz:&pron:ind
-котрої-небудь котрий-небудь adj:f:v_rod:&pron:ind
-котрій-небудь котрий-небудь adj:f:v_dav/v_mis:&pron:ind
-котру-небудь котрий-небудь adj:f:v_zna:&pron:ind
-котрою-небудь котрий-небудь adj:f:v_oru:&pron:ind
-котре-небудь котрий-небудь adj:n:v_naz/v_zna:&pron:ind
-котрі-небудь котрий-небудь adj:p:v_naz/v_zn2:&pron:ind
-котрих-небудь котрий-небудь adj:p:v_rod/v_zn1/v_mis:&pron:ind
-котрими-небудь котрий-небудь adj:p:v_oru:&pron:ind
-
-котрий-будь котрий-будь adj:m:v_naz/v_zn2:&pron:ind
-котрого-будь котрий-будь adj:m:v_rod/v_zn1//n:v_rod:&pron:ind
-котрому-будь котрий-будь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-котрим-будь котрий-будь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
-котрім-будь котрий-будь adj:m:v_mis//n:v_mis:&pron:ind
-котра-будь котрий-будь adj:f:v_naz:&pron:ind
-котрої-будь котрий-будь adj:f:v_rod:&pron:ind
-котрій-будь котрий-будь adj:f:v_dav/v_mis:&pron:ind
-котру-будь котрий-будь adj:f:v_zna:&pron:ind
-котрою-будь котрий-будь adj:f:v_oru:&pron:ind
-котре-будь котрий-будь adj:n:v_naz/v_zna:&pron:ind
-котрі-будь котрий-будь adj:p:v_naz/v_zn2:&pron:ind
-котрих-будь котрий-будь adj:p:v_rod/v_zn1/v_mis:&pron:ind
-котрими-будь котрий-будь adj:p:v_oru:&pron:ind
-
-який-небудь який-небудь adj:m:v_naz/v_zn2:&pron:ind
-якого-небудь який-небудь adj:m:v_rod/v_zn1//n:v_rod:&pron:ind
-якому-небудь який-небудь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-яким-небудь який-небудь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
-яка-небудь який-небудь adj:f:v_naz:&pron:ind
-якої-небудь який-небудь adj:f:v_rod:&pron:ind
-якій-небудь який-небудь adj:f:v_dav/v_mis:&pron:ind
-яку-небудь який-небудь adj:f:v_zna:&pron:ind
-якою-небудь який-небудь adj:f:v_oru:&pron:ind
-яке-небудь який-небудь adj:n:v_naz/v_zna:&pron:ind
-які-небудь який-небудь adj:p:v_naz/v_zn2:&pron:ind
-яких-небудь який-небудь adj:p:v_rod/v_zn1/v_mis:&pron:ind
-якими-небудь який-небудь adj:p:v_oru:&pron:ind
-
-чий-небудь чий-небудь adj:m:v_naz/v_zn2:&pron:ind
-чийого-небудь чий-небудь adj:m:v_rod/v_zn1//n:v_rod:&pron:ind
-чийому-небудь чий-небудь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-чиєму-небудь чий-небудь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-чиїм-небудь чий-небудь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
-чия-небудь чий-небудь adj:f:v_naz:&pron:ind
-чиєї-небудь чий-небудь adj:f:v_rod:&pron:ind
-чиїй-небудь чий-небудь adj:f:v_dav/v_mis:&pron:ind
-чию-небудь чий-небудь adj:f:v_zna:&pron:ind
-чиєю-небудь чий-небудь adj:f:v_oru:&pron:ind
-чиє-небудь чий-небудь adj:n:v_naz/v_zna:&pron:ind
-чиї-небудь чий-небудь adj:p:v_naz/v_zn2:&pron:ind
-чиїх-небудь чий-небудь adj:p:v_rod/v_zn1/v_mis:&pron:ind
-чиїми-небудь чий-небудь adj:p:v_oru:&pron:ind
-
-чий-будь чий-будь adj:m:v_naz/v_zn2:&pron:ind
-чийого-будь чий-будь adj:m:v_rod/v_zn1//n:v_rod:&pron:ind
-чийому-будь чий-будь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-чиєму-будь чий-будь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-чиїм-будь чий-будь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
-чия-будь чий-будь adj:f:v_naz:&pron:ind
-чиєї-будь чий-будь adj:f:v_rod:&pron:ind
-чиїй-будь чий-будь adj:f:v_dav/v_mis:&pron:ind
-чию-будь чий-будь adj:f:v_zna:&pron:ind
-чиєю-будь чий-будь adj:f:v_oru:&pron:ind
-чиє-будь чий-будь adj:n:v_naz/v_zna:&pron:ind
-чиї-будь чий-будь adj:p:v_naz/v_zn2:&pron:ind
-чиїх-будь чий-будь adj:p:v_rod/v_zn1/v_mis:&pron:ind
-чиїми-будь чий-будь adj:p:v_oru:&pron:ind
-
 той-таки той-таки adj:m:v_naz/v_zn2:&pron:dem
 того-таки той-таки adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
 тому-таки той-таки adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
@@ -591,21 +517,6 @@
 ті-таки той-таки adj:p:v_naz/v_zn2:&pron:dem
 тих-таки той-таки adj:p:v_rod/v_zn1/v_mis:&pron:dem
 тими-таки той-таки adj:p:v_oru:&pron:dem
-
-такий-то такий-то adj:m:v_naz/v_zn2:&pron:dem
-такого-то такий-то adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
-такому-то такий-то adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
-таким-то такий-то adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
-такім-то такий-то adj:m:v_mis//n:v_mis:&pron:dem
-така-то такий-то adj:f:v_naz:&pron:dem
-такої-то такий-то adj:f:v_rod:&pron:dem
-такій-то такий-то adj:f:v_dav/v_mis:&pron:dem
-таку-то такий-то adj:f:v_zna:&pron:dem
-такою-то такий-то adj:f:v_oru:&pron:dem
-таке-то такий-то adj:n:v_naz/v_zna:&pron:dem
-такі-то такий-то adj:p:v_naz/v_zn2:&pron:dem
-таких-то такий-то adj:p:v_rod/v_zn1/v_mis:&pron:dem
-такими-то такий-то adj:p:v_oru:&pron:dem
 
 сам-самісінький сам-самісінький adj:m:v_naz/v_zn2:&pron:def
 самого-самісінького сам-самісінький adj:m:v_rod/v_zn1//n:v_rod:&pron:def
@@ -1051,10 +962,10 @@
 
 щодесять adv
 
-вище високо adv:compr
-найвище високо adv:super
-якнайвище високо adv:super
-щонайвище високо adv:super
+#вище високо adv:compr
+#найвище високо adv:super
+#якнайвище високо adv:super
+#щонайвище високо adv:super
 
 
 # Прийменники
