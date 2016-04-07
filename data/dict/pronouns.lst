@@ -407,6 +407,40 @@
 тих той adj:p:v_rod/v_zn1/v_mis:&pron:dem
 тими той adj:p:v_oru:&pron:dem
 
+той той noun:m:v_naz:anim:&pron:dem:xp1
+того той noun:m:v_rod/v_zna//n:v_rod:anim:&pron:dem:xp1
+тому той noun:m:v_dav/v_mis//n:v_dav/v_mis:anim:&pron:dem:xp1
+тим той noun:m:v_oru//n:v_oru//p:v_dav:anim:&pron:dem:xp1
+тім той noun:m:v_mis//n:v_mis:anim:&pron:dem:xp1
+та той noun:f:v_naz:anim:&pron:dem:xp1
+тої той noun:f:v_rod:anim:&pron:dem:xp1
+тієї той noun:f:v_rod:anim:&pron:dem:xp1
+тій той noun:f:v_dav/v_mis:anim:&pron:dem:xp1
+ту той noun:f:v_zna:anim:&pron:dem:xp1
+тією той noun:f:v_oru:anim:&pron:dem:xp1
+тою той noun:f:v_oru:anim:&pron:dem:xp1
+те той noun:n:v_naz/v_zna:anim:&pron:dem:xp1
+ті той noun:p:v_naz:anim:&pron:dem:xp1
+тих той noun:p:v_rod/v_zna/v_mis:anim:&pron:dem:xp1
+тими той noun:p:v_oru:anim:&pron:dem:xp1
+
+той той noun:m:v_naz/v_zna:inanim:&pron:dem:xp2
+того той noun:m:v_rod/v_zna//n:v_rod:inanim:&pron:dem:xp2
+тому той noun:m:v_dav/v_mis//n:v_dav/v_mis:inanim:&pron:dem:xp2
+тим той noun:m:v_oru//n:v_oru//p:v_dav:inanim:&pron:dem:xp2
+тім той noun:m:v_mis//n:v_mis:inanim:&pron:dem:xp2
+та той noun:f:v_naz:inanim:&pron:dem:xp2
+тої той noun:f:v_rod:inanim:&pron:dem:xp2
+тієї той noun:f:v_rod:inanim:&pron:dem:xp2
+тій той noun:f:v_dav/v_mis:inanim:&pron:dem:xp2
+ту той noun:f:v_zna:inanim:&pron:dem:xp2
+тією той noun:f:v_oru:inanim:&pron:dem:xp2
+тою той noun:f:v_oru:inanim:&pron:dem:xp2
+те той noun:n:v_naz/v_zna:inanim:&pron:dem:xp2
+ті той noun:p:v_naz/v_zna:inanim:&pron:dem:xp2
+тих той noun:p:v_rod/v_mis:inanim:&pron:dem:xp2
+тими той noun:p:v_oru:inanim:&pron:dem:xp2
+
 позатой позатой adj:m:v_naz/v_zn2:&pron:dem
 позатого позатой adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
 позатому позатой adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
