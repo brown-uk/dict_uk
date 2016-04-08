@@ -2831,6 +2831,13 @@
   сім'ям noun:inanim:n:v_oru
   сімені noun:inanim:n:v_mis
   сім'я noun:inanim:n:v_kly
+Склодовська-Кюрі noun:anim:f:v_naz:prop:lname
+  Склодовської-Кюрі noun:anim:f:v_rod:prop:lname
+  Склодовській-Кюрі noun:anim:f:v_dav:prop:lname
+  Склодовську-Кюрі noun:anim:f:v_zna:prop:lname
+  Склодовською-Кюрі noun:anim:f:v_oru:prop:lname
+  Склодовській-Кюрі noun:anim:f:v_mis:prop:lname
+  Склодовська-Кюрі noun:anim:f:v_kly:prop:lname
 стафілокок noun:unanim:m:v_naz
   стафілокока noun:unanim:m:v_rod
   стафілококові noun:unanim:m:v_dav
@@ -2997,6 +3004,34 @@
   сутяжищами noun:anim:p:v_oru:xp2
   сутяжищах noun:anim:p:v_mis:xp2
   сутяжища noun:anim:p:v_kly:xp2
+такий-то adj:m:v_naz:&pron:dem
+  такого-то adj:m:v_rod:&pron:dem
+  такому-то adj:m:v_dav:&pron:dem
+  такого-то adj:m:v_zna:ranim:&pron:dem
+  такий-то adj:m:v_zna:rinanim:&pron:dem
+  таким-то adj:m:v_oru:&pron:dem
+  такім-то adj:m:v_mis:&pron:dem
+  такому-то adj:m:v_mis:&pron:dem
+  така-то adj:f:v_naz:&pron:dem
+  такої-то adj:f:v_rod:&pron:dem
+  такій-то adj:f:v_dav:&pron:dem
+  таку-то adj:f:v_zna:&pron:dem
+  такою-то adj:f:v_oru:&pron:dem
+  такій-то adj:f:v_mis:&pron:dem
+  таке-то adj:n:v_naz:&pron:dem
+  такого-то adj:n:v_rod:&pron:dem
+  такому-то adj:n:v_dav:&pron:dem
+  таке-то adj:n:v_zna:&pron:dem
+  таким-то adj:n:v_oru:&pron:dem
+  такім-то adj:n:v_mis:&pron:dem
+  такому-то adj:n:v_mis:&pron:dem
+  такі-то adj:p:v_naz:&pron:dem
+  таких-то adj:p:v_rod:&pron:dem
+  таким-то adj:p:v_dav:&pron:dem
+  таких-то adj:p:v_zna:ranim:&pron:dem
+  такі-то adj:p:v_zna:rinanim:&pron:dem
+  такими-то adj:p:v_oru:&pron:dem
+  таких-то adj:p:v_mis:&pron:dem
 тюрма noun:inanim:f:v_naz
   тюрми noun:inanim:f:v_rod
   тюрмі noun:inanim:f:v_dav

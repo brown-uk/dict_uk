@@ -49,7 +49,12 @@ class BaseTags {
 				tag = ":f:v_naz/v_kly"
 			}
 			else if( word.endsWith("ій") ) {
-				tag = ":m:v_naz/v_zn2/v_kly//f:v_dav/v_mis"
+				if( affixFlag.startsWith("adj_pron") ) {
+					tag = ":m:v_naz/v_zn2/v_kly"
+				}
+				else {
+					tag = ":m:v_naz/v_zn2/v_kly//f:v_dav/v_mis"
+				}
 			}
 			else {
 				tag = ":m:v_naz/v_zn2/v_kly"
@@ -59,7 +64,12 @@ class BaseTags {
 		}
 
 		if( affixFlag == "numr" ) {
-			tag = ":p:v_naz/v_zna"
+		    if( word.endsWith("ин") ) {
+		        tag = ":m:v_naz/v_zn2"
+		    }
+		    else {
+			    tag = ":p:v_naz/v_zna"
+			}
 			return tag
 		}
 

@@ -432,7 +432,8 @@ class Expand {
 					}
 				}
 				
-				if( ! main_flag.contains("np") && ! main_flag.contains(".p") && ! flags.contains("n2adj") ) {
+				if( ! main_flag.contains("np") && ! main_flag.contains(".p") \
+				        && ! flags.contains("n2adj") && ! main_flag.contains("numr") ) {
 					if( line.contains(":p:") ) {
 						// log.debug("skipping line with p: " + line)
 					}

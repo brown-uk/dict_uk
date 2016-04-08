@@ -55,7 +55,8 @@
 ВНП noun:m:nv    # Валовий національний продукт
 ВО noun:n:nv
 ВООЗ noun:f:nv:prop    # Всесвітня організація охорони здоров’я
-ВПК noun:m:nv
+ВПК noun:m:nv           # Військово промисловий комплекс
+ВПЛ noun:m:nv:prop      # Вірус папіломи людини
 ВПС noun:p:nv:ns
 ВР noun:f:nv:np
 ВРУ noun:f:nv:prop
