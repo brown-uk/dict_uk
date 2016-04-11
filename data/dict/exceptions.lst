@@ -298,6 +298,12 @@
 
 панове пан noun:p:v_kly:anim
 
+чудеса чудо noun:p:v_naz/v_zna:xp2
+чудес чудо noun:p:v_rod:xp2
+чудесам чудо noun:p:v_dav:xp2
+чудесами чудо noun:p:v_oru:xp2
+чудесах чудо noun:p:v_mis:xp2
+
 # давні форми
 бельмес бельмес noun:m:v_naz:rare
 бельмеса бельмес noun:m:v_rod
