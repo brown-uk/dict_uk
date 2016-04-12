@@ -47,7 +47,8 @@ class Util {
 	def firstname(String word, String allAffixFlags) {
 		return (allAffixFlags.contains("<") && ! allAffixFlags.contains(">")) \
 			&& ! allAffixFlags.contains("<+") \
-			&& word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase()
+			&& word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase() \
+			&& ! allAffixFlags.contains(":prop")    // Всевишній - :prop but not :fname
 	}
 
 	def DUAL_LAST_NAME_PATTERN = ~ ".*(о|ич|ук|юк|як|аш|яш|сь|ун|ин|сон) "

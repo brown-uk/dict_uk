@@ -426,6 +426,13 @@
   блохами noun:anim:p:v_oru
   блохах noun:anim:p:v_mis
   блохи noun:anim:p:v_kly
+Богородиця noun:anim:f:v_naz:prop
+  Богородиці noun:anim:f:v_rod:prop
+  Богородиці noun:anim:f:v_dav:prop
+  Богородицю noun:anim:f:v_zna:prop
+  Богородицею noun:anim:f:v_oru:prop
+  Богородиці noun:anim:f:v_mis:prop
+  Богородице noun:anim:f:v_kly:prop
 босовило noun:anim:m:v_naz
   босовила noun:anim:m:v_rod
   босовилові noun:anim:m:v_dav
@@ -1617,13 +1624,13 @@
   воротами noun:inanim:p:v_oru:ns
   воротах noun:inanim:p:v_mis:ns
   ворота noun:inanim:p:v_kly:ns
-Всевишній noun:anim:m:v_naz:prop:fname
-  Всевишнього noun:anim:m:v_rod:prop:fname
-  Всевишньому noun:anim:m:v_dav:prop:fname
-  Всевишнього noun:anim:m:v_zna:prop:fname
-  Всевишнім noun:anim:m:v_oru:prop:fname
-  Всевишньому noun:anim:m:v_mis:prop:fname
-  Всевишній noun:anim:m:v_kly:prop:fname
+Всевишній noun:anim:m:v_naz:prop
+  Всевишнього noun:anim:m:v_rod:prop
+  Всевишньому noun:anim:m:v_dav:prop
+  Всевишнього noun:anim:m:v_zna:prop
+  Всевишнім noun:anim:m:v_oru:prop
+  Всевишньому noun:anim:m:v_mis:prop
+  Всевишній noun:anim:m:v_kly:prop
 всеношна noun:inanim:f:v_naz:v-u
   всеношної noun:inanim:f:v_rod:v-u
   всеношній noun:inanim:f:v_dav:v-u

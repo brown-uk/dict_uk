@@ -1,5 +1,5 @@
-Всього лем: 266
-  словникових лем (без advp, без омонімів imperf/perf та adjp/adj) 245
+Всього лем: 267
+  словникових лем (без advp, без омонімів imperf/perf та adjp/adj) 246
 
 Частоти за тегами:
 adj 55
@@ -13,14 +13,14 @@ adv 38
 advp 20
      imperf 11
      perf 9
-noun 129
-     anim 74
-     fname 9
+noun 130
+     anim 75
+     fname 8
      inanim 54
      lname 23
      nv 10
      patr 4
-     prop 37
+     prop 38
 numr 2
      nv 1
 prep 1
