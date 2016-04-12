@@ -399,6 +399,12 @@
 стільком стільки numr:p:v_dav:&pron:dem
 стількома стільки numr:p:v_oru:&pron:dem
 
+стільки-то adv:&pron:dem
+стільки-то стільки-то numr:p:v_naz/v_zna:&pron:dem
+стількох-то стільки-то numr:p:v_rod/v_zna/v_mis:&pron:dem
+стільком-то стільки-то numr:p:v_dav:&pron:dem
+стількома-то стільки-то numr:p:v_oru:&pron:dem
+
 скільки-небудь скільки-небудь numr:p:v_naz/v_zna:&pron:ind
 скількох-небудь скільки-небудь numr:p:v_rod/v_zna/v_mis:&pron:ind
 скільком-небудь скільки-небудь numr:p:v_dav:&pron:ind
@@ -968,6 +974,7 @@
 також adv|conj:coord
 так adv:&pron:dem|part|conj:coord:subord
 там adv:&pron:dem|part
+там-то adv:&pron:dem
 та conj:coord|part
 теє part
 теж adv|part
@@ -1018,6 +1025,7 @@
 угу part
 чень part
 чортзна чортзна part
+як-таки part
 
 # рідковживані
 ув ув prep:rv_zna:rv_mis:rv_rod
