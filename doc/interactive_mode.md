@@ -14,5 +14,10 @@
 Для виходу набрати exit або Ctrl+C
 
 
-Опис прапорців ось тут https://github.com/arysin/dict_uk/blob/master/doc/affix_groups.txt
-Приклад вхідних рядків можна глянути тут https://github.com/arysin/dict_uk/blob/master/data/dict/slang.lst
+Для групи слів згенерувати всі форми найкраще через канал:
+
+  cat word_list.txt | gradle -q -Pflat=true expandInteractive > word_forms.txt
+
+
+[Опис прапорців](../doc/affix_groups.txt)
+[Приклад вхідних рядків](../data/dict/slang.lst)
