@@ -1,22 +1,52 @@
-This is a project to generate POS tag dictionary for Ukrainian language.
+## Це — проект генерування словника з тегами частин мови для української мови. ##
 
-Це — проект генерування словника з тегами частин мови для української мови.
-
-
-Description:
-
-    For all files in data/dict the project generates all possible word forms with POS tags
-    by using affix rules from files in data/affix.
+## This is a project to generate POS tag dictionary for Ukrainian language. ##
 
 
-Required software:
+
+### Опис ###
+    Для всіх файлів в data/dict цей проект генерує всі можливі словоформи з тегами частин мови
+    за допомогою правил афіксів у каталозі data/affix.
+
+
+### Потрібні програмні засоби ###
     * java (>=1.8)
     * gradle
 
 
-How to run:
+### Застосування ###
+    зі словником можна робити дві речі:
+    # згенерувати всі можливі словоформи для слів, що вже є в словнику (див. параграф «Як запускати» нижче)
+    # генерувати форми для довільних слів в інтерактивному режимі: див. https://github.com/arysin/dict_uk/blob/master/doc/interactive_mode.md
 
-    # gradle expandForCorp
+
+### Як запускати ###
+
+    # gradle expand
+    На виході:
+
+        * out/dict_corp_vis.txt - словник у візуальному форматі (з відступами, згрупований за лемами) для перегляду, аналізу і опрацьовування
+        * out/dict_corp_lt.txt - словник у табличному форматі для використання в ПЗ, зокрема з цього файлу генеруємо словник morfologik, що використовується в LanguageTool
+        * out/words.txt - список всіх відомих словоформ
+        * out/words_spell.txt - список всіх відомих словоформ, правильних з погляду правопису
+        * out/lemmas.txt - список лем
+        * out/tags.txt - список тегів
+
+
+
+
+### Description ###
+    For all files in data/dict the project generates all possible word forms with POS tags
+    by using affix rules from files in data/affix.
+
+
+### Required software ###
+    * java (>=1.8)
+    * gradle
+
+
+### How to run ###
+    # gradle expand
     Output:
 
         * out/dict_corp_vis.txt - Dictionary in visual (indented) format for review, analysis or conversion
