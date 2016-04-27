@@ -20,4 +20,5 @@
 
 
 [Опис прапорців](../doc/affix_groups.txt)
+
 [Приклад вхідних рядків](../data/dict/slang.lst)
