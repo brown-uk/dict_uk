@@ -142,7 +142,23 @@ task createSpellDict(type: JavaExec, dependsOn: prepareSpellWords) {
 }
 
 
-task copyDictFiles(type: Copy, dependsOn: classes) {
+task createCaseGovernmentDict() {
+    def srcDict="${inputDir}/../data/dict/base.lst"
+    def outFile="${outputDir}/case_government.txt"
+
+    inputs.file srcDict
+    outputs.file outFile
+
+    doLast {
+        def rvLines = new File(srcDict).text.split('\n').findAll{ 
+            it.contains(' /adj') && it.contains('rv_') 
+        }.collect{ it.replaceAll(/^(.*?) .*(rv_...(:rv_...)?).*/, '$1 $2').replace("rv_", "v_") }
+        new File(outFile).text = rvLines.join('\n')
+    }
+}
+
+
+task deployToLT(type: Copy, dependsOn: classes) {
     from outputDir
     into "${languagetoolDictDestDir}"
 
@@ -160,7 +176,7 @@ jar {
     }
 }
 
-classes.dependsOn(createPOSDict, createSynthDict, createTagList, createSpellDict)
+classes.dependsOn(createPOSDict, createSynthDict, createTagList, createSpellDict, createCaseGovernmentDict)
 compileJava.enabled = false
 
 
