@@ -2,10 +2,10 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
-version = '3.3-SNAPSHOT'
+version = '3.4'
 group = 'org.languagetool'
 
-String ltVersion = '3.3-SNAPSHOT'
+String ltVersion = '3.4-SNAPSHOT'
 
 String langCode="uk"
 

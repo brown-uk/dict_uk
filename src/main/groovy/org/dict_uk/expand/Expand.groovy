@@ -485,7 +485,7 @@ class Expand {
 						continue
 				}
 
-				if( flags.contains(":&pron") ) {
+				if( flags.contains(":&pron") && ! (line.split()[1] in ["мій", "твій", "наш", "ваш"]) ) {
 					line = line.replace("/v_kly", "")
 				}
 

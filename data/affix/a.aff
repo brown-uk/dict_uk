@@ -284,13 +284,13 @@ group adj_pron
 0       ому     # самому сам    @ adj:m:v_dav/v_mis//n:v_dav/v_mis
 0       им      # самим сам    @ adj:m:v_oru//n:v_oru//p:v_dav
 0       ім      # самім сам    @ adj:m:v_mis//n:v_mis
-0       а       # сама сам    @ adj:f:v_naz
+0       а       # сама сам    @ adj:f:v_naz/v_kly
 0       ої      # самої сам    @ adj:f:v_rod
 0       ій      # самій сам    @ adj:f:v_dav/v_mis
 0       у       # саму сам    @ adj:f:v_zna
 0       ою      # самою сам    @ adj:f:v_oru
-0       е       # саме сам    @ adj:n:v_naz/v_zna
-0       і       # самі сам    @ adj:p:v_naz/v_zn2
+0       е       # саме сам    @ adj:n:v_naz/v_zna/v_kly
+0       і       # самі сам    @ adj:p:v_naz/v_zn2/v_kly
 0       ими     # самими сам    @ adj:p:v_oru
 0       их      # самих сам    @ adj:p:v_rod/v_zn1/v_mis
 
