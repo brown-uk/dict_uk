@@ -20,6 +20,12 @@
 2. генерувати форми для довільних слів в інтерактивному режимі: [докладніше](doc/interactive_mode.md)
 
 
+### Як встановити ###
+* Встановити java і gradle
+* (Лише для Windows) встановити і запустити git bash
+* Клонувати проект: `git clone https://github.com/arysin/dict_uk.git`
+* Зайти в теку проекту: cd dict_uk
+
 ### Як запускати ###
 
     `gradle expand`
