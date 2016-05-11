@@ -9,6 +9,8 @@ subgroup adj.adv
 # Прикметники з чергуванням -ів/-ев
 group adj_ev
 
+group adj_pron
+
 
 
 Файл: n1.aff:
@@ -63,6 +65,9 @@ subgroup n20.pyn
 
 # Множина народностей з вкорченням в р.в: циган
 subgroup n20.p1
+
+# Множина з м’яким закінченням
+subgroup n20.p4
 
 # Іменники другої відміни ч.р. з чергуванням (і/о)
 group n21
@@ -219,6 +224,8 @@ group np3
 
 # Генерування по батькові від імен
 subgroup n.patr
+
+subgroup n.patr_pl
 
 
 
