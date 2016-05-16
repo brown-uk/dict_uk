@@ -143,18 +143,29 @@ task createSpellDict(type: JavaExec, dependsOn: prepareSpellWords) {
 
 
 task createCaseGovernmentDict() {
-    def srcDict="${inputDir}/../data/dict/base.lst"
+    def srcDir="${inputDir}/../data/dict"
     def outFile="${outputDir}/case_government.txt"
+    def srcFiles=["base.lst", "twisters.lst"]
 
-    inputs.file srcDict
+    inputs.file srcFiles.collect{ "$srcDir/$it" }
     outputs.file outFile
 
-    doLast {
-        def rvLines = new File(srcDict).text.split('\n').findAll{ 
-            it.contains(' /adj') && it.contains('rv_') 
-        }.collect{ it.replaceAll(/^(.*?) .*(rv_...(:rv_...)?).*/, '$1 $2').replace("rv_", "v_") }
-        new File(outFile).text = rvLines.join('\n')
-    }
+	doLast {
+		def allOutput = ''
+
+		srcFiles.each{ srcFile ->
+
+			def rvLines = new File("$srcDir/$srcFile").text.split('\n').findAll{
+				(it.contains(' /adj') || it.contains("+cs=")) && it.contains(' rv_')
+			}.collect{
+				it.replaceFirst(/^(?: \+cs=)?(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2').replace("rv_", "v_")
+			}
+
+			allOutput += rvLines.join('\n') + '\n'
+		}
+		
+		new File(outFile).text = allOutput
+	}
 }
 
 
