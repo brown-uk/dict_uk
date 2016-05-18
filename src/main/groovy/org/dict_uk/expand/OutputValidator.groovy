@@ -17,7 +17,7 @@ class OutputValidator {
 	static Logger log = LogManager.getFormatterLogger(OutputValidator.class);
 	
 	static final Pattern WORD_RE = Pattern.compile("[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ']*(-[а-яіїєґА-ЯІЇЄҐ']*)*|[А-ЯІЇЄҐ][А-ЯІЇЄҐ-]+|[а-яіїєґ]+\\.")
-	static final Pattern POS_RE = Pattern.compile("(noun:([iu]n)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|excl|conj:|predic|insert|transl).*")
+	static final Pattern POS_RE = Pattern.compile("(noun:([iu]n)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|intj|conj:|predic|insert|transl).*")
     static final List<String> IGNORED_NOUNS = ["бельмес", "давніх-давен", "основанья", "предку-віку", "роб", "свободівець", "шатер",
             "галай-балай", "вепр", "вихідець", "гратами", "мати-одиночка", "кінця-краю"]
 

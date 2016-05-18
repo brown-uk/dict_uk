@@ -59,6 +59,6 @@ public class DictSorterTest extends GroovyTestCase {
 	
 	@Test
 	void testAllLines() {
-		assert ["а а excl", "а а part"] == dictSorter.sort_all_lines(["а а part", "а а excl"])
+		assert ["а а intj", "а а part"] == dictSorter.sort_all_lines(["а а part", "а а intj"])
 	}
 }

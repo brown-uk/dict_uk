@@ -23,7 +23,7 @@
 вистреляти /v2 :perf
 відіткати /v2 :perf
 вісний /adj
-вісьта excl
+вісьта intj
 в'їжно в'їжно adv
 вколо вколо prep:rv_rod|adv
 вліжно вліжно adv
@@ -57,7 +57,7 @@
 йменований /adj :&adjp:pasv:imperf
 кально кально adv
 катмає катмає predic:coll
-ке excl
+ке intj
 ке ке predic
 кете кете predic
 кілько numr:p:v_naz/v_zna
@@ -66,7 +66,7 @@
 леда-який /adj :&pron:ind
 любля любля predic
 мабіть мабіть insert
-магайбі excl
+магайбі intj
 майбуть майбуть insert
 мізок /n22
 мість prep:rv_rod
@@ -246,7 +246,7 @@
 хоть conj:subord
 хоть part
 хотя part
-хресійбо excl
+хресійбо intj
 цьоця /n10.ku.<
 чортма чортма predic:coll
 чорт-ма чорт-ма predic:coll

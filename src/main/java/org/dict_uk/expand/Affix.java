@@ -224,7 +224,7 @@ public class Affix {
 	public static void main(String[] args) throws IOException {
 		Affix affix = new Affix();
 //		affix.load_affixes(args[0]);
-		System.err.println(affix.expand_alts(Arrays.asList("а conj:coord|part|excl"), "|"));
+		System.err.println(affix.expand_alts(Arrays.asList("а conj:coord|part|intj"), "|"));
 	}
 	
 }

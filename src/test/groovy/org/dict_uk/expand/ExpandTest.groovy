@@ -117,13 +117,13 @@ public class ExpandTest extends GroovyTestCase {
 def aFull =
 '''
 а а conj:coord
-а а excl
+а а intj
 а а part
 '''.trim()
 
 	@Test
 	void testFullAlt() {
-		def lines = ["а conj:coord|part|excl"]
+		def lines = ["а conj:coord|part|intj"]
 		assert expand.process_input(lines, false).join("\n") == aFull
 	}
 

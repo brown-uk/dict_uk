@@ -21,7 +21,7 @@ def
 dem
 dimin
 emph
-excl
+intj
 f
 fname
 futr

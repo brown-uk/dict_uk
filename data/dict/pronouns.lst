@@ -768,7 +768,7 @@
 невважаючи невважаючи prep:rv_zna
 нижче нижче prep:rv_zna
 о о prep:rv_zna:rv_mis
-о о excl
+о о intj
 об об prep:rv_zna:rv_mis
 обабіч обабіч prep:rv_rod
 обіч обіч prep:rv_rod
@@ -862,7 +862,7 @@
 
 # частки і сполучники
 # Однолітерні слова
-а а conj:coord|part|excl
+а а conj:coord|part|intj
 б б part
 ж ж conj:coord
 ж ж part
@@ -880,19 +880,19 @@
 адже part|conj:subord
 ажень part
 аж part|conj:subord
-але conj:coord|excl|part:rare
+але conj:coord|intj|part:rare
 амінь part|noun:n:nv:np
 аніж conj:subord
 ані-ні part
 ані conj:coord|part
-ану excl|part
+ану intj|part
 атож part
 ато part
-ач excl|part
-іч excl
-ич excl|part
+ач intj|part
+іч intj
+ич intj|part
 аякже part
-ба excl|part|conj:subord
+ба intj|part|conj:subord
 би part
 бодай part
 бо conj:subord|part
@@ -906,13 +906,13 @@
 все-таки part:v-u
 усе-таки part:v-u
 втім adv:v-u|conj:coord:v-u
-геть adv|excl|part
+геть adv|intj|part
 геть-то adv
 дедалі adv|part
 де adv:&pron:int:rel|part
 доки adv:&pron:int:rel|conj:subord
 допоки adv|conj:subord
-еге part|excl
+еге part|intj
 же part|conj:coord
 зате conj:coord
 затим adv
@@ -934,7 +934,7 @@
 начеб conj:subord|part
 наче conj:subord|part
 неначе conj:subord|part
-на part|excl
+на part|intj
 невже part
 немов conj:subord|part
 немовби conj:subord|part
@@ -948,8 +948,8 @@
 ніж conj:subord
 ні-ні part
 ні part
-нумо excl|part
-ну excl|part
+нумо intj|part
+ну intj|part
 однак conj:coord
 одначе conj:coord
 онде part|adv
@@ -1008,16 +1008,16 @@
 як adv:&pron:int:rel|conj:subord|part
 а-ля conj:subord
 
-ге part|excl
+ге part|intj
 се part
 осе part
 отсе part
 так-таки part
 ачей part
-так-так part|excl
+так-так part|intj
 всього-на-всього part
 усього-на-всього part
-но part|excl
+но part|intj
 онно part
 оно part
 так-то part|adv
