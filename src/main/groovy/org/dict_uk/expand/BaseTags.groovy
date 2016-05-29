@@ -99,6 +99,9 @@ class BaseTags {
 		    else if( word.endsWith("а") || word.endsWith("я") ) {
 			    tag = ":f:v_naz/v_kly"
 			}
+		    else if( word.endsWith("і") ) {
+			    tag = ":p:v_naz/v_kly"
+			}
 			else {
     			tag = ":m:v_naz/v_kly" + v_zna_for_inanim
 			}

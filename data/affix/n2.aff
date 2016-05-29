@@ -184,6 +184,18 @@ subgroup n20.p1
 0	ах			#  циганах 	            @ noun:p:v_mis
 
 
+# Множина з чергуванням г/з
+
+subgroup n20.pzi
+
+г:
+г	зі		    #  друзі	                    @ noun:p:v_naz
+г	зів		    #  друзів 	                    @ noun:p:v_rod
+г	зям			#  друзям 	            @ noun:p:v_dav
+г	зями		#  друзями 	            @ noun:p:v_oru
+г	зях			#  друзях 	            @ noun:p:v_mis
+
+
 # Множина з м’яким закінченням
 
 subgroup n20.p4

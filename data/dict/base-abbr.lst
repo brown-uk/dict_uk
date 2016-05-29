@@ -26,6 +26,7 @@
 б-ка /n10.p2
 БМД noun:m:nv
 БМП noun:f:nv
+БПЛА noun:m:nv          # безпілотний літальний апарат
 БРІК noun:n:nv:np:prop    # Brazil, Russia, India, China, South Africa
 БРСР noun:f:nv:np:prop
 БТР noun:m:nv
@@ -121,6 +122,7 @@
 ДПСУ noun:f:nv:prop    # Державна прикордонна служба України
 д-р /n20.a.p.<
 ДРВ noun:f:nv
+ДРГ noun:f:nv           # диверсійно-розвідувальна група
 ДРЕС noun:f:nv
 ДРК noun:f:nv
 ДС noun:m:nv

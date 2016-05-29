@@ -53,10 +53,27 @@ group n2adj1
 
 # відприкметникові іменники (тільки с. р.) 
 
-[вгджклнтхчшщ]е:
+е:
 е	ого			#  неподільне  неподільного 	         @ noun:n:v_rod
 е	ому			#  неподільне  неподільному 	         @ noun:n:v_dav/v_mis
 е	им			#  неподільне  неподільним	             @ noun:n:v_oru
+
+[^']є:
+є	ього			#   полуднього 	          @ noun:n:v_rod:np
+є	ьому			#   полудньому 	          @ noun:n:v_dav/v_mis:np
+є	ім			    #   полуднім 	            @ noun:n:v_oru/v_mis:np
+
+'є:
+є	його			#   Остап'його 	          @ noun:n:v_rod:np
+є	йому			#   Остап'йому 	          @ noun:n:v_dav/v_mis:np
+є	їм			    #   Остап'їм 	            @ noun:n:v_oru/v_mis:np
+
+і:
+і	им			#   війчастим 	            @ noun:p:v_dav
+і	і			#   війчасті 	            @ noun:p:v_naz/v_zna/v_kly
+#і	ії			#   війчастії 	            @ noun:p:v_naz/v_zna/v_kly:uncontr
+і	их			#   війчастих 	            @ noun:p:v_rod/v_zna/v_mis
+і	ими			#   війчастими             @ noun:p:v_oru
 
 
 subgroup n2adj1.im
@@ -91,19 +108,65 @@ subgroup n2adj1.ke
 
 
 
+# Жіночий рід для відприкметникових іменників з ч.р.
+
+subgroup n2adj1.f
+
+ий:
+ий	а			#   відіслана 	            @ noun:f:v_naz/v_kly
+#ий	ая			#   відісланая 	            @ noun:f:v_naz/v_kly:uncontr
+ий	ої			#   відісланої 	            @ noun:f:v_rod
+ий	ій			#   відісланій 	            @ noun:f:v_dav/v_mis
+ий	у			#   відіслану 	            @ noun:f:v_zna
+#ий	ую			#   відісланую 	            @ noun:f:v_zna:uncontr
+ий	ою			#   відісланою 	            @ noun:f:v_oru
+
+ій:
+ій	я			#   синя 		                    @ noun:f:v_naz/v_kly
+#ій	яя			#   синяя 		                    @ noun:f:v_naz/v_kly:uncontr
+ій	ьої			#   синьої		            @ noun:f:v_rod
+ій	ій			#   синій		            @ noun:f:v_dav/v_mis
+ій	ю			#   синю 		                    @ noun:f:v_zna
+#ій	юю			#   синюю 		                    @ noun:f:v_zna:uncontr
+ій	ьою			#   синьою		            @ noun:f:v_oru
+
+
+# Множина для відприкметникових іменників
+
 subgroup n2adj1.p
+
 ий:
 ий	им			#   відісланим 	            @ noun:p:v_dav
 ий	і			#   відіслані 	            @ noun:p:v_naz/v_zna/v_kly
-ий	ії			#   відісланії 	            @ noun:p:v_naz/v_zna/v_kly:uncontr
+#ий	ії			#   відісланії 	            @ noun:p:v_naz/v_zna/v_kly:uncontr
 ий	их			#   відісланих 	            @ noun:p:v_rod/v_zna/v_mis
 ий	ими			#   відісланими             @ noun:p:v_oru
 
+[ії]й:
+й	0			#   сині 		                    @ noun:p:v_naz/v_kly
+#й	ї			#   синії 		                    @ noun:p:v_naz/v_kly:uncontr
+й	х			#   синіх 		        @ noun:p:v_rod/v_zna/v_mis
+й	м			#   синім		            @ noun:p:v_dav
+й	ми			#   синіми		            @ noun:p:v_oru
+
+а:
+а	і			#   операційні 	            @ noun:p:v_naz/v_zna/v_kly
+#а	ії			#   операційнії 	            @ noun:p:v_naz/v_zna/v_kly:uncontr
+а	их			#   операційних 	            @ noun:p:v_rod/v_zna/v_mis
+а	им			#   операційним 	            @ noun:p:v_dav
+а	ими			#   операційними             @ noun:p:v_oru
+
+я:
+я	ї			#   нічиї 		                    @ noun:p:v_naz/v_kly
+я	их			#   нічиїх 	            @ noun:p:v_rod/v_zna/v_mis
+я	им			#   нічиїм 	            @ noun:p:v_dav
+я	ими			#   нічиїми 	            @ noun:p:v_oru
+
 е:
-е	им			#   шампанським 	        @ noun:p:v_dav
 е	і			#   шампанські 	            @ noun:p:v_naz/v_zna/v_kly
-е	ії			#   шампанськії 	        @ noun:p:v_naz/v_zna/v_kly:uncontr
+#е	ії			#   шампанськії 	        @ noun:p:v_naz/v_zna/v_kly:uncontr
 е	их			#   шампанських 	        @ noun:p:v_rod/v_zna/v_mis
+е	им			#   шампанським 	        @ noun:p:v_dav
 е	ими			#   шампанськими            @ noun:p:v_oru
 
 
