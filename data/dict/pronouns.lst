@@ -275,6 +275,8 @@
 наш /adj_pron :&pron:pos
 ваш /adj_pron :&pron:pos
 
+наші /n2adj1.< :&pron:pos
+
 цей /adj_pron :&pron:dem
 оцей /adj_pron :&pron:dem
 
@@ -289,6 +291,61 @@
 
 все adv:v-u|conj:coord:v-u|part:v-u
 усе adv:v-u|conj:coord:v-u|part:v-u
+
+все все noun:inanim:n:v_naz:&pron:gen:v-u
+всього все noun:inanim:n:v_rod:&pron:gen:v-u
+всьому все noun:inanim:n:v_dav:&pron:gen:v-u
+все все noun:inanim:n:v_zna:&pron:gen:v-u
+всім все noun:inanim:n:v_oru:&pron:gen:v-u
+всім все noun:inanim:n:v_mis:&pron:gen:v-u
+всьому все noun:inanim:n:v_mis:&pron:gen:v-u
+
+усе усе noun:inanim:n:v_naz:&pron:gen:v-u
+усього усе noun:inanim:n:v_rod:&pron:gen:v-u
+усьому усе noun:inanim:n:v_dav:&pron:gen:v-u
+усе усе noun:inanim:n:v_zna:&pron:gen:v-u
+усім усе noun:inanim:n:v_oru:&pron:gen:v-u
+усім усе noun:inanim:n:v_mis:&pron:gen:v-u
+усьому усе noun:inanim:n:v_mis:&pron:gen:v-u
+
+всі всі noun:anim:p:v_naz:&pron:gen:v-u
+всіх всі noun:anim:p:v_rod:&pron:gen:v-u
+всім всі noun:anim:p:v_dav:&pron:gen:v-u
+всіх всі noun:anim:p:v_zna:&pron:gen:v-u
+всіма всі noun:anim:p:v_oru:&pron:gen:v-u
+всіх всі noun:anim:p:v_mis:&pron:gen:v-u
+
+усі усі noun:anim:p:v_naz:&pron:gen:v-u
+усіх усі noun:anim:p:v_rod:&pron:gen:v-u
+усім усі noun:anim:p:v_dav:&pron:gen:v-u
+усіх усі noun:anim:p:v_zna:&pron:gen:v-u
+усіма усі noun:anim:p:v_oru:&pron:gen:v-u
+усіх усі noun:anim:p:v_mis:&pron:gen:v-u
+
+це це noun:inanim:n:v_naz:&pron:dem
+цього це noun:inanim:n:v_rod:&pron:dem
+цьому це noun:inanim:n:v_dav:&pron:dem
+це це noun:inanim:n:v_zna:&pron:dem
+цим це noun:inanim:n:v_oru:&pron:dem
+цім це noun:inanim:n:v_mis:&pron:dem
+цьому це noun:inanim:n:v_mis:&pron:dem
+
+те те noun:inanim:n:v_naz:&pron:dem
+того те noun:inanim:n:v_rod:&pron:dem
+тому те noun:inanim:n:v_dav:&pron:dem
+те те noun:inanim:n:v_zna:&pron:dem
+тим те noun:inanim:n:v_oru:&pron:dem
+тім те noun:inanim:n:v_mis:&pron:dem
+тому те noun:inanim:n:v_mis:&pron:dem
+
+інше /n2adj1 :&pron:def
+інший /adj :&pron:def
+інший /n2adj1.f.p.< :xp1:&pron:def
+інший /n2adj1.f.p :inanim:xp2:&pron:def
+кожний /adj :&pron:gen
+кожний /n2adj1.f.p.< :xp1:&pron:gen
+кожний /n2adj1.f.p :inanim:xp2:&pron:gen
+
 
 кудись adv:&pron:ind
 звідкись adv:&pron:ind
@@ -773,6 +830,7 @@
 обабіч обабіч prep:rv_rod
 обіч обіч prep:rv_rod
 обік обік prep:rv_rod|adv
+од од prep:rv_rod
 окрай окрай prep:rv_rod
 окрім окрім prep:rv_rod
 округ округ prep:rv_rod
@@ -961,6 +1019,7 @@
 отож part|conj:subord
 ото part
 от part
+оце part
 позаяк conj:subord
 покіль adv|conj:subord
 попросту adv|part

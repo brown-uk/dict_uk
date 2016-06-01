@@ -93,6 +93,7 @@
 
 
 ігри гра noun:p:v_naz/v_zna/v_kly
+гри гра noun:p:v_naz/v_zna              # 2,3,4 гри
 ігор гра noun:p:v_rod
 іграм гра noun:p:v_dav
 іграми гра noun:p:v_oru
@@ -243,6 +244,23 @@
 дошкам дошка noun:p:v_dav
 дошками дошка noun:p:v_oru
 дошках дошка noun:p:v_mis
+
+
+нічия нічия noun:inanim:f:v_naz
+нічиєї нічия noun:inanim:f:v_rod
+нічиїй нічия noun:inanim:f:v_dav
+нічию нічия noun:inanim:f:v_zna
+нічиєю нічия noun:inanim:f:v_oru
+нічиїй нічия noun:inanim:f:v_mis
+нічия нічия noun:inanim:f:v_kly
+нічиї нічия noun:inanim:p:v_naz
+нічиїх нічия noun:inanim:p:v_rod
+нічиїм нічия noun:inanim:p:v_dav
+нічиї нічия noun:inanim:p:v_zna
+нічиїми нічия noun:inanim:p:v_oru
+нічиїх нічия noun:inanim:p:v_mis
+нічиї нічия noun:inanim:p:v_kly
+
 
 
 # додаткові форми
@@ -473,6 +491,8 @@
 зелен зелений adj:m:v_naz/v_zn2:short
 золот золотий adj:m:v_naz/v_zn2:short
 кожен кожний adj:m:v_naz/v_zn2:short:&pron:gen
+кожен кожний noun:anim:m:v_naz:short:&pron:gen
+кожен кожний noun:inanim:m:v_naz/v_zna:short:&pron:gen
 красен красний adj:m:v_naz/v_zn2:short
 ладен ладний adj:m:v_naz/v_zn2:short
 молод молодий adj:m:v_naz/v_zn2:short
