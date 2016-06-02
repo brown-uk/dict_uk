@@ -1,16 +1,19 @@
 #!/bin/sh
 
-#
-# Expands a single word and a flag to a set of tagged forms
-#
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 
-[ "$2" == "" ] && {
-    echo "Usage: $0 <word> </flag>"
-    exit 1
-}
+if [ "$1" == "-f" ]; then
+    OPTS="-Pflat=true"
+    shift
+fi
 
-BASE=$(dirname $0)/..
 
-STR=`echo "$@" | tr ' ' '\n'`
-STR="$@"
-echo "$STR" | $BASE/dict_uk/expand/expand.py -f -aff $BASE/data/affix
+if [ "$1" == "" ]; then
+
+gradle --project-dir $DIR -q $OPTS expandInteractive
+
+else
+
+echo "$@" | gradle --project-dir $DIR -q $OPTS expandInteractive
+
+fi
