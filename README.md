@@ -29,6 +29,10 @@
 ### Як запускати ###
 
     `gradle expand`
+    
+    або для Windows:
+    
+    `bin/expand_win.sh`
 
     На виході:
 
