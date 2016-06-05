@@ -112,6 +112,7 @@
 ДМСУ noun:f:nv:prop    # Державна міграційна служба України
 ДНД noun:f:nv
 ДНК noun:f:nv
+ДНР noun:f:nv:np    # "Донецька Народна Республіка"
 дНТФ noun:m:nv
 ДОС noun:f:nv
 ДП noun:n:nv
@@ -133,6 +134,7 @@
 ДТЕК noun:f:nv:prop    # Донбасская топливно-энергетическая компания (DTEK)
 ДТП noun:f:nv
 ДТРК noun:f:nv
+ДУК noun:m:nv:np    # Добровольчий укр. корпус
 ДЮСШ noun:f:nv
 ДЮСШОР noun:f:nv
 ЕКГ noun:f:nv
@@ -228,6 +230,7 @@
 ЛДПУ noun:f:nv:np:prop
 ЛКСМУ noun:f:nv:np
 ЛНДР noun:f:nv
+ЛНР noun:f:nv:np    # "Луганська Народна Республіка"
 ЛНУ noun:m:nv:prop
 ЛОДА noun:f:nv
 ЛОМ noun:f:nv
