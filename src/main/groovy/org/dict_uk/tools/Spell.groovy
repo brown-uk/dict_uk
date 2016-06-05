@@ -52,7 +52,7 @@ class Spell {
             if( text.length() < 60*1024 )
                 return
 
-            print "."
+//            print "."
             
 			def analyzed = analyzeText(text)
 
