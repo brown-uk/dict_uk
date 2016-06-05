@@ -18,7 +18,7 @@ class Spell {
 	JLanguageTool langTool = new MultiThreadedJLanguageTool(new Ukrainian());
 	
 	def analyzeText(String text) {
-	    System.err.println("analyzing chunk, size " + text.length())
+//	    System.err.println("analyzing chunk, size " + text.length())
 		List<AnalyzedSentence> analyzedSentences = langTool.analyzeText(text);
 	}
 	
