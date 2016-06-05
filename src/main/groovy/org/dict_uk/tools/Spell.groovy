@@ -14,7 +14,8 @@ import org.languagetool.language.*
 
 class Spell {
 	
-	def LETTER = ~ /[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ'-]*[а-яіїєґА-ЯІЇЄҐ]/
+	def LETTER = ~ /[а-щьюяіїєґА-ЩЬЮЯІЇЄҐ][а-щьюяіїєґА-ЩЬЮЯІЇЄҐ'-]*[а-щьюяіїєґА-ЩЬЮЯІЇЄҐ]/
+	def RUS_SEQ = ~ /(ие|ую|иа|ти)$/
 	JLanguageTool langTool = new MultiThreadedJLanguageTool(new Ukrainian());
 	
 	def analyzeText(String text) {
@@ -28,7 +29,7 @@ class Spell {
 			sent.getTokens().findAll { AnalyzedTokenReadings reading ->
 				AnalyzedToken token = reading.getReadings().get(0)
 				token.getToken() != null && (token.getPOSTag() == null /*|| !token.getPOSTag().contains(":lname")*/) \
-				    && LETTER.matcher(token.getToken()).matches()
+				    && LETTER.matcher(token.getToken()).matches() && ! RUS_SEQ.matcher(token.getToken()).matches()
 				//				}
 			}.collect { token ->
 				token.getToken()
