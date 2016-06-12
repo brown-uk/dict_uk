@@ -31,7 +31,7 @@ dependencies {
 }
 
 compileGroovy {
-    exclude '**/Spell.groovy'
+    exclude '**/tools/other/*.groovy'
 }
 
 eclipse {
@@ -101,6 +101,36 @@ task dups << {
     println "Found ${dups.size} dups"
 	println dups.toSorted().join("\n")
 }
+
+
+task stopwords () {
+	def inFile = "$outputDir/dict_corp_lt.txt"
+	def outFile = "$outputDir/stopwords.txt"
+
+	inputs.file inFile
+	outputs.file outFile
+
+	doFirst {
+		def stopWords = []
+		def lines = new File(inFile).eachLine { line ->
+			def (word, lemma, tags) = line.split()
+			if( word.contains('-') )
+				return
+
+			if( (tags =~ /part|conj|prep/ && ! (tags =~ /:rare|:pers/)) \
+	           || (tags =~ /&pron/ && ! (tags =~ /:rare/)) \
+	           || (lemma in ['бути','могти','можна'] ) ) {
+
+				if( ! (word in stopWords) ) {
+					stopWords << word
+				}
+			}
+		}
+		logger.lifecycle("Written ${stopWords.size} stopwords into $outFile")
+		new File(outFile).text = stopWords.join("\n")
+	}
+}
+
 
 //
 // Testing targets

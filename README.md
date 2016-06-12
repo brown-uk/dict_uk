@@ -44,6 +44,14 @@
 * out/tags.txt - список тегів
 
 
+### Інші завдання ###
+
+    `gradle stopwords`
+
+    На виході:
+
+* out/stopwords.txt - список слів, що ігноруються пошуком (напр. в lucene тощо)
+
 
 
 ### Description ###
