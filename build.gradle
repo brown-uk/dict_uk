@@ -132,6 +132,22 @@ task stopwords () {
 }
 
 
+task showExpandCommand << {
+    def opts = " --corp --indent --mfl --stats --wordlist --time"
+    opts += " -aff data/affix"
+    opts += " -dict data/dict"
+
+    def cmd = "groovy -cp "
+    cmd += sourceSets.main.output.classesDir
+    cmd += ":" + sourceSets.main.output.resourcesDir
+    cmd += ":" + configurations.runtime.asFileTree.files.join(':')
+//    cmd += " org.dict_uk.expand.ExpandAll"
+    cmd += " src/main/groovy/org/dict_uk/expand/ExpandAll.groovy"
+    cmd += opts
+    
+    println cmd
+}
+
 //
 // Testing targets
 //
