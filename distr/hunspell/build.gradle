@@ -1,0 +1,68 @@
+apply plugin: 'java'
+
+String dstEncoding="cp1251"
+String srcEncoding="utf-8"
+
+String outDir = "build/hunspell"
+
+
+repositories {
+    mavenCentral()
+}
+
+
+task wordlist << {
+	def dictDir = file("../../data/dict")
+	
+	def files = dictDir.listFiles().findAll { 
+	    it.name.endsWith('.lst') && ! it.name.startsWith('composite') 
+	}
+	
+	def lines = files.collect {
+	    it.text.split("\n")
+	}
+	.flatten()
+	.findAll {
+	    !it.startsWith('#') && ((it.contains(" /adj") && ! it.contains("adj_pos")) || it.contains("+cs")) 
+	}
+	.collect {
+	    it = it.replaceFirst(/ +#.*/, '').trim()
+	    if( it.startsWith("+cs") ) {
+	        it = it.replaceFirst(/\+cs=([^ ]*).*/, '$1/ac')
+	    }
+	    else {
+	        // TODO: handle filter 'g=m'
+	        it.replaceFirst(' /adj(\\.adv)?.*', '/a$1').replaceFirst(/\.adv/, 'w')
+	    }
+	}.grep { 
+	    it && ! it.startsWith("+cs") 
+	}
+
+    def words = lines.unique()
+
+    println "Found ${words.size} words"
+    def txt = "${words.size}\n"
+    txt += words.toSorted().join("\n")
+	new File("$outDir/uk_UA.dic").text = txt
+}
+
+
+task affixes << {
+    new File(outDir).mkdirs()
+    
+    def txt = new File('header/affix_header.txt').text
+
+	def files = new File('affix').listFiles().findAll { 
+	    it.name.endsWith('.aff')
+	}.each {
+	    println "-- " + it
+	    txt += it.text.replaceAll(/[ \t]*#.*/, '').replaceAll("\n([ \t]*\n)+", "\n")
+	    txt += "\n"
+	}
+	
+	new File("$outDir/uk_UA.aff").text = txt
+}
+
+
+task hunspell (dependsOn: [affixes, wordlist]) {
+}
