@@ -15,27 +15,47 @@ task wordlist << {
 	def dictDir = file("../../data/dict")
 	
 	def files = dictDir.listFiles().findAll { 
-	    it.name.endsWith('.lst') && ! it.name.startsWith('composite') 
+	    it.name.endsWith('.lst') && ! (it.name =~ /composite|dot-abbr|twisters|ignored|alt|rare/)
 	}
+	
+	logger.lifecycle("Dict files: " + files*.name)
 	
 	def lines = files.collect {
 	    it.text.split("\n")
 	}
 	.flatten()
-	.findAll {
-	    !it.startsWith('#') && ((it.contains(" /adj") && ! it.contains("adj_pos")) || it.contains("+cs")) 
-	}
 	.collect {
-	    it = it.replaceFirst(/ +#.*/, '').trim()
-	    if( it.startsWith("+cs") ) {
-	        it = it.replaceFirst(/\+cs=([^ ]*).*/, '$1/ac')
+	    it = it.replaceFirst(/ *#.*/, '').trim()
+	    if( ! it )
+	        return ''
+	    
+	    if( ! it.contains("/") ) {
+	        if( it.startsWith("+cs") ) {
+	            it = it.replaceFirst(/\+cs=([^ ]*).*/, '$1/ac')
+	        }
+	        else {
+	            it = it.split()[0]
+	        }
 	    }
-	    else {
+	    else if( it.contains(" /adj") ) {
+	        if( it.contains(" /adj_pos") )
+	            return ''
+	    
 	        // TODO: handle filter 'g=m'
-	        it.replaceFirst(' /adj(\\.adv)?.*', '/a$1').replaceFirst(/\.adv/, 'w')
+	        it = it.replaceFirst(' /adj(\\.adv)?.*', '/a$1').replaceFirst(/\.adv/, 'w')
+
+	        if( it.contains("лиций/a") ) {
+	            it = it.replace('/a', '/b')
+	        }
+	        
+	        it
 	    }
+	    else if( it.contains(" /numr") ) {
+	        it.replaceFirst(' /numr.*', '/n')
+	    }
+	    else { '' }
 	}.grep { 
-	    it && ! it.startsWith("+cs") 
+	    it
 	}
 
     def words = lines.unique()
@@ -47,7 +67,14 @@ task wordlist << {
 }
 
 
-task affixes << {
+task affixes {
+    def outFile = "$outDir/uk_UA.aff"
+
+    inputs.file files("affix/*.aff")
+//    outputs.file outFile
+
+    doLast {
+
     new File(outDir).mkdirs()
     
     def txt = new File('header/affix_header.txt').text
@@ -55,14 +82,24 @@ task affixes << {
 	def files = new File('affix').listFiles().findAll { 
 	    it.name.endsWith('.aff')
 	}.each {
-	    println "-- " + it
-	    txt += it.text.replaceAll(/[ \t]*#.*/, '').replaceAll("\n([ \t]*\n)+", "\n")
-	    txt += "\n"
+	    logger.lifecycle("Affix file: $it")
+	    txt += it.text.replaceAll(/[ \t]*#.*/, '').replaceAll(/\n([ \t]*\n)+/, "\n")
+	    if( ! txt.endsWith("\n") ) {
+	        txt += "\n"
+	    }
 	}
 	
-	new File("$outDir/uk_UA.aff").text = txt
+	new File(outFile).text = txt
+	}
 }
 
 
 task hunspell (dependsOn: [affixes, wordlist]) {
+}
+
+
+task testHunspell (type: Exec) { //, dependsOn: hunspell) {
+    def cmd = "echo \"головатий білого швидко вже\" | hunspell -d $outDir/uk_UA"
+
+    commandLine "sh", "-c", "${cmd}"
 }
