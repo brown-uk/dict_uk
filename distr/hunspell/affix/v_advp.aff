@@ -1,0 +1,110 @@
+# Дієприслівники від дієслів в групі v1
+
+#subgroup v1.advp
+
+SFX D Y 43
+
+SFX D   вати	ючи	[ауюя]вати	#  абонувати  абонуючи 		     @ advp:imperf
+SFX D   ати	учи	[рз]вати	#  рвати  рвучи			     @ advp:imperf
+SFX D   зати	жучи	зати		#  казати  кажучи 	                     @ advp:imperf
+SFX D   ати	ачи	[днжщ]ати	#  блищати  блищучи	             @ advp:imperf
+SFX D   ати	ачи	[^ао]чати	#  деренчати  деренчачи	             @ advp:imperf
+#ати	нучи	[ао]чати	#  зачати  зачнучи 	             @ advp:imperf
+SFX D   тати	чучи	[^с]тати	#  шептати  шепчучи 	             @ advp:imperf
+SFX D   кати	чучи	[^с]кати	#  плакати  плачучи 	             @ advp:imperf
+SFX D   сати	шучи	сати		#  писати  пишучи	                             @ advp:imperf
+SFX D   хати	шучи	хати		#  брехати  брешучи	                     @ advp:imperf
+SFX D   стати	щучи	стати		#  свистати  свищучи	                     @ advp:imperf
+SFX D   скати	щучи	скати		#  плескати  плещучи 	                     @ advp:imperf
+SFX D   слати	шлючи	слати		#  послати  пошлючи 	                     @ advp:imperf
+SFX D   ати	лючи	пати		#  сипати  сиплючи 	                     @ advp:imperf
+SFX D   ати	ючи	орати		#  орати  орючи	 	                     @ advp:imperf
+SFX D   рати	еручи	[бдп]рати	#  брати  беручи	 	             @ advp:imperf
+
+SFX D   ити	ячи	дити	      #  винаходити  винаходячи		             @ advp:imperf
+SFX D   здити	жджучи	здити		#  їздити  їжджучи		             @ advp:imperf
+SFX D   ити	ячи	[^о]зити		#  возити  вожучи		                     @ advp:imperf
+SFX D   ити	ячи	озити		#  возити  вожучи		                     @ advp:imperf
+SFX D   ити	ачи	[жчшщ]ити	#  бентежити  бентежучи 		             @ advp:imperf
+SFX D   ити	ячи	[лснр]ити		#  місити  місячи 		             @ advp:imperf
+SFX D   ити	лячи	[бвмпф]ити	#  робити роблячи		             @ advp:imperf
+SFX D   тити	чучи	[^с]тити	#  тратити  трачучи 		             @ advp:imperf
+SFX D   ити	ячи	тити		#  мостити  мостячи 		             @ advp:imperf
+SFX D   іти	ячи	діти		#  смердіти  смердячи		             @ advp:imperf
+SFX D   іти	ачи	[шж]іти		#  кишіти  кишучи 		             @ advp:imperf
+
+#сіти	шучи	сіти		#  висіти  вишучи 		             @ advp:imperf
+SFX D   іти	ячи	[нлртс]іти	    #  летіти  летячи 		             @ advp:imperf
+#стіти	щучи	стіти	#  шелестіти  шелещучи 		             @ advp:imperf
+SFX D   іти	учи	діти		    #  гудіти  гудучи 		             @ advp:imperf
+SFX D   іти	лячи	[бвмпф]іти	#  шуміти  шумлячи		             @ advp:imperf
+
+SFX D   ути	учи	нути		#  тягнути  тягнучи 	                     @ advp:imperf
+SFX D   ти	дучи	бути		#  забути  забудучи 	                     @ advp:imperf
+
+SFX D   оти	ючи	оти		#  бороти  борючи	                             @ advp:imperf
+SFX D   їти	ячи	їти		#  клеїти  клеючи	                             @ advp:imperf
+SFX D   ти	учи	[збв]ти		#  везти  везучи		                     @ advp:imperf
+SFX D   ти	тучи	ости		#  рости  ростучи		               @ advp:imperf
+SFX D   сти	тучи	[еі]сти		#  цвісти  цвітучи	               @ advp:imperf
+SFX D   сти	нучи	лясти		#  клясти  клянучи	               @ advp:imperf
+SFX D   кти	чучи	кти		#  текти  течучи		               @ advp:imperf
+SFX D   гти	жучи	[еоиія]гти	#  допомогти  допоможучи		               @ advp:imperf
+SFX D   ерти	ручи	[^дж]ерти	#  терти  тручи		               @ advp:imperf
+SFX D   рти	ручи	[дж]ерти	#  жерти  жеручи		               @ advp:imperf
+SFX D   ти	ючи	[аі]яти		#  паяти  паяючи 		                @ advp:imperf
+SFX D   сти	    ючи	    исти		#  гнисти  гниючи 		                @ advp:imperf
+
+
+# Дієприслівники від дієслів в групі v2
+
+# subgroup v2.advp
+
+SFX E Y 8
+
+SFX E   яти	ючи	[аяіо]яти	#  віяти  віючи 		         @ advp:imperf
+SFX E   ти	ючи	[илнрцду]яти	#  ганяти  ганяючи 	         @ advp:imperf
+SFX E   ти	ючи	[аіу]ти		#  вбивати  вбиваючи 	                 @ advp:imperf
+SFX E   ити	'ючи	[бвп]ити	#  бити  б'ючи 	                 @ advp:imperf
+SFX E   ити	иючи	[врмнш]ити	#  рити  риючи	                 @ advp:imperf
+SFX E   ити	лючи	лити		#  лити  ллючи		                 @ advp:imperf
+SFX E   ти	вучи	жити		#  жити  живучи		                 @ advp:imperf
+SFX E   ти	учи	сти		#  пасти  пасучи		                 @ advp:imperf
+
+#ати	мучи	жати		#  жати  жмучи 		             @ advp:imperf
+#олоти	елючи	олоти		#  молоти  мелючи		             @ advp:imperf
+#ати	учи	ржати		#  ржати  ржучи 		           @ advp:imperf
+#ти	дучи	[йі]ти		#  йти  йдучи	           @ advp:imperf
+#хати	дучи	хати		#  їхати  їдучи	 	           @ advp:imperf
+#гнати	женучи	гнати		#  гнати  женучи		           @ advp:imperf
+#сти	дучи	[еая]сти		#  вести  ведучи		           @ advp:imperf
+#сти	м	[ії]сти		#  їсти  їм		           @ advp:imperf
+
+
+# Дієприслівники від дієслів в групі v3
+
+#subgroup v3.advp
+
+SFX F Y 1
+
+SFX F   ити     'ючи    вити            #  вити  в'ючи                   @ advp:imperf
+
+
+
+# Дієприслівники від дієслів в групі v4
+
+#subgroup v4.advp
+
+SFX G Y 1
+
+SFX G   ати     учи     жати            #  іржати іржучи                   @ advp:imperf
+
+
+# Дієприслівники від дієслів в групі v5
+
+
+#subgroup v5.advp
+
+SFX H Y 1
+
+SFX H   яти	ючи	[аяіо]яти	#  віяти  віючи 		         @ advp:imperf

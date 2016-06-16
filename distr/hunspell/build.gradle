@@ -90,23 +90,28 @@ task wordlist << {
 	        it = it.replace(' /v1', '/1')
 	        it = it.replace('.imprt0', '2')
 	        it = it.replace('.imprt1', '3')
+	        it = it.replace('.advp', 'D')
 	        it = it.replace('.cf', '5')
 	    }
 	    else if( it.contains(" /v2") ) {
 	        it = it.replace(' /v2', '/4')
+	        it = it.replace('.advp', 'E')
 	        it = it.replace('.cf', '5')
 	    }
 	    else if( it.contains(" /v3") ) {
 	        it = it.replace(' /v3', '/6')
 	        it = it.replace('.imprt1', '7')
+	        it = it.replace('.advp', 'F')
 	        it = it.replace('.cf', '5')
 	    }
 	    else if( it.contains(" /v4") ) {
 	        it = it.replace(' /v4', '/8')
+	        it = it.replace('.advp', 'G')
 	        it = it.replace('.cf', '5')
 	    }
 	    else if( it.contains(" /v5") ) {
 	        it = it.replace(' /v5', '/A')
+	        it = it.replace('.advp', 'H')
 	        it = it.replace('.cf', 'B')
 	    }
 	    else if( it.contains(" /v6") ) {
@@ -169,6 +174,7 @@ task testHunspell (type: Exec) { //, dependsOn: hunspell) {
     def txt = "головатий білого швидко вже"
     txt += " хата хатами дами вимені воріт Карпат кайданів вовчища селом сіл"
     txt += " абонував гуляв хропу сядете живемо абонуватиму жнеш вечоріло"
+    txt += " абонувавши абонуючи хроплячи"
     def cmd = "echo $txt | hunspell -d $outDir/uk_UA"
 
     commandLine "sh", "-c", "${cmd}"
