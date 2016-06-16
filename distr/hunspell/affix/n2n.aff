@@ -1,0 +1,222 @@
+# Друга відміна середній рід
+
+#group n2n
+
+SFX q Y 22
+
+
+# Тверда група на -о
+SFX q   о а о           #  озеро  озера                 @ noun:n:v_rod
+SFX q   о у о           #  озеро  озеру                 @ noun:n:v_dav/v_mis
+SFX q   о ом  о         #  озеро  озером                @ noun:n:v_oru
+SFX q   о і [^кх]о      #  озеро  озері                 @ noun:n:v_mis
+SFX q   хо  сі  [^и]хо    #  вухо  вусі                         @ noun:n:v_mis
+SFX q   ко  ці  [оеіу]ко    #  молоко  молоці                 @ noun:n:v_mis
+
+
+# М'яка група на -е крім шиплячих
+SFX q   е я   [лрц]е  #  море  моря                       @ noun:n:v_rod//p:v_naz
+SFX q   е ю   [лрц]е  #  море  морю                       @ noun:n:v_dav/v_mis
+SFX q   е ем  [лрц]е  #  море  морем                      @ noun:n:v_oru
+SFX q   е і   [лрц]е  #  море  морі                       @ noun:n:v_mis
+
+SFX q   є я   є  #  Тур'я                       @ noun:n:v_rod
+SFX q   є ю   є  #  Тур'ю                       @ noun:n:v_dav/v_mis
+SFX q   є єм  є  #  Тур'єм                      @ noun:n:v_oru
+SFX q   є ї   є  #  Тур'ї                       @ noun:n:v_mis
+
+# Мішана група на шиплячий перед -е
+SFX q   е а   [жчшщ]е #  прізвище  прізвища                 @ noun:n:v_rod//p:v_naz
+SFX q   е у   [жчшщ]е #  прізвище  прізвищу                 @ noun:n:v_dav/v_mis
+SFX q   е ем  [жчшщ]е #  прізвище  прізвищем                @ noun:n:v_oru
+SFX q   е і   [жчшщ]е #  прізвище  прізвищі                 @ noun:n:v_mis
+
+SFX q   я ю я       #  завдання  завданню                 @ noun:n:v_dav/v_mis
+SFX q   я ям  я     #  завдання  завданням                @ noun:n:v_oru
+SFX q   я і [^'ь]я    #  завдання  завданні                 @ noun:n:v_mis
+SFX q   я ї ['ь]я   #  бездощів'я  бездощів'ї               @ noun:n:v_mis
+
+
+
+# Додаткове закінчення -ові/-еві (д.в./м.в.)
+
+#subgroup n2n.ovi
+
+SFX r Y 2
+
+SFX r   о	ові	о		#  дитятко   дитяткові   	          @ noun:n:v_dav/v_mis
+SFX r   е	еві	е		#  чудище   чудищеві   	            @ noun:n:v_dav
+
+
+
+
+# Множина середнього роду другої відміни без чергування
+
+#subgroup n2n.p1
+
+SFX s Y 34
+
+
+# Іменники другої відміни середнього роду з закінченням на -о -а -я
+
+# Закінчення -о
+
+SFX s   о а о                   #  озеро  озера                 @ noun:p:v_naz
+SFX s   о 0 о                   #  озеро  озер                  @ noun:p:v_rod
+SFX s   о ам  о                 #  озеро  озерам                @ noun:p:v_dav
+SFX s   о ами о                 #  озеро  озерами               @ noun:p:v_oru
+SFX s   о ах  о                 #  озеро  озерах                @ noun:p:v_mis
+
+
+# Закінчення -е
+
+SFX s   е ів  [^жчшщц]е   #  море  морів                      @ noun:p:v_rod
+SFX s   е ям  [^жчшщ]е    #  море  морям                      @ noun:p:v_dav
+SFX s   е ями [^жчшщ]е    #  море  морями                     @ noun:p:v_oru
+SFX s   е ях  [^жчшщ]е    #  море  морях                      @ noun:p:v_mis
+
+# Мішана група на шиплячий перед -е
+
+SFX s   е   ь   це          #  місце  місць               @ noun:p:v_rod
+
+SFX s   е 0 [жшщ]е          #  прізвище  прізвищ          @ noun:p:v_rod
+
+# мн. плече - у винятках
+SFX s   0 й че              #  віче  віч                  @ noun:p:v_rod
+
+SFX s   е ам  [жчшщ]е       #  прізвище  прізвищам        @ noun:p:v_dav
+SFX s   е ами [жчшщ]е       #  прізвище  прізвищами       @ noun:p:v_oru
+SFX s   е ах  [жчшщ]е       #  прізвище  прізвищах        @ noun:p:v_mis
+
+
+# Закінчення -я
+
+# Мішана група
+SFX s   ня  ь   ння           #  завдання  завдань              @ noun:p:v_rod
+SFX s   тя  ь   ття           #  заняття  занять                @ noun:p:v_rod
+SFX s   я   ь   [^т]тя        #  підпертя  підперть             @ noun:p:v_rod
+SFX s   дя  ь   ддя           #  безвладдя  безвладь            @ noun:p:v_rod
+SFX s   я   ь   [^д]дя        #  безглуздя  безглуздь           @ noun:p:v_rod
+SFX s   ля  ь   лля           #  зусилля  зусиль                @ noun:p:v_rod
+SFX s   чя  0   ччя           #  десятиріччя  десятиріч         @ noun:p:v_rod
+SFX s   шя  0   шшя           #  затишшя  затиш                 @ noun:p:v_rod
+SFX s   ся  ь   сся           #  дрібнолісся  дрібнолісь        @ noun:p:v_rod
+SFX s   зя  ь   ззя           #  пониззя  понизь                @ noun:p:v_rod
+SFX s   жя  0   жжя           #  прибережжя  прибереж           @ noun:p:v_rod
+
+SFX s   я ям  я             #  завдання  завданням            @ noun:p:v_dav
+SFX s   я ями я             #  завдання  завданнями           @ noun:p:v_oru
+SFX s   я ях  я             #  завдання  завданнях            @ noun:p:v_mis
+
+SFX s   є я   є             #  житія                          @ noun:p:v_naz
+SFX s   є й   є             #  житій                          @ noun:p:v_rod
+SFX s   є ям  є             #  завдання  завданням            @ noun:p:v_dav
+SFX s   є ями є             #  завдання  завданнями           @ noun:p:v_oru
+SFX s   є ях  є             #  завдання  завданнях            @ noun:p:v_mis
+
+
+# Множина с.р. другої відміни з чергуванням о->і або з появою о/е, а з закінченням -ів для іменників с.р. на -я
+
+# subgroup n2n.p2
+
+SFX t Y 32
+
+SFX t   о	а	    о        #  слово  слова 	            @ noun:p:v_naz
+SFX t   о	ам	    о        #  слово  словам	            @ noun:p:v_dav
+SFX t   о	ами	    о        #  слово  словами	            @ noun:p:v_oru
+SFX t   о	ах	    о        #  слово  словах	            @ noun:p:v_mis
+
+#[еіо][влтс]о:
+SFX t   ово	ів	        #  слово  слів		            @ noun:p:v_rod
+SFX t   оло	іл	        #  слово  слів		            @ noun:p:v_rod
+SFX t   ото	іт	        #  слово  слів		            @ noun:p:v_rod
+SFX t   ело	іл	        #  слово  слів		            @ noun:p:v_rod
+SFX t   есо	іс	        #  слово  слів		            @ noun:p:v_rod
+SFX t   ето	іт	        #  слово  слів		            @ noun:p:v_rod
+
+SFX t   но	он	[кг]но		#  вікно   вікон	            @ noun:p:v_rod
+SFX t   мо	ом	смо		    #  пасмо    пасом	            @ noun:p:v_rod
+SFX t   ло	ол	зло         #  зло   зол		            @ noun:p:v_rod
+SFX t   ко	ок	[жзлмрчтьш]ко	#  серденько  серденьок	            @ noun:p:v_rod
+
+SFX t   ло	ел	[бдкпст]ло	#  житло  жител		            @ noun:p:v_rod
+SFX t   но	ен	[вдтрс]но	#  зерно  зерен		            @ noun:p:v_rod
+SFX t   мо	ем	рмо		    #  ярмо    ярем		            @ noun:p:v_rod
+SFX t   ро	ер	[бдт]ро		#  ребро   ребер	            @ noun:p:v_rod
+
+
+SFX t   це  дець  серце     #  серце  сердець             @ noun:p:v_rod
+SFX t   це  ець [^с]ерце    #  озерце  озерець            @ noun:p:v_rod
+SFX t   це  ець [^йрсь]це   #  віконце  віконець          @ noun:p:v_rod
+SFX t   йце єць йце         #  яйце  яєць                 @ noun:p:v_rod
+SFX t   ьце ець ьце         #  бильце  билець             @ noun:p:v_rod
+
+SFX t   е ям  це            #  яйце  яйцям                      @ noun:p:v_dav
+SFX t   е ями це            #  яйце  яйцями                     @ noun:p:v_oru
+SFX t   е ях  це            #  яйце  яйцях                      @ noun:p:v_mis
+
+# мн. плече - у винятках
+#че іч че            #  плече пліч (+ плечей)        @ noun:p:v_rod
+
+SFX t   ря  ер  тря         #  вістря вістер                @ noun:p:v_rod
+
+SFX t   я   їв  'я          #  бездощів'я  бездощів'їв        @ noun:p:v_rod
+
+SFX t   я       ів   [жт]я  #  життя  життів                @ noun:p:v_rod
+SFX t   я       ям   я      #  життя  життям                @ noun:p:v_dav
+SFX t   я       ями  я      #  життя  життями               @ noun:p:v_oru
+SFX t   я       ях   я      #  життя  життях                @ noun:p:v_mis
+
+
+# Множина другої відмніни с.р. з -ів у р.в.
+
+#subgroup n2n.piv
+
+SFX u Y 5
+
+SFX u   о	а	о #  ікло  ікла 	          @ noun:p:v_naz
+SFX u   о	ів	о #  ікло  іклів 	          @ noun:p:v_rod
+SFX u   о	ам	о #  ікло  іклам	            @ noun:p:v_dav
+SFX u   о	ами	о #  ікло  іклами	            @ noun:p:v_oru
+SFX u   о	ах	о #  ікло  іклах	            @ noun:p:v_mis
+
+
+#group n2nf
+
+SFX v Y 2
+
+SFX v   е	і	ще	# бородище 	                        @ noun:f:v_rod/v_dav/v_mis
+SFX v   е	ею	ще	# бородищею 	                    @ noun:f:v_oru
+
+
+#subgroup n2nf.p
+
+SFX w Y 5
+
+SFX w   е	і	ще	    # бородище бородищі 	                                   @ noun:p:v_naz
+SFX w   е	0	ще	    # бородище бородищ 	                                       @ noun:p:v_rod
+SFX w   е	ам	ще		# бородище  бородищам 	                                   @ noun:p:v_dav
+SFX w   е	ами	ще		# бородище  бородищами                                     @ noun:p:v_oru
+SFX w   е	ах	ще		# бородище  бородищах 	                                   @ noun:p:v_mis
+
+
+
+#group n2nm
+
+SFX x Y 4
+
+SFX x   е а  ще  #  вовчище  вовчища                 @ noun:m:v_rod
+SFX x   е у  ще  #  вовчище  вовчищу                 @ noun:m:v_dav/v_mis
+SFX x   е ем ще  #  вовчище  вовчищем                @ noun:m:v_oru
+SFX x   е і  ще  #  вовчище  вовчищі                 @ noun:m:v_mis
+
+
+#subgroup n2nm.p
+
+SFX y Y 5
+
+SFX y   е а   ще        #  вовчище  вовчища              @ noun:p:v_naz
+SFX y   е 0   ще        #  вовчище  вовчищам        @ noun:p:v_rod
+SFX y   е ам  ще        #  вовчище  вовчищам        @ noun:p:v_dav
+SFX y   е ами ще       #  вовчище  вовчищами       @ noun:p:v_oru
+SFX y   е ах  ще       #  вовчище  вовчищах        @ noun:p:v_mis

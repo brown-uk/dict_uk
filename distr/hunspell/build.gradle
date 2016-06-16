@@ -59,12 +59,25 @@ task wordlist << {
 	        it = it.replace(' /.p1', '/g')
 	        it = it.replace(' /.p2', '/h')
 	        it = it.replace(' /.piv', '/i')
-	        it = it.replaceFirst(/[. ].*/, '')
+	    }
+	    else if( it.contains(" /n2nf") ) {
+	        it = it.replace(' /n2nf', '/v')
+	        it = it.replace(' /.p', '/w')
+	    }
+	    else if( it.contains(" /n2nm") ) {
+	        it = it.replace(' /n2nm', '/x')
+	        it = it.replace(' /.p', '/y')
+	    }
+	    else if( it.contains(" /n2n") ) {
+	        it = it.replace(' /n2n', '/q')
+	        it = it.replace(' /.ovi', '/r')
+	        it = it.replace(' /.p1', '/s')
+	        it = it.replace(' /.p2', '/t')
+	        it = it.replace(' /.piv', '/u')
 	    }
 	    else if( it.contains(" /n40") ) {
 	        it = it.replace(' /n40', '/j')
 	        it = it.replace(' /.p', '/k')
-	        it = it.replaceFirst(/[. ].*/, '')
 	    }
 	    else if( it.contains(" /np") ) {
 	        it = it.replace(' /np1', '/l')
@@ -72,9 +85,12 @@ task wordlist << {
 	        it = it.replace(' /.np1', '/n')
 	        it = it.replace(' /.np3', '/o')
 	        it = it.replace(' /np3', '/p')
+	    }
+	    else { it = '' }
+	    
+	    if( it ) {
 	        it = it.replaceFirst(/[. ].*/, '')
 	    }
-	    else { '' }
 	}.grep { 
 	    it
 	}
@@ -102,8 +118,11 @@ task affixes {
 
 	def files = new File('affix').listFiles().findAll { 
 	    it.name.endsWith('.aff')
-	}.each {
-	    logger.lifecycle("Affix file: $it")
+	}
+	
+	logger.lifecycle("Affix files: " + files*.name)
+
+	files.each {
 	    txt += it.text.replaceAll(/[ \t]*#.*/, '').replaceAll(/\n([ \t]*\n)+/, "\n")
 	    if( ! txt.endsWith("\n") ) {
 	        txt += "\n"
@@ -120,7 +139,7 @@ task hunspell (dependsOn: [affixes, wordlist]) {
 
 
 task testHunspell (type: Exec) { //, dependsOn: hunspell) {
-    def cmd = "echo \"головатий білого швидко вже хата дами вимені воріт Карпат кайданів\" | hunspell -d $outDir/uk_UA"
+    def cmd = "echo \"головатий білого швидко вже хата дами вимені воріт Карпат кайданів вовчища селом\" | hunspell -d $outDir/uk_UA"
 
     commandLine "sh", "-c", "${cmd}"
 }
