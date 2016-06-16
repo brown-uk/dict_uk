@@ -51,7 +51,7 @@ task wordlist << {
 	        it
 	    }
 	    else if( it.contains(" /numr") ) {
-	        it = it.replaceFirst(' /numr.*', '/n')
+	        it = it.replaceFirst(' /numr.*', '/0')
 	    }
 	    else if( it.contains(" /n10") ) {
 	        it = it.replace(' /n10', '/e')
@@ -64,6 +64,14 @@ task wordlist << {
 	    else if( it.contains(" /n40") ) {
 	        it = it.replace(' /n40', '/j')
 	        it = it.replace(' /.p', '/k')
+	        it = it.replaceFirst(/[. ].*/, '')
+	    }
+	    else if( it.contains(" /np") ) {
+	        it = it.replace(' /np1', '/l')
+	        it = it.replace(' /np2', '/m')
+	        it = it.replace(' /.np1', '/n')
+	        it = it.replace(' /.np3', '/o')
+	        it = it.replace(' /np3', '/p')
 	        it = it.replaceFirst(/[. ].*/, '')
 	    }
 	    else { '' }
@@ -112,7 +120,7 @@ task hunspell (dependsOn: [affixes, wordlist]) {
 
 
 task testHunspell (type: Exec) { //, dependsOn: hunspell) {
-    def cmd = "echo \"головатий білого швидко вже хата дами вимені\" | hunspell -d $outDir/uk_UA"
+    def cmd = "echo \"головатий білого швидко вже хата дами вимені воріт Карпат кайданів\" | hunspell -d $outDir/uk_UA"
 
     commandLine "sh", "-c", "${cmd}"
 }
