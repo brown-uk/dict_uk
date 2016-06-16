@@ -55,36 +55,63 @@ task wordlist << {
 	    }
 	    else if( it.contains(" /n10") ) {
 	        it = it.replace(' /n10', '/e')
-	        it = it.replace(' /.ko', '/f')
-	        it = it.replace(' /.p1', '/g')
-	        it = it.replace(' /.p2', '/h')
-	        it = it.replace(' /.piv', '/i')
+	        it = it.replace('.ko', 'f')
+	        it = it.replace('.p1', 'g')
+	        it = it.replace('.p2', 'h')
+	        it = it.replace('.piv', 'i')
 	    }
 	    else if( it.contains(" /n2nf") ) {
 	        it = it.replace(' /n2nf', '/v')
-	        it = it.replace(' /.p', '/w')
+	        it = it.replace('.p', 'w')
 	    }
 	    else if( it.contains(" /n2nm") ) {
 	        it = it.replace(' /n2nm', '/x')
-	        it = it.replace(' /.p', '/y')
+	        it = it.replace('.p', 'y')
 	    }
 	    else if( it.contains(" /n2n") ) {
 	        it = it.replace(' /n2n', '/q')
-	        it = it.replace(' /.ovi', '/r')
-	        it = it.replace(' /.p1', '/s')
-	        it = it.replace(' /.p2', '/t')
-	        it = it.replace(' /.piv', '/u')
+	        it = it.replace('.ovi', 'r')
+	        it = it.replace('.p1', 's')
+	        it = it.replace('.p2', 't')
+	        it = it.replace('.piv', 'u')
 	    }
 	    else if( it.contains(" /n40") ) {
 	        it = it.replace(' /n40', '/j')
-	        it = it.replace(' /.p', '/k')
+	        it = it.replace('.p', 'k')
 	    }
 	    else if( it.contains(" /np") ) {
 	        it = it.replace(' /np1', '/l')
 	        it = it.replace(' /np2', '/m')
-	        it = it.replace(' /.np1', '/n')
-	        it = it.replace(' /.np3', '/o')
+	        it = it.replace('.np1', 'n')
+	        it = it.replace('.np3', 'o')
 	        it = it.replace(' /np3', '/p')
+	    }
+	    else if( it.contains(" /v1") ) {
+	        it = it.replace(' /v1', '/1')
+	        it = it.replace('.imprt0', '2')
+	        it = it.replace('.imprt1', '3')
+	        it = it.replace('.cf', '5')
+	    }
+	    else if( it.contains(" /v2") ) {
+	        it = it.replace(' /v2', '/4')
+	        it = it.replace('.cf', '5')
+	    }
+	    else if( it.contains(" /v3") ) {
+	        it = it.replace(' /v3', '/6')
+	        it = it.replace('.imprt1', '7')
+	        it = it.replace('.cf', '5')
+	    }
+	    else if( it.contains(" /v4") ) {
+	        it = it.replace(' /v4', '/8')
+	        it = it.replace('.cf', '5')
+	    }
+	    else if( it.contains(" /v5") ) {
+	        it = it.replace(' /v5', '/A')
+	        it = it.replace('.cf', 'B')
+	    }
+	    else if( it.contains(" /v6") ) {
+	        it = it.replace(' /v6', '/C')
+	        it = it.replace('.cf', '5')
 	    }
 	    else { it = '' }
 	    
@@ -139,7 +166,10 @@ task hunspell (dependsOn: [affixes, wordlist]) {
 
 
 task testHunspell (type: Exec) { //, dependsOn: hunspell) {
-    def cmd = "echo \"головатий білого швидко вже хата дами вимені воріт Карпат кайданів вовчища селом\" | hunspell -d $outDir/uk_UA"
+    def txt = "головатий білого швидко вже"
+    txt += " хата хатами дами вимені воріт Карпат кайданів вовчища селом сіл"
+    txt += " абонував гуляв хропу сядете живемо абонуватиму жнеш вечоріло"
+    def cmd = "echo $txt | hunspell -d $outDir/uk_UA"
 
     commandLine "sh", "-c", "${cmd}"
 }
