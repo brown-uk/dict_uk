@@ -61,6 +61,11 @@ task wordlist << {
 	        it = it.replace(' /.piv', '/i')
 	        it = it.replaceFirst(/[. ].*/, '')
 	    }
+	    else if( it.contains(" /n40") ) {
+	        it = it.replace(' /n40', '/j')
+	        it = it.replace(' /.p', '/k')
+	        it = it.replaceFirst(/[. ].*/, '')
+	    }
 	    else { '' }
 	}.grep { 
 	    it
@@ -107,7 +112,7 @@ task hunspell (dependsOn: [affixes, wordlist]) {
 
 
 task testHunspell (type: Exec) { //, dependsOn: hunspell) {
-    def cmd = "echo \"головатий білого швидко вже хата дами\" | hunspell -d $outDir/uk_UA"
+    def cmd = "echo \"головатий білого швидко вже хата дами вимені\" | hunspell -d $outDir/uk_UA"
 
     commandLine "sh", "-c", "${cmd}"
 }
