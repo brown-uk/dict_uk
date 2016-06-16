@@ -42,7 +42,7 @@ task wordlist << {
 	            return ''
 	    
 	        // TODO: handle filter 'g=m'
-	        it = it.replaceFirst(' /adj(\\.adv)?.*', '/a$1').replaceFirst(/\.adv/, 'w')
+	        it = it.replaceFirst(' /adj(\\.adv)?.*', '/a$1').replaceFirst(/\.adv/, 'd')
 
 	        if( it.contains("лиций/a") ) {
 	            it = it.replace('/a', '/b')
