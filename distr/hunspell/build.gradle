@@ -90,23 +90,39 @@ task wordlist << {
 	        it = it.replace(' /v1', '/1')
 	        it = it.replace('.imprt0', '2')
 	        it = it.replace('.imprt1', '3')
+	        it = it.replace('.imprsNo', 'I')
+	        it = it.replace('.imprsTo', 'J')
+	        it = it.replace('.imprs0', 'K')
+	        it = it.replace('.imprs1', 'L')
 	        it = it.replace('.advp', 'D')
 	        it = it.replace('.cf', '5')
 	    }
 	    else if( it.contains(" /v2") ) {
 	        it = it.replace(' /v2', '/4')
 	        it = it.replace('.advp', 'E')
+	        it = it.replace('.imprsNo', 'I')
+	        it = it.replace('.imprsTo', 'J')
+	        it = it.replace('.imprs0', 'K')
 	        it = it.replace('.cf', '5')
 	    }
 	    else if( it.contains(" /v3") ) {
 	        it = it.replace(' /v3', '/6')
 	        it = it.replace('.imprt1', '7')
 	        it = it.replace('.advp', 'F')
+	        it = it.replace('.imprsNo', 'I')
+	        it = it.replace('.imprsTo', 'J')
+	        it = it.replace('.imprs0', 'K')
 	        it = it.replace('.cf', '5')
 	    }
 	    else if( it.contains(" /v4") ) {
 	        it = it.replace(' /v4', '/8')
 	        it = it.replace('.advp', 'G')
+	        it = it.replace('.imprs3', 'M')
+	        it = it.replace('.imprsNo', 'I')
+	        it = it.replace('.imprsTo', 'J')
+	        it = it.replace('.imprs0', 'K')
+	        it = it.replace('.imprs1', 'L')
+	        it = it.replace('.imprs3', 'M')
 	        it = it.replace('.cf', '5')
 	    }
 	    else if( it.contains(" /v5") ) {
@@ -116,6 +132,7 @@ task wordlist << {
 	    }
 	    else if( it.contains(" /v6") ) {
 	        it = it.replace(' /v6', '/C')
+	        it = it.replace('.imprsTo', 'J')
 	        it = it.replace('.cf', '5')
 	    }
 	    else { it = '' }
@@ -175,6 +192,7 @@ task testHunspell (type: Exec) { //, dependsOn: hunspell) {
     txt += " хата хатами дами вимені воріт Карпат кайданів вовчища селом сіл"
     txt += " абонував гуляв хропу сядете живемо абонуватиму жнеш вечоріло"
     txt += " абонувавши абонуючи хроплячи"
+    txt += " заправлено казано вимито метено введено"
     def cmd = "echo $txt | hunspell -d $outDir/uk_UA"
 
     commandLine "sh", "-c", "${cmd}"
