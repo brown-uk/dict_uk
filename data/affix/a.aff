@@ -128,11 +128,17 @@ group adj
 
 
 я:
-я	ьої		#   незаміжньої 	            @ adj:f:v_rod
-я	ій		#   незаміжній 	              @ adj:f:v_dav/v_mis
-я	ю		#   незаміжню 	                @ adj:f:v_zna
-я	юю		#   незаміжнюю 	                @ adj:f:v_zna:uncontr
-я	ьою		#   незаміжньою 	            @ adj:f:v_oru
+я	ьої		    #   незаміжньої 	            @ adj:f:v_rod
+я	ій		    #   незаміжній 	              @ adj:f:v_dav/v_mis
+я	ю		    #   незаміжню 	                @ adj:f:v_zna
+я	юю		    #   незаміжнюю 	                @ adj:f:v_zna:uncontr
+я	ьою		    #   незаміжньою 	            @ adj:f:v_oru
+я	і			#   незаміжні 	            @ adj:p:v_naz/v_zn2/v_kly
+я	ії			#   незаміжнії 	            @ adj:p:v_naz/v_zn2/v_kly:uncontr
+я	ім			#   незаміжнім 	            @ adj:p:v_dav
+я	іх			#   незаміжніх 	            @ adj:p:v_rod/v_zn1/v_mis
+я	іїх			#   незажмініїх 	            @ adj:p:v_zna:uncontr
+я	іми			#   незаміжніми 	            @ adj:p:v_oru
 
 #  множина
 і:
