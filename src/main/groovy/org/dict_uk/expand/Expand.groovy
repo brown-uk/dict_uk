@@ -1,6 +1,5 @@
 #!/usr/bin/env groovy
 
-// This script loads hunspell-like affixes && allows to perform some actions
 package org.dict_uk.expand
 
 import groovy.transform.TypeChecked
@@ -29,6 +28,19 @@ class Expand {
 	Pattern cf_flag_pattern = ~ /(vr?)[1-4]\.cf/	 // v5.cf is special
 	Pattern imprs_pattern = ~ /(vr?)[1-9]\.imprs/
 	Pattern pattr_pattern = ~ /n[0-9]+\.patr/
+//	Pattern default_kly_u_pattern = ~ /([^бвджзлмнпстфц]|[аеиу]р)$/
+	Pattern default_kly_u_pattern = ~ /[^бвджзлмнпстфц]$/
+	Pattern default_kly_u_soft_pattern = ~ /[аеиу]р$/
+
+    boolean isDefaultKlyU(String word, String flags) {
+        return word =~ default_kly_u_pattern \
+            || (flags.contains("n24") && word =~ default_kly_u_soft_pattern)
+    }
+
+    boolean isDefaultKlyE(String word, String flags) {
+        return ! (word =~ default_kly_u_pattern) \
+            || (!flags.contains("n24") && word =~ default_kly_u_soft_pattern)
+    }
 
 	@TypeChecked
 	def adjustCommonFlag(String affixFlag2) {
@@ -416,6 +428,13 @@ class Expand {
 							line = line.replace("/v_zna", "")
 						}
 					}
+					else if( flags.contains("<+") && ! flags.contains(".k") && line.split()[1].endsWith("ів") ) {
+					    if( line.contains("v_kly") ) 
+					        if( ! line.contains("/v_kly") ) 
+					            continue;
+//					        else
+//					            line = line.replace("/v_kly", "")
+					}
 				}
 				else if( main_flag.startsWith("/n2nm") ) {
 					if( util.istota(flags)) {
@@ -448,12 +467,10 @@ class Expand {
 						base_word = line.split()[1]
 					}
 					
-					if( //("<+" in flags && ! (":p:" in line)) \
-//					    || (main_flag =~ "/n2n|/n4" && ! util.istota(flags)) \
-					     //(! (main_flag =~ "/n2n|/n2adj1|/n4") && ! util.person(flags) ) \
-                         ( (flags.contains(".ko") || flags.contains(".ke")) && ! line.contains(":patr") ) \
-                        || (line.contains(":m:") && flags.contains("<+") ) \
-                        ) {//|| (main_flag.startsWith("/n20") && base_word.endsWith("ло") && "v_dav" in line) ) {
+					boolean explicitKly = flags.contains(".ko") || flags.contains(".ke")
+					if( ( explicitKly && ! line.contains(":patr") ) \
+					        || ( ! explicitKly && main_flag =~ /n2[0-4]/ && ! isDefaultKlyU(base_word, flags) )
+                            || (line.contains(":m:") && flags.contains("<+") ) ) {
 						//log.info("removing v_kly from: %s, %s", line, flags)
 						line = line.replace("/v_kly", "")
 					}
@@ -688,8 +705,9 @@ class Expand {
 			out_lines = [line]
 		}
 		else if( line =~ ' /n2[0-4]' && ! line.contains(".k") ) {
-			if( line =~ '[бвджзлмнпстфц] /n2' ) {
-			    def parts = line.split()
+		    def parts = line.split()
+			if( isDefaultKlyE(parts[0], parts[1]) ) {
+//			    System.err.println(" .ke == " + line)
 			    parts[1] += ".ke"
 			    line = parts.join(" ")
 		    }
@@ -1017,10 +1035,6 @@ class Expand {
 				}
 				else {
 					exp_lines = [line]
-				}
-
-				if( line.contains(":nv") && ! line.contains("v_") ) {
-					exp_lines = util.expand_nv(exp_lines)
 				}
 
 				out_lines.addAll( exp_lines )

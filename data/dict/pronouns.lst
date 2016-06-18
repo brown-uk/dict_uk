@@ -268,8 +268,8 @@
 # Прикметникові займенники
 
 # Присвійні займенники його, її є незмінними
-його його adj:m:nv//f:nv//n:nv:&pron:pos
-її її adj:m:nv//f:nv//n:nv:&pron:pos
+його adj:m:nv//f:nv//n:nv:&pron:pos
+її adj:m:nv//f:nv//n:nv:&pron:pos
 
 сам /adj_pron :&pron:def
 наш /adj_pron :&pron:pos
@@ -1111,19 +1111,19 @@
 отце part:rare
 хибань part:rare:coll
 
-обойко обойко numr:p:nv:coll
-обоєчко обоєчко numr:p:nv:coll
-двойко двойко numr:p:nv:coll
-двоєчко двоєчко numr:p:nv:coll
-двійко двійко numr:p:nv:coll
-п'ятірко п'ятірко numr:p:nv:coll
-трійко трійко numr:p:nv:coll
-тройко тройко numr:p:nv:coll
-четвірко четвірко numr:p:nv:coll
-семерко семерко numr:p:nv:coll
-декілько декілько numr:p:v_naz/v_zna:coll
-кількадесятеро кількадесятеро numr:p:v_naz/v_zna:coll
-кільканадцятеро кільканадцятеро numr:p:v_naz/v_zna:coll
+обойко numr:p:nv:coll
+обоєчко numr:p:nv:coll
+двойко numr:p:nv:coll
+двоєчко numr:p:nv:coll
+двійко numr:p:nv:coll
+п'ятірко numr:p:nv:coll
+трійко numr:p:nv:coll
+тройко numr:p:nv:coll
+четвірко numr:p:nv:coll
+семерко numr:p:nv:coll
+декілько numr:p:v_naz/v_zna:coll
+кількадесятеро numr:p:v_naz/v_zna:coll
+кільканадцятеро numr:p:v_naz/v_zna:coll
 
 доперва adv:rare|part:rare
 суціль adv:rare
