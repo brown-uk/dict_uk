@@ -1,9 +1,13 @@
+агрус /n20.p
 алегретто adv
+біґборд /n20.a.p
+біґ-борд /n20.a.p
 вебсайта вебсайт noun:m:v_rod
 веб-сайта веб-сайт noun:m:v_rod
 вогниво /n2n.p1 :rare    # xv2
 гратами грати noun:p:v_oru
 гребінь /n22.a.p
+гречно adv
 грунт /n20.p
 грунтований /adj :&adjp:pasv:imperf    # :past
 грунтовий /adj
@@ -12,14 +16,22 @@
 грунтовність /n30
 грунтувати /v1.cf.advp.imprs0 :imperf
 грунтуватися /vr1.cf.advp :imperf
+грянути /v1 :perf
+дрогобиччанин /n20.a.p.<
 Журавно noun:n:v_naz/v_zna
+заввиграшки adv
 зберігти verb:inf:perf
 зберігтись verb:rev:inf:perf
 зберігтися verb:rev:inf:perf
 згвалтований /adj :&adjp:pasv:perf
 згвалтування /n2n.p1
 згвалтувати /v1.imprs0 :perf
+імплатант /n20.a.p
+колять колоти verb:imperf:pres:p:3
+лабет лабети noun:inanim:p:v_rod:ns
 локоть /n22.p
+Мукачеві Мукачеве noun:inanim:n:v_mis:prop
+насамоті adv
 негрунтований /adj :&adjp:pasv:imperf    # :past
 необгрунтований /adj.adv :&adjp:pasv:perf    # :past
 обгрунтований /adj.adv :&adjp:pasv:perf    # :past
@@ -29,19 +41,32 @@
 обгрунтування /n2n.p1
 обгрунтувати /v1.imprs0 :perf
 обгрунтуватися /vr1 :perf
+овоча овоч noun:m:v_rod
 основанья основанья noun:n:v_rod
+очків очко noun:inanim:p:v_rod:xp2
+пампушків пампушка noun:inanim:p:v_rod
 підгрунтя /n2n
+пластирем пластир noun:inanim:m:v_oru
+посипляться посипатися verb:rev:perf:futr:p:3:xp2
 прихватизатор /n20.a.p.ke.<
 прихватизація /n10
 прихватизований /adj :&adjp:pasv:perf
 прихватизувати /v1.imprs0 :perf
 прихватизуватися /vr1 :perf
+прогавити /v1.imprt0 :perf
 п'яніна /n10
 п'яніно noun:n:nv:np
+реггі noun:n:nv
 сайта сайт noun:m:v_rod
 самашедший /adj
+сиплються сипатися verb:rev:imperf:pres:p:3
 совєти /np2
 совєцький /adj
 совіти /np2
 трафіка трафік noun:m:v_rod
+Тріполі noun:n:nv:np
 фортеп'яна /n10.p1
+хабарем хабар noun:inanim:m:v_oru
+Цюріх /n20.a
+Черчілль /n20.a.<+
+чілі noun:m:nv

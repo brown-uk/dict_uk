@@ -1,4 +1,5 @@
 абись conj:subord
+атентат /n20
 банно банно adv
 баяти /v2 :imperf
 бистрота /n10
@@ -10,6 +11,7 @@
 ваганки /np2
 вазка /n10
 варівко варівко adv
+вельон /n20
 венгерське /n2adj1
 вигибти /v3 :perf
 вилочний /adj
@@ -33,6 +35,7 @@
 гейби conj:subord
 глупий /adj :xv1
 головочка /n10
+ґердан /n20.p
 далебіг далебіг insert
 дармо adv
 дармовіс /n20.a.p
@@ -47,9 +50,11 @@
 жалуватися /vr1.cf.advp :imperf
 жемчужний /adj
 завідатель /n20.a.<
+зазнимкувати /v1.imprs0 :perf
 заки conj:subord
 заким conj:subord
 замісто prep:rv_rod
+запоріжець /n22.a.p.<
 зверх зверх adv
 здрійко numr:nv
 змирятися /vr2.cf.advp :imperf
@@ -63,13 +68,16 @@
 кете кете predic
 кілько numr:p:v_naz/v_zna
 коби conj:subord
+когут /n20.a.p.<>
 кождий /adj :&pron:gen
+коц /n20.a.p
 леда-який /adj :&pron:ind
 любля любля predic
 люде люди noun:anim:p:v_naz:ns
 мабіть мабіть insert
 магайбі intj
 майбуть майбуть insert
+масакра /n10
 мізок /n22
 мість prep:rv_rod
 мо мо insert
@@ -105,6 +113,8 @@
 нікоторий /adj :&pron:neg
 ніт ніт part
 нітелень нітелень predic:coll
+ніц noun:inanim:v_rod:&pron:neg
+ніц noun:inanim:v_zna:&pron:neg
 оба numr:m:v_naz/v_zna
 обі numr:f:v_naz/v_zna
 обруч adv
@@ -121,6 +131,7 @@
 опостін adv|prep:rv_rod
 опріче adv|prep:rv_rod
 опроче adv|prep:rv_rod
+орегано noun:n:nv
 оселець /n22.a.p.<
 осьмий /adj
 отсе отсей adj:n:v_naz/v_zna:&pron:dem
@@ -171,6 +182,7 @@
 отця отцей adj:f:v_naz:&pron:dem
 памка /n10
 печально adv
+писачок /n22.a.p
 півперек prep:rv_rod
 півтретя numr:f:v_naz/v_zna
 підсичувати /v1.cf.advp :imperf
@@ -180,6 +192,7 @@
 помісь conj:subord
 помісь part
 попсути /v2 :perf
+порист /n20.a.p.<
 посереду prep:rv_rod
 посланіє /n2n
 почерез prep:rv_zna
@@ -189,8 +202,10 @@
 простибі простибі insert
 простибіг простибіг insert
 против prep:rv_rod
+райця /n10.piv.<m
 рибно рибно adv
 рік-річно рік-річно adv
+розгрішення /n2n
 салган /n20
 самовродок /n20.a.p
 саф'янець /n22.a.p
@@ -222,6 +237,8 @@
 ся part
 таж conj:subord|part
 таже conj:subord|part
+травознай /n20.a.p.<
+трафунок /n22
 трепетати /v1.cf :imperf
 тридесять numr:p:v_naz/v_zna
 трясцяма трясцяма predic:coll
@@ -246,11 +263,16 @@
 успокоєний /adj :&adjp:pasv:perf    # :past
 ухорканий /adj :&adjp:pasv:perf :v-u    # :past
 фашистівський /adj
+фестини /np1
+фіра /n10.p1
 хватаний /adj
+хляпавка /n10
 хоть conj:subord
 хоть part
 хотя part
 хресійбо intj
+циганів циган noun:anim:p:v_rod/v_zna
+цукриця /n10
 цьоця /n10.ku.<
 чортма чортма predic:coll
 чорт-ма чорт-ма predic:coll
