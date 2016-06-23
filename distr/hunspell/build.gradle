@@ -165,7 +165,7 @@ task affixes {
     
     def txt = new File('header/affix_header.txt').text
 
-	def files = new File('affix').listFiles().findAll { 
+	def files = new File('affix').listFiles().sort().findAll { 
 	    it.name.endsWith('.aff')
 	}
 	

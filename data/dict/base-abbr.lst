@@ -13,7 +13,7 @@
 АПК noun:m:nv
 АРСР noun:f:nv:np:prop
 АСЕАН noun:f:nv:np:prop    # Association of SouthEast Asian Nations
-АТ noun:n:nv
+АТ noun:n:nv                # акціонерне товариство
 АТЕК noun:m:nv:np:prop
 АТЗТ noun:n:nv
 АТП noun:n:nv
@@ -60,8 +60,9 @@
 ВПЛ noun:m:nv:prop      # Вірус папіломи людини
 ВПС noun:p:nv:ns
 ВР noun:f:nv:np
-ВРУ noun:f:nv:prop
+ВРУ noun:f:nv:prop      # Верховна Рада України
 ВССУ noun:m:nv
+ВСУ noun:m:nv:np:prop        # Верховний Суд України
 ВТССУМ noun:m:nv:prop    # Великий тлумачний словник сучасної української мови
 ВУАН noun:f:nv:prop    # Всеукраїнська академія наук (1921—1936)
 ВУНАС noun:f:nv:prop    # Всеукраїнська наукова асоціація сходознавства
@@ -90,6 +91,7 @@
 ГРВІ noun:f:nv
 грн noun:f:nv
 ГРУ noun:n:nv:np:prop
+ГТС noun:f:nv               # газо-транспортна система
 ГУАМ noun:f:nv:np:prop
 ГУБОЗ noun:n:nv:np
 ГУМВС noun:n:nv:np
@@ -115,7 +117,7 @@
 ДНР noun:f:nv:np    # "Донецька Народна Республіка"
 дНТФ noun:m:nv
 ДОС noun:f:nv
-ДП noun:n:nv
+ДП noun:n:nv        # державне підприємство
 ДПА noun:f:nv
 ДПАУ noun:f:nv:prop    # Державна податкова адміністрація України
 ДПЕК noun:m:nv:prop    # Донбаської паливно-енергетичної компанії
@@ -166,7 +168,7 @@
 ЗНО noun:n:nv
 ЗПГ noun:m:nv
 ЗРК noun:m:nv
-ЗСУ noun:p:nv:ns:prop
+ЗСУ noun:p:nv:ns:prop   # збройні сили України
 ЗУНР noun:f:nv:prop
 ІГХ noun:f:nv    # Імуногістохімія
 ІНК noun:m:nv:prop    # Індійський національний конгрес
@@ -312,6 +314,7 @@
 нм noun:m:nv
 НМПУ noun:f:nv
 НОП noun:f:nv
+НПЗ noun:m:nv       # нафтопереробний завод
 НРБ noun:m:nv
 НРКУ noun:f:nv
 НРП noun:f:nv
@@ -380,12 +383,14 @@
 ПіС noun:f:nv           # партія Право і Справедливість
 ПК noun:m:nv
 ПЛР noun:f:nv
+ПМР noun:f:nv:np:prop   # Придністровська Молдавська Республіка
 ПНР noun:f:nv
 ПОРП noun:f:nv
-ПП noun:n:nv
+ПП noun:n:nv            # приватне підприємство
 ППО noun:n:nv:np
 ПППУ noun:f:nv
 ПР noun:f:nv
+ПрАТ noun:n:nv      # приватне акціонерне товариство
 ПрикВО noun:m:nv
 ПРО noun:f:nv:np
 ПРООН noun:f:nv
@@ -449,6 +454,7 @@
 СНПУ noun:f:nv
 СОТ noun:f:nv:np
 СОУ noun:f:nv
+СПД noun:m:nv       # суб'єкт підприємницької діяльності
 СПС noun:m:nv
 СПУ noun:f:nv
 СР noun:f:nv
@@ -474,11 +480,11 @@
 ТЕФІ noun:f:nv
 ТЕЦ noun:f:nv
 ТЗ noun:n:nv
-ТзОВ noun:n:nv
+ТзОВ noun:n:nv      # товариство з обмеженою відповідальністю
 ТНК-ВР noun:f:nv
 ТНМК noun:m:nv
 ТНС noun:p:nv:ns
-ТОВ noun:n:nv
+ТОВ noun:n:nv       # товариство з обмеженою відповідальністю
 ТОУК noun:n:nv
 ТРК noun:f:nv
 трлн noun:m:nv|numr:p:nv
@@ -568,6 +574,7 @@
 ФМ-станція /n10.p1
 ФМШ noun:f:nv
 фоб noun:m:nv
+ФОП noun:m:nv           # фізична особа – підприємець
 ФОС noun:m:nv
 ФРЕЛІМО noun:m:nv:prop    # Frente de Libertação de Moçambique
 ФСБ noun:f:nv:np:prop

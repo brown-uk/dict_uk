@@ -85,6 +85,13 @@ task sortDict(type: JavaExec) {
 	args files.split()
 }
 
+task createStemmerMap(type: JavaExec) {
+	classpath = sourceSets.main.runtimeClasspath
+	main = "org.dict_uk.tools.CreateStemmerMap"
+
+	workingDir = file("data/affix")
+}
+
 task dups << {
 	def dictDir = file("data/dict")
 	
