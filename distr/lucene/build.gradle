@@ -1,0 +1,138 @@
+apply plugin: 'java'
+
+String ltVersion = '3.4-SNAPSHOT'
+
+String langCode="uk"
+
+String packageDir="org/apache/lucene/analysis/" + langCode
+String resourceDir=sourceSets.main.resources.srcDirs[0].toString() + "/" + packageDir
+String outputDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageDir
+String tmpDir="build/tmp"
+
+String inputDir="${projectDir}/../../out"
+String inputDictFile="dict_corp_lt.txt"
+
+String dstEncoding="cp1251"
+String srcEncoding="utf-8"
+
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+configurations{
+  provided {
+        description = 'Configuration for generating the dictionaries'
+  }
+}
+
+dependencies {
+    provided 'org.languagetool:languagetool-tools:' + ltVersion
+}
+
+
+task prepareDict(type: Exec, dependsOn: processResources) {
+    def srcDict="${inputDir}/$inputDictFile"
+    def outFile="${tmpDir}/all.tagged.tmp"
+
+    inputs.file srcDict
+    outputs.file outFile
+
+    workingDir "$projectDir"
+
+    doFirst {
+        println "Preparing lucene dict from $inputDictFile"
+        new File("$workingDir/$tmpDir").mkdirs()
+    }
+
+    def normalizeCode = 
+'''
+def prevKey=""
+System.in.eachLine { 
+    def (token, lemma, tags) = it.split()
+    def key = token + " " + lemma;
+
+    if( key != prevKey ) {
+        if( prevKey )
+            println ""
+
+        print it.replace((char)" ", (char)"\t")
+        prevKey = key
+    }
+    else {
+        print ";" + tags
+    }
+}
+println ""
+'''
+    def cmd = "cat ${srcDict} | LC_ALL=POSIX sort -u | groovy -e '$normalizeCode' | iconv -f ${srcEncoding} -t ${dstEncoding} | LC_ALL=POSIX sort -u > ${outFile}"
+
+    commandLine "sh", "-c", "${cmd}"
+}
+
+task createStemmerDict(type: JavaExec, dependsOn: prepareDict) {
+    def outputDict="${outputDir}/ukrainian.dict"
+
+    inputs.file tasks.prepareDict.outputs.files
+    outputs.file outputDict
+
+    workingDir "$projectDir"
+
+    classpath = files(configurations.provided.files)
+    main = 'org.languagetool.tools.POSDictionaryBuilder'
+
+    args "-i", "${tmpDir}/all.tagged.tmp"
+    args "-info", "${resourceDir}/ukrainian.info"
+    args "-o", "${outputDict}"
+    
+    doFirst {
+        new File("$outputDir").mkdirs()
+    }
+}
+
+
+
+task stopwords () {
+    def srcDict="${inputDir}/$inputDictFile"
+	def outFile = "${outputDir}/stopwords.txt"
+
+	inputs.file srcDict
+	outputs.file outFile
+
+	doFirst {
+		def stopWords = []
+		def lines = new File(srcDict).eachLine { line ->
+			def (word, lemma, tags) = line.split()
+			if( word.contains('-') )
+				return
+
+			if( (tags =~ /part|conj|prep/ && ! (tags =~ /:rare|:pers/)) \
+	           || (tags =~ /&pron/ && ! (tags =~ /:rare/)) \
+	           || (lemma in ['бути','могти','можна'] ) ) {
+
+				if( ! (word in stopWords) ) {
+					stopWords << word
+				}
+			}
+		}
+		logger.lifecycle("Written ${stopWords.size} stopwords into $outFile")
+		new File(outFile).text = stopWords.join("\n")
+	}
+}
+
+
+
+task createStemmerMap(type: JavaExec) {
+	classpath = sourceSets.main.runtimeClasspath
+	main = "org.dict_uk.tools.CreateStemmerMap"
+
+	workingDir = file("${projectDir}/../../data/affix")
+}
+
+
+classes.dependsOn(createStemmerDict, stopwords)
+compileJava.enabled = false
+
+
