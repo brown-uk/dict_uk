@@ -54,6 +54,13 @@ System.in.eachLine {
     def (token, lemma, tags) = it.split()
     def key = token + " " + lemma;
 
+    def ignore = tags.contains(":inf:coll") 
+        // || token.contains("-") // hyphen may be useful if users use analyzers that do not break words on hyphen
+
+    if( ignore )
+        return
+
+
     if( key != prevKey ) {
         if( prevKey )
             println ""
