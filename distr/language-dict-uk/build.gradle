@@ -52,6 +52,7 @@ task createTagList(type: Exec, dependsOn: processResources) {
     commandLine "sh", "-c", "${cmd}"
 }
 
+
 task prepareDict(type: Exec, dependsOn: processResources) {
     def srcDict="${inputDir}/$inputDictFile"
     def outFile="${tmpDir}/all.tagged.tmp"
@@ -86,6 +87,7 @@ task createPOSDict(type: JavaExec, dependsOn: prepareDict) {
     args "-info", "${resourceDir}/ukrainian.info"
     args "-o", "${outputDict}"
 }
+
 
 task createSynthDict(type: JavaExec, dependsOn: prepareDict) {
     def outputDict="${outputDir}/ukrainian_synth.dict"
@@ -122,6 +124,7 @@ task prepareSpellWords(type: Exec, dependsOn: processResources) {
     commandLine "sh", "-c", "${cmd}"
 }
 
+
 task createSpellDict(type: JavaExec, dependsOn: prepareSpellWords) {
     def spellOutDir="${outputDir}/hunspell"
     def outFile="${spellOutDir}/uk_UA.dict"
@@ -142,6 +145,82 @@ task createSpellDict(type: JavaExec, dependsOn: prepareSpellWords) {
 }
 
 
+task createReplacementDict() {
+    def srcDir="${inputDir}/../data/dict"
+    def outFile="${outputDir}/replace.txt"
+    def srcFiles=["base.lst", "twisters.lst"]
+
+    inputs.file "$srcDir/twisters.lst"
+    outputs.file outFile
+
+
+    def headText =
+'''# Simple replace table
+# Format: word=suggestion1|suggestion2|suggestion3...
+
+'''
+    doLast {
+
+    def inText = new File("$srcDir/twisters.lst").text
+    def lines = inText.split("\n")
+    
+    def outLines = lines.findAll {
+        it.contains(' #>')
+    }
+    .collect {
+        it = it.replace(' +cs=', '')
+        it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
+    }
+
+    new File(outFile).text = headText + outLines.join("\n")
+    println "Wrote $outLines.size replacements"
+
+    }
+
+}
+
+
+task createSoftReplacementDict() {
+    def srcDir="${inputDir}/../data/dict"
+    def outFile="${outputDir}/replace_soft.txt"
+    def allFiles = []
+    new File(srcDir).eachFile{ allFiles << it.name }
+    def srcFiles = allFiles.findAll { it.endsWith('.lst') && ! it.startsWith('twisters') }
+
+    inputs.file srcFiles
+    outputs.file outFile
+
+
+    def headText =
+'''#  Simple replace table for soft suggestions
+# Format: word=suggestion1|suggestion2|suggestion3...
+
+'''
+    doLast {
+		def outLines = []
+
+		srcFiles.each{ srcFile ->
+			def rvLines = new File("$srcDir/$srcFile").text
+			    .split('\n')
+			    .findAll {
+				    it.contains(' #>')
+			    }.collect{
+				    it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).* #> *(.*)/, '$1=$2').replaceAll(/ *[;,] */, '|')
+			    }
+
+			outLines.addAll(rvLines)
+		}
+
+		java.text.Collator coll = java.text.Collator.getInstance(new Locale("uk", "UA"))
+        Collections.sort(outLines, coll)
+		
+        println "Wrote $outLines.size replacements"
+		new File(outFile).text = headText + outLines.join('\n') + "\n"
+	}
+
+}
+
+
 task createCaseGovernmentDict() {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outputDir}/case_government.txt"
@@ -151,7 +230,7 @@ task createCaseGovernmentDict() {
     outputs.file outFile
 
 	doLast {
-		def allOutput = ''
+		def outLines = []
 
 		srcFiles.each{ srcFile ->
 
@@ -161,12 +240,16 @@ task createCaseGovernmentDict() {
 				it.replaceFirst(/^(?: \+cs=)?(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2').replace("rv_", "v_")
 			}
 
-			allOutput += rvLines.join('\n') + '\n'
+			outLines.addAll(rvLines)
 		}
 		
-		new File(outFile).text = allOutput
+        println "Wrote $outLines.size lines"
+		new File(outFile).text = outLines.join('\n') + '\n'
 	}
 }
+
+
+task helperDicts (dependsOn: [createCaseGovernmentDict, createReplacementDict, createSoftReplacementDict])
 
 
 task deployToLT(type: Copy, dependsOn: classes) {
