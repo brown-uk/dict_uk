@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'groovy'
 
 String ltVersion = '3.4-SNAPSHOT'
 
@@ -30,8 +31,23 @@ configurations{
 
 dependencies {
     provided 'org.languagetool:languagetool-tools:' + ltVersion
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.6'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.5'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.5'
+    compile 'commons-cli:commons-cli:1.3'
 }
 
+
+sourceSets {
+  main {
+    java {
+        srcDir '../../src/main/java'
+    }
+    groovy {
+        srcDir 'src/main/groovy'
+    }
+  }
+}
 
 task prepareDict(type: Exec, dependsOn: processResources) {
     def srcDict="${inputDir}/$inputDictFile"
@@ -135,11 +151,13 @@ task createStemmerMap(type: JavaExec) {
 	classpath = sourceSets.main.runtimeClasspath
 	main = "org.dict_uk.tools.CreateStemmerMap"
 
-	workingDir = file("${projectDir}/../../data/affix")
+//	workingDir = file("${projectDir}/../../data/affix")
 }
 
+task lucene(dependsOn: [createStemmerDict, stopwords])
 
-classes.dependsOn(createStemmerDict, stopwords)
-compileJava.enabled = false
+
+//classes.dependsOn(createStemmerDict, stopwords)
+//compileJava.enabled = false
 
 
