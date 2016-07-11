@@ -11,7 +11,8 @@ String langCode="uk"
 
 String packageDir="org/languagetool/resource/" + langCode
 String resourceDir=sourceSets.main.resources.srcDirs[0].toString() + "/" + packageDir
-String outputDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageDir
+String outResDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageDir
+String outRulesDir=sourceSets.main.output.resourcesDir.toString() + "/org/languagetool/rules/uk"
 String tmpDir="build/tmp"
 
 String inputDir="${projectDir}/../../out"
@@ -40,7 +41,7 @@ dependencies {
 
 task createTagList(type: Exec, dependsOn: processResources) {
     def srcDict="${inputDir}/$inputDictFile"
-    def outFile="${outputDir}/ukrainian_tags.txt"
+    def outFile="${outResDir}/ukrainian_tags.txt"
 
     inputs.file srcDict
     outputs.file outFile
@@ -73,7 +74,7 @@ task prepareDict(type: Exec, dependsOn: processResources) {
 }
 
 task createPOSDict(type: JavaExec, dependsOn: prepareDict) {
-    def outputDict="${outputDir}/ukrainian.dict"
+    def outputDict="${outResDir}/ukrainian.dict"
 
     inputs.file tasks.prepareDict.outputs.files
     outputs.file outputDict
@@ -90,7 +91,7 @@ task createPOSDict(type: JavaExec, dependsOn: prepareDict) {
 
 
 task createSynthDict(type: JavaExec, dependsOn: prepareDict) {
-    def outputDict="${outputDir}/ukrainian_synth.dict"
+    def outputDict="${outResDir}/ukrainian_synth.dict"
 
     inputs.file tasks.prepareDict.outputs.files
     outputs.file outputDict
@@ -126,7 +127,7 @@ task prepareSpellWords(type: Exec, dependsOn: processResources) {
 
 
 task createSpellDict(type: JavaExec, dependsOn: prepareSpellWords) {
-    def spellOutDir="${outputDir}/hunspell"
+    def spellOutDir="${outResDir}/hunspell"
     def outFile="${spellOutDir}/uk_UA.dict"
     def freqFile="src/main/data/uk_wordlist.xml"
 
@@ -145,9 +146,17 @@ task createSpellDict(type: JavaExec, dependsOn: prepareSpellWords) {
 }
 
 
-task createReplacementDict() {
+
+
+task createOutRulesDir << {
+    println "Preparing dict file $outRulesDir"
+    new File("$outRulesDir").mkdirs()
+}
+
+
+task createReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
-    def outFile="${outputDir}/replace.txt"
+    def outFile="$outRulesDir/replace.txt"
     def srcFiles=["base.lst", "twisters.lst"]
 
     inputs.file "$srcDir/twisters.lst"
@@ -172,7 +181,7 @@ task createReplacementDict() {
         it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
     }
 
-    new File(outFile).text = headText + outLines.join("\n")
+    new File(outFile).text = headText + outLines.join("\n") + '\n'
     println "Wrote $outLines.size replacements"
 
     }
@@ -180,9 +189,10 @@ task createReplacementDict() {
 }
 
 
-task createSoftReplacementDict() {
+
+task createSoftReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
-    def outFile="${outputDir}/replace_soft.txt"
+    def outFile="${outRulesDir}/replace_soft.txt"
     def allFiles = []
     new File(srcDir).eachFile{ allFiles << it.name }
     def srcFiles = allFiles.findAll { it.endsWith('.lst') && ! it.startsWith('twisters') }
@@ -192,7 +202,7 @@ task createSoftReplacementDict() {
 
 
     def headText =
-'''#  Simple replace table for soft suggestions
+'''# Simple replace table for soft suggestions
 # Format: word=suggestion1|suggestion2|suggestion3...
 
 '''
@@ -223,7 +233,7 @@ task createSoftReplacementDict() {
 
 task createCaseGovernmentDict() {
     def srcDir="${inputDir}/../data/dict"
-    def outFile="${outputDir}/case_government.txt"
+    def outFile="${outResDir}/case_government.txt"
     def srcFiles=["base.lst", "twisters.lst"]
 
     inputs.file srcFiles.collect{ "$srcDir/$it" }
@@ -253,7 +263,7 @@ task helperDicts (dependsOn: [createCaseGovernmentDict, createReplacementDict, c
 
 
 task deployToLT(type: Copy, dependsOn: classes) {
-    from outputDir
+    from outResDir
     into "${languagetoolDictDestDir}"
 
     includeEmptyDirs = false
