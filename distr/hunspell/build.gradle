@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'groovy'
 
 String dstEncoding="cp1251"
 String srcEncoding="utf-8"
@@ -9,6 +10,37 @@ String outDir = "build/hunspell"
 repositories {
     mavenCentral()
 }
+
+
+dependencies {
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.6'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.5'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.5'
+}
+
+
+sourceSets {
+  main {
+    java {
+        srcDir '../../src/main/java'
+    }
+    groovy {
+        srcDir 'src/main/groovy'
+    }
+  }
+}
+
+task generateAffixes (type: JavaExec, dependsOn: classes) {
+    //def inputFile = "$affixDir/v_advp.aff"
+    //inputs.file inputFile
+    //outputs.file "$affixDir/vr_advp.aff"
+
+    classpath = sourceSets.main.runtimeClasspath
+    main = "Hunspell"
+
+    //args file(inputFile), file(outputs.files[0])
+}
+
 
 
 task wordlist << {
@@ -171,11 +203,21 @@ task affixes {
 	
 	logger.lifecycle("Affix files: " + files*.name)
 
-	files.each {
-	    txt += it.text.replaceAll(/[ \t]*#.*/, '').replaceAll(/\n([ \t]*\n)+/, "\n")
-	    if( ! txt.endsWith("\n") ) {
-	        txt += "\n"
-	    }
+    def vMap = [:].withDefault { [] }
+	files.each { file ->
+	    def fileText = file.text.replaceAll(/[ \t]*#.*/, '').replaceAll(/^[ \t]*$/, '')
+	    
+	        fileText.split('\n').each { line->
+	            if( line.startsWith('SFX') ) {
+	                vMap[ line[0..4] ] << line
+	            }
+	        }
+	}
+
+	vMap.each { k, v->
+	    v[0] = v[0].replaceFirst(/Y [1-9][0-9]*/, 'Y ' + (v.size()-1))
+	
+	    txt += v.join('\n') + '\n'
 	}
 	
 	new File(outFile).text = txt
