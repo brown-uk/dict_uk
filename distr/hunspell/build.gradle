@@ -13,7 +13,7 @@ repositories {
 
 
 dependencies {
-    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.6'
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.7'
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.5'
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.5'
 }
@@ -30,7 +30,7 @@ sourceSets {
   }
 }
 
-task generateAffixes (type: JavaExec, dependsOn: classes) {
+task hunspell (type: JavaExec, dependsOn: classes) {
     //def inputFile = "$affixDir/v_advp.aff"
     //inputs.file inputFile
     //outputs.file "$affixDir/vr_advp.aff"
@@ -43,199 +43,23 @@ task generateAffixes (type: JavaExec, dependsOn: classes) {
 
 
 
-task wordlist << {
-	def dictDir = file("../../data/dict")
-	
-	def files = dictDir.listFiles().findAll { 
-	    it.name.endsWith('.lst') && ! (it.name =~ /composite|dot-abbr|twisters|ignored|alt|rare/)
-	}
-	
-	logger.lifecycle("Dict files: " + files*.name)
-	
-	def lines = files.collect {
-	    it.text.split("\n")
-	}
-	.flatten()
-	.collect {
-	    it = it.replaceFirst(/ *#.*/, '').trim()
-	    if( ! it )
-	        return ''
-	    
-	    if( ! it.contains("/") ) {
-	        if( it.startsWith("+cs") ) {
-	            it = it.replaceFirst(/\+cs=([^ ]*).*/, '$1/ac')
-	        }
-	        else {
-	            it = it.split()[0]
-	        }
-	    }
-	    else if( it.contains(" /adj") ) {
-	        if( it.contains(" /adj_pos") )
-	            return ''
-	    
-	        // TODO: handle filter 'g=m'
-	        it = it.replaceFirst(' /adj(\\.adv)?.*', '/a$1').replaceFirst(/\.adv/, 'd')
-
-	        if( it.contains("лиций/a") ) {
-	            it = it.replace('/a', '/b')
-	        }
-	        
-	        it
-	    }
-	    else if( it.contains(" /numr") ) {
-	        it = it.replaceFirst(' /numr.*', '/0')
-	    }
-	    else if( it.contains(" /n10") ) {
-	        it = it.replace(' /n10', '/e')
-	        it = it.replace('.ko', 'f')
-	        it = it.replace('.p1', 'g')
-	        it = it.replace('.p2', 'h')
-	        it = it.replace('.piv', 'i')
-	    }
-	    else if( it.contains(" /n2nf") ) {
-	        it = it.replace(' /n2nf', '/v')
-	        it = it.replace('.p', 'w')
-	    }
-	    else if( it.contains(" /n2nm") ) {
-	        it = it.replace(' /n2nm', '/x')
-	        it = it.replace('.p', 'y')
-	    }
-	    else if( it.contains(" /n2n") ) {
-	        it = it.replace(' /n2n', '/q')
-	        it = it.replace('.ovi', 'r')
-	        it = it.replace('.p1', 's')
-	        it = it.replace('.p2', 't')
-	        it = it.replace('.piv', 'u')
-	    }
-	    else if( it.contains(" /n40") ) {
-	        it = it.replace(' /n40', '/j')
-	        it = it.replace('.p', 'k')
-	    }
-	    else if( it.contains(" /np") ) {
-	        it = it.replace(' /np1', '/l')
-	        it = it.replace(' /np2', '/m')
-	        it = it.replace('.np1', 'n')
-	        it = it.replace('.np3', 'o')
-	        it = it.replace(' /np3', '/p')
-	    }
-	    else if( it.contains(" /v1") ) {
-	        it = it.replace(' /v1', '/1')
-	        it = it.replace('.imprt0', '2')
-	        it = it.replace('.imprt1', '3')
-	        it = it.replace('.imprsNo', 'I')
-	        it = it.replace('.imprsTo', 'J')
-	        it = it.replace('.imprs0', 'K')
-	        it = it.replace('.imprs1', 'L')
-	        it = it.replace('.advp', 'D')
-	        it = it.replace('.cf', '5')
-	    }
-	    else if( it.contains(" /v2") ) {
-	        it = it.replace(' /v2', '/4')
-	        it = it.replace('.advp', 'E')
-	        it = it.replace('.imprsNo', 'I')
-	        it = it.replace('.imprsTo', 'J')
-	        it = it.replace('.imprs0', 'K')
-	        it = it.replace('.cf', '5')
-	    }
-	    else if( it.contains(" /v3") ) {
-	        it = it.replace(' /v3', '/6')
-	        it = it.replace('.imprt1', '7')
-	        it = it.replace('.advp', 'F')
-	        it = it.replace('.imprsNo', 'I')
-	        it = it.replace('.imprsTo', 'J')
-	        it = it.replace('.imprs0', 'K')
-	        it = it.replace('.cf', '5')
-	    }
-	    else if( it.contains(" /v4") ) {
-	        it = it.replace(' /v4', '/8')
-	        it = it.replace('.advp', 'G')
-	        it = it.replace('.imprs3', 'M')
-	        it = it.replace('.imprsNo', 'I')
-	        it = it.replace('.imprsTo', 'J')
-	        it = it.replace('.imprs0', 'K')
-	        it = it.replace('.imprs1', 'L')
-	        it = it.replace('.imprs3', 'M')
-	        it = it.replace('.cf', '5')
-	    }
-	    else if( it.contains(" /v5") ) {
-	        it = it.replace(' /v5', '/A')
-	        it = it.replace('.advp', 'H')
-	        it = it.replace('.cf', 'B')
-	    }
-	    else if( it.contains(" /v6") ) {
-	        it = it.replace(' /v6', '/C')
-	        it = it.replace('.imprsTo', 'J')
-	        it = it.replace('.cf', '5')
-	    }
-	    else { it = '' }
-	    
-	    if( it ) {
-	        it = it.replaceFirst(/[. ].*/, '')
-	    }
-	}.grep { 
-	    it
-	}
-
-    def words = lines.unique()
-
-    println "Found ${words.size} words"
-    def txt = "${words.size}\n"
-    txt += words.toSorted().join("\n")
-	new File("$outDir/uk_UA.dic").text = txt
-}
-
-
-task affixes {
-    def outFile = "$outDir/uk_UA.aff"
-
-    inputs.file files("affix/*.aff")
-//    outputs.file outFile
-
-    doLast {
-
-    new File(outDir).mkdirs()
-    
-    def txt = new File('header/affix_header.txt').text
-
-	def files = new File('affix').listFiles().sort().findAll { 
-	    it.name.endsWith('.aff')
-	}
-	
-	logger.lifecycle("Affix files: " + files*.name)
-
-    def vMap = [:].withDefault { [] }
-	files.each { file ->
-	    def fileText = file.text.replaceAll(/[ \t]*#.*/, '').replaceAll(/^[ \t]*$/, '')
-	    
-	        fileText.split('\n').each { line->
-	            if( line.startsWith('SFX') ) {
-	                vMap[ line[0..4] ] << line
-	            }
-	        }
-	}
-
-	vMap.each { k, v->
-	    v[0] = v[0].replaceFirst(/Y [1-9][0-9]*/, 'Y ' + (v.size()-1))
-	
-	    txt += v.join('\n') + '\n'
-	}
-	
-	new File(outFile).text = txt
-	}
-}
-
-
-task hunspell (dependsOn: [affixes, wordlist]) {
-}
-
 
 task testHunspell (type: Exec) { //, dependsOn: hunspell) {
-    def txt = "головатий білого швидко вже"
+    def txt = "головатого білого білолицьому ницого"
+    txt += " швидко вже"
     txt += " хата хатами дами вимені воріт Карпат кайданів вовчища селом сіл"
+    txt += " карбованця"
     txt += " абонував гуляв хропу сядете живемо абонуватиму жнеш вечоріло"
     txt += " абонувавши абонуючи хроплячи"
     txt += " заправлено казано вимито метено введено"
+    txt += " обікрав вжену уженіться"
     def cmd = "echo $txt | hunspell -d $outDir/uk_UA"
+
+    commandLine "sh", "-c", "${cmd}"
+}
+
+task testHunspellDirect (type: Exec) { //, dependsOn: hunspell) {
+    def cmd = "hunspell -d $outDir/uk_UA -l ../../out/words_spell.txt > hunspell.unknown.txt; wc -l hunspell.unknown.txt"
 
     commandLine "sh", "-c", "${cmd}"
 }
