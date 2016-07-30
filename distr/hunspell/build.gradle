@@ -16,6 +16,8 @@ dependencies {
     compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.7'
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.5'
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.5'
+    compile 'org.codehaus.gpars:gpars:1.2.1'
+    compile 'commons-cli:commons-cli:1.3'
 }
 
 
@@ -26,9 +28,18 @@ sourceSets {
     }
     groovy {
         srcDir 'src/main/groovy'
+        srcDir '../../src/main/groovy'
+    }
+    resources {
+        srcDir '../../src/main/resources'
     }
   }
 }
+
+compileGroovy {
+    exclude '**/tools/other/*.groovy'
+}
+
 
 task hunspell (type: JavaExec, dependsOn: classes) {
     //def inputFile = "$affixDir/v_advp.aff"

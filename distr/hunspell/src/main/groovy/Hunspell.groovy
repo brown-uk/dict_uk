@@ -4,9 +4,11 @@ import java.util.regex.Matcher;
 import org.dict_uk.expand.*
 
 
+def AFFIX_DIR = "../../data/affix"
+
 
 Affix affixLoader = new Affix()
-affixLoader.load_affixes("../../data/affix")
+affixLoader.load_affixes(AFFIX_DIR)
 
 char hunFlag = (int)' '+1
 
@@ -172,6 +174,9 @@ def files = dictDir.listFiles().findAll {
 
 println("Dict files: " + files*.name)
 
+
+def superlatives = []
+
 def lines = files.collect {
 	it.text.split("\n")
 }
@@ -184,6 +189,9 @@ def lines = files.collect {
 	if( ! it.contains(" /") ) {
 		if( it.startsWith("+cs") ) {
 			it = it.replaceFirst(/\+cs=([^ ]*).*/, '$1/' + toHunFlagMap['adj'])
+			superlatives << 'най' + it
+			superlatives << 'щонай' + it
+			superlatives << 'якнай' + it
 		}
 		else {
 			it = it.split()[0]
@@ -238,6 +246,24 @@ def lines = files.collect {
 }.grep {
 	it
 }
+
+lines.addAll(superlatives)
+
+Args.args = new Args()
+
+def dic_file = new File("../../data/dict/composite.lst" )
+def expand = new Expand()
+expand.affix.load_affixes(AFFIX_DIR)
+def expand_comps = new ExpandComps(expand)
+
+def comps
+def dic_file_reader = dic_file.withReader("utf-8") { reader ->
+	comps = expand_comps.process_input(reader.readLines())
+}
+println "Got $comps.size comps"
+
+lines.addAll(comps.collect{ it.split()[0] })
+
 
 println "Found ${lines.size} total lines"
 
