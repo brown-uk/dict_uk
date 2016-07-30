@@ -65,7 +65,7 @@ flagMap.each{ flag, affixGroupItems ->
 			if( affix.fromm && ! (affix.fromm ==~ /[а-яіїєґА-ЯІЇЄҐ']+/ ) ) {
 //				println "regex in $flag ("+revFlagMap[flag]+") $affix.fromm -> $affix.to @ $item.ending"
 
-				Matcher matcher = item.ending =~ /\[([а-яіїєґ']+)\]/
+				Matcher matcher = item.ending =~ /\[([а-яіїєґ']+|\^жш)\]/
 
 				if( ! matcher || matcher.size() > 2 ) {
 					println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for " + revFlagMap[flag]
@@ -111,6 +111,11 @@ flagMap.each{ flag, affixGroupItems ->
 //				}
 				
 				def matcherGroup = matcher.size()==1 ? matcher[0][1] : matcher[1][1]
+				
+				if( matcherGroup == "^жш" ) {
+					System.err.println("manual case for [^жш]")
+					matcherGroup = "бвгнпрст"
+				}
 				
 				matcherGroup.toCharArray().each {
 					def fromm

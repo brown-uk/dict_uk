@@ -2,6 +2,7 @@
 атентат /n20
 банно банно adv
 баяти /v2 :imperf
+безлічно adv
 бистрота /n10
 бісиця /n10.ko.<
 благовіщення /n2n
@@ -31,7 +32,7 @@
 вколо вколо prep:rv_rod|adv
 вліжно вліжно adv
 воркотливий /adj
-вхорканий /adj :&adjp:pasv:perf :v-u    # :past
+вхорканий /adj :&adjp:pasv:perf:v-u    # :past
 гейби conj:subord
 глупий /adj :xv1
 головочка /n10
@@ -262,7 +263,7 @@
 урадуваний /adj :&adjp:pasv:perf    # :past
 уряджений /adj :&adjp:pasv:perf    # :past
 успокоєний /adj :&adjp:pasv:perf    # :past
-ухорканий /adj :&adjp:pasv:perf :v-u    # :past
+ухорканий /adj :&adjp:pasv:perf:v-u    # :past
 фашистівський /adj
 фестини /np1
 фіра /n10.p1
