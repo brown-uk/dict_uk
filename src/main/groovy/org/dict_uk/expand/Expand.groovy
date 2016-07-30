@@ -29,15 +29,15 @@ class Expand {
 	Pattern imprs_pattern = ~ /(vr?)[1-9]\.imprs/
 	Pattern pattr_pattern = ~ /n[0-9]+\.patr/
 //	Pattern default_kly_u_pattern = ~ /([^бвджзлмнпстфц]|[аеиу]р)$/
-	Pattern default_kly_u_pattern = ~ /[^бвджзлмнпстфц]$/
-	Pattern default_kly_u_soft_pattern = ~ /[аеиу]р$/
+	static Pattern default_kly_u_pattern = ~ /[^бвджзлмнпстфц]$/
+	static Pattern default_kly_u_soft_pattern = ~ /[аеиу]р$/
 
-    boolean isDefaultKlyU(String word, String flags) {
+    static boolean isDefaultKlyU(String word, String flags) {
         return word =~ default_kly_u_pattern \
             || (flags.contains("n24") && word =~ default_kly_u_soft_pattern)
     }
 
-    boolean isDefaultKlyE(String word, String flags) {
+    static boolean isDefaultKlyE(String word, String flags) {
         return ! (word =~ default_kly_u_pattern) \
             || (!flags.contains("n24") && word =~ default_kly_u_soft_pattern)
     }

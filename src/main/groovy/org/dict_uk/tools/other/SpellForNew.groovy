@@ -16,6 +16,8 @@ import org.apache.commons.lang.WordUtils
 class SpellForNew {
 	
 	def LETTER = ~ /[а-щьюяіїєґА-ЩЬЮЯІЇЄҐ][а-щьюяіїєґА-ЩЬЮЯІЇЄҐ'-]*[а-щьюяіїєґА-ЩЬЮЯІЇЄҐ]/
+	def IGNORE_PATTERN = ~ /[ІХ]+/
+	
 	Language ukLang = new Ukrainian()
 	JLanguageTool langTool = new MultiThreadedJLanguageTool(ukLang)
 	Tagger ukrainianTagger = ukLang.getTagger()
@@ -47,6 +49,7 @@ class SpellForNew {
 				AnalyzedToken token = reading.getReadings().get(0)
 				token.getToken() != null && (token.getPOSTag() == null /*|| !token.getPOSTag().contains(":lname")*/) \
 				    && LETTER.matcher(token.getToken()).matches() \
+				    && ! IGNORE_PATTERN.matcher(token.getToken()).matches() \
 				    && ! isUppercaseLastname(token.getToken()) \
 				    && russianTagger.tag( Arrays.asList(token.getToken()) )[0].getReadings().get(0).getPOSTag() == null
 				//				}
