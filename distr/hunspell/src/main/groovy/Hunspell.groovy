@@ -175,10 +175,21 @@ def files = dictDir.listFiles().findAll {
 println("Dict files: " + files*.name)
 
 
+def MULTIFLAG_PATTERN = ~ ' /[nv][^#]+ /[nv]'
+
 def superlatives = []
 
 def lines = files.collect {
 	it.text.split("\n")
+}
+.flatten()
+.collect {
+	if( MULTIFLAG_PATTERN.matcher(it) ) {
+//		System.err.println('got dual flag ' + it)
+		def parts = it.split(' ')
+		return [parts[0] + ' ' + parts[1], parts[0] + ' ' + parts[2]]
+	}
+	return it
 }
 .flatten()
 .collect {
