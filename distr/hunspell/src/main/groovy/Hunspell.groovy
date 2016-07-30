@@ -169,7 +169,7 @@ new File('build/hunspell/uk_UA.aff').text = fileHeader + '\n' + out
 def dictDir = new File("../../data/dict")
 
 def files = dictDir.listFiles().findAll {
-	it.name.endsWith('.lst') && ! (it.name =~ /composite|dot-abbr|twisters|ignored|alt|rare/)
+	it.name.endsWith('.lst') && ! (it.name =~ /composite|dot-abbr|twisters|ignored|alt/)
 }
 
 println("Dict files: " + files*.name)
@@ -204,6 +204,18 @@ def lines = files.collect {
 	}
 	else {
 		def parts = it.split()
+		
+		if( parts[1].contains("/n10") || parts[1].contains("/n3") ) {
+			if( ! parts[1].contains(".k") && ! parts[0].contains("ще ") ) {
+				parts[1] += parts[1].contains("/n10") ? ".ko" : ".ke"
+			}
+		}
+		else if( parts[1] =~ '/n2[0-4]' && ! parts[1].contains(".k") ) {
+			if( Expand.isDefaultKlyE(parts[0], parts[1]) ) {
+			    parts[1] += ".ke"
+		    }
+		}
+		
 
 		def allFlags = parts[1][1..-1]
 
