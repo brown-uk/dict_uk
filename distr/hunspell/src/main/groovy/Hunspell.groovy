@@ -256,6 +256,13 @@ def lines = files.collect {
 			else if( f.contains('.cf') || f.contains('.imprs') ) {
 				f = f.replaceFirst('v[0-9]', 'v')
 			}
+			else if( f == 'v3.advp' ) {
+				f = 'v1.advp'
+			}
+			else if( f == 'v3.imprt0' ) {
+				f = 'v1.imprt0'
+			}
+
 
 			if( ! toHunFlagMap.containsKey(f) ) {
 				println 'cant find ' + parts[0] + '/' + f
@@ -276,6 +283,10 @@ def lines = files.collect {
 }
 
 lines.addAll(superlatives)
+
+def extraWords = getClass().getResource( '/extra_words.txt' ).text
+
+lines.addAll(extraWords.split())
 
 Args.args = new Args()
 
