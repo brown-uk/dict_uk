@@ -78,6 +78,7 @@ class Args {
 			if( corp ) {
 				removeWithTags = ["uncontr"]
 				lemmaForTags = ["advp"]
+				removeTags = ["v-u"]
 			}
 			
 			if( options.removeWithTags ) {

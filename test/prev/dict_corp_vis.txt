@@ -724,72 +724,72 @@
   вбитими adj:p:v_oru:&adjp:pasv:perf
   вбитих adj:p:v_mis:&adjp:pasv:perf
   вбиті adj:p:v_kly:&adjp:pasv:perf
-вбогий adj:m:v_naz:compb:v-u
-  вбогого adj:m:v_rod:compb:v-u
-  вбогому adj:m:v_dav:compb:v-u
-  вбогого adj:m:v_zna:ranim:compb:v-u
-  вбогий adj:m:v_zna:rinanim:compb:v-u
-  вбогим adj:m:v_oru:compb:v-u
-  вбогім adj:m:v_mis:compb:v-u
-  вбогому adj:m:v_mis:compb:v-u
-  вбогий adj:m:v_kly:compb:v-u
-  вбога adj:f:v_naz:compb:v-u
-  вбогої adj:f:v_rod:compb:v-u
-  вбогій adj:f:v_dav:compb:v-u
-  вбогу adj:f:v_zna:compb:v-u
-  вбогою adj:f:v_oru:compb:v-u
-  вбогій adj:f:v_mis:compb:v-u
-  вбога adj:f:v_kly:compb:v-u
-  вбоге adj:n:v_naz:compb:v-u
-  вбогого adj:n:v_rod:compb:v-u
-  вбогому adj:n:v_dav:compb:v-u
-  вбоге adj:n:v_zna:compb:v-u
-  вбогим adj:n:v_oru:compb:v-u
-  вбогім adj:n:v_mis:compb:v-u
-  вбогому adj:n:v_mis:compb:v-u
-  вбоге adj:n:v_kly:compb:v-u
-  вбогі adj:p:v_naz:compb:v-u
-  вбогих adj:p:v_rod:compb:v-u
-  вбогим adj:p:v_dav:compb:v-u
-  вбогих adj:p:v_zna:ranim:compb:v-u
-  вбогі adj:p:v_zna:rinanim:compb:v-u
-  вбогими adj:p:v_oru:compb:v-u
-  вбогих adj:p:v_mis:compb:v-u
-  вбогі adj:p:v_kly:compb:v-u
-вбогіше adv:compr:v-u
-вбогіший adj:m:v_naz:compr:v-u
-  вбогішого adj:m:v_rod:compr:v-u
-  вбогішому adj:m:v_dav:compr:v-u
-  вбогішого adj:m:v_zna:ranim:compr:v-u
-  вбогіший adj:m:v_zna:rinanim:compr:v-u
-  вбогішим adj:m:v_oru:compr:v-u
-  вбогішім adj:m:v_mis:compr:v-u
-  вбогішому adj:m:v_mis:compr:v-u
-  вбогіший adj:m:v_kly:compr:v-u
-  вбогіша adj:f:v_naz:compr:v-u
-  вбогішої adj:f:v_rod:compr:v-u
-  вбогішій adj:f:v_dav:compr:v-u
-  вбогішу adj:f:v_zna:compr:v-u
-  вбогішою adj:f:v_oru:compr:v-u
-  вбогішій adj:f:v_mis:compr:v-u
-  вбогіша adj:f:v_kly:compr:v-u
-  вбогіше adj:n:v_naz:compr:v-u
-  вбогішого adj:n:v_rod:compr:v-u
-  вбогішому adj:n:v_dav:compr:v-u
-  вбогіше adj:n:v_zna:compr:v-u
-  вбогішим adj:n:v_oru:compr:v-u
-  вбогішім adj:n:v_mis:compr:v-u
-  вбогішому adj:n:v_mis:compr:v-u
-  вбогіше adj:n:v_kly:compr:v-u
-  вбогіші adj:p:v_naz:compr:v-u
-  вбогіших adj:p:v_rod:compr:v-u
-  вбогішим adj:p:v_dav:compr:v-u
-  вбогіших adj:p:v_zna:ranim:compr:v-u
-  вбогіші adj:p:v_zna:rinanim:compr:v-u
-  вбогішими adj:p:v_oru:compr:v-u
-  вбогіших adj:p:v_mis:compr:v-u
-  вбогіші adj:p:v_kly:compr:v-u
-вбого adv:compb:v-u
+вбогий adj:m:v_naz:compb
+  вбогого adj:m:v_rod:compb
+  вбогому adj:m:v_dav:compb
+  вбогого adj:m:v_zna:ranim:compb
+  вбогий adj:m:v_zna:rinanim:compb
+  вбогим adj:m:v_oru:compb
+  вбогім adj:m:v_mis:compb
+  вбогому adj:m:v_mis:compb
+  вбогий adj:m:v_kly:compb
+  вбога adj:f:v_naz:compb
+  вбогої adj:f:v_rod:compb
+  вбогій adj:f:v_dav:compb
+  вбогу adj:f:v_zna:compb
+  вбогою adj:f:v_oru:compb
+  вбогій adj:f:v_mis:compb
+  вбога adj:f:v_kly:compb
+  вбоге adj:n:v_naz:compb
+  вбогого adj:n:v_rod:compb
+  вбогому adj:n:v_dav:compb
+  вбоге adj:n:v_zna:compb
+  вбогим adj:n:v_oru:compb
+  вбогім adj:n:v_mis:compb
+  вбогому adj:n:v_mis:compb
+  вбоге adj:n:v_kly:compb
+  вбогі adj:p:v_naz:compb
+  вбогих adj:p:v_rod:compb
+  вбогим adj:p:v_dav:compb
+  вбогих adj:p:v_zna:ranim:compb
+  вбогі adj:p:v_zna:rinanim:compb
+  вбогими adj:p:v_oru:compb
+  вбогих adj:p:v_mis:compb
+  вбогі adj:p:v_kly:compb
+вбогіше adv:compr
+вбогіший adj:m:v_naz:compr
+  вбогішого adj:m:v_rod:compr
+  вбогішому adj:m:v_dav:compr
+  вбогішого adj:m:v_zna:ranim:compr
+  вбогіший adj:m:v_zna:rinanim:compr
+  вбогішим adj:m:v_oru:compr
+  вбогішім adj:m:v_mis:compr
+  вбогішому adj:m:v_mis:compr
+  вбогіший adj:m:v_kly:compr
+  вбогіша adj:f:v_naz:compr
+  вбогішої adj:f:v_rod:compr
+  вбогішій adj:f:v_dav:compr
+  вбогішу adj:f:v_zna:compr
+  вбогішою adj:f:v_oru:compr
+  вбогішій adj:f:v_mis:compr
+  вбогіша adj:f:v_kly:compr
+  вбогіше adj:n:v_naz:compr
+  вбогішого adj:n:v_rod:compr
+  вбогішому adj:n:v_dav:compr
+  вбогіше adj:n:v_zna:compr
+  вбогішим adj:n:v_oru:compr
+  вбогішім adj:n:v_mis:compr
+  вбогішому adj:n:v_mis:compr
+  вбогіше adj:n:v_kly:compr
+  вбогіші adj:p:v_naz:compr
+  вбогіших adj:p:v_rod:compr
+  вбогішим adj:p:v_dav:compr
+  вбогіших adj:p:v_zna:ranim:compr
+  вбогіші adj:p:v_zna:rinanim:compr
+  вбогішими adj:p:v_oru:compr
+  вбогіших adj:p:v_mis:compr
+  вбогіші adj:p:v_kly:compr
+вбого adv:compb
 вбоїсько noun:inanim:n:v_naz
   вбоїська noun:inanim:n:v_rod
   вбоїську noun:inanim:n:v_dav
@@ -1179,177 +1179,177 @@
   вечоріє verb:imperf:pres:s:3
   вечорітиме verb:imperf:futr:s:3
   вечоріло verb:imperf:past:n
-вжаливши advp:perf:v-u
-вжалити verb:perf:inf:v-u
-  вжалить verb:perf:inf:v-u:coll
-  вжаль verb:perf:impr:s:2:v-u
-  вжальмо verb:perf:impr:p:1:v-u
-  вжальте verb:perf:impr:p:2:v-u
-  вжалю verb:perf:futr:s:1:v-u
-  вжалиш verb:perf:futr:s:2:v-u
-  вжалить verb:perf:futr:s:3:v-u
-  вжалим verb:perf:futr:p:1:v-u
-  вжалимо verb:perf:futr:p:1:v-u
-  вжалите verb:perf:futr:p:2:v-u
-  вжалять verb:perf:futr:p:3:v-u
-  вжалив verb:perf:past:m:v-u
-  вжалила verb:perf:past:f:v-u
-  вжалило verb:perf:past:n:v-u
-  вжалили verb:perf:past:p:v-u
-вже adv:v-u
-вживаний adj:m:v_naz:compb:&_adjp:pasv:imperf:v-u
-  вживаного adj:m:v_rod:compb:&_adjp:pasv:imperf:v-u
-  вживаному adj:m:v_dav:compb:&_adjp:pasv:imperf:v-u
-  вживаного adj:m:v_zna:ranim:compb:&_adjp:pasv:imperf:v-u
-  вживаний adj:m:v_zna:rinanim:compb:&_adjp:pasv:imperf:v-u
-  вживаним adj:m:v_oru:compb:&_adjp:pasv:imperf:v-u
-  вживанім adj:m:v_mis:compb:&_adjp:pasv:imperf:v-u
-  вживаному adj:m:v_mis:compb:&_adjp:pasv:imperf:v-u
-  вживаний adj:m:v_kly:compb:&_adjp:pasv:imperf:v-u
-  вживана adj:f:v_naz:compb:&_adjp:pasv:imperf:v-u
-  вживаної adj:f:v_rod:compb:&_adjp:pasv:imperf:v-u
-  вживаній adj:f:v_dav:compb:&_adjp:pasv:imperf:v-u
-  вживану adj:f:v_zna:compb:&_adjp:pasv:imperf:v-u
-  вживаною adj:f:v_oru:compb:&_adjp:pasv:imperf:v-u
-  вживаній adj:f:v_mis:compb:&_adjp:pasv:imperf:v-u
-  вживана adj:f:v_kly:compb:&_adjp:pasv:imperf:v-u
-  вживане adj:n:v_naz:compb:&_adjp:pasv:imperf:v-u
-  вживаного adj:n:v_rod:compb:&_adjp:pasv:imperf:v-u
-  вживаному adj:n:v_dav:compb:&_adjp:pasv:imperf:v-u
-  вживане adj:n:v_zna:compb:&_adjp:pasv:imperf:v-u
-  вживаним adj:n:v_oru:compb:&_adjp:pasv:imperf:v-u
-  вживанім adj:n:v_mis:compb:&_adjp:pasv:imperf:v-u
-  вживаному adj:n:v_mis:compb:&_adjp:pasv:imperf:v-u
-  вживане adj:n:v_kly:compb:&_adjp:pasv:imperf:v-u
-  вживані adj:p:v_naz:compb:&_adjp:pasv:imperf:v-u
-  вживаних adj:p:v_rod:compb:&_adjp:pasv:imperf:v-u
-  вживаним adj:p:v_dav:compb:&_adjp:pasv:imperf:v-u
-  вживаних adj:p:v_zna:ranim:compb:&_adjp:pasv:imperf:v-u
-  вживані adj:p:v_zna:rinanim:compb:&_adjp:pasv:imperf:v-u
-  вживаними adj:p:v_oru:compb:&_adjp:pasv:imperf:v-u
-  вживаних adj:p:v_mis:compb:&_adjp:pasv:imperf:v-u
-  вживані adj:p:v_kly:compb:&_adjp:pasv:imperf:v-u
-вживаніше adv:compr:v-u
-вживаніший adj:m:v_naz:compr:v-u
-  вживанішого adj:m:v_rod:compr:v-u
-  вживанішому adj:m:v_dav:compr:v-u
-  вживанішого adj:m:v_zna:ranim:compr:v-u
-  вживаніший adj:m:v_zna:rinanim:compr:v-u
-  вживанішим adj:m:v_oru:compr:v-u
-  вживанішім adj:m:v_mis:compr:v-u
-  вживанішому adj:m:v_mis:compr:v-u
-  вживаніший adj:m:v_kly:compr:v-u
-  вживаніша adj:f:v_naz:compr:v-u
-  вживанішої adj:f:v_rod:compr:v-u
-  вживанішій adj:f:v_dav:compr:v-u
-  вживанішу adj:f:v_zna:compr:v-u
-  вживанішою adj:f:v_oru:compr:v-u
-  вживанішій adj:f:v_mis:compr:v-u
-  вживаніша adj:f:v_kly:compr:v-u
-  вживаніше adj:n:v_naz:compr:v-u
-  вживанішого adj:n:v_rod:compr:v-u
-  вживанішому adj:n:v_dav:compr:v-u
-  вживаніше adj:n:v_zna:compr:v-u
-  вживанішим adj:n:v_oru:compr:v-u
-  вживанішім adj:n:v_mis:compr:v-u
-  вживанішому adj:n:v_mis:compr:v-u
-  вживаніше adj:n:v_kly:compr:v-u
-  вживаніші adj:p:v_naz:compr:v-u
-  вживаніших adj:p:v_rod:compr:v-u
-  вживанішим adj:p:v_dav:compr:v-u
-  вживаніших adj:p:v_zna:ranim:compr:v-u
-  вживаніші adj:p:v_zna:rinanim:compr:v-u
-  вживанішими adj:p:v_oru:compr:v-u
-  вживаніших adj:p:v_mis:compr:v-u
-  вживаніші adj:p:v_kly:compr:v-u
-вживано adv:compb:v-u
-вздовж adv:v-u
-вздовж prep:rv_rod:v-u
-взувавшись advp:rev:imperf:v-u
-взуватися verb:rev:imperf:inf:v-u
-  взуватись verb:rev:imperf:inf:v-u
-  взуваться verb:rev:imperf:inf:v-u:coll
-  взувайсь verb:rev:imperf:impr:s:2:v-u
-  взувайся verb:rev:imperf:impr:s:2:v-u
-  взуваймось verb:rev:imperf:impr:p:1:v-u
-  взуваймося verb:rev:imperf:impr:p:1:v-u
-  взувайтесь verb:rev:imperf:impr:p:2:v-u
-  взувайтеся verb:rev:imperf:impr:p:2:v-u
-  взуваюсь verb:rev:imperf:pres:s:1:v-u
-  взуваюся verb:rev:imperf:pres:s:1:v-u
-  взуваєшся verb:rev:imperf:pres:s:2:v-u
-  взувається verb:rev:imperf:pres:s:3:v-u
-  взуваємось verb:rev:imperf:pres:p:1:v-u
-  взуваємося verb:rev:imperf:pres:p:1:v-u
-  взуваємся verb:rev:imperf:pres:p:1:v-u
-  взуваєтесь verb:rev:imperf:pres:p:2:v-u
-  взуваєтеся verb:rev:imperf:pres:p:2:v-u
-  взуваються verb:rev:imperf:pres:p:3:v-u
-  взуватимусь verb:rev:imperf:futr:s:1:v-u
-  взуватимуся verb:rev:imperf:futr:s:1:v-u
-  взуватимешся verb:rev:imperf:futr:s:2:v-u
-  взуватиметься verb:rev:imperf:futr:s:3:v-u
-  взуватимемось verb:rev:imperf:futr:p:1:v-u
-  взуватимемося verb:rev:imperf:futr:p:1:v-u
-  взуватимемся verb:rev:imperf:futr:p:1:v-u
-  взуватиметесь verb:rev:imperf:futr:p:2:v-u
-  взуватиметеся verb:rev:imperf:futr:p:2:v-u
-  взуватимуться verb:rev:imperf:futr:p:3:v-u
-  взувавсь verb:rev:imperf:past:m:v-u
-  взувався verb:rev:imperf:past:m:v-u
-  взувалась verb:rev:imperf:past:f:v-u
-  взувалася verb:rev:imperf:past:f:v-u
-  взувалось verb:rev:imperf:past:n:v-u
-  взувалося verb:rev:imperf:past:n:v-u
-  взувались verb:rev:imperf:past:p:v-u
-  взувалися verb:rev:imperf:past:p:v-u
-взуваючись advp:rev:imperf:v-u
-взувши advp:perf:v-u
-взувшись advp:rev:perf:v-u
-взути verb:perf:inf:v-u
-  взуть verb:perf:inf:v-u:coll
-  взуй verb:perf:impr:s:2:v-u
-  взуймо verb:perf:impr:p:1:v-u
-  взуйте verb:perf:impr:p:2:v-u
-  взую verb:perf:futr:s:1:v-u
-  взуєш verb:perf:futr:s:2:v-u
-  взує verb:perf:futr:s:3:v-u
-  взуєм verb:perf:futr:p:1:v-u
-  взуємо verb:perf:futr:p:1:v-u
-  взуєте verb:perf:futr:p:2:v-u
-  взують verb:perf:futr:p:3:v-u
-  взув verb:perf:past:m:v-u
-  взула verb:perf:past:f:v-u
-  взуло verb:perf:past:n:v-u
-  взули verb:perf:past:p:v-u
-  взуто verb:perf:impers:v-u
-взутися verb:rev:perf:inf:v-u
-  взутись verb:rev:perf:inf:v-u
-  взуться verb:rev:perf:inf:v-u:coll
-  взуйсь verb:rev:perf:impr:s:2:v-u
-  взуйся verb:rev:perf:impr:s:2:v-u
-  взуймось verb:rev:perf:impr:p:1:v-u
-  взуймося verb:rev:perf:impr:p:1:v-u
-  взуйтесь verb:rev:perf:impr:p:2:v-u
-  взуйтеся verb:rev:perf:impr:p:2:v-u
-  взуюсь verb:rev:perf:futr:s:1:v-u
-  взуюся verb:rev:perf:futr:s:1:v-u
-  взуєшся verb:rev:perf:futr:s:2:v-u
-  взується verb:rev:perf:futr:s:3:v-u
-  взуємось verb:rev:perf:futr:p:1:v-u
-  взуємося verb:rev:perf:futr:p:1:v-u
-  взуємся verb:rev:perf:futr:p:1:v-u
-  взуєтесь verb:rev:perf:futr:p:2:v-u
-  взуєтеся verb:rev:perf:futr:p:2:v-u
-  взуються verb:rev:perf:futr:p:3:v-u
-  взувсь verb:rev:perf:past:m:v-u
-  взувся verb:rev:perf:past:m:v-u
-  взулась verb:rev:perf:past:f:v-u
-  взулася verb:rev:perf:past:f:v-u
-  взулось verb:rev:perf:past:n:v-u
-  взулося verb:rev:perf:past:n:v-u
-  взулись verb:rev:perf:past:p:v-u
-  взулися verb:rev:perf:past:p:v-u
+вжаливши advp:perf
+вжалити verb:perf:inf
+  вжалить verb:perf:inf:coll
+  вжаль verb:perf:impr:s:2
+  вжальмо verb:perf:impr:p:1
+  вжальте verb:perf:impr:p:2
+  вжалю verb:perf:futr:s:1
+  вжалиш verb:perf:futr:s:2
+  вжалить verb:perf:futr:s:3
+  вжалим verb:perf:futr:p:1
+  вжалимо verb:perf:futr:p:1
+  вжалите verb:perf:futr:p:2
+  вжалять verb:perf:futr:p:3
+  вжалив verb:perf:past:m
+  вжалила verb:perf:past:f
+  вжалило verb:perf:past:n
+  вжалили verb:perf:past:p
+вже adv
+вживаний adj:m:v_naz:compb:&_adjp:pasv:imperf
+  вживаного adj:m:v_rod:compb:&_adjp:pasv:imperf
+  вживаному adj:m:v_dav:compb:&_adjp:pasv:imperf
+  вживаного adj:m:v_zna:ranim:compb:&_adjp:pasv:imperf
+  вживаний adj:m:v_zna:rinanim:compb:&_adjp:pasv:imperf
+  вживаним adj:m:v_oru:compb:&_adjp:pasv:imperf
+  вживанім adj:m:v_mis:compb:&_adjp:pasv:imperf
+  вживаному adj:m:v_mis:compb:&_adjp:pasv:imperf
+  вживаний adj:m:v_kly:compb:&_adjp:pasv:imperf
+  вживана adj:f:v_naz:compb:&_adjp:pasv:imperf
+  вживаної adj:f:v_rod:compb:&_adjp:pasv:imperf
+  вживаній adj:f:v_dav:compb:&_adjp:pasv:imperf
+  вживану adj:f:v_zna:compb:&_adjp:pasv:imperf
+  вживаною adj:f:v_oru:compb:&_adjp:pasv:imperf
+  вживаній adj:f:v_mis:compb:&_adjp:pasv:imperf
+  вживана adj:f:v_kly:compb:&_adjp:pasv:imperf
+  вживане adj:n:v_naz:compb:&_adjp:pasv:imperf
+  вживаного adj:n:v_rod:compb:&_adjp:pasv:imperf
+  вживаному adj:n:v_dav:compb:&_adjp:pasv:imperf
+  вживане adj:n:v_zna:compb:&_adjp:pasv:imperf
+  вживаним adj:n:v_oru:compb:&_adjp:pasv:imperf
+  вживанім adj:n:v_mis:compb:&_adjp:pasv:imperf
+  вживаному adj:n:v_mis:compb:&_adjp:pasv:imperf
+  вживане adj:n:v_kly:compb:&_adjp:pasv:imperf
+  вживані adj:p:v_naz:compb:&_adjp:pasv:imperf
+  вживаних adj:p:v_rod:compb:&_adjp:pasv:imperf
+  вживаним adj:p:v_dav:compb:&_adjp:pasv:imperf
+  вживаних adj:p:v_zna:ranim:compb:&_adjp:pasv:imperf
+  вживані adj:p:v_zna:rinanim:compb:&_adjp:pasv:imperf
+  вживаними adj:p:v_oru:compb:&_adjp:pasv:imperf
+  вживаних adj:p:v_mis:compb:&_adjp:pasv:imperf
+  вживані adj:p:v_kly:compb:&_adjp:pasv:imperf
+вживаніше adv:compr
+вживаніший adj:m:v_naz:compr
+  вживанішого adj:m:v_rod:compr
+  вживанішому adj:m:v_dav:compr
+  вживанішого adj:m:v_zna:ranim:compr
+  вживаніший adj:m:v_zna:rinanim:compr
+  вживанішим adj:m:v_oru:compr
+  вживанішім adj:m:v_mis:compr
+  вживанішому adj:m:v_mis:compr
+  вживаніший adj:m:v_kly:compr
+  вживаніша adj:f:v_naz:compr
+  вживанішої adj:f:v_rod:compr
+  вживанішій adj:f:v_dav:compr
+  вживанішу adj:f:v_zna:compr
+  вживанішою adj:f:v_oru:compr
+  вживанішій adj:f:v_mis:compr
+  вживаніша adj:f:v_kly:compr
+  вживаніше adj:n:v_naz:compr
+  вживанішого adj:n:v_rod:compr
+  вживанішому adj:n:v_dav:compr
+  вживаніше adj:n:v_zna:compr
+  вживанішим adj:n:v_oru:compr
+  вживанішім adj:n:v_mis:compr
+  вживанішому adj:n:v_mis:compr
+  вживаніше adj:n:v_kly:compr
+  вживаніші adj:p:v_naz:compr
+  вживаніших adj:p:v_rod:compr
+  вживанішим adj:p:v_dav:compr
+  вживаніших adj:p:v_zna:ranim:compr
+  вживаніші adj:p:v_zna:rinanim:compr
+  вживанішими adj:p:v_oru:compr
+  вживаніших adj:p:v_mis:compr
+  вживаніші adj:p:v_kly:compr
+вживано adv:compb
+вздовж adv
+вздовж prep:rv_rod
+взувавшись advp:rev:imperf
+взуватися verb:rev:imperf:inf
+  взуватись verb:rev:imperf:inf
+  взуваться verb:rev:imperf:inf:coll
+  взувайсь verb:rev:imperf:impr:s:2
+  взувайся verb:rev:imperf:impr:s:2
+  взуваймось verb:rev:imperf:impr:p:1
+  взуваймося verb:rev:imperf:impr:p:1
+  взувайтесь verb:rev:imperf:impr:p:2
+  взувайтеся verb:rev:imperf:impr:p:2
+  взуваюсь verb:rev:imperf:pres:s:1
+  взуваюся verb:rev:imperf:pres:s:1
+  взуваєшся verb:rev:imperf:pres:s:2
+  взувається verb:rev:imperf:pres:s:3
+  взуваємось verb:rev:imperf:pres:p:1
+  взуваємося verb:rev:imperf:pres:p:1
+  взуваємся verb:rev:imperf:pres:p:1
+  взуваєтесь verb:rev:imperf:pres:p:2
+  взуваєтеся verb:rev:imperf:pres:p:2
+  взуваються verb:rev:imperf:pres:p:3
+  взуватимусь verb:rev:imperf:futr:s:1
+  взуватимуся verb:rev:imperf:futr:s:1
+  взуватимешся verb:rev:imperf:futr:s:2
+  взуватиметься verb:rev:imperf:futr:s:3
+  взуватимемось verb:rev:imperf:futr:p:1
+  взуватимемося verb:rev:imperf:futr:p:1
+  взуватимемся verb:rev:imperf:futr:p:1
+  взуватиметесь verb:rev:imperf:futr:p:2
+  взуватиметеся verb:rev:imperf:futr:p:2
+  взуватимуться verb:rev:imperf:futr:p:3
+  взувавсь verb:rev:imperf:past:m
+  взувався verb:rev:imperf:past:m
+  взувалась verb:rev:imperf:past:f
+  взувалася verb:rev:imperf:past:f
+  взувалось verb:rev:imperf:past:n
+  взувалося verb:rev:imperf:past:n
+  взувались verb:rev:imperf:past:p
+  взувалися verb:rev:imperf:past:p
+взуваючись advp:rev:imperf
+взувши advp:perf
+взувшись advp:rev:perf
+взути verb:perf:inf
+  взуть verb:perf:inf:coll
+  взуй verb:perf:impr:s:2
+  взуймо verb:perf:impr:p:1
+  взуйте verb:perf:impr:p:2
+  взую verb:perf:futr:s:1
+  взуєш verb:perf:futr:s:2
+  взує verb:perf:futr:s:3
+  взуєм verb:perf:futr:p:1
+  взуємо verb:perf:futr:p:1
+  взуєте verb:perf:futr:p:2
+  взують verb:perf:futr:p:3
+  взув verb:perf:past:m
+  взула verb:perf:past:f
+  взуло verb:perf:past:n
+  взули verb:perf:past:p
+  взуто verb:perf:impers
+взутися verb:rev:perf:inf
+  взутись verb:rev:perf:inf
+  взуться verb:rev:perf:inf:coll
+  взуйсь verb:rev:perf:impr:s:2
+  взуйся verb:rev:perf:impr:s:2
+  взуймось verb:rev:perf:impr:p:1
+  взуймося verb:rev:perf:impr:p:1
+  взуйтесь verb:rev:perf:impr:p:2
+  взуйтеся verb:rev:perf:impr:p:2
+  взуюсь verb:rev:perf:futr:s:1
+  взуюся verb:rev:perf:futr:s:1
+  взуєшся verb:rev:perf:futr:s:2
+  взується verb:rev:perf:futr:s:3
+  взуємось verb:rev:perf:futr:p:1
+  взуємося verb:rev:perf:futr:p:1
+  взуємся verb:rev:perf:futr:p:1
+  взуєтесь verb:rev:perf:futr:p:2
+  взуєтеся verb:rev:perf:futr:p:2
+  взуються verb:rev:perf:futr:p:3
+  взувсь verb:rev:perf:past:m
+  взувся verb:rev:perf:past:m
+  взулась verb:rev:perf:past:f
+  взулася verb:rev:perf:past:f
+  взулось verb:rev:perf:past:n
+  взулося verb:rev:perf:past:n
+  взулись verb:rev:perf:past:p
+  взулися verb:rev:perf:past:p
 вибір noun:inanim:m:v_naz
   вибору noun:inanim:m:v_rod
   виборові noun:inanim:m:v_dav
@@ -1631,20 +1631,20 @@
   Всевишнім noun:anim:m:v_oru:prop
   Всевишньому noun:anim:m:v_mis:prop
   Всевишній noun:anim:m:v_kly:prop
-всеношна noun:inanim:f:v_naz:v-u
-  всеношної noun:inanim:f:v_rod:v-u
-  всеношній noun:inanim:f:v_dav:v-u
-  всеношну noun:inanim:f:v_zna:v-u
-  всеношною noun:inanim:f:v_oru:v-u
-  всеношній noun:inanim:f:v_mis:v-u
-  всеношна noun:inanim:f:v_kly:v-u
-  всеношні noun:inanim:p:v_naz:v-u
-  всеношних noun:inanim:p:v_rod:v-u
-  всеношним noun:inanim:p:v_dav:v-u
-  всеношні noun:inanim:p:v_zna:v-u
-  всеношними noun:inanim:p:v_oru:v-u
-  всеношних noun:inanim:p:v_mis:v-u
-  всеношні noun:inanim:p:v_kly:v-u
+всеношна noun:inanim:f:v_naz
+  всеношної noun:inanim:f:v_rod
+  всеношній noun:inanim:f:v_dav
+  всеношну noun:inanim:f:v_zna
+  всеношною noun:inanim:f:v_oru
+  всеношній noun:inanim:f:v_mis
+  всеношна noun:inanim:f:v_kly
+  всеношні noun:inanim:p:v_naz
+  всеношних noun:inanim:p:v_rod
+  всеношним noun:inanim:p:v_dav
+  всеношні noun:inanim:p:v_zna
+  всеношними noun:inanim:p:v_oru
+  всеношних noun:inanim:p:v_mis
+  всеношні noun:inanim:p:v_kly
 вугіль noun:inanim:m:v_naz
   вуглю noun:inanim:m:v_rod
   вуглеві noun:inanim:m:v_dav
@@ -2462,72 +2462,72 @@
   найвагомішими adj:p:v_oru:super
   найвагоміших adj:p:v_mis:super
   найвагоміші adj:p:v_kly:super
-найвбогіше adv:super:v-u
-найвбогіший adj:m:v_naz:super:v-u
-  найвбогішого adj:m:v_rod:super:v-u
-  найвбогішому adj:m:v_dav:super:v-u
-  найвбогішого adj:m:v_zna:ranim:super:v-u
-  найвбогіший adj:m:v_zna:rinanim:super:v-u
-  найвбогішим adj:m:v_oru:super:v-u
-  найвбогішім adj:m:v_mis:super:v-u
-  найвбогішому adj:m:v_mis:super:v-u
-  найвбогіший adj:m:v_kly:super:v-u
-  найвбогіша adj:f:v_naz:super:v-u
-  найвбогішої adj:f:v_rod:super:v-u
-  найвбогішій adj:f:v_dav:super:v-u
-  найвбогішу adj:f:v_zna:super:v-u
-  найвбогішою adj:f:v_oru:super:v-u
-  найвбогішій adj:f:v_mis:super:v-u
-  найвбогіша adj:f:v_kly:super:v-u
-  найвбогіше adj:n:v_naz:super:v-u
-  найвбогішого adj:n:v_rod:super:v-u
-  найвбогішому adj:n:v_dav:super:v-u
-  найвбогіше adj:n:v_zna:super:v-u
-  найвбогішим adj:n:v_oru:super:v-u
-  найвбогішім adj:n:v_mis:super:v-u
-  найвбогішому adj:n:v_mis:super:v-u
-  найвбогіше adj:n:v_kly:super:v-u
-  найвбогіші adj:p:v_naz:super:v-u
-  найвбогіших adj:p:v_rod:super:v-u
-  найвбогішим adj:p:v_dav:super:v-u
-  найвбогіших adj:p:v_zna:ranim:super:v-u
-  найвбогіші adj:p:v_zna:rinanim:super:v-u
-  найвбогішими adj:p:v_oru:super:v-u
-  найвбогіших adj:p:v_mis:super:v-u
-  найвбогіші adj:p:v_kly:super:v-u
-найвживаніше adv:super:v-u
-найвживаніший adj:m:v_naz:super:v-u
-  найвживанішого adj:m:v_rod:super:v-u
-  найвживанішому adj:m:v_dav:super:v-u
-  найвживанішого adj:m:v_zna:ranim:super:v-u
-  найвживаніший adj:m:v_zna:rinanim:super:v-u
-  найвживанішим adj:m:v_oru:super:v-u
-  найвживанішім adj:m:v_mis:super:v-u
-  найвживанішому adj:m:v_mis:super:v-u
-  найвживаніший adj:m:v_kly:super:v-u
-  найвживаніша adj:f:v_naz:super:v-u
-  найвживанішої adj:f:v_rod:super:v-u
-  найвживанішій adj:f:v_dav:super:v-u
-  найвживанішу adj:f:v_zna:super:v-u
-  найвживанішою adj:f:v_oru:super:v-u
-  найвживанішій adj:f:v_mis:super:v-u
-  найвживаніша adj:f:v_kly:super:v-u
-  найвживаніше adj:n:v_naz:super:v-u
-  найвживанішого adj:n:v_rod:super:v-u
-  найвживанішому adj:n:v_dav:super:v-u
-  найвживаніше adj:n:v_zna:super:v-u
-  найвживанішим adj:n:v_oru:super:v-u
-  найвживанішім adj:n:v_mis:super:v-u
-  найвживанішому adj:n:v_mis:super:v-u
-  найвживаніше adj:n:v_kly:super:v-u
-  найвживаніші adj:p:v_naz:super:v-u
-  найвживаніших adj:p:v_rod:super:v-u
-  найвживанішим adj:p:v_dav:super:v-u
-  найвживаніших adj:p:v_zna:ranim:super:v-u
-  найвживаніші adj:p:v_zna:rinanim:super:v-u
-  найвживанішими adj:p:v_oru:super:v-u
-  найвживаніших adj:p:v_mis:super:v-u
-  найвживаніші adj:p:v_kly:super:v-u
+найвбогіше adv:super
+найвбогіший adj:m:v_naz:super
+  найвбогішого adj:m:v_rod:super
+  найвбогішому adj:m:v_dav:super
+  найвбогішого adj:m:v_zna:ranim:super
+  найвбогіший adj:m:v_zna:rinanim:super
+  найвбогішим adj:m:v_oru:super
+  найвбогішім adj:m:v_mis:super
+  найвбогішому adj:m:v_mis:super
+  найвбогіший adj:m:v_kly:super
+  найвбогіша adj:f:v_naz:super
+  найвбогішої adj:f:v_rod:super
+  найвбогішій adj:f:v_dav:super
+  найвбогішу adj:f:v_zna:super
+  найвбогішою adj:f:v_oru:super
+  найвбогішій adj:f:v_mis:super
+  найвбогіша adj:f:v_kly:super
+  найвбогіше adj:n:v_naz:super
+  найвбогішого adj:n:v_rod:super
+  найвбогішому adj:n:v_dav:super
+  найвбогіше adj:n:v_zna:super
+  найвбогішим adj:n:v_oru:super
+  найвбогішім adj:n:v_mis:super
+  найвбогішому adj:n:v_mis:super
+  найвбогіше adj:n:v_kly:super
+  найвбогіші adj:p:v_naz:super
+  найвбогіших adj:p:v_rod:super
+  найвбогішим adj:p:v_dav:super
+  найвбогіших adj:p:v_zna:ranim:super
+  найвбогіші adj:p:v_zna:rinanim:super
+  найвбогішими adj:p:v_oru:super
+  найвбогіших adj:p:v_mis:super
+  найвбогіші adj:p:v_kly:super
+найвживаніше adv:super
+найвживаніший adj:m:v_naz:super
+  найвживанішого adj:m:v_rod:super
+  найвживанішому adj:m:v_dav:super
+  найвживанішого adj:m:v_zna:ranim:super
+  найвживаніший adj:m:v_zna:rinanim:super
+  найвживанішим adj:m:v_oru:super
+  найвживанішім adj:m:v_mis:super
+  найвживанішому adj:m:v_mis:super
+  найвживаніший adj:m:v_kly:super
+  найвживаніша adj:f:v_naz:super
+  найвживанішої adj:f:v_rod:super
+  найвживанішій adj:f:v_dav:super
+  найвживанішу adj:f:v_zna:super
+  найвживанішою adj:f:v_oru:super
+  найвживанішій adj:f:v_mis:super
+  найвживаніша adj:f:v_kly:super
+  найвживаніше adj:n:v_naz:super
+  найвживанішого adj:n:v_rod:super
+  найвживанішому adj:n:v_dav:super
+  найвживаніше adj:n:v_zna:super
+  найвживанішим adj:n:v_oru:super
+  найвживанішім adj:n:v_mis:super
+  найвживанішому adj:n:v_mis:super
+  найвживаніше adj:n:v_kly:super
+  найвживаніші adj:p:v_naz:super
+  найвживаніших adj:p:v_rod:super
+  найвживанішим adj:p:v_dav:super
+  найвживаніших adj:p:v_zna:ranim:super
+  найвживаніші adj:p:v_zna:rinanim:super
+  найвживанішими adj:p:v_oru:super
+  найвживаніших adj:p:v_mis:super
+  найвживаніші adj:p:v_kly:super
 найгладкіше adv:super
 найгладкіший adj:m:v_naz:super
   найгладкішого adj:m:v_rod:super
@@ -2659,39 +2659,39 @@
   найкрутішими adj:p:v_oru:super
   найкрутіших adj:p:v_mis:super
   найкрутіші adj:p:v_kly:super
-найудатніше adv:super:v-u
-найуживаніший adj:m:v_naz:super:v-u
-  найуживанішого adj:m:v_rod:super:v-u
-  найуживанішому adj:m:v_dav:super:v-u
-  найуживанішого adj:m:v_zna:ranim:super:v-u
-  найуживаніший adj:m:v_zna:rinanim:super:v-u
-  найуживанішим adj:m:v_oru:super:v-u
-  найуживанішім adj:m:v_mis:super:v-u
-  найуживанішому adj:m:v_mis:super:v-u
-  найуживаніший adj:m:v_kly:super:v-u
-  найуживаніша adj:f:v_naz:super:v-u
-  найуживанішої adj:f:v_rod:super:v-u
-  найуживанішій adj:f:v_dav:super:v-u
-  найуживанішу adj:f:v_zna:super:v-u
-  найуживанішою adj:f:v_oru:super:v-u
-  найуживанішій adj:f:v_mis:super:v-u
-  найуживаніша adj:f:v_kly:super:v-u
-  найуживаніше adj:n:v_naz:super:v-u
-  найуживанішого adj:n:v_rod:super:v-u
-  найуживанішому adj:n:v_dav:super:v-u
-  найуживаніше adj:n:v_zna:super:v-u
-  найуживанішим adj:n:v_oru:super:v-u
-  найуживанішім adj:n:v_mis:super:v-u
-  найуживанішому adj:n:v_mis:super:v-u
-  найуживаніше adj:n:v_kly:super:v-u
-  найуживаніші adj:p:v_naz:super:v-u
-  найуживаніших adj:p:v_rod:super:v-u
-  найуживанішим adj:p:v_dav:super:v-u
-  найуживаніших adj:p:v_zna:ranim:super:v-u
-  найуживаніші adj:p:v_zna:rinanim:super:v-u
-  найуживанішими adj:p:v_oru:super:v-u
-  найуживаніших adj:p:v_mis:super:v-u
-  найуживаніші adj:p:v_kly:super:v-u
+найудатніше adv:super
+найуживаніший adj:m:v_naz:super
+  найуживанішого adj:m:v_rod:super
+  найуживанішому adj:m:v_dav:super
+  найуживанішого adj:m:v_zna:ranim:super
+  найуживаніший adj:m:v_zna:rinanim:super
+  найуживанішим adj:m:v_oru:super
+  найуживанішім adj:m:v_mis:super
+  найуживанішому adj:m:v_mis:super
+  найуживаніший adj:m:v_kly:super
+  найуживаніша adj:f:v_naz:super
+  найуживанішої adj:f:v_rod:super
+  найуживанішій adj:f:v_dav:super
+  найуживанішу adj:f:v_zna:super
+  найуживанішою adj:f:v_oru:super
+  найуживанішій adj:f:v_mis:super
+  найуживаніша adj:f:v_kly:super
+  найуживаніше adj:n:v_naz:super
+  найуживанішого adj:n:v_rod:super
+  найуживанішому adj:n:v_dav:super
+  найуживаніше adj:n:v_zna:super
+  найуживанішим adj:n:v_oru:super
+  найуживанішім adj:n:v_mis:super
+  найуживанішому adj:n:v_mis:super
+  найуживаніше adj:n:v_kly:super
+  найуживаніші adj:p:v_naz:super
+  найуживаніших adj:p:v_rod:super
+  найуживанішим adj:p:v_dav:super
+  найуживаніших adj:p:v_zna:ranim:super
+  найуживаніші adj:p:v_zna:rinanim:super
+  найуживанішими adj:p:v_oru:super
+  найуживаніших adj:p:v_mis:super
+  найуживаніші adj:p:v_kly:super
 ніжність noun:inanim:f:v_naz
   ніжності noun:inanim:f:v_rod
   ніжности noun:inanim:f:v_rod:alt
@@ -3053,73 +3053,73 @@
   тюрмами noun:inanim:p:v_oru
   тюрмах noun:inanim:p:v_mis
   тюрми noun:inanim:p:v_kly
-удатніше adv:compr:v-u
-удатно adv:compb:v-u
-уже adv:v-u
-уживаний adj:m:v_naz:compb:&_adjp:pasv:imperf:v-u
-  уживаного adj:m:v_rod:compb:&_adjp:pasv:imperf:v-u
-  уживаному adj:m:v_dav:compb:&_adjp:pasv:imperf:v-u
-  уживаного adj:m:v_zna:ranim:compb:&_adjp:pasv:imperf:v-u
-  уживаний adj:m:v_zna:rinanim:compb:&_adjp:pasv:imperf:v-u
-  уживаним adj:m:v_oru:compb:&_adjp:pasv:imperf:v-u
-  уживанім adj:m:v_mis:compb:&_adjp:pasv:imperf:v-u
-  уживаному adj:m:v_mis:compb:&_adjp:pasv:imperf:v-u
-  уживаний adj:m:v_kly:compb:&_adjp:pasv:imperf:v-u
-  уживана adj:f:v_naz:compb:&_adjp:pasv:imperf:v-u
-  уживаної adj:f:v_rod:compb:&_adjp:pasv:imperf:v-u
-  уживаній adj:f:v_dav:compb:&_adjp:pasv:imperf:v-u
-  уживану adj:f:v_zna:compb:&_adjp:pasv:imperf:v-u
-  уживаною adj:f:v_oru:compb:&_adjp:pasv:imperf:v-u
-  уживаній adj:f:v_mis:compb:&_adjp:pasv:imperf:v-u
-  уживана adj:f:v_kly:compb:&_adjp:pasv:imperf:v-u
-  уживане adj:n:v_naz:compb:&_adjp:pasv:imperf:v-u
-  уживаного adj:n:v_rod:compb:&_adjp:pasv:imperf:v-u
-  уживаному adj:n:v_dav:compb:&_adjp:pasv:imperf:v-u
-  уживане adj:n:v_zna:compb:&_adjp:pasv:imperf:v-u
-  уживаним adj:n:v_oru:compb:&_adjp:pasv:imperf:v-u
-  уживанім adj:n:v_mis:compb:&_adjp:pasv:imperf:v-u
-  уживаному adj:n:v_mis:compb:&_adjp:pasv:imperf:v-u
-  уживане adj:n:v_kly:compb:&_adjp:pasv:imperf:v-u
-  уживані adj:p:v_naz:compb:&_adjp:pasv:imperf:v-u
-  уживаних adj:p:v_rod:compb:&_adjp:pasv:imperf:v-u
-  уживаним adj:p:v_dav:compb:&_adjp:pasv:imperf:v-u
-  уживаних adj:p:v_zna:ranim:compb:&_adjp:pasv:imperf:v-u
-  уживані adj:p:v_zna:rinanim:compb:&_adjp:pasv:imperf:v-u
-  уживаними adj:p:v_oru:compb:&_adjp:pasv:imperf:v-u
-  уживаних adj:p:v_mis:compb:&_adjp:pasv:imperf:v-u
-  уживані adj:p:v_kly:compb:&_adjp:pasv:imperf:v-u
-уживаніший adj:m:v_naz:compr:v-u
-  уживанішого adj:m:v_rod:compr:v-u
-  уживанішому adj:m:v_dav:compr:v-u
-  уживанішого adj:m:v_zna:ranim:compr:v-u
-  уживаніший adj:m:v_zna:rinanim:compr:v-u
-  уживанішим adj:m:v_oru:compr:v-u
-  уживанішім adj:m:v_mis:compr:v-u
-  уживанішому adj:m:v_mis:compr:v-u
-  уживаніший adj:m:v_kly:compr:v-u
-  уживаніша adj:f:v_naz:compr:v-u
-  уживанішої adj:f:v_rod:compr:v-u
-  уживанішій adj:f:v_dav:compr:v-u
-  уживанішу adj:f:v_zna:compr:v-u
-  уживанішою adj:f:v_oru:compr:v-u
-  уживанішій adj:f:v_mis:compr:v-u
-  уживаніша adj:f:v_kly:compr:v-u
-  уживаніше adj:n:v_naz:compr:v-u
-  уживанішого adj:n:v_rod:compr:v-u
-  уживанішому adj:n:v_dav:compr:v-u
-  уживаніше adj:n:v_zna:compr:v-u
-  уживанішим adj:n:v_oru:compr:v-u
-  уживанішім adj:n:v_mis:compr:v-u
-  уживанішому adj:n:v_mis:compr:v-u
-  уживаніше adj:n:v_kly:compr:v-u
-  уживаніші adj:p:v_naz:compr:v-u
-  уживаніших adj:p:v_rod:compr:v-u
-  уживанішим adj:p:v_dav:compr:v-u
-  уживаніших adj:p:v_zna:ranim:compr:v-u
-  уживаніші adj:p:v_zna:rinanim:compr:v-u
-  уживанішими adj:p:v_oru:compr:v-u
-  уживаніших adj:p:v_mis:compr:v-u
-  уживаніші adj:p:v_kly:compr:v-u
+удатніше adv:compr
+удатно adv:compb
+уже adv
+уживаний adj:m:v_naz:compb:&_adjp:pasv:imperf
+  уживаного adj:m:v_rod:compb:&_adjp:pasv:imperf
+  уживаному adj:m:v_dav:compb:&_adjp:pasv:imperf
+  уживаного adj:m:v_zna:ranim:compb:&_adjp:pasv:imperf
+  уживаний adj:m:v_zna:rinanim:compb:&_adjp:pasv:imperf
+  уживаним adj:m:v_oru:compb:&_adjp:pasv:imperf
+  уживанім adj:m:v_mis:compb:&_adjp:pasv:imperf
+  уживаному adj:m:v_mis:compb:&_adjp:pasv:imperf
+  уживаний adj:m:v_kly:compb:&_adjp:pasv:imperf
+  уживана adj:f:v_naz:compb:&_adjp:pasv:imperf
+  уживаної adj:f:v_rod:compb:&_adjp:pasv:imperf
+  уживаній adj:f:v_dav:compb:&_adjp:pasv:imperf
+  уживану adj:f:v_zna:compb:&_adjp:pasv:imperf
+  уживаною adj:f:v_oru:compb:&_adjp:pasv:imperf
+  уживаній adj:f:v_mis:compb:&_adjp:pasv:imperf
+  уживана adj:f:v_kly:compb:&_adjp:pasv:imperf
+  уживане adj:n:v_naz:compb:&_adjp:pasv:imperf
+  уживаного adj:n:v_rod:compb:&_adjp:pasv:imperf
+  уживаному adj:n:v_dav:compb:&_adjp:pasv:imperf
+  уживане adj:n:v_zna:compb:&_adjp:pasv:imperf
+  уживаним adj:n:v_oru:compb:&_adjp:pasv:imperf
+  уживанім adj:n:v_mis:compb:&_adjp:pasv:imperf
+  уживаному adj:n:v_mis:compb:&_adjp:pasv:imperf
+  уживане adj:n:v_kly:compb:&_adjp:pasv:imperf
+  уживані adj:p:v_naz:compb:&_adjp:pasv:imperf
+  уживаних adj:p:v_rod:compb:&_adjp:pasv:imperf
+  уживаним adj:p:v_dav:compb:&_adjp:pasv:imperf
+  уживаних adj:p:v_zna:ranim:compb:&_adjp:pasv:imperf
+  уживані adj:p:v_zna:rinanim:compb:&_adjp:pasv:imperf
+  уживаними adj:p:v_oru:compb:&_adjp:pasv:imperf
+  уживаних adj:p:v_mis:compb:&_adjp:pasv:imperf
+  уживані adj:p:v_kly:compb:&_adjp:pasv:imperf
+уживаніший adj:m:v_naz:compr
+  уживанішого adj:m:v_rod:compr
+  уживанішому adj:m:v_dav:compr
+  уживанішого adj:m:v_zna:ranim:compr
+  уживаніший adj:m:v_zna:rinanim:compr
+  уживанішим adj:m:v_oru:compr
+  уживанішім adj:m:v_mis:compr
+  уживанішому adj:m:v_mis:compr
+  уживаніший adj:m:v_kly:compr
+  уживаніша adj:f:v_naz:compr
+  уживанішої adj:f:v_rod:compr
+  уживанішій adj:f:v_dav:compr
+  уживанішу adj:f:v_zna:compr
+  уживанішою adj:f:v_oru:compr
+  уживанішій adj:f:v_mis:compr
+  уживаніша adj:f:v_kly:compr
+  уживаніше adj:n:v_naz:compr
+  уживанішого adj:n:v_rod:compr
+  уживанішому adj:n:v_dav:compr
+  уживаніше adj:n:v_zna:compr
+  уживанішим adj:n:v_oru:compr
+  уживанішім adj:n:v_mis:compr
+  уживанішому adj:n:v_mis:compr
+  уживаніше adj:n:v_kly:compr
+  уживаніші adj:p:v_naz:compr
+  уживаніших adj:p:v_rod:compr
+  уживанішим adj:p:v_dav:compr
+  уживаніших adj:p:v_zna:ranim:compr
+  уживаніші adj:p:v_zna:rinanim:compr
+  уживанішими adj:p:v_oru:compr
+  уживаніших adj:p:v_mis:compr
+  уживаніші adj:p:v_kly:compr
 усюди noun:inanim:p:v_naz:ns
   усюд noun:inanim:p:v_rod:ns
   усюдів noun:inanim:p:v_rod:ns
@@ -3296,72 +3296,72 @@
   щонайвагомішими adj:p:v_oru:super
   щонайвагоміших adj:p:v_mis:super
   щонайвагоміші adj:p:v_kly:super
-щонайвбогіше adv:super:v-u
-щонайвбогіший adj:m:v_naz:super:v-u
-  щонайвбогішого adj:m:v_rod:super:v-u
-  щонайвбогішому adj:m:v_dav:super:v-u
-  щонайвбогішого adj:m:v_zna:ranim:super:v-u
-  щонайвбогіший adj:m:v_zna:rinanim:super:v-u
-  щонайвбогішим adj:m:v_oru:super:v-u
-  щонайвбогішім adj:m:v_mis:super:v-u
-  щонайвбогішому adj:m:v_mis:super:v-u
-  щонайвбогіший adj:m:v_kly:super:v-u
-  щонайвбогіша adj:f:v_naz:super:v-u
-  щонайвбогішої adj:f:v_rod:super:v-u
-  щонайвбогішій adj:f:v_dav:super:v-u
-  щонайвбогішу adj:f:v_zna:super:v-u
-  щонайвбогішою adj:f:v_oru:super:v-u
-  щонайвбогішій adj:f:v_mis:super:v-u
-  щонайвбогіша adj:f:v_kly:super:v-u
-  щонайвбогіше adj:n:v_naz:super:v-u
-  щонайвбогішого adj:n:v_rod:super:v-u
-  щонайвбогішому adj:n:v_dav:super:v-u
-  щонайвбогіше adj:n:v_zna:super:v-u
-  щонайвбогішим adj:n:v_oru:super:v-u
-  щонайвбогішім adj:n:v_mis:super:v-u
-  щонайвбогішому adj:n:v_mis:super:v-u
-  щонайвбогіше adj:n:v_kly:super:v-u
-  щонайвбогіші adj:p:v_naz:super:v-u
-  щонайвбогіших adj:p:v_rod:super:v-u
-  щонайвбогішим adj:p:v_dav:super:v-u
-  щонайвбогіших adj:p:v_zna:ranim:super:v-u
-  щонайвбогіші adj:p:v_zna:rinanim:super:v-u
-  щонайвбогішими adj:p:v_oru:super:v-u
-  щонайвбогіших adj:p:v_mis:super:v-u
-  щонайвбогіші adj:p:v_kly:super:v-u
-щонайвживаніше adv:super:v-u
-щонайвживаніший adj:m:v_naz:super:v-u
-  щонайвживанішого adj:m:v_rod:super:v-u
-  щонайвживанішому adj:m:v_dav:super:v-u
-  щонайвживанішого adj:m:v_zna:ranim:super:v-u
-  щонайвживаніший adj:m:v_zna:rinanim:super:v-u
-  щонайвживанішим adj:m:v_oru:super:v-u
-  щонайвживанішім adj:m:v_mis:super:v-u
-  щонайвживанішому adj:m:v_mis:super:v-u
-  щонайвживаніший adj:m:v_kly:super:v-u
-  щонайвживаніша adj:f:v_naz:super:v-u
-  щонайвживанішої adj:f:v_rod:super:v-u
-  щонайвживанішій adj:f:v_dav:super:v-u
-  щонайвживанішу adj:f:v_zna:super:v-u
-  щонайвживанішою adj:f:v_oru:super:v-u
-  щонайвживанішій adj:f:v_mis:super:v-u
-  щонайвживаніша adj:f:v_kly:super:v-u
-  щонайвживаніше adj:n:v_naz:super:v-u
-  щонайвживанішого adj:n:v_rod:super:v-u
-  щонайвживанішому adj:n:v_dav:super:v-u
-  щонайвживаніше adj:n:v_zna:super:v-u
-  щонайвживанішим adj:n:v_oru:super:v-u
-  щонайвживанішім adj:n:v_mis:super:v-u
-  щонайвживанішому adj:n:v_mis:super:v-u
-  щонайвживаніше adj:n:v_kly:super:v-u
-  щонайвживаніші adj:p:v_naz:super:v-u
-  щонайвживаніших adj:p:v_rod:super:v-u
-  щонайвживанішим adj:p:v_dav:super:v-u
-  щонайвживаніших adj:p:v_zna:ranim:super:v-u
-  щонайвживаніші adj:p:v_zna:rinanim:super:v-u
-  щонайвживанішими adj:p:v_oru:super:v-u
-  щонайвживаніших adj:p:v_mis:super:v-u
-  щонайвживаніші adj:p:v_kly:super:v-u
+щонайвбогіше adv:super
+щонайвбогіший adj:m:v_naz:super
+  щонайвбогішого adj:m:v_rod:super
+  щонайвбогішому adj:m:v_dav:super
+  щонайвбогішого adj:m:v_zna:ranim:super
+  щонайвбогіший adj:m:v_zna:rinanim:super
+  щонайвбогішим adj:m:v_oru:super
+  щонайвбогішім adj:m:v_mis:super
+  щонайвбогішому adj:m:v_mis:super
+  щонайвбогіший adj:m:v_kly:super
+  щонайвбогіша adj:f:v_naz:super
+  щонайвбогішої adj:f:v_rod:super
+  щонайвбогішій adj:f:v_dav:super
+  щонайвбогішу adj:f:v_zna:super
+  щонайвбогішою adj:f:v_oru:super
+  щонайвбогішій adj:f:v_mis:super
+  щонайвбогіша adj:f:v_kly:super
+  щонайвбогіше adj:n:v_naz:super
+  щонайвбогішого adj:n:v_rod:super
+  щонайвбогішому adj:n:v_dav:super
+  щонайвбогіше adj:n:v_zna:super
+  щонайвбогішим adj:n:v_oru:super
+  щонайвбогішім adj:n:v_mis:super
+  щонайвбогішому adj:n:v_mis:super
+  щонайвбогіше adj:n:v_kly:super
+  щонайвбогіші adj:p:v_naz:super
+  щонайвбогіших adj:p:v_rod:super
+  щонайвбогішим adj:p:v_dav:super
+  щонайвбогіших adj:p:v_zna:ranim:super
+  щонайвбогіші adj:p:v_zna:rinanim:super
+  щонайвбогішими adj:p:v_oru:super
+  щонайвбогіших adj:p:v_mis:super
+  щонайвбогіші adj:p:v_kly:super
+щонайвживаніше adv:super
+щонайвживаніший adj:m:v_naz:super
+  щонайвживанішого adj:m:v_rod:super
+  щонайвживанішому adj:m:v_dav:super
+  щонайвживанішого adj:m:v_zna:ranim:super
+  щонайвживаніший adj:m:v_zna:rinanim:super
+  щонайвживанішим adj:m:v_oru:super
+  щонайвживанішім adj:m:v_mis:super
+  щонайвживанішому adj:m:v_mis:super
+  щонайвживаніший adj:m:v_kly:super
+  щонайвживаніша adj:f:v_naz:super
+  щонайвживанішої adj:f:v_rod:super
+  щонайвживанішій adj:f:v_dav:super
+  щонайвживанішу adj:f:v_zna:super
+  щонайвживанішою adj:f:v_oru:super
+  щонайвживанішій adj:f:v_mis:super
+  щонайвживаніша adj:f:v_kly:super
+  щонайвживаніше adj:n:v_naz:super
+  щонайвживанішого adj:n:v_rod:super
+  щонайвживанішому adj:n:v_dav:super
+  щонайвживаніше adj:n:v_zna:super
+  щонайвживанішим adj:n:v_oru:super
+  щонайвживанішім adj:n:v_mis:super
+  щонайвживанішому adj:n:v_mis:super
+  щонайвживаніше adj:n:v_kly:super
+  щонайвживаніші adj:p:v_naz:super
+  щонайвживаніших adj:p:v_rod:super
+  щонайвживанішим adj:p:v_dav:super
+  щонайвживаніших adj:p:v_zna:ranim:super
+  щонайвживаніші adj:p:v_zna:rinanim:super
+  щонайвживанішими adj:p:v_oru:super
+  щонайвживаніших adj:p:v_mis:super
+  щонайвживаніші adj:p:v_kly:super
 щонайгладкіше adv:super
 щонайгладкіший adj:m:v_naz:super
   щонайгладкішого adj:m:v_rod:super
@@ -3493,39 +3493,39 @@
   щонайкрутішими adj:p:v_oru:super
   щонайкрутіших adj:p:v_mis:super
   щонайкрутіші adj:p:v_kly:super
-щонайудатніше adv:super:v-u
-щонайуживаніший adj:m:v_naz:super:v-u
-  щонайуживанішого adj:m:v_rod:super:v-u
-  щонайуживанішому adj:m:v_dav:super:v-u
-  щонайуживанішого adj:m:v_zna:ranim:super:v-u
-  щонайуживаніший adj:m:v_zna:rinanim:super:v-u
-  щонайуживанішим adj:m:v_oru:super:v-u
-  щонайуживанішім adj:m:v_mis:super:v-u
-  щонайуживанішому adj:m:v_mis:super:v-u
-  щонайуживаніший adj:m:v_kly:super:v-u
-  щонайуживаніша adj:f:v_naz:super:v-u
-  щонайуживанішої adj:f:v_rod:super:v-u
-  щонайуживанішій adj:f:v_dav:super:v-u
-  щонайуживанішу adj:f:v_zna:super:v-u
-  щонайуживанішою adj:f:v_oru:super:v-u
-  щонайуживанішій adj:f:v_mis:super:v-u
-  щонайуживаніша adj:f:v_kly:super:v-u
-  щонайуживаніше adj:n:v_naz:super:v-u
-  щонайуживанішого adj:n:v_rod:super:v-u
-  щонайуживанішому adj:n:v_dav:super:v-u
-  щонайуживаніше adj:n:v_zna:super:v-u
-  щонайуживанішим adj:n:v_oru:super:v-u
-  щонайуживанішім adj:n:v_mis:super:v-u
-  щонайуживанішому adj:n:v_mis:super:v-u
-  щонайуживаніше adj:n:v_kly:super:v-u
-  щонайуживаніші adj:p:v_naz:super:v-u
-  щонайуживаніших adj:p:v_rod:super:v-u
-  щонайуживанішим adj:p:v_dav:super:v-u
-  щонайуживаніших adj:p:v_zna:ranim:super:v-u
-  щонайуживаніші adj:p:v_zna:rinanim:super:v-u
-  щонайуживанішими adj:p:v_oru:super:v-u
-  щонайуживаніших adj:p:v_mis:super:v-u
-  щонайуживаніші adj:p:v_kly:super:v-u
+щонайудатніше adv:super
+щонайуживаніший adj:m:v_naz:super
+  щонайуживанішого adj:m:v_rod:super
+  щонайуживанішому adj:m:v_dav:super
+  щонайуживанішого adj:m:v_zna:ranim:super
+  щонайуживаніший adj:m:v_zna:rinanim:super
+  щонайуживанішим adj:m:v_oru:super
+  щонайуживанішім adj:m:v_mis:super
+  щонайуживанішому adj:m:v_mis:super
+  щонайуживаніший adj:m:v_kly:super
+  щонайуживаніша adj:f:v_naz:super
+  щонайуживанішої adj:f:v_rod:super
+  щонайуживанішій adj:f:v_dav:super
+  щонайуживанішу adj:f:v_zna:super
+  щонайуживанішою adj:f:v_oru:super
+  щонайуживанішій adj:f:v_mis:super
+  щонайуживаніша adj:f:v_kly:super
+  щонайуживаніше adj:n:v_naz:super
+  щонайуживанішого adj:n:v_rod:super
+  щонайуживанішому adj:n:v_dav:super
+  щонайуживаніше adj:n:v_zna:super
+  щонайуживанішим adj:n:v_oru:super
+  щонайуживанішім adj:n:v_mis:super
+  щонайуживанішому adj:n:v_mis:super
+  щонайуживаніше adj:n:v_kly:super
+  щонайуживаніші adj:p:v_naz:super
+  щонайуживаніших adj:p:v_rod:super
+  щонайуживанішим adj:p:v_dav:super
+  щонайуживаніших adj:p:v_zna:ranim:super
+  щонайуживаніші adj:p:v_zna:rinanim:super
+  щонайуживанішими adj:p:v_oru:super
+  щонайуживаніших adj:p:v_mis:super
+  щонайуживаніші adj:p:v_kly:super
 Ягайло noun:anim:m:v_naz:prop:fname
   Ягайла noun:anim:m:v_rod:prop:fname
   Ягайлові noun:anim:m:v_dav:prop:fname
@@ -3603,72 +3603,72 @@
   якнайвагомішими adj:p:v_oru:super
   якнайвагоміших adj:p:v_mis:super
   якнайвагоміші adj:p:v_kly:super
-якнайвбогіше adv:super:v-u
-якнайвбогіший adj:m:v_naz:super:v-u
-  якнайвбогішого adj:m:v_rod:super:v-u
-  якнайвбогішому adj:m:v_dav:super:v-u
-  якнайвбогішого adj:m:v_zna:ranim:super:v-u
-  якнайвбогіший adj:m:v_zna:rinanim:super:v-u
-  якнайвбогішим adj:m:v_oru:super:v-u
-  якнайвбогішім adj:m:v_mis:super:v-u
-  якнайвбогішому adj:m:v_mis:super:v-u
-  якнайвбогіший adj:m:v_kly:super:v-u
-  якнайвбогіша adj:f:v_naz:super:v-u
-  якнайвбогішої adj:f:v_rod:super:v-u
-  якнайвбогішій adj:f:v_dav:super:v-u
-  якнайвбогішу adj:f:v_zna:super:v-u
-  якнайвбогішою adj:f:v_oru:super:v-u
-  якнайвбогішій adj:f:v_mis:super:v-u
-  якнайвбогіша adj:f:v_kly:super:v-u
-  якнайвбогіше adj:n:v_naz:super:v-u
-  якнайвбогішого adj:n:v_rod:super:v-u
-  якнайвбогішому adj:n:v_dav:super:v-u
-  якнайвбогіше adj:n:v_zna:super:v-u
-  якнайвбогішим adj:n:v_oru:super:v-u
-  якнайвбогішім adj:n:v_mis:super:v-u
-  якнайвбогішому adj:n:v_mis:super:v-u
-  якнайвбогіше adj:n:v_kly:super:v-u
-  якнайвбогіші adj:p:v_naz:super:v-u
-  якнайвбогіших adj:p:v_rod:super:v-u
-  якнайвбогішим adj:p:v_dav:super:v-u
-  якнайвбогіших adj:p:v_zna:ranim:super:v-u
-  якнайвбогіші adj:p:v_zna:rinanim:super:v-u
-  якнайвбогішими adj:p:v_oru:super:v-u
-  якнайвбогіших adj:p:v_mis:super:v-u
-  якнайвбогіші adj:p:v_kly:super:v-u
-якнайвживаніше adv:super:v-u
-якнайвживаніший adj:m:v_naz:super:v-u
-  якнайвживанішого adj:m:v_rod:super:v-u
-  якнайвживанішому adj:m:v_dav:super:v-u
-  якнайвживанішого adj:m:v_zna:ranim:super:v-u
-  якнайвживаніший adj:m:v_zna:rinanim:super:v-u
-  якнайвживанішим adj:m:v_oru:super:v-u
-  якнайвживанішім adj:m:v_mis:super:v-u
-  якнайвживанішому adj:m:v_mis:super:v-u
-  якнайвживаніший adj:m:v_kly:super:v-u
-  якнайвживаніша adj:f:v_naz:super:v-u
-  якнайвживанішої adj:f:v_rod:super:v-u
-  якнайвживанішій adj:f:v_dav:super:v-u
-  якнайвживанішу adj:f:v_zna:super:v-u
-  якнайвживанішою adj:f:v_oru:super:v-u
-  якнайвживанішій adj:f:v_mis:super:v-u
-  якнайвживаніша adj:f:v_kly:super:v-u
-  якнайвживаніше adj:n:v_naz:super:v-u
-  якнайвживанішого adj:n:v_rod:super:v-u
-  якнайвживанішому adj:n:v_dav:super:v-u
-  якнайвживаніше adj:n:v_zna:super:v-u
-  якнайвживанішим adj:n:v_oru:super:v-u
-  якнайвживанішім adj:n:v_mis:super:v-u
-  якнайвживанішому adj:n:v_mis:super:v-u
-  якнайвживаніше adj:n:v_kly:super:v-u
-  якнайвживаніші adj:p:v_naz:super:v-u
-  якнайвживаніших adj:p:v_rod:super:v-u
-  якнайвживанішим adj:p:v_dav:super:v-u
-  якнайвживаніших adj:p:v_zna:ranim:super:v-u
-  якнайвживаніші adj:p:v_zna:rinanim:super:v-u
-  якнайвживанішими adj:p:v_oru:super:v-u
-  якнайвживаніших adj:p:v_mis:super:v-u
-  якнайвживаніші adj:p:v_kly:super:v-u
+якнайвбогіше adv:super
+якнайвбогіший adj:m:v_naz:super
+  якнайвбогішого adj:m:v_rod:super
+  якнайвбогішому adj:m:v_dav:super
+  якнайвбогішого adj:m:v_zna:ranim:super
+  якнайвбогіший adj:m:v_zna:rinanim:super
+  якнайвбогішим adj:m:v_oru:super
+  якнайвбогішім adj:m:v_mis:super
+  якнайвбогішому adj:m:v_mis:super
+  якнайвбогіший adj:m:v_kly:super
+  якнайвбогіша adj:f:v_naz:super
+  якнайвбогішої adj:f:v_rod:super
+  якнайвбогішій adj:f:v_dav:super
+  якнайвбогішу adj:f:v_zna:super
+  якнайвбогішою adj:f:v_oru:super
+  якнайвбогішій adj:f:v_mis:super
+  якнайвбогіша adj:f:v_kly:super
+  якнайвбогіше adj:n:v_naz:super
+  якнайвбогішого adj:n:v_rod:super
+  якнайвбогішому adj:n:v_dav:super
+  якнайвбогіше adj:n:v_zna:super
+  якнайвбогішим adj:n:v_oru:super
+  якнайвбогішім adj:n:v_mis:super
+  якнайвбогішому adj:n:v_mis:super
+  якнайвбогіше adj:n:v_kly:super
+  якнайвбогіші adj:p:v_naz:super
+  якнайвбогіших adj:p:v_rod:super
+  якнайвбогішим adj:p:v_dav:super
+  якнайвбогіших adj:p:v_zna:ranim:super
+  якнайвбогіші adj:p:v_zna:rinanim:super
+  якнайвбогішими adj:p:v_oru:super
+  якнайвбогіших adj:p:v_mis:super
+  якнайвбогіші adj:p:v_kly:super
+якнайвживаніше adv:super
+якнайвживаніший adj:m:v_naz:super
+  якнайвживанішого adj:m:v_rod:super
+  якнайвживанішому adj:m:v_dav:super
+  якнайвживанішого adj:m:v_zna:ranim:super
+  якнайвживаніший adj:m:v_zna:rinanim:super
+  якнайвживанішим adj:m:v_oru:super
+  якнайвживанішім adj:m:v_mis:super
+  якнайвживанішому adj:m:v_mis:super
+  якнайвживаніший adj:m:v_kly:super
+  якнайвживаніша adj:f:v_naz:super
+  якнайвживанішої adj:f:v_rod:super
+  якнайвживанішій adj:f:v_dav:super
+  якнайвживанішу adj:f:v_zna:super
+  якнайвживанішою adj:f:v_oru:super
+  якнайвживанішій adj:f:v_mis:super
+  якнайвживаніша adj:f:v_kly:super
+  якнайвживаніше adj:n:v_naz:super
+  якнайвживанішого adj:n:v_rod:super
+  якнайвживанішому adj:n:v_dav:super
+  якнайвживаніше adj:n:v_zna:super
+  якнайвживанішим adj:n:v_oru:super
+  якнайвживанішім adj:n:v_mis:super
+  якнайвживанішому adj:n:v_mis:super
+  якнайвживаніше adj:n:v_kly:super
+  якнайвживаніші adj:p:v_naz:super
+  якнайвживаніших adj:p:v_rod:super
+  якнайвживанішим adj:p:v_dav:super
+  якнайвживаніших adj:p:v_zna:ranim:super
+  якнайвживаніші adj:p:v_zna:rinanim:super
+  якнайвживанішими adj:p:v_oru:super
+  якнайвживаніших adj:p:v_mis:super
+  якнайвживаніші adj:p:v_kly:super
 якнайгладкіше adv:super
 якнайгладкіший adj:m:v_naz:super
   якнайгладкішого adj:m:v_rod:super
@@ -3800,39 +3800,39 @@
   якнайкрутішими adj:p:v_oru:super
   якнайкрутіших adj:p:v_mis:super
   якнайкрутіші adj:p:v_kly:super
-якнайудатніше adv:super:v-u
-якнайуживаніший adj:m:v_naz:super:v-u
-  якнайуживанішого adj:m:v_rod:super:v-u
-  якнайуживанішому adj:m:v_dav:super:v-u
-  якнайуживанішого adj:m:v_zna:ranim:super:v-u
-  якнайуживаніший adj:m:v_zna:rinanim:super:v-u
-  якнайуживанішим adj:m:v_oru:super:v-u
-  якнайуживанішім adj:m:v_mis:super:v-u
-  якнайуживанішому adj:m:v_mis:super:v-u
-  якнайуживаніший adj:m:v_kly:super:v-u
-  якнайуживаніша adj:f:v_naz:super:v-u
-  якнайуживанішої adj:f:v_rod:super:v-u
-  якнайуживанішій adj:f:v_dav:super:v-u
-  якнайуживанішу adj:f:v_zna:super:v-u
-  якнайуживанішою adj:f:v_oru:super:v-u
-  якнайуживанішій adj:f:v_mis:super:v-u
-  якнайуживаніша adj:f:v_kly:super:v-u
-  якнайуживаніше adj:n:v_naz:super:v-u
-  якнайуживанішого adj:n:v_rod:super:v-u
-  якнайуживанішому adj:n:v_dav:super:v-u
-  якнайуживаніше adj:n:v_zna:super:v-u
-  якнайуживанішим adj:n:v_oru:super:v-u
-  якнайуживанішім adj:n:v_mis:super:v-u
-  якнайуживанішому adj:n:v_mis:super:v-u
-  якнайуживаніше adj:n:v_kly:super:v-u
-  якнайуживаніші adj:p:v_naz:super:v-u
-  якнайуживаніших adj:p:v_rod:super:v-u
-  якнайуживанішим adj:p:v_dav:super:v-u
-  якнайуживаніших adj:p:v_zna:ranim:super:v-u
-  якнайуживаніші adj:p:v_zna:rinanim:super:v-u
-  якнайуживанішими adj:p:v_oru:super:v-u
-  якнайуживаніших adj:p:v_mis:super:v-u
-  якнайуживаніші adj:p:v_kly:super:v-u
+якнайудатніше adv:super
+якнайуживаніший adj:m:v_naz:super
+  якнайуживанішого adj:m:v_rod:super
+  якнайуживанішому adj:m:v_dav:super
+  якнайуживанішого adj:m:v_zna:ranim:super
+  якнайуживаніший adj:m:v_zna:rinanim:super
+  якнайуживанішим adj:m:v_oru:super
+  якнайуживанішім adj:m:v_mis:super
+  якнайуживанішому adj:m:v_mis:super
+  якнайуживаніший adj:m:v_kly:super
+  якнайуживаніша adj:f:v_naz:super
+  якнайуживанішої adj:f:v_rod:super
+  якнайуживанішій adj:f:v_dav:super
+  якнайуживанішу adj:f:v_zna:super
+  якнайуживанішою adj:f:v_oru:super
+  якнайуживанішій adj:f:v_mis:super
+  якнайуживаніша adj:f:v_kly:super
+  якнайуживаніше adj:n:v_naz:super
+  якнайуживанішого adj:n:v_rod:super
+  якнайуживанішому adj:n:v_dav:super
+  якнайуживаніше adj:n:v_zna:super
+  якнайуживанішим adj:n:v_oru:super
+  якнайуживанішім adj:n:v_mis:super
+  якнайуживанішому adj:n:v_mis:super
+  якнайуживаніше adj:n:v_kly:super
+  якнайуживаніші adj:p:v_naz:super
+  якнайуживаніших adj:p:v_rod:super
+  якнайуживанішим adj:p:v_dav:super
+  якнайуживаніших adj:p:v_zna:ranim:super
+  якнайуживаніші adj:p:v_zna:rinanim:super
+  якнайуживанішими adj:p:v_oru:super
+  якнайуживаніших adj:p:v_mis:super
+  якнайуживаніші adj:p:v_kly:super
 ясна noun:inanim:p:v_naz:ns
   ясен noun:inanim:p:v_rod:ns
   яснам noun:inanim:p:v_dav:ns
