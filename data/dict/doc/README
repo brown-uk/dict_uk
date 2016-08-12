@@ -19,7 +19,6 @@ pronouns.lst	-- pronouns with all their forms (not sorted), some other POS
 slang.lst	-- slang
 
 rare.lst	-- rare, obsolete, dialect (not used for spellchecking)
-verify.lst	-- waiting to be moved somewhere else (not used for spellchecking)
 twisters.lst	-- bad words and suggestions for replacement (not used for spellchecking)
 
 composite.lst   composite words via hyphen
