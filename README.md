@@ -1,10 +1,13 @@
-## Це — проект генерування словника з тегами частин мови для української мови. ##
+## Це — великий електронний словник української мови (ВЕСУМ). ##
 
 ## This is a project to generate POS tag dictionary for Ukrainian language. ##
 
 
 
 ### Опис ###
+    Словник містить слова та їх парадигми з відповідними тегами, а також іншу інформацію,
+    зокрема:
+    *
     Для всіх файлів в data/dict цей проект генерує всі можливі словоформи з тегами частин мови
     за допомогою правил афіксів у каталозі data/affix.
 
@@ -44,15 +47,6 @@
 * out/tags.txt - список тегів
 
 
-### Інші завдання ###
-
-    `gradle stopwords`
-
-    На виході:
-
-* out/stopwords.txt - список слів, що ігноруються пошуком (напр. в lucene тощо)
-
-
 
 ### Description ###
     For all files in data/dict the project generates all possible word forms with POS tags
@@ -75,3 +69,8 @@
 * out/words_spell.txt - words valid for spelling
 * out/lemmas.txt - list of unique lemmas
 * out/tags.txt - list of unique tags
+
+
+ВЕСУМ вільно розповсюджується за умов ліцензії GPL версії 3.
+
+Copyright (c) 2016 Andriy Rysin, команда БрУК
