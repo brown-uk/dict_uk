@@ -157,7 +157,7 @@ flagMap.each{ flag, affixGroupItems ->
 					}
 					
 					def to = affix.to ? affix.to.replaceFirst(/\$1/, ''+it) : 0
-					def ending = item.ending.replaceFirst(/\[$matcherGroup\]/, ''+it)
+					def ending = item.ending.replaceFirst(/\[($matcherGroup|\^жш)\]/, ''+it)
 					
 //					if( matcher.size() == 2 ) {
 //						println "\t $fromm -> $to @ $ending"
@@ -262,7 +262,7 @@ def lines = files.collect {
 	else {
 		def parts = it.split()
 		
-		if( it.contains(".<") ) {
+		if( it.contains(".<") && ! it.contains("<+") ) {
 		if( parts[1].contains("/n10") || parts[1].contains("/n3") ) {
 			if( ! parts[1].contains(".k") && ! parts[0].contains("ще ") ) {
 				parts[1] += parts[1].contains("/n10") ? ".ko" : ".ke"
@@ -273,6 +273,9 @@ def lines = files.collect {
 			    parts[1] += ".ke"
 		    }
 		}
+        }
+        else if( it.contains("р /") && ! it.contains(".<") && it.contains(".ke") ) {
+           parts[1] = parts[1].replace(".ke", "")
         }
 		
 
@@ -334,6 +337,29 @@ def lines = files.collect {
 }.grep {
 	it
 }.flatten()
+
+
+def lineMap = [:]
+lines.each {
+    if( ! it.contains('/') ) {
+        if( ! (it in lineMap) ) {
+            lineMap[it] = null
+        }
+        return
+    }
+
+    def (word, flags) = it.split('/')
+    if( word in lineMap ) {
+        lineMap[word] = (Arrays.asList(lineMap[word].toCharArray()) + Arrays.asList(flags.toCharArray())).unique().join()
+    }
+    else {
+        lineMap[word] = flags
+    }
+}
+
+lines = lineMap.collect { k,v ->
+    v ? k +'/' + v : k
+}
 
 lines.addAll(superlatives)
 
