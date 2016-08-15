@@ -6,25 +6,28 @@ import org.dict_uk.expand.*
 
 def AFFIX_DIR = "../../data/affix"
 
+def expand = new Expand()
+def affixMap = expand.affix.load_affixes(AFFIX_DIR)
 
-Affix affixLoader = new Affix()
-affixLoader.load_affixes(AFFIX_DIR)
+//Affix affixLoader = new Affix()
+//affixLoader.load_affixes(AFFIX_DIR)
 
 char hunFlag = (int)' '+1
 
 def flagMap = [:].withDefault{ [] }
 def revFlagMap = [:]
 def toHunFlagMap = [:]
+def negativeMatchFlags = [:].withDefault{ [] }
 
 
-affixLoader.affixMap.each { flag, affixGroupMap ->
+affixMap.each { flag, affixGroupMap ->
 	if( flag.startsWith("vr") ) {
-		affixLoader.affixMap[ flag.replace('vr', 'v') ].putAll(affixGroupMap)
+		affixMap[ flag.replace('vr', 'v') ].putAll(affixGroupMap)
 	}
 }
 
 
-affixLoader.affixMap.each { flag, affixGroupMap ->
+affixMap.each { flag, affixGroupMap ->
 
 	if( flag.contains('.ku') || flag.contains('.u') || flag.contains("patr_pl") || flag.startsWith("vr") )
 		return
@@ -35,6 +38,10 @@ affixLoader.affixMap.each { flag, affixGroupMap ->
 
 		flagMap[ hunFlag ] << [ending: ending, affixGroup: affixGroup]
 
+		if( affixGroup.neg_match ) {
+			negativeMatchFlags[flag] << affixGroup
+		}
+		
 		//		flagMap[ [flag: flag, ending: affixGroup.match] ]
 	}
 
@@ -42,33 +49,42 @@ affixLoader.affixMap.each { flag, affixGroupMap ->
 	toHunFlagMap[flag] = hunFlag
 
 	hunFlag = (char)((int)hunFlag+1)
-	if(hunFlag == '#') {
+	if("#/".contains(''+hunFlag)) {
 		hunFlag = (char)((int)hunFlag+1)
 	}
 
 }
 
+println("Negative matches: " + negativeMatchFlags)
+
 
 def out = ''
 flagMap.each{ flag, affixGroupItems ->
 
+	def dictUkFlag = revFlagMap[flag] 
 	def body = ''
 	def cnt = 0
 	affixGroupItems.each { item ->
 
-		if( item.affixGroup.neg_match ) {
-			println "TODO: not handling negative match $item.affixGroup.neg_match for " + item.affixGroup.match + " in " + revFlagMap[flag]
-		}
+//		if( item.affixGroup.neg_match ) {
+//			println "TODO: not handling negative match $item.affixGroup.neg_match for " + item.affixGroup.match + " in " + revFlagMap[flag]
+//		}
 		
 		item.affixGroup.affixes.each { affix ->
+
+			if( affix.tags =~ 'uncontr|:alt|verb.*coll' ) {
+//					println 'Skipping uncontr: ' + affix
+				return
+			}
+
 
 			if( affix.fromm && ! (affix.fromm ==~ /[а-яіїєґА-ЯІЇЄҐ']+/ ) ) {
 //				println "regex in $flag ("+revFlagMap[flag]+") $affix.fromm -> $affix.to @ $item.ending"
 
-				Matcher matcher = item.ending =~ /\[([а-яіїєґ']+|\^жш)\]/
+				Matcher matcher = item.ending =~ /\[([а-яіїєґА-ЯІЇЄҐ']+|\^жш)\]/
 
 				if( ! matcher || matcher.size() > 2 ) {
-					println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for " + revFlagMap[flag]
+					println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for " + dictUkFlag
 					return
 				}
 
@@ -89,13 +105,21 @@ flagMap.each{ flag, affixGroupItems ->
 								to = affix.to.replaceFirst(/\$1/, ''+it2)
 							}
 							else {
- 								println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for " + revFlagMap[flag]
+ 								println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for " + dictUkFlag
 								return
 							}
 
 							def ending = item.ending.replaceFirst(/\[/+matcher[0][1]+/\]/, ''+it1)
-							ending = ending.replaceFirst(/\[/+matcher[0][2]+/\]/, ''+it2)
+							ending = ending.replaceFirst(/\[/+matcher[1][1]+/\]/, ''+it2)
 //													println "\t $fromm -> $to @ $ending"
+					
+//    					    println "\t $item.ending -> $ending / " + matcher[0] + " / " + matcher[1]
+
+				if( affix.to.contains('$2') ) {
+					println '[2] Skipping complex regex: ' + affix
+					return
+				}
+
 
 							body += "SFX $flag $fromm $to $ending"
 							body += '\n'
@@ -133,10 +157,19 @@ flagMap.each{ flag, affixGroupItems ->
 					}
 					
 					def to = affix.to ? affix.to.replaceFirst(/\$1/, ''+it) : 0
-					def ending = item.ending.replaceFirst(/\[chars\]/, ''+it)
+					def ending = item.ending.replaceFirst(/\[$matcherGroup\]/, ''+it)
+					
 //					if( matcher.size() == 2 ) {
 //						println "\t $fromm -> $to @ $ending"
 //					}
+
+
+				if( affix.to.contains('$2') ) {
+					println '[1] Skipping complex regex: ' + affix
+					return
+				}
+
+
 					body += "SFX $flag $fromm $to $ending"
 					body += '\n'
 					cnt += 1
@@ -144,6 +177,11 @@ flagMap.each{ flag, affixGroupItems ->
 				
 			}
 			else {
+//				if( dictUkFlag affix.tags =~ ':v_kly' && dictUkFlag )
+
+                if( dictUkFlag.startsWith('adj') && item.affixGroup.match == 'лиций' )
+                    return
+				
 				def fromm = affix.fromm ? affix.fromm : '0'
 				def to = affix.to ? affix.to : '0'
 				def ending = item.affixGroup.match
@@ -157,7 +195,7 @@ flagMap.each{ flag, affixGroupItems ->
 		}
 	}
 
-	def header = "SFX $flag Y $cnt\t\t# " + revFlagMap[flag]
+	def header = "SFX $flag Y $cnt" //\t\t# " + revFlagMap[flag]
 	out += header
 	out += '\n'
 	out += body
@@ -198,6 +236,9 @@ def lines = files.collect {
 }
 .flatten()
 .collect {
+    if( it.contains(':coll') )
+        return
+
 	it = it.replaceFirst(/ *#.*/, '').trim()
 	if( ! it )
 		return ''
@@ -221,6 +262,7 @@ def lines = files.collect {
 	else {
 		def parts = it.split()
 		
+		if( it.contains(".<") ) {
 		if( parts[1].contains("/n10") || parts[1].contains("/n3") ) {
 			if( ! parts[1].contains(".k") && ! parts[0].contains("ще ") ) {
 				parts[1] += parts[1].contains("/n10") ? ".ko" : ".ke"
@@ -231,6 +273,7 @@ def lines = files.collect {
 			    parts[1] += ".ke"
 		    }
 		}
+        }
 		
 
 		def allFlags = parts[1][1..-1]
@@ -245,8 +288,18 @@ def lines = files.collect {
 
 		def outFlags = ''
 
+		
+		if( mainFlg in negativeMatchFlags 
+				&& negativeMatchFlags[mainFlg].find{ 
+						parts[0].endsWith(it.neg_match) 
+					} ) {
+			return expand.expand(parts[0], parts[1]).collect { it.split()[0] }.unique() // + ' # TODO: inflect' 
+		}
+	
+		
+		
 		flgs.each { flg ->
-			if( flg.startsWith('<') || flg == 'u'|| flg == 'ku' || flg == '@' )
+			if( flg.startsWith('<') || flg == 'u' || flg == 'ku' || flg == '@' )
 				return
 
 			def f = flg == mainFlg ? flg : mainFlg + '.' + flg
@@ -280,7 +333,7 @@ def lines = files.collect {
 	}
 }.grep {
 	it
-}
+}.flatten()
 
 lines.addAll(superlatives)
 
@@ -291,8 +344,6 @@ lines.addAll(extraWords.split())
 Args.args = new Args()
 
 def dic_file = new File("../../data/dict/composite.lst" )
-def expand = new Expand()
-expand.affix.load_affixes(AFFIX_DIR)
 def expand_comps = new ExpandComps(expand)
 
 def comps
