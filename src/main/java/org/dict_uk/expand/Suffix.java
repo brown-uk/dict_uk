@@ -34,6 +34,10 @@ class Suffix {
 		return replaced;
 	}
 
+	@Override
+	public String toString() {
+		return "Suffix [to=" + to + ", fromm=" + fromm + ", tags=" + tags + "]";
+	}
 
 	private static String convert0(String part) {
 		return part.equals("0") ? "" : part;

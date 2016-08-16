@@ -435,6 +435,9 @@ class Expand {
 //					        else
 //					            line = line.replace("/v_kly", "")
 					}
+					else if( util.person(flags) ) {
+						line = line.replace("p:v_naz/v_zna", "p:v_naz")
+					}
 				}
 				else if( main_flag.startsWith("/n2nm") ) {
 					if( util.istota(flags)) {

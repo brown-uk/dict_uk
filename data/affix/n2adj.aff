@@ -69,11 +69,11 @@ group n2adj1
 є	їм			    #   Остап'їм 	            @ noun:n:v_oru/v_mis:np
 
 і:
-і	им			#   війчастим 	            @ noun:p:v_dav
-і	і			#   війчасті 	            @ noun:p:v_naz/v_zna/v_kly
-#і	ії			#   війчастії 	            @ noun:p:v_naz/v_zna/v_kly:uncontr
-і	их			#   війчастих 	            @ noun:p:v_rod/v_zna/v_mis
-і	ими			#   війчастими             @ noun:p:v_oru
+і	им			#   війчастим 	            @ noun:p:v_dav:ns
+і	і			#   війчасті 	            @ noun:p:v_naz/v_zna/v_kly:ns
+#і	ії			#   війчастії 	            @ noun:p:v_naz/v_zna/v_kly:uncontr:ns
+і	их			#   війчастих 	            @ noun:p:v_rod/v_zna/v_mis:ns
+і	ими			#   війчастими             @ noun:p:v_oru:ns
 
 
 subgroup n2adj1.im

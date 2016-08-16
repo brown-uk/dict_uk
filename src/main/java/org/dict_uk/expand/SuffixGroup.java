@@ -41,4 +41,10 @@ class SuffixGroup {
 	public int getSize() {
 		return affixes.size();
 	}
+
+	@Override
+	public String toString() {
+		return "SuffixGroup [match=" + match + ", neg_match=" + neg_match + ", affixes=" + affixes + "]";
+	}
+	
 }
