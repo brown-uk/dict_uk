@@ -61,6 +61,8 @@ affixMap.each { flag, affixGroupMap ->
 println("Negative matches: " + negativeMatchFlags)
 
 
+def NONSPELL_TAGS = ~ /:uncontr|:alt|:bad|verb.*coll/
+
 def out = ''
 flagMap.each{ flag, affixGroupItems ->
 
@@ -75,7 +77,7 @@ flagMap.each{ flag, affixGroupItems ->
 		
 		item.affixGroup.affixes.each { affix ->
 
-			if( affix.tags =~ 'uncontr|:alt|verb.*coll' ) {
+			if( NONSPELL_TAGS.matcher(affix.tags) ) {
 //					println 'Skipping uncontr: ' + affix
 				return
 			}
@@ -87,7 +89,7 @@ flagMap.each{ flag, affixGroupItems ->
 				Matcher matcher = item.ending =~ /\[([а-яіїєґА-ЯІЇЄҐ']+|\^жш)\]/
 
 				if( ! matcher || matcher.size() > 2 ) {
-//					println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for " + dictUkFlag
+					println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for $item.edning in " + dictUkFlag
 					return
 				}
 
@@ -298,7 +300,7 @@ def lines = files.collect {
 		
 		if( mainFlg in negativeMatchFlags 
 				&& negativeMatchFlags[mainFlg].find{ parts[0].endsWith(it.neg_match) }
-			    || it =~ " [gp]=|/adj\\.<\\+|<\\+m|n2adj2\\.<\\+|v5\\.cf| /.* /"
+			    || it =~ " [gp]=|/adj\\.<\\+|<\\+m|n2adj2\\.<\\+|v5\\.cf|\\.pzi| /.* /"
 					) {
 			def expandFlags = parts.size() > 2 ? parts[1] + ' ' + parts[2] : parts[1]
 			return expand.expand(parts[0], expandFlags).findAll{ ! (it =~ /:uncontr|:alt|verb.*:coll/ ) }.collect { it.split()[0] }.unique() // + ' # TODO: inflect' 
@@ -382,7 +384,7 @@ def dic_file_reader = dic_file.withReader("utf-8") { reader ->
 println "Got $comps.size comps"
 
 
-comps = comps.findAll{ ! (it =~ /:uncontr|:alt|verb.*:coll|inanim:.:v_kly/ ) }
+comps = comps.findAll{ ! (it =~ /:uncontr|:alt|:bad|verb.*:coll|inanim:.:v_kly/ ) }
 
 lines.addAll(comps.collect{ it.split()[0] })
 
