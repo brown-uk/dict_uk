@@ -6,6 +6,9 @@ import org.dict_uk.expand.*
 
 def AFFIX_DIR = "../../data/affix"
 
+Args.args = new Args()
+Args.args.removeWithTags = ["uncontr"]
+
 def expand = new Expand()
 def affixMap = expand.affix.load_affixes(AFFIX_DIR)
 
@@ -84,7 +87,7 @@ flagMap.each{ flag, affixGroupItems ->
 				Matcher matcher = item.ending =~ /\[([а-яіїєґА-ЯІЇЄҐ']+|\^жш)\]/
 
 				if( ! matcher || matcher.size() > 2 ) {
-					println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for " + dictUkFlag
+//					println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for " + dictUkFlag
 					return
 				}
 
@@ -229,14 +232,15 @@ def lines = files.collect {
 .collect {
 	if( MULTIFLAG_PATTERN.matcher(it) ) {
 //		System.err.println('got dual flag ' + it)
-		def parts = it.split(' ')
-		return [parts[0] + ' ' + parts[1], parts[0] + ' ' + parts[2]]
+		def parts = it.split(' ', 4)
+		def extra = parts.size() > 3 ? ' ' + parts[3] : ''
+		return [parts[0] + ' ' + parts[1] + extra, parts[0] + ' ' + parts[2] + extra]
 	}
 	return it
 }
 .flatten()
 .collect {
-    if( it.contains(':coll') )
+    if( it =~ /:coll|:bad|:alt/ )
         return
 
 	it = it.replaceFirst(/ *#.*/, '').trim()
@@ -260,21 +264,21 @@ def lines = files.collect {
 		return it
 	}
 	else {
-		def parts = it.split()
+		def parts = it.split(' ', 3)
 		
 		if( it.contains(".<") && ! it.contains("<+") ) {
-		if( parts[1].contains("/n10") || parts[1].contains("/n3") ) {
-			if( ! parts[1].contains(".k") && ! parts[0].contains("ще ") ) {
-				parts[1] += parts[1].contains("/n10") ? ".ko" : ".ke"
-			}
-		}
-		else if( parts[1] =~ '/n2[0-4]' && ! parts[1].contains(".k") ) {
-			if( Expand.isDefaultKlyE(parts[0], parts[1]) ) {
-			    parts[1] += ".ke"
+		    if( parts[1].contains("/n10") || parts[1].contains("/n3") ) {
+			    if( ! parts[1].contains(".k") && ! parts[0].contains("ще ") ) {
+				    parts[1] += parts[1].contains("/n10") ? ".ko" : ".ke"
+			    }
 		    }
-		}
+		    else if( parts[1] =~ '/n2[0-4]' && ! parts[1].contains(".k") ) {
+			    if( Expand.isDefaultKlyE(parts[0], parts[1]) ) {
+			        parts[1] += ".ke"
+		        }
+		    }
         }
-        else if( it.contains("р /") && ! it.contains(".<") && it.contains(".ke") ) {
+        else if( it =~ "[гкр] /" && ! it.contains(".<") && it.contains(".ke") ) {
            parts[1] = parts[1].replace(".ke", "")
         }
 		
@@ -293,10 +297,11 @@ def lines = files.collect {
 
 		
 		if( mainFlg in negativeMatchFlags 
-				&& negativeMatchFlags[mainFlg].find{ 
-						parts[0].endsWith(it.neg_match) 
-					} ) {
-			return expand.expand(parts[0], parts[1]).collect { it.split()[0] }.unique() // + ' # TODO: inflect' 
+				&& negativeMatchFlags[mainFlg].find{ parts[0].endsWith(it.neg_match) }
+			    || it =~ " [gp]=|/adj\\.<\\+|<\\+m|n2adj2\\.<\\+|v5\\.cf| /.* /"
+					) {
+			def expandFlags = parts.size() > 2 ? parts[1] + ' ' + parts[2] : parts[1]
+			return expand.expand(parts[0], expandFlags).findAll{ ! (it =~ /:uncontr|:alt|verb.*:coll/ ) }.collect { it.split()[0] }.unique() // + ' # TODO: inflect' 
 		}
 	
 		
@@ -367,8 +372,6 @@ def extraWords = getClass().getResource( '/extra_words.txt' ).text
 
 lines.addAll(extraWords.split())
 
-Args.args = new Args()
-
 def dic_file = new File("../../data/dict/composite.lst" )
 def expand_comps = new ExpandComps(expand)
 
@@ -377,6 +380,9 @@ def dic_file_reader = dic_file.withReader("utf-8") { reader ->
 	comps = expand_comps.process_input(reader.readLines())
 }
 println "Got $comps.size comps"
+
+
+comps = comps.findAll{ ! (it =~ /:uncontr|:alt|verb.*:coll|inanim:.:v_kly/ ) }
 
 lines.addAll(comps.collect{ it.split()[0] })
 
