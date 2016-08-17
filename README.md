@@ -16,8 +16,7 @@
 
 
 ### Вимоги до програмних засобів ###
-* java (>=1.8)
-* gradle
+* java (JDK >= 8)
 
 
 ### Застосування ###
@@ -27,14 +26,14 @@
 
 
 ### Як встановити ###
-* Встановити java і gradle
+* Встановити java (JDK 8 або новішу)
 * (Лише для Windows) встановити і запустити git bash
 * Клонувати проект: `git clone https://github.com/brown-uk/dict_uk.git`
 * Зайти в теку проекту: cd dict_uk
 
 ### Як запускати ###
 
-    `gradle expand`
+    `./gradlew expand`
     
     або для Windows:
     
@@ -57,12 +56,15 @@
 
 
 ### Required software ###
-* java (>=1.8)
-* gradle
+* java (JDK >= 8)
 
 
 ### How to run ###
-    `gradle expand`
+    `./gradlew expand`
+
+    or on Windows:
+
+    `bin/expand_win.sh`
 
     Output:
 
