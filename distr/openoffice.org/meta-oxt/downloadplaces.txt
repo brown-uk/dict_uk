@@ -1,0 +1,1 @@
+hunspell dicitonaries: https://github.com/brown-uk/dict_uk

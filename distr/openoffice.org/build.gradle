@@ -1,0 +1,52 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+version="2.9.1"
+def hunspellDir="../hunspell/build/hunspell"
+
+task prepareFiles << {
+
+    copy {
+        from "$hunspellDir/uk_UA.aff"
+        from "$hunspellDir/uk_UA.dic"
+        from "thesaurus"
+        from "hyphen"
+        from "spell"
+        into "build/oxt/uk_UA"
+    }
+
+    copy {
+	    from "meta-oxt/META-INF"
+	    into "build/oxt/META-INF"
+	}
+	
+    copy {
+	    from "../LICENSE"
+	    from "meta-oxt/dictionaries.xcu"
+	    from "meta-oxt/downloadplaces.txt"
+	    from("meta-oxt/description.xml") {
+            filter(ReplaceTokens, tokens: [VERSION: project.version])
+        }
+	    into "build/oxt"
+    }
+    
+    exec {
+        commandLine 'sh', '-c', "bin/th_gen_idx.pl < thesaurus/th_uk_UA.dat > build/oxt/uk_UA/th_uk_UA.idx"
+    }
+}
+
+task createOxt (type: Zip, dependsOn: prepareFiles) {
+    from 'build/oxt'
+    archiveName "build/dict-uk_UA-${project.version}.oxt"
+}
+
+
+//	mkdir -p $(OXT_DIST)
+//	cp -r src/openoffice.org/* $(OXT_DIST)
+//	$(UPDATE_VERSION) < src/openoffice.org/description.xml > $(OXT_DIST)/description.xml
+//	cp $(MYSPELL_DIST)/uk_UA.aff $(OXT_DIST)/uk_UA/
+//	cp $(MYSPELL_DIST)/uk_UA.dic $(OXT_DIST)/uk_UA/
+//	cp src/myspell/README_uk_UA.txt $(OXT_DIST)/uk_UA/
+//	cp src/thesaurus/th_uk_UA.dat $(OXT_DIST)/uk_UA/
+//	bin/th_gen_idx.pl < src/thesaurus/th_uk_UA.dat > $(OXT_DIST)/uk_UA/th_uk_UA.idx
+//	-rm *.oxt
+//	cd $(OXT_DIST) && zip -r ../dict-uk_UA-$(VERSION).oxt * && cd ..
