@@ -1,5 +1,6 @@
 АВТ noun:f:nv    # АВТ "Баварія"
 АВТА noun:f:nv    # асоціація власників транзитних авто
+АДФ noun:m:nv:np        # аденозиндифосфат
 АЕС noun:f:nv
 АЗС noun:f:nv
 АйБіЕм noun:f:nv:prop
@@ -19,6 +20,7 @@
 АТП noun:n:nv
 АТР noun:m:nv:prop    # канал
 АТС noun:f:nv
+АТФ noun:m:nv:np        # аденозинтрифосфат
 БАТЕ noun:m:nv:np:prop    # футбольний клуб
 б-во /n2n.p1
 БД noun:f:nv
