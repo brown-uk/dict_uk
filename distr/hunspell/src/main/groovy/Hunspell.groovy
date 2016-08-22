@@ -89,7 +89,7 @@ flagMap.each{ flag, affixGroupItems ->
 				Matcher matcher = item.ending =~ /\[([а-яіїєґА-ЯІЇЄҐ']+|\^жш)\]/
 
 				if( ! matcher || matcher.size() > 2 ) {
-					println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for $item.edning in " + dictUkFlag
+//					println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for $item.edning in " + dictUkFlag
 					return
 				}
 
@@ -110,7 +110,7 @@ flagMap.each{ flag, affixGroupItems ->
 								to = affix.to.replaceFirst(/\$1/, ''+it2)
 							}
 							else {
- 								println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for " + dictUkFlag
+// 								println "TODO: not handling $item.ending /$affix.fromm -> $affix.to/ for " + dictUkFlag
 								return
 							}
 
@@ -121,7 +121,7 @@ flagMap.each{ flag, affixGroupItems ->
 //    					    println "\t $item.ending -> $ending / " + matcher[0] + " / " + matcher[1]
 
 				if( affix.to.contains('$2') ) {
-					println '[2] Skipping complex regex: ' + affix
+//					println '[2] Skipping complex regex: ' + affix
 					return
 				}
 
@@ -170,7 +170,7 @@ flagMap.each{ flag, affixGroupItems ->
 
 
 				if( affix.to.contains('$2') ) {
-					println '[1] Skipping complex regex: ' + affix
+//					println '[1] Skipping complex regex: ' + affix
 					return
 				}
 
@@ -391,9 +391,7 @@ lines.addAll(comps.collect{ it.split()[0] })
 
 println "Found ${lines.size} total lines"
 
-def words = lines //.toSorted().unique()
-
-println "Found ${lines.size} unique lines"
+def words = lines
 
 def txt = "${words.size}\n"
 txt += words.join("\n")
