@@ -2,5 +2,5 @@
 
 ### Як запускати ###
 
-    `../../gradlew hunspell`
-    
+    ../../gradlew hunspell
+
