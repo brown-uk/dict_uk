@@ -15,6 +15,9 @@ String outResDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageD
 String outRulesDir=sourceSets.main.output.resourcesDir.toString() + "/org/languagetool/rules/uk"
 String tmpDir="build/tmp"
 
+String languagetoolDictDestDir="$ltDir/languagetool-language-modules/uk/src/main/resources/org/languagetool/resource/uk"
+String languagetoolRulesDestDir="$ltDir/languagetool-language-modules/uk/src/main/resources/org/languagetool/rules/uk"
+
 String inputDir="${projectDir}/../../out"
 String inputDictFile="dict_corp_lt.txt"
 
@@ -269,6 +272,17 @@ task deployToLT(type: Copy, dependsOn: classes) {
     includeEmptyDirs = false
 
 //    with dataContent
+}
+
+
+task deployHelperDictsToLT(type: Copy, dependsOn: [createSoftReplacementDict, createReplacementDict]) {
+    println "== ${languagetoolRulesDestDir}"
+
+    from outRulesDir
+    into "${languagetoolRulesDestDir}"
+    include "**/replace*.txt"
+
+    includeEmptyDirs = false
 }
 
 
