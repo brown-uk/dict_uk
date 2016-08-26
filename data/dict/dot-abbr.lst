@@ -31,7 +31,7 @@
 пров. noun:m:nv
 р. noun:m:nv:np|noun:f:nv:np    # рік, річка
 ред. noun:m:v_naz|noun:f:nv:np    # редактор, напр. "Сьогодні (у четвер.  Ред.), вранці.", редакція
-реж. noun:m:nv
+реж. noun:m:nv                    # режисер
 рр. noun:p:nv:ns
 рт. adj:nv
 руб. noun:n:nv
