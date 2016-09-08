@@ -242,6 +242,10 @@ task createCaseGovernmentDict() {
     inputs.file srcFiles.collect{ "$srcDir/$it" }
     outputs.file outFile
 
+    doFirst {
+        new File(outResDir).mkdirs()
+    }
+
 	doLast {
 		def outLines = []
 

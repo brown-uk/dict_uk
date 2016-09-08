@@ -17,7 +17,7 @@
       <Description>
         <em:locale>uk</em:locale>
         <em:name>Український орфографічний словник</em:name>
-        <em:description>Український словник перевіряння правопису в програмах з родини Mozilla.</em:description>
+        <em:description>Український словник перевірки орфографії для продуктів Mozilla.</em:description>
         <em:creator>Андрій Рисін, Ярослав Крицун</em:creator>
       </Description>
     </em:localized>

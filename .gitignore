@@ -1,6 +1,6 @@
 **/*.log
 **/*.diff
-/build/
+**/build
 **/tmp/
 test/*.txt
 out/prev/*
