@@ -871,7 +871,8 @@ class Expand {
 				":slang",
 				":rare",
 				":coll",
-				":abbr"
+				":abbr",
+				":xp1", ":xp2", ":xp3", ":xp4"
 			]) }   // TODO: add ") {alt"
 
 		return out_lines
