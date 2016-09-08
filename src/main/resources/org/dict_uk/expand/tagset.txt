@@ -24,6 +24,7 @@ emph
 intj
 f
 fname
+foreign
 futr
 gen
 imperf
@@ -74,7 +75,6 @@ short
 slang
 subord
 super
-transl
 unanim
 uncontr
 v_dav
