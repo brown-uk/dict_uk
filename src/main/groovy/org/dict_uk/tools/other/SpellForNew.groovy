@@ -1,7 +1,9 @@
+#!/bin/env groovy
+
 package org.dict_uk.tools
 
-@Grab(group='org.languagetool', module='language-uk', version='3.4-SNAPSHOT', changing=true)
-@Grab(group='org.languagetool', module='language-ru', version='3.3')
+@Grab(group='org.languagetool', module='language-uk', version='3.4', changing=true)
+@Grab(group='org.languagetool', module='language-ru', version='3.4')
 @Grab(group='commons-cli', module='commons-cli', version='1.3')
 
 import org.codehaus.groovy.util.StringUtil
@@ -25,7 +27,7 @@ class SpellForNew {
 	
 	def analyzeText(String text) {
         // remove words with dot as we get too much abbreviations
-        text = text.replaceAll(/[а-яіїєґ]+\./, '.')
+        text = text.replaceAll(/[а-яіїєґ]+\./, '.').replace("\u0301", "")
 
 		List<AnalyzedSentence> analyzedSentences = langTool.analyzeText(text);
 	}
