@@ -322,7 +322,7 @@ class Expand {
 			for( line in lines) {
 				String extra_flags2 = extra_flags
 
-				if( first_name_base && ! line.contains(":patr") ) {
+				if( first_name_base && ! line.contains("patr") && ! flags.contains(":patr") ) {
 					extra_flags2 += ":prop:fname"
 				}
 				if( line.contains(" advp") ) {

@@ -196,9 +196,8 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
 task createSoftReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outRulesDir}/replace_soft.txt"
-    def allFiles = []
-    new File(srcDir).eachFile{ allFiles << it.name }
-    def srcFiles = allFiles.findAll { it.endsWith('.lst') && ! it.startsWith('twisters') }
+    def allFiles = Arrays.asList(new File(srcDir).listFiles())
+    def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! it.name.startsWith('twisters') }
 
     inputs.file srcFiles
     outputs.file outFile
@@ -213,12 +212,12 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
 		def outLines = []
 
 		srcFiles.each{ srcFile ->
-			def rvLines = new File("$srcDir/$srcFile").text
+			def rvLines = new File("$srcDir/$srcFile.name").text
 			    .split('\n')
 			    .findAll {
 				    it.contains(' #>')
 			    }.collect{
-				    it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).* #> *(.*)/, '$1=$2').replaceAll(/ *[;,] */, '|')
+				    it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).* #> *(.*)/, '$1=$2') //.replaceAll(/ *[;,] */, '|')
 			    }
 
 			outLines.addAll(rvLines)
@@ -269,7 +268,7 @@ task createCaseGovernmentDict() {
 task helperDicts (dependsOn: [createCaseGovernmentDict, createReplacementDict, createSoftReplacementDict])
 
 
-task deployToLT(type: Copy, dependsOn: classes) {
+task deployDictToLT(type: Copy, dependsOn: classes) {
     from outResDir
     into "${languagetoolDictDestDir}"
 
@@ -280,7 +279,7 @@ task deployToLT(type: Copy, dependsOn: classes) {
 
 
 task deployHelperDictsToLT(type: Copy, dependsOn: [createSoftReplacementDict, createReplacementDict]) {
-    println "== ${languagetoolRulesDestDir}"
+    logger.lifecycle "LT dir: ${languagetoolRulesDestDir}"
 
     from outRulesDir
     into "${languagetoolRulesDestDir}"
@@ -289,6 +288,7 @@ task deployHelperDictsToLT(type: Copy, dependsOn: [createSoftReplacementDict, cr
     includeEmptyDirs = false
 }
 
+task deployToLT(dependsOn: [deployDictToLT, deployHelperDictsToLT])
 
 
 jar {
