@@ -2,7 +2,7 @@
 
 package org.dict_uk.tools
 
-@Grab(group='org.languagetool', module='language-uk', version='3.4', changing=true)
+@Grab(group='org.languagetool', module='language-uk', version='3.5-SNAPSHOT', changing=true)
 @Grab(group='org.languagetool', module='language-ru', version='3.4')
 @Grab(group='commons-cli', module='commons-cli', version='1.3')
 
@@ -19,12 +19,14 @@ class SpellForNew {
 	
 	def LETTER = ~ /[а-щьюяіїєґА-ЩЬЮЯІЇЄҐ][а-щьюяіїєґА-ЩЬЮЯІЇЄҐ'-]*[а-щьюяіїєґА-ЩЬЮЯІЇЄҐ]/
 	def IGNORE_PATTERN = ~ /[ІХ]+/
+	def options
 	
 	Language ukLang = new Ukrainian()
 	JLanguageTool langTool = new MultiThreadedJLanguageTool(ukLang)
 	Tagger ukrainianTagger = ukLang.getTagger()
 	RussianTagger russianTagger = new RussianTagger();
 	
+
 	def analyzeText(String text) {
         // remove words with dot as we get too much abbreviations
         text = text.replaceAll(/[а-яіїєґ]+\./, '.').replace("\u0301", "")
@@ -53,7 +55,7 @@ class SpellForNew {
 				    && LETTER.matcher(token.getToken()).matches() \
 				    && ! IGNORE_PATTERN.matcher(token.getToken()).matches() \
 				    && ! isUppercaseLastname(token.getToken()) \
-				    && russianTagger.tag( Arrays.asList(token.getToken()) )[0].getReadings().get(0).getPOSTag() == null
+				    && (! options.norus || russianTagger.tag( Arrays.asList(token.getToken()) )[0].getReadings().get(0).getPOSTag() == null)
 				//				}
 			}.collect { token ->
 				token.getToken()
@@ -126,6 +128,7 @@ class SpellForNew {
 
 		cli.i(longOpt: 'input', args:1, required: true, 'Input file')
 //		cli.o(longOpt: 'output', args:1, required: true, 'Output file')
+		cli.r(longOpt: 'norus', 'Filter out Russian words')
 		cli.h(longOpt: 'help', 'Help - Usage Information')
 
 
@@ -142,6 +145,7 @@ class SpellForNew {
 
 
 		def nlpUk = new SpellForNew()
+		nlpUk.options = options
 
 		
 		def inputFile = new File(options.input)
