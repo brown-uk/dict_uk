@@ -1,4 +1,5 @@
 абись conj:subord
+антипко /n20.<
 атентат /n20
 банно банно adv
 баяти /v2 :imperf
@@ -79,10 +80,12 @@
 магайбі intj
 майбуть майбуть insert
 масакра /n10
+метанина /n10
 мізок /n22
 мість prep:rv_rod
 мо мо insert
 можний /adj
+моторити /v1 :imperf
 навперед prep:rv_rod:coll
 навручки навручки adv
 надцять /numr
@@ -94,6 +97,10 @@
 немать немать predic
 неможний /adj
 немощний /adj
+необавки adv
+неоглядки adv
+неоглядком adv
+неохая /n10.< :+m
 неякась неякийсь adj:f:v_naz:&pron:neg
 неякесь неякийсь adj:n:v_naz/v_zna:&pron:neg
 неякийсь неякийсь adj:m:v_naz/v_zn2:&pron:neg
@@ -197,6 +204,14 @@
 порист /n20.a.p.<
 посереду prep:rv_rod
 посланіє /n2n
+поставець /n22.a.p
+постанець /n22.a.p.<>
+постілець /n22.a.p
+постоянець /n22.a.p.<
+постоянка /n10
+постпродакшн /n20
+постріш /n32
+поступцем adv
 почерез prep:rv_zna
 придверний /adj
 притім conj:subord:bad
@@ -232,6 +247,7 @@
 споміж prep:rv_rod:coll
 спосеред prep:rv_rod:coll
 стосувати /v1.cf.advp :imperf
+суперека /n10
 сього сей adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
 сьому сей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
 сю сей adj:f:v_zna:&pron:dem
@@ -240,6 +256,7 @@
 таж conj:subord|part
 таже conj:subord|part
 травознай /n20.a.p.<
+трансфлюксор /n20.a.p
 трафунок /n22
 трепетати /v1.cf :imperf
 тридесять numr:p:v_naz/v_zna

@@ -195,6 +195,20 @@
 матерями мати noun:anim:p:v_oru
 матерях мати noun:anim:p:v_mis
 
+біомати біомати noun:anim:f:v_naz/v_kly
+біоматір біомати noun:anim:f:v_naz:rare
+біоматері біомати noun:anim:f:v_rod
+біоматері біомати noun:anim:f:v_dav
+біоматір біомати noun:anim:f:v_zna
+біоматір'ю біомати noun:anim:f:v_oru
+біоматері біомати noun:anim:f:v_mis
+біоматері біомати noun:anim:p:v_naz/v_kly
+біоматерів біомати noun:anim:p:v_rod
+біоматерям біомати noun:anim:p:v_dav
+біоматерів біомати noun:anim:p:v_zna
+біоматерями біомати noun:anim:p:v_oru
+біоматерях біомати noun:anim:p:v_mis
+
 плечі плече noun:p:v_naz/v_zna/v_kly
 плечей плече noun:p:v_rod
 пліч плече noun:p:v_rod
