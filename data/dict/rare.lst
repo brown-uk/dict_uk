@@ -64,7 +64,7 @@
 з-позаду з-позаду adv
 йменований /adj :&adjp:pasv:imperf
 кально кально adv
-катмає катмає predic:coll
+катмає катмає predic
 ке intj
 ке ке predic
 кете кете predic
@@ -86,13 +86,13 @@
 мо мо insert
 можний /adj
 моторити /v1 :imperf
-навперед prep:rv_rod:coll
+навперед prep:rv_rod
 навручки навручки adv
 надцять /numr
 намість намість adv
 напуцований /adj :&adjp:pasv:perf    # :past
 нарід /n21
-невпам'ятку невпам'ятку predic:coll
+невпам'ятку невпам'ятку predic
 невпотріб невпотріб predic
 немать немать predic
 неможний /adj
@@ -120,7 +120,7 @@
 ніже conj:coord
 нікоторий /adj :&pron:neg
 ніт ніт part
-нітелень нітелень predic:coll
+нітелень нітелень predic
 ніц noun:inanim:v_rod:&pron:neg
 ніц noun:inanim:v_zna:&pron:neg
 оба numr:m:v_naz/v_zna
@@ -208,6 +208,8 @@
 постанець /n22.a.p.<>
 постілець /n22.a.p
 постоянець /n22.a.p.<
+фершалка /n10.p2.ko.<
+жантильний /adj
 постоянка /n10
 постпродакшн /n20
 постріш /n32
@@ -215,7 +217,7 @@
 почерез prep:rv_zna
 придверний /adj
 притім conj:subord:bad
-пріч prep:rv_rod:coll
+пріч prep:rv_rod
 простибі простибі insert
 простибіг простибіг insert
 против prep:rv_rod
@@ -241,11 +243,11 @@
 сількось сількось adv
 сількось сількось insert
 сім сей adj:m:v_mis//n:v_mis:&pron:dem
-скілька numr:nv:coll
+скілька numr:nv
 скілько numr:p:v_naz/v_zna
 спечно спечно adv
-споміж prep:rv_rod:coll
-спосеред prep:rv_rod:coll
+споміж prep:rv_rod
+спосеред prep:rv_rod
 стосувати /v1.cf.advp :imperf
 суперека /n10
 сього сей adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
@@ -260,7 +262,7 @@
 трафунок /n22
 трепетати /v1.cf :imperf
 тридесять numr:p:v_naz/v_zna
-трясцяма трясцяма predic:coll
+трясцяма трясцяма predic
 угощати /v2 :imperf
 удвурядь adv
 уздогін уздогін adv
@@ -293,11 +295,11 @@
 циганів циган noun:anim:p:v_rod/v_zna
 цукриця /n10
 цьоця /n10.ku.<
-чортма чортма predic:coll
-чорт-ма чорт-ма predic:coll
-чортмає чортмає predic:coll
-чорт-мало чорт-мало predic:coll
-чорт-матиме чорт-матиме predic:coll
+чортма чортма predic
+чорт-ма чорт-ма predic
+чортмає чортмає predic
+чорт-мало чорт-мало predic
+чорт-матиме чорт-матиме predic
 чуткість /n30
 шияка /n10
 шкварко adv
@@ -307,3 +309,12 @@
 шушон /n20.a
 щіль /n32.p
 яєшня /n10.p2
+поуз поуз prep:rv_rod:rv_zna
+попроз попроз prep:rv_zna
+зверх зверх prep:rv_rod
+намість намість prep:rv_rod
+неке part
+ніже part
+ніже-ні part
+отце part
+хибань part
