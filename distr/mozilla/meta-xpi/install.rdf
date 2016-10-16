@@ -7,7 +7,7 @@
    <em:version>@VERSION@</em:version>
    <em:creator>Andriy Rysin</em:creator>
    <em:contributor>Yaroslav Krytsun</em:contributor>
-   <em:homepageURL>http://ispell-uk.sourceforge.net/</em:homepageURL>
+   <em:homepageURL>https://github.com/brown-uk/dict_uk</em:homepageURL>
    <em:name>Ukrainian dictionary</em:name>
    <em:description>Ukrainian (uk-UA) spellchecking dictionary</em:description>
    <em:unpack>true</em:unpack>

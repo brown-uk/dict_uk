@@ -235,7 +235,7 @@ class Util {
 
 		new File("dict_stats.txt").withWriter("utf-8") { stat_f ->
 			stat_f.printf("Всього лем: %d\n", cnt)
-			stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf та adjp/adj) %d\n", (cnt_std - double_form_cnt))
+			stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf) %d\n", (cnt_std - double_form_cnt))
 			stat_f.print("\nЧастоти за тегами:\n")
 
 			def ordered_pos_freq = pos_stat.keySet().toList().sort()
