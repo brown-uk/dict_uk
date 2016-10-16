@@ -29,9 +29,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-compileGroovy {
-    exclude '**/tools/other/*.groovy'
-}
+//compileGroovy {
+//    exclude '**/tools/other/*.groovy'
+//}
 
 eclipse {
   classpath {

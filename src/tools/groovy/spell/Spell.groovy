@@ -19,7 +19,6 @@ class Spell {
 	JLanguageTool langTool = new MultiThreadedJLanguageTool(new Ukrainian());
 	
 	def analyzeText(String text) {
-//	    System.err.println("analyzing chunk, size " + text.length())
 		List<AnalyzedSentence> analyzedSentences = langTool.analyzeText(text);
 	}
 	
@@ -29,8 +28,7 @@ class Spell {
 			sent.getTokens().findAll { AnalyzedTokenReadings reading ->
 				AnalyzedToken token = reading.getReadings().get(0)
 				token.getToken() != null && (token.getPOSTag() == null /*|| !token.getPOSTag().contains(":lname")*/) \
-				    && LETTER.matcher(token.getToken()).matches() && ! RUS_SEQ.matcher(token.getToken()).matches()
-				//				}
+				    && LETTER.matcher(token.getToken()).matches() //&& ! RUS_SEQ.matcher(token.getToken()).matches()
 			}.collect { token ->
 				token.getToken()
 			}
