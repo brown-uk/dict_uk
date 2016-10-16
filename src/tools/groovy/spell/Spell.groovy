@@ -1,4 +1,4 @@
-package org.dict_uk.tools
+#!/bin/env groovy
 
 @Grab(group='org.languagetool', module='language-uk', version='3.4-SNAPSHOT')
 @Grab(group='commons-cli', module='commons-cli', version='1.3')

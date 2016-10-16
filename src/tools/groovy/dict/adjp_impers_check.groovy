@@ -1,8 +1,6 @@
 #!/usr/bin/env groovy
 
 
-package org.dict_uk.tools
-
 // Checks for mismatch of perf/imperf between adjp and impers
 // Usage: adjp_impers_check.groovy < dict_corp_lt.txt
 

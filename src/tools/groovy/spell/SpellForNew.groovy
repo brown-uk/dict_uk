@@ -1,7 +1,5 @@
 #!/bin/env groovy
 
-package org.dict_uk.tools
-
 @Grab(group='org.languagetool', module='language-uk', version='3.5-SNAPSHOT', changing=true)
 @Grab(group='org.languagetool', module='language-ru', version='3.4')
 @Grab(group='commons-cli', module='commons-cli', version='1.3')
