@@ -50,6 +50,7 @@
 дрожка /n10.p2
 єсть єсть predic
 жалуватися /vr1.cf.advp :imperf
+жантильний /adj
 жемчужний /adj
 завідатель /n20.a.<
 зазнимкувати /v1.imprs0 :perf
@@ -58,10 +59,12 @@
 замісто prep:rv_rod
 запоріжець /n22.a.p.<
 зверх зверх adv
+зверх зверх prep:rv_rod
 здрійко numr:nv
 змирятися /vr2.cf.advp :imperf
 змисл /n20
 з-позаду з-позаду adv
+зрабований /adj :&adjp:pasv:perf
 йменований /adj :&adjp:pasv:imperf
 кально кально adv
 катмає катмає predic
@@ -72,10 +75,11 @@
 коби conj:subord
 когут /n20.a.p.<>
 кождий /adj :&pron:gen
+колгоспівський /adj
 коц /n20.a.p
 леда-який /adj :&pron:ind
 любля любля predic
-люде люди noun:anim:p:v_naz:ns
+люде людина noun:anim:p:v_naz
 мабіть мабіть insert
 магайбі intj
 майбуть майбуть insert
@@ -90,10 +94,12 @@
 навручки навручки adv
 надцять /numr
 намість намість adv
+намість намість prep:rv_rod
 напуцований /adj :&adjp:pasv:perf    # :past
 нарід /n21
 невпам'ятку невпам'ятку predic
 невпотріб невпотріб predic
+неке part
 немать немать predic
 неможний /adj
 немощний /adj
@@ -118,6 +124,8 @@
 нігде adv:&pron:emph:xp1
 нігде adv:&pron:neg:xp2
 ніже conj:coord
+ніже part
+ніже-ні part
 нікоторий /adj :&pron:neg
 ніт ніт part
 нітелень нітелень predic
@@ -175,6 +183,7 @@
 оттою оттой adj:f:v_oru:&pron:dem
 отту оттой adj:f:v_zna:&pron:dem
 отце отцей adj:n:v_naz/v_zna:&pron:dem
+отце part
 отцей отцей adj:m:v_naz/v_zn2:&pron:dem
 отцим отцей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
 отцими отцей adj:p:v_oru:&pron:dem
@@ -200,6 +209,7 @@
 полегша /n10.p1
 помісь conj:subord
 помісь part
+попроз попроз prep:rv_zna
 попсути /v2 :perf
 порист /n20.a.p.<
 посереду prep:rv_rod
@@ -208,12 +218,11 @@
 постанець /n22.a.p.<>
 постілець /n22.a.p
 постоянець /n22.a.p.<
-фершалка /n10.p2.ko.<
-жантильний /adj
 постоянка /n10
 постпродакшн /n20
 постріш /n32
 поступцем adv
+поуз поуз prep:rv_rod:rv_zna
 почерез prep:rv_zna
 придверний /adj
 притім conj:subord:bad
@@ -227,6 +236,7 @@
 розгрішення /n2n
 салган /n20
 самовродок /n20.a.p
+самокидка /n10.p2
 саф'янець /n22.a.p
 світач /n20.a.p
 святешний /adj
@@ -284,9 +294,11 @@
 успокоєний /adj :&adjp:pasv:perf    # :past
 ухорканий /adj :&adjp:pasv:perf:v-u    # :past
 фашистівський /adj
+фершалка /n10.p2.ko.<
 фестини /np1
 фіра /n10.p1
 хватаний /adj
+хибань part
 хляпавка /n10
 хоть conj:subord
 хоть part
@@ -309,12 +321,3 @@
 шушон /n20.a
 щіль /n32.p
 яєшня /n10.p2
-поуз поуз prep:rv_rod:rv_zna
-попроз попроз prep:rv_zna
-зверх зверх prep:rv_rod
-намість намість prep:rv_rod
-неке part
-ніже part
-ніже-ні part
-отце part
-хибань part

@@ -276,8 +276,32 @@
 нічиї нічия noun:inanim:p:v_kly
 
 
+# нестандартні леми
+
+# люди /np3.<
+люди людина noun:anim:p:v_naz
+людей людина noun:anim:p:v_rod
+людям людина noun:anim:p:v_dav
+людей людина noun:anim:p:v_zna
+людьми людина noun:anim:p:v_oru
+людях людина noun:anim:p:v_mis
+люди людина noun:anim:p:v_kly
+
+# діти /np3.<
+діти дитина noun:anim:p:v_naz
+дітей дитина noun:anim:p:v_rod
+дітям дитина noun:anim:p:v_dav
+дітей дитина noun:anim:p:v_zna
+дітьми дитина noun:anim:p:v_oru
+дітях дитина noun:anim:p:v_mis
+діти дитина noun:anim:p:v_kly
+
 
 # додаткові форми
+
+людини людина noun:p:v_naz/v_zna:anim
+дитини дитина noun:p:v_naz/v_zna:anim
+
 
 сосон сосна noun:p:v_rod
 воріженьки вороженько noun:p:v_naz:anim:rare
