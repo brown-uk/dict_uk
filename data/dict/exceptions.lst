@@ -302,6 +302,7 @@
 людини людина noun:p:v_naz/v_zna:anim
 дитини дитина noun:p:v_naz/v_zna:anim
 
+раз раз noun:inanim:p:v_rod
 
 сосон сосна noun:p:v_rod
 воріженьки вороженько noun:p:v_naz:anim:rare
@@ -517,7 +518,7 @@
 достоїн достойний adj:m:v_naz/v_zn2:short
 дрібен дрібний adj:m:v_naz/v_zn2:short
 єхиден єхидний adj:m:v_naz/v_zn2:short
-жаден жадний adj:m:v_naz/v_zn2:short:rare:&pron:neg:xv2
+жаден жадний adj:m:v_naz/v_zn2:short:rare:&pron:neg:xp2
 жив живий adj:m:v_naz/v_zn2:short
 жоден жодний adj:m:v_naz/v_zn2:short:&pron:neg
 звістен звісний adj:m:v_naz/v_zn2:short

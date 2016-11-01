@@ -12,6 +12,7 @@
 АНТК noun:m:nv:np
 АП noun:f:nv
 АПК noun:m:nv
+АРК noun:f:nv:np:prop       # Автономна Республіка Крим
 АРСР noun:f:nv:np:prop
 АСЕАН noun:f:nv:np:prop    # Association of SouthEast Asian Nations
 АТ noun:n:nv                # акціонерне товариство
@@ -28,8 +29,9 @@
 б-ка /n10.p2
 БМД noun:m:nv
 БМП noun:f:nv
-БПЛА noun:m:nv          # безпілотний літальний апарат
-БРІК noun:n:nv:np:prop    # Brazil, Russia, India, China, South Africa
+БПЛА noun:m:nv              # безпілотний літальний апарат
+БПП noun:n:nv:np            # Блок Петра Порошенка
+БРІК noun:n:nv:np:prop      # Brazil, Russia, India, China, South Africa
 БРСР noun:f:nv:np:prop
 БТР noun:m:nv
 БЮТ noun:m:nv:np:prop
@@ -63,6 +65,7 @@
 ВПС noun:p:nv:ns
 ВР noun:f:nv:np
 ВРУ noun:f:nv:prop      # Верховна Рада України
+ВРЮ noun:f:nv:np:prop       # Вища рада юстиції
 ВССУ noun:m:nv
 ВСУ noun:m:nv:np:prop        # Верховний Суд України
 ВТССУМ noun:m:nv:prop    # Великий тлумачний словник сучасної української мови
@@ -84,6 +87,7 @@
 ГеВ noun:m:nv
 ГЕС noun:f:nv
 ГІС noun:f:nv
+ГМО noun:m:nv           # Генетично модифікований організм
 ГОЕЛРО noun:f:nv
 госп-во /n2n
 ГПа noun:m:nv
@@ -103,6 +107,7 @@
 ДАТ noun:n:nv
 дБ noun:m:nv
 ДБСТ noun:m:nv    # Дитячий будинок сімейного типу
+ДВК noun:f:nv                # дільнича виборча комісія
 ДДСО noun:f:nv:prop    # Державна служба охорони
 ДДТ noun:m:nv:np:prop    # (гурт)
 ДемПУ noun:f:nv:np:prop    # Демократична партія України
@@ -140,6 +145,8 @@
 ДТП noun:f:nv
 ДТРК noun:f:nv
 ДУК noun:m:nv:np    # Добровольчий укр. корпус
+ДФС noun:f:nv:np:prop   # Державна фіскальна служба
+ДФСУ noun:f:nv:np:prop   # Державна фіскальна служба України
 ДЮСШ noun:f:nv
 ДЮСШОР noun:f:nv
 ЕКГ noun:f:nv
@@ -164,6 +171,7 @@
 ЖКГ noun:n:nv
 зав /n20.a
 ЗАТ noun:n:nv
+ЗВТ noun:f:nv           # зона вільної торгівлі
 з-д /n20.a.p
 ЗЄС noun:m:nv:prop    # Західноєвропейський союз
 ЗМІ noun:p:nv:ns
@@ -174,6 +182,7 @@
 ЗСУ noun:p:nv:ns:prop   # збройні сили України
 ЗУНР noun:f:nv:prop
 ІГХ noun:f:nv    # Імуногістохімія
+ІДІЛ noun:f:nv:np:prop      # Ісламська держава Іраку та Леванту
 ІНК noun:m:nv:prop    # Індійський національний конгрес
 ін-т /n20.p
 ІОЦ noun:m:nv    # інформаційно-обчислювальний центр
@@ -225,7 +234,9 @@
 КПРФ noun:f:nv:np:prop
 КПУ noun:f:nv:np:prop
 крб noun:m:nv
+КС noun:m:nv:np:prop        # Конституційний Суд
 к-сть /n30.p
+КСУ noun:m:nv:np:prop        # Конституційний Суд України
 КУІн noun:m:nv
 КУК noun:m:nv
 ЛАЗ /n20 :prop
@@ -245,6 +256,7 @@
 м noun:m:nv
 МАГАТЕ noun:n:nv:np:prop
 МАУП noun:f:nv:np:prop
+МАФ /n20.p.ke           # мала архітектурна форма
 Мб noun:m:nv
 МБА noun:m:nv
 Мбайт noun:m:nv
@@ -258,6 +270,7 @@
 мг noun:m:nv
 МГД noun:m:nv
 МГц noun:m:nv
+МДБ noun:n:nv:np:prop   # Міністерство державної безпеки
 МеВ noun:m:nv       # Мегаелектрон-вольт
 МЖК noun:m:nv
 МЗС noun:n:nv
@@ -289,6 +302,8 @@
 МФТІ noun:m:nv
 МХАТ noun:m:nv:np
 МЮ noun:n:nv
+НАБУ noun:f:nv:np:prop  # Незалежна асоціація банків України
+НАБУ noun:n:nv:np:prop  # Національне антикорупційне бюро України
 НАЕК noun:f:nv
 НАК noun:f:nv:np      # Національна акціонерна компанія
 НАМН noun:f:nv
@@ -319,6 +334,7 @@
 НМПУ noun:f:nv
 НОП noun:f:nv
 НПЗ noun:m:nv       # нафтопереробний завод
+НПФ noun:f:nv:np:prop   # Недержавний пенсійний фонд
 НРБ noun:m:nv
 НРКУ noun:f:nv
 НРП noun:f:nv
@@ -343,6 +359,7 @@
 НУНС noun:m:nv:np:prop
 НУ-НС noun:m:nv:np:prop
 НУХТ noun:m:nv:prop    # Національний університет харчових технологій
+НФ noun:m:nv:np:prop        # Народний Фронт
 НФЛ noun:f:nv:prop    # Національна футбольна ліга
 НФПУ noun:m:nv:prop    # Національний форум профспілок України
 НХЛ noun:f:nv:np:prop    # Національна хокейна ліга
@@ -354,6 +371,7 @@
 ОБСЄ noun:f:nv:np:prop
 о-в /n20.a.p
 ОВДП noun:p:nv:ns
+ОВК noun:f:nv           # окружна виборча комісія
 ОВП noun:f:nv
 ОДА noun:f:nv
 ОДКБ noun:f:nv
@@ -366,6 +384,7 @@
 ООН noun:f:nv:np
 ООП noun:n:nv:np        # об'єктноорієнтовне програмування
 ОПЕК noun:f:nv:np
+ОПЗ noun:m:nv:np:prop       # Одеський припортовий завод
 ОРД noun:f:nv
 ОСББ noun:n:nv:np
 ОУН noun:f:nv:np:prop
@@ -395,13 +414,14 @@
 ППО noun:n:nv:np
 ПППУ noun:f:nv
 ПР noun:f:nv
-ПрАТ noun:n:nv      # приватне акціонерне товариство
+ПрАТ noun:n:nv              # приватне акціонерне товариство
 ПрикВО noun:m:nv
 ПРО noun:f:nv:np
 ПРООН noun:f:nv
 ПРП noun:f:nv
 пр-т /n20
 ПРУ noun:f:nv
+ПС noun:n:nv:np:prop        # Правий Сектор
 ПСПУ noun:f:nv:prop
 ПТСР noun:m:nv
 ПТУ noun:n:nv
@@ -459,6 +479,7 @@
 СНПУ noun:f:nv
 СОТ noun:f:nv:np
 СОУ noun:f:nv
+СП noun:n:nv            # спільне підприємство
 СПД noun:m:nv       # суб'єкт підприємницької діяльності
 СПС noun:m:nv
 СПУ noun:f:nv
@@ -479,6 +500,7 @@
 Тб noun:m:nv
 Тбайт noun:m:nv
 ТВЕЛ /n20.a.p
+ТВК noun:f:nv           # теріторільна виборча комісія
 т-во /n2n
 Т-ДНК noun:f:nv
 ТЕС noun:f:nv       # теплоелектростанція
@@ -507,6 +529,7 @@
 УБОЗ /n20
 УВКБ noun:n:nv
 УВКР noun:f:nv
+УВУ noun:n:nv:np:prop       # Український вільний університет
 УГА noun:f:nv:prop
 УГВР noun:f:nv
 УГКЦ noun:f:nv:np
@@ -581,6 +604,7 @@
 фоб noun:m:nv
 ФОП noun:m:nv           # фізична особа – підприємець
 ФОС noun:m:nv
+ФПГ noun:f:nv           # Промислово-фінансова група
 ФРЕЛІМО noun:m:nv:prop    # Frente de Libertação de Moçambique
 ФСБ noun:f:nv:np:prop
 ФСП noun:f:nv
@@ -590,6 +614,7 @@
 ХАМАС noun:m:nv:np:prop
 хв noun:f:nv
 ХДПУ noun:f:nv:prop    # Християнсько-демократична партія України
+ХДС noun:m:nv:np:prop       # Християнсько-демократичний союз
 ХЛПУ noun:f:nv
 ХНС noun:m:nv
 ХСС noun:m:nv

@@ -31,11 +31,16 @@
 вісьта intj
 в'їжно в'їжно adv
 вколо вколо prep:rv_rod|adv
+вконтентований /adj :&adjp:pasv:perf:v-u    # :past
+вконтентовувати /v1 :imperf
+вконтентовуватися /vr1 :imperf
+вконтентувати /v1 :perf
+вконтентуватися /vr1 :perf
 вліжно вліжно adv
 воркотливий /adj
 вхорканий /adj :&adjp:pasv:perf:v-u    # :past
 гейби conj:subord
-глупий /adj :xv1
+глупий /adj :xp1            # xv1
 головочка /n10
 ґердан /n20.p
 далебіг далебіг insert
@@ -279,6 +284,7 @@
 уїжно уїжно adv
 уїхати /v4 :perf
 уйматися /vr2 :imperf
+уконтентований /adj :&adjp:pasv:perf:v-u    # :past
 уконтентовувати /v1 :imperf
 уконтентовуватися /vr1 :imperf
 уконтентувати /v1 :perf
