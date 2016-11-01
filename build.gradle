@@ -4,7 +4,7 @@ apply plugin: 'eclipse'
 
 compileJava.options.encoding = 'UTF-8'
 
-version = '1.0'
+version = '3.5'
 group = 'org.dict_uk'
 
 String langCode="uk"
