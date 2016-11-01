@@ -2,10 +2,12 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
-version = '3.4'
-group = 'org.languagetool'
+version = '3.5'
+group = 'ua.net.nlp'
 
-String ltVersion = '3.4-SNAPSHOT'
+String artifactId = 'morfologik-ukrainian'
+
+String ltVersion = '3.6-SNAPSHOT'
 
 String langCode="uk"
 
@@ -160,7 +162,6 @@ task createOutRulesDir << {
 task createReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
     def outFile="$outRulesDir/replace.txt"
-    def srcFiles=["base.lst", "twisters.lst"]
 
     inputs.file "$srcDir/twisters.lst"
     outputs.file outFile
@@ -177,7 +178,7 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
     def lines = inText.split("\n")
     
     def outLines = lines.findAll {
-        it.contains(' #>')
+        ! it.startsWith('#') && it.contains(' #>')
     }
     .collect {
         it = it.replace(' +cs=', '')
@@ -279,23 +280,45 @@ task deployDictToLT(type: Copy, dependsOn: classes) {
 
 
 task deployHelperDictsToLT(type: Copy, dependsOn: [createSoftReplacementDict, createReplacementDict]) {
-    logger.lifecycle "LT dir: ${languagetoolRulesDestDir}"
 
-    from outRulesDir
-    into "${languagetoolRulesDestDir}"
-    include "**/replace*.txt"
+    copy {
+        logger.lifecycle "Deploying to LT dir: ${languagetoolRulesDestDir}"
 
-    includeEmptyDirs = false
+        from outRulesDir
+        into "${languagetoolRulesDestDir}"
+        include "**/replace*.txt"
+
+        includeEmptyDirs = false
+    }
+
+    copy {
+        logger.lifecycle "Deploying to LT dir: ${languagetoolDictDestDir}"
+
+        from outResDir
+        into "${languagetoolDictDestDir}"
+        include "**/case_*.txt"
+
+        includeEmptyDirs = false
+    }
 }
 
-task deployToLT(dependsOn: [deployDictToLT, deployHelperDictsToLT])
+task deployToLT(dependsOn: [publish, deployHelperDictsToLT])
 
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'Ukrainian dictionary for LanguageTool',
+        attributes 'Implementation-Title': 'Ukrainian part-of-speech (POS) dictionary as a Morfologik binary',
                    'Implementation-Version': version
     }
+
+//    setArchiveName "${artifactId}-${version}.jar"
+
+    include '**/*.dict'
+    include '**/*.info'
+    include '**/README*'
+    include '**/*tags*.txt'
+
+    includeEmptyDirs false
 }
 
 classes.dependsOn(createPOSDict, createSynthDict, createTagList, createSpellDict, createCaseGovernmentDict)
@@ -306,6 +329,7 @@ publishing {
     repositories {
         mavenLocal()
     }
+
     publications {
         mavenJava(MavenPublication) {
             from components.java
