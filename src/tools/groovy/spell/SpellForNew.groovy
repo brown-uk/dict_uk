@@ -1,7 +1,7 @@
 #!/bin/env groovy
 
-@Grab(group='org.languagetool', module='language-uk', version='3.5-SNAPSHOT', changing=true)
-@Grab(group='org.languagetool', module='language-ru', version='3.4')
+@Grab(group='org.languagetool', module='language-uk', version='3.6-SNAPSHOT', changing=true)
+@Grab(group='org.languagetool', module='language-ru', version='3.5')
 @Grab(group='commons-cli', module='commons-cli', version='1.3')
 
 import org.codehaus.groovy.util.StringUtil
@@ -126,7 +126,7 @@ class SpellForNew {
 
 		cli.i(longOpt: 'input', args:1, required: true, 'Input file')
 //		cli.o(longOpt: 'output', args:1, required: true, 'Output file')
-		cli.r(longOpt: 'norus', 'Filter out Russian words')
+		cli.nr(longOpt: 'norus', 'Filter out Russian words')
 		cli.h(longOpt: 'help', 'Help - Usage Information')
 
 
