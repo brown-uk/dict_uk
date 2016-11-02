@@ -1,0 +1,36 @@
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ua.net.nlp</groupId>
+  <artifactId>morfologik-ukrainian</artifactId>
+  <version>3.5</version>
+  <packaging>jar</packaging>
+
+  <name>Ukrainian part-of-speech (POS) dictionary as a Morfologik binary</name>
+  <description>Ukrainian part-of-speech dictionaries in Morfologik binary format</description>
+  <url>https://github.com/brown-uk/dict_uk</url>
+
+  <licenses>
+    <license>
+        <name>GNU Lesser General Public License</name>
+        <url>http://www.gnu.org/licenses/lgpl.txt</url>
+        <distribution>repo</distribution>
+    </license>
+    <license>
+        <name>Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)</name>
+        <url>http://creativecommons.org/licenses/by-nc-sa/4.0</url>
+        <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <url>https://github.com/brown-uk/dict_uk.git</url>
+  </scm>
+
+  <developers>
+    <developer>
+        <name>Andriy Rysin</name>
+        <roles><role>Maintainer</role></roles>
+    </developer>
+  </developers>
+
+</project>
