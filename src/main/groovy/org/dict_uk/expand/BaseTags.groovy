@@ -48,7 +48,7 @@ class BaseTags {
 			else if( word.endsWith("а") || word.endsWith("я") ) {
 				tag = ":f:v_naz/v_kly"
 			}
-			else if( word.endsWith("ій") ) {
+			else if( word.endsWith("ій") || word.endsWith("їй") ) {
 				if( affixFlag.startsWith("adj_pron") ) {
 					tag = ":m:v_naz/v_zn2/v_kly"
 				}
