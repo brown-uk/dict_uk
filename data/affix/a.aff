@@ -164,7 +164,7 @@ group adj
 0	ою			#   сестриною		            @ adj:f:v_oru
 0	е			#   сестрине 		            @ adj:n:v_naz/v_zna/v_kly
 0	і			#   сестрині 		            @ adj:p:v_naz/v_zn2/v_kly
-0	их			#   сестриних 		          @ adj:p:v_rod/v_zn1
+0	их			#   сестриних 		          @ adj:p:v_rod/v_zn1/v_mis
 0	ими			#   сестриними		            @ adj:p:v_oru
 
 #  прикметники від іменників 2-ої відміни 
