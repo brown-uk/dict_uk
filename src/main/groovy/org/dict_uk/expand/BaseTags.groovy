@@ -12,7 +12,7 @@ import java.util.regex.*
 class BaseTags {
 	static Logger log = LogManager.getFormatterLogger(BaseTags.class);
 
-	static private final Pattern ending_i_nnia_re = Pattern.compile(/.*(([бвгджзклмнпрстфхцчшщ])\2|\'|[джлрт])я$/)
+	static private final Pattern ending_i_nnia_re = Pattern.compile(/.*(([бвгджзклмнпрстфхцчшщ])\2|\'|[джлрт]|рн)я$/)
 
 	static private final Util util = new Util()
 
