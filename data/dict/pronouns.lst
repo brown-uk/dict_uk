@@ -230,7 +230,8 @@
 нічого нічого adv
 нічого нічого predic
 
-нікого нікого noun:v_rod/v_zna:anim:&pron:emph
+нікого нікого noun:v_rod:anim:&pron:emph:xp1
+нікого нікого noun:v_zna:anim:&pron:emph:xp2
 нікому нікому noun:v_dav:anim:&pron:emph
 ніким ніким noun:v_oru:anim:&pron:emph
 
@@ -239,7 +240,8 @@
 нічому ніщо noun:v_dav:inanim:&pron:neg
 нічим ніщо noun:v_oru:inanim:&pron:neg
 
-нічого нічого noun:v_rod/v_zna:inanim:&pron:emph
+нічого нічого noun:v_rod:inanim:&pron:emph:xp1
+нічого нічого noun:v_zna:inanim:&pron:emph:xp2
 нічому нічому noun:v_dav:inanim:&pron:emph
 нічим нічим noun:v_oru:inanim:&pron:emph
 
