@@ -76,6 +76,8 @@ group n2adj1
 і	ими			#   війчастими             @ noun:p:v_oru:ns
 
 
+
+
 subgroup n2adj1.im
 ий:
 ий  ім        #  хорунжий  хорунжім               @ noun:m:v_mis
@@ -168,6 +170,19 @@ subgroup n2adj1.p
 е	их			#   шампанських 	        @ noun:p:v_rod/v_zna/v_mis
 е	им			#   шампанським 	        @ noun:p:v_dav
 е	ими			#   шампанськими            @ noun:p:v_oru
+
+
+
+# відприкметникові іменники (тільки мн. р. на -і)
+
+group n2adj1i
+
+і:
+і	ім			#   сінім 	            @ noun:p:v_dav:ns
+і	і			#   сіні 	            @ noun:p:v_naz/v_zna/v_kly:ns
+#і	ії			#   синіії 	            @ noun:p:v_naz/v_zna/v_kly:uncontr:ns
+і	іх			#   сніх 	            @ noun:p:v_rod/v_zna/v_mis:ns
+і	іми			#   синіми             @ noun:p:v_oru:ns
 
 
 
