@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ua.net.nlp</groupId>
   <artifactId>morfologik-ukrainian</artifactId>
-  <version>3.5</version>
+  <version>3.5.1</version>
   <packaging>jar</packaging>
 
   <name>Ukrainian part-of-speech (POS) dictionary as a Morfologik binary</name>

@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
-version = '3.5'
+version = '3.5.1'
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian'
@@ -17,7 +17,7 @@ String outResDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageD
 String outRulesDir=sourceSets.main.output.resourcesDir.toString() + "/org/languagetool/rules/uk"
 String tmpDir="build/tmp"
 
-String languagetoolDictDestDir="$ltDir/languagetool-language-modules/uk/src/main/resources/org/languagetool/resource/uk"
+String languagetoolResDestDir="$ltDir/languagetool-language-modules/uk/src/main/resources/org/languagetool/resource/uk"
 String languagetoolRulesDestDir="$ltDir/languagetool-language-modules/uk/src/main/resources/org/languagetool/rules/uk"
 
 String inputDir="${projectDir}/../../out"
@@ -237,7 +237,7 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
 task createCaseGovernmentDict() {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outResDir}/case_government.txt"
-    def srcFiles=["base.lst", "twisters.lst"]
+    def srcFiles=["base.lst", "twisters.lst", "slang.lst"]
 
     inputs.file srcFiles.collect{ "$srcDir/$it" }
     outputs.file outFile
@@ -254,7 +254,9 @@ task createCaseGovernmentDict() {
 			def rvLines = new File("$srcDir/$srcFile").text.split('\n').findAll{
 				(it.contains(' /adj') || it.contains("+cs=")) && it.contains(' rv_')
 			}.collect{
-				it.replaceFirst(/^(?: \+cs=)?(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2').replace("rv_", "v_")
+				def out = it.contains(" +cs=") ? it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2\nнай$1 $2') \
+				                               : it.replaceFirst(/^(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2')
+				out.replace("rv_", "v_")
 			}
 
 			outLines.addAll(rvLines)
@@ -271,7 +273,7 @@ task helperDicts (dependsOn: [createCaseGovernmentDict, createReplacementDict, c
 
 task deployDictToLT(type: Copy, dependsOn: classes) {
     from outResDir
-    into "${languagetoolDictDestDir}"
+    into "${languagetoolResDestDir}"
 
     includeEmptyDirs = false
 
@@ -279,7 +281,7 @@ task deployDictToLT(type: Copy, dependsOn: classes) {
 }
 
 
-task deployHelperDictsToLT(type: Copy, dependsOn: [createSoftReplacementDict, createReplacementDict]) {
+task deployHelperDictsToLT(type: Copy, dependsOn: [createSoftReplacementDict, createReplacementDict, createCaseGovernmentDict]) {
 
     copy {
         logger.lifecycle "Deploying to LT dir: ${languagetoolRulesDestDir}"
@@ -292,14 +294,15 @@ task deployHelperDictsToLT(type: Copy, dependsOn: [createSoftReplacementDict, cr
     }
 
     copy {
-        logger.lifecycle "Deploying to LT dir: ${languagetoolDictDestDir}"
+        logger.lifecycle "Deploying to LT dir: ${languagetoolResDestDir}"
 
         from outResDir
-        into "${languagetoolDictDestDir}"
+        into "${languagetoolResDestDir}"
         include "**/case_*.txt"
 
         includeEmptyDirs = false
     }
+
 }
 
 task deployToLT(dependsOn: [publish, deployHelperDictsToLT])
