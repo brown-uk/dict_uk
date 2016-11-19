@@ -282,6 +282,7 @@ task deployDictToLT(type: Copy, dependsOn: classes) {
 
 
 task deployHelperDictsToLT(type: Copy, dependsOn: [createSoftReplacementDict, createReplacementDict, createCaseGovernmentDict]) {
+    outputs.upToDateWhen {false}
 
     copy {
         logger.lifecycle "Deploying to LT dir: ${languagetoolRulesDestDir}"

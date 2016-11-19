@@ -14,6 +14,7 @@
 АПК noun:m:nv
 АРК noun:f:nv:np:prop       # Автономна Республіка Крим
 АРСР noun:f:nv:np:prop
+АС noun:f:nv                # атомна станція
 АСЕАН noun:f:nv:np:prop    # Association of SouthEast Asian Nations
 АТ noun:n:nv                # акціонерне товариство
 АТЕК noun:m:nv:np:prop
@@ -35,6 +36,7 @@
 БРСР noun:f:nv:np:prop
 БТР noun:m:nv
 БЮТ noun:m:nv:np:prop
+ВАДА noun:n:nv:np:prop      # Всесвітнє антидопінгове агентство
 ВАЗ /n20 :prop
 ВАК noun:m:nv:prop
 ВАСУ noun:m:nv:prop
@@ -386,6 +388,7 @@
 ОПЕК noun:f:nv:np
 ОПЗ noun:m:nv:np:prop       # Одеський припортовий завод
 ОРД noun:f:nv
+ОРТ noun:n:nv:np:prop
 ОСББ noun:n:nv:np
 ОУН noun:f:nv:np:prop
 ОУН-УПА noun:f:nv:np:prop
@@ -434,6 +437,8 @@
 РАТАУ noun:n:nv
 РВВС noun:m:nv
 РДА noun:f:nv
+РЕВ noun:f:nv:np:prop       # Рада Економічної Взаємодопомоги
+РЕМ noun:m:nv               # район електромереж
 РЄ noun:f:nv
 РКД noun:m:nv
 РКЦ noun:f:nv
