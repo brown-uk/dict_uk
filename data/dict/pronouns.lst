@@ -1,13 +1,13 @@
 # Іменникові займенники
-я я noun:s:v_naz:anim:&pron:pers:1
-мене я noun:s:v_rod/v_zna:anim:&pron:pers:1
-мені я noun:s:v_dav/v_mis:anim:&pron:pers:1
-мною я noun:s:v_oru:anim:&pron:pers:1
+я я noun:anim:s:v_naz:&pron:pers:1
+мене я noun:anim:s:v_rod/v_zna:&pron:pers:1
+мені я noun:anim:s:v_dav/v_mis:&pron:pers:1
+мною я noun:anim:s:v_oru:&pron:pers:1
 
-ти ти noun:s:v_naz/v_kly:anim:&pron:pers:2
-тебе ти noun:s:v_rod/v_zna:anim:&pron:pers:2
-тобі ти noun:s:v_dav/v_mis:anim:&pron:pers:2
-тобою ти noun:s:v_oru:anim:&pron:pers:2
+ти ти noun:anim:s:v_naz/v_kly:&pron:pers:2
+тебе ти noun:anim:s:v_rod/v_zna:&pron:pers:2
+тобі ти noun:anim:s:v_dav/v_mis:&pron:pers:2
+тобою ти noun:anim:s:v_oru:&pron:pers:2
 
 він він noun:m:v_naz:&pron:pers:3
 його він noun:m:v_rod/v_zna:&pron:pers:3
@@ -31,15 +31,15 @@
 ньому воно noun:n:v_mis:&pron:pers:3
 ним воно noun:n:v_oru:&pron:pers:3
 
-ми ми noun:p:v_naz:anim:&pron:pers:1
-нас ми noun:p:v_rod/v_zna/v_mis:anim:&pron:pers:1
-нам ми noun:p:v_dav:anim:&pron:pers:1
-нами ми noun:p:v_oru:anim:&pron:pers:1
+ми ми noun:p:v_naz:&pron:pers:1
+нас ми noun:p:v_rod/v_zna/v_mis:&pron:pers:1
+нам ми noun:p:v_dav:&pron:pers:1
+нами ми noun:p:v_oru:&pron:pers:1
 
-ви ви noun:p:v_naz/v_kly:anim:&pron:pers:2
-вас ви noun:p:v_rod/v_zna/v_mis:anim:&pron:pers:2
-вам ви noun:p:v_dav:anim:&pron:pers:2
-вами ви noun:p:v_oru:anim:&pron:pers:2
+ви ви noun:p:v_naz/v_kly:&pron:pers:2
+вас ви noun:p:v_rod/v_zna/v_mis:&pron:pers:2
+вам ви noun:p:v_dav:&pron:pers:2
+вами ви noun:p:v_oru:&pron:pers:2
 
 вони вони noun:p:v_naz:&pron:pers:3
 їх вони noun:p:v_rod/v_zna:&pron:pers:3
@@ -48,217 +48,218 @@
 ними вони noun:p:v_oru:&pron:pers:3
 
 хто хто conj:subord
-хто хто noun:m:v_naz:anim:&pron:int:rel
-кого хто noun:m:v_rod/v_zna:anim:&pron:int:rel
-кому хто noun:m:v_dav:anim:&pron:int:rel
-ким хто noun:m:v_oru:anim:&pron:int:rel
-кім хто noun:m:v_mis:anim:&pron:int:rel
+хто хто noun:anim:m:v_naz:&pron:int:rel
+кого хто noun:anim:m:v_rod/v_zna:&pron:int:rel
+кому хто noun:anim:m:v_dav:&pron:int:rel
+ким хто noun:anim:m:v_oru:&pron:int:rel
+кім хто noun:anim:m:v_mis:&pron:int:rel
 
 що що conj:subord
-що що noun:n:v_naz/v_zna:inanim:&pron:int:rel
-віщо що noun:n:v_zna:inanim:&pron:int:rel
-чого що noun:n:v_rod:inanim:&pron:int:rel
-чому що noun:n:v_dav/v_mis:inanim:&pron:int:rel
-чим що noun:n:v_oru:inanim:&pron:int:rel
-чім що noun:n:v_mis:inanim:&pron:int:rel
+що що noun:inanim:n:v_naz/v_zna:&pron:int:rel
+віщо що noun:inanim:n:v_zna:&pron:int:rel
+чого що noun:inanim:n:v_rod:&pron:int:rel
+чому що noun:inanim:n:v_dav/v_mis:&pron:int:rel
+чим що noun:inanim:n:v_oru:&pron:int:rel
+чім що noun:inanim:n:v_mis:&pron:int:rel
 
-абихто абихто noun:v_naz:anim:&pron:ind
-абикого абихто noun:v_rod/v_zna:anim:&pron:ind
-абикому абихто noun:v_dav:anim:&pron:ind
-абиким абихто noun:v_oru:anim:&pron:ind
+абихто абихто noun:anim:m:v_naz:&pron:ind
+абикого абихто noun:anim:m:v_rod/v_zna:&pron:ind
+абикому абихто noun:anim:m:v_dav:&pron:ind
+абиким абихто noun:anim:m:v_oru:&pron:ind
 
-абищо абищо noun:v_naz/v_zna:inanim:&pron:ind
-абичого абищо noun:v_rod:inanim:&pron:ind
-абичому абищо noun:v_dav:inanim:&pron:ind
-абичим абищо noun:v_oru:inanim:&pron:ind
+абищо абищо noun:inanim:n:v_naz/v_zna:&pron:ind
+абичого абищо noun:inanim:n:v_rod:&pron:ind
+абичому абищо noun:inanim:n:v_dav:&pron:ind
+абичим абищо noun:inanim:n:v_oru:&pron:ind
 
-аніхто аніхто noun:v_naz:anim:&pron:neg
-анікого аніхто noun:v_rod/v_zna:anim:&pron:neg
-анікому аніхто noun:v_dav:anim:&pron:neg
-аніким аніхто noun:v_oru:anim:&pron:neg
+аніхто аніхто noun:anim:m:v_naz:&pron:neg
+анікого аніхто noun:anim:m:v_rod/v_zna:&pron:neg
+анікому аніхто noun:anim:m:v_dav:&pron:neg
+аніким аніхто noun:anim:m:v_oru:&pron:neg
 
-аніщо аніщо noun:v_naz/v_zna:inanim:&pron:neg
-анічого аніщо noun:v_rod/v_zna:inanim:&pron:neg
-анічому аніщо noun:v_dav:inanim:&pron:neg
-анічим аніщо noun:v_oru:inanim:&pron:neg
+аніщо аніщо noun:inanim:n:v_naz/v_zna:&pron:neg
+анічого аніщо noun:inanim:n:v_rod/v_zna:&pron:neg
+анічому аніщо noun:inanim:n:v_dav:&pron:neg
+анічим аніщо noun:inanim:n:v_oru:&pron:neg
 
-небагато-хто небагато-хто noun:v_naz:anim:&pron:ind
-небагато-кого небагато-хто noun:v_rod/v_zna:anim:&pron:ind
-небагато-кому небагато-хто noun:v_dav/v_mis:anim:&pron:ind
-небагато-ким небагато-хто noun:v_oru:anim:&pron:ind
-небагато-кім небагато-хто noun:v_mis:anim:&pron:ind
+небагато-хто небагато-хто noun:anim:m:v_naz:&pron:ind
+небагато-кого небагато-хто noun:anim:m:v_rod/v_zna:&pron:ind
+небагато-кому небагато-хто noun:anim:m:v_dav/v_mis:&pron:ind
+небагато-ким небагато-хто noun:anim:m:v_oru:&pron:ind
+небагато-кім небагато-хто noun:anim:m:v_mis:&pron:ind
 
-невість-хто невість-хто noun:v_naz:anim:&pron:ind
-невість-кого невість-хто noun:v_rod/v_zna:anim:&pron:ind
-невість-кому невість-хто noun:v_dav/v_mis:anim:&pron:ind
-невість-ким невість-хто noun:v_oru:anim:&pron:ind
-невість-кім невість-хто noun:v_mis:anim:&pron:ind
+невість-хто невість-хто noun:anim:m:v_naz:&pron:ind
+невість-кого невість-хто noun:anim:m:v_rod/v_zna:&pron:ind
+невість-кому невість-хто noun:anim:m:v_dav/v_mis:&pron:ind
+невість-ким невість-хто noun:anim:m:v_oru:&pron:ind
+невість-кім невість-хто noun:anim:m:v_mis:&pron:ind
 
-невіть-хто невіть-хто noun:v_naz:anim:&pron:ind
-невіть-кого невіть-хто noun:v_rod/v_zna:anim:&pron:ind
-невіть-кому невіть-хто noun:v_dav/v_mis:anim:&pron:ind
-невіть-ким невіть-хто noun:v_oru:anim:&pron:ind
-невіть-кім невіть-хто noun:v_mis:anim:&pron:ind
+невіть-хто невіть-хто noun:anim:m:v_naz:&pron:ind
+невіть-кого невіть-хто noun:anim:m:v_rod/v_zna:&pron:ind
+невіть-кому невіть-хто noun:anim:m:v_dav/v_mis:&pron:ind
+невіть-ким невіть-хто noun:anim:m:v_oru:&pron:ind
+невіть-кім невіть-хто noun:anim:m:v_mis:&pron:ind
 
-будь-хто будь-хто noun:v_naz:anim:&pron:ind
-будь-кого будь-хто noun:v_rod/v_zna:anim:&pron:ind
-будь-кому будь-хто noun:v_dav/v_mis:anim:&pron:ind
-будь-ким будь-хто noun:v_oru:anim:&pron:ind
-будь-кім будь-хто noun:v_mis:anim:&pron:ind
+будь-хто будь-хто noun:anim:m:v_naz:&pron:ind
+будь-кого будь-хто noun:anim:m:v_rod/v_zna:&pron:ind
+будь-кому будь-хто noun:anim:m:v_dav/v_mis:&pron:ind
+будь-ким будь-хто noun:anim:m:v_oru:&pron:ind
+будь-кім будь-хто noun:anim:m:v_mis:&pron:ind
 
 будь-що будь-що adv:&pron:ind
-будь-що будь-що noun:v_naz/v_zna:inanim:&pron:ind
-будь-чого будь-що noun:v_rod:inanim:&pron:ind
-будь-чому будь-що noun:v_dav/v_mis:inanim:&pron:ind
-будь-чим будь-що noun:v_oru:inanim:&pron:ind
-будь-чім будь-що noun:v_mis:inanim:&pron:ind
+будь-що будь-що noun:inanim:n:v_naz/v_zna:&pron:ind
+будь-чого будь-що noun:inanim:n:v_rod:&pron:ind
+будь-чому будь-що noun:inanim:n:v_dav/v_mis:&pron:ind
+будь-чим будь-що noun:inanim:n:v_oru:&pron:ind
+будь-чім будь-що noun:inanim:n:v_mis:&pron:ind
 
-будлі-хто будлі-хто noun:v_naz:anim:&pron:ind
-будлі-кого будлі-хто noun:v_rod/v_zna:anim:&pron:ind
-будлі-кому будлі-хто noun:v_dav/v_mis:anim:&pron:ind
-будлі-ким будлі-хто noun:v_oru:anim:&pron:ind
-будлі-кім будлі-хто noun:v_mis:anim:&pron:ind
+будлі-хто будлі-хто noun:anim:m:v_naz:&pron:ind
+будлі-кого будлі-хто noun:anim:m:v_rod/v_zna:&pron:ind
+будлі-кому будлі-хто noun:anim:m:v_dav/v_mis:&pron:ind
+будлі-ким будлі-хто noun:anim:m:v_oru:&pron:ind
+будлі-кім будлі-хто noun:anim:m:v_mis:&pron:ind
 
 будлі-що будлі-що adv:&pron:ind
-будлі-що будлі-що noun:v_naz/v_zna:inanim:&pron:ind
-будлі-чого будлі-що noun:v_rod:inanim:&pron:ind
-будлі-чому будлі-що noun:v_dav/v_mis:inanim:&pron:ind
-будлі-чим будлі-що noun:v_oru:inanim:&pron:ind
-будлі-чім будлі-що noun:v_mis:inanim:&pron:ind
+будлі-що будлі-що noun:inanim:n:v_naz/v_zna:&pron:ind
+будлі-чого будлі-що noun:inanim:n:v_rod:&pron:ind
+будлі-чому будлі-що noun:inanim:n:v_dav/v_mis:&pron:ind
+будлі-чим будлі-що noun:inanim:n:v_oru:&pron:ind
+будлі-чім будлі-що noun:inanim:n:v_mis:&pron:ind
 
 
-бозна-хто бозна-хто noun:v_naz:anim:&pron:ind
-бозна-кого бозна-хто noun:v_rod/v_zna:anim:&pron:ind
-бозна-кому бозна-хто noun:v_dav/v_mis:anim:&pron:ind
-бозна-ким бозна-хто noun:v_oru:anim:&pron:ind
-бозна-кім бозна-хто noun:v_mis:anim:&pron:ind
+бозна-хто бозна-хто noun:anim:m:v_naz:&pron:ind
+бозна-кого бозна-хто noun:anim:m:v_rod/v_zna:&pron:ind
+бозна-кому бозна-хто noun:anim:m:v_dav/v_mis:&pron:ind
+бозна-ким бозна-хто noun:anim:m:v_oru:&pron:ind
+бозна-кім бозна-хто noun:anim:m:v_mis:&pron:ind
 
-бозна-що бозна-що noun:v_naz/v_zna:inanim:&pron:ind
-бозна-чого бозна-що noun:v_rod:inanim:&pron:ind
-бозна-чому бозна-що noun:v_dav/v_mis:inanim:&pron:ind
-бозна-чим бозна-що noun:v_oru:inanim:&pron:ind
-бозна-чім бозна-що noun:v_mis:inanim:&pron:ind
+бозна-що бозна-що noun:inanim:n:v_naz/v_zna:&pron:ind
+бозна-чого бозна-що noun:inanim:n:v_rod:&pron:ind
+бозна-чому бозна-що noun:inanim:n:v_dav/v_mis:&pron:ind
+бозна-чим бозна-що noun:inanim:n:v_oru:&pron:ind
+бозна-чім бозна-що noun:inanim:n:v_mis:&pron:ind
 
-чортзна-хто чортзна-хто noun:v_naz:anim:&pron:ind
-чортзна-кого чортзна-хто noun:v_rod/v_zna:anim:&pron:ind
-чортзна-кому чортзна-хто noun:v_dav/v_mis:anim:&pron:ind
-чортзна-ким чортзна-хто noun:v_oru:anim:&pron:ind
-чортзна-кім чортзна-хто noun:v_mis:anim:&pron:ind
+чортзна-хто чортзна-хто noun:anim:m:v_naz:&pron:ind
+чортзна-кого чортзна-хто noun:anim:m:v_rod/v_zna:&pron:ind
+чортзна-кому чортзна-хто noun:anim:m:v_dav/v_mis:&pron:ind
+чортзна-ким чортзна-хто noun:anim:m:v_oru:&pron:ind
+чортзна-кім чортзна-хто noun:anim:m:v_mis:&pron:ind
 
-чортзна-що чортзна-що noun:v_naz/v_zna:inanim:&pron:ind
-чортзна-чого чортзна-що noun:v_rod:&pron:inanim:ind
-чортзна-чому чортзна-що noun:v_dav/v_mis:inanim:&pron:ind
-чортзна-чим чортзна-що noun:v_oru:inanim:&pron:ind
-чортзна-чім чортзна-що noun:v_mis:inanim:&pron:ind
+чортзна-що чортзна-що noun:inanim:n:v_naz/v_zna:&pron:ind
+чортзна-чого чортзна-що noun:inanim:n:v_rod:&pron:inanim:ind
+чортзна-чому чортзна-що noun:inanim:n:v_dav/v_mis:&pron:ind
+чортзна-чим чортзна-що noun:inanim:n:v_oru:&pron:ind
+чортзна-чім чортзна-що noun:inanim:n:v_mis:&pron:ind
 
-хтозна-що хтозна-що noun:v_naz/v_zna:inanim:&pron:ind
-хтозна-чого хтозна-що noun:v_rod:inanim:&pron:ind
-хтозна-чому хтозна-що noun:v_dav/v_mis:inanim:&pron:ind
-хтозна-чим хтозна-що noun:v_oru:inanim:&pron:ind
-хтозна-чім хтозна-що noun:v_mis:inanim:&pron:ind
+хтозна-що хтозна-що noun:inanim:n:v_naz/v_zna:&pron:ind
+хтозна-чого хтозна-що noun:inanim:n:v_rod:&pron:ind
+хтозна-чому хтозна-що noun:inanim:n:v_dav/v_mis:&pron:ind
+хтозна-чим хтозна-що noun:inanim:n:v_oru:&pron:ind
+хтозна-чім хтозна-що noun:inanim:n:v_mis:&pron:ind
 
-хтозна-хто хтозна-хто noun:v_naz:anim:&pron:ind
-хтозна-кого хтозна-хто noun:v_rod/v_zna:anim:&pron:ind
-хтозна-кому хтозна-хто noun:v_dav/v_mis:anim:&pron:ind
-хтозна-ким хтозна-хто noun:v_oru:anim:&pron:ind
-хтозна-кім хтозна-хто noun:v_mis:anim:&pron:ind
+хтозна-хто хтозна-хто noun:anim:m:v_naz:&pron:ind
+хтозна-кого хтозна-хто noun:anim:m:v_rod/v_zna:&pron:ind
+хтозна-кому хтозна-хто noun:anim:m:v_dav/v_mis:&pron:ind
+хтозна-ким хтозна-хто noun:anim:m:v_oru:&pron:ind
+хтозна-кім хтозна-хто noun:anim:m:v_mis:&pron:ind
 
-невідь-що невідь-що noun:v_naz/v_zna:inanim:&pron:ind
-невідь-чого невідь-що noun:v_rod:inanim:&pron:ind
-невідь-чому невідь-що noun:v_dav/v_mis:inanim:&pron:ind
-невідь-чим невідь-що noun:v_oru:inanim:&pron:ind
-невідь-чім невідь-що noun:v_mis:inanim:&pron:ind
+невідь-що невідь-що noun:inanim:n:v_naz/v_zna:&pron:ind
+невідь-чого невідь-що noun:inanim:n:v_rod:&pron:ind
+невідь-чому невідь-що noun:inanim:n:v_dav/v_mis:&pron:ind
+невідь-чим невідь-що noun:inanim:n:v_oru:&pron:ind
+невідь-чім невідь-що noun:inanim:n:v_mis:&pron:ind
 
-невідь-хто невідь-хто noun:v_naz:anim:&pron:ind
-невідь-кого невідь-хто noun:v_rod/v_zna:anim:&pron:ind
-невідь-кому невідь-хто noun:v_dav/v_mis:anim:&pron:ind
-невідь-ким невідь-хто noun:v_oru:anim:&pron:ind
-невідь-кім невідь-хто noun:v_mis:anim:&pron:ind
+невідь-хто невідь-хто noun:anim:m:v_naz:&pron:ind
+невідь-кого невідь-хто noun:anim:m:v_rod/v_zna:&pron:ind
+невідь-кому невідь-хто noun:anim:m:v_dav/v_mis:&pron:ind
+невідь-ким невідь-хто noun:anim:m:v_oru:&pron:ind
+невідь-кім невідь-хто noun:anim:m:v_mis:&pron:ind
 
-казна-що казна-що noun:v_naz/v_zna:inanim:&pron:ind
-казна-чого казна-що noun:v_rod:inanim:&pron:ind
-казна-чому казна-що noun:v_dav/v_mis:inanim:&pron:ind
-казна-чим казна-що noun:v_oru:inanim:&pron:ind
-казна-чім казна-що noun:v_mis:inanim:&pron:ind
+казна-що казна-що noun:inanim:n:v_naz/v_zna:&pron:ind
+казна-чого казна-що noun:inanim:n:v_rod:&pron:ind
+казна-чому казна-що noun:inanim:n:v_dav/v_mis:&pron:ind
+казна-чим казна-що noun:inanim:n:v_oru:&pron:ind
+казна-чім казна-що noun:inanim:n:v_mis:&pron:ind
 
-казна-хто казна-хто noun:v_naz:anim:&pron:ind
-казна-кого казна-хто noun:v_rod/v_zna:anim:&pron:ind
-казна-кому казна-хто noun:v_dav/v_mis:anim:&pron:ind
-казна-ким казна-хто noun:v_oru:anim:&pron:ind
-казна-кім казна-хто noun:v_mis:anim:&pron:ind
+казна-хто казна-хто noun:anim:m:v_naz:&pron:ind
+казна-кого казна-хто noun:anim:m:v_rod/v_zna:&pron:ind
+казна-кому казна-хто noun:anim:m:v_dav/v_mis:&pron:ind
+казна-ким казна-хто noun:anim:m:v_oru:&pron:ind
+казна-кім казна-хто noun:anim:m:v_mis:&pron:ind
 
-хтось хтось noun:v_naz:anim:&pron:ind
-когось хтось noun:v_rod/v_zna:anim:&pron:ind
-комусь хтось noun:v_dav/v_mis:anim:&pron:ind
-кимось хтось noun:v_oru:anim:&pron:ind
-кимсь хтось noun:v_oru:anim:&pron:ind
-кімсь хтось noun:v_mis:anim:&pron:ind
-кімось хтось noun:v_mis:anim:&pron:ind
+хтось хтось noun:anim:m:v_naz:&pron:ind
+когось хтось noun:anim:m:v_rod/v_zna:&pron:ind
+комусь хтось noun:anim:m:v_dav/v_mis:&pron:ind
+кимось хтось noun:anim:m:v_oru:&pron:ind
+кимсь хтось noun:anim:m:v_oru:&pron:ind
+кімсь хтось noun:anim:m:v_mis:&pron:ind
+кімось хтось noun:anim:m:v_mis:&pron:ind
 
-щось щось noun:n:v_naz/v_zna:inanim:&pron:ind
-чогось щось noun:n:v_rod/v_zna:inanim:&pron:ind
-віщось щось noun:n:v_zna:inanim:&pron:ind
-чомусь щось noun:n:v_dav/v_mis:inanim:&pron:ind
-чимось щось noun:n:v_oru:inanim:&pron:ind
-чимсь щось noun:n:v_oru:inanim:&pron:ind
-чімсь щось noun:n:v_mis:inanim:&pron:ind
-чімось щось noun:n:v_mis:inanim:&pron:ind
+щось щось noun:inanim:n:v_naz/v_zna:&pron:ind
+чогось щось noun:inanim:n:v_rod/v_zna:&pron:ind
+віщось щось noun:inanim:n:v_zna:&pron:ind
+чомусь щось noun:inanim:n:v_dav/v_mis:&pron:ind
+чимось щось noun:inanim:n:v_oru:&pron:ind
+чимсь щось noun:inanim:n:v_oru:&pron:ind
+чімсь щось noun:inanim:n:v_mis:&pron:ind
+чімось щось noun:inanim:n:v_mis:&pron:ind
 
-неабищо неабищо noun:n:v_naz:inanim:&pron:neg
-неабичого неабищо noun:n:v_rod/v_zna:inanim:&pron:neg
-неабичому неабищо noun:n:v_dav:inanim:&pron:neg
-неабичим неабищо noun:n:v_oru:inanim:&pron:neg
+неабищо неабищо noun:inanim:n:v_naz:&pron:neg
+неабичого неабищо noun:inanim:n:v_rod/v_zna:&pron:neg
+неабичому неабищо noun:inanim:n:v_dav:&pron:neg
+неабичим неабищо noun:inanim:n:v_oru:&pron:neg
 
-хто-небудь хто-небудь noun:v_naz:anim:&pron:ind
-кого-небудь хто-небудь noun:v_rod/v_zna:anim:&pron:ind
-кому-небудь хто-небудь noun:v_dav/v_mis:anim:&pron:ind
-ким-небудь хто-небудь noun:v_oru:anim:&pron:ind
-кім-небудь хто-небудь noun:v_mis:anim:&pron:ind
+хто-небудь хто-небудь noun:anim:m:v_naz:&pron:ind
+кого-небудь хто-небудь noun:anim:m:v_rod/v_zna:&pron:ind
+кому-небудь хто-небудь noun:anim:m:v_dav/v_mis:&pron:ind
+ким-небудь хто-небудь noun:anim:m:v_oru:&pron:ind
+кім-небудь хто-небудь noun:anim:m:v_mis:&pron:ind
 
-що-небудь що-небудь noun:n:v_naz/v_zna:inanim:&pron:ind
-чого-небудь що-небудь noun:n:v_rod/v_zna:inanim:&pron:ind
-віщо-небудь що-небудь noun:n:v_zna:inanim:&pron:ind
-чому-небудь що-небудь noun:n:v_dav/v_mis:inanim:&pron:ind
-чим-небудь що-небудь noun:n:v_oru:inanim:&pron:ind
-чім-небудь що-небудь noun:n:v_mis:inanim:&pron:ind
+що-небудь що-небудь noun:inanim:n:v_naz/v_zna:&pron:ind
+чого-небудь що-небудь noun:inanim:n:v_rod/v_zna:&pron:ind
+віщо-небудь що-небудь noun:inanim:n:v_zna:&pron:ind
+чому-небудь що-небудь noun:inanim:n:v_dav/v_mis:&pron:ind
+чим-небудь що-небудь noun:inanim:n:v_oru:&pron:ind
+чім-небудь що-небудь noun:inanim:n:v_mis:&pron:ind
 
-ніхто ніхто noun:v_naz:anim:&pron:neg
-нікого ніхто noun:v_rod/v_zna:anim:&pron:neg
-нікому ніхто noun:v_dav:anim:&pron:neg
-ніким ніхто noun:v_oru:anim:&pron:neg
+ніхто ніхто noun:anim:m:v_naz:&pron:neg
+нікого ніхто noun:anim:m:v_rod/v_zna:&pron:neg
+нікому ніхто noun:anim:m:v_dav:&pron:neg
+ніким ніхто noun:anim:m:v_oru:&pron:neg
 
 нічого нічого adv
 нічого нічого predic
 
-нікого нікого noun:v_rod/v_zna:anim:&pron:emph
-нікому нікому noun:v_dav:anim:&pron:emph
-ніким ніким noun:v_oru:anim:&pron:emph
+нікого нікого noun:anim:m:v_rod/v_zna:&pron:emph
+нікому нікому noun:anim:m:v_dav:&pron:emph
+ніким ніким noun:anim:m:v_oru:&pron:emph
 
-ніщо ніщо noun:v_naz/v_zna:inanim:&pron:neg
-нічого ніщо noun:v_rod/v_zna:inanim:&pron:neg
-нічому ніщо noun:v_dav:inanim:&pron:neg
-нічим ніщо noun:v_oru:inanim:&pron:neg
+ніщо ніщо noun:inanim:n:v_naz/v_zna:&pron:neg
+нічого ніщо noun:inanim:n:v_rod/v_zna:&pron:neg
+нічому ніщо noun:inanim:n:v_dav:&pron:neg
+нічим ніщо noun:inanim:n:v_oru:&pron:neg
 
-нічого нічого noun:v_rod/v_zna:inanim:&pron:emph
-нічому нічому noun:v_dav:inanim:&pron:emph
-нічим нічим noun:v_oru:inanim:&pron:emph
+нічого нічого noun:inanim:n:v_rod/v_zna:&pron:emph
+нічому нічому noun:inanim:n:v_dav:&pron:emph
+нічим нічим noun:inanim:n:v_oru:&pron:emph
 
-дехто дехто noun:v_naz:anim:&pron:ind
-декого дехто noun:v_rod/v_zna:anim:&pron:ind
-декому дехто noun:v_dav/v_mis:anim:&pron:ind
-деким дехто noun:v_oru:anim:&pron:ind
-декім дехто noun:v_mis:anim:&pron:ind
+дехто дехто noun:anim:m:v_naz:&pron:ind
+декого дехто noun:anim:m:v_rod/v_zna:&pron:ind
+декому дехто noun:anim:m:v_dav/v_mis:&pron:ind
+деким дехто noun:anim:m:v_oru:&pron:ind
+декім дехто noun:anim:m:v_mis:&pron:ind
 
 дещо дещо adv:&pron:ind
-дещо дещо noun:v_naz/v_zna:inanim:&pron:ind
-дечого дещо noun:v_rod:inanim:&pron:ind
-дечому дещо noun:v_dav/v_mis:inanim:&pron:ind
-дечим дещо noun:v_oru:inanim:&pron:ind
-дечім дещо noun:v_mis:inanim:&pron:ind
+дещо дещо noun:inanim:n:v_naz/v_zna:&pron:ind
+дечого дещо noun:inanim:n:v_rod:&pron:ind
+дечому дещо noun:inanim:n:v_dav/v_mis:&pron:ind
+дечим дещо noun:inanim:n:v_oru:&pron:ind
+дечім дещо noun:inanim:n:v_mis:&pron:ind
 
-нікогісінько нікогісінько noun:v_naz/v_rod/v_zna:anim:&pron:neg
-анікогісінько анікогісінько noun:v_naz/v_rod/v_zna:inanim:&pron:neg
-анічогісінько анічогісінько noun:v_naz/v_rod/v_zna:inanim:&pron:neg
+нікогісінько нікогісінько noun:anim:m:v_naz/v_rod/v_zna:&pron:neg
+анікогісінько анікогісінько noun:anim:m:v_naz/v_rod/v_zna:&pron:neg
+нічогісінько нічогісінько noun:inanim:n:v_naz/v_rod/v_zna:&pron:neg
+анічогісінько анічогісінько noun:inanim:n:v_naz/v_rod/v_zna:&pron:neg
 
 себе себе noun:v_rod/v_zna:&pron:refl
 собі себе noun:v_dav/v_mis:&pron:refl
