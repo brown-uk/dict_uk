@@ -230,18 +230,18 @@
 нічого нічого adv
 нічого нічого predic
 
-нікого нікого noun:anim:m:v_rod/v_zna:&pron:emph
-нікому нікому noun:anim:m:v_dav:&pron:emph
-ніким ніким noun:anim:m:v_oru:&pron:emph
+нікого нікого noun:anim:m:v_rod/v_zna:&pron:emph        # ні́кого
+нікому нікого noun:anim:m:v_dav:&pron:emph
+ніким нікого noun:anim:m:v_oru:&pron:emph
 
 ніщо ніщо noun:inanim:n:v_naz/v_zna:&pron:neg
 нічого ніщо noun:inanim:n:v_rod/v_zna:&pron:neg
 нічому ніщо noun:inanim:n:v_dav:&pron:neg
 нічим ніщо noun:inanim:n:v_oru:&pron:neg
 
-нічого нічого noun:inanim:n:v_rod/v_zna:&pron:emph
-нічому нічому noun:inanim:n:v_dav:&pron:emph
-нічим нічим noun:inanim:n:v_oru:&pron:emph
+нічого нічого noun:inanim:n:v_rod/v_zna:&pron:emph      # ні́чого
+нічому нічого noun:inanim:n:v_dav:&pron:emph
+нічим нічого noun:inanim:n:v_oru:&pron:emph
 
 дехто дехто noun:anim:m:v_naz:&pron:ind
 декого дехто noun:anim:m:v_rod/v_zna:&pron:ind
@@ -256,10 +256,10 @@
 дечим дещо noun:inanim:n:v_oru:&pron:ind
 дечім дещо noun:inanim:n:v_mis:&pron:ind
 
-нікогісінько нікогісінько noun:anim:m:v_naz/v_rod/v_zna:&pron:neg
-анікогісінько анікогісінько noun:anim:m:v_naz/v_rod/v_zna:&pron:neg
-нічогісінько нічогісінько noun:inanim:n:v_naz/v_rod/v_zna:&pron:neg
-анічогісінько анічогісінько noun:inanim:n:v_naz/v_rod/v_zna:&pron:neg
+нікогісінько нікогісінько noun:anim:m:v_rod:&pron:neg
+анікогісінько анікогісінько noun:anim:m:v_rod:&pron:neg
+нічогісінько нічогісінько noun:inanim:n:v_rod:&pron:neg
+анічогісінько анічогісінько noun:inanim:n:v_rod:&pron:neg
 
 себе себе noun:v_rod/v_zna:&pron:refl
 собі себе noun:v_dav/v_mis:&pron:refl
