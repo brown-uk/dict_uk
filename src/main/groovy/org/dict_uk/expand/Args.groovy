@@ -76,7 +76,7 @@ class Args {
 			dictDir = options.dict
 
 			if( corp ) {
-				removeWithTags = ["uncontr"]
+				removeWithTags = ["uncontr", "inf:coll"]
 				lemmaForTags = ["advp"]
 				removeTags = ["v-u"]
 			}

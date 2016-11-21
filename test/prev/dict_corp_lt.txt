@@ -366,7 +366,6 @@
 безчерепні безчерепні noun:anim:p:v_kly:ns
 бентеживши бентеживши advp:imperf
 бентежити бентежити verb:imperf:inf
-бентежить бентежити verb:imperf:inf:coll
 бентеж бентежити verb:imperf:impr:s:2
 бентежмо бентежити verb:imperf:impr:p:1
 бентежте бентежити verb:imperf:impr:p:2
@@ -1065,7 +1064,6 @@
 верифікувавши верифікувавши advp:imperf
 верифікувавши верифікувавши advp:perf
 верифікувати верифікувати verb:imperf:inf
-верифікувать верифікувати verb:imperf:inf:coll
 верифікуй верифікувати verb:imperf:impr:s:2
 верифікуймо верифікувати verb:imperf:impr:p:1
 верифікуйте верифікувати verb:imperf:impr:p:2
@@ -1089,7 +1087,6 @@
 верифікували верифікувати verb:imperf:past:p
 верифіковано верифікувати verb:imperf:impers
 верифікувати верифікувати verb:perf:inf
-верифікувать верифікувати verb:perf:inf:coll
 верифікуй верифікувати verb:perf:impr:s:2
 верифікуймо верифікувати verb:perf:impr:p:1
 верифікуйте верифікувати verb:perf:impr:p:2
@@ -1175,13 +1172,11 @@
 вело вести verb:imperf:past:n
 вели вести verb:imperf:past:p
 вечоріти вечоріти verb:imperf:inf
-вечоріть вечоріти verb:imperf:inf:coll
 вечоріє вечоріти verb:imperf:pres:s:3
 вечорітиме вечоріти verb:imperf:futr:s:3
 вечоріло вечоріти verb:imperf:past:n
 вжаливши вжаливши advp:perf
 вжалити вжалити verb:perf:inf
-вжалить вжалити verb:perf:inf:coll
 вжаль вжалити verb:perf:impr:s:2
 вжальмо вжалити verb:perf:impr:p:1
 вжальте вжалити verb:perf:impr:p:2
@@ -1268,7 +1263,6 @@
 взувавшись взувавшись advp:rev:imperf
 взуватися взуватися verb:rev:imperf:inf
 взуватись взуватися verb:rev:imperf:inf
-взуваться взуватися verb:rev:imperf:inf:coll
 взувайсь взуватися verb:rev:imperf:impr:s:2
 взувайся взуватися verb:rev:imperf:impr:s:2
 взуваймось взуватися verb:rev:imperf:impr:p:1
@@ -1307,7 +1301,6 @@
 взувши взувши advp:perf
 взувшись взувшись advp:rev:perf
 взути взути verb:perf:inf
-взуть взути verb:perf:inf:coll
 взуй взути verb:perf:impr:s:2
 взуймо взути verb:perf:impr:p:1
 взуйте взути verb:perf:impr:p:2
@@ -1325,7 +1318,6 @@
 взуто взути verb:perf:impers
 взутися взутися verb:rev:perf:inf
 взутись взутися verb:rev:perf:inf
-взуться взутися verb:rev:perf:inf:coll
 взуйсь взутися verb:rev:perf:impr:s:2
 взуйся взутися verb:rev:perf:impr:s:2
 взуймось взутися verb:rev:perf:impr:p:1
@@ -2117,7 +2109,6 @@
 задихавшись задихавшись advp:rev:perf
 задихатися задихатися verb:rev:perf:inf
 задихатись задихатися verb:rev:perf:inf
-задихаться задихатися verb:rev:perf:inf:coll
 задихайсь задихатися verb:rev:perf:impr:s:2
 задихайся задихатися verb:rev:perf:impr:s:2
 задишся задихатися verb:rev:perf:impr:s:2
@@ -2172,7 +2163,6 @@
 залізках залізко noun:inanim:p:v_mis
 залізка залізко noun:inanim:p:v_kly
 засвітати засвітати verb:imperf:inf
-засвітать засвітати verb:imperf:inf:coll
 засвітає засвітати verb:imperf:pres:s:3
 засвітають засвітати verb:imperf:pres:p:3
 засвітатиме засвітати verb:imperf:futr:s:3
@@ -2182,7 +2172,6 @@
 засвітало засвітати verb:imperf:past:n
 засвітали засвітати verb:imperf:past:p
 засвітати засвітати verb:perf:inf
-засвітать засвітати verb:perf:inf:coll
 засвітає засвітати verb:perf:futr:s:3
 засвітають засвітати verb:perf:futr:p:3
 засвітав засвітати verb:perf:past:m
@@ -2227,7 +2216,6 @@
 коні кінь noun:anim:p:v_kly
 колисавши колисавши advp:imperf
 колисати колисати verb:imperf:inf
-колисать колисати verb:imperf:inf:coll
 колисай колисати verb:imperf:impr:s:2
 колиши колисати verb:imperf:impr:s:2
 колисаймо колисати verb:imperf:impr:p:1
@@ -2717,7 +2705,6 @@
 оскірившись оскірившись advp:rev:perf:rare
 оскіритися оскіритися verb:rev:perf:inf:rare
 оскіритись оскіритися verb:rev:perf:inf:rare
-оскіриться оскіритися verb:rev:perf:inf:rare:coll
 оскірся оскіритися verb:rev:perf:impr:s:2:rare
 оскірмось оскіритися verb:rev:perf:impr:p:1:rare
 оскірмося оскіритися verb:rev:perf:impr:p:1:rare
@@ -2791,7 +2778,6 @@
 породіллі породілля noun:anim:p:v_kly
 пострілявши пострілявши advp:perf
 постріляти постріляти verb:perf:inf
-пострілять постріляти verb:perf:inf:coll
 постріляй постріляти verb:perf:impr:s:2
 постріляймо постріляти verb:perf:impr:p:1
 постріляйте постріляти verb:perf:impr:p:2
@@ -2807,7 +2793,6 @@
 постріляло постріляти verb:perf:past:n
 постріляли постріляти verb:perf:past:p
 прощавати прощавати verb:imperf:inf
-прощавать прощавати verb:imperf:inf:coll
 прощавай прощавати verb:imperf:impr:s:2
 прощаваймо прощавати verb:imperf:impr:p:1
 прощавайте прощавати verb:imperf:impr:p:2
@@ -2878,14 +2863,12 @@
 стафілококах стафілокок noun:unanim:p:v_mis
 стафілококи стафілокок noun:unanim:p:v_kly
 стривати стривати verb:imperf:inf
-стривать стривати verb:imperf:inf:coll
 стривай стривати verb:imperf:impr:s:2
 стриваймо стривати verb:imperf:impr:p:1
 стривайте стривати verb:imperf:impr:p:2
 стрілявши стрілявши advp:imperf
 стрілявшись стрілявшись advp:rev:imperf
 стріляти стріляти verb:imperf:inf
-стрілять стріляти verb:imperf:inf:coll
 стріляй стріляти verb:imperf:impr:s:2
 стріляймо стріляти verb:imperf:impr:p:1
 стріляйте стріляти verb:imperf:impr:p:2
@@ -2910,7 +2893,6 @@
 стріляно стріляти verb:imperf:impers
 стрілятися стрілятися verb:rev:imperf:inf
 стрілятись стрілятися verb:rev:imperf:inf
-стріляться стрілятися verb:rev:imperf:inf:coll
 стріляйсь стрілятися verb:rev:imperf:impr:s:2
 стріляйся стрілятися verb:rev:imperf:impr:s:2
 стріляймось стрілятися verb:rev:imperf:impr:p:1

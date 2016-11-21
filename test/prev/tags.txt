@@ -665,7 +665,6 @@ verb:imperf:impr:p:1
 verb:imperf:impr:p:2
 verb:imperf:impr:s:2
 verb:imperf:inf
-verb:imperf:inf:coll
 verb:imperf:past:f
 verb:imperf:past:m
 verb:imperf:past:n
@@ -687,7 +686,6 @@ verb:perf:impr:p:1
 verb:perf:impr:p:2
 verb:perf:impr:s:2
 verb:perf:inf
-verb:perf:inf:coll
 verb:perf:past:f
 verb:perf:past:m
 verb:perf:past:n
@@ -702,7 +700,6 @@ verb:rev:imperf:impr:p:1
 verb:rev:imperf:impr:p:2
 verb:rev:imperf:impr:s:2
 verb:rev:imperf:inf
-verb:rev:imperf:inf:coll
 verb:rev:imperf:past:f
 verb:rev:imperf:past:m
 verb:rev:imperf:past:n
@@ -732,9 +729,7 @@ verb:rev:perf:impr:p:2:rare
 verb:rev:perf:impr:s:2
 verb:rev:perf:impr:s:2:rare
 verb:rev:perf:inf
-verb:rev:perf:inf:coll
 verb:rev:perf:inf:rare
-verb:rev:perf:inf:rare:coll
 verb:rev:perf:past:f
 verb:rev:perf:past:f:rare
 verb:rev:perf:past:m
