@@ -297,6 +297,16 @@
 діти дитина noun:anim:p:v_kly
 
 
+дівчата дівчина noun:anim:p:v_naz
+дівчат дівчина noun:anim:p:v_rod
+дівчатам дівчина noun:anim:p:v_dav
+дівчат дівчина noun:anim:p:v_zna
+дівчатами дівчина noun:anim:p:v_oru
+дівчатах дівчина noun:anim:p:v_mis
+дівчата дівчина noun:anim:p:v_kly
+
+
+
 # додаткові форми
 
 людини людина noun:p:v_naz/v_zna:anim
