@@ -146,7 +146,7 @@
 чортзна-кім чортзна-хто noun:anim:m:v_mis:&pron:ind
 
 чортзна-що чортзна-що noun:inanim:n:v_naz/v_zna:&pron:ind
-чортзна-чого чортзна-що noun:inanim:n:v_rod:&pron:inanim:ind
+чортзна-чого чортзна-що noun:inanim:n:v_rod:&pron:ind
 чортзна-чому чортзна-що noun:inanim:n:v_dav/v_mis:&pron:ind
 чортзна-чим чортзна-що noun:inanim:n:v_oru:&pron:ind
 чортзна-чім чортзна-що noun:inanim:n:v_mis:&pron:ind
@@ -940,6 +940,8 @@
 адже part|conj:subord
 ажень part
 аж part|conj:subord
+аж-аж part|conj:subord
+аж-аж-аж part|conj:subord
 але conj:coord|intj|part:rare
 амінь part|noun:n:nv:np
 аніж conj:subord
