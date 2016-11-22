@@ -103,6 +103,31 @@ task dups << {
 	println dups.toSorted().join("\n")
 }
 
+task checkReplacements {
+  doLast {
+	def dictDir = file("data/dict")
+	
+	def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') }
+	
+	def replWords = files.collect { it.text.split("\n")  } \
+	    .flatten() \
+	    .findAll { it.contains(" #> ") }
+	    .collect { it.split(" #> ")[1].trim().split(/[;, \|]+/) }
+	    .flatten()
+	    .collect { it.replaceAll(/[()]/, '') }
+	    .unique().sort()
+
+    def spellWords = new File("out/words_spell.txt").text.split("\n")
+    
+    println "Unique replacement words: ${replWords.size}"
+    
+    replWords.removeAll(spellWords)
+
+
+    println "Unknown (${replWords.size}):\n" + replWords.join("\n")
+  }
+}
+
 
 task showExpandCommand << {
     def opts = " --corp --indent --mfl --stats --wordlist --time"
