@@ -86,7 +86,8 @@ task sortDict(type: JavaExec) {
 }
 
 
-task dups << {
+task dups {
+  doLast {
 	def dictDir = file("data/dict")
 	
 	def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') }
@@ -100,7 +101,8 @@ task dups << {
     def dups = lines.countBy{it}.grep{it.value > 1 }.collect{it.key}
 
     println "Found ${dups.size} dups"
-	println dups.toSorted().join("\n")
+    println dups.toSorted().join("\n")
+  }
 }
 
 task checkReplacements {
@@ -129,7 +131,8 @@ task checkReplacements {
 }
 
 
-task showExpandCommand << {
+task showExpandCommand {
+  doLast {
     def opts = " --corp --indent --mfl --stats --wordlist --time"
     opts += " -aff data/affix"
     opts += " -dict data/dict"
@@ -143,6 +146,7 @@ task showExpandCommand << {
     cmd += opts
     
     println cmd
+  }
 }
 
 //
