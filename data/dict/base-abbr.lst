@@ -242,6 +242,7 @@
 КСУ noun:m:nv:np:prop        # Конституційний Суд України
 КУІн noun:m:nv
 КУК noun:m:nv
+КУН noun:m:nv:np:prop           # Конгрес Українських Націоналістів
 ЛАЗ /n20 :prop
 ЛАК noun:f:nv
 ЛБД noun:f:nv
@@ -534,7 +535,7 @@
 УАСС noun:f:nv
 УБЕЗ noun:n:nv
 УБЗПТЛ noun:n:nv
-УБОЗ /n20
+УБОЗ noun:n:nv
 УВКБ noun:n:nv
 УВКР noun:f:nv
 УВУ noun:n:nv:np:prop       # Український вільний університет
