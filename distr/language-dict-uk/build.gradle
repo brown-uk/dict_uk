@@ -78,6 +78,7 @@ task prepareDict(type: Exec, dependsOn: processResources) {
     commandLine "sh", "-c", "${cmd}"
 }
 
+
 task createPOSDict(type: JavaExec, dependsOn: prepareDict) {
     def outputDict="${outResDir}/ukrainian.dict"
 
@@ -153,9 +154,11 @@ task createSpellDict(type: JavaExec, dependsOn: prepareSpellWords) {
 
 
 
-task createOutRulesDir << {
+task createOutRulesDir {
+  doLast() {
     println "Preparing dict file $outRulesDir"
     new File("$outRulesDir").mkdirs()
+  }
 }
 
 
@@ -281,30 +284,31 @@ task deployDictToLT(type: Copy, dependsOn: classes) {
 }
 
 
-task deployHelperDictsToLT(type: Copy, dependsOn: [createSoftReplacementDict, createReplacementDict, createCaseGovernmentDict]) {
-    outputs.upToDateWhen {false}
 
-    copy {
+task deployReplacements(type: Copy) {
+    doFirst() {
         logger.lifecycle "Deploying to LT dir: ${languagetoolRulesDestDir}"
-
+    }
         from outRulesDir
         into "${languagetoolRulesDestDir}"
         include "**/replace*.txt"
 
         includeEmptyDirs = false
-    }
+}
 
-    copy {
+task deployCaseGovernment(type: Copy) {
+    doFirst() {
         logger.lifecycle "Deploying to LT dir: ${languagetoolResDestDir}"
-
-        from outResDir
+    }
+//        from outResDir
+        from createCaseGovernmentDict
         into "${languagetoolResDestDir}"
-        include "**/case_*.txt"
+//        include "**/case_*.txt"
 
         includeEmptyDirs = false
-    }
-
 }
+
+task deployHelperDictsToLT(dependsOn: [deployReplacements, deployCaseGovernment])
 
 task deployToLT(dependsOn: [publish, deployHelperDictsToLT])
 
