@@ -2006,6 +2006,16 @@
   дивніших adj:p:v_mis:compr
   дивніші adj:p:v_kly:compr
 дивно adv:compb
+дід-баба noun:anim:p:v_naz
+  діда-баби noun:anim:p:v_rod
+  дідові-бабі noun:anim:p:v_dav
+  діду-бабі noun:anim:p:v_dav
+  діда-бабу noun:anim:p:v_zna
+  дідом-бабою noun:anim:p:v_oru
+  діді-бабі noun:anim:p:v_mis
+  дідові-бабі noun:anim:p:v_mis
+  діду-бабі noun:anim:p:v_mis
+  діде-бабо noun:anim:p:v_kly
 дідисько noun:anim:m:v_naz
   дідиська noun:anim:m:v_rod
   дідиськові noun:anim:m:v_dav

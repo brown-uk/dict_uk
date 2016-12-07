@@ -195,6 +195,17 @@
 матерями мати noun:anim:p:v_oru
 матерях мати noun:anim:p:v_mis
 
+батько-мати батько-мати noun:anim:p:v_naz/v_kly
+батько-матір батько-мати noun:anim:p:v_naz
+батька-матері батько-мати noun:anim:p:v_rod
+батьку-матері батько-мати noun:anim:p:v_dav
+батькові-матері батько-мати noun:anim:p:v_dav
+батько-матір батько-мати noun:anim:p:v_zna
+батьком-матір'ю батько-мати noun:anim:p:v_oru
+батьку-матері батько-мати noun:anim:p:v_mis
+батькові-матері батько-мати noun:anim:p:v_mis
+
+
 біомати біомати noun:anim:f:v_naz/v_kly
 біоматір біомати noun:anim:f:v_naz:rare
 біоматері біомати noun:anim:f:v_rod

@@ -70,6 +70,7 @@
 ВРЮ noun:f:nv:np:prop       # Вища рада юстиції
 ВССУ noun:m:nv
 ВСУ noun:m:nv:np:prop        # Верховний Суд України
+ВТБ noun:m:nv:np:prop       # ВТБ банк
 ВТССУМ noun:m:nv:prop    # Великий тлумачний словник сучасної української мови
 ВУАН noun:f:nv:prop    # Всеукраїнська академія наук (1921—1936)
 ВУНАС noun:f:nv:prop    # Всеукраїнська наукова асоціація сходознавства
@@ -243,11 +244,13 @@
 КУІн noun:m:nv
 КУК noun:m:nv
 КУН noun:m:nv:np:prop           # Конгрес Українських Націоналістів
+КХЛ noun:f:nv:np:prop       # Континентальна Хокейна Ліга
 ЛАЗ /n20 :prop
 ЛАК noun:f:nv
 ЛБД noun:f:nv
 ЛДПР noun:f:nv:np
 ЛДПУ noun:f:nv:np:prop
+ЛЄ noun:f:nv:np:prop        # Ліга Європи
 ЛКСМУ noun:f:nv:np
 ЛНДР noun:f:nv
 ЛНР noun:f:nv:np    # "Луганська Народна Республіка"
@@ -257,6 +260,7 @@
 л-ра /n10 :np
 ЛСД noun:m:nv:np
 ЛуАЗ /n20
+ЛЧ noun:f:nv:np:prop        # Ліга Чемпіонів
 м noun:m:nv
 МАГАТЕ noun:n:nv:np:prop
 МАУП noun:f:nv:np:prop
@@ -433,7 +437,9 @@
 ПТУ noun:n:nv
 ПУМБ noun:m:nv:prop
 пФ noun:m:nv
+ПФЛ noun:f:nv:np:prop       # Професіональна футбольна ліга України
 ПФТС noun:f:nv
+ПХЛ noun:f:nv:np:prop       # Провесійна Хокейна Ліга
 РАГС /n20
 РАЕС noun:f:nv:prop
 РАН noun:f:nv
@@ -496,6 +502,7 @@
 СРР noun:f:nv
 СРЮ noun:f:nv
 ССР noun:f:nv
+СТБ noun:m:nv:np:prop       # канал
 СТД noun:f:nv
 СТО noun:f:nv               # станція техобслуговування
 СУБД noun:f:nv
@@ -525,6 +532,7 @@
 ТРК noun:f:nv
 трлн noun:m:nv|numr:p:nv
 тРНК noun:f:nv
+ТСН noun:f:nv:np:prop       # Телевізійна Служба Новин
 ТЮГ noun:m:nv:np
 УААН noun:f:nv
 УАЗ noun:m:nv
@@ -596,6 +604,7 @@
 ФАО noun:f:nv
 ФАТХ noun:m:nv:np
 ФБР noun:n:nv:np:prop
+ФБУ noun:f:nv:np:prop       # Федерація Баскетболу України
 ФДМУ noun:m:nv
 ФІБА noun:f:nv
 ФІДЕ noun:f:nv:prop
@@ -641,6 +650,7 @@
 ЦУМ noun:m:nv:np
 ЧАЕС noun:f:nv:np:prop
 ЧАП noun:m:nv
+ЧЄ noun:m:nv:np:prop        # Чемпіонат Європи
 ЧК noun:f:nv
 ЧР noun:f:nv
 ЧС noun:m:nv
