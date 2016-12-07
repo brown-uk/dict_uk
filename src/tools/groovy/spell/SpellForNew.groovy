@@ -105,6 +105,9 @@ class SpellForNew {
 		def outputFileAbbr = new File(inputFile.name + ".unknown.abbr.txt")
 		outputFileAbbr.text = ""
 
+		def outputFileDash = new File(inputFile.name + ".unknown.dash.txt")
+		outputFileDash.text = ""
+
 		
 		sortedMap.each { k,v ->
 		    if( Character.isLowerCase(k.charAt(0)) ) {
@@ -112,6 +115,9 @@ class SpellForNew {
     		}
 		    else if( Character.isUpperCase(k.charAt(1)) ) {
     		    outputFileAbbr << "$k $v\n"
+    		}
+		    else if( k.contains("-") ) {
+    		    outputFileDash << "$k $v\n"
     		}
 		    else {
     		    outputFileCaps << "$k $v\n"
