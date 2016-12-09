@@ -228,9 +228,9 @@
 ніким ніхто noun:anim:m:v_oru:&pron:neg
 
 нічого нічого adv
-нічого нічого predic
+нічого нічого predic                                    # rv_inf
 
-нікого нікого noun:anim:m:v_rod/v_zna:&pron:emph        # ні́кого
+нікого нікого noun:anim:m:v_rod/v_zna:&pron:emph        # ні́кого # rv_inf
 нікому нікого noun:anim:m:v_dav:&pron:emph
 ніким нікого noun:anim:m:v_oru:&pron:emph
 
@@ -773,7 +773,7 @@
 завдяки завдяки prep:rv_dav
 задля задля prep:rv_rod
 залежно залежно prep:rv_rod
-замість замість prep:rv_rod
+замість замість prep:rv_rod         # rv_inf
 заради заради prep:rv_rod
 #згідно згідно prep:rv_rod
 зверху зверху prep:rv_rod

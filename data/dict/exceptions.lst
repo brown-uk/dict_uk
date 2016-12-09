@@ -449,7 +449,7 @@
 
 
 # наказна фома є зайвою - не має сенсу значно ускладнювати правила???
-могти могти verb:inf:imperf
+могти могти verb:inf:imperf             # rv_inf
 можіть могти verb:impr:p:2:imperf
 можу могти verb:pres:s:1:imperf
 можеш могти verb:pres:s:2:imperf
@@ -527,6 +527,40 @@
 
 варт варт predic
 
+властен властен adj:m:v_naz/v_zn2:short         # rv_inf
+властного властен adj:m:v_rod
+властному властен adj:m:v_dav
+властного властен adj:m:v_zna:ranim
+властний властен adj:m:v_zna:rinanim
+властним властен adj:m:v_oru
+властнім властен adj:m:v_mis
+властному властен adj:m:v_mis
+властний властен adj:m:v_kly
+властна властен adj:f:v_naz
+властної властен adj:f:v_rod
+властній властен adj:f:v_dav
+властну властен adj:f:v_zna
+властною властен adj:f:v_oru
+властній властен adj:f:v_mis
+властна властен adj:f:v_kly
+властне властен adj:n:v_naz
+властного властен adj:n:v_rod
+властному властен adj:n:v_dav
+властне властен adj:n:v_zna
+властним властен adj:n:v_oru
+властнім властен adj:n:v_mis
+властному властен adj:n:v_mis
+властне властен adj:n:v_kly
+властні властен adj:p:v_naz
+властних властен adj:p:v_rod
+властним властен adj:p:v_dav
+властних властен adj:p:v_zna:ranim
+властні властен adj:p:v_zna:rinanim
+властними властен adj:p:v_oru
+властних властен adj:p:v_mis
+властні властен adj:p:v_kly
+
+
 # короткі прикметники
 безвинен безвинний adj:m:v_naz/v_zn2:short
 благословен благословенний adj:m:v_naz/v_zn2:short
@@ -535,7 +569,6 @@
 винен винний adj:m:v_naz/v_zn2:short
 #вістен вістний adj:m:v_naz/v_zn2:short
 вістен вісний adj:m:v_naz/v_zn2:short:rare
-властен власний adj:m:v_naz/v_zn2:short:rare
 годен годний adj:m:v_naz/v_zn2:short:coll
 дивен дивний adj:m:v_naz/v_zn2:short
 достоїн достойний adj:m:v_naz/v_zn2:short

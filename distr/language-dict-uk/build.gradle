@@ -240,7 +240,7 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
 task createCaseGovernmentDict() {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outResDir}/case_government.txt"
-    def srcFiles=["base.lst", "twisters.lst", "slang.lst"]
+    def srcFiles=["base.lst", "twisters.lst", "slang.lst", "exceptions.lst", "pronouns.lst"]
 
     inputs.file srcFiles.collect{ "$srcDir/$it" }
     outputs.file outFile
