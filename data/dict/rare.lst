@@ -39,10 +39,12 @@
 вліжно вліжно adv
 воркотливий /adj
 вхорканий /adj :&adjp:pasv:perf:v-u    # :past
+гайда /n10.p1
 гейби conj:subord
 глупий /adj :xp1            # xv1
 головочка /n10
 ґердан /n20.p
+ґрунь /n20.a.p
 далебіг далебіг insert
 дармо adv
 дармовіс /n20.a.p
@@ -210,6 +212,10 @@
 писачок /n22.a.p
 півперек prep:rv_rod
 півтретя numr:f:v_naz/v_zna
+підогрів /n20
+підогрівальний /adj
+підогрівний /adj
+підогрітий /adj :&adjp:pasv:perf    # :past
 підсичувати /v1.cf.advp :imperf
 подовш adv|prep:rv_rod
 покійно adv
