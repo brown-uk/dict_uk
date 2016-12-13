@@ -1,11 +1,13 @@
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
+apply plugin: 'signing'
 
-version = '3.5.1'
+version = '3.6.0'
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian'
+archivesBaseName = artifactId
 
 String ltVersion = '3.6-SNAPSHOT'
 
@@ -332,6 +334,11 @@ jar {
 classes.dependsOn(createPOSDict, createSynthDict, createTagList, createSpellDict, createCaseGovernmentDict)
 compileJava.enabled = false
 
+signing {
+    sign configurations.archives
+}
+
+
 
 publishing {
     repositories {
@@ -343,4 +350,53 @@ publishing {
             from components.java
         }
     }
+}
+
+uploadArchives {
+  repositories {
+    mavenDeployer {
+      beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+      repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+        authentication(userName: ossrhUsername, password: ossrhPassword)
+      }
+
+      snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+        authentication(userName: ossrhUsername, password: ossrhPassword)
+      }
+
+      pom.project {
+        name 'Ukrainian part-of-speech (POS) dictionary as a Morfologik binary'
+        packaging 'jar'
+        // optionally artifactId can be defined here 
+        description 'Ukrainian part-of-speech dictionaries in Morfologik binary format'
+        url 'https://github.com/brown-uk/dict_uk'
+
+        scm {
+//          connection 'scm:svn:http://foo.googlecode.com/svn/trunk/'
+//          developerConnection 'scm:svn:https://foo.googlecode.com/svn/trunk/'
+          url 'https://github.com/brown-uk/dict_uk.git'
+        }
+
+        licenses {
+          license {
+            name 'GNU Lesser General Public License'
+            url 'http://www.gnu.org/licenses/lgpl.txt'
+          }
+          license {
+            name 'Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)'
+            url 'http://creativecommons.org/licenses/by-nc-sa/4.0'
+          }
+        }
+
+        developers {
+          developer {
+            id 'arysin'
+            name 'Andriy Rysin'
+            email 'arysin@gmail.com'
+          }
+        }
+      }
+    }
+  }
 }
