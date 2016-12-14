@@ -1501,6 +1501,7 @@
 вименем вим'я noun:inanim:n:v_oru
 вим'ям вим'я noun:inanim:n:v_oru
 вимені вим'я noun:inanim:n:v_mis
+вим'ї вим'я noun:inanim:n:v_mis
 вим'ю вим'я noun:inanim:n:v_mis
 вим'я вим'я noun:inanim:n:v_kly
 вихідний вихідний noun:inanim:m:v_naz
