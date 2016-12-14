@@ -247,6 +247,13 @@
   азотисто-водневими adj:p:v_oru
   азотисто-водневих adj:p:v_mis
   азотисто-водневі adj:p:v_kly
+Архангельськ noun:inanim:m:v_naz:prop
+  Архангельська noun:inanim:m:v_rod:prop
+  Архангельську noun:inanim:m:v_dav:prop
+  Архангельськ noun:inanim:m:v_zna:prop
+  Архангельськом noun:inanim:m:v_oru:prop
+  Архангельську noun:inanim:m:v_mis:prop
+  Архангельську noun:inanim:m:v_kly:prop
 Афанасьєв-Чужбинський noun:anim:m:v_naz:prop:lname
   Афанасьєва-Чужбинського noun:anim:m:v_rod:prop:lname
   Афанасьєву-Чужбинському noun:anim:m:v_dav:prop:lname
@@ -3136,10 +3143,16 @@
   усюдах noun:inanim:p:v_mis:ns
   усюди noun:inanim:p:v_kly:ns
 Федорів noun:anim:m:v_naz:prop:lname
+  Федоріва noun:anim:m:v_rod:prop:lname
   Федорова noun:anim:m:v_rod:prop:lname
+  Федоріву noun:anim:m:v_dav:prop:lname
   Федорову noun:anim:m:v_dav:prop:lname
+  Федоріва noun:anim:m:v_zna:prop:lname
   Федорова noun:anim:m:v_zna:prop:lname
-  Федоровом noun:anim:m:v_oru:prop:lname
+  Федорівим noun:anim:m:v_oru:prop:lname
+  Федоровим noun:anim:m:v_oru:prop:lname
+  Федоріві noun:anim:m:v_mis:prop:lname
+  Федоріву noun:anim:m:v_mis:prop:lname
   Федорові noun:anim:m:v_mis:prop:lname
   Федорову noun:anim:m:v_mis:prop:lname
 хірт noun:anim:m:v_naz

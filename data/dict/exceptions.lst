@@ -346,15 +346,16 @@
 плахіт плахта noun:p:v_rod
 плахот плахта noun:p:v_rod
 
+санями сани noun:inanim:p:v_oru:ns
 грошима гроші noun:p:v_oru:ns
 грішми гроші noun:p:v_oru:ns
+ворітьми ворота noun:p:v_oru:ns
 крильми крило noun:p:v_oru
 слізьми сльоза noun:p:v_oru
 коліньми коліно noun:p:v_oru
-гістьми гість noun:p:v_oru:anim
 кістьми кість noun:p:v_oru
+гістьми гість noun:p:v_oru:anim
 свиньми свиня noun:p:v_oru:anim
-ворітьми ворота noun:p:v_oru:ns
 
 стіп стопа noun:p:v_rod:xp1
 
