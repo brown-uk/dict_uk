@@ -306,6 +306,14 @@
 людях людина noun:anim:p:v_mis
 люди людина noun:anim:p:v_kly
 
+надлюди надлюдина noun:anim:p:v_naz
+надлюдей надлюдина noun:anim:p:v_rod
+надлюдям надлюдина noun:anim:p:v_dav
+надлюдей надлюдина noun:anim:p:v_zna
+надлюдьми надлюдина noun:anim:p:v_oru
+надлюдях надлюдина noun:anim:p:v_mis
+надлюди надлюдина noun:anim:p:v_kly
+
 # боголюди /np3.<
 боголюди боголюдина noun:anim:p:v_naz
 боголюдей боголюдина noun:anim:p:v_rod
@@ -335,6 +343,13 @@
 дівчата дівчина noun:anim:p:v_kly
 
 
+кабельтови кабельтов noun:inanim:p:v_naz/v_zna
+кабельтових кабельтов noun:inanim:p:v_rod
+кабельтовим кабельтов noun:inanim:p:v_dav
+кабельтовими кабельтов noun:inanim:p:v_oru
+кабельтових кабельтов noun:inanim:p:v_mis
+кабельтови кабельтов noun:inanim:p:v_kly
+
 
 # додаткові форми
 
@@ -345,6 +360,7 @@
 хліба хліб noun:p:v_naz/v_zna
 
 раз раз noun:inanim:p:v_rod
+корогов корогва noun:f:v_naz/v_zna
 
 сосон сосна noun:p:v_rod
 воріженьки вороженько noun:p:v_naz:anim:rare
@@ -356,6 +372,7 @@
 санями сани noun:inanim:p:v_oru:ns
 грошима гроші noun:p:v_oru:ns
 грішми гроші noun:p:v_oru:ns
+колісьми колесо noun:p:v_oru
 квазігрошима квазігроші noun:p:v_oru:ns
 квазігрішми квазігроші noun:p:v_oru:ns
 ворітьми ворота noun:p:v_oru:ns
