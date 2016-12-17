@@ -222,11 +222,12 @@
 полегша /n10.p1
 помісь conj:subord
 помісь part
+помісь /n32.p
 попроз попроз prep:rv_zna
 попсути /v2 :perf
 порист /n20.a.p.<
 посереду prep:rv_rod
-посланіє /n2n
+посланіє /n2n.p1
 поставець /n22.a.p
 постанець /n22.a.p.<>
 постілець /n22.a.p
@@ -283,7 +284,7 @@
 таж conj:subord|part
 таже conj:subord|part
 травознай /n20.a.p.<
-трансфлюксор /n20.a.p
+трансфлюксор /n20.a.p.ke
 трафунок /n22
 трепетати /v1.cf :imperf
 тридесять numr:p:v_naz/v_zna
@@ -304,7 +305,7 @@
 упоминати /v2 :imperf
 упоминатися /vr2 :imperf
 упомки упомки predic
-упруг /n20.a
+упруг /n20.a.p
 урадуваний /adj :&adjp:pasv:perf    # :past
 уряджений /adj :&adjp:pasv:perf    # :past
 успокоєний /adj :&adjp:pasv:perf    # :past

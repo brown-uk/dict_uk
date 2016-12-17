@@ -99,6 +99,20 @@
 іграми гра noun:p:v_oru
 іграх гра noun:p:v_mis
 
+телеігри телегра noun:p:v_naz/v_zna/v_kly
+телегри телегра noun:p:v_naz/v_zna              # 2,3,4 гри
+телеігор телегра noun:p:v_rod
+телеіграм телегра noun:p:v_dav
+телеіграми телегра noun:p:v_oru
+телеіграх телегра noun:p:v_mis
+
+суперігри супергра noun:p:v_naz/v_zna/v_kly
+супергри супергра noun:p:v_naz/v_zna              # 2,3,4 гри
+суперігор супергра noun:p:v_rod
+суперіграм супергра noun:p:v_dav
+суперіграми супергра noun:p:v_oru
+суперіграх супергра noun:p:v_mis
+
 відеоігри відеогра noun:p:v_naz/v_zna/v_kly
 відеоігор відеогра noun:p:v_rod
 відеоіграм відеогра noun:p:v_dav
@@ -323,6 +337,13 @@
 боголюдях боголюдина noun:anim:p:v_mis
 боголюди боголюдина noun:anim:p:v_kly
 
+хазяї хазяїн noun:anim:p:v_naz:ns
+хазяїв хазяїн noun:anim:p:v_rod:ns
+хазяям хазяїн noun:anim:p:v_dav:ns
+хазяїв хазяїн noun:anim:p:v_zna:ns
+хазяями хазяїн noun:anim:p:v_oru:ns
+хазяях хазяїн noun:anim:p:v_mis:ns
+хазяї хазяїн noun:anim:p:v_kly:ns
 
 # діти /np3.<
 діти дитина noun:anim:p:v_naz
@@ -352,6 +373,9 @@
 
 
 # додаткові форми
+
+постелею постіль noun:inanim:f:v_oru
+серць серце noun:p:v_rod
 
 людини людина noun:p:v_naz/v_zna:anim
 боголюдини боголюдина noun:p:v_naz/v_zna:anim
