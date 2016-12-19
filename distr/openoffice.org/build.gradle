@@ -1,10 +1,11 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
-version="3.5.1"
+version="3.6.0"
 def hunspellDir="../hunspell/build/hunspell"
 
-task prepareFiles << {
+task prepareFiles {
 
+  doLast() {
     copy {
         from "$hunspellDir/uk_UA.aff"
         from "$hunspellDir/uk_UA.dic"
@@ -32,6 +33,7 @@ task prepareFiles << {
     exec {
         commandLine 'sh', '-c', "bin/th_gen_idx.pl < thesaurus/th_uk_UA.dat > build/oxt/uk_UA/th_uk_UA.idx"
     }
+  }
 }
 
 task createOxt (type: Zip, dependsOn: prepareFiles) {

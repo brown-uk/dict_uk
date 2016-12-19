@@ -1,10 +1,11 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
-version="3.5.1"
+version="3.6.0"
 def hunspellDir="../hunspell/build/hunspell"
 
-task prepareFiles << {
+task prepareFiles {
 
+  doLast() {
 //    new File("build/xpi/dictionaries").mkdirs()
 
     copy {
@@ -29,6 +30,7 @@ task prepareFiles << {
         }
 	    into "build/xpi"
     }
+  }
 }
 
 task createXpi (type: Zip, dependsOn: prepareFiles) {
