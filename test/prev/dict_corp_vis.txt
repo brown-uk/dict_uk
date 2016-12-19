@@ -1511,6 +1511,13 @@
   вим'ї noun:inanim:n:v_mis
   вим'ю noun:inanim:n:v_mis
   вим'я noun:inanim:n:v_kly
+  вим'я noun:inanim:p:v_naz
+  вим'їв noun:inanim:p:v_rod
+  вим'ям noun:inanim:p:v_dav
+  вим'я noun:inanim:p:v_zna
+  вим'ями noun:inanim:p:v_oru
+  вим'ях noun:inanim:p:v_mis
+  вим'я noun:inanim:p:v_kly
 вихідний noun:inanim:m:v_naz
   вихідного noun:inanim:m:v_rod
   вихідному noun:inanim:m:v_dav
@@ -2855,6 +2862,13 @@
   сім'ям noun:inanim:n:v_oru
   сімені noun:inanim:n:v_mis
   сім'я noun:inanim:n:v_kly
+  сімена noun:inanim:p:v_naz
+  сімен noun:inanim:p:v_rod
+  сіменам noun:inanim:p:v_dav
+  сімена noun:inanim:p:v_zna
+  сіменами noun:inanim:p:v_oru
+  сіменах noun:inanim:p:v_mis
+  сімена noun:inanim:p:v_kly
 Склодовська-Кюрі noun:anim:f:v_naz:prop:lname
   Склодовської-Кюрі noun:anim:f:v_rod:prop:lname
   Склодовській-Кюрі noun:anim:f:v_dav:prop:lname
