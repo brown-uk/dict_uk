@@ -17,6 +17,14 @@ def affixMap = expand.affix.load_affixes(AFFIX_DIR)
 
 char hunFlag = (int)' '+1
 
+// we're running out of hunspell flags, need to compact some that don't overlap
+def reMapFlags = [
+    'adj_ev': 'n40',
+    'adj_pron': 'n40',
+    'vr': 'v'
+]
+
+
 def flagMap = [:].withDefault{ [] }
 def revFlagMap = [:]
 def toHunFlagMap = [:]
@@ -32,7 +40,7 @@ affixMap.each { flag, affixGroupMap ->
 
 affixMap.each { flag, affixGroupMap ->
 
-	if( flag.contains('.ku') || flag.contains('.u') || flag.contains("patr_pl") || flag.startsWith("vr") )
+	if( flag =~ /\.ku|n2[0-9].*\.u|patr_pl|vr/ )
 		return
 
 	//	println flag + " = " + affixGroupMap
@@ -58,7 +66,9 @@ affixMap.each { flag, affixGroupMap ->
 
 }
 
-println("Negative matches: " + negativeMatchFlags)
+//new File('mapping.txt').text = revFlagMap*.toString().join("\n")
+
+println("Negative matches:\n\t" + negativeMatchFlags*.toString().join("\n\t"))
 
 
 def NONSPELL_TAGS = ~ /:uncontr|:alt|:bad|verb.*coll/
@@ -142,7 +152,7 @@ flagMap.each{ flag, affixGroupItems ->
 				def matcherGroup = matcher.size()==1 ? matcher[0][1] : matcher[1][1]
 				
 				if( matcherGroup == "^жш" ) {
-					System.err.println("manual case for [^жш]")
+					System.err.println("Manual case for [^жш]")
 					matcherGroup = "бвгнпрст"
 				}
 				
