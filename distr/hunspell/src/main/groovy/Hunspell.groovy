@@ -19,9 +19,11 @@ char hunFlag = (int)' '+1
 
 // we're running out of hunspell flags, need to compact some that don't overlap
 def reMapFlags = [
+    'vr': 'v',
     'adj_ev': 'n40',
     'adj_pron': 'n40',
-    'vr': 'v'
+    'numr': 'n40',
+    'n2adj3': 'n40'
 ]
 
 
@@ -32,16 +34,24 @@ def negativeMatchFlags = [:].withDefault{ [] }
 
 
 affixMap.each { flag, affixGroupMap ->
-	if( flag.startsWith("vr") ) {
-		affixMap[ flag.replace('vr', 'v') ].putAll(affixGroupMap)
-	}
+    reMapFlags.each { k,v ->
+    	if( flag.startsWith(k) ) {
+	    	affixMap[ flag.replace(k, v) ].putAll(affixGroupMap)
+    	}
+    }
 }
 
 
+def reMapFlagsRe = reMapFlags.keySet().join("|")
+
 affixMap.each { flag, affixGroupMap ->
 
-	if( flag =~ /\.ku|n2[0-9].*\.u|patr_pl|vr/ )
+	if( flag =~ /\.ku|n2[0-9].*\.u|patr_pl|/ + reMapFlagsRe )
 		return
+
+	if( (int)hunFlag == 0x7F ) {
+	    System.err.println("WARNING: using hunspel flag > 0x7F, this may not work")
+	}
 
 	//	println flag + " = " + affixGroupMap
 
@@ -66,7 +76,7 @@ affixMap.each { flag, affixGroupMap ->
 
 }
 
-//new File('mapping.txt').text = revFlagMap*.toString().join("\n")
+new File('mapping.txt').text = revFlagMap*.toString().join("\n")
 
 println("Negative matches:\n\t" + negativeMatchFlags*.toString().join("\n\t"))
 
@@ -297,8 +307,10 @@ def lines = files.collect {
 
 		def allFlags = parts[1][1..-1]
 
-		if( allFlags.startsWith('vr') ) {
-			allFlags = allFlags.replace('vr', 'v')
+        reMapFlags.each { k,v ->
+        	if( allFlags.startsWith(k) ) {
+    			allFlags = allFlags.replace(k, v)
+            }
 		}
 
 		def flgs = allFlags.split(/\./)
