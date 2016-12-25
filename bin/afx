@@ -12,12 +12,14 @@ if uname -s | grep -q "_NT"; then
 fi
 
 
+GRADLE="$DIR/gradlew"
+
 if [ "$1" == "" ]; then
 
-gradle --project-dir $DIR -q $OPTS expandInteractive
+$GRADLE --project-dir $DIR -q $OPTS expandInteractive
 
 else
 
-echo "$@" | gradle --project-dir $DIR -q $OPTS expandInteractive
+echo "$@" | $GRADLE --project-dir $DIR -q $OPTS expandInteractive
 
 fi
