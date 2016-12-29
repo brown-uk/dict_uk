@@ -2,7 +2,6 @@ package org.dict_uk.expand
 
 import java.util.HashSet
 import java.util.List
-import java.util.logging.LogManager
 import java.util.regex.Pattern
 
 import org.apache.logging.log4j.LogManager
