@@ -1201,11 +1201,15 @@ class Expand {
 		}.flatten()
 
 		
+		return sortAndPostProcess(allEntries)
+	}
+
+	private sortAndPostProcess(List allEntries) {
 		List<DicEntry> sortedEntries = dictSorter.sortEntries(allEntries)
 
 		sortedEntries = post_process_sorted(sortedEntries)
 
-		sortedEntries = dictSorter.sortEntries(sortedEntries)
+		return dictSorter.sortEntries(sortedEntries)
 	}
 
 	void processInputAndPrint(List<String> inputLines) {
