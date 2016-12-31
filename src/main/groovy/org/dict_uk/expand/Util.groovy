@@ -20,39 +20,44 @@ import org.dict_uk.common.UkDictComparator
 class Util {
 	static Logger log = LogManager.getFormatterLogger(Util.class);
 
-
-	def tail_tag(line, tags) {
-		for( tag in tags ) {
+	@CompileStatic
+	DicEntry tail_tag(DicEntry line, List<String> tags) {
+		for(String tag in tags ) {
 			//        tag = ":" + tag
-			if( line.contains(tag) && ! line.endsWith(tag) ) {
-				line = line.replace(tag, "") + tag
+			if( line.tagStr.contains(tag) && ! line.tagStr.endsWith(tag) ) {
+				line.tagStr = line.tagStr.replace(tag, "") + tag
 			}
 		}
 		return line
 	}
 
-	def bacteria(allAffixFlags) {
+	@CompileStatic
+	boolean bacteria(String allAffixFlags) {
 		return allAffixFlags.contains(">>")
 	}
 
-	def istota(allAffixFlags) {
+	@CompileStatic
+	boolean istota(String allAffixFlags) {
 		return allAffixFlags.contains("<")
 	}
 
-	def person(allAffixFlags) {
+	@CompileStatic
+	boolean person(String allAffixFlags) {
 		return allAffixFlags.contains("<") && ! allAffixFlags.contains(">")
 	}
 
-	@TypeChecked
-	def firstname(String word, String allAffixFlags) {
+	@CompileStatic
+	boolean firstname(String word, String allAffixFlags) {
 		return (allAffixFlags.contains("<") && ! allAffixFlags.contains(">")) \
 			&& ! allAffixFlags.contains("<+") \
 			&& word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase() \
 			&& ! allAffixFlags.contains(":prop")    // Всевишній - :prop but not :fname
 	}
 
-	def DUAL_LAST_NAME_PATTERN = ~ ".*(о|ич|ук|юк|як|аш|яш|сь|ун|ин|сон) "
-	def dual_last_name_ending(line) {
+	static final Pattern DUAL_LAST_NAME_PATTERN = ~ ".*(о|ич|ук|юк|як|аш|яш|сь|ун|ин|сон) "
+
+	@CompileStatic
+	def dual_last_name_ending(String line) {
 		return line.contains("+d") || DUAL_LAST_NAME_PATTERN.matcher(line)
 	}
 
@@ -98,8 +103,8 @@ class Util {
 		}
 	}
 
-	static final List<String> GEN_LIST=["m", "f", "n", "p"]
-	static final List<String> VIDM_LIST=[
+	private static final List<String> GEN_LIST = ["m", "f", "n", "p"]
+	private static final List<String> VIDM_LIST = [
 		"v_naz",
 		"v_rod",
 		"v_dav",
@@ -108,42 +113,48 @@ class Util {
 		"v_mis",
 		"v_kly"
 	]
-	static final Pattern re_nv_vidm=Pattern.compile("(noun):[mfn]:(.*)")
+	static final Pattern re_nv_vidm = Pattern.compile("(noun):[mfn]:(.*)")
 
-	//@profile
-	@TypeChecked
-	List<String> expand_nv(List<String> in_lines) {
+	@CompileStatic
+	List<DicEntry> expand_nv(List<DicEntry> in_lines) {
 		def lines = []
 
 		for( line in in_lines ){
-			if ( ( line.contains("noun") || line.contains("numr") ) && line.contains(":nv") && ! line.contains(":v_") ) {
-				def parts = line.split(":nv")
+			def lineTagStr = line.tagStr
+
+			if( ! lineTagStr.contains(":nv") ) {
+				lines << line
+			}
+			
+			if ( ( lineTagStr.contains("noun") || lineTagStr.contains("numr") ) && ! lineTagStr.contains(":v_") ) {
+				def parts = lineTagStr.split(":nv")
 				def part2 = parts.size() > 1 ? parts[1] : ""
 
 
 				for( v in VIDM_LIST ){
 //					if( v == "v_kly" && (! (":anim" in line) || ":lname" in line) )
-					if( v == "v_kly" && line.contains(". ") )
+					if( v == "v_kly" && line.word.endsWith(".") )
 						continue
 
-					lines.add(parts[0] + ":" + v + ":nv" + part2)
+					lines.add(new DicEntry(line.word, line.lemma, parts[0] + ":" + v + ":nv" + part2))
 				}
 
-				if( line.contains("noun") ) {
-					if( ! line.contains(":p") && ! line.contains(":np") && ! line.contains(":lname") ) {
+				if( lineTagStr.contains("noun") ) {
+					if( ! lineTagStr.contains(":p") && ! lineTagStr.contains(":np") && ! lineTagStr.contains(":lname") ) {
 						for( v in VIDM_LIST ) {
-        					if( v == "v_kly" && line.contains(". ") )
+        					if( v == "v_kly" && line.word.endsWith(".") )
         					    continue
 //							if( v != "v_kly" || "anim" in line) {
-							lines.add(re_nv_vidm.matcher(line).replaceAll('$1:p:' + v + ':$2'))
+							def newTagStr = re_nv_vidm.matcher(lineTagStr).replaceAll('$1:p:' + v + ':$2')
+							lines.add(new DicEntry(line.word, line.lemma, newTagStr))
 //							}
 						}
 					}
 				}
 			}
 			//        print("expand_nv", in_lines, "\n", lines, file=sys.stderr)
-			else if (line.contains("adj") && line.contains(":nv") && ! line.contains(":v_") ) {
-				def parts = line.split(":nv")
+			else if (lineTagStr.contains("adj") && ! lineTagStr.contains(":v_") ) {
+				def parts = lineTagStr.split(":nv")
 
 				def gens
 				if( parts[0] ==~ /.*:[mnfp]/) {
@@ -157,14 +168,13 @@ class Util {
 				for( g in gens ){
 					for( v in VIDM_LIST ){
 //						if( v == "v_kly" && (! (":anim" in line) || ":lname" in line) )    // TODO: include v_kly? but ! for abbr like кв.
-        				if( v == "v_kly" && (line.contains(". ") || line.contains("&pron")) )
+        				if( v == "v_kly" && (line.word.endsWith(".") || lineTagStr.contains("&pron")) )
 							continue
 
-						lines.add(parts[0] + ":" + g + ":" + v + ":nv" + (parts.size()>1 ? parts[1] :""))
+						def newTagStr = parts[0] + ":" + g + ":" + v + ":nv" + (parts.size()>1 ? parts[1] :"")
+						lines.add(new DicEntry(line.word, line.lemma, newTagStr))
 					}
 				}
-			} else {
-				lines.add(line)
 			}
 		}
 		return lines
@@ -172,7 +182,7 @@ class Util {
 
 
 
-	def sub_stat(String pos, String sub_pos, String line, sub_pos_stat) {
+	void sub_stat(String pos, String sub_pos, String line, sub_pos_stat) {
 		if( line.contains(":" + sub_pos) ) {
 			if( ! (pos in sub_pos_stat) ) {
 				sub_pos_stat[pos] = [:].withDefault{ 0 }
@@ -181,7 +191,7 @@ class Util {
 		}
 	}
 
-	def stat_keys = [
+	private static final List<String> stat_keys = [
 		"inanim",
 		"anim",
 		"prop",
@@ -198,10 +208,10 @@ class Util {
 		def pos_stat = [:].withDefault { 0 }
 		def sub_pos_stat = [:].withDefault { [:] }
 		def letter_stat = [:].withDefault { 0 }
-		def cnt = 0
-		def cnt_std = 0
+		int cnt = 0
+		int cnt_std = 0
 
-		for( line in lines ) {
+		for(String line in lines ) {
 			if( line[0] == " ")
 				continue
 
@@ -259,8 +269,8 @@ class Util {
 	}
 
 
-	//	@TypeChecked
-	void print_word_list(List<String> sorted_lines) {
+//	@TypeChecked
+	void print_word_list(List<DicEntry> sortedEntries) {
 		log.info("Collecting words, lemmas, and tags...")
 
 		def time1 = System.currentTimeMillis()
@@ -270,8 +280,7 @@ class Util {
 		HashSet<String> lemmas = new HashSet<>()
 		HashSet<String> tags = new HashSet<>()
 
-		for( line in sorted_lines ) {
-			DicEntry dicEntry = DicEntry.fromLine(line)
+		for(DicEntry dicEntry in sortedEntries ) {
 			def word = dicEntry.word
 			def lemma = dicEntry.lemma
 			def tag = dicEntry.tagStr
@@ -279,8 +288,13 @@ class Util {
 			words.add(dicEntry.word)
 			lemmas.add(dicEntry.lemma)
 
-			if( ! tag.contains(":bad") && ! tag.contains(":alt") && ! tag.contains(":uncontr") && ! word.endsWith(".") \
-			        && ! tag.contains(":coll") && ! (tag.contains(":inanim") && tag.contains(":v_kly") ) ) {
+			if( ! tag.contains(":bad") 
+					&& ! tag.contains(":alt") 
+					&& ! tag.contains(":uncontr") 
+					&& ! word.endsWith(".")
+			    	&& ! tag.contains(":coll") 
+					&& ! (tag.contains(":inanim") 
+						&& tag.contains(":v_kly") ) ) {
 				spell_words.add(word)
 			}
 
@@ -288,7 +302,6 @@ class Util {
 		}
 
 		GParsExecutorsPool.withPool {ExecutorService executorService ->
-//			AsyncInvokerUtil.doInParallel( {
 			executorService << { 
 				def lemmaList = DictSorter.quickUkSort(lemmas)
 				new File("lemmas.txt").withWriter("utf-8") { f ->
@@ -337,8 +350,9 @@ class Util {
 
 	}
 
-	def log_usage(affix) {
+	void log_usage(Affix affix) {
 		def affixMap = affix.affixMap.sort()
+		
 		new File("affix_usage.txt").withWriter("utf-8") { usageFile ->
 			for( e in affixMap ) {
 				def affixGroups = e.value

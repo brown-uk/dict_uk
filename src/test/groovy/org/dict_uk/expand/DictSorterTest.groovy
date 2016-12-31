@@ -2,6 +2,7 @@ package org.dict_uk.expand
 
 import static org.junit.Assert.*;
 
+import org.dict_uk.common.DicEntry
 import org.junit.Test;
 
 public class DictSorterTest extends GroovyTestCase {
@@ -11,7 +12,7 @@ public class DictSorterTest extends GroovyTestCase {
 //	@Setup
 	@Override
 	void setUp() {
-		dictSorter = new Util()
+		dictSorter = new DictSorter()
 	} 
 	
 	@Test
@@ -51,7 +52,7 @@ public class DictSorterTest extends GroovyTestCase {
 	void testLineSortKey() {
 		def prevKey = ""
 		linesToSort.each{ line ->
-			def key = dictSorter.line_key(line)
+			def key = dictSorter.line_key(DicEntry.fromLine(line))
 			assert key.compareTo(prevKey) > 0
 			prevKey = key 
 		}
@@ -59,6 +60,7 @@ public class DictSorterTest extends GroovyTestCase {
 	
 	@Test
 	void testAllLines() {
-		assert ["а а intj", "а а part"] == dictSorter.sort_all_lines(["а а part", "а а intj"])
+		def entries = DicEntry.fromLines(["а а part", "а а intj"])
+		assert ["а а intj", "а а part"].join('\n') == ExpandTest.join(dictSorter.sortEntries(entries))
 	}
 }

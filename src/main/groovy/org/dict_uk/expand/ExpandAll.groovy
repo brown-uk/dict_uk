@@ -3,22 +3,25 @@
 package org.dict_uk.expand
 
 import org.dict_uk.expand.TaggedWordlist
+
+import groovy.transform.CompileStatic
+
 import org.dict_uk.expand.Expand
 import org.dict_uk.expand.ExpandComps
 
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
- 
+import org.dict_uk.common.DicEntry
 import org.dict_uk.expand.Args
 
-//@groovy.util.logging.Log4j2
 class ExpandAll {
 	static Logger log = LogManager.getFormatterLogger(ExpandAll.class);
 	
-	static void main(argv) {
+	@CompileStatic
+	static void main(String[] argv) {
 		Args.parse(argv)
 
-		def expand = new Expand()
+		Expand expand = new Expand()
 		expand.affix.load_affixes(Args.args.affixDir)
 
 
@@ -26,11 +29,15 @@ class ExpandAll {
 
 		def dictFilePattern = ~/.*\.lst/
 		new File(Args.args.dictDir).eachFileMatch(dictFilePattern) { dic_file ->
-			def out
+			List<String> out
 			if( dic_file.getName() == "composite.lst" ) {
 				def expand_comps = new ExpandComps(expand)
 				def dic_file_reader = dic_file.withReader("utf-8") { reader ->
-					out = expand_comps.process_input(reader.readLines())
+					def lines = reader.readLines()
+					def entries = expand_comps.process_input(lines)
+					out = entries.collect { DicEntry it ->
+						 it.toFlatString() 
+					}
 				}
 				//                out = sorted(out, key=locale.strxfrm)   // just to have consistent output in word_list.txt
 			}
@@ -52,14 +59,10 @@ class ExpandAll {
 		//    with open("word_list.txt", "w") as out_file:
 		//        out_file.write("\n".join(out_lines))
 
-		out_lines = expand.process_input(out_lines)
+//		List<DicEntry> entries = expand.process_input(out_lines)
 
-		new File("dict_corp_vis.txt").withWriter("utf-8") { out_file ->
-			for( line in out_lines ) {
-				out_file.write(line + "\n")
-			}
-		}
-
+		expand.processInputAndPrint(out_lines)
+		
 	}
 
 }

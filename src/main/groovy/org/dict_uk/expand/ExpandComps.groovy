@@ -8,7 +8,7 @@ import java.util.regex.*;
 
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
-
+import org.dict_uk.common.DicEntry
 import org.dict_uk.expand.Expand
 
 class ExpandComps {
@@ -24,19 +24,19 @@ class ExpandComps {
 	}
 
 	@TypeChecked
-	List<String> match_comps(List<String> lefts, List<String> rights) {
-		def outs = []
+	List<DicEntry> match_comps(List<DicEntry> lefts, List<DicEntry> rights) {
+		List<DicEntry> outs = []
 		Map<String, List<String>> left_v = [:]
-		def left_gen = ""
-		def mixed_gen = false
+		String left_gen = ""
+		boolean mixed_gen = false
 
 		def left_wn
 		def left_tags
 
 
-		for( ln in lefts ) {
-			def parts = ln.split(" ")
-			def rrr = gen_vidm_pattern.matcher(parts[2])
+		for(DicEntry ln in lefts) {
+//			def parts = ln.split(" ")
+			def rrr = gen_vidm_pattern.matcher(ln.tagStr)
 			if( ! rrr.find() ) {
 				log.warn("ignoring left %s", ln)
 				continue
@@ -53,24 +53,23 @@ class ExpandComps {
 			if( ! (vidm in left_v) )
 				left_v[vidm] = []
 
-			left_v[vidm].add(parts[0])
-			left_wn = parts[1]
-			left_tags = parts[2]
+			left_v[vidm].add(ln.word)
+			left_wn = ln.lemma
+			left_tags = ln.tagStr
 		}
+
 		if( mixed_gen ) {
 			left_gen = ""
 		}
 
 		if( rights.size() == 1 ) {
-			return lefts.collect { 
-				def parts = it.split()
-				parts[0]+"-"+rights[0] + " " + parts[1]+"-"+rights[0] + " " + parts[2] 
+			return lefts.collect { DicEntry left ->
+				new DicEntry(left.word+"-"+rights[0].word, left.lemma+"-"+rights[0].word, left.tagStr) 
 			}
 		}
 
-		for( rn in rights ) {
-			def parts = rn.split(" ")
-			def rrr = gen_vidm_pattern.matcher(rn)
+		for(DicEntry rn in rights ) {
+			def rrr = gen_vidm_pattern.matcher(rn.tagStr)
 			if( ! rrr.find() ) {
 				log.warn("composite: ignoring right %s", rn)
 				continue
@@ -84,12 +83,12 @@ class ExpandComps {
 				continue
 
 			for(String left_wi in left_v[vidm] ) {
-				String w_infl = left_wi + "-" + parts[0]
-				String lemma = left_wn + "-" + parts[1]
+				String w_infl = left_wi + "-" + rn.word
+				String lemma = left_wn + "-" + rn.lemma
 				
-				def str = w_infl + " " + lemma + " " +
-						tags_re.matcher(left_tags).replaceAll('$1'+vidm+'$2')
-				outs.add(str)
+				String tagStr = tags_re.matcher(left_tags).replaceAll('$1'+vidm+'$2')
+				DicEntry entry = new DicEntry(w_infl, lemma, tagStr)
+				outs.add(entry)
 			}
 		}
 
@@ -97,9 +96,10 @@ class ExpandComps {
 	}
 
 	@TypeChecked
-	List<String> expand_composite_line(String line) {
+	List<DicEntry> expand_composite_line(String line) {
 		if( ! line.contains(" - ") )
-			return [line]
+//			return [line]
+			throw new IllegalArgumentException("Only composite lines are supported here, was: " + line)
 
 		def parts_all
 		if( line.contains(" :") ) {
@@ -127,36 +127,34 @@ class ExpandComps {
 			}
 		}
 
-		def lefts = expand.expand_line(parts[0]) //, true)
+		List<DicEntry> lefts = expand.expand_line(parts[0]) //, true)
 
-		def rights = parts[1].contains("/") ? expand.expand_line(parts[1]) : [parts[1]]
+		List<DicEntry> rights = parts[1].contains("/") ? expand.expand_line(parts[1]) : [new DicEntry(parts[1], parts[1], null)]
 
-		def comps = match_comps(lefts, rights)
-
-		return comps
+		return match_comps(lefts, rights)
 	}
 
 	@TypeChecked
-	def process_input(List<String> out_lines) {
-		def out = []
+	def process_input(List<String> lines) {
+		List<DicEntry> out = []
 
-		for( line in out_lines ) {
+		for(String line in lines) {
 
 			line = line.trim()
 			if( ! line || line[0] == "#" )
 				continue
 
 			try {
-				def comps = expand_composite_line(line)
+				List<DicEntry> comps = expand_composite_line(line)
 				
 				if( Character.isUpperCase(line.charAt(0)) && ! line.contains("<") ) {
-				    comps = comps.collect { it + ":prop" }
+				    comps.each { it.tagStr += ":prop" }
 				}
 				
 				out.addAll(comps)
 			}
 			catch(e) {
-				System.err.printf("Failed at %s\n", line)
+				System.err.printf("Failed composite at %s: %s\n", line, e.getMessage())
 				throw e
 			}
 		}

@@ -2,16 +2,15 @@
 
 package org.dict_uk.expand
 
-import groovy.transform.TypeChecked
-import groovyx.gpars.ParallelEnhancer
-import groovyx.gpars.GParsPool
-
 import java.util.regex.*
 
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
-
 import org.dict_uk.common.*
+
+import groovy.transform.CompileStatic
+import groovy.transform.TypeChecked
+import groovyx.gpars.ParallelEnhancer
 
 
 class Expand {
@@ -25,12 +24,12 @@ class Expand {
 	private final List<String> limitedVerbLemmas = ["житися", "забракнуло", "зберігти", "зберігтись", "зберігтися"];
 
 
-	Pattern cf_flag_pattern = ~ /(vr?)[1-4]\.cf/	 // v5.cf is special
-	Pattern imprs_pattern = ~ /(vr?)[1-9]\.imprs/
-	Pattern pattr_pattern = ~ /n[0-9]+\.patr/
+	static final Pattern cf_flag_pattern = ~ /(vr?)[1-4]\.cf/	 // v5.cf is special
+	static final Pattern imprs_pattern = ~ /(vr?)[1-9]\.imprs/
+	static final Pattern pattr_pattern = ~ /n[0-9]+\.patr/
 //	Pattern default_kly_u_pattern = ~ /([^бвджзлмнпстфц]|[аеиу]р)$/
-	static Pattern default_kly_u_pattern = ~ /[^бвджзлмнпстфц]$/
-	static Pattern default_kly_u_soft_pattern = ~ /[аеиу]р$/
+	static final Pattern default_kly_u_pattern = ~ /[^бвджзлмнпстфц]$/
+	static final Pattern default_kly_u_soft_pattern = ~ /[аеиу]р$/
 
     static boolean isDefaultKlyU(String word, String flags) {
         return word =~ default_kly_u_pattern \
@@ -42,7 +41,7 @@ class Expand {
             || (!flags.contains("n24") && word =~ default_kly_u_soft_pattern)
     }
 
-	@TypeChecked
+	@CompileStatic
 	def adjustCommonFlag(String affixFlag2) {
 		if( affixFlag2.contains(".cf") ) {
 			affixFlag2 = cf_flag_pattern.matcher(affixFlag2).replaceFirst('$1.cf')
@@ -56,8 +55,8 @@ class Expand {
 		return affixFlag2
 	}
 
-	@TypeChecked
-	List<String> expand_suffixes(String word, String affixFlags, Map<String,String> modifiers, String extra) {
+//	@CompileStatic
+	List<DicEntry> expand_suffixes(String word, String affixFlags, Map<String,String> modifiers, String extra) {
 		//		log.info("%s %s %s %s\n", word, affixFlags, modifiers, extra)
 
 		def affixSubGroups = affixFlags.split("\\.")
@@ -65,9 +64,9 @@ class Expand {
 
 		String pos = util.get_pos(mainGroup, modifiers)
 		def base_tag = base_tags.get_base_tags(word, "", affixFlags, extra)
-		//2      base_word = word + " " + pos + base_tag
-		def base_word = word + " " + word + " " + pos + base_tag
-		def words = [base_word]
+
+		DicEntry base_word = new DicEntry(word, word, pos + base_tag)
+		List<DicEntry> words = [base_word]
 
 		if( affixFlags[0] == "<" )
 			return words
@@ -103,7 +102,7 @@ class Expand {
 
 			Map<String, SuffixGroup> affixGroupMap = affix.affixMap[affixFlag2]
 
-			for( Map.Entry<String, SuffixGroup> ent in affixGroupMap.entrySet() ) {
+			for(Map.Entry<String, SuffixGroup> ent in affixGroupMap.entrySet() ) {
 				def match = ent.key
 				SuffixGroup affixGroup = ent.value
 
@@ -128,7 +127,7 @@ class Expand {
 							tags += ":prop:patr"
 						}
 
-						words.add(deriv + " " + word + " " + tags)
+						words.add(new DicEntry(deriv, word, tags))
 						appliedCnt += 1
 						appliedCnts[affixFlag2] += 1
 
@@ -145,7 +144,7 @@ class Expand {
 			}
 		}
 
-		def dups = words.findAll { words.count(it) > 1 }.unique()
+		List<DicEntry> dups = words.findAll { words.count(it) > 1 }.unique()
 		if( dups.size() > 0) {
 		    if( ! (affixFlags =~ /p1\.p2|p[12]\.piv/) ) {
 			    log.warn("duplicates: " + dups + " for " + word + " " + affixFlags)
@@ -227,7 +226,8 @@ class Expand {
 	}
 
 	@TypeChecked
-	boolean filter_word(String w, Map modifiers) {
+	boolean filter_word(DicEntry entry, Map modifiers) {
+		String w = entry.tagStr
 		if( "gen" in modifiers) {
 			//        util.dbg("filter by gen", modifiers, w)
 			if( ! (w =~ (":[" + modifiers["gen"] + "]:") ) )
@@ -244,8 +244,8 @@ class Expand {
 		return true
 	}
 
-	@TypeChecked
-	List<String> modify(List<String> lines, Map modifiers) {
+	@CompileStatic
+	List<DicEntry> modify(List<DicEntry> lines, Map<String, String> modifiers) {
 		//    util.dbg("mods", modifiers)
 		if( modifiers.size() == 0)
 			return lines
@@ -258,12 +258,12 @@ class Expand {
 				continue
 			}
 			if( "pos" in modifiers) {
-				line = line.replaceAll(" [^ :]+:", " " + modifiers["pos"] + ":")
+				line.tagStr = line.tagStr.replaceAll("^[^:]+", modifiers["pos"])
 				//            util.debug("pos repl %s in %s", modifiers["pos"], line)
 			}
-			if( "force_gen" in modifiers && ! line.contains(":patr") ) {
+			if( "force_gen" in modifiers && ! line.tagStr.contains(":patr") ) {
 				def force_gen = modifiers["force_gen"]
-				line = line.replaceAll(/:[mfn](:|$)/,  ":" + force_gen + /$1/)
+				line.tagStr = line.tagStr.replaceAll(/:[mfn](:|$)/,  ":" + force_gen + /$1/)
 				//            util.debug("gen repl: %s in %s", force_gen, line)
 			}
 
@@ -306,7 +306,7 @@ class Expand {
 	Pattern and_adjp_pattern = ~ /:&_?adjp(:pasv|:actv|:perf|:imperf)+/
 
 	@TypeChecked
-	List<String> post_expand(List<String> lines, String flags) {
+	List<DicEntry> post_expand(List<DicEntry> lines, String flags) {
 		if( lines.size() == 0)
 			throw new Exception("emtpy lines")
 
@@ -314,82 +314,77 @@ class Expand {
 
 
 		if( extra_flags) {
-			def first_name_base = util.firstname(lines[0], flags)
+			boolean first_name_base = util.firstname(lines[0].word, flags)
 
-			def out_lines = []
-			def extra_out_lines = []
+			List<DicEntry> out_lines = []
+			List<DicEntry> extra_out_lines = []
 
 			for( line in lines) {
 				String extra_flags2 = extra_flags
 
-				if( first_name_base && ! line.contains("patr") && ! flags.contains(":patr") ) {
+				if( first_name_base && ! line.tagStr.contains("patr") && ! flags.contains(":patr") ) {
 					extra_flags2 += ":prop:fname"
 				}
-				if( line.contains(" advp") ) {
-					if( line.contains(":imperf") )
+				if( line.tagStr.startsWith("advp") ) {
+					if( line.tagStr.contains(":imperf") )
 						extra_flags2 = perf_imperf_pattern.matcher(extra_flags2).replaceFirst("")
 					else
-						line = line.replace(":perf", "")
+						line.tagStr = line.tagStr.replace(":perf", "")
 				}
-				else if( flags.contains("adj.adv") && line.contains(" adv") )
+				else if( flags.contains("adj.adv") && line.tagStr.startsWith("adv") ) {
 					extra_flags2 = and_adjp_pattern.matcher(extra_flags2).replaceFirst("")
+				}
 				else if( extra_flags.contains(":+m") ) {
 					extra_flags2 = extra_flags2.replace(":+m", "")
 
-					if( line.contains(":f:") ) {
-						def masc_line = line.replace(":f:", ":m:") + extra_flags2
-						extra_out_lines.add(masc_line)
+					if( line.tagStr.contains(":f:") ) {
+						String  mascLineTags2 = line.tagStr.replace(":f:", ":m:") + extra_flags2
+						extra_out_lines.add(new DicEntry(line.word, line.lemma, mascLineTags2))
 					}
-					else if( line.contains(":n:") ) {
-						def masc_line = line.replace(":n:", ":m:") + extra_flags2
+					else if( line.tagStr.contains(":n:") ) {
+						String mascLineTags = line.tagStr.replace(":n:", ":m:") + extra_flags2
 
 						if( util.istota(flags)) {
-							if( masc_line.contains("m:v_rod") ) {
-								def masc_line2 = masc_line.replace("m:v_rod", "m:v_zna")
-								extra_out_lines.add(masc_line2)
+							if( mascLineTags.contains("m:v_rod") ) {
+								def mascLineTags2 = mascLineTags.replace("m:v_rod", "m:v_zna")
+								extra_out_lines.add(new DicEntry(line.word, line.lemma, mascLineTags2))
 							}
-							else if( masc_line.contains("m:v_zna") ) {
-								masc_line = ""
+							else if( mascLineTags.contains("m:v_zna") ) {
+								mascLineTags = ""
 							}
-							if( masc_line.contains("m:v_kly") ) {
-								//                            word, lemma, tags = masc_line.split()
-								DicEntry dicEntry = DicEntry.fromLine(masc_line)
-								masc_line = dicEntry.word[0..<-1]+"е " + dicEntry.lemma + " " + dicEntry.tagStr
+
+							if( mascLineTags.contains("m:v_kly") ) {
+								extra_out_lines << new DicEntry(line.word[0..<-1] + "е", line.lemma, mascLineTags)
+								mascLineTags = null
 							}
 						}
-						if( masc_line ) {
-							extra_out_lines.add(masc_line)
+						if( mascLineTags ) {
+							extra_out_lines << new DicEntry(line.word, line.lemma, mascLineTags)
 						}
 					}
 				}
 				else if( extra_flags.contains(":+f") ) {
 					extra_flags2 = extra_flags2.replace(":+f", "")
 
-					if( line.contains(":m:") ) {
-						def masc_line = line.replace(":m:", ":f:") + extra_flags2
-						extra_out_lines.add(masc_line)
+					if( line.tagStr.contains(":m:") ) {
+						String masc_line = line.tagStr.replace(":m:", ":f:") + extra_flags2
+						extra_out_lines.add(new DicEntry(line.word, line.lemma, masc_line))
 					}
-					else if( line.contains(":n:") ) {
-						def masc_line = line.replace(":n:", ":f:") + extra_flags2
-
-						//                     if( util.istota(flags)) {
-						//                         if( "m:v_rod" in masc_line) {
-						//                             masc_line2 = masc_line.replace("m:v_rod", "m:v_zna")
-						//                             extra_out_lines.add(masc_line2)
-						//                         else if "m:v_zna" in masc_line:
-						//                             masc_line = ""
+					else if( line.tagStr.contains(":n:") ) {
+						String masc_line = line.tagStr.replace(":n:", ":f:") + extra_flags2
 
 						if( masc_line) {
-							extra_out_lines.add(masc_line)
+							extra_out_lines.add(new DicEntry(line.word, line.lemma, masc_line))
 						}
 					}
 				}
-				else if( line.contains(":patr") && extra_flags2.contains(":anim") ) {
-					line = line.replace(":patr", ":anim:patr")
+				else if( line.tagStr.contains(":patr") && extra_flags2.contains(":anim") ) {
+					line.tagStr = line.tagStr.replace(":patr", ":anim:patr")
 					extra_flags2 = extra_flags2.replace(":anim", "")
 				}
-				out_lines.add(line + extra_flags2)
+				out_lines.add(new DicEntry(line.word, line.lemma, line.tagStr + extra_flags2))
 			}
+
 			out_lines.addAll(extra_out_lines)
 
 			return out_lines
@@ -398,130 +393,130 @@ class Expand {
 	}
 
 	@TypeChecked
-	List<String> adjust_affix_tags(List<String> lines, String main_flag, String flags, Map<String,String> modifiers) {
+	List<DicEntry> adjust_affix_tags(List<DicEntry> lines, String main_flag, String flags, Map<String,String> modifiers) {
 		def lines2 = []
 
-		for( line in lines) {
+		for(DicEntry line in lines) {
 			// DL-
 			if( main_flag[1] == "n" ) {
 
-				def word
+				String word
 				String base_word
 				if( main_flag.startsWith("/n2") && main_flag =~ "^/n2[01234]" ) {
-					base_word = line.split()[1]
+					base_word = line.lemma
 
 					if( util.istota(flags)) {
-						if( line.contains("m:v_rod") && ! line.contains("/v_zna") ) {
-							line = line.replace("m:v_rod", "m:v_rod/v_zna")
+						if( line.tagStr.contains("m:v_rod") && ! line.tagStr.contains("/v_zna") ) {
+							line.setTagStr( line.tagStr.replace("m:v_rod", "m:v_rod/v_zna") )
 						}
 					}
 					if( ! "аеєиіїоюя".contains(base_word[-1..-1]) && ! flags.contains(".a") ) {
-						word = line.split()[0]
+						word = line.word
 						if( "ую".contains(word[-1..-1]) ) {
-							line = line.replace("v_dav", "v_rod/v_dav")
+							line.setTagStr( line.tagStr.replace("v_dav", "v_rod/v_dav") )
 						}
 					}
 				}
 				else if( main_flag.startsWith("/n2adj") ) {
 					if( ! util.istota(flags)) {
-						if( line.contains("v_rod/v_zna") ) {
-							line = line.replace("/v_zna", "")
+						if( line.tagStr.contains("v_rod/v_zna") ) {
+							line.tagStr = line.tagStr.replace("/v_zna", "")
 						}
 					}
-					else if( flags.contains("<+") && ! flags.contains(".k") && line.split()[1].endsWith("ів") ) {
-					    if( line.contains("v_kly") ) 
-					        if( ! line.contains("/v_kly") ) 
+					else if( flags.contains("<+") && ! flags.contains(".k") && line.lemma.endsWith("ів") ) {
+					    if( line.tagStr.contains("v_kly") ) 
+					        if( ! line.tagStr.contains("/v_kly") ) 
 					            continue;
 //					        else
 //					            line = line.replace("/v_kly", "")
 					}
 					else if( util.person(flags) ) {
-						line = line.replace("p:v_naz/v_zna", "p:v_naz")
+						line.tagStr = line.tagStr.replace("p:v_naz/v_zna", "p:v_naz")
 					}
 				}
 				else if( main_flag.startsWith("/n2nm") ) {
 					if( util.istota(flags)) {
-						if( line.contains("m:v_rod") && ! line.contains("/v_zna") ) {
-							line = line.replace("m:v_rod", "m:v_rod/v_zna")
+						if( line.tagStr.contains("m:v_rod") && ! line.tagStr.contains("/v_zna") ) {
+							line.tagStr = line.tagStr.replace("m:v_rod", "m:v_rod/v_zna")
 						}
 					}
 				}
 				
 				if( main_flag.startsWith("/n2") && flags.contains("@") ) {
-					word = line.split(" ", 2)[0]
-					if( "ая".contains(word[-1..-1]) && line.contains("m:v_rod") ) {
-						line = line.replace("m:v_rod", "m:v_rod/v_zna")
+					word = line.word
+					if( "ая".contains(word[-1..-1]) && line.tagStr.contains("m:v_rod") ) {
+						line.setTagStr( line.tagStr.replace("m:v_rod", "m:v_rod/v_zna") )
 					}
 				}
 				
 				if( ! main_flag.contains("np") && ! main_flag.contains(".p") \
 				        && ! flags.contains("n2adj") && ! main_flag.contains("numr") ) {
-					if( line.contains(":p:") ) {
+					if( line.tagStr.contains(":p:") ) {
 						// log.debug("skipping line with p: " + line)
 					}
-					else if( line.contains("//p:") ) {
-						line = line.replaceAll("//p:.*", "")
+					else if( line.tagStr.contains("//p:") ) {
+						line.setTagStr( line.tagStr.replaceAll("//p:.*", "") )
 						// log.debug("removing //p from: " + line)
 					}
 				}
 				
-				if( line.contains("/v_kly") ) {
+				if( line.tagStr.contains("/v_kly") ) {
 					if( main_flag.startsWith("/n1")) { // Єремія /n10.ko.patr.<
-						base_word = line.split()[1]
+						base_word = line.lemma
 					}
 					
 					boolean explicitKly = flags.contains(".ko") || flags.contains(".ke")
-					if( ( explicitKly && ! line.contains(":patr") ) \
+					if( ( explicitKly && ! line.tagStr.contains(":patr") ) \
 					        || ( ! explicitKly && main_flag =~ /n2[0-4]/ && ! isDefaultKlyU(base_word, flags) )
-                            || (line.contains(":m:") && flags.contains("<+") ) ) {
+                            || (line.tagStr.contains(":m:") && flags.contains("<+") ) ) {
 						//log.info("removing v_kly from: %s, %s", line, flags)
-						line = line.replace("/v_kly", "")
+						line.setTagStr( line.tagStr.replace("/v_kly", "") )
 					}
 				}
 				
 				if( main_flag.contains(".p") || main_flag.contains("np") ) {
 //					if( util.person(flags)) {
 					if( main_flag.contains(".") ) {
-						line = line.replace("p:v_naz", "p:v_naz/v_kly")
+						line.setTagStr( line.tagStr.replace("p:v_naz", "p:v_naz/v_kly") )
 					}
 					
 					if( util.istota(flags) ) {
-						line = line.replace("p:v_rod", "p:v_rod/v_zna")
+						line.setTagStr( line.tagStr.replace("p:v_rod", "p:v_rod/v_zna") )
 						if( flags.contains(">") ) { // animal
-							line = line.replace("p:v_naz", "p:v_naz/v_zna")
+							line.setTagStr( line.tagStr.replace("p:v_naz", "p:v_naz/v_zna") )
 						}
 					}
 					else {
-						line = line.replace("p:v_naz", "p:v_naz/v_zna")
+						line.setTagStr( line.tagStr.replace("p:v_naz", "p:v_naz/v_zna") )
 					}
 				}
 			}
-			else if( flags.contains(":perf") && line.contains(":pres") ) {
-				line = line.replace(":pres", ":futr")
+			else if( flags.contains(":perf") && line.tagStr.contains(":pres") ) {
+				line.setTagStr( line.tagStr.replace(":pres", ":futr") )
 			}
 			else if( main_flag.startsWith("/adj") ) {
 				if( flags.contains("<") || flags.contains("^noun") ) {
-					if( line.contains(":uncontr") )
+					if( line.tagStr.contains(":uncontr") )
 						continue
 				}
 
-				if( flags.contains(":&pron") && ! (line.split()[1] in ["мій", "твій", "наш", "ваш"]) ) {
-					line = line.replace("/v_kly", "")
+				if( flags.contains(":&pron") && ! (line.lemma in ["мій", "твій", "наш", "ваш"]) ) {
+					line.setTagStr( line.tagStr.replace("/v_kly", "") )
 				}
 
 				
 				if( flags.contains("<") ) {
-					if( ! flags.contains(">") && line.contains(":p:v_naz/v_zna") )
-						line = line.replace("v_naz/v_zna", "v_naz")
+					if( ! flags.contains(">") && line.tagStr.contains(":p:v_naz/v_zna") )
+						line.setTagStr( line.tagStr.replace("v_naz/v_zna", "v_naz") )
 //					if( ":m:v_naz" in line /*&& ! ("<+" in flags)*/)
 //						line = line.replace("v_naz", "v_naz/v_kly")
 				}
 				else if( flags.contains("^noun") ) {
-					if( line.contains(":m:v_rod/v_zna") ) {
-						line = line.replace("v_rod/v_zna", "v_rod")
+					if( line.tagStr.contains(":m:v_rod/v_zna") ) {
+						line.setTagStr( line.tagStr.replace("v_rod/v_zna", "v_rod") )
 					}
-					else if( line.contains(":p:v_rod/v_zna") ) {
-						line = line.replace("v_rod/v_zna", "v_rod")
+					else if( line.tagStr.contains(":p:v_rod/v_zna") ) {
+						line.setTagStr( line.tagStr.replace("v_rod/v_zna", "v_rod") )
 					}
 				}
 
@@ -533,7 +528,7 @@ class Expand {
 	}
 
 	@TypeChecked
-	List<String> expand(String word, String flags) {
+	List<DicEntry> expand(String word, String flags) {
 		String[] flag_set = flags.split(" ", 2)
 
 		String main_flag = flag_set[0]
@@ -542,44 +537,45 @@ class Expand {
 
 		Map<String,String> modifiers = get_modifiers(extra, flags, word)
 
-		List<String> sfx_lines
-		if( main_flag[0] == "/") {
+		List<DicEntry> sfx_lines
+
+		if( main_flag[0] == "/" ) {
 			def inflection_flag = main_flag[1..-1]
 			sfx_lines = expand_suffixes(word, inflection_flag, modifiers, extra)
 			sfx_lines = adjust_affix_tags(sfx_lines, main_flag, flags, modifiers)
 		}
 		else {
 			sfx_lines = [
-				word + " " + word + " " + flags
+				new DicEntry(word, word, flags)
 			]
 		}
 
-		sfx_lines = affix.expand_alts(sfx_lines, "//")  // TODO: change this to some single-char splitter?
-		sfx_lines = affix.expand_alts(sfx_lines, "/")
+		sfx_lines = AffixUtil.expand_alts(sfx_lines, "//")  // TODO: change this to some single-char splitter?
+		sfx_lines = AffixUtil.expand_alts(sfx_lines, "/")
 
 		if( flags.contains("/adj") ) {
 			def out_lines = []
 			for( line in sfx_lines) {
-				if( line.contains("v_zn1") ) { // v_zna == v_rod
+				if( line.tagStr.contains("v_zn1") ) { // v_zna == v_rod
                     if( flags.contains("<") ) {
-                        line = line.replace("v_zn1", "v_zna")
+                        line.tagStr = line.tagStr.replace("v_zn1", "v_zna")
                     }
                     else if( flags.contains("^noun") ) {
                         continue
 					}
 					else {
-						line = line.replace("v_zn1", "v_zna:ranim")
+						line.tagStr = line.tagStr.replace("v_zn1", "v_zna:ranim")
 					}
 				}
-				else if( line.contains("v_zn2") ) { // v_zna = v_naz
-					if( flags.contains("<") && (! flags.contains(">") || line.contains(":m:")) ) {
+				else if( line.tagStr.contains("v_zn2") ) { // v_zna = v_naz
+					if( flags.contains("<") && (! flags.contains(">") || line.tagStr.contains(":m:")) ) {
 						continue
 					}
 					else if( flags.contains("^noun") ) {
-						line = line.replace("v_zn2", "v_zna")
+						line.tagStr = line.tagStr.replace("v_zn2", "v_zna")
 					}
 					else {
-						line = line.replace("v_zn2", "v_zna:rinanim")
+						line.tagStr = line.tagStr.replace("v_zn2", "v_zna:rinanim")
 					}
 				}
 				out_lines.add(line)
@@ -594,24 +590,25 @@ class Expand {
 		sfx_lines = modify(sfx_lines, modifiers)
 
 		if( flags.contains("\\") ) {
-			sfx_lines = sfx_lines.collect { it + ":compb" }
+			sfx_lines = sfx_lines.each { it.tagStr += ":compb" }
 		}
 		
-		def words = post_expand(sfx_lines, flags)
+		List<DicEntry> entries = post_expand(sfx_lines, flags)
 
-		words.each {
-			if( it =~ /[а-яіїєґ][a-z0-9]/ )
+		entries.each {
+			if( it.word =~ /[^а-яіїєґА-ЯІЇЄҐ'.-]/ || it.lemma =~ /^а-яіїєґА-ЯІЇЄҐ'.-/ )
 				throw new Exception("latin mix in " + it) 
 		}
 
-		return words
+		return entries
 	}
 
-	private static final Pattern tag_split0_re = Pattern.compile(/[^ ]+$/)
+//	private static final Pattern tag_split0_re = Pattern.compile(/[^ ]+$/)
 
-	@TypeChecked
+	@CompileStatic
 	List<String> preprocess(String line) {
-		def lines
+		List<String> lines
+
 		if( line.count(" /") > 1) {
 			String[] parts = line.split(" ")
 			def line1 = parts[0..<2]
@@ -623,23 +620,31 @@ class Expand {
 				line2.join(" ")
 			]
 		}
-		else {
-			lines = affix.expand_alts([line], "|")
+		else if( line.contains("|") && ! line.contains(" tag=") ) {
+			def parts = line.split(/ /)
+			def base = parts[0..-2].join(" ")
+			lines = Arrays.asList(parts[-1].split(/\|/)).collect{ base + " " + it }
 		}
+		else {
+			lines = [line]
+		}
+//		else {
+//			lines = affix.expand_alts([line], "|")
+//		}
 
 		def out_lines = []
-		for( line2 in lines) {
+		for(String line2 in lines) {
 			out_lines.addAll(preprocess2(line2))
 		}
 		return out_lines
 	}
 
-	final Pattern plus_f_pattern = ~ "/<\\+?f?( (:[^ ]+))?"
-	final Pattern plus_m_pattern = ~ "/<\\+?m?( (:[^ ]+))?"
+	private static final Pattern plus_f_pattern = ~ "/<\\+?f?( (:[^ ]+))?"
+	private static final Pattern plus_m_pattern = ~ "/<\\+?m?( (:[^ ]+))?"
 	
-	@TypeChecked
-	def preprocess2(String line) {
-		def out_lines = []
+	@CompileStatic
+	List<String> preprocess2(String line) {
+		List<String> out_lines = []
 
 		// patronym plurals
 		// TODO: and we need to split lemmas
@@ -741,31 +746,36 @@ class Expand {
 		return out_lines
 	}
 
-	Pattern PATTR_BASE_LEMMAN_PATTERN = ~ ":[mf]:v_naz:.*patr"
+	private static final Pattern PATTR_BASE_LEMMAN_PATTERN = ~ ":[mf]:v_naz:.*patr"
 	
-	@TypeChecked
-	List<String> post_process_sorted(List<String> lines) {
+	@CompileStatic
+	List<DicEntry> post_process_sorted(List<DicEntry> lines) {
 		def out_lines = []
 
 		def prev_line = ""
-		def last_lema
+		def last_lemma
 		for( line in lines) {
-			if( line.contains("patr") ) {
-				if( PATTR_BASE_LEMMAN_PATTERN.matcher(line).find() ) {
-					last_lema = line.split()[0]
+			if( line.tagStr.contains(":patr") ) {
+				if( PATTR_BASE_LEMMAN_PATTERN.matcher(line.tagStr).find() ) {
+					last_lemma = line.word //split()[0]
 					//                System.err.printf("promoting patr to lemma %s for %s\n", last_lema, line)
 				}
-				line = replace_base(line, last_lema)
+//				line = replace_base(line, last_lemma)
+				line.lemma = last_lemma
 			}
-			else if( line.contains("lname") && line.contains(":f:") && ! line.contains(":nv") ) {
-				if( line.contains(":f:v_naz") ) {
-					last_lema = line.split()[0]
+			else if( line.tagStr.contains("lname") 
+					&& line.tagStr.contains(":f:") 
+					&& ! line.tagStr.contains(":nv") ) {
+				if( line.tagStr.contains(":f:v_naz") ) {
+					last_lemma = line.word //split()[0]
 					//                System.err.printf("promoting f name to lemma %s for %s\n", last_lema, line)
 				}
-				line = replace_base(line, last_lema)
+//				line = replace_base(line, last_lemma)
+				line.lemma = last_lemma
 			}
 
-			if( prev_line == line && (line.contains("advp:perf") || line.contains("advp:rev:perf")) )
+			if( prev_line == line 
+					&& (line.tagStr.contains("advp:perf") || line.tagStr.contains("advp:rev:perf")) )
 				continue
 
 			prev_line = line
@@ -776,37 +786,38 @@ class Expand {
 
 
 	@TypeChecked
-	def promote(String line) {
-		def lemma = line.split(/ /, 2)[0]
+	DicEntry promote(DicEntry line) {
 		//    System.err.printf("promote %s -> %s\n", line, lemma)
-		line = replace_base(line, lemma)
-		return line
+//		line = replace_base(line, line.lemma)
+		return new DicEntry(line.word, line.word, line.tagStr)
 	}
 
-	boolean isRemoveLine(String line) {
+	@CompileStatic
+	boolean isRemoveLine(DicEntry line) {
 		for( removeWithTag in Args.args.removeWithTags ) {
-			if( line.contains(":" + removeWithTag) )
+			if( line.tagStr.contains(":" + removeWithTag) )
 				return true
 		}
 		
-		if( Args.args.removeWithRegex && Args.args.removeWithRegex.matcher(line) )
+		if( Args.args.removeWithRegex && Args.args.removeWithRegex.matcher(line.tagStr) )
 			return true
 			
 		return false
 	}
 
-	private String removeTags(String line) {
+	private DicEntry removeTags(DicEntry line) {
 		for( removeTag in Args.args.removeTags ) {
-			if( line.contains(":" + removeTag) ) {
-				line = line.replace(":" + removeTag, "")
+			if( line.tagStr.contains(":" + removeTag) ) {
+				line.tagStr = line.tagStr.replace(":" + removeTag, "")
 			}
 		}
 		return line
 	}
 
-	private String promoteLemmaForTags(String line) {
+	@CompileStatic
+	private DicEntry promoteLemmaForTags(DicEntry line) {
 		for( lemmaTag in Args.args.lemmaForTags ) {
-			if( lemmaTag == "advp" && line.contains(lemmaTag) ) {
+			if( lemmaTag == "advp" && line.tagStr.contains(lemmaTag) ) {
 				line = promote(line)
 			}
 		}
@@ -814,17 +825,20 @@ class Expand {
 	}
 
 
-	Pattern imperf_move_pattern = ~/(verb(?::rev)?)(.*)(:(im)?perf)/
-	Pattern reorder_comp_with_adjp = ~/ (adj:.:v_...(?::ranim|:rinanim)?)(.*)(:compb)(.*)/
-	Pattern any_anim = ~/:([iu]n)?anim/
+	private static final Pattern imperf_move_pattern = ~/(verb(?::rev)?)(.*)(:(im)?perf)/
+	private static final Pattern reorder_comp_with_adjp = ~/^(adj:.:v_...(?::ranim|:rinanim)?)(.*)(:compb)(.*)/
+	private static final Pattern any_anim = ~/:([iu]n)?anim/
 
-	//@TypeChecked
-	List<String> post_process(List<String> lines) {
-		def out_lines = []
+//	@CompileStatic
+	List<DicEntry> post_process(List<DicEntry> lines) {
+		List<DicEntry> out_lines = []
 
-		for( line in lines) {
+		for(DicEntry line in lines) {
 
-			if( line.contains(" adv") && ! line.contains("advp") && ! line.contains(":compr") && ! line.contains(":super") ) {
+			if( line.tagStr.startsWith("adv") 
+					&& ! line.tagStr.contains("advp") 
+					&& ! line.tagStr.contains(":compr") 
+					&& ! line.tagStr.contains(":super") ) {
 				line = promote(line)
 			}
 
@@ -835,37 +849,42 @@ class Expand {
 
 			line = promoteLemmaForTags(line)
 
-			if( line.contains("noun") ) {
-			    def anim_matcher = any_anim.matcher(line)
+			if( line.tagStr.startsWith("noun") ) {
+			    Matcher anim_matcher = any_anim.matcher(line.tagStr)
 				if( anim_matcher ) {
-					line = anim_matcher.replaceFirst("").replace("noun", "noun" + anim_matcher[0][0])
+					line.tagStr = anim_matcher.replaceFirst("").replace("noun", "noun" + anim_matcher[0][0])
 				}
-                else if( ! line.contains("&pron") ) {
-                    line = line.replace("noun:", "noun:inanim:")
+                else if( ! line.tagStr.contains("&pron") ) {
+                    line.tagStr = line.tagStr.replace("noun:", "noun:inanim:")
                 }
 			}
 			else
-			if( line.contains("verb") ) {
-				line = imperf_move_pattern.matcher(line).replaceFirst('$1$3$2')
+			if( line.tagStr.contains("verb") ) {
+				line.tagStr = imperf_move_pattern.matcher(line.tagStr).replaceFirst('$1$3$2')
 			}
 			else
-			if( line.contains(" adj") || line.contains(" numr") ) {
-				if( line.contains(":&_adjp") && line.contains(":comp") ) {
-					line = reorder_comp_with_adjp.matcher(line).replaceFirst(' $1$3$2$4')
+			if( line.tagStr.startsWith("adj") || line.tagStr.startsWith("numr") ) {
+				if( line.tagStr.contains(":&_adjp") && line.tagStr.contains(":comp") ) {
+					line.tagStr = reorder_comp_with_adjp.matcher(line.tagStr).replaceFirst('$1$3$2$4')
 				}
 
-				if( line.contains("v_zn1") ) {
-					line = line.replace("v_zn1", "v_zna:ranim")
+				if( line.tagStr.contains("v_zn1") ) {
+					line.tagStr = line.tagStr.replace("v_zn1", "v_zna:ranim")
 				}
-				else if( line.contains("v_zn2") ) {
-					line = line.replace("v_zn2", "v_zna:rinanim")
+				else if( line.tagStr.contains("v_zn2") ) {
+					line.tagStr = line.tagStr.replace("v_zn2", "v_zna:rinanim")
 				}
 			}
 
 			out_lines.add(line)
 		}
 
-		out_lines = out_lines.collect { util.tail_tag(it, [
+		out_lines = out_lines.collect { util.tail_tag(it, tagsOrdered) }   // TODO: add ") {alt"
+
+		return out_lines
+	}
+	
+	private static final List<String> tagsOrdered = [
 				":v-u",
 				":bad",
 				":slang",
@@ -873,10 +892,7 @@ class Expand {
 				":coll",
 				":abbr",
 				":xp1", ":xp2", ":xp3", ":xp4"
-			]) }   // TODO: add ") {alt"
-
-		return out_lines
-	}
+			]
 
 	@TypeChecked
 	def replace_base(String line, String base) {
@@ -885,7 +901,7 @@ class Expand {
 	}
 
 	//@TypeChecked
-	def expand_subposition(String main_word, String line, String extra_tags, int idx_) {
+	List<DicEntry> expand_subposition(String main_word, String line, String extra_tags, int idx_) {
 		String idx = ""
 
 		if( line.startsWith(" +cs")) {
@@ -928,15 +944,18 @@ class Expand {
 	}
 
 	@TypeChecked
-	def compose_compar(String word, String main_word, String tags) {
-		if( ! ("comp" in Args.args.lemmaForTags) )
+	DicEntry compose_compar(String word, String main_word, String tags) {
+		if( ! ("comp" in Args.args.lemmaForTags) ) {
 			main_word = word
-		return word + " "  + main_word + " " + tags
+		}
+		
+		return new DicEntry(word, main_word, tags)
 	}
 
 	@TypeChecked
-	def expand_subposition_adv_main(String main_word, String line, String extra_tags) {
+	List<DicEntry> expand_subposition_adv_main(String main_word, String line, String extra_tags) {
 		log.debug("expanding sub " + main_word + ": " + line + " extra tags: " + extra_tags)
+		
 		if( line.startsWith(" +cs")) {
 			String word
 			if( line.contains(" +cs=") ) {
@@ -964,7 +983,7 @@ class Expand {
 	}
 
 	@TypeChecked
-	def expand_subposition_adv(String last_adv, String line, String extra_tags, String main_word) {
+	List<DicEntry> expand_subposition_adv(String last_adv, String line, String extra_tags, String main_word) {
 		def out_lines = []
 
 		String word
@@ -988,6 +1007,7 @@ class Expand {
 		def adv_super = compose_compar("най" + word, last_adv, "adv:super" + extra_tags)
 		def adv_super2 = compose_compar("щонай" + word, last_adv, "adv:super" + extra_tags)
 		def adv_super3 = compose_compar("якнай" + word, last_adv, "adv:super" + extra_tags)
+		
 		out_lines.addAll( [
 			adv_super,
 			adv_super2,
@@ -1002,13 +1022,13 @@ class Expand {
 
 
 	@TypeChecked
-	List<String> expand_line(String line_) {
+	List<DicEntry> expand_line(String line_) {
 		List<String> lines = preprocess(line_)
 
 		def main_word = ""
-		def out_lines = []
+		List<DicEntry> out_lines = []
 
-		for( line in lines) {
+		for(String line in lines) {
 			List<String> sub_lines = []
 
 			//  +cs
@@ -1031,14 +1051,14 @@ class Expand {
 			}
 			// word lemma tags
 			else if( word_lemma_re.matcher(line).find() ) {
-				def exp_lines
+				List<DicEntry> exp_lines
 
 				if( line.contains("/") ) {
-					exp_lines = affix.expand_alts([line], "//")  // TODO: change this to some single-char splitter?
-					exp_lines = affix.expand_alts(exp_lines, "/")
+					exp_lines = AffixUtil.expand_alts([DicEntry.fromLine(line)], "//")  // TODO: change this to some single-char splitter?
+					exp_lines = AffixUtil.expand_alts(exp_lines, "/")
 				}
 				else {
-					exp_lines = [line]
+					exp_lines = [DicEntry.fromLine(line)]
 				}
 
 				out_lines.addAll( exp_lines )
@@ -1050,7 +1070,7 @@ class Expand {
 
 			String word, flags
 			try {
-				def parts = line.split(" ", 2)
+				String[] parts = line.split(" ", 2)
 				word = parts[0]
 				flags = parts[1]
 			}
@@ -1064,11 +1084,11 @@ class Expand {
 				limitedVerbLemmas.add(word)
 			}
 			
-			def inflected_lines = expand(word, flags)
+			List<DicEntry> inflected_lines = expand(word, flags)
 
-			if( sub_lines) {
+			if( sub_lines ) {
 				def idx = 0
-				for( sub_line in sub_lines) {
+				for(String sub_line in sub_lines) {
 					String extra_flags = ""
 					if( flags.startsWith("adv:")) {
 						extra_flags = flags[3..-1].replace(":compb", "")
@@ -1081,7 +1101,7 @@ class Expand {
 						//                 util.dbg("===", extra_flags)
 					}
 
-					def sublines
+					List<DicEntry> sublines
 					if( line.contains(" adv") ) {
 						sublines = expand_subposition_adv_main(main_word, sub_line, extra_flags)
 					}
@@ -1092,8 +1112,8 @@ class Expand {
 
 					if( line.contains(".adv") && line.contains("/adj") ) {
 						for( inflected_line in inflected_lines) {
-							if( inflected_line.contains(" adv") ) {
-								def last_adv = inflected_line.split()[0]
+							if( inflected_line.tagStr.startsWith("adv") ) {
+								def last_adv = inflected_line.word
 								def cs_lines = expand_subposition_adv(last_adv, sub_line, extra_flags, main_word)
 								out_lines.addAll(cs_lines)
 								break
@@ -1106,29 +1126,26 @@ class Expand {
 			}
 			out_lines.addAll( inflected_lines )
 
-			for( l in inflected_lines) {
-				if( ! l.trim())
+			for(DicEntry l in inflected_lines) {
+				if( ! l.isValid() )
 					throw new Exception("empty liner for " + inflected_lines)
 			}
 		}
 		return post_process(out_lines)
 	}
 
+	
 	int fatalErrorCount = 0
 	int nonFatalErrorCount = 0
-
+	int double_form_cnt = 0
 	
 
-	//	@TypeChecked
-	List<String> process_input(List<String> in_lines) {
-		def time1 = System.currentTimeMillis()
-
+//	@TypeChecked
+	List<DicEntry> process_input(List<String> inputLines) {
 		def multiline = ""
-		def all_lines = []
-		def double_form_cnt = 0
 		def prepared_lines = []
 
-		in_lines.each{ String line ->
+		inputLines.each{ String line ->
 			if( line.contains("#") ) {
 				line = line.replaceFirst("#.*", "")
 			}
@@ -1136,7 +1153,7 @@ class Expand {
 //			if( "#" in line)
 //				line = line.split("#")[0]
 
-			if( ! line.trim())
+			if( ! line.trim() )
 				return // continue
 
 			//        line = line.rstrip()
@@ -1147,71 +1164,55 @@ class Expand {
 				return // continue
 			}
 			else {
-				if( multiline) {
+				if( multiline ) {
 					line = multiline + line
 				}
 				multiline = ""
 			}
 			
 			if( line.contains("/v") && line.contains(":imperf:perf") ) {
-				//                || ("/adjp" in line && "&adj" in line) ) {
 				double_form_cnt += 1
 			}
 
-
-			if( Args.args.flush ) {
-				try {
-					def tag_lines = expand_line(line)
-					
-					validator.check_lines(tag_lines)
-
-					def sorted_lines = dictSorter.sort_all_lines(tag_lines)
-					
-					List<String> indented_lines = dictSorter.indent_lines(sorted_lines)
-				
-	    			validator.check_indented_lines(indented_lines, limitedVerbLemmas)
-				
-		    		if( Args.args.indent ) {
-				        sorted_lines = indented_lines
-			       	}
-
-					println(sorted_lines.join("\n") + "\n")
-					
-					System.out.flush()
-					return
-				}catch(Exception e) {
-					log.error("Failed to expand \"" + line + "\": " + e.getMessage())
-				}
-			}
-			else {
-				prepared_lines << line
-			}
+			prepared_lines << line
 		}
 
-		if( Args.args.flush )
-			return
-			
 
 		ParallelEnhancer.enhanceInstance(prepared_lines)
 
-		all_lines = prepared_lines.collectParallel { String line ->
+		List<DicEntry> allEntries = prepared_lines.collectParallel { String line ->
 
 			try {
-				def tag_lines = expand_line(line)
-				validator.check_lines(tag_lines)
+				List<DicEntry> taggedEntries = expand_line(line)
+				
+				fatalErrorCount += validator.checkEntries(taggedEntries)
 
-				tag_lines
-
+				return taggedEntries
 			}
 			catch(Exception e) {
 //				throw new Exception("Exception in line: \"" + line + "\"", e)
+				log.error("Failed to expand: \"" + line + "\": ", e)
 				log.error("Failed to expand: \"" + line + "\": " + e.getMessage())
 				fatalErrorCount++
+				
+				return taggedEntries
 			}
 
 		}.flatten()
 
+		
+		List<DicEntry> sortedEntries = dictSorter.sortEntries(allEntries)
 
+		sortedEntries = post_process_sorted(sortedEntries)
+
+		sortedEntries = dictSorter.sortEntries(sortedEntries)
+	}
+
+	void processInputAndPrint(List<String> inputLines) {
+		def time1 = System.currentTimeMillis()
+
+		List<DicEntry> sortedEntries = process_input(inputLines)
+		
 		if( fatalErrorCount > 0 ) {
 			log.fatal(String.format("%d fatal errors found, see above, exiting...", fatalErrorCount))
 			System.exit(1)
@@ -1221,60 +1222,91 @@ class Expand {
 		def time2
 		if( Args.args.time ) {
 			time2 = System.currentTimeMillis()
-			log.info("Total out_lines %,d\n", all_lines.size())
+			log.info("Total out_lines %,d\n", sortedEntries.size())
 			log.info("Processing time: %,d", (time2-time1))
 		}
 
-		if( ! Args.args.flush) {
-			List<String> sorted_lines = dictSorter.sort_all_lines(all_lines)
-			sorted_lines = post_process_sorted(sorted_lines)
+//		def time3
+//		if( Args.args.time ) {
+//			time3 = System.currentTimeMillis()
+//			log.info("Sorting time 1: %,d", (time3-time2))
+//		}
 
-			def time3
-			if( Args.args.time ) {
-				time3 = System.currentTimeMillis()
-				log.info("Sorting time 1: %,d", (time3-time2))
-			}
+		if( Args.args.indent ) {
+			// to sort newely promoted lemmas
+			// sorted_lines.unique() is really slow
+//			sortedEntries = dictSorter.sort_all_lines( sortedEntries.toSet() )
 
-			if( Args.args.indent ) {
-				// to sort newely promoted lemmas
-				// sorted_lines.unique() is really slow
-				sorted_lines = dictSorter.sort_all_lines( sorted_lines.toSet() )
+//			if( Args.args.time ) {
+//				def time4 = System.currentTimeMillis()
+//				log.info("Sorting time 2: %,d", (time4-time3))
+//			}
+		}
 
-				if( Args.args.time ) {
-					def time4 = System.currentTimeMillis()
-					log.info("Sorting time 2: %,d", (time4-time3))
-				}
-			}
+		if( Args.args.wordlist ) {
+			util.print_word_list(sortedEntries)
+		}
 
-			if( Args.args.wordlist ) {
-				util.print_word_list(sorted_lines)
-			}
-
-			if( Args.args.indent ) {
-				if( Args.args.mfl ) {
-					new File("dict_corp_lt.txt").withWriter("utf-8") {  f ->
-						sorted_lines.each{ f.println(it) }
+		if( Args.args.indent ) {
+			if( Args.args.mfl ) {
+				new File("dict_corp_lt.txt").withWriter("utf-8") {  f ->
+					sortedEntries.each{ 
+						f.println(it.toFlatString()) 
 					}
 				}
-				sorted_lines = dictSorter.indent_lines(sorted_lines)
+			}
+			List<String> indentedLines = dictSorter.indent_lines(sortedEntries)
 
-				validator.check_indented_lines(sorted_lines, limitedVerbLemmas)
+			validator.check_indented_lines(indentedLines, limitedVerbLemmas)
 
-				if( nonFatalErrorCount > 0 ) {
-					log.fatal(String.format("%d non-fatal errors found, see above", nonFatalErrorCount))
-				}
-
-				if( Args.args.stats ) {
-					util.print_stats(sorted_lines, double_form_cnt)
-				}
+			if( nonFatalErrorCount > 0 ) {
+				log.fatal(String.format("%d non-fatal errors found, see above", nonFatalErrorCount))
 			}
 
-			if( Args.args.log_usage ) {
-				util.log_usage(affix)
+			new File("dict_corp_vis.txt").withWriter("utf-8") { f ->
+				indentedLines.each { String it ->
+					f.write(it + "\n")
+				}
 			}
-
-			return sorted_lines
+	
+			if( Args.args.stats ) {
+				util.print_stats(indentedLines, double_form_cnt)
+			}
 		}
+
+		if( Args.args.log_usage ) {
+			util.log_usage(affix)
+		}
+
+	}
+		
+	void processLineByLine(String line) {
+		try {
+			List<DicEntry> taggedEntries = expand_line(line)
+			
+			validator.checkEntries(taggedEntries)
+
+			List<DicEntry> sortedLines = dictSorter.sortEntries(taggedEntries)
+
+			List<String> outLines
+
+			if( Args.args.indent ) {
+				List<String> indented_lines = dictSorter.indent_lines(sortedLines)
+				validator.check_indented_lines(indented_lines, limitedVerbLemmas)
+				outLines = indented_lines
+			   }
+			else {
+				outLines = sortedLines.collect { it.toFlatString() }
+			}
+
+			println(outLines.join("\n") + "\n")
+			
+			System.out.flush()
+			return
+		}catch(Exception e) {
+			log.error("Failed to expand \"" + line + "\": " + e.getMessage())
+		}
+
 	}
 
 
@@ -1298,7 +1330,7 @@ class Expand {
 				if( line == "exit" )
 					System.exit(0)
 				
-				expand.process_input([line])
+				expand.processLineByLine(line)
 			}
 
 		}

@@ -201,7 +201,7 @@ task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, testExpand]) {
     args "-dict", "../data/dict"
     args opts.split()
 
-    jvmArgs "-Xmx5g"
+    jvmArgs "-Xmx4g"
 //    jvmArgs "-XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:FlightRecorderOptions=defaultrecording=true,dumponexit=true,dumponexitpath=dumponexit.jfr".split()
 //    jvmArgs "-agentlib:jdwp=transport=dt_socket,server=y,address=8000,suspend=n"
 }

@@ -847,7 +847,6 @@
   ведучому noun:anim:m:v_dav
   ведучого noun:anim:m:v_zna
   ведучим noun:anim:m:v_oru
-  ведучім noun:anim:m:v_mis
   ведучому noun:anim:m:v_mis
   ведучий noun:anim:m:v_kly
   ведучі noun:anim:p:v_naz
@@ -1614,6 +1613,14 @@
   вітрилами noun:inanim:p:v_oru
   вітрилах noun:inanim:p:v_mis
   вітрила noun:inanim:p:v_kly
+вітрище noun:inanim:m:v_naz
+  вітрища noun:inanim:m:v_rod
+  вітрищу noun:inanim:m:v_dav
+  вітрище noun:inanim:m:v_zna
+  вітрищем noun:inanim:m:v_oru
+  вітрищі noun:inanim:m:v_mis
+  вітрищу noun:inanim:m:v_mis
+  вітрище noun:inanim:m:v_kly
 вовчище noun:anim:m:v_naz
   вовчища noun:anim:m:v_rod
   вовчищеві noun:anim:m:v_dav
@@ -2821,6 +2828,22 @@
   прощавай verb:imperf:impr:s:2
   прощаваймо verb:imperf:impr:p:1
   прощавайте verb:imperf:impr:p:2
+псище noun:anim:m:v_naz
+  псища noun:anim:m:v_rod
+  псищу noun:anim:m:v_dav
+  псища noun:anim:m:v_zna
+  псищем noun:anim:m:v_oru
+  псищі noun:anim:m:v_mis
+  псищу noun:anim:m:v_mis
+  псище noun:anim:m:v_kly
+  псища noun:anim:p:v_naz
+  псищ noun:anim:p:v_rod
+  псищам noun:anim:p:v_dav
+  псищ noun:anim:p:v_zna
+  псища noun:anim:p:v_zna
+  псищами noun:anim:p:v_oru
+  псищах noun:anim:p:v_mis
+  псища noun:anim:p:v_kly
 синій adj:m:v_naz
   синього adj:m:v_rod
   синьому adj:m:v_dav

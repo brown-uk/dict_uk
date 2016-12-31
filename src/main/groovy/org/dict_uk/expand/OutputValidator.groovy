@@ -27,11 +27,11 @@ class OutputValidator {
 	}
 	
 	@TypeChecked
-	int check_lines(List<String> lines) {
+	int checkEntries(List<DicEntry> lines) {
 		int fatalErrorCount = 0
 		
-		for( line in lines ) {
-			DicEntry dicEntry = DicEntry.fromLine(line)
+		for(DicEntry line in lines ) {
+			DicEntry dicEntry = line //DicEntry.fromLine(line)
 			def word = dicEntry.word
 			def lemma = dicEntry.lemma
 			def tags = dicEntry.tagStr

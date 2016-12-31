@@ -1,20 +1,16 @@
 package org.dict_uk.expand
 
-import java.util.Collection;
+import java.util.Collection
 import java.util.List
-import java.util.Map;
-import java.util.regex.*
-
-import groovy.transform.CompileStatic
-import groovy.transform.TypeChecked
-import groovyx.gpars.ParallelEnhancer
-import static groovyx.gpars.GParsPool.withPool
+import java.util.Map
+import java.util.regex.Pattern
 
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
-
 import org.dict_uk.common.DicEntry
 import org.dict_uk.common.UkDictComparator
+import groovy.transform.CompileStatic
+import groovyx.gpars.ParallelEnhancer
 
 
 class DictSorter {
@@ -62,9 +58,8 @@ class DictSorter {
 	static final Pattern GEN_RE = Pattern.compile(/:([mfnsp])(:|$)/)
 	static final Pattern VIDM_RE = Pattern.compile(/:(v_...)((:alt|:rare|:coll)*)/) // |:short
 
-		@CompileStatic
-//	@TypeChecked
-	def tag_sort_key(String tags, String word) {
+	@CompileStatic
+	String tag_sort_key(String tags, String word) {
 		if( tags.contains(":v-u") ) {
 			tags = tags.replace(":v-u", "")
 		}
@@ -97,9 +92,10 @@ class DictSorter {
 			}
 		}
 		else if( tags.startsWith("noun") ) {
-			if (tags.contains("name") || tags.contains("patr") ) {
+			if( tags.contains("name") || tags.contains("patr") ) {
 				tags = re_person_name_key_tag.matcher(tags).replaceAll('$1$3$2')
-				if ( tags.contains("lname") || tags.contains("patr") && tags.contains(":f:") ) {// && ! ":nv" in tags:    // to put Адамишин :f: after Адамишини :p) {
+				if ( (tags.contains("lname") || tags.contains("patr")) 
+						&& tags.contains(":f:") ) {// && ! ":nv" in tags:    // to put Адамишин :f: after Адамишини :p) {
 					tags = tags.replace(":f:", ":9:")
 				}
 			}
@@ -142,88 +138,93 @@ class DictSorter {
 	}
 
 
-	def derived_plural(key, prev_key) {
-		return key.contains("name") && key.contains(":p:") &&
-				prev_key =~ ":[mf]:" && prev_key.replaceFirst(":[mf]:", ":p:") == key
+	@CompileStatic
+	boolean derived_plural(String key, String prev_key) {
+		return key.contains("name") \
+				&& key.contains(":p:") \
+				&& prev_key =~ ":[mf]:" \
+				&& prev_key.replaceFirst(":[mf]:", ":p:") == key
 	}
 
 
-	static final Pattern re_key = Pattern.compile(" ([^ ]+ [^:]+(?::rev)?(?::(?:anim|inanim|perf|imperf))?)")
-	static final Pattern re_key_name = Pattern.compile(" ([^ ]+ noun:anim:[fmnp]:).*?(lname|fname|patr)")
+	static final Pattern re_key = Pattern.compile("^[^:]+(?::rev)?(?::(?:anim|inanim|perf|imperf))?")
+	static final Pattern re_key_name = Pattern.compile("^(noun:anim:[fmnp]:).*?(lname|fname|patr)")
 
-	@TypeChecked
-	List<String> indent_lines(List<String> lines) {
+	@CompileStatic
+	List<String> indent_lines(List<DicEntry> lines) {
 		List<String> out_lines = []
 		String prev_key = ""
 
-		for( line in lines ){
-			String[] parts = line.split()
-			String word = parts[0]
-			String lemma = parts[1]
-			String tags = parts[2]
+		for(DicEntry line in lines ){
+			String word = line.word
+			String lemma = line.lemma
+			String tags = line.tagStr
 			String key
 
 			try {
 				if( tags.contains("name") || tags.contains("patr") ) {
-					def key_rr = re_key_name.matcher(line)
+					def key_rr = re_key_name.matcher(line.tagStr)
 					key_rr.find()
-					key = key_rr.group(1) + key_rr.group(2)
+					key = lemma + " " + key_rr.group(1) + key_rr.group(2)
 				}
 				else {
-					def key_rr = re_key.matcher(line)
+					def key_rr = re_key.matcher(line.tagStr)
 					key_rr.find()
-					key = key_rr.group(1)
+					key = lemma + " " + key_rr.group(0)
 				}
 
-				if( line.contains(":x") ) {
-					int x_idx = line.indexOf(":x")
-					key += line[x_idx..<x_idx+4]
+				int x_idx = line.tagStr.indexOf(":x")
+				if( x_idx != -1 ) {
+					key += line.tagStr[x_idx..<x_idx+4]
 				}
 			}
 			catch(Exception e) {
 				throw new RuntimeException("Failed to find tag key in " + line, e)
 			}
 
-			if( line.contains(":nv") ) {
+			if( line.tagStr.contains(":nv") ) {
 				key += ":nv"
 			}
 
+			String outLine
 			if( key != prev_key && ! derived_plural(key, prev_key) ) {
 				prev_key = key
-				line = word + " " + tags
+				outLine = word + " " + tags
 			} else {
-				line = DERIV_PADDING + word + " " + tags
+				outLine = DERIV_PADDING + word + " " + tags
 			}
 
-			out_lines.add(line)
+			out_lines.add(outLine)
 		}
 
 		return out_lines
 	}
 
-	def line_key(txt) {
+	@CompileStatic
+	String line_key(DicEntry entry) {
 		try {
-			def (word, lemma, tags) = txt.split()
+			String tags = entry.tagStr
 
-			if( tags.contains("verb:rev") && tags.contains(":inf") \
-					&& (word.endsWith("сь") || word.endsWith("ться")) ) {
+			if( entry.tagStr.startsWith("verb:rev") && entry.tagStr.contains(":inf") \
+					&& (entry.word.endsWith("сь") || entry.word.endsWith("ться")) ) {
 				tags = tags.replace("inf", "inz")
 			}
 
-			return UkDictComparator.getSortKey(lemma) + "_" + tag_sort_key(tags, word) + "_" + UkDictComparator.getSortKey(word)
+			return UkDictComparator.getSortKey(entry.lemma) + "_" + tag_sort_key(tags, entry.word) + "_" + UkDictComparator.getSortKey(entry.word)
 		}
 		catch(Exception e) {
-			throw new Exception("failed on " + txt, e)
+			throw new Exception("Failed to find line key for " + entry, e)
 		}
 	}
 
-	List<String> sort_all_lines(Collection<String> all_lines) {
-		ParallelEnhancer.enhanceInstance(all_lines)
-		def entries = all_lines.collectParallel {
-			[(line_key(it)): it]
+	List<DicEntry> sortEntries(Collection<DicEntry> allEntries) {
+		ParallelEnhancer.enhanceInstance(allEntries)
+		
+		def entryMap = allEntries.collectParallel { entry ->
+			[(line_key(entry)): entry]
 		}
 
-		def map = entries.collectEntries {
+		def map = entryMap.collectEntries {
 			it
 		}
 

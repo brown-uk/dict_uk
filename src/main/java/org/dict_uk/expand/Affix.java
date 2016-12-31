@@ -4,14 +4,12 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -23,56 +21,12 @@ public class Affix {
 	//	private final ArrayList<> prefixes = new ArrayList<>();
 	private final Map<String, Map<String, SuffixGroup>> affixMap = new HashMap<>();
 
-	private static final Pattern re_alts_slash = Pattern.compile("([^/]+:)([^:]+)(:[^/]+)?");
-	private static final Pattern re_alts_vert = Pattern.compile("^(.* )(.*)$");
-	private static final Pattern re_alts_dbl_slash = Pattern.compile("^(.* .+?:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...)(?:/(?:nv|v_...))*)+)(:[^/]+)?$");
+	public static final Pattern re_alts_slash = Pattern.compile("([^/]+:)([^:]+)(:[^/]+)?");
+//	private static final Pattern re_alts_vert = Pattern.compile("^(.* )(.*)$");
+	public static final Pattern re_alts_dbl_slash = Pattern.compile("^(.+?:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...)(?:/(?:nv|v_...))*)+)(:[^/]+)?$");
 	private static final Pattern re_whitespace = Pattern.compile("[ \t]+");
 
-	public List<String> expand_alts(List<String> lines, String splitter) {
-		ArrayList<String> out = new ArrayList<>();
-
-		for(String line: lines ) {
-
-			if( ! line.contains(splitter) ) {
-				out.add( line );
-				continue;
-			}
-
-			Matcher matcher;
-			if( splitter.equals("/") ) {
-				matcher = re_alts_slash.matcher(line);
-			}
-			else if( splitter.equals("|") ) {
-				if( line.contains("tag=") ) {
-					out.add( line );
-					continue;
-				}
-				matcher = re_alts_vert.matcher(line);
-			}
-			else {
-				matcher = re_alts_dbl_slash.matcher(line);
-			}
-			
-			if( ! matcher.matches() )
-				throw new IllegalArgumentException("Not found splitter regex " + splitter + " for " + line + " ==~ " + matcher.toString());
-			
-			String[] split1 = matcher.group(2).split(splitter.equals("|")? "\\|" : splitter);
-			
-			String base = matcher.group(1);
-			String end = "";
-
-			if( matcher.groupCount() > 2 && matcher.group(3) != null )
-				end = matcher.group(3);
-
-			for(String split_: split1) {
-				out.add( base + split_ + end );
-			}
-		}
-
-		return out;
-	}
-
-
+	
 	public void log_usage() {
 		for(Entry<String, Map<String, SuffixGroup>> affixItem: affixMap.entrySet()) {
 			String affixFlag = affixItem.getKey();
@@ -221,10 +175,10 @@ public class Affix {
 	}
 
 	
-	public static void main(String[] args) throws IOException {
-		Affix affix = new Affix();
+//	public static void main(String[] args) throws IOException {
+//		Affix affix = new Affix();
 //		affix.load_affixes(args[0]);
-		System.err.println(affix.expand_alts(Arrays.asList("а conj:coord|part|intj"), "|"));
-	}
+//		System.err.println(affix.expand_alts(Arrays.asList("а conj:coord|part|intj"), "|"));
+//	}
 	
 }

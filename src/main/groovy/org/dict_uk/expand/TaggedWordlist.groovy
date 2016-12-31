@@ -73,9 +73,9 @@ def process_line(line, extra_tags) {
 }
 
 
-def process_input(files) {
-    def out_lines = []
-    for( filename in files ) {
+List<String> process_input(List<String> files) {
+    List<String> out_lines = []
+    for(String filename in files) {
 
 		def detectProperNoun = false
 		
@@ -93,7 +93,6 @@ def process_input(files) {
 			detectProperNoun = true
 		}
     
-//		System.err.println("---" + filename)
         new File(filename).withReader("utf-8") { reader ->
             for( line in reader ) {
 //				System.err.println("line: " + line)
