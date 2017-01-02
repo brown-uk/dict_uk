@@ -18,11 +18,11 @@ class Expand {
 
 	private final Util util = new Util()
 	private final DictSorter dictSorter = new DictSorter()
-	private final Affix affix = new Affix()
 	private final BaseTags base_tags = new BaseTags()
 	private final OutputValidator validator = new OutputValidator()
 	private final List<String> limitedVerbLemmas = ["житися", "забракнуло", "зберігти", "зберігтись", "зберігтися"];
-
+	final Affix affix = new Affix()
+	
 
 	static final Pattern cf_flag_pattern = ~ /(vr?)[1-4]\.cf/	 // v5.cf is special
 	static final Pattern imprs_pattern = ~ /(vr?)[1-9]\.imprs/
