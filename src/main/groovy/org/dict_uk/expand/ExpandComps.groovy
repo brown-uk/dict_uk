@@ -3,19 +3,19 @@
 package org.dict_uk.expand
 
 
-import groovy.transform.TypeChecked;
-import java.util.regex.*;
+import groovy.transform.TypeChecked
+import java.util.regex.*
 
-import org.apache.logging.log4j.LogManager
-import org.apache.logging.log4j.Logger
 import org.dict_uk.common.DicEntry
 import org.dict_uk.expand.Expand
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 
 class ExpandComps {
-	static Logger log = LogManager.getFormatterLogger(ExpandComps.class);
+	private static final Logger log = LoggerFactory.getLogger(ExpandComps.class);
 
-	final Pattern tags_re = Pattern.compile("(.*:)[mfnp]:v_...(.*)")
-	final Pattern gen_vidm_pattern = Pattern.compile(":(.:v_...(:r(in)?anim)?)")
+	private static final Pattern tags_re = Pattern.compile("(.*:)[mfnp]:v_...(.*)")
+	private static final Pattern gen_vidm_pattern = Pattern.compile(":(.:v_...(:r(in)?anim)?)")
 	final Expand expand
 
 
@@ -38,7 +38,7 @@ class ExpandComps {
 //			def parts = ln.split(" ")
 			def rrr = gen_vidm_pattern.matcher(ln.tagStr)
 			if( ! rrr.find() ) {
-				log.warn("ignoring left %s", ln)
+				log.warn("ignoring left {}", ln)
 				continue
 			}
 
@@ -71,7 +71,7 @@ class ExpandComps {
 		for(DicEntry rn in rights ) {
 			def rrr = gen_vidm_pattern.matcher(rn.tagStr)
 			if( ! rrr.find() ) {
-				log.warn("composite: ignoring right %s", rn)
+				log.warn("composite: ignoring right {}", rn)
 				continue
 			}
 
@@ -154,7 +154,7 @@ class ExpandComps {
 				out.addAll(comps)
 			}
 			catch(e) {
-				System.err.printf("Failed composite at %s: %s\n", line, e.getMessage())
+				log.error("Failed composite at {}: {}\n", line, e.getMessage())
 				throw e
 			}
 		}

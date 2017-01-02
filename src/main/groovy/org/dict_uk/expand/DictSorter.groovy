@@ -1,20 +1,18 @@
 package org.dict_uk.expand
 
-import java.util.Collection
-import java.util.List
-import java.util.Map
 import java.util.regex.Pattern
 
-import org.apache.logging.log4j.LogManager
-import org.apache.logging.log4j.Logger
 import org.dict_uk.common.DicEntry
 import org.dict_uk.common.UkDictComparator
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
+
 import groovy.transform.CompileStatic
 import groovyx.gpars.ParallelEnhancer
 
 
 class DictSorter {
-	static Logger log = LogManager.getFormatterLogger(DictSorter.class);
+	static Logger log = LoggerFactory.getLogger(DictSorter.class);
 
 	static final String DERIV_PADDING="  "
 

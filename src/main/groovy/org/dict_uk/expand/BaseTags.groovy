@@ -1,16 +1,14 @@
 package org.dict_uk.expand
 
-import groovy.transform.Field
-import groovy.transform.TypeChecked
-
-import org.apache.logging.log4j.LogManager
-import org.apache.logging.log4j.Logger
-
 import java.util.regex.*
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
+
+import groovy.transform.TypeChecked
 
 
 class BaseTags {
-	static Logger log = LogManager.getFormatterLogger(BaseTags.class);
+	static Logger log = LoggerFactory.getLogger(BaseTags.class);
 
 	static private final Pattern ending_i_nnia_re = Pattern.compile(/.*(([бвгджзклмнпрстфхцчшщ])\2|\'|[джлрт]|рн)я$/)
 

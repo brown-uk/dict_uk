@@ -4,9 +4,9 @@ package org.dict_uk.expand
 
 import java.util.regex.*
 
-import org.apache.logging.log4j.LogManager
-import org.apache.logging.log4j.Logger
 import org.dict_uk.common.*
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 
 import groovy.transform.CompileStatic
 import groovy.transform.TypeChecked
@@ -14,7 +14,7 @@ import groovyx.gpars.ParallelEnhancer
 
 
 class Expand {
-	static Logger log = LogManager.getFormatterLogger(Expand.class);
+	static Logger log = LoggerFactory.getLogger(Expand.class);
 
 	private final Util util = new Util()
 	private final DictSorter dictSorter = new DictSorter()
@@ -57,7 +57,7 @@ class Expand {
 
 //	@CompileStatic
 	List<DicEntry> expand_suffixes(String word, String affixFlags, Map<String,String> modifiers, String extra) {
-		//		log.info("%s %s %s %s\n", word, affixFlags, modifiers, extra)
+		//		log.info("{} {} {} {}\n", word, affixFlags, modifiers, extra)
 
 		def affixSubGroups = affixFlags.split("\\.")
 		def mainGroup = affixSubGroups[0]
@@ -131,7 +131,7 @@ class Expand {
 						appliedCnt += 1
 						appliedCnts[affixFlag2] += 1
 
-						//util.debug("applied %s to %s", affixGroup, word)
+						//util.debug("applied {} to {}", affixGroup, word)
 					}
 					affixGroup.counter += 1
 
@@ -220,7 +220,7 @@ class Expand {
 			}
 		}
 
-		//    util.debug("mods %s for %s && %s", str(mods), flags, mod_flags)
+		//    util.debug("mods {} for {} && {}", str(mods), flags, mod_flags)
 
 		return mods
 	}
@@ -229,7 +229,6 @@ class Expand {
 	boolean filter_word(DicEntry entry, Map modifiers) {
 		String w = entry.tagStr
 		if( "gen" in modifiers) {
-			//        util.dbg("filter by gen", modifiers, w)
 			if( ! (w =~ (":[" + modifiers["gen"] + "]:") ) )
 				return false
 		}
@@ -246,7 +245,6 @@ class Expand {
 
 	@CompileStatic
 	List<DicEntry> modify(List<DicEntry> lines, Map<String, String> modifiers) {
-		//    util.dbg("mods", modifiers)
 		if( modifiers.size() == 0)
 			return lines
 
@@ -1207,75 +1205,99 @@ class Expand {
 		if( Args.args.time ) {
 			log.info("Sorting...\n")
 		}
+
+		def times = []
+		times << System.currentTimeMillis()
 		
 		List<DicEntry> sortedEntries = dictSorter.sortEntries(allEntries)
 
 		sortedEntries = post_process_sorted(sortedEntries)
 
-		return dictSorter.sortEntries(sortedEntries)
+		sortedEntries = dictSorter.sortEntries(sortedEntries)
+
+		if( Args.args.time ) {
+			def time = System.currentTimeMillis()
+			log.info("Sorting time: {}", (time-times[-1]))
+			times << time
+		}
+		
+		return sortedEntries
 	}
 
 	void processInputAndPrint(List<String> inputLines) {
-		def time1 = System.currentTimeMillis()
+		def times = []
+		times << System.currentTimeMillis()
 
 		List<DicEntry> sortedEntries = process_input(inputLines)
 		
 		if( fatalErrorCount > 0 ) {
-			log.fatal(String.format("%d fatal errors found, see above, exiting...", fatalErrorCount))
+			log.fatal(String.format("{} fatal errors found, see above, exiting...", fatalErrorCount))
 			System.exit(1)
 		}
 
 
-		def time2
 		if( Args.args.time ) {
-			time2 = System.currentTimeMillis()
-			log.info("Total out_lines %,d\n", sortedEntries.size())
-			log.info("Processing time: %,d", (time2-time1))
-		}
-
-//		def time3
-//		if( Args.args.time ) {
-//			time3 = System.currentTimeMillis()
-//			log.info("Sorting time 1: %,d", (time3-time2))
-//		}
-
-		if( Args.args.indent ) {
-			// to sort newely promoted lemmas
-			// sorted_lines.unique() is really slow
-//			sortedEntries = dictSorter.sort_all_lines( sortedEntries.toSet() )
-
-//			if( Args.args.time ) {
-//				def time4 = System.currentTimeMillis()
-//				log.info("Sorting time 2: %,d", (time4-time3))
-//			}
+			def time = System.currentTimeMillis()
+			log.info("Total out_lines {}\n", sortedEntries.size())
+			log.info("Processing time: {}", (time-times[-1]))
+			times << time
 		}
 
 		if( Args.args.wordlist ) {
 			util.print_word_list(sortedEntries)
+			
+			if( Args.args.time ) {
+				def time = System.currentTimeMillis()
+				log.info("Word list time: {}", (time-times[-1]))
+				times << time
+			}
+		}
+
+		log.info("Writing output files...")
+
+		if( Args.args.mfl ) {
+			new File("dict_corp_lt.txt").withWriter("utf-8") { Writer f ->
+				sortedEntries.each{
+					f.write(it.toFlatString())
+					f.write('\n')
+				}
+			}
+			if( Args.args.time ) {
+				def time = System.currentTimeMillis()
+				log.info("Write dict_corp_lt time: {}", (time-times[-1]))
+				times << time
+			}
 		}
 
 		if( Args.args.indent ) {
-			if( Args.args.mfl ) {
-				new File("dict_corp_lt.txt").withWriter("utf-8") {  f ->
-					sortedEntries.each{ 
-						f.println(it.toFlatString()) 
-					}
-				}
-			}
+
 			List<String> indentedLines = dictSorter.indent_lines(sortedEntries)
 
 			validator.check_indented_lines(indentedLines, limitedVerbLemmas)
 
-			if( nonFatalErrorCount > 0 ) {
-				log.fatal(String.format("%d non-fatal errors found, see above", nonFatalErrorCount))
+			if( Args.args.time ) {
+				def time = System.currentTimeMillis()
+				log.info("Indent lines time: {}", (time-times[-1]))
+				times << time
 			}
 
-			new File("dict_corp_vis.txt").withWriter("utf-8") { f ->
+			if( nonFatalErrorCount > 0 ) {
+				log.fatal(String.format("{} non-fatal errors found, see above", nonFatalErrorCount))
+			}
+
+			new File("dict_corp_vis.txt").withWriter("utf-8") { Writer f ->
 				indentedLines.each { String it ->
-					f.write(it + "\n")
+					f.write(it)
+					f.write('\n')
 				}
 			}
-	
+
+			if( Args.args.time ) {
+				def time = System.currentTimeMillis()
+				log.info("Write dict_corp_vis time: {}", (time-times[-1]))
+				times << time
+			}
+
 			if( Args.args.stats ) {
 				util.print_stats(indentedLines, double_form_cnt)
 			}

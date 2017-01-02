@@ -46,7 +46,6 @@
 * out/words.txt - список всіх відомих словоформ
 * out/words_spell.txt - список всіх відомих словоформ, правильних з погляду правопису
 * out/lemmas.txt - список лем
-* out/tags.txt - список тегів
 
 
 
@@ -73,10 +72,9 @@
 * out/words.txt - list of all unique known words
 * out/words_spell.txt - words valid for spelling
 * out/lemmas.txt - list of unique lemmas
-* out/tags.txt - list of unique tags
 
 
 Дані словника доступні для використання згідно з умовами ліцензії "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-nc-sa/4.0/)
 Програмні засоби вільно розповсюджується за умов ліцензії GPL версії 3.
 
-Copyright (c) 2016 Andriy Rysin, команда БрУК
+Copyright (c) 2017 Andriy Rysin, команда БрУК

@@ -3,20 +3,21 @@
 package org.dict_uk.expand
 
 import org.dict_uk.expand.TaggedWordlist
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 
 import groovy.transform.CompileStatic
 
 import org.dict_uk.expand.Expand
 import org.dict_uk.expand.ExpandComps
 
-import org.apache.logging.log4j.LogManager
-import org.apache.logging.log4j.Logger
 import org.dict_uk.common.DicEntry
 import org.dict_uk.expand.Args
 
 class ExpandAll {
-	static Logger log = LogManager.getFormatterLogger(ExpandAll.class);
+	static final Logger log = LoggerFactory.getLogger(ExpandAll.class);
 	
+
 	@CompileStatic
 	static void main(String[] argv) {
 		Args.parse(argv)
@@ -46,16 +47,16 @@ class ExpandAll {
 				out = tagged_wordlist.process_input([dic_file.getAbsolutePath()])
 			}
 
-			log.info("Processing file %s, got %d lines", dic_file.getName(), out.size())
+			log.info("Processing file {}, {} lines", dic_file.getName(), out.size())
 			out_lines.addAll(out)
 		}
 
 		if( out_lines.size() == 0 ) {
-			log.error("No valid input lines found in \"%s\"", Args.args.dictDir)
+			log.error("No valid input lines found in \"{}\"", Args.args.dictDir)
 			System.exit(1)
 		}
 		
-		log.info("Expanding %d lines", out_lines.size())
+		log.info("Expanding {} lines", out_lines.size())
 		//    with open("word_list.txt", "w") as out_file:
 		//        out_file.write("\n".join(out_lines))
 

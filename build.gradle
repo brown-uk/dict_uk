@@ -24,9 +24,8 @@ dependencies {
 
     compile 'commons-lang:commons-lang:2.4'
     compile 'org.codehaus.gpars:gpars:1.2.1'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.5'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.5'
     compile 'commons-cli:commons-cli:1.3'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.8'
     testCompile 'junit:junit:4.12'
 }
 
@@ -218,8 +217,8 @@ task diff(type: Exec) {
     cmd += "; " + get_diff_cmd(outputDir, 'words.txt')
     cmd += "; " + get_diff_cmd(outputDir, 'words_spell.txt')
     cmd += "; " + get_diff_cmd(outputDir, 'lemmas.txt')
-    cmd += "; " + get_diff_cmd(outputDir, 'tags.txt')
-    
+//    cmd += "; " + get_diff_cmd(outputDir, 'tags.txt')
+
     dictFile="dict_corp_vis.txt"
     cmd += "; " + get_diff_cmd(outputDir, dictFile)
 

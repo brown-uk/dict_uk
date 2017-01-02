@@ -1,19 +1,16 @@
 package org.dict_uk.expand
 
-import java.util.HashSet
-import java.util.List
 import java.util.regex.Pattern
 
-import org.apache.logging.log4j.LogManager
-import org.apache.logging.log4j.Logger
-
 import org.dict_uk.common.DicEntry
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 
 import groovy.transform.TypeChecked;
 
 
 class OutputValidator {
-	static Logger log = LogManager.getFormatterLogger(OutputValidator.class);
+	static Logger log = LoggerFactory.getLogger(OutputValidator.class);
 	
 	static final Pattern WORD_RE = Pattern.compile("[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ']*(-[а-яіїєґА-ЯІЇЄҐ']*)*|[А-ЯІЇЄҐ][А-ЯІЇЄҐ-]+|[а-яіїєґ]+\\.")
 	static final Pattern POS_RE = Pattern.compile("(noun:([iu]n)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|intj|conj:|predic|insert|foreign|noninfl).*")
@@ -23,7 +20,7 @@ class OutputValidator {
 	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
 
 	OutputValidator() {
-		log.debug("Read %d allowed tags\n", ALLOWED_TAGS.size())
+		log.debug("Read {} allowed tags\n", ALLOWED_TAGS.size())
 	}
 	
 	@TypeChecked

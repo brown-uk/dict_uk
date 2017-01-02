@@ -1,24 +1,18 @@
 package org.dict_uk.expand
 
-import java.util.List;
 import java.util.concurrent.ExecutorService
 import java.util.regex.*
 
-import groovy.transform.CompileStatic
-import groovy.transform.TypeChecked
-import groovyx.gpars.ParallelEnhancer
-import groovyx.gpars.GParsExecutorsPool
-import static groovyx.gpars.GParsPool.withPool
-
-import org.apache.logging.log4j.LogManager
-import org.apache.logging.log4j.Logger
-
 import org.dict_uk.common.DicEntry
-import org.dict_uk.common.UkDictComparator
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
+
+import groovy.transform.CompileStatic
+import groovyx.gpars.GParsExecutorsPool
 
 
 class Util {
-	static Logger log = LogManager.getFormatterLogger(Util.class);
+	private static final Logger log = LoggerFactory.getLogger(Util.class);
 
 	@CompileStatic
 	DicEntry tail_tag(DicEntry line, List<String> tags) {
@@ -241,11 +235,11 @@ class Util {
 			}
 		}
 
-		log.info("Всього лем: %d\n", cnt)
+		log.info("Всього лем: {}\n", cnt)
 
 		new File("dict_stats.txt").withWriter("utf-8") { stat_f ->
-			stat_f.printf("Всього лем: %d\n", cnt)
-			stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf) %d\n", (cnt_std - double_form_cnt))
+			stat_f.printf("Всього лем: {}\n", cnt)
+			stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf) {}\n", (cnt_std - double_form_cnt))
 			stat_f.print("\nЧастоти за тегами:\n")
 
 			def ordered_pos_freq = pos_stat.keySet().toList().sort()
@@ -319,7 +313,7 @@ class Util {
 						f << word << "\n"
 					}
 				}
-				log.info("%d total word forms", wordList.size())
+				log.info("{} total word forms", wordList.size())
 			}
 
 			executorService << { 
@@ -330,22 +324,22 @@ class Util {
 						f << word << "\n"
 					}
 				}
-				log.info("%d spelling word forms", spellWordList.size())
+				log.info("{} spelling word forms", spellWordList.size())
 			}
 
-			executorService << { 
-				def tagList = tags.toList().toSorted()
-				new File("tags.txt").withWriter("utf-8") { f ->
-					for(tag in tagList) {
-						f << tag << "\n"
-					}
-				}
-			}
+//			executorService << { 
+//				def tagList = tags.toList().toSorted()
+//				new File("tags.txt").withWriter("utf-8") { f ->
+//					for(tag in tagList) {
+//						f << tag << "\n"
+//					}
+//				}
+//			}
 		}
 	
 		if( Args.args.time ) {
 			def time2 = System.currentTimeMillis()
-			log.info("Word list time: %,d\n", (time2-time1))
+			log.info("Word list time: {}\n", (time2-time1))
 		}
 
 	}
@@ -369,7 +363,4 @@ class Util {
 		}
 	}
 	
-	
-	
-
 }
