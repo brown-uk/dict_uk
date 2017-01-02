@@ -20,6 +20,8 @@ function run_expand() {
 
 OPTS="-corp -indent -mfl --uncontr -stats -wordlist"
 
+echo "Diffing..."
+
 rm -f *.diff
 #run_expand -aff $BASE/data/affix -dict . $OPTS && \
 diff -u prev/dict_corp_vis.txt dict_corp_vis.txt > dict_corp_vis.txt.diff

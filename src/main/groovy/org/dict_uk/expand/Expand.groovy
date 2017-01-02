@@ -583,16 +583,12 @@ class Expand {
 			sfx_lines = out_lines
 		}
 		
-		if( main_flag[0] != "/") {
+		if( main_flag[0] != "/" ) {
 			sfx_lines = util.expand_nv(sfx_lines)
 		}
 		
 		sfx_lines = modify(sfx_lines, modifiers)
 
-		if( flags.contains("\\") ) {
-			sfx_lines = sfx_lines.each { it.tagStr += ":compb" }
-		}
-		
 		List<DicEntry> entries = post_expand(sfx_lines, flags)
 
 		entries.each {
@@ -609,12 +605,16 @@ class Expand {
 	List<String> preprocess(String line) {
 		List<String> lines
 
-		if( line.count(" /") > 1) {
+		if( line.count(" /") > 1 ) {
 			String[] parts = line.split(" ")
+
 			def line1 = parts[0..<2]
-			if( parts.size()>3 )
+			if( parts.size() > 3 ) {
 				line1 += parts[3..-1]
+			}
+			
 			def line2 = parts[0..<1] + parts[2..-1]
+			
 			lines = [
 				line1.join(" "),
 				line2.join(" ")
@@ -636,6 +636,7 @@ class Expand {
 		for(String line2 in lines) {
 			out_lines.addAll(preprocess2(line2))
 		}
+
 		return out_lines
 	}
 
@@ -646,6 +647,10 @@ class Expand {
 	List<String> preprocess2(String line) {
 		List<String> out_lines = []
 
+		String[] lineParts = line.split()
+		String flags = lineParts[1]
+		String word = lineParts[0]
+		
 		// patronym plurals
 		// TODO: and we need to split lemmas
 //		if( line.contains(".patr") ) {
@@ -653,10 +658,10 @@ class Expand {
 //		}
 
 		
-		if( line.contains("/<") ) {
+		if( flags.startsWith("/<") ) {
 		
 			def extra_tag = ":anim"
-			if( line.contains("<+") ) {
+			if( flags.contains("<+") ) {
 				extra_tag += ":prop:lname"
 			}
 			else {
@@ -665,21 +670,21 @@ class Expand {
 			    }
 			}
 
-			if( ! line.contains("<m") && ! line.contains("<+m") ) {
+			if( ! flags.contains("<m") && ! flags.contains("<+m") ) {
 				def tag = "noun:f:nv:np"
 				def line1 = plus_f_pattern.matcher(line).replaceFirst(tag + extra_tag + '$2')
 				out_lines.add(line1)
 			}
-			if( ! line.contains("<f") && ! line.contains("<+f") ) {
+			if( ! flags.contains("<f") && ! flags.contains("<+f") ) {
 				def tag = "noun:m:nv:np"
 				def line1 = plus_m_pattern.matcher(line).replaceFirst(tag + extra_tag + '$2')
 				out_lines.add(line1)
 			}
 		}
-		else if( line.contains("/n2") && line.contains("<+") ) {
-			if( ! line.contains("<+m") && util.dual_last_name_ending(line)) {
+		else if( flags.startsWith("/n2") && flags.contains("<+") ) {
+			if( ! flags.contains("<+m") && util.dual_last_name_ending(line)) {
 				out_lines.add(line)
-				def line_fem_lastname = line.split()[0] + " noun:f:nv:np:anim:prop:lname"
+				def line_fem_lastname = word + " noun:f:nv:np:anim:prop:lname"
 				
                 if( line.contains(" :") ) {
                     def matcher = line =~ /:[^ ]+/
@@ -694,8 +699,8 @@ class Expand {
 				out_lines = [line]
 			}
 		}
-		else if( line.contains("/n1") && line.contains("<+") ) {
-			if( ! line.contains("<+f") && ! line.contains("<+m") ) {
+		else if( flags.startsWith("/n1") && flags.contains("<+") ) {
+			if( ! flags.contains("<+f") && ! flags.contains("<+m") ) {
 				out_lines.add(line)
 				def line_masc_lastname = line.replace("<+", "<+m")
 				out_lines.add(line_masc_lastname)
@@ -704,40 +709,32 @@ class Expand {
 				out_lines = [line]
 			}
 		}
-		else if( line.contains("/n10") || line.contains("/n3") ) {
-			if( /*line.contains(".<") && ! line.contains(">") &&*/ ! line.contains(".k") && ! line.contains("ще ") ) {
-			    def parts = line.split()
-			    parts[1] += line.contains("/n10") ? ".ko" : ".ke"
-			    line = parts.join(" ")
+		else if( flags.startsWith("/n10") || flags.startsWith("/n3") ) {
+			if( ! flags.contains(".k") ) {
+			    lineParts[1] += flags.startsWith("/n10") ? ".ko" : ".ke"
+			    line = lineParts.join(" ")
 			}
 			out_lines = [line]
 		}
-		else if( line =~ ' /n2[0-4]' && ! line.contains(".k") ) {
-		    def parts = line.split()
-			if( isDefaultKlyE(parts[0], parts[1]) ) {
+		else if( flags =~ '^/n2[0-4]' && ! flags.contains(".k") ) {
+			if( isDefaultKlyE(word, flags) ) {
 //			    System.err.println(" .ke == " + line)
-			    parts[1] += ".ke"
-			    line = parts.join(" ")
+			    lineParts[1] += ".ke"
+			    line = lineParts.join(" ")
 		    }
 			out_lines = [line]
 		}
-		else if( line.contains("/np") ) {
-			def space = " "
-			if( line.contains(" :") || ! line.contains(" /") ) {
-				space = ""
+		else if( flags.startsWith("/np") ) {
+			if( ! line.contains(" :") ) {
+				line += " "
 			}
-			line = line + space + ":ns"
+			line = line + ":ns"
 			out_lines = [line]
 		}
-		else if( line.contains(":imperf:perf") ) {
+		else if( lineParts.length > 2 && line.contains(":imperf:perf") ) {
 			def line1 = line.replace(":perf", "")
 			def line2 = line.replace(":imperf", "").replace(".cf", "").replace(".adv ", " ") // so we don't duplicate cf and adv
-			//.replace(".advp")  // so we don"t get two identical advp:perf lines
 			out_lines = [line1, line2]
-		}
-		else if( line.contains(":&adj") && ! line.contains(" :&adj") ) {
-			line = line.replace(":&adj", " :&adj")
-			out_lines = [line]
 		}
 		else {
 			out_lines = [line]
@@ -1131,6 +1128,7 @@ class Expand {
 					throw new Exception("empty liner for " + inflected_lines)
 			}
 		}
+
 		return post_process(out_lines)
 	}
 
@@ -1146,21 +1144,22 @@ class Expand {
 		def prepared_lines = []
 
 		inputLines.each{ String line ->
+			String comment = null
+			
 			if( line.contains("#") ) {
-				line = line.replaceFirst("#.*", "")
+//				line = line.replaceFirst("#.*", "")
+				String[] parts = line.split("#")
+				line = parts[0]
+				comment = parts[1].replaceFirst(/rv_...(:rv_...)*/, '').trim() ?: null
 			}
 
-//			if( "#" in line)
-//				line = line.split("#")[0]
+			line = line.replaceAll(/\s+$/, '')		// .rstrip()
 
-			if( ! line.trim() )
-				return // continue
+			if( ! line )
+				return
 
-			//        line = line.rstrip()
-			line = line.replaceAll(/\s+$/, "")
-
-			if( line.endsWith("\\")) {
-				multiline += line  //.replace("\\", "")
+			if( line.endsWith("\\") ) {
+				multiline += line
 				return // continue
 			}
 			else {
@@ -1205,6 +1204,10 @@ class Expand {
 	}
 
 	private sortAndPostProcess(List allEntries) {
+		if( Args.args.time ) {
+			log.info("Sorting...\n")
+		}
+		
 		List<DicEntry> sortedEntries = dictSorter.sortEntries(allEntries)
 
 		sortedEntries = post_process_sorted(sortedEntries)
