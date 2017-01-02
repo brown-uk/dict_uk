@@ -11,53 +11,24 @@ import java.util.Map;
  *
  */
 public class UkDictComparator implements Comparator<String> {
-	private static final String IGNORE_CHARS = "'ʼ’-";
+	private static final char[] IGNORE_CHARS = new char[]{'\'', 'ʼ', '’', '-'};
 //	private Pattern IGNORE_CHARS_PATTERN = Pattern.compile("["+IGNORE_CHARS+"]");
 	private static final String UK_ALPHABET = 
 //		    "АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя";
 			"абвгґдеєжзиіїйклмнопрстуфхцчшщьюя";
 	
-	private static final Map<Character, Integer> UK_ALPHABET_MAP = new HashMap<>();
+	private static final Map<Character, Character> UK_ALPHABET_MAP = new HashMap<>();
 	
 	static {
 		for(int i=0; i<UK_ALPHABET.length(); i++) {
-			UK_ALPHABET_MAP.put(UK_ALPHABET.charAt(i), i);
+			UK_ALPHABET_MAP.put(UK_ALPHABET.charAt(i), (char)((int)'А' + i));
 		}
 	}
 
 	@Override
 	public int compare(String str0, String str1) {
-		
-//		String clean0 = IGNORE_CHARS_PATTERN.matcher(str0).replaceAll("");
-//		String clean1 = IGNORE_CHARS_PATTERN.matcher(str1).replaceAll("");
-//		
-//		for(int i=0; i<Math.min(clean0.length(), clean1.length()); i++) {
-//			int cmp = getOrd(clean0.charAt(i)) - getOrd(clean1.charAt(i));
-//			if( cmp != 0 )
-//				return cmp;
-//		}
-//
-//		for(int i=0; i<Math.min(clean0.length(), clean1.length()); i++) {
-//			int cmp = getCase(clean0.charAt(i)) - getCase(clean1.charAt(i));
-//			if( cmp != 0 )
-//				return -cmp;
-//		}
-//
-//		return str0.length() - str1.length();
 		return getSortKey(str0).compareTo(getSortKey(str1));
 	}
-	
-//	private int getCase(char charAt) {
-//		return Character.isUpperCase(charAt) ? 1 : 0;
-//	}
-//
-//	private int getOrd(char ch) {
-//		Character cLower = Character.toLowerCase(ch);
-//        if( UK_ALPHABET_MAP.containsKey(cLower) )
-//            return UK_ALPHABET_MAP.get(cLower);
-//
-//        return ch;
-//	}
 	
 	/**
 	 * Used by key-based sorting (like in python's sorted() with key= parameter)
@@ -66,15 +37,16 @@ public class UkDictComparator implements Comparator<String> {
 	 */
 	public static String getSortKey(String str) {
 		StringBuilder ignoreChars = new StringBuilder();
-		StringBuilder tailCaps = new StringBuilder(str.length());
-		StringBuilder normChars = new StringBuilder(str.length());
+		StringBuilder tailCaps = new StringBuilder(str.length() + 1);
+		StringBuilder normChars = new StringBuilder(str.length() + 1 + tailCaps.capacity() + ignoreChars.capacity());
 		
 		for(int i=0; i<str.length(); i++) {
 			char ch = str.charAt(i);
 			
-			if( IGNORE_CHARS.indexOf(ch) != -1 ) {
-				if( ch == 0x02BC )
+			if( isIgnoredChar(ch) ) {
+				if( ch == 0x02BC ) {
 					ch = 0x2020;
+				}
 				ignoreChars.append(ch);
 				continue;
 			}
@@ -82,14 +54,12 @@ public class UkDictComparator implements Comparator<String> {
 			
 			char lowerCh = Character.toLowerCase(ch);
 			
-			if (UK_ALPHABET_MAP.containsKey(lowerCh)) {
-				char normChar = (char)('А' + UK_ALPHABET_MAP.get(lowerCh));
-				normChars.append(normChar);
+			Character sortValue = UK_ALPHABET_MAP.get(lowerCh);
+			if (sortValue != null) {
+				normChars.append(sortValue);
 				tailCaps.append(ch);
-//				normChars.append(ch);
 			}
 			else {
-//				normChars.append(ch);
 				tailCaps.append(ch);
 			}
 			
@@ -99,7 +69,18 @@ public class UkDictComparator implements Comparator<String> {
 		tailCaps.append(" ");
 		ignoreChars.append(" ");
 		
-		return normChars.toString() + tailCaps.toString() + ignoreChars.toString();
+		normChars.append(tailCaps);
+		normChars.append(ignoreChars);
+		
+		return normChars.toString();
+	}
+
+	private static boolean isIgnoredChar(char ch) {
+		for (char c : IGNORE_CHARS) {
+			if( c == ch )
+				return true;
+		}
+		return false;
 	}
 	
 }

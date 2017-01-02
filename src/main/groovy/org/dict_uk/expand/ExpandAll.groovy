@@ -26,7 +26,7 @@ class ExpandAll {
 		expand.affix.load_affixes(Args.args.affixDir)
 
 
-		def out_lines = []
+		def outLines = []
 
 		def dictFilePattern = ~/.*\.lst/
 		new File(Args.args.dictDir).eachFileMatch(dictFilePattern) { dic_file ->
@@ -48,22 +48,17 @@ class ExpandAll {
 			}
 
 			log.info("Processing file {}, {} lines", dic_file.getName(), out.size())
-			out_lines.addAll(out)
+			outLines.addAll(out)
 		}
 
-		if( out_lines.size() == 0 ) {
+		if( outLines.size() == 0 ) {
 			log.error("No valid input lines found in \"{}\"", Args.args.dictDir)
 			System.exit(1)
 		}
 		
-		log.info("Expanding {} lines", out_lines.size())
-		//    with open("word_list.txt", "w") as out_file:
-		//        out_file.write("\n".join(out_lines))
+		log.info("Expanding {} lines", outLines.size())
 
-//		List<DicEntry> entries = expand.process_input(out_lines)
-
-		expand.processInputAndPrint(out_lines)
-		
+		expand.processInputAndPrint(outLines)
 	}
 
 }
