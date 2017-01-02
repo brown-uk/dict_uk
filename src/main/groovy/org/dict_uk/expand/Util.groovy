@@ -336,11 +336,6 @@ class Util {
 //				}
 //			}
 		}
-	
-		if( Args.args.time ) {
-			def time2 = System.currentTimeMillis()
-			log.info("Word list time: {}\n", (time2-time1))
-		}
 
 	}
 
