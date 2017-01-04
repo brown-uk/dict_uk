@@ -19,12 +19,8 @@ import org.slf4j.LoggerFactory;
 
 public class Affix {
 	private static final Logger log = LoggerFactory.getLogger(Affix.class);
-	//	private final ArrayList<> prefixes = new ArrayList<>();
 	private final Map<String, Map<String, SuffixGroup>> affixMap = new HashMap<>();
 
-	public static final Pattern re_alts_slash = Pattern.compile("([^/]+:)([^:]+)(:[^/]+)?");
-//	private static final Pattern re_alts_vert = Pattern.compile("^(.* )(.*)$");
-	public static final Pattern re_alts_dbl_slash = Pattern.compile("^(.+?:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...)(?:/(?:nv|v_...))*)+)(:[^/]+)?$");
 	private static final Pattern re_whitespace = Pattern.compile("[ \t]+");
 
 	
