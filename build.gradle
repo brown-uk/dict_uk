@@ -177,8 +177,8 @@ task testExpand(type: JavaExec, dependsOn: [reverseAffix, classes]) {
         def noTestVisOutputChange = getAdjustedText("$workingDir/$file") == getAdjustedText("$workingDir/prev/$file")
         assert noTestVisOutputChange
 
-        def noTestTagsOutputChange = getAdjustedText("$workingDir/tags.txt") == getAdjustedText("$workingDir/prev/tags.txt")
-        assert noTestTagsOutputChange
+//        def noTestTagsOutputChange = getAdjustedText("$workingDir/tags.txt") == getAdjustedText("$workingDir/prev/tags.txt")
+//        assert noTestTagsOutputChange
     }
 }
 
