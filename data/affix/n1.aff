@@ -24,6 +24,12 @@ group n10
 
 Га:
 Га	Зі		# А-Ба-Ба-Га-Ла-Ма-Га А-Ба-Ба-Га-Ла-Ма-Зі 	          @ noun:f:v_dav/v_mis
+ГА:
+ГА	ЗІ		# А-БА-БА-ГА-ЛА-МА-ГА А-БА-БА-ГА-ЛА-МА-ЗІ 	          @ noun:f:v_dav/v_mis
+А:
+А	У		# А-БА-БА-ГА-ЛА-МА-ГУ 	                    @ noun:f:v_zna
+А	И		# А-БА-БА-ГА-ЛА-МА-ГИ 	                    @ noun:f:v_rod
+А	ОЮ		# А-БА-БА-ГА-ЛА-МА-ГОЮ 	                    @ noun:f:v_oru
 
 # http://yak-my-hovorymo.wikidot.com/litera-za-yakoyu-yuzhat
 ґа:
@@ -65,6 +71,7 @@ subgroup n10.ko
 я е [дзлнцрст]я     # кавуся кавусе                   @ noun:f:v_kly
 я є ['ьіІйеиаоу]я    # сім'я  сім'є                    @ noun:f:v_kly
 
+А О ГА              # А-БА-БА-ГА-ЛА-МА-ГО             @ noun:f:v_kly
 
 subgroup n10.ku
 

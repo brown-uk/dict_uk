@@ -1,52 +1,54 @@
-авт. noun:m:v_naz    # автор, напр. "Сьогодні (у четвер.  Авт.), вранці."
-англ. adj:nv
-бл. adv
-близьк. adv
+авт. noun:m:v_naz               # автор, напр. "Сьогодні (у четвер.  Авт.), вранці."
+англ. adj:nv                    # англійський
+бл. adv                         # близко
+близьк. adv                     # близько
 вірм. adj:nv
-вул. noun:f:nv    # вулиця
+вул. noun:f:nv                  # вулиця
 грец. adj:nv
 грецьк. adj:nv
 давньогрец. adj:nv
-див. verb:rev:imperf:impr:p:2 # дивіться
-дол. noun:m:nv
+див. verb:rev:imperf:impr:p:2   # дивіться
+дол. noun:m:nv                  # долар
 досл. adv
-е. noun:f:nv    # ера
+доц. noun:anim:m:nv             # доцент
+е. noun:f:nv                    # ера
 ел. adj:nv
 жін. adj:nv
-зав. noun:m:nv|noun:f:nv    # завідувач, завідувачка
-заст. noun:m:nv|adj:nv    # заступник, застарілий
+зав. noun:m:nv|noun:f:nv        # завідувач, завідувачка
+заст. noun:m:nv|adj:nv          # заступник, застарілий
 зв. adj:nv
-ім. noun:n:v_rod
-ін. noun:n:nv
-кв. adj:nv|noun:f:nv:np    # квадратний, квартира
+ім. noun:n:v_rod                # імені
+ін. noun:n:nv                   # інше
+кв. adj:nv|noun:f:nv:np         # квадратний, квартира
 кімн. noun:f:nv
 кл. noun:m:nv
-коп. noun:f:nv
+коп. noun:f:nv                  # копійка
 лат. adj:nv
-м. noun:n:nv:np    # місто
-н. adj:nv    # наша (ера)
-напр. insert            # наприклад
-обл. noun:f:nv
+м. noun:n:nv:np                 # місто
+н. adj:nv                       # наша (ера)
+напр. insert                    # наприклад
+обл. noun:f:nv                  # область
 п. noun:m:nv
-перекл. noun:m:nv:np
-пл. noun:f:nv:np
-пров. noun:m:nv
+перекл. noun:m:nv:np            # переклад
+пл. noun:f:nv:np                # площа
+пров. noun:m:nv                 # провулок
+проф. noun:anim:m:nv            # професор
 р. noun:m:nv:np|noun:f:nv:np    # рік, річка
-ред. noun:m:v_naz|noun:f:nv:np    # редактор, напр. "Сьогодні (у четвер.  Ред.), вранці.", редакція
-реж. noun:m:nv                    # режисер
-рр. noun:p:nv:ns
+ред. noun:m:v_naz|noun:f:nv:np  # редактор, напр. "Сьогодні (у четвер.  Ред.), вранці.", редакція
+реж. noun:m:nv                  # режисер
+рр. noun:p:nv:ns                # роки
 рт. adj:nv
-руб. noun:n:nv
-с. noun:n:nv:np
-ст. noun:f:nv|noun:n:nv|adj:nv    # стаття, століття, столовий
-стол. adj:nv
-стор. noun:f:nv
-тел. noun:m:nv
-тис. numr:f:nv
-укр. adj:nv
-фр. adj:nv
-франц. adj:nv
-ч. noun:f:nv|adj:nv    # частина, чайний
-чайн. adj:nv
+руб. noun:n:nv                  # рубль
+с. noun:n:nv:np                 # село (секунда - без крапки)
+ст. noun:f:nv|noun:n:nv|adj:nv  # стаття, століття, столовий
+стол. adj:nv                    # столовий
+стор. noun:f:nv                 # сторінка
+тел. noun:m:nv                  # телефон
+тис. numr:f:nv                  # тисячі
+укр. adj:nv                     # український
+фр. adj:nv                      # французький
+франц. adj:nv                   # французький
+ч. noun:f:nv|adj:nv             # частина, чайний
+чайн. adj:nv                    # чайний
 чол. adj:nv|noun:m:nv
 шт. noun:f:nv

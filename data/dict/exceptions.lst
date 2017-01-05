@@ -10,7 +10,7 @@
 якорем якір noun:m:v_oru
 якореві якір noun:m:v_dav
 якорі якір noun:m:v_mis//p:v_naz/v_zna/v_kly
-якоре якір noun:m:v_kly
+якорю якір noun:m:v_kly
 якорів якір noun:p:v_rod
 якорям якір noun:p:v_dav
 якорями якір noun:p:v_oru
@@ -164,6 +164,25 @@
 очки очко noun:p:v_zna:xp2
 очками очко noun:p:v_oru:xp2
 очках очко noun:p:v_mis:xp2
+
+переддень переддень noun:inanim:m:v_naz
+передодня переддень noun:inanim:m:v_rod
+передодневі переддень noun:inanim:m:v_dav
+передодню переддень noun:inanim:m:v_dav
+переддень переддень noun:inanim:m:v_zna
+передоднем переддень noun:inanim:m:v_oru
+передодневі переддень noun:inanim:m:v_mis
+передодні переддень noun:inanim:m:v_mis
+передодню переддень noun:inanim:m:v_mis
+передодню переддень noun:inanim:m:v_kly
+передодні переддень noun:inanim:p:v_naz
+передоднів переддень noun:inanim:p:v_rod
+передодням переддень noun:inanim:p:v_dav
+передодні переддень noun:inanim:p:v_zna
+передоднями переддень noun:inanim:p:v_oru
+передоднях переддень noun:inanim:p:v_mis
+передодні переддень noun:inanim:p:v_kly
+
 
 
 Господь Господь noun:m:v_naz:anim:prop
@@ -623,8 +642,7 @@
 блажен блаженний adj:m:v_naz/v_zn2:short
 варт вартий adj:m:v_naz/v_zn2:short
 винен винний adj:m:v_naz/v_zn2:short
-#вістен вістний adj:m:v_naz/v_zn2:short
-вістен вісний adj:m:v_naz/v_zn2:short:rare
+вістен вістний adj:m:v_naz/v_zn2:short:rare
 годен годний adj:m:v_naz/v_zn2:short:coll
 дивен дивний adj:m:v_naz/v_zn2:short
 достоїн достойний adj:m:v_naz/v_zn2:short
