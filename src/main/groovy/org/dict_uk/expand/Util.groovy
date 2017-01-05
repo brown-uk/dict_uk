@@ -238,8 +238,8 @@ class Util {
 		log.info("Всього лем: {}\n", cnt)
 
 		new File("dict_stats.txt").withWriter("utf-8") { stat_f ->
-			stat_f.printf("Всього лем: {}\n", cnt)
-			stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf) {}\n", (cnt_std - double_form_cnt))
+			stat_f.printf("Всього лем: %d\n", cnt)
+			stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf) %s\n", (cnt_std - double_form_cnt))
 			stat_f.print("\nЧастоти за тегами:\n")
 
 			def ordered_pos_freq = pos_stat.keySet().toList().sort()
@@ -265,7 +265,7 @@ class Util {
 
 //	@TypeChecked
 	void print_word_list(List<DicEntry> sortedEntries) {
-		log.info("Collecting words, lemmas, and tags...")
+		log.info("Collecting words and lemmas...")
 
 		def time1 = System.currentTimeMillis()
 
