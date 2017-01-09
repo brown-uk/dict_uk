@@ -18,10 +18,10 @@
 вигибти /v3 :perf
 вилочний /adj
 виміна /n10
-винаймити /v1.imprt1 :perf
+винаймити /v1.it1 :perf
 випендрюватися /vr1.cf.advp :imperf
 вирощати /v2 :imperf
-висказати /v1.imprsNo :perf
+висказати /v1.isNo :perf
 висказатися /vr1 :perf
 висмівати /v2.cf.advp :imperf
 висміватися /vr2.cf.advp :imperf
@@ -60,7 +60,7 @@
 жантильний /adj
 жемчужний /adj
 завідатель /n20.a.<
-зазнимкувати /v1.imprs0 :perf
+зазнимкувати /v1.is0 :perf
 заки conj:subord
 заким conj:subord
 замісто prep:rv_rod

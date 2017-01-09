@@ -338,14 +338,14 @@ def lines = files.collect {
 			if( flg == 'patr' ) {
 				f = 'n.patr'
 			}
-			else if( f.contains('.cf') || f.contains('.imprs') ) {
+			else if( f.contains('.cf') || f.contains('.is') ) {
 				f = f.replaceFirst('v[0-9]', 'v')
 			}
 			else if( f == 'v3.advp' ) {
 				f = 'v1.advp'
 			}
-			else if( f == 'v3.imprt0' ) {
-				f = 'v1.imprt0'
+			else if( f == 'v3.it0' ) {
+				f = 'v1.it0'
 			}
 
 

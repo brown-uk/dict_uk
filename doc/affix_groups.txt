@@ -272,10 +272,10 @@ subgroup v5.advp
 group v1
 
 # Наказова форма з нульовим закінченням (бентеж)
-subgroup v1.imprt0
+subgroup v1.it0
 
 # Наказова форма з закінченням -и (вчи)
-subgroup v1.imprt1
+subgroup v1.it1
 
 # Дієслова 2 (вбивати - вбиваю)
 group v2
@@ -287,7 +287,7 @@ subgroup v.cf
 group v3
 
 # Наказова форма для v3
-subgroup v3.imprt1
+subgroup v3.it1
 
 # Дієслова, що неможливо (або дуже важко) обробляти іншими правилами
 group v4
@@ -306,19 +306,19 @@ group v6
 Файл: v_impers.aff:
 
 # Безособова форма дієслів -ти -> -но
-subgroup v.imprsNo
+subgroup v.isNo
 
 # Безособова форма дієслів -ти -> -то
-subgroup v.imprsTo
+subgroup v.isTo
 
 # Безособова форма дієслів
-subgroup v.imprs0
+subgroup v.is0
 
 # Безособова форма дієслів -ти -> -но (чергування)
-subgroup v.imprs1
+subgroup v.is1
 
 # Безособова форма дієслів -сти -> -дено
-subgroup v.imprs3
+subgroup v.is3
 
 
 
@@ -328,10 +328,10 @@ subgroup v.imprs3
 group vr1
 
 # Наказова форма з нульовим закінченням (бентеж)
-subgroup vr1.imprt0
+subgroup vr1.it0
 
 # Наказова форма з закінченням -и (вчи)
-subgroup vr1.imprt1
+subgroup vr1.it1
 
 # Дієслова 2 (вбивати - вбиваю)
 group vr2
@@ -343,7 +343,7 @@ subgroup vr.cf
 group vr3
 
 # Наказова форма для v3
-subgroup vr3.imprt1
+subgroup vr3.it1
 
 # Дієслова, що неможливо (або дуже важко) обробляти іншими правилами
 group vr4

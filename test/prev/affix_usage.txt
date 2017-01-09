@@ -653,7 +653,7 @@ Flag v1.advp has 42 groups
 	пати : 0		1 patterns
 	сати : 1		1 patterns
 	[аі]яти : 0		1 patterns
-Flag v1.imprt0 has 8 groups
+Flag v1.it0 has 8 groups
 	діти : 0		3 patterns
 	нути : 0		3 patterns
 	исти : 0		3 patterns
@@ -662,7 +662,7 @@ Flag v1.imprt0 has 8 groups
 	вати : 0		3 patterns
 	їти : 0		3 patterns
 	чати : 0		3 patterns
-Flag v1.imprt1 has 6 groups
+Flag v1.it1 has 6 groups
 	діти : 0		4 patterns
 	нути : 0		4 patterns
 	ати : 0		4 patterns
@@ -724,7 +724,7 @@ Flag v3 has 27 groups
 	[^оя]нути : 0		1 patterns
 Flag v3.advp has 1 groups
 	вити : 0		1 patterns
-Flag v3.imprt1 has 1 groups
+Flag v3.it1 has 1 groups
 	нути : 0		4 patterns
 Flag v4 has 18 groups
 	хати : 0		10 patterns
@@ -928,7 +928,7 @@ Flag vr1.advp has 42 groups
 	сатися : 0		1 patterns
 	[збв]тися : 0		1 patterns
 	дітися : 0		2 patterns
-Flag vr1.imprt0 has 8 groups
+Flag vr1.it0 has 8 groups
 	чатися : 0		5 patterns
 	нутися : 0		5 patterns
 	[дтзснл]итися : 0		5 patterns
@@ -937,7 +937,7 @@ Flag vr1.imprt0 has 8 groups
 	їтися : 0		6 patterns
 	дітися : 0		5 patterns
 	истися : 0		6 patterns
-Flag vr1.imprt1 has 6 groups
+Flag vr1.it1 has 6 groups
 	нутися : 0		6 patterns
 	стися : 0		6 patterns
 	атися : 0		6 patterns
@@ -1000,7 +1000,7 @@ Flag vr3 has 28 groups
 	онутися : 0		1 patterns
 Flag vr3.advp has 1 groups
 	витися : 0		1 patterns
-Flag vr3.imprt1 has 1 groups
+Flag vr3.it1 has 1 groups
 	нутися : 0		6 patterns
 Flag vr4 has 19 groups
 	оптися : 0		1 patterns

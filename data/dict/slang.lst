@@ -64,11 +64,11 @@
 виборчкомівець /n22.a.p.<
 викарабкатися /vr2 :perf
 викрутас /n20.p
-вирулити /v1.imprt1 :perf
+вирулити /v1.it1 :perf
 вирулювати /v1.cf.advp :imperf
 відбувайло /n20.ke.<
 відкат /n20.p
-відмазати /v1.imprsNo :perf
+відмазати /v1.isNo :perf
 відмазатися /vr1 :perf
 відмазка /n10.p2
 відмазувати /v1.cf.advp :imperf
@@ -164,7 +164,7 @@
 застосунок /n22.p
 здрейфити /v1 :perf
 зомбоящик /n20.a.p
-зубрити /v1.imprt1 :imperf
+зубрити /v1.it1 :imperf
 імперець /n22.p.a.<
 йо-майо intj
 кадебіст /n20.a.p.ke.<
@@ -282,9 +282,9 @@
 регіонівський /adj
 робінгуд /n20.a.p.ke.<
 розборка /n10.p2
-роздерибанити /v1.imprs0 :perf
+роздерибанити /v1.is0 :perf
 розрулений /adj :&adjp:pasv:perf
-розрулити /v1.imprs0 :perf
+розрулити /v1.is0 :perf
 розрулювання /n2n
 розрулювати /v1.cf.advp :imperf
 розрулюватися /vr1.cf.advp :imperf
@@ -353,7 +353,7 @@
 хавати /v2.cf.advp :imperf
 хайтек /n20
 хай-тек /n20
-хакнути /v1.imprsTo :perf
+хакнути /v1.isTo :perf
 хакнутий /adj :&adjp:pasv:perf
 халявний /adj
 хедлайнер /n20.a.p.<

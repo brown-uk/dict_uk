@@ -136,7 +136,7 @@ public class ExpandTest extends GroovyTestCase {
 
 	@Test
 	void testStrilyaty() {
-		def lines = ["стріляти /v2.cf.imprsNo :imperf"]
+		def lines = ["стріляти /v2.cf.isNo :imperf"]
 		assert join(expand.process_input(lines)) == strilyatyFull
 	}
 

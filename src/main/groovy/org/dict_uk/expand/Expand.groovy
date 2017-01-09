@@ -25,7 +25,7 @@ class Expand {
 	
 
 	static final Pattern cf_flag_pattern = ~ /(vr?)[1-4]\.cf/	 // v5.cf is special
-	static final Pattern imprs_pattern = ~ /(vr?)[1-9]\.imprs/
+	static final Pattern is_pattern = ~ /(vr?)[1-9]\.is/
 	static final Pattern pattr_pattern = ~ /n[0-9]+\.patr/
 //	Pattern default_kly_u_pattern = ~ /([^бвджзлмнпстфц]|[аеиу]р)$/
 	static final Pattern default_kly_u_pattern = ~ /[^бвджзлмнпстфц]$/
@@ -46,8 +46,8 @@ class Expand {
 		if( affixFlag2.contains(".cf") ) {
 			affixFlag2 = cf_flag_pattern.matcher(affixFlag2).replaceFirst('$1.cf')
 		}
-		if( affixFlag2.contains(".imprs") ) {
-			affixFlag2 = imprs_pattern.matcher(affixFlag2).replaceFirst('$1.imprs')
+		if( affixFlag2.contains(".is") ) {
+			affixFlag2 = is_pattern.matcher(affixFlag2).replaceFirst('$1.is')
 		}
 		if( affixFlag2.contains(".patr") ) {
 			affixFlag2 = pattr_pattern.matcher(affixFlag2).replaceFirst('n.patr')
@@ -85,8 +85,8 @@ class Expand {
 					affixFlag2 = mainGroup + "." + affixFlag2
 					if( affixFlag2 == "v3.advp")
 						affixFlag2 = "v1.advp"
-					else if( affixFlag2 == "v3.imprt0" )
-						affixFlag2 = "v1.imprt0"
+					else if( affixFlag2 == "v3.it0" )
+						affixFlag2 = "v1.it0"
 //				}
 
 				affixFlag2 = adjustCommonFlag(affixFlag2)
