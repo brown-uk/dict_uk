@@ -24,7 +24,8 @@ class ExpandComps {
 	}
 
 	@TypeChecked
-	List<DicEntry> match_comps(List<DicEntry> lefts, List<DicEntry> rights) {
+	List<DicEntry> matchComps(List<DicEntry> lefts, List<DicEntry> rights, String vMisCheck) {
+		
 		List<DicEntry> outs = []
 		Map<String, List<String>> left_v = [:]
 		String left_gen = ""
@@ -68,7 +69,10 @@ class ExpandComps {
 			}
 		}
 
-		for(DicEntry rn in rights ) {
+//		println 'xx ' +  lefts[0].tagStr
+//		println "+ " + vMisCheck + " / " + (vMisCheck as boolean)
+		
+		for(DicEntry rn in rights) {
 			def rrr = gen_vidm_pattern.matcher(rn.tagStr)
 			if( ! rrr.find() ) {
 				log.warn("composite: ignoring right {}", rn)
@@ -82,10 +86,13 @@ class ExpandComps {
 			if( !(vidm in left_v) )
 				continue
 
-			for(String left_wi in left_v[vidm] ) {
+			for(String left_wi in left_v[vidm]) {
 				String w_infl = left_wi + "-" + rn.word
 				String lemma = left_wn + "-" + rn.lemma
-				
+
+				if( vMisCheck && vidm.contains("m:v_mis") && ! isMascVMisMatch(left_wi, rn.word, vMisCheck) )
+					continue
+	
 				String tagStr = tags_re.matcher(left_tags).replaceAll('$1'+vidm+'$2')
 				DicEntry entry = new DicEntry(w_infl, lemma, tagStr)
 				outs.add(entry)
@@ -95,6 +102,18 @@ class ExpandComps {
 		return outs
 	}
 
+	private static boolean isMascVMisMatch(left, right, vMisCheck) {
+		if( vMisCheck.startsWith("u-") && left =~ /[ую]$/ && ! (right =~ /[ую]$/) )
+			return false
+		if( vMisCheck.endsWith("-u") && right =~ /[ую]$/ && ! (left =~ /[ую]$/) )
+			return false
+//		if( left =~ /[еєо]ві$/ && ! (right =~ /([ії]|[еєо]ві)$/) )
+//			return false
+//		if( left =~ /[ії]$/ && ! (right =~ /([ії]|[еєо]ві)$/) )
+//			return false
+		return true
+	}
+	
 	@TypeChecked
 	List<DicEntry> expand_composite_line(String line) {
 		if( ! line.contains(" - ") )
@@ -131,9 +150,11 @@ class ExpandComps {
 
 		List<DicEntry> rights = parts[1].contains("/") ? expand.expand_line(parts[1]) : [new DicEntry(parts[1], parts[1], null)]
 
-		return match_comps(lefts, rights)
+		Matcher vmisCheckMatch = line =~ ('!([u*]-[*u])')
+		String vmisCheck = vmisCheckMatch ? vmisCheckMatch.group(1) : ""
+		return matchComps(lefts, rights, vmisCheck)
 	}
-
+	
 	@TypeChecked
 	def process_input(List<String> lines) {
 		List<DicEntry> out = []

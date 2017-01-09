@@ -139,6 +139,27 @@
   авто noun:inanim:p:v_oru:nv
   авто noun:inanim:p:v_mis:nv
   авто noun:inanim:p:v_kly:nv
+автомат-пакувальник noun:inanim:m:v_naz
+  автомата-пакувальника noun:inanim:m:v_rod
+  автоматові-пакувальникові noun:inanim:m:v_dav
+  автоматові-пакувальнику noun:inanim:m:v_dav
+  автомату-пакувальникові noun:inanim:m:v_dav
+  автомату-пакувальнику noun:inanim:m:v_dav
+  автомат-пакувальник noun:inanim:m:v_zna
+  автоматом-пакувальником noun:inanim:m:v_oru
+  автоматі-пакувальникові noun:inanim:m:v_mis
+  автоматі-пакувальнику noun:inanim:m:v_mis
+  автоматові-пакувальникові noun:inanim:m:v_mis
+  автоматові-пакувальнику noun:inanim:m:v_mis
+  автомату-пакувальнику noun:inanim:m:v_mis
+  автомате-пакувальнику noun:inanim:m:v_kly
+  автомати-пакувальники noun:inanim:p:v_naz
+  автоматів-пакувальників noun:inanim:p:v_rod
+  автоматам-пакувальникам noun:inanim:p:v_dav
+  автомати-пакувальники noun:inanim:p:v_zna
+  автоматами-пакувальниками noun:inanim:p:v_oru
+  автоматах-пакувальниках noun:inanim:p:v_mis
+  автомати-пакувальники noun:inanim:p:v_kly
 автопричіп noun:inanim:m:v_naz
   автопричепа noun:inanim:m:v_rod
   автопричепові noun:inanim:m:v_dav
@@ -1904,12 +1925,8 @@
   грейдером-елеватором noun:inanim:m:v_oru
   грейдері-елеваторі noun:inanim:m:v_mis
   грейдері-елеваторові noun:inanim:m:v_mis
-  грейдері-елеватору noun:inanim:m:v_mis
   грейдерові-елеваторі noun:inanim:m:v_mis
   грейдерові-елеваторові noun:inanim:m:v_mis
-  грейдерові-елеватору noun:inanim:m:v_mis
-  грейдеру-елеваторі noun:inanim:m:v_mis
-  грейдеру-елеваторові noun:inanim:m:v_mis
   грейдеру-елеватору noun:inanim:m:v_mis
   грейдере-елеваторе noun:inanim:m:v_kly
   грейдери-елеватори noun:inanim:p:v_naz
