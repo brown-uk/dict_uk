@@ -1894,6 +1894,31 @@
   горничною noun:anim:f:v_oru:bad
   горничній noun:anim:f:v_mis:bad
   горнична noun:anim:f:v_kly:bad
+грейдер-елеватор noun:inanim:m:v_naz
+  грейдера-елеватора noun:inanim:m:v_rod
+  грейдерові-елеваторові noun:inanim:m:v_dav
+  грейдерові-елеватору noun:inanim:m:v_dav
+  грейдеру-елеваторові noun:inanim:m:v_dav
+  грейдеру-елеватору noun:inanim:m:v_dav
+  грейдер-елеватор noun:inanim:m:v_zna
+  грейдером-елеватором noun:inanim:m:v_oru
+  грейдері-елеваторі noun:inanim:m:v_mis
+  грейдері-елеваторові noun:inanim:m:v_mis
+  грейдері-елеватору noun:inanim:m:v_mis
+  грейдерові-елеваторі noun:inanim:m:v_mis
+  грейдерові-елеваторові noun:inanim:m:v_mis
+  грейдерові-елеватору noun:inanim:m:v_mis
+  грейдеру-елеваторі noun:inanim:m:v_mis
+  грейдеру-елеваторові noun:inanim:m:v_mis
+  грейдеру-елеватору noun:inanim:m:v_mis
+  грейдере-елеваторе noun:inanim:m:v_kly
+  грейдери-елеватори noun:inanim:p:v_naz
+  грейдерів-елеваторів noun:inanim:p:v_rod
+  грейдерам-елеваторам noun:inanim:p:v_dav
+  грейдери-елеватори noun:inanim:p:v_zna
+  грейдерами-елеваторами noun:inanim:p:v_oru
+  грейдерах-елеваторах noun:inanim:p:v_mis
+  грейдери-елеватори noun:inanim:p:v_kly
 гріш noun:inanim:m:v_naz
   гроша noun:inanim:m:v_rod
   грошеві noun:inanim:m:v_dav

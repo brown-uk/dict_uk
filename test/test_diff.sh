@@ -28,7 +28,7 @@ diff -u prev/dict_corp_vis.txt dict_corp_vis.txt > dict_corp_vis.txt.diff
 diff -u prev/dict_corp_lt.txt dict_corp_lt.txt > dict_corp_lt.txt.diff
 diff_u lemmas.txt
 diff_u words.txt
-diff_u tags.txt
+#diff_u tags.txt
 
 #echo
 #echo
