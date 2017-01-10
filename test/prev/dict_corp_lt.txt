@@ -1988,12 +1988,12 @@
 джерела джерело noun:inanim:p:v_kly
 дзиґа дзиґа noun:inanim:f:v_naz
 дзиґи дзиґа noun:inanim:f:v_rod
-дзизі дзиґа noun:inanim:f:v_dav:bad
 дзидзі дзиґа noun:inanim:f:v_dav
+дзизі дзиґа noun:inanim:f:v_dav
 дзиґу дзиґа noun:inanim:f:v_zna
 дзиґою дзиґа noun:inanim:f:v_oru
-дзизі дзиґа noun:inanim:f:v_mis:bad
 дзидзі дзиґа noun:inanim:f:v_mis
+дзизі дзиґа noun:inanim:f:v_mis
 дзиґо дзиґа noun:inanim:f:v_kly
 дзиґи дзиґа noun:inanim:p:v_naz
 дзиґ дзиґа noun:inanim:p:v_rod
