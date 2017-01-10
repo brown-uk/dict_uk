@@ -1186,8 +1186,9 @@ class Expand {
 
 		List<DicEntry> allEntries = prepared_lines.collectParallel { String line ->
 
+			List<DicEntry> taggedEntries
 			try {
-				List<DicEntry> taggedEntries = expand_line(line)
+				taggedEntries = expand_line(line)
 				
 				fatalErrorCount += validator.checkEntries(taggedEntries)
 
