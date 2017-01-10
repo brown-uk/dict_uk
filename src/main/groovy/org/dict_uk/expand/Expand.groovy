@@ -232,8 +232,15 @@ class Expand {
 			if( ! (w =~ (":[" + modifiers["gen"] + "]:") ) )
 				return false
 		}
-		if( "pers" in modifiers && ! ( w =~ ":(inf|past)") ) {
-			if( ! (w =~ ":[" + modifiers["pers"] + "]") )
+		if( "pers" in modifiers && ! ( w =~ ":(inf|past:n|impers)") ) {
+			def prs = ":[" + modifiers["pers"] + "]"
+			if( modifiers["pers"] == "3" ) {
+				prs = ":s" + prs
+			}
+			else {
+				prs = ":3|:past:"
+			}
+			if( ! (w =~ prs) )
 				return false
 		}
 		if( "tag" in modifiers) {

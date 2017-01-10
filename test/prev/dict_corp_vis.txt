@@ -1199,7 +1199,7 @@
   вело verb:imperf:past:n
   вели verb:imperf:past:p
 вечоріти verb:imperf:inf
-  вечоріє verb:imperf:pres:s:3
+  вечорить verb:imperf:pres:s:3
   вечорітиме verb:imperf:futr:s:3
   вечоріло verb:imperf:past:n
 вжаливши advp:perf
@@ -2238,20 +2238,11 @@
   залізка noun:inanim:p:v_kly
 засвітати verb:imperf:inf
   засвітає verb:imperf:pres:s:3
-  засвітають verb:imperf:pres:p:3
   засвітатиме verb:imperf:futr:s:3
-  засвітатимуть verb:imperf:futr:p:3
-  засвітав verb:imperf:past:m
-  засвітала verb:imperf:past:f
   засвітало verb:imperf:past:n
-  засвітали verb:imperf:past:p
 засвітати verb:perf:inf
   засвітає verb:perf:futr:s:3
-  засвітають verb:perf:futr:p:3
-  засвітав verb:perf:past:m
-  засвітала verb:perf:past:f
   засвітало verb:perf:past:n
-  засвітали verb:perf:past:p
 кайдани noun:inanim:p:v_naz:ns
   кайданів noun:inanim:p:v_rod:ns
   кайданам noun:inanim:p:v_dav:ns

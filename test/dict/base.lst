@@ -189,7 +189,7 @@
 постріляти /v2 :perf
 засвітати /v2.cf p=3 :imperf # TODO: advp?? засвітавши, засвітаючи
 засвітати /v2 p=3 :perf
-вечоріти /v5.cf :imperf
+вечоріти /v1.cf :imperf p=3
 взуватися /vr2.cf.advp :imperf:v-u
 взути /v2.isTo :perf:v-u
 взутися /vr2 :perf:v-u
