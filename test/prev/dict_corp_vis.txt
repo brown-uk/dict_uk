@@ -2877,6 +2877,36 @@
   псищами noun:anim:p:v_oru
   псищах noun:anim:p:v_mis
   псища noun:anim:p:v_kly
+сам-самісінький adj:m:v_naz:&pron:def
+  самого-самісінького adj:m:v_rod:&pron:def
+  самому-самісінькому adj:m:v_dav:&pron:def
+  самого-самісінького adj:m:v_zna:ranim:&pron:def
+  сам-самісінький adj:m:v_zna:rinanim:&pron:def
+  самим-самісіньким adj:m:v_oru:&pron:def
+  самім-самісінькім adj:m:v_mis:&pron:def
+  самому-самісінькому adj:m:v_mis:&pron:def
+  сама-самісінька adj:f:v_naz:&pron:def
+  самої-самісінької adj:f:v_rod:&pron:def
+  самій-самісінькій adj:f:v_dav:&pron:def
+  саму-самісіньку adj:f:v_zna:&pron:def
+  самою-самісінькою adj:f:v_oru:&pron:def
+  самій-самісінькій adj:f:v_mis:&pron:def
+  саме-самісіньке adj:n:v_naz:&pron:def
+  само-самісіньке adj:n:v_naz:&pron:def
+  самого-самісінького adj:n:v_rod:&pron:def
+  самому-самісінькому adj:n:v_dav:&pron:def
+  саме-самісіньке adj:n:v_zna:&pron:def
+  самим-самісіньким adj:n:v_oru:&pron:def
+  самім-самісінькім adj:n:v_mis:&pron:def
+  самому-самісінькому adj:n:v_mis:&pron:def
+  сами-самісінькі adj:p:v_naz:&pron:def
+  самі-самісінькі adj:p:v_naz:&pron:def
+  самих-самісіньких adj:p:v_rod:&pron:def
+  самим-самісіньким adj:p:v_dav:&pron:def
+  самих-самісіньких adj:p:v_zna:ranim:&pron:def
+  самі-самісінькі adj:p:v_zna:rinanim:&pron:def
+  самими-самісінькими adj:p:v_oru:&pron:def
+  самих-самісіньких adj:p:v_mis:&pron:def
 синій adj:m:v_naz
   синього adj:m:v_rod
   синьому adj:m:v_dav
@@ -3037,8 +3067,6 @@
   сумний-пресумний adj:m:v_zna:rinanim
   сумним-пресумним adj:m:v_oru
   сумнім-пресумнім adj:m:v_mis
-  сумнім-пресумному adj:m:v_mis
-  сумному-пресумнім adj:m:v_mis
   сумному-пресумному adj:m:v_mis
   сумний-пресумний adj:m:v_kly
   сумна-пресумна adj:f:v_naz
@@ -3054,8 +3082,6 @@
   сумне-пресумне adj:n:v_zna
   сумним-пресумним adj:n:v_oru
   сумнім-пресумнім adj:n:v_mis
-  сумнім-пресумному adj:n:v_mis
-  сумному-пресумнім adj:n:v_mis
   сумному-пресумному adj:n:v_mis
   сумне-пресумне adj:n:v_kly
   сумні-пресумні adj:p:v_naz
@@ -3322,6 +3348,24 @@
   чиїмись adj:p:v_oru:&pron:ind
   чиїхось adj:p:v_mis:&pron:ind
   чиїхсь adj:p:v_mis:&pron:ind
+чудо-юдо noun:anim:n:v_naz
+  чуда-юда noun:anim:n:v_rod
+  чуду-юду noun:anim:n:v_dav
+  чудо-юдо noun:anim:n:v_zna
+  чудом-юдом noun:anim:n:v_oru
+  чуді-юді noun:anim:n:v_mis
+  чуду-юду noun:anim:n:v_mis
+  чудо-юдо noun:anim:n:v_kly
+  чуда-юда noun:anim:p:v_naz
+  чуд-юд noun:anim:p:v_rod
+  чудам-юдам noun:anim:p:v_dav
+  чуда-юд noun:anim:p:v_zna
+  чуда-юда noun:anim:p:v_zna
+  чуд-юд noun:anim:p:v_zna
+  чуд-юда noun:anim:p:v_zna
+  чудами-юдами noun:anim:p:v_oru
+  чудах-юдах noun:anim:p:v_mis
+  чуда-юда noun:anim:p:v_kly
 шуканка noun:inanim:f:v_naz
   шуканки noun:inanim:f:v_rod
   шуканці noun:inanim:f:v_dav

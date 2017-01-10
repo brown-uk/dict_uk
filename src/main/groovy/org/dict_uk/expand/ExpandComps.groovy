@@ -90,7 +90,7 @@ class ExpandComps {
 				String w_infl = left_wi + "-" + rn.word
 				String lemma = left_wn + "-" + rn.lemma
 
-				if( vMisCheck && vidm.contains("m:v_mis") && ! isMascVMisMatch(left_wi, rn.word, vMisCheck) )
+				if( vMisCheck && vidm =~ /[nm]:v_mis/ && ! isMascVMisMatch(left_wi, rn.word, vMisCheck) )
 					continue
 	
 				String tagStr = tags_re.matcher(left_tags).replaceAll('$1'+vidm+'$2')
@@ -151,7 +151,13 @@ class ExpandComps {
 		List<DicEntry> rights = parts[1].contains("/") ? expand.expand_line(parts[1]) : [new DicEntry(parts[1], parts[1], null)]
 
 		Matcher vmisCheckMatch = line =~ ('!([u*]-[*u])')
-		String vmisCheck = vmisCheckMatch ? vmisCheckMatch.group(1) : ""
+		String vmisCheck = ""
+		if( vmisCheckMatch ) {
+			vmisCheck = vmisCheckMatch.group(1)
+		}
+		else if( line =~ ' /adj.* /adj') {
+			vmisCheck = "u-u"
+		}
 		return matchComps(lefts, rights, vmisCheck)
 	}
 	
