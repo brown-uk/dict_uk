@@ -83,7 +83,7 @@ class Expand {
 			if( affixFlag2 != mainGroup) {
 //				if( ! (affixFlag2 in ["v2", "vr2"]) ) {  // курликати /v1.v2.cf       задихатися /vr1.vr2
 					affixFlag2 = mainGroup + "." + affixFlag2
-					if( affixFlag2 == "v3.advp")
+					if( affixFlag2 == "v3.advp" && ! word.endsWith('ити') )
 						affixFlag2 = "v1.advp"
 					else if( affixFlag2 == "v3.it0" )
 						affixFlag2 = "v1.it0"

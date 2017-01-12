@@ -42,7 +42,7 @@ subgroup v1.advp
 
 оти	    ючи	    оти		            #  бороти  борючи	                             @ advp:imperf
 їти	    ячи	    їти		            #  клеїти  клеючи	                             @ advp:imperf
-ти	    учи	    [збв]ти		        #  везти  везучи		                     @ advp:imperf
+ти	    учи	    [збвп]ти		        #  везти  везучи		                     @ advp:imperf
 ти	    тучи	ости		    #  рости  ростучи		               @ advp:imperf
 сти	    тучи	[еі]сти		    #  цвісти  цвітучи	               @ advp:imperf
 сти	    нучи	лясти		    #  клясти  клянучи	               @ advp:imperf
@@ -59,7 +59,6 @@ subgroup v1.advp
 subgroup v2.advp
 
 ти	    ючи	    [аіуя]ти	#  вбивати  вбиваючи 	                 @ advp:imperf
-ити	    'ючи	[бвп]ити	#  бити  б'ючи 	                 @ advp:imperf
 ити	    иючи	[врмнш]ити	#  рити  риючи	                 @ advp:imperf
 ити	    лючи	лити		#  лити  ллючи		                 @ advp:imperf
 ти	    вучи	жити		#  жити  живучи		                 @ advp:imperf
@@ -79,7 +78,7 @@ subgroup v2.advp
 
 subgroup v3.advp
 
-ити     'ючи    вити            #  вити  в'ючи                   @ advp:imperf
+ити     'ючи    [бвп]ити            #  вити  в'ючи                   @ advp:imperf
 
 
 

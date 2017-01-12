@@ -42,7 +42,7 @@ subgroup vr1.advp
 
 отися	ючись	отися		#		боротись	борючись		@ advp:rev:imperf
 їтися	ячись	їтися		#		клеїтись	клеючись		@ advp:rev:imperf
-тися	учись	[збв]тися		#		везтись	везучись		@ advp:rev:imperf
+тися	учись	[збвп]тися		#		везтись	везучись		@ advp:rev:imperf
 тися	тучись	остися		#		ростись	ростучись		@ advp:rev:imperf
 стися	тучись	[еі]стися		#		цвістись	цвітучись		@ advp:rev:imperf
 стися	нучись	лястися		#		клястись	клянучись		@ advp:rev:imperf
@@ -59,7 +59,6 @@ subgroup vr1.advp
 subgroup vr2.advp
 
 тися	ючись	[аіуя]тися		#		вбиватись	вбиваючись		@ advp:rev:imperf
-итися	'ючись	[бвп]итися		#		битись	б'ючись		@ advp:rev:imperf
 итися	иючись	[врмнш]итися		#		ритись	риючись		@ advp:rev:imperf
 итися	лючись	литися		#		литись	ллючись		@ advp:rev:imperf
 тися	вучись	житися		#		житись	живучись		@ advp:rev:imperf
@@ -79,7 +78,7 @@ subgroup vr2.advp
 
 subgroup vr3.advp
 
-итися	'ючись	витися		#		витись	в'ючись		@ advp:rev:imperf
+итися	'ючись	[бвп]итися		#		витись	в'ючись		@ advp:rev:imperf
 
 
 
