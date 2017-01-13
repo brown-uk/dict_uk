@@ -1232,14 +1232,15 @@ class Expand {
 		return sortedEntries
 	}
 
+	@CompileStatic
 	void processInputAndPrint(List<String> inputLines) {
-		def times = []
+		List<Long> times = []
 		times << System.currentTimeMillis()
 
 		List<DicEntry> sortedEntries = process_input(inputLines)
 		
 		if( fatalErrorCount > 0 ) {
-			log.fatal(String.format("{} fatal errors found, see above, exiting...", fatalErrorCount))
+			log.error("{} fatal errors found, see above, exiting...", fatalErrorCount)
 			System.exit(1)
 		}
 
@@ -1290,7 +1291,7 @@ class Expand {
 			}
 
 			if( nonFatalErrorCount > 0 ) {
-				log.fatal(String.format("{} non-fatal errors found, see above", nonFatalErrorCount))
+				log.error("{} non-fatal errors found, see above", nonFatalErrorCount)
 			}
 
 			new File("dict_corp_vis.txt").withWriter("utf-8") { Writer f ->
