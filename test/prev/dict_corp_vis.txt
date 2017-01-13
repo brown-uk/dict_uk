@@ -2962,6 +2962,31 @@
   Склодовською-Кюрі noun:anim:f:v_oru:prop:lname
   Склодовській-Кюрі noun:anim:f:v_mis:prop:lname
   Склодовська-Кюрі noun:anim:f:v_kly:prop:lname
+сопівши advp:imperf
+сопіти verb:imperf:inf
+  сопи verb:imperf:impr:s:2
+  сопім verb:imperf:impr:p:1
+  сопімо verb:imperf:impr:p:1
+  сопіть verb:imperf:impr:p:2
+  соплю verb:imperf:pres:s:1
+  сопеш verb:imperf:pres:s:2
+  сопе verb:imperf:pres:s:3
+  сопем verb:imperf:pres:p:1
+  сопемо verb:imperf:pres:p:1
+  сопете verb:imperf:pres:p:2
+  соплять verb:imperf:pres:p:3
+  сопітиму verb:imperf:futr:s:1
+  сопітимеш verb:imperf:futr:s:2
+  сопітиме verb:imperf:futr:s:3
+  сопітимем verb:imperf:futr:p:1
+  сопітимемо verb:imperf:futr:p:1
+  сопітимете verb:imperf:futr:p:2
+  сопітимуть verb:imperf:futr:p:3
+  сопів verb:imperf:past:m
+  сопіла verb:imperf:past:f
+  сопіло verb:imperf:past:n
+  сопіли verb:imperf:past:p
+соплячи advp:imperf
 стафілокок noun:unanim:m:v_naz
   стафілокока noun:unanim:m:v_rod
   стафілококові noun:unanim:m:v_dav
