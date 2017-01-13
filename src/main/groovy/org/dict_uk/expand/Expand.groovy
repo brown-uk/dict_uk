@@ -237,8 +237,8 @@ class Expand {
 			if( modifiers["pers"] == "3" ) {
 				prs = ":s" + prs
 			}
-			else {
-				prs = ":3|:past:"
+			else { // p=4
+				prs = ":3|:past|:impr:[sp]:2"
 			}
 			if( ! (w =~ prs) )
 				return false
