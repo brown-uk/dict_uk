@@ -35,6 +35,7 @@
 БРІК noun:n:nv:np:prop      # Brazil, Russia, India, China, South Africa
 БРСР noun:f:nv:np:prop
 БТР noun:m:nv
+буд-во /n2n.p1              # будівництво
 БЮТ noun:m:nv:np:prop
 ВАДА noun:n:nv:np:prop      # Всесвітнє антидопінгове агентство
 ВАЗ /n20 :prop
@@ -49,6 +50,7 @@
 вдсх noun:n:nv
 ВДЦП noun:m:nv:prop    # Всеукраїнський депозитарій цінних паперів
 вид-во /n2n.p1
+вир-во /n2n.p1          # виробництво
 ВИХ noun:m:nv
 ВІЛ noun:m:nv:np
 ВІЛ-СНІД noun:m:nv:np
@@ -86,12 +88,13 @@
 Гбайт noun:m:nv
 Гбіт noun:m:nv
 г-во /n2n
-ГГц noun:m:nv
+ГГц noun:m:nv               # гігагерц
 ГеВ noun:m:nv
 ГЕС noun:f:nv
 ГІС noun:f:nv
 ГМО noun:m:nv           # Генетично модифікований організм
 ГОЕЛРО noun:f:nv
+госп-во /n2n.p1             # господарство
 госп-во /n2n
 ГПа noun:m:nv
 ГПО noun:n:nv
@@ -135,7 +138,7 @@
 ДПЕК noun:m:nv:prop    # Донбаської паливно-енергетичної компанії
 ДПС noun:f:nv
 ДПСУ noun:f:nv:prop    # Державна прикордонна служба України
-д-р /n20.a.p.<
+д-р /n20.a.p.<          # доктор
 ДРВ noun:f:nv
 ДРГ noun:f:nv           # диверсійно-розвідувальна група
 ДРЕС noun:f:nv
@@ -176,7 +179,7 @@
 зав /n20.a
 ЗАТ noun:n:nv
 ЗВТ noun:f:nv           # зона вільної торгівлі
-з-д /n20.a.p
+з-д /n20.a.p            # завод
 ЗЄС noun:m:nv:prop    # Західноєвропейський союз
 ЗМІ noun:p:nv:ns
 ЗМОП noun:m:nv    # загін міліції особливого призначення
@@ -188,7 +191,7 @@
 ІГХ noun:f:nv    # Імуногістохімія
 ІДІЛ noun:f:nv:np:prop      # Ісламська держава Іраку та Леванту
 ІНК noun:m:nv:prop    # Індійський національний конгрес
-ін-т /n20.p
+ін-т /n20.p                 # інститут
 ІОЦ noun:m:nv    # інформаційно-обчислювальний центр
 ІПС noun:f:nv
 ІРІ noun:f:nv
@@ -238,7 +241,7 @@
 КПРС noun:f:nv:np:prop
 КПРФ noun:f:nv:np:prop
 КПУ noun:f:nv:np:prop
-крб noun:m:nv
+крб noun:m:nv               # карбованець
 КС noun:m:nv:np:prop        # Конституційний Суд
 к-сть /n30.p
 КСУ noun:m:nv:np:prop        # Конституційний Суд України
@@ -271,7 +274,7 @@
 Мбайт noun:m:nv
 Мбіт noun:m:nv
 МБРР noun:m:nv:np:prop
-м-во /n2n.p1
+м-во /n2n.p1                # міністерство
 МВС noun:n:nv
 МВСУ noun:n:nv:np:prop
 МВт noun:m:nv
@@ -284,7 +287,7 @@
 МЖК noun:m:nv
 МЗС noun:n:nv
 МінАП noun:n:nv
-мін-во /n2n.p1
+мін-во /n2n.p1                # міністерство
 мкг noun:m:nv
 мкм noun:m:nv
 МКС noun:f:nv:prop
@@ -429,9 +432,10 @@
 ПрАТ noun:n:nv              # приватне акціонерне товариство
 ПрикВО noun:m:nv
 ПРО noun:f:nv:np
+пром-сть /n30               # промисловість
 ПРООН noun:f:nv
 ПРП noun:f:nv
-пр-т /n20
+пр-т /n20                   # проспект
 ПРУ noun:f:nv
 ПС noun:n:nv:np:prop        # Правий Сектор
 ПСПУ noun:f:nv:prop
@@ -519,7 +523,7 @@
 Тбайт noun:m:nv
 ТВЕЛ /n20.a.p
 ТВК noun:f:nv           # теріторільна виборча комісія
-т-во /n2n
+т-во /n2n               # товариство
 Т-ДНК noun:f:nv
 ТЕС noun:f:nv       # теплоелектростанція
 ТЕФІ noun:f:nv
@@ -616,7 +620,7 @@
 ФІСУ noun:f:nv
 ФІФА noun:f:nv:prop
 ФК noun:m:nv
-ф-ка /n10
+ф-ка /n10.p1            # фабрика
 ФКП noun:f:nv
 ФМ-діапазон /n20
 ФМ-станція /n10.p1
@@ -628,7 +632,7 @@
 ФРЕЛІМО noun:m:nv:prop    # Frente de Libertação de Moçambique
 ФСБ noun:f:nv:np:prop
 ФСП noun:f:nv
-ф-т /n20.p
+ф-т /n20.p                  # факультет
 ФФУ noun:f:nv:np
 ХАЕС noun:f:nv:prop
 ХАМАС noun:m:nv:np:prop

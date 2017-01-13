@@ -1,5 +1,8 @@
+# див. також http://lib.npu.edu.ua/full_txt/DSTU_3582_2013.pdf
 авт. noun:m:v_naz               # автор, напр. "Сьогодні (у четвер.  Авт.), вранці."
+акад. noun:anim:m:nv            # академік
 англ. adj:nv                    # англійський
+арк. noun:m:nv                  # аркуш
 бл. adv                         # близко
 близьк. adv                     # близько
 вірм. adj:nv
@@ -7,7 +10,7 @@
 грец. adj:nv
 грецьк. adj:nv
 давньогрец. adj:nv
-див. verb:rev:imperf:impr:p:2   # дивіться
+див. verb:rev:imperf:impr:s:2   # дивись
 дол. noun:m:nv                  # долар
 досл. adv
 доц. noun:anim:m:nv             # доцент
@@ -15,40 +18,71 @@
 ел. adj:nv
 жін. adj:nv
 зав. noun:m:nv|noun:f:nv        # завідувач, завідувачка
-заст. noun:m:nv|adj:nv          # заступник, застарілий
+заст. noun:m:nv                 # заступник
+заст. adj:nv                    # застарілий
+зах. adj:nv                     # західний
 зв. adj:nv
+зовн. adj:nv                    # зовнішній
 ім. noun:n:v_rod                # імені
 ін. noun:n:nv                   # інше
+іст. adj:nv                     # історичний
+к. noun:n:nv                    # копійка (при цифрах)
+канд. noun:anim:m:nv            # кандидат
+каф. noun:f:nv                  # кафедра
 кв. adj:nv|noun:f:nv:np         # квадратний, квартира
-кімн. noun:f:nv
+кімн. noun:f:nv                 # кімната
 кл. noun:m:nv
+коеф. noun:m:nv                 # коефіцієнт
 коп. noun:f:nv                  # копійка
-лат. adj:nv
+лат. adj:nv                     # латинський
 м. noun:n:nv:np                 # місто
+мат. adj:nv                     # математичний
+мех. adj:nv                     # механічний
 н. adj:nv                       # наша (ера)
 напр. insert                    # наприклад
+н.-д. adj:nv                    # науково-дослідний
 обл. noun:f:nv                  # область
 п. noun:m:nv
+пд.-зах. adj:nv                 # південно-західний
+пд.-сх. adj:nv                  # південно-східний
 перекл. noun:m:nv:np            # переклад
 пл. noun:f:nv:np                # площа
+пн.-зах. adj:nv                 # північно-західний
+пн.-сх. adj:nv                  # північно-східний
+поч. noun:m:nv:np               # початок
 пров. noun:m:nv                 # провулок
-проф. noun:anim:m:nv            # професор
+пром. adj:nv                    # промисловий
+проф. noun:anim:m:nv            # професор (при прізвищі)
 р. noun:m:nv:np|noun:f:nv:np    # рік, річка
 ред. noun:m:v_naz|noun:f:nv:np  # редактор, напр. "Сьогодні (у четвер.  Ред.), вранці.", редакція
 реж. noun:m:nv                  # режисер
+рис. noun:m:nv                  # рисунок
+розд. noun:m:nv                 # розділ
 рр. noun:p:nv:ns                # роки
 рт. adj:nv
 руб. noun:n:nv                  # рубль
-с. noun:n:nv:np                 # село (секунда - без крапки)
-ст. noun:f:nv|noun:n:nv|adj:nv  # стаття, століття, столовий
+с. noun:n:nv:np                 # село, сторінка (секунда - без крапки)
+св. adj:nv                      # святий
+с.-г. adj:nv                    # сільсько-господарський
+скор. noun:n:nv                 # скорочення
+ст. noun:f:nv|noun:n:nv         # стаття, століття
+ст. adj:nv                      # столовий, старший
 стол. adj:nv                    # столовий
 стор. noun:f:nv                 # сторінка
+сх. adj:nv                      # східний
+т. noun:m:nv                    # том
+табл. noun:f:nv                 # таблиця
 тел. noun:m:nv                  # телефон
 тис. numr:f:nv                  # тисячі
 укр. adj:nv                     # український
+упоряд. noun:anim:m:nv          # професор (при прізвищі)
 фр. adj:nv                      # французький
 франц. adj:nv                   # французький
-ч. noun:f:nv|adj:nv             # частина, чайний
+ч. noun:f:nv                    # частина
+ч. adj:nv:bad                   # чайний
 чайн. adj:nv                    # чайний
-чол. adj:nv|noun:m:nv
-шт. noun:f:nv
+чл.-кор. noun:anim:m:nv         # член-кореспондент (при прізвищі)
+чол. noun:m:nv                  # чоловік
+чол. adj:nv                     # чоловічий
+шт. noun:f:nv                   # штука
+яп. adj:nv                      # французький
