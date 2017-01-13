@@ -83,7 +83,7 @@ class Expand {
 			if( affixFlag2 != mainGroup) {
 //				if( ! (affixFlag2 in ["v2", "vr2"]) ) {  // курликати /v1.v2.cf       задихатися /vr1.vr2
 					affixFlag2 = mainGroup + "." + affixFlag2
-					if( affixFlag2 == "v3.advp" && ! word.endsWith('ити') )
+					if( affixFlag2 == "v3.advp" && ! (word =~ /(ити|діти)(ся)?$/) )
 						affixFlag2 = "v1.advp"
 					else if( affixFlag2 == "v3.it0" )
 						affixFlag2 = "v1.it0"
@@ -1190,22 +1190,26 @@ class Expand {
 			try {
 				taggedEntries = expand_line(line)
 				
-				fatalErrorCount += validator.checkEntries(taggedEntries)
+				if( validator.checkEntries(taggedEntries) > 0 ) {
+				    taggedEntries = null
+				}
 
-				return taggedEntries
+    			return taggedEntries
 			}
 			catch(Exception e) {
-//				throw new Exception("Exception in line: \"" + line + "\"", e)
 //				log.error("Failed to expand: \"" + line + "\": ", e)
 				log.error("Failed to expand: \"" + line + "\": " + e.getMessage())
-				fatalErrorCount++
-				
-				return taggedEntries
+				return null
 			}
 
 		}.flatten()
 
-		
+
+        fatalErrorCount += allEntries.count(null)
+
+        if( fatalErrorCount > 0 )
+            return allEntries
+
 		return sortAndPostProcess(allEntries)
 	}
 
