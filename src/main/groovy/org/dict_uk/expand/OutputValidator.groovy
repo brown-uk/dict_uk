@@ -82,6 +82,8 @@ class OutputValidator {
 		List<String> lastVerbTags = null
 		int nonFatalErrorCount = 0
 		
+		limitedVerbLemmas << "хтітися"
+		
 		//		ParallelEnhancer.enhanceInstance(lines)
 
 		lines.each { String line ->
