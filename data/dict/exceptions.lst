@@ -286,12 +286,6 @@
 штанями штани noun:p:v_oru:ns
 штанях штани noun:p:v_mis:ns
 
-дошки дошка noun:p:v_naz/v_zna/v_kly
-дощок дошка noun:p:v_rod
-дошкам дошка noun:p:v_dav
-дошками дошка noun:p:v_oru
-дошках дошка noun:p:v_mis
-
 
 нічия нічия noun:inanim:f:v_naz
 нічиєї нічия noun:inanim:f:v_rod
@@ -424,7 +418,6 @@
 корогов корогва noun:f:v_naz/v_zna
 
 сосон сосна noun:p:v_rod
-воріженьки вороженько noun:p:v_naz:anim:rare
 дровець дрівця noun:p:v_rod:ns
 судорог судорга noun:p:v_rod:bad
 плахіт плахта noun:p:v_rod
