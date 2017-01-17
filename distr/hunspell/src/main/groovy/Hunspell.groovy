@@ -325,7 +325,14 @@ def lines = files.collect {
 			    || it =~ " [gp]=|/adj\\.<\\+|<\\+m|n2adj2\\.<\\+|v5\\.cf|\\.pzi| /.* /"
 					) {
 			def expandFlags = parts.size() > 2 ? parts[1] + ' ' + parts[2] : parts[1]
-			return expand.expand(parts[0], expandFlags).findAll{ ! (it =~ /:uncontr|:alt|verb.*:coll/ ) }.collect { it.split()[0] }.unique() // + ' # TODO: inflect' 
+
+            def expanded = expand.expand(parts[0], expandFlags)
+
+			def uniqForms = expanded.findAll{
+			    ! (it =~ /:uncontr|:alt|verb.*:coll/ )
+			}.collect {
+			    it.word
+			}.unique() // + ' # TODO: inflect' 
 		}
 	
 		
@@ -408,7 +415,7 @@ println "Got $comps.size comps"
 
 comps = comps.findAll{ ! (it =~ /:uncontr|:alt|:bad|verb.*:coll|inanim:.:v_kly/ ) }
 
-lines.addAll(comps.collect{ it.split()[0] })
+lines.addAll(comps.collect{ it.word })
 
 
 println "Found ${lines.size} total lines"
