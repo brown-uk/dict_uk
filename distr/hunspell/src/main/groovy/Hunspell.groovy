@@ -331,9 +331,9 @@ def lines = files.collect {
 			    || it =~ " [gp]=|/adj\\.<\\+|<\\+m|\\.pzi| /.* /"
 					) {
 
-			if( ! (it =~ /adj\.<|n2adj2\.<|p=/ ) ) {
-				println "-- manual expand for $parts"
-			}
+//			if( ! (it =~ /adj\.<|n2adj2\.<|p=/ ) ) {
+//				println "-- manual expand for $parts"
+//			}
 						
 			def expandFlags = parts.size() > 2 ? parts[1] + ' ' + parts[2] : parts[1]
 
@@ -345,7 +345,6 @@ def lines = files.collect {
 			    it.word
 			}.unique() // + ' # TODO: inflect'
 			
-			println '++ ' + uniqForms
 			return uniqForms 
 		}
 		else {
