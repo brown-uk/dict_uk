@@ -304,7 +304,13 @@ def lines = files.collect {
            parts[1] = parts[1].replace(".ke", "")
         }
 		
-
+		if( parts[1] =~ /n10.*\.<\+?m/ ) {
+			parts[1] = parts[1].replaceFirst(/\.<\+?m/, '')
+			it = it.replaceFirst(/\.<\+?m/, '')
+//			println "-- n10m: $it"
+		}
+		
+		
 		def allFlags = parts[1][1..-1]
 
         reMapFlags.each { k,v ->
@@ -321,9 +327,14 @@ def lines = files.collect {
 
 		
 		if( mainFlg in negativeMatchFlags 
-				&& negativeMatchFlags[mainFlg].find{ parts[0].endsWith(it.neg_match) }
-			    || it =~ " [gp]=|/adj\\.<\\+|<\\+m|n2adj2\\.<\\+|v5\\.cf|\\.pzi| /.* /"
+				&& negativeMatchFlags[mainFlg].find{ parts[0] =~ it.neg_match+/$/ }
+			    || it =~ " [gp]=|/adj\\.<\\+|<\\+m|\\.pzi| /.* /"
 					) {
+
+			if( ! (it =~ /adj\.<|n2adj2\.<|p=/ ) ) {
+				println "-- manual expand for $parts"
+			}
+						
 			def expandFlags = parts.size() > 2 ? parts[1] + ' ' + parts[2] : parts[1]
 
             def expanded = expand.expand(parts[0], expandFlags)
@@ -332,38 +343,40 @@ def lines = files.collect {
 			    ! (it =~ /:uncontr|:alt|verb.*:coll/ )
 			}.collect {
 			    it.word
-			}.unique() // + ' # TODO: inflect' 
+			}.unique() // + ' # TODO: inflect'
+			
+			println '++ ' + uniqForms
+			return uniqForms 
 		}
-	
-		
-		
-		flgs.each { flg ->
-			if( flg.startsWith('<') || flg == 'u' || flg == 'ku' || flg == '@' )
-				return
+		else {
+			flgs.each { flg ->
+				if( flg.startsWith('<') || flg == 'u' || flg == 'ku' || flg == '@' )
+					return
 
-			def f = flg == mainFlg ? flg : mainFlg + '.' + flg
-			if( flg == 'patr' ) {
-				f = 'n.patr'
-			}
-			else if( f.contains('.cf') || f.contains('.is') ) {
-				f = f.replaceFirst('v[0-9]', 'v')
-			}
-			else if( f == 'v3.advp' ) {
-				f = 'v1.advp'
-			}
-			else if( f == 'v3.it0' ) {
-				f = 'v1.it0'
-			}
+				def f = flg == mainFlg ? flg : mainFlg + '.' + flg
+				if( flg == 'patr' ) {
+					f = 'n.patr'
+				}
+				else if( f.contains('.cf') || f.contains('.is') ) {
+					f = f.replaceFirst('v[0-9]', 'v')
+				}
+				else if( f == 'v3.advp' ) {
+					f = 'v1.advp'
+				}
+				else if( f == 'v3.it0' ) {
+					f = 'v1.it0'
+				}
 
 
-			if( ! toHunFlagMap.containsKey(f) ) {
-				println 'cant find ' + parts[0] + '/' + f
+				if( ! toHunFlagMap.containsKey(f) ) {
+					println 'cant find ' + parts[0] + '/' + f
+				}
+
+				outFlags += toHunFlagMap[f]
 			}
 
-			outFlags += toHunFlagMap[f]
+			return parts[0] + '/' + outFlags
 		}
-
-		return parts[0] + '/' + outFlags
 	}
 
 

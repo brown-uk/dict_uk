@@ -2,5 +2,6 @@
 
 ### Як запускати ###
 
-    ../../gradlew hunspell
+    `../../gradlew hunspell`
 
+Файли `uk_UA.aff` та `uk_UA.dic` будуть в каталозі `build/hunspell`

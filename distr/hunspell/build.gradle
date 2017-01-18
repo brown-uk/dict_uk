@@ -65,6 +65,8 @@ task testHunspell (type: Exec) { //, dependsOn: hunspell) {
     txt += " заправлено казано вимито метено введено"
     txt += " обікрав вжену уженіться"
     txt += " Білгород-Дністровського Захер-Мазоха Захера-Мазоха"
+    txt += " відіб\\'ю"
+    txt += " білолицого пілі відб\\'ю"
     def cmd = "echo $txt | hunspell -d $outDir/uk_UA"
 
     commandLine "sh", "-c", "${cmd}"
