@@ -41,9 +41,11 @@ compileGroovy {
 
 
 task hunspell (type: JavaExec, dependsOn: classes) {
-    //def inputFile = "$affixDir/v_advp.aff"
-    //inputs.file inputFile
-    //outputs.file "$affixDir/vr_advp.aff"
+    outputs.files "$outDir/uk_UA.aff", "$outDir/uk_UA.dic"
+
+    doFirst {
+        new File(outDir).mkdirs()
+    }
 
     classpath = sourceSets.main.runtimeClasspath
     main = "Hunspell"
