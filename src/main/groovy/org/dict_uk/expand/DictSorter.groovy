@@ -35,15 +35,15 @@ class DictSorter {
 	]
 
 	static final Map<String, Integer> vb_tag_key_map = [
-		"inf": 1,
-		"inz": 2,
+		"inf": 10,
+		"inz": 20,
 		//		"inf:coll": 3,
 		//		"inz:coll": 4,
-		"impr": 5,
-		"pres": 6,
-		"futr": 7,
-		"past": 8,
-		"impers": 9
+		"impr": 50,
+		"pres": 60,
+		"futr": 70,
+		"past": 80,
+		"impers": 90
 	]
 
 	static final Pattern re_verb_tense = Pattern.compile("(in[fz]|impr|pres|futr|past|impers)")
@@ -113,6 +113,10 @@ class DictSorter {
 				def order = vb_tag_key_map[tg]
 				if( tags.contains(":coll") ) {
 					order += 1
+				}
+				tags = tags.replace(":1", ":10")
+				if( tags.contains(":subst") ) {
+				    tags = tags.replace(":p:10", ":p:11")
 				}
 				tags = tags.replace(tg, "_"+order)
 			}

@@ -81,7 +81,7 @@ new File('mapping.txt').text = revFlagMap*.toString().join("\n")
 println("Negative matches:\n\t" + negativeMatchFlags*.toString().join("\n\t"))
 
 
-def NONSPELL_TAGS = ~ /:uncontr|:alt|:bad|verb.*coll/
+def NONSPELL_TAGS = ~ /:uncontr|:alt|:bad|:subst|verb.*coll/
 
 def out = ''
 flagMap.each{ flag, affixGroupItems ->

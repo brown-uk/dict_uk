@@ -75,6 +75,7 @@ s
 short
 slang
 subord
+subst
 super
 unanim
 uncontr

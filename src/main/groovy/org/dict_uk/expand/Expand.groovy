@@ -889,6 +889,7 @@ class Expand {
 	private static final List<String> tagsOrdered = [
 				":v-u",
 				":bad",
+				":subst",
 				":slang",
 				":rare",
 				":coll",

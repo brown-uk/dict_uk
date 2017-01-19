@@ -400,8 +400,8 @@
 бентежу бентежити verb:imperf:pres:s:1
 бентежиш бентежити verb:imperf:pres:s:2
 бентежить бентежити verb:imperf:pres:s:3
-бентежим бентежити verb:imperf:pres:p:1
 бентежимо бентежити verb:imperf:pres:p:1
+бентежим бентежити verb:imperf:pres:p:1:subst
 бентежите бентежити verb:imperf:pres:p:2
 бентежать бентежити verb:imperf:pres:p:3
 бентежив бентежити verb:imperf:past:m
@@ -1097,8 +1097,8 @@
 верифікую верифікувати verb:imperf:pres:s:1
 верифікуєш верифікувати verb:imperf:pres:s:2
 верифікує верифікувати verb:imperf:pres:s:3
-верифікуєм верифікувати verb:imperf:pres:p:1
 верифікуємо верифікувати verb:imperf:pres:p:1
+верифікуєм верифікувати verb:imperf:pres:p:1:subst
 верифікуєте верифікувати verb:imperf:pres:p:2
 верифікують верифікувати verb:imperf:pres:p:3
 верифікуватиму верифікувати verb:imperf:futr:s:1
@@ -1120,8 +1120,8 @@
 верифікую верифікувати verb:perf:futr:s:1
 верифікуєш верифікувати verb:perf:futr:s:2
 верифікує верифікувати verb:perf:futr:s:3
-верифікуєм верифікувати verb:perf:futr:p:1
 верифікуємо верифікувати verb:perf:futr:p:1
+верифікуєм верифікувати verb:perf:futr:p:1:subst
 верифікуєте верифікувати verb:perf:futr:p:2
 верифікують верифікувати verb:perf:futr:p:3
 верифікував верифікувати verb:perf:past:m
@@ -1190,8 +1190,8 @@
 веду вести verb:imperf:pres:s:1
 ведеш вести verb:imperf:pres:s:2
 веде вести verb:imperf:pres:s:3
-ведем вести verb:imperf:pres:p:1
 ведемо вести verb:imperf:pres:p:1
+ведем вести verb:imperf:pres:p:1:subst
 ведете вести verb:imperf:pres:p:2
 ведуть вести verb:imperf:pres:p:3
 вів вести verb:imperf:past:m
@@ -1210,8 +1210,8 @@
 вжалю вжалити verb:perf:futr:s:1
 вжалиш вжалити verb:perf:futr:s:2
 вжалить вжалити verb:perf:futr:s:3
-вжалим вжалити verb:perf:futr:p:1
 вжалимо вжалити verb:perf:futr:p:1
+вжалим вжалити verb:perf:futr:p:1:subst
 вжалите вжалити verb:perf:futr:p:2
 вжалять вжалити verb:perf:futr:p:3
 вжалив вжалити verb:perf:past:m
@@ -1302,7 +1302,7 @@
 взувається взуватися verb:rev:imperf:pres:s:3
 взуваємось взуватися verb:rev:imperf:pres:p:1
 взуваємося взуватися verb:rev:imperf:pres:p:1
-взуваємся взуватися verb:rev:imperf:pres:p:1
+взуваємся взуватися verb:rev:imperf:pres:p:1:subst
 взуваєтесь взуватися verb:rev:imperf:pres:p:2
 взуваєтеся взуватися verb:rev:imperf:pres:p:2
 взуваються взуватися verb:rev:imperf:pres:p:3
@@ -1334,8 +1334,8 @@
 взую взути verb:perf:futr:s:1
 взуєш взути verb:perf:futr:s:2
 взує взути verb:perf:futr:s:3
-взуєм взути verb:perf:futr:p:1
 взуємо взути verb:perf:futr:p:1
+взуєм взути verb:perf:futr:p:1:subst
 взуєте взути verb:perf:futr:p:2
 взують взути verb:perf:futr:p:3
 взув взути verb:perf:past:m
@@ -1357,7 +1357,7 @@
 взується взутися verb:rev:perf:futr:s:3
 взуємось взутися verb:rev:perf:futr:p:1
 взуємося взутися verb:rev:perf:futr:p:1
-взуємся взутися verb:rev:perf:futr:p:1
+взуємся взутися verb:rev:perf:futr:p:1:subst
 взуєтесь взутися verb:rev:perf:futr:p:2
 взуєтеся взутися verb:rev:perf:futr:p:2
 взуються взутися verb:rev:perf:futr:p:3
@@ -1450,8 +1450,8 @@
 вимету вимести verb:perf:futr:s:1
 виметеш вимести verb:perf:futr:s:2
 вимете вимести verb:perf:futr:s:3
-виметем вимести verb:perf:futr:p:1
 виметемо вимести verb:perf:futr:p:1
+виметем вимести verb:perf:futr:p:1:subst
 виметете вимести verb:perf:futr:p:2
 виметуть вимести verb:perf:futr:p:3
 вимів вимести verb:perf:past:m
@@ -1473,7 +1473,7 @@
 вимететься виместися verb:rev:perf:futr:s:3
 виметемось виместися verb:rev:perf:futr:p:1
 виметемося виместися verb:rev:perf:futr:p:1
-виметемся виместися verb:rev:perf:futr:p:1
+виметемся виместися verb:rev:perf:futr:p:1:subst
 вимететесь виместися verb:rev:perf:futr:p:2
 вимететеся виместися verb:rev:perf:futr:p:2
 виметуться виместися verb:rev:perf:futr:p:3
@@ -2204,10 +2204,10 @@
 задишеться задихатися verb:rev:perf:futr:s:3
 задихаємось задихатися verb:rev:perf:futr:p:1
 задихаємося задихатися verb:rev:perf:futr:p:1
-задихаємся задихатися verb:rev:perf:futr:p:1
 задишемось задихатися verb:rev:perf:futr:p:1
 задишемося задихатися verb:rev:perf:futr:p:1
-задишемся задихатися verb:rev:perf:futr:p:1
+задихаємся задихатися verb:rev:perf:futr:p:1:subst
+задишемся задихатися verb:rev:perf:futr:p:1:subst
 задихаєтесь задихатися verb:rev:perf:futr:p:2
 задихаєтеся задихатися verb:rev:perf:futr:p:2
 задишетесь задихатися verb:rev:perf:futr:p:2
@@ -2294,10 +2294,10 @@
 колишеш колисати verb:imperf:pres:s:2
 колисає колисати verb:imperf:pres:s:3
 колише колисати verb:imperf:pres:s:3
-колисаєм колисати verb:imperf:pres:p:1
 колисаємо колисати verb:imperf:pres:p:1
-колишем колисати verb:imperf:pres:p:1
 колишемо колисати verb:imperf:pres:p:1
+колисаєм колисати verb:imperf:pres:p:1:subst
+колишем колисати verb:imperf:pres:p:1:subst
 колисаєте колисати verb:imperf:pres:p:2
 колишете колисати verb:imperf:pres:p:2
 колисають колисати verb:imperf:pres:p:3
@@ -2781,7 +2781,7 @@
 оскіриться оскіритися verb:rev:perf:futr:s:3:rare
 оскіримось оскіритися verb:rev:perf:futr:p:1:rare
 оскіримося оскіритися verb:rev:perf:futr:p:1:rare
-оскіримся оскіритися verb:rev:perf:futr:p:1:rare
+оскіримся оскіритися verb:rev:perf:futr:p:1:subst:rare
 оскіритесь оскіритися verb:rev:perf:futr:p:2:rare
 оскіритеся оскіритися verb:rev:perf:futr:p:2:rare
 оскіряться оскіритися verb:rev:perf:futr:p:3:rare
@@ -2849,8 +2849,8 @@
 постріляю постріляти verb:perf:futr:s:1
 постріляєш постріляти verb:perf:futr:s:2
 постріляє постріляти verb:perf:futr:s:3
-постріляєм постріляти verb:perf:futr:p:1
 постріляємо постріляти verb:perf:futr:p:1
+постріляєм постріляти verb:perf:futr:p:1:subst
 постріляєте постріляти verb:perf:futr:p:2
 постріляють постріляти verb:perf:futr:p:3
 постріляв постріляти verb:perf:past:m
@@ -2971,8 +2971,8 @@
 соплю сопіти verb:imperf:pres:s:1
 сопеш сопіти verb:imperf:pres:s:2
 сопе сопіти verb:imperf:pres:s:3
-сопем сопіти verb:imperf:pres:p:1
 сопемо сопіти verb:imperf:pres:p:1
+сопем сопіти verb:imperf:pres:p:1:subst
 сопете сопіти verb:imperf:pres:p:2
 соплять сопіти verb:imperf:pres:p:3
 сопітиму сопіти verb:imperf:futr:s:1
@@ -3018,8 +3018,8 @@
 стріляю стріляти verb:imperf:pres:s:1
 стріляєш стріляти verb:imperf:pres:s:2
 стріляє стріляти verb:imperf:pres:s:3
-стріляєм стріляти verb:imperf:pres:p:1
 стріляємо стріляти verb:imperf:pres:p:1
+стріляєм стріляти verb:imperf:pres:p:1:subst
 стріляєте стріляти verb:imperf:pres:p:2
 стріляють стріляти verb:imperf:pres:p:3
 стрілятиму стріляти verb:imperf:futr:s:1
@@ -3048,7 +3048,7 @@
 стріляється стрілятися verb:rev:imperf:pres:s:3
 стріляємось стрілятися verb:rev:imperf:pres:p:1
 стріляємося стрілятися verb:rev:imperf:pres:p:1
-стріляємся стрілятися verb:rev:imperf:pres:p:1
+стріляємся стрілятися verb:rev:imperf:pres:p:1:subst
 стріляєтесь стрілятися verb:rev:imperf:pres:p:2
 стріляєтеся стрілятися verb:rev:imperf:pres:p:2
 стріляються стрілятися verb:rev:imperf:pres:p:3
