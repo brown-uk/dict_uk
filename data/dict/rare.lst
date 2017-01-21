@@ -62,12 +62,10 @@
 заки conj:subord
 заким conj:subord
 замісто prep:rv_rod
-запоріжець /n22.a.p.<
 зверх зверх adv
 зверх зверх prep:rv_rod
 здрійко numr:nv
 змирятися /vr2.cf.advp :imperf
-змисл /n20
 з-позаду з-позаду adv
 зрабований /adj :&adjp:pasv:perf
 зумисно adv
@@ -101,7 +99,6 @@
 надцять /numr
 намість намість adv
 намість намість prep:rv_rod
-напуцований /adj :&adjp:pasv:perf    # :past
 нарід /n21
 невпам'ятку невпам'ятку predic
 невпотріб невпотріб predic
@@ -144,8 +141,13 @@
 обутритися /vr1 :perf p=3
 оглав /n20.p
 одвір adv
+одзивний /adj
+одзняти /v1.isTo :perf
+одзнятий /adj :&adjp:pasv:perf
 одіж /n32
 одітий /adj :&adjp:pasv:perf    # :past
+одкрити /v2.isTo :perf
+одкритися /vr2 :perf
 однакий /adj
 озутий /adj :&adjp:pasv:perf    # :past
 окроме prep:rv_rod
