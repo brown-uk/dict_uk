@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
-version="3.6.0"
+version="3.6.2"
 def hunspellDir="../hunspell/build/hunspell"
 
 task prepareFiles {
@@ -33,7 +33,7 @@ task prepareFiles {
   }
 }
 
-task createXpi (type: Zip, dependsOn: prepareFiles) {
+task xpi (type: Zip, dependsOn: prepareFiles) {
     from 'build/xpi'
     archiveName "build/ukrainian_dictionary-$project.version-mozilla.xpi"
 }

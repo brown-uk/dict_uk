@@ -1946,6 +1946,17 @@
 гроші гріш noun:inanim:m:v_mis
 грошу гріш noun:inanim:m:v_mis
 грошу гріш noun:inanim:m:v_kly
+Гулак-Артемовський Гулак-Артемовський noun:anim:m:v_naz:prop:lname
+Гулака-Артемовського Гулак-Артемовський noun:anim:m:v_rod:prop:lname
+Гулакові-Артемовському Гулак-Артемовський noun:anim:m:v_dav:prop:lname
+Гулаку-Артемовському Гулак-Артемовський noun:anim:m:v_dav:prop:lname
+Гулака-Артемовського Гулак-Артемовський noun:anim:m:v_zna:prop:lname
+Гулаком-Артемовським Гулак-Артемовський noun:anim:m:v_oru:prop:lname
+Гулакові-Артемовськім Гулак-Артемовський noun:anim:m:v_mis:prop:lname
+Гулакові-Артемовському Гулак-Артемовський noun:anim:m:v_mis:prop:lname
+Гулаку-Артемовськім Гулак-Артемовський noun:anim:m:v_mis:prop:lname
+Гулаку-Артемовському Гулак-Артемовський noun:anim:m:v_mis:prop:lname
+Гулаче-Артемовський Гулак-Артемовський noun:anim:m:v_kly:prop:lname
 Данаїди Данаїди noun:anim:p:v_naz:ns:prop:fname
 Данаїд Данаїди noun:anim:p:v_rod:ns:prop:fname
 Данаїдам Данаїди noun:anim:p:v_dav:ns:prop:fname
