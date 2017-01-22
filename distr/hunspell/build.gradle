@@ -49,8 +49,19 @@ task hunspell (type: JavaExec, dependsOn: classes) {
 
     classpath = sourceSets.main.runtimeClasspath
     main = "Hunspell"
+}
 
-    //args file(inputFile), file(outputs.files[0])
+
+task hunspellForSearch (type: JavaExec, dependsOn: classes) {
+    outputs.files "$outDir/uk_UA.aff", "$outDir/uk_UA.dic"
+
+    doFirst {
+        new File(outDir).mkdirs()
+    }
+
+    classpath = sourceSets.main.runtimeClasspath
+    main = "Hunspell"
+    args "-forSearch"
 }
 
 

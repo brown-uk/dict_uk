@@ -80,8 +80,16 @@ new File('mapping.txt').text = revFlagMap*.toString().join("\n")
 
 println("Negative matches:\n\t" + negativeMatchFlags*.toString().join("\n\t"))
 
+def NONSPELL_TAG_LIST = ":(alt|bad|subst|uncontr|verb.*coll)"
 
-def NONSPELL_TAGS = ~ /:uncontr|:alt|:bad|:subst|verb.*coll/
+if( "-forSearch" in args ) {
+    println "Дозволяємо ненормативні форми для пошуку..."
+    NONSPELL_TAG_LIST.replace('|bad', '')
+    NONSPELL_TAG_LIST.replace('|subst', '')
+}
+
+def NONSPELL_TAGS = ~ NONSPELL_TAG_LIST
+
 
 def out = ''
 flagMap.each{ flag, affixGroupItems ->
@@ -236,8 +244,13 @@ new File('build/hunspell/uk_UA.aff').text = fileHeader + '\n' + out
 
 def dictDir = new File("../../data/dict")
 
+def IGNORED_FILES = /composite|dot-abbr|twisters|ignored|alt/
+if( "-forSearch" in args ) {
+    IGNORED_FILES = IGNORED_FILES.replace('|twisters', '')
+}
+
 def files = dictDir.listFiles().findAll {
-	it.name.endsWith('.lst') && ! (it.name =~ /composite|dot-abbr|twisters|ignored|alt/)
+    it.name.endsWith('.lst') && ! (it.name =~ IGNORED_FILES )
 }
 
 println("Dict files: " + files*.name)
@@ -262,7 +275,7 @@ def lines = files.collect {
 }
 .flatten()
 .collect {
-    if( it =~ /:coll|:bad|:alt/ )
+    if( it =~ NONSPELL_TAG_LIST )
         return
 
 	it = it.replaceFirst(/ *#.*/, '').trim()
@@ -425,7 +438,7 @@ def dic_file_reader = dic_file.withReader("utf-8") { reader ->
 println "Got $comps.size comps"
 
 
-comps = comps.findAll{ ! (it =~ /:uncontr|:alt|:bad|verb.*:coll|inanim:.:v_kly/ ) }
+comps = comps.findAll{ ! (it =~ NONSPELL_TAG_LIST + /|inanim:.:v_kly/ ) }
 
 lines.addAll(comps.collect{ it.word })
 
@@ -435,6 +448,6 @@ println "Found ${lines.size} total lines"
 def words = lines
 
 def txt = "${words.size}\n"
-txt += words.join("\n")
+txt += words.toSorted().join("\n")
 
 new File("build/hunspell/uk_UA.dic").text = txt
