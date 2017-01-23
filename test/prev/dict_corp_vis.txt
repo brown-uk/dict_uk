@@ -2254,6 +2254,39 @@
 засвітати verb:perf:inf
   засвітає verb:perf:futr:s:3
   засвітало verb:perf:past:n
+затаєний adj:m:v_naz:&adjp:pasv:perf:compb
+  затаєного adj:m:v_rod:&adjp:pasv:perf:compb
+  затаєному adj:m:v_dav:&adjp:pasv:perf:compb
+  затаєного adj:m:v_zna:ranim:&adjp:pasv:perf:compb
+  затаєний adj:m:v_zna:rinanim:&adjp:pasv:perf:compb
+  затаєним adj:m:v_oru:&adjp:pasv:perf:compb
+  затаєнім adj:m:v_mis:&adjp:pasv:perf:compb
+  затаєному adj:m:v_mis:&adjp:pasv:perf:compb
+  затаєний adj:m:v_kly:&adjp:pasv:perf:compb
+  затаєна adj:f:v_naz:&adjp:pasv:perf:compb
+  затаєної adj:f:v_rod:&adjp:pasv:perf:compb
+  затаєній adj:f:v_dav:&adjp:pasv:perf:compb
+  затаєну adj:f:v_zna:&adjp:pasv:perf:compb
+  затаєною adj:f:v_oru:&adjp:pasv:perf:compb
+  затаєній adj:f:v_mis:&adjp:pasv:perf:compb
+  затаєна adj:f:v_kly:&adjp:pasv:perf:compb
+  затаєне adj:n:v_naz:&adjp:pasv:perf:compb
+  затаєного adj:n:v_rod:&adjp:pasv:perf:compb
+  затаєному adj:n:v_dav:&adjp:pasv:perf:compb
+  затаєне adj:n:v_zna:&adjp:pasv:perf:compb
+  затаєним adj:n:v_oru:&adjp:pasv:perf:compb
+  затаєнім adj:n:v_mis:&adjp:pasv:perf:compb
+  затаєному adj:n:v_mis:&adjp:pasv:perf:compb
+  затаєне adj:n:v_kly:&adjp:pasv:perf:compb
+  затаєні adj:p:v_naz:&adjp:pasv:perf:compb
+  затаєних adj:p:v_rod:&adjp:pasv:perf:compb
+  затаєним adj:p:v_dav:&adjp:pasv:perf:compb
+  затаєних adj:p:v_zna:ranim:&adjp:pasv:perf:compb
+  затаєні adj:p:v_zna:rinanim:&adjp:pasv:perf:compb
+  затаєними adj:p:v_oru:&adjp:pasv:perf:compb
+  затаєних adj:p:v_mis:&adjp:pasv:perf:compb
+  затаєні adj:p:v_kly:&adjp:pasv:perf:compb
+затаєно adv:compb
 кайдани noun:inanim:p:v_naz:ns
   кайданів noun:inanim:p:v_rod:ns
   кайданам noun:inanim:p:v_dav:ns
@@ -2705,6 +2738,39 @@
   найдивнішими adj:p:v_oru:super
   найдивніших adj:p:v_mis:super
   найдивніші adj:p:v_kly:super
+найзатаєніше adv:super
+найзатаєніший adj:m:v_naz:super:&adjp:pasv:perf
+  найзатаєнішого adj:m:v_rod:super:&adjp:pasv:perf
+  найзатаєнішому adj:m:v_dav:super:&adjp:pasv:perf
+  найзатаєнішого adj:m:v_zna:ranim:super:&adjp:pasv:perf
+  найзатаєніший adj:m:v_zna:rinanim:super:&adjp:pasv:perf
+  найзатаєнішим adj:m:v_oru:super:&adjp:pasv:perf
+  найзатаєнішім adj:m:v_mis:super:&adjp:pasv:perf
+  найзатаєнішому adj:m:v_mis:super:&adjp:pasv:perf
+  найзатаєніший adj:m:v_kly:super:&adjp:pasv:perf
+  найзатаєніша adj:f:v_naz:super:&adjp:pasv:perf
+  найзатаєнішої adj:f:v_rod:super:&adjp:pasv:perf
+  найзатаєнішій adj:f:v_dav:super:&adjp:pasv:perf
+  найзатаєнішу adj:f:v_zna:super:&adjp:pasv:perf
+  найзатаєнішою adj:f:v_oru:super:&adjp:pasv:perf
+  найзатаєнішій adj:f:v_mis:super:&adjp:pasv:perf
+  найзатаєніша adj:f:v_kly:super:&adjp:pasv:perf
+  найзатаєніше adj:n:v_naz:super:&adjp:pasv:perf
+  найзатаєнішого adj:n:v_rod:super:&adjp:pasv:perf
+  найзатаєнішому adj:n:v_dav:super:&adjp:pasv:perf
+  найзатаєніше adj:n:v_zna:super:&adjp:pasv:perf
+  найзатаєнішим adj:n:v_oru:super:&adjp:pasv:perf
+  найзатаєнішім adj:n:v_mis:super:&adjp:pasv:perf
+  найзатаєнішому adj:n:v_mis:super:&adjp:pasv:perf
+  найзатаєніше adj:n:v_kly:super:&adjp:pasv:perf
+  найзатаєніші adj:p:v_naz:super:&adjp:pasv:perf
+  найзатаєніших adj:p:v_rod:super:&adjp:pasv:perf
+  найзатаєнішим adj:p:v_dav:super:&adjp:pasv:perf
+  найзатаєніших adj:p:v_zna:ranim:super:&adjp:pasv:perf
+  найзатаєніші adj:p:v_zna:rinanim:super:&adjp:pasv:perf
+  найзатаєнішими adj:p:v_oru:super:&adjp:pasv:perf
+  найзатаєніших adj:p:v_mis:super:&adjp:pasv:perf
+  найзатаєніші adj:p:v_kly:super:&adjp:pasv:perf
 найкрутіший adj:m:v_naz:super
   найкрутішого adj:m:v_rod:super
   найкрутішому adj:m:v_dav:super
@@ -3631,6 +3697,39 @@
   щонайдивнішими adj:p:v_oru:super
   щонайдивніших adj:p:v_mis:super
   щонайдивніші adj:p:v_kly:super
+щонайзатаєніше adv:super
+щонайзатаєніший adj:m:v_naz:super:&adjp:pasv:perf
+  щонайзатаєнішого adj:m:v_rod:super:&adjp:pasv:perf
+  щонайзатаєнішому adj:m:v_dav:super:&adjp:pasv:perf
+  щонайзатаєнішого adj:m:v_zna:ranim:super:&adjp:pasv:perf
+  щонайзатаєніший adj:m:v_zna:rinanim:super:&adjp:pasv:perf
+  щонайзатаєнішим adj:m:v_oru:super:&adjp:pasv:perf
+  щонайзатаєнішім adj:m:v_mis:super:&adjp:pasv:perf
+  щонайзатаєнішому adj:m:v_mis:super:&adjp:pasv:perf
+  щонайзатаєніший adj:m:v_kly:super:&adjp:pasv:perf
+  щонайзатаєніша adj:f:v_naz:super:&adjp:pasv:perf
+  щонайзатаєнішої adj:f:v_rod:super:&adjp:pasv:perf
+  щонайзатаєнішій adj:f:v_dav:super:&adjp:pasv:perf
+  щонайзатаєнішу adj:f:v_zna:super:&adjp:pasv:perf
+  щонайзатаєнішою adj:f:v_oru:super:&adjp:pasv:perf
+  щонайзатаєнішій adj:f:v_mis:super:&adjp:pasv:perf
+  щонайзатаєніша adj:f:v_kly:super:&adjp:pasv:perf
+  щонайзатаєніше adj:n:v_naz:super:&adjp:pasv:perf
+  щонайзатаєнішого adj:n:v_rod:super:&adjp:pasv:perf
+  щонайзатаєнішому adj:n:v_dav:super:&adjp:pasv:perf
+  щонайзатаєніше adj:n:v_zna:super:&adjp:pasv:perf
+  щонайзатаєнішим adj:n:v_oru:super:&adjp:pasv:perf
+  щонайзатаєнішім adj:n:v_mis:super:&adjp:pasv:perf
+  щонайзатаєнішому adj:n:v_mis:super:&adjp:pasv:perf
+  щонайзатаєніше adj:n:v_kly:super:&adjp:pasv:perf
+  щонайзатаєніші adj:p:v_naz:super:&adjp:pasv:perf
+  щонайзатаєніших adj:p:v_rod:super:&adjp:pasv:perf
+  щонайзатаєнішим adj:p:v_dav:super:&adjp:pasv:perf
+  щонайзатаєніших adj:p:v_zna:ranim:super:&adjp:pasv:perf
+  щонайзатаєніші adj:p:v_zna:rinanim:super:&adjp:pasv:perf
+  щонайзатаєнішими adj:p:v_oru:super:&adjp:pasv:perf
+  щонайзатаєніших adj:p:v_mis:super:&adjp:pasv:perf
+  щонайзатаєніші adj:p:v_kly:super:&adjp:pasv:perf
 щонайкрутіший adj:m:v_naz:super
   щонайкрутішого adj:m:v_rod:super
   щонайкрутішому adj:m:v_dav:super
@@ -3938,6 +4037,39 @@
   якнайдивнішими adj:p:v_oru:super
   якнайдивніших adj:p:v_mis:super
   якнайдивніші adj:p:v_kly:super
+якнайзатаєніше adv:super
+якнайзатаєніший adj:m:v_naz:super:&adjp:pasv:perf
+  якнайзатаєнішого adj:m:v_rod:super:&adjp:pasv:perf
+  якнайзатаєнішому adj:m:v_dav:super:&adjp:pasv:perf
+  якнайзатаєнішого adj:m:v_zna:ranim:super:&adjp:pasv:perf
+  якнайзатаєніший adj:m:v_zna:rinanim:super:&adjp:pasv:perf
+  якнайзатаєнішим adj:m:v_oru:super:&adjp:pasv:perf
+  якнайзатаєнішім adj:m:v_mis:super:&adjp:pasv:perf
+  якнайзатаєнішому adj:m:v_mis:super:&adjp:pasv:perf
+  якнайзатаєніший adj:m:v_kly:super:&adjp:pasv:perf
+  якнайзатаєніша adj:f:v_naz:super:&adjp:pasv:perf
+  якнайзатаєнішої adj:f:v_rod:super:&adjp:pasv:perf
+  якнайзатаєнішій adj:f:v_dav:super:&adjp:pasv:perf
+  якнайзатаєнішу adj:f:v_zna:super:&adjp:pasv:perf
+  якнайзатаєнішою adj:f:v_oru:super:&adjp:pasv:perf
+  якнайзатаєнішій adj:f:v_mis:super:&adjp:pasv:perf
+  якнайзатаєніша adj:f:v_kly:super:&adjp:pasv:perf
+  якнайзатаєніше adj:n:v_naz:super:&adjp:pasv:perf
+  якнайзатаєнішого adj:n:v_rod:super:&adjp:pasv:perf
+  якнайзатаєнішому adj:n:v_dav:super:&adjp:pasv:perf
+  якнайзатаєніше adj:n:v_zna:super:&adjp:pasv:perf
+  якнайзатаєнішим adj:n:v_oru:super:&adjp:pasv:perf
+  якнайзатаєнішім adj:n:v_mis:super:&adjp:pasv:perf
+  якнайзатаєнішому adj:n:v_mis:super:&adjp:pasv:perf
+  якнайзатаєніше adj:n:v_kly:super:&adjp:pasv:perf
+  якнайзатаєніші adj:p:v_naz:super:&adjp:pasv:perf
+  якнайзатаєніших adj:p:v_rod:super:&adjp:pasv:perf
+  якнайзатаєнішим adj:p:v_dav:super:&adjp:pasv:perf
+  якнайзатаєніших adj:p:v_zna:ranim:super:&adjp:pasv:perf
+  якнайзатаєніші adj:p:v_zna:rinanim:super:&adjp:pasv:perf
+  якнайзатаєнішими adj:p:v_oru:super:&adjp:pasv:perf
+  якнайзатаєніших adj:p:v_mis:super:&adjp:pasv:perf
+  якнайзатаєніші adj:p:v_kly:super:&adjp:pasv:perf
 якнайкрутіший adj:m:v_naz:super
   якнайкрутішого adj:m:v_rod:super
   якнайкрутішому adj:m:v_dav:super

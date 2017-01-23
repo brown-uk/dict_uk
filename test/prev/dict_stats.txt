@@ -1,15 +1,15 @@
-Всього лем: 280
-  словникових лем (без advp, без омонімів imperf/perf) 257
+Всього лем: 288
+  словникових лем (без advp, без омонімів imperf/perf) 265
 
 Частоти за тегами:
-adj 56
-     compb 7
+adj 60
+     compb 8
      compr 8
      imperf 3
-     perf 1
-     super 24
-adv 38
-     compb 6
+     perf 5
+     super 27
+adv 42
+     compb 7
 advp 22
      imperf 13
      perf 9

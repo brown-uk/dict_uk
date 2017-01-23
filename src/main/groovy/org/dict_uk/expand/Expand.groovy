@@ -915,32 +915,34 @@ class Expand {
 				def m1 = matcher[0]
 				word = m1[1]
 			}
-			else
+			else {
 				word = main_word[0..<-2] + "іший"
-
+            }
+            
 			if( extra_tags.contains("&_adjp") ) {
 				extra_tags = and_adjp_pattern.matcher(extra_tags).replaceFirst('')
 			}
 
-			def word_forms = expand(word, "/adj :compr" + idx + extra_tags)
+            def forms = []
 
-			word = "най" + word
-			def word_forms_super = expand(word, "/adj :super" + idx + extra_tags)
-			word_forms.addAll(word_forms_super)
+            if( word.startsWith('най') ) {
+			    forms += expand(word, "/adj :super" + idx + extra_tags)
+            }
+            else {
+			    forms += expand(word, "/adj :compr" + idx + extra_tags)
 
-			def word_scho = "що" + word
-			word_forms_super = expand(word_scho, "/adj :super" + idx + extra_tags)
-			word_forms.addAll(word_forms_super)
+			    word = "най" + word
+			    forms += expand(word, "/adj :super" + idx + extra_tags)
+		    }
 
-			def word_jak = "як" + word
-			word_forms_super = expand(word_jak, "/adj :super" + idx + extra_tags)
-			word_forms.addAll(word_forms_super)
+            forms += expand("що" + word, "/adj :super" + idx + extra_tags)
+			forms += expand("як" + word, "/adj :super" + idx + extra_tags)
 
 			if( "comp" in Args.args.lemmaForTags ) {
-				word_forms = word_forms.collect { replace_base(it, main_word) }
+				forms = forms.collect { replace_base(it, main_word) }
 			}
 
-			return word_forms
+			return forms
 		}
 
 		assert false, "Unknown subposition for " + line + "(" + main_word + ")"
@@ -970,24 +972,27 @@ class Expand {
 				word = main_word[0..<-1] + "іше"
 			}
 
-			def adv_compr = compose_compar(word, main_word, "adv:compr" + extra_tags)
-			def adv_super = compose_compar("най" + word, main_word, "adv:super" + extra_tags)
-			def adv_super2 = compose_compar("щонай" + word, main_word, "adv:super" + extra_tags)
-			def adv_super3 = compose_compar("якнай" + word, main_word, "adv:super" + extra_tags)
+            List<DicEntry> forms = []
 
-			return [
-				adv_compr,
-				adv_super,
-				adv_super2,
-				adv_super3
-			]
+            if( word.startsWith('най') ) {
+    			forms += compose_compar(word, main_word, "adv:super" + extra_tags)
+            }
+            else {
+			    forms += compose_compar(word, main_word, "adv:compr" + extra_tags)
+			    word = 'най' + word
+    			forms += compose_compar(word, main_word, "adv:super" + extra_tags)
+			}
+			forms += compose_compar("що" + word, main_word, "adv:super" + extra_tags)
+			forms += compose_compar("як" + word, main_word, "adv:super" + extra_tags)
+
+			return forms
 		}
+
 		throw new Exception("Unknown subposition for " + line + "(" + main_word + ")")
 	}
 
-	@TypeChecked
+	@CompileStatic
 	List<DicEntry> expand_subposition_adv(String last_adv, String line, String extra_tags, String main_word) {
-		def out_lines = []
 
 		String word
 		if( line.contains(" +cs=") ) {
@@ -1004,20 +1009,22 @@ class Expand {
 			extra_tags = and_adjp_pattern.matcher(extra_tags).replaceFirst('')
 		}
 
-		def w1 = compose_compar(word, last_adv, "adv:compr" + extra_tags)
-		out_lines.add( w1 )
+		List<DicEntry> forms = []
 
-		def adv_super = compose_compar("най" + word, last_adv, "adv:super" + extra_tags)
-		def adv_super2 = compose_compar("щонай" + word, last_adv, "adv:super" + extra_tags)
-		def adv_super3 = compose_compar("якнай" + word, last_adv, "adv:super" + extra_tags)
-		
-		out_lines.addAll( [
-			adv_super,
-			adv_super2,
-			adv_super3]
-		)
+        if( word.startsWith('най') ) {
+		    forms += compose_compar(word, last_adv, "adv:super" + extra_tags)
+        }
+        else {
+		    forms +=  compose_compar(word, last_adv, "adv:compr" + extra_tags)
+		    word = 'най' + word
+		    forms += compose_compar(word, last_adv, "adv:super" + extra_tags)
+		}
 
-		return out_lines
+
+		forms += compose_compar("що" + word, last_adv, "adv:super" + extra_tags)
+		forms += compose_compar("як" + word, last_adv, "adv:super" + extra_tags)
+
+		return forms
 	}
 
 

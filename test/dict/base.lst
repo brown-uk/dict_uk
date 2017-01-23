@@ -26,6 +26,9 @@
  +cs=удатніше
 дивний /adj.adv \
  +cs=дивніший
+затаєний /adj.adv :&adjp:pasv:perf \
+ +cs=найзатаєніший
+
 дивен дивний adj:m:v_naz/v_zna:short
 
 вимниста /adj g=fp
