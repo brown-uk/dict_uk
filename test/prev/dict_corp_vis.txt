@@ -3357,6 +3357,26 @@
   усюдами noun:inanim:p:v_oru:ns
   усюдах noun:inanim:p:v_mis:ns
   усюди noun:inanim:p:v_kly:ns
+уточнювавшись advp:rev:imperf
+уточнюватися verb:rev:imperf:inf
+  уточнюватись verb:rev:imperf:inf
+  уточнюйсь verb:rev:imperf:impr:s:2
+  уточнюйся verb:rev:imperf:impr:s:2
+  уточнюйтесь verb:rev:imperf:impr:p:2
+  уточнюйтеся verb:rev:imperf:impr:p:2
+  уточнюється verb:rev:imperf:pres:s:3
+  уточнюються verb:rev:imperf:pres:p:3
+  уточнюватиметься verb:rev:imperf:futr:s:3
+  уточнюватимуться verb:rev:imperf:futr:p:3
+  уточнювавсь verb:rev:imperf:past:m
+  уточнювався verb:rev:imperf:past:m
+  уточнювалась verb:rev:imperf:past:f
+  уточнювалася verb:rev:imperf:past:f
+  уточнювалось verb:rev:imperf:past:n
+  уточнювалося verb:rev:imperf:past:n
+  уточнювались verb:rev:imperf:past:p
+  уточнювалися verb:rev:imperf:past:p
+уточнюючись advp:rev:imperf
 Федорів noun:anim:m:v_naz:prop:lname
   Федоріва noun:anim:m:v_rod:prop:lname
   Федорова noun:anim:m:v_rod:prop:lname

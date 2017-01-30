@@ -285,10 +285,9 @@
 травознай /n20.a.p.<
 трансфлюксор /n20.a.p.ke
 трафунок /n22
-трепетати /v1.cf :imperf
 тридесять numr:p:v_naz/v_zna
 трясцяма трясцяма predic
-угощати /v2 :imperf
+угощати /v2.cf.advp :imperf
 удвурядь adv
 уздогін уздогін adv
 уїжно уїжно adv
@@ -301,8 +300,8 @@
 уконтентуватися /vr1 :perf
 укруть укруть adv
 уліжно уліжно adv
-упоминати /v2 :imperf
-упоминатися /vr2 :imperf
+упоминати /v2.cf.advp :imperf
+упоминатися /vr2.cf.advp :imperf
 упомки упомки predic
 упруг /n20.a.p
 урадуваний /adj :&adjp:pasv:perf    # :past

@@ -83,7 +83,7 @@ class Expand {
 			if( affixFlag2 != mainGroup) {
 //				if( ! (affixFlag2 in ["v2", "vr2"]) ) {  // курликати /v1.v2.cf       задихатися /vr1.vr2
 					affixFlag2 = mainGroup + "." + affixFlag2
-					if( affixFlag2 == "v3.advp" && ! (word =~ /(ити|діти)(ся)?$/) )
+					if( affixFlag2 == "v3.advp" && ! (word =~ /(ити|діти|слати)(ся)?$/) )
 						affixFlag2 = "v1.advp"
 					else if( affixFlag2 == "v3.it0" )
 						affixFlag2 = "v1.it0"
@@ -226,7 +226,7 @@ class Expand {
 	}
 
 	@TypeChecked
-	boolean filter_word(DicEntry entry, Map modifiers) {
+	boolean filter_word(DicEntry entry, Map modifiers, String flags) {
 		String w = entry.tagStr
 		if( "gen" in modifiers) {
 			if( ! (w =~ (":[" + modifiers["gen"] + "]:") ) )
@@ -239,6 +239,9 @@ class Expand {
 			}
 			else { // p=4
 				prs = ":3|:past|:impr:[sp]:2"
+				if( flags.contains('.advp') ) {
+				    prs += '|advp'
+				}
 			}
 			if( ! (w =~ prs) )
 				return false
@@ -251,14 +254,14 @@ class Expand {
 	}
 
 	@CompileStatic
-	List<DicEntry> modify(List<DicEntry> lines, Map<String, String> modifiers) {
+	List<DicEntry> modify(List<DicEntry> lines, Map<String, String> modifiers, String flags) {
 		if( modifiers.size() == 0)
 			return lines
 
 		def out = []
 		for( line in lines) {
 
-			if( ! filter_word(line, modifiers)) {
+			if( ! filter_word(line, modifiers, flags)) {
 				//            util.debug("skip %s %s", line, modifiers)
 				continue
 			}
@@ -592,7 +595,7 @@ class Expand {
 			sfx_lines = util.expand_nv(sfx_lines)
 		}
 		
-		sfx_lines = modify(sfx_lines, modifiers)
+		sfx_lines = modify(sfx_lines, modifiers, flags)
 
 		List<DicEntry> entries = post_expand(sfx_lines, flags)
 
