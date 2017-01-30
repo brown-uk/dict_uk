@@ -32,9 +32,9 @@
 в'їжно в'їжно adv
 вколо вколо prep:rv_rod|adv
 вконтентований /adj :&adjp:pasv:perf:v-u    # :past
-вконтентовувати /v1 :imperf
-вконтентовуватися /vr1 :imperf
-вконтентувати /v1 :perf
+вконтентовувати /v1.cf.advp :imperf
+вконтентовуватися /vr1.cf.advp :imperf
+вконтентувати /v1.is0 :perf
 вконтентуватися /vr1 :perf
 вліжно вліжно adv
 воркотливий /adj

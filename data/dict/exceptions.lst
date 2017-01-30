@@ -27,6 +27,17 @@
 Великоднями Великдень noun:p:v_oru:prop
 Великоднях Великдень noun:p:v_mis:prop
 
+Лев Лев noun:anim:m:v_naz:prop:fname
+Льва Лев noun:anim:m:v_rod:prop:fname
+Львові Лев noun:anim:m:v_dav:prop:fname
+Льву Лев noun:anim:m:v_dav:prop:fname
+Льва Лев noun:anim:m:v_zna:prop:fname
+Львом Лев noun:anim:m:v_oru:prop:fname
+Льві Лев noun:anim:m:v_mis:prop:fname
+Львові Лев noun:anim:m:v_mis:prop:fname
+Льву Лев noun:anim:m:v_mis:prop:fname
+Леве Лев noun:anim:m:v_kly:prop:fname
+
 
 чернець чернець noun:anim:m:v_naz
 ченця чернець noun:anim:m:v_rod

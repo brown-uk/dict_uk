@@ -2918,6 +2918,16 @@
   породіллями noun:anim:p:v_oru
   породіллях noun:anim:p:v_mis
   породіллі noun:anim:p:v_kly
+Посад-Покровське noun:inanim:m:v_naz:prop
+  Посаду-Покровського noun:inanim:m:v_rod:prop
+  Посадові-Покровському noun:inanim:m:v_dav:prop
+  Посаду-Покровському noun:inanim:m:v_dav:prop
+  Посад-Покровське noun:inanim:m:v_zna:prop
+  Посадом-Покровським noun:inanim:m:v_oru:prop
+  Посаді-Покровському noun:inanim:m:v_mis:prop
+  Посадові-Покровському noun:inanim:m:v_mis:prop
+  Посаду-Покровському noun:inanim:m:v_mis:prop
+  Посаде-Покровське noun:inanim:m:v_kly:prop
 пострілявши advp:perf
 постріляти verb:perf:inf
   постріляй verb:perf:impr:s:2
@@ -2954,6 +2964,13 @@
   псищами noun:anim:p:v_oru
   псищах noun:anim:p:v_mis
   псища noun:anim:p:v_kly
+Рудня-Фасова noun:inanim:f:v_naz:prop
+  Рудні-Фасової noun:inanim:f:v_rod:prop
+  Рудні-Фасовій noun:inanim:f:v_dav:prop
+  Рудню-Фасову noun:inanim:f:v_zna:prop
+  Руднею-Фасовою noun:inanim:f:v_oru:prop
+  Рудні-Фасовій noun:inanim:f:v_mis:prop
+  Рудне-Фасова noun:inanim:f:v_kly:prop
 сам-самісінький adj:m:v_naz:&pron:def
   самого-самісінького adj:m:v_rod:&pron:def
   самому-самісінькому adj:m:v_dav:&pron:def
@@ -3399,6 +3416,13 @@
   хрону noun:inanim:m:v_mis
   хріне noun:inanim:m:v_kly
   хроне noun:inanim:m:v_kly
+Хутори-Кривошиїнецькі noun:inanim:p:v_naz:ns:prop
+  Хуторів-Кривошиїнецьких noun:inanim:p:v_rod:ns:prop
+  Хуторам-Кривошиїнецьким noun:inanim:p:v_dav:ns:prop
+  Хутори-Кривошиїнецькі noun:inanim:p:v_zna:ns:prop
+  Хуторами-Кривошиїнецькими noun:inanim:p:v_oru:ns:prop
+  Хуторах-Кривошиїнецьких noun:inanim:p:v_mis:ns:prop
+  Хутори-Кривошиїнецькі noun:inanim:p:v_kly:ns:prop
 чапленя noun:anim:n:v_naz
   чапленяти noun:anim:n:v_rod
   чапленяті noun:anim:n:v_dav

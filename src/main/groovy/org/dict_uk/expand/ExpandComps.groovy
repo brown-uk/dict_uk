@@ -167,6 +167,8 @@ class ExpandComps {
 
 		for(String line in lines) {
 
+            line = line.replaceFirst(/ *#.*$/, '')
+
 			line = line.trim()
 			if( ! line || line[0] == "#" )
 				continue

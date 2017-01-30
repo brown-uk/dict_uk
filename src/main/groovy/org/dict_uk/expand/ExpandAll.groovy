@@ -30,8 +30,10 @@ class ExpandAll {
 
 		def dictFilePattern = ~/.*\.lst/
 		new File(Args.args.dictDir).eachFileMatch(dictFilePattern) { dic_file ->
+
+
 			List<String> out
-			if( dic_file.getName() == "composite.lst" ) {
+			if( dic_file.getName().contains('composite.lst') ) {
 				def expand_comps = new ExpandComps(expand)
 				def dic_file_reader = dic_file.withReader("utf-8") { reader ->
 					def lines = reader.readLines()
@@ -48,6 +50,7 @@ class ExpandAll {
 			}
 
 			log.info("Processing file {}, {} lines", dic_file.getName(), out.size())
+
 			outLines.addAll(out)
 		}
 

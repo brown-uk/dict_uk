@@ -78,8 +78,10 @@ task sortDict(type: JavaExec) {
 
 	workingDir = file("data/dict")
 	
-	def files = "alt.lst base-abbr.lst base.lst base-compound.lst colors.lst dot-abbr.lst geography.lst "
-	files += "slang.lst twisters.lst composite.lst ignored.lst names.lst rare.lst"
+	def files = "alt.lst base-abbr.lst base.lst base-compound.lst colors.lst dot-abbr.lst"
+	files += " geo-ukr-hydro.lst geo-other.lst"  //  geo-ukr-koatuu.lst
+	files += " slang.lst twisters.lst ignored.lst names.lst rare.lst"
+	files += " names-composite.lst base-composite.lst"
 
 	args files.split()
 }
@@ -89,7 +91,8 @@ task dups {
   doLast {
 	def dictDir = file("data/dict")
 	
-	def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') }
+	def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') \
+	    && it.name != 'dot-abbr.lst' }
 	
 	def lines = files.collect {  it.text.split("\n")  }.flatten() \
 	    .collect { it.trim().replaceAll(/\s*#.*/, '').replaceAll(/\.[^< ]+/, '...') } \
@@ -99,8 +102,8 @@ task dups {
 
     def dups = lines.countBy{it}.grep{it.value > 1 }.collect{it.key}
 
-    println "Found ${dups.size} dups"
     println dups.toSorted().join("\n")
+    println "Found ${dups.size} dups"
   }
 }
 
