@@ -550,6 +550,7 @@
 УБЕЗ noun:n:nv
 УБЗПТЛ noun:n:nv
 УБОЗ noun:n:nv
+УБОЗ /n20
 УВКБ noun:n:nv
 УВКР noun:f:nv
 УВУ noun:n:nv:np:prop       # Український вільний університет
@@ -654,6 +655,7 @@
 ЦРУ noun:n:nv:np:prop
 ЦСКА noun:m:nv:np:prop
 ЦУМ noun:m:nv:np
+ЦУМ /n20
 ЧАЕС noun:f:nv:np:prop
 ЧАП noun:m:nv
 ЧЄ noun:m:nv:np:prop        # Чемпіонат Європи

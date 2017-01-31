@@ -133,6 +133,7 @@ subgroup n2n.p2
 
 но    ен    гно             #  стегно стеген                @ noun:p:v_rod
 но    он    [кг]но          #  вікно   вікон                @ noun:p:v_rod
+во    ов    гво              #  лігво   лігов                @ noun:p:v_rod
 мо    ом    смо             #  пасмо    пасом                @ noun:p:v_rod
 ло    ол    зло             #  зло   зол                    @ noun:p:v_rod
 ко    ок    [жзлмртчшь]ко   #  серденько  серденьок                @ noun:p:v_rod
@@ -149,9 +150,11 @@ subgroup n2n.p2
 йце     єць     йце         #  яйце  яєць                 @ noun:p:v_rod
 ьце     ець     ьце         #  бильце  билець             @ noun:p:v_rod
 
-е       ям  це            #  яйце  яйцям                      @ noun:p:v_dav
-е       ями це            #  яйце  яйцями                     @ noun:p:v_oru
-е       ях  це            #  яйце  яйцях                      @ noun:p:v_mis
+оле     іль     оле         #  поле піль             @ noun:p:v_rod
+
+е       ям  е            #  яйце  яйцям                      @ noun:p:v_dav
+е       ями е            #  яйце  яйцями                     @ noun:p:v_oru
+е       ях  е            #  яйце  яйцях                      @ noun:p:v_mis
 
 че:
 е       і               #  плечі                       @ noun:p:v_naz
@@ -199,11 +202,11 @@ subgroup n2n.piv
 о    ах     #  ікло  іклах                @ noun:p:v_mis
 
 
-[лр]е:
-е   ів      #  море  морів                      @ noun:p:v_rod
-е   ям      #  море  морям                      @ noun:p:v_dav
-е   ями     #  море  морями                     @ noun:p:v_oru
-е   ях      #  море  морях                      @ noun:p:v_mis
+[лр][яе]:
+.   ів      #  море  морів                      @ noun:p:v_rod
+.   ям      #  море  морям                      @ noun:p:v_dav
+.   ями     #  море  морями                     @ noun:p:v_oru
+.   ях      #  море  морях                      @ noun:p:v_mis
 
 
 

@@ -377,38 +377,14 @@
 кабельтови кабельтов noun:inanim:p:v_kly
 
 
-хтітися хтітися verb:rev:imperf:inf
-хтітись хтітися verb:rev:imperf:inf
-хочеться хтітися verb:rev:imperf:pres:s:3
-хтітиметься хтітися verb:rev:imperf:futr:s:3
-хтілось хтітися verb:rev:imperf:past:n
-хтілося хтітися verb:rev:imperf:past:n
+гони гони noun:inanim:p:v_naz:ns:xp2        # міра довжини
+гін гони noun:inanim:p:v_rod:ns:xp2
+гонам гони noun:inanim:p:v_dav:ns:xp2
+гони гони noun:inanim:p:v_zna:ns:xp2
+гонами гони noun:inanim:p:v_oru:ns:xp2
+гонах гони noun:inanim:p:v_mis:ns:xp2
+гони гони noun:inanim:p:v_kly:ns:xp2
 
-хтівши хтівши advp:imperf
-
-хтіти хтіти verb:imperf:inf
-хоти хтіти verb:imperf:impr:s:2
-хотім хтіти verb:imperf:impr:p:1
-хотімо хтіти verb:imperf:impr:p:1
-хотіть хтіти verb:imperf:impr:p:2
-хочу хтіти verb:imperf:pres:s:1
-хочеш хтіти verb:imperf:pres:s:2
-хоче хтіти verb:imperf:pres:s:3
-хочем хтіти verb:imperf:pres:p:1
-хочемо хтіти verb:imperf:pres:p:1
-хочете хтіти verb:imperf:pres:p:2
-хочуть хтіти verb:imperf:pres:p:3
-хтітиму хтіти verb:imperf:futr:s:1
-хтітимеш хтіти verb:imperf:futr:s:2
-хтітиме хтіти verb:imperf:futr:s:3
-хтітимем хтіти verb:imperf:futr:p:1
-хтітимемо хтіти verb:imperf:futr:p:1
-хтітимете хтіти verb:imperf:futr:p:2
-хтітимуть хтіти verb:imperf:futr:p:3
-хтів хтіти verb:imperf:past:m
-хтіла хтіти verb:imperf:past:f
-хтіло хтіти verb:imperf:past:n
-хтіли хтіти verb:imperf:past:p
 
 
 
@@ -436,19 +412,29 @@
 плахіт плахта noun:p:v_rod
 плахот плахта noun:p:v_rod
 
+автосанями автосани noun:inanim:p:v_oru:ns
+аеросанями аеросани noun:inanim:p:v_oru:ns
+мотосанями мотосани noun:inanim:p:v_oru:ns
 санями сани noun:inanim:p:v_oru:ns
+ворітьми ворота noun:p:v_oru:ns
+вошима воша noun:p:v_oru:anim
 грошима гроші noun:p:v_oru:ns
 грішми гроші noun:p:v_oru:ns
 колісьми колесо noun:p:v_oru
 квазігрошима квазігроші noun:p:v_oru:ns
 квазігрішми квазігроші noun:p:v_oru:ns
-ворітьми ворота noun:p:v_oru:ns
 крильми крило noun:p:v_oru
 слізьми сльоза noun:p:v_oru
 коліньми коліно noun:p:v_oru
 кістьми кість noun:p:v_oru
 гістьми гість noun:p:v_oru:anim
 свиньми свиня noun:p:v_oru:anim
+
+уші вухо noun:p:v_naz/v_zna
+ушей вухо noun:p:v_rod
+ушам вухо noun:p:v_dav
+ушима вухо noun:p:v_oru
+ушах вухо noun:p:v_mis
 
 стіп стопа noun:p:v_rod:xp1
 
@@ -545,6 +531,40 @@
 кленете клясти verb:pres:p:2:imperf:rare
 кленуть клясти verb:pres:p:3:imperf:rare
 кленучи клясти advp:imperf
+
+
+хтітися хтітися verb:rev:imperf:inf
+хтітись хтітися verb:rev:imperf:inf
+хочеться хтітися verb:rev:imperf:pres:s:3
+хтітиметься хтітися verb:rev:imperf:futr:s:3
+хтілось хтітися verb:rev:imperf:past:n
+хтілося хтітися verb:rev:imperf:past:n
+
+хтівши хтівши advp:imperf
+
+хтіти хтіти verb:imperf:inf
+хоти хтіти verb:imperf:impr:s:2
+хотім хтіти verb:imperf:impr:p:1
+хотімо хтіти verb:imperf:impr:p:1
+хотіть хтіти verb:imperf:impr:p:2
+хочу хтіти verb:imperf:pres:s:1
+хочеш хтіти verb:imperf:pres:s:2
+хоче хтіти verb:imperf:pres:s:3
+хочем хтіти verb:imperf:pres:p:1
+хочемо хтіти verb:imperf:pres:p:1
+хочете хтіти verb:imperf:pres:p:2
+хочуть хтіти verb:imperf:pres:p:3
+хтітиму хтіти verb:imperf:futr:s:1
+хтітимеш хтіти verb:imperf:futr:s:2
+хтітиме хтіти verb:imperf:futr:s:3
+хтітимем хтіти verb:imperf:futr:p:1
+хтітимемо хтіти verb:imperf:futr:p:1
+хтітимете хтіти verb:imperf:futr:p:2
+хтітимуть хтіти verb:imperf:futr:p:3
+хтів хтіти verb:imperf:past:m
+хтіла хтіти verb:imperf:past:f
+хтіло хтіти verb:imperf:past:n
+хтіли хтіти verb:imperf:past:p
 
 
 # наказна фома є зайвою - не має сенсу значно ускладнювати правила???
