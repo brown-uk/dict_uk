@@ -91,7 +91,7 @@ class BaseTags {
 			tag = ":p:v_naz/v_kly" // + v_zna_for_inanim
 		}
 		else if( affixFlag.startsWith("n2adj1") ) {
-		    if( word.endsWith("е") || word.endsWith("є") ) {
+		    if( word.endsWith("е") || word.endsWith("є") || word.endsWith("о") ) {
 			    tag = ":n:v_naz/v_kly" + v_zna_for_inanim
 			}
 		    else if( word.endsWith("а") || word.endsWith("я") ) {

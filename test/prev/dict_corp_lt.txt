@@ -698,6 +698,13 @@
 вареними варений adj:p:v_oru:&_adjp:pasv:imperf
 варених варений adj:p:v_mis:&_adjp:pasv:imperf
 варені варений adj:p:v_kly:&_adjp:pasv:imperf
+Василівка-На-Дніпрі Василівка-На-Дніпрі noun:inanim:f:v_naz:prop
+Василівки-На-Дніпрі Василівка-На-Дніпрі noun:inanim:f:v_rod:prop
+Василівці-На-Дніпрі Василівка-На-Дніпрі noun:inanim:f:v_dav:prop
+Василівку-На-Дніпрі Василівка-На-Дніпрі noun:inanim:f:v_zna:prop
+Василівкою-На-Дніпрі Василівка-На-Дніпрі noun:inanim:f:v_oru:prop
+Василівці-На-Дніпрі Василівка-На-Дніпрі noun:inanim:f:v_mis:prop
+Василівко-На-Дніпрі Василівка-На-Дніпрі noun:inanim:f:v_kly:prop
 вбивця вбивця noun:anim:m:v_naz
 вбивці вбивця noun:anim:m:v_rod
 вбивці вбивця noun:anim:m:v_dav
