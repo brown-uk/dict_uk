@@ -24,7 +24,7 @@ class Expand {
 	final Affix affix = new Affix()
 	
 
-	static final Pattern cf_flag_pattern = ~ /(vr?)[1-4]\.cf/	 // v5.cf is special
+	static final Pattern cf_flag_pattern = ~ /(vr?)[1-6]\.cf/	 // no v5
 	static final Pattern is_pattern = ~ /(vr?)[1-9]\.is/
 	static final Pattern pattr_pattern = ~ /n[0-9]+\.patr/
 //	Pattern default_kly_u_pattern = ~ /([^бвджзлмнпстфц]|[аеиу]р)$/
