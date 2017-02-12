@@ -1,0 +1,145 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+apply plugin: 'signing'
+
+version = '3.6.2'
+group = 'ua.net.nlp'
+
+String artifactId = 'morfologik-ukrainian'
+archivesBaseName = artifactId
+
+String ltVersion = '3.6-SNAPSHOT'
+
+String langCode="uk"
+
+String packageDir="org/languagetool/resource/" + langCode
+String resourceDir=sourceSets.main.resources.srcDirs[0].toString() + "/" + packageDir
+String outResDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageDir
+String outRulesDir=sourceSets.main.output.resourcesDir.toString() + "/org/languagetool/rules/uk"
+String tmpDir="build/tmp"
+
+
+String inputDir="${projectDir}/../../out"
+String inputDictFile="dict_corp_lt.txt"
+
+String dstEncoding="cp1251"
+String srcEncoding="utf-8"
+
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+configurations{
+  provided {
+        description = 'Configuration for generating the dictionaries'
+  }
+}
+
+
+
+task copyNlpDictJar(type: Copy) {
+  from (fileTree(sourceSets.main.output.resourcesDir.absolutePath).files) {
+    include '**/ukrainian.dict'
+    include '**/ukrainian.info'
+//    include '**/README'
+    include '**/tagset.txt'
+  }
+  into (sourceSets.main.output.resourcesDir.absolutePath + '/ua/net/nlp')
+  includeEmptyDirs false
+}
+
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Ukrainian part-of-speech (POS) dictionary as a Morfologik binary',
+                   'Implementation-Version': version
+    }
+
+    setArchiveName "${artifactId}-${version}.jar"
+
+//    from(sourceSets.main.output) {
+        include '**/ua/net/nlp/*'
+//    }
+
+    includeEmptyDirs false
+}
+
+
+processResources.dependsOn(copyNlpDictJar)
+
+
+//classes.dependsOn(createPOSDict, createSynthDict, createTagList, createSpellDict, createCaseGovernmentDict)
+compileJava.enabled = false
+
+signing {
+    sign configurations.archives
+}
+
+
+
+publishing {
+    repositories {
+        mavenLocal()
+    }
+
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            //artifact dictJar
+            //artifact ltJar
+        }
+    }
+}
+
+
+uploadArchives {
+  repositories {
+    mavenDeployer {
+      beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+      repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+        authentication(userName: ossrhUsername, password: ossrhPassword)
+      }
+
+      snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+        authentication(userName: ossrhUsername, password: ossrhPassword)
+      }
+
+      pom.project {
+        name 'Ukrainian POS tag dictionary for Morfologik'
+        packaging 'jar'
+        // optionally artifactId can be defined here 
+        description 'Ukrainian part-of-speech dictionaries in Morfologik binary format'
+        url 'https://github.com/brown-uk/dict_uk'
+
+        scm {
+          url 'https://github.com/brown-uk/dict_uk.git'
+        }
+
+        licenses {
+          license {
+            name 'GNU Lesser General Public License'
+            url 'http://www.gnu.org/licenses/lgpl.txt'
+          }
+          license {
+            name 'Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)'
+            url 'http://creativecommons.org/licenses/by-nc-sa/4.0'
+          }
+        }
+
+        developers {
+          developer {
+            id 'arysin'
+            name 'Andriy Rysin'
+            email 'arysin@gmail.com'
+          }
+        }
+      }
+
+    }
+  }
+}

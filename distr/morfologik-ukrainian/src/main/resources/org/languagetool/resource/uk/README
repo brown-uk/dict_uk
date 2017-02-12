@@ -1,0 +1,14 @@
+These are Ukrainian dictionaries in morfologik format for LanguageTool.
+
+* ukrainian.dict is a binary dictionary file for morphological analysis in fsa_morph program used by LanguageTool grammar checker.
+  (see http://www.eti.pg.gda.pl/katedry/kiw/pracownicy/Jan.Daciuk/personal/fsa.html).
+
+* ukrainian_synth.dict is a binary file for grammatical synthesis, usable by morfologik-stemming library.
+
+* hunspell/uk_UA.dict is a binary file for spellchecking used in LanguageTool grammar chekcer.
+
+See tagset.txt for description of the tags.
+
+Currently the POS tag dictionary is under development and is based on dict_uk project (https://github.com/brown-uk/dict_uk)
+
+Licensed under LGPL 2.1.
