@@ -10,6 +10,7 @@
 Абатському Абатський noun:inanim:m:v_dav
 Абатський Абатський noun:inanim:m:v_zna
 Абатським Абатський noun:inanim:m:v_oru
+Абатськім Абатський noun:inanim:m:v_mis
 Абатському Абатський noun:inanim:m:v_mis
 Абатський Абатський noun:inanim:m:v_kly
 абичий абичий adj:m:v_naz:&pron:ind
@@ -875,6 +876,7 @@
 ведучому ведучий noun:anim:m:v_dav
 ведучого ведучий noun:anim:m:v_zna
 ведучим ведучий noun:anim:m:v_oru
+ведучім ведучий noun:anim:m:v_mis
 ведучому ведучий noun:anim:m:v_mis
 ведучий ведучий noun:anim:m:v_kly
 ведучі ведучий noun:anim:p:v_naz
@@ -1166,6 +1168,7 @@
 Верхньоторецькому Верхньоторецьке noun:inanim:n:v_dav
 Верхньоторецьке Верхньоторецьке noun:inanim:n:v_zna
 Верхньоторецьким Верхньоторецьке noun:inanim:n:v_oru
+Верхньоторецькім Верхньоторецьке noun:inanim:n:v_mis
 Верхньоторецькому Верхньоторецьке noun:inanim:n:v_mis
 Верхньоторецьке Верхньоторецьке noun:inanim:n:v_kly
 Верьовка Верьовка noun:anim:m:v_naz:prop:lname
@@ -1391,6 +1394,7 @@
 видючому видючий noun:anim:m:v_dav
 видючого видючий noun:anim:m:v_zna
 видючим видючий noun:anim:m:v_oru
+видючім видючий noun:anim:m:v_mis
 видючому видючий noun:anim:m:v_mis
 видючий видючий noun:anim:m:v_kly
 видючі видючий noun:anim:p:v_naz
@@ -2931,8 +2935,11 @@
 Посаду-Покровському Посад-Покровське noun:inanim:m:v_dav:prop
 Посад-Покровське Посад-Покровське noun:inanim:m:v_zna:prop
 Посадом-Покровським Посад-Покровське noun:inanim:m:v_oru:prop
+Посаді-Покровськім Посад-Покровське noun:inanim:m:v_mis:prop
 Посаді-Покровському Посад-Покровське noun:inanim:m:v_mis:prop
+Посадові-Покровськім Посад-Покровське noun:inanim:m:v_mis:prop
 Посадові-Покровському Посад-Покровське noun:inanim:m:v_mis:prop
+Посаду-Покровськім Посад-Покровське noun:inanim:m:v_mis:prop
 Посаду-Покровському Посад-Покровське noun:inanim:m:v_mis:prop
 Посаде-Покровське Посад-Покровське noun:inanim:m:v_kly:prop
 пострілявши пострілявши advp:perf
