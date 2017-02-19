@@ -399,6 +399,8 @@
 ОПЗ noun:m:nv:np:prop       # Одеський припортовий завод
 ОРД noun:f:nv
 ОРДЛО noun:p:nv:ns:prop     # Окремі райони Донецької та Луганської областей
+ОРДО noun:p:nv:ns:prop     # Окремі райони Донецької області
+ОРЛО noun:p:nv:ns:prop     # Окремі райони Луганської області
 ОРТ noun:n:nv:np:prop
 ОСББ noun:n:nv:np
 ОУН noun:f:nv:np:prop

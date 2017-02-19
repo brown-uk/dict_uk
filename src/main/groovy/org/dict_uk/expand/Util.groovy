@@ -282,10 +282,10 @@ class Util {
 			words.add(dicEntry.word)
 			lemmas.add(dicEntry.lemma)
 
-			if( ! (tag =~ /:(bad|alt|subst|colluncontr)/)
+			if( ! (tag =~ /:(bad|alt|subst|coll|uncontr)/)
 					&& ! word.endsWith(".")
-					&& ! (tag.contains(":inanim")
-						&& tag.contains(":v_kly") ) ) {
+					//&& ! (tag.contains(":inanim") && tag.contains(":v_kly") )
+					 ) {
 				spell_words.add(word)
 			}
 
