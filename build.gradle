@@ -254,7 +254,7 @@ task expandInteractive(type: JavaExec, dependsOn: reverseAffix) {
 //
 
 task deployToLT(type: GradleBuild) {
-    dir = 'distr/language-dict-uk'
+    dir = 'distr/morfologik-ukrainian'
     tasks = ['deployToLT']
 }
 
