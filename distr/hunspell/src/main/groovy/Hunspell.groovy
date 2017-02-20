@@ -353,7 +353,7 @@ def lines = files.collect {
             def expanded = expand.expand(parts[0], expandFlags)
 
 			def uniqForms = expanded.findAll{
-			    ! (it =~ /:uncontr|:alt|verb.*:coll/ )
+			    ! (it =~ /:uncontr|:alt|:bad|:subst|verb.*:coll/ )
 			}.collect {
 			    it.word
 			}.unique() // + ' # TODO: inflect'
