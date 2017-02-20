@@ -102,7 +102,12 @@ task dups {
 
     def dups = lines.countBy{it}.grep{it.value > 1 }.collect{it.key}
 
-    println dups.toSorted().join("\n")
+    java.text.Collator coll = java.text.Collator.getInstance(new Locale("uk", "UA"));
+    coll.setStrength(java.text.Collator.IDENTICAL)
+    coll.setDecomposition(java.text.Collator.NO_DECOMPOSITION)
+
+
+    println dups.toSorted(coll).join("\n")
     println "Found ${dups.size} dups"
   }
 }
