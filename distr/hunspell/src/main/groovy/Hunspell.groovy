@@ -428,13 +428,19 @@ def extraWords = getClass().getResource( '/extra_words.txt' ).text
 
 lines.addAll(extraWords.split())
 
-def dic_file = new File("../../data/dict/composite.lst" )
-def expand_comps = new ExpandComps(expand)
+def comps = []
 
-def comps
-def dic_file_reader = dic_file.withReader("utf-8") { reader ->
-	comps = expand_comps.process_input(reader.readLines())
+def dic_file = new File("../../data/dict").eachFile{ file ->
+    if( ! file.name.contains("composite") )
+        return
+
+    def expand_comps = new ExpandComps(expand)
+
+    def dic_file_reader = file.withReader("utf-8") { reader ->
+        comps += expand_comps.process_input(reader.readLines())
+    }
 }
+
 println "Got $comps.size comps"
 
 
