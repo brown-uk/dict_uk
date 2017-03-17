@@ -30,13 +30,21 @@ println "reading..."
 def data = new File('out/toadd/new_lemmas_main.txt').readLines()
 @Field
 def dict = new File('data/dict/base.lst').readLines()
+dict += new File('data/dict/base-compound.lst').readLines()
+dict += new File('data/dict/twisters.lst').readLines()
+dict += new File('data/dict/slang.lst').readLines()
+dict += new File('data/dict/geo-other.lst').readLines()
 @Field
 def media = new File('out/toadd/new_lemmas_find.txt').readLines().collectEntries {
   def parts = it.split('@@@')
   [ (parts[0]): parts[1..-1] ]
 }
 @Field
-def newWords = new File('new_words.lst').readLines()
+def newWords = []
+def newWordsFile = new File('new_words.lst')
+if( newWordsFile.exists() ) {
+	newWords = newWordsFile.readLines()
+}
 
 def newWordsLemmas = newWords.findAll { it }.collect { it.split()[0] }
 data.removeAll {
@@ -56,6 +64,7 @@ UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName())
 def inflect() {
 	inflectedList.getModel().clear()
 
+	
 	if( text.text.contains(' /') ) {
 		
 		try {
@@ -63,10 +72,11 @@ def inflect() {
 			def forms = expand.expand_line(text.text)
 			forms = new DictSorter().sortEntries(forms)
 //			println forms
-		
+			
 			inflectedList.getModel().addAll(forms.collect{it.word.padRight(30) + it.tagStr})
 		} catch ( e ) {
 			inflectedList.getModel().add(e.getMessage())
+			e.printStackTrace()
 		}
 	}
 }
@@ -125,15 +135,16 @@ def getDefaultTxt(word) {
 				word_txt += '.ke'
 			break;
 
-		case ~/.*([аеєиіїоуюя]ка|[^к]а|ія|ця)$/:
+		case ~/.*(ння|ття|сся|ззя|тво|ще)$/:
+			word_txt += ' /n2n.p1'
+			break;
+
+
+		case ~/.*([аеєиіїоуюя]ка|[^к]а|ія|я)$/:
 			word_txt += ' /n10.p1'
 			break;
 		case ~/.*([^аеєиіїоуюя]ка)$/:
 			word_txt += ' /n10.p2'
-			break;
-
-		case ~/.*(ння|ття|сся|ззя|тво|ще)$/:
-			word_txt += ' /n2n.p1'
 			break;
 
 		case ~/.*[ую]вати$/:
@@ -152,6 +163,10 @@ def getDefaultTxt(word) {
 		case ~/.*и$/:
 			word_txt += ' /np2'
 			break;
+
+		case ~/.*о$/:
+			word_txt += ' adv'
+			break;
 	}
 
 	word_txt
@@ -161,6 +176,9 @@ def findInDict(word) {
 	word = word.replaceFirst(/.*-/, '')
 	
 	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|відео|гео|гідро|гіпер|електро|кіно|мега|мета|мікро|мото|нейро|не|пере|під|по|радіо|стерео|спорт|теле|фото|супер|термо)/, '')
+    ending = ending.replaceFirst(/(ість|ий|о)$/, '(ість|ий|о)')
+    ending = ending.replaceFirst(/(и)$/, '(и|а)?')
+    ending = ending.replaceFirst(/ниця$/, 'ик')
 
 	def similars = dict.findAll{ it =~ "^[а-яіїєґА-ЯІЇЄҐ'-]*$ending " }
 	def model = new DefaultListModel<String>()
@@ -188,6 +206,10 @@ def addWord() {
 	}
 }
 
+def person() {
+    text.text = text.text.replaceFirst(/ [^ ]*/, ' /n20.a.p.<')
+}
+
 println "starting..."
 
 count = 0
@@ -210,13 +232,14 @@ swing.edt {
 
 				vbox {
 
-					label('----------')
+					label(' ----- ')
 
 					text = textField(
-							preferredSize: new Dimension(220, 70)
+					        //rows: 5
+							minimumSize: new Dimension(220, 70)
 							)
 
-					textlabel = label('Click the button!')
+					textlabel = label("${newWords.size} new words")
 
 					hbox {
 						def btn1 = button(
@@ -234,6 +257,13 @@ swing.edt {
 								}, keystroke, JComponent.WHEN_IN_FOCUSED_WINDOW);
 						
 								
+						button(
+								text: 'Pers',
+								actionPerformed: {
+										person()
+
+									}
+								)
 						button(
 								text: 'Inflect',
 								actionPerformed: {
