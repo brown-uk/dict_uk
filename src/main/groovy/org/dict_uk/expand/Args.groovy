@@ -24,7 +24,13 @@ class Args {
 	List<String> lemmaForTags = []
 
 
-	public static Args args;
+	public static Args args = new Args();
+	
+	static {
+		args.removeWithTags = ["uncontr", "inf:coll"]
+		args.lemmaForTags = ["advp"]
+		args.removeTags = ["v-u"]
+	}
 
 	
 	public static parse(String[] argv) {

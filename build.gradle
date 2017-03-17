@@ -19,14 +19,20 @@ repositories {
     mavenCentral()
 }
 
+//configurations {
+//    groovyScript
+//}
+
 dependencies {
-    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.8'
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.9'
 
     compile 'commons-lang:commons-lang:2.4'
     compile 'org.codehaus.gpars:gpars:1.2.1'
     compile 'commons-cli:commons-cli:1.3'
     compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.8'
     testCompile 'junit:junit:4.12'
+
+//    groovyScript localGroovy()
 }
 
 //compileGroovy {
@@ -251,6 +257,14 @@ task expandInteractive(type: JavaExec, dependsOn: reverseAffix) {
     args "-aff", "../data/affix"
     args "-dict", "-"
     args opts.split()
+}
+
+
+
+task runTool(type: JavaExec, dependsOn: compileGroovy) {
+    classpath = sourceSets.main.output + configurations.runtime
+    main = "groovy.ui.GroovyMain"
+    args "src/tools/groovy/" + (project.hasProperty('tool') ? project.tool : '')
 }
 
 
