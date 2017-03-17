@@ -402,11 +402,11 @@
 невідь-куди adv:&pron:ind
 невідь-звідки adv:&pron:ind
 
-казна-де adv:&pron:ind
-казна-як adv:&pron:ind
-казна-коли adv:&pron:ind
-казна-куди adv:&pron:ind
-казна-звідки adv:&pron:ind
+казна-де adv:&pron:ind:coll
+казна-як adv:&pron:ind:coll
+казна-коли adv:&pron:ind:coll
+казна-куди adv:&pron:ind:coll
+казна-звідки adv:&pron:ind:coll
 
 всяк adv:rare:v-u
 усяк adv:rare:v-u
@@ -450,6 +450,9 @@
 скількох скільки numr:p:v_rod/v_zna/v_mis:&pron:int
 скільком скільки numr:p:v_dav:&pron:int
 скількома скільки numr:p:v_oru:&pron:int
+
+аніскільки adv:&pron:neg
+ніскільки adv:&pron:neg
 
 стільки adv:&pron:dem
 стільки стільки numr:p:v_naz/v_zna:&pron:dem
