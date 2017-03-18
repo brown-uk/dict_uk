@@ -139,14 +139,6 @@ def getDefaultTxt(word) {
 			word_txt += ' /n2n.p1'
 			break;
 
-
-		case ~/.*([аеєиіїоуюя]ка|[^к]а|ія|я)$/:
-			word_txt += ' /n10.p1'
-			break;
-		case ~/.*([^аеєиіїоуюя]ка)$/:
-			word_txt += ' /n10.p2'
-			break;
-
 		case ~/.*[ую]вати$/:
 			word_txt += ' /v1 :imperf'
 			break;
@@ -159,7 +151,15 @@ def getDefaultTxt(word) {
 		case ~/.*[аіия]тися$/:
 			word_txt += ' /vr2 :imperf'
 			break;
-
+			
+			
+		case ~/.*([аеєиіїоуюя]ка|[^к]а|ія|я)$/:
+			word_txt += ' /n10.p1'
+			break;
+		case ~/.*([^аеєиіїоуюя]ка)$/:
+			word_txt += ' /n10.p2'
+			break;
+			
 		case ~/.*и$/:
 			word_txt += ' /np2'
 			break;
@@ -206,9 +206,6 @@ def addWord() {
 	}
 }
 
-def person() {
-    text.text = text.text.replaceFirst(/ [^ ]*/, ' /n20.a.p.<')
-}
 
 println "starting..."
 
@@ -256,22 +253,48 @@ swing.edt {
 									}
 								}, keystroke, JComponent.WHEN_IN_FOCUSED_WINDOW);
 						
-								
+						label('     ')
+							
 						button(
 								text: 'Pers',
 								actionPerformed: {
-										person()
-
+										text.text = text.text.replaceFirst(/ [^ ]*/, ' /n20.a.p.<')
 									}
 								)
 						button(
+								text: 'Adjp',
+								actionPerformed: {
+										text.text = text.text.replaceFirst(/ [^ ]*/, ' /adj :&adjp:pasv:perf')
+										inflect()
+									}
+								)
+						button(
+								text: 'Impf',
+								actionPerformed: {
+										text.text = text.text.replaceFirst(/ :imperf/, '.cf.advp :imperf')
+										inflect()
+									}
+								)
+					}
+					hbox {
+						
+//						label('     ')
+						def btnInflect = button(
 								text: 'Inflect',
 								actionPerformed: {
 										inflect()
-
 									}
 								)
-						label('     ')
+								
+								KeyStroke keystroke = KeyStroke.getKeyStroke(KeyEvent.VK_I, InputEvent.CTRL_MASK)
+								btnInflect.registerKeyboardAction(new ActionListener() {
+									public void actionPerformed(ActionEvent e) {
+										inflect()
+									}
+								}, keystroke, JComponent.WHEN_IN_FOCUSED_WINDOW);
+
+								
+//						label('     ')
 						button(
 								text: 'Geo',
 								actionPerformed: {
