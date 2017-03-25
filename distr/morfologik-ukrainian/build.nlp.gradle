@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version = '3.7.0'
+version = '3.7.1'
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian'
@@ -13,10 +13,9 @@ String ltVersion = '3.7-SNAPSHOT'
 
 String langCode="uk"
 
-String packageDir="org/languagetool/resource/" + langCode
+String packageDir="ua/net/nlp"
 String resourceDir=sourceSets.main.resources.srcDirs[0].toString() + "/" + packageDir
 String outResDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageDir
-String outRulesDir=sourceSets.main.output.resourcesDir.toString() + "/org/languagetool/rules/uk"
 String tmpDir="build/tmp"
 
 
@@ -39,17 +38,83 @@ configurations{
   }
 }
 
+dependencies {
+    provided 'org.languagetool:languagetool-tools:' + ltVersion
+}
 
 
-task copyNlpDictJar(type: Copy) {
-  from (fileTree(sourceSets.main.output.resourcesDir.absolutePath).files) {
-    include '**/ukrainian.dict'
-    include '**/ukrainian.info'
-//    include '**/README'
-    include '**/tagset.txt'
-  }
-  into (sourceSets.main.output.resourcesDir.absolutePath + '/ua/net/nlp')
-  includeEmptyDirs false
+task prepareDict() {
+    def srcDict="${inputDir}/$inputDictFile"
+    def outFile="${tmpDir}/all.tagged.nlp.tmp"
+    def splitter = '\t'
+    def tagSplitter = '|'
+
+    inputs.file srcDict
+    outputs.file outFile
+
+    doLast {
+        println "Preparing dict file $inputDictFile"
+        new File("$projectDir/$tmpDir").mkdirs()
+
+        def outF = new File(outFile)
+        outF.text = ''
+
+        // to lower memory footprint we collect by lemmas
+
+        def prevLemma = ""
+        def tagMap = [:].withDefault{[]}
+
+        new File(srcDict).eachLine { line ->
+          def (word, lemma, tagStr) = line.split()
+
+          def wordKey = word + splitter + lemma
+          if( lemma != prevLemma ) {
+            tagMap.each { key, tags ->
+              def outLine = key + splitter + tags.join(tagSplitter) + "\n"
+              outF.append(outLine, dstEncoding)
+            }
+            tagMap.clear()
+
+            prevLemma = lemma
+          }
+
+          tagMap[wordKey]  << tagStr
+        }
+
+        tagMap.each { key, tags ->
+            def outLine = key + splitter + tags.join(tagSplitter) + "\n"
+            outF.append(outLine, dstEncoding)
+        }
+    }
+
+}
+
+
+task posDict(type: JavaExec, dependsOn: prepareDict) {
+    def outputDict="${outResDir}/ukrainian.dict"
+
+    inputs.file tasks.prepareDict.outputs
+    outputs.file outputDict
+
+    workingDir "$projectDir"
+
+    classpath = files(configurations.provided.files)
+    main = 'org.languagetool.tools.POSDictionaryBuilder'
+
+    args "-i", tasks.prepareDict.outputs.getFiles().iterator().next()
+    args "-info", "${resourceDir}/ukrainian.info"
+    args "-o", "${outputDict}"
+    
+    doFirst {
+        new File(outputDict).mkdirs()
+    }
+}
+
+
+task copyExtraFiles(type: Copy) {
+  from("$projectDir/../../doc/tags.txt")
+  into (sourceSets.main.output.resourcesDir.absolutePath + '/ua/net/nlp/')
+  rename("tags.txt", "tagset.txt")
 }
 
 
@@ -69,7 +134,7 @@ jar {
 }
 
 
-processResources.dependsOn(copyNlpDictJar)
+processResources.dependsOn(copyExtraFiles)
 
 
 //classes.dependsOn(createPOSDict, createSynthDict, createTagList, createSpellDict, createCaseGovernmentDict)
