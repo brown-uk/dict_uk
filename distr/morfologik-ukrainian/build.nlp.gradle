@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version = '3.7.1'
+version = '3.7.2'
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian'
@@ -22,7 +22,7 @@ String tmpDir="build/tmp"
 String inputDir="${projectDir}/../../out"
 String inputDictFile="dict_corp_lt.txt"
 
-String dstEncoding="cp1251"
+String dstEncoding="utf-8"
 String srcEncoding="utf-8"
 
 
@@ -67,7 +67,7 @@ task prepareDict() {
         new File(srcDict).eachLine { line ->
           def (word, lemma, tagStr) = line.split()
 
-          def wordKey = word + splitter + lemma
+          def wordKey = word.toLowerCase() + splitter + lemma
           if( lemma != prevLemma ) {
             tagMap.each { key, tags ->
               def outLine = key + splitter + tags.join(tagSplitter) + "\n"
@@ -133,6 +133,7 @@ jar {
     includeEmptyDirs false
 }
 
+jar.dependsOn(posDict)
 
 processResources.dependsOn(copyExtraFiles)
 

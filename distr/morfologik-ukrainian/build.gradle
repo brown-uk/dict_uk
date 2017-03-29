@@ -55,7 +55,7 @@ task tagList(type: Exec) {
 
     workingDir "$projectDir"
 
-    def cmd = "cat ${srcDict} | awk '{ print \$3 }' | grep -v 'verb.*:inf.*:coll' | sort -u > ${outFile}"
+    def cmd = "cat ${srcDict} | awk '{ print \$3 }' | sort -u > ${outFile}"
 
     commandLine "sh", "-c", "${cmd}"
 }

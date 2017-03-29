@@ -3,6 +3,8 @@ ukrainian.dict is a binary dictionary file for morphological analysis in fsa_mor
 
 See tagset.txt for description of the tags.
 
-Currently this POS tag dictionary is under development and is based on dict_uk project (https://github.com/brown-uk/dict_uk)
+This dictionary is currently under development and is based on dict_uk project (https://github.com/brown-uk/dict_uk)
+
+Note: to better fit into full-text search model this dictionary has all word forms in lower case but keeps lemmas for proper nouns in upper case.
 
 Licensed under GPL/LGPL and CC BY-NC-SA 4.0.
