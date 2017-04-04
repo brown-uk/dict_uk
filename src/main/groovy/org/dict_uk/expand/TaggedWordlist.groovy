@@ -89,7 +89,7 @@ List<String> process_input(List<String> files) {
             extra_tags = ""
         }
 
-		if( fn =~ /name.*\.lst|alt.lst|geo.*\.lst|composite.lst/ ) {
+		if( fn =~ /name.*\.lst|alt.lst|geo.*\.lst/ ) {
 			detectProperNoun = true
 		}
     

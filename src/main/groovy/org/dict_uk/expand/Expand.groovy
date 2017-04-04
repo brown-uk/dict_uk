@@ -77,7 +77,7 @@ class Expand {
 		def affixFlags2 = []
 
 		for( affixFlag2 in affixSubGroups) {
-			if( affixFlag2.contains("<") || affixFlag2 == "@")
+			if( affixFlag2.contains("<") || affixFlag2 == "@" || affixFlag2 == "ikl" )
 				continue
 
 			if( affixFlag2 != mainGroup) {

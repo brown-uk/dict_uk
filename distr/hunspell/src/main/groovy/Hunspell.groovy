@@ -260,8 +260,12 @@ def MULTIFLAG_PATTERN = ~ ' /[nv][^#]+ /[nv]'
 
 def superlatives = []
 
-def lines = files.collect {
-	it.text.split("\n")
+def lines = files.collect { file->
+	def lns = file.readLines()
+	if( file.name =~ /geo-.*\.lst/ ) {
+	    lns = lns.collect{ Character.isUpperCase(it.charAt(0)) ? it + '   #@ :prop' : it }
+	}
+	lns
 }
 .flatten()
 .collect {
@@ -275,12 +279,16 @@ def lines = files.collect {
 }
 .flatten()
 .collect {
-    if( it =~ NONSPELL_TAG_LIST )
-        return
+    def propName = it.contains('#@ :prop')
 
 	it = it.replaceFirst(/ *#.*/, '').trim()
+
 	if( ! it )
 		return ''
+
+    if( it =~ NONSPELL_TAG_LIST )
+        return ''
+
 
 	if( ! it.contains(" /") ) {
 		if( it.startsWith("+cs") ) {
@@ -301,7 +309,7 @@ def lines = files.collect {
 	else {
 		def parts = it.split(' ', 3)
 		
-		if( it.contains(".<") && ! it.contains("<+") ) {
+		if( (it.contains(".<") && ! it.contains("<+")) || hasInanimVkly(it, propName) ) {
 		    if( parts[1].contains("/n10") || parts[1].contains("/n3") ) {
 			    if( ! parts[1].contains(".k") && ! parts[0].contains("ще ") ) {
 				    parts[1] += parts[1].contains("/n10") ? ".ko" : ".ke"
@@ -313,9 +321,14 @@ def lines = files.collect {
 		        }
 		    }
         }
-        else if( it =~ "[гкр] /" && ! it.contains(".<") && it.contains(".ke") ) {
+        else if( it =~ "[гкр] /" && (! it.contains(".<") && ! hasInanimVkly(it, propName)) && it.contains(".ke") ) {
            parts[1] = parts[1].replace(".ke", "")
         }
+		
+		if( parts[1].contains(".ikl") ) {
+		    it = it.replace(".ikl", '')
+		    parts[1] = parts[1].replace(".ikl", '')
+		}
 		
 		if( parts[1] =~ /n10.*\.<\+?m/ ) {
 			parts[1] = parts[1].replaceFirst(/\.<\+?m/, '')
@@ -457,3 +470,8 @@ def txt = "${words.size}\n"
 txt += words.toSorted().join("\n")
 
 new File("build/hunspell/uk_UA.dic").text = txt
+
+
+static boolean hasInanimVkly(line, propName) {
+    return propName || line.contains('.ikl')
+}

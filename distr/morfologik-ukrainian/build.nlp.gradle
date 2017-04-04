@@ -3,10 +3,10 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version = '3.7.2'
+version = '3.7.3'
 group = 'ua.net.nlp'
 
-String artifactId = 'morfologik-ukrainian'
+String artifactId = 'morfologik-ukrainian-search'
 archivesBaseName = artifactId
 
 String ltVersion = '3.7-SNAPSHOT'
@@ -154,9 +154,9 @@ publishing {
 
     publications {
         mavenJava(MavenPublication) {
+            setArtifactId('morfologik-ukrainian-search')
+
             from components.java
-            //artifact dictJar
-            //artifact ltJar
         }
     }
 }
