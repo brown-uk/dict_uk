@@ -24,6 +24,7 @@ task prepareFiles {
 	    from "../LICENSE"
 	    from "meta-oxt/dictionaries.xcu"
 	    from "meta-oxt/downloadplaces.txt"
+	    from "meta-oxt/icon64.png"
 	    from("meta-oxt/description.xml") {
             filter(ReplaceTokens, tokens: [VERSION: project.version])
         }

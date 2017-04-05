@@ -10,6 +10,12 @@
     <dependencies>
         <OpenOffice.org-minimal-version value="3.0" d:name="OpenOffice.org 3.0" />
     </dependencies>
+    <icon>
+        <default xlink:href="icon64.png" />
+    </icon>
+    <publisher>
+        <name xlink:href="https://github.com/brown-uk/dict_uk" lang="uk">ВЕСУМ</name>
+    </publisher>
     <registration>
     </registration>
 </description>
