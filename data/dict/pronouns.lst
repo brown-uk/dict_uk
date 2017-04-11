@@ -281,14 +281,49 @@
 цей /adj_pron :&pron:dem
 оцей /adj_pron :&pron:dem
 
+це це noun:n:v_naz/v_zna:&pron:dem
+цього це noun:n:v_rod:&pron:dem
+цьому це noun:n:v_dav:&pron:dem
+цим це noun:n:v_oru:&pron:dem
+цім це noun:n:v_mis:&pron:dem
+цьому це noun:n:v_mis:&pron:dem
+
+оце оце noun:n:v_naz/v_zna:&pron:dem
+оцього оце noun:n:v_rod:&pron:dem
+оцьому оце noun:n:v_dav:&pron:dem
+оцим оце noun:n:v_oru:&pron:dem
+оцім оце noun:n:v_mis:&pron:dem
+оцьому оце noun:n:v_mis:&pron:dem
+
 той /adj_pron :&pron:dem
 позатой /adj_pron :&pron:dem
 тамтой /adj_pron :&pron:dem
 отой /adj_pron :&pron:dem
 
+те те noun:n:v_naz/v_zna:&pron:dem
+того те noun:n:v_rod:&pron:dem
+тому те noun:n:v_dav:&pron:dem
+тим те noun:n:v_oru:&pron:dem
+тім те noun:n:v_mis:&pron:dem
+тому те noun:n:v_mis:&pron:dem
+
 весь /adj_pron :&pron:gen
 увесь /adj_pron :&pron:gen
 ввесь /adj_pron :&pron:gen
+
+все все noun:n:v_naz/v_zna:&pron:gen
+всього все noun:n:v_rod:&pron:gen
+всьому все noun:n:v_dav:&pron:gen
+всім все noun:n:v_oru:&pron:gen
+всім все noun:n:v_mis:&pron:gen
+всьому все noun:n:v_mis:&pron:gen
+
+усе усе noun:n:v_naz/v_zna:&pron:gen
+усього усе noun:n:v_rod:&pron:gen
+усьому усе noun:n:v_dav:&pron:gen
+усім усе noun:n:v_oru:&pron:gen
+усім усе noun:n:v_mis:&pron:gen
+усьому усе noun:n:v_mis:&pron:gen
 
 все adv:v-u|conj:coord:v-u|part:v-u
 усе adv:v-u|conj:coord:v-u|part:v-u
