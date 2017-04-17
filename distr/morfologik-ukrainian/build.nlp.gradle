@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version = '3.7.3'
+version = '3.7.5'
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian-search'
@@ -120,7 +120,7 @@ task copyExtraFiles(type: Copy) {
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'Ukrainian part-of-speech (POS) dictionary as a Morfologik binary',
+        attributes 'Implementation-Title': 'Ukrainian part-of-speech (POS) dictionary for searching as a Morfologik binary',
                    'Implementation-Version': version
     }
 
@@ -194,6 +194,10 @@ uploadArchives {
           license {
             name 'Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)'
             url 'http://creativecommons.org/licenses/by-nc-sa/4.0'
+          }
+          license {
+            name 'The Apache Software License, Version 2.0'
+            url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
           }
         }
 

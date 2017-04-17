@@ -7,4 +7,4 @@ This dictionary is currently under development and is based on dict_uk project (
 
 Note: to better fit into full-text search model this dictionary has all word forms in lower case but keeps lemmas for proper nouns in upper case.
 
-Licensed under GPL/LGPL and CC BY-NC-SA 4.0.
+Licensed under GPL/LGPL, CC BY-NC-SA 4.0, and Apache License 2.0.
