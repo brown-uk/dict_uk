@@ -16,6 +16,7 @@
     <publisher>
         <name xlink:href="https://github.com/brown-uk/dict_uk" lang="uk">ВЕСУМ</name>
     </publisher>
-    <registration>
-    </registration>
+    <update-information>
+        <src xlink:href="https://raw.githubusercontent.com/brown-uk/dict_uk/master/distr/openoffice.org/service/oxt-update.xml" />
+    </update-information>
 </description>
