@@ -35,9 +35,12 @@
 грунтувати /v1.cf.advp.is0 :imperf
 грунтуватися /vr1.cf.advp :imperf
 грянути /v1 :perf
+ґданський /adj
 дезинфекція /n10
+держдепартамент /n20
 дрогобиччанин /n20.a.p.<
 екстра-клас /n20.p
+електрон-вольт /n20.a.p
 Журавно noun:n:v_naz/v_zna
 заввиграшки adv
 зберігти verb:inf:perf
@@ -75,6 +78,7 @@
 очків очко noun:inanim:p:v_rod:xp2
 пампушків пампушка noun:inanim:p:v_rod
 підгрунтя /n2n
+підопитний /adj
 пластирем пластир noun:inanim:m:v_oru
 посипляться посипатися verb:rev:perf:futr:p:3:xp2
 прихватизатор /n20.a.p.ke.<
