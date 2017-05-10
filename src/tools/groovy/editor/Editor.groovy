@@ -32,8 +32,9 @@ def data = new File('out/toadd/new_lemmas_main.txt').readLines()
 def dict = new File('data/dict/base.lst').readLines()
 dict += new File('data/dict/base-compound.lst').readLines()
 dict += new File('data/dict/twisters.lst').readLines()
-dict += new File('data/dict/slang.lst').readLines()
+dict += new File('data/dict/names.lst').readLines()
 dict += new File('data/dict/geo-other.lst').readLines()
+dict += new File('data/dict/slang.lst').readLines()
 @Field
 def media = new File('out/toadd/new_lemmas_find.txt').readLines().collectEntries {
   def parts = it.split('@@@')
@@ -175,12 +176,19 @@ def getDefaultTxt(word) {
 def findInDict(word) {
 	word = word.replaceFirst(/.*-/, '')
 	
-	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|відео|гео|гідро|гіпер|електро|кіно|мега|мета|мікро|мото|нейро|не|пере|під|по|радіо|стерео|спорт|теле|фото|супер|термо)/, '')
-    ending = ending.replaceFirst(/(ість|ий|о)$/, '(ість|ий|о)')
+	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|відео|гео|гепато|геронто|геліо|гідро|гіпер|електро|кіно|мега|мета|мікро|мото|нейро|не|пере|під|по|радіо|стерео|спорт|теле|фото|супер|термо)/, '')
+    ending = ending.replaceFirst(/(ння|ти|ість|ий|о)$/, '(ння|ти|ість|ий|о)')
     ending = ending.replaceFirst(/(и)$/, '(и|а)?')
-    ending = ending.replaceFirst(/ниця$/, 'ик')
-
-	def similars = dict.findAll{ it =~ "^[а-яіїєґА-ЯІЇЄҐ'-]*$ending " }
+    ending = ending.replaceFirst(/иця$/, '(иця|ик)')
+	ending = ending.replaceFirst(/[гґ]/, '[гґ]')
+	
+	println "searchin for: $ending"
+	def ptrn = ~"(?ui).*$ending "
+	def similars = dict.findAll{ ptrn.matcher(it) }
+//	def similars = dict.findAll{ it =~ "(?i)^[а-яіїєґА-ЯІЇЄҐ'-]*$ending " }
+	if( similars.size() > 100 ) {
+		similars = similars[0..100]
+	}
 	def model = new DefaultListModel<String>()
 	similars.each{ model.addElement(it) }
 	vesumList.setModel( model )
@@ -355,6 +363,9 @@ swing.edt {
 
 			}
 			
+			hbox {
+				minimumSize: new Dimension(100, 100)
+				
 				scrollPane(verticalScrollBarPolicy:JScrollPane.VERTICAL_SCROLLBAR_ALWAYS ) {
 
 					mediaList = list(
@@ -363,7 +374,7 @@ swing.edt {
 							)
 							mediaList.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
 				}
-
+			}
 		}
 		
 	}
