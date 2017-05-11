@@ -65,12 +65,12 @@ UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName())
 def inflect() {
 	inflectedList.getModel().clear()
 
-	
-	if( text.text.contains(' /') ) {
+
+	def txt = text.text	
+	if( txt.contains(' /') ) {
 		
 		try {
-			
-			def forms = expand.expand_line(text.text)
+			def forms = expand.expand_line(txt)
 			forms = new DictSorter().sortEntries(forms)
 //			println forms
 			
@@ -106,11 +106,11 @@ Closure selChange1 = { e ->
 	
 	text.setText(word_txt)
 
-	findInDict(word)
-		
-	inflect()
-	
-	findMedia(word)
+	SwingUtilities.invokeLater( {
+		findInDict(word)
+		inflect()
+		findMedia(word)
+	})
 }
 
 
@@ -198,6 +198,25 @@ def findInDict(word) {
 def addWord() {
 	def selIdx = mainList.selectionModel.minSelectionIndex
 	if( selIdx >= 0 ) {
+		
+		def txt = text.text
+		if( ! (txt =~ /^[а-яіїєґ'-]+ \/?[a-z]/) ) {
+			inflectedList.getModel().clear()
+			inflectedList.getModel().add('Invalid format')
+			return
+		}
+			
+		if( txt.contains(' /') ) {
+			try {
+				def forms = expand.expand_line(txt)
+			} catch ( e ) {
+				inflectedList.getModel().clear()
+				inflectedList.getModel().add(e.getMessage())
+				return
+			}
+		}
+	
+		
 		data.removeAt(selIdx)
 		mainList.invalidate()
 		
@@ -367,8 +386,10 @@ swing.edt {
 				minimumSize: new Dimension(100, 100)
 				
 				scrollPane(verticalScrollBarPolicy:JScrollPane.VERTICAL_SCROLLBAR_ALWAYS ) {
+					minimumSize: new Dimension(100, 100)
 
 					mediaList = list(
+							minimumSize: new Dimension(100, 100),
 							model: new ListWrapperListModel<String>([]),
 							visibleRowCount: 10,
 							)
