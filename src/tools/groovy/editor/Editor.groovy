@@ -285,7 +285,8 @@ swing.edt {
 						button(
 								text: 'Pers',
 								actionPerformed: {
-										text.text = text.text.replaceFirst(/ [^ ]*/, ' /n20.a.p.<')
+										text.text = text.text.replaceFirst(/( \/n2[0-9]).*/, '$1.a.p.<')
+										text.text = text.text.replaceFirst(/ \/n10.*/, '$0.<')
 									}
 								)
 						button(
