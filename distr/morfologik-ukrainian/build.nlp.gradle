@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version = '3.7.5'
+version = '3.7.6'
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian-search'
@@ -65,6 +65,8 @@ task prepareDict() {
         def tagMap = [:].withDefault{[]}
 
         new File(srcDict).eachLine { line ->
+          line = line.replace('ґ', 'г').replace('Ґ', 'Г')
+        
           def (word, lemma, tagStr) = line.split()
 
           def wordKey = word.toLowerCase() + splitter + lemma
