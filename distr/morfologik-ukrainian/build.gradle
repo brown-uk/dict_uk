@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version = '3.7.5'
+version = '3.7.6'
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian-lt'
