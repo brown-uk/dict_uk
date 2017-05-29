@@ -64,6 +64,12 @@
 заки conj:subord
 заким conj:subord
 замісто prep:rv_rod
+засов /n20
+засовець /n22.a
+застужати /v2.cf.advp :imperf
+затанчити /v1 :perf
+затахлувати /v1 :perf
+затемперувати /v1.is0 :perf
 зверх зверх adv
 зверх зверх prep:rv_rod
 здрійко numr:nv
@@ -150,6 +156,7 @@
 одітий /adj :&adjp:pasv:perf    # :past
 одкрити /v2.isTo :perf
 одкритися /vr2 :perf
+одміна /n10
 однакий /adj
 озутий /adj :&adjp:pasv:perf    # :past
 окроме prep:rv_rod
