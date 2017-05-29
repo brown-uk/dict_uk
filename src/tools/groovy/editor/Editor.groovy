@@ -43,14 +43,14 @@ def media = new File('out/toadd/new_lemmas_find.txt').readLines().collectEntries
 @Field
 def newWords = []
 def newWordsFile = new File('new_words.lst')
-if( newWordsFile.exists() ) {
-	newWords = newWordsFile.readLines()
-}
-
-def newWordsLemmas = newWords.findAll { it }.collect { it.split()[0] }
-data.removeAll {
-	it.split(/ /, 2)[0] in newWordsLemmas
-}
+//if( newWordsFile.exists() ) {
+//	newWords = newWordsFile.readLines()
+//}
+//
+//def newWordsLemmas = newWords.findAll { it }.collect { it.split()[0] }
+//data.removeAll {
+//	it.split(/ /, 2)[0] in newWordsLemmas
+//}
 
 println "Data: ${data.size}, dict: ${dict.size}"
 
@@ -146,11 +146,11 @@ def getDefaultTxt(word) {
 		case ~/.*[ую]ватися$/:
 			word_txt += ' /vr1 :imperf'
 			break;
-		case ~/.*[аіия]ти$/:
-			word_txt += ' /v2 :imperf'
+		case ~/.*ти$/:
+			word_txt += ' /v1 :imperf'
 			break;
-		case ~/.*[аіия]тися$/:
-			word_txt += ' /vr2 :imperf'
+		case ~/.*тися$/:
+			word_txt += ' /vr1 :imperf'
 			break;
 			
 			
@@ -176,9 +176,10 @@ def getDefaultTxt(word) {
 def findInDict(word) {
 	word = word.replaceFirst(/.*-/, '')
 	
-	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|відео|гео|гепато|геронто|геліо|гідро|гіпер|електро|кіно|мега|мета|мікро|мото|нейро|не|пере|під|по|радіо|стерео|спорт|теле|фото|супер|термо)/, '')
-    ending = ending.replaceFirst(/(ння|ти|ість|ий|о)$/, '(ння|ти|ість|ий|о)')
-    ending = ending.replaceFirst(/(и)$/, '(и|а)?')
+	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|відео|гео|гепато|геронто|геліо|гідро|гіпер|електро|за|кіно|мега|мета|мікро|мото|нейро|не|пере|під|по|радіо|стерео|спорт|теле|фото|супер|термо)/, '')
+    ending = ending.replaceFirst(/(ння|ти)$/, '(ння|ти)')
+    ending = ending.replaceFirst(/(ість|ий|о)$/, '(ість|ий|о)')
+    ending = ending.replaceFirst(/(и|і)$/, '(и|і|а)?')
     ending = ending.replaceFirst(/иця$/, '(иця|ик)')
 	ending = ending.replaceFirst(/[гґ]/, '[гґ]')
 	
@@ -303,6 +304,13 @@ swing.edt {
 										inflect()
 									}
 								)
+						button(
+								text: 'Perf',
+								actionPerformed: {
+										text.text = text.text.replaceFirst(/ \/v[12] :(im)?perf/, ' /v1.is0 :perf')
+										inflect()
+									}
+								)
 					}
 					hbox {
 						
@@ -341,7 +349,8 @@ swing.edt {
 						button(
 								text: 'Save',
 								actionPerformed: {
-									new File('new_words.lst').text=newWords.join('\n') + '\n'
+									new File('new_words.lst') << newWords.join('\n') + '\n'
+									newWords.clear()
 								}
 								)
 					}
