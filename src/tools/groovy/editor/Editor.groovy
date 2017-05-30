@@ -74,11 +74,22 @@ def inflect() {
 			forms = new DictSorter().sortEntries(forms)
 //			println forms
 			
-			inflectedList.getModel().addAll(forms.collect{it.word.padRight(30) + it.tagStr})
+			def inflectedForms = forms.collect{it.word.padRight(30) + it.tagStr}
+
+			if( txt =~ / \/vr?[1-5]/ ) {
+				if( inflectedForms.count({ it =~ /:impr/}) == 0 ) {
+					inflectedForms.add(0, '-- No imperative --')
+				}
+			}
+			
+			inflectedList.getModel().addAll(inflectedForms)
+			
+
 		} catch ( e ) {
 			inflectedList.getModel().add(e.getMessage())
 			e.printStackTrace()
 		}
+		
 	}
 }
 
@@ -307,7 +318,12 @@ swing.edt {
 						button(
 								text: 'Perf',
 								actionPerformed: {
-										text.text = text.text.replaceFirst(/ \/v[12] :(im)?perf/, ' /v1.is0 :perf')
+										if( text.text =~ / v[1-4]/ ) {
+											text.text = text.text.replaceFirst(/ \/v[12] :(im)?perf/, ' /v1.is0 :perf')
+										}
+										else {
+											text.text = text.text.replaceFirst(/ \/v[12] :imperf/, ' /v1 :perf')
+										}
 										inflect()
 									}
 								)
@@ -355,19 +371,6 @@ swing.edt {
 								)
 					}
 
-					vbox {
-						scrollPane(verticalScrollBarPolicy:JScrollPane.VERTICAL_SCROLLBAR_ALWAYS ) {
-							def data2 = []
-
-							vesumList = list(
-									listData: data2,
-									constraints: BorderLayout.EAST
-									)
-							vesumList.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
-							vesumList.setVisibleRowCount(50);
-//							vesumList.setPreferredSize(new Dimension(200, 300))
-						}
-					}
 					scrollPane(verticalScrollBarPolicy:JScrollPane.VERTICAL_SCROLLBAR_ALWAYS ) {
 
 						inflectedList = list(
@@ -376,6 +379,18 @@ swing.edt {
 //								preferredSize: new Dimension(200, 200)
 								)
 						inflectedList.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+					}
+
+					scrollPane(verticalScrollBarPolicy:JScrollPane.VERTICAL_SCROLLBAR_ALWAYS ) {
+						def data2 = []
+
+						vesumList = list(
+								listData: data2,
+								constraints: BorderLayout.EAST
+								)
+						vesumList.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+						vesumList.setVisibleRowCount(50);
+//							vesumList.setPreferredSize(new Dimension(200, 300))
 					}
 
 				}
