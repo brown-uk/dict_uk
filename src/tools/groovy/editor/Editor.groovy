@@ -311,14 +311,14 @@ swing.edt {
 						button(
 								text: 'Impf',
 								actionPerformed: {
-										text.text = text.text.replaceFirst(/ :imperf/, '.cf.advp :imperf')
+										text.text = text.text.replaceFirst(/ :(im)?perf/, '.cf.advp :imperf')
 										inflect()
 									}
 								)
 						button(
 								text: 'Perf',
 								actionPerformed: {
-										if( text.text =~ / v[1-4]/ ) {
+										if( text.text =~ / \/v[1-4]/ ) {
 											text.text = text.text.replaceFirst(/ \/v[12] :(im)?perf/, ' /v1.is0 :perf')
 										}
 										else {
