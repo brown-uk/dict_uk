@@ -342,6 +342,14 @@
 боголюдях боголюдина noun:anim:p:v_mis
 боголюди боголюдина noun:anim:p:v_kly
 
+чоловіки чоловік noun:anim:p:v_naz:xp2
+чоловік чоловік noun:anim:p:v_rod:xp2
+чоловікам чоловік noun:anim:p:v_dav:xp2
+чоловік чоловік noun:anim:p:v_zna:xp2
+чоловіками чоловік noun:anim:p:v_oru:xp2
+чоловіках чоловік noun:anim:p:v_mis:xp2
+чоловіки чоловік noun:anim:p:v_kly:xp2
+
 хазяї хазяїн noun:anim:p:v_naz:ns
 хазяїв хазяїн noun:anim:p:v_rod:ns
 хазяям хазяїн noun:anim:p:v_dav:ns
