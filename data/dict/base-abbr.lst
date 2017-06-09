@@ -231,6 +231,7 @@
 КНУ noun:m:nv:prop
 КНУКіМ noun:m:nv:prop
 КОАТУУ noun:m:nv:np
+КОДА noun:f:nv:np:prop      # Київська ОДА
 КОРД /n20
 КП noun:m:nv
 кПа noun:m:nv
@@ -646,6 +647,7 @@
 ХДС noun:m:nv:np:prop       # Християнсько-демократичний союз
 ХЛПУ noun:f:nv
 ХНС noun:m:nv
+ХОДА noun:f:nv:np:prop      # Харківська ОДА
 ХСС noun:m:nv
 ЦАР noun:f:nv
 ЦАХАЛ noun:m:nv:np:prop
