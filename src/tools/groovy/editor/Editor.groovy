@@ -251,7 +251,8 @@ println "starting..."
 count = 0
 swing.edt {
 	def frm = frame(title: 'Frame', defaultCloseOperation: JFrame.EXIT_ON_CLOSE, pack: true, show: true) {
-		vbox {
+//		vbox {
+		splitPane(id:'hsplit', orientation: JSplitPane.VERTICAL_SPLIT) {
 			hbox {
 
 				def sp = scrollPane( verticalScrollBarPolicy:JScrollPane.VERTICAL_SCROLLBAR_ALWAYS ) {
@@ -408,7 +409,7 @@ swing.edt {
 			}
 			
 			hbox {
-				minimumSize: new Dimension(100, 100)
+//				minimumSize: new Dimension(100, 100)
 				
 				scrollPane(verticalScrollBarPolicy:JScrollPane.VERTICAL_SCROLLBAR_ALWAYS ) {
 					minimumSize: new Dimension(100, 100)
@@ -426,3 +427,4 @@ swing.edt {
 	}
 }
 
+swing.hsplit.setDividerLocation(0.6)
