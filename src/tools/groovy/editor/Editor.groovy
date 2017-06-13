@@ -120,6 +120,10 @@ Closure selChange1 = { e ->
 	SwingUtilities.invokeLater( {
 		findInDict(word)
 		inflect()
+	})
+
+	mediaList.setModel(new ListWrapperListModel<String>(['... шукаємо ...']))
+	SwingUtilities.invokeLater( {
 		findMedia(word)
 	})
 }

@@ -46,6 +46,7 @@
 ВВ noun:p:nv:ns
 в-во /n2n.p1
 ВВП noun:m:nv
+ВГО noun:f:nv           # всеукраїнська громадська організація
 ВГСУ noun:m:nv:prop    # Вищий господарський суд України
 ВДНГ noun:f:nv:np
 вдсх noun:n:nv
@@ -147,6 +148,7 @@
 ДС noun:m:nv
 ДСЕС noun:f:nv
 ДСК noun:f:nv
+ДСП noun:f:nv       # деревинно-стружкова плита
 ДСТУ noun:m:nv
 ДСУ noun:f:nv
 ДТЕК noun:f:nv:prop    # Донбасская топливно-энергетическая компания (DTEK)
@@ -173,6 +175,7 @@
 ЄКРН noun:f:nv
 ЄС noun:n:nv:prop
 ЄСПЛ noun:m:nv:prop    # Європейський суд з прав людини
+ЄЦБ noun:m:nv:prop          # Європейський Центральний Банк
 ЖБК noun:m:nv
 ЖДУ noun:m:nv:prop    # Житомирський державний університет
 ЖЕК /n20.p
@@ -209,6 +212,7 @@
 кбіт noun:m:nv
 КВК noun:m:nv
 кВт noun:m:nv
+КВУ noun:m:nv:np:prop       # Комітет виборців України
 кг noun:m:nv
 КГЗКОР noun:m:nv:prop    # Криворізький гірничо-збагачувальний комбінат окислених руд
 кГц noun:m:nv
@@ -472,6 +476,7 @@
 РПЦ noun:f:nv
 рРНК noun:f:nv
 РСДРП noun:f:nv:np
+РСФРР noun:f:nv:np:prop      # Російська Радянська Федеративна Соціалістична Республіка
 РСЧА noun:f:nv
 РУВС noun:n:nv
 РУП noun:f:nv
