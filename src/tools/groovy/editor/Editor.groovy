@@ -98,6 +98,19 @@ def findMedia(word) {
 	mediaList.setModel(new ListWrapperListModel<String>(lst))
 }
 
+def addA() {
+	text.text = text.text.replaceFirst(/( \/n2[0-9])/, '$1.a')
+}
+
+def imperfPerf() {
+	if( text.text.contains(":imperf") && ! text.text.contains(":perf") ) {
+		text.text = text.text.replace(':imperf', ':imperf:perf')
+	}
+	else 
+	if( text.text.contains(":perf") && ! text.text.contains(":imperf") ) {
+		text.text = text.text.replace(':perf', ':imperf:perf')
+	}
+}
 
 Closure selChange1 = { e ->
 	def minSelIdx = e.source.selectionModel.minSelectionIndex
@@ -142,6 +155,12 @@ def getDefaultTxt(word) {
 		case ~/.*([еє]ць)$/:
 			word_txt += ' /n22.a.p'
 			break;
+		case ~/.*(олог)$/:
+			word_txt += ' /n20.a.p.<'
+			break;
+		case ~/.*(знавство)$/:
+			word_txt += ' /n2n'
+			break;
 		case ~/.*(метр)$/:
 			word_txt += ' /n20.a.p.ke'
 			break;
@@ -153,6 +172,10 @@ def getDefaultTxt(word) {
 
 		case ~/.*(ння|ття|сся|ззя|тво|ще)$/:
 			word_txt += ' /n2n.p1'
+			break;
+
+		case ~/.*(ччя)$/:
+			word_txt += ' /n2n'
 			break;
 
 		case ~/.*[ую]вати$/:
@@ -193,7 +216,12 @@ def findInDict(word) {
 	
 	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|відео|гео|гепато|геронто|геліо|гідро|гіпер|електро|за|кіно|мега|мета|мікро|мото|нейро|не|пере|під|по|радіо|стерео|спорт|теле|фото|супер|термо)/, '')
     ending = ending.replaceFirst(/(ння|ти)$/, '(ння|ти)')
-    ending = ending.replaceFirst(/(ість|ий|о)$/, '(ість|ий|о)')
+	if( ending.endsWith('ований') ) {
+		ending = ending.replaceFirst(/ований/, '(ованість|ований|овано|увати)')
+	}
+	else {
+		ending = ending.replaceFirst(/(ість|ий|о)$/, '(ість|ий|о)')
+	}
     ending = ending.replaceFirst(/(и|і)$/, '(и|і|а)?')
     ending = ending.replaceFirst(/иця$/, '(иця|ик)')
 	ending = ending.replaceFirst(/[гґ]/, '[гґ]')
@@ -233,8 +261,8 @@ def addWord() {
 		}
 	
 		
-		data.removeAt(selIdx)
-		mainList.invalidate()
+//		data.removeAt(selIdx)
+//		mainList.invalidate()
 		
 		addedList.getModel().add(text.text.trim())
 		
@@ -245,7 +273,8 @@ def addWord() {
 
 		textlabel.text = "Added ${newWords.size} words."
 		
-		mainList.getSelectionModel().fireValueChanged(selIdx, selIdx)
+		mainList.setSelectionInterval(selIdx + 1, selIdx + 1)
+//		mainList.getSelectionModel().fireValueChanged(selIdx, selIdx)
 	}
 }
 
@@ -303,6 +332,9 @@ swing.edt {
 								text: 'Pers',
 								actionPerformed: {
 										text.text = text.text.replaceFirst(/( \/n2[0-9]).*/, '$1.a.p.<')
+										if( text.text.contains('р /n2') ) {
+												text.text = text.text.replace('.<', '.ke.<')
+										}
 										text.text = text.text.replaceFirst(/ \/n10.*/, '$0.<')
 									}
 								)
@@ -333,8 +365,42 @@ swing.edt {
 									}
 								)
 					}
+					
 					hbox {
-						
+						def btnA = button(
+								text: '.A',
+								actionPerformed: {
+										addA()
+										inflect()
+									}
+								)
+								
+								KeyStroke keystroke = KeyStroke.getKeyStroke(KeyEvent.VK_A, InputEvent.CTRL_MASK)
+								btnA.registerKeyboardAction(new ActionListener() {
+									public void actionPerformed(ActionEvent e) {
+										addA()
+										inflect()
+									}
+								}, keystroke, JComponent.WHEN_IN_FOCUSED_WINDOW);
+							
+						button(
+								text: 'Impf/Pf',
+								actionPerformed: {
+										imperfPerf()
+										inflect()
+									}
+								)
+						button(
+								text: 'NoP',
+								actionPerformed: {
+									text.text = text.text.replace('.p', '')
+									inflect()
+									}
+								)
+					}
+					
+					hbox {
+
 //						label('     ')
 						def btnInflect = button(
 								text: 'Inflect',
