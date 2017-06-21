@@ -9,7 +9,7 @@ group = 'ua.net.nlp'
 String artifactId = 'morfologik-ukrainian-lt'
 archivesBaseName = artifactId
 
-String ltVersion = '3.8-SNAPSHOT'
+String ltToolsVersion = '3.8-SNAPSHOT'
 
 String langCode="uk"
 
@@ -19,14 +19,23 @@ String outResDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageD
 String outRulesDir=sourceSets.main.output.resourcesDir.toString() + "/org/languagetool/rules/uk"
 String tmpDir="build/tmp"
 
-String languagetoolResDestDir="$ltDir/languagetool-language-modules/uk/src/main/resources/org/languagetool/resource/uk"
-String languagetoolRulesDestDir="$ltDir/languagetool-language-modules/uk/src/main/resources/org/languagetool/rules/uk"
-
 String inputDir="${projectDir}/../../out"
 String inputDictFile="dict_corp_lt.txt"
 
 String dstEncoding="cp1251"
 String srcEncoding="utf-8"
+
+
+if( project.hasProperty('ltDir') ) {
+  ext.languagetoolResDestDir = "$ltDir/languagetool-language-modules/uk/src/main/resources/org/languagetool/resource/uk"
+  ext.languagetoolRulesDestDir = "$ltDir/languagetool-language-modules/uk/src/main/resources/org/languagetool/rules/uk"
+}
+else {
+  logger.warn("WARNING: No 'ltDir' property set, deployment is disabled")
+  //TODO: fail deployment tasks in a better way
+  ext.languagetoolResDestDir = "/invalid_lt_dir"
+  ext.languagetoolRulesDestDir = "/invalid_lt_dir"
+}
 
 
 
@@ -42,7 +51,7 @@ configurations{
 }
 
 dependencies {
-    provided 'org.languagetool:languagetool-tools:' + ltVersion
+    provided 'org.languagetool:languagetool-tools:' + ltToolsVersion
 }
 
 
