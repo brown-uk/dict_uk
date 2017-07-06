@@ -228,18 +228,17 @@
 ніким ніхто noun:anim:m:v_oru:&pron:neg
 
 нічого нічого adv
-нічого нічого predic                                    # rv_inf
 
 нікого нікого noun:anim:m:v_rod/v_zna:&pron:emph        # ні́кого # rv_inf
 нікому нікого noun:anim:m:v_dav:&pron:emph
 ніким нікого noun:anim:m:v_oru:&pron:emph
 
 ніщо ніщо noun:inanim:n:v_naz/v_zna:&pron:neg
-нічого ніщо noun:inanim:n:v_rod/v_zna:&pron:neg
+нічого ніщо noun:inanim:n:v_rod/v_zna:&pron:neg:&predic
 нічому ніщо noun:inanim:n:v_dav:&pron:neg
 нічим ніщо noun:inanim:n:v_oru:&pron:neg
 
-нічого нічого noun:inanim:n:v_rod/v_zna:&pron:emph      # ні́чого
+нічого нічого noun:inanim:n:v_rod/v_zna:&pron:emph:&predic      # ні́чого # rv_inf
 нічому нічого noun:inanim:n:v_dav:&pron:emph
 нічим нічого noun:inanim:n:v_oru:&pron:emph
 
@@ -893,41 +892,6 @@
 незважаючи незважаючи prep
 
 
-# вставні слова
-здається здається insert
-здавалося insert
-бачу бачу insert
-безумовно безумовно insert
-безперечно безперечно insert
-правда правда insert
-видно видно insert|predic
-мабуть мабуть insert
-може може insert
-очевидно очевидно insert
-либонь либонь adv|insert
-кажуть кажуть insert
-щоправда щоправда insert
-сподіваюся сподіваюся insert
-даруйте даруйте insert
-зрозумійте зрозумійте insert
-мовляв мовляв insert
-нарешті нарешті insert
-навпаки навпаки insert
-отже отже insert
-наприклад наприклад insert
-значить значить insert
-виходить виходить insert
-однак однак insert
-проте проте insert
-чуєте чуєте insert
-бачиш бачиш insert
-по-моєму по-моєму insert
-по-твоєму по-твоєму insert
-по-вашому по-вашому insert
-по-перше по-перше insert
-по-друге по-друге insert
-
-
 # частки і сполучники
 # Однолітерні слова
 а а conj:coord|part|intj
@@ -969,8 +933,6 @@
 буцім conj:subord|part
 буцімто conj:subord|part
 відколи adv:&pron:int:rel|conj:subord
-власне insert|part
-властиво part|insert|predic
 все-таки conj:coord:v-u
 усе-таки conj:coord:v-u
 все-таки part:v-u
@@ -994,7 +956,7 @@
 лише part|conj:subord
 лишень part|conj:subord
 мерсі part
-мов conj:subord|part
+мов conj:subord|part:&insert
 мовби conj:subord|part
 мовбито conj:subord|part
 навіть part
@@ -1020,13 +982,13 @@
 ні part
 нумо intj|part
 ну intj|part
-однак conj:coord
-одначе conj:coord
+однак conj:coord|adv:&insert
+одначе conj:coord:&insert
 онде part|adv
 он part
 оскільки conj:subord
 ось part
-отже part|conj:subord
+отже part:&insert|conj:subord
 отож-то conj:subord
 отож part|conj:subord
 ото part
@@ -1035,7 +997,7 @@
 позаяк conj:subord
 покіль adv|conj:subord
 попросту adv|part
-прецінь part|adv|insert|conj:coord
+прецінь part|adv:&insert|conj:coord
 причім adv|conj:subord
 причому adv|conj:subord
 проте conj:coord|adv
@@ -1043,8 +1005,8 @@
 саме adv|part
 себто conj:subord
 сиріч conj:subord
-справді adv|insert|part
-також adv|conj:coord
+справді adv:&insert|part
+також adv:&insert|conj:coord
 так adv:&pron:dem|part|conj:coord:subord
 там adv:&pron:dem|part
 там-то adv:&pron:dem

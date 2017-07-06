@@ -2,18 +2,17 @@
 альбо conj:coord
 антипко /n20.<
 атентат /n20
-банно банно adv
+банно adv:&predic
 баяти /v1.cf :imperf
 безлічно adv
 бистрота /n10
 бісиця /n10.p1.ko.<
 благовіщення /n2n
 босячка /n10.p2.ko.<
-бусі predic
 бюрко /n2n.piv
 ваганки /np2
 вазка /n10.p2
-варівко варівко adv
+варівко adv:&predic
 вельон /n20
 венгерське /n2adj1
 вигибти /v3 :perf
@@ -30,14 +29,14 @@
 відіткати /v2 :perf
 вісний /adj
 вісьта intj
-в'їжно в'їжно adv
+в'їжно в'їжно adv:&predic
 вколо вколо prep:rv_rod|adv
 вконтентований /adj :&adjp:pasv:perf:v-u    # :past
 вконтентовувати /v1.cf.advp :imperf
 вконтентовуватися /vr1.cf.advp :imperf
 вконтентувати /v1.is0 :perf
 вконтентуватися /vr1 :perf
-вліжно вліжно adv
+вліжно adv:&predic
 воркотливий /adj
 вхорканий /adj :&adjp:pasv:perf:v-u    # :past
 гейби conj:subord
@@ -45,17 +44,16 @@
 головочка /n10
 ґердан /n20.p
 ґрунь /n20.a.p
-далебіг далебіг insert
+далебіг adv:&insert
 дармо adv
 дармовіс /n20.a.p
 дворець /n22.p.a
 дев'ятдесят /numr
-дейко дейко predic
+дейко noninfl:&predic
 декуди adv
 дільчий /adj
 докіль adv|conj:subord
 дрожка /n10.p2
-єсть єсть predic
 жалуватися /vr1.cf.advp :imperf
 жантильний /adj
 завідатель /n20.a.p.<
@@ -64,6 +62,8 @@
 заки conj:subord
 заким conj:subord
 замісто prep:rv_rod
+запевне adv:&insert
+зарівно adv:&predic
 засов /n20
 засовець /n22.a
 застужати /v2.cf.advp :imperf
@@ -77,16 +77,17 @@
 здрійко numr:nv
 здрінка /n10.p2
 здрянка /n10.p2
+зірний /adj
+зірно adv:&predic
 змирятися /vr2.cf.advp :imperf
 з-позаду з-позаду adv
 зрабований /adj :&adjp:pasv:perf
 зумисно adv
 йменований /adj :&adjp:pasv:imperf
-кально кально adv
-катмає катмає predic
-ке intj
-ке ке predic
-кете кете predic
+кально adv:&predic
+катмає noninfl:&predic
+ке intj:&predic
+кете intj:&predic
 кип'ячка /n10
 кілько numr:p:v_naz/v_zna
 кількоро adv
@@ -98,31 +99,34 @@
 комбідівець /n22.a.p.<
 коц /n20.a.p
 леда-який /adj :&pron:ind
-любля любля predic
+любля noninfl:&predic
 любовник /n20.a.p.<
 любовниця /n10.p1.<
 люде людина noun:anim:p:v_naz
 людовий /adj
-мабіть мабіть insert
+мабіть adv:&insert
 магайбі intj
-майбуть майбуть insert
+майбуть adv:&insert
 масакра /n10.p1
 метанина /n10
 мізок /n22.p
 мість prep:rv_rod
-мо мо insert
+мо adv:&insert
 можний /adj
 моторити /v1 :imperf
 навперед prep:rv_rod
 навручки навручки adv
+надійсь adv:&insert
+надісь adv:&insert
 надцять /numr
 намість намість adv
 намість намість prep:rv_rod
 нарід /n21
-невпам'ятку невпам'ятку predic
-невпотріб невпотріб predic
+невміч adv:&predic
+невпотріб noninfl:&predic
+невправка /n10
 неке part
-немать немать predic
+немать noninfl:&predic
 неможний /adj
 немощний /adj
 необавки adv
@@ -149,8 +153,7 @@
 ніже part
 ніже-ні part
 нікоторий /adj :&pron:neg
-ніт ніт part
-нітелень нітелень predic
+ніт noninfl:&predic
 ніц noun:inanim:v_rod:&pron:neg
 ніц noun:inanim:v_zna:&pron:neg
 оба numr:m:v_naz/v_zna
@@ -169,6 +172,7 @@
 одкритися /vr2 :perf
 одміна /n10
 однакий /adj
+однако adv:&predic
 озутий /adj :&adjp:pasv:perf    # :past
 окроме prep:rv_rod
 омочений /adj :&adjp:pasv:perf              #> обмочений
@@ -259,12 +263,11 @@
 почерез prep:rv_zna
 придверний /adj
 притім conj:subord:bad
-пріч prep:rv_rod
-простибі простибі insert
-простибіг простибіг insert
+пріч prep:rv_rod|adv:&predic
+простибі adv:&insert
+простибіг adv:&insert
 против prep:rv_rod
 райця /n10.piv.<m
-рибно рибно adv
 рік-річно рік-річно adv
 розгрішення /n2n
 розділка /n10.p2                            #> риска
@@ -284,8 +287,7 @@
 сієї сей adj:f:v_rod:&pron:dem
 сією сей adj:f:v_oru:&pron:dem
 сій сей adj:f:v_dav/v_mis:&pron:dem
-сількось сількось adv
-сількось сількось insert
+сількось adv:&insert
 сім сей adj:m:v_mis//n:v_mis:&pron:dem
 скілька numr:nv
 скілько numr:p:v_naz/v_zna
@@ -302,15 +304,16 @@
 ся part
 таж conj:subord|part
 таже conj:subord|part
+тра noninfl:&predic
 травознай /n20.a.p.<
 трансфлюксор /n20.a.p.ke
 трафунок /n22
 тридесять numr:p:v_naz/v_zna
-трясцяма трясцяма predic
+трясцяма noninfl:&predic
 угощати /v2.cf.advp :imperf
 удвурядь adv
-уздогін уздогін adv
-уїжно уїжно adv
+уздогін adv
+уїжно adv:&predic
 уїхати /v4 :perf
 уйматися /vr2 :imperf
 уконтентований /adj :&adjp:pasv:perf:v-u    # :past
@@ -318,15 +321,18 @@
 уконтентовуватися /vr1 :imperf
 уконтентувати /v1 :perf
 уконтентуватися /vr1 :perf
-укруть укруть adv
-уліжно уліжно adv
+укруть adv
+уліжно adv:&predic
 упоминати /v2.cf.advp :imperf
 упоминатися /vr2.cf.advp :imperf
-упомки упомки predic
+упомки noninfl:&predic
+упомку noninfl:&predic
 упруг /n20.a.p
 урадуваний /adj :&adjp:pasv:perf    # :past
 уряджений /adj :&adjp:pasv:perf    # :past
 успокоєний /adj :&adjp:pasv:perf    # :past
+устид adv:&predic
+устидно adv:&predic
 ухорканий /adj :&adjp:pasv:perf:v-u    # :past
 фашистівський /adj
 фершалка /n10.p2.ko.<
@@ -335,6 +341,7 @@
 хватаний /adj
 хибань part
 хляпавка /n10
+холоднаво adv:&predic
 хоть conj:subord
 хоть part
 хотя part
@@ -342,15 +349,16 @@
 циганів циган noun:anim:p:v_rod/v_zna
 цукриця /n10
 цьоця /n10.ku.<
-чортма чортма predic
-чорт-ма чорт-ма predic
-чортмає чортмає predic
-чорт-мало чорт-мало predic
-чорт-матиме чорт-матиме predic
+чортма noninfl:&predic
+чорт-ма noninfl:&predic
+чортмає noninfl:&predic
+чорт-мало noninfl:&predic
+чорт-матиме noninfl:&predic
 чуткість /n30
 шияка /n10
-шкварко adv
+шкварко adv:&predic
 шкло /n2n :np               #> скло
+шкульно adv:&predic
 штири numr:p:v_naz/v_zna
 штирнадцять numr:nv
 шушон /n20.a.p

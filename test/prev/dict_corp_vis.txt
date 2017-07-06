@@ -385,6 +385,33 @@
   барами noun:inanim:p:v_oru:xp2
   барах noun:inanim:p:v_mis:xp2
   бари noun:inanim:p:v_kly:xp2
+бачачи advp:imperf
+бачивши advp:imperf
+бачити verb:imperf:inf
+  бач verb:imperf:impr:s:2
+  бачмо verb:imperf:impr:p:1
+  бачте verb:imperf:impr:p:2:&insert
+  бачу verb:imperf:pres:s:1:&insert
+  бачиш verb:imperf:pres:s:2:&insert
+  бачить verb:imperf:pres:s:3
+  бачимо verb:imperf:pres:p:1
+  бачим verb:imperf:pres:p:1:subst
+  бачите verb:imperf:pres:p:2:&insert
+  бачать verb:imperf:pres:p:3
+  бачитиму verb:imperf:futr:s:1
+  бачитимеш verb:imperf:futr:s:2
+  бачитиме verb:imperf:futr:s:3
+  бачитимем verb:imperf:futr:p:1
+  бачитимемо verb:imperf:futr:p:1
+  бачитимете verb:imperf:futr:p:2
+  бачитимуть verb:imperf:futr:p:3
+  бачив verb:imperf:past:m
+  бачила verb:imperf:past:f
+  бачило verb:imperf:past:n
+  бачили verb:imperf:past:p
+  бачено verb:imperf:impers
+безпечніше adv:compr:&predic
+безпечно adv:compb:&predic
 безчерепні noun:anim:p:v_naz:ns
   безчерепних noun:anim:p:v_rod:ns
   безчерепним noun:anim:p:v_dav:ns
@@ -2370,6 +2397,16 @@
   колисали verb:imperf:past:p
 колисаючи advp:imperf
 колишучи advp:imperf
+край noun:inanim:m:v_naz:&predic
+  краю noun:inanim:m:v_rod
+  краєві noun:inanim:m:v_dav
+  краю noun:inanim:m:v_dav
+  край noun:inanim:m:v_zna
+  краєм noun:inanim:m:v_oru
+  краєві noun:inanim:m:v_mis
+  краї noun:inanim:m:v_mis
+  краю noun:inanim:m:v_mis
+  краю noun:inanim:m:v_kly
 краяння noun:inanim:n:v_naz
   краяння noun:inanim:n:v_rod
   краянню noun:inanim:n:v_dav
@@ -2551,6 +2588,7 @@
   міняйлами noun:anim:p:v_oru
   міняйлах noun:anim:p:v_mis
   міняйли noun:anim:p:v_kly
+найбезпечніше adv:super:&predic
 найвагоміше adv:super
 найвагоміший adj:m:v_naz:super
   найвагомішого adj:m:v_rod:super
@@ -2855,6 +2893,13 @@
   ніжністю noun:inanim:f:v_oru
   ніжності noun:inanim:f:v_mis
   ніжносте noun:inanim:f:v_kly
+нудьга noun:inanim:f:v_naz:&predic
+  нудьги noun:inanim:f:v_rod
+  нудьзі noun:inanim:f:v_dav
+  нудьгу noun:inanim:f:v_zna
+  нудьгою noun:inanim:f:v_oru
+  нудьзі noun:inanim:f:v_mis
+  нудьго noun:inanim:f:v_kly
 оскірившись advp:rev:perf:rare
 оскіритися verb:rev:perf:inf:rare
   оскіритись verb:rev:perf:inf:rare
@@ -2895,6 +2940,34 @@
   папараці noun:anim:f:v_oru:nv:np
   папараці noun:anim:f:v_mis:nv:np
   папараці noun:anim:f:v_kly:nv:np
+пара noun:inanim:f:v_naz:xp1
+  пари noun:inanim:f:v_rod:xp1
+  парі noun:inanim:f:v_dav:xp1
+  пару noun:inanim:f:v_zna:xp1
+  парою noun:inanim:f:v_oru:xp1
+  парі noun:inanim:f:v_mis:xp1
+  паро noun:inanim:f:v_kly:xp1
+  пари noun:inanim:p:v_naz:xp1
+  парів noun:inanim:p:v_rod:xp1
+  парам noun:inanim:p:v_dav:xp1
+  пари noun:inanim:p:v_zna:xp1
+  парами noun:inanim:p:v_oru:xp1
+  парах noun:inanim:p:v_mis:xp1
+  пари noun:inanim:p:v_kly:xp1
+пара noun:inanim:f:v_naz:&predic:xp2
+  пари noun:inanim:f:v_rod:xp2
+  парі noun:inanim:f:v_dav:xp2
+  пару noun:inanim:f:v_zna:xp2
+  парою noun:inanim:f:v_oru:xp2
+  парі noun:inanim:f:v_mis:xp2
+  паро noun:inanim:f:v_kly:xp2
+  пари noun:inanim:p:v_naz:xp2
+  пар noun:inanim:p:v_rod:xp2
+  парам noun:inanim:p:v_dav:xp2
+  пари noun:inanim:p:v_zna:xp2
+  парами noun:inanim:p:v_oru:xp2
+  парах noun:inanim:p:v_mis:xp2
+  пари noun:inanim:p:v_kly:xp2
 паркан noun:inanim:m:v_naz
   паркана noun:inanim:m:v_rod
   паркану noun:inanim:m:v_rod
@@ -3557,6 +3630,7 @@
   щенятками noun:anim:p:v_oru
   щенятках noun:anim:p:v_mis
   щенятка noun:anim:p:v_kly
+щонайбезпечніше adv:super
 щонайвагоміше adv:super
 щонайвагоміший adj:m:v_naz:super
   щонайвагомішого adj:m:v_rod:super
@@ -3897,6 +3971,7 @@
   якимись adj:p:v_oru:&pron:int:rel:def
   якихось adj:p:v_mis:&pron:int:rel:def
   якихсь adj:p:v_mis:&pron:int:rel:def
+якнайбезпечніше adv:super
 якнайвагоміше adv:super
 якнайвагоміший adj:m:v_naz:super
   якнайвагомішого adj:m:v_rod:super

@@ -21,6 +21,8 @@ class Expand {
 	private final BaseTags base_tags = new BaseTags()
 	private final OutputValidator validator = new OutputValidator()
 	private final List<String> limitedVerbLemmas = ["житися", "забракнуло", "зберігти", "зберігтись", "зберігтися"];
+	private final Map<String, String> additionalTags = [:]
+	private final List<String> additionalTagsUnused = []
 	final Affix affix = new Affix()
 	
 
@@ -40,6 +42,23 @@ class Expand {
         return ! (word =~ default_kly_u_pattern) \
             || (!flags.contains("n24") && word =~ default_kly_u_soft_pattern)
     }
+
+
+    public Expand() {
+        new File(Args.args.dictDir + "/add_tag.add").eachLine { String line ->
+            line = line.replaceFirst(/ *#.*/, '')
+            if( ! line )
+                return
+
+//            line = line.replace('adj:short', 'adj')
+
+            def parts = line.split(/:/, 2)
+            additionalTags[parts[0]] = ':' + parts[1]
+			additionalTagsUnused << parts[0]
+        }
+        log.info(String.format("Got %d additional tags", additionalTags.size()))
+    }
+
 
 	@CompileStatic
 	def adjustCommonFlag(String affixFlag2) {
@@ -153,6 +172,7 @@ class Expand {
 
 		return words
 	}
+
 
 	Map<String,String> get_modifiers(mod_flags, flags, word) {
 
@@ -601,11 +621,40 @@ class Expand {
 
 		entries.each {
 			if( it.word =~ /[^а-яіїєґА-ЯІЇЄҐ'.-]/ || it.lemma =~ /^а-яіїєґА-ЯІЇЄҐ'.-/ )
-				throw new Exception("latin mix in " + it) 
+				throw new Exception("latin mix in " + it)
 		}
 
 		return entries
 	}
+
+
+    void applyAdditionalTags(List<DicEntry> words) {
+        for(int i=0; i<words.size(); i++) {
+            for(Map.Entry<String,String> entry: additionalTags.entrySet()) {
+                String wordStr = words[i].word + " " + words[i].tagStr
+                if( wordStr.startsWith( entry.getKey() ) ) {
+                    if( entry.getKey() =~ / (noun|adj)/ && ! (wordStr =~ /(noun|adj).*:[mfn]:v_naz/) )
+                        continue
+
+					def entryValue = entry.getValue()
+					
+					if( entryValue.startsWith(":xp") ) {
+						if( ! words[i].tagStr.contains(entryValue[0..3]) )
+							continue
+
+						entryValue = entryValue[4..-1]
+					}
+						
+                    log.info("Applying ${entry.key} / ${entryValue} to " + words[i].toFlatString())
+                    words[i].tagStr += entryValue
+					additionalTagsUnused.remove(entry.key)
+					
+                    break;
+                }
+            }
+        }
+    }
+
 
 //	private static final Pattern tag_split0_re = Pattern.compile(/[^ ]+$/)
 
@@ -890,6 +939,8 @@ class Expand {
 	}
 	
 	private static final List<String> tagsOrdered = [
+	            ":&insert",
+	            ":&predic",
 				":v-u",
 				":bad",
 				":subst",
@@ -978,15 +1029,15 @@ class Expand {
             List<DicEntry> forms = []
 
             if( word.startsWith('най') ) {
-    			forms += compose_compar(word, main_word, "adv:super" + extra_tags)
+    			forms += compose_compar(word, main_word, "adv:super" + extra_tags.replaceAll(':&insert', ''))
             }
             else {
-			    forms += compose_compar(word, main_word, "adv:compr" + extra_tags)
+			    forms += compose_compar(word, main_word, "adv:compr" + extra_tags.replaceAll(':&insert', ''))
 			    word = 'най' + word
-    			forms += compose_compar(word, main_word, "adv:super" + extra_tags)
+    			forms += compose_compar(word, main_word, "adv:super" + extra_tags.replaceAll(':&insert', ''))
 			}
-			forms += compose_compar("що" + word, main_word, "adv:super" + extra_tags)
-			forms += compose_compar("як" + word, main_word, "adv:super" + extra_tags)
+			forms += compose_compar("що" + word, main_word, "adv:super" + extra_tags.replaceAll(':&(insert|predic)', ''))
+			forms += compose_compar("як" + word, main_word, "adv:super" + extra_tags.replaceAll(':&(insert|predic)', ''))
 
 			return forms
 		}
@@ -1137,6 +1188,7 @@ class Expand {
 					idx += 1
 				}
 			}
+
 			out_lines.addAll( inflected_lines )
 
 			for(DicEntry l in inflected_lines) {
@@ -1144,6 +1196,8 @@ class Expand {
 					throw new Exception("empty liner for " + inflected_lines)
 			}
 		}
+			
+        applyAdditionalTags(out_lines)
 
 		return post_process(out_lines)
 	}
@@ -1221,6 +1275,10 @@ class Expand {
         if( fatalErrorCount > 0 )
             return allEntries
 
+		if( additionalTagsUnused ) {
+			log.error("Additional tags not used: " + additionalTagsUnused)
+		}
+			
 		return sortAndPostProcess(allEntries)
 	}
 
