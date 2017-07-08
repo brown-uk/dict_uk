@@ -130,6 +130,7 @@ task checkReplacements {
 	    .collect { it.split(" #> ")[1].trim().split(/[;, \|]+/) }
 	    .flatten()
 	    .collect { it.replaceAll(/[()]/, '') }
+	    .findAll { it =~ /[а-яіїєґ]/ }
 	    .unique().sort()
 
     def spellWords = new File("out/words_spell.txt").text.split("\n")
@@ -139,7 +140,8 @@ task checkReplacements {
     replWords.removeAll(spellWords)
 
 
-    println "Unknown (${replWords.size}):\n" + replWords.join("\n")
+    println "Unknown:\n" + replWords.join("\n")
+    println "Total uknown: ${replWords.size}"
   }
 }
 
