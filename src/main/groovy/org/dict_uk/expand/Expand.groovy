@@ -45,20 +45,26 @@ class Expand {
 
 
     public Expand() {
-        new File(Args.args.dictDir + "/add_tag.add").eachLine { String line ->
-            line = line.replaceFirst(/ *#.*/, '')
-            if( ! line )
-                return
-
-//            line = line.replace('adj:short', 'adj')
-
-            def parts = line.split(/:/, 2)
-            additionalTags[parts[0]] = ':' + parts[1]
-			additionalTagsUnused << parts[0]
-        }
-        log.info(String.format("Got %d additional tags", additionalTags.size()))
+		this(true)
     }
 
+	public Expand(boolean loadAdditionalTags) {
+		if( loadAdditionalTags ) {
+			new File(Args.args.dictDir + "/add_tag.add").eachLine { String line ->
+				line = line.replaceFirst(/ *#.*/, '')
+				if( ! line )
+					return
+	
+	//            line = line.replace('adj:short', 'adj')
+	
+				def parts = line.split(/:/, 2)
+				additionalTags[parts[0]] = ':' + parts[1]
+				additionalTagsUnused << parts[0]
+			}
+			log.info(String.format("Got %d additional tags", additionalTags.size()))
+	
+		}
+	}
 
 	@CompileStatic
 	def adjustCommonFlag(String affixFlag2) {
@@ -645,7 +651,7 @@ class Expand {
 						entryValue = entryValue[4..-1]
 					}
 						
-                    log.info("Applying ${entry.key} / ${entryValue} to " + words[i].toFlatString())
+                    log.debug("Applying ${entry.key} / ${entryValue} to " + words[i].toFlatString())
                     words[i].tagStr += entryValue
 					additionalTagsUnused.remove(entry.key)
 					
@@ -1428,7 +1434,7 @@ class Expand {
 	static void main(String[] argv) {
 		Args.parse(argv)
 
-		def expand = new Expand()
+		def expand = new Expand(false)
 		Util util = new Util()
 		
 		expand.affix.load_affixes(Args.args.affixDir)
