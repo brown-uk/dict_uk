@@ -2207,6 +2207,66 @@
   Єремією noun:anim:m:v_oru:prop:fname
   Єремії noun:anim:m:v_mis:prop:fname
   Єреміє noun:anim:m:v_kly:prop:fname
+жадний adj:m:v_naz:&pron:neg:rare
+  жадного adj:m:v_rod:&pron:neg:rare
+  жадному adj:m:v_dav:&pron:neg:rare
+  жадного adj:m:v_zna:ranim:&pron:neg:rare
+  жадний adj:m:v_zna:rinanim:&pron:neg:rare
+  жадним adj:m:v_oru:&pron:neg:rare
+  жаднім adj:m:v_mis:&pron:neg:rare
+  жадному adj:m:v_mis:&pron:neg:rare
+  жадна adj:f:v_naz:&pron:neg:rare
+  жадної adj:f:v_rod:&pron:neg:rare
+  жадній adj:f:v_dav:&pron:neg:rare
+  жадну adj:f:v_zna:&pron:neg:rare
+  жадною adj:f:v_oru:&pron:neg:rare
+  жадній adj:f:v_mis:&pron:neg:rare
+  жадне adj:n:v_naz:&pron:neg:rare
+  жадного adj:n:v_rod:&pron:neg:rare
+  жадному adj:n:v_dav:&pron:neg:rare
+  жадне adj:n:v_zna:&pron:neg:rare
+  жадним adj:n:v_oru:&pron:neg:rare
+  жаднім adj:n:v_mis:&pron:neg:rare
+  жадному adj:n:v_mis:&pron:neg:rare
+  жадні adj:p:v_naz:&pron:neg:rare
+  жадних adj:p:v_rod:&pron:neg:rare
+  жадним adj:p:v_dav:&pron:neg:rare
+  жадних adj:p:v_zna:ranim:&pron:neg:rare
+  жадні adj:p:v_zna:rinanim:&pron:neg:rare
+  жадними adj:p:v_oru:&pron:neg:rare
+  жадних adj:p:v_mis:&pron:neg:rare
+жадний adj:m:v_naz:rare
+  жадного adj:m:v_rod:rare
+  жадному adj:m:v_dav:rare
+  жадного adj:m:v_zna:ranim:rare
+  жадний adj:m:v_zna:rinanim:rare
+  жадним adj:m:v_oru:rare
+  жаднім adj:m:v_mis:rare
+  жадному adj:m:v_mis:rare
+  жадний adj:m:v_kly:rare
+  жадна adj:f:v_naz:rare
+  жадної adj:f:v_rod:rare
+  жадній adj:f:v_dav:rare
+  жадну adj:f:v_zna:rare
+  жадною adj:f:v_oru:rare
+  жадній adj:f:v_mis:rare
+  жадна adj:f:v_kly:rare
+  жадне adj:n:v_naz:rare
+  жадного adj:n:v_rod:rare
+  жадному adj:n:v_dav:rare
+  жадне adj:n:v_zna:rare
+  жадним adj:n:v_oru:rare
+  жаднім adj:n:v_mis:rare
+  жадному adj:n:v_mis:rare
+  жадне adj:n:v_kly:rare
+  жадні adj:p:v_naz:rare
+  жадних adj:p:v_rod:rare
+  жадним adj:p:v_dav:rare
+  жадних adj:p:v_zna:ranim:rare
+  жадні adj:p:v_zna:rinanim:rare
+  жадними adj:p:v_oru:rare
+  жадних adj:p:v_mis:rare
+  жадні adj:p:v_kly:rare
 жаско adv
 Женя noun:anim:m:v_naz:prop:fname
   Жені noun:anim:m:v_rod:prop:fname

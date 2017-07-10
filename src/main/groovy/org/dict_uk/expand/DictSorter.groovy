@@ -52,6 +52,7 @@ class DictSorter {
 	static final Pattern re_person_name_key_tag = Pattern.compile("^(noun:anim)(.*?)(:lname|:fname|:patr)")
 
 	static final Pattern re_xv_sub = Pattern.compile("^([^:]+)(.*)(:x.[1-9])")
+	static final Pattern re_pron_sub = Pattern.compile("^([^:]+)(.*)(:&pron:[^:]+)")
 
 	static final Pattern GEN_RE = Pattern.compile(/:([mfnsp])(:|$)/)
 	static final Pattern VIDM_RE = Pattern.compile(/:(v_...)((:alt|:rare|:coll)*)/) // |:short
@@ -135,6 +136,9 @@ class DictSorter {
 		if( tags.contains(":x") ) {
 			tags = re_xv_sub.matcher(tags).replaceAll('$1$3$2')
 		}
+		if( tags.contains(":&pron:") ) {
+			tags = re_pron_sub.matcher(tags).replaceAll('$1$3$2')
+		}
 
 		return tags
 	}
@@ -149,7 +153,8 @@ class DictSorter {
 	}
 
 
-	static final Pattern re_key = Pattern.compile("^[^:]+(?::rev)?(?::(?:anim|inanim|perf|imperf))?.*?(:&pron:[^:]+)?")
+	static final Pattern re_key = Pattern.compile("^[^:]+(?::rev)?(?::(?:anim|inanim|perf|imperf))?")
+	static final Pattern re_key_pron = Pattern.compile(":&pron:[^:]+")
 	static final Pattern re_key_name = Pattern.compile("^(noun:anim:[fmnp]:).*?(lname|fname|patr)")
 
 	@CompileStatic
@@ -173,6 +178,13 @@ class DictSorter {
 					def key_rr = re_key.matcher(line.tagStr)
 					key_rr.find()
 					key = lemma + " " + key_rr.group(0)
+					
+					if( tags.contains(":&pron:") ) {
+					    def pron_rr = re_key_pron.matcher(line.tagStr)
+					    pron_rr.find()
+					    key += pron_rr.group(0)
+					}
+					
 				}
 
 				int x_idx = line.tagStr.indexOf(":x")
