@@ -358,6 +358,12 @@
 анізащо adv:&pron:neg
 аніколи adv:&pron:neg
 
+ніде adv:&pron:emph     # ні́де     # rv_inf
+ніде adv:&pron:neg
+нізвідкіля adv:&pron:emph
+нізвідкіль adv:&pron:neg:coll
+нізвідкіль adv:&pron:emph:coll
+
 бозна-де adv:&pron:ind:coll
 бозна-як adv:&pron:ind:coll
 бозна-коли adv:&pron:ind:coll

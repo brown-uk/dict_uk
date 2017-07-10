@@ -2885,6 +2885,8 @@
   найуживанішими adj:p:v_oru:super
   найуживаніших adj:p:v_mis:super
   найуживаніші adj:p:v_kly:super
+нігде adv:&pron:emph
+нігде adv:&pron:neg
 ніжність noun:inanim:f:v_naz
   ніжності noun:inanim:f:v_rod
   ніжности noun:inanim:f:v_rod:alt
