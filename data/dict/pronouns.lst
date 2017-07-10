@@ -113,18 +113,18 @@
 будь-чим будь-що noun:inanim:n:v_oru:&pron:ind
 будь-чім будь-що noun:inanim:n:v_mis:&pron:ind
 
-будлі-хто будлі-хто noun:anim:m:v_naz:&pron:ind
-будлі-кого будлі-хто noun:anim:m:v_rod/v_zna:&pron:ind
-будлі-кому будлі-хто noun:anim:m:v_dav/v_mis:&pron:ind
-будлі-ким будлі-хто noun:anim:m:v_oru:&pron:ind
-будлі-кім будлі-хто noun:anim:m:v_mis:&pron:ind
+будлі-хто будлі-хто noun:anim:m:v_naz:&pron:ind:rare
+будлі-кого будлі-хто noun:anim:m:v_rod/v_zna:&pron:ind:rare
+будлі-кому будлі-хто noun:anim:m:v_dav/v_mis:&pron:ind:rare
+будлі-ким будлі-хто noun:anim:m:v_oru:&pron:ind:rare
+будлі-кім будлі-хто noun:anim:m:v_mis:&pron:ind:rare
 
-будлі-що будлі-що adv:&pron:ind
-будлі-що будлі-що noun:inanim:n:v_naz/v_zna:&pron:ind
-будлі-чого будлі-що noun:inanim:n:v_rod:&pron:ind
-будлі-чому будлі-що noun:inanim:n:v_dav/v_mis:&pron:ind
-будлі-чим будлі-що noun:inanim:n:v_oru:&pron:ind
-будлі-чім будлі-що noun:inanim:n:v_mis:&pron:ind
+будлі-що будлі-що adv:&pron:ind:rare
+будлі-що будлі-що noun:inanim:n:v_naz/v_zna:&pron:ind:rare
+будлі-чого будлі-що noun:inanim:n:v_rod:&pron:ind:rare
+будлі-чому будлі-що noun:inanim:n:v_dav/v_mis:&pron:ind:rare
+будлі-чим будлі-що noun:inanim:n:v_oru:&pron:ind:rare
+будлі-чім будлі-що noun:inanim:n:v_mis:&pron:ind:rare
 
 
 бозна-хто бозна-хто noun:anim:m:v_naz:&pron:ind
@@ -139,29 +139,29 @@
 бозна-чим бозна-що noun:inanim:n:v_oru:&pron:ind
 бозна-чім бозна-що noun:inanim:n:v_mis:&pron:ind
 
-чортзна-хто чортзна-хто noun:anim:m:v_naz:&pron:ind
-чортзна-кого чортзна-хто noun:anim:m:v_rod/v_zna:&pron:ind
-чортзна-кому чортзна-хто noun:anim:m:v_dav/v_mis:&pron:ind
-чортзна-ким чортзна-хто noun:anim:m:v_oru:&pron:ind
-чортзна-кім чортзна-хто noun:anim:m:v_mis:&pron:ind
+чортзна-хто чортзна-хто noun:anim:m:v_naz:&pron:ind:coll
+чортзна-кого чортзна-хто noun:anim:m:v_rod/v_zna:&pron:ind:coll
+чортзна-кому чортзна-хто noun:anim:m:v_dav/v_mis:&pron:ind:coll
+чортзна-ким чортзна-хто noun:anim:m:v_oru:&pron:ind:coll
+чортзна-кім чортзна-хто noun:anim:m:v_mis:&pron:ind:coll
 
-чортзна-що чортзна-що noun:inanim:n:v_naz/v_zna:&pron:ind
-чортзна-чого чортзна-що noun:inanim:n:v_rod:&pron:ind
-чортзна-чому чортзна-що noun:inanim:n:v_dav/v_mis:&pron:ind
-чортзна-чим чортзна-що noun:inanim:n:v_oru:&pron:ind
-чортзна-чім чортзна-що noun:inanim:n:v_mis:&pron:ind
+чортзна-що чортзна-що noun:inanim:n:v_naz/v_zna:&pron:ind:coll
+чортзна-чого чортзна-що noun:inanim:n:v_rod:&pron:ind:coll
+чортзна-чому чортзна-що noun:inanim:n:v_dav/v_mis:&pron:ind:coll
+чортзна-чим чортзна-що noun:inanim:n:v_oru:&pron:ind:coll
+чортзна-чім чортзна-що noun:inanim:n:v_mis:&pron:ind:coll
 
-хтозна-що хтозна-що noun:inanim:n:v_naz/v_zna:&pron:ind
-хтозна-чого хтозна-що noun:inanim:n:v_rod:&pron:ind
-хтозна-чому хтозна-що noun:inanim:n:v_dav/v_mis:&pron:ind
-хтозна-чим хтозна-що noun:inanim:n:v_oru:&pron:ind
-хтозна-чім хтозна-що noun:inanim:n:v_mis:&pron:ind
+хтозна-що хтозна-що noun:inanim:n:v_naz/v_zna:&pron:ind:coll
+хтозна-чого хтозна-що noun:inanim:n:v_rod:&pron:ind:coll
+хтозна-чому хтозна-що noun:inanim:n:v_dav/v_mis:&pron:ind:coll
+хтозна-чим хтозна-що noun:inanim:n:v_oru:&pron:ind:coll
+хтозна-чім хтозна-що noun:inanim:n:v_mis:&pron:ind:coll
 
-хтозна-хто хтозна-хто noun:anim:m:v_naz:&pron:ind
-хтозна-кого хтозна-хто noun:anim:m:v_rod/v_zna:&pron:ind
-хтозна-кому хтозна-хто noun:anim:m:v_dav/v_mis:&pron:ind
-хтозна-ким хтозна-хто noun:anim:m:v_oru:&pron:ind
-хтозна-кім хтозна-хто noun:anim:m:v_mis:&pron:ind
+хтозна-хто хтозна-хто noun:anim:m:v_naz:&pron:ind:coll
+хтозна-кого хтозна-хто noun:anim:m:v_rod/v_zna:&pron:ind:coll
+хтозна-кому хтозна-хто noun:anim:m:v_dav/v_mis:&pron:ind:coll
+хтозна-ким хтозна-хто noun:anim:m:v_oru:&pron:ind:coll
+хтозна-кім хтозна-хто noun:anim:m:v_mis:&pron:ind:coll
 
 невідь-що невідь-що noun:inanim:n:v_naz/v_zna:&pron:ind
 невідь-чого невідь-що noun:inanim:n:v_rod:&pron:ind
@@ -175,17 +175,17 @@
 невідь-ким невідь-хто noun:anim:m:v_oru:&pron:ind
 невідь-кім невідь-хто noun:anim:m:v_mis:&pron:ind
 
-казна-що казна-що noun:inanim:n:v_naz/v_zna:&pron:ind
-казна-чого казна-що noun:inanim:n:v_rod:&pron:ind
-казна-чому казна-що noun:inanim:n:v_dav/v_mis:&pron:ind
-казна-чим казна-що noun:inanim:n:v_oru:&pron:ind
-казна-чім казна-що noun:inanim:n:v_mis:&pron:ind
+казна-що казна-що noun:inanim:n:v_naz/v_zna:&pron:ind:coll
+казна-чого казна-що noun:inanim:n:v_rod:&pron:ind:coll
+казна-чому казна-що noun:inanim:n:v_dav/v_mis:&pron:ind:coll
+казна-чим казна-що noun:inanim:n:v_oru:&pron:ind:coll
+казна-чім казна-що noun:inanim:n:v_mis:&pron:ind:coll
 
-казна-хто казна-хто noun:anim:m:v_naz:&pron:ind
-казна-кого казна-хто noun:anim:m:v_rod/v_zna:&pron:ind
-казна-кому казна-хто noun:anim:m:v_dav/v_mis:&pron:ind
-казна-ким казна-хто noun:anim:m:v_oru:&pron:ind
-казна-кім казна-хто noun:anim:m:v_mis:&pron:ind
+казна-хто казна-хто noun:anim:m:v_naz:&pron:ind:coll
+казна-кого казна-хто noun:anim:m:v_rod/v_zna:&pron:ind:coll
+казна-кому казна-хто noun:anim:m:v_dav/v_mis:&pron:ind:coll
+казна-ким казна-хто noun:anim:m:v_oru:&pron:ind:coll
+казна-кім казна-хто noun:anim:m:v_mis:&pron:ind:coll
 
 хтось хтось noun:anim:m:v_naz:&pron:ind
 когось хтось noun:anim:m:v_rod/v_zna:&pron:ind
@@ -376,27 +376,27 @@
 будь-куди adv:&pron:ind
 будь-звідки adv:&pron:ind
 
-будлі-де adv:&pron:ind
-будлі-як adv:&pron:ind
-будлі-коли adv:&pron:ind
-будлі-куди adv:&pron:ind
-будлі-звідки adv:&pron:ind
+будлі-де adv:&pron:ind:rare
+будлі-як adv:&pron:ind:rare
+будлі-коли adv:&pron:ind:rare
+будлі-куди adv:&pron:ind:rare
+будлі-звідки adv:&pron:ind:rare
 
-чортзна-де adv:&pron:ind
-чортзна-як adv:&pron:ind
-чортзна-коли adv:&pron:ind
-чортзна-куди adv:&pron:ind
-чортзна-звідки adv:&pron:ind
+чортзна-де adv:&pron:ind:coll
+чортзна-як adv:&pron:ind:coll
+чортзна-коли adv:&pron:ind:coll
+чортзна-куди adv:&pron:ind:coll
+чортзна-звідки adv:&pron:ind:coll
 чортзна-відкіля adv:&pron:ind:coll
 чортзна-відкіль adv:&pron:ind:coll
 чортзна-відколи adv:&pron:ind:coll
 
-хтозна-де adv:&pron:ind
-хтозна-як adv:&pron:ind
-хтозна-коли adv:&pron:ind
-хтозна-куди adv:&pron:ind
-хтозна-звідки adv:&pron:ind
-хтозна-чому adv:&pron:ind
+хтозна-де adv:&pron:ind:coll
+хтозна-як adv:&pron:ind:coll
+хтозна-коли adv:&pron:ind:coll
+хтозна-куди adv:&pron:ind:coll
+хтозна-звідки adv:&pron:ind:coll
+хтозна-чому adv:&pron:ind:coll
 хтозна-відкіля adv:&pron:ind:coll
 хтозна-відкіль adv:&pron:ind:coll
 хтозна-відколи adv:&pron:ind:coll
@@ -443,7 +443,7 @@
 кільком кілька numr:p:v_dav:&pron:ind
 кількома кілька numr:p:v_oru:&pron:ind
 
-скількись adv:&pron:ind
+#скількись adv:&pron:ind    # не вживається як прислівник, а лише як numr&pron:ind
 скількись скількись numr:v_naz/v_zna:&pron:ind
 скількохсь скількись numr:v_rod/v_zna/v_mis:&pron:ind
 скількохось скількись numr:v_rod/v_zna/v_mis:&pron:ind
@@ -456,8 +456,17 @@
 скільком скільки numr:p:v_dav:&pron:int
 скількома скільки numr:p:v_oru:&pron:int
 
-аніскільки adv:&pron:neg
 ніскільки adv:&pron:neg
+ніскільки ніскільки numr:p:v_naz/v_zna:&pron:neg
+ніскількох ніскільки numr:p:v_rod/v_zna/v_mis:&pron:neg
+ніскільком ніскільки numr:p:v_dav:&pron:neg
+ніскількома ніскільки numr:p:v_oru:&pron:neg
+
+аніскільки adv:&pron:neg
+аніскільки аніскільки numr:p:v_naz/v_zn2:&pron:neg
+аніскількох аніскільки numr:p:v_rod/v_zn1/v_mis:&pron:neg
+аніскільком аніскільки numr:p:v_dav:&pron:neg
+аніскількома аніскільки numr:p:v_oru:&pron:neg
 
 стільки adv:&pron:dem
 стільки стільки numr:p:v_naz/v_zna:&pron:dem
@@ -471,6 +480,7 @@
 стільком-то стільки-то numr:p:v_dav:&pron:dem
 стількома-то стільки-то numr:p:v_oru:&pron:dem
 
+скільки-небудь adv:&pron:ind
 скільки-небудь скільки-небудь numr:p:v_naz/v_zna:&pron:ind
 скількох-небудь скільки-небудь numr:p:v_rod/v_zna/v_mis:&pron:ind
 скільком-небудь скільки-небудь numr:p:v_dav:&pron:ind
