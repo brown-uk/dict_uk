@@ -55,7 +55,7 @@ def newWordsFile = new File('new_words.lst')
 println "Data: ${data.size}, dict: ${dict.size}"
 
 @Field
-def expand = new Expand()
+def expand = new Expand(false)
 expand.affix.load_affixes('data/affix')
 
 
