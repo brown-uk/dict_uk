@@ -224,6 +224,7 @@ def findInDict(word) {
 	}
     ending = ending.replaceFirst(/(и|і)$/, '(и|і|а)?')
     ending = ending.replaceFirst(/иця$/, '(иця|ик)')
+    ending = ending.replaceFirst(/вачка$/, '(вач|вачка)')
 	ending = ending.replaceFirst(/[гґ]/, '[гґ]')
 	
 	println "searchin for: $ending"
@@ -393,7 +394,7 @@ swing.edt {
 						button(
 								text: 'NoP',
 								actionPerformed: {
-									text.text = text.text.replace('.p', '')
+									text.text = text.text.replaceFirst(/\.p[123]?/, '')
 									inflect()
 									}
 								)
