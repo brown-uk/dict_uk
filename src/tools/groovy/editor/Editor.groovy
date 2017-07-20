@@ -356,11 +356,11 @@ swing.edt {
 						button(
 								text: 'Perf',
 								actionPerformed: {
-										if( text.text =~ / \/v[1-4]/ ) {
-											text.text = text.text.replaceFirst(/ \/v[12] :(im)?perf/, ' /v1.is0 :perf')
+										if( text.text =~ / \/vr?[1-4]/ ) {
+											text.text = text.text.replaceFirst(/( \/vr?)[12] :(im)?perf/, '$1.is0 :perf')
 										}
 										else {
-											text.text = text.text.replaceFirst(/ \/v[12] :imperf/, ' /v1 :perf')
+											text.text = text.text.replaceFirst(/( \/vr?)[12] :imperf/, '$1 :perf')
 										}
 										inflect()
 									}

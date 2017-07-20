@@ -2119,6 +2119,22 @@
   дивніших adj:p:v_mis:compr
   дивніші adj:p:v_kly:compr
 дивно adv:compb
+дівка-дзиґа noun:anim:f:v_naz
+  дівки-дзиґи noun:anim:f:v_rod
+  дівці-дзидзі noun:anim:f:v_dav
+  дівці-дзизі noun:anim:f:v_dav
+  дівку-дзиґу noun:anim:f:v_zna
+  дівкою-дзиґою noun:anim:f:v_oru
+  дівці-дзидзі noun:anim:f:v_mis
+  дівці-дзизі noun:anim:f:v_mis
+  дівко-дзиґо noun:anim:f:v_kly
+  дівки-дзиґи noun:anim:p:v_naz
+  дівок-дзиґ noun:anim:p:v_rod
+  дівкам-дзиґам noun:anim:p:v_dav
+  дівок-дзиґ noun:anim:p:v_zna
+  дівками-дзиґами noun:anim:p:v_oru
+  дівках-дзиґах noun:anim:p:v_mis
+  дівки-дзиґи noun:anim:p:v_kly
 дід-баба noun:anim:p:v_naz
   діда-баби noun:anim:p:v_rod
   дідові-бабі noun:anim:p:v_dav

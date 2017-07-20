@@ -48,6 +48,7 @@
 воркотливий /adj
 втіки /np2
 вхорканий /adj :&adjp:pasv:perf:v-u    # :past
+гардувати /v1.cf.advp :imperf
 гейби conj:subord
 глупий /adj :xp1            # xv1
 головочка /n10
@@ -63,10 +64,13 @@
 дільчий /adj
 докіль adv|conj:subord
 дрожка /n10.p2
+дряглий /adj
+дряглість /n30
 жалуватися /vr1.cf.advp :imperf
 жантильний /adj
 завідатель /n20.a.p.<
 завідателька /n10.p2.<
+загомзатися /vr2 :perf
 зазнимкувати /v1.is0 :perf
 заки conj:subord
 заким conj:subord
@@ -76,12 +80,17 @@
 засов /n20
 засовець /n22.a
 застужати /v2.cf.advp :imperf
+засуд /n20
 засяг /n20
 затанчити /v1 :perf
 затахлувати /v1 :perf
 затемперувати /v1.is0 :perf
+зашанувати /v1 :perf
 зверх зверх adv
 зверх зверх prep:rv_rod
+звідома adv
+згиблий /adj
+зґанджований /adj :&adjp:pasv:perf
 здоровля /n2n
 здрійко numr:nv
 здрінка /n10.p2
@@ -91,8 +100,11 @@
 змирятися /vr2.cf.advp :imperf
 з-позаду з-позаду adv
 зрабований /adj :&adjp:pasv:perf
+зрадувати /v1 :perf
+зрадуватися /vr1 :perf
 зумисно adv
 йменований /adj :&adjp:pasv:imperf
+калабалик /n20
 кально adv:&predic
 катмає noninfl:&predic
 ке intj:&predic
@@ -126,12 +138,14 @@
 моторити /v1 :imperf
 навперед prep:rv_rod
 навручки навручки adv
+нагородженість /n30
 надійсь adv:&insert
 надісь adv:&insert
 надцять /numr
 наклонити /v1 :perf
 намість намість adv
 намість намість prep:rv_rod
+напружливий /adj
 нарід /n21
 невміч adv:&predic
 невпотріб noninfl:&predic
@@ -144,6 +158,7 @@
 неоглядки adv
 неоглядком adv
 неохая /n10.< :+m
+нестямливий /adj
 неякась неякийсь adj:f:v_naz:&pron:neg
 неякесь неякийсь adj:n:v_naz/v_zna:&pron:neg
 неякийсь неякийсь adj:m:v_naz/v_zn2:&pron:neg
@@ -244,8 +259,10 @@
 отця отцей adj:f:v_naz:&pron:dem
 памка /n10
 перстінь /n23.p
+пестієчка /n10.<
 печально adv
 писачок /n22.a.p
+питайко /n20.<
 півперек prep:rv_rod
 півтретя /n2adj1
 підогрів /n20
@@ -270,14 +287,19 @@
 постпродакшн /n20
 постріш /n32.p
 поступцем adv
+потверджувальний /adj
 поуз поуз prep:rv_rod:rv_zna
 почерез prep:rv_zna
+празничанин /n20.a.p.<
+приводець /n22.a.p.<
 придверний /adj
 притім conj:subord:bad
+прищіпляти /v2.cf.advp :imperf
 пріч prep:rv_rod|adv:&predic
 простибі adv:&insert
 простибіг adv:&insert
 против prep:rv_rod
+прочитний /adj
 райця /n10.piv.<m
 рік-річно рік-річно adv
 розгрішення /n2n
@@ -286,6 +308,7 @@
 самовродок /n22.a.p
 самокидка /n10.p2
 саф'янець /n22.a.p
+свіжистий /adj
 світач /n20.a.p
 святешний /adj
 се сей adj:n:v_naz/v_zna:&pron:dem
@@ -323,6 +346,7 @@
 трясцяма noninfl:&predic
 угощати /v2.cf.advp :imperf
 удвурядь adv
+узгіднювати /v1.cf.advp :imperf
 уздогін adv
 уїжно adv:&predic
 уїхати /v4 :perf
@@ -345,6 +369,7 @@
 устид adv:&predic
 устидно adv:&predic
 ухорканий /adj :&adjp:pasv:perf:v-u    # :past
+учительний /adj
 фашистівський /adj
 фершалка /n10.p2.ko.<
 фестини /np1
