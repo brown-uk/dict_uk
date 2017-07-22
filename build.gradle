@@ -129,7 +129,7 @@ task checkReplacements {
 	    .findAll { it.contains(" #> ") }
 	    .collect { it.split(" #> ")[1].trim().split(/[;, \|]+/) }
 	    .flatten()
-	    .collect { it.replaceAll(/[()]/, '') }
+	    .collect { it.replaceAll(/[()]/, '').replaceFirst(/-таки$/, '') }
 	    .findAll { it =~ /[а-яіїєґ]/ }
 	    .unique().sort()
 

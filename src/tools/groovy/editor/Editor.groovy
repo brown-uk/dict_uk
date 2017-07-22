@@ -394,6 +394,21 @@ swing.edt {
 										inflect()
 									}
 								)
+							
+						button(
+								text: 'it1',
+								actionPerformed: {
+										text.text = text.text.replaceFirst(/ :perf/, '.it1 :perf')
+										inflect()
+									}
+								)
+						button(
+								text: 'it0',
+								actionPerformed: {
+										text.text = text.text.replaceFirst(/ :perf/, '.it0 :perf')
+										inflect()
+									}
+								)
 						button(
 								text: 'NoP',
 								actionPerformed: {
@@ -442,6 +457,7 @@ swing.edt {
 								actionPerformed: {
 									new File('new_words.lst') << newWords.join('\n') + '\n'
 									newWords.clear()
+									textlabel.text = "Just saved"
 								}
 								)
 					}

@@ -237,7 +237,13 @@ class Util {
 
 		log.info("Всього лем: {}\n", cnt)
 
-		new File("dict_stats.txt").withWriter("utf-8") { stat_f ->
+
+        if( ! new File("stats").isDirectory() ) {
+            log.info "No stats/ directory, skipping dict_stats.txt"
+            return
+        }
+
+		new File("stats", "dict_stats.txt").withWriter("utf-8") { stat_f ->
 			stat_f.printf("Всього лем: %d\n", cnt)
 			stat_f.printf("  словникових лем (без advp, без омонімів imperf/perf) %s\n", (cnt_std - double_form_cnt))
 			stat_f.print("\nЧастоти за тегами:\n")

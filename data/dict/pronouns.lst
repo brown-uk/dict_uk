@@ -835,7 +835,7 @@
 навпаки навпаки prep:rv_dav
 навперейми навперейми prep:rv_dav
 над над prep:rv_oru:rv_zna
-наді наді prep:rv_oru:rv_zna
+наді наді prep:rv_oru
 надо надо prep:rv_oru:rv_zna
 наперед наперед prep:rv_rod
 напередодні напередодні prep:rv_rod
@@ -864,6 +864,7 @@
 перед перед prep:rv_oru:rv_zna
 переді переді prep:rv_oru:rv_zna
 під під prep:rv_zna:rv_oru
+піді піді prep:rv_oru
 після після prep:rv_rod|adv
 по по prep:rv_mis:rv_zna
 побік побік prep:rv_rod
