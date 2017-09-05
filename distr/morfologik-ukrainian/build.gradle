@@ -22,9 +22,6 @@ String tmpDir="build/tmp"
 String inputDir="${projectDir}/../../out"
 String inputDictFile="dict_corp_lt.txt"
 
-String dstEncoding="cp1251"
-String srcEncoding="utf-8"
-
 
 if( project.hasProperty('ltDir') ) {
   ext.languagetoolResDestDir = "$ltDir/languagetool-language-modules/uk/src/main/resources/org/languagetool/resource/uk"
@@ -84,7 +81,7 @@ task prepareDict(type: Exec) {
         new File("$workingDir/$tmpDir").mkdirs()
     }
 
-    def cmd = "cat ${srcDict} | iconv -f ${srcEncoding} -t ${dstEncoding} | tr ' ' '\\t' | LC_ALL=POSIX sort -u > ${outFile}"
+    def cmd = "cat ${srcDict} | tr ' ' '\\t' | LC_ALL=POSIX sort -u > ${outFile}"
 
     commandLine "sh", "-c", "${cmd}"
 }
@@ -137,7 +134,7 @@ task prepareSpellWords(type: Exec) {
         new File(tmpDir).mkdirs()
     }
 
-    def cmd = "cat ${srcDict} | iconv -f ${srcEncoding} -t ${dstEncoding} | LC_ALL=POSIX sort -u > ${outFile}"
+    def cmd = "cat ${srcDict} | LC_ALL=POSIX sort -u > ${outFile}"
 
     commandLine "sh", "-c", "${cmd}"
 }

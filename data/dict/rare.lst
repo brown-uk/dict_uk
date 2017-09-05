@@ -21,6 +21,7 @@
 ваганки /np2
 вазка /n10.p2
 варівко adv:&predic
+вдвійці adv:v-u
 вельон /n20
 венгерське /n2adj1
 вигибти /v3 :perf
@@ -349,6 +350,7 @@
 тридесять numr:p:v_naz/v_zna
 трясцяма noninfl:&predic
 угощати /v2.cf.advp :imperf
+удвійці adv:v-u
 удвурядь adv
 узгіднювати /v1.cf.advp :imperf
 уздогін adv
