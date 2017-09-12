@@ -157,6 +157,10 @@ task spellDict(type: JavaExec, dependsOn: prepareSpellWords) {
     args "-info", "${resourceDir}/hunspell/uk_UA.info"
     args "-o", "${outFile}"
     args "-freq", "${freqFile}"
+    
+    doFirst() {
+        new File(spellOutDir).mkdirs()
+    }
 }
 
 
@@ -282,7 +286,7 @@ task caseGovernmentDict() {
 task helperDicts (dependsOn: [caseGovernmentDict, createReplacementDict, createSoftReplacementDict])
 
 
-task deployDictToLT(type: Copy, dependsOn: classes) {
+task deployDictToLT(type: Copy, dependsOn: resources) {
     from outResDir
     into "${languagetoolResDestDir}"
 
@@ -293,18 +297,19 @@ task deployDictToLT(type: Copy, dependsOn: classes) {
 
 
 
-task deployReplacements(type: Copy) {
+task deployReplacements(type: Copy, dependsOn: [createReplacementDict, createSoftReplacementDict]) {
     doFirst() {
         logger.lifecycle "Deploying to LT dir: ${languagetoolRulesDestDir}"
     }
-        from outRulesDir
-        into "${languagetoolRulesDestDir}"
-        include "**/replace*.txt"
 
-        includeEmptyDirs = false
+    from outRulesDir
+    into "${languagetoolRulesDestDir}"
+    include "**/replace*.txt"
+
+    includeEmptyDirs = false
 }
 
-task deployCaseGovernment(type: Copy) {
+task deployCaseGovernment(type: Copy, dependsOn: processResources) {
     doFirst() {
         logger.lifecycle "Deploying to LT dir: ${languagetoolResDestDir}"
     }
@@ -339,7 +344,7 @@ jar {
 }
 
 
-processResources.dependsOn(posDict, synthDict, tagList, spellDict, caseGovernmentDict)
+processResources.dependsOn(posDict, synthDict, tagList, spellDict, caseGovernmentDict, createReplacementDict)
 compileJava.enabled = false
 
 
