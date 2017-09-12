@@ -67,7 +67,7 @@ group n2adj1
 .	им			#  неподільне  неподільним	             @ noun:n:v_oru
 .	ім			#  неподільне  неподільнім	             @ noun:n:v_mis
 
-[^']є:
+[^'ь]є:
 є	ього			#   полуднього 	          @ noun:n:v_rod:np
 є	ьому			#   полудньому 	          @ noun:n:v_dav/v_mis:np
 є	ім			    #   полуднім 	            @ noun:n:v_oru/v_mis:np
@@ -76,6 +76,11 @@ group n2adj1
 'є	його			#   Остапйого 	          @ noun:n:v_rod:np
 'є	йому			#   Остапйому 	          @ noun:n:v_dav/v_mis:np
 є	їм			    #   Остап'їм 	            @ noun:n:v_oru/v_mis:np
+
+ьє:
+є	його			#   Куньє 	          @ noun:n:v_rod:np
+є	йому			#   Куньйому 	          @ noun:n:v_dav/v_mis:np
+є	їм			    #   Куньїм 	            @ noun:n:v_oru/v_mis:np
 
 і:
 і	им			#   війчастим 	            @ noun:p:v_dav:ns
