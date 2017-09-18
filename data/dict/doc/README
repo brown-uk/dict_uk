@@ -25,6 +25,9 @@ composite.lst   composite words via hyphen
 
 ignored.lst   common mistakes
 
+add_tag.add     додаткові теги для окремих словоформ
+
+
 
 Additional flags:
   affix "<" creature, live being, person
@@ -40,4 +43,4 @@ Additional flags:
 Після слів можуть йти коментарі (після символа ґратки #), після #> можна записувати кращі відповідники,
   які будуть рекомендовані в LT (м’яка рекомендація, на противагу жорсткій для слів в twisters.lst)
 
-A. Rysin (Андрій Рисін) 2015
+A. Rysin (Андрій Рисін) 2017
