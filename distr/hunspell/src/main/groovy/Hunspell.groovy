@@ -9,7 +9,8 @@ def AFFIX_DIR = "../../data/affix"
 Args.args = new Args()
 Args.args.removeWithTags = ["uncontr"]
 
-def expand = new Expand()
+def expand = new Expand(false)
+
 def affixMap = expand.affix.load_affixes(AFFIX_DIR)
 
 //Affix affixLoader = new Affix()
@@ -80,12 +81,13 @@ new File('mapping.txt').text = revFlagMap*.toString().join("\n")
 
 println("Negative matches:\n\t" + negativeMatchFlags*.toString().join("\n\t"))
 
-def NONSPELL_TAG_LIST = ":(alt|bad|subst|uncontr|verb.*coll)"
+def NONSPELL_TAG_LIST = ":(alt|bad|subst|uncontr|verb.*coll|slang)"
 
 if( "-forSearch" in args ) {
     println "Дозволяємо ненормативні форми для пошуку..."
     NONSPELL_TAG_LIST.replace('|bad', '')
     NONSPELL_TAG_LIST.replace('|subst', '')
+    NONSPELL_TAG_LIST.replace('|slang', '')
 }
 
 def NONSPELL_TAGS = ~ NONSPELL_TAG_LIST
@@ -244,7 +246,7 @@ new File('build/hunspell/uk_UA.aff').text = fileHeader + '\n' + out
 
 def dictDir = new File("../../data/dict")
 
-def IGNORED_FILES = /composite|dot-abbr|twisters|ignored|alt/
+def IGNORED_FILES = /composite|dot-abbr|twisters|ignored|alt|rare|add_tag/
 if( "-forSearch" in args ) {
     IGNORED_FILES = IGNORED_FILES.replace('|twisters', '')
 }
