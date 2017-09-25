@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
-version="3.7.3"
+version="3.9.1"
 def hunspellDir="../hunspell/build/hunspell"
 
 task prepareFiles {
