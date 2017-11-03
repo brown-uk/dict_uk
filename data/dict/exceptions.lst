@@ -63,6 +63,21 @@
 стеклами скло noun:p:v_oru          #> склами
 стеклах скло noun:p:v_mis           #> склах
 
+зябра зябра noun:inanim:f:v_naz:rare
+зябри зябра noun:inanim:f:v_rod:rare
+зябрі зябра noun:inanim:f:v_dav:rare
+зябру зябра noun:inanim:f:v_zna:rare
+зяброю зябра noun:inanim:f:v_oru:rare
+зябрі зябра noun:inanim:f:v_mis:rare
+зябро зябра noun:inanim:f:v_kly:rare
+зябра зябра noun:inanim:p:v_naz
+зябер зябра noun:inanim:p:v_rod
+зябрам зябра noun:inanim:p:v_dav
+зябра зябра noun:inanim:p:v_zna
+зябрами зябра noun:inanim:p:v_oru
+зябрах зябра noun:inanim:p:v_mis
+зябра зябра noun:inanim:p:v_kly
+
 
 вісь вісь noun:f:v_naz/v_zna
 осі вісь noun:f:v_rod/v_dav/v_mis//p:v_naz/v_zna/v_kly
@@ -266,12 +281,6 @@
 біоматерів біомати noun:anim:p:v_zna
 біоматерями біомати noun:anim:p:v_oru
 біоматерях біомати noun:anim:p:v_mis
-
-зябра зябра noun:p:v_naz/v_zna/v_kly
-зябер зябра noun:p:v_rod
-зябрам зябра noun:p:v_dav
-зябрами зябра noun:p:v_oru
-зябрах зябра noun:p:v_mis
 
 чоботи чобіт noun:p:v_naz/v_zna/v_kly
 чобіт чобіт noun:p:v_rod

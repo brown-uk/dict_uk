@@ -231,9 +231,11 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
 			def rvLines = new File("$srcDir/$srcFile.name").text
 			    .split('\n')
 			    .findAll {
-				    it.contains(' #>')
+                    ! it.startsWith('#') && it.contains(' #>')
 			    }.collect{
-				    it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).* #> *(.*)/, '$1=$2') //.replaceAll(/ *[;,] */, '|')
+                    it = it.replace(' +cs=', '')
+                    it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
+                    it = it.replaceFirst(/ *# rv_...(\|rv_...)* */, '')
 			    }
 
 			outLines.addAll(rvLines)

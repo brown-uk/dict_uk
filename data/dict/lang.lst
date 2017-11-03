@@ -64,9 +64,9 @@
 конкані noun:f:nv:np
 косрае noun:f:nv:np
 кпеллє noun:f:nv:np
-крі noun:f:nv:np
-крік noun:f:nv:np
-кру noun:f:nv:np
+#крі noun:f:nv:np
+#крік noun:f:nv:np
+#кру noun:f:nv:np
 кунама noun:f:nv:np
 курукх noun:f:nv:np
 кутенаї noun:f:nv:np
@@ -177,7 +177,7 @@
 ваї noun:m:nv:np
 естрангело noun:m:nv:np
 кая noun:m:nv:np
-лі noun:m:nv:np
+#лі noun:m:nv:np
 кирт noun:m:nv:np
 кхутсурі noun:m:nv:np
 асомтаврулі noun:m:nv:np
@@ -204,7 +204,6 @@
 харапський /adj
 хінді noun:m:nv:np
 шумеро-аккадський /adj
-іспаномовний /adj
 кокні noun:m:nv:np:xp2
 гельський /adj
 койне noun:m:nv:np

@@ -1,11 +1,13 @@
 # див. також http://lib.npu.edu.ua/full_txt/DSTU_3582_2013.pdf
 авт. noun:m:v_naz               # автор, напр. "Сьогодні (у четвер.  Авт.), вранці."
 акад. noun:anim:m:nv            # академік
+амер. adj:nv                    # американський
 англ. adj:nv                    # англійський
 арк. noun:m:nv                  # аркуш
 бл. adv                         # близко
 близьк. adv                     # близько
 буд. noun:m:nv                  # будинок
+вип. noun:m:nv                  # випуск
 вірм. adj:nv
 вул. noun:f:nv                  # вулиця
 грец. adj:nv
@@ -17,11 +19,12 @@
 доц. noun:anim:m:nv             # доцент
 е. noun:f:nv                    # ера
 ел. adj:nv
-жін. adj:nv
+жін. adj:nv                     # жіночий
 зав. noun:m:nv|noun:f:nv        # завідувач, завідувачка
 заст. noun:m:nv                 # заступник
 заст. adj:nv                    # застарілий
 зах. adj:nv                     # західний
+зб. noun:m:nv                   # збірник
 зв. adj:nv
 зовн. adj:nv                    # зовнішній
 ім. noun:n:v_rod                # імені
