@@ -997,6 +997,7 @@ class Expand {
 
             forms += expand("що" + word, "/adj :super" + idx + extra_tags)
 			forms += expand("як" + word, "/adj :super" + idx + extra_tags)
+			forms += expand("щояк" + word, "/adj :super" + idx + extra_tags)
 
 			if( "comp" in Args.args.lemmaForTags ) {
 				forms = forms.collect { replace_base(it, main_word) }
