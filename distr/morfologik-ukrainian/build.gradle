@@ -231,7 +231,7 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
 			def rvLines = new File("$srcDir/$srcFile.name").text
 			    .split('\n')
 			    .findAll {
-                    ! it.startsWith('#') && it.contains(' #>')
+                    ! it.startsWith('#') && it.contains(' #> ')
 			    }.collect{
                     it = it.replace(' +cs=', '')
                     it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
@@ -251,10 +251,53 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
 }
 
 
+task createRenamedReplacementDict(dependsOn: createOutRulesDir) {
+    def srcDir="${inputDir}/../data/dict"
+    def outFile="${outRulesDir}/replace_renamed.txt"
+    def allFiles = Arrays.asList(new File(srcDir).listFiles())
+    def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! it.name.startsWith('twisters') }
+
+    inputs.file srcFiles
+    outputs.file outFile
+
+
+    def headText =
+'''# Simple replace table for soft suggestions
+# Format: name=replacemet|(optional) explanation
+
+'''
+    doLast {
+		def outLines = []
+
+		srcFiles.each{ srcFile ->
+			def rvLines = new File("$srcDir/$srcFile.name").text
+			    .split('\n')
+			    .findAll {
+                    ! it.startsWith('#') && it.contains(' #>> ')
+			    }.collect{
+//                    it = it.replace(' +cs=', '')
+                    it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#>> *(.*)(#ok:.*)?/, '$1=$2')
+                    it = it.replaceFirst(/ *# rv_...(\|rv_...)* */, '')
+			    }
+
+			outLines.addAll(rvLines)
+		}
+
+		java.text.Collator coll = java.text.Collator.getInstance(new Locale("uk", "UA"))
+        Collections.sort(outLines, coll)
+		
+        println "Wrote $outLines.size replacements"
+		new File(outFile).text = headText + outLines.join('\n') + "\n"
+	}
+
+}
+
+
+
 task caseGovernmentDict() {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outResDir}/case_government.txt"
-    def srcFiles=["base.lst", "twisters.lst", "slang.lst", "exceptions.lst", "pronouns.lst"]
+    def srcFiles=["base.lst", "twisters.lst", "slang.lst", "exceptions.lst", "pronouns.lst", "rare.lst"]
 
     inputs.file srcFiles.collect{ "$srcDir/$it" }
     outputs.file outFile
@@ -269,7 +312,7 @@ task caseGovernmentDict() {
 		srcFiles.each{ srcFile ->
 
 			def rvLines = new File("$srcDir/$srcFile").text.split('\n').findAll{
-				(it =~ ' /(adj|n[0-4])' || it.contains("+cs=")) && it.contains(' rv_')
+				(it =~ ' /(adj|n[0-4])| prep' || it.contains("+cs=")) && it.contains(' rv_')
 			}.collect{
 				def out = it.contains(" +cs=") ? it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2\nнай$1 $2') \
 				                               : it.replaceFirst(/^(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2')
@@ -299,7 +342,7 @@ task deployDictToLT(type: Copy, dependsOn: resources) {
 
 
 
-task deployReplacements(type: Copy, dependsOn: [createReplacementDict, createSoftReplacementDict]) {
+task deployReplacements(type: Copy, dependsOn: [createReplacementDict, createSoftReplacementDict, createRenamedReplacementDict]) {
     doFirst() {
         logger.lifecycle "Deploying to LT dir: ${languagetoolRulesDestDir}"
     }
@@ -311,7 +354,7 @@ task deployReplacements(type: Copy, dependsOn: [createReplacementDict, createSof
     includeEmptyDirs = false
 }
 
-task deployCaseGovernment(type: Copy, dependsOn: processResources) {
+task deployCaseGovernment(type: Copy, dependsOn: caseGovernmentDict) {
     doFirst() {
         logger.lifecycle "Deploying to LT dir: ${languagetoolResDestDir}"
     }

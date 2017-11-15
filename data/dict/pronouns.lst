@@ -50,7 +50,7 @@
 хто хто conj:subord
 хто хто noun:anim:m:v_naz:&pron:int:rel
 кого хто noun:anim:m:v_rod/v_zna:&pron:int:rel
-кому хто noun:anim:m:v_dav:&pron:int:rel
+кому хто noun:anim:m:v_dav/v_mis:&pron:int:rel
 ким хто noun:anim:m:v_oru:&pron:int:rel
 кім хто noun:anim:m:v_mis:&pron:int:rel
 
@@ -64,23 +64,27 @@
 
 абихто абихто noun:anim:m:v_naz:&pron:ind
 абикого абихто noun:anim:m:v_rod/v_zna:&pron:ind
-абикому абихто noun:anim:m:v_dav:&pron:ind
+абикому абихто noun:anim:m:v_dav/v_mis:&pron:ind
 абиким абихто noun:anim:m:v_oru:&pron:ind
+абикім абихто noun:anim:m:v_mis:&pron:ind
 
 абищо абищо noun:inanim:n:v_naz/v_zna:&pron:ind
 абичого абищо noun:inanim:n:v_rod:&pron:ind
-абичому абищо noun:inanim:n:v_dav:&pron:ind
+абичому абищо noun:inanim:n:v_dav/v_mis:&pron:ind
 абичим абищо noun:inanim:n:v_oru:&pron:ind
+абичім абищо noun:inanim:n:v_mis:&pron:ind
 
 аніхто аніхто noun:anim:m:v_naz:&pron:neg
 анікого аніхто noun:anim:m:v_rod/v_zna:&pron:neg
-анікому аніхто noun:anim:m:v_dav:&pron:neg
+анікому аніхто noun:anim:m:v_dav/v_mis:&pron:neg
 аніким аніхто noun:anim:m:v_oru:&pron:neg
+анікім аніхто noun:anim:m:v_mis:&pron:neg
 
 аніщо аніщо noun:inanim:n:v_naz/v_zna:&pron:neg
 анічого аніщо noun:inanim:n:v_rod/v_zna:&pron:neg
-анічому аніщо noun:inanim:n:v_dav:&pron:neg
+анічому аніщо noun:inanim:n:v_dav/v_mis:&pron:neg
 анічим аніщо noun:inanim:n:v_oru:&pron:neg
+анічім аніщо noun:inanim:n:v_mis:&pron:neg
 
 небагато-хто небагато-хто noun:anim:m:v_naz:&pron:ind
 небагато-кого небагато-хто noun:anim:m:v_rod/v_zna:&pron:ind
@@ -125,7 +129,6 @@
 будлі-чому будлі-що noun:inanim:n:v_dav/v_mis:&pron:ind:rare
 будлі-чим будлі-що noun:inanim:n:v_oru:&pron:ind:rare
 будлі-чім будлі-що noun:inanim:n:v_mis:&pron:ind:rare
-
 
 бозна-хто бозна-хто noun:anim:m:v_naz:&pron:ind
 бозна-кого бозна-хто noun:anim:m:v_rod/v_zna:&pron:ind
@@ -206,8 +209,9 @@
 
 неабищо неабищо noun:inanim:n:v_naz:&pron:neg
 неабичого неабищо noun:inanim:n:v_rod/v_zna:&pron:neg
-неабичому неабищо noun:inanim:n:v_dav:&pron:neg
+неабичому неабищо noun:inanim:n:v_dav/v_mis:&pron:neg
 неабичим неабищо noun:inanim:n:v_oru:&pron:neg
+неабичім неабищо noun:inanim:n:v_mis:&pron:neg
 
 хто-небудь хто-небудь noun:anim:m:v_naz:&pron:ind
 кого-небудь хто-небудь noun:anim:m:v_rod/v_zna:&pron:ind
@@ -224,21 +228,23 @@
 
 ніхто ніхто noun:anim:m:v_naz:&pron:neg
 нікого ніхто noun:anim:m:v_rod/v_zna:&pron:neg
-нікому ніхто noun:anim:m:v_dav:&pron:neg
+нікому ніхто noun:anim:m:v_dav/v_mis:&pron:neg
 ніким ніхто noun:anim:m:v_oru:&pron:neg
+нікім ніхто noun:anim:m:v_mis:&pron:neg
 
 нічого нічого adv
 
-нікого нікого noun:anim:m:v_rod/v_zna:&pron:emph        # ні́кого # rv_inf
-нікому нікого noun:anim:m:v_dav:&pron:emph
+нікого нікого noun:anim:m:v_rod/v_zna:&pron:emph        # rv_inf   # ні́кого
+нікому нікого noun:anim:m:v_dav/v_mis:&pron:emph
 ніким нікого noun:anim:m:v_oru:&pron:emph
 
 ніщо ніщо noun:inanim:n:v_naz/v_zna:&pron:neg
 нічого ніщо noun:inanim:n:v_rod/v_zna:&pron:neg:&predic
-нічому ніщо noun:inanim:n:v_dav:&pron:neg
+нічому ніщо noun:inanim:n:v_dav/v_mis:&pron:neg
 нічим ніщо noun:inanim:n:v_oru:&pron:neg
+нічім ніщо noun:inanim:n:v_mis:&pron:neg
 
-нічого нічого noun:inanim:n:v_rod/v_zna:&pron:emph:&predic      # ні́чого # rv_inf
+нічого нічого noun:inanim:n:v_rod/v_zna:&pron:emph:&predic      # rv_inf   # ні́чого
 нічому нічого noun:inanim:n:v_dav:&pron:emph
 нічим нічого noun:inanim:n:v_oru:&pron:emph
 
@@ -358,8 +364,8 @@
 анізащо adv:&pron:neg
 аніколи adv:&pron:neg
 
-ніде adv:&pron:emph     # ні́де     # rv_inf
-ніде adv:&pron:neg      # ніде́
+ніде adv:&pron:emph     # rv_inf    # ні́де
+ніде adv:&pron:neg                  # ніде́
 нізвідкіля adv:&pron:emph
 нізвідкіль adv:&pron:neg:coll
 нізвідкіль adv:&pron:emph:coll
@@ -443,7 +449,7 @@
 кільком кілька numr:p:v_dav:&pron:ind
 кількома кілька numr:p:v_oru:&pron:ind
 
-#скількись adv:&pron:ind    # не вживається як прислівник, а лише як numr&pron:ind
+#скількись adv:&pron:ind            # не вживається як прислівник, а лише як numr&pron:ind
 скількись скількись numr:v_naz/v_zna:&pron:ind
 скількохсь скількись numr:v_rod/v_zna/v_mis:&pron:ind
 скількохось скількись numr:v_rod/v_zna/v_mis:&pron:ind
@@ -763,147 +769,147 @@
 
 
 # Прийменники
-без без prep:rv_rod
-біля біля prep:rv_rod
-в в prep:rv_zna:rv_mis:rv_rod:v-u
-у у prep:rv_zna:rv_mis:rv_rod:v-u
-уві уві prep:rv_zna:rv_mis:rv_rod:v-u
-вві вві prep:rv_zna:rv_mis:rv_rod:v-u
-від від prep:rv_rod
-відповідно відповідно prep:rv_dav
-внаслідок внаслідок prep:rv_rod:v-u
-унаслідок унаслідок prep:rv_rod:v-u
-вподовж вподовж prep:rv_rod:v-u
-уподовж уподовж prep:rv_rod:v-u
-впродовж впродовж prep:rv_rod:v-u|adv
-упродовж упродовж prep:rv_rod:v-u|adv
-вздовж вздовж prep:rv_rod:v-u|adv
-уздовж уздовж prep:rv_rod:v-u|adv
-впоперек впоперек prep:rv_rod:v-u|adv
-упоперек упоперек prep:rv_rod:v-u|adv
-вслід вслід prep:rv_dav:v-u
-услід услід prep:rv_dav:v-u
-всупереч всупереч prep:rv_dav:v-u
-усупереч усупереч prep:rv_dav:v-u
-для для prep:rv_rod
-до до prep:rv_rod
-довкола довкола prep:rv_rod
-з з prep:rv_rod:rv_zna:rv_oru
-за за prep:rv_rod:rv_zna:rv_oru
-із із prep:rv_rod:rv_zna:rv_oru
-зі зі prep:rv_rod:rv_zna:rv_oru
-зо зо prep:rv_rod:rv_zna:rv_oru
-завдяки завдяки prep:rv_dav
-задля задля prep:rv_rod
-залежно залежно prep:rv_rod
-замість замість prep:rv_rod         # rv_inf
-заради заради prep:rv_rod
-#згідно згідно prep:rv_rod
-зверху зверху prep:rv_rod
-здовж здовж prep:rv_rod|adv
-з-за з-за prep:rv_rod
-із-за із-за prep:rv_rod
-з-над з-над prep:rv_rod
-з-перед з-перед prep:rv_rod
-з-під з-під prep:rv_rod
-з-попід з-попід prep:rv_rod
-з-позад з-позад prep:rv_rod
-із-під із-під prep:rv_rod
-з-поза з-поза prep:rv_rod
-з-поміж з-поміж prep:rv_rod
-з-понад з-понад prep:rv_rod
-з-поперед з-поперед prep:rv_rod
-з-посеред з-посеред prep:rv_rod
-з-проміж з-проміж prep:rv_rod
-з-серед з-серед prep:rv_rod
-ззаду ззаду prep:rv_rod
-зсередини зсередини prep:rv_rod
-ізсередини ізсередини prep:rv_rod
-кінець кінець prep:rv_rod
-коло коло prep:rv_rod
-край край prep:rv_rod
-крізь крізь prep:rv_zna
-крім крім prep:rv_rod
-круг круг prep:rv_rod
-кругом кругом prep:rv_rod
-між між prep:rv_rod:rv_zna:rv_oru
-проміж проміж prep:rv_rod:rv_zna:rv_oru
-поміж поміж prep:rv_rod:rv_zna:rv_oru
-на на prep:rv_zna:rv_mis
-навколо prep:rv_rod
-навкруг prep:rv_rod
-навпаки навпаки prep:rv_dav
-навперейми навперейми prep:rv_dav
-над над prep:rv_oru:rv_zna
-наді наді prep:rv_oru
-надо надо prep:rv_oru:rv_zna
-наперед наперед prep:rv_rod
-напередодні напередодні prep:rv_rod
-наперекір наперекір prep:rv_dav
-напереріз напереріз prep:rv_dav
-наприкінці наприкінці prep:rv_rod
-напроти напроти prep:rv_rod
-навпроти навпроти prep:rv_rod
-насеред насеред prep:rv_rod
-насупроти насупроти prep:rv_rod
-невважаючи невважаючи prep:rv_zna
-нижче нижче prep:rv_zna
-о о prep:rv_zna:rv_mis
+без без prep        # rv_rod
+біля біля prep        # rv_rod
+в в prep:v-u        # rv_zna:rv_mis:rv_rod
+у у prep:v-u        # rv_zna:rv_mis:rv_rod
+уві уві prep:v-u        # rv_zna:rv_mis:rv_rod
+вві вві prep:v-u        # rv_zna:rv_mis:rv_rod
+від від prep        # rv_rod
+відповідно відповідно prep        # rv_dav
+внаслідок внаслідок prep:v-u        # rv_rod
+унаслідок унаслідок prep:v-u        # rv_rod
+вподовж вподовж prep:v-u        # rv_rod
+уподовж уподовж prep:v-u        # rv_rod
+впродовж впродовж prep:v-u|adv        # rv_rod
+упродовж упродовж prep:v-u|adv        # rv_rod
+вздовж вздовж prep:v-u|adv        # rv_rod
+уздовж уздовж prep:v-u|adv        # rv_rod
+впоперек впоперек prep:v-u|adv        # rv_rod
+упоперек упоперек prep:v-u|adv        # rv_rod
+вслід вслід prep:v-u        # rv_dav
+услід услід prep:v-u        # rv_dav
+всупереч всупереч prep:v-u        # rv_dav
+усупереч усупереч prep:v-u        # rv_dav
+для для prep        # rv_rod
+до до prep        # rv_rod
+довкола довкола prep        # rv_rod
+з з prep        # rv_rod:rv_zna:rv_oru
+за за prep        # rv_rod:rv_zna:rv_oru
+із із prep        # rv_rod:rv_zna:rv_oru
+зі зі prep        # rv_rod:rv_zna:rv_oru
+зо зо prep        # rv_rod:rv_zna:rv_oru
+завдяки завдяки prep        # rv_dav
+задля задля prep        # rv_rod
+залежно залежно prep        # rv_rod
+замість замість prep         # rv_rod:rv_inf
+заради заради prep        # rv_rod
+#згідно згідно prep        # rv_rod
+зверху зверху prep        # rv_rod
+здовж здовж prep|adv        # rv_rod
+з-за з-за prep        # rv_rod
+із-за із-за prep        # rv_rod
+з-над з-над prep        # rv_rod
+з-перед з-перед prep        # rv_rod
+з-під з-під prep        # rv_rod
+з-попід з-попід prep        # rv_rod
+з-позад з-позад prep        # rv_rod
+із-під із-під prep        # rv_rod
+з-поза з-поза prep        # rv_rod
+з-поміж з-поміж prep        # rv_rod
+з-понад з-понад prep        # rv_rod
+з-поперед з-поперед prep        # rv_rod
+з-посеред з-посеред prep        # rv_rod
+з-проміж з-проміж prep        # rv_rod
+з-серед з-серед prep        # rv_rod
+ззаду ззаду prep        # rv_rod
+зсередини зсередини prep        # rv_rod
+ізсередини ізсередини prep        # rv_rod
+кінець кінець prep        # rv_rod
+коло коло prep        # rv_rod
+край край prep        # rv_rod
+крізь крізь prep        # rv_zna
+крім крім prep        # rv_rod
+круг круг prep        # rv_rod
+кругом кругом prep        # rv_rod
+між між prep        # rv_rod:rv_zna:rv_oru
+проміж проміж prep        # rv_rod:rv_zna:rv_oru
+поміж поміж prep        # rv_rod:rv_zna:rv_oru
+на на prep        # rv_zna:rv_mis
+навколо prep        # rv_rod
+навкруг prep        # rv_rod
+навпаки навпаки prep        # rv_dav
+навперейми навперейми prep        # rv_dav
+над над prep        # rv_oru:rv_zna
+наді наді prep        # rv_oru
+надо надо prep        # rv_oru:rv_zna
+наперед наперед prep        # rv_rod
+напередодні напередодні prep        # rv_rod
+наперекір наперекір prep        # rv_dav
+напереріз напереріз prep        # rv_dav
+наприкінці наприкінці prep        # rv_rod
+напроти напроти prep        # rv_rod
+навпроти навпроти prep        # rv_rod
+насеред насеред prep        # rv_rod
+насупроти насупроти prep        # rv_rod
+невважаючи невважаючи prep        # rv_zna
+нижче нижче prep        # rv_zna
+о о prep        # rv_zna:rv_mis
 о о intj
-об об prep:rv_zna:rv_mis
-обабіч обабіч prep:rv_rod
-обіч обіч prep:rv_rod
-обік обік prep:rv_rod|adv
-од од prep:rv_rod
-окрай окрай prep:rv_rod
-окрім окрім prep:rv_rod
-округ округ prep:rv_rod
-округи округи prep:rv_rod
-опісля опісля prep:rv_rod
-опріч опріч prep:rv_rod|adv
-перед перед prep:rv_oru:rv_zna
-переді переді prep:rv_oru:rv_zna
-під під prep:rv_zna:rv_oru
-піді піді prep:rv_oru
-після після prep:rv_rod|adv
-по по prep:rv_mis:rv_zna
-побік побік prep:rv_rod
-побіч побіч prep:rv_rod
-поблизу поблизу prep:rv_rod
-поверх поверх prep:rv_rod
-повз повз prep:rv_zna
-повздовж повздовж prep:rv_rod
-подовж подовж prep:rv_rod|adv
-поза поза prep:rv_zna:rv_oru
-позад позад prep:rv_rod|adv
-позаду позаду prep:rv_rod|adv
-поздовж поздовж prep:rv_rod
-покрай покрай prep:rv_rod
-понад понад prep:rv_oru:rv_zna
-понадо понадо prep:rv_oru:rv_zna
-поперек поперек prep:rv_rod
-поперед поперед prep:rv_rod:rv_zna:rv_oru|adv
-попереду попереду prep:rv_rod|adv
-попід попід prep:rv_zna:rv_oru
-попліч попліч prep:rv_rod:rv_oru
-попри попри prep:rv_zna
-поруч поруч prep:rv_rod
-поряд поряд prep:rv_rod
-посеред посеред prep:rv_rod|adv
-посередині посередині prep:rv_rod
-при при prep:rv_mis
-про про prep:rv_zna
-протягом протягом prep:rv_rod|adv
-просто просто prep:rv_rod|part
-проти проти prep:rv_rod
-раніше раніше prep:rv_rod
-серед серед prep:rv_rod
-спереду спереду prep:rv_rod
-супроти супроти prep:rv_rod
-супротив супротив prep:rv_rod|adv
-через через prep:rv_zna
-шляхом шляхом prep:rv_rod
-щодо щодо prep:rv_rod
+об об prep        # rv_zna:rv_mis
+обабіч обабіч prep        # rv_rod
+обіч обіч prep        # rv_rod
+обік обік prep|adv        # rv_rod
+од од prep        # rv_rod
+окрай окрай prep        # rv_rod
+окрім окрім prep        # rv_rod
+округ округ prep        # rv_rod
+округи округи prep        # rv_rod
+опісля опісля prep        # rv_rod
+опріч опріч prep|adv        # rv_rod
+перед перед prep        # rv_oru:rv_zna
+переді переді prep        # rv_oru:rv_zna
+під під prep        # rv_zna:rv_oru
+піді піді prep        # rv_oru
+після після prep|adv        # rv_rod
+по по prep        # rv_mis:rv_zna
+побік побік prep        # rv_rod
+побіч побіч prep        # rv_rod
+поблизу поблизу prep        # rv_rod
+поверх поверх prep        # rv_rod
+повз повз prep        # rv_zna
+повздовж повздовж prep        # rv_rod
+подовж подовж prep|adv        # rv_rod
+поза поза prep        # rv_zna:rv_oru
+позад позад prep|adv        # rv_rod
+позаду позаду prep|adv        # rv_rod
+поздовж поздовж prep        # rv_rod
+покрай покрай prep        # rv_rod
+понад понад prep        # rv_oru:rv_zna
+понадо понадо prep        # rv_oru:rv_zna
+поперек поперек prep        # rv_rod
+поперед поперед prep|adv        # rv_rod:rv_zna:rv_oru
+попереду попереду prep|adv        # rv_rod
+попід попід prep        # rv_zna:rv_oru
+попліч попліч prep        # rv_rod:rv_oru
+попри попри prep        # rv_zna
+поруч поруч prep        # rv_rod
+поряд поряд prep        # rv_rod
+посеред посеред prep|adv        # rv_rod
+посередині посередині prep        # rv_rod
+при при prep        # rv_mis
+про про prep        # rv_zna
+протягом протягом prep|adv        # rv_rod
+просто просто prep|part        # rv_rod
+проти проти prep        # rv_rod
+раніше раніше prep        # rv_rod
+серед серед prep        # rv_rod
+спереду спереду prep        # rv_rod
+супроти супроти prep        # rv_rod
+супротив супротив prep|adv        # rv_rod
+через через prep        # rv_zna
+шляхом шляхом prep        # rv_rod
+щодо щодо prep        # rv_rod
 
 незважаючи незважаючи prep
 
@@ -1079,18 +1085,18 @@
 як-таки part
 
 # рідковживані
-ув ув prep:rv_zna:rv_mis:rv_rod
-з-між з-між prep:rv_rod
-ві ві prep:rv_zna:rv_mis
-звиш звиш prep:rv_rod:rv_zna:rare
-поконець поконець prep:rv_rod:rare
-межи межи prep:rv_oru:rv_rod:rv_zna:rare
-помежи помежи prep:rv_oru:rv_rod:rv_zna:rare
-пред пред prep:rv_oru:rv_zna:rare
-передо передо prep:rv_oru:rv_zna:rare
-предо предо prep:rv_oru:rv_zna:rare
-підо підо prep:rv_oru:rv_zna
-во во prep:rv_zna:rv_mis:rare
+ув ув prep                  # rv_zna:rv_mis:rv_rod
+з-між з-між prep        # rv_rod
+ві ві prep                  # rv_zna:rv_mis
+звиш звиш prep:rare        # rv_rod:rv_zna
+поконець поконець prep:rare        # rv_rod
+межи межи prep:rare        # rv_oru:rv_rod:rv_zna
+помежи помежи prep:rare        # rv_oru:rv_rod:rv_zna
+пред пред prep:rare        # rv_oru:rv_zna
+передо передо prep:rare        # rv_oru:rv_zna
+предо предо prep:rare        # rv_oru:rv_zna
+підо підо prep        # rv_oru:rv_zna
+во во prep:rare        # rv_zna:rv_mis
 
 обойко numr:p:nv:coll
 обоєчко numr:p:nv:coll

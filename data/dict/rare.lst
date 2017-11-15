@@ -42,8 +42,8 @@
 вісний /adj
 вісьта intj
 в'їжно в'їжно adv:&predic
-вколо вколо prep:rv_rod|adv
-вконтентований /adj :&adjp:pasv:perf:v-u    # :past
+вколо вколо prep|adv        # rv_rod
+вконтентований /adj :&adjp:pasv:perf:v-u    # past
 вконтентовувати /v1.cf.advp :imperf
 вконтентовуватися /vr1.cf.advp :imperf
 вконтентувати /v1.is0 :perf
@@ -51,7 +51,7 @@
 вліжно adv:&predic
 воркотливий /adj
 втіки /np2
-вхорканий /adj :&adjp:pasv:perf:v-u    # :past
+вхорканий /adj :&adjp:pasv:perf:v-u    # past
 гардувати /v1.cf.advp :imperf
 гейби conj:subord
 глупий /adj :xp1            # xv1
@@ -78,7 +78,7 @@
 зазнимкувати /v1.is0 :perf
 заки conj:subord
 заким conj:subord
-замісто prep:rv_rod
+замісто prep        # rv_rod
 запевне adv:&insert
 зарівно adv:&predic
 засов /n20
@@ -91,7 +91,7 @@
 затемперувати /v1.is0 :perf
 зашанувати /v1 :perf
 зверх зверх adv
-зверх зверх prep:rv_rod
+зверх зверх prep        # rv_rod
 звідома adv
 згиблий /adj
 згрубша adv
@@ -136,14 +136,14 @@
 масакра /n10.p1
 метанина /n10
 мізок /n22.p
-мість prep:rv_rod
+мість prep        # rv_rod
 мо adv:&insert
 можний /adj
 морехід /n21.a.p.<
 моторити /v1 :imperf
 моцний /adj \
  +cs=моцніший
-навперед prep:rv_rod
+навперед prep        # rv_rod
 навручки навручки adv
 нагородженість /n30
 надійсь adv:&insert
@@ -151,7 +151,7 @@
 надцять /numr
 наклонити /v1 :perf
 намість намість adv
-намість намість prep:rv_rod
+намість намість prep        # rv_rod
 напружливий /adj
 нарід /n21
 невміч adv:&predic
@@ -201,20 +201,20 @@
 одзняти /v1.isTo :perf
 одзнятий /adj :&adjp:pasv:perf
 одіж /n32
-одітий /adj :&adjp:pasv:perf    # :past
+одітий /adj :&adjp:pasv:perf    # past
 одкрити /v2.isTo :perf
 одкритися /vr2 :perf
 одміна /n10
 однакий /adj
 однако adv:&predic
-озутий /adj :&adjp:pasv:perf    # :past
-окроме prep:rv_rod
+озутий /adj :&adjp:pasv:perf    # past
+окроме prep        # rv_rod
 омочений /adj :&adjp:pasv:perf              #> обмочений
 онакий /adj :&pron:def
-опірений /adj :&adjp:pasv:perf    # :past
-опостін adv|prep:rv_rod
-опріче adv|prep:rv_rod
-опроче adv|prep:rv_rod
+опірений /adj :&adjp:pasv:perf    # past
+опостін adv|prep        # rv_rod
+опріче adv|prep        # rv_rod
+опроче adv|prep        # rv_rod
 орегано noun:n:nv
 оселець /n22.a.p.<
 осьмий /adj
@@ -272,21 +272,21 @@
 печально adv
 писачок /n22.a.p
 питайко /n20.<
-півперек prep:rv_rod
+півперек prep        # rv_rod
 півтретя /n2adj1
 підогрів /n20
 підогрівальний /adj
 підогрівний /adj
-підогрітий /adj :&adjp:pasv:perf    # :past
+підогрітий /adj :&adjp:pasv:perf    # past
 підсичувати /v1.cf.advp :imperf
-подовш adv|prep:rv_rod
+подовш adv|prep        # rv_rod
 покійно adv
 полегша /n10.p1
 помісь conj:subord
 помісь part
 помісь /n32.p
-попроз попроз prep:rv_zna
-посереду prep:rv_rod
+попроз попроз prep        # rv_zna
+посереду prep        # rv_rod
 посланіє /n2n.p1
 поставець /n22.a.p
 постанець /n22.a.p.<>
@@ -298,18 +298,18 @@
 постсовєтський /adj :coll
 поступцем adv
 потверджувальний /adj
-поуз поуз prep:rv_rod:rv_zna
-почерез prep:rv_zna
+поуз поуз prep        # rv_rod:rv_zna
+почерез prep        # rv_zna
 пощо adv:&pron:int:rel
 празничанин /n20.a.p.<
 приводець /n22.a.p.<
 придверний /adj
 притім conj:subord:bad
 прищіпляти /v2.cf.advp :imperf
-пріч prep:rv_rod|adv:&predic
+пріч prep|adv:&predic        # rv_rod
 простибі adv:&insert
 простибіг adv:&insert
-против prep:rv_rod
+против prep        # rv_rod
 прочитний /adj
 райця /n10.piv.<m
 реферантеса /n10.p1.<
@@ -339,8 +339,8 @@
 скілько numr:p:v_naz/v_zna
 сопух /n20.a
 спечно спечно adv
-споміж prep:rv_rod
-спосеред prep:rv_rod
+споміж prep        # rv_rod
+спосеред prep        # rv_rod
 стосувати /v1.cf.advp :imperf
 суперека /n10.p1
 сутяжно adv
@@ -365,7 +365,7 @@
 уїжно adv:&predic
 уїхати /v4 :perf
 уйматися /vr2 :imperf
-уконтентований /adj :&adjp:pasv:perf:v-u    # :past
+уконтентований /adj :&adjp:pasv:perf:v-u    # past
 уконтентовувати /v1 :imperf
 уконтентовуватися /vr1 :imperf
 уконтентувати /v1 :perf
@@ -377,12 +377,12 @@
 упомки noninfl:&predic
 упомку noninfl:&predic
 упруг /n20.a.p
-урадуваний /adj :&adjp:pasv:perf    # :past
-уряджений /adj :&adjp:pasv:perf    # :past
-успокоєний /adj :&adjp:pasv:perf    # :past
+урадуваний /adj :&adjp:pasv:perf    # past
+уряджений /adj :&adjp:pasv:perf    # past
+успокоєний /adj :&adjp:pasv:perf    # past
 устид adv:&predic
 устидно adv:&predic
-ухорканий /adj :&adjp:pasv:perf:v-u    # :past
+ухорканий /adj :&adjp:pasv:perf:v-u    # past
 учительний /adj
 фашистівський /adj
 фершалка /n10.p2.ko.<
