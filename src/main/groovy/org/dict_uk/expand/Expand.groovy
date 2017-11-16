@@ -945,6 +945,7 @@ class Expand {
 	}
 	
 	private static final List<String> tagsOrdered = [
+	            ":&numr",
 	            ":&insert",
 	            ":&predic",
 				":v-u",
@@ -969,6 +970,10 @@ class Expand {
 
 		if( line.startsWith(" +cs")) {
 			String word
+
+            if( extra_tags.contains("&numr") ) {
+                extra_tags = extra_tags.replace(':&numr', '')
+            }
 
 			if( line.contains(" +cs=") ) {
 				Matcher matcher = (line =~ / \+cs=([^ ]+)/)
