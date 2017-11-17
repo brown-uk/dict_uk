@@ -14,7 +14,8 @@ anim
 bad
 coll
 compb
-compr
+compc
+comps
 conj
 coord
 def
@@ -67,17 +68,11 @@ rare
 refl
 rel
 rev
-rv_dav
-rv_mis
-rv_oru
-rv_rod
-rv_zna
 s
 short
 slang
 subord
 subst
-super
 unanim
 uncontr
 v_dav

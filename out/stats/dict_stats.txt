@@ -4,11 +4,9 @@
 Частоти за тегами:
 adj 81638
      compb 1967
-     compr 1903
      imperf 6934
      nv 48
      perf 10493
-     super 7926
 adv 13556
      compb 1423
      imperf 2

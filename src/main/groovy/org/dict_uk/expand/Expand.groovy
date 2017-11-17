@@ -897,8 +897,8 @@ class Expand {
 
 			if( line.tagStr.startsWith("adv") 
 					&& ! line.tagStr.contains("advp") 
-					&& ! line.tagStr.contains(":compr") 
-					&& ! line.tagStr.contains(":super") ) {
+					&& ! line.tagStr.contains(":compc") 
+					&& ! line.tagStr.contains(":comps") ) {
 				line = promote(line)
 			}
 
@@ -991,18 +991,18 @@ class Expand {
             def forms = []
 
             if( word.startsWith('най') ) {
-			    forms += expand(word, "/adj :super" + idx + extra_tags)
+			    forms += expand(word, "/adj :comps" + idx + extra_tags)
             }
             else {
-			    forms += expand(word, "/adj :compr" + idx + extra_tags)
+			    forms += expand(word, "/adj :compc" + idx + extra_tags)
 
 			    word = "най" + word
-			    forms += expand(word, "/adj :super" + idx + extra_tags)
+			    forms += expand(word, "/adj :comps" + idx + extra_tags)
 		    }
 
-            forms += expand("що" + word, "/adj :super" + idx + extra_tags)
-			forms += expand("як" + word, "/adj :super" + idx + extra_tags)
-			forms += expand("щояк" + word, "/adj :super" + idx + extra_tags)
+            forms += expand("що" + word, "/adj :comps" + idx + extra_tags)
+			forms += expand("як" + word, "/adj :comps" + idx + extra_tags)
+			forms += expand("щояк" + word, "/adj :comps" + idx + extra_tags)
 
 			if( "comp" in Args.args.lemmaForTags ) {
 				forms = forms.collect { replace_base(it, main_word) }
@@ -1041,15 +1041,15 @@ class Expand {
             List<DicEntry> forms = []
 
             if( word.startsWith('най') ) {
-    			forms += compose_compar(word, main_word, "adv:super" + extra_tags.replaceAll(':&insert', ''))
+    			forms += compose_compar(word, main_word, "adv:comps" + extra_tags.replaceAll(':&insert', ''))
             }
             else {
-			    forms += compose_compar(word, main_word, "adv:compr" + extra_tags.replaceAll(':&insert', ''))
+			    forms += compose_compar(word, main_word, "adv:compc" + extra_tags.replaceAll(':&insert', ''))
 			    word = 'най' + word
-    			forms += compose_compar(word, main_word, "adv:super" + extra_tags.replaceAll(':&insert', ''))
+    			forms += compose_compar(word, main_word, "adv:comps" + extra_tags.replaceAll(':&insert', ''))
 			}
-			forms += compose_compar("що" + word, main_word, "adv:super" + extra_tags.replaceAll(':&(insert|predic)', ''))
-			forms += compose_compar("як" + word, main_word, "adv:super" + extra_tags.replaceAll(':&(insert|predic)', ''))
+			forms += compose_compar("що" + word, main_word, "adv:comps" + extra_tags.replaceAll(':&(insert|predic)', ''))
+			forms += compose_compar("як" + word, main_word, "adv:comps" + extra_tags.replaceAll(':&(insert|predic)', ''))
 
 			return forms
 		}
@@ -1078,17 +1078,17 @@ class Expand {
 		List<DicEntry> forms = []
 
         if( word.startsWith('най') ) {
-		    forms += compose_compar(word, last_adv, "adv:super" + extra_tags)
+		    forms += compose_compar(word, last_adv, "adv:comps" + extra_tags)
         }
         else {
-		    forms +=  compose_compar(word, last_adv, "adv:compr" + extra_tags)
+		    forms +=  compose_compar(word, last_adv, "adv:compc" + extra_tags)
 		    word = 'най' + word
-		    forms += compose_compar(word, last_adv, "adv:super" + extra_tags)
+		    forms += compose_compar(word, last_adv, "adv:comps" + extra_tags)
 		}
 
 
-		forms += compose_compar("що" + word, last_adv, "adv:super" + extra_tags)
-		forms += compose_compar("як" + word, last_adv, "adv:super" + extra_tags)
+		forms += compose_compar("що" + word, last_adv, "adv:comps" + extra_tags)
+		forms += compose_compar("як" + word, last_adv, "adv:comps" + extra_tags)
 
 		return forms
 	}
