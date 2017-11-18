@@ -3,7 +3,7 @@
 синій /adj
 лікарів /adj_ev
 вбитий /adj :&adjp:pasv:perf
-варений /adj :&_adjp:pasv:imperf    # :past
+варений /adj :&&adjp:pasv:imperf    # :past
 
 # Порівняльні форми
 
@@ -14,9 +14,9 @@
  +cs=гладкіший
 вбогий /adj.adv :v-u \
  +cs=вбогіший :v-u
-вживаний /adj.adv :&_adjp:pasv:imperf:v-u \
+вживаний /adj.adv :&&adjp:pasv:imperf:v-u \
  +cs=вживаніший :v-u
-уживаний /adj :&_adjp:pasv:imperf:v-u \
+уживаний /adj :&&adjp:pasv:imperf:v-u \
  +cs=уживаніший :v-u
 вагомий /adj \
  +cs=вагоміший

@@ -6,7 +6,7 @@ actv
 adj
 adjp
 &adjp
-&_adjp
+&&adjp
 adv
 advp
 alt
@@ -46,7 +46,7 @@ np
 ns
 numr
 &numr
-&_numr
+&&numr
 nv
 onomat
 p

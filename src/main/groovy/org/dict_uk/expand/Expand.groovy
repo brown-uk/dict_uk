@@ -337,7 +337,7 @@ class Expand {
 	}
 	
 	Pattern perf_imperf_pattern = ~ ":(im)?perf"
-	Pattern and_adjp_pattern = ~ /:&_?adjp(:pasv|:actv|:perf|:imperf)+/
+	Pattern and_adjp_pattern = ~ /:&&?adjp(:pasv|:actv|:perf|:imperf)+/
 
 	@TypeChecked
 	List<DicEntry> post_expand(List<DicEntry> lines, String flags) {
@@ -924,7 +924,7 @@ class Expand {
 			}
 			else
 			if( line.tagStr.startsWith("adj") || line.tagStr.startsWith("numr") ) {
-				if( line.tagStr.contains(":&_adjp") && line.tagStr.contains(":comp") ) {
+				if( line.tagStr.contains(":&&adjp") && line.tagStr.contains(":comp") ) {
 					line.tagStr = reorder_comp_with_adjp.matcher(line.tagStr).replaceFirst('$1$3$2$4')
 				}
 
@@ -971,7 +971,7 @@ class Expand {
 		if( line.startsWith(" +cs")) {
 			String word
 
-            if( extra_tags.contains("&numr") ) {
+            if( extra_tags.contains(":&numr") ) {
                 extra_tags = extra_tags.replace(':&numr', '')
             }
 
@@ -984,7 +984,7 @@ class Expand {
 				word = main_word[0..<-2] + "іший"
             }
             
-			if( extra_tags.contains("&_adjp") ) {
+			if( extra_tags.contains("&&adjp") ) {
 				extra_tags = and_adjp_pattern.matcher(extra_tags).replaceFirst('')
 			}
 

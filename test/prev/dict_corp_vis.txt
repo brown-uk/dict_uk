@@ -694,38 +694,38 @@
   вайлах noun:anim:p:v_mis
   вайла noun:anim:p:v_kly
   вайли noun:anim:p:v_kly
-варений adj:m:v_naz:&_adjp:pasv:imperf
-  вареного adj:m:v_rod:&_adjp:pasv:imperf
-  вареному adj:m:v_dav:&_adjp:pasv:imperf
-  вареного adj:m:v_zna:ranim:&_adjp:pasv:imperf
-  варений adj:m:v_zna:rinanim:&_adjp:pasv:imperf
-  вареним adj:m:v_oru:&_adjp:pasv:imperf
-  варенім adj:m:v_mis:&_adjp:pasv:imperf
-  вареному adj:m:v_mis:&_adjp:pasv:imperf
-  варений adj:m:v_kly:&_adjp:pasv:imperf
-  варена adj:f:v_naz:&_adjp:pasv:imperf
-  вареної adj:f:v_rod:&_adjp:pasv:imperf
-  вареній adj:f:v_dav:&_adjp:pasv:imperf
-  варену adj:f:v_zna:&_adjp:pasv:imperf
-  вареною adj:f:v_oru:&_adjp:pasv:imperf
-  вареній adj:f:v_mis:&_adjp:pasv:imperf
-  варена adj:f:v_kly:&_adjp:pasv:imperf
-  варене adj:n:v_naz:&_adjp:pasv:imperf
-  вареного adj:n:v_rod:&_adjp:pasv:imperf
-  вареному adj:n:v_dav:&_adjp:pasv:imperf
-  варене adj:n:v_zna:&_adjp:pasv:imperf
-  вареним adj:n:v_oru:&_adjp:pasv:imperf
-  варенім adj:n:v_mis:&_adjp:pasv:imperf
-  вареному adj:n:v_mis:&_adjp:pasv:imperf
-  варене adj:n:v_kly:&_adjp:pasv:imperf
-  варені adj:p:v_naz:&_adjp:pasv:imperf
-  варених adj:p:v_rod:&_adjp:pasv:imperf
-  вареним adj:p:v_dav:&_adjp:pasv:imperf
-  варених adj:p:v_zna:ranim:&_adjp:pasv:imperf
-  варені adj:p:v_zna:rinanim:&_adjp:pasv:imperf
-  вареними adj:p:v_oru:&_adjp:pasv:imperf
-  варених adj:p:v_mis:&_adjp:pasv:imperf
-  варені adj:p:v_kly:&_adjp:pasv:imperf
+варений adj:m:v_naz:&&adjp:pasv:imperf
+  вареного adj:m:v_rod:&&adjp:pasv:imperf
+  вареному adj:m:v_dav:&&adjp:pasv:imperf
+  вареного adj:m:v_zna:ranim:&&adjp:pasv:imperf
+  варений adj:m:v_zna:rinanim:&&adjp:pasv:imperf
+  вареним adj:m:v_oru:&&adjp:pasv:imperf
+  варенім adj:m:v_mis:&&adjp:pasv:imperf
+  вареному adj:m:v_mis:&&adjp:pasv:imperf
+  варений adj:m:v_kly:&&adjp:pasv:imperf
+  варена adj:f:v_naz:&&adjp:pasv:imperf
+  вареної adj:f:v_rod:&&adjp:pasv:imperf
+  вареній adj:f:v_dav:&&adjp:pasv:imperf
+  варену adj:f:v_zna:&&adjp:pasv:imperf
+  вареною adj:f:v_oru:&&adjp:pasv:imperf
+  вареній adj:f:v_mis:&&adjp:pasv:imperf
+  варена adj:f:v_kly:&&adjp:pasv:imperf
+  варене adj:n:v_naz:&&adjp:pasv:imperf
+  вареного adj:n:v_rod:&&adjp:pasv:imperf
+  вареному adj:n:v_dav:&&adjp:pasv:imperf
+  варене adj:n:v_zna:&&adjp:pasv:imperf
+  вареним adj:n:v_oru:&&adjp:pasv:imperf
+  варенім adj:n:v_mis:&&adjp:pasv:imperf
+  вареному adj:n:v_mis:&&adjp:pasv:imperf
+  варене adj:n:v_kly:&&adjp:pasv:imperf
+  варені adj:p:v_naz:&&adjp:pasv:imperf
+  варених adj:p:v_rod:&&adjp:pasv:imperf
+  вареним adj:p:v_dav:&&adjp:pasv:imperf
+  варених adj:p:v_zna:ranim:&&adjp:pasv:imperf
+  варені adj:p:v_zna:rinanim:&&adjp:pasv:imperf
+  вареними adj:p:v_oru:&&adjp:pasv:imperf
+  варених adj:p:v_mis:&&adjp:pasv:imperf
+  варені adj:p:v_kly:&&adjp:pasv:imperf
 Василівка-На-Дніпрі noun:inanim:f:v_naz:prop
   Василівки-На-Дніпрі noun:inanim:f:v_rod:prop
   Василівці-На-Дніпрі noun:inanim:f:v_dav:prop
@@ -1256,38 +1256,38 @@
   вжалило verb:perf:past:n
   вжалили verb:perf:past:p
 вже adv
-вживаний adj:m:v_naz:compb:&_adjp:pasv:imperf
-  вживаного adj:m:v_rod:compb:&_adjp:pasv:imperf
-  вживаному adj:m:v_dav:compb:&_adjp:pasv:imperf
-  вживаного adj:m:v_zna:ranim:compb:&_adjp:pasv:imperf
-  вживаний adj:m:v_zna:rinanim:compb:&_adjp:pasv:imperf
-  вживаним adj:m:v_oru:compb:&_adjp:pasv:imperf
-  вживанім adj:m:v_mis:compb:&_adjp:pasv:imperf
-  вживаному adj:m:v_mis:compb:&_adjp:pasv:imperf
-  вживаний adj:m:v_kly:compb:&_adjp:pasv:imperf
-  вживана adj:f:v_naz:compb:&_adjp:pasv:imperf
-  вживаної adj:f:v_rod:compb:&_adjp:pasv:imperf
-  вживаній adj:f:v_dav:compb:&_adjp:pasv:imperf
-  вживану adj:f:v_zna:compb:&_adjp:pasv:imperf
-  вживаною adj:f:v_oru:compb:&_adjp:pasv:imperf
-  вживаній adj:f:v_mis:compb:&_adjp:pasv:imperf
-  вживана adj:f:v_kly:compb:&_adjp:pasv:imperf
-  вживане adj:n:v_naz:compb:&_adjp:pasv:imperf
-  вживаного adj:n:v_rod:compb:&_adjp:pasv:imperf
-  вживаному adj:n:v_dav:compb:&_adjp:pasv:imperf
-  вживане adj:n:v_zna:compb:&_adjp:pasv:imperf
-  вживаним adj:n:v_oru:compb:&_adjp:pasv:imperf
-  вживанім adj:n:v_mis:compb:&_adjp:pasv:imperf
-  вживаному adj:n:v_mis:compb:&_adjp:pasv:imperf
-  вживане adj:n:v_kly:compb:&_adjp:pasv:imperf
-  вживані adj:p:v_naz:compb:&_adjp:pasv:imperf
-  вживаних adj:p:v_rod:compb:&_adjp:pasv:imperf
-  вживаним adj:p:v_dav:compb:&_adjp:pasv:imperf
-  вживаних adj:p:v_zna:ranim:compb:&_adjp:pasv:imperf
-  вживані adj:p:v_zna:rinanim:compb:&_adjp:pasv:imperf
-  вживаними adj:p:v_oru:compb:&_adjp:pasv:imperf
-  вживаних adj:p:v_mis:compb:&_adjp:pasv:imperf
-  вживані adj:p:v_kly:compb:&_adjp:pasv:imperf
+вживаний adj:m:v_naz:compb:&&adjp:pasv:imperf
+  вживаного adj:m:v_rod:compb:&&adjp:pasv:imperf
+  вживаному adj:m:v_dav:compb:&&adjp:pasv:imperf
+  вживаного adj:m:v_zna:ranim:compb:&&adjp:pasv:imperf
+  вживаний adj:m:v_zna:rinanim:compb:&&adjp:pasv:imperf
+  вживаним adj:m:v_oru:compb:&&adjp:pasv:imperf
+  вживанім adj:m:v_mis:compb:&&adjp:pasv:imperf
+  вживаному adj:m:v_mis:compb:&&adjp:pasv:imperf
+  вживаний adj:m:v_kly:compb:&&adjp:pasv:imperf
+  вживана adj:f:v_naz:compb:&&adjp:pasv:imperf
+  вживаної adj:f:v_rod:compb:&&adjp:pasv:imperf
+  вживаній adj:f:v_dav:compb:&&adjp:pasv:imperf
+  вживану adj:f:v_zna:compb:&&adjp:pasv:imperf
+  вживаною adj:f:v_oru:compb:&&adjp:pasv:imperf
+  вживаній adj:f:v_mis:compb:&&adjp:pasv:imperf
+  вживана adj:f:v_kly:compb:&&adjp:pasv:imperf
+  вживане adj:n:v_naz:compb:&&adjp:pasv:imperf
+  вживаного adj:n:v_rod:compb:&&adjp:pasv:imperf
+  вживаному adj:n:v_dav:compb:&&adjp:pasv:imperf
+  вживане adj:n:v_zna:compb:&&adjp:pasv:imperf
+  вживаним adj:n:v_oru:compb:&&adjp:pasv:imperf
+  вживанім adj:n:v_mis:compb:&&adjp:pasv:imperf
+  вживаному adj:n:v_mis:compb:&&adjp:pasv:imperf
+  вживане adj:n:v_kly:compb:&&adjp:pasv:imperf
+  вживані adj:p:v_naz:compb:&&adjp:pasv:imperf
+  вживаних adj:p:v_rod:compb:&&adjp:pasv:imperf
+  вживаним adj:p:v_dav:compb:&&adjp:pasv:imperf
+  вживаних adj:p:v_zna:ranim:compb:&&adjp:pasv:imperf
+  вживані adj:p:v_zna:rinanim:compb:&&adjp:pasv:imperf
+  вживаними adj:p:v_oru:compb:&&adjp:pasv:imperf
+  вживаних adj:p:v_mis:compb:&&adjp:pasv:imperf
+  вживані adj:p:v_kly:compb:&&adjp:pasv:imperf
 вживаніше adv:compc
 вживаніший adj:m:v_naz:compc
   вживанішого adj:m:v_rod:compc
@@ -3450,38 +3450,38 @@
 удатніше adv:compc
 удатно adv:compb
 уже adv
-уживаний adj:m:v_naz:compb:&_adjp:pasv:imperf
-  уживаного adj:m:v_rod:compb:&_adjp:pasv:imperf
-  уживаному adj:m:v_dav:compb:&_adjp:pasv:imperf
-  уживаного adj:m:v_zna:ranim:compb:&_adjp:pasv:imperf
-  уживаний adj:m:v_zna:rinanim:compb:&_adjp:pasv:imperf
-  уживаним adj:m:v_oru:compb:&_adjp:pasv:imperf
-  уживанім adj:m:v_mis:compb:&_adjp:pasv:imperf
-  уживаному adj:m:v_mis:compb:&_adjp:pasv:imperf
-  уживаний adj:m:v_kly:compb:&_adjp:pasv:imperf
-  уживана adj:f:v_naz:compb:&_adjp:pasv:imperf
-  уживаної adj:f:v_rod:compb:&_adjp:pasv:imperf
-  уживаній adj:f:v_dav:compb:&_adjp:pasv:imperf
-  уживану adj:f:v_zna:compb:&_adjp:pasv:imperf
-  уживаною adj:f:v_oru:compb:&_adjp:pasv:imperf
-  уживаній adj:f:v_mis:compb:&_adjp:pasv:imperf
-  уживана adj:f:v_kly:compb:&_adjp:pasv:imperf
-  уживане adj:n:v_naz:compb:&_adjp:pasv:imperf
-  уживаного adj:n:v_rod:compb:&_adjp:pasv:imperf
-  уживаному adj:n:v_dav:compb:&_adjp:pasv:imperf
-  уживане adj:n:v_zna:compb:&_adjp:pasv:imperf
-  уживаним adj:n:v_oru:compb:&_adjp:pasv:imperf
-  уживанім adj:n:v_mis:compb:&_adjp:pasv:imperf
-  уживаному adj:n:v_mis:compb:&_adjp:pasv:imperf
-  уживане adj:n:v_kly:compb:&_adjp:pasv:imperf
-  уживані adj:p:v_naz:compb:&_adjp:pasv:imperf
-  уживаних adj:p:v_rod:compb:&_adjp:pasv:imperf
-  уживаним adj:p:v_dav:compb:&_adjp:pasv:imperf
-  уживаних adj:p:v_zna:ranim:compb:&_adjp:pasv:imperf
-  уживані adj:p:v_zna:rinanim:compb:&_adjp:pasv:imperf
-  уживаними adj:p:v_oru:compb:&_adjp:pasv:imperf
-  уживаних adj:p:v_mis:compb:&_adjp:pasv:imperf
-  уживані adj:p:v_kly:compb:&_adjp:pasv:imperf
+уживаний adj:m:v_naz:compb:&&adjp:pasv:imperf
+  уживаного adj:m:v_rod:compb:&&adjp:pasv:imperf
+  уживаному adj:m:v_dav:compb:&&adjp:pasv:imperf
+  уживаного adj:m:v_zna:ranim:compb:&&adjp:pasv:imperf
+  уживаний adj:m:v_zna:rinanim:compb:&&adjp:pasv:imperf
+  уживаним adj:m:v_oru:compb:&&adjp:pasv:imperf
+  уживанім adj:m:v_mis:compb:&&adjp:pasv:imperf
+  уживаному adj:m:v_mis:compb:&&adjp:pasv:imperf
+  уживаний adj:m:v_kly:compb:&&adjp:pasv:imperf
+  уживана adj:f:v_naz:compb:&&adjp:pasv:imperf
+  уживаної adj:f:v_rod:compb:&&adjp:pasv:imperf
+  уживаній adj:f:v_dav:compb:&&adjp:pasv:imperf
+  уживану adj:f:v_zna:compb:&&adjp:pasv:imperf
+  уживаною adj:f:v_oru:compb:&&adjp:pasv:imperf
+  уживаній adj:f:v_mis:compb:&&adjp:pasv:imperf
+  уживана adj:f:v_kly:compb:&&adjp:pasv:imperf
+  уживане adj:n:v_naz:compb:&&adjp:pasv:imperf
+  уживаного adj:n:v_rod:compb:&&adjp:pasv:imperf
+  уживаному adj:n:v_dav:compb:&&adjp:pasv:imperf
+  уживане adj:n:v_zna:compb:&&adjp:pasv:imperf
+  уживаним adj:n:v_oru:compb:&&adjp:pasv:imperf
+  уживанім adj:n:v_mis:compb:&&adjp:pasv:imperf
+  уживаному adj:n:v_mis:compb:&&adjp:pasv:imperf
+  уживане adj:n:v_kly:compb:&&adjp:pasv:imperf
+  уживані adj:p:v_naz:compb:&&adjp:pasv:imperf
+  уживаних adj:p:v_rod:compb:&&adjp:pasv:imperf
+  уживаним adj:p:v_dav:compb:&&adjp:pasv:imperf
+  уживаних adj:p:v_zna:ranim:compb:&&adjp:pasv:imperf
+  уживані adj:p:v_zna:rinanim:compb:&&adjp:pasv:imperf
+  уживаними adj:p:v_oru:compb:&&adjp:pasv:imperf
+  уживаних adj:p:v_mis:compb:&&adjp:pasv:imperf
+  уживані adj:p:v_kly:compb:&&adjp:pasv:imperf
 уживаніший adj:m:v_naz:compc
   уживанішого adj:m:v_rod:compc
   уживанішому adj:m:v_dav:compc
