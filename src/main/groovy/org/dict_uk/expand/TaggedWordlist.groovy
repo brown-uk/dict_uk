@@ -1,5 +1,6 @@
 package org.dict_uk.expand
 
+import groovy.transform.CompileStatic
 
 class TaggedWordlist {
 

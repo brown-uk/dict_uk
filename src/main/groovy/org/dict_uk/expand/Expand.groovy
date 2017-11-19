@@ -254,7 +254,7 @@ class Expand {
 		return mods
 	}
 
-	@TypeChecked
+	@CompileStatic
 	boolean filter_word(DicEntry entry, Map modifiers, String flags) {
 		String w = entry.tagStr
 		if( "gen" in modifiers) {
@@ -430,7 +430,7 @@ class Expand {
 	}
 
 	@CompileStatic
-	List<DicEntry> adjust_affix_tags(List<DicEntry> lines, String main_flag, String flags, Map<String,String> modifiers) {
+	private List<DicEntry> adjust_affix_tags(List<DicEntry> lines, String main_flag, String flags, Map<String,String> modifiers) {
 		def lines2 = []
 
 		for(DicEntry line in lines) {
@@ -638,7 +638,7 @@ class Expand {
 
 
 	@CompileStatic
-    void applyAdditionalTags(List<DicEntry> words) {
+    private void applyAdditionalTags(List<DicEntry> words) {
         for(int i=0; i<words.size(); i++) {
             for(Map.Entry<String,String> entry: additionalTags.entrySet()) {
                 String wordStr = words[i].word + " " + words[i].tagStr
@@ -669,7 +669,7 @@ class Expand {
 //	private static final Pattern tag_split0_re = Pattern.compile(/[^ ]+$/)
 
 	@CompileStatic
-	List<String> preprocess(String line) {
+	private List<String> preprocess(String line) {
 		List<String> lines
 
 		if( line.count(" /") > 1 ) {
@@ -711,7 +711,7 @@ class Expand {
 	private static final Pattern plus_m_pattern = ~ "/<\\+?m?( (:[^ ]+))?"
 	
 	@CompileStatic
-	List<String> preprocess2(String line) {
+	private List<String> preprocess2(String line) {
 		List<String> out_lines = []
 
 		String[] lineParts = line.split()
@@ -813,7 +813,7 @@ class Expand {
 	private static final Pattern PATTR_BASE_LEMMAN_PATTERN = ~ ":[mf]:v_naz:.*patr"
 	
 	@CompileStatic
-	List<DicEntry> post_process_sorted(List<DicEntry> lines) {
+	private List<DicEntry> post_process_sorted(List<DicEntry> lines) {
 		def out_lines = []
 
 		def prev_line = ""
@@ -869,8 +869,9 @@ class Expand {
 		return false
 	}
 
+	@CompileStatic
 	private DicEntry removeTags(DicEntry line) {
-		for( removeTag in Args.args.removeTags ) {
+		for(String removeTag in Args.args.removeTags ) {
 			if( line.tagStr.contains(":" + removeTag) ) {
 				line.tagStr = line.tagStr.replace(":" + removeTag, "")
 			}
@@ -880,7 +881,7 @@ class Expand {
 
 	@CompileStatic
 	private DicEntry promoteLemmaForTags(DicEntry line) {
-		for( lemmaTag in Args.args.lemmaForTags ) {
+		for(String lemmaTag in Args.args.lemmaForTags ) {
 			if( lemmaTag == "advp" && line.tagStr.contains(lemmaTag) ) {
 				line = promote(line)
 			}
@@ -893,7 +894,7 @@ class Expand {
 	private static final Pattern reorder_comp_with_adjp = ~/^(adj:.:v_...(?::ranim|:rinanim)?)(.*)(:compb)(.*)/
 	private static final Pattern any_anim = ~/:([iu]n)?anim/
 
-//	@CompileStatic
+	@CompileStatic
 	private List<DicEntry> post_process(List<DicEntry> lines) {
 		List<DicEntry> out_lines = []
 
@@ -915,8 +916,8 @@ class Expand {
 
 			if( line.tagStr.startsWith("noun") ) {
 			    Matcher anim_matcher = any_anim.matcher(line.tagStr)
-				if( anim_matcher ) {
-					line.tagStr = anim_matcher.replaceFirst("").replace("noun", "noun" + anim_matcher[0][0])
+				if( anim_matcher.find() ) {
+					line.tagStr = anim_matcher.replaceFirst("").replace("noun", "noun" + anim_matcher.group(0))
 				}
                 else if( ! line.tagStr.contains("&pron") ) {
                     line.tagStr = line.tagStr.replace("noun:", "noun:inanim:")
@@ -963,16 +964,15 @@ class Expand {
 			]
 
 	@CompileStatic
-	private def replace_base(String line, String base) {
-		def ws = line.split(" ")
-		return ws[0] + " " + base + " " + ws[2]
+	private DicEntry replace_base(DicEntry line, String base) {
+		return new DicEntry(line.word, base, line.tagStr)
 	}
 
-//	@CompileStatic
+	@CompileStatic
 	private List<DicEntry> expand_subposition(String main_word, String line, String extra_tags, int idx_) {
 		String idx = ""
 
-		if( line.startsWith(" +cs")) {
+		if( line.startsWith(" +cs") ) {
 			String word
 
             if( extra_tags.contains(":&numr") ) {
@@ -981,8 +981,8 @@ class Expand {
 
 			if( line.contains(" +cs=") ) {
 				Matcher matcher = (line =~ / \+cs=([^ ]+)/)
-				def m1 = matcher[0]
-				word = m1[1]
+				matcher.find()
+				word = matcher.group(1)
 			}
 			else {
 				word = main_word[0..<-2] + "іший"
@@ -992,7 +992,7 @@ class Expand {
 				extra_tags = and_adjp_pattern.matcher(extra_tags).replaceFirst('')
 			}
 
-            def forms = []
+            List<DicEntry> forms = []
 
             if( word.startsWith('най') ) {
 			    forms += expand(word, "/adj :comps" + idx + extra_tags)
@@ -1009,7 +1009,9 @@ class Expand {
 			forms += expand("щояк" + word, "/adj :comps" + idx + extra_tags)
 
 			if( "comp" in Args.args.lemmaForTags ) {
-				forms = forms.collect { replace_base(it, main_word) }
+				forms = forms.collect { DicEntry entry -> 
+					replace_base(entry, main_word) 
+				}
 			}
 
 			return forms

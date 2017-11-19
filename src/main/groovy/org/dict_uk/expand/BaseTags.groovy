@@ -4,6 +4,7 @@ import java.util.regex.*
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
+import groovy.transform.CompileStatic
 import groovy.transform.TypeChecked
 
 
@@ -15,7 +16,7 @@ class BaseTags {
 	static private final Util util = new Util()
 
 
-	@TypeChecked
+	@CompileStatic
 	String  get_base_tags(String word, String affixFlag, String allAffixFlags, String extra) {
 		affixFlag = allAffixFlags
 

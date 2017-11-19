@@ -1,5 +1,6 @@
 package org.dict_uk.expand
 
+import java.util.Map
 import java.util.concurrent.ExecutorService
 import java.util.regex.*
 
@@ -68,12 +69,14 @@ class Util {
 	]
 
 
-	def POS_PATTERN = ~ /[\._].*/
-	def get_pos(posFlag, modifiers) {
+	private static final Pattern POS_PATTERN = ~ /[\._].*/
+
+	@CompileStatic
+	String get_pos(String posFlag, Map<String,String> modifiers) {
 		posFlag = POS_PATTERN.matcher(posFlag).replaceAll("")
 		//    logger.info("\t\t"  + posFlag + ", " + modifiers)
 
-		def pos
+		String pos
 		if( false && "pos" in modifiers ) {
 			pos = modifiers["pos"]
 		}

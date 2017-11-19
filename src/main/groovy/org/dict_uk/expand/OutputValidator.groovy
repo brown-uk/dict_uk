@@ -6,6 +6,7 @@ import org.dict_uk.common.DicEntry
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
+import groovy.transform.CompileStatic
 import groovy.transform.TypeChecked;
 
 
@@ -23,7 +24,7 @@ class OutputValidator {
 		log.debug("Read {} allowed tags\n", ALLOWED_TAGS.size())
 	}
 	
-	@TypeChecked
+	@CompileStatic
 	int checkEntries(List<DicEntry> lines) {
 		int fatalErrorCount = 0
 		
@@ -74,7 +75,7 @@ class OutputValidator {
 			 ]
 	static final Pattern VERB_CHECK_PATTERN = ~/inf|impr:s:2|impr:p:[12]|(?:pres|futr):[sp]:[123]|past:[mfnp]/
 
-	@TypeChecked
+	@CompileStatic
 	int check_indented_lines(List<String> lines, List<String> limitedVerbLemmas) {
 		String gender = ""
 		HashSet<String> subtagSet = new HashSet<String>()
@@ -145,7 +146,9 @@ class OutputValidator {
 		return nonFatalErrorCount
 	}
 
-	def V_KLY_ONLY = new HashSet(Arrays.asList("v_kly"))
+//	private static final Set V_KLY_ONLY = new HashSet(Arrays.asList("v_kly"))
+
+	@CompileStatic
 	private checkVTagSet(String gender, HashSet subtagSet, String line) {
 		int nonFatalErrorCount = 0
 		
