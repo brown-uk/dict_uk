@@ -7,10 +7,13 @@ import java.util.regex.Pattern
 
 import org.dict_uk.expand.Affix
 
+import groovy.transform.CompileStatic
+
 class AffixUtil {
 	private static final Pattern re_alts_slash = Pattern.compile("([^/]+:)([^:]+)(:[^/]+)?")
 	private static final Pattern re_alts_dbl_slash = Pattern.compile('^(.+?:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...)(?:/(?:nv|v_...))*)+)(:[^/]+)?$')
 
+	@CompileStatic
 	public static List<DicEntry> expand_alts(List<DicEntry> entries, String splitter) {
 		ArrayList<DicEntry> out = new ArrayList<>();
 

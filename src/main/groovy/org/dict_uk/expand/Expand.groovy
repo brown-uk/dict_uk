@@ -80,6 +80,8 @@ class Expand {
 		return affixFlag2
 	}
 
+	private static final Pattern verb_no_advp_pattern = ~/(ити|діти|слати)(ся)?$/
+	
 	@CompileStatic
 	List<DicEntry> expand_suffixes(String word, String affixFlags, Map<String,String> modifiers, String extra) {
 		//		log.info("{} {} {} {}\n", word, affixFlags, modifiers, extra)
@@ -108,7 +110,7 @@ class Expand {
 			if( affixFlag2 != mainGroup) {
 //				if( ! (affixFlag2 in ["v2", "vr2"]) ) {  // курликати /v1.v2.cf       задихатися /vr1.vr2
 					affixFlag2 = mainGroup + "." + affixFlag2
-					if( affixFlag2 == "v3.advp" && ! (word =~ /(ити|діти|слати)(ся)?$/) ) {
+					if( affixFlag2 == "v3.advp" && ! (verb_no_advp_pattern.matcher(word)) ) {
 						affixFlag2 = "v1.advp"
 					}
 					else if( affixFlag2 == "v3.it0" ) {
@@ -140,15 +142,12 @@ class Expand {
 						if( pos.startsWith("verb") && extra.contains(":perf")
 								&& (affixItem.tags.startsWith("advp:imperf")
 								|| affixItem.tags.startsWith("advp:rev:imperf"))) {
-							appliedCnts[ affixFlag2 ] = 1000
+							appliedCnts[ affixFlag2 ] = -1000
 							continue
 						}
 
 						String deriv = affixItem.apply(word)
 						String tags = affixItem.tags
-
-						if( deriv =~ /[а-яіїєґ][a-z0-9]/ )
-							assert false : "-- latin mix in " + deriv
 
 						if( affixFlag2 == "n.patr") {
 							tags += ":prop:patr"
@@ -172,7 +171,7 @@ class Expand {
 		}
 
 		List<DicEntry> dups = words.findAll { words.count(it) > 1 }.unique()
-		if( dups.size() > 0) {
+		if( dups.size() > 0 ) {
 		    if( ! (affixFlags =~ /p1\.p2|p[12]\.piv/) ) {
 			    log.warn("duplicates: " + dups + " for " + word + " " + affixFlags)
 			}
@@ -220,18 +219,13 @@ class Expand {
 
 		for(String mod in mod_set) {
 			if( mod.startsWith("^") ) {
-				if( mod.startsWith("^adjp") ) {
-					mods["pos"] = mod[1..-1]
-				}
-				else {
-					def mod_tags = mod[1..-1].split(":")
-					mods["pos"] = mod_tags[0]
-					if( mod_tags && mod_tags[0] == "noun") {
-						if( mod_tags.size() > 1 ) {
-							assert mod_tags[1].size() == 1 : "Bad gender override: " + mod + " -- " + mod_tags
+				def mod_tags = mod[1..-1].split(":")
+				mods["pos"] = mod_tags[0]
+				if( mod_tags && mod_tags[0] == "noun") {
+					if( mod_tags.size() > 1 ) {
+						assert mod_tags[1].size() == 1 : "Bad gender override: " + mod + " -- " + mod_tags
 
-							mods["force_gen"] = mod_tags[1]
-						}
+						mods["force_gen"] = mod_tags[1]
 					}
 				}
 			}
@@ -242,6 +236,7 @@ class Expand {
 			else if( mod.startsWith("tag=") )
 				mods["tag"] = mod[4..-1]
 		}
+
 		if( flags.contains("<+m") || flags.contains("<m") ) {
 			mods["force_gen"] = "m"
 			if( flags.contains("n2adj") ) {
@@ -255,13 +250,15 @@ class Expand {
 	}
 
 	@CompileStatic
-	boolean filter_word(DicEntry entry, Map modifiers, String flags) {
-		String w = entry.tagStr
+	private boolean filter_word(DicEntry entry, Map modifiers, String flags) {
+		String tagStr = entry.tagStr
+		
 		if( "gen" in modifiers) {
-			if( ! (w =~ (":[" + modifiers["gen"] + "]:") ) )
+			if( ! (tagStr =~ (":[" + modifiers["gen"] + "]:") ) )
 				return false
 		}
-		if( "pers" in modifiers && ! ( w =~ ":(inf|past:n|impers)") ) {
+		
+		if( "pers" in modifiers && ! ( tagStr =~ ":(inf|past:n|impers)") ) {
 			def prs = ":[" + modifiers["pers"] + "]"
 			if( modifiers["pers"] == "3" ) {
 				prs = ":s" + prs
@@ -272,23 +269,25 @@ class Expand {
 				    prs += '|advp'
 				}
 			}
-			if( ! (w =~ prs) )
+			if( ! (tagStr =~ prs) )
 				return false
 		}
-		if( "tag" in modifiers) {
-			if( ! (w =~ modifiers["tag"]) )
+
+		if( "tag" in modifiers ) {
+			if( ! (tagStr =~ modifiers["tag"]) )
 				return false
 		}
+		
 		return true
 	}
 
 	@CompileStatic
-	List<DicEntry> modify(List<DicEntry> lines, Map<String, String> modifiers, String flags) {
+	private List<DicEntry> modify(List<DicEntry> lines, Map<String, String> modifiers, String flags) {
 		if( modifiers.size() == 0)
 			return lines
 
 		def out = []
-		for( line in lines) {
+		for(DicEntry line in lines) {
 
 			if( ! filter_word(line, modifiers, flags)) {
 				//            util.debug("skip %s %s", line, modifiers)
@@ -312,14 +311,17 @@ class Expand {
 		return out
 	}
 
+	private static final Pattern extraFlagsPattern = ~/ (:[^ ]+)/
+	
 	@CompileStatic
-	String get_extra_flags(String flags) {
+	private String get_extra_flags(String flags) {
 		def extra_flags = ""
 
 		if( flags.contains(" :") ) {
-			def matcher = Pattern.compile(" (:[^ ]+)").matcher(flags)
+			def matcher = extraFlagsPattern.matcher(flags)
 			if( ! matcher.find() )
 				throw new Exception("Not found extra flags in " + flags)
+
 			extra_flags = matcher.group(1)
 		}
 		
@@ -563,6 +565,8 @@ class Expand {
 		}
 		return lines2
 	}
+	
+	private static final Pattern unexpectedChars = Pattern.compile(/[^а-яіїєґА-ЯІЇЄҐ'.-]/)
 
 	@CompileStatic
 	List<DicEntry> expand(String word, String flags) {
@@ -629,8 +633,8 @@ class Expand {
 		List<DicEntry> entries = post_expand(sfx_lines, flags)
 
 		entries.each {
-			if( it.word =~ /[^а-яіїєґА-ЯІЇЄҐ'.-]/ || it.lemma =~ /^а-яіїєґА-ЯІЇЄҐ'.-/ )
-				throw new Exception("latin mix in " + it)
+			if( unexpectedChars.matcher(it.word) || unexpectedChars.matcher(it.lemma) )
+				throw new Exception("unexpected characters in " + it)
 		}
 
 		return entries
