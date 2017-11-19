@@ -457,20 +457,23 @@ class Expand {
 					}
 				}
 				else if( main_flag.startsWith("/n2adj") ) {
-					if( ! util.istota(flags)) {
+					if( ! util.istota(flags) ) {
 						if( line.tagStr.contains("v_rod/v_zna") ) {
 							line.tagStr = line.tagStr.replace("/v_zna", "")
 						}
 					}
-					else if( flags.contains("<+") && ! flags.contains(".k") && line.lemma.endsWith("ів") ) {
-					    if( line.tagStr.contains("v_kly") ) 
-					        if( ! line.tagStr.contains("/v_kly") ) 
-					            continue;
-//					        else
-//					            line = line.replace("/v_kly", "")
-					}
-					else if( util.person(flags) ) {
-						line.tagStr = line.tagStr.replace("p:v_naz/v_zna", "p:v_naz")
+					else {
+						if( flags.contains("<+") && ! flags.contains(".k") /*&& line.lemma.endsWith("ів")*/ ) {
+							if( line.tagStr.contains("v_kly") )
+								if( ! line.tagStr.contains("/v_kly") )
+									continue;
+								else
+									line.tagStr	 = line.tagStr.replace("/v_kly", "")
+						}
+						
+						if( util.person(flags) ) {
+							line.tagStr = line.tagStr.replace("p:v_naz/v_zna", "p:v_naz")
+						}
 					}
 				}
 				else if( main_flag.startsWith("/n2nm") ) {

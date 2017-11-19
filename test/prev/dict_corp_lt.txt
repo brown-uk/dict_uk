@@ -110,7 +110,6 @@
 Аверянову Аверянова noun:anim:f:v_zna:prop:lname
 Аверяновою Аверянова noun:anim:f:v_oru:prop:lname
 Аверяновій Аверянова noun:anim:f:v_mis:prop:lname
-Аверянова Аверянова noun:anim:f:v_kly:prop:lname
 авто авто noun:inanim:n:v_naz
 авта авто noun:inanim:n:v_rod
 авту авто noun:inanim:n:v_dav
@@ -191,7 +190,6 @@
 Адамишиних Адамишин noun:anim:p:v_zna:prop:lname
 Адамишиними Адамишин noun:anim:p:v_oru:prop:lname
 Адамишиних Адамишин noun:anim:p:v_mis:prop:lname
-Адамишини Адамишин noun:anim:p:v_kly:prop:lname
 Адамишин Адамишин noun:anim:f:v_naz:nv:np:prop:lname
 Адамишин Адамишин noun:anim:f:v_rod:nv:np:prop:lname
 Адамишин Адамишин noun:anim:f:v_dav:nv:np:prop:lname
@@ -1079,7 +1077,6 @@
 Вербицьку Вербицька noun:anim:f:v_zna:prop:lname
 Вербицькою Вербицька noun:anim:f:v_oru:prop:lname
 Вербицькій Вербицька noun:anim:f:v_mis:prop:lname
-Вербицька Вербицька noun:anim:f:v_kly:prop:lname
 Вербицький Вербицький noun:anim:m:v_naz:prop:lname
 Вербицького Вербицький noun:anim:m:v_rod:prop:lname
 Вербицькому Вербицький noun:anim:m:v_dav:prop:lname
@@ -1087,7 +1084,6 @@
 Вербицьким Вербицький noun:anim:m:v_oru:prop:lname
 Вербицькім Вербицький noun:anim:m:v_mis:prop:lname
 Вербицькому Вербицький noun:anim:m:v_mis:prop:lname
-Вербицький Вербицький noun:anim:m:v_kly:prop:lname
 Вербицькі Вербицький noun:anim:p:v_naz:prop:lname
 Вербицьких Вербицький noun:anim:p:v_rod:prop:lname
 Вербицьким Вербицький noun:anim:p:v_dav:prop:lname
@@ -1172,7 +1168,6 @@
 Вернадським Вернадський noun:anim:m:v_oru:prop:lname
 Вернадськім Вернадський noun:anim:m:v_mis:prop:lname
 Вернадському Вернадський noun:anim:m:v_mis:prop:lname
-Вернадський Вернадський noun:anim:m:v_kly:prop:lname
 вертихвіст вертихвіст noun:anim:m:v_naz
 вертихвоста вертихвіст noun:anim:m:v_rod
 вертихвостові вертихвіст noun:anim:m:v_dav
