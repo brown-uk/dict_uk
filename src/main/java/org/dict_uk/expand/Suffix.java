@@ -18,6 +18,10 @@ class Suffix {
 		sub_from_sfx = Pattern.compile(fromm + "$");
 	}
 
+	public String getTags() {
+		return tags;
+	}
+
 	public String apply(String word) {
 //		System.err.println("applying: " + sub_from_sfx + " " + to + " " + word);
 		

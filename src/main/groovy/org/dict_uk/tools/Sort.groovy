@@ -1,7 +1,5 @@
 package org.dict_uk.tools
 
-import java.nio.file.CopyMoveHelper.CopyOptions;
-import java.nio.file.CopyOption;
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.nio.file.StandardCopyOption;

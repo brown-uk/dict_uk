@@ -24,6 +24,11 @@ public class Affix {
 	private static final Pattern re_whitespace = Pattern.compile("[ \t]+");
 
 	
+	public Map<String, Map<String, SuffixGroup>> getAffixMap() {
+		return affixMap;
+	}
+
+
 	public void log_usage() {
 		for(Entry<String, Map<String, SuffixGroup>> affixItem: affixMap.entrySet()) {
 			String affixFlag = affixItem.getKey();

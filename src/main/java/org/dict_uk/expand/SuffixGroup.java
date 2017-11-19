@@ -41,6 +41,14 @@ class SuffixGroup {
 	public int getSize() {
 		return affixes.size();
 	}
+	
+	public List<Suffix> getAffixes() {
+		return affixes;
+	}
+	
+	public void incrementCounter() {
+		counter += 1;
+	}
 
 	@Override
 	public String toString() {

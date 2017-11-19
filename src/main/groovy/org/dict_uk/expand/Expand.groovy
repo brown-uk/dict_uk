@@ -80,7 +80,7 @@ class Expand {
 		return affixFlag2
 	}
 
-//	@CompileStatic
+	@CompileStatic
 	List<DicEntry> expand_suffixes(String word, String affixFlags, Map<String,String> modifiers, String extra) {
 		//		log.info("{} {} {} {}\n", word, affixFlags, modifiers, extra)
 
@@ -108,10 +108,12 @@ class Expand {
 			if( affixFlag2 != mainGroup) {
 //				if( ! (affixFlag2 in ["v2", "vr2"]) ) {  // курликати /v1.v2.cf       задихатися /vr1.vr2
 					affixFlag2 = mainGroup + "." + affixFlag2
-					if( affixFlag2 == "v3.advp" && ! (word =~ /(ити|діти|слати)(ся)?$/) )
+					if( affixFlag2 == "v3.advp" && ! (word =~ /(ити|діти|слати)(ся)?$/) ) {
 						affixFlag2 = "v1.advp"
-					else if( affixFlag2 == "v3.it0" )
+					}
+					else if( affixFlag2 == "v3.it0" ) {
 						affixFlag2 = "v1.it0"
+					}
 //				}
 
 				affixFlag2 = adjustCommonFlag(affixFlag2)
@@ -133,17 +135,17 @@ class Expand {
 
 				if( affixGroup.matches(word) ) {
 
-					for( affix_item in affixGroup.affixes) {
+					for(Suffix affixItem in affixGroup.affixes) {
 						// DL - не додавати незавершену форму дієприслівника для завершеної форми дієслова
 						if( pos.startsWith("verb") && extra.contains(":perf")
-						&& (affix_item.tags.startsWith("advp:imperf")
-						|| affix_item.tags.startsWith("advp:rev:imperf"))) {
+								&& (affixItem.tags.startsWith("advp:imperf")
+								|| affixItem.tags.startsWith("advp:rev:imperf"))) {
 							appliedCnts[ affixFlag2 ] = 1000
 							continue
 						}
 
-						String deriv = affix_item.apply(word)
-						String tags = affix_item.tags
+						String deriv = affixItem.apply(word)
+						String tags = affixItem.tags
 
 						if( deriv =~ /[а-яіїєґ][a-z0-9]/ )
 							assert false : "-- latin mix in " + deriv
@@ -158,7 +160,7 @@ class Expand {
 
 						//util.debug("applied {} to {}", affixGroup, word)
 					}
-					affixGroup.counter += 1
+					affixGroup.incrementCounter()
 
 					//      print("DEBUG: applied", affixFlags, "for", word, "got", appliedCnts, file=sys.stderr)
 				}
@@ -180,7 +182,8 @@ class Expand {
 	}
 
 
-	Map<String,String> get_modifiers(mod_flags, flags, word) {
+	@CompileStatic
+	private Map<String,String> get_modifiers(String mod_flags, String flags, String word) {
 
 		def mods = [:]
 
@@ -213,11 +216,11 @@ class Expand {
 			}
 		}
 
-		def mod_set = mod_flags.split()
+		String[] mod_set = mod_flags.split(" ")
 
-		for( mod in mod_set) {
-			if( mod[0] == "^") {
-				if( mod.startsWith("^adjp")) {
+		for(String mod in mod_set) {
+			if( mod.startsWith("^") ) {
+				if( mod.startsWith("^adjp") ) {
 					mods["pos"] = mod[1..-1]
 				}
 				else {
@@ -309,7 +312,7 @@ class Expand {
 		return out
 	}
 
-	@TypeChecked
+	@CompileStatic
 	String get_extra_flags(String flags) {
 		def extra_flags = ""
 
@@ -336,10 +339,10 @@ class Expand {
 		return extra_flags
 	}
 	
-	Pattern perf_imperf_pattern = ~ ":(im)?perf"
-	Pattern and_adjp_pattern = ~ /:&&?adjp(:pasv|:actv|:perf|:imperf)+/
+	private static final Pattern perf_imperf_pattern = ~ ":(im)?perf"
+	private static final Pattern and_adjp_pattern = ~ /:&&?adjp(:pasv|:actv|:perf|:imperf)+/
 
-	@TypeChecked
+	@CompileStatic
 	List<DicEntry> post_expand(List<DicEntry> lines, String flags) {
 		if( lines.size() == 0)
 			throw new Exception("emtpy lines")
@@ -426,7 +429,7 @@ class Expand {
 		return lines
 	}
 
-	@TypeChecked
+	@CompileStatic
 	List<DicEntry> adjust_affix_tags(List<DicEntry> lines, String main_flag, String flags, Map<String,String> modifiers) {
 		def lines2 = []
 
@@ -561,7 +564,7 @@ class Expand {
 		return lines2
 	}
 
-	@TypeChecked
+	@CompileStatic
 	List<DicEntry> expand(String word, String flags) {
 		String[] flag_set = flags.split(" ", 2)
 
@@ -634,6 +637,7 @@ class Expand {
 	}
 
 
+	@CompileStatic
     void applyAdditionalTags(List<DicEntry> words) {
         for(int i=0; i<words.size(); i++) {
             for(Map.Entry<String,String> entry: additionalTags.entrySet()) {
@@ -845,15 +849,15 @@ class Expand {
 	}
 
 
-	@TypeChecked
-	DicEntry promote(DicEntry line) {
+	@CompileStatic
+	private DicEntry promote(DicEntry line) {
 		//    System.err.printf("promote %s -> %s\n", line, lemma)
 //		line = replace_base(line, line.lemma)
 		return new DicEntry(line.word, line.word, line.tagStr)
 	}
 
 	@CompileStatic
-	boolean isRemoveLine(DicEntry line) {
+	private boolean isRemoveLine(DicEntry line) {
 		for( removeWithTag in Args.args.removeWithTags ) {
 			if( line.tagStr.contains(":" + removeWithTag) )
 				return true
@@ -890,7 +894,7 @@ class Expand {
 	private static final Pattern any_anim = ~/:([iu]n)?anim/
 
 //	@CompileStatic
-	List<DicEntry> post_process(List<DicEntry> lines) {
+	private List<DicEntry> post_process(List<DicEntry> lines) {
 		List<DicEntry> out_lines = []
 
 		for(DicEntry line in lines) {
@@ -958,14 +962,14 @@ class Expand {
 				":xp1", ":xp2", ":xp3", ":xp4"
 			]
 
-	@TypeChecked
-	def replace_base(String line, String base) {
-		def ws = line.split()
+	@CompileStatic
+	private def replace_base(String line, String base) {
+		def ws = line.split(" ")
 		return ws[0] + " " + base + " " + ws[2]
 	}
 
-	//@TypeChecked
-	List<DicEntry> expand_subposition(String main_word, String line, String extra_tags, int idx_) {
+//	@CompileStatic
+	private List<DicEntry> expand_subposition(String main_word, String line, String extra_tags, int idx_) {
 		String idx = ""
 
 		if( line.startsWith(" +cs")) {
@@ -1014,8 +1018,8 @@ class Expand {
 		assert false, "Unknown subposition for " + line + "(" + main_word + ")"
 	}
 
-	@TypeChecked
-	DicEntry compose_compar(String word, String main_word, String tags) {
+	@CompileStatic
+	private DicEntry compose_compar(String word, String main_word, String tags) {
 		if( ! ("comp" in Args.args.lemmaForTags) ) {
 			main_word = word
 		}
@@ -1023,8 +1027,8 @@ class Expand {
 		return new DicEntry(word, main_word, tags)
 	}
 
-	@TypeChecked
-	List<DicEntry> expand_subposition_adv_main(String main_word, String line, String extra_tags) {
+	@CompileStatic
+	private List<DicEntry> expand_subposition_adv_main(String main_word, String line, String extra_tags) {
 		log.debug("expanding sub " + main_word + ": " + line + " extra tags: " + extra_tags)
 		
 		if( line.startsWith(" +cs")) {
@@ -1058,7 +1062,7 @@ class Expand {
 	}
 
 	@CompileStatic
-	List<DicEntry> expand_subposition_adv(String last_adv, String line, String extra_tags, String main_word) {
+	private List<DicEntry> expand_subposition_adv(String last_adv, String line, String extra_tags, String main_word) {
 
 		String word
 		if( line.contains(" +cs=") ) {
@@ -1094,11 +1098,11 @@ class Expand {
 	}
 
 
-	final Pattern word_lemma_re = Pattern.compile(" [а-яіїєґА-ЯІЇЄҐ]", Pattern.CASE_INSENSITIVE)
+	private final static Pattern word_lemma_re = Pattern.compile(" [а-яіїєґА-ЯІЇЄҐ]", Pattern.CASE_INSENSITIVE)
 
 
-	@TypeChecked
-	List<DicEntry> expand_line(String line_) {
+	@CompileStatic
+	private List<DicEntry> expand_line(String line_) {
 		List<String> lines = preprocess(line_)
 
 		def main_word = ""
@@ -1215,9 +1219,9 @@ class Expand {
 	}
 
 	
-	int fatalErrorCount = 0
-	int nonFatalErrorCount = 0
-	int double_form_cnt = 0
+	private int fatalErrorCount = 0
+	private int nonFatalErrorCount = 0
+	private int double_form_cnt = 0
 	
 
 //	@TypeChecked
@@ -1294,12 +1298,13 @@ class Expand {
 		return sortAndPostProcess(allEntries)
 	}
 
+	@CompileStatic
 	private sortAndPostProcess(List allEntries) {
 		if( Args.args.time ) {
 			log.info("Sorting...\n")
 		}
 
-		def times = []
+		List<Long> times = []
 		times << System.currentTimeMillis()
 		
 		List<DicEntry> sortedEntries = dictSorter.sortEntries(allEntries)
