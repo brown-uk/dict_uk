@@ -53,10 +53,10 @@
 музика /n10.p1.<m - любитель /n20.a.p.<
 номер /n20.a.p.ke - люкс
 обіцянка /n10.p2 - цяцянка /n10.p2
-#один /numr - єдиний /adj ^adj:&pron:dem:ind
-#один /numr - однісінький /adj ^adj:&pron:dem:ind
-один /numr - єдиний /adj
-один /numr - однісінький /adj
+#один /numr - єдиний /adj
+#один /numr - однісінький /adj
+один /numr - єдиний /adj ^adj:&pron:dem:ind
+один /numr - однісінький /adj ^adj:&pron:dem:ind
 опера /n10.p1 - буф
 пан /n20.a.p.ke.< - брат /n20.a.p.ke.< !u-u
 перший /adj - ліпший /adj

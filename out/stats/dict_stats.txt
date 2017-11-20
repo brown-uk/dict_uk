@@ -2,7 +2,7 @@
   словникових лем (без advp, без омонімів imperf/perf) 268879
 
 Частоти за тегами:
-adj 81642
+adj 81644
      compb 1968
      imperf 6934
      nv 48
@@ -25,7 +25,7 @@ noun 134507
      nv 10672
      patr 942
      prop 48068
-numr 121
+numr 119
      nv 24
 onomat 38
 part 155
