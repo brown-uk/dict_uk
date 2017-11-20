@@ -186,34 +186,35 @@ class Expand {
 
 		def mods = [:]
 
-		if( flags.contains("/adj") && flags.contains("<") ) {
-			mods["pos"] = "noun"
-
-			if( ! mod_flags.contains("=") ) {
-				if( flags.contains("<+") ) {
-					if( word.endsWith("а"))
-						mods["gen"] = "f"
-					else
-						mods["gen"] = "mfp"
-						
-					return mods
-				}
-				
-				if( flags.contains("<") ) {
-					if( word.endsWith("а"))
-						mods["gen"] = "fp"
-					else
-						mods["gen"] = "mp"
-						
-					return mods
-				}
-			}
-			
-			if( ! mod_flags.contains("=") ) {
-				mods["gen"] = "mfp"
-				return mods
-			}
-		}
+//		replaced with /n2adj1.<
+//		if( flags.contains("/adj") && flags.contains("<") ) {
+//			mods["pos"] = "noun"
+//
+//			if( ! mod_flags.contains("=") ) {
+//				if( flags.contains("<+") ) {
+//					if( word.endsWith("а"))
+//						mods["gen"] = "f"
+//					else
+//						mods["gen"] = "mfp"
+//						
+//					return mods
+//				}
+//				
+//				if( flags.contains("<") ) {
+//					if( word.endsWith("а"))
+//						mods["gen"] = "fp"
+//					else
+//						mods["gen"] = "mp"
+//						
+//					return mods
+//				}
+//			}
+//			
+//			if( ! mod_flags.contains("=") ) {
+//				mods["gen"] = "mfp"
+//				return mods
+//			}
+//		}
 
 		String[] mod_set = mod_flags.split(" ")
 

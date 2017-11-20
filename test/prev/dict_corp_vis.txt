@@ -1711,6 +1711,7 @@
   Всевишньому noun:anim:m:v_dav:prop
   Всевишнього noun:anim:m:v_zna:prop
   Всевишнім noun:anim:m:v_oru:prop
+  Всевишнім noun:anim:m:v_mis:prop
   Всевишньому noun:anim:m:v_mis:prop
   Всевишній noun:anim:m:v_kly:prop
 всеношна noun:inanim:f:v_naz
@@ -1989,7 +1990,6 @@
   Гулакові-Артемовському noun:anim:m:v_mis:prop:lname
   Гулаку-Артемовськім noun:anim:m:v_mis:prop:lname
   Гулаку-Артемовському noun:anim:m:v_mis:prop:lname
-  Гулаче-Артемовський noun:anim:m:v_kly:prop:lname
 Данаїди noun:anim:p:v_naz:ns:prop:fname
   Данаїд noun:anim:p:v_rod:ns:prop:fname
   Данаїдам noun:anim:p:v_dav:ns:prop:fname
@@ -3215,7 +3215,6 @@
   Склодовську-Кюрі noun:anim:f:v_zna:prop:lname
   Склодовською-Кюрі noun:anim:f:v_oru:prop:lname
   Склодовській-Кюрі noun:anim:f:v_mis:prop:lname
-  Склодовська-Кюрі noun:anim:f:v_kly:prop:lname
 сопівши advp:imperf
 сопіти verb:imperf:inf
   сопи verb:imperf:impr:s:2
