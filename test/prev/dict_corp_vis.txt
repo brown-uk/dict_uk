@@ -2973,6 +2973,78 @@
   нудьгою noun:inanim:f:v_oru
   нудьзі noun:inanim:f:v_mis
   нудьго noun:inanim:f:v_kly
+один-єдиний adj:m:v_naz
+  одного-єдиного adj:m:v_rod
+  одному-єдиному adj:m:v_dav
+  одного-єдиного adj:m:v_zna:ranim
+  один-єдиний adj:m:v_zna:rinanim
+  одним-єдиним adj:m:v_oru
+  однім-єдинім adj:m:v_mis
+  однім-єдиному adj:m:v_mis
+  одному-єдинім adj:m:v_mis
+  одному-єдиному adj:m:v_mis
+  одна-єдина adj:f:v_naz
+  однієї-єдиної adj:f:v_rod
+  одної-єдиної adj:f:v_rod
+  одній-єдиній adj:f:v_dav
+  одну-єдину adj:f:v_zna
+  однією-єдиною adj:f:v_oru
+  одною-єдиною adj:f:v_oru
+  одній-єдиній adj:f:v_mis
+  одне-єдине adj:n:v_naz
+  одно-єдине adj:n:v_naz
+  одного-єдиного adj:n:v_rod
+  одному-єдиному adj:n:v_dav
+  одне-єдине adj:n:v_zna
+  одно-єдине adj:n:v_zna
+  одним-єдиним adj:n:v_oru
+  однім-єдинім adj:n:v_mis
+  однім-єдиному adj:n:v_mis
+  одному-єдинім adj:n:v_mis
+  одному-єдиному adj:n:v_mis
+  одні-єдині adj:p:v_naz
+  одних-єдиних adj:p:v_rod
+  одним-єдиним adj:p:v_dav
+  одних-єдиних adj:p:v_zna:ranim
+  одні-єдині adj:p:v_zna:rinanim
+  одними-єдиними adj:p:v_oru
+  одних-єдиних adj:p:v_mis
+один-єдиний numr:m:v_naz
+  одного-єдиного numr:m:v_rod
+  одному-єдиному numr:m:v_dav
+  одного-єдиного numr:m:v_zna:ranim
+  один-єдиний numr:m:v_zna:rinanim
+  одним-єдиним numr:m:v_oru
+  однім-єдинім numr:m:v_mis
+  однім-єдиному numr:m:v_mis
+  одному-єдинім numr:m:v_mis
+  одному-єдиному numr:m:v_mis
+  одна-єдина numr:f:v_naz
+  однієї-єдиної numr:f:v_rod
+  одної-єдиної numr:f:v_rod
+  одній-єдиній numr:f:v_dav
+  одну-єдину numr:f:v_zna
+  однією-єдиною numr:f:v_oru
+  одною-єдиною numr:f:v_oru
+  одній-єдиній numr:f:v_mis
+  одне-єдине numr:n:v_naz
+  одно-єдине numr:n:v_naz
+  одного-єдиного numr:n:v_rod
+  одному-єдиному numr:n:v_dav
+  одне-єдине numr:n:v_zna
+  одно-єдине numr:n:v_zna
+  одним-єдиним numr:n:v_oru
+  однім-єдинім numr:n:v_mis
+  однім-єдиному numr:n:v_mis
+  одному-єдинім numr:n:v_mis
+  одному-єдиному numr:n:v_mis
+  одні-єдині numr:p:v_naz
+  одних-єдиних numr:p:v_rod
+  одним-єдиним numr:p:v_dav
+  одних-єдиних numr:p:v_zna:ranim
+  одні-єдині numr:p:v_zna:rinanim
+  одними-єдиними numr:p:v_oru
+  одних-єдиних numr:p:v_mis
 оскірившись advp:rev:perf:rare
 оскіритися verb:rev:perf:inf:rare
   оскіритись verb:rev:perf:inf:rare
