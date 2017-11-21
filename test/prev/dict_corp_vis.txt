@@ -1040,23 +1040,23 @@
   Венедиктовими adj:p:v_oru
   Венедиктових adj:p:v_mis
   Венедиктові adj:p:v_kly
-Венедиктівна noun:anim:f:v_naz:prop:patr
-  Венедиктівни noun:anim:f:v_rod:prop:patr
-  Венедиктівні noun:anim:f:v_dav:prop:patr
-  Венедиктівну noun:anim:f:v_zna:prop:patr
-  Венедиктівною noun:anim:f:v_oru:prop:patr
-  Венедиктівні noun:anim:f:v_mis:prop:patr
-  Венедиктівно noun:anim:f:v_kly:prop:patr
-Венедиктович noun:anim:m:v_naz:prop:patr
-  Венедиктовича noun:anim:m:v_rod:prop:patr
-  Венедиктовичеві noun:anim:m:v_dav:prop:patr
-  Венедиктовичу noun:anim:m:v_dav:prop:patr
-  Венедиктовича noun:anim:m:v_zna:prop:patr
-  Венедиктовичем noun:anim:m:v_oru:prop:patr
-  Венедиктовичеві noun:anim:m:v_mis:prop:patr
-  Венедиктовичі noun:anim:m:v_mis:prop:patr
-  Венедиктовичу noun:anim:m:v_mis:prop:patr
-  Венедиктовичу noun:anim:m:v_kly:prop:patr
+Венедиктівна noun:anim:f:v_naz:prop:pname
+  Венедиктівни noun:anim:f:v_rod:prop:pname
+  Венедиктівні noun:anim:f:v_dav:prop:pname
+  Венедиктівну noun:anim:f:v_zna:prop:pname
+  Венедиктівною noun:anim:f:v_oru:prop:pname
+  Венедиктівні noun:anim:f:v_mis:prop:pname
+  Венедиктівно noun:anim:f:v_kly:prop:pname
+Венедиктович noun:anim:m:v_naz:prop:pname
+  Венедиктовича noun:anim:m:v_rod:prop:pname
+  Венедиктовичеві noun:anim:m:v_dav:prop:pname
+  Венедиктовичу noun:anim:m:v_dav:prop:pname
+  Венедиктовича noun:anim:m:v_zna:prop:pname
+  Венедиктовичем noun:anim:m:v_oru:prop:pname
+  Венедиктовичеві noun:anim:m:v_mis:prop:pname
+  Венедиктовичі noun:anim:m:v_mis:prop:pname
+  Венедиктовичу noun:anim:m:v_mis:prop:pname
+  Венедиктовичу noun:anim:m:v_kly:prop:pname
 Вентурі noun:anim:m:v_naz:nv:np:prop:lname
   Вентурі noun:anim:m:v_rod:nv:np:prop:lname
   Вентурі noun:anim:m:v_dav:nv:np:prop:lname
@@ -2195,22 +2195,22 @@
   екс-суддями noun:anim:p:v_oru
   екс-суддях noun:anim:p:v_mis
   екс-судді noun:anim:p:v_kly
-Єреміївна noun:anim:f:v_naz:prop:patr
-  Єреміївни noun:anim:f:v_rod:prop:patr
-  Єреміївні noun:anim:f:v_dav:prop:patr
-  Єреміївну noun:anim:f:v_zna:prop:patr
-  Єреміївною noun:anim:f:v_oru:prop:patr
-  Єреміївні noun:anim:f:v_mis:prop:patr
-  Єреміївно noun:anim:f:v_kly:prop:patr
-Єремійович noun:anim:m:v_naz:prop:patr
-  Єремійовича noun:anim:m:v_rod:prop:patr
-  Єремійовичеві noun:anim:m:v_dav:prop:patr
-  Єремійовичу noun:anim:m:v_dav:prop:patr
-  Єремійовича noun:anim:m:v_zna:prop:patr
-  Єремійовичем noun:anim:m:v_oru:prop:patr
-  Єремійовичеві noun:anim:m:v_mis:prop:patr
-  Єремійовичу noun:anim:m:v_mis:prop:patr
-  Єремійовичу noun:anim:m:v_kly:prop:patr
+Єреміївна noun:anim:f:v_naz:prop:pname
+  Єреміївни noun:anim:f:v_rod:prop:pname
+  Єреміївні noun:anim:f:v_dav:prop:pname
+  Єреміївну noun:anim:f:v_zna:prop:pname
+  Єреміївною noun:anim:f:v_oru:prop:pname
+  Єреміївні noun:anim:f:v_mis:prop:pname
+  Єреміївно noun:anim:f:v_kly:prop:pname
+Єремійович noun:anim:m:v_naz:prop:pname
+  Єремійовича noun:anim:m:v_rod:prop:pname
+  Єремійовичеві noun:anim:m:v_dav:prop:pname
+  Єремійовичу noun:anim:m:v_dav:prop:pname
+  Єремійовича noun:anim:m:v_zna:prop:pname
+  Єремійовичем noun:anim:m:v_oru:prop:pname
+  Єремійовичеві noun:anim:m:v_mis:prop:pname
+  Єремійовичу noun:anim:m:v_mis:prop:pname
+  Єремійовичу noun:anim:m:v_kly:prop:pname
 Єремія noun:anim:m:v_naz:prop:fname
   Єремії noun:anim:m:v_rod:prop:fname
   Єремії noun:anim:m:v_dav:prop:fname

@@ -150,7 +150,7 @@ class Expand {
 						String tags = affixItem.tags
 
 						if( affixFlag2 == "n.patr") {
-							tags += ":prop:patr"
+							tags += ":prop:pname"
 						}
 
 						words.add(new DicEntry(deriv, word, tags))
@@ -298,7 +298,7 @@ class Expand {
 				line.tagStr = line.tagStr.replaceAll("^[^:]+", modifiers["pos"])
 				//            util.debug("pos repl %s in %s", modifiers["pos"], line)
 			}
-			if( "force_gen" in modifiers && ! line.tagStr.contains(":patr") ) {
+			if( "force_gen" in modifiers && ! line.tagStr.contains(":pname") ) {
 				def force_gen = modifiers["force_gen"]
 				line.tagStr = line.tagStr.replaceAll(/:[mfn](:|$)/,  ":" + force_gen + /$1/)
 				//            util.debug("gen repl: %s in %s", force_gen, line)
@@ -362,7 +362,7 @@ class Expand {
 			for( line in lines) {
 				String extra_flags2 = extra_flags
 
-				if( first_name_base && ! line.tagStr.contains("patr") && ! flags.contains(":patr") ) {
+				if( first_name_base && ! line.tagStr.contains("pname") && ! flags.contains(":pname") ) {
 					extra_flags2 += ":prop:fname"
 				}
 				if( line.tagStr.startsWith("advp") ) {
@@ -418,8 +418,8 @@ class Expand {
 						}
 					}
 				}
-				else if( line.tagStr.contains(":patr") && extra_flags2.contains(":anim") ) {
-					line.tagStr = line.tagStr.replace(":patr", ":anim:patr")
+				else if( line.tagStr.contains(":pname") && extra_flags2.contains(":anim") ) {
+					line.tagStr = line.tagStr.replace(":pname", ":anim:pname")
 					extra_flags2 = extra_flags2.replace(":anim", "")
 				}
 				out_lines.add(new DicEntry(line.word, line.lemma, line.tagStr + extra_flags2))
@@ -509,7 +509,7 @@ class Expand {
 					}
 					
 					boolean explicitKly = flags.contains(".ko") || flags.contains(".ke")
-					if( ( explicitKly && ! line.tagStr.contains(":patr") ) \
+					if( ( explicitKly && ! line.tagStr.contains(":pname") ) \
 					        || ( ! explicitKly && main_flag =~ /n2[0-4]/ && ! isDefaultKlyU(base_word, flags) )
                             || (line.tagStr.contains(":m:") && flags.contains("<+") ) ) {
 						//log.info("removing v_kly from: %s, %s", line, flags)
@@ -818,7 +818,7 @@ class Expand {
 		return out_lines
 	}
 
-	private static final Pattern PATTR_BASE_LEMMAN_PATTERN = ~ ":[mf]:v_naz:.*patr"
+	private static final Pattern PATTR_BASE_LEMMAN_PATTERN = ~ ":[mf]:v_naz:.*?pname"
 	
 	@CompileStatic
 	private List<DicEntry> post_process_sorted(List<DicEntry> lines) {
@@ -826,8 +826,8 @@ class Expand {
 
 		def prev_line = ""
 		def last_lemma
-		for( line in lines) {
-			if( line.tagStr.contains(":patr") ) {
+		for(DicEntry line in lines) {
+			if( line.tagStr.contains(":pname") ) {
 				if( PATTR_BASE_LEMMAN_PATTERN.matcher(line.tagStr).find() ) {
 					last_lemma = line.word //split()[0]
 					//                System.err.printf("promoting patr to lemma %s for %s\n", last_lema, line)

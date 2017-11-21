@@ -53,7 +53,7 @@ p
 part
 past
 pasv
-patr
+pname
 perf
 pers
 pos

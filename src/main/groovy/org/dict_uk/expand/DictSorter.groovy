@@ -49,7 +49,7 @@ class DictSorter {
 	static final Pattern re_verb_tense = Pattern.compile("(in[fz]|impr|pres|futr|past|impers)")
 
 	//	static final Pattern re_person_name_key_tag = Pattern.compile("^([^:]+(?::anim|:inanim|:perf|:imperf)?)(.*?)(:lname|:fname|:patr)")
-	static final Pattern re_person_name_key_tag = Pattern.compile("^(noun:anim)(.*?)(:lname|:fname|:patr)")
+	static final Pattern re_person_name_key_tag = Pattern.compile("^(noun:anim)(.*?)(:[lfp]name)")
 
 	static final Pattern re_xv_sub = Pattern.compile("^([^:]+)(.*)(:x.[1-9])")
 	static final Pattern re_pron_sub = Pattern.compile("^([^:]+)(.*)(:&pron:[^:]+)")
@@ -91,9 +91,9 @@ class DictSorter {
 			}
 		}
 		else if( tags.startsWith("noun") ) {
-			if( tags.contains("name") || tags.contains("patr") ) {
+			if( tags.contains("name") ) {
 				tags = re_person_name_key_tag.matcher(tags).replaceAll('$1$3$2')
-				if ( (tags.contains("lname") || tags.contains("patr")) 
+				if ( (tags.contains("lname") || tags.contains("pname"))
 						&& tags.contains(":f:") ) {// && ! ":nv" in tags:    // to put Адамишин :f: after Адамишини :p) {
 					tags = tags.replace(":f:", ":9:")
 				}
@@ -155,7 +155,7 @@ class DictSorter {
 
 	static final Pattern re_key = Pattern.compile("^[^:]+(?::rev)?(?::(?:anim|inanim|perf|imperf))?")
 	static final Pattern re_key_pron = Pattern.compile(":&pron:[^:]+")
-	static final Pattern re_key_name = Pattern.compile("^(noun:anim:[fmnp]:).*?(lname|fname|patr)")
+	static final Pattern re_key_name = Pattern.compile("^(noun:anim:[fmnp]:).*?([flp]name)")
 
 	@CompileStatic
 	List<String> indent_lines(List<DicEntry> lines) {
@@ -169,7 +169,7 @@ class DictSorter {
 			String key
 
 			try {
-				if( tags.contains("name") || tags.contains("patr") ) {
+				if( tags.contains("name") ) {
 					def key_rr = re_key_name.matcher(line.tagStr)
 					key_rr.find()
 					key = lemma + " " + key_rr.group(1) + key_rr.group(2)

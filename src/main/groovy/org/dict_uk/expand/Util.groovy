@@ -194,7 +194,7 @@ class Util {
 		"prop",
 		"lname",
 		"fname",
-		"patr",
+		"pname",
 		"nv",
 		"perf",
 		"imperf",
