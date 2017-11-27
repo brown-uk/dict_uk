@@ -315,13 +315,11 @@
   бабиськах noun:anim:p:v_mis
   бабиська noun:anim:p:v_kly
 бабище noun:anim:f:v_naz
-  бабища noun:anim:f:v_rod
-  бабищеві noun:anim:f:v_dav
-  бабищу noun:anim:f:v_dav
+  бабищі noun:anim:f:v_rod
+  бабищі noun:anim:f:v_dav
   бабище noun:anim:f:v_zna
-  бабищем noun:anim:f:v_oru
+  бабищею noun:anim:f:v_oru
   бабищі noun:anim:f:v_mis
-  бабищу noun:anim:f:v_mis
   бабище noun:anim:f:v_kly
   бабище noun:anim:n:v_naz
   бабища noun:anim:n:v_rod
@@ -333,12 +331,14 @@
   бабищу noun:anim:n:v_mis
   бабище noun:anim:n:v_kly
   бабища noun:anim:p:v_naz
+  бабищі noun:anim:p:v_naz
   бабищ noun:anim:p:v_rod
   бабищам noun:anim:p:v_dav
   бабищ noun:anim:p:v_zna
   бабищами noun:anim:p:v_oru
   бабищах noun:anim:p:v_mis
   бабища noun:anim:p:v_kly
+  бабищі noun:anim:p:v_kly
 багатій noun:anim:m:v_naz
   багатія noun:anim:m:v_rod
   багатієві noun:anim:m:v_dav
@@ -1673,7 +1673,6 @@
   вітрище noun:inanim:m:v_zna
   вітрищем noun:inanim:m:v_oru
   вітрищі noun:inanim:m:v_mis
-  вітрищу noun:inanim:m:v_mis
   вітрище noun:inanim:m:v_kly
 вовчище noun:anim:m:v_naz
   вовчища noun:anim:m:v_rod
@@ -3186,7 +3185,6 @@
   псища noun:anim:m:v_zna
   псищем noun:anim:m:v_oru
   псищі noun:anim:m:v_mis
-  псищу noun:anim:m:v_mis
   псище noun:anim:m:v_kly
   псища noun:anim:p:v_naz
   псищ noun:anim:p:v_rod
@@ -3462,7 +3460,6 @@
   сутяжища noun:anim:m:v_zna:xp2
   сутяжищем noun:anim:m:v_oru:xp2
   сутяжищі noun:anim:m:v_mis:xp2
-  сутяжищу noun:anim:m:v_mis:xp2
   сутяжище noun:anim:m:v_kly:xp2
   сутяжища noun:anim:p:v_naz:xp2
   сутяжищ noun:anim:p:v_rod:xp2

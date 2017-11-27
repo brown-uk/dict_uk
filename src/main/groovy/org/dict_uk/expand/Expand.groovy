@@ -393,10 +393,10 @@ class Expand {
 								mascLineTags = ""
 							}
 
-							if( mascLineTags.contains("m:v_kly") ) {
-								extra_out_lines << new DicEntry(line.word[0..<-1] + "е", line.lemma, mascLineTags)
-								mascLineTags = null
-							}
+//							if( mascLineTags.contains("m:v_kly") ) {
+//								extra_out_lines << new DicEntry(line.word[0..<-1] + "е", line.lemma, mascLineTags)
+//								mascLineTags = null
+//							}
 						}
 						if( mascLineTags ) {
 							extra_out_lines << new DicEntry(line.word, line.lemma, mascLineTags)

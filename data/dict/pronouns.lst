@@ -31,15 +31,15 @@
 ньому воно noun:n:v_mis:&pron:pers:3
 ним воно noun:n:v_oru:&pron:pers:3
 
-ми ми noun:p:v_naz:&pron:pers:1
-нас ми noun:p:v_rod/v_zna/v_mis:&pron:pers:1
-нам ми noun:p:v_dav:&pron:pers:1
-нами ми noun:p:v_oru:&pron:pers:1
+ми ми noun:anim:p:v_naz:&pron:pers:1
+нас ми noun:anim:p:v_rod/v_zna/v_mis:&pron:pers:1
+нам ми noun:anim:p:v_dav:&pron:pers:1
+нами ми noun:anim:p:v_oru:&pron:pers:1
 
-ви ви noun:p:v_naz/v_kly:&pron:pers:2
-вас ви noun:p:v_rod/v_zna/v_mis:&pron:pers:2
-вам ви noun:p:v_dav:&pron:pers:2
-вами ви noun:p:v_oru:&pron:pers:2
+ви ви noun:anim:p:v_naz/v_kly:&pron:pers:2
+вас ви noun:anim:p:v_rod/v_zna/v_mis:&pron:pers:2
+вам ви noun:anim:p:v_dav:&pron:pers:2
+вами ви noun:anim:p:v_oru:&pron:pers:2
 
 вони вони noun:p:v_naz:&pron:pers:3
 їх вони noun:p:v_rod/v_zna:&pron:pers:3
@@ -450,12 +450,12 @@
 кількома кілька numr:p:v_oru:&pron:ind
 
 #скількись adv:&pron:ind            # не вживається як прислівник, а лише як numr&pron:ind
-скількись скількись numr:v_naz/v_zna:&pron:ind
-скількохсь скількись numr:v_rod/v_zna/v_mis:&pron:ind
-скількохось скількись numr:v_rod/v_zna/v_mis:&pron:ind
-скількомсь скількись numr:v_dav:&pron:ind
-скількомось скількись numr:v_dav:&pron:ind
-скількомась скількись numr:v_oru:&pron:ind
+скількись скількись numr:p:v_naz/v_zna:&pron:ind
+скількохсь скількись numr:p:v_rod/v_zna/v_mis:&pron:ind
+скількохось скількись numr:p:v_rod/v_zna/v_mis:&pron:ind
+скількомсь скількись numr:p:v_dav:&pron:ind
+скількомось скількись numr:p:v_dav:&pron:ind
+скількомась скількись numr:p:v_oru:&pron:ind
 
 скільки скільки numr:p:v_naz/v_zna:&pron:int
 скількох скільки numr:p:v_rod/v_zna/v_mis:&pron:int
@@ -493,34 +493,34 @@
 скількома-небудь скільки-небудь numr:p:v_oru:&pron:ind
 
 хтозна-скільки adv:&pron:ind
-хтозна-скільки хтозна-скільки numr:v_naz/v_zna:&pron:ind
-хтозна-скількох хтозна-скільки numr:v_rod/v_zna/v_mis:&pron:ind
-хтозна-скільком хтозна-скільки numr:v_dav:&pron:ind
-хтозна-скількома хтозна-скільки numr:v_oru:&pron:ind
+хтозна-скільки хтозна-скільки numr:p:v_naz/v_zna:&pron:ind
+хтозна-скількох хтозна-скільки numr:p:v_rod/v_zna/v_mis:&pron:ind
+хтозна-скільком хтозна-скільки numr:p:v_dav:&pron:ind
+хтозна-скількома хтозна-скільки numr:p:v_oru:&pron:ind
 
 бозна-скільки adv:&pron:ind
-бозна-скільки бозна-скільки numr:v_naz/v_zna:&pron:ind
-бозна-скількох бозна-скільки numr:v_rod/v_zna/v_mis:&pron:ind
-бозна-скільком бозна-скільки numr:v_dav:&pron:ind
-бозна-скількома бозна-скільки numr:v_oru:&pron:ind
+бозна-скільки бозна-скільки numr:p:v_naz/v_zna:&pron:ind
+бозна-скількох бозна-скільки numr:p:v_rod/v_zna/v_mis:&pron:ind
+бозна-скільком бозна-скільки numr:p:v_dav:&pron:ind
+бозна-скількома бозна-скільки numr:p:v_oru:&pron:ind
 
 чортзна-скільки adv:&pron:ind
-чортзна-скільки чортзна-скільки numr:v_naz/v_zna:&pron:ind
-чортзна-скількох чортзна-скільки numr:v_rod/v_zna/v_mis:&pron:ind
-чортзна-скільком чортзна-скільки numr:v_dav:&pron:ind
-чортзна-скількома чортзна-скільки numr:v_oru:&pron:ind
+чортзна-скільки чортзна-скільки numr:p:v_naz/v_zna:&pron:ind
+чортзна-скількох чортзна-скільки numr:p:v_rod/v_zna/v_mis:&pron:ind
+чортзна-скільком чортзна-скільки numr:p:v_dav:&pron:ind
+чортзна-скількома чортзна-скільки numr:p:v_oru:&pron:ind
 
 казна-скільки adv:&pron:ind
-казна-скільки казна-скільки numr:v_naz/v_zna:&pron:ind
-казна-скількох казна-скільки numr:v_rod/v_zna/v_mis:&pron:ind
-казна-скільком казна-скільки numr:v_dav:&pron:ind
-казна-скількома казна-скільки numr:v_oru:&pron:ind
+казна-скільки казна-скільки numr:p:v_naz/v_zna:&pron:ind
+казна-скількох казна-скільки numr:p:v_rod/v_zna/v_mis:&pron:ind
+казна-скільком казна-скільки numr:p:v_dav:&pron:ind
+казна-скількома казна-скільки numr:p:v_oru:&pron:ind
 
 невідь-скільки adv:&pron:ind
-невідь-скільки невідь-скільки numr:v_naz/v_zna:&pron:ind
-невідь-скількох невідь-скільки numr:v_rod/v_zna/v_mis:&pron:ind
-невідь-скільком невідь-скільки numr:v_dav:&pron:ind
-невідь-скількома невідь-скільки numr:v_oru:&pron:ind
+невідь-скільки невідь-скільки numr:p:v_naz/v_zna:&pron:ind
+невідь-скількох невідь-скільки numr:p:v_rod/v_zna/v_mis:&pron:ind
+невідь-скільком невідь-скільки numr:p:v_dav:&pron:ind
+невідь-скількома невідь-скільки numr:p:v_oru:&pron:ind
 
 півстільки numr:nv:coll
 
@@ -688,7 +688,7 @@
 півтора-два numr:m:nv//n:nv
 півтори-дві numr:f:nv
 
-півста numr:nv:np:coll
+півста numr:p:nv:coll
 півтораста numr:p:nv
 
 один-два один-два numr:p:v_naz/v_zna
@@ -931,7 +931,6 @@
 аж-аж part|conj:subord
 аж-аж-аж part|conj:subord
 але conj:coord|intj|part:rare
-амінь part|noun:n:nv:np
 аніж conj:subord
 ані-ні part
 ані conj:coord|part

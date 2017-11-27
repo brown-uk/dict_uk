@@ -3,6 +3,7 @@
 package org.dict_uk.expand
 
 
+import groovy.transform.CompileStatic
 import groovy.transform.TypeChecked
 import java.util.regex.*
 
@@ -23,7 +24,7 @@ class ExpandComps {
 		this.expand = expand
 	}
 
-	@TypeChecked
+    @CompileStatic
 	List<DicEntry> matchComps(List<DicEntry> lefts, List<DicEntry> rights, String vMisCheck) {
 		
 		List<DicEntry> outs = []
