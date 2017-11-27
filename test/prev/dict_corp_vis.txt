@@ -1979,6 +1979,14 @@
   гроші noun:inanim:m:v_mis
   грошу noun:inanim:m:v_mis
   грошу noun:inanim:m:v_kly
+грясти verb:imperf:inf
+  гряду verb:imperf:pres:s:1
+  грядеш verb:imperf:pres:s:2
+  гряде verb:imperf:pres:s:3
+  грядемо verb:imperf:pres:p:1
+  грядем verb:imperf:pres:p:1:subst
+  грядете verb:imperf:pres:p:2
+  грядуть verb:imperf:pres:p:3
 Гулак-Артемовський noun:anim:m:v_naz:prop:lname
   Гулака-Артемовського noun:anim:m:v_rod:prop:lname
   Гулакові-Артемовському noun:anim:m:v_dav:prop:lname

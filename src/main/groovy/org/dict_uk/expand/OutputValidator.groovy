@@ -84,6 +84,7 @@ class OutputValidator {
 		int nonFatalErrorCount = 0
 		
 		limitedVerbLemmas << "хтітися"
+//		limitedVerbLemmas << "грясти"
 		
 		//		ParallelEnhancer.enhanceInstance(lines)
 

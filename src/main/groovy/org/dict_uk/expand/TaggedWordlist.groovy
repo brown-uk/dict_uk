@@ -58,7 +58,7 @@ def process_line(line, extra_tags) {
         extra_tags = ""
     }
       
-    if( out_line.contains("|") ) {
+    if( ! out_line.contains("tag=") && out_line.contains("|") ) {
         out_line = out_line.replace("|", extra_tags + "|")
     }
     
