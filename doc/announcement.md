@@ -11,7 +11,7 @@
 
 Для кого: для мовознавців, комп'ютерних лінгвістів, програмістів, та всіх зацікавлених, що працюють з українською мовою.
 
-Як працює: проект словника викладено на https://github.com/arysin/dict_uk. Проект містить слова та 
+Як працює: проект словника викладено на https://github.com/brown-uk/dict_uk. Проект містить слова та 
 парадигми відмінювання. Кожне слово і кожна форма має набір тегів. Щоб згенерувати словник потрібно 
 запустити скрипт (вимагає java 8 і gradle 2.11), що згенерує словник з усіма можливими словоформами.
 
@@ -32,22 +32,22 @@
 Більше:
 
 Документація:
-* https://github.com/arysin/dict_uk/tree/master/doc
+* https://github.com/brown-uk/dict_uk/tree/master/doc
 
 Приклад виходу:
-* https://github.com/arysin/dict_uk/blob/master/doc/example_indented.txt
-* https://github.com/arysin/dict_uk/blob/master/doc/example_tabular.txt
+* https://github.com/brown-uk/dict_uk/blob/master/doc/example_indented.txt
+* https://github.com/brown-uk/dict_uk/blob/master/doc/example_tabular.txt
 
 Повний виходовий файл у форматі з відступами можна стягнути у розділі випусків (dict_corp_vis.txt.bz2):
-* https://github.com/arysin/dict_uk/releases
+* https://github.com/brown-uk/dict_uk/releases
 
 Поточна статистика:
-* https://github.com/arysin/dict_uk/blob/master/out/stats/dict_stats.txt
+* https://github.com/brown-uk/dict_uk/blob/master/out/stats/dict_stats.txt
 
 Що далі: словник постійно поповнюють та вдосконалюють (додають нові інформативні теги, виправляють 
 помилки, вводять формати виводу тощо). У планах: створити веб-інтерфейс для користування словником, 
 автоматичний морфологічний аналіз на основі словника.
 
 Як ви можете взяти участь: почати використовувати словник і повідомляти про проблеми або можливі 
-вдосконалення. Найпростіше це зробити на сторінці https://github.com/arysin/dict_uk/issues, 
+вдосконалення. Найпростіше це зробити на сторінці https://github.com/brown-uk/dict_uk/issues, 
 форумі http://r2u.org.ua/forum/viewforum.php?f=45, але можна і електронною поштою.
