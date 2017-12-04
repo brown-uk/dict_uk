@@ -17,8 +17,8 @@ conj 112
 foreign 13
 intj 495
 noninfl 121
-noun 134546
-     anim 44655
+noun 134545
+     anim 44654
      fname 2824
      inanim 89820
      lname 24133
@@ -30,6 +30,6 @@ numr 119
 onomat 38
 part 155
 prep 174
-verb 39425
+verb 39426
      imperf 18104
-     perf 21321
+     perf 21322

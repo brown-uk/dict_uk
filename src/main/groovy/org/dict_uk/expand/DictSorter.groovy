@@ -17,11 +17,11 @@ class DictSorter {
 	static final String DERIV_PADDING="  "
 
 	static final Map<String,String> GEN_ORDER = [
-		"m": "0",
-		"f": "1",
-		"n": "3",
-		"s": "4",
-		"p": "5"
+		"m": "00",
+		"f": "10",
+		"n": "30",
+		"s": "40",
+		"p": "50"
 	]
 
 	static final Map<String,String> VIDM_ORDER = [
@@ -34,28 +34,28 @@ class DictSorter {
 		"v_kly": "70"
 	]
 
-	static final Map<String, Integer> vb_tag_key_map = [
-		"inf": 10,
-		"inz": 20,
+	static final Map<String, String> vb_tag_key_map = [
+		"inf": "10",
+		"inz": "20",
 		//		"inf:coll": 3,
 		//		"inz:coll": 4,
-		"impr": 50,
-		"pres": 60,
-		"futr": 70,
-		"past": 80,
-		"impers": 90
+		"impr": "50",
+		"pres": "60",
+		"futr": "70",
+		"past": "80",
+		"impers": "90"
 	]
 
 	static final Pattern re_verb_tense = Pattern.compile("(in[fz]|impr|pres|futr|past|impers)")
 
-	//	static final Pattern re_person_name_key_tag = Pattern.compile("^([^:]+(?::anim|:inanim|:perf|:imperf)?)(.*?)(:lname|:fname|:patr)")
 	static final Pattern re_person_name_key_tag = Pattern.compile("^(noun:anim)(.*?)(:[lfp]name)")
 
 	static final Pattern re_xv_sub = Pattern.compile("^([^:]+)(.*)(:x.[1-9])")
 	static final Pattern re_pron_sub = Pattern.compile("^([^:]+)(.*)(:&pron:[^:]+)")
 
+	static final Pattern LOWERING_TAGS_RE = Pattern.compile(/(:alt|:rare|:coll|:subst)/)  // |:short
 	static final Pattern GEN_RE = Pattern.compile(/:([mfnsp])(:|$)/)
-	static final Pattern VIDM_RE = Pattern.compile(/:(v_...)((:alt|:rare|:coll)*)/) // |:short
+	static final Pattern VIDM_RE = Pattern.compile(/:(v_...)/)
 
 	@CompileStatic
 	String tag_sort_key(String tags, String word) {
@@ -63,22 +63,20 @@ class DictSorter {
 			tags = tags.replace(":v-u", "")
 		}
 
-		if( tags.contains("v_") ) {
-			def vidm_match = VIDM_RE.matcher(tags)
+		def offset = 0
 
-			if( vidm_match.find() ) {
-				String vidm = vidm_match.group(1)
-				String vidm_order = VIDM_ORDER[vidm]
-
-				// moving alt, rare, coll... after standard forms
-				if( vidm_match.group(3) ) {
-					vidm_order = vidm_order.replace("0", vidm_match.group(2).count(":").toString())
-				}
-
-				tags = VIDM_RE.matcher(tags).replaceFirst(":"+vidm_order)
-			}
+		// moving alt, rare, coll... after standard forms
+		def loweringMatch = LOWERING_TAGS_RE.matcher(tags)
+		while( loweringMatch.find() ) {
+			offset += 1 //loweringMatch.groupCount().toString()
+		}
+		if( offset ) {
+			tags = loweringMatch.replaceAll('')
 		}
 
+		boolean hasGender = false
+		boolean hasVidm = false
+		
 		if( tags.startsWith("adj:") ) {
 			if( ! tags.contains(":comp") ) {
 				// make sure :short without :combp sorts ok with adjective base that has compb
@@ -89,13 +87,18 @@ class DictSorter {
 					tags = tags.replace("adj:", "adj:compb:")
 				}
 			}
+			hasGender = true
+			hasVidm = true
 		}
 		else if( tags.startsWith("noun") ) {
 			if( tags.contains("name") ) {
 				tags = re_person_name_key_tag.matcher(tags).replaceAll('$1$3$2')
+				// move feminine last name to its own lemma
+				// to put Адамишин :f: after Адамишини :p)
 				if ( (tags.contains("lname") || tags.contains("pname"))
-						&& tags.contains(":f:") ) {// && ! ":nv" in tags:    // to put Адамишин :f: after Адамишини :p) {
-					tags = tags.replace(":f:", ":9:")
+						&& tags.contains(":f:") ) {
+						// && ! tags.contains(":nv") {
+					tags = tags.replace(":f:", ":90:")
 				}
 			}
 
@@ -106,31 +109,48 @@ class DictSorter {
 			if( tags.contains(":np") || tags.contains(":ns") ) {
 				tags = tags.replace(":np", "").replace(":ns", "")
 			}
+			hasGender = true
+			hasVidm = true
 		}
 		else if( tags.startsWith("verb") ) {
 			def verb_match = re_verb_tense.matcher(tags)
 			if( verb_match.find() ) {
 				def tg = verb_match.group(0)
 				def order = vb_tag_key_map[tg]
-				if( tags.contains(":coll") ) {
-					order += 1
-				}
-				tags = tags.replace(":1", ":10")
-				if( tags.contains(":subst") ) {
-				    tags = tags.replace(":p:10", ":p:11")
-				}
-				tags = tags.replace(tg, "_"+order)
+				
+				tags = verb_match.replaceFirst(order)
+				tags += ':' + offset
 			}
 			else {
 				log.error("no verb match: " + tags)
 			}
+			hasGender = true
+		}
+		else if( tags.startsWith("numr") ) {
+			hasGender = true
+			hasVidm = true
+		}
+		
+		if( hasVidm /*tags.contains("v_")*/ ) {
+			def vidm_match = VIDM_RE.matcher(tags)
+
+			if( vidm_match.find() ) {
+				String vidm = vidm_match.group(1)
+				String vidm_order = VIDM_ORDER[vidm]
+				vidm_order = vidm_order[0..<-1] + offset
+
+				tags = vidm_match.replaceFirst(":"+vidm_order)
+			}
 		}
 
-		def gen_match = GEN_RE.matcher(tags)
+		if( hasGender ) {
+			def gen_match = GEN_RE.matcher(tags)
 
-		if( gen_match.find() ) {
-			def gen = gen_match.group(1)
-			tags = GEN_RE.matcher(tags).replaceFirst(":"+GEN_ORDER[gen]+'$2')
+			if( gen_match.find() ) {
+				def gen = gen_match.group(1)
+				def order = GEN_ORDER[gen]
+				tags = GEN_RE.matcher(tags).replaceFirst(":"+order+'$2')
+			}
 		}
 
 		if( tags.contains(":x") ) {
