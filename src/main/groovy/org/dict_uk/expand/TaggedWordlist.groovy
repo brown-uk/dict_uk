@@ -1,6 +1,7 @@
 package org.dict_uk.expand
 
 import groovy.transform.CompileStatic
+import java.util.regex.Pattern
 
 class TaggedWordlist {
 
@@ -28,14 +29,25 @@ def process_line_exceptions(line) {
 	return line
 }
 
-def comment_re = ~ / *#.*$/
-def lemma_tag_re1 = ~ /^[^ ]+ [:^<a-z0-9_].*$/
-def lemma_tag_re2 = ~ /^([^ ]+) ([^<a-z].*)$/
-def with_flags_re = ~ '^[а-яіїєґА-ЯІЇЄҐ\'-]+ /'
-def word_lemma_tag_re = ~ /^[^ ]+ [^ ]+ [^:]?[a-z].*$/
+Pattern comment_re = ~ / *#.*$/
+Pattern lemma_tag_re1 = ~ /^[^ ]+ [:^<a-z0-9_].*$/
+Pattern lemma_tag_re2 = ~ /^([^ ]+) ([^<a-z].*)$/
+Pattern with_flags_re = ~ '^[а-яіїєґА-ЯІЇЄҐ\'-]+ /'
+Pattern word_lemma_tag_re = ~ /^[^ ]+ [^ ]+ [^:]?[a-z].*$/
 
-def process_line(line, extra_tags) {
-    line = comment_re.matcher(line).replaceFirst("") // remove comments
+@CompileStatic
+def process_line(String line, String extra_tags) {
+	String comment = null
+	def commentMatcher = comment_re.matcher(line)
+	if( commentMatcher.find() ) {
+		line = comment_re.matcher(line).replaceFirst("") // remove comments
+		comment = commentMatcher.group(0)
+		
+		comment = comment.replaceAll(/\s*#(>.*| *TODO.*|\s*?(:?past|:?pres|rv_...|-ший)[^#]*)/, '')
+		if( ! comment.trim() ) {
+			comment = null
+		}
+	}
     
 	def out_line
     if( ! line.contains(" ") \
@@ -69,7 +81,11 @@ def process_line(line, extra_tags) {
     else if( out_line.contains(" \\:") ) {
         out_line = out_line.replace(" \\:", ":") + " \\"
     }
-      
+
+	if( comment ) {
+		out_line += comment
+	}
+	      
     return out_line
 }
 

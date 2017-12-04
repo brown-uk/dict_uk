@@ -486,6 +486,7 @@
 Богородицею Богородиця noun:anim:f:v_oru:prop
 Богородиці Богородиця noun:anim:f:v_mis:prop
 Богородице Богородиця noun:anim:f:v_kly:prop
+бон бон foreign
 босовило босовило noun:anim:m:v_naz
 босовила босовило noun:anim:m:v_rod
 босовилові босовило noun:anim:m:v_dav
@@ -2963,8 +2964,8 @@
 найуживанішими найуживаніший adj:p:v_oru:comps
 найуживаніших найуживаніший adj:p:v_mis:comps
 найуживаніші найуживаніший adj:p:v_kly:comps
-нігде нігде adv:&pron:emph
-нігде нігде adv:&pron:neg
+ніде ніде adv:&pron:emph
+ніде ніде adv:&pron:neg
 ніжність ніжність noun:inanim:f:v_naz
 ніжності ніжність noun:inanim:f:v_rod
 ніжности ніжність noun:inanim:f:v_rod:alt
@@ -3626,6 +3627,13 @@
 Федоріву Федорів noun:anim:m:v_mis:prop:lname
 Федорові Федорів noun:anim:m:v_mis:prop:lname
 Федорову Федорів noun:anim:m:v_mis:prop:lname
+Франко Франко noun:anim:m:v_naz:nv:np:prop:lname:xp3
+Франко Франко noun:anim:m:v_rod:nv:np:prop:lname:xp3
+Франко Франко noun:anim:m:v_dav:nv:np:prop:lname:xp3
+Франко Франко noun:anim:m:v_zna:nv:np:prop:lname:xp3
+Франко Франко noun:anim:m:v_oru:nv:np:prop:lname:xp3
+Франко Франко noun:anim:m:v_mis:nv:np:prop:lname:xp3
+Франко Франко noun:anim:m:v_kly:nv:np:prop:lname:xp3
 хірт хірт noun:anim:m:v_naz
 хорта хірт noun:anim:m:v_rod
 хортові хірт noun:anim:m:v_dav

@@ -80,7 +80,7 @@ class DictSorter {
 		}
 
 		if( tags.startsWith("adj:") ) {
-			if( ! tags.contains(":comp") && ! tags.contains(":supe") ) {
+			if( ! tags.contains(":comp") ) {
 				// make sure :short without :combp sorts ok with adjective base that has compb
 				if( tags.contains(":short") ) {
 					tags = tags.replace(":short", "").replace("adj:", "adj:compc")
@@ -208,6 +208,10 @@ class DictSorter {
 				outLine = DERIV_PADDING + word + " " + tags
 			}
 
+			if( line.comment ) {
+				outLine += "    # " + line.comment
+			}
+			
 			out_lines.add(outLine)
 		}
 

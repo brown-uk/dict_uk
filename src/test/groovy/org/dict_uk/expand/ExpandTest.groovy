@@ -16,7 +16,7 @@ public class ExpandTest extends GroovyTestCase {
 		def args = ["-corp", "-aff", ".", "-dict", "."].toArray(new String[0])
 		Args.parse(args)
 		
-		expand = new Expand()
+		expand = new Expand(false)
 		def affixDir = new File("data/affix").isDirectory() ? "data/affix" : "../../../data/affix"
 		expand.affix.load_affixes(affixDir)
 	}
@@ -105,55 +105,6 @@ public class ExpandTest extends GroovyTestCase {
 		assert expand.process_input(lines).join("\n").replaceAll(/[<>]/, '') == zhabaFull
 	}
 
-	
-	def strilyatyFull =
-'''
-стрілявши стрілявши advp:imperf
-стріляти стріляти verb:imperf:inf
-стріляй стріляти verb:imperf:impr:s:2
-стріляймо стріляти verb:imperf:impr:p:1
-стріляйте стріляти verb:imperf:impr:p:2
-стріляю стріляти verb:imperf:pres:s:1
-стріляєш стріляти verb:imperf:pres:s:2
-стріляє стріляти verb:imperf:pres:s:3
-стріляєм стріляти verb:imperf:pres:p:1
-стріляємо стріляти verb:imperf:pres:p:1
-стріляєте стріляти verb:imperf:pres:p:2
-стріляють стріляти verb:imperf:pres:p:3
-стрілятиму стріляти verb:imperf:futr:s:1
-стрілятимеш стріляти verb:imperf:futr:s:2
-стрілятиме стріляти verb:imperf:futr:s:3
-стрілятимем стріляти verb:imperf:futr:p:1
-стрілятимемо стріляти verb:imperf:futr:p:1
-стрілятимете стріляти verb:imperf:futr:p:2
-стрілятимуть стріляти verb:imperf:futr:p:3
-стріляв стріляти verb:imperf:past:m
-стріляла стріляти verb:imperf:past:f
-стріляло стріляти verb:imperf:past:n
-стріляли стріляти verb:imperf:past:p
-стріляно стріляти verb:imperf:impers
-'''.trim()
-
-	@Test
-	void testStrilyaty() {
-		def lines = ["стріляти /v2.cf.isNo :imperf"]
-		assert join(expand.process_input(lines)) == strilyatyFull
-	}
-
-	
-	def stryvatyFull =
-'''
-стривати стривати verb:imperf:inf
-стривай стривати verb:imperf:impr:s:2
-стриваймо стривати verb:imperf:impr:p:1
-стривайте стривати verb:imperf:impr:p:2
-'''.trim()
-
-	@Test
-	void testStryvaty() {
-		def lines = ["стривати /v2 tag=:impr|:inf :imperf"]
-		assert join(expand.process_input(lines)) == stryvatyFull
-	}
 
 	
 	def adjLastName =
@@ -164,12 +115,11 @@ public class ExpandTest extends GroovyTestCase {
 Аверянову Аверянова noun:anim:f:v_zna:prop:lname
 Аверяновою Аверянова noun:anim:f:v_oru:prop:lname
 Аверяновій Аверянова noun:anim:f:v_mis:prop:lname
-Аверянова Аверянова noun:anim:f:v_kly:prop:lname
 '''.trim()
 
 	@Test
 	void testAdjLastName() {
-		def lines = ["Аверянова /adj.<+"]
+		def lines = ["Аверянова /n2adj1.<+"]
 		assert join(expand.process_input(lines)) == adjLastName
 //		assertEquals(DicEntry.fromLines(adjLastName.split(/\n/)), join(expand.process_input(lines)))
 	}
@@ -221,134 +171,166 @@ def multilineFull =
 вагомими вагомий adj:p:v_oru:compb
 вагомих вагомий adj:p:v_mis:compb
 вагомі вагомий adj:p:v_kly:compb
-вагоміший вагоміший adj:m:v_naz:compr
-вагомішого вагоміший adj:m:v_rod:compr
-вагомішому вагоміший adj:m:v_dav:compr
-вагомішого вагоміший adj:m:v_zna:ranim:compr
-вагоміший вагоміший adj:m:v_zna:rinanim:compr
-вагомішим вагоміший adj:m:v_oru:compr
-вагомішім вагоміший adj:m:v_mis:compr
-вагомішому вагоміший adj:m:v_mis:compr
-вагоміший вагоміший adj:m:v_kly:compr
-вагоміша вагоміший adj:f:v_naz:compr
-вагомішої вагоміший adj:f:v_rod:compr
-вагомішій вагоміший adj:f:v_dav:compr
-вагомішу вагоміший adj:f:v_zna:compr
-вагомішою вагоміший adj:f:v_oru:compr
-вагомішій вагоміший adj:f:v_mis:compr
-вагоміша вагоміший adj:f:v_kly:compr
-вагоміше вагоміший adj:n:v_naz:compr
-вагомішого вагоміший adj:n:v_rod:compr
-вагомішому вагоміший adj:n:v_dav:compr
-вагоміше вагоміший adj:n:v_zna:compr
-вагомішим вагоміший adj:n:v_oru:compr
-вагомішім вагоміший adj:n:v_mis:compr
-вагомішому вагоміший adj:n:v_mis:compr
-вагоміше вагоміший adj:n:v_kly:compr
-вагоміші вагоміший adj:p:v_naz:compr
-вагоміших вагоміший adj:p:v_rod:compr
-вагомішим вагоміший adj:p:v_dav:compr
-вагоміших вагоміший adj:p:v_zna:ranim:compr
-вагоміші вагоміший adj:p:v_zna:rinanim:compr
-вагомішими вагоміший adj:p:v_oru:compr
-вагоміших вагоміший adj:p:v_mis:compr
-вагоміші вагоміший adj:p:v_kly:compr
-найвагоміший найвагоміший adj:m:v_naz:super
-найвагомішого найвагоміший adj:m:v_rod:super
-найвагомішому найвагоміший adj:m:v_dav:super
-найвагомішого найвагоміший adj:m:v_zna:ranim:super
-найвагоміший найвагоміший adj:m:v_zna:rinanim:super
-найвагомішим найвагоміший adj:m:v_oru:super
-найвагомішім найвагоміший adj:m:v_mis:super
-найвагомішому найвагоміший adj:m:v_mis:super
-найвагоміший найвагоміший adj:m:v_kly:super
-найвагоміша найвагоміший adj:f:v_naz:super
-найвагомішої найвагоміший adj:f:v_rod:super
-найвагомішій найвагоміший adj:f:v_dav:super
-найвагомішу найвагоміший adj:f:v_zna:super
-найвагомішою найвагоміший adj:f:v_oru:super
-найвагомішій найвагоміший adj:f:v_mis:super
-найвагоміша найвагоміший adj:f:v_kly:super
-найвагоміше найвагоміший adj:n:v_naz:super
-найвагомішого найвагоміший adj:n:v_rod:super
-найвагомішому найвагоміший adj:n:v_dav:super
-найвагоміше найвагоміший adj:n:v_zna:super
-найвагомішим найвагоміший adj:n:v_oru:super
-найвагомішім найвагоміший adj:n:v_mis:super
-найвагомішому найвагоміший adj:n:v_mis:super
-найвагоміше найвагоміший adj:n:v_kly:super
-найвагоміші найвагоміший adj:p:v_naz:super
-найвагоміших найвагоміший adj:p:v_rod:super
-найвагомішим найвагоміший adj:p:v_dav:super
-найвагоміших найвагоміший adj:p:v_zna:ranim:super
-найвагоміші найвагоміший adj:p:v_zna:rinanim:super
-найвагомішими найвагоміший adj:p:v_oru:super
-найвагоміших найвагоміший adj:p:v_mis:super
-найвагоміші найвагоміший adj:p:v_kly:super
-щонайвагоміший щонайвагоміший adj:m:v_naz:super
-щонайвагомішого щонайвагоміший adj:m:v_rod:super
-щонайвагомішому щонайвагоміший adj:m:v_dav:super
-щонайвагомішого щонайвагоміший adj:m:v_zna:ranim:super
-щонайвагоміший щонайвагоміший adj:m:v_zna:rinanim:super
-щонайвагомішим щонайвагоміший adj:m:v_oru:super
-щонайвагомішім щонайвагоміший adj:m:v_mis:super
-щонайвагомішому щонайвагоміший adj:m:v_mis:super
-щонайвагоміший щонайвагоміший adj:m:v_kly:super
-щонайвагоміша щонайвагоміший adj:f:v_naz:super
-щонайвагомішої щонайвагоміший adj:f:v_rod:super
-щонайвагомішій щонайвагоміший adj:f:v_dav:super
-щонайвагомішу щонайвагоміший adj:f:v_zna:super
-щонайвагомішою щонайвагоміший adj:f:v_oru:super
-щонайвагомішій щонайвагоміший adj:f:v_mis:super
-щонайвагоміша щонайвагоміший adj:f:v_kly:super
-щонайвагоміше щонайвагоміший adj:n:v_naz:super
-щонайвагомішого щонайвагоміший adj:n:v_rod:super
-щонайвагомішому щонайвагоміший adj:n:v_dav:super
-щонайвагоміше щонайвагоміший adj:n:v_zna:super
-щонайвагомішим щонайвагоміший adj:n:v_oru:super
-щонайвагомішім щонайвагоміший adj:n:v_mis:super
-щонайвагомішому щонайвагоміший adj:n:v_mis:super
-щонайвагоміше щонайвагоміший adj:n:v_kly:super
-щонайвагоміші щонайвагоміший adj:p:v_naz:super
-щонайвагоміших щонайвагоміший adj:p:v_rod:super
-щонайвагомішим щонайвагоміший adj:p:v_dav:super
-щонайвагоміших щонайвагоміший adj:p:v_zna:ranim:super
-щонайвагоміші щонайвагоміший adj:p:v_zna:rinanim:super
-щонайвагомішими щонайвагоміший adj:p:v_oru:super
-щонайвагоміших щонайвагоміший adj:p:v_mis:super
-щонайвагоміші щонайвагоміший adj:p:v_kly:super
-якнайвагоміший якнайвагоміший adj:m:v_naz:super
-якнайвагомішого якнайвагоміший adj:m:v_rod:super
-якнайвагомішому якнайвагоміший adj:m:v_dav:super
-якнайвагомішого якнайвагоміший adj:m:v_zna:ranim:super
-якнайвагоміший якнайвагоміший adj:m:v_zna:rinanim:super
-якнайвагомішим якнайвагоміший adj:m:v_oru:super
-якнайвагомішім якнайвагоміший adj:m:v_mis:super
-якнайвагомішому якнайвагоміший adj:m:v_mis:super
-якнайвагоміший якнайвагоміший adj:m:v_kly:super
-якнайвагоміша якнайвагоміший adj:f:v_naz:super
-якнайвагомішої якнайвагоміший adj:f:v_rod:super
-якнайвагомішій якнайвагоміший adj:f:v_dav:super
-якнайвагомішу якнайвагоміший adj:f:v_zna:super
-якнайвагомішою якнайвагоміший adj:f:v_oru:super
-якнайвагомішій якнайвагоміший adj:f:v_mis:super
-якнайвагоміша якнайвагоміший adj:f:v_kly:super
-якнайвагоміше якнайвагоміший adj:n:v_naz:super
-якнайвагомішого якнайвагоміший adj:n:v_rod:super
-якнайвагомішому якнайвагоміший adj:n:v_dav:super
-якнайвагоміше якнайвагоміший adj:n:v_zna:super
-якнайвагомішим якнайвагоміший adj:n:v_oru:super
-якнайвагомішім якнайвагоміший adj:n:v_mis:super
-якнайвагомішому якнайвагоміший adj:n:v_mis:super
-якнайвагоміше якнайвагоміший adj:n:v_kly:super
-якнайвагоміші якнайвагоміший adj:p:v_naz:super
-якнайвагоміших якнайвагоміший adj:p:v_rod:super
-якнайвагомішим якнайвагоміший adj:p:v_dav:super
-якнайвагоміших якнайвагоміший adj:p:v_zna:ranim:super
-якнайвагоміші якнайвагоміший adj:p:v_zna:rinanim:super
-якнайвагомішими якнайвагоміший adj:p:v_oru:super
-якнайвагоміших якнайвагоміший adj:p:v_mis:super
-якнайвагоміші якнайвагоміший adj:p:v_kly:super
+вагоміший вагоміший adj:m:v_naz:compc
+вагомішого вагоміший adj:m:v_rod:compc
+вагомішому вагоміший adj:m:v_dav:compc
+вагомішого вагоміший adj:m:v_zna:ranim:compc
+вагоміший вагоміший adj:m:v_zna:rinanim:compc
+вагомішим вагоміший adj:m:v_oru:compc
+вагомішім вагоміший adj:m:v_mis:compc
+вагомішому вагоміший adj:m:v_mis:compc
+вагоміший вагоміший adj:m:v_kly:compc
+вагоміша вагоміший adj:f:v_naz:compc
+вагомішої вагоміший adj:f:v_rod:compc
+вагомішій вагоміший adj:f:v_dav:compc
+вагомішу вагоміший adj:f:v_zna:compc
+вагомішою вагоміший adj:f:v_oru:compc
+вагомішій вагоміший adj:f:v_mis:compc
+вагоміша вагоміший adj:f:v_kly:compc
+вагоміше вагоміший adj:n:v_naz:compc
+вагомішого вагоміший adj:n:v_rod:compc
+вагомішому вагоміший adj:n:v_dav:compc
+вагоміше вагоміший adj:n:v_zna:compc
+вагомішим вагоміший adj:n:v_oru:compc
+вагомішім вагоміший adj:n:v_mis:compc
+вагомішому вагоміший adj:n:v_mis:compc
+вагоміше вагоміший adj:n:v_kly:compc
+вагоміші вагоміший adj:p:v_naz:compc
+вагоміших вагоміший adj:p:v_rod:compc
+вагомішим вагоміший adj:p:v_dav:compc
+вагоміших вагоміший adj:p:v_zna:ranim:compc
+вагоміші вагоміший adj:p:v_zna:rinanim:compc
+вагомішими вагоміший adj:p:v_oru:compc
+вагоміших вагоміший adj:p:v_mis:compc
+вагоміші вагоміший adj:p:v_kly:compc
+найвагоміший найвагоміший adj:m:v_naz:comps
+найвагомішого найвагоміший adj:m:v_rod:comps
+найвагомішому найвагоміший adj:m:v_dav:comps
+найвагомішого найвагоміший adj:m:v_zna:ranim:comps
+найвагоміший найвагоміший adj:m:v_zna:rinanim:comps
+найвагомішим найвагоміший adj:m:v_oru:comps
+найвагомішім найвагоміший adj:m:v_mis:comps
+найвагомішому найвагоміший adj:m:v_mis:comps
+найвагоміший найвагоміший adj:m:v_kly:comps
+найвагоміша найвагоміший adj:f:v_naz:comps
+найвагомішої найвагоміший adj:f:v_rod:comps
+найвагомішій найвагоміший adj:f:v_dav:comps
+найвагомішу найвагоміший adj:f:v_zna:comps
+найвагомішою найвагоміший adj:f:v_oru:comps
+найвагомішій найвагоміший adj:f:v_mis:comps
+найвагоміша найвагоміший adj:f:v_kly:comps
+найвагоміше найвагоміший adj:n:v_naz:comps
+найвагомішого найвагоміший adj:n:v_rod:comps
+найвагомішому найвагоміший adj:n:v_dav:comps
+найвагоміше найвагоміший adj:n:v_zna:comps
+найвагомішим найвагоміший adj:n:v_oru:comps
+найвагомішім найвагоміший adj:n:v_mis:comps
+найвагомішому найвагоміший adj:n:v_mis:comps
+найвагоміше найвагоміший adj:n:v_kly:comps
+найвагоміші найвагоміший adj:p:v_naz:comps
+найвагоміших найвагоміший adj:p:v_rod:comps
+найвагомішим найвагоміший adj:p:v_dav:comps
+найвагоміших найвагоміший adj:p:v_zna:ranim:comps
+найвагоміші найвагоміший adj:p:v_zna:rinanim:comps
+найвагомішими найвагоміший adj:p:v_oru:comps
+найвагоміших найвагоміший adj:p:v_mis:comps
+найвагоміші найвагоміший adj:p:v_kly:comps
+щонайвагоміший щонайвагоміший adj:m:v_naz:comps
+щонайвагомішого щонайвагоміший adj:m:v_rod:comps
+щонайвагомішому щонайвагоміший adj:m:v_dav:comps
+щонайвагомішого щонайвагоміший adj:m:v_zna:ranim:comps
+щонайвагоміший щонайвагоміший adj:m:v_zna:rinanim:comps
+щонайвагомішим щонайвагоміший adj:m:v_oru:comps
+щонайвагомішім щонайвагоміший adj:m:v_mis:comps
+щонайвагомішому щонайвагоміший adj:m:v_mis:comps
+щонайвагоміший щонайвагоміший adj:m:v_kly:comps
+щонайвагоміша щонайвагоміший adj:f:v_naz:comps
+щонайвагомішої щонайвагоміший adj:f:v_rod:comps
+щонайвагомішій щонайвагоміший adj:f:v_dav:comps
+щонайвагомішу щонайвагоміший adj:f:v_zna:comps
+щонайвагомішою щонайвагоміший adj:f:v_oru:comps
+щонайвагомішій щонайвагоміший adj:f:v_mis:comps
+щонайвагоміша щонайвагоміший adj:f:v_kly:comps
+щонайвагоміше щонайвагоміший adj:n:v_naz:comps
+щонайвагомішого щонайвагоміший adj:n:v_rod:comps
+щонайвагомішому щонайвагоміший adj:n:v_dav:comps
+щонайвагоміше щонайвагоміший adj:n:v_zna:comps
+щонайвагомішим щонайвагоміший adj:n:v_oru:comps
+щонайвагомішім щонайвагоміший adj:n:v_mis:comps
+щонайвагомішому щонайвагоміший adj:n:v_mis:comps
+щонайвагоміше щонайвагоміший adj:n:v_kly:comps
+щонайвагоміші щонайвагоміший adj:p:v_naz:comps
+щонайвагоміших щонайвагоміший adj:p:v_rod:comps
+щонайвагомішим щонайвагоміший adj:p:v_dav:comps
+щонайвагоміших щонайвагоміший adj:p:v_zna:ranim:comps
+щонайвагоміші щонайвагоміший adj:p:v_zna:rinanim:comps
+щонайвагомішими щонайвагоміший adj:p:v_oru:comps
+щонайвагоміших щонайвагоміший adj:p:v_mis:comps
+щонайвагоміші щонайвагоміший adj:p:v_kly:comps
+щоякнайвагоміший щоякнайвагоміший adj:m:v_naz:comps
+щоякнайвагомішого щоякнайвагоміший adj:m:v_rod:comps
+щоякнайвагомішому щоякнайвагоміший adj:m:v_dav:comps
+щоякнайвагомішого щоякнайвагоміший adj:m:v_zna:ranim:comps
+щоякнайвагоміший щоякнайвагоміший adj:m:v_zna:rinanim:comps
+щоякнайвагомішим щоякнайвагоміший adj:m:v_oru:comps
+щоякнайвагомішім щоякнайвагоміший adj:m:v_mis:comps
+щоякнайвагомішому щоякнайвагоміший adj:m:v_mis:comps
+щоякнайвагоміший щоякнайвагоміший adj:m:v_kly:comps
+щоякнайвагоміша щоякнайвагоміший adj:f:v_naz:comps
+щоякнайвагомішої щоякнайвагоміший adj:f:v_rod:comps
+щоякнайвагомішій щоякнайвагоміший adj:f:v_dav:comps
+щоякнайвагомішу щоякнайвагоміший adj:f:v_zna:comps
+щоякнайвагомішою щоякнайвагоміший adj:f:v_oru:comps
+щоякнайвагомішій щоякнайвагоміший adj:f:v_mis:comps
+щоякнайвагоміша щоякнайвагоміший adj:f:v_kly:comps
+щоякнайвагоміше щоякнайвагоміший adj:n:v_naz:comps
+щоякнайвагомішого щоякнайвагоміший adj:n:v_rod:comps
+щоякнайвагомішому щоякнайвагоміший adj:n:v_dav:comps
+щоякнайвагоміше щоякнайвагоміший adj:n:v_zna:comps
+щоякнайвагомішим щоякнайвагоміший adj:n:v_oru:comps
+щоякнайвагомішім щоякнайвагоміший adj:n:v_mis:comps
+щоякнайвагомішому щоякнайвагоміший adj:n:v_mis:comps
+щоякнайвагоміше щоякнайвагоміший adj:n:v_kly:comps
+щоякнайвагоміші щоякнайвагоміший adj:p:v_naz:comps
+щоякнайвагоміших щоякнайвагоміший adj:p:v_rod:comps
+щоякнайвагомішим щоякнайвагоміший adj:p:v_dav:comps
+щоякнайвагоміших щоякнайвагоміший adj:p:v_zna:ranim:comps
+щоякнайвагоміші щоякнайвагоміший adj:p:v_zna:rinanim:comps
+щоякнайвагомішими щоякнайвагоміший adj:p:v_oru:comps
+щоякнайвагоміших щоякнайвагоміший adj:p:v_mis:comps
+щоякнайвагоміші щоякнайвагоміший adj:p:v_kly:comps
+якнайвагоміший якнайвагоміший adj:m:v_naz:comps
+якнайвагомішого якнайвагоміший adj:m:v_rod:comps
+якнайвагомішому якнайвагоміший adj:m:v_dav:comps
+якнайвагомішого якнайвагоміший adj:m:v_zna:ranim:comps
+якнайвагоміший якнайвагоміший adj:m:v_zna:rinanim:comps
+якнайвагомішим якнайвагоміший adj:m:v_oru:comps
+якнайвагомішім якнайвагоміший adj:m:v_mis:comps
+якнайвагомішому якнайвагоміший adj:m:v_mis:comps
+якнайвагоміший якнайвагоміший adj:m:v_kly:comps
+якнайвагоміша якнайвагоміший adj:f:v_naz:comps
+якнайвагомішої якнайвагоміший adj:f:v_rod:comps
+якнайвагомішій якнайвагоміший adj:f:v_dav:comps
+якнайвагомішу якнайвагоміший adj:f:v_zna:comps
+якнайвагомішою якнайвагоміший adj:f:v_oru:comps
+якнайвагомішій якнайвагоміший adj:f:v_mis:comps
+якнайвагоміша якнайвагоміший adj:f:v_kly:comps
+якнайвагоміше якнайвагоміший adj:n:v_naz:comps
+якнайвагомішого якнайвагоміший adj:n:v_rod:comps
+якнайвагомішому якнайвагоміший adj:n:v_dav:comps
+якнайвагоміше якнайвагоміший adj:n:v_zna:comps
+якнайвагомішим якнайвагоміший adj:n:v_oru:comps
+якнайвагомішім якнайвагоміший adj:n:v_mis:comps
+якнайвагомішому якнайвагоміший adj:n:v_mis:comps
+якнайвагоміше якнайвагоміший adj:n:v_kly:comps
+якнайвагоміші якнайвагоміший adj:p:v_naz:comps
+якнайвагоміших якнайвагоміший adj:p:v_rod:comps
+якнайвагомішим якнайвагоміший adj:p:v_dav:comps
+якнайвагоміших якнайвагоміший adj:p:v_zna:ranim:comps
+якнайвагоміші якнайвагоміший adj:p:v_zna:rinanim:comps
+якнайвагомішими якнайвагоміший adj:p:v_oru:comps
+якнайвагоміших якнайвагоміший adj:p:v_mis:comps
+якнайвагоміші якнайвагоміший adj:p:v_kly:comps
 '''.trim()
 	
 	@Test
@@ -359,6 +341,25 @@ def multilineFull =
 		assertEquals(multilineFull, join(expand.process_input(lines)))
 	}
 
+	
+	def multilineFull2 =
+	'''
+вагоміше вагоміше adv:compc
+вагомо вагомо adv:compb
+найвагоміше найвагоміше adv:comps
+щонайвагоміше щонайвагоміше adv:comps
+якнайвагоміше якнайвагоміше adv:comps
+'''.trim()
+//TODO: щоякнайвагоміше щоякнайвагоміше adv:comps
+
+		
+		@Test
+		void testMultilineWithTag() {
+			def lines = ["вагомо adv \\", " +cs=вагоміше"]
+			assertEquals(multilineFull2, join(expand.process_input(lines)))
+		}
+	
+	
 def taggedIn = 
 '''
 абичий абичий adj:m:v_naz/v_zna:&pron:ind
@@ -412,10 +413,99 @@ def taggedOut =
 	void testTaggedLine() {
 		assert join(expand.process_input(Arrays.asList(taggedIn))) == taggedOut
 	}
+
 	
+	
+	def strilyatyFull =
+'''
+стрілявши стрілявши advp:imperf
+стріляти стріляти verb:imperf:inf # comment
+стріляй стріляти verb:imperf:impr:s:2
+стріляймо стріляти verb:imperf:impr:p:1
+стріляйте стріляти verb:imperf:impr:p:2
+стріляю стріляти verb:imperf:pres:s:1
+стріляєш стріляти verb:imperf:pres:s:2
+стріляє стріляти verb:imperf:pres:s:3
+стріляємо стріляти verb:imperf:pres:p:1
+стріляєм стріляти verb:imperf:pres:p:1:subst
+стріляєте стріляти verb:imperf:pres:p:2
+стріляють стріляти verb:imperf:pres:p:3
+стрілятиму стріляти verb:imperf:futr:s:1
+стрілятимеш стріляти verb:imperf:futr:s:2
+стрілятиме стріляти verb:imperf:futr:s:3
+стрілятимем стріляти verb:imperf:futr:p:1
+стрілятимемо стріляти verb:imperf:futr:p:1
+стрілятимете стріляти verb:imperf:futr:p:2
+стрілятимуть стріляти verb:imperf:futr:p:3
+стріляв стріляти verb:imperf:past:m
+стріляла стріляти verb:imperf:past:f
+стріляло стріляти verb:imperf:past:n
+стріляли стріляти verb:imperf:past:p
+стріляно стріляти verb:imperf:impers
+'''.trim()
+
+	@Test
+	void testStrilyaty() {
+		def lines = ["стріляти /v2.cf.isNo :imperf    # comment"]
+		assert join(expand.process_input(lines)) == strilyatyFull
+	}
+
+	
+	def strilyatyFullIndented =
+'''
+стрілявши advp:imperf
+стріляти verb:imperf:inf    # comment
+  стріляй verb:imperf:impr:s:2
+  стріляймо verb:imperf:impr:p:1
+  стріляйте verb:imperf:impr:p:2
+  стріляю verb:imperf:pres:s:1
+  стріляєш verb:imperf:pres:s:2
+  стріляє verb:imperf:pres:s:3
+  стріляємо verb:imperf:pres:p:1
+  стріляєм verb:imperf:pres:p:1:subst
+  стріляєте verb:imperf:pres:p:2
+  стріляють verb:imperf:pres:p:3
+  стрілятиму verb:imperf:futr:s:1
+  стрілятимеш verb:imperf:futr:s:2
+  стрілятиме verb:imperf:futr:s:3
+  стрілятимем verb:imperf:futr:p:1
+  стрілятимемо verb:imperf:futr:p:1
+  стрілятимете verb:imperf:futr:p:2
+  стрілятимуть verb:imperf:futr:p:3
+  стріляв verb:imperf:past:m
+  стріляла verb:imperf:past:f
+  стріляло verb:imperf:past:n
+  стріляли verb:imperf:past:p
+  стріляно verb:imperf:impers
+'''.trim()
+
+	@Test
+	void testStrilyatyIndented() {
+		def lines = ["стріляти /v2.cf.isNo :imperf    # comment"]
+		assertEquals(strilyatyFullIndented, new DictSorter().indent_lines(expand.process_input(lines)).join("\n"))
+	}
+
+
+	
+	def stryvatyFull =
+'''
+стривати стривати verb:imperf:inf
+стривай стривати verb:imperf:impr:s:2
+стриваймо стривати verb:imperf:impr:p:1
+стривайте стривати verb:imperf:impr:p:2
+'''.trim()
+
+	@Test
+	void testStryvaty() {
+		def lines = ["стривати /v2 tag=:impr|:inf :imperf"]
+		assert join(expand.process_input(lines)) == stryvatyFull
+	}
+
 
 	static final String join(def entries) {
 		return entries.join("\n").replaceAll(/[<>]/, '')
 	}
+
+	
 }
 

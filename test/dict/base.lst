@@ -8,7 +8,7 @@
 # Порівняльні форми
 
 крутий /adj \
- +cs
+ +cs=крутіший
 гладкий /adj.adv \
  +cs=гладший \
  +cs=гладкіший
@@ -257,5 +257,7 @@
 
 уточнюватися /vr1.cf.advp :imperf p=4
 
-нігде adv:&pron:emph
-нігде adv:&pron:neg
+ніде adv:&pron:emph     # rv_inf    # ні́де
+ніде adv:&pron:neg                  # ніде́
+
+бон foreign                             # бон жур, бон діа

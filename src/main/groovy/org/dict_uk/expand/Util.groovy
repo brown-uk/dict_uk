@@ -116,41 +116,41 @@ class Util {
 	List<DicEntry> expand_nv(List<DicEntry> in_lines) {
 		def lines = []
 
-		for( line in in_lines ){
-			def lineTagStr = line.tagStr
+		for(DicEntry entry in in_lines) {
+			String lineTagStr = entry.tagStr
 
 			if( ! lineTagStr.contains(":nv") ) {
-				lines << line
+				lines << entry
 			}
 			
-			if ( ( lineTagStr.contains("noun") || lineTagStr.contains("numr") ) && ! lineTagStr.contains(":v_") ) {
+			if ( ( lineTagStr.startsWith("noun") || lineTagStr.startsWith("numr") ) && ! lineTagStr.contains(":v_") ) {
 				def parts = lineTagStr.split(":nv")
 				def part2 = parts.size() > 1 ? parts[1] : ""
 
-
+				// add singular
 				for( v in VIDM_LIST ){
-//					if( v == "v_kly" && (! (":anim" in line) || ":lname" in line) )
-					if( v == "v_kly" && line.word.endsWith(".") )
+					if( v == "v_kly" && entry.word.endsWith(".") )
 						continue
 
-					lines.add(new DicEntry(line.word, line.lemma, parts[0] + ":" + v + ":nv" + part2))
+					String tag = parts[0] + ":" + v + ":nv" + part2
+					lines.add(new DicEntry(entry.word, entry.lemma, tag, entry.comment))
 				}
 
+				// add plural
 				if( lineTagStr.contains("noun") ) {
 					if( ! lineTagStr.contains(":p") && ! lineTagStr.contains(":np") && ! lineTagStr.contains(":lname") ) {
 						for( v in VIDM_LIST ) {
-        					if( v == "v_kly" && line.word.endsWith(".") )
+        					if( v == "v_kly" && entry.word.endsWith(".") )
         					    continue
-//							if( v != "v_kly" || "anim" in line) {
+
 							def newTagStr = re_nv_vidm.matcher(lineTagStr).replaceAll('$1:p:' + v + ':$2')
-							lines.add(new DicEntry(line.word, line.lemma, newTagStr))
-//							}
+							String comment = entry.comment && DicEntry.isPossibleLemma(newTagStr) ? entry.comment : null
+							lines.add(new DicEntry(entry.word, entry.lemma, newTagStr, comment))
 						}
 					}
 				}
 			}
-			//        print("expand_nv", in_lines, "\n", lines, file=sys.stderr)
-			else if (lineTagStr.contains("adj") && ! lineTagStr.contains(":v_") ) {
+			else if (lineTagStr.startsWith("adj") && ! lineTagStr.contains(":v_") ) {
 				def parts = lineTagStr.split(":nv")
 
 				def gens
@@ -162,14 +162,14 @@ class Util {
 					gens = GEN_LIST
 				}
 
-				for( g in gens ){
-					for( v in VIDM_LIST ){
-//						if( v == "v_kly" && (! (":anim" in line) || ":lname" in line) )    // TODO: include v_kly? but ! for abbr like кв.
-        				if( v == "v_kly" && (line.word.endsWith(".") || lineTagStr.contains("&pron")) )
+				for(String g in gens) {
+					for(String v in VIDM_LIST){
+        				if( v == "v_kly" && (entry.word.endsWith(".") || lineTagStr.contains("&pron")) )
 							continue
 
 						def newTagStr = parts[0] + ":" + g + ":" + v + ":nv" + (parts.size()>1 ? parts[1] :"")
-						lines.add(new DicEntry(line.word, line.lemma, newTagStr))
+						String comment = entry.comment && DicEntry.isPossibleLemma(newTagStr) ? entry.comment : null
+						lines.add(new DicEntry(entry.word, entry.lemma, newTagStr, comment))
 					}
 				}
 			}

@@ -63,4 +63,5 @@ public class DictSorterTest extends GroovyTestCase {
 		def entries = DicEntry.fromLines(["а а part", "а а intj"])
 		assert ["а а intj", "а а part"].join('\n') == ExpandTest.join(dictSorter.sortEntries(entries))
 	}
+	
 }

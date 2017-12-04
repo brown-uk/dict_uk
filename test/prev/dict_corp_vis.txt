@@ -349,7 +349,7 @@
   багатії noun:anim:m:v_mis
   багатію noun:anim:m:v_mis
   багатію noun:anim:m:v_kly
-бар noun:inanim:m:v_naz:xp1
+бар noun:inanim:m:v_naz:xp1    # одиниця виміру
   бара noun:inanim:m:v_rod:xp1
   барові noun:inanim:m:v_dav:xp1
   бару noun:inanim:m:v_dav:xp1
@@ -366,7 +366,7 @@
   барами noun:inanim:p:v_oru:xp1
   барах noun:inanim:p:v_mis:xp1
   бари noun:inanim:p:v_kly:xp1
-бар noun:inanim:m:v_naz:xp2
+бар noun:inanim:m:v_naz:xp2    # генделик, мілина, деталь машини
   бару noun:inanim:m:v_rod:xp2
   барові noun:inanim:m:v_dav:xp2
   бару noun:inanim:m:v_dav:xp2
@@ -486,6 +486,7 @@
   Богородицею noun:anim:f:v_oru:prop
   Богородиці noun:anim:f:v_mis:prop
   Богородице noun:anim:f:v_kly:prop
+бон foreign    # бон жур, бон діа
 босовило noun:anim:m:v_naz
   босовила noun:anim:m:v_rod
   босовилові noun:anim:m:v_dav
@@ -2963,8 +2964,8 @@
   найуживанішими adj:p:v_oru:comps
   найуживаніших adj:p:v_mis:comps
   найуживаніші adj:p:v_kly:comps
-нігде adv:&pron:emph
-нігде adv:&pron:neg
+ніде adv:&pron:emph    # ні́де
+ніде adv:&pron:neg    # ніде́
 ніжність noun:inanim:f:v_naz
   ніжності noun:inanim:f:v_rod
   ніжности noun:inanim:f:v_rod:alt
@@ -3092,7 +3093,7 @@
   папараці noun:anim:f:v_oru:nv:np
   папараці noun:anim:f:v_mis:nv:np
   папараці noun:anim:f:v_kly:nv:np
-пара noun:inanim:f:v_naz:xp1
+пара noun:inanim:f:v_naz:xp1    # газ
   пари noun:inanim:f:v_rod:xp1
   парі noun:inanim:f:v_dav:xp1
   пару noun:inanim:f:v_zna:xp1
@@ -3106,7 +3107,7 @@
   парами noun:inanim:p:v_oru:xp1
   парах noun:inanim:p:v_mis:xp1
   пари noun:inanim:p:v_kly:xp1
-пара noun:inanim:f:v_naz:&predic:xp2
+пара noun:inanim:f:v_naz:&predic:xp2    # двоє
   пари noun:inanim:f:v_rod:xp2
   парі noun:inanim:f:v_dav:xp2
   пару noun:inanim:f:v_zna:xp2
@@ -3626,6 +3627,13 @@
   Федоріву noun:anim:m:v_mis:prop:lname
   Федорові noun:anim:m:v_mis:prop:lname
   Федорову noun:anim:m:v_mis:prop:lname
+Франко noun:anim:m:v_naz:nv:np:prop:lname:xp3    # ісп. прізвище
+  Франко noun:anim:m:v_rod:nv:np:prop:lname:xp3
+  Франко noun:anim:m:v_dav:nv:np:prop:lname:xp3
+  Франко noun:anim:m:v_zna:nv:np:prop:lname:xp3
+  Франко noun:anim:m:v_oru:nv:np:prop:lname:xp3
+  Франко noun:anim:m:v_mis:nv:np:prop:lname:xp3
+  Франко noun:anim:m:v_kly:nv:np:prop:lname:xp3
 хірт noun:anim:m:v_naz
   хорта noun:anim:m:v_rod
   хортові noun:anim:m:v_dav

@@ -53,11 +53,13 @@ class AffixUtil {
 			}
 
 			for(String split_: split1) {
-				out.add(new DicEntry(entry.getWord(), entry.getLemma(), base + split_ + end ));
+				String tag = base + split_ + end
+				String comment = entry.comment && DicEntry.isPossibleLemma(tag) ? entry.comment : null
+				out.add(new DicEntry(entry.getWord(), entry.getLemma(), tag, comment));
 			}
 		}
 
 		return out;
 	}
-
+	
 }

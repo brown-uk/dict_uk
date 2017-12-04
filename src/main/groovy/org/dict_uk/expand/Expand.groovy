@@ -5,6 +5,7 @@ package org.dict_uk.expand
 import java.util.regex.*
 
 import org.dict_uk.common.*
+
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
@@ -186,36 +187,6 @@ class Expand {
 
 		def mods = [:]
 
-//		replaced with /n2adj1.<
-//		if( flags.contains("/adj") && flags.contains("<") ) {
-//			mods["pos"] = "noun"
-//
-//			if( ! mod_flags.contains("=") ) {
-//				if( flags.contains("<+") ) {
-//					if( word.endsWith("а"))
-//						mods["gen"] = "f"
-//					else
-//						mods["gen"] = "mfp"
-//						
-//					return mods
-//				}
-//				
-//				if( flags.contains("<") ) {
-//					if( word.endsWith("а"))
-//						mods["gen"] = "fp"
-//					else
-//						mods["gen"] = "mp"
-//						
-//					return mods
-//				}
-//			}
-//			
-//			if( ! mod_flags.contains("=") ) {
-//				mods["gen"] = "mfp"
-//				return mods
-//			}
-//		}
-
 		String[] mod_set = mod_flags.split(" ")
 
 		for(String mod in mod_set) {
@@ -359,7 +330,7 @@ class Expand {
 			List<DicEntry> out_lines = []
 			List<DicEntry> extra_out_lines = []
 
-			for( line in lines) {
+			for(DicEntry line in lines) {
 				String extra_flags2 = extra_flags
 
 				if( first_name_base && ! line.tagStr.contains("pname") && ! flags.contains(":pname") ) {
@@ -379,7 +350,7 @@ class Expand {
 
 					if( line.tagStr.contains(":f:") ) {
 						String  mascLineTags2 = line.tagStr.replace(":f:", ":m:") + extra_flags2
-						extra_out_lines.add(new DicEntry(line.word, line.lemma, mascLineTags2))
+						extra_out_lines.add(new DicEntry(line.word, line.lemma, mascLineTags2, line.comment))
 					}
 					else if( line.tagStr.contains(":n:") ) {
 						String mascLineTags = line.tagStr.replace(":n:", ":m:") + extra_flags2
@@ -387,7 +358,7 @@ class Expand {
 						if( util.istota(flags)) {
 							if( mascLineTags.contains("m:v_rod") ) {
 								def mascLineTags2 = mascLineTags.replace("m:v_rod", "m:v_zna")
-								extra_out_lines.add(new DicEntry(line.word, line.lemma, mascLineTags2))
+								extra_out_lines.add(new DicEntry(line.word, line.lemma, mascLineTags2, line.comment))
 							}
 							else if( mascLineTags.contains("m:v_zna") ) {
 								mascLineTags = ""
@@ -399,7 +370,7 @@ class Expand {
 //							}
 						}
 						if( mascLineTags ) {
-							extra_out_lines << new DicEntry(line.word, line.lemma, mascLineTags)
+							extra_out_lines << new DicEntry(line.word, line.lemma, mascLineTags, line.comment)
 						}
 					}
 				}
@@ -408,13 +379,13 @@ class Expand {
 
 					if( line.tagStr.contains(":m:") ) {
 						String masc_line = line.tagStr.replace(":m:", ":f:") + extra_flags2
-						extra_out_lines.add(new DicEntry(line.word, line.lemma, masc_line))
+						extra_out_lines.add(new DicEntry(line.word, line.lemma, masc_line, line.comment))
 					}
 					else if( line.tagStr.contains(":n:") ) {
 						String masc_line = line.tagStr.replace(":n:", ":f:") + extra_flags2
 
 						if( masc_line) {
-							extra_out_lines.add(new DicEntry(line.word, line.lemma, masc_line))
+							extra_out_lines.add(new DicEntry(line.word, line.lemma, masc_line, line.comment))
 						}
 					}
 				}
@@ -422,7 +393,7 @@ class Expand {
 					line.tagStr = line.tagStr.replace(":pname", ":anim:pname")
 					extra_flags2 = extra_flags2.replace(":anim", "")
 				}
-				out_lines.add(new DicEntry(line.word, line.lemma, line.tagStr + extra_flags2))
+				out_lines.add(new DicEntry(line.word, line.lemma, line.tagStr + extra_flags2, line.comment))
 			}
 
 			out_lines.addAll(extra_out_lines)
@@ -677,11 +648,11 @@ class Expand {
 //	private static final Pattern tag_split0_re = Pattern.compile(/[^ ]+$/)
 
 	@CompileStatic
-	private List<String> preprocess(String line) {
-		List<String> lines
+	private List<LineGroup> preprocess(LineGroup lineGroup) {
+		List<LineGroup> lineGroups
 
-		if( line.count(" /") > 1 ) {
-			String[] parts = line.split(" ")
+		if( lineGroup.line.count(" /") > 1 ) {
+			String[] parts = lineGroup.line.split(" ")
 
 			def line1 = parts[0..<2]
 			if( parts.size() > 3 ) {
@@ -690,26 +661,28 @@ class Expand {
 			
 			def line2 = parts[0..<1] + parts[2..-1]
 			
-			lines = [
-				line1.join(" "),
-				line2.join(" ")
+			lineGroups = [
+				new LineGroup(lineGroup, line1.join(" ")),
+				new LineGroup(lineGroup, line2.join(" "))
 			]
 		}
-		else if( line.contains("|") && ! line.contains(" tag=") ) {
-			def parts = line.split(/ /)
+		else if( lineGroup.line.contains("|") && ! lineGroup.line.contains(" tag=") ) {
+			def parts = lineGroup.line.split(/ /)
 			def base = parts[0..-2].join(" ")
-			lines = Arrays.asList(parts[-1].split(/\|/)).collect{ base + " " + it }
+			lineGroups = Arrays.asList(parts[-1].split(/\|/)).collect{ new LineGroup(lineGroup, base + " " + it) }
 		}
 		else {
-			lines = [line]
+			lineGroups = [lineGroup]
 		}
 //		else {
 //			lines = affix.expand_alts([line], "|")
 //		}
 
 		def out_lines = []
-		for(String line2 in lines) {
-			out_lines.addAll(preprocess2(line2))
+		for(LineGroup lineGroup2 in lineGroups) {
+			out_lines.addAll(preprocess2(lineGroup2.line).collect { String line ->
+				new LineGroup(lineGroup2, line)
+			})
 		}
 
 		return out_lines
@@ -860,8 +833,7 @@ class Expand {
 	@CompileStatic
 	private DicEntry promote(DicEntry line) {
 		//    System.err.printf("promote %s -> %s\n", line, lemma)
-//		line = replace_base(line, line.lemma)
-		return new DicEntry(line.word, line.word, line.tagStr)
+		return new DicEntry(line.word, line.word, line.tagStr, line.comment)
 	}
 
 	@CompileStatic
@@ -973,7 +945,7 @@ class Expand {
 
 	@CompileStatic
 	private DicEntry replace_base(DicEntry line, String base) {
-		return new DicEntry(line.word, base, line.tagStr)
+		return new DicEntry(line.word, base, line.tagStr, line.comment)
 	}
 
 	@CompileStatic
@@ -1025,7 +997,7 @@ class Expand {
 			return forms
 		}
 
-		assert false, "Unknown subposition for " + line + "(" + main_word + ")"
+		assert false, "Unknown subposition for " + line + " (" + main_word + ")"
 	}
 
 	@CompileStatic
@@ -1108,77 +1080,78 @@ class Expand {
 	}
 
 
-	private final static Pattern word_lemma_re = Pattern.compile(" [а-яіїєґА-ЯІЇЄҐ]", Pattern.CASE_INSENSITIVE)
-
+	private final static Pattern word_lemma_re = Pattern.compile(" [а-яіїєґА-ЯІЇЄҐ]")
 
 	@CompileStatic
-	private List<DicEntry> expand_line(String line_) {
-		List<String> lines = preprocess(line_)
+	private List<DicEntry> expand_line(String line) {
+		return expand_line(new LineGroup(line))
+	}
+
+	@CompileStatic
+	private List<DicEntry> expand_line(LineGroup lineGroup) {
+		List<LineGroup> lines = preprocess(lineGroup)
 
 		def main_word = ""
 		List<DicEntry> out_lines = []
 
-		for(String line in lines) {
+		for(LineGroup lineGroup2 in lines) {
 			List<String> sub_lines = []
 
 			//  +cs
-			if( line.contains("\\ +") ) {
-				//            line, *sub_lines = line.split("\\")
-				def parts = line.split("\\\\")
-				line = parts[0]
-				sub_lines = parts[1..-1]
-
-				//			line = line.rstrip()
-				line = line.replaceAll(/\s+$/, "")
-
-				if( line.contains(" :") || ! line.contains(" /") ) {
-					line += ":compb"
+			if( lineGroup2.extraLines ) {
+				sub_lines = lineGroup2.extraLines
+				
+				if( lineGroup2.line.contains(" :") || ! lineGroup2.line.contains(" /") ) {
+					lineGroup2.line += ":compb"
 				}
 				else {
-					line += " :compb"
+					lineGroup2.line += " :compb"
 				}
 
 			}
 			// word lemma tags
-			else if( word_lemma_re.matcher(line).find() ) {
+			else if( word_lemma_re.matcher(lineGroup2.line).find() ) {
 				List<DicEntry> exp_lines
 
-				if( line.contains("/") ) {
-					exp_lines = AffixUtil.expand_alts([DicEntry.fromLine(line)], "//")  // TODO: change this to some single-char splitter?
+				if( lineGroup2.line.contains("/") ) {
+					exp_lines = AffixUtil.expand_alts([DicEntry.fromLine(lineGroup2.line, lineGroup2.comment)], "//")
 					exp_lines = AffixUtil.expand_alts(exp_lines, "/")
 				}
 				else {
-					exp_lines = [DicEntry.fromLine(line)]
+					exp_lines = [DicEntry.fromLine(lineGroup2.line, lineGroup2.comment)]
 				}
 
 				out_lines.addAll( exp_lines )
 
 				continue
 			}
+
 			// word tags
 			// word /flags [mods] [tags]
 
 			String word, flags
 			try {
-				String[] parts = line.split(" ", 2)
+				String[] parts = lineGroup2.line.split(" ", 2)
 				word = parts[0]
 				flags = parts[1]
 			}
 			catch(Exception e) {
-				throw new Exception("Failed to find flags in " + line, e)
+				throw new Exception("Failed to find flags in " + lineGroup2, e)
 			}
 
 			main_word = word
 
-			if( flags.contains("/v5") || flags.contains("/vr5") || line.contains(" p=") || line.contains(" tag=") ) {
+			if( flags.contains("/v5") || flags.contains("/vr5") || lineGroup2.line.contains(" p=") || lineGroup2.line.contains(" tag=") ) {
 				limitedVerbLemmas.add(word)
 			}
 			
 			List<DicEntry> inflected_lines = expand(word, flags)
+			inflected_lines[0].comment = lineGroup.comment
 
 			if( sub_lines ) {
 				def idx = 0
 				for(String sub_line in sub_lines) {
+					
 					String extra_flags = ""
 					if( flags.startsWith("adv:")) {
 						extra_flags = flags[3..-1].replace(":compb", "")
@@ -1192,7 +1165,7 @@ class Expand {
 					}
 
 					List<DicEntry> sublines
-					if( line.contains(" adv") ) {
+					if( lineGroup2.line.contains(" adv") ) {
 						sublines = expand_subposition_adv_main(main_word, sub_line, extra_flags)
 					}
 					else {
@@ -1200,7 +1173,7 @@ class Expand {
 					}
 					out_lines.addAll( sublines )
 
-					if( line.contains(".adv") && line.contains("/adj") ) {
+					if( lineGroup2.line.contains(".adv") && lineGroup2.line.contains("/adj") ) {
 						for( inflected_line in inflected_lines) {
 							if( inflected_line.tagStr.startsWith("adv") ) {
 								def last_adv = inflected_line.word
@@ -1233,20 +1206,49 @@ class Expand {
 	private int nonFatalErrorCount = 0
 	private int double_form_cnt = 0
 	
+	private static class LineGroup {
+		String line
+		String comment
+		List<String> extraLines
+		
+		public LineGroup() {
+		}
 
-//	@TypeChecked
+		public LineGroup(String line) {
+			this.line = line
+		}
+		
+		public LineGroup(LineGroup lineGroup) {
+			this.line = lineGroup.line
+			this.comment = lineGroup.comment
+			this.extraLines = lineGroup.extraLines
+		}
+
+		public LineGroup(LineGroup lineGroup, String newLine) {
+			this.line = newLine
+			this.comment = lineGroup.comment
+			this.extraLines = lineGroup.extraLines
+		}
+		
+		String toString() {
+			line + " / " + extraLines + (comment ? " # " + comment : "") 
+		}
+	}
+	
+
+	@TypeChecked
 	List<DicEntry> process_input(List<String> inputLines) {
-		def multiline = ""
-		def prepared_lines = []
-
-		inputLines.each{ String line ->
-			String comment = null
+		List<LineGroup> prepared_lines = []
+		LineGroup lineGroup = new LineGroup()
+		
+		inputLines.each { String line ->
+			String cmnt = null
 			
 			if( line.contains("#") ) {
-//				line = line.replaceFirst("#.*", "")
-				String[] parts = line.split("#")
+				String[] parts = line.split("#", 2)
 				line = parts[0]
-				comment = parts[1].replaceFirst(/rv_...(:rv_...)*/, '').trim() ?: null
+//				cmnt = parts[1].replaceFirst(/rv_...(:rv_...)*/, '').trim()
+				cmnt = parts[1].trim()
 			}
 
 			line = line.replaceAll(/\s+$/, '')		// .rstrip()
@@ -1254,49 +1256,32 @@ class Expand {
 			if( ! line )
 				return
 
-			if( line.endsWith("\\") ) {
-				multiline += line
-				return // continue
+			if( line.startsWith(' +cs=') ) {
+//			    println ":: " + line
+				lineGroup.extraLines << line.replaceFirst(/\s*\\.*/, '')
+				return
 			}
-			else {
-				if( multiline ) {
-					line = multiline + line
-				}
-				multiline = ""
+			
+			lineGroup = new LineGroup(line)
+			lineGroup.comment = cmnt ? cmnt : null
+			
+//			println "** " + line
+			if( line.endsWith("\\") ) {
+				lineGroup.extraLines = []
+				lineGroup.line = lineGroup.line.replaceFirst(/\s*\\.*/, '')
 			}
 			
 			if( line.contains("/v") && line.contains(":imperf:perf") ) {
 				double_form_cnt += 1
 			}
 
-			prepared_lines << line
+			prepared_lines << lineGroup
 		}
 
-
-		ParallelEnhancer.enhanceInstance(prepared_lines)
-
-		List<DicEntry> allEntries = prepared_lines.collectParallel { String line ->
-
-			List<DicEntry> taggedEntries
-			try {
-				taggedEntries = expand_line(line)
-				
-				if( validator.checkEntries(taggedEntries) > 0 ) {
-				    taggedEntries = null
-				}
-
-    			return taggedEntries
-			}
-			catch(Exception e) {
-//				log.error("Failed to expand: \"" + line + "\": ", e)
-				log.error("Failed to expand: \"" + line + "\": " + e.getMessage())
-				return null
-			}
-
-		}.flatten()
+		List<DicEntry> allEntries  = processInParallel(prepared_lines)
 
 
-        fatalErrorCount += allEntries.count(null)
+        fatalErrorCount += allEntries.count({ it == null})
 
         if( fatalErrorCount > 0 )
             return allEntries
@@ -1308,8 +1293,34 @@ class Expand {
 		return sortAndPostProcess(allEntries)
 	}
 
+	private List<DicEntry> processInParallel(List<LineGroup> prepared_lines) {
+		ParallelEnhancer.enhanceInstance(prepared_lines)
+		List<DicEntry> allEntries = prepared_lines.collectParallel { LineGroup lineGroup ->
+//		List<DicEntry> allEntries = prepared_lines.collect { LineGroup lineGroup ->
+
+			try {
+//				if( lineGroup.comment )
+//					System.err.println("expand_line: " + lineGroup)
+
+				List<DicEntry> taggedEntries = expand_line(lineGroup)
+
+				if( validator.checkEntries(taggedEntries) > 0 ) {
+					taggedEntries = null
+				}
+
+				return taggedEntries
+			}
+			catch(Exception e) {
+				log.error("Failed to expand: \"" + lineGroup.line + "\": " + e.getMessage())
+				return null
+			}
+
+		}.flatten()
+	}
+
+
 	@CompileStatic
-	private sortAndPostProcess(List allEntries) {
+	private List<DicEntry> sortAndPostProcess(List allEntries) {
 		if( Args.args.time ) {
 			log.info("Sorting...\n")
 		}
@@ -1317,10 +1328,12 @@ class Expand {
 		List<Long> times = []
 		times << System.currentTimeMillis()
 		
+		// fisrt sort so post-process can see lemmas togther
 		List<DicEntry> sortedEntries = dictSorter.sortEntries(allEntries)
 
 		sortedEntries = post_process_sorted(sortedEntries)
 
+		// we need to sort again after we post-processed
 		sortedEntries = dictSorter.sortEntries(sortedEntries)
 
 		if( Args.args.time ) {
@@ -1418,6 +1431,7 @@ class Expand {
 
 	}
 		
+	@CompileStatic
 	void processLineByLine(String line) {
 		try {
 			List<DicEntry> taggedEntries = expand_line(line)

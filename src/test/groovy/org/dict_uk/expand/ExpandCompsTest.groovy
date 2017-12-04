@@ -14,7 +14,7 @@ public class ExpandCompsTest extends GroovyTestCase {
 		def affixDir = new File("data/affix").isDirectory() ? "data/affix" : "../../../data/affix"
 		Args.parse(["-aff", affixDir, "-dict", ""].toArray(new String[0]))
 		
-		def expand = new Expand()
+		def expand = new Expand(false)
 		expand.affix.load_affixes(affixDir)
 		expandComps = new ExpandComps(expand)
 	}
@@ -37,7 +37,7 @@ public class ExpandCompsTest extends GroovyTestCase {
 	void test() {
 		def input = ["Афанасьєв /n2adj2.<+ - Чужбинський /adj.<+ g=m"]
 //		assert expandComps.process_input(input) == fullComps.split(/\n/).collect { DicEntry.fromLine(it) }
-		assertEquals(fullComps.split(/\n/).collect { DicEntry.fromLine(it) }, expandComps.process_input(input))
+		assertEquals(fullComps, ExpandTest.join(expandComps.process_input(input)))
 	}
 	
 	def fullComps2 =
@@ -50,16 +50,12 @@ public class ExpandCompsTest extends GroovyTestCase {
 такого-сякого такий-сякий adj:n:v_rod
 такому-сякому такий-сякий adj:m:v_dav
 такому-сякому такий-сякий adj:m:v_mis
-такім-сякому такий-сякий adj:m:v_mis
 такому-сякому такий-сякий adj:n:v_dav
 такому-сякому такий-сякий adj:n:v_mis
-такім-сякому такий-сякий adj:n:v_mis
 таким-сяким такий-сякий adj:m:v_oru
 таким-сяким такий-сякий adj:n:v_oru
 таким-сяким такий-сякий adj:p:v_dav
-такому-сякім такий-сякий adj:m:v_mis
 такім-сякім такий-сякий adj:m:v_mis
-такому-сякім такий-сякий adj:n:v_mis
 такім-сякім такий-сякий adj:n:v_mis
 така-сяка такий-сякий adj:f:v_naz
 такая-сяка такий-сякий adj:f:v_naz
@@ -110,8 +106,7 @@ public class ExpandCompsTest extends GroovyTestCase {
 		@Test
 		void test2() {
 			def input = ["такий /adj - сякий /adj"]
-//			println expandComps.process_input(input).join("\n")
-			assert ExpandTest.join(expandComps.process_input(input)) == fullComps2
+			assertEquals(fullComps2, ExpandTest.join(expandComps.process_input(input)))
 		}
 	
 }
