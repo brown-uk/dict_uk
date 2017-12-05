@@ -59,9 +59,9 @@ class DictSorter {
 
 	@CompileStatic
 	String tag_sort_key(String tags, String word) {
-		if( tags.contains(":v-u") ) {
-			tags = tags.replace(":v-u", "")
-		}
+//		if( tags.contains(":v-u") ) {
+//			tags = tags.replace(":v-u", "")
+//		}
 
 		def offset = 0
 
@@ -87,11 +87,20 @@ class DictSorter {
 					tags = tags.replace("adj:", "adj:compb:")
 				}
 			}
+			
+			if( tags.contains(":ranim") ) {
+				tags = tags.replace(':ranim', '')
+			}
+			else if( tags.contains(":rinanim") ) {
+				tags = tags.replace(':rinanim', '')
+				offset += 1
+			}
+
 			hasGender = true
 			hasVidm = true
 		}
 		else if( tags.startsWith("noun") ) {
-			if( tags.contains("name") ) {
+			if( tags.startsWith("noun:anim") && tags.contains("name") ) {
 				tags = re_person_name_key_tag.matcher(tags).replaceAll('$1$3$2')
 				// move feminine last name to its own lemma
 				// to put Адамишин :f: after Адамишини :p)
@@ -102,6 +111,7 @@ class DictSorter {
 				}
 			}
 
+			// sort nv and non-nv separately (e.g. авто)
 			if( tags.contains(":nv") ) {
 				tags = tags.replace(":nv", "").replace("anim", "anim:nv")
 			}
@@ -109,6 +119,7 @@ class DictSorter {
 			if( tags.contains(":np") || tags.contains(":ns") ) {
 				tags = tags.replace(":np", "").replace(":ns", "")
 			}
+
 			hasGender = true
 			hasVidm = true
 		}
@@ -131,6 +142,16 @@ class DictSorter {
 			hasVidm = true
 		}
 		
+		if( hasGender ) {
+			def gen_match = GEN_RE.matcher(tags)
+
+			if( gen_match.find() ) {
+				def gen = gen_match.group(1)
+				def order = GEN_ORDER[gen]
+				tags = GEN_RE.matcher(tags).replaceFirst(":"+order+'$2')
+			}
+		}
+
 		if( hasVidm /*tags.contains("v_")*/ ) {
 			def vidm_match = VIDM_RE.matcher(tags)
 
@@ -139,17 +160,7 @@ class DictSorter {
 				String vidm_order = VIDM_ORDER[vidm]
 				vidm_order = vidm_order[0..<-1] + offset
 
-				tags = vidm_match.replaceFirst(":"+vidm_order)
-			}
-		}
-
-		if( hasGender ) {
-			def gen_match = GEN_RE.matcher(tags)
-
-			if( gen_match.find() ) {
-				def gen = gen_match.group(1)
-				def order = GEN_ORDER[gen]
-				tags = GEN_RE.matcher(tags).replaceFirst(":"+order+'$2')
+				tags = vidm_match.replaceFirst(vidm_order)
 			}
 		}
 

@@ -22,6 +22,8 @@ public class DictSorterTest extends GroovyTestCase {
 		assert dictSorter.tag_sort_key("noun:anim:m:v_naz:lname", "Адамишин") == "noun:anim:lname:00:10"
 		assert dictSorter.tag_sort_key("noun:anim:f:v_naz:lname", "Адамишин") == "noun:anim:lname:90:10"
 		assert dictSorter.tag_sort_key("numr:f:v_naz", "один") == "numr:10:10"
+		assert dictSorter.tag_sort_key("adj:m:v_zna:ranim", "азотистоводневого") == "adj:compb:00:40"
+		assert dictSorter.tag_sort_key("adj:m:v_zna:rinanim", "азотистоводневий") == "adj:compb:00:41"
 		assert dictSorter.tag_sort_key("verb:imperf:inf", "порт") == "verb:imperf:10:0"
 		assert dictSorter.tag_sort_key("verb:imperf:inf:coll:rare", "порт") == "verb:imperf:10:2"
 		assert dictSorter.tag_sort_key("verb:perf:past:m:xp1", "вернув") == "verb:xp1:perf:80:00:0"
