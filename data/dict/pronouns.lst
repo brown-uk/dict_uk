@@ -539,6 +539,24 @@
 один /numr
 один /numr ^adj :&pron:dem:ind
 
+один-два один-два numr:p:v_naz/v_zna                  # rg_m
+одного-двох один-два numr:p:v_rod/v_zna               # rg_m:rg_n
+одному-двом один-два numr:p:v_dav                     # rg_m:rg_n
+одним-двома один-два numr:p:v_oru                     # rg_m:rg_n
+одному-двох один-два numr:p:v_mis                     # rg_m:rg_n
+однім-двох один-два numr:p:v_mis                      # rg_m:rg_n
+
+одне-два один-два numr:p:v_naz/v_zna                  # rg_n
+
+одна-дві один-два numr:p:v_naz                        # rg_f
+однієї-двох один-два numr:p:v_rod                     # rg_f
+одній-двом один-два numr:p:v_dav                      # rg_f
+одну-дві один-два numr:p:v_zna                        # rg_f
+одною-двома один-два numr:p:v_oru                     # rg_f
+однією-двома один-два numr:p:v_oru                    # rg_f
+одній-двох один-два numr:p:v_mis                      # rg_f
+
+
 обоє обоє numr:p:v_naz/v_zna
 обох обоє numr:p:v_rod/v_zna/v_mis
 обом обоє numr:p:v_dav
@@ -691,12 +709,6 @@
 півста numr:p:nv:coll
 півтораста numr:p:nv
 
-один-два один-два numr:p:v_naz/v_zna
-два-три два-три numr:p:v_naz/v_zna
-дві-три два-три numr:p:v_naz/v_zna
-двома-трьома два-три numr:p:v_oru
-двох-трьох два-три numr:p:v_rod/v_zna/v_mis
-три-чотири три-чотири numr:p:v_naz/v_zna
 
 
 # Прислівники
