@@ -544,22 +544,22 @@
 обом обоє numr:p:v_dav
 обома обоє numr:p:v_oru
 
-обидва обидва numr:m:v_naz/v_zna
-обидві обидва numr:f:v_naz/v_zna
-обох обидва numr:p:v_rod/v_zna/v_mis
-обом обидва numr:p:v_dav
-обома обидва numr:p:v_oru
-
 обидвоє обидвоє numr:p:v_naz/v_zna:rare
 обидвох обидвоє numr:p:v_rod/v_zna/v_mis:rare
 обидвом обидвоє numr:p:v_dav:rare
 обидвома обидвоє numr:p:v_oru:rare
 
-два два numr:m:v_naz/v_zna//n:v_naz/v_zna
-дві два numr:f:v_naz/v_zna
-двох два numr:m:v_rod/v_zna/v_mis//n:v_rod/v_zna/v_mis//f:v_rod/v_zna/v_mis
-двом два numr:m:v_dav//n:v_dav//f:v_dav
-двома два numr:m:v_oru//n:v_oru//f:v_oru
+обидва обидва numr:p:v_naz/v_zna        # rg_m:rg_n
+обидві обидва numr:p:v_naz/v_zna        # rg_f
+обох обидва numr:p:v_rod/v_zna/v_mis
+обом обидва numr:p:v_dav
+обома обидва numr:p:v_oru
+
+два два numr:p:v_naz/v_zna                  # rg_m:rg_n
+дві два numr:p:v_naz/v_zna                  # rg_f
+двох два numr:p:v_rod/v_zna/v_mis
+двом два numr:p:v_dav
+двома два numr:p:v_oru
 
 двоє двоє numr:p:v_naz/v_zna
 двох двоє numr:p:v_rod/v_zna/v_mis
@@ -685,8 +685,8 @@
 
 півтора numr:m:nv//n:nv
 півтори numr:f:nv
-півтора-два numr:m:nv//n:nv
-півтори-дві numr:f:nv
+півтора-два numr:p:nv       # rg_m:rg_n
+півтори-дві numr:p:nv       # rg_f
 
 півста numr:p:nv:coll
 півтораста numr:p:nv
@@ -797,7 +797,7 @@
 задля задля prep        # rv_rod
 залежно залежно prep        # rv_rod
 замість замість prep         # rv_rod:rv_inf
-заради заради prep        # rv_rod
+заради заради prep        # rv_rod:rv_inf
 #згідно згідно prep        # rv_rod
 зверху зверху prep        # rv_rod
 здовж здовж prep|adv        # rv_rod
@@ -823,7 +823,7 @@
 коло коло prep        # rv_rod
 край край prep        # rv_rod
 крізь крізь prep        # rv_zna
-крім крім prep        # rv_rod
+крім крім prep        # rv_rod:rv_inf
 круг круг prep        # rv_rod
 кругом кругом prep        # rv_rod
 між між prep        # rv_rod:rv_zna:rv_oru
@@ -856,7 +856,7 @@
 обік обік prep|adv        # rv_rod
 од од prep        # rv_rod
 окрай окрай prep        # rv_rod
-окрім окрім prep        # rv_rod
+окрім окрім prep        # rv_rod:rv_inf
 округ округ prep        # rv_rod
 округи округи prep        # rv_rod
 опісля опісля prep        # rv_rod

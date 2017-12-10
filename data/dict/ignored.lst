@@ -95,6 +95,8 @@
 основанья основанья noun:n:v_rod
 очків очко noun:inanim:p:v_rod:xp2
 пампушків пампушка noun:inanim:p:v_rod
+півтора-дві numr:p:nv           # rg_m/rg_n
+півтори-два numr:p:nv           # rg_f
 підгрунтя /n2n
 пластирем пластир noun:inanim:m:v_oru
 посипляться посипатися verb:rev:perf:futr:p:3:xp2
