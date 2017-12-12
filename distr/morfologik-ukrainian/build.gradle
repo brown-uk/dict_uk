@@ -3,13 +3,13 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version = '3.9.1'
+version = '4.0.0'
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian-lt'
 archivesBaseName = artifactId
 
-String ltToolsVersion = '3.8-SNAPSHOT'
+String ltToolsVersion = '4.0-SNAPSHOT'
 
 String langCode="uk"
 
@@ -424,11 +424,11 @@ uploadArchives {
       beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 
       repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
-        authentication(userName: hasProperty('ossrhUsername')?ossrhUsername:'', password: hasProperty('ossrhPassword')?ossrhPassword:'')
+        authentication(userName: ossrhUsername, password: ossrhPassword)
       }
 
       snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
-        authentication(userName: hasProperty('ossrhUsername')?ossrhUsername:'', password: hasProperty('ossrhPassword')?ossrhPassword:'')
+        authentication(userName: getProperty('ossrhUsername') ?: '', password: getProperty('ossrhPassword') ?: '')
       }
 
 
