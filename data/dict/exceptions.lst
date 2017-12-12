@@ -561,6 +561,13 @@
 
 бува бувати verb:imperf:pres:s:3:&insert:coll
 
+жити-бути жити-бути verb:inf:imperf
+жив-був жити-бути verb:past:m:imperf
+жила-була жити-бути verb:past:f:imperf
+жило-було жити-бути verb:past:n:imperf
+жили-були жити-бути verb:past:p:imperf
+
+
 пробути пробути verb:inf:perf
 пробуду пробути verb:futr:s:1:perf
 пробудеш пробути verb:futr:s:2:perf

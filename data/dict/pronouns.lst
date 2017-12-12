@@ -522,7 +522,35 @@
 невідь-скільком невідь-скільки numr:p:v_dav:&pron:ind
 невідь-скількома невідь-скільки numr:p:v_oru:&pron:ind
 
-півстільки numr:nv:coll
+який-не-який який-не-який adj:m:v_naz:&pron:ind
+якого-не-якого який-не-який adj:m:v_rod:&pron:ind
+якому-не-якому який-не-який adj:m:v_dav:&pron:ind
+якого-не-якого який-не-який adj:m:v_zna:ranim:&pron:ind
+який-не-який який-не-який adj:m:v_zna:rinanim:&pron:ind
+яким-не-яким який-не-який adj:m:v_oru:&pron:ind
+якім-не-якім який-не-який adj:m:v_mis:&pron:ind
+якому-не-якому який-не-який adj:m:v_mis:&pron:ind
+яка-не-яка який-не-який adj:f:v_naz:&pron:ind
+якої-не-якої який-не-який adj:f:v_rod:&pron:ind
+якій-не-якій який-не-який adj:f:v_dav:&pron:ind
+яку-не-яку який-не-який adj:f:v_zna:&pron:ind
+якою-не-якою який-не-який adj:f:v_oru:&pron:ind
+якій-не-якій який-не-який adj:f:v_mis:&pron:ind
+яке-не-яке який-не-який adj:n:v_naz:&pron:ind
+якого-не-якого який-не-який adj:n:v_rod:&pron:ind
+якому-не-якому який-не-який adj:n:v_dav:&pron:ind
+яке-не-яке який-не-який adj:n:v_zna:&pron:ind
+яким-не-яким який-не-який adj:n:v_oru:&pron:ind
+якім-не-якім який-не-який adj:n:v_mis:&pron:ind
+якому-не-якому який-не-який adj:n:v_mis:&pron:ind
+які-не-які який-не-який adj:p:v_naz:&pron:ind
+яких-не-яких який-не-який adj:p:v_rod:&pron:ind
+яким-не-яким який-не-який adj:p:v_dav:&pron:ind
+яких-не-яких який-не-який adj:p:v_zna:ranim:&pron:ind
+які-не-які який-не-який adj:p:v_zna:rinanim:&pron:ind
+якими-не-якими який-не-який adj:p:v_oru:&pron:ind
+яких-не-яких який-не-який adj:p:v_mis:&pron:ind
+
 
 
 годину-дві adv
@@ -708,6 +736,7 @@
 
 півста numr:p:nv:coll
 півтораста numr:p:nv
+півстільки numr:nv:coll
 
 
 
