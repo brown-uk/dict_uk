@@ -888,6 +888,7 @@
 насеред насеред prep        # rv_rod
 насупроти насупроти prep        # rv_rod
 невважаючи невважаючи prep        # rv_zna
+вище вище prep        # rv_zna
 нижче нижче prep        # rv_zna
 о о prep        # rv_zna:rv_mis
 о о intj
@@ -938,6 +939,7 @@
 просто просто prep|part        # rv_rod
 проти проти prep        # rv_rod
 раніше раніше prep        # rv_rod
+пізніше пізніше prep        # rv_rod
 серед серед prep        # rv_rod
 спереду спереду prep        # rv_rod
 супроти супроти prep        # rv_rod
