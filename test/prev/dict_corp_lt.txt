@@ -3627,6 +3627,13 @@
 Федоріву Федорів noun:anim:m:v_mis:prop:lname
 Федорові Федорів noun:anim:m:v_mis:prop:lname
 Федорову Федорів noun:anim:m:v_mis:prop:lname
+Федорів Федорів noun:anim:f:v_naz:nv:np:prop:lname
+Федорів Федорів noun:anim:f:v_rod:nv:np:prop:lname
+Федорів Федорів noun:anim:f:v_dav:nv:np:prop:lname
+Федорів Федорів noun:anim:f:v_zna:nv:np:prop:lname
+Федорів Федорів noun:anim:f:v_oru:nv:np:prop:lname
+Федорів Федорів noun:anim:f:v_mis:nv:np:prop:lname
+Федорів Федорів noun:anim:f:v_kly:nv:np:prop:lname
 Франко Франко noun:anim:m:v_naz:nv:np:prop:lname:xp3
 Франко Франко noun:anim:m:v_rod:nv:np:prop:lname:xp3
 Франко Франко noun:anim:m:v_dav:nv:np:prop:lname:xp3

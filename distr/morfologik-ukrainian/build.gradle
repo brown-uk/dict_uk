@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version = '4.0.2'
+version = '4.0.3'
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian-lt'
@@ -50,6 +50,7 @@ configurations{
 dependencies {
     provided 'org.languagetool:languagetool-tools:' + ltToolsVersion
 }
+
 
 
 task tagList(type: Exec) {

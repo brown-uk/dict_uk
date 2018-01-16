@@ -83,7 +83,7 @@ class OutputValidator {
 		List<String> lastVerbTags = null
 		int nonFatalErrorCount = 0
 		
-		limitedVerbLemmas << "хтітися"
+		limitedVerbLemmas << "хтітися" << "жити-бути"
 //		limitedVerbLemmas << "грясти"
 		
 		//		ParallelEnhancer.enhanceInstance(lines)
