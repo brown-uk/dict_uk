@@ -24,7 +24,7 @@ repositories {
 //}
 
 dependencies {
-    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.11'
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.13'
 
     compile 'commons-lang:commons-lang:2.4'
     compile 'org.codehaus.gpars:gpars:1.2.1'

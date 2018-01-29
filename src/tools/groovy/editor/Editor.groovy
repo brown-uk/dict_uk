@@ -27,7 +27,8 @@ def sharedPanel = {
 println "reading..."
 
 @Field
-def data = new File('out/toadd/new_lemmas_main.txt').readLines()
+//def data = new File('out/toadd/new_lemmas_main.txt').readLines()
+def data = new File('out/toadd/unknown.txt').readLines().collect{ it.replace('\t', '    ') }
 @Field
 def dict = new File('data/dict/base.lst').readLines()
 dict += new File('data/dict/base-compound.lst').readLines()
@@ -120,7 +121,8 @@ Closure selChange1 = { e ->
 
 	def item = data[minSelIdx]
 
-	def word = item.split(/ /, 2)[0]
+	def word = item.startsWith(' ') ? item.trim().split(/    /, 2)[1].trim() : item.split(/ /, 2)[0]
+	println "word: $word"
 
 	StringSelection stringSelection = new StringSelection(word);
 	Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
