@@ -433,11 +433,13 @@
 небагатьох небагато numr:p:v_rod/v_zna/v_mis:&pron:ind
 небагатьом небагато numr:p:v_dav:&pron:ind
 небагатьма небагато numr:p:v_oru:&pron:ind
+небагатьома небагато numr:p:v_oru:&pron:ind
 
 багато багато numr:p:v_naz/v_zna:&pron:ind
 багатьох багато numr:p:v_rod/v_zna/v_mis:&pron:ind
 багатьом багато numr:p:v_dav:&pron:ind
 багатьма багато numr:p:v_oru:&pron:ind
+багатьома багато numr:p:v_oru:&pron:ind
 
 декілька декілька numr:p:v_naz/v_zna:&pron:ind
 декількох декілька numr:p:v_rod/v_zna/v_mis:&pron:ind
