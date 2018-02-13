@@ -693,6 +693,13 @@
 вайлах вайло noun:anim:p:v_mis
 вайла вайло noun:anim:p:v_kly
 вайли вайло noun:anim:p:v_kly
+ванька-встанька ванька-встанька noun:inanim:m:v_naz:bad
+ваньки-встаньки ванька-встанька noun:inanim:m:v_rod:bad
+ваньці-встаньці ванька-встанька noun:inanim:m:v_dav:bad
+ваньку-встаньку ванька-встанька noun:inanim:m:v_zna:bad
+ванькою-встанькою ванька-встанька noun:inanim:m:v_oru:bad
+ваньці-встаньці ванька-встанька noun:inanim:m:v_mis:bad
+ванько-встанько ванька-встанька noun:inanim:m:v_kly:bad
 варений варений adj:m:v_naz:&&adjp:pasv:imperf
 вареного варений adj:m:v_rod:&&adjp:pasv:imperf
 вареному варений adj:m:v_dav:&&adjp:pasv:imperf

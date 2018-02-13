@@ -838,7 +838,7 @@
 зо зо prep        # rv_rod:rv_zna:rv_oru
 завдяки завдяки prep        # rv_dav
 задля задля prep        # rv_rod
-залежно залежно prep        # rv_rod
+залежно залежно prep
 замість замість prep         # rv_rod:rv_inf
 заради заради prep        # rv_rod:rv_inf
 #згідно згідно prep        # rv_rod

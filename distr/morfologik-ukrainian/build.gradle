@@ -200,6 +200,8 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
         it = it.replace(' +cs=', '')
         it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
     }
+    
+    outLines << "ванька-встанька=іван-покиван|іванець-киванець"
 
     new File(outFile).text = headText + outLines.join("\n") + '\n'
     println "Wrote $outLines.size replacements"
