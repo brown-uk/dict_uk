@@ -3701,6 +3701,18 @@
   Хуторами-Кривошиїнецькими noun:inanim:p:v_oru:ns:prop
   Хуторах-Кривошиїнецьких noun:inanim:p:v_mis:ns:prop
   Хутори-Кривошиїнецькі noun:inanim:p:v_kly:ns:prop
+чайн. adj:f:v_naz:nv:abbr    # чайна
+  чайн. adj:f:v_rod:nv:abbr
+  чайн. adj:f:v_dav:nv:abbr
+  чайн. adj:f:v_zna:nv:abbr
+  чайн. adj:f:v_oru:nv:abbr
+  чайн. adj:f:v_mis:nv:abbr
+  чайн. adj:p:v_naz:nv:abbr
+  чайн. adj:p:v_rod:nv:abbr
+  чайн. adj:p:v_dav:nv:abbr
+  чайн. adj:p:v_zna:nv:abbr
+  чайн. adj:p:v_oru:nv:abbr
+  чайн. adj:p:v_mis:nv:abbr
 чапленя noun:anim:n:v_naz
   чапленяти noun:anim:n:v_rod
   чапленяті noun:anim:n:v_dav

@@ -158,17 +158,21 @@ class Util {
 					gens = parts[0][-1..-1]
 					parts[0] = parts[0][0..<-2]
 				}
+				else if( parts[0] ==~ /.*:[mnf]p/) {
+					gens = parts[0][-2..-1]
+					parts[0] = parts[0][0..<-3]
+				}
 				else {
 					gens = GEN_LIST
 				}
 
-				for(String g in gens) {
+				for(def g in gens) {
 					for(String v in VIDM_LIST){
         				if( v == "v_kly" && (entry.word.endsWith(".") || lineTagStr.contains("&pron")) )
 							continue
-
 						def newTagStr = parts[0] + ":" + g + ":" + v + ":nv" + (parts.size()>1 ? parts[1] :"")
-						String comment = entry.comment && DicEntry.isPossibleLemma(newTagStr) ? entry.comment : null
+						
+						String comment = entry.comment && DicEntry.isPossibleLemma(newTagStr) && g == gens[0] ? entry.comment : null
 						lines.add(new DicEntry(entry.word, entry.lemma, newTagStr, comment))
 					}
 				}
