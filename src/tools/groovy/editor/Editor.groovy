@@ -446,13 +446,23 @@ swing.edt {
 									}
 								)
 						label('     ')
-						button(
+						def btnFind = button(
 								text: 'Find',
 								actionPerformed: {
-										findInDict(text.text.replaceFirst(/ .*/, ''))
-
+										String txt = text.getSelectedText()
+										if( txt == null ) txt = text.text.replaceFirst(/ .*/, '')
+										findInDict(txt)
 									}
 								)
+								KeyStroke keystrokeF2 = KeyStroke.getKeyStroke(KeyEvent.VK_F, InputEvent.CTRL_MASK)
+								btnFind.registerKeyboardAction(new ActionListener() {
+									public void actionPerformed(ActionEvent e) {
+										String txt = text.getSelectedText()
+										if( txt == null ) txt = text.text.replaceFirst(/ .*/, '')
+										findInDict(txt)
+									}
+								}, keystrokeF2, JComponent.WHEN_IN_FOCUSED_WINDOW);
+
 						label('     ')
 						button(
 								text: 'Save',
