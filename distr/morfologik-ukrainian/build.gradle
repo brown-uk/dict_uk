@@ -200,8 +200,20 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
         it = it.replace(' +cs=', '')
         it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
     }
-    
-    outLines << "ванька-встанька=іван-покиван|іванець-киванець"
+
+    inText = new File("$srcDir/base-composite.lst").text
+    lines = inText.split("\n")
+
+    def compOutLines = lines.findAll {
+        ! it.startsWith('#') && it.contains(' #>')
+    }
+    .collect {
+        it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*? - ([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)/, '$1-$2=$3')
+    }
+
+    println "W: $compOutLines"
+
+    outLines += compOutLines
 
     new File(outFile).text = headText + outLines.join("\n") + '\n'
     println "Wrote $outLines.size replacements"
