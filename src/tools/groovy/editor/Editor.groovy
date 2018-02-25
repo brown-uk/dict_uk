@@ -92,6 +92,9 @@ def inflect() {
 		}
 		
 	}
+	println "inflected"
+	mainList.revalidate()
+	mainList.repaint() 
 }
 
 def findMedia(word) {
@@ -137,10 +140,12 @@ Closure selChange1 = { e ->
 		inflect()
 	})
 
-	mediaList.setModel(new ListWrapperListModel<String>(['... шукаємо ...']))
-	SwingUtilities.invokeLater( {
-		findMedia(word)
-	})
+	if( data.contains('lemma') ) {
+		mediaList.setModel(new ListWrapperListModel<String>(['... шукаємо ...']))
+		SwingUtilities.invokeLater( {
+			findMedia(word)
+		})
+	}
 }
 
 
@@ -299,6 +304,21 @@ swing.edt {
 					mainList.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
 					mainList.setVisibleRowCount(50);
 //					mainList.setPreferredSize(new Dimension(480, 300))
+					mainList.setCellRenderer(new DefaultListCellRenderer() {
+						public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+							super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+							String txt = value.replaceFirst('[ 0-9]+', '')
+//							println inflectedList.getModel().getClass()
+							String[] inflected = inflectedList.getModel().toArray().toList()
+							boolean highlight = (inflected.find { it.startsWith(txt+' ') }) != null
+//							println "H: $highlight - $txt"
+							if( highlight ) {
+								setBackground(Color.YELLOW)
+								setOpaque(true); // otherwise, it's transparent
+							}
+							return this;  // DefaultListCellRenderer derived from JLabel, DefaultListCellRenderer.getListCellRendererComponent returns this as well.
+						}
+					})
 				}
 
 				label('  -----  ')
