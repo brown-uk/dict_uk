@@ -81,6 +81,7 @@ sudo docker build -t brown-uk/dict_uk .
 sudo docker run -d --name dict_uk brown-uk/dict_uk /bin/bash
 sudo docker cp dict_uk:/src/out/ ./out
 sudo chown -R $USER: ./out
+sudo docker stop dict_uk
 ```
 
 ### License ###
