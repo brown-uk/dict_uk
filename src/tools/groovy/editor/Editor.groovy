@@ -61,7 +61,7 @@ expand.affix.load_affixes('data/affix')
 
 
 
-UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName())
+//UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName())
 
 def inflect() {
 	inflectedList.getModel().clear()
@@ -221,7 +221,7 @@ def getDefaultTxt(word) {
 def findInDict(word) {
 	word = word.replaceFirst(/.*-/, '')
 	
-	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|взаємо|відео|гео|гепато|геронто|геліо|гідро|гіпер|електро|за|кіно|мега|мета|мікро|мото|нейро|не|пере|під|по|проти|про|псевдо|радіо|стерео|спорт|теле|фото|супер|термо)/, '')
+	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|взаємо|відео|гео|гепато|геронто|геліо|гідро|гіпер|держ|електро|за|кіно|мега|мета|мікро|мото|нейро|не|пере|під|по|проти|про|псевдо|радіо|стерео|спорт|теле|фото|супер|термо)/, '')
     ending = ending.replaceFirst(/(ння|ти)$/, '(ння|ти)')
 	if( ending.endsWith('ований') ) {
 		ending = ending.replaceFirst(/ований/, '(ованість|ований|овано|увати)')
