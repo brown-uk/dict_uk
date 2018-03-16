@@ -74,6 +74,17 @@
 * out/words_spell.txt - words valid for spelling
 * out/lemmas.txt - list of unique lemmas
 
+### Building under docker ###
+
+```
+sudo docker build -t brown-uk/dict_uk .
+sudo docker run -d --name dict_uk brown-uk/dict_uk /bin/bash
+sudo docker cp dict_uk:/src/out/ ./out
+sudo chown -R $USER: ./out
+sudo docker stop dict_uk
+```
+
+### License ###
 
 Дані словника доступні для використання згідно з умовами ліцензії "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-nc-sa/4.0/)
 Програмні засоби вільно розповсюджується за умов ліцензії GPL версії 3.
