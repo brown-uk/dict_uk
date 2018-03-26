@@ -28,19 +28,24 @@ class OutputValidator {
 	int checkEntries(List<DicEntry> lines) {
 		int fatalErrorCount = 0
 		
-		for(DicEntry line in lines ) {
-			DicEntry dicEntry = line //DicEntry.fromLine(line)
+		for(DicEntry dicEntry in lines) {
+
+            // :alt may come both from the alt.lst and from flags
+            if( dicEntry.tagStr.contains(':alt:alt') ) {
+                dicEntry.tagStr = dicEntry.tagStr.replace(':alt:alt', ':alt')
+            }
+
 			def word = dicEntry.word
 			def lemma = dicEntry.lemma
 			def tags = dicEntry.tagStr
 
 			if( ! WORD_RE.matcher(word).matches() || ! WORD_RE.matcher(lemma).matches() ) {
-				log.error("Invalid pattern in word or lemma: " + line)
+				log.error("Invalid pattern in word or lemma: " + dicEntry)
 				fatalErrorCount++
 			}
 
 			if( ! POS_RE.matcher(tags).matches() ) {
-				log.error("Invalid main postag in word: " + line)
+				log.error("Invalid main postag in word: " + dicEntry)
 				fatalErrorCount++
 			}
 
@@ -48,14 +53,14 @@ class OutputValidator {
 
 			for(String tag in tagList) {
 				if( ! (tag in ALLOWED_TAGS) ) {
-					log.error("Invalid tag " + tag + ": " + line)
+					log.error("Invalid tag " + tag + ": " + dicEntry)
 					fatalErrorCount++
 				}
 			}
 
 			def dup_tags = tagList.findAll { tagList.count(it) > 1 }.unique()
 			if( dup_tags ) {
-				log.error("Duplicate tags " + dup_tags.join(":") + ": " + line)
+				log.error("Duplicate tags " + dup_tags.join(":") + ": " + dicEntry)
 				if( !("coll" in dup_tags) ) {
 					fatalErrorCount++
 				}
