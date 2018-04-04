@@ -2315,14 +2315,6 @@
   житами noun:inanim:p:v_oru:ns
   житах noun:inanim:p:v_mis:ns
   жита noun:inanim:p:v_kly:ns
-заанґажованість noun:inanim:f:v_naz:alt
-  заанґажованости noun:inanim:f:v_rod:alt
-  заанґажованості noun:inanim:f:v_rod:alt
-  заанґажованості noun:inanim:f:v_dav:alt
-  заанґажованість noun:inanim:f:v_zna:alt
-  заанґажованістю noun:inanim:f:v_oru:alt
-  заанґажованості noun:inanim:f:v_mis:alt
-  заанґажованосте noun:inanim:f:v_kly:alt
 задихавшись advp:rev:perf
 задихатися verb:rev:perf:inf
   задихатись verb:rev:perf:inf
@@ -3199,23 +3191,6 @@
   постріляла verb:perf:past:f
   постріляло verb:perf:past:n
   постріляли verb:perf:past:p
-проєкт noun:inanim:m:v_naz:alt
-  проєкту noun:inanim:m:v_rod:alt
-  проєктові noun:inanim:m:v_dav:alt
-  проєкту noun:inanim:m:v_dav:alt
-  проєкт noun:inanim:m:v_zna:alt
-  проєктом noun:inanim:m:v_oru:alt
-  проєкті noun:inanim:m:v_mis:alt
-  проєктові noun:inanim:m:v_mis:alt
-  проєкту noun:inanim:m:v_mis:alt
-  проєкте noun:inanim:m:v_kly:alt
-  проєкти noun:inanim:p:v_naz:alt
-  проєктів noun:inanim:p:v_rod:alt
-  проєктам noun:inanim:p:v_dav:alt
-  проєкти noun:inanim:p:v_zna:alt
-  проєктами noun:inanim:p:v_oru:alt
-  проєктах noun:inanim:p:v_mis:alt
-  проєкти noun:inanim:p:v_kly:alt
 прощавати verb:imperf:inf
   прощавай verb:imperf:impr:s:2
   прощаваймо verb:imperf:impr:p:1
