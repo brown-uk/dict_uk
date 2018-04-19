@@ -76,7 +76,11 @@
 завідатель /n20.a.p.<
 завідателька /n10.p2.<
 загомзатися /vr2 :perf
+зазнимкований /adj :&adjp:pasv:perf
 зазнимкувати /v1.is0 :perf
+зазнимкуватися /vr1 :perf
+зазнімкувати /v1 :perf
+зазнімкуватися /vr1 :perf
 заки conj:subord
 заким conj:subord
 замісто prep        # rv_rod
@@ -96,13 +100,20 @@
 звідома adv
 згиблий /adj
 згрубша adv
+зґарда /n10.p1
 здоровля /n2n
 здрійко numr:nv
 здрінка /n10.p2
 здрянка /n10.p2
+зіпсути /v2.isTo :perf
+зіпсутися /vr2 :perf
 зірний /adj
 зірно adv:&predic
 змирятися /vr2.cf.advp :imperf
+знимкувати /v1.cf.advp :imperf
+знимкуватися /vr1.cf.advp :imperf
+знімкувати /v1.cf.advp :imperf
+знімкуватися /vr1.cf.advp :imperf
 з-позаду з-позаду adv
 зрабований /adj :&adjp:pasv:perf
 зрадувати /v1 :perf
