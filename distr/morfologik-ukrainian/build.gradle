@@ -228,7 +228,7 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outRulesDir}/replace_soft.txt"
     def allFiles = Arrays.asList(new File(srcDir).listFiles())
-    def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! it.name.startsWith('twisters') }
+    def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! (it.name in ['twisters.lst', 'base-composite.lst']) }
 
     inputs.file srcFiles
     outputs.file outFile
@@ -314,7 +314,7 @@ task caseGovernmentDict() {
     def outFile="${outResDir}/case_government.txt"
     def srcFiles=["base.lst", "twisters.lst", "slang.lst", "exceptions.lst", "pronouns.lst", "rare.lst"]
 
-    inputs.file srcFiles.collect{ "$srcDir/$it" }
+    inputs.files srcFiles.collect{ "$srcDir/$it" }
     outputs.file outFile
 
     doFirst {
