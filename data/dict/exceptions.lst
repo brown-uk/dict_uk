@@ -729,6 +729,26 @@
 проклято проклясти verb:perf:impers
 розіп'ято розіп'ясти verb:perf:impers
 
+зіпрати зіпрати verb:perf:inf
+спери зіпрати verb:perf:impr:s:2
+сперім зіпрати verb:perf:impr:p:1
+сперімо зіпрати verb:perf:impr:p:1
+сперіть зіпрати verb:perf:impr:p:2
+сперу зіпрати verb:perf:futr:s:1
+спереш зіпрати verb:perf:futr:s:2
+спере зіпрати verb:perf:futr:s:3
+сперемо зіпрати verb:perf:futr:p:1
+сперем зіпрати verb:perf:futr:p:1:subst
+сперете зіпрати verb:perf:futr:p:2
+сперуть зіпрати verb:perf:futr:p:3
+зіправ зіпрати verb:perf:past:m
+зіпрала зіпрати verb:perf:past:f
+зіпрало зіпрати verb:perf:past:n
+зіпрали зіпрати verb:perf:past:p
+зіпрано зіпрати verb:perf:impers
+
+
+# короткі прикметники
 
 властен властен adj:m:v_naz/v_zn2:short         # rv_inf
 властного властен adj:m:v_rod
@@ -764,7 +784,6 @@
 властні властен adj:p:v_kly
 
 
-# короткі прикметники
 безвинен безвинний adj:m:v_naz/v_zn2:short
 благословен благословенний adj:m:v_naz/v_zn2:short
 блажен блаженний adj:m:v_naz/v_zn2:short
