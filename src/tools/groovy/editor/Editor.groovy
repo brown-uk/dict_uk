@@ -221,7 +221,7 @@ def getDefaultTxt(word) {
 def findInDict(word) {
 	word = word.replaceFirst(/.*-/, '')
 	
-	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|взаємо|відео|гео|гепато|геронто|геліо|гідро|гіпер|держ|еко|екстра|електро|за|кібер|кіно|мало|мега|мета|мікро|моно|мото|нейро|не|пере|під|по|проти|про|псевдо|радіо|стерео|спорт|теле|фото|супер|термо)/, '')
+	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|взаємо|відео|гео|гепато|геронто|геліо|гідро|гіпер|держ|еко|екстра|електро|за|кібер|кіно|мало|мега|мета|мікро|моно|мото|над|напів|нейро|не|пере|під|по|проти|про|псевдо|радіо|стерео|спорт|теле|фото|супер|термо)/, '')
     ending = ending.replaceFirst(/(ння|ти)$/, '(ння|ти)')
 	if( ending.endsWith('ований') ) {
 		ending = ending.replaceFirst(/ований/, '(ованість|ований|овано|увати)')
@@ -286,6 +286,13 @@ def addWord() {
 	}
 }
 
+def defaultFlags() {
+	def txt = text.text.replaceFirst(/ .*/, '')
+	def word_txt = getDefaultTxt(txt)
+	text.setText(word_txt)
+	findInDict(txt)
+	inflect()
+}
 
 println "starting..."
 
@@ -482,6 +489,20 @@ swing.edt {
 										findInDict(txt)
 									}
 								}, keystrokeF2, JComponent.WHEN_IN_FOCUSED_WINDOW);
+
+						def btnFlagSuggest = button(
+							text: 'Flags',
+							actionPerformed: {
+									defaultFlags()
+								}
+							)
+							KeyStroke keystrokeP = KeyStroke.getKeyStroke(KeyEvent.VK_P, InputEvent.CTRL_MASK)
+							btnFind.registerKeyboardAction(new ActionListener() {
+								public void actionPerformed(ActionEvent e) {
+									defaultFlags()
+								}
+							}, keystrokeP, JComponent.WHEN_IN_FOCUSED_WINDOW);
+
 
 						label('     ')
 						button(
