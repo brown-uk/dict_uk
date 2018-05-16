@@ -348,6 +348,14 @@
 людях людина noun:anim:p:v_mis
 люди людина noun:anim:p:v_kly
 
+першолюди першолюдина noun:anim:p:v_naz
+першолюдей першолюдина noun:anim:p:v_rod
+першолюдям першолюдина noun:anim:p:v_dav
+першолюдей першолюдина noun:anim:p:v_zna
+першолюдьми першолюдина noun:anim:p:v_oru
+першолюдях першолюдина noun:anim:p:v_mis
+першолюди першолюдина noun:anim:p:v_kly
+
 надлюди надлюдина noun:anim:p:v_naz
 надлюдей надлюдина noun:anim:p:v_rod
 надлюдям надлюдина noun:anim:p:v_dav
@@ -355,6 +363,22 @@
 надлюдьми надлюдина noun:anim:p:v_oru
 надлюдях надлюдина noun:anim:p:v_mis
 надлюди надлюдина noun:anim:p:v_kly
+
+пралюди пралюдина noun:anim:p:v_naz
+пралюдей пралюдина noun:anim:p:v_rod
+пралюдям пралюдина noun:anim:p:v_dav
+пралюдей пралюдина noun:anim:p:v_zna
+пралюдьми пралюдина noun:anim:p:v_oru
+пралюдях пралюдина noun:anim:p:v_mis
+пралюди пралюдина noun:anim:p:v_kly
+
+протолюди протолюдина noun:anim:p:v_naz
+протолюдей протолюдина noun:anim:p:v_rod
+протолюдям протолюдина noun:anim:p:v_dav
+протолюдей протолюдина noun:anim:p:v_zna
+протолюдьми протолюдина noun:anim:p:v_oru
+протолюдях протолюдина noun:anim:p:v_mis
+протолюди протолюдина noun:anim:p:v_kly
 
 напівлюди напівлюдина noun:anim:p:v_naz
 напівлюдей напівлюдина noun:anim:p:v_rod
@@ -588,6 +612,8 @@
 жило-було жити-бути verb:past:n:imperf
 жили-були жити-бути verb:past:p:imperf
 
+писано-переписано писати-переписати verb:perf:impers
+почавшись початися advp:rev:perf
 
 пробути пробути verb:inf:perf
 пробуду пробути verb:futr:s:1:perf
