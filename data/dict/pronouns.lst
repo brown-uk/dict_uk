@@ -281,6 +281,8 @@
 наш /adj_pron :&pron:pos
 ваш /adj_pron :&pron:pos
 
+саменький /adj :&pron:def
+
 наші /n2adj1.< :&pron:pos
 
 цей /adj_pron :&pron:dem
