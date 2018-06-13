@@ -27,8 +27,8 @@ def sharedPanel = {
 println "reading..."
 
 @Field
-//def data = new File('out/toadd/new_lemmas_main.txt').readLines()
-def data = new File('out/toadd/unknown.txt').readLines().collect{ it.replace('\t', '    ') }
+def data = new File('out/toadd/unknown_lemmas.txt').readLines()
+//def data = new File('out/toadd/unknown.txt').readLines().collect{ it.replace('\t', '    ') }
 @Field
 def dict = new File('data/dict/base.lst').readLines()
 dict += new File('data/dict/base-compound.lst').readLines()
@@ -140,12 +140,12 @@ Closure selChange1 = { e ->
 		inflect()
 	})
 
-	if( data.contains('lemma') ) {
+//	if( data.contains('lemma') ) {
 		mediaList.setModel(new ListWrapperListModel<String>(['... шукаємо ...']))
 		SwingUtilities.invokeLater( {
 			findMedia(word)
 		})
-	}
+//	}
 }
 
 
