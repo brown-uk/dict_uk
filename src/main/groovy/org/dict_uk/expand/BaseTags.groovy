@@ -11,7 +11,7 @@ import groovy.transform.TypeChecked
 class BaseTags {
 	static Logger log = LoggerFactory.getLogger(BaseTags.class);
 
-	static private final Pattern ending_i_nnia_re = Pattern.compile(/.*(([бвгджзклмнпрстфхцчшщ])\2|\'|[джлрт]|рн)я$/)
+	static private final Pattern ending_i_nnia_re = Pattern.compile(/.*(([бвгджзклмнпрстфхцчшщ])\2|\'|[джлртш]|рн)я$/)
 
 	static private final Util util = new Util()
 
