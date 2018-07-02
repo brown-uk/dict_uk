@@ -16,7 +16,8 @@ class OutputValidator {
 	static final Pattern WORD_RE = Pattern.compile("[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ']*(-[а-яіїєґА-ЯІЇЄҐ']*)*|[А-ЯІЇЄҐ][А-ЯІЇЄҐ-]+|[а-яіїєґ]+\\.(-[а-яіїєґ]+\\.)?")
 	static final Pattern POS_RE = Pattern.compile("(noun:([iu]n)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|intj|conj:|onomat|foreign|noninfl).*")
     static final List<String> IGNORED_NOUNS = ["бельмеса", "давніх-давен", "основанья", "предку-віку", "роб", "свободівець", "шатер",
-            "галай-балай", "вепр", "вихідець", "гратами", "мати-одиночка", "кінця-краю", "усіх-усюд", "Таганріг", "Хмельницьк", "буйвол", "писати-переписати"]
+            "галай-балай", "вепр", "вихідець", "гратами", "мати-одиночка", "кінця-краю", "усіх-усюд", "Таганріг", "Хмельницьк", "буйвол"]
+    static final List<String> IGNORED_VERBS = ["хтітися", "жити-бути", "писано-переписано"]
 
 	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
 
@@ -88,8 +89,7 @@ class OutputValidator {
 		List<String> lastVerbTags = null
 		int nonFatalErrorCount = 0
 		
-		limitedVerbLemmas << "хтітися" << "жити-бути"
-//		limitedVerbLemmas << "грясти"
+		limitedVerbLemmas += IGNORED_VERBS
 		
 		//		ParallelEnhancer.enhanceInstance(lines)
 

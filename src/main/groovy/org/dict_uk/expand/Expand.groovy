@@ -1257,6 +1257,8 @@ class Expand {
 				return
 
 			if( line.startsWith(' +cs=') ) {
+			    assert lineGroup.extraLines != null, "Failed to find proper base for comparative at '$line' with base: '${lineGroup.line}'"
+
 //			    println ":: " + line
 				lineGroup.extraLines << line.replaceFirst(/\s*\\.*/, '')
 				return
@@ -1265,8 +1267,8 @@ class Expand {
 			lineGroup = new LineGroup(line)
 			lineGroup.comment = cmnt ? cmnt : null
 			
-//			println "** " + line
 			if( line.endsWith("\\") ) {
+//    			println "** " + line
 				lineGroup.extraLines = []
 				lineGroup.line = lineGroup.line.replaceFirst(/\s*\\.*/, '')
 			}
