@@ -388,11 +388,6 @@
 уїжно adv:&predic
 уїхати /v4 :perf
 уйматися /vr2 :imperf
-уконтентований /adj :&adjp:pasv:perf:v-u    # past
-уконтентовувати /v1 :imperf
-уконтентовуватися /vr1 :imperf
-уконтентувати /v1 :perf
-уконтентуватися /vr1 :perf
 укруть adv
 уліжно adv:&predic
 упоминати /v2.cf.advp :imperf
@@ -411,6 +406,7 @@
 фершалка /n10.p2.ko.<
 фестини /np1
 фіра /n10.p1
+фрунт /n20
 хватаний /adj
 хибань part
 хляпавка /n10
@@ -419,9 +415,14 @@
 хоть part
 хотя part
 хресійбо intj
+хургон /n20.a.p
+цвітник /n20.a.p
 циганів циган noun:anim:p:v_rod/v_zna
+цирулик /n20.a.p.<
+цифір /n32
 цукриця /n10
 цьоця /n10.ku.<
+чміль /n20.a.p.<>
 чортма noninfl:&predic
 чорт-ма noninfl:&predic
 чортмає noninfl:&predic
