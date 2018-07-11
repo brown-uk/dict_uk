@@ -684,6 +684,9 @@
 хтіло хтіти verb:imperf:past:n
 хтіли хтіти verb:imperf:past:p
 
+забракнути забракнути verb:perf:inf
+забракне забракнути verb:perf:futr:s:3
+забракло забракнути verb:perf:past:n
 
 # наказна фома є зайвою - не має сенсу значно ускладнювати правила???
 могти могти verb:inf:imperf             # rv_inf
