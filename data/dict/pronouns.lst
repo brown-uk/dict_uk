@@ -54,6 +54,12 @@
 ким хто noun:anim:m:v_oru:&pron:int:rel
 кім хто noun:anim:m:v_mis:&pron:int:rel
 
+хто-хто хто-хто conj:subord
+хто-хто хто-хто noun:anim:m:v_naz:&pron:int:rel
+кого-кого хто-хто noun:anim:m:v_rod/v_zna:&pron:int:rel
+кому-кому хто-хто noun:anim:m:v_dav/v_mis:&pron:int:rel
+ким-ким хто-хто noun:anim:m:v_oru:&pron:int:rel
+
 що що conj:subord
 що що noun:inanim:n:v_naz/v_zna:&pron:int:rel
 віщо що noun:inanim:n:v_zna:&pron:int:rel
@@ -61,6 +67,12 @@
 чому що noun:inanim:n:v_dav/v_mis:&pron:int:rel
 чим що noun:inanim:n:v_oru:&pron:int:rel
 чім що noun:inanim:n:v_mis:&pron:int:rel
+
+що-що що-що conj:subord
+що-що що-що noun:inanim:n:v_naz/v_zna:&pron:int:rel
+чого-чого що-що noun:inanim:n:v_rod:&pron:int:rel
+чому-чому що-що noun:inanim:n:v_dav/v_mis:&pron:int:rel
+чим-чим що-що noun:inanim:n:v_oru:&pron:int:rel
 
 абихто абихто noun:anim:m:v_naz:&pron:ind
 абикого абихто noun:anim:m:v_rod/v_zna:&pron:ind

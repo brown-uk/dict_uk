@@ -641,6 +641,26 @@
 
 боронь боронити verb:impr:s:2:imperf:coll
 
+# дивний м.ч. - лише коротка форма:
+приставши приставши advp:perf
+пристанувши пристанувши advp:perf
+пристанути пристанути verb:perf:inf
+пристань пристанути verb:perf:impr:s:2
+пристаньмо пристанути verb:perf:impr:p:1
+пристаньте пристанути verb:perf:impr:p:2
+пристану пристанути verb:perf:futr:s:1
+пристанеш пристанути verb:perf:futr:s:2
+пристане пристанути verb:perf:futr:s:3
+пристанемо пристанути verb:perf:futr:p:1
+пристанем пристанути verb:perf:futr:p:1:subst
+пристанете пристанути verb:perf:futr:p:2
+пристануть пристанути verb:perf:futr:p:3
+пристав пристанути verb:perf:past:m
+пристала пристанути verb:perf:past:f
+пристало пристанути verb:perf:past:n
+пристали пристанути verb:perf:past:p
+
+
 # паралельна: кляну - клену
 кленім клясти verb:impr:p:1:imperf:rare
 кленімо клясти verb:impr:p:1:imperf:rare

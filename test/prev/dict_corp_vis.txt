@@ -2996,6 +2996,42 @@
   нудьгою noun:inanim:f:v_oru
   нудьзі noun:inanim:f:v_mis
   нудьго noun:inanim:f:v_kly
+один-другий numr:m:v_naz:&numr
+  одного-другого numr:m:v_rod:&numr
+  одному-другому numr:m:v_dav:&numr
+  одного-другого numr:m:v_zna:ranim:&numr
+  один-другий numr:m:v_zna:rinanim:&numr
+  одним-другим numr:m:v_oru:&numr
+  однім-другім numr:m:v_mis:&numr
+  однім-другому numr:m:v_mis:&numr
+  одному-другім numr:m:v_mis:&numr
+  одному-другому numr:m:v_mis:&numr
+  одна-друга numr:f:v_naz:&numr
+  однієї-другої numr:f:v_rod:&numr
+  одної-другої numr:f:v_rod:&numr
+  одній-другій numr:f:v_dav:&numr
+  одну-другу numr:f:v_zna:&numr
+  однією-другою numr:f:v_oru:&numr
+  одною-другою numr:f:v_oru:&numr
+  одній-другій numr:f:v_mis:&numr
+  одне-друге numr:n:v_naz:&numr
+  одно-друге numr:n:v_naz:&numr
+  одного-другого numr:n:v_rod:&numr
+  одному-другому numr:n:v_dav:&numr
+  одне-друге numr:n:v_zna:&numr
+  одно-друге numr:n:v_zna:&numr
+  одним-другим numr:n:v_oru:&numr
+  однім-другім numr:n:v_mis:&numr
+  однім-другому numr:n:v_mis:&numr
+  одному-другім numr:n:v_mis:&numr
+  одному-другому numr:n:v_mis:&numr
+  одні-другі numr:p:v_naz:&numr
+  одних-других numr:p:v_rod:&numr
+  одним-другим numr:p:v_dav:&numr
+  одних-других numr:p:v_zna:ranim:&numr
+  одні-другі numr:p:v_zna:rinanim:&numr
+  одними-другими numr:p:v_oru:&numr
+  одних-других numr:p:v_mis:&numr
 один-єдиний adj:m:v_naz
   одного-єдиного adj:m:v_rod
   одному-єдиному adj:m:v_dav
@@ -3068,6 +3104,31 @@
   одні-єдині numr:p:v_zna:rinanim
   одними-єдиними numr:p:v_oru
   одних-єдиних numr:p:v_mis
+один-півтора numr:m:v_naz
+  одного-півтора numr:m:v_rod
+  одному-півтора numr:m:v_dav
+  одного-півтора numr:m:v_zna:ranim
+  один-півтора numr:m:v_zna:rinanim
+  одним-півтора numr:m:v_oru
+  однім-півтора numr:m:v_mis
+  одному-півтора numr:m:v_mis
+  одне-півтора numr:n:v_naz
+  одно-півтора numr:n:v_naz
+  одного-півтора numr:n:v_rod
+  одному-півтора numr:n:v_dav
+  одне-півтора numr:n:v_zna
+  одно-півтора numr:n:v_zna
+  одним-півтора numr:n:v_oru
+  однім-півтора numr:n:v_mis
+  одному-півтора numr:n:v_mis
+одна-півтори numr:f:v_naz
+  однієї-півтори numr:f:v_rod
+  одної-півтори numr:f:v_rod
+  одній-півтори numr:f:v_dav
+  одну-півтори numr:f:v_zna
+  однією-півтори numr:f:v_oru
+  одною-півтори numr:f:v_oru
+  одній-півтори numr:f:v_mis
 оскірившись advp:rev:perf:rare
 оскіритися verb:rev:perf:inf:rare
   оскіритись verb:rev:perf:inf:rare
@@ -3242,6 +3303,45 @@
   Руднею-Фасовою noun:inanim:f:v_oru:prop
   Рудні-Фасовій noun:inanim:f:v_mis:prop
   Рудне-Фасова noun:inanim:f:v_kly:prop
+сам-один adj:m:v_naz:&pron:def
+  самого-одного adj:m:v_rod:&pron:def
+  самому-одному adj:m:v_dav:&pron:def
+  самого-одного adj:m:v_zna:ranim:&pron:def
+  сам-один adj:m:v_zna:rinanim:&pron:def
+  самим-одним adj:m:v_oru:&pron:def
+  самім-однім adj:m:v_mis:&pron:def
+  самім-одному adj:m:v_mis:&pron:def
+  самому-однім adj:m:v_mis:&pron:def
+  самому-одному adj:m:v_mis:&pron:def
+  сама-одна adj:f:v_naz:&pron:def
+  самої-однієї adj:f:v_rod:&pron:def
+  самої-одної adj:f:v_rod:&pron:def
+  самій-одній adj:f:v_dav:&pron:def
+  саму-одну adj:f:v_zna:&pron:def
+  самою-однією adj:f:v_oru:&pron:def
+  самою-одною adj:f:v_oru:&pron:def
+  самій-одній adj:f:v_mis:&pron:def
+  саме-одне adj:n:v_naz:&pron:def
+  саме-одно adj:n:v_naz:&pron:def
+  само-одне adj:n:v_naz:&pron:def
+  само-одно adj:n:v_naz:&pron:def
+  самого-одного adj:n:v_rod:&pron:def
+  самому-одному adj:n:v_dav:&pron:def
+  саме-одне adj:n:v_zna:&pron:def
+  саме-одно adj:n:v_zna:&pron:def
+  самим-одним adj:n:v_oru:&pron:def
+  самім-однім adj:n:v_mis:&pron:def
+  самім-одному adj:n:v_mis:&pron:def
+  самому-однім adj:n:v_mis:&pron:def
+  самому-одному adj:n:v_mis:&pron:def
+  сами-одні adj:p:v_naz:&pron:def
+  самі-одні adj:p:v_naz:&pron:def
+  самих-одних adj:p:v_rod:&pron:def
+  самим-одним adj:p:v_dav:&pron:def
+  самих-одних adj:p:v_zna:ranim:&pron:def
+  самі-одні adj:p:v_zna:rinanim:&pron:def
+  самими-одними adj:p:v_oru:&pron:def
+  самих-одних adj:p:v_mis:&pron:def
 сам-самісінький adj:m:v_naz:&pron:def
   самого-самісінького adj:m:v_rod:&pron:def
   самому-самісінькому adj:m:v_dav:&pron:def

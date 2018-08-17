@@ -28,6 +28,7 @@ fname
 foreign
 futr
 gen
+geo
 imperf
 impers
 impr
