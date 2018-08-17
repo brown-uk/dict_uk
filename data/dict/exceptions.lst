@@ -641,26 +641,6 @@
 
 боронь боронити verb:impr:s:2:imperf:coll
 
-# дивний м.ч. - лише коротка форма:
-приставши приставши advp:perf
-пристанувши пристанувши advp:perf
-пристанути пристанути verb:perf:inf
-пристань пристанути verb:perf:impr:s:2
-пристаньмо пристанути verb:perf:impr:p:1
-пристаньте пристанути verb:perf:impr:p:2
-пристану пристанути verb:perf:futr:s:1
-пристанеш пристанути verb:perf:futr:s:2
-пристане пристанути verb:perf:futr:s:3
-пристанемо пристанути verb:perf:futr:p:1
-пристанем пристанути verb:perf:futr:p:1:subst
-пристанете пристанути verb:perf:futr:p:2
-пристануть пристанути verb:perf:futr:p:3
-пристав пристанути verb:perf:past:m
-пристала пристанути verb:perf:past:f
-пристало пристанути verb:perf:past:n
-пристали пристанути verb:perf:past:p
-
-
 # паралельна: кляну - клену
 кленім клясти verb:impr:p:1:imperf:rare
 кленімо клясти verb:impr:p:1:imperf:rare
@@ -934,3 +914,73 @@
 ржучи ржати advp:imperf
 ссучи ссати advp:imperf
 стогнучи стогнати advp:imperf
+
+
+# відокремлені форманти з дефісом
+
+авіа- noninfl
+авто- noninfl
+алко- noninfl
+аква- noninfl
+аміно- noninfl
+англо- noninfl
+аеро- noninfl
+аудіо- noninfl
+важко- noninfl
+вело- noninfl
+водо- noninfl
+високо- noninfl
+вітро- noninfl
+внутрішньо- noninfl
+відео- noninfl
+газо- noninfl
+гетеро- noninfl
+гідро- noninfl
+гомо- noninfl
+греко- noninfl
+дво- noninfl
+довго- noninfl
+дрібно- noninfl
+експортно- noninfl
+електро- noninfl
+етно- noninfl
+західно- noninfl
+звуко- noninfl
+зовнішньо- noninfl
+кіно- noninfl
+коротко- noninfl
+космо- noninfl
+легко- noninfl
+ліво- noninfl
+мало- noninfl
+макро- noninfl
+машино- noninfl
+мікро- noninfl
+міні- noninfl
+моно- noninfl
+мото- noninfl
+нарко- noninfl
+нафто- noninfl
+низько- noninfl
+ново- noninfl
+одно- noninfl
+онко- noninfl
+південно- noninfl
+північно- noninfl
+поп- noninfl
+право- noninfl
+радіо- noninfl
+римо- noninfl
+рок- noninfl
+середньо- noninfl
+стерео- noninfl
+судно- noninfl
+східно- noninfl
+теле- noninfl
+тепло- noninfl
+термо- noninfl
+україно- noninfl
+фото- noninfl
+хіміо- noninfl
+центрально- noninfl
+шоу- noninfl
