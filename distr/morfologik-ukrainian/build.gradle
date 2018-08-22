@@ -462,8 +462,8 @@ uploadArchives {
 
         licenses {
           license {
-            name 'GNU Lesser General Public License'
-            url 'http://www.gnu.org/licenses/lgpl.txt'
+            name 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License' 
+            url 'http://creativecommons.org/licenses/by-nc-sa/4.0'
           }
         }
 
