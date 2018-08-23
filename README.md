@@ -86,7 +86,7 @@ sudo docker stop dict_uk
 
 ### License ###
 
-Дані словника доступні для використання згідно з умовами ліцензії "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+Дані словника доступні для використання згідно з умовами ліцензії "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-nc-sa/4.0/)
 Програмні засоби вільно розповсюджується за умов ліцензії GPL версії 3.
 
-Copyright (c) 2017 Андрій Рисін (arysin@gmail.com), Василь Старко, команда БрУК
+Copyright (c) 2018 Андрій Рисін (arysin@gmail.com), Василь Старко, команда БрУК
