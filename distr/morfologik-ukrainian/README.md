@@ -1,9 +1,11 @@
 Цей проект генерує артефакти для репозитрію Maven (група ua.net.nlp).
 
 morfologik-ukrainian-lt-{версія}.jar - словники у форматі Morfologik для модуля української в LanguageTool
+
 Поширюється за умов LGPL
 
 morfologik-ukrainian-search-{версія}.jar - словник тегів у форматі Morfologik для повнотекстового пошуку (зокрема Apache Lucene)
+
 Поширюється за умов Apache License 2.0.
 
 build.gradle генерує всі словники для LanguageTool і створює артефакт morfologik-ukrainian-lt
