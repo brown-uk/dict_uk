@@ -48,6 +48,19 @@
 * out/words_spell.txt - список всіх відомих словоформ, правильних з погляду правопису
 * out/lemmas.txt - список лем
 
+### Ліцензія ###
+
+Дані словника доступні для використання згідно з умовами ліцензії "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+Програмні засоби вільно розповсюджується за умов ліцензії GPL версії 3.
+
+Copyright (c) 2018 Андрій Рисін (arysin@gmail.com), Василь Старко, команда БрУК
+
+### Похідні проекти ###
+
+* [Словники morfologik](distr/morfologik-ukrainian/README.md)
+* [Словники hunspell](distr/hunspell/README.md)
+* [Словники Firefox](distr/mozilla/README.md)
+* [Словники LibreOffice.org](distr/openoffice.org/README.md)
 
 
 ### Description ###
@@ -86,7 +99,14 @@ sudo docker stop dict_uk
 
 ### License ###
 
-Дані словника доступні для використання згідно з умовами ліцензії "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-nc-sa/4.0/)
-Програмні засоби вільно розповсюджується за умов ліцензії GPL версії 3.
+Dictionary data are distributed under "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+Software is distributed under GPLv3.
 
-Copyright (c) 2018 Андрій Рисін (arysin@gmail.com), Василь Старко, команда БрУК
+Copyright (c) 2018 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
+
+### Derivative Projects ###
+
+* [morfologik dictionaries](distr/morfologik-ukrainian/README.md)
+* [hunspell dictionaries](distr/hunspell/README.md)
+* [Firefox dictionaries](distr/mozilla/README.md)
+* [LibreOffice.org dictionaries](distr/openoffice.org/README.md)

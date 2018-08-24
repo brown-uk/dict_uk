@@ -190,10 +190,6 @@ uploadArchives {
 
         licenses {
           license {
-            name 'Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)'
-            url 'http://creativecommons.org/licenses/by-nc-sa/4.0'
-          }
-          license {
             name 'The Apache Software License, Version 2.0'
             url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
           }

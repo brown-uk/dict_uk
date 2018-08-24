@@ -450,8 +450,8 @@ uploadArchives {
       pom.project {
         name 'Ukrainian Morfologik dictionaries for LanguageTool'
         packaging 'jar'
-//        artifactId = "${artifactId}-${version}"
-        artifactId = "xxx-${version}"
+        artifactId = "${artifactId}-${version}"
+//        artifactId = "xxx-${version}"
         // optionally artifactId can be defined here 
         description 'Ukrainian part-of-speech dictionaries in Morfologik binary format'
         url 'https://github.com/brown-uk/dict_uk'
@@ -462,8 +462,8 @@ uploadArchives {
 
         licenses {
           license {
-            name 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License' 
-            url 'http://creativecommons.org/licenses/by-nc-sa/4.0'
+            name 'GNU Lesser General Public License'
+            url 'http://www.gnu.org/licenses/lgpl.txt'
           }
         }
 

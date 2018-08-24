@@ -11,4 +11,4 @@ See tagset.txt for description of the tags.
 
 Currently the POS tag dictionary is under development and is based on dict_uk project (https://github.com/brown-uk/dict_uk)
 
-Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+Licensed under LGPL
