@@ -51,7 +51,10 @@
 ### Ліцензія ###
 
 Дані словника доступні для використання згідно з умовами ліцензії "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 Програмні засоби вільно розповсюджується за умов ліцензії GPL версії 3.
+
+Зауваження: [похідні проекти](distr/) мають свої ліцензії
 
 Copyright (c) 2018 Андрій Рисін (arysin@gmail.com), Василь Старко, команда БрУК
 
@@ -100,7 +103,11 @@ sudo docker stop dict_uk
 ### License ###
 
 Dictionary data are distributed under "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 Software is distributed under GPLv3.
+
+Note: [derivative projects](distr/) have different licenses
+
 
 Copyright (c) 2018 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
 
