@@ -48,6 +48,7 @@ ns
 numr
 &numr
 &&numr
+number
 nv
 onomat
 p

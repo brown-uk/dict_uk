@@ -10,13 +10,13 @@
 бувало verb:&insert
 вважай verb:&insert
 вважайте verb:&insert
-видати verb:&insert
+#видати verb:&insert
 виходить verb:xp1:&insert
 виявляється verb:&insert
 віриш verb:&insert
 гляди verb:&insert
 даруйте verb:&insert
-див noun:&predic        # :rare
+#див noun:&predic        # :rare
 дивись verb:&insert
 думаю verb:&insert
 знай verb:&insert
