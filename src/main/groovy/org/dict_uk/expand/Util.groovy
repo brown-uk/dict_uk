@@ -199,6 +199,7 @@ class Util {
 		"lname",
 		"fname",
 		"pname",
+		"geo",
 		"nv",
 		"perf",
 		"imperf",

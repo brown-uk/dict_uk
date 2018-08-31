@@ -20,6 +20,7 @@ noninfl 188
 noun 147167
      anim 48559
      fname 2915
+     geo 18852
      inanim 98529
      lname 24510
      nv 11242

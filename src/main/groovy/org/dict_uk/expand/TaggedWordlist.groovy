@@ -139,6 +139,11 @@ List<String> process_input(List<String> files) {
 								&& ( (line.contains(" /n") && ! line.contains("<") )
 									|| (line.contains(" noun") && line.contains(":nv")) ) ) {
 							extra_tags2 += ":prop"
+							
+							if( fn.startsWith('geo') ) {
+							    extra_tags2 += ":geo"
+							}
+							
 						}
 					}
 					else if ( fn == "base.lst" ) {
