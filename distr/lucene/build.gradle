@@ -31,7 +31,7 @@ configurations{
 
 dependencies {
     provided 'org.languagetool:languagetool-tools:' + ltVersion
-    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.12'
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.15'
     compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.8'
     compile 'commons-cli:commons-cli:1.3'
 }
