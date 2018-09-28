@@ -18,7 +18,7 @@ cp ukrainian.stop /usr/share/postgresql/9.6/tsearch_data/ukrainian.stop
 ```
 
 ### Створення словника
-```sh
+```sql
 CREATE TEXT SEARCH DICTIONARY ukrainian_huns (
     TEMPLATE = ispell,
     DictFile = uk_UA,
@@ -27,18 +27,18 @@ CREATE TEXT SEARCH DICTIONARY ukrainian_huns (
 );
 ```
 ### Створення словника стоп слів
-```sh
+```sql
 CREATE TEXT SEARCH DICTIONARY ukrainian_stem (
     template = simple,
     stopwords = ukrainian
 );
 ```
 ### Створення конфігурації
-```sh
+```sql
 CREATE TEXT SEARCH CONFIGURATION ukrainian (PARSER=default);
 ```
 ### Налаштування конфігурації
-```sh
+```sql
 ALTER TEXT SEARCH CONFIGURATION ukrainian ALTER MAPPING FOR  hword, hword_part, word WITH ukrainian_huns, ukrainian_stem;
 
 ALTER TEXT SEARCH CONFIGURATION ukrainian ALTER MAPPING FOR  int, uint, numhword, numword, hword_numpart, email, float, file, url, url_path, version, host, sfloat WITH simple;
