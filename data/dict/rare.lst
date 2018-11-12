@@ -69,6 +69,7 @@
 дільчий /adj
 доживотність /n30
 докіль adv|conj:subord
+доконувати /v1.cf.advp :imperf
 дрожка /n10.p2
 дряглий /adj
 дряглість /n30
@@ -98,6 +99,7 @@
 зашанувати /v1 :perf
 зверх зверх adv
 зверх зверх prep        # rv_rod
+звідколи adv:&pron:int:rel
 звідома adv
 згиблий /adj
 згрубша adv
@@ -111,6 +113,7 @@
 зіпсутися /vr2 :perf
 зірний /adj
 зірно adv:&predic
+змаг /n20
 змирятися /vr2.cf.advp :imperf
 знимкувати /v1.cf.advp :imperf
 знимкуватися /vr1.cf.advp :imperf
@@ -381,6 +384,7 @@
 трансфлюксор /n20.a.p.ke
 тридесять numr:p:v_naz/v_zna
 трясцяма noninfl:&predic
+тяготіти /v2.cf.advp :imperf
 угощати /v2.cf.advp :imperf
 удвійці adv:v-u
 удвурядь adv
@@ -436,5 +440,6 @@
 шкульно adv:&predic
 штири numr:p:v_naz/v_zna
 штирнадцять numr:nv
+шутер /n22.ke
 шушон /n20.a.p
 щіль /n32.p
