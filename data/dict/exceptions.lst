@@ -522,6 +522,10 @@
 
 стіп стопа noun:p:v_rod:xp1
 
+вітця отець noun:anim:m:v_rod/v_zna:rare
+вітцю отець noun:anim:m:v_dav:rare
+вітцем отець noun:anim:m:v_oru:rare
+
 воротям ворота noun:p:v_dav:ns
 воротях ворота noun:p:v_mis:ns
 
@@ -580,6 +584,25 @@
 Франкфурті-на-Майні Франкфурт-на-Майні noun:inanim:m:v_mis:prop
 Франкфурту-на-Майні Франкфурт-на-Майні noun:inanim:m:v_mis:prop
 Франкфурте-на-Майні Франкфурт-на-Майні noun:inanim:m:v_kly:prop
+
+кадівб кадівб noun:inanim:m:v_naz:rare
+кадовба кадівб noun:inanim:m:v_rod:rare
+кадовбові кадівб noun:inanim:m:v_dav:rare
+кадовбу кадівб noun:inanim:m:v_dav:rare
+кадівб кадівб noun:inanim:m:v_zna:rare
+кадовбом кадівб noun:inanim:m:v_oru:rare
+кадовбі кадівб noun:inanim:m:v_mis:rare
+кадовбові кадівб noun:inanim:m:v_mis:rare
+кадовбу кадівб noun:inanim:m:v_mis:rare
+кадовбе кадівб noun:inanim:m:v_kly:rare
+кадовби кадівб noun:inanim:p:v_naz:rare
+кадовбів кадівб noun:inanim:p:v_rod:rare
+кадовбам кадівб noun:inanim:p:v_dav:rare
+кадовби кадівб noun:inanim:p:v_zna:rare
+кадовбами кадівб noun:inanim:p:v_oru:rare
+кадовбах кадівб noun:inanim:p:v_mis:rare
+кадовби кадівб noun:inanim:p:v_kly:rare
+
 
 
 

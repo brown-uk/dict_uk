@@ -7,6 +7,7 @@
 банно adv:&predic
 баяти /v1.cf :imperf
 безлічно adv
+березіль /n21.a
 бздура /n10
 бистрота /n10
 бісиця /n10.p1.ko.<
@@ -17,12 +18,15 @@
 благоподібний /adj
 благоподібність /n30
 благущий /adj
+боднар /n24.a.p.ke.<
 босячка /n10.p2.ko.<
 бублій /n20.a.p.<
 бюрко /n2n.piv
 ваганки /np2
 вазка /n10.p2
 варівко adv:&predic
+варцаб /n20.a.p
+варцаба /n10.p1
 вдвійці adv:v-u
 вельон /n20
 венгерське /n2adj1
@@ -42,6 +46,7 @@
 відьмур /n24.a.p.<
 вісний /adj
 вісьта intj
+вітців /adj
 в'їжно в'їжно adv:&predic
 вколо вколо prep|adv        # rv_rod
 вконтентований /adj :&adjp:pasv:perf:v-u    # past
@@ -49,12 +54,18 @@
 вконтентовуватися /vr1.cf.advp :imperf
 вконтентувати /v1.is0 :perf
 вконтентуватися /vr1 :perf
+властивець /n22.a.p.<
 вліжно adv:&predic
+вовкодух /n20.a.p.<
+володільник /n20.a.p.<
 воркотливий /adj
 втіки /np2
+вуй /n20.a.<
 вхорканий /adj :&adjp:pasv:perf:v-u    # past
+гайстер /n20.a.p.ke.<>
 гардувати /v1.cf.advp :imperf
 гейби conj:subord
+гиндик /n20.a.p.<>
 глупий /adj :xp1            # xv1
 головочка /n10
 ґердан /n20.p
@@ -75,6 +86,7 @@
 дряглість /n30
 жалуватися /vr1.cf.advp :imperf
 жантильний /adj
+живжик /n20.a.p.<
 завідатель /n20.a.p.<
 завідателька /n10.p2.<
 загомзатися /vr2 :perf
@@ -96,6 +108,7 @@
 затанчити /v1 :perf
 затахлувати /v1 :perf
 затемперувати /v1.is0 :perf
+захланник /n20.a.p.<
 зашанувати /v1 :perf
 зверх зверх adv
 зверх зверх prep        # rv_rod
@@ -113,6 +126,7 @@
 зіпсутися /vr2 :perf
 зірний /adj
 зірно adv:&predic
+злотник /n20.a.p.<
 змаг /n20
 змирятися /vr2.cf.advp :imperf
 знимкувати /v1.cf.advp :imperf
@@ -124,6 +138,8 @@
 зрадувати /v1 :perf
 зрадуватися /vr1 :perf
 зумисно adv
+зцілювач /n20.a.p.<
+ірій /n20
 йменований /adj :&adjp:pasv:imperf
 калабалик /n20
 кально adv:&predic
@@ -141,13 +157,16 @@
 комбід /n20.p
 комбідівець /n22.a.p.<
 коц /n20.a.p
+лапоть /n22.a.p
 леда-який /adj :&pron:ind
+лотр /n20.a.p.ke.<
 любля noninfl:&predic
 любовник /n20.a.p.<
 любовниця /n10.p1.<
 люде людина noun:anim:p:v_naz
 людовий /adj
 мабіть adv:&insert
+магазинер /n20.a.p.ke.<
 магайбі intj
 майбуть adv:&insert
 масакра /n10.p1
@@ -210,6 +229,7 @@
 ніт noninfl:&predic
 ніц noun:inanim:v_rod:&pron:neg
 ніц noun:inanim:v_zna:&pron:neg
+нумер /n20.a.p.ke
 оба numr:m:v_naz/v_zna
 обичай /n20.p
 обі numr:f:v_naz/v_zna
@@ -230,6 +250,7 @@
 однако adv:&predic
 озутий /adj :&adjp:pasv:perf    # past
 окроме prep        # rv_rod
+олтар /n24.a.p.ke
 омочений /adj :&adjp:pasv:perf              #> обмочений
 онакий /adj :&pron:def
 опірений /adj :&adjp:pasv:perf    # past
@@ -338,6 +359,7 @@
 против prep        # rv_rod
 прочитний /adj
 райця /n10.piv.<m
+регістратор /n20.a.p.ke.<
 реферантеса /n10.p1.<
 рік-річно рік-річно adv
 розгрішення /n2n
