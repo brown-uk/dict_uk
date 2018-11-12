@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'groovy'
 
-String ltVersion = '3.9-SNAPSHOT'
+String ltVersion = '4.3-SNAPSHOT'
 
 String langCode="uk"
 

@@ -223,6 +223,7 @@ def findInDict(word) {
 	word = word.replaceFirst(/.*-/, '')
 	
 	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|взаємо|відео|гео|гепато|геронто|геліо|гідро|гіпер|держ|еко|екстра|електро|євро|за|кібер|кіно|мало|мега|мета|мікро|моно|мото|над|напів|нейро|не|пере|під|по|проти|про|псевдо|радіо|само|спец|спів|стерео|спорт|старо|супер|термо|теле|транс|фото)/, '')
+    ending = ending.replaceFirst(/^ав/, 'а[ву]')
     ending = ending.replaceFirst(/(ння|ти)$/, '(ння|ти)')
 	if( ending.endsWith('ований') ) {
 		ending = ending.replaceFirst(/ований/, '(ованість|ований|овано|увати)')
@@ -234,7 +235,7 @@ def findInDict(word) {
     ending = ending.replaceFirst(/иця$/, '(иця|ик)')
     ending = ending.replaceFirst(/вачка$/, '(вач|вачка)')
 	ending = ending.replaceFirst(/[гґ]/, '[гґ]')
-	
+
 	println "searchin for: $ending"
 	def ptrn = ~"(?ui).*$ending "
 	def similars = dict.findAll{ ptrn.matcher(it) }
@@ -380,7 +381,12 @@ swing.edt {
 						button(
 								text: 'Impf',
 								actionPerformed: {
-										text.text = text.text.replaceFirst(/ :(im)?perf/, '.cf.advp :imperf')
+								        if( text.text.contains('adjp') ) {
+										    text.text = text.text.replaceFirst(/:perf/, ':imperf')
+										}
+										else {
+										    text.text = text.text.replaceFirst(/ :(im)?perf/, '.cf.advp :imperf')
+										}
 										inflect()
 									}
 								)
@@ -499,11 +505,28 @@ swing.edt {
 								}
 							)
 							KeyStroke keystrokeP = KeyStroke.getKeyStroke(KeyEvent.VK_P, InputEvent.CTRL_MASK)
-							btnFind.registerKeyboardAction(new ActionListener() {
+							btnFlagSuggest.registerKeyboardAction(new ActionListener() {
 								public void actionPerformed(ActionEvent e) {
 									defaultFlags()
 								}
 							}, keystrokeP, JComponent.WHEN_IN_FOCUSED_WINDOW);
+
+
+						label('     ')
+						def btnToAdj = button(
+							text: 'ToAdj',
+							actionPerformed: {
+									text.text = text.text.replaceFirst(/(а|у|ої|ого|ому|им|ім|іми|іх) \//, 'ий /')
+									defaultFlags()
+								}
+							)
+							KeyStroke keystrokeY = KeyStroke.getKeyStroke(KeyEvent.VK_Y, InputEvent.CTRL_MASK)
+							btnToAdj.registerKeyboardAction(new ActionListener() {
+								public void actionPerformed(ActionEvent e) {
+									text.text = text.text.replaceFirst(/(а|у|ої|ого|ому|им|ім|іми|іх) \//, 'ий /')
+									defaultFlags()
+								}
+							}, keystrokeY, JComponent.WHEN_IN_FOCUSED_WINDOW);
 
 
 						label('     ')
