@@ -10,3 +10,4 @@ fsa.dict.encoder=SUFFIX
 fsa.dict.frequency-included=true
 
 fsa.dict.speller.ignore-numbers=true
+fsa.dict.speller.ignore-all-uppercase=false
