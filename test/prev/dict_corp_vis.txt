@@ -267,6 +267,21 @@
   азотисто-водневими adj:p:v_oru
   азотисто-водневих adj:p:v_mis
   азотисто-водневі adj:p:v_kly
+акула-молот noun:anim:f:v_naz
+  акули-молот noun:anim:f:v_rod
+  акулі-молот noun:anim:f:v_dav
+  акулу-молот noun:anim:f:v_zna
+  акулою-молот noun:anim:f:v_oru
+  акулі-молот noun:anim:f:v_mis
+  акуло-молот noun:anim:f:v_kly
+  акули-молот noun:anim:p:v_naz
+  акул-молот noun:anim:p:v_rod
+  акулам-молот noun:anim:p:v_dav
+  акули-молот noun:anim:p:v_zna
+  акул-молот noun:anim:p:v_zna
+  акулами-молот noun:anim:p:v_oru
+  акулах-молот noun:anim:p:v_mis
+  акули-молот noun:anim:p:v_kly
 Архангельськ noun:inanim:m:v_naz:prop:geo
   Архангельська noun:inanim:m:v_rod:prop:geo
   Архангельську noun:inanim:m:v_dav:prop:geo
