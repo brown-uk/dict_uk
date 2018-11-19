@@ -1,10 +1,10 @@
-Всього лем: 358114
-  словникових лем (без advp, без омонімів imperf/perf) 297076
+Всього лем: 358165
+  словникових лем (без advp, без омонімів imperf/perf) 297127
 
 Частоти за тегами:
-adj 91102
+adj 91133
      compb 2130
-     imperf 7048
+     imperf 7047
      nv 51
      perf 10046
 adv 14633
@@ -17,15 +17,15 @@ conj 115
 foreign 18
 intj 504
 noninfl 188
-noun 150164
-     anim 48811
+noun 150184
+     anim 48812
      fname 2943
-     geo 18983
-     inanim 101274
+     geo 18986
+     inanim 101293
      lname 24541
-     nv 11353
+     nv 11355
      pname 945
-     prop 48969
+     prop 48973
 number 5
 numr 122
      nv 26
