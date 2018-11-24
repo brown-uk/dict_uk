@@ -3390,6 +3390,12 @@
 самі-самісінькі сам-самісінький adj:p:v_zna:rinanim:&pron:def
 самими-самісінькими сам-самісінький adj:p:v_oru:&pron:def
 самих-самісіньких сам-самісінький adj:p:v_mis:&pron:def
+свв. свв. adj:p:v_naz:nv:abbr
+свв. свв. adj:p:v_rod:nv:abbr
+свв. свв. adj:p:v_dav:nv:abbr
+свв. свв. adj:p:v_zna:nv:abbr
+свв. свв. adj:p:v_oru:nv:abbr
+свв. свв. adj:p:v_mis:nv:abbr
 синій синій adj:m:v_naz
 синього синій adj:m:v_rod
 синьому синій adj:m:v_dav
