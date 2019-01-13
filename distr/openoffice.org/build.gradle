@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
-version="4.2.5"
+version="4.3.9"
 def hunspellDir="../hunspell/build/hunspell"
 
 task prepareFiles {
@@ -39,7 +39,9 @@ task prepareFiles {
 
 task oxt (type: Zip, dependsOn: prepareFiles) {
     from 'build/oxt'
-    archiveName "build/dict-uk_UA-${project.version}.oxt"
+    archiveBaseName = "dict-uk_UA-${project.version}"
+    archiveExtension = "oxt"
+    destinationDirectory = file("build")
 }
 
 

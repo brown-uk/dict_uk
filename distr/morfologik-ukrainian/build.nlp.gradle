@@ -3,13 +3,13 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version = '3.9.0'
+version = '4.4.1'
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian-search'
 archivesBaseName = artifactId
 
-String ltToolsVersion = '4.0-SNAPSHOT'
+String ltToolsVersion = '4.4-SNAPSHOT'
 
 String langCode="uk"
 
@@ -66,7 +66,7 @@ task prepareDict() {
 
         new File(srcDict).eachLine { line ->
           line = line.replace('ґ', 'г').replace('Ґ', 'Г')
-        
+
           def (word, lemma, tagStr) = line.split()
 
           def wordKey = word.toLowerCase() + splitter + lemma
@@ -95,7 +95,7 @@ task prepareDict() {
 task posDict(type: JavaExec, dependsOn: prepareDict) {
     def outputDict="${outResDir}/ukrainian.dict"
 
-    inputs.file tasks.prepareDict.outputs
+    inputs.files tasks.prepareDict.outputs
     outputs.file outputDict
 
     workingDir "$projectDir"

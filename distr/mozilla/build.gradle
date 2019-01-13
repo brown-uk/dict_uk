@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
-version="4.2.6"
+version="4.3.9"
 def hunspellDir="../hunspell/build/hunspell"
 
 task prepareFiles {
@@ -17,23 +17,25 @@ task prepareFiles {
         }
         into "build/xpi/dictionaries"
     }
-   
+
     copy {
-	    from "meta-xpi/README_uk_UA.txt"
-	    from "meta-xpi/*.png"
-	    from "../LICENSE"
-	    from("meta-xpi/install.js") {
+        from "meta-xpi/README_uk_UA.txt"
+        from "meta-xpi/*.png"
+        from "../LICENSE"
+        from("meta-xpi/install.js") {
             filter(ReplaceTokens, tokens: [VERSION: project.version])
         }
-	    from("meta-xpi/install.rdf") {
+        from("meta-xpi/install.rdf") {
             filter(ReplaceTokens, tokens: [VERSION: project.version])
         }
-	    into "build/xpi"
+        into "build/xpi"
     }
   }
 }
 
 task xpi (type: Zip, dependsOn: prepareFiles) {
     from 'build/xpi'
-    archiveName "build/ukrainian_dictionary-$project.version-mozilla.xpi"
+    archiveBaseName = "ukrainian_dictionary-$project.version-mozilla"
+    archiveExtension = "xpi"
+    destinationDirectory = file("build")
 }

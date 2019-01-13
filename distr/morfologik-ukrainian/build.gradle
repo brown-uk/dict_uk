@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version = '4.3.9'
+version = '4.4.1'
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian-lt'
@@ -91,7 +91,7 @@ task prepareDict(type: Exec) {
 task posDict(type: JavaExec, dependsOn: prepareDict) {
     def outputDict="${outResDir}/ukrainian.dict"
 
-    inputs.file tasks.prepareDict.outputs
+    inputs.files tasks.prepareDict.outputs
     outputs.file outputDict
 
     workingDir "$projectDir"
@@ -108,7 +108,7 @@ task posDict(type: JavaExec, dependsOn: prepareDict) {
 task synthDict(type: JavaExec, dependsOn: prepareDict) {
     def outputDict="${outResDir}/ukrainian_synth.dict"
 
-    inputs.file tasks.prepareDict.outputs.files
+    inputs.files tasks.prepareDict.outputs.files
     outputs.file outputDict
 
     workingDir "$projectDir"
@@ -146,7 +146,7 @@ task spellDict(type: JavaExec, dependsOn: prepareSpellWords) {
     def outFile="${spellOutDir}/uk_UA.dict"
     def freqFile="src/main/data/uk_wordlist.xml"
 
-    inputs.file tasks.prepareSpellWords.outputs.files
+    inputs.files tasks.prepareSpellWords.outputs.files
     outputs.file outFile
 
     workingDir "$projectDir"
@@ -158,7 +158,7 @@ task spellDict(type: JavaExec, dependsOn: prepareSpellWords) {
     args "-info", "${resourceDir}/hunspell/uk_UA.info"
     args "-o", "${outFile}"
     args "-freq", "${freqFile}"
-    
+
     doFirst() {
         new File(spellOutDir).mkdirs()
     }
@@ -230,7 +230,7 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
     def allFiles = Arrays.asList(new File(srcDir).listFiles())
     def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! (it.name in ['twisters.lst', 'base-composite.lst']) }
 
-    inputs.file srcFiles
+    inputs.files srcFiles
     outputs.file outFile
 
 
@@ -272,7 +272,7 @@ task createRenamedReplacementDict(dependsOn: createOutRulesDir) {
     def allFiles = Arrays.asList(new File(srcDir).listFiles())
     def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! it.name.startsWith('twisters') }
 
-    inputs.file srcFiles
+    inputs.files srcFiles
     outputs.file outFile
 
 
@@ -321,28 +321,28 @@ task caseGovernmentDict() {
         new File(outResDir).mkdirs()
     }
 
-	doLast {
-		def outLines = []
+    doLast {
+        def outLines = []
 
-		srcFiles.each{ srcFile ->
+        srcFiles.each{ srcFile ->
 
-			def rvLines = new File("$srcDir/$srcFile").text.split('\n').findAll{
-				(it =~ ' /(adj|n[0-4])| prep' || it.contains("+cs=")) && it.contains(' rv_')
-			}.collect{
-//				def out = it.contains(" +cs=") ? it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2\nнай$1 $2') \
-				def out = it.contains(" +cs=") ? it.contains("rv-най") \
-				                                 ? it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2\nнай$1 $2') \
-				                                 : it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2') \
-				                               : it.replaceFirst(/^(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2')
-				out.replace("rv_", "v_")
-			}
+            def rvLines = new File("$srcDir/$srcFile").text.split('\n').findAll{
+                (it =~ ' /(adj|n[0-4])| prep' || it.contains("+cs=")) && it.contains(' rv_')
+            }.collect{
+//                def out = it.contains(" +cs=") ? it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2\nнай$1 $2') \
+                def out = it.contains(" +cs=") ? it.contains("rv-най") \
+                                                 ? it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2\nнай$1 $2') \
+                                                 : it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2') \
+                                               : it.replaceFirst(/^(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2')
+                out.replace("rv_", "v_")
+            }
 
-			outLines.addAll(rvLines)
-		}
-		
+            outLines.addAll(rvLines)
+        }
+
         println "Wrote $outLines.size lines"
-		new File(outFile).text = outLines.join('\n') + '\n'
-	}
+        new File(outFile).text = outLines.join('\n') + '\n'
+    }
 }
 
 

@@ -1083,12 +1083,12 @@ class Expand {
 	private final static Pattern word_lemma_re = Pattern.compile(" [а-яіїєґА-ЯІЇЄҐ]")
 
 	@CompileStatic
-	private List<DicEntry> expand_line(String line) {
+	List<DicEntry> expand_line(String line) {
 		return expand_line(new LineGroup(line))
 	}
 
 	@CompileStatic
-	private List<DicEntry> expand_line(LineGroup lineGroup) {
+	List<DicEntry> expand_line(LineGroup lineGroup) {
 		List<LineGroup> lines = preprocess(lineGroup)
 
 		def main_word = ""

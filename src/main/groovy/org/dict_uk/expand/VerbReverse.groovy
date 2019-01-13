@@ -2,9 +2,9 @@
 
 package org.dict_uk.expand
 
-import java.util.regex.*;
-import groovy.util.CliBuilder;
-import groovy.transform.CompileStatic;
+import java.util.regex.*
+import groovy.transform.CompileStatic
+
 
 //
 // Generates affix file for reverse verb forms 
