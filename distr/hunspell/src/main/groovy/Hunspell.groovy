@@ -1,5 +1,6 @@
 
-import java.util.regex.Matcher;
+import java.util.regex.Matcher
+import java.text.Collator
 
 import org.dict_uk.expand.*
 
@@ -469,7 +470,11 @@ println "Found ${lines.size} total lines"
 def words = lines
 
 def txt = "${words.size}\n"
-txt += words.toSorted().join("\n")
+
+
+Collator collator = Collator.getInstance(new Locale("uk", "UA"));
+
+txt += words.toSorted(collator).join("\n")
 
 new File("build/hunspell/uk_UA.dic").text = txt
 
