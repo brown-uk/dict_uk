@@ -57,7 +57,7 @@
 
 Зауваження: [похідні проекти](distr/) мають свої ліцензії
 
-Copyright (c) 2018 Андрій Рисін (arysin@gmail.com), Василь Старко, команда БрУК
+Copyright (c) 2019 Андрій Рисін (arysin@gmail.com), Василь Старко, команда БрУК
 
 ### Похідні проекти ###
 
@@ -111,7 +111,7 @@ Software is distributed under GPLv3.
 Note: [derivative projects](distr/) have different licenses
 
 
-Copyright (c) 2018 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
+Copyright (c) 2019 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
 
 ### Derivative Projects ###
 
