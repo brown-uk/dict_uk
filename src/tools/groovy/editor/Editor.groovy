@@ -123,7 +123,11 @@ Closure selChange1 = { e ->
 	if( e.getValueIsAdjusting() || minSelIdx < 0 )
 		return
 
-	def item = data[minSelIdx]
+	def itemParts = data[minSelIdx].split(' ')
+	def item = itemParts[0]
+	def notes = itemParts.size() > 1 ? itemParts[1] : ''
+	
+	notesLabel.text = notes
 
 	def word = item.startsWith(' ') ? item.trim().split(/    /, 2)[1].trim() : item.split(/ /, 2)[0]
 	println "word: $word"
@@ -237,7 +241,7 @@ def findInDict(word) {
 	ending = ending.replaceFirst(/[гґ]/, '[гґ]')
 
 	println "searchin for: $ending"
-	def ptrn = ~"(?ui).*$ending "
+	def ptrn = ~"(?ui)^[^#]*$ending "
 	def similars = dict.findAll{ ptrn.matcher(it) }
 //	def similars = dict.findAll{ it =~ "(?i)^[а-яіїєґА-ЯІЇЄҐ'-]*$ending " }
 	if( similars.size() > 100 ) {
@@ -562,6 +566,7 @@ swing.edt {
 //							vesumList.setPreferredSize(new Dimension(200, 300))
 					}
 
+					notesLabel = label(horizontalAlignment: SwingConstants.RIGHT)
 				}
 
 				scrollPane(verticalScrollBarPolicy:JScrollPane.VERTICAL_SCROLLBAR_ALWAYS ) {

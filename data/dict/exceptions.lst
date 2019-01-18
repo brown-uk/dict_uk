@@ -603,6 +603,22 @@
 кадовбах кадівб noun:inanim:p:v_mis:rare
 кадовби кадівб noun:inanim:p:v_kly:rare
 
+# додатково до псевдо noun:n:nv
+#псевдо псевдо noun:inanim:n:v_naz:coll
+псевда псевдо noun:inanim:n:v_rod:coll
+псевду псевдо noun:inanim:n:v_dav:coll
+#псевдо псевдо noun:inanim:n:v_zna:coll
+псевдом псевдо noun:inanim:n:v_oru:coll
+псевді псевдо noun:inanim:n:v_mis:coll
+псевду псевдо noun:inanim:n:v_mis:coll
+#псевдо псевдо noun:inanim:n:v_kly:coll
+псевда псевдо noun:inanim:p:v_naz:coll
+псевд псевдо noun:inanim:p:v_rod:coll
+псевдам псевдо noun:inanim:p:v_dav:coll
+псевда псевдо noun:inanim:p:v_zna:coll
+псевдами псевдо noun:inanim:p:v_oru:coll
+псевдах псевдо noun:inanim:p:v_mis:coll
+псевда псевдо noun:inanim:p:v_kly:coll
 
 
 
@@ -680,6 +696,13 @@
 кленуть клясти verb:pres:p:3:imperf:rare
 кленучи клясти advp:imperf
 
+# сучасн. - молодіжі, в старих словниках - молодежи
+молодежі молодіж noun:inanim:f:v_rod:rare
+молодежі молодіж noun:inanim:f:v_dav:rare
+молодежжю молодіж noun:inanim:f:v_oru:rare
+молодежі молодіж noun:inanim:f:v_mis:rare
+молодеже молодіж noun:inanim:f:v_kly:rare
+
 
 хтітися хтітися verb:rev:imperf:inf
 хтітись хтітися verb:rev:imperf:inf
@@ -743,6 +766,9 @@
 
 # лише наказова
 щасти щастити verb:imperf:impr:s:2
+
+славімо славити verb:imperf:impr:p:1
+славіть славити verb:imperf:impr:p:2:rare
 
 ввити ввити verb:inf:perf
 ввий ввити verb:impr:s:2:perf

@@ -1,6 +1,7 @@
 # загинулий /adj :&adjp:actv:perf
 абись conj:subord
 альбо conj:coord
+андрут /n20.a.p
 антипко /n20.<
 атентат /n20
 ачень part
@@ -22,6 +23,7 @@
 босячка /n10.p2.ko.<
 бублій /n20.a.p.<
 бюрко /n2n.piv
+вагадло /n2n.p1
 ваганки /np2
 вазка /n10.p2
 варівко adv:&predic
@@ -74,6 +76,8 @@
 далебіг adv:&insert
 дармо adv
 дармовіс /n20.a.p
+датка /n10.p2
+датка /n10.p2
 дворець /n22.p.a
 дев'ятдесят /numr
 дейко noninfl:&predic
@@ -130,8 +134,6 @@
 злотник /n20.a.p.<
 змаг /n20
 змирятися /vr2.cf.advp :imperf
-знимкувати /v1.cf.advp :imperf
-знимкуватися /vr1.cf.advp :imperf
 знімкувати /v1.cf.advp :imperf
 знімкуватися /vr1.cf.advp :imperf
 з-позаду з-позаду adv
@@ -144,6 +146,7 @@
 йменований /adj :&adjp:pasv:imperf
 калабалик /n20
 кально adv:&predic
+канудити /v1.cf.advp :imperf
 катмає noninfl:&predic
 ке intj:&predic
 кете intj:&predic
@@ -157,6 +160,7 @@
 коляса /n10.p1
 комбід /n20.p
 комбідівець /n22.a.p.<
+которий /adj :&pron:int:rel
 коц /n20.a.p
 лапоть /n22.a.p
 леда-який /adj :&pron:ind
@@ -195,6 +199,7 @@
 напружливий /adj
 нарід /n21
 настарчити /v1 :perf
+начальний /adj
 невміч adv:&predic
 невпотріб noninfl:&predic
 невправка /n10
@@ -312,6 +317,7 @@
 отцю отцей adj:f:v_zna:&pron:dem
 отця отцей adj:f:v_naz:&pron:dem
 памка /n10
+пашпорт /n20.a.p
 пеняти /v2.cf.advp :imperf
 переселянин /n20.a.pyn.<
 перстінь /n23.p
@@ -345,13 +351,12 @@
 постоянка /n10.p2
 постпродакшн /n20
 постріш /n32.p
-постсовєтський /adj :coll
 поступцем adv
 потверджувальний /adj
 поуз поуз prep        # rv_rod:rv_zna
 почерез prep        # rv_zna
 пощо adv:&pron:int:rel
-празничанин /n20.a.p.<
+празничанин /n20.a.pyn.<
 приводець /n22.a.p.<
 придверний /adj
 притім conj:subord:bad
@@ -364,6 +369,7 @@
 райця /n10.piv.<m
 регістратор /n20.a.p.ke.<
 реферантеса /n10.p1.<
+ріжниця /n10.p1
 рік-річно рік-річно adv
 розгрішення /n2n
 розділка /n10.p2                            #> риска
@@ -377,7 +383,7 @@
 святешний /adj
 се сей adj:n:v_naz/v_zna:&pron:dem
 сей сей adj:m:v_naz/v_zn2:&pron:dem
-сербіянин /n20.a.p.<
+сербіянин /n20.a.pyn.<
 силяти /v2.cf.advp :imperf
 сим сей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
 сими сей adj:p:v_oru:&pron:dem
@@ -390,6 +396,7 @@
 сім сей adj:m:v_mis//n:v_mis:&pron:dem
 скілька numr:nv
 скілько numr:p:v_naz/v_zna
+сливе adv
 сопух /n20.a
 спечно спечно adv
 споміж prep        # rv_rod
@@ -404,6 +411,7 @@
 ся part
 таж conj:subord|part
 таже conj:subord|part
+тілько adv|conj:subord|part
 тра noninfl:&predic
 травознай /n20.a.p.<
 трансфлюксор /n20.a.p.ke
@@ -452,6 +460,7 @@
 цифір /n32
 цукриця /n10
 цьоця /n10.ku.<
+числити /v1.cf.advp :imperf
 чміль /n20.a.p.<>
 чортма noninfl:&predic
 чорт-ма noninfl:&predic
@@ -462,6 +471,7 @@
 шияка /n10
 шкварко adv:&predic
 шкло /n2n :np               #> скло
+шкляний /adj
 шкульно adv:&predic
 штири numr:p:v_naz/v_zna
 штирнадцять numr:nv
