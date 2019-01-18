@@ -968,7 +968,7 @@ class Expand {
 				word = main_word[0..<-2] + "іший"
             }
             
-			if( extra_tags.contains("&&adjp") ) {
+			if( extra_tags.contains("&adjp") ) {
 				extra_tags = and_adjp_pattern.matcher(extra_tags).replaceFirst('')
 			}
 

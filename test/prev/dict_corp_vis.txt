@@ -2900,38 +2900,38 @@
   найдивніших adj:p:v_mis:comps
   найдивніші adj:p:v_kly:comps
 найзатаєніше adv:comps
-найзатаєніший adj:m:v_naz:comps:&adjp:pasv:perf
-  найзатаєнішого adj:m:v_rod:comps:&adjp:pasv:perf
-  найзатаєнішому adj:m:v_dav:comps:&adjp:pasv:perf
-  найзатаєнішого adj:m:v_zna:ranim:comps:&adjp:pasv:perf
-  найзатаєніший adj:m:v_zna:rinanim:comps:&adjp:pasv:perf
-  найзатаєнішим adj:m:v_oru:comps:&adjp:pasv:perf
-  найзатаєнішім adj:m:v_mis:comps:&adjp:pasv:perf
-  найзатаєнішому adj:m:v_mis:comps:&adjp:pasv:perf
-  найзатаєніший adj:m:v_kly:comps:&adjp:pasv:perf
-  найзатаєніша adj:f:v_naz:comps:&adjp:pasv:perf
-  найзатаєнішої adj:f:v_rod:comps:&adjp:pasv:perf
-  найзатаєнішій adj:f:v_dav:comps:&adjp:pasv:perf
-  найзатаєнішу adj:f:v_zna:comps:&adjp:pasv:perf
-  найзатаєнішою adj:f:v_oru:comps:&adjp:pasv:perf
-  найзатаєнішій adj:f:v_mis:comps:&adjp:pasv:perf
-  найзатаєніша adj:f:v_kly:comps:&adjp:pasv:perf
-  найзатаєніше adj:n:v_naz:comps:&adjp:pasv:perf
-  найзатаєнішого adj:n:v_rod:comps:&adjp:pasv:perf
-  найзатаєнішому adj:n:v_dav:comps:&adjp:pasv:perf
-  найзатаєніше adj:n:v_zna:comps:&adjp:pasv:perf
-  найзатаєнішим adj:n:v_oru:comps:&adjp:pasv:perf
-  найзатаєнішім adj:n:v_mis:comps:&adjp:pasv:perf
-  найзатаєнішому adj:n:v_mis:comps:&adjp:pasv:perf
-  найзатаєніше adj:n:v_kly:comps:&adjp:pasv:perf
-  найзатаєніші adj:p:v_naz:comps:&adjp:pasv:perf
-  найзатаєніших adj:p:v_rod:comps:&adjp:pasv:perf
-  найзатаєнішим adj:p:v_dav:comps:&adjp:pasv:perf
-  найзатаєніших adj:p:v_zna:ranim:comps:&adjp:pasv:perf
-  найзатаєніші adj:p:v_zna:rinanim:comps:&adjp:pasv:perf
-  найзатаєнішими adj:p:v_oru:comps:&adjp:pasv:perf
-  найзатаєніших adj:p:v_mis:comps:&adjp:pasv:perf
-  найзатаєніші adj:p:v_kly:comps:&adjp:pasv:perf
+найзатаєніший adj:m:v_naz:comps
+  найзатаєнішого adj:m:v_rod:comps
+  найзатаєнішому adj:m:v_dav:comps
+  найзатаєнішого adj:m:v_zna:ranim:comps
+  найзатаєніший adj:m:v_zna:rinanim:comps
+  найзатаєнішим adj:m:v_oru:comps
+  найзатаєнішім adj:m:v_mis:comps
+  найзатаєнішому adj:m:v_mis:comps
+  найзатаєніший adj:m:v_kly:comps
+  найзатаєніша adj:f:v_naz:comps
+  найзатаєнішої adj:f:v_rod:comps
+  найзатаєнішій adj:f:v_dav:comps
+  найзатаєнішу adj:f:v_zna:comps
+  найзатаєнішою adj:f:v_oru:comps
+  найзатаєнішій adj:f:v_mis:comps
+  найзатаєніша adj:f:v_kly:comps
+  найзатаєніше adj:n:v_naz:comps
+  найзатаєнішого adj:n:v_rod:comps
+  найзатаєнішому adj:n:v_dav:comps
+  найзатаєніше adj:n:v_zna:comps
+  найзатаєнішим adj:n:v_oru:comps
+  найзатаєнішім adj:n:v_mis:comps
+  найзатаєнішому adj:n:v_mis:comps
+  найзатаєніше adj:n:v_kly:comps
+  найзатаєніші adj:p:v_naz:comps
+  найзатаєніших adj:p:v_rod:comps
+  найзатаєнішим adj:p:v_dav:comps
+  найзатаєніших adj:p:v_zna:ranim:comps
+  найзатаєніші adj:p:v_zna:rinanim:comps
+  найзатаєнішими adj:p:v_oru:comps
+  найзатаєніших adj:p:v_mis:comps
+  найзатаєніші adj:p:v_kly:comps
 найкрутіший adj:m:v_naz:comps
   найкрутішого adj:m:v_rod:comps
   найкрутішому adj:m:v_dav:comps
@@ -4162,38 +4162,38 @@
   щонайдивніших adj:p:v_mis:comps
   щонайдивніші adj:p:v_kly:comps
 щонайзатаєніше adv:comps
-щонайзатаєніший adj:m:v_naz:comps:&adjp:pasv:perf
-  щонайзатаєнішого adj:m:v_rod:comps:&adjp:pasv:perf
-  щонайзатаєнішому adj:m:v_dav:comps:&adjp:pasv:perf
-  щонайзатаєнішого adj:m:v_zna:ranim:comps:&adjp:pasv:perf
-  щонайзатаєніший adj:m:v_zna:rinanim:comps:&adjp:pasv:perf
-  щонайзатаєнішим adj:m:v_oru:comps:&adjp:pasv:perf
-  щонайзатаєнішім adj:m:v_mis:comps:&adjp:pasv:perf
-  щонайзатаєнішому adj:m:v_mis:comps:&adjp:pasv:perf
-  щонайзатаєніший adj:m:v_kly:comps:&adjp:pasv:perf
-  щонайзатаєніша adj:f:v_naz:comps:&adjp:pasv:perf
-  щонайзатаєнішої adj:f:v_rod:comps:&adjp:pasv:perf
-  щонайзатаєнішій adj:f:v_dav:comps:&adjp:pasv:perf
-  щонайзатаєнішу adj:f:v_zna:comps:&adjp:pasv:perf
-  щонайзатаєнішою adj:f:v_oru:comps:&adjp:pasv:perf
-  щонайзатаєнішій adj:f:v_mis:comps:&adjp:pasv:perf
-  щонайзатаєніша adj:f:v_kly:comps:&adjp:pasv:perf
-  щонайзатаєніше adj:n:v_naz:comps:&adjp:pasv:perf
-  щонайзатаєнішого adj:n:v_rod:comps:&adjp:pasv:perf
-  щонайзатаєнішому adj:n:v_dav:comps:&adjp:pasv:perf
-  щонайзатаєніше adj:n:v_zna:comps:&adjp:pasv:perf
-  щонайзатаєнішим adj:n:v_oru:comps:&adjp:pasv:perf
-  щонайзатаєнішім adj:n:v_mis:comps:&adjp:pasv:perf
-  щонайзатаєнішому adj:n:v_mis:comps:&adjp:pasv:perf
-  щонайзатаєніше adj:n:v_kly:comps:&adjp:pasv:perf
-  щонайзатаєніші adj:p:v_naz:comps:&adjp:pasv:perf
-  щонайзатаєніших adj:p:v_rod:comps:&adjp:pasv:perf
-  щонайзатаєнішим adj:p:v_dav:comps:&adjp:pasv:perf
-  щонайзатаєніших adj:p:v_zna:ranim:comps:&adjp:pasv:perf
-  щонайзатаєніші adj:p:v_zna:rinanim:comps:&adjp:pasv:perf
-  щонайзатаєнішими adj:p:v_oru:comps:&adjp:pasv:perf
-  щонайзатаєніших adj:p:v_mis:comps:&adjp:pasv:perf
-  щонайзатаєніші adj:p:v_kly:comps:&adjp:pasv:perf
+щонайзатаєніший adj:m:v_naz:comps
+  щонайзатаєнішого adj:m:v_rod:comps
+  щонайзатаєнішому adj:m:v_dav:comps
+  щонайзатаєнішого adj:m:v_zna:ranim:comps
+  щонайзатаєніший adj:m:v_zna:rinanim:comps
+  щонайзатаєнішим adj:m:v_oru:comps
+  щонайзатаєнішім adj:m:v_mis:comps
+  щонайзатаєнішому adj:m:v_mis:comps
+  щонайзатаєніший adj:m:v_kly:comps
+  щонайзатаєніша adj:f:v_naz:comps
+  щонайзатаєнішої adj:f:v_rod:comps
+  щонайзатаєнішій adj:f:v_dav:comps
+  щонайзатаєнішу adj:f:v_zna:comps
+  щонайзатаєнішою adj:f:v_oru:comps
+  щонайзатаєнішій adj:f:v_mis:comps
+  щонайзатаєніша adj:f:v_kly:comps
+  щонайзатаєніше adj:n:v_naz:comps
+  щонайзатаєнішого adj:n:v_rod:comps
+  щонайзатаєнішому adj:n:v_dav:comps
+  щонайзатаєніше adj:n:v_zna:comps
+  щонайзатаєнішим adj:n:v_oru:comps
+  щонайзатаєнішім adj:n:v_mis:comps
+  щонайзатаєнішому adj:n:v_mis:comps
+  щонайзатаєніше adj:n:v_kly:comps
+  щонайзатаєніші adj:p:v_naz:comps
+  щонайзатаєніших adj:p:v_rod:comps
+  щонайзатаєнішим adj:p:v_dav:comps
+  щонайзатаєніших adj:p:v_zna:ranim:comps
+  щонайзатаєніші adj:p:v_zna:rinanim:comps
+  щонайзатаєнішими adj:p:v_oru:comps
+  щонайзатаєніших adj:p:v_mis:comps
+  щонайзатаєніші adj:p:v_kly:comps
 щонайкрутіший adj:m:v_naz:comps
   щонайкрутішого adj:m:v_rod:comps
   щонайкрутішому adj:m:v_dav:comps
@@ -4451,38 +4451,38 @@
   щоякнайдивнішими adj:p:v_oru:comps
   щоякнайдивніших adj:p:v_mis:comps
   щоякнайдивніші adj:p:v_kly:comps
-щоякнайзатаєніший adj:m:v_naz:comps:&adjp:pasv:perf
-  щоякнайзатаєнішого adj:m:v_rod:comps:&adjp:pasv:perf
-  щоякнайзатаєнішому adj:m:v_dav:comps:&adjp:pasv:perf
-  щоякнайзатаєнішого adj:m:v_zna:ranim:comps:&adjp:pasv:perf
-  щоякнайзатаєніший adj:m:v_zna:rinanim:comps:&adjp:pasv:perf
-  щоякнайзатаєнішим adj:m:v_oru:comps:&adjp:pasv:perf
-  щоякнайзатаєнішім adj:m:v_mis:comps:&adjp:pasv:perf
-  щоякнайзатаєнішому adj:m:v_mis:comps:&adjp:pasv:perf
-  щоякнайзатаєніший adj:m:v_kly:comps:&adjp:pasv:perf
-  щоякнайзатаєніша adj:f:v_naz:comps:&adjp:pasv:perf
-  щоякнайзатаєнішої adj:f:v_rod:comps:&adjp:pasv:perf
-  щоякнайзатаєнішій adj:f:v_dav:comps:&adjp:pasv:perf
-  щоякнайзатаєнішу adj:f:v_zna:comps:&adjp:pasv:perf
-  щоякнайзатаєнішою adj:f:v_oru:comps:&adjp:pasv:perf
-  щоякнайзатаєнішій adj:f:v_mis:comps:&adjp:pasv:perf
-  щоякнайзатаєніша adj:f:v_kly:comps:&adjp:pasv:perf
-  щоякнайзатаєніше adj:n:v_naz:comps:&adjp:pasv:perf
-  щоякнайзатаєнішого adj:n:v_rod:comps:&adjp:pasv:perf
-  щоякнайзатаєнішому adj:n:v_dav:comps:&adjp:pasv:perf
-  щоякнайзатаєніше adj:n:v_zna:comps:&adjp:pasv:perf
-  щоякнайзатаєнішим adj:n:v_oru:comps:&adjp:pasv:perf
-  щоякнайзатаєнішім adj:n:v_mis:comps:&adjp:pasv:perf
-  щоякнайзатаєнішому adj:n:v_mis:comps:&adjp:pasv:perf
-  щоякнайзатаєніше adj:n:v_kly:comps:&adjp:pasv:perf
-  щоякнайзатаєніші adj:p:v_naz:comps:&adjp:pasv:perf
-  щоякнайзатаєніших adj:p:v_rod:comps:&adjp:pasv:perf
-  щоякнайзатаєнішим adj:p:v_dav:comps:&adjp:pasv:perf
-  щоякнайзатаєніших adj:p:v_zna:ranim:comps:&adjp:pasv:perf
-  щоякнайзатаєніші adj:p:v_zna:rinanim:comps:&adjp:pasv:perf
-  щоякнайзатаєнішими adj:p:v_oru:comps:&adjp:pasv:perf
-  щоякнайзатаєніших adj:p:v_mis:comps:&adjp:pasv:perf
-  щоякнайзатаєніші adj:p:v_kly:comps:&adjp:pasv:perf
+щоякнайзатаєніший adj:m:v_naz:comps
+  щоякнайзатаєнішого adj:m:v_rod:comps
+  щоякнайзатаєнішому adj:m:v_dav:comps
+  щоякнайзатаєнішого adj:m:v_zna:ranim:comps
+  щоякнайзатаєніший adj:m:v_zna:rinanim:comps
+  щоякнайзатаєнішим adj:m:v_oru:comps
+  щоякнайзатаєнішім adj:m:v_mis:comps
+  щоякнайзатаєнішому adj:m:v_mis:comps
+  щоякнайзатаєніший adj:m:v_kly:comps
+  щоякнайзатаєніша adj:f:v_naz:comps
+  щоякнайзатаєнішої adj:f:v_rod:comps
+  щоякнайзатаєнішій adj:f:v_dav:comps
+  щоякнайзатаєнішу adj:f:v_zna:comps
+  щоякнайзатаєнішою adj:f:v_oru:comps
+  щоякнайзатаєнішій adj:f:v_mis:comps
+  щоякнайзатаєніша adj:f:v_kly:comps
+  щоякнайзатаєніше adj:n:v_naz:comps
+  щоякнайзатаєнішого adj:n:v_rod:comps
+  щоякнайзатаєнішому adj:n:v_dav:comps
+  щоякнайзатаєніше adj:n:v_zna:comps
+  щоякнайзатаєнішим adj:n:v_oru:comps
+  щоякнайзатаєнішім adj:n:v_mis:comps
+  щоякнайзатаєнішому adj:n:v_mis:comps
+  щоякнайзатаєніше adj:n:v_kly:comps
+  щоякнайзатаєніші adj:p:v_naz:comps
+  щоякнайзатаєніших adj:p:v_rod:comps
+  щоякнайзатаєнішим adj:p:v_dav:comps
+  щоякнайзатаєніших adj:p:v_zna:ranim:comps
+  щоякнайзатаєніші adj:p:v_zna:rinanim:comps
+  щоякнайзатаєнішими adj:p:v_oru:comps
+  щоякнайзатаєніших adj:p:v_mis:comps
+  щоякнайзатаєніші adj:p:v_kly:comps
 щоякнайкрутіший adj:m:v_naz:comps
   щоякнайкрутішого adj:m:v_rod:comps
   щоякнайкрутішому adj:m:v_dav:comps
@@ -4791,38 +4791,38 @@
   якнайдивніших adj:p:v_mis:comps
   якнайдивніші adj:p:v_kly:comps
 якнайзатаєніше adv:comps
-якнайзатаєніший adj:m:v_naz:comps:&adjp:pasv:perf
-  якнайзатаєнішого adj:m:v_rod:comps:&adjp:pasv:perf
-  якнайзатаєнішому adj:m:v_dav:comps:&adjp:pasv:perf
-  якнайзатаєнішого adj:m:v_zna:ranim:comps:&adjp:pasv:perf
-  якнайзатаєніший adj:m:v_zna:rinanim:comps:&adjp:pasv:perf
-  якнайзатаєнішим adj:m:v_oru:comps:&adjp:pasv:perf
-  якнайзатаєнішім adj:m:v_mis:comps:&adjp:pasv:perf
-  якнайзатаєнішому adj:m:v_mis:comps:&adjp:pasv:perf
-  якнайзатаєніший adj:m:v_kly:comps:&adjp:pasv:perf
-  якнайзатаєніша adj:f:v_naz:comps:&adjp:pasv:perf
-  якнайзатаєнішої adj:f:v_rod:comps:&adjp:pasv:perf
-  якнайзатаєнішій adj:f:v_dav:comps:&adjp:pasv:perf
-  якнайзатаєнішу adj:f:v_zna:comps:&adjp:pasv:perf
-  якнайзатаєнішою adj:f:v_oru:comps:&adjp:pasv:perf
-  якнайзатаєнішій adj:f:v_mis:comps:&adjp:pasv:perf
-  якнайзатаєніша adj:f:v_kly:comps:&adjp:pasv:perf
-  якнайзатаєніше adj:n:v_naz:comps:&adjp:pasv:perf
-  якнайзатаєнішого adj:n:v_rod:comps:&adjp:pasv:perf
-  якнайзатаєнішому adj:n:v_dav:comps:&adjp:pasv:perf
-  якнайзатаєніше adj:n:v_zna:comps:&adjp:pasv:perf
-  якнайзатаєнішим adj:n:v_oru:comps:&adjp:pasv:perf
-  якнайзатаєнішім adj:n:v_mis:comps:&adjp:pasv:perf
-  якнайзатаєнішому adj:n:v_mis:comps:&adjp:pasv:perf
-  якнайзатаєніше adj:n:v_kly:comps:&adjp:pasv:perf
-  якнайзатаєніші adj:p:v_naz:comps:&adjp:pasv:perf
-  якнайзатаєніших adj:p:v_rod:comps:&adjp:pasv:perf
-  якнайзатаєнішим adj:p:v_dav:comps:&adjp:pasv:perf
-  якнайзатаєніших adj:p:v_zna:ranim:comps:&adjp:pasv:perf
-  якнайзатаєніші adj:p:v_zna:rinanim:comps:&adjp:pasv:perf
-  якнайзатаєнішими adj:p:v_oru:comps:&adjp:pasv:perf
-  якнайзатаєніших adj:p:v_mis:comps:&adjp:pasv:perf
-  якнайзатаєніші adj:p:v_kly:comps:&adjp:pasv:perf
+якнайзатаєніший adj:m:v_naz:comps
+  якнайзатаєнішого adj:m:v_rod:comps
+  якнайзатаєнішому adj:m:v_dav:comps
+  якнайзатаєнішого adj:m:v_zna:ranim:comps
+  якнайзатаєніший adj:m:v_zna:rinanim:comps
+  якнайзатаєнішим adj:m:v_oru:comps
+  якнайзатаєнішім adj:m:v_mis:comps
+  якнайзатаєнішому adj:m:v_mis:comps
+  якнайзатаєніший adj:m:v_kly:comps
+  якнайзатаєніша adj:f:v_naz:comps
+  якнайзатаєнішої adj:f:v_rod:comps
+  якнайзатаєнішій adj:f:v_dav:comps
+  якнайзатаєнішу adj:f:v_zna:comps
+  якнайзатаєнішою adj:f:v_oru:comps
+  якнайзатаєнішій adj:f:v_mis:comps
+  якнайзатаєніша adj:f:v_kly:comps
+  якнайзатаєніше adj:n:v_naz:comps
+  якнайзатаєнішого adj:n:v_rod:comps
+  якнайзатаєнішому adj:n:v_dav:comps
+  якнайзатаєніше adj:n:v_zna:comps
+  якнайзатаєнішим adj:n:v_oru:comps
+  якнайзатаєнішім adj:n:v_mis:comps
+  якнайзатаєнішому adj:n:v_mis:comps
+  якнайзатаєніше adj:n:v_kly:comps
+  якнайзатаєніші adj:p:v_naz:comps
+  якнайзатаєніших adj:p:v_rod:comps
+  якнайзатаєнішим adj:p:v_dav:comps
+  якнайзатаєніших adj:p:v_zna:ranim:comps
+  якнайзатаєніші adj:p:v_zna:rinanim:comps
+  якнайзатаєнішими adj:p:v_oru:comps
+  якнайзатаєніших adj:p:v_mis:comps
+  якнайзатаєніші adj:p:v_kly:comps
 якнайкрутіший adj:m:v_naz:comps
   якнайкрутішого adj:m:v_rod:comps
   якнайкрутішому adj:m:v_dav:comps
