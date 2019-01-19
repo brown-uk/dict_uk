@@ -34,11 +34,13 @@ class Expand {
 	static final Pattern default_kly_u_pattern = ~ /[^бвджзлмнпстфц]$/
 	static final Pattern default_kly_u_soft_pattern = ~ /[аеиу]р$/
 
+	@CompileStatic
     static boolean isDefaultKlyU(String word, String flags) {
         return word =~ default_kly_u_pattern \
             || (flags.contains("n24") && word =~ default_kly_u_soft_pattern)
     }
 
+	@CompileStatic
     static boolean isDefaultKlyE(String word, String flags) {
         return ! (word =~ default_kly_u_pattern) \
             || (!flags.contains("n24") && word =~ default_kly_u_soft_pattern)
