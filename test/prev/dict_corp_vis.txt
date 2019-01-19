@@ -3913,6 +3913,22 @@
   чиїмись adj:p:v_oru:&pron:ind
   чиїхось adj:p:v_mis:&pron:ind
   чиїхсь adj:p:v_mis:&pron:ind
+Чубар noun:anim:m:v_naz:prop:lname
+  Чубаря noun:anim:m:v_rod:prop:lname
+  Чубареві noun:anim:m:v_dav:prop:lname
+  Чубарю noun:anim:m:v_dav:prop:lname
+  Чубаря noun:anim:m:v_zna:prop:lname
+  Чубарем noun:anim:m:v_oru:prop:lname
+  Чубареві noun:anim:m:v_mis:prop:lname
+  Чубарі noun:anim:m:v_mis:prop:lname
+  Чубарю noun:anim:m:v_mis:prop:lname
+Чубар noun:anim:f:v_naz:nv:np:prop:lname
+  Чубар noun:anim:f:v_rod:nv:np:prop:lname
+  Чубар noun:anim:f:v_dav:nv:np:prop:lname
+  Чубар noun:anim:f:v_zna:nv:np:prop:lname
+  Чубар noun:anim:f:v_oru:nv:np:prop:lname
+  Чубар noun:anim:f:v_mis:nv:np:prop:lname
+  Чубар noun:anim:f:v_kly:nv:np:prop:lname
 чудо-юдо noun:anim:n:v_naz
   чуда-юда noun:anim:n:v_rod
   чуду-юду noun:anim:n:v_dav

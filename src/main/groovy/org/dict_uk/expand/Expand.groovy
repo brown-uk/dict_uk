@@ -31,19 +31,21 @@ class Expand {
 	static final Pattern is_pattern = ~ /(vr?)[1-9]\.is/
 	static final Pattern pattr_pattern = ~ /n[0-9]+\.patr/
 //	Pattern default_kly_u_pattern = ~ /([^бвджзлмнпстфц]|[аеиу]р)$/
-	static final Pattern default_kly_u_pattern = ~ /[^бвджзлмнпстфц]$/
-	static final Pattern default_kly_u_soft_pattern = ~ /[аеиу]р$/
-
+	static final Pattern default_kly_u_pattern = ~ /[^бвджзлмнпрстфц]$/ // гґйкрхчшщ
+//	static final Pattern default_kly_u_soft_pattern = ~ /[аеиу]р$/
+	static final Pattern default_kly_e_pattern = ~ /([бвджзлмнпстфц]|[^аи]р)$/
+	
 	@CompileStatic
-    static boolean isDefaultKlyU(String word, String flags) {
-        return word =~ default_kly_u_pattern \
-            || (flags.contains("n24") && word =~ default_kly_u_soft_pattern)
+    private static boolean isDefaultKlyU(String word, String flags) {
+        return word =~ default_kly_u_pattern //\
+//            || (flags.contains("n24") && word =~ default_kly_u_soft_pattern)
     }
 
 	@CompileStatic
-    static boolean isDefaultKlyE(String word, String flags) {
-        return ! (word =~ default_kly_u_pattern) \
-            || (!flags.contains("n24") && word =~ default_kly_u_soft_pattern)
+    private static boolean isDefaultKlyE(String word, String flags) {
+        return word =~ default_kly_e_pattern
+//        return ! (word =~ default_kly_u_pattern) \
+//            || (!flags.contains("n24") && word =~ default_kly_u_soft_pattern)
     }
 
 
@@ -70,7 +72,7 @@ class Expand {
 	}
 
 	@CompileStatic
-	def adjustCommonFlag(String affixFlag2) {
+	private String adjustCommonFlag(String affixFlag2) {
 		if( affixFlag2.contains(".cf") ) {
 			affixFlag2 = cf_flag_pattern.matcher(affixFlag2).replaceFirst('$1.cf')
 		}
@@ -106,10 +108,13 @@ class Expand {
 		Map<String, Integer> appliedCnts = [:]
 		def affixFlags2 = []
 
-		for( affixFlag2 in affixSubGroups) {
+		for(String affixFlag2 in affixSubGroups) {
 			if( affixFlag2.contains("<") || affixFlag2 == "@" || affixFlag2 == "ikl" )
 				continue
 
+			if( affixFlag2 == "ku" && affixFlags ==~ /n2[04].*/ )
+				continue
+	
 			if( affixFlag2 != mainGroup) {
 //				if( ! (affixFlag2 in ["v2", "vr2"]) ) {  // курликати /v1.v2.cf       задихатися /vr1.vr2
 					affixFlag2 = mainGroup + "." + affixFlag2
@@ -407,7 +412,7 @@ class Expand {
 
 	@CompileStatic
 	private List<DicEntry> adjust_affix_tags(List<DicEntry> lines, String main_flag, String flags, Map<String,String> modifiers) {
-		def lines2 = []
+		List<DicEntry> lines2 = []
 
 		for(DicEntry line in lines) {
 			// DL-
@@ -415,55 +420,58 @@ class Expand {
 
 				String word
 				String base_word
-				if( main_flag.startsWith("/n2") && main_flag =~ "^/n2[01234]" ) {
-					base_word = line.lemma
+				if( main_flag.startsWith("/n2") ) {
+					if( main_flag =~ "^/n2[01234]" ) {
+						base_word = line.lemma
 
-					if( util.istota(flags)) {
-						if( line.tagStr.contains("m:v_rod") && ! line.tagStr.contains("/v_zna") ) {
+						if( util.istota(flags)) {
+							if( line.tagStr.contains("m:v_rod") && ! line.tagStr.contains("/v_zna") ) {
+								line.setTagStr( line.tagStr.replace("m:v_rod", "m:v_rod/v_zna") )
+							}
+						}
+						if( ! "аеєиіїоюя".contains(base_word[-1..-1]) && ! flags.contains(".a") ) {
+							word = line.word
+							if( "ую".contains(word[-1..-1]) ) {
+								line.setTagStr( line.tagStr.replace("v_dav", "v_rod/v_dav") )
+							}
+						}
+					}
+					else if( main_flag.startsWith("/n2adj") ) {
+						if( ! util.istota(flags) ) {
+							if( line.tagStr.contains("v_rod/v_zna") ) {
+								line.tagStr = line.tagStr.replace("/v_zna", "")
+							}
+						}
+						else {
+							if( flags.contains("<+") && ! flags.contains(".k") /*&& line.lemma.endsWith("ів")*/ ) {
+								if( line.tagStr.contains("v_kly") )
+								if( ! line.tagStr.contains("/v_kly") )
+								continue;
+								else
+								line.tagStr	 = line.tagStr.replace("/v_kly", "")
+							}
+
+							if( util.person(flags) ) {
+								line.tagStr = line.tagStr.replace("p:v_naz/v_zna", "p:v_naz")
+							}
+						}
+					}
+					else if( main_flag.startsWith("/n2nm") ) {
+						if( util.istota(flags)) {
+							if( line.tagStr.contains("m:v_rod") && ! line.tagStr.contains("/v_zna") ) {
+								line.tagStr = line.tagStr.replace("m:v_rod", "m:v_rod/v_zna")
+							}
+						}
+					}
+
+					if( flags.contains("@") ) {
+						word = line.word
+						if( "ая".contains(word[-1..-1]) && line.tagStr.contains("m:v_rod") ) {
 							line.setTagStr( line.tagStr.replace("m:v_rod", "m:v_rod/v_zna") )
 						}
 					}
-					if( ! "аеєиіїоюя".contains(base_word[-1..-1]) && ! flags.contains(".a") ) {
-						word = line.word
-						if( "ую".contains(word[-1..-1]) ) {
-							line.setTagStr( line.tagStr.replace("v_dav", "v_rod/v_dav") )
-						}
-					}
 				}
-				else if( main_flag.startsWith("/n2adj") ) {
-					if( ! util.istota(flags) ) {
-						if( line.tagStr.contains("v_rod/v_zna") ) {
-							line.tagStr = line.tagStr.replace("/v_zna", "")
-						}
-					}
-					else {
-						if( flags.contains("<+") && ! flags.contains(".k") /*&& line.lemma.endsWith("ів")*/ ) {
-							if( line.tagStr.contains("v_kly") )
-								if( ! line.tagStr.contains("/v_kly") )
-									continue;
-								else
-									line.tagStr	 = line.tagStr.replace("/v_kly", "")
-						}
-						
-						if( util.person(flags) ) {
-							line.tagStr = line.tagStr.replace("p:v_naz/v_zna", "p:v_naz")
-						}
-					}
-				}
-				else if( main_flag.startsWith("/n2nm") ) {
-					if( util.istota(flags)) {
-						if( line.tagStr.contains("m:v_rod") && ! line.tagStr.contains("/v_zna") ) {
-							line.tagStr = line.tagStr.replace("m:v_rod", "m:v_rod/v_zna")
-						}
-					}
-				}
-				
-				if( main_flag.startsWith("/n2") && flags.contains("@") ) {
-					word = line.word
-					if( "ая".contains(word[-1..-1]) && line.tagStr.contains("m:v_rod") ) {
-						line.setTagStr( line.tagStr.replace("m:v_rod", "m:v_rod/v_zna") )
-					}
-				}
+
 				
 				if( ! main_flag.contains("np") && ! main_flag.contains(".p") \
 				        && ! flags.contains("n2adj") && ! main_flag.contains("numr") ) {
@@ -481,12 +489,18 @@ class Expand {
 						base_word = line.lemma
 					}
 					
-					boolean explicitKly = flags.contains(".ko") || flags.contains(".ke")
-					if( ( explicitKly && ! line.tagStr.contains(":pname") ) \
-					        || ( ! explicitKly && main_flag =~ /n2[0-4]/ && ! isDefaultKlyU(base_word, flags) )
-                            || (line.tagStr.contains(":m:") && flags.contains("<+") ) ) {
-						//log.info("removing v_kly from: %s, %s", line, flags)
-						line.setTagStr( line.tagStr.replace("/v_kly", "") )
+					boolean klyKeKo = flags.contains(".ko") || flags.contains(".ke")
+					if( klyKeKo ) {
+						if( ! flags.contains(".ku") && ! line.tagStr.contains(":pname") ) {		// лишаємо Івановичу v_kly (для Іван ...ke)
+							line.setTagStr( line.tagStr.replace("/v_kly", "") )
+						}
+					}
+					else {
+						if( (! flags.contains(".ku") && main_flag =~ /n2[0-4]/ && ! isDefaultKlyU(base_word, flags))
+                            	|| (line.tagStr.contains(":m:") && flags.contains("<+") ) ) {
+//						log.info("removing v_kly from: %s, %s", line, flags)
+							line.setTagStr( line.tagStr.replace("/v_kly", "") )
+						}
 					}
 				}
 				
