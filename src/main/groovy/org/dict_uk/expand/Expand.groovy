@@ -115,7 +115,7 @@ class Expand {
 			if( affixFlag2 == "ku" && affixFlags ==~ /n2[04].*/ )
 				continue
 	
-			if( affixFlag2 != mainGroup) {
+			if( affixFlag2 != mainGroup ) {
 //				if( ! (affixFlag2 in ["v2", "vr2"]) ) {  // курликати /v1.v2.cf       задихатися /vr1.vr2
 					affixFlag2 = mainGroup + "." + affixFlag2
 					if( affixFlag2 == "v3.advp" && ! (verb_no_advp_pattern.matcher(word)) ) {
@@ -631,6 +631,22 @@ class Expand {
 		return entries
 	}
 
+	// Дієприслівники, утворені від зворотних дієслів, мають постфікс -сь сміючи́сь, узя́вшись; рідше — -ся: сміючи́ся, узя́вшися. 
+	// https://r2u.org.ua/pravopys/pravXXI/93.html
+	@CompileStatic
+    private static List<DicEntry> getRareAdvp(List<DicEntry> entries) {
+		return entries.findAll {
+			it.tagStr.startsWith('advp:rev')
+		}
+		.collect {
+			String tag = it.tagStr
+			if( ! tag.contains(':rare') ) {
+				tag += ':rare'
+			}
+			String word = it.word.replaceFirst(/сь$/, 'ся')
+			new DicEntry(word, it.lemma, tag)	
+		}
+	}
 
 	@CompileStatic
     private void applyAdditionalTags(List<DicEntry> words) {
@@ -1108,7 +1124,7 @@ class Expand {
 		List<LineGroup> lines = preprocess(lineGroup)
 
 		def main_word = ""
-		List<DicEntry> out_lines = []
+		List<DicEntry> outEntries = []
 
 		for(LineGroup lineGroup2 in lines) {
 			List<String> sub_lines = []
@@ -1137,7 +1153,7 @@ class Expand {
 					exp_lines = [DicEntry.fromLine(lineGroup2.line, lineGroup2.comment)]
 				}
 
-				out_lines.addAll( exp_lines )
+				outEntries.addAll( exp_lines )
 
 				continue
 			}
@@ -1187,14 +1203,14 @@ class Expand {
 					else {
 						sublines = expand_subposition(main_word, sub_line, extra_flags, idx)
 					}
-					out_lines.addAll( sublines )
+					outEntries.addAll( sublines )
 
 					if( lineGroup2.line.contains(".adv") && lineGroup2.line.contains("/adj") ) {
 						for( inflected_line in inflected_lines) {
 							if( inflected_line.tagStr.startsWith("adv") ) {
 								def last_adv = inflected_line.word
 								def cs_lines = expand_subposition_adv(last_adv, sub_line, extra_flags, main_word)
-								out_lines.addAll(cs_lines)
+								outEntries.addAll(cs_lines)
 								break
 								//                    print(".adv", last_adv, file=sys.stderr)
 							}
@@ -1204,7 +1220,7 @@ class Expand {
 				}
 			}
 
-			out_lines.addAll( inflected_lines )
+			outEntries.addAll( inflected_lines )
 
 			for(DicEntry l in inflected_lines) {
 				if( ! l.isValid() )
@@ -1212,9 +1228,13 @@ class Expand {
 			}
 		}
 			
-        applyAdditionalTags(out_lines)
+        applyAdditionalTags(outEntries)
 
-		return post_process(out_lines)
+		outEntries = post_process(outEntries)
+		
+		outEntries.addAll(getRareAdvp(outEntries))
+		
+		return outEntries
 	}
 
 	
