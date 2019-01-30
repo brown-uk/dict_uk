@@ -1,6 +1,6 @@
 Щоб швидко протестувати парпорці для нових слів можна запустити expand в інтерактивному режимі:
 
-  gradle -q expandInteractive
+  ./gradle -q expandInteractive
   
   або
   
@@ -12,7 +12,7 @@
 
 Типовий вивід буде у форматі з відступом. Для табличного формату потрібно додати "-Pflat=true":
 
-  gradle -q -Pflat=true expandInteractive
+  ./gradle -q -Pflat=true expandInteractive
   
   або
   
