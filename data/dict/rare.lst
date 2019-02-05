@@ -184,6 +184,21 @@
 моторити /v1 :imperf
 моцний /adj \
  +cs=моцніший
+мусів мусіти verb:imperf:past:m
+мусівши мусівши advp:imperf
+мусіла мусіти verb:imperf:past:f
+мусіли мусіти verb:imperf:past:p
+мусіло мусіти verb:imperf:past:n
+мусімо мусіти verb:imperf:impr:p:1
+мусіти мусіти verb:imperf:inf
+мусітиме мусіти verb:imperf:futr:s:3
+мусітимем мусіти verb:imperf:futr:p:1
+мусітимемо мусіти verb:imperf:futr:p:1
+мусітимете мусіти verb:imperf:futr:p:2
+мусітимеш мусіти verb:imperf:futr:s:2
+мусітиму мусіти verb:imperf:futr:s:1
+мусітимуть мусіти verb:imperf:futr:p:3
+мусіть мусіти verb:imperf:impr:p:2
 набіл /n20
 навперед prep        # rv_rod
 навручки навручки adv
@@ -243,6 +258,7 @@
 обсіч adv
 обутритися /vr1 :perf p=3
 оглав /n20.p
+огонь /n22.p
 одвір adv
 одзивний /adj
 одзняти /v1.isTo :perf
@@ -370,7 +386,6 @@
 райця /n10.piv.<m
 регістратор /n20.a.p.ke.<
 реферантеса /n10.p1.<
-ріжниця /n10.p1
 рік-річно рік-річно adv
 розгрішення /n2n
 розділка /n10.p2                            #> риска
