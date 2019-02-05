@@ -13,7 +13,8 @@ def extra_tag_map = [
   "ignored.lst": ":bad",
   "rare.lst": ":rare",
   "slang.lst": ":slang",
-  "alt.lst": ":alt"
+  "alt.lst": ":alt",
+  "subst.lst": ":subst"
 ]
 
 
@@ -22,11 +23,11 @@ def process_line_exceptions(line) {
 
     if( ! line.contains(" ") || line ==~ ".*[а-яіїєґА-ЯІЇЄҐ] /.*" )
         return [line]
-      
+
     if( line ==~ /[^ ]+ [^ ]+ [^:]?[a-z].*/ )
         return [line]
 
-	return line
+    return line
 }
 
 Pattern comment_re = ~ / *#.*$/

@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version = '4.4.1'
+version = '4.4.2'
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian-lt'
@@ -179,20 +179,23 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
     def outFile="$outRulesDir/replace.txt"
 
-    inputs.file "$srcDir/twisters.lst"
+    inputs.files "$srcDir/twisters.lst", "$srcDir/subst.lst", "$srcDir/base-composite.lst"
     outputs.file outFile
 
+    doLast {
 
     def headText =
 '''# Simple replace table
 # Format: word=suggestion1|suggestion2|suggestion3...
 
 '''
-    doLast {
 
     def inText = new File("$srcDir/twisters.lst").text
     def lines = inText.split("\n")
-    
+
+    def inText2 = new File("$srcDir/subst.lst").text
+    lines += inText2.split("\n")
+
     def outLines = lines.findAll {
         ! it.startsWith('#') && it.contains(' #>')
     }
@@ -228,18 +231,19 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outRulesDir}/replace_soft.txt"
     def allFiles = Arrays.asList(new File(srcDir).listFiles())
-    def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! (it.name in ['twisters.lst', 'base-composite.lst']) }
+    def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! (it.name in ['twisters.lst', 'base-composite.lst', 'subst.lst']) }
 
     inputs.files srcFiles
     outputs.file outFile
 
+
+    doLast {
 
     def headText =
 '''# Simple replace table for soft suggestions
 # Format: word=suggestion1|suggestion2|suggestion3...
 
 '''
-    doLast {
 		def outLines = []
 
 		srcFiles.each{ srcFile ->

@@ -68,6 +68,8 @@
 чим що noun:inanim:n:v_oru:&pron:int:rel
 чім що noun:inanim:n:v_mis:&pron:int:rel
 
+шо conj:subord:subst|noun:inanim:n:v_naz/v_zna:&pron:int:rel:subst
+
 що-що що-що conj:subord
 що-що що-що noun:inanim:n:v_naz/v_zna:&pron:int:rel
 чого-чого що-що noun:inanim:n:v_rod:&pron:int:rel
@@ -1026,7 +1028,7 @@
 геть adv|intj|part
 геть-то adv
 дедалі adv|part
-де adv:&pron:int:rel|part
+де adv:&pron:int:rel|part|noninfl:foreign
 доки adv:&pron:int:rel|conj:subord
 допоки adv|conj:subord
 еге part|intj
@@ -1178,3 +1180,4 @@
 доперва adv:rare|part:rare
 суціль adv:rare
 долів adv:rare
+
