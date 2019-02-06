@@ -1,7 +1,9 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
-version="4.3.9"
+version=new File("../../VERSION").text.trim()
 def hunspellDir="../hunspell/build/hunspell"
+
+println "Version: $version"
 
 task prepareFiles {
 

@@ -3,7 +3,9 @@ apply plugin: 'groovy'
 
 
 String outDir = "build/hunspell"
+version=new File("../../VERSION").text.trim()
 
+println "Version: $version"
 
 repositories {
     mavenCentral()
@@ -50,6 +52,13 @@ task hunspell (type: JavaExec, dependsOn: classes) {
     main = "Hunspell"
 }
 
+task hunspellZip (type: Zip, dependsOn: hunspell) {
+   from "$outDir"
+   include 'uk_UA.aff'
+   include 'uk_UA.dic'
+   archiveName "hunspell-uk_UA_${version}.zip"
+   destinationDir(file("$outDir"))
+}
 
 task hunspellForSearch (type: JavaExec, dependsOn: classes) {
     outputs.files "$outDir/uk_UA.aff", "$outDir/uk_UA.dic"
