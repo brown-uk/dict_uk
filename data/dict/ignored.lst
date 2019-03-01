@@ -180,8 +180,8 @@
 кинжал /n20.a.p
 кік-боксинг /n20
 #кіна кіно noun:n:v_rod
-Козеріг noun:m:v_naz/v_zna
-козеріг noun:anim:m:v_naz/v_zna
+Козеріг /n21.a
+козеріг /n21.a.p.<>
 коллайдер /n20.a.p.ke
 колять колоти verb:imperf:pres:p:3
 конкурентноздатний /adj
@@ -227,7 +227,6 @@
 незрівняний /adj
 неконкурентноздатний /adj
 необгрунтований /adj.adv :&adjp:pasv:perf    # :past
-нон-грата noninfl
 обгрунтований /adj.adv :&adjp:pasv:perf \    # :past
  +cs=обгрунтованіший
 обгрунтованість /n30
