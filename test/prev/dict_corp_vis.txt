@@ -1346,7 +1346,7 @@
 вздовж adv
 вздовж prep
 взувавшись advp:rev:imperf
-  взувавшися advp:rev:imperf:rare
+взувавшися advp:rev:imperf:rare
 взуватися verb:rev:imperf:inf
   взуватись verb:rev:imperf:inf
   взувайсь verb:rev:imperf:impr:s:2
@@ -1384,10 +1384,10 @@
   взувались verb:rev:imperf:past:p
   взувалися verb:rev:imperf:past:p
 взуваючись advp:rev:imperf
-  взуваючися advp:rev:imperf:rare
+взуваючися advp:rev:imperf:rare
 взувши advp:perf
 взувшись advp:rev:perf
-  взувшися advp:rev:perf:rare
+взувшися advp:rev:perf:rare
 взути verb:perf:inf
   взуй verb:perf:impr:s:2
   взуймо verb:perf:impr:p:1
@@ -1566,7 +1566,7 @@
   вимисли noun:inanim:p:v_kly
 вимівши advp:perf
 вимівшись advp:rev:perf
-  вимівшися advp:rev:perf:rare
+вимівшися advp:rev:perf:rare
 вимниста adj:f:v_naz
   вимнистої adj:f:v_rod
   вимнистій adj:f:v_dav
@@ -2346,7 +2346,7 @@
   заанґажованості noun:inanim:f:v_mis:alt
   заанґажованосте noun:inanim:f:v_kly:alt
 задихавшись advp:rev:perf
-  задихавшися advp:rev:perf:rare
+задихавшися advp:rev:perf:rare
 задихатися verb:rev:perf:inf
   задихатись verb:rev:perf:inf
   задихайсь verb:rev:perf:impr:s:2
@@ -3153,7 +3153,7 @@
   одною-півтори numr:f:v_oru
   одній-півтори numr:f:v_mis
 оскірившись advp:rev:perf:rare
-  оскірившися advp:rev:perf:rare
+оскірившися advp:rev:perf:rare
 оскіритися verb:rev:perf:inf:rare
   оскіритись verb:rev:perf:inf:rare
   оскірся verb:rev:perf:impr:s:2:rare
@@ -3505,7 +3505,7 @@
   стривайте verb:imperf:impr:p:2
 стрілявши advp:imperf
 стрілявшись advp:rev:imperf
-  стрілявшися advp:rev:imperf:rare
+стрілявшися advp:rev:imperf:rare
 стріляти verb:imperf:inf
   стріляй verb:imperf:impr:s:2
   стріляймо verb:imperf:impr:p:1
@@ -3566,7 +3566,7 @@
   стрілялись verb:rev:imperf:past:p
   стрілялися verb:rev:imperf:past:p
 стріляючись advp:rev:imperf
-  стріляючися advp:rev:imperf:rare
+стріляючися advp:rev:imperf:rare
 суміш noun:inanim:f:v_naz
   суміші noun:inanim:f:v_rod
   суміші noun:inanim:f:v_dav
@@ -3759,7 +3759,7 @@
   усюдах noun:inanim:p:v_mis:ns
   усюди noun:inanim:p:v_kly:ns
 уточнювавшись advp:rev:imperf
-  уточнювавшися advp:rev:imperf:rare
+уточнювавшися advp:rev:imperf:rare
 уточнюватися verb:rev:imperf:inf
   уточнюватись verb:rev:imperf:inf
   уточнюйсь verb:rev:imperf:impr:s:2
@@ -3779,7 +3779,7 @@
   уточнювались verb:rev:imperf:past:p
   уточнювалися verb:rev:imperf:past:p
 уточнюючись advp:rev:imperf
-  уточнюючися advp:rev:imperf:rare
+уточнюючися advp:rev:imperf:rare
 Федорів noun:anim:m:v_naz:prop:lname
   Федоріва noun:anim:m:v_rod:prop:lname
   Федорова noun:anim:m:v_rod:prop:lname

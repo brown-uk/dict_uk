@@ -631,7 +631,7 @@ class Expand {
 		return entries
 	}
 
-	// Дієприслівники, утворені від зворотних дієслів, мають постфікс -сь сміючи́сь, узя́вшись; рідше — -ся: сміючи́ся, узя́вшися. 
+	// Дієприслівники, утворені від зворотних дієслів, мають постфікс -сь сміючи́сь, узя́вшись; рідше — -ся: сміючи́ся, узя́вшися.
 	// https://r2u.org.ua/pravopys/pravXXI/93.html
 	@CompileStatic
     private static List<DicEntry> getRareAdvp(List<DicEntry> entries) {
@@ -644,7 +644,7 @@ class Expand {
 				tag += ':rare'
 			}
 			String word = it.word.replaceFirst(/сь$/, 'ся')
-			new DicEntry(word, it.lemma, tag)	
+			new DicEntry(word, it.lemma, tag)
 		}
 	}
 
@@ -1230,9 +1230,10 @@ class Expand {
 			
         applyAdditionalTags(outEntries)
 
+		outEntries.addAll(getRareAdvp(outEntries))
+
 		outEntries = post_process(outEntries)
 		
-		outEntries.addAll(getRareAdvp(outEntries))
 		
 		return outEntries
 	}
