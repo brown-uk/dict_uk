@@ -761,7 +761,7 @@
 
 півста numr:p:nv:coll
 півтораста numr:p:nv
-півстільки numr:nv:coll
+півстільки numr:p:nv:coll
 
 
 
@@ -861,7 +861,6 @@
 зо зо prep        # rv_rod:rv_zna:rv_oru
 завдяки завдяки prep        # rv_dav
 задля задля prep        # rv_rod
-залежно залежно prep
 замість замість prep         # rv_rod:rv_inf
 заради заради prep        # rv_rod:rv_inf
 #згідно згідно prep        # rv_rod
@@ -1100,6 +1099,7 @@
 та conj:coord|part
 теє part
 теж adv|part
+тим adv:rare|conj:subord
 тим-то conj:subord
 тільки adv|conj:subord|part
 тільки-но adv|part|conj:subord
@@ -1115,6 +1115,7 @@
 хоч conj:subord|part
 цебто conj:subord|part
 чи conj:coord:subord|part
+чим conj:subord
 щоби conj:subord|part
 щоб conj:subord|part
 щойно adv|conj:subord|part
@@ -1146,7 +1147,6 @@
 осісьо part
 угу part
 чень part
-чортзна чортзна part
 як-таки part
 
 # рідковживані

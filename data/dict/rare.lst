@@ -73,6 +73,7 @@
 ґрунь /n20.a.p
 Даждьбог /n20.a.<
 далебіг adv:&insert
+дараба /n10.p1
 дармо adv
 дармовіс /n20.a.p
 датка /n10.p2
@@ -124,7 +125,6 @@
 згук /n20.p
 зґарда /n10.p1
 здоровля /n2n
-здрійко numr:nv
 здрінка /n10.p2
 здрянка /n10.p2
 зіпсути /v2.isTo :perf
@@ -410,7 +410,7 @@
 сій сей adj:f:v_dav/v_mis:&pron:dem
 сількось adv:&insert
 сім сей adj:m:v_mis//n:v_mis:&pron:dem
-скілька numr:nv
+скілька numr:p:v_naz/v_zna
 скілько numr:p:v_naz/v_zna
 сливе adv
 сопух /n20.a
@@ -490,7 +490,7 @@
 шкляний /adj
 шкульно adv:&predic
 штири numr:p:v_naz/v_zna
-штирнадцять numr:nv
+штирнадцять /numr
 шутер /n22.ke
 шушон /n20.a.p
 щіль /n32.p

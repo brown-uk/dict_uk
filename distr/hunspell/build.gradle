@@ -3,7 +3,7 @@ apply plugin: 'groovy'
 
 
 String outDir = "build/hunspell"
-version=new File("../../VERSION").text.trim()
+version=new File("${projectDir}/../../VERSION").text.trim()
 
 println "Version: $version"
 

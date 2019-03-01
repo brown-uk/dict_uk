@@ -1,7 +1,7 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
-version=new File("../../VERSION").text.trim()
-def hunspellDir="../hunspell/build/hunspell"
+version=new File("${projectDir}/../../VERSION").text.trim()
+def hunspellDir="${projectDir}/../hunspell/build/hunspell"
 
 println "Version: $version"
 

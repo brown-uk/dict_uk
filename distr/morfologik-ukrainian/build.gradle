@@ -3,7 +3,10 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version = '4.4.2'
+version=new File("${projectDir}/../../VERSION").text.trim()
+
+println "Version: $version"
+
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian-lt'
