@@ -2,28 +2,27 @@
 Description of files in this directory:
 
 
-base.lst	-- base file for the dictionary
-base-abbr.lst 	-- general abbriviations
-base-compound.lst	compound words with/without hyphen, 
+base.lst -- base file for the dictionary
+base-abbr.lst  -- general abbriviations
+base-compound.lst compound words with/without hyphen, 
     see http://irbis-nbuv.gov.ua/cgi-bin/irbis_nbuv/cgiirbis_64.exe?C21COM=2&I21DBN=UJRN&P21DBN=UJRN&IMAGE_FILE_DOWNLOAD=1&Image_file_name=PDF/Ukrm_2010_1_33.pdf
-colors.lst 	-- colors
-computer.lst 	-- computing related terms
+base-composite.lst -- слова через дефіс, в яких відмінюються обидві частини
+colors.lst  -- colors
 dot-abbr.lst -- abbreviations with dots
-lang.lst	-- language names
-geography.lst   -- geographical names
-names.lst	-- personal names
-
-exceptions.lst	-- words that decline under unknown/undefined rules (not sorted)
-pronouns.lst	-- pronouns with all their forms (not sorted), some other POS
-
-slang.lst	-- slang
-
-rare.lst	-- rare, obsolete, dialect (not used for spellchecking)
-twisters.lst	-- bad words and suggestions for replacement (not used for spellchecking)
-
-composite.lst   composite words via hyphen
-
-ignored.lst   common mistakes
+lang.lst -- language names
+geo-ukr-hydro.lst -- гідроніми України
+geo-ukr-koatuu.lst -- нас. п. України (за КОАТУУ)
+geo-ukr-composite.lst
+geo-other.lst -- інші географічні назви
+names-anim.lst -- first and last names (+patronims)
+names-other.lst -- (non-personal) proper names
+names-composite.lst
+exceptions.lst -- words that decline under unknown/undefined rules (not sorted)
+pronouns.lst -- pronouns with all their forms (not sorted), some other POS
+slang.lst -- slang
+rare.lst -- rare, obsolete, dialect (not used for spellchecking)
+twisters.lst -- bad words and suggestions for replacement (not used for spellchecking)
+ignored.lst -- common mistakes
 
 add_tag.add     додаткові теги для окремих словоформ
 
@@ -43,4 +42,4 @@ Additional flags:
 Після слів можуть йти коментарі (після символа ґратки #), після #> можна записувати кращі відповідники,
   які будуть рекомендовані в LT (м’яка рекомендація, на противагу жорсткій для слів в twisters.lst)
 
-A. Rysin (Андрій Рисін) 2017
+(с) A. Rysin (Андрій Рисін) 2019
