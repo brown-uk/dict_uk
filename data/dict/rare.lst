@@ -375,6 +375,7 @@
 празничанин /n20.a.pyn.<
 приводець /n22.a.p.<
 придверний /adj
+приказ /n20.p
 притім conj:subord:bad
 прищіпляти /v2.cf.advp :imperf
 пріч prep|adv:&predic        # rv_rod
@@ -397,6 +398,7 @@
 світач /n20.a.p
 святешний /adj
 се сей adj:n:v_naz/v_zna:&pron:dem
+сего сей adj:n:v_rod:&pron:dem
 сей сей adj:m:v_naz/v_zn2:&pron:dem
 сербіянин /n20.a.pyn.<
 силяти /v2.cf.advp :imperf
@@ -454,6 +456,7 @@
 устид adv:&predic
 устидно adv:&predic
 ухорканий /adj :&adjp:pasv:perf:v-u    # past
+ученик /n20.a.p.<
 учительний /adj
 фашистівський /adj
 фершалка /n10.p2.ko.<
@@ -475,6 +478,7 @@
 цифір /n32
 цукриця /n10
 цьоця /n10.ku.<
+часть /n32.p
 числити /v1.cf.advp :imperf
 чміль /n20.a.p.<>
 чортма noninfl:&predic
