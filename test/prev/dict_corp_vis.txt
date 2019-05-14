@@ -964,7 +964,7 @@
   велосипедові noun:inanim:m:v_dav
   велосипеду noun:inanim:m:v_dav
   велосипед noun:inanim:m:v_zna
-  велосипеда noun:inanim:m:v_zna
+  велосипеда noun:inanim:m:v_zna:var
   велосипедом noun:inanim:m:v_oru
   велосипеді noun:inanim:m:v_mis
   велосипедові noun:inanim:m:v_mis

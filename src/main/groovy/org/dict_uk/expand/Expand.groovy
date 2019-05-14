@@ -467,7 +467,10 @@ class Expand {
 					if( flags.contains("@") ) {
 						word = line.word
 						if( "ая".contains(word[-1..-1]) && line.tagStr.contains("m:v_rod") ) {
-							line.setTagStr( line.tagStr.replace("m:v_rod", "m:v_rod/v_zna") )
+							lines2.add(line)
+							String newTag = line.tagStr.replace("m:v_rod", "m:v_zna:var")
+							lines2.add(new DicEntry(line.word, line.lemma, newTag))
+							continue
 						}
 					}
 				}

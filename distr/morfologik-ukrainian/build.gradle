@@ -85,7 +85,7 @@ task prepareDict(type: Exec) {
         new File("$workingDir/$tmpDir").mkdirs()
     }
 
-    def cmd = "cat ${srcDict} | tr ' ' '\\t' | LC_ALL=POSIX sort -u > ${outFile}"
+    def cmd = "cat ${srcDict} | tr ' ' '\\t' | LC_ALL=POSIX sort -u > ${outFile} && grep -vE ':(subst|vis)' ${outFile} > ${outFile}.synth"
 
     commandLine "sh", "-c", "${cmd}"
 }
@@ -119,7 +119,7 @@ task synthDict(type: JavaExec, dependsOn: prepareDict) {
     classpath = files(configurations.provided.files)
     main = 'org.languagetool.tools.SynthDictionaryBuilder'
 
-    args "-i", "${tmpDir}/all.tagged.tmp"
+    args "-i", "${tmpDir}/all.tagged.tmp.synth"
     args "-info", "${resourceDir}/ukrainian_synth.info"
     args "-o", "${outputDict}"
 }

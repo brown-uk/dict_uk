@@ -223,8 +223,8 @@ group n32.p
 0	ям	[ау]р		#  глазурям 	                            @ noun:p:v_dav
 0	ями	[ау]р		#  глазурями	                            @ noun:p:v_oru
 0	ях	[ау]р		#  глазурях 	                            @ noun:p:v_mis
-0	і	ф		#  верфі 	                            @ noun:p:v_naz
-0	ей	ф		#  верфей 	                            @ noun:p:v_rod
-0	ям	ф		#  верфям 	                            @ noun:p:v_dav
-0	ями	ф		#  верфями	                            @ noun:p:v_oru
-0	ях	ф		#  верфях 	                            @ noun:p:v_mis
+0	і	[вф]		#  верфі 	                            @ noun:p:v_naz
+0	ей	[вф]		#  верфей 	                            @ noun:p:v_rod
+0	ям	[вф]		#  верфям 	                            @ noun:p:v_dav
+0	ями	[вф]		#  верфями	                            @ noun:p:v_oru
+0	ях	[вф]		#  верфях 	                            @ noun:p:v_mis
