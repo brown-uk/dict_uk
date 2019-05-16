@@ -37,6 +37,7 @@ ind
 inf
 &insert
 int
+latin
 lname
 m
 n
