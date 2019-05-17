@@ -165,7 +165,7 @@ class OutputValidator {
 			        || (line.contains(" adj") && line.contains("&pron")) ) )
 				return nonFatalErrorCount
 			
-			if( isLimitedForms(line) ) )
+			if( isLimitedForms(line) )
 			    return nonFatalErrorCount
 			
 			log.error("noun lemma is missing " + missingVSet + " on gender " + gender + " for: " + line)
