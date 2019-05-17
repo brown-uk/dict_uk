@@ -21,7 +21,7 @@ class Expand {
 	private final DictSorter dictSorter = new DictSorter()
 	private final BaseTags base_tags = new BaseTags()
 	private final OutputValidator validator = new OutputValidator()
-	private final List<String> limitedVerbLemmas = ["житися", "забракнуло", "зберігти", "зберігтись", "зберігтися"];
+	private final List<String> limitedVerbLemmas = []
 	private final Map<String, String> additionalTags = [:]
 	private final List<String> additionalTagsUnused = []
 	final Affix affix = new Affix()

@@ -16,21 +16,21 @@ advp 81845
 conj 124
 intj 534
 noninfl 239
-noun 151604
+noun 151605
      anim 49193
      fname 2988
-     geo 19247
-     inanim 102333
+     geo 19248
+     inanim 102334
      lname 24716
      nv 11725
      pname 947
-     prop 49491
+     prop 49492
 number 5
 numr 121
      nv 23
 onomat 38
 part 164
 prep 175
-verb 41897
+verb 41896
      imperf 19110
-     perf 22787
+     perf 22786

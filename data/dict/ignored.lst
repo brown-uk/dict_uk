@@ -41,7 +41,7 @@
 біґборд /n20.a.p
 біґ-борд /n20.a.p
 біткоін /n20.a.p
-буйвол noun:anim:m:v_naz
+буйвол noun:anim:m:v_naz                    # lim
 вазонок /n22.a.p
 вантажопасажирський /adj
 вебсайта вебсайт noun:m:v_rod
@@ -151,9 +151,9 @@
 Запорожжя /n2n :prop:geo
 засиплять засипати verb:perf:futr:p:3:xp2
 заучка /n10.p2.<
-зберігти verb:inf:perf
-зберігтись verb:rev:inf:perf
-зберігтися verb:rev:inf:perf
+зберігти verb:inf:perf                  # lim
+зберігтись зберігтися verb:rev:inf:perf # lim
+зберігтися verb:rev:inf:perf            # lim
 згвалтований /adj :&adjp:pasv:perf
 згвалтування /n2n.p1
 згвалтувати /v1.is0 :perf
@@ -253,7 +253,7 @@
 окклюдер /n20.a.p.ke
 ОМОН /n20 :prop:abbr
 орігамі noun:m:nv|noun:f:nv
-основанья основанья noun:n:v_rod
+основанья основанья noun:n:v_rod            # lim
 очків очко noun:inanim:p:v_rod:xp2
 пампушків пампушка noun:inanim:p:v_rod
 панєвропейський /adj

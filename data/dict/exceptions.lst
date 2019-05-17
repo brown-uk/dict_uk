@@ -555,21 +555,21 @@
 
 
 # давні форми
-бельмеса бельмеса noun:m:v_rod
+бельмеса бельмеса noun:m:v_rod          # lim
 язицех язик noun:p:v_mis
 
 світа світ noun:m:v_rod:rare
 
-давніх-давен давніх-давен noun:p:v_rod:ns
+давніх-давен давніх-давен noun:p:v_rod:ns           # lim
 
 Руси Русь noun:f:v_rod:prop:alt
-роб роб noun:m:v_naz/v_zna
+роб роб noun:m:v_naz/v_zna                  # lim
 робом роб noun:m:v_oru
 
-кінця-краю кінця-краю noun:m:v_rod
-предку-віку предку-віку noun:m:v_zna
+кінця-краю кінця-краю noun:m:v_rod                  # lim
+предку-віку предку-віку noun:m:v_zna                # lim
 
-галай-балай галай-балай noun:m:v_naz/v_zna
+галай-балай галай-балай noun:m:v_naz/v_zna                      # lim
 усюди /np2 /np1
 
 ван ван part:pers
@@ -649,13 +649,13 @@
 
 бува бувати verb:imperf:pres:s:3:&insert:coll
 
-жити-бути жити-бути verb:inf:imperf
+жити-бути жити-бути verb:inf:imperf             # lim
 жив-був жити-бути verb:past:m:imperf
 жила-була жити-бути verb:past:f:imperf
 жило-було жити-бути verb:past:n:imperf
 жили-були жити-бути verb:past:p:imperf
 
-писано-переписано писати-переписати verb:perf:impers
+писано-переписано писати-переписати verb:perf:impers        # lim
 почавшись початися advp:rev:perf
 
 пробути пробути verb:inf:perf
@@ -701,7 +701,7 @@
 молодеже молодіж noun:inanim:f:v_kly:rare
 
 
-хтітися хтітися verb:rev:imperf:inf
+хтітися хтітися verb:rev:imperf:inf             # lim
 хтітись хтітися verb:rev:imperf:inf
 хочеться хтітися verb:rev:imperf:pres:s:3
 хтітиметься хтітися verb:rev:imperf:futr:s:3
@@ -734,7 +734,7 @@
 хтіло хтіти verb:imperf:past:n
 хтіли хтіти verb:imperf:past:p
 
-забракнути забракнути verb:perf:inf
+забракнути забракнути verb:perf:inf             # lim
 забракне забракнути verb:perf:futr:s:3
 забракло забракнути verb:perf:past:n
 

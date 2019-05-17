@@ -15,9 +15,6 @@ class OutputValidator {
 	
 	static final Pattern WORD_RE = Pattern.compile("[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ']*(-[а-яіїєґА-ЯІЇЄҐ']*)*|[А-ЯІЇЄҐ][А-ЯІЇЄҐ-]+|[а-яіїєґА-ЯІЇЄҐ][а-яіїєґ]*\\.(-[а-яіїєґ]+\\.)?")
 	static final Pattern POS_RE = Pattern.compile("(noun:([iu]n)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|intj|conj:|onomat|foreign|noninfl|number).*")
-    static final List<String> IGNORED_NOUNS = ["бельмеса", "давніх-давен", "основанья", "предку-віку", "роб", "свободівець", "шатер",
-            "галай-балай", "вепр", "вихідець", "гратами", "мати-одиночка", "кінця-краю", "усіх-усюд", "Таганріг", "Хмельницьк", "буйвол", "бро"]
-    static final List<String> IGNORED_VERBS = ["хтітися", "жити-бути", "писано-переписано", "забракнути"]
 
 	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
 
@@ -82,14 +79,17 @@ class OutputValidator {
 	static final Pattern VERB_CHECK_PATTERN = ~/inf|impr:s:2|impr:p:[12]|(?:pres|futr):[sp]:[123]|past:[mfnp]/
 
 	@CompileStatic
+	private static boolean isLimitedForms(String lemmaLine) {
+		return lemmaLine.matches(".* #.* lim")
+	}
+	
+	@CompileStatic
 	int check_indented_lines(List<String> lines, List<String> limitedVerbLemmas) {
 		String gender = ""
 		HashSet<String> subtagSet = new HashSet<String>()
 		String lemmaLine
 		List<String> lastVerbTags = null
 		int nonFatalErrorCount = 0
-		
-		limitedVerbLemmas += IGNORED_VERBS
 		
 		//		ParallelEnhancer.enhanceInstance(lines)
 
@@ -98,7 +98,7 @@ class OutputValidator {
 				if (gender) {
 					checkVTagSet(gender, subtagSet, lemmaLine)
 				}
-				else if( lastVerbTags && ! lemmaLine.contains(". ") ) {
+				else if( lastVerbTags && ! lemmaLine.contains(". ") && ! isLimitedForms(lemmaLine) ) {
 					log.error("verb lemma is missing " + (lastVerbTags) + " for: " + lemmaLine)
 					nonFatalErrorCount++
 					lastVerbTags = null
@@ -165,7 +165,7 @@ class OutputValidator {
 			        || (line.contains(" adj") && line.contains("&pron")) ) )
 				return nonFatalErrorCount
 			
-			if( line.split()[0] in IGNORED_NOUNS )
+			if( isLimitedForms(line) ) )
 			    return nonFatalErrorCount
 			
 			log.error("noun lemma is missing " + missingVSet + " on gender " + gender + " for: " + line)

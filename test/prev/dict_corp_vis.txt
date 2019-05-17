@@ -1779,6 +1779,8 @@
   Гавету noun:anim:f:v_zna:prop:lname
   Гаветою noun:anim:f:v_oru:prop:lname
   Гаветі noun:anim:f:v_mis:prop:lname
+галай-балай noun:inanim:m:v_naz    # lim
+  галай-балай noun:inanim:m:v_zna
 гамма-ніж noun:inanim:m:v_naz
   гамма-ножа noun:inanim:m:v_rod
   гамма-ножеві noun:inanim:m:v_dav
@@ -2705,6 +2707,7 @@
   міняйлами noun:anim:p:v_oru
   міняйлах noun:anim:p:v_mis
   міняйли noun:anim:p:v_kly
+мусіти verb:imperf:inf:bad    # lim
 найбезпечніше adv:comps:&predic
 найвагоміше adv:comps
 найвагоміший adj:m:v_naz:comps
