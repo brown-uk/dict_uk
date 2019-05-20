@@ -9,27 +9,27 @@
 тобі ти noun:anim:s:v_dav/v_mis:&pron:pers:2
 тобою ти noun:anim:s:v_oru:&pron:pers:2
 
-він він noun:m:v_naz:&pron:pers:3
-його він noun:m:v_rod/v_zna:&pron:pers:3
-нього він noun:m:v_rod/v_zna:&pron:pers:3
-йому він noun:m:v_dav:&pron:pers:3
-ньому він noun:m:v_mis:&pron:pers:3
-ним він noun:m:v_oru:&pron:pers:3
-нім він noun:m:v_mis:&pron:pers:3
+він він noun:unanim:m:v_naz:&pron:pers:3
+його він noun:unanim:m:v_rod/v_zna:&pron:pers:3
+нього він noun:unanim:m:v_rod/v_zna:&pron:pers:3
+йому він noun:unanim:m:v_dav:&pron:pers:3
+ньому він noun:unanim:m:v_mis:&pron:pers:3
+ним він noun:unanim:m:v_oru:&pron:pers:3
+нім він noun:unanim:m:v_mis:&pron:pers:3
 
-вона вона noun:f:v_naz:&pron:pers:3
-її вона noun:f:v_rod/v_zna:&pron:pers:3
-неї вона noun:f:v_rod/v_zna:&pron:pers:3
-їй вона noun:f:v_dav:&pron:pers:3
-нею вона noun:f:v_oru:&pron:pers:3
-ній вона noun:f:v_mis:&pron:pers:3
+вона вона noun:unanim:f:v_naz:&pron:pers:3
+її вона noun:unanim:f:v_rod/v_zna:&pron:pers:3
+неї вона noun:unanim:f:v_rod/v_zna:&pron:pers:3
+їй вона noun:unanim:f:v_dav:&pron:pers:3
+нею вона noun:unanim:f:v_oru:&pron:pers:3
+ній вона noun:unanim:f:v_mis:&pron:pers:3
 
-воно воно noun:n:v_naz:&pron:pers:3
-його воно noun:n:v_rod/v_zna:&pron:pers:3
-нього воно noun:n:v_rod/v_zna:&pron:pers:3
-йому воно noun:n:v_dav:&pron:pers:3
-ньому воно noun:n:v_mis:&pron:pers:3
-ним воно noun:n:v_oru:&pron:pers:3
+воно воно noun:unanim:n:v_naz:&pron:pers:3
+його воно noun:unanim:n:v_rod/v_zna:&pron:pers:3
+нього воно noun:unanim:n:v_rod/v_zna:&pron:pers:3
+йому воно noun:unanim:n:v_dav:&pron:pers:3
+ньому воно noun:unanim:n:v_mis:&pron:pers:3
+ним воно noun:unanim:n:v_oru:&pron:pers:3
 
 ми ми noun:anim:p:v_naz:&pron:pers:1
 нас ми noun:anim:p:v_rod/v_zna/v_mis:&pron:pers:1
@@ -41,11 +41,11 @@
 вам ви noun:anim:p:v_dav:&pron:pers:2
 вами ви noun:anim:p:v_oru:&pron:pers:2
 
-вони вони noun:p:v_naz:&pron:pers:3
-їх вони noun:p:v_rod/v_zna:&pron:pers:3
-них вони noun:p:v_rod/v_zna/v_mis:&pron:pers:3
-їм вони noun:p:v_dav:&pron:pers:3
-ними вони noun:p:v_oru:&pron:pers:3
+вони вони noun:unanim:p:v_naz:&pron:pers:3
+їх вони noun:unanim:p:v_rod/v_zna:&pron:pers:3
+них вони noun:unanim:p:v_rod/v_zna/v_mis:&pron:pers:3
+їм вони noun:unanim:p:v_dav:&pron:pers:3
+ними вони noun:unanim:p:v_oru:&pron:pers:3
 
 хто хто conj:subord
 хто хто noun:anim:m:v_naz:&pron:int:rel
