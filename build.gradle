@@ -89,9 +89,8 @@ task autoGen (dependsOn: classes) {
                 String newLine = line.replaceFirst(/проек([тц])/, 'проєк$1')
                 newLine = newLine.replace('ua_1992', 'ua_2019')
 
-                String newLemma = line.replaceFirst(/(.*?) .*/, '$1').replace('проек', 'проєк')
-
-                newLine = newLine.padRight(64) + "#> $newLemma"
+//                String newLemma = line.replaceFirst(/(.*?) .*/, '$1').replace('проек', 'проєк')
+//                newLine = newLine.padRight(64) + "#> $newLemma"
             }
         outputs.files.first() << lines.join("\n")
     }
