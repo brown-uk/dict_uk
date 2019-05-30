@@ -10,6 +10,7 @@ group = 'org.dict_uk'
 String langCode="uk"
 
 String affixDir="data/affix"
+String dataDir="data/dict"
 
 String outputDir="out"
 String prevDir="../../out/prev"
@@ -71,6 +72,29 @@ task reverseAdvp (type: JavaExec, dependsOn: classes) {
     main = "org.dict_uk.expand.VerbReverse"
 
     args file(inputFile), file(outputs.files[0])
+}
+
+task autoGen (dependsOn: classes) {
+    def inputFile = "$dataDir/base.lst"
+    inputs.file inputFile
+    outputs.file "$dataDir/base-autogen.lst"
+
+    doLast {
+        String[] lines = file(inputFile)
+            .readLines()
+            .findAll { line -> line.contains(":ua_1992") && line =~ /проек[тц]/ }
+            .collect { line -> 
+                assert ! line.contains('#>')
+
+                String newLine = line.replaceFirst(/проек([тц])/, 'проєк$1')
+                newLine = newLine.replace('ua_1992', 'ua_2019')
+
+                String newLemma = line.replaceFirst(/(.*?) .*/, '$1').replace('проек', 'проєк')
+
+                newLine = newLine.padRight(64) + "#> $newLemma"
+            }
+        outputs.files.first() << lines.join("\n")
+    }
 }
 
 task reverseAffix (dependsOn: [reverseVerbs, reverseAdvp]) {
@@ -176,7 +200,7 @@ def getAdjustedText(filename) {
 }
 
 
-task testExpand(type: JavaExec, dependsOn: [reverseAffix, classes]) {
+task testExpand(type: JavaExec, dependsOn: [reverseAffix, autoGen, classes]) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
 
@@ -206,7 +230,7 @@ task testExpand(type: JavaExec, dependsOn: [reverseAffix, classes]) {
 // Main targets
 //
 
-task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, testExpand]) {
+task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, autoGen, testExpand]) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
 

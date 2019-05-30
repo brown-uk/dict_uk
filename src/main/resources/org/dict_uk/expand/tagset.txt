@@ -76,6 +76,8 @@ short
 slang
 subord
 subst
+ua_1992
+ua_2019
 unanim
 uncontr
 var

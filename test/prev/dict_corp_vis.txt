@@ -3287,6 +3287,38 @@
   постріляла verb:perf:past:f
   постріляло verb:perf:past:n
   постріляли verb:perf:past:p
+проектовий adj:m:v_naz:ua_1992
+  проектового adj:m:v_rod:ua_1992
+  проектовому adj:m:v_dav:ua_1992
+  проектового adj:m:v_zna:ranim:ua_1992
+  проектовий adj:m:v_zna:rinanim:ua_1992
+  проектовим adj:m:v_oru:ua_1992
+  проектовім adj:m:v_mis:ua_1992
+  проектовому adj:m:v_mis:ua_1992
+  проектовий adj:m:v_kly:ua_1992
+  проектова adj:f:v_naz:ua_1992
+  проектової adj:f:v_rod:ua_1992
+  проектовій adj:f:v_dav:ua_1992
+  проектову adj:f:v_zna:ua_1992
+  проектовою adj:f:v_oru:ua_1992
+  проектовій adj:f:v_mis:ua_1992
+  проектова adj:f:v_kly:ua_1992
+  проектове adj:n:v_naz:ua_1992
+  проектового adj:n:v_rod:ua_1992
+  проектовому adj:n:v_dav:ua_1992
+  проектове adj:n:v_zna:ua_1992
+  проектовим adj:n:v_oru:ua_1992
+  проектовім adj:n:v_mis:ua_1992
+  проектовому adj:n:v_mis:ua_1992
+  проектове adj:n:v_kly:ua_1992
+  проектові adj:p:v_naz:ua_1992
+  проектових adj:p:v_rod:ua_1992
+  проектовим adj:p:v_dav:ua_1992
+  проектових adj:p:v_zna:ranim:ua_1992
+  проектові adj:p:v_zna:rinanim:ua_1992
+  проектовими adj:p:v_oru:ua_1992
+  проектових adj:p:v_mis:ua_1992
+  проектові adj:p:v_kly:ua_1992
 проєкт noun:inanim:m:v_naz:alt
   проєкту noun:inanim:m:v_rod:alt
   проєктові noun:inanim:m:v_dav:alt
