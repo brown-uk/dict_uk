@@ -75,13 +75,18 @@ task reverseAdvp (type: JavaExec, dependsOn: classes) {
 }
 
 task autoGen (dependsOn: classes) {
-    def inputFile = "$dataDir/base.lst"
-    inputs.file inputFile
+    def inputFile1 = "$dataDir/base.lst"
+    def inputFile2 = "$dataDir/base-compound.lst"
+
+    inputs.file inputFile1
+    inputs.file inputFile2
     outputs.file "$dataDir/base-autogen.lst"
 
     doLast {
-        String[] lines = file(inputFile).readLines()
+        String[] lines = file(inputFile1).readLines()
             .findAll { line -> line.contains(":ua_1992") }
+
+        def outReplaceLines = []
 
         String[] outLines1 = lines
             .findAll { line -> line =~ /проек[тц]/ }
@@ -91,20 +96,24 @@ task autoGen (dependsOn: classes) {
                 String newLine = line.replaceFirst(/проек([тц])/, 'проєк$1')
                 newLine = newLine.replace('ua_1992', 'ua_2019')
 
-//                String newLemma = line.replaceFirst(/(.*?) .*/, '$1').replace('проек', 'проєк')
-//                newLine = newLine.padRight(64) + "#> $newLemma"
+                String newLemma = line.replaceFirst(/(.*?) .*/, '$1').replace('проек', 'проєк')
+                def newReplLine = line.padRight(64) + "#> $newLemma"
+                outReplaceLines << newReplLine
+
+                newLine
             }
 
-        def pattern = ~ /(^|-)(архі|архи|бліц|гіпер|екстра|макро|максі|міді|мікро|міні|мульти|нано|полі|преміум|супер|топ|ультра|флеш|анти|контр|віце|екс|лейб|обер|штабс|унтер)-/
+        def pattern2 = ~ /(^|-)(архі|архи|гіпер|екстра|макро|максі|міді|мікро|міні|мульти|нано|полі|преміум|супер|топ|ультра|флеш|анти|контр|віце|екс|лейб|обер|штабс|унтер)-/
 
         String[] outLines2 = lines
-            .findAll { line -> pattern.matcher(line).find() }
+            .findAll { line -> pattern2.matcher(line).find() }
             .collect { line ->
                 if( line.contains('#>') ) {
                     println "Skipping replace in: $line"
+                    line = line.replaceFirst(/ *#>.*/, '')
                 }
 
-                String newLine = pattern.matcher(line).replaceFirst('$1$2')
+                String newLine = pattern2.matcher(line).replaceFirst('$1$2')
                 newLine = newLine.replace('ua_1992', 'ua_2019')
 
 //                String newLemma = line.replaceFirst(/(.*?) .*/, '$1').replace('проек', 'проєк')
@@ -113,7 +122,32 @@ task autoGen (dependsOn: classes) {
 
         outLines1 += outLines2
 
+
+        lines = file(inputFile2).readLines()
+            .findAll { line -> line.contains(":ua_1992") }
+
+        def pattern3 = ~ /(^|-)(арт|бліц|веб|етно|кібер|поп|прес|фоль?к)-/
+
+        String[] outLines3 = lines
+            .findAll { line -> pattern3.matcher(line).find() }
+            .collect { line ->
+                if( line.contains('#>') ) {
+                    println "Skipping replace in: $line"
+                    line = line.replaceFirst(/ *#>.*/, '')
+                }
+
+                String newLine = pattern3.matcher(line).replaceFirst('$1$2')
+                newLine = newLine.replace('ua_1992', 'ua_2019')
+
+//                String newLemma = line.replaceFirst(/(.*?) .*/, '$1').replace('проек', 'проєк')
+//                newLine = newLine.padRight(64) + "#> $newLemma"
+            }
+
+        outLines1 += outLines3
+
         outputs.files.first().text = outLines1.toSorted().join("\n")
+
+        new File('data/dict/base-auto-replace.lst').text = outReplaceLines.toSorted().join('\n')
     }
 }
 

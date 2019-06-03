@@ -946,7 +946,7 @@
   вежі-близнюки noun:inanim:p:v_kly:ns
 величність noun:anim:f:v_naz
   величності noun:anim:f:v_rod
-  величности noun:anim:f:v_rod:alt
+  величности noun:anim:f:v_rod:ua_2019
   величності noun:anim:f:v_dav
   величність noun:anim:f:v_zna
   величністю noun:anim:f:v_oru
@@ -2340,8 +2340,8 @@
   житах noun:inanim:p:v_mis:ns
   жита noun:inanim:p:v_kly:ns
 заанґажованість noun:inanim:f:v_naz:alt
-  заанґажованости noun:inanim:f:v_rod:alt
   заанґажованості noun:inanim:f:v_rod:alt
+  заанґажованости noun:inanim:f:v_rod:ua_2019:alt
   заанґажованості noun:inanim:f:v_dav:alt
   заанґажованість noun:inanim:f:v_zna:alt
   заанґажованістю noun:inanim:f:v_oru:alt
@@ -2670,7 +2670,7 @@
   лікареві adj:p:v_kly
 людяність noun:inanim:f:v_naz
   людяності noun:inanim:f:v_rod
-  людяности noun:inanim:f:v_rod:alt
+  людяности noun:inanim:f:v_rod:ua_2019
   людяності noun:inanim:f:v_dav
   людяність noun:inanim:f:v_zna
   людяністю noun:inanim:f:v_oru
@@ -3009,7 +3009,7 @@
 ніде adv:&pron:neg    # ніде́
 ніжність noun:inanim:f:v_naz
   ніжності noun:inanim:f:v_rod
-  ніжности noun:inanim:f:v_rod:alt
+  ніжности noun:inanim:f:v_rod:ua_2019
   ніжності noun:inanim:f:v_dav
   ніжність noun:inanim:f:v_zna
   ніжністю noun:inanim:f:v_oru

@@ -946,7 +946,7 @@
 вежі-близнюки вежі-близнюки noun:inanim:p:v_kly:ns
 величність величність noun:anim:f:v_naz
 величності величність noun:anim:f:v_rod
-величности величність noun:anim:f:v_rod:alt
+величности величність noun:anim:f:v_rod:ua_2019
 величності величність noun:anim:f:v_dav
 величність величність noun:anim:f:v_zna
 величністю величність noun:anim:f:v_oru
@@ -2340,8 +2340,8 @@
 житах жита noun:inanim:p:v_mis:ns
 жита жита noun:inanim:p:v_kly:ns
 заанґажованість заанґажованість noun:inanim:f:v_naz:alt
-заанґажованости заанґажованість noun:inanim:f:v_rod:alt
 заанґажованості заанґажованість noun:inanim:f:v_rod:alt
+заанґажованости заанґажованість noun:inanim:f:v_rod:ua_2019:alt
 заанґажованості заанґажованість noun:inanim:f:v_dav:alt
 заанґажованість заанґажованість noun:inanim:f:v_zna:alt
 заанґажованістю заанґажованість noun:inanim:f:v_oru:alt
@@ -2670,7 +2670,7 @@
 лікареві лікарів adj:p:v_kly
 людяність людяність noun:inanim:f:v_naz
 людяності людяність noun:inanim:f:v_rod
-людяности людяність noun:inanim:f:v_rod:alt
+людяности людяність noun:inanim:f:v_rod:ua_2019
 людяності людяність noun:inanim:f:v_dav
 людяність людяність noun:inanim:f:v_zna
 людяністю людяність noun:inanim:f:v_oru
@@ -3009,7 +3009,7 @@
 ніде ніде adv:&pron:neg
 ніжність ніжність noun:inanim:f:v_naz
 ніжності ніжність noun:inanim:f:v_rod
-ніжности ніжність noun:inanim:f:v_rod:alt
+ніжности ніжність noun:inanim:f:v_rod:ua_2019
 ніжності ніжність noun:inanim:f:v_dav
 ніжність ніжність noun:inanim:f:v_zna
 ніжністю ніжність noun:inanim:f:v_oru

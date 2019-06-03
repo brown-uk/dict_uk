@@ -242,34 +242,63 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
 
     doLast {
 
-    def headText =
+		def headText =
 '''# Simple replace table for soft suggestions
 # Format: word=suggestion1|suggestion2|suggestion3...
 
 '''
-		def outLines = []
-
-		srcFiles.each{ srcFile ->
-			def rvLines = new File("$srcDir/$srcFile.name").text
-			    .split('\n')
-			    .findAll {
-                    ! it.startsWith('#') && it.contains(' #> ')
-			    }.collect{
-                    it = it.replace(' +cs=', '')
-                    it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
-                    it = it.replaceFirst(/ *# rv_...(\|rv_...)* */, '')
-			    }
-
-			outLines.addAll(rvLines)
-		}
-
-		java.text.Collator coll = java.text.Collator.getInstance(new Locale("uk", "UA"))
-        Collections.sort(outLines, coll)
+		def outLines = getReplacements(srcDir, srcFiles, { ! it.contains('ua_1992')})
 		
         println "Wrote $outLines.size replacements"
 		new File(outFile).text = headText + outLines.join('\n') + "\n"
 	}
+}
 
+
+task createNewSpellingReplacementDict(dependsOn: createOutRulesDir) {
+    def srcDir="${inputDir}/../data/dict"
+    def outFile="${outRulesDir}/replace_spelling_2019.txt"
+    def allFiles = Arrays.asList(new File(srcDir).listFiles())
+    def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! (it.name in ['twisters.lst', 'base-composite.lst', 'subst.lst']) }
+
+    inputs.files srcFiles
+    outputs.file outFile
+
+
+    doLast {
+
+		def headText =
+'''# Simple replace table for 2019 spelling suggestions
+# Format: word=suggestion1|suggestion2|suggestion3...
+
+'''
+		def outLines = getReplacements(srcDir, srcFiles, {it.contains('ua_1992')})
+		
+        println "Wrote $outLines.size replacements"
+		new File(outFile).text = headText + outLines.join('\n') + "\n"
+	}
+}
+
+List<String> getReplacements(String srcDir, List<File> files, Closure filter) {
+    def outLines = []
+
+    files.each{ srcFile ->
+        def rvLines = new File("$srcDir/$srcFile.name").readLines()
+        .findAll {
+            ! it.startsWith('#') && it.contains(' #> ') && filter(it)
+        }.collect{
+            it = it.replace(' +cs=', '')
+            it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
+            it = it.replaceFirst(/ *# rv_...(\|rv_...)* */, '')
+        }
+
+        outLines.addAll(rvLines)
+    }
+
+    java.text.Collator coll = java.text.Collator.getInstance(new Locale("uk", "UA"))
+    Collections.sort(outLines, coll)
+
+    outLines
 }
 
 
@@ -353,7 +382,7 @@ task caseGovernmentDict() {
 }
 
 
-task helperDicts (dependsOn: [caseGovernmentDict, createReplacementDict, createSoftReplacementDict])
+task helperDicts (dependsOn: [caseGovernmentDict, createReplacementDict, createSoftReplacementDict, createNewSpellingReplacementDict])
 
 
 task deployDictToLT(type: Copy, dependsOn: resources) {
@@ -367,7 +396,7 @@ task deployDictToLT(type: Copy, dependsOn: resources) {
 
 
 
-task deployReplacements(type: Copy, dependsOn: [createReplacementDict, createSoftReplacementDict, createRenamedReplacementDict]) {
+task deployReplacements(type: Copy, dependsOn: [createReplacementDict, createSoftReplacementDict, createRenamedReplacementDict, createNewSpellingReplacementDict]) {
     doFirst() {
         logger.lifecycle "Deploying to LT dir: ${languagetoolRulesDestDir}"
     }
