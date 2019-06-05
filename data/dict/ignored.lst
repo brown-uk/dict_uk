@@ -294,7 +294,7 @@
 предімплантаційний /adj
 #придорожний /adj
 приняти /v1.isTo :perf
-принятий /adj
+принятий /adj :adjp:pasv:perf
 принятися /vr1 :perf
 прогавити /v1.it0 :perf
 продезинфікований /adj :&adjp:pasv:perf    # :past

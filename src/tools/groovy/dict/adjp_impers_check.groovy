@@ -98,8 +98,8 @@ for ( item in impersMap ) {
     }
     else {
     	def formTags = dicEntryMap[imp].tags.grep(["perf", "imperf"])
-    	def suggestion = imp[0..<-1] + "ий/V ^adjp:pasv" + formTags 
-    	
+    	def suggestion = imp[0..<-1] + "ий /adj :adjp:pasv:" + formTags.join(':')
+
         println "== not found adjp for impers " + imp + " / " + dicEntryMap[imp].lemma + " ==> " + suggestion
     }
 }
