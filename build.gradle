@@ -100,7 +100,11 @@ task dups {
 	    && it.name != 'dot-abbr.lst' }
 	
 	def lines = files.collect {  it.text.split("\n")  }.flatten() \
-	    .collect { it.trim().replaceAll(/\s*#.*/, '').replaceAll(/\.[^< ]+/, '...') } \
+	    .collect { it
+	        .trim()
+	        .replaceAll(/\s*#.*/, '')
+	        .replaceAll(/\.[^< ]+/, '...')
+	        .replaceAll(/:&adjp:(actv|pasv)(:(imperf|perf))+/, '') } \
 	    .grep { it && ! it.startsWith("+cs") }
 
     lines = lines.grep { ! it.startsWith('#') }
