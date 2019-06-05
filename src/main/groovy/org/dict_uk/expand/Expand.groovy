@@ -814,7 +814,7 @@ class Expand {
 			line = line + ":ns"
 			out_lines = [line]
 		}
-		else if( lineParts.length > 2 && line.contains(":imperf:perf") ) {
+		else if( lineParts.length > 2 && ! line.contains("adjp") && line.contains(":imperf:perf") ) {
 			def line1 = line.replace(":perf", "")
 			def line2 = line.replace(":imperf", "").replace(".cf", "").replace(".adv ", " ") // so we don't duplicate cf and adv
 			out_lines = [line1, line2]

@@ -114,9 +114,9 @@
 бумбокс /n20.a.p
 буржуїн /n20.a.p.ke.<
 бухло /n2n
-вбабаханий /adj :adjp:pasv:perf
+вбабаханий /adj :&adjp:pasv:perf
 вбабахати /v2.isNo :perf
-вгаханий /adj :adjp:pasv:perf
+вгаханий /adj :&adjp:pasv:perf
 вгахати /v2.isNo :perf
 вевешний /adj
 вендінг-автомат /n20.a.p
@@ -152,10 +152,10 @@
 відморозитися /vr1.it0 :perf
 відморозок /n22.p.a.<
 відмудохати /v2 :perf
-відпанаханий /adj :adjp:pasv:perf
+відпанаханий /adj :&adjp:pasv:perf
 відпанахати /v2.isNo :perf
 відфотошоплений /adj :&adjp:pasv:perf
-відфренджений /adj :adjp:pasv:perf
+відфренджений /adj :&adjp:pasv:perf
 відфрендити /v1.is0.it0 :perf
 війнушка /n10
 війнушки /np3
@@ -311,14 +311,14 @@
 жратва /n10
 жрачка /n10
 журналюга /n10.p1.<m
-забабаханий /adj :adjp:pasv:perf
+забабаханий /adj :&adjp:pasv:perf
 забабахати /v2.isNo :perf
 забакланити /v1 :perf
-забанений /adj :adjp:pasv:perf
+забанений /adj :&adjp:pasv:perf
 забанити /v1.is0 :perf
-забацаний /adj :adjp:pasv:perf
+забацаний /adj :&adjp:pasv:perf
 забацати /v2.isNo :perf
-забашляний /adj :adjp:pasv:perf
+забашляний /adj :&adjp:pasv:perf
 забашляти /v2.isNo :perf
 забембати /v2 :perf
 забичкувати /v1.cf.advp :imperf
@@ -342,10 +342,10 @@
 заруба /n10.p1
 засейвити /v1 :perf
 заукраїнець /n22.a.p.<
-зафренджений /adj :adjp:pasv:perf
+зафренджений /adj :&adjp:pasv:perf
 зафрендити /v1.is0.it0 :perf
 захцянка /n10.p2
-зашкварений /adj :adjp:pasv:perf
+зашкварений /adj :&adjp:pasv:perf
 заюзаний /adj :&adjp:pasv:perf
 збацати /v2 :perf
 зблатувати /v1 :perf
@@ -735,6 +735,7 @@
 сємки /np3
 сідішка /n10.p2
 скетчбук /n20.a.p
+скомунячений /adj :&adjp:pasv:perf
 скомунячити /v1.is0.it0 :perf
 скрейпінг /n20
 слабкоалгоколка /n10
@@ -832,6 +833,7 @@
 ульотний /adj.adv
 умнік /n20.a.p.<
 універ /n20.p.ke
+устаканений /adj :&adjp:pasv:perf
 устаканити /v1.is0 :perf
 устаканитися /vr1 :perf
 ухилянт /n20.a.p.<
