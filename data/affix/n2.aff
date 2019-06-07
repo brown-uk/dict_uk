@@ -72,7 +72,7 @@ subgroup n20.u
 subgroup n20.zi
 
 г	зі	г		#  протяг  протязі	            @ noun:m:v_mis
-#ґ	зі	ґ		#  луґ  лузі 	                    @ noun:m:v_mis
+ґ	зі	ґ		#  луґ  лузі 	                    @ noun:m:v_mis
 к	ці	к		#  крок  кроці		            @ noun:m:v_mis
 х	сі	х		#  реп'ях  реп'ясі 	            @ noun:m:v_mis
 
@@ -202,7 +202,7 @@ subgroup n20.p1
 
 subgroup n20.pzi
 
-г:
+[гґ]:
 г	зі		    #  друзі	                    @ noun:p:v_naz
 г	зів		    #  друзів 	                    @ noun:p:v_rod
 г	зям			#  друзям 	            @ noun:p:v_dav
@@ -334,7 +334,7 @@ subgroup n21.u
 subgroup n21.zi
 
 ік      оці ік          #  бік  боці		            @ noun:m:v_mis
-іг      озі іг          # батіг батозі                       @ noun:m:v_mis
+і[гґ]      озі і[гґ]          # батіг батозі                       @ noun:m:v_mis
 
 
 

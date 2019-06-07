@@ -147,7 +147,7 @@ task autoGen (dependsOn: classes) {
 
         outputs.files.first().text = outLines1.toSorted().join("\n")
 
-        new File('data/dict/base-auto-replace.lst').text = outReplaceLines.toSorted().join('\n')
+        new File('data/dict/base-auto-replace.txt').text = outReplaceLines.toSorted().join('\n')
     }
 }
 

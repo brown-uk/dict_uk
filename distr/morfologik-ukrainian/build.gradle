@@ -259,7 +259,10 @@ task createNewSpellingReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outRulesDir}/replace_spelling_2019.txt"
     def allFiles = Arrays.asList(new File(srcDir).listFiles())
-    def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! (it.name in ['twisters.lst', 'base-composite.lst', 'subst.lst']) }
+    def srcFiles = allFiles.findAll{ 
+        (it.name.endsWith('.lst') 
+                && ! (it.name in ['twisters.lst', 'base-composite.lst', 'subst.lst'])) \
+            || it.name.endsWith("-auto-replace.txt") }
 
     inputs.files srcFiles
     outputs.file outFile
@@ -267,16 +270,16 @@ task createNewSpellingReplacementDict(dependsOn: createOutRulesDir) {
 
     doLast {
 
-		def headText =
+        def headText =
 '''# Simple replace table for 2019 spelling suggestions
 # Format: word=suggestion1|suggestion2|suggestion3...
 
 '''
-		def outLines = getReplacements(srcDir, srcFiles, {it.contains('ua_1992')})
-		
+        def outLines = getReplacements(srcDir, srcFiles, {it.contains('ua_1992')})
+
         println "Wrote $outLines.size replacements"
-		new File(outFile).text = headText + outLines.join('\n') + "\n"
-	}
+        new File(outFile).text = headText + outLines.join('\n') + "\n"
+    }
 }
 
 List<String> getReplacements(String srcDir, List<File> files, Closure filter) {
