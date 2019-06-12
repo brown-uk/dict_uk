@@ -1,3 +1,5 @@
+import java.text.Collator
+
 apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'eclipse'
@@ -89,11 +91,11 @@ task autoGen (dependsOn: classes) {
         def outReplaceLines = []
 
         String[] outLines1 = lines
-            .findAll { line -> line =~ /проек[тц]/ }
+            .findAll { line -> line =~ /проек[тц]|хіміо/ }
             .collect { line ->
                 assert ! line.contains('#>')
 
-                String newLine = line.replaceFirst(/проек([тц])/, 'проєк$1')
+                String newLine = line.replaceFirst(/проек([тц])/, 'проєк$1').replace('хіміо', 'хіміє')
                 newLine = newLine.replace('ua_1992', 'ua_2019')
 
                 String newLemma = line.replaceFirst(/(.*?) .*/, '$1').replace('проек', 'проєк')
@@ -103,9 +105,11 @@ task autoGen (dependsOn: classes) {
                 newLine
             }
 
-        def pattern2 = ~ /(^|-)(архі|архи|гіпер|екстра|макро|максі|міді|мікро|міні|мульти|нано|полі|преміум|супер|топ|ультра|флеш|анти|контр|віце|екс|лейб|обер|штабс|унтер)-/
+        def pattern2 = ~ /(^|[а-яіїєґ']+-)(архі|архи|боді|гіпер|диско|екстра|камер|макро|максі|міді|мікро|міні|мульти|нано|полі|преміум|супер|топ|ультра|флеш|анти|контр|віце|екс|лейб|обер|штабс|унтер)-([^ ]+)(.*)/
 
-        String[] outLines2 = lines
+        def lines2 = file(inputFile2).readLines()
+
+        String[] outLines2 = (lines + lines2)
             .findAll { line -> pattern2.matcher(line).find() }
             .collect { line ->
                 if( line.contains('#>') ) {
@@ -113,20 +117,25 @@ task autoGen (dependsOn: classes) {
                     line = line.replaceFirst(/ *#>.*/, '')
                 }
 
-                String newLine = pattern2.matcher(line).replaceFirst('$1$2')
+                String newLine = pattern2.matcher(line).replaceFirst('$1$2$3$4')
+        // TODO: make generic
                 newLine = newLine.replace('ua_1992', 'ua_2019')
+                newLine = newLine.replace('камерю', 'камер\'ю')
 
-//                String newLemma = line.replaceFirst(/(.*?) .*/, '$1').replace('проек', 'проєк')
-//                newLine = newLine.padRight(64) + "#> $newLemma"
+                String newLemma = pattern2.matcher(line).replaceFirst('$1$2$3')
+                def newReplLine = line.padRight(64) + "#> $newLemma"
+                outReplaceLines << newReplLine
+
+                newLine
             }
 
         outLines1 += outLines2
 
 
         lines = file(inputFile2).readLines()
-            .findAll { line -> line.contains(":ua_1992") }
+//            .findAll { line -> line.contains(":ua_1992") }
 
-        def pattern3 = ~ /(^|-)(арт|бліц|веб|етно|кібер|поп|прес|фоль?к)-/
+        def pattern3 = ~ /(^|-)(арт|бліц|веб|етно|кібер|компакт|мас|медіа|поп|прес|флеш|фоль?к|шоу)-/
 
         String[] outLines3 = lines
             .findAll { line -> pattern3.matcher(line).find() }
@@ -138,16 +147,39 @@ task autoGen (dependsOn: classes) {
 
                 String newLine = pattern3.matcher(line).replaceFirst('$1$2')
                 newLine = newLine.replace('ua_1992', 'ua_2019')
-
-//                String newLemma = line.replaceFirst(/(.*?) .*/, '$1').replace('проек', 'проєк')
-//                newLine = newLine.padRight(64) + "#> $newLemma"
             }
 
         outLines1 += outLines3
 
-        outputs.files.first().text = outLines1.toSorted().join("\n")
+        // allow both forms
 
-        new File('data/dict/base-auto-replace.txt').text = outReplaceLines.toSorted().join('\n')
+        def pattern4 = ~ /(^|-)(інтернет|піар|секс|фан|фітнес)-/
+
+        String[] outLines4 = lines
+            .findAll { line -> pattern4.matcher(line).find() }
+            .collect { line ->
+                if( line.contains('#>') ) {
+                    println "Skipping replace in: $line"
+                    line = line.replaceFirst(/ *#>.*/, '')
+                }
+
+                String newLine = pattern4.matcher(line).replaceFirst('$1$2')
+//                newLine = newLine.replace('ua_1992', 'ua_2019')
+
+                String newLemma = pattern4.matcher(line).replaceFirst('$1$2')
+                def newReplLine = newLemma.padRight(64) + "#> " + line.replaceFirst(/^([^ ]+).*/, '$1')
+                outReplaceLines << newReplLine
+
+                newLine
+            }
+
+        outLines1 += outLines4
+
+
+        Collator collator = Collator.getInstance(new Locale("uk", "UA"));
+        outputs.files.first().text = outLines1.toSorted(collator).join("\n")
+
+        new File('data/dict/base-auto-replace.txt').text = outReplaceLines.toSorted(collator).join('\n')
     }
 }
 

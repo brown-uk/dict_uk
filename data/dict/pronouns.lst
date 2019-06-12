@@ -246,6 +246,19 @@
 чим-небудь що-небудь noun:inanim:n:v_oru:&pron:ind
 чім-небудь що-небудь noun:inanim:n:v_mis:&pron:ind
 
+хто-будь хто-будь noun:anim:m:v_naz:&pron:ind
+кого-будь хто-будь noun:anim:m:v_rod/v_zna:&pron:ind
+кому-будь хто-будь noun:anim:m:v_dav/v_mis:&pron:ind
+ким-будь хто-будь noun:anim:m:v_oru:&pron:ind
+кім-будь хто-будь noun:anim:m:v_mis:&pron:ind
+
+що-будь що-будь noun:inanim:n:v_naz/v_zna:&pron:ind
+чого-будь що-будь noun:inanim:n:v_rod/v_zna:&pron:ind
+віщо-будь що-будь noun:inanim:n:v_zna:&pron:ind
+чому-будь що-будь noun:inanim:n:v_dav/v_mis:&pron:ind
+чим-будь що-будь noun:inanim:n:v_oru:&pron:ind
+чім-будь що-будь noun:inanim:n:v_mis:&pron:ind
+
 ніхто ніхто noun:anim:m:v_naz:&pron:neg
 нікого ніхто noun:anim:m:v_rod/v_zna:&pron:neg
 нікому ніхто noun:anim:m:v_dav/v_mis:&pron:neg
@@ -516,6 +529,12 @@
 скількох-небудь скільки-небудь numr:p:v_rod/v_zna/v_mis:&pron:ind
 скільком-небудь скільки-небудь numr:p:v_dav:&pron:ind
 скількома-небудь скільки-небудь numr:p:v_oru:&pron:ind
+
+скільки-будь adv:&pron:ind
+скільки-будь скільки-будь numr:p:v_naz/v_zna:&pron:ind
+скількох-будь скільки-будь numr:p:v_rod/v_zna/v_mis:&pron:ind
+скільком-будь скільки-будь numr:p:v_dav:&pron:ind
+скількома-будь скільки-будь numr:p:v_oru:&pron:ind
 
 хтозна-скільки adv:&pron:ind
 хтозна-скільки хтозна-скільки numr:p:v_naz/v_zna:&pron:ind

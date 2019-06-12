@@ -344,7 +344,7 @@
 КВК noun:m:nv           # Клуб веселих та кмітливих
 КВН noun:m:nv:np:prop       #> КВК
 кВт noun:m:nv
-кВт-г noun:f:nv:bad     #> кВт-год
+кВт-г noun:f:nv:bad         #> кВт-год
 кВт-год noun:f:nv
 КВУ noun:m:nv:np:prop       # Комітет виборців України
 кг noun:m:nv                # кілограм
