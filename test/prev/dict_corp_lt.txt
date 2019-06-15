@@ -180,10 +180,12 @@
 Адамишин Адамишин noun:anim:m:v_naz:prop:lname
 Адамишина Адамишин noun:anim:m:v_rod:prop:lname
 Адамишину Адамишин noun:anim:m:v_dav:prop:lname
+Адамишинові Адамишин noun:anim:m:v_dav:ua_2019:prop:lname
 Адамишина Адамишин noun:anim:m:v_zna:prop:lname
 Адамишиним Адамишин noun:anim:m:v_oru:prop:lname
 Адамишині Адамишин noun:anim:m:v_mis:prop:lname
 Адамишину Адамишин noun:anim:m:v_mis:prop:lname
+Адамишинові Адамишин noun:anim:m:v_mis:ua_2019:prop:lname
 Адамишини Адамишин noun:anim:p:v_naz:prop:lname
 Адамишиних Адамишин noun:anim:p:v_rod:prop:lname
 Адамишиним Адамишин noun:anim:p:v_dav:prop:lname
@@ -345,6 +347,7 @@
 бабищу бабище noun:anim:n:v_dav
 бабище бабище noun:anim:n:v_zna
 бабищем бабище noun:anim:n:v_oru
+бабищеві бабище noun:anim:n:v_mis
 бабищі бабище noun:anim:n:v_mis
 бабищу бабище noun:anim:n:v_mis
 бабище бабище noun:anim:n:v_kly
@@ -1710,6 +1713,7 @@
 вовчищу вовчище noun:anim:m:v_dav
 вовчище вовчище noun:anim:m:v_zna
 вовчищем вовчище noun:anim:m:v_oru
+вовчищеві вовчище noun:anim:m:v_mis
 вовчищі вовчище noun:anim:m:v_mis
 вовчищу вовчище noun:anim:m:v_mis
 вовчище вовчище noun:anim:m:v_kly

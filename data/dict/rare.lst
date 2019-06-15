@@ -1,5 +1,8 @@
 # загинулий /adj :&adjp:actv:perf
 абись conj:subord
+абсолюторій /n20.p
+абшит /n20
+автобусовий /adj
 альбо conj:coord
 антипко /n20.<
 атентат /n20
@@ -32,6 +35,7 @@
 вельон /n20
 венгерське /n2adj1
 вигибти /v3 :perf
+видіти /v1.cf.advp.is0 :imperf
 вилочний /adj
 виміна /n10.p1
 винаймити /v1.it1 :perf
@@ -40,13 +44,18 @@
 висказатися /vr1 :perf
 висмівати /v2.cf.advp :imperf
 висміватися /vr2.cf.advp :imperf
+високопреосвященніший /adj
 вистіг /n20
 вистреляти /v2 :perf
 виступач /n20.a.p.<
+вишній /adj
 відіткати /v2 :perf
+відки adv
+відти adv
 відьмур /n24.a.p.ke.<
 вісний /adj
 вісьта intj
+вітець /n22.a.p.ke.<
 вітців /adj_ev
 в'їжно в'їжно adv:&predic
 вколо вколо prep|adv        # rv_rod
@@ -58,6 +67,8 @@
 властивець /n22.a.p.<
 вліжно adv:&predic
 вовкодух /n20.a.p.<
+воздавати /v1.cf.advp :imperf
+воздати /v3.isNo :perf
 володільник /n20.a.p.<
 воркотливий /adj
 втіки /np2
@@ -82,16 +93,20 @@
 де-інде adv
 дейко noninfl:&predic
 декуди adv
+деревляний /adj
 дільчий /adj
 доживотність /n30
 докіль adv|conj:subord
 доконувати /v1.cf.advp :imperf
+доставати /v1.cf.advp :imperf
+достати /v3 :perf
 дрожка /n10.p2
 дряглий /adj
 дряглість /n30
 жалуватися /vr1.cf.advp :imperf
 жантильний /adj
 живжик /n20.a.p.<
+жупа /n10.p1                # солеварня
 завідатель /n20.a.p.<
 завідателька /n10.p2.<
 загомзатися /vr2 :perf
@@ -146,6 +161,7 @@
 йменований /adj :&adjp:pasv:imperf
 калабалик /n20
 кально adv:&predic
+касарня /n10.p2
 катмає noninfl:&predic
 ке intj:&predic
 кете intj:&predic
@@ -174,6 +190,7 @@
 магазинер /n20.a.p.ke.<
 магайбі intj
 майбуть adv:&insert
+манастир /n24.a.p.ku
 масакра /n10.p1
 метанина /n10
 мізок /n22.p
@@ -215,6 +232,7 @@
 нарід /n21
 настарчити /v1 :perf
 начальний /adj
+нашо adv                    #> нащо
 невміч adv:&predic
 невпотріб noninfl:&predic
 невправка /n10
@@ -254,6 +272,7 @@
 оба numr:m:v_naz/v_zna
 обичай /n20.p
 обі numr:f:v_naz/v_zna
+обіт /n20.p
 обруч adv
 обсіч adv
 обутритися /vr1 :perf p=3
@@ -419,6 +438,7 @@
 спечно спечно adv
 споміж prep        # rv_rod
 спосеред prep        # rv_rod
+сторонка /n10.p2
 стосувати /v1.cf.advp :imperf
 суперека /n10.p1
 сутяжно adv
@@ -429,12 +449,16 @@
 ся part
 таж conj:subord|part
 таже conj:subord|part
+тіки adv
+тіко adv
 тілько adv|conj:subord|part
+тотой /adj_pron :&pron:dem  #> той
 тра noninfl:&predic
 травознай /n20.a.p.<
 трансфлюксор /n20.a.p.ke
 тридесять numr:p:v_naz/v_zna
 трясцяма noninfl:&predic
+тя noun:anim:s:v_rod/v_zna:&pron:pers:2     #> тебе
 тяготіти /v2.cf.advp :imperf
 угощати /v2.cf.advp :imperf
 удвійці adv:v-u
@@ -467,6 +491,8 @@
 хватаний /adj
 хибань part
 хляпавка /n10
+холєра noninfl:&insert:coll
+холєра /n10 :coll
 холоднаво adv:&predic
 хоть conj:subord
 хоть part
@@ -474,6 +500,8 @@
 хресійбо intj
 хургон /n20.a.p
 цвітник /n20.a.p
+цего noun:inanim:n:v_rod:&pron:dem  #> цього
+ци conj:coord:subord        #> чи
 циганів циган noun:anim:p:v_rod/v_zna
 цирулик /n20.a.p.<
 цифір /n32
