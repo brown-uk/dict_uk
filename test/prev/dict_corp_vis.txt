@@ -1597,6 +1597,7 @@
   вим'ї noun:inanim:n:v_mis
   вим'ю noun:inanim:n:v_mis
   вим'я noun:inanim:n:v_kly
+  вимене noun:inanim:n:v_kly:ua_2019
   вим'я noun:inanim:p:v_naz
   вим'їв noun:inanim:p:v_rod
   вим'ям noun:inanim:p:v_dav
@@ -3482,6 +3483,7 @@
   сім'ям noun:inanim:n:v_oru
   сімені noun:inanim:n:v_mis
   сім'я noun:inanim:n:v_kly
+  сімене noun:inanim:n:v_kly:ua_2019
   сімена noun:inanim:p:v_naz
   сімен noun:inanim:p:v_rod
   сіменам noun:inanim:p:v_dav
@@ -3789,6 +3791,23 @@
   уживанішими adj:p:v_oru:compc
   уживаніших adj:p:v_mis:compc
   уживаніші adj:p:v_kly:compc
+умілець noun:anim:m:v_naz
+  умільця noun:anim:m:v_rod
+  умільцеві noun:anim:m:v_dav
+  умільцю noun:anim:m:v_dav
+  умільця noun:anim:m:v_zna
+  умільцем noun:anim:m:v_oru
+  умільцеві noun:anim:m:v_mis
+  умільці noun:anim:m:v_mis
+  умільцю noun:anim:m:v_mis
+  умільче noun:anim:m:v_kly:ua_2019
+  умільці noun:anim:p:v_naz
+  умільців noun:anim:p:v_rod
+  умільцям noun:anim:p:v_dav
+  умільців noun:anim:p:v_zna
+  умільцями noun:anim:p:v_oru
+  умільцях noun:anim:p:v_mis
+  умільці noun:anim:p:v_kly
 усюди noun:inanim:p:v_naz:ns
   усюд noun:inanim:p:v_rod:ns
   усюдів noun:inanim:p:v_rod:ns

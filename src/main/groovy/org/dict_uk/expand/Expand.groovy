@@ -657,7 +657,7 @@ class Expand {
             for(Map.Entry<String,String> entry: additionalTags.entrySet()) {
                 String wordStr = words[i].word + " " + words[i].tagStr
                 if( wordStr.startsWith( entry.getKey() ) ) {
-                    if( entry.getKey() =~ / (noun|adj)/ && ! (wordStr =~ /(noun|adj).*:[mfn]:v_naz/) )
+                    if( entry.getKey() =~ / (noun|adj)/ && entry.getValue() != ":ua_2019" && ! (wordStr =~ /(noun|adj).*:[mfn]:v_naz/) )
                         continue
 
 					def entryValue = entry.getValue()
@@ -668,11 +668,11 @@ class Expand {
 
 						entryValue = entryValue[4..-1]
 					}
-						
+
                     log.debug("Applying ${entry.key} / ${entryValue} to " + words[i].toFlatString())
                     words[i].tagStr += entryValue
 					additionalTagsUnused.remove(entry.key)
-					
+
                     break;
                 }
             }
