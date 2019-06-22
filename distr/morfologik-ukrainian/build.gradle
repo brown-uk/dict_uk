@@ -182,7 +182,7 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
     def outFile="$outRulesDir/replace.txt"
 
-    inputs.files "$srcDir/twisters.lst", "$srcDir/subst.lst", "$srcDir/base-composite.lst"
+    inputs.files "$srcDir/twisters.lst", "$srcDir/ignored.lst", "$srcDir/subst.lst", "$srcDir/base-composite.lst"
     outputs.file outFile
 
     doLast {
