@@ -196,6 +196,9 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
     def inText = new File("$srcDir/twisters.lst").text
     def lines = inText.split("\n")
 
+    def inText1 = new File("$srcDir/ignored.lst").text
+    lines += inText1.split("\n")
+
     def inText2 = new File("$srcDir/subst.lst").text
     lines += inText2.split("\n")
 
