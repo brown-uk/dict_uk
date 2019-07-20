@@ -27,7 +27,7 @@ def sharedPanel = {
 println "reading..."
 
 @Field
-def data = new File('out/toadd/unknown_lemmas.txt').readLines()
+def data = new File(args.length >= 1 ? args[0] : 'out/toadd/unknown_lemmas.txt').readLines()
 //def data = new File('out/toadd/unknown.txt').readLines().collect{ it.replace('\t', '    ') }
 @Field
 def dict = new File('data/dict/base.lst').readLines()
