@@ -17,18 +17,22 @@ task prepareFiles {
         from("$hunspellDir/uk_UA.dic") {
             rename "uk_UA", "uk-UA"
         }
+        from "meta-xpi/README_uk_UA.txt"
         into "build/xpi/dictionaries"
     }
 
+//    copy {
+//        from "meta-xpi/_locales"
+//        into "build/xpi/_locales"
+//    }
+
     copy {
-        from "meta-xpi/README_uk_UA.txt"
-        from "meta-xpi/*.png"
-        from "../LICENSE"
-        from("meta-xpi/install.js") {
+//        from "../LICENSE"
+        from("meta-xpi/manifest.json") {
             filter(ReplaceTokens, tokens: [VERSION: project.version])
         }
-        from("meta-xpi/install.rdf") {
-            filter(ReplaceTokens, tokens: [VERSION: project.version])
+        from("meta-xpi/") {
+            include "*.png"
         }
         into "build/xpi"
     }
