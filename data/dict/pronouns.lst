@@ -381,11 +381,9 @@
 
 інше /n2adj1 :inanim:&pron:def
 інший /adj :&pron:def
-інший /n2adj1.f.p.< :xp1:&pron:def
-інший /n2adj1.f.p :inanim:xp2:&pron:def
+інший /n2adj1.f.p.< :&pron:def
 кожний /adj :&pron:gen
-кожний /n2adj1.f.p.< :xp1:&pron:gen
-кожний /n2adj1.f.p :inanim:xp2:&pron:gen
+кожний /n2adj1.f.p.< :&pron:gen
 
 
 кудись adv:&pron:ind
