@@ -99,7 +99,7 @@ class TaggedWordlist {
 
 		for(String filename in files) {
 
-			def fn = new File(filename).name
+			String fn = new File(filename).name
 
 			String extra_tags
 			if( fn in extra_tag_map ) {
@@ -109,7 +109,7 @@ class TaggedWordlist {
 				extra_tags = ""
 			}
 
-			def detectProperNoun = (fn =~ /(name.*|alt|geo.*)\.lst/)
+			boolean detectProperNoun = (fn =~ /(name.*|alt|geo.*)\.lst/).find()
 
 			new File(filename).eachLine(StandardCharsets.UTF_8.name()) { String line ->
 
