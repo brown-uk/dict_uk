@@ -46,7 +46,7 @@ class ExpandAll {
 			}
 			else {
 				def tagged_wordlist = new TaggedWordlist()
-				out = tagged_wordlist.process_input([dic_file.getAbsolutePath()])
+				out = tagged_wordlist.processInput([dic_file.getAbsolutePath()])
 			}
 
 			log.info("Processing file {}, {} lines", dic_file.getName(), out.size())
