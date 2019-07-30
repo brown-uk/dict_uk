@@ -29,7 +29,6 @@ class Expand {
 
 	static final Pattern cf_flag_pattern = ~ /(vr?)[1-6]\.cf/	 // no v5
 	static final Pattern is_pattern = ~ /(vr?)[1-9]\.is/
-	static final Pattern pattr_pattern = ~ /n[0-9]+\.patr/
 //	Pattern default_kly_u_pattern = ~ /([^бвджзлмнпстфц]|[аеиу]р)$/
 	static final Pattern default_kly_u_pattern = ~ /[^бвджзлмнпрстфц]$/ // гґйкрхчшщ
 //	static final Pattern default_kly_u_soft_pattern = ~ /[аеиу]р$/
@@ -79,9 +78,6 @@ class Expand {
 		if( affixFlag2.contains(".is") ) {
 			affixFlag2 = is_pattern.matcher(affixFlag2).replaceFirst('$1.is')
 		}
-		if( affixFlag2.contains(".patr") ) {
-			affixFlag2 = pattr_pattern.matcher(affixFlag2).replaceFirst('n.patr')
-		}
 		return affixFlag2
 	}
 
@@ -95,6 +91,7 @@ class Expand {
 		def mainGroup = affixSubGroups[0]
 
 		String pos = util.get_pos(mainGroup, modifiers)
+		assert pos != null, "$mainGroup, $modifiers"
 		def base_tag = base_tags.get_base_tags(word, "", affixFlags, extra)
 
 		DicEntry base_word = new DicEntry(word, word, pos + base_tag)
@@ -147,6 +144,8 @@ class Expand {
 
 					for(Suffix affixItem in affixGroup.affixes) {
 						// DL - не додавати незавершену форму дієприслівника для завершеної форми дієслова
+						assert pos != null
+						assert extra != null, "$pos + $extra"
 						if( pos.startsWith("verb") && extra.contains(":perf")
 								&& (affixItem.tags.startsWith("advp:imperf")
 								|| affixItem.tags.startsWith("advp:rev:imperf"))) {
@@ -156,10 +155,6 @@ class Expand {
 
 						String deriv = affixItem.apply(word)
 						String tags = affixItem.tags
-
-						if( affixFlag2 == "n.patr") {
-							tags += ":prop:pname"
-						}
 
 						words.add(new DicEntry(deriv, word, tags))
 						appliedCnt += 1
@@ -488,14 +483,11 @@ class Expand {
 				}
 				
 				if( line.tagStr.contains("/v_kly") ) {
-					if( main_flag.startsWith("/n1")) { // Єремія /n10.ko.patr.<
-						base_word = line.lemma
-					}
 					
 					boolean klyKeKo = flags.contains(".ko") || flags.contains(".ke")
 					if( klyKeKo ) {
-						if( ! flags.contains(".ku") && ! line.tagStr.contains(":pname") ) {		// лишаємо Івановичу v_kly (для Іван ...ke)
-							line.setTagStr( line.tagStr.replace("/v_kly", "") )
+						if( ! flags.contains('.ku') ) {
+							line.setTagStr( line.tagStr.replace('/v_kly', '') )
 						}
 					}
 					else {
@@ -706,18 +698,49 @@ class Expand {
 			def base = parts[0..-2].join(" ")
 			lineGroups = Arrays.asList(parts[-1].split(/\|/)).collect{ new LineGroup(lineGroup, base + " " + it) }
 		}
+		// split patr into separate lemma groups
+		else if ( lineGroup.line.contains(".patr") ) {
+			lineGroups = [new LineGroup(lineGroup, lineGroup.line.replaceFirst(/\.patr/, ''))]
+
+			try {
+				String[] parts = lineGroup.line.split(" ", 2)
+				def extra = parts[1].contains(" :") 
+					?  parts[1].replaceFirst(/.*? :/, ':').replaceAll(/:xp[0-9]/, '').replaceFirst(/ *#.*/, '') 
+					: ""
+
+				def expanded = expand_suffixes(parts[0], "patr.<", [:], "")
+				
+				def mascPatrGroups = expanded
+				.findAll{ it.tagStr.contains(':m:v_naz') }
+				.collect { new LineGroup(lineGroup, it.word + " /n20.a.< :prop:pname" + extra, null) }
+				assert mascPatrGroups.size() >= 1 && mascPatrGroups.size() <= 2
+
+				lineGroups += mascPatrGroups
+				
+				def femPatrGroups = expanded
+				.findAll{ it.tagStr.contains(':f:v_naz') }
+				.collect { new LineGroup(lineGroup, it.word + " /n10.< :prop:pname" + extra, null) }
+
+				assert femPatrGroups.size() == 1
+
+				lineGroups += femPatrGroups
+			}
+			catch(e) {
+				e.printStackTrace()
+			}
+		}
 		else {
 			lineGroups = [lineGroup]
 		}
-//		else {
-//			lines = affix.expand_alts([line], "|")
-//		}
 
 		def out_lines = []
 		for(LineGroup lineGroup2 in lineGroups) {
-			out_lines.addAll(preprocess2(lineGroup2.line).collect { String line ->
-				new LineGroup(lineGroup2, line)
-			})
+			out_lines.addAll(
+				preprocess2(lineGroup2.line)
+				.collect { String line ->
+					new LineGroup(lineGroup2, line)
+				}
+			)
 		}
 
 		return out_lines
@@ -734,12 +757,6 @@ class Expand {
 		String flags = lineParts[1]
 		String word = lineParts[0]
 		
-		// patronym plurals
-		// TODO: and we need to split lemmas
-//		if( line.contains(".patr") ) {
-//			line = line.replace(".patr", ".patr.patr_pl")
-//		}
-
 		
 		if( flags.startsWith("/<") ) {
 		
@@ -826,7 +843,7 @@ class Expand {
 		return out_lines
 	}
 
-	private static final Pattern PATTR_BASE_LEMMAN_PATTERN = ~ ":[mf]:v_naz:.*?pname"
+//	private static final Pattern PATTR_BASE_LEMMAN_PATTERN = ~ ":[mf]:v_naz:.*?pname"
 	
 	@CompileStatic
 	private List<DicEntry> post_process_sorted(List<DicEntry> lines) {
@@ -835,15 +852,16 @@ class Expand {
 		def prev_line = ""
 		def last_lemma
 		for(DicEntry line in lines) {
-			if( line.tagStr.contains(":pname") ) {
-				if( PATTR_BASE_LEMMAN_PATTERN.matcher(line.tagStr).find() ) {
-					last_lemma = line.word //split()[0]
-					//                System.err.printf("promoting patr to lemma %s for %s\n", last_lema, line)
-				}
-//				line = replace_base(line, last_lemma)
-				line.lemma = last_lemma
-			}
-			else if( line.tagStr.contains("lname") 
+//			if( line.tagStr.contains(":pname") ) {
+//				if( PATTR_BASE_LEMMAN_PATTERN.matcher(line.tagStr).find() ) {
+//					last_lemma = line.word //split()[0]
+//					//                System.err.printf("promoting patr to lemma %s for %s\n", last_lema, line)
+//				}
+////				line = replace_base(line, last_lemma)
+//				line.lemma = last_lemma
+//			}
+//			else 
+			if( line.tagStr.contains("lname")
 					&& line.tagStr.contains(":f:") 
 					&& ! line.tagStr.contains(":nv") ) {
 				if( line.tagStr.contains(":f:v_naz") ) {
@@ -1245,35 +1263,7 @@ class Expand {
 	private int fatalErrorCount = 0
 	private int nonFatalErrorCount = 0
 	private int double_form_cnt = 0
-	
-	private static class LineGroup {
-		String line
-		String comment
-		List<String> extraLines
-		
-		public LineGroup() {
-		}
 
-		public LineGroup(String line) {
-			this.line = line
-		}
-		
-		public LineGroup(LineGroup lineGroup) {
-			this.line = lineGroup.line
-			this.comment = lineGroup.comment
-			this.extraLines = lineGroup.extraLines
-		}
-
-		public LineGroup(LineGroup lineGroup, String newLine) {
-			this.line = newLine
-			this.comment = lineGroup.comment
-			this.extraLines = lineGroup.extraLines
-		}
-		
-		String toString() {
-			line + " / " + extraLines + (comment ? " # " + comment : "") 
-		}
-	}
 	
 
 	@TypeChecked

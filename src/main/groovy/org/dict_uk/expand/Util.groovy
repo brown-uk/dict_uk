@@ -65,6 +65,7 @@ class Util {
 		"n": "noun",
 		"vr": "verb",
 		"v": "verb",
+		"patr": "noun",
 		"<": "noun"
 	]
 
@@ -74,7 +75,7 @@ class Util {
 	@CompileStatic
 	String get_pos(String posFlag, Map<String,String> modifiers) {
 		posFlag = POS_PATTERN.matcher(posFlag).replaceAll("")
-		//    logger.info("\t\t"  + posFlag + ", " + modifiers)
+//		log.debug("\t\t"  + posFlag + ", " + modifiers)
 
 		String pos
 		if( false && "pos" in modifiers ) {

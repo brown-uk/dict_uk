@@ -18,8 +18,8 @@ def extra_tag_map = [
 ]
 
 
-
-def process_line_exceptions(line) {
+@CompileStatic
+def process_line_exceptions(String line) {
 
     if( ! line.contains(" ") || line ==~ ".*[а-яіїєґА-ЯІЇЄҐ] /.*" )
         return [line]

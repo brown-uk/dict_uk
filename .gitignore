@@ -5,6 +5,7 @@
 test/*.txt
 out/prev/*
 out/*.txt
+out/toadd/*
 .*
 .classpath
 .project

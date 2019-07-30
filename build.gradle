@@ -297,6 +297,8 @@ task testExpand(type: JavaExec, dependsOn: [reverseAffix, autoGen, classes]) {
     args "-dict", "dict"
     args opts.split()
 
+//    jvmArgs "-XX:+FlightRecorder -XX:StartFlightRecording=disk=true,dumponexit=true,filename=recording.jfr".split()
+
     doLast {
         def file="dict_corp_lt.txt"
         def noTestOutputChange = getAdjustedText("$workingDir/$file") == getAdjustedText("$workingDir/prev/$file")
@@ -330,7 +332,7 @@ task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, autoGen, testExpand
     args opts.split()
 
     jvmArgs "-Xms4000m -Xmx4500m".split()
-//    jvmArgs "-XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:FlightRecorderOptions=defaultrecording=true,dumponexit=true,dumponexitpath=dumponexit.jfr".split()
+//    jvmArgs "-XX:+FlightRecorder -XX:StartFlightRecording=disk=true,dumponexit=true,filename=recording.jfr".split()
 //    jvmArgs "-agentlib:jdwp=transport=dt_socket,server=y,address=8000,suspend=n"
 }
 

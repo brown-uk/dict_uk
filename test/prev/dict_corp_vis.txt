@@ -90,6 +90,33 @@
   Августо noun:anim:m:v_oru:nv:np:prop:fname
   Августо noun:anim:m:v_mis:nv:np:prop:fname
   Августо noun:anim:m:v_kly:nv:np:prop:fname
+Авґустин noun:anim:m:v_naz:ua_2019:prop:fname
+  Авґустина noun:anim:m:v_rod:ua_2019:prop:fname
+  Авґустинові noun:anim:m:v_dav:ua_2019:prop:fname
+  Авґустину noun:anim:m:v_dav:ua_2019:prop:fname
+  Авґустина noun:anim:m:v_zna:ua_2019:prop:fname
+  Авґустином noun:anim:m:v_oru:ua_2019:prop:fname
+  Авґустині noun:anim:m:v_mis:ua_2019:prop:fname
+  Авґустинові noun:anim:m:v_mis:ua_2019:prop:fname
+  Авґустину noun:anim:m:v_mis:ua_2019:prop:fname
+  Авґустине noun:anim:m:v_kly:ua_2019:prop:fname
+Авґустинівна noun:anim:f:v_naz:prop:pname:ua_2019
+  Авґустинівни noun:anim:f:v_rod:prop:pname:ua_2019
+  Авґустинівні noun:anim:f:v_dav:prop:pname:ua_2019
+  Авґустинівну noun:anim:f:v_zna:prop:pname:ua_2019
+  Авґустинівною noun:anim:f:v_oru:prop:pname:ua_2019
+  Авґустинівні noun:anim:f:v_mis:prop:pname:ua_2019
+  Авґустинівно noun:anim:f:v_kly:prop:pname:ua_2019
+Авґустинович noun:anim:m:v_naz:prop:pname:ua_2019
+  Авґустиновича noun:anim:m:v_rod:prop:pname:ua_2019
+  Авґустиновичеві noun:anim:m:v_dav:prop:pname:ua_2019
+  Авґустиновичу noun:anim:m:v_dav:prop:pname:ua_2019
+  Авґустиновича noun:anim:m:v_zna:prop:pname:ua_2019
+  Авґустиновичем noun:anim:m:v_oru:prop:pname:ua_2019
+  Авґустиновичеві noun:anim:m:v_mis:prop:pname:ua_2019
+  Авґустиновичі noun:anim:m:v_mis:prop:pname:ua_2019
+  Авґустиновичу noun:anim:m:v_mis:prop:pname:ua_2019
+  Авґустиновичу noun:anim:m:v_kly:prop:pname:ua_2019
 авеню noun:inanim:f:v_naz:nv
   авеню noun:inanim:f:v_rod:nv
   авеню noun:inanim:f:v_dav:nv
@@ -1027,16 +1054,6 @@
   веляріями noun:anim:p:v_oru:ns
   веляріях noun:anim:p:v_mis:ns
   велярії noun:anim:p:v_kly:ns
-Венедикт noun:anim:m:v_naz:prop:fname
-  Венедикта noun:anim:m:v_rod:prop:fname
-  Венедиктові noun:anim:m:v_dav:prop:fname
-  Венедикту noun:anim:m:v_dav:prop:fname
-  Венедикта noun:anim:m:v_zna:prop:fname
-  Венедиктом noun:anim:m:v_oru:prop:fname
-  Венедикті noun:anim:m:v_mis:prop:fname
-  Венедиктові noun:anim:m:v_mis:prop:fname
-  Венедикту noun:anim:m:v_mis:prop:fname
-  Венедикте noun:anim:m:v_kly:prop:fname
 Венедиктів adj:m:v_naz
   Венедиктового adj:m:v_rod
   Венедиктовому adj:m:v_dav
@@ -1069,23 +1086,6 @@
   Венедиктовими adj:p:v_oru
   Венедиктових adj:p:v_mis
   Венедиктові adj:p:v_kly
-Венедиктівна noun:anim:f:v_naz:prop:pname
-  Венедиктівни noun:anim:f:v_rod:prop:pname
-  Венедиктівні noun:anim:f:v_dav:prop:pname
-  Венедиктівну noun:anim:f:v_zna:prop:pname
-  Венедиктівною noun:anim:f:v_oru:prop:pname
-  Венедиктівні noun:anim:f:v_mis:prop:pname
-  Венедиктівно noun:anim:f:v_kly:prop:pname
-Венедиктович noun:anim:m:v_naz:prop:pname
-  Венедиктовича noun:anim:m:v_rod:prop:pname
-  Венедиктовичеві noun:anim:m:v_dav:prop:pname
-  Венедиктовичу noun:anim:m:v_dav:prop:pname
-  Венедиктовича noun:anim:m:v_zna:prop:pname
-  Венедиктовичем noun:anim:m:v_oru:prop:pname
-  Венедиктовичеві noun:anim:m:v_mis:prop:pname
-  Венедиктовичі noun:anim:m:v_mis:prop:pname
-  Венедиктовичу noun:anim:m:v_mis:prop:pname
-  Венедиктовичу noun:anim:m:v_kly:prop:pname
 Вентурі noun:anim:m:v_naz:nv:np:prop:lname
   Вентурі noun:anim:m:v_rod:nv:np:prop:lname
   Вентурі noun:anim:m:v_dav:nv:np:prop:lname
@@ -2253,6 +2253,7 @@
   Єремійовича noun:anim:m:v_zna:prop:pname
   Єремійовичем noun:anim:m:v_oru:prop:pname
   Єремійовичеві noun:anim:m:v_mis:prop:pname
+  Єремійовичі noun:anim:m:v_mis:prop:pname
   Єремійовичу noun:anim:m:v_mis:prop:pname
   Єремійовичу noun:anim:m:v_kly:prop:pname
 Єремія noun:anim:m:v_naz:prop:fname
