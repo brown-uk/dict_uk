@@ -32,7 +32,10 @@ dependencies {
     compile group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
     compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
     compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
-    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.2'
+//    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.2'
+
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.1'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.1'
 
 //    groovyScript localGroovy()
 }

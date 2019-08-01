@@ -36,7 +36,7 @@ public class UkDictComparator implements Comparator<String> {
 	 * @return
 	 */
 	public static String getSortKey(String str) {
-		StringBuilder ignoreChars = new StringBuilder();
+		StringBuilder ignoreChars = new StringBuilder(6);
 		StringBuilder tailCaps = new StringBuilder(str.length() + 1);
 		StringBuilder normChars = new StringBuilder(str.length() + 1 + tailCaps.capacity() + ignoreChars.capacity());
 		

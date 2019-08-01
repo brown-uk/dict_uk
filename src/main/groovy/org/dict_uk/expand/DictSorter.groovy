@@ -53,7 +53,7 @@ class DictSorter {
 	static final Pattern re_xv_sub = Pattern.compile("^([^:]+)(.*)(:x.[1-9])")
 	static final Pattern re_pron_sub = Pattern.compile("^([^:]+)(.*)(:&pron:[^:]+)")
 
-	static final Pattern LOWERING_TAGS_RE = Pattern.compile(/(:alt|:rare|:coll|:subst|:bad|:var|:ua_....)/)  // |:short
+	static final Pattern LOWERING_TAGS_RE = Pattern.compile(/:(alt|rare|coll|subst|bad|var|ua_....)/)  // |:short
 	static final Pattern GEN_RE = Pattern.compile(/:([mfnsp])(:|$)/)
 	static final Pattern VIDM_RE = Pattern.compile(/:(v_...)/)
 
@@ -78,6 +78,7 @@ class DictSorter {
 		boolean hasVidm = false
 		
 		if( tags.startsWith("adj:") ) {
+			
 			if( ! tags.contains(":comp") ) {
 				// make sure :short without :combp sorts ok with adjective base that has compb
 				if( tags.contains(":short") ) {

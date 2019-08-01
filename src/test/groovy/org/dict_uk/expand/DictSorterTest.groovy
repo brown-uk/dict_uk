@@ -17,13 +17,13 @@ public class DictSorterTest extends GroovyTestCase {
 	
 	@Test
 	void testTagSortKey() {
-		assert dictSorter.tag_sort_key("noun:inanim:m:v_dav", "порт") == "noun:inanim:00:30"
-		assert dictSorter.tag_sort_key("noun:inanim:m:v_dav:rare", "порт") == "noun:inanim:00:31"
-		assert dictSorter.tag_sort_key("noun:anim:m:v_naz:lname", "Адамишин") == "noun:anim:lname:00:10"
-		assert dictSorter.tag_sort_key("noun:anim:f:v_naz:lname", "Адамишин") == "noun:anim:lname:90:10"
-		assert dictSorter.tag_sort_key("numr:f:v_naz", "один") == "numr:10:10"
-		assert dictSorter.tag_sort_key("adj:m:v_zna:ranim", "азотистоводневого") == "adj:compb:00:40"
-		assert dictSorter.tag_sort_key("adj:m:v_zna:rinanim", "азотистоводневий") == "adj:compb:00:41"
+		assert dictSorter.tag_sort_key("noun:inanim:m:v_dav", "порт") == "noun:inanim:0030"
+		assert dictSorter.tag_sort_key("noun:inanim:m:v_dav:rare", "порт") == "noun:inanim:0031"
+		assert dictSorter.tag_sort_key("noun:anim:m:v_naz:lname", "Адамишин") == "noun:anim:lname:0010"
+		assert dictSorter.tag_sort_key("noun:anim:f:v_naz:lname", "Адамишин") == "noun:anim:lname:9010"
+		assert dictSorter.tag_sort_key("numr:f:v_naz", "один") == "numr:1010"
+		assert dictSorter.tag_sort_key("adj:m:v_zna:ranim", "азотистоводневого") == "adj:compb:0040"
+		assert dictSorter.tag_sort_key("adj:m:v_zna:rinanim", "азотистоводневий") == "adj:compb:0041"
 		assert dictSorter.tag_sort_key("verb:imperf:inf", "порт") == "verb:imperf:10:0"
 		assert dictSorter.tag_sort_key("verb:imperf:inf:coll:rare", "порт") == "verb:imperf:10:2"
 		assert dictSorter.tag_sort_key("verb:perf:past:m:xp1", "вернув") == "verb:xp1:perf:80:00:0"
