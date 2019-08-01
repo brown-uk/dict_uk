@@ -488,6 +488,8 @@
 Білоруси Білорусь noun:inanim:f:v_rod:prop:geo:ua_2019
 Руси Русь noun:f:v_rod:prop:ua_2019
 
+смерти смерть noun:inanim:f:v_rod:rare
+
 
 болиш боліти verb:imperf:pres:s:2:xp2
 
@@ -643,9 +645,6 @@
 кадовбах кадівб noun:inanim:p:v_mis:rare
 кадовби кадівб noun:inanim:p:v_kly:rare
 
-
-смерти смерть noun:inanim:f:v_rod/v_dav/v_mis:rare
-крови кров noun:inanim:f:v_rod/v_dav/v_mis:rare
 
 
 #
