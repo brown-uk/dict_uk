@@ -83,6 +83,38 @@
   абордажі noun:inanim:m:v_mis
   абордажу noun:inanim:m:v_mis
   абордаже noun:inanim:m:v_kly
+абстрагуючий adj:m:v_naz:&adjp:actv:imperf:bad
+  абстрагуючого adj:m:v_rod:&adjp:actv:imperf:bad
+  абстрагуючому adj:m:v_dav:&adjp:actv:imperf:bad
+  абстрагуючого adj:m:v_zna:ranim:&adjp:actv:imperf:bad
+  абстрагуючий adj:m:v_zna:rinanim:&adjp:actv:imperf:bad
+  абстрагуючим adj:m:v_oru:&adjp:actv:imperf:bad
+  абстрагуючім adj:m:v_mis:&adjp:actv:imperf:bad
+  абстрагуючому adj:m:v_mis:&adjp:actv:imperf:bad
+  абстрагуючий adj:m:v_kly:&adjp:actv:imperf:bad
+  абстрагуюча adj:f:v_naz:&adjp:actv:imperf:bad
+  абстрагуючої adj:f:v_rod:&adjp:actv:imperf:bad
+  абстрагуючій adj:f:v_dav:&adjp:actv:imperf:bad
+  абстрагуючу adj:f:v_zna:&adjp:actv:imperf:bad
+  абстрагуючою adj:f:v_oru:&adjp:actv:imperf:bad
+  абстрагуючій adj:f:v_mis:&adjp:actv:imperf:bad
+  абстрагуюча adj:f:v_kly:&adjp:actv:imperf:bad
+  абстрагуюче adj:n:v_naz:&adjp:actv:imperf:bad
+  абстрагуючого adj:n:v_rod:&adjp:actv:imperf:bad
+  абстрагуючому adj:n:v_dav:&adjp:actv:imperf:bad
+  абстрагуюче adj:n:v_zna:&adjp:actv:imperf:bad
+  абстрагуючим adj:n:v_oru:&adjp:actv:imperf:bad
+  абстрагуючім adj:n:v_mis:&adjp:actv:imperf:bad
+  абстрагуючому adj:n:v_mis:&adjp:actv:imperf:bad
+  абстрагуюче adj:n:v_kly:&adjp:actv:imperf:bad
+  абстрагуючі adj:p:v_naz:&adjp:actv:imperf:bad
+  абстрагуючих adj:p:v_rod:&adjp:actv:imperf:bad
+  абстрагуючим adj:p:v_dav:&adjp:actv:imperf:bad
+  абстрагуючих adj:p:v_zna:ranim:&adjp:actv:imperf:bad
+  абстрагуючі adj:p:v_zna:rinanim:&adjp:actv:imperf:bad
+  абстрагуючими adj:p:v_oru:&adjp:actv:imperf:bad
+  абстрагуючих adj:p:v_mis:&adjp:actv:imperf:bad
+  абстрагуючі adj:p:v_kly:&adjp:actv:imperf:bad
 Августо noun:anim:m:v_naz:nv:np:prop:fname
   Августо noun:anim:m:v_rod:nv:np:prop:fname
   Августо noun:anim:m:v_dav:nv:np:prop:fname
@@ -458,14 +490,14 @@
   бачено verb:imperf:impers
 безпечніше adv:compc:&predic
 безпечно adv:compb:&predic
-безчерепні noun:anim:p:v_naz:ns
+безчерепні noun:anim:p:v_naz
   безчерепних noun:anim:p:v_rod:ns
   безчерепним noun:anim:p:v_dav:ns
   безчерепних noun:anim:p:v_zna:ns
   безчерепні noun:anim:p:v_zna:ns
   безчерепними noun:anim:p:v_oru:ns
   безчерепних noun:anim:p:v_mis:ns
-  безчерепні noun:anim:p:v_kly:ns
+  безчерепні noun:anim:p:v_kly
 бентеживши advp:imperf
 бентежити verb:imperf:inf
   бентеж verb:imperf:impr:s:2
@@ -527,6 +559,34 @@
   блохами noun:anim:p:v_oru
   блохах noun:anim:p:v_mis
   блохи noun:anim:p:v_kly
+БМВ noun:inanim:m:v_naz:nv:abbr    # :tm       # BMW
+  БМВ noun:inanim:m:v_rod:nv:abbr
+  БМВ noun:inanim:m:v_dav:nv:abbr
+  БМВ noun:inanim:m:v_zna:nv:abbr
+  БМВ noun:inanim:m:v_oru:nv:abbr
+  БМВ noun:inanim:m:v_mis:nv:abbr
+  БМВ noun:inanim:m:v_kly:nv:abbr
+  БМВ noun:inanim:f:v_naz:nv:abbr    # :tm       # BMW
+  БМВ noun:inanim:f:v_rod:nv:abbr
+  БМВ noun:inanim:f:v_dav:nv:abbr
+  БМВ noun:inanim:f:v_zna:nv:abbr
+  БМВ noun:inanim:f:v_oru:nv:abbr
+  БМВ noun:inanim:f:v_mis:nv:abbr
+  БМВ noun:inanim:f:v_kly:nv:abbr
+  БМВ noun:inanim:n:v_naz:nv:abbr    # :tm       # BMW
+  БМВ noun:inanim:n:v_rod:nv:abbr
+  БМВ noun:inanim:n:v_dav:nv:abbr
+  БМВ noun:inanim:n:v_zna:nv:abbr
+  БМВ noun:inanim:n:v_oru:nv:abbr
+  БМВ noun:inanim:n:v_mis:nv:abbr
+  БМВ noun:inanim:n:v_kly:nv:abbr
+  БМВ noun:inanim:p:v_naz:nv:abbr
+  БМВ noun:inanim:p:v_rod:nv:abbr
+  БМВ noun:inanim:p:v_dav:nv:abbr
+  БМВ noun:inanim:p:v_zna:nv:abbr
+  БМВ noun:inanim:p:v_oru:nv:abbr
+  БМВ noun:inanim:p:v_mis:nv:abbr
+  БМВ noun:inanim:p:v_kly:nv:abbr
 Богородиця noun:anim:f:v_naz:prop
   Богородиці noun:anim:f:v_rod:prop
   Богородиці noun:anim:f:v_dav:prop
@@ -2016,14 +2076,14 @@
   гроші noun:inanim:m:v_mis
   грошу noun:inanim:m:v_mis
   грошу noun:inanim:m:v_kly
-грясти verb:imperf:inf
-  гряду verb:imperf:pres:s:1
-  грядеш verb:imperf:pres:s:2
-  гряде verb:imperf:pres:s:3
-  грядемо verb:imperf:pres:p:1
-  грядем verb:imperf:pres:p:1:subst
-  грядете verb:imperf:pres:p:2
-  грядуть verb:imperf:pres:p:3
+грясти verb:imperf:inf:bad
+  гряду verb:imperf:pres:s:1:bad
+  грядеш verb:imperf:pres:s:2:bad
+  гряде verb:imperf:pres:s:3:bad
+  грядемо verb:imperf:pres:p:1:bad
+  грядем verb:imperf:pres:p:1:bad:subst
+  грядете verb:imperf:pres:p:2:bad
+  грядуть verb:imperf:pres:p:3:bad
 Гулак-Артемовський noun:anim:m:v_naz:prop:lname
   Гулака-Артемовського noun:anim:m:v_rod:prop:lname
   Гулакові-Артемовському noun:anim:m:v_dav:prop:lname
@@ -3293,6 +3353,21 @@
   постріляла verb:perf:past:f
   постріляло verb:perf:past:n
   постріляли verb:perf:past:p
+приключитися verb:rev:perf:inf:bad
+  приключитись verb:rev:perf:inf:bad
+  приключись verb:rev:perf:impr:s:2:bad
+  приключися verb:rev:perf:impr:s:2:bad
+  приключіться verb:rev:perf:impr:p:2:bad
+  приключиться verb:rev:perf:futr:s:3:bad
+  приключаться verb:rev:perf:futr:p:3:bad
+  приключивсь verb:rev:perf:past:m:bad
+  приключився verb:rev:perf:past:m:bad
+  приключилась verb:rev:perf:past:f:bad
+  приключилася verb:rev:perf:past:f:bad
+  приключилось verb:rev:perf:past:n:bad
+  приключилося verb:rev:perf:past:n:bad
+  приключились verb:rev:perf:past:p:bad
+  приключилися verb:rev:perf:past:p:bad
 проектовий adj:m:v_naz:ua_1992
   проектового adj:m:v_rod:ua_1992
   проектовому adj:m:v_dav:ua_1992

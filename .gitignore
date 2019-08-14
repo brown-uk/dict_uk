@@ -9,3 +9,4 @@ out/toadd/*
 .*
 .classpath
 .project
+bin

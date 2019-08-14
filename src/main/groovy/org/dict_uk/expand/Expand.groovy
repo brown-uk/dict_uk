@@ -674,7 +674,7 @@ class Expand {
 //	private static final Pattern tag_split0_re = Pattern.compile(/[^ ]+$/)
 
 	@CompileStatic
-	private List<LineGroup> preprocess(LineGroup lineGroup) {
+	public List<LineGroup> preprocess(LineGroup lineGroup) {
 		List<LineGroup> lineGroups
 
 		if( lineGroup.line.count(" /") > 1 ) {
@@ -1015,6 +1015,11 @@ class Expand {
 				Matcher matcher = (line =~ / \+cs=([^ ]+)/)
 				matcher.find()
 				word = matcher.group(1)
+				
+				if( word.endsWith('е') && main_word.endsWith('й') ) {
+					log.error "bad +cs: $word for $main_word"
+					System.exit(1)
+				}
 			}
 			else {
 				word = main_word[0..<-2] + "іший"

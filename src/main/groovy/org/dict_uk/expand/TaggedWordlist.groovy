@@ -66,19 +66,26 @@ class TaggedWordlist {
 			assert false, "hit unknown tag line: >>" + line + "<<"
 		}
 
+		
 		//if extra_tags != "" && not re.match(".* [a-z].*$", out_line):
-		if( extra_tags != "" && (! (out_line =~ / [:a-z]/) || out_line.contains("g=")) ) {
-			extra_tags = " " + extra_tags
-		}
-		else if( line.startsWith(" +") ) {
-			extra_tags = ""
+		if( extra_tags ) {
+
+			if( ! out_line.contains("tag=") && out_line.contains("|") ) {
+				out_line = out_line.replace("|", extra_tags + "|") + extra_tags
+			}
+			else
+			if ( out_line =~ / :[a-z&+]/ ) {
+				out_line = out_line.replaceFirst(/ :[^ ]*/, '$0'+extra_tags)
+			}
+			else 
+			if (out_line.contains(' /') /*|| out_line =~ /[gp]=/*/ ) {
+				out_line += " " + extra_tags
+			}
+			else {
+				out_line += extra_tags
+			}
 		}
 
-		if( ! out_line.contains("tag=") && out_line.contains("|") ) {
-			out_line = out_line.replace("|", extra_tags + "|")
-		}
-
-		out_line = out_line + extra_tags
 		if( out_line.contains(" \\ ") ) {
 			out_line = out_line.replace(" \\ ", " ") + " \\"
 		}
