@@ -1,6 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'groovy'
-
+apply plugin: 'eclipse'
 
 String outDir = "build/hunspell"
 version=new File("${projectDir}/../../VERSION").text.trim()
@@ -32,6 +32,7 @@ sourceSets {
     }
     resources {
         srcDir '../../src/main/resources'
+        srcDir 'src/main/resources'
     }
   }
 }
@@ -73,9 +74,7 @@ task hunspellForSearch (type: JavaExec, dependsOn: classes) {
 }
 
 
-
-
-task testHunspell (type: Exec) { //, dependsOn: hunspell) {
+task testHunspell1(type: Exec) { //, dependsOn: hunspell) {
     def txt = "головатого білого білолицьому ницого"
     txt += " швидко вже"
     txt += " хата хатами дами вимені воріт Карпат кайданів вовчища селом сіл агрошкіл автовізка"
@@ -84,16 +83,36 @@ task testHunspell (type: Exec) { //, dependsOn: hunspell) {
     txt += " абонувавши абонуючи хроплячи"
     txt += " заправлено казано вимито метено введено"
     txt += " обікрав вжену уженіться"
+    txt += " Абакумовича Абакумівни Абакума"
     txt += " Білгород-Дністровського Захер-Мазоха Захера-Мазоха"
     txt += " відіб\\'ю"
-    txt += " білолицого пілі відб\\'ю"
-    def cmd = "echo $txt | hunspell -d $outDir/uk_UA"
+
+    def cmd = "echo $txt | hunspell -d $outDir/uk_UA | grep -E '^&'" + '; [ $? == 1 ]'
+    commandLine "sh", "-c", "${cmd}"
+}
+
+task testHunspell2 (type: Exec) { //, dependsOn: hunspell) {
+    def txt = " білолицого пілі відб\\'ю кккк"
+
+    def cmd = "echo $txt | hunspell -d $outDir/uk_UA | grep -E '^(\\+|\\*)'" + '; [ $? == 1 ]'
+    commandLine "sh", "-c", "${cmd}"
+}
+
+task testHunspell(dependsOn: [testHunspell1, testHunspell2]) {
+}
+
+task getSpellWords (type: Exec) {
+    inputs.files "${projectDir}/../../out/dict_corp_lt.txt"
+    outputs.files "${projectDir}/build/words_spell.txt"
+
+    def cmd = "grep -vE 'noun:inanim:.:v_kly|:(bad|slang|verb.*?coll|advp:rev.*?rare|alt|subst|rare)|\\. ' ${projectDir}/../../out/dict_corp_lt.txt | cut -d ' ' -f 1 | sort | uniq -u > ${projectDir}/build/words_spell.txt"
 
     commandLine "sh", "-c", "${cmd}"
 }
 
-task testHunspellDirect (type: Exec) { //, dependsOn: hunspell) {
-    def cmd = "hunspell -d $outDir/uk_UA -l ../../out/words_spell.txt > hunspell.unknown.txt; wc -l hunspell.unknown.txt"
+
+task testHunspellDirect (type: Exec, dependsOn: getSpellWords) { //, dependsOn: hunspell) {
+    def cmd = "hunspell -d $outDir/uk_UA -l ${projectDir}/build/words_spell.txt > hunspell.unknown.txt; wc -l hunspell.unknown.txt"
 
     commandLine "sh", "-c", "${cmd}"
 }

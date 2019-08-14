@@ -34,7 +34,6 @@ def revFlagMap = [:]
 def toHunFlagMap = [:]
 def negativeMatchFlags = [:].withDefault{ [] }
 
-
 affixMap.each { flag, affixGroupMap ->
     reMapFlags.each { k,v ->
     	if( flag.startsWith(k) ) {
@@ -47,7 +46,9 @@ affixMap.each { flag, affixGroupMap ->
 def reMapFlagsRe = reMapFlags.keySet().join("|")
 
 affixMap.each { flag, affixGroupMap ->
-
+	if( flag == 'patr' )
+		return
+	
 	if( flag =~ /\.ku|n2[0-9].*\.u|patr_pl|/ + reMapFlagsRe )
 		return
 
@@ -78,11 +79,11 @@ affixMap.each { flag, affixGroupMap ->
 
 }
 
-new File('mapping.txt').text = revFlagMap*.toString().join("\n")
+new File('build/mapping.txt').text = revFlagMap*.toString().join("\n")
 
 println("Negative matches:\n\t" + negativeMatchFlags*.toString().join("\n\t"))
 
-def NONSPELL_TAG_LIST = ":(alt|bad|subst|uncontr|verb.*coll|slang)"
+def NONSPELL_TAG_LIST = ":(alt|bad|subst|uncontr|verb.*?coll|advp:rev.*?coll|slang)"
 
 if( "-forSearch" in args ) {
     println "Дозволяємо ненормативні форми для пошуку..."
@@ -230,11 +231,16 @@ flagMap.each{ flag, affixGroupItems ->
 
 		}
 	}
-
-	def header = "SFX $flag Y $cnt" //\t\t# " + revFlagMap[flag]
-	out += header
-	out += '\n'
-	out += body
+	
+	if( cnt ) {
+		def header = "SFX $flag Y $cnt" //\t\t# " + revFlagMap[flag]
+		out += header
+		out += '\n'
+		out += body
+	}
+	else {
+		System.err.println "NOTE: empty flag: $flag from " + revFlagMap[flag]
+	}
 }
 
 def fileHeader = new File('header/affix_header.txt').text
@@ -278,6 +284,9 @@ def lines = files.collect { file->
 		def extra = parts.size() > 3 ? ' ' + parts[3] : ''
 		return [parts[0] + ' ' + parts[1] + extra, parts[0] + ' ' + parts[2] + extra]
 	}
+	else if( it.contains('.patr') ) {
+		return expand.preprocess(new LineGroup(it)).collect { LineGroup lg -> lg.line }
+	}
 	return it
 }
 .flatten()
@@ -292,13 +301,16 @@ def lines = files.collect { file->
     if( it =~ NONSPELL_TAG_LIST )
         return ''
 
+	assert ! it.contains('patr'), "patr in $it !!!"
 
 	if( ! it.contains(" /") ) {
 		if( it.startsWith("+cs") ) {
 			it = it.replaceFirst(/\+cs=([^ ]*).*/, '$1/' + toHunFlagMap['adj'])
-			superlatives << 'най' + it
-			superlatives << 'щонай' + it
-			superlatives << 'якнай' + it
+			def superBase = it.startsWith("най") ? it[3..-1] : it
+			superlatives << 'най' + superBase
+			superlatives << 'щонай' + superBase
+			superlatives << 'якнай' + superBase
+			superlatives << 'щоякнай' + superBase
 		}
 		else {
 			it = it.split()[0]
@@ -369,7 +381,7 @@ def lines = files.collect { file->
             def expanded = expand.expand(parts[0], expandFlags)
 
 			def uniqForms = expanded.findAll{
-			    ! (it =~ /:uncontr|:alt|:bad|:subst|verb.*:coll/ )
+			    ! (it =~ /:(uncontr|alt|bad|subst|verb.*?:coll|advp:rev.*?:coll)/ )
 			}.collect {
 			    it.word
 			}.unique() // + ' # TODO: inflect'
@@ -382,10 +394,11 @@ def lines = files.collect { file->
 					return
 
 				def f = flg == mainFlg ? flg : mainFlg + '.' + flg
-				if( flg == 'patr' ) {
-					f = 'n.patr'
-				}
-				else if( f.contains('.cf') || f.contains('.is') ) {
+//				if( flg == 'patr' ) {
+//					f = 'n.patr'
+//				}
+//				else 
+				if( f.contains('.cf') || f.contains('.is') ) {
 					f = f.replaceFirst('v[0-9]', 'v')
 				}
 				else if( f == 'v3.advp' ) {
@@ -415,6 +428,8 @@ def lines = files.collect { file->
 	it
 }.flatten()
 
+
+lines += superlatives
 
 def lineMap = [:]
 lines.each {
