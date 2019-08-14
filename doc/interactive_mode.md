@@ -12,7 +12,7 @@
 
 Типовий вивід буде у форматі з відступом. Для табличного формату потрібно додати "-Pflat=true":
 
-  ./gradle -q -Pflat=true expandInteractive
+  gradlew -q -Pflat=true expandInteractive
   
   або
   
