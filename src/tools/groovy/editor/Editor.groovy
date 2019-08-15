@@ -38,10 +38,16 @@ dict += new File('data/dict/names-other.lst').readLines()
 dict += new File('data/dict/geo-other.lst').readLines()
 dict += new File('data/dict/slang.lst').readLines()
 @Field
-def media = new File('out/toadd/new_lemmas_find.txt').readLines().collectEntries {
-  def parts = it.split('@@@')
-  [ (parts[0]): parts.length > 1 ? parts[1..-1] : ["---"] ]
+def media = []
+
+def newLemmaFile = new File('out/toadd/new_lemmas_find.txt')
+if( newLemmaFile.exists() ) {
+	media = newLemmaFile.readLines().collectEntries {
+		def parts = it.split('@@@')
+		[ (parts[0]): parts.length > 1 ? parts[1..-1] : ["---"] ]
+	}
 }
+
 @Field
 def newWords = []
 def newWordsFile = new File('new_words.lst')
