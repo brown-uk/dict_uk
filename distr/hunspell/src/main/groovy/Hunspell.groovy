@@ -376,9 +376,15 @@ def lines = files.collect { file->
 //				println "-- manual expand for $parts"
 //			}
 						
-			def expandFlags = parts.size() > 2 ? parts[1] + ' ' + parts[2] : parts[1]
+//			def expandFlags = parts.size() > 2 ? parts[1] + ' ' + parts[2] : parts[1]
+//            def expanded = expand.expand(parts[0], expandFlags)
 
-            def expanded = expand.expand(parts[0], expandFlags)
+            def expanded = expand.preprocess2(it).collect { ln ->
+                def pp = ln.split(/ /, 2)
+                expand.expand(pp[0], pp[1])
+            }
+            .flatten()
+
 
 			def uniqForms = expanded.findAll{
 			    ! (it =~ /:(uncontr|alt|bad|subst|verb.*?:coll|advp:rev.*?:coll)/ )
