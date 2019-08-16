@@ -1,10 +1,10 @@
 Щоб швидко протестувати парпорці для нових слів можна запустити expand в інтерактивному режимі:
 
-  ./gradle -q expandInteractive
+  ./gradlew -q expandInteractive
   
   або
   
-  ./bin/afx
+  bin/afx
 
 потім на вхід подавати рядки, напр.:
 
@@ -12,11 +12,11 @@
 
 Типовий вивід буде у форматі з відступом. Для табличного формату потрібно додати "-Pflat=true":
 
-  gradlew -q -Pflat=true expandInteractive
+  ./gradlew -q -Pflat=true expandInteractive
   
   або
   
-  ./bin/afx -f
+  bin/afx -f
 
 
 Для виходу набрати exit або Ctrl+C
