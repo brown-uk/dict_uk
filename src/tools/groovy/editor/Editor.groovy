@@ -40,7 +40,7 @@ dict += new File('data/dict/slang.lst').readLines()
 @Field
 def media = []
 
-def newLemmaFile = new File('out/toadd/new_lemmas_find.txt')
+def newLemmaFile = new File('out/toadd/media_src.txt')
 if( newLemmaFile.exists() ) {
 	media = newLemmaFile.readLines().collectEntries {
 		def parts = it.split('@@@')
