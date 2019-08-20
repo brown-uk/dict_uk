@@ -47,7 +47,7 @@ class TaggedWordlist {
 			line = comment_re.matcher(line).replaceFirst("") // remove comments
 			comment = commentMatcher.group(0)
 
-			comment = comment.replaceAll(/\s*#(>.*| *TODO.*|\s*?(:?past|:?pres|rv_...|-ший)[^#]*)/, '')
+			comment = comment.replaceAll(/\s*#(>.*|\s*TODO.*|\s*?(:?past|:?pres|rv_...|-ший)[^#]*)/, '')
 			if( ! comment.trim() ) {
 				comment = null
 			}
@@ -92,7 +92,7 @@ class TaggedWordlist {
 		else if( out_line.contains(" \\:") ) {
 			out_line = out_line.replace(" \\:", ":") + " \\"
 		}
-
+		
 		if( comment ) {
 			out_line += comment
 		}
@@ -154,11 +154,11 @@ class TaggedWordlist {
 
 						}
 					}
-					else if ( fn == "base.lst" ) {
-						if( line.contains(":fname") ) {
-							line = line.replace(":prop:fname", "")
-						}
-					}
+//					else if ( fn == "base.lst" ) {
+//						if( line.contains(":fname") ) {
+//							line = line.replace(":prop:fname", "")
+//						}
+//					}
 
 					def out_line = process_line(line, extra_tags2)
 					if( out_line.trim() )

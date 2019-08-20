@@ -26,7 +26,7 @@ class ExpandAll {
 		expand.affix.load_affixes(Args.args.affixDir)
 
 
-		def outLines = []
+		List<String> outLines = []
 
 		def dictFilePattern = ~/.*\.lst/
 		new File(Args.args.dictDir).eachFileMatch(dictFilePattern) { dic_file ->
@@ -57,6 +57,12 @@ class ExpandAll {
 		if( outLines.size() == 0 ) {
 			log.error("No valid input lines found in \"{}\"", Args.args.dictDir)
 			System.exit(1)
+		}
+		
+		outLines.each { String it ->
+			if( it.contains("Вижівка") )
+				println "===$it"
+	
 		}
 		
 		log.info("Expanding {} lines", outLines.size())

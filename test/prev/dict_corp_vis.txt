@@ -346,7 +346,7 @@
   акулами-молотами noun:anim:p:v_oru
   акулах-молотах noun:anim:p:v_mis
   акули-молоти noun:anim:p:v_kly
-Архангельськ noun:inanim:m:v_naz:prop:geo
+Архангельськ noun:inanim:m:v_naz:prop:geo    # місто
   Архангельська noun:inanim:m:v_rod:prop:geo
   Архангельську noun:inanim:m:v_dav:prop:geo
   Архангельськ noun:inanim:m:v_zna:prop:geo
@@ -490,14 +490,14 @@
   бачено verb:imperf:impers
 безпечніше adv:compc:&predic
 безпечно adv:compb:&predic
-безчерепні noun:anim:p:v_naz
+безчерепні noun:anim:p:v_naz:ns
   безчерепних noun:anim:p:v_rod:ns
   безчерепним noun:anim:p:v_dav:ns
   безчерепних noun:anim:p:v_zna:ns
   безчерепні noun:anim:p:v_zna:ns
   безчерепними noun:anim:p:v_oru:ns
   безчерепних noun:anim:p:v_mis:ns
-  безчерепні noun:anim:p:v_kly
+  безчерепні noun:anim:p:v_kly:ns
 бентеживши advp:imperf
 бентежити verb:imperf:inf
   бентеж verb:imperf:impr:s:2
@@ -3941,6 +3941,34 @@
   Франко noun:anim:m:v_oru:nv:np:prop:lname:xp3
   Франко noun:anim:m:v_mis:nv:np:prop:lname:xp3
   Франко noun:anim:m:v_kly:nv:np:prop:lname:xp3
+хабар noun:inanim:m:v_naz:ua_2019
+  хабара noun:inanim:m:v_rod:ua_1992
+  хабаря noun:inanim:m:v_rod:ua_2019
+  хабареві noun:inanim:m:v_dav:ua_2019
+  хабарові noun:inanim:m:v_dav:ua_1992
+  хабару noun:inanim:m:v_dav:ua_1992
+  хабарю noun:inanim:m:v_dav:ua_2019
+  хабар noun:inanim:m:v_zna:ua_2019
+  хабара noun:inanim:m:v_zna:var:ua_1992
+  хабаря noun:inanim:m:v_zna:var:ua_2019
+  хабарем noun:inanim:m:v_oru:ua_2019
+  хабаром noun:inanim:m:v_oru:ua_1992
+  хабареві noun:inanim:m:v_mis:ua_2019
+  хабарі noun:inanim:m:v_mis:ua_2019
+  хабарові noun:inanim:m:v_mis:ua_1992
+  хабару noun:inanim:m:v_mis:ua_1992
+  хабарю noun:inanim:m:v_mis:ua_2019
+  хабаре noun:inanim:m:v_kly:ua_2019
+  хабарі noun:inanim:p:v_naz:ua_2019
+  хабарів noun:inanim:p:v_rod:ua_2019
+  хабарам noun:inanim:p:v_dav:ua_1992
+  хабарям noun:inanim:p:v_dav:ua_2019
+  хабарі noun:inanim:p:v_zna:ua_2019
+  хабарами noun:inanim:p:v_oru:ua_1992
+  хабарями noun:inanim:p:v_oru:ua_2019
+  хабарах noun:inanim:p:v_mis:ua_1992
+  хабарях noun:inanim:p:v_mis:ua_2019
+  хабарі noun:inanim:p:v_kly:ua_2019
 хірт noun:anim:m:v_naz
   хорта noun:anim:m:v_rod
   хортові noun:anim:m:v_dav
