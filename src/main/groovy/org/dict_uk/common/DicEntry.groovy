@@ -23,10 +23,6 @@ class DicEntry {
 		this.tagStr = tagStr
 //		this.tags = splitTags(tagStr)
 		this.comment = comment
-		
-		if( word.contains("Вижівка") )
-			println ":::$comment"
-
 	}
 	
 	public static DicEntry fromLine(String line) {

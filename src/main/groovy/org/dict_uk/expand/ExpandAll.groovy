@@ -59,12 +59,6 @@ class ExpandAll {
 			System.exit(1)
 		}
 		
-		outLines.each { String it ->
-			if( it.contains("Вижівка") )
-				println "===$it"
-	
-		}
-		
 		log.info("Expanding {} lines", outLines.size())
 
 		expand.processInputAndPrint(outLines)
