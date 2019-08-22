@@ -21,6 +21,7 @@ class Args {
 	List<String> removeWithTags = []
 	Pattern removeWithRegex
 	List<String> removeTags = []
+	List<String> removeTagsWithColons = []
 	List<String> lemmaForTags = []
 
 
@@ -29,7 +30,7 @@ class Args {
 	static {
 		args.removeWithTags = ["uncontr", "inf:coll"]
 		args.lemmaForTags = ["advp"]
-		args.removeTags = ["v-u"]
+		args.removeTags = ["v-u", "np"]
 	}
 
 	
@@ -84,7 +85,7 @@ class Args {
 			if( corp ) {
 				removeWithTags = ["uncontr", "inf:coll"]
 				lemmaForTags = ["advp"]
-				removeTags = ["v-u"]
+				removeTags = ["v-u", "np"]
 			}
 			
 			if( options.removeWithTags ) {
@@ -101,6 +102,8 @@ class Args {
 				
 			if( options.lemmaForTags ) 
 				lemmaForTags = options.lemmaForTags.split(",")
+
+            removeTagsWithColons = removeTags.collect { ':' + it }
 		}
 	}
 }

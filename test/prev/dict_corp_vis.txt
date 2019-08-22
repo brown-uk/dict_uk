@@ -115,13 +115,13 @@
   абстрагуючими adj:p:v_oru:&adjp:actv:imperf:bad
   абстрагуючих adj:p:v_mis:&adjp:actv:imperf:bad
   абстрагуючі adj:p:v_kly:&adjp:actv:imperf:bad
-Августо noun:anim:m:v_naz:nv:np:prop:fname
-  Августо noun:anim:m:v_rod:nv:np:prop:fname
-  Августо noun:anim:m:v_dav:nv:np:prop:fname
-  Августо noun:anim:m:v_zna:nv:np:prop:fname
-  Августо noun:anim:m:v_oru:nv:np:prop:fname
-  Августо noun:anim:m:v_mis:nv:np:prop:fname
-  Августо noun:anim:m:v_kly:nv:np:prop:fname
+Августо noun:anim:m:v_naz:nv:prop:fname
+  Августо noun:anim:m:v_rod:nv:prop:fname
+  Августо noun:anim:m:v_dav:nv:prop:fname
+  Августо noun:anim:m:v_zna:nv:prop:fname
+  Августо noun:anim:m:v_oru:nv:prop:fname
+  Августо noun:anim:m:v_mis:nv:prop:fname
+  Августо noun:anim:m:v_kly:nv:prop:fname
 Авґустин noun:anim:m:v_naz:ua_2019:prop:fname
   Авґустина noun:anim:m:v_rod:ua_2019:prop:fname
   Авґустинові noun:anim:m:v_dav:ua_2019:prop:fname
@@ -251,13 +251,13 @@
   Адамишиних noun:anim:p:v_zna:prop:lname
   Адамишиними noun:anim:p:v_oru:prop:lname
   Адамишиних noun:anim:p:v_mis:prop:lname
-Адамишин noun:anim:f:v_naz:nv:np:prop:lname
-  Адамишин noun:anim:f:v_rod:nv:np:prop:lname
-  Адамишин noun:anim:f:v_dav:nv:np:prop:lname
-  Адамишин noun:anim:f:v_zna:nv:np:prop:lname
-  Адамишин noun:anim:f:v_oru:nv:np:prop:lname
-  Адамишин noun:anim:f:v_mis:nv:np:prop:lname
-  Адамишин noun:anim:f:v_kly:nv:np:prop:lname
+Адамишин noun:anim:f:v_naz:nv:prop:lname
+  Адамишин noun:anim:f:v_rod:nv:prop:lname
+  Адамишин noun:anim:f:v_dav:nv:prop:lname
+  Адамишин noun:anim:f:v_zna:nv:prop:lname
+  Адамишин noun:anim:f:v_oru:nv:prop:lname
+  Адамишин noun:anim:f:v_mis:nv:prop:lname
+  Адамишин noun:anim:f:v_kly:nv:prop:lname
 Адамишина noun:anim:f:v_naz:prop:lname
   Адамишиної noun:anim:f:v_rod:prop:lname
   Адамишиній noun:anim:f:v_dav:prop:lname
@@ -370,13 +370,13 @@
   Бабенком noun:anim:m:v_oru:prop:lname
   Бабенкові noun:anim:m:v_mis:prop:lname
   Бабенку noun:anim:m:v_mis:prop:lname
-Бабенко noun:anim:f:v_naz:nv:np:prop:lname
-  Бабенко noun:anim:f:v_rod:nv:np:prop:lname
-  Бабенко noun:anim:f:v_dav:nv:np:prop:lname
-  Бабенко noun:anim:f:v_zna:nv:np:prop:lname
-  Бабенко noun:anim:f:v_oru:nv:np:prop:lname
-  Бабенко noun:anim:f:v_mis:nv:np:prop:lname
-  Бабенко noun:anim:f:v_kly:nv:np:prop:lname
+Бабенко noun:anim:f:v_naz:nv:prop:lname
+  Бабенко noun:anim:f:v_rod:nv:prop:lname
+  Бабенко noun:anim:f:v_dav:nv:prop:lname
+  Бабенко noun:anim:f:v_zna:nv:prop:lname
+  Бабенко noun:anim:f:v_oru:nv:prop:lname
+  Бабенко noun:anim:f:v_mis:nv:prop:lname
+  Бабенко noun:anim:f:v_kly:nv:prop:lname
 бабисько noun:anim:n:v_naz
   бабиська noun:anim:n:v_rod
   бабиськові noun:anim:n:v_dav
@@ -665,13 +665,13 @@
   Вагнерові noun:anim:m:v_mis:prop:lname
   Вагнеру noun:anim:m:v_mis:prop:lname
   Вагнере noun:anim:m:v_kly:prop:lname
-Вагнер noun:anim:f:v_naz:nv:np:prop:lname
-  Вагнер noun:anim:f:v_rod:nv:np:prop:lname
-  Вагнер noun:anim:f:v_dav:nv:np:prop:lname
-  Вагнер noun:anim:f:v_zna:nv:np:prop:lname
-  Вагнер noun:anim:f:v_oru:nv:np:prop:lname
-  Вагнер noun:anim:f:v_mis:nv:np:prop:lname
-  Вагнер noun:anim:f:v_kly:nv:np:prop:lname
+Вагнер noun:anim:f:v_naz:nv:prop:lname
+  Вагнер noun:anim:f:v_rod:nv:prop:lname
+  Вагнер noun:anim:f:v_dav:nv:prop:lname
+  Вагнер noun:anim:f:v_zna:nv:prop:lname
+  Вагнер noun:anim:f:v_oru:nv:prop:lname
+  Вагнер noun:anim:f:v_mis:nv:prop:lname
+  Вагнер noun:anim:f:v_kly:nv:prop:lname
 вагомий adj:m:v_naz:compb
   вагомого adj:m:v_rod:compb
   вагомому adj:m:v_dav:compb
@@ -1146,20 +1146,20 @@
   Венедиктовими adj:p:v_oru
   Венедиктових adj:p:v_mis
   Венедиктові adj:p:v_kly
-Вентурі noun:anim:m:v_naz:nv:np:prop:lname
-  Вентурі noun:anim:m:v_rod:nv:np:prop:lname
-  Вентурі noun:anim:m:v_dav:nv:np:prop:lname
-  Вентурі noun:anim:m:v_zna:nv:np:prop:lname
-  Вентурі noun:anim:m:v_oru:nv:np:prop:lname
-  Вентурі noun:anim:m:v_mis:nv:np:prop:lname
-  Вентурі noun:anim:m:v_kly:nv:np:prop:lname
-Вентурі noun:anim:f:v_naz:nv:np:prop:lname
-  Вентурі noun:anim:f:v_rod:nv:np:prop:lname
-  Вентурі noun:anim:f:v_dav:nv:np:prop:lname
-  Вентурі noun:anim:f:v_zna:nv:np:prop:lname
-  Вентурі noun:anim:f:v_oru:nv:np:prop:lname
-  Вентурі noun:anim:f:v_mis:nv:np:prop:lname
-  Вентурі noun:anim:f:v_kly:nv:np:prop:lname
+Вентурі noun:anim:m:v_naz:nv:prop:lname
+  Вентурі noun:anim:m:v_rod:nv:prop:lname
+  Вентурі noun:anim:m:v_dav:nv:prop:lname
+  Вентурі noun:anim:m:v_zna:nv:prop:lname
+  Вентурі noun:anim:m:v_oru:nv:prop:lname
+  Вентурі noun:anim:m:v_mis:nv:prop:lname
+  Вентурі noun:anim:m:v_kly:nv:prop:lname
+Вентурі noun:anim:f:v_naz:nv:prop:lname
+  Вентурі noun:anim:f:v_rod:nv:prop:lname
+  Вентурі noun:anim:f:v_dav:nv:prop:lname
+  Вентурі noun:anim:f:v_zna:nv:prop:lname
+  Вентурі noun:anim:f:v_oru:nv:prop:lname
+  Вентурі noun:anim:f:v_mis:nv:prop:lname
+  Вентурі noun:anim:f:v_kly:nv:prop:lname
 Вербицька noun:anim:f:v_naz:prop:lname
   Вербицької noun:anim:f:v_rod:prop:lname
   Вербицькій noun:anim:f:v_dav:prop:lname
@@ -2742,12 +2742,12 @@
   людяністю noun:inanim:f:v_oru
   людяності noun:inanim:f:v_mis
   людяносте noun:inanim:f:v_kly
-м. noun:inanim:n:v_naz:nv:np:abbr
-  м. noun:inanim:n:v_rod:nv:np:abbr
-  м. noun:inanim:n:v_dav:nv:np:abbr
-  м. noun:inanim:n:v_zna:nv:np:abbr
-  м. noun:inanim:n:v_oru:nv:np:abbr
-  м. noun:inanim:n:v_mis:nv:np:abbr
+м. noun:inanim:n:v_naz:nv:abbr
+  м. noun:inanim:n:v_rod:nv:abbr
+  м. noun:inanim:n:v_dav:nv:abbr
+  м. noun:inanim:n:v_zna:nv:abbr
+  м. noun:inanim:n:v_oru:nv:abbr
+  м. noun:inanim:n:v_mis:nv:abbr
 меживузля noun:inanim:n:v_naz
   меживузля noun:inanim:n:v_rod
   меживузлю noun:inanim:n:v_dav
@@ -3248,20 +3248,20 @@
   оскірилося verb:rev:perf:past:n:rare
   оскірились verb:rev:perf:past:p:rare
   оскірилися verb:rev:perf:past:p:rare
-папараці noun:anim:m:v_naz:nv:np
-  папараці noun:anim:m:v_rod:nv:np
-  папараці noun:anim:m:v_dav:nv:np
-  папараці noun:anim:m:v_zna:nv:np
-  папараці noun:anim:m:v_oru:nv:np
-  папараці noun:anim:m:v_mis:nv:np
-  папараці noun:anim:m:v_kly:nv:np
-  папараці noun:anim:f:v_naz:nv:np
-  папараці noun:anim:f:v_rod:nv:np
-  папараці noun:anim:f:v_dav:nv:np
-  папараці noun:anim:f:v_zna:nv:np
-  папараці noun:anim:f:v_oru:nv:np
-  папараці noun:anim:f:v_mis:nv:np
-  папараці noun:anim:f:v_kly:nv:np
+папараці noun:anim:m:v_naz:nv
+  папараці noun:anim:m:v_rod:nv
+  папараці noun:anim:m:v_dav:nv
+  папараці noun:anim:m:v_zna:nv
+  папараці noun:anim:m:v_oru:nv
+  папараці noun:anim:m:v_mis:nv
+  папараці noun:anim:m:v_kly:nv
+  папараці noun:anim:f:v_naz:nv
+  папараці noun:anim:f:v_rod:nv
+  папараці noun:anim:f:v_dav:nv
+  папараці noun:anim:f:v_zna:nv
+  папараці noun:anim:f:v_oru:nv
+  папараці noun:anim:f:v_mis:nv
+  папараці noun:anim:f:v_kly:nv
 пара noun:inanim:f:v_naz:xp1    # газ
   пари noun:inanim:f:v_rod:xp1
   парі noun:inanim:f:v_dav:xp1
@@ -3927,20 +3927,20 @@
   Федоріву noun:anim:m:v_mis:prop:lname
   Федорові noun:anim:m:v_mis:prop:lname
   Федорову noun:anim:m:v_mis:prop:lname
-Федорів noun:anim:f:v_naz:nv:np:prop:lname
-  Федорів noun:anim:f:v_rod:nv:np:prop:lname
-  Федорів noun:anim:f:v_dav:nv:np:prop:lname
-  Федорів noun:anim:f:v_zna:nv:np:prop:lname
-  Федорів noun:anim:f:v_oru:nv:np:prop:lname
-  Федорів noun:anim:f:v_mis:nv:np:prop:lname
-  Федорів noun:anim:f:v_kly:nv:np:prop:lname
-Франко noun:anim:m:v_naz:nv:np:prop:lname:xp3    # ісп. прізвище
-  Франко noun:anim:m:v_rod:nv:np:prop:lname:xp3
-  Франко noun:anim:m:v_dav:nv:np:prop:lname:xp3
-  Франко noun:anim:m:v_zna:nv:np:prop:lname:xp3
-  Франко noun:anim:m:v_oru:nv:np:prop:lname:xp3
-  Франко noun:anim:m:v_mis:nv:np:prop:lname:xp3
-  Франко noun:anim:m:v_kly:nv:np:prop:lname:xp3
+Федорів noun:anim:f:v_naz:nv:prop:lname
+  Федорів noun:anim:f:v_rod:nv:prop:lname
+  Федорів noun:anim:f:v_dav:nv:prop:lname
+  Федорів noun:anim:f:v_zna:nv:prop:lname
+  Федорів noun:anim:f:v_oru:nv:prop:lname
+  Федорів noun:anim:f:v_mis:nv:prop:lname
+  Федорів noun:anim:f:v_kly:nv:prop:lname
+Франко noun:anim:m:v_naz:nv:prop:lname:xp3    # ісп. прізвище
+  Франко noun:anim:m:v_rod:nv:prop:lname:xp3
+  Франко noun:anim:m:v_dav:nv:prop:lname:xp3
+  Франко noun:anim:m:v_zna:nv:prop:lname:xp3
+  Франко noun:anim:m:v_oru:nv:prop:lname:xp3
+  Франко noun:anim:m:v_mis:nv:prop:lname:xp3
+  Франко noun:anim:m:v_kly:nv:prop:lname:xp3
 хабар noun:inanim:m:v_naz:ua_2019
   хабара noun:inanim:m:v_rod:ua_1992
   хабаря noun:inanim:m:v_rod:ua_2019
@@ -3987,16 +3987,16 @@
   хортами noun:anim:p:v_oru
   хортах noun:anim:p:v_mis
   хорти noun:anim:p:v_kly
-хосен noun:inanim:m:v_naz:np
-  хісна noun:inanim:m:v_rod:np
-  хіснові noun:inanim:m:v_dav:np
-  хісну noun:inanim:m:v_dav:np
-  хосен noun:inanim:m:v_zna:np
-  хісном noun:inanim:m:v_oru:np
-  хісні noun:inanim:m:v_mis:np
-  хіснові noun:inanim:m:v_mis:np
-  хісну noun:inanim:m:v_mis:np
-  хісне noun:inanim:m:v_kly:np
+хосен noun:inanim:m:v_naz
+  хісна noun:inanim:m:v_rod
+  хіснові noun:inanim:m:v_dav
+  хісну noun:inanim:m:v_dav
+  хосен noun:inanim:m:v_zna
+  хісном noun:inanim:m:v_oru
+  хісні noun:inanim:m:v_mis
+  хіснові noun:inanim:m:v_mis
+  хісну noun:inanim:m:v_mis
+  хісне noun:inanim:m:v_kly
 хрін noun:inanim:m:v_naz
   хріну noun:inanim:m:v_rod
   хрону noun:inanim:m:v_rod
@@ -4094,13 +4094,13 @@
   Чубареві noun:anim:m:v_mis:prop:lname
   Чубарі noun:anim:m:v_mis:prop:lname
   Чубарю noun:anim:m:v_mis:prop:lname
-Чубар noun:anim:f:v_naz:nv:np:prop:lname
-  Чубар noun:anim:f:v_rod:nv:np:prop:lname
-  Чубар noun:anim:f:v_dav:nv:np:prop:lname
-  Чубар noun:anim:f:v_zna:nv:np:prop:lname
-  Чубар noun:anim:f:v_oru:nv:np:prop:lname
-  Чубар noun:anim:f:v_mis:nv:np:prop:lname
-  Чубар noun:anim:f:v_kly:nv:np:prop:lname
+Чубар noun:anim:f:v_naz:nv:prop:lname
+  Чубар noun:anim:f:v_rod:nv:prop:lname
+  Чубар noun:anim:f:v_dav:nv:prop:lname
+  Чубар noun:anim:f:v_zna:nv:prop:lname
+  Чубар noun:anim:f:v_oru:nv:prop:lname
+  Чубар noun:anim:f:v_mis:nv:prop:lname
+  Чубар noun:anim:f:v_kly:nv:prop:lname
 чудо-юдо noun:anim:n:v_naz
   чуда-юда noun:anim:n:v_rod
   чуду-юду noun:anim:n:v_dav

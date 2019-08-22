@@ -903,9 +903,9 @@ class Expand {
 
 	@CompileStatic
 	private DicEntry removeTags(DicEntry line) {
-		for(String removeTag in Args.args.removeTags ) {
-			if( line.tagStr.contains(":" + removeTag) ) {
-				line.tagStr = line.tagStr.replace(":" + removeTag, "")
+		for(String removeTag in Args.args.removeTagsWithColons) {
+			if( line.tagStr.contains(removeTag) ) {
+				line.tagStr = line.tagStr.replace(removeTag, "")
 			}
 		}
 		return line
@@ -985,7 +985,7 @@ class Expand {
 	            ":&numr",
 	            ":&insert",
 	            ":&predic",
-				":v-u",
+//				":v-u",
 				":bad",
 				":subst",
 				":slang",
