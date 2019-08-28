@@ -326,6 +326,10 @@
 тамтой /adj_pron :&pron:dem
 отой /adj_pron :&pron:dem
 
+теє той adj:n:v_naz/v_zna:&pron:dem:coll
+тая той adj:f:v_naz/v_zna:&pron:dem:coll
+тії той adj:p:v_naz/v_zna:&pron:dem:coll
+
 весь /adj_pron :&pron:gen
 увесь /adj_pron :&pron:gen
 ввесь /adj_pron :&pron:gen

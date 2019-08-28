@@ -986,12 +986,9 @@ class Expand {
 	            ":&insert",
 	            ":&predic",
 //				":v-u",
-				":bad",
-				":subst",
-				":slang",
-				":rare",
-				":coll",
-				":abbr",
+				":prop",
+				":geo", ":abbr", ":fname", ":lname", ":pname",
+				":bad", ":subst", ":slang", ":rare", ":coll", ":alt", ":ua_2019", ":ua_1992",
 				":xp1", ":xp2", ":xp3", ":xp4"
 			]
 
