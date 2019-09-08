@@ -122,17 +122,18 @@ Closure selChange1 = { e ->
 	if( e.getValueIsAdjusting() || minSelIdx < 0 )
 		return
 
-	def itemParts = inputData[minSelIdx].split(' ')
+	def itemParts = inputData[minSelIdx].split(' +')
 	def item = itemParts[0]
 	def notes = itemParts.size() > 1 ? itemParts[1] : ''
 	
 	def word
 	def word_txt
 	
-	if( notes =~ /^(\/[a-z]|noun:.:nv|noninfl|adv)/ ) {
+	println "::$notes"
+	if( notes =~ /^(\/[a-z]|noun:.:nv|noninfl|adv|intj|onomat)/ ) {
 		notesLabel.text = ''
 		word = item
-		word_txt = inputData[minSelIdx]
+		word_txt = inputData[minSelIdx].replaceFirst(/  +/, ' ')
 	}
 	else {
 		notesLabel.text = notes
