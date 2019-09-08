@@ -18,27 +18,28 @@ import java.awt.event.ActionListener
 import java.awt.event.InputEvent
 
 
-def swing = new SwingBuilder()
-
-def sharedPanel = {
-	swing.panel() { label("Shared Panel") }
-}
-
-println "reading..."
-
 @Field
-def data = new File(args.length >= 1 ? args[0] : 'out/toadd/unknown_lemmas.txt').readLines()
-//def data = new File('out/toadd/unknown.txt').readLines().collect{ it.replace('\t', '    ') }
-@Field
-def dict = new File('data/dict/base.lst').readLines()
-dict += new File('data/dict/base-compound.lst').readLines()
-dict += new File('data/dict/twisters.lst').readLines()
-dict += new File('data/dict/names-anim.lst').readLines()
-dict += new File('data/dict/names-other.lst').readLines()
-dict += new File('data/dict/geo-other.lst').readLines()
-dict += new File('data/dict/slang.lst').readLines()
+def inputData = new File(args.length >= 1 ? args[0] : 'out/toadd/unknown_lemmas.txt').readLines()
+//def inputData = new File('out/toadd/unknown.txt').readLines().collect{ it.replace('\t', '    ') }
 @Field
 def media = []
+@Field
+def newWords = []
+@Field
+def expand = new Expand(false)
+
+@Field
+def dictLines = new File('data/dict')
+	.listFiles()
+	.collect { File file ->
+		if( file.name.endsWith('.lst') ) {
+//		println "adding file ${file.name}"
+			file.readLines()
+		}
+		else {
+			[]
+		}
+	}.flatten()
 
 def newLemmaFile = new File('out/toadd/media_src.txt')
 if( newLemmaFile.exists() ) {
@@ -48,25 +49,17 @@ if( newLemmaFile.exists() ) {
 	}
 }
 
-@Field
-def newWords = []
-def newWordsFile = new File('new_words.lst')
-//if( newWordsFile.exists() ) {
-//	newWords = newWordsFile.readLines()
-//}
-//
-//def newWordsLemmas = newWords.findAll { it }.collect { it.split()[0] }
-//data.removeAll {
-//	it.split(/ /, 2)[0] in newWordsLemmas
-//}
+println "Input data: ${inputData.size}, dict lines: ${dictLines.size}"
 
-println "Data: ${data.size}, dict: ${dict.size}"
-
-@Field
-def expand = new Expand(false)
 expand.affix.load_affixes('data/affix')
 
 
+
+def swing = new SwingBuilder()
+
+def sharedPanel = {
+	swing.panel() { label("Shared Panel") }
+}
 
 //UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName())
 
@@ -75,7 +68,7 @@ def inflect() {
 
 
 	def txt = text.text	
-	if( txt.contains(' /') ) {
+	if( txt.contains(' /') || txt.contains(' noun:') ) {
 		
 		try {
 			def forms = expand.expand_line(txt)
@@ -125,24 +118,35 @@ def imperfPerf() {
 
 Closure selChange1 = { e ->
 	def minSelIdx = e.source.selectionModel.minSelectionIndex
-	println '--' + minSelIdx + ' - ' + e.getValueIsAdjusting()
+//	println '--' + minSelIdx + ' - ' + e.getValueIsAdjusting()
 	if( e.getValueIsAdjusting() || minSelIdx < 0 )
 		return
 
-	def itemParts = data[minSelIdx].split(' ')
+	def itemParts = inputData[minSelIdx].split(' ')
 	def item = itemParts[0]
 	def notes = itemParts.size() > 1 ? itemParts[1] : ''
 	
-	notesLabel.text = notes
+	def word
+	def word_txt
+	
+	if( notes =~ /^(\/[a-z]|noun:.:nv|noninfl|adv)/ ) {
+		notesLabel.text = ''
+		word = item
+		word_txt = inputData[minSelIdx]
+	}
+	else {
+		notesLabel.text = notes
 
-	def word = item.startsWith(' ') ? item.trim().split(/    /, 2)[1].trim() : item.split(/ /, 2)[0]
+		word = item.startsWith(' ') ? item.trim().split(/    /, 2)[1].trim() : item.split(/ /, 2)[0]
+		word_txt = item.contains('невідм.') ? word + " noun:m:nv" : getDefaultTxt(word)
+	}
+
 	println "word: $word"
 
 	StringSelection stringSelection = new StringSelection(word);
 	Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 	clipboard.setContents(stringSelection, null);
 
-	def word_txt = item.contains('невідм.') ? word + " noun:m:nv" : getDefaultTxt(word)
 	
 	text.setText(word_txt)
 
@@ -151,7 +155,7 @@ Closure selChange1 = { e ->
 		inflect()
 	})
 
-//	if( data.contains('lemma') ) {
+//	if( inputData.contains('lemma') ) {
 		mediaList.setModel(new ListWrapperListModel<String>(['... шукаємо ...']))
 		SwingUtilities.invokeLater( {
 			findMedia(word)
@@ -246,10 +250,10 @@ def findInDict(word) {
     ending = ending.replaceFirst(/вачка$/, '(вач|вачка)')
 	ending = ending.replaceFirst(/[гґ]/, '[гґ]')
 
-	println "searchin for: $ending"
+	println "searching for existing: $ending in ${dictLines.size}"
 	def ptrn = ~"(?ui)^[^#]*$ending "
-	def similars = dict.findAll{ ptrn.matcher(it) }
-//	def similars = dict.findAll{ it =~ "(?i)^[а-яіїєґА-ЯІЇЄҐ'-]*$ending " }
+	def similars = dictLines.findAll{ ptrn.matcher(it) }
+//	def similars = dictLines.findAll{ it =~ "(?i)^[а-яіїєґА-ЯІЇЄҐ'-]*$ending " }
 	if( similars.size() > 100 ) {
 		similars = similars[0..100]
 	}
@@ -264,7 +268,7 @@ def addWord() {
 	if( selIdx >= 0 ) {
 		
 		def txt = text.text
-		if( ! (txt =~ /^[а-яіїєґ'-]+ \/?[a-z]/) ) {
+		if( ! (txt =~ /^[а-яіїєґА-ЯІЇЄҐ'-]+ \/?[a-z]/) ) {
 			inflectedList.getModel().clear()
 			inflectedList.getModel().add('Invalid format')
 			return
@@ -281,7 +285,7 @@ def addWord() {
 		}
 	
 		
-//		data.removeAt(selIdx)
+//		inputData.removeAt(selIdx)
 //		mainList.invalidate()
 		
 		addedList.getModel().add(text.text.trim())
@@ -317,7 +321,7 @@ swing.edt {
 
 				def sp = scrollPane( verticalScrollBarPolicy:JScrollPane.VERTICAL_SCROLLBAR_ALWAYS ) {
 					mainList = list(
-							listData: data,
+							listData: inputData,
 							valueChanged: selChange1
 							)
 					mainList.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
