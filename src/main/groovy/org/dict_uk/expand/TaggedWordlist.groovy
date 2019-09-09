@@ -97,8 +97,6 @@ class TaggedWordlist {
 			out_line += comment
 		}
 
-if( out_line.startsWith("а-ба") ) 
-println out_line
 		return out_line
 	}
 
