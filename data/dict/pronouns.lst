@@ -62,7 +62,7 @@
 
 що що conj:subord
 що що noun:inanim:n:v_naz/v_zna:&pron:int:rel
-віщо що noun:inanim:n:v_zna:&pron:int:rel
+віщо що noun:inanim:n:v_zna:&pron:int:rel:rare
 чого що noun:inanim:n:v_rod:&pron:int:rel
 чому що noun:inanim:n:v_dav/v_mis:&pron:int:rel
 чим що noun:inanim:n:v_oru:&pron:int:rel
@@ -101,7 +101,7 @@
 анікім аніхто noun:anim:m:v_mis:&pron:neg
 
 аніщо аніщо noun:inanim:n:v_naz/v_zna:&pron:neg
-анічого аніщо noun:inanim:n:v_rod/v_zna:&pron:neg
+анічого аніщо noun:inanim:n:v_rod:&pron:neg
 анічому аніщо noun:inanim:n:v_dav/v_mis:&pron:neg
 анічим аніщо noun:inanim:n:v_oru:&pron:neg
 анічім аніщо noun:inanim:n:v_mis:&pron:neg
@@ -219,16 +219,16 @@
 кімось хтось noun:anim:m:v_mis:&pron:ind
 
 щось щось noun:inanim:n:v_naz/v_zna:&pron:ind
-чогось щось noun:inanim:n:v_rod/v_zna:&pron:ind
-віщось щось noun:inanim:n:v_zna:&pron:ind
+чогось щось noun:inanim:n:v_rod:&pron:ind
+віщось щось noun:inanim:n:v_zna:&pron:ind:rare
 чомусь щось noun:inanim:n:v_dav/v_mis:&pron:ind
 чимось щось noun:inanim:n:v_oru:&pron:ind
 чимсь щось noun:inanim:n:v_oru:&pron:ind
 чімсь щось noun:inanim:n:v_mis:&pron:ind
 чімось щось noun:inanim:n:v_mis:&pron:ind
 
-неабищо неабищо noun:inanim:n:v_naz:&pron:neg
-неабичого неабищо noun:inanim:n:v_rod/v_zna:&pron:neg
+неабищо неабищо noun:inanim:n:v_naz/v_zna:&pron:neg
+неабичого неабищо noun:inanim:n:v_rod:&pron:neg
 неабичому неабищо noun:inanim:n:v_dav/v_mis:&pron:neg
 неабичим неабищо noun:inanim:n:v_oru:&pron:neg
 неабичім неабищо noun:inanim:n:v_mis:&pron:neg
@@ -240,8 +240,8 @@
 кім-небудь хто-небудь noun:anim:m:v_mis:&pron:ind
 
 що-небудь що-небудь noun:inanim:n:v_naz/v_zna:&pron:ind
-чого-небудь що-небудь noun:inanim:n:v_rod/v_zna:&pron:ind
-віщо-небудь що-небудь noun:inanim:n:v_zna:&pron:ind
+чого-небудь що-небудь noun:inanim:n:v_rod:&pron:ind
+віщо-небудь що-небудь noun:inanim:n:v_zna:&pron:ind:rare
 чому-небудь що-небудь noun:inanim:n:v_dav/v_mis:&pron:ind
 чим-небудь що-небудь noun:inanim:n:v_oru:&pron:ind
 чім-небудь що-небудь noun:inanim:n:v_mis:&pron:ind
@@ -253,8 +253,8 @@
 кім-будь хто-будь noun:anim:m:v_mis:&pron:ind
 
 що-будь що-будь noun:inanim:n:v_naz/v_zna:&pron:ind
-чого-будь що-будь noun:inanim:n:v_rod/v_zna:&pron:ind
-віщо-будь що-будь noun:inanim:n:v_zna:&pron:ind
+чого-будь що-будь noun:inanim:n:v_rod:&pron:ind
+віщо-будь що-будь noun:inanim:n:v_zna:&pron:ind:rare
 чому-будь що-будь noun:inanim:n:v_dav/v_mis:&pron:ind
 чим-будь що-будь noun:inanim:n:v_oru:&pron:ind
 чім-будь що-будь noun:inanim:n:v_mis:&pron:ind
@@ -272,12 +272,12 @@
 ніким нікого noun:anim:m:v_oru:&pron:emph
 
 ніщо ніщо noun:inanim:n:v_naz/v_zna:&pron:neg
-нічого ніщо noun:inanim:n:v_rod/v_zna:&pron:neg:&predic
+нічого ніщо noun:inanim:n:v_rod:&pron:neg:&predic
 нічому ніщо noun:inanim:n:v_dav/v_mis:&pron:neg
 нічим ніщо noun:inanim:n:v_oru:&pron:neg
 нічім ніщо noun:inanim:n:v_mis:&pron:neg
 
-нічого нічого noun:inanim:n:v_rod/v_zna:&pron:emph:&predic      # rv_inf   # ні́чого
+нічого нічого noun:inanim:n:v_rod:&pron:emph:&predic      # rv_inf   # ні́чого
 нічому нічого noun:inanim:n:v_dav:&pron:emph
 нічим нічого noun:inanim:n:v_oru:&pron:emph
 
@@ -1018,6 +1018,7 @@
 абощо part
 або conj:coord
 авжеж part
+аджеж part
 адже part|conj:subord
 ажень part
 аж part|conj:subord
@@ -1082,6 +1083,7 @@
 неначебто conj:subord|part
 нехай part|conj:subord
 нехай-но part|conj:subord
+хай-но part|conj:subord
 не part
 ніби conj:subord|part
 нібито conj:subord|part

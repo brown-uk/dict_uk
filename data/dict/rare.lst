@@ -94,10 +94,12 @@
 дейко noninfl:&predic
 декуди adv
 деревляний /adj
+дідо /n20.<
 дільчий /adj
 доживотність /n30
 докіль adv|conj:subord
 доконувати /v1.cf.advp :imperf
+доста adv:&predic
 доставати /v1.cf.advp :imperf
 достати /v3 :perf
 дрожка /n10.p2
@@ -105,6 +107,7 @@
 дряглість /n30
 жалуватися /vr1.cf.advp :imperf
 жантильний /adj
+жеби conj:subord
 живжик /n20.a.p.<
 жупа /n10.p1                # солеварня
 завідатель /n20.a.p.<
@@ -519,6 +522,7 @@
 шкварко adv:&predic
 шкло /n2n                      #> скло
 шкляний /adj
+шклянка /n10.p2
 шкульно adv:&predic
 штири numr:p:v_naz/v_zna
 штирнадцять /numr
