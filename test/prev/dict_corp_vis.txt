@@ -5,6 +5,7 @@
   Абалкіним noun:anim:m:v_oru:prop:lname
   Абалкіні noun:anim:m:v_mis:prop:lname
   Абалкіну noun:anim:m:v_mis:prop:lname
+  Абалкіне noun:anim:m:v_kly:prop:lname
 Абатський noun:inanim:m:v_naz
   Абатського noun:inanim:m:v_rod
   Абатському noun:inanim:m:v_dav
@@ -169,6 +170,7 @@
   Аверянову noun:anim:f:v_zna:prop:lname
   Аверяновою noun:anim:f:v_oru:prop:lname
   Аверяновій noun:anim:f:v_mis:prop:lname
+  Аверянова noun:anim:f:v_kly:prop:lname
 авто noun:inanim:n:v_naz
   авта noun:inanim:n:v_rod
   авту noun:inanim:n:v_dav
@@ -245,12 +247,14 @@
   Адамишині noun:anim:m:v_mis:prop:lname
   Адамишину noun:anim:m:v_mis:prop:lname
   Адамишинові noun:anim:m:v_mis:prop:lname:ua_2019
+  Адамишине noun:anim:m:v_kly:prop:lname
   Адамишини noun:anim:p:v_naz:prop:lname
   Адамишиних noun:anim:p:v_rod:prop:lname
   Адамишиним noun:anim:p:v_dav:prop:lname
   Адамишиних noun:anim:p:v_zna:prop:lname
   Адамишиними noun:anim:p:v_oru:prop:lname
   Адамишиних noun:anim:p:v_mis:prop:lname
+  Адамишини noun:anim:p:v_kly:prop:lname
 Адамишин noun:anim:f:v_naz:nv:prop:lname
   Адамишин noun:anim:f:v_rod:nv:prop:lname
   Адамишин noun:anim:f:v_dav:nv:prop:lname
@@ -362,6 +366,7 @@
   Афанасьєві-Чужбинському noun:anim:m:v_mis:prop:lname
   Афанасьєву-Чужбинськім noun:anim:m:v_mis:prop:lname
   Афанасьєву-Чужбинському noun:anim:m:v_mis:prop:lname
+  Афанасьєве-Чужбинський noun:anim:m:v_kly:prop:lname
 Бабенко noun:anim:m:v_naz:prop:lname
   Бабенка noun:anim:m:v_rod:prop:lname
   Бабенкові noun:anim:m:v_dav:prop:lname
@@ -370,6 +375,7 @@
   Бабенком noun:anim:m:v_oru:prop:lname
   Бабенкові noun:anim:m:v_mis:prop:lname
   Бабенку noun:anim:m:v_mis:prop:lname
+  Бабенку noun:anim:m:v_kly:prop:lname
 Бабенко noun:anim:f:v_naz:nv:prop:lname
   Бабенко noun:anim:f:v_rod:nv:prop:lname
   Бабенко noun:anim:f:v_dav:nv:prop:lname
@@ -1166,6 +1172,7 @@
   Вербицьку noun:anim:f:v_zna:prop:lname
   Вербицькою noun:anim:f:v_oru:prop:lname
   Вербицькій noun:anim:f:v_mis:prop:lname
+  Вербицька noun:anim:f:v_kly:prop:lname
 Вербицький noun:anim:m:v_naz:prop:lname
   Вербицького noun:anim:m:v_rod:prop:lname
   Вербицькому noun:anim:m:v_dav:prop:lname
@@ -1173,6 +1180,7 @@
   Вербицьким noun:anim:m:v_oru:prop:lname
   Вербицькім noun:anim:m:v_mis:prop:lname
   Вербицькому noun:anim:m:v_mis:prop:lname
+  Вербицький noun:anim:m:v_kly:prop:lname
   Вербицькі noun:anim:p:v_naz:prop:lname
   Вербицьких noun:anim:p:v_rod:prop:lname
   Вербицьким noun:anim:p:v_dav:prop:lname
@@ -1257,6 +1265,7 @@
   Вернадським noun:anim:m:v_oru:prop:lname
   Вернадськім noun:anim:m:v_mis:prop:lname
   Вернадському noun:anim:m:v_mis:prop:lname
+  Вернадський noun:anim:m:v_kly:prop:lname
 вертихвіст noun:anim:m:v_naz
   вертихвоста noun:anim:m:v_rod
   вертихвостові noun:anim:m:v_dav
@@ -2094,6 +2103,7 @@
   Гулакові-Артемовському noun:anim:m:v_mis:prop:lname
   Гулаку-Артемовськім noun:anim:m:v_mis:prop:lname
   Гулаку-Артемовському noun:anim:m:v_mis:prop:lname
+  Гулаче-Артемовський noun:anim:m:v_kly:prop:lname
 Данаїди noun:anim:p:v_naz:ns:prop:fname
   Данаїд noun:anim:p:v_rod:ns:prop:fname
   Данаїдам noun:anim:p:v_dav:ns:prop:fname
@@ -3573,6 +3583,7 @@
   Склодовську-Кюрі noun:anim:f:v_zna:prop:lname
   Склодовською-Кюрі noun:anim:f:v_oru:prop:lname
   Склодовській-Кюрі noun:anim:f:v_mis:prop:lname
+  Склодовська-Кюрі noun:anim:f:v_kly:prop:lname
 сопівши advp:imperf
 сопіти verb:imperf:inf
   сопи verb:imperf:impr:s:2
@@ -3927,6 +3938,8 @@
   Федоріву noun:anim:m:v_mis:prop:lname
   Федорові noun:anim:m:v_mis:prop:lname
   Федорову noun:anim:m:v_mis:prop:lname
+  Федоріве noun:anim:m:v_kly:prop:lname
+  Федорове noun:anim:m:v_kly:prop:lname
 Федорів noun:anim:f:v_naz:nv:prop:lname
   Федорів noun:anim:f:v_rod:nv:prop:lname
   Федорів noun:anim:f:v_dav:nv:prop:lname
@@ -4094,6 +4107,7 @@
   Чубареві noun:anim:m:v_mis:prop:lname
   Чубарі noun:anim:m:v_mis:prop:lname
   Чубарю noun:anim:m:v_mis:prop:lname
+  Чубарю noun:anim:m:v_kly:prop:lname
 Чубар noun:anim:f:v_naz:nv:prop:lname
   Чубар noun:anim:f:v_rod:nv:prop:lname
   Чубар noun:anim:f:v_dav:nv:prop:lname
