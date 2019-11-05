@@ -102,7 +102,7 @@ class OutputValidator {
 					checkVTagSet(gender, subtagSet, lemmaLine)
 				}
 				else if( lastVerbTags && ! lemmaLine.contains(". ") && ! isLimitedForms(lemmaLine) ) {
-					log.error("verb lemma is missing " + (lastVerbTags) + " for: " + lemmaLine)
+					log.error("verb lemma is missing " + lastVerbTags + " for: " + lemmaLine)
 					nonFatalErrorCount++
 					lastVerbTags = null
 				}

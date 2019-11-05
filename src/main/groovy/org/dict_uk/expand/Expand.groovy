@@ -435,14 +435,15 @@ class Expand {
 							}
 						}
 						else {
-							if( flags.contains("<+") && ! flags.contains(".k") /*&& line.lemma.endsWith("ів")*/ ) {
+						/*
+							if( flags.contains("<+") && ! flags.contains(".k") ) { // && line.lemma.endsWith("ів")
 								if( line.tagStr.contains("v_kly") )
-								if( ! line.tagStr.contains("/v_kly") )
-								continue;
-								else
-								line.tagStr	 = line.tagStr.replace("/v_kly", "")
+								    if( ! line.tagStr.contains("/v_kly") )
+								        continue;
+								    else
+								        line.tagStr	 = line.tagStr.replace("/v_kly", "")
 							}
-
+                        */
 							if( util.person(flags) ) {
 								line.tagStr = line.tagStr.replace("p:v_naz/v_zna", "p:v_naz")
 							}
@@ -489,7 +490,7 @@ class Expand {
 					}
 					else {
 						if( (! flags.contains(".ku") && main_flag =~ /n2[0-4]/ && ! isDefaultKlyU(base_word, flags))
-                            	|| (line.tagStr.contains(":m:") && flags.contains("<+") ) ) {
+                            	/*|| (line.tagStr.contains(":m:") && flags.contains("<+") )*/ ) {
 //						log.info("removing v_kly from: %s, %s", line, flags)
 							line.setTagStr( line.tagStr.replace("/v_kly", "") )
 						}
