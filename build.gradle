@@ -182,9 +182,9 @@ task autoGen (dependsOn: classes) {
 
 
         Collator collator = Collator.getInstance(new Locale("uk", "UA"));
-        outputs.files.first().text = outLines1.toSorted(collator).join("\n")
+        outputs.files.first().setText(outLines1.toSorted(collator).join("\n"), "UTF-8")
 
-        new File('data/dict/base-auto-replace.txt').text = outReplaceLines.toSorted(collator).join('\n')
+        new File('data/dict/base-auto-replace.txt').setText(outReplaceLines.toSorted(collator).join('\n'), "UTF-8")
     }
 }
 
