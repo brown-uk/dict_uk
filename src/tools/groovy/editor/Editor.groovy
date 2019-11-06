@@ -19,7 +19,7 @@ import java.awt.event.InputEvent
 
 
 @Field
-def inputData = new File(args.length >= 1 ? args[0] : 'out/toadd/unknown_lemmas.txt').readLines()
+def inputData = new File(args.length >= 1 ? args[0] : 'out/toadd/unknown_lemmas.txt').readLines("UTF-8")
 //def inputData = new File('out/toadd/unknown.txt').readLines().collect{ it.replace('\t', '    ') }
 @Field
 def media = []
@@ -34,7 +34,7 @@ def dictLines = new File('data/dict')
 	.collect { File file ->
 		if( file.name.endsWith('.lst') ) {
 //		println "adding file ${file.name}"
-			file.readLines()
+			file.readLines("UTF-8")
 		}
 		else {
 			[]
@@ -43,7 +43,7 @@ def dictLines = new File('data/dict')
 
 def newLemmaFile = new File('out/toadd/media_src.txt')
 if( newLemmaFile.exists() ) {
-	media = newLemmaFile.readLines().collectEntries {
+	media = newLemmaFile.readLines("UTF-8").collectEntries {
 		def parts = it.split('@@@')
 		[ (parts[0]): parts.length > 1 ? parts[1..-1] : ["---"] ]
 	}

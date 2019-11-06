@@ -27,7 +27,9 @@ repositories {
 //}
 
 dependencies {
-    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.5.7'
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.0-rc-1'
+    compile group: 'org.codehaus.groovy', name: 'groovy-cli-picocli', version: '3.0.0-rc-1'
+    compile 'info.picocli:picocli:4.0.4'
 
     compile group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
     compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
@@ -88,7 +90,7 @@ task autoGen (dependsOn: classes) {
     outputs.file "$dataDir/base-autogen.lst"
 
     doLast {
-        String[] lines = file(inputFile1).readLines()
+        String[] lines = file(inputFile1).readLines("UTF-8")
             .findAll { line -> line.contains(":ua_1992") }
 
         def outReplaceLines = []
@@ -110,7 +112,7 @@ task autoGen (dependsOn: classes) {
 
         def pattern2 = ~ /(^|[а-яіїєґ']+-)(архі|архи|боді|гіпер|диско|екстра|камер|макро|максі|міді|мікро|міні|мульти|нано|полі|преміум|супер|топ|ультра|анти|контр|віце|екс|лейб|обер|штабс|унтер)-([^ ]+)(.*)/
 
-        def lines2 = file(inputFile2).readLines()
+        def lines2 = file(inputFile2).readLines("UTF-8")
 
         String[] outLines2 = (lines + lines2)
             .findAll { line -> pattern2.matcher(line).find() }
@@ -135,7 +137,7 @@ task autoGen (dependsOn: classes) {
         outLines1 += outLines2
 
 
-        lines = file(inputFile2).readLines()
+        lines = file(inputFile2).readLines("UTF-8")
 //            .findAll { line -> line.contains(":ua_1992") }
 
         def pattern3 = ~ /(^|-)(арт|бліц|веб|етно|кібер|компакт|мас|медіа|поп|прес|флеш|фоль?к|шоу)-/
@@ -296,8 +298,8 @@ task testExpand(type: JavaExec, dependsOn: [reverseAffix, autoGen, classes]) {
     workingDir = file('test')
 
     def opts = "--corp --indent --mfl --stats --wordlist"
-    args "-aff", "../data/affix"
-    args "-dict", "dict"
+    args "--aff", "../data/affix"
+    args "--dict", "dict"
     args opts.split()
 
 //    jvmArgs "-XX:+FlightRecorder -XX:StartFlightRecording=disk=true,dumponexit=true,filename=recording.jfr".split()
@@ -321,7 +323,7 @@ task testExpand(type: JavaExec, dependsOn: [reverseAffix, autoGen, classes]) {
 // Main targets
 //
 
-task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, autoGen, testExpand]) {
+task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, autoGen/*, testExpand*/]) {
     classpath = sourceSets.main.runtimeClasspath
     main = "org.dict_uk.expand.ExpandAll"
 
@@ -330,8 +332,8 @@ task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, autoGen, testExpand
     def opts = "--corp --indent --mfl --stats --wordlist --time"
     // opts += "--removeWithRegex verb.*:inf.*:coll"            // remove colloquial verb forms
 
-    args "-aff", "../data/affix"
-    args "-dict", "../data/dict"
+    args "--aff", "../data/affix"
+    args "--dict", "../data/dict"
     args opts.split()
 
     jvmArgs "-Xms4000m -Xmx4500m".split()
@@ -377,8 +379,8 @@ task expandInteractive(type: JavaExec, dependsOn: reverseAffix) {
     if( ! project.hasProperty('flat') ) {
         opts += " --indent"
     }
-    args "-aff", "../data/affix"
-    args "-dict", "-"
+    args "--aff", "../data/affix"
+    args "--dict", "-"
     args opts.split()
 }
 
