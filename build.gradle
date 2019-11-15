@@ -391,7 +391,7 @@ task runTool(type: JavaExec, dependsOn: compileGroovy) {
     main = "groovy.ui.GroovyMain"
     args "src/tools/groovy/" + (project.hasProperty('tool') ? project.tool : '')
     if( project.hasProperty('file') ) {
-        println "------" + project.file
+        println "Reading word list from: " + project.file
         args project.file
     }
 }

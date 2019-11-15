@@ -49,7 +49,7 @@ class Util {
 			&& ! allAffixFlags.contains(":prop")    // Всевишній - :prop but not :fname
 	}
 
-	static final Pattern DUAL_LAST_NAME_PATTERN = ~ ".*(о|ій|ай|ич|ач|ик|ук|юк|як|ак|аш|яш|ар|яр|ун|ян|ин|ів|сь|ць|сон|сен|ес|ез|аль|ань) "
+	static final Pattern DUAL_LAST_NAME_PATTERN = ~ ".*(о|ій|ай|ич|ач|ик|ук|юк|як|ак|аш|яш|ар|яр|ун|ян|ин|ів|[сцтн]ь|сон|сен|ес|ез) "
 
 	@CompileStatic
 	def dual_last_name_ending(String line) {
