@@ -303,12 +303,34 @@ def addWord() {
 	}
 }
 
+
+def lname() {
+    if( text.text.contains('єв ') ) {
+        text.text = text.text.replaceFirst(/(єв ).*/, '$1/n2adj2.<+')
+    }
+    else if( text.text.contains(' /adj') ) {
+        text.text = text.text.replaceFirst(' /adj.*', ' /n2adj1.<+')
+    }
+    else if( text.text.contains(' /n2') ) {
+        text.text = text.text.replaceFirst(/([^о] \/n2[0-9]).*/, '$1.a.<+')
+        text.text = text.text.replaceFirst(/(о \/n2[0-9]).*/, '$1.<+')
+
+        if( text.text.contains('р /n2') ) {
+            text.text = text.text.replace('.<', '.ke.<')
+         }
+    }
+    else if( text.text.contains('/n10') ) {
+        text.text = text.text.replaceFirst(/( \/n10).*/, '$1.<+')
+    }
+    inflect()
+}
+
 def defaultFlags() {
-	def txt = text.text.replaceFirst(/ .*/, '')
-	def word_txt = getDefaultTxt(txt)
-	text.setText(word_txt)
-	findInDict(txt)
-	inflect()
+    def txt = text.text.replaceFirst(/ .*/, '')
+    def word_txt = getDefaultTxt(txt)
+    text.setText(word_txt)
+    findInDict(txt)
+    inflect()
 }
 
 println "starting..."
@@ -374,7 +396,7 @@ swing.edt {
 								}, keystroke, JComponent.WHEN_IN_FOCUSED_WINDOW);
 						
 						label('     ')
-							
+
 						button(
 								text: 'Pers',
 								actionPerformed: {
@@ -386,6 +408,21 @@ swing.edt {
 										inflect()
 									}
 								)
+
+						def btnL = button(
+								text: 'lname',
+								actionPerformed: {
+							            lname()
+							        }
+								)
+
+								KeyStroke keystrokeL = KeyStroke.getKeyStroke(KeyEvent.VK_L, InputEvent.CTRL_MASK)
+								btnL.registerKeyboardAction(new ActionListener() {
+									public void actionPerformed(ActionEvent e) {
+										lname()
+									}
+								}, keystrokeL, JComponent.WHEN_IN_FOCUSED_WINDOW);
+
 						button(
 								text: 'Adjp',
 								actionPerformed: {
