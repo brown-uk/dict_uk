@@ -19,8 +19,7 @@ import java.awt.event.InputEvent
 
 
 @Field
-def inputData = new File(args.length >= 1 ? args[0] : 'out/toadd/unknown_lemmas.txt').readLines("UTF-8")
-//def inputData = new File('out/toadd/unknown.txt').readLines().collect{ it.replace('\t', '    ') }
+def inputData = new File(args.length >= 1 ? args[0] : 'out/toadd/unknown_lemmas.txt').readLines("UTF-8").collect{ it.trim().replace('\t', '  ') }
 @Field
 def media = []
 @Field
@@ -92,9 +91,8 @@ def inflect() {
 		}
 		
 	}
-	println "inflected"
 	mainList.revalidate()
-	mainList.repaint() 
+	mainList.repaint()
 }
 
 def findMedia(word) {
@@ -123,13 +121,13 @@ Closure selChange1 = { e ->
 		return
 
 	def itemParts = inputData[minSelIdx].split(' +')
-	def item = itemParts[0]
-	def notes = itemParts.size() > 1 ? itemParts[1] : ''
+	boolean countPresent = (itemParts[0] =~~ /[0-9]+/) as boolean
+	def item = countPresent ? itemParts[1] : itemParts[0]
+	def notes = ! countPresent && itemParts.size() > 1 ? itemParts[1] : ''
 	
 	def word
 	def word_txt
 	
-	println "::$notes"
 	if( notes =~ /^(\/[a-z]|noun:.:nv|noninfl|adv|intj|onomat)/ ) {
 		notesLabel.text = ''
 		word = item
