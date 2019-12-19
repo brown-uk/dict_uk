@@ -104,6 +104,12 @@ def addA() {
 	text.text = text.text.replaceFirst(/( \/n2[0-9])/, '$1.a')
 }
 
+def copyToClipboard(word) {
+    StringSelection stringSelection = new StringSelection(word);
+    Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+    clipboard.setContents(stringSelection, null);
+}
+
 def imperfPerf() {
 	if( text.text.contains(":imperf") && ! text.text.contains(":perf") ) {
 		text.text = text.text.replace(':imperf', ':imperf:perf')
@@ -142,11 +148,8 @@ Closure selChange1 = { e ->
 
 	println "word: $word"
 
-	StringSelection stringSelection = new StringSelection(word);
-	Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-	clipboard.setContents(stringSelection, null);
+    copyToClipboard(word)
 
-	
 	text.setText(word_txt)
 
 	SwingUtilities.invokeLater( {
@@ -256,6 +259,13 @@ def findInDict(word) {
 	if( similars.size() > 100 ) {
 		similars = similars[0..100]
 	}
+	
+	similars = similars.collect {
+	    def parts = it.split(/ /, 2)
+	    def right = parts.length > 1 ? parts[1] : ""
+	    parts[0].padRight(25) + right
+	}
+	
 	def model = new DefaultListModel<String>()
 	similars.each{ model.addElement(it) }
 	vesumList.setModel( model )
@@ -566,8 +576,9 @@ swing.edt {
 						def btnToAdj = button(
 							text: 'ToAdj',
 							actionPerformed: {
-									text.text = text.text.replaceFirst(/(а|у|ої|ого|ому|им|ім|іми|іх) [\/a-z]/, 'ий /')
+									text.text = text.text.replaceFirst(/(а|е|у|ої|ого|ому|[иії]м|[иії]ми|[иії]х)( [\/a-z]| *$)/, 'ий /')
 									defaultFlags()
+									copyToClipboard(text.text.replaceAll(/ .*/, ''))
 								}
 							)
 							KeyStroke keystrokeY = KeyStroke.getKeyStroke(KeyEvent.VK_Y, InputEvent.CTRL_MASK)
