@@ -566,7 +566,7 @@ swing.edt {
 						def btnToAdj = button(
 							text: 'ToAdj',
 							actionPerformed: {
-									text.text = text.text.replaceFirst(/(а|у|ої|ого|ому|им|ім|іми|іх) \//, 'ий /')
+									text.text = text.text.replaceFirst(/(а|у|ої|ого|ому|им|ім|іми|іх) [\/a-z]/, 'ий /')
 									defaultFlags()
 								}
 							)
