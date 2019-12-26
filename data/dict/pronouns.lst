@@ -1118,8 +1118,7 @@
 сиріч conj:subord
 справді adv:&insert|part
 також adv:&insert|conj:coord
-так adv:&pron:dem|part|conj:coord:subord
-там adv:&pron:dem|part
+так adv:&pron:dem|part|conj:coord|conj:subord
 там-то adv:&pron:dem
 та conj:coord|part
 теє part
