@@ -216,6 +216,9 @@ def getDefaultTxt(word) {
 			break;
 			
 			
+		case ~/.*(огія)$/:
+			word_txt += ' /n10'
+			break;
 		case ~/.*([аеєиіїоуюя]ка|[^к]а|ія|я)$/:
 			word_txt += ' /n10.p1'
 			break;
@@ -238,7 +241,7 @@ def getDefaultTxt(word) {
 def findInDict(word) {
 	word = word.replaceFirst(/.*-/, '')
 	
-	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|без|взаємо|відео|гео|гепато|геронто|геліо|гідро|гіпер|держ|еко|екстра|електро|євро|за|кібер|кіно|мало|мега|мета|мікро|моно|мото|над|напів|нейро|не|пере|під|по|проти|про|псевдо|радіо|само|спец|спів|стерео|спорт|старо|супер|термо|теле|транс|фото)/, '')
+	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|без|взаємо|високо|відео|гео|гепато|геронто|геліо|гідро|гіпер|держ|еко|екстра|електро|етно|євро|за|кібер|кіно|мало|мега|мета|мікро|моно|мото|над|напів|нейро|не|пере|під|по|проти|про|псевдо|радіо|само|спец|спів|стерео|спорт|старо|супер|термо|теле|транс|фото)/, '')
     ending = ending.replaceFirst(/^ав/, 'а[ву]')
     ending = ending.replaceFirst(/(ння|ти)$/, '(ння|ти)')
 	if( ending.endsWith('ований') ) {
@@ -435,6 +438,9 @@ swing.edt {
 								text: 'Adjp',
 								actionPerformed: {
 										text.text = text.text.replaceFirst(/ [^ ]*/, ' /adj :&adjp:pasv:perf')
+										if( text.text =~ /[ауюя]ючий / ) {
+										    text.text = text.text.replaceFirst(/pasv:perf/, 'actv:imperf')
+										}
 										inflect()
 									}
 								)
@@ -576,7 +582,12 @@ swing.edt {
 						def btnToAdj = button(
 							text: 'ToAdj',
 							actionPerformed: {
-									text.text = text.text.replaceFirst(/(а|е|у|ої|ого|ому|[иії]м|[иії]ми|[иії]х)( [\/a-z]| *$)/, 'ий /')
+							    if( text.text =~ /(ост[ію]|істю)( [\/a-z]| *$)/ ) {
+									text.text = text.text.replaceFirst(/(ост[ію]|істю)( [\/a-z]| *$)/, 'ість /n30')
+							    }
+							    else {
+									text.text = text.text.replaceFirst(/(а|е|у|ої|ою|ого|ому|ій?|[иії]м|[иії]ми|[иії]х)( [\/a-z]| *$)/, 'ий /')
+							    }
 									defaultFlags()
 									copyToClipboard(text.text.replaceAll(/ .*/, ''))
 								}
