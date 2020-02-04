@@ -420,6 +420,17 @@ swing.edt {
 									}
 								)
 
+						button(
+								text: 'F-lem',
+								actionPerformed: {
+										text.text = text.text.replaceFirst(/(ою|у|і|ій)( .*|$)/, 'а')
+										text.text = text.text.replaceFirst(/([еє]ю|ю|ї|їй)( .*|$)/, 'я')
+										defaultFlags()
+										findInDict(text.text)
+										inflect()
+									}
+								)
+
 						def btnL = button(
 								text: 'lname',
 								actionPerformed: {
