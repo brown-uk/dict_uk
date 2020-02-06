@@ -260,6 +260,7 @@
 неоглядки adv
 неоглядком adv
 неохая /n10.< :+m
+неперечний /adj
 нестямливий /adj
 неякась неякийсь adj:f:v_naz:&pron:neg
 неякесь неякийсь adj:n:v_naz/v_zna:&pron:neg
@@ -294,11 +295,14 @@
 оглав /n20.p
 огонь /n22.p
 одвір adv
+одвіт /n20
+оддаля adv
 одзивний /adj
 одзняти /v1.isTo :perf
 одзнятий /adj :&adjp:pasv:perf
 одіж /n32
 одітий /adj :&adjp:pasv:perf    # past
+одкривати /v2.cf.advp :imperf
 одкрити /v2.isTo :perf
 одкритися /vr2 :perf
 одміна /n10
