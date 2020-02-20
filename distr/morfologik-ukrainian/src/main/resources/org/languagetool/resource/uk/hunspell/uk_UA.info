@@ -11,3 +11,4 @@ fsa.dict.frequency-included=true
 
 fsa.dict.speller.ignore-numbers=true
 fsa.dict.speller.ignore-all-uppercase=false
+fsa.dict.speller.ignore-camel-case=false
