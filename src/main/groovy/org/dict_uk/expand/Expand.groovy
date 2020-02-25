@@ -88,7 +88,7 @@ class Expand {
 		def mainGroup = affixSubGroups[0]
 
 		String pos = util.get_pos(mainGroup, modifiers)
-		assert pos != null, "$mainGroup, $modifiers"
+		assert pos != null, "invalid $word: $mainGroup, $modifiers"
 		def base_tag = base_tags.get_base_tags(word, "", affixFlags, extra)
 
 		DicEntry base_word = new DicEntry(word, word, pos + base_tag)

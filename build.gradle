@@ -6,7 +6,7 @@ apply plugin: 'eclipse'
 
 compileJava.options.encoding = 'UTF-8'
 
-version = '3.5'
+version=new File("${projectDir}/VERSION").text.trim()
 group = 'org.dict_uk'
 
 String langCode="uk"
@@ -27,8 +27,8 @@ repositories {
 //}
 
 dependencies {
-    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.0-rc-1'
-    compile group: 'org.codehaus.groovy', name: 'groovy-cli-picocli', version: '3.0.0-rc-1'
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.1'
+    compile group: 'org.codehaus.groovy', name: 'groovy-cli-picocli', version: '3.0.1'
     compile 'info.picocli:picocli:4.0.4'
 
     compile group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
