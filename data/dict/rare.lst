@@ -122,8 +122,6 @@
 зазнимкований /adj :&adjp:pasv:perf
 зазнимкувати /v1.is0 :perf
 зазнимкуватися /vr1 :perf
-зазнімкувати /v1.is0 :perf
-зазнімкуватися /vr1 :perf
 заки conj:subord
 заким conj:subord
 замісто prep        # rv_rod
@@ -161,8 +159,10 @@
 злотник /n20.a.p.<
 змаг /n20
 змирятися /vr2.cf.advp :imperf
-знімкувати /v1.cf.advp :imperf
-знімкуватися /vr1.cf.advp :imperf
+знимка /n10.p2
+знимкування /n2n
+знимкувати /v1.cf.advp :imperf
+знимкуватися /vr1.cf.advp :imperf
 з-позаду з-позаду adv
 зрабований /adj :&adjp:pasv:perf
 зрадувати /v1 :perf
@@ -389,7 +389,7 @@
 підсичувати /v1.cf.advp :imperf
 побідити /v1 :perf
 подовш adv|prep        # rv_rod
-познімкуватися /vr1 :perf
+познимкуватися /vr1 :perf
 покійно adv
 полегша /n10.p1
 поломання /n2n
