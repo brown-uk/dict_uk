@@ -344,6 +344,16 @@ def defaultFlags() {
     inflect()
 }
 
+def openUrl(url) {
+    if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+println("--- destop")
+        Desktop.getDesktop().browse(new URI(url));
+    }
+    else {
+        "xdg-open $url".execute()
+    }
+}
+
 println "starting..."
 
 count = 0
@@ -665,8 +675,8 @@ swing.edt {
 						text: 'leipzig.de',
 						actionPerformed: { 
 							def encWord = java.net.URLEncoder.encode(text.text.replaceFirst(/ .*/, ''), "UTF-8")
-							def uel = "http://corpora.uni-leipzig.de/de/res?corpusId=ukr_mixed_2014&word=${encWord}"
-							"xdg-open $url".execute()
+							def url = "http://corpora.uni-leipzig.de/de/res?corpusId=ukr_mixed_2014&word=${encWord}"
+							openUrl(url)
 						}
 					)
 
@@ -675,7 +685,7 @@ swing.edt {
 						actionPerformed: {
 							def encWord = java.net.URLEncoder.encode(text.text.split(" ", 2)[0], "UTF-8")
 							def url = "http://www.parasolcorpus.org/bonito/run.cgi/first?corpname=grac6&queryselector=cqlrow&lemma=&phrase=&word=&char=&cql=%5Bword%3D%22${encWord}%22%5D" 
-							"xdg-open $url".execute()
+							openUrl(url)
 						}
 					)
 
@@ -684,7 +694,7 @@ swing.edt {
 						actionPerformed: {
 							def encWord = java.net.URLEncoder.encode(text.text.split(" ", 2)[0], "UTF-8")
 							def url = "https://www.google.com/search?lr=lang_uk&hl=uk&tbo=p&tbm=bks&q=${encWord}&num=10" 
-							"xdg-open $url".execute()
+							openUrl(url)
 						}
 					)
 					
@@ -693,7 +703,7 @@ swing.edt {
 						actionPerformed: {
 							def encWord = java.net.URLEncoder.encode(text.text.split(" ", 2)[0], "UTF-8")
 							def url = "https://www.google.com/search?q=${encWord}&num=10&source=lnt&tbs=lr:lang_1uk&lr=lang_uk"
-							"xdg-open $url".execute()
+							openUrl(url)
 						}
 					)
 
@@ -702,7 +712,7 @@ swing.edt {
 						actionPerformed: {
 							def encWord = java.net.URLEncoder.encode(text.text.split(" ", 2)[0], "UTF-8")
 							def url = "https://uk.wikipedia.org/w/index.php?search=${encWord}" 
-							"xdg-open $url".execute()
+							openUrl(url)
 						}
 					)
 					
