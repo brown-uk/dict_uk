@@ -1308,6 +1308,9 @@ class Expand {
 			if( line.contains("/v") && line.contains(":imperf:perf") ) {
 				double_form_cnt += 1
 			}
+			if( line.contains(":bad") || line.contains(":slang") ) {
+				double_form_cnt += 1
+			}
 
 			prepared_lines << lineGroup
 		}
