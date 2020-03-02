@@ -212,7 +212,7 @@ task dups {
 	def dictDir = file("data/dict")
 	
 	def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') \
-	    && ! (it.name in ['dot-abbr.lst', 'geo-ukr-hydro.lst']) }
+	    && ! (it.name in ['dot-abbr.lst', 'geo-ukr-hydro.lst', 'geo-ukr-koatuu.lst']) }
 	
 	def lines = files.collect {  it.text.split("\n")  }.flatten() \
 	    .collect { it
