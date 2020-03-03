@@ -27,13 +27,13 @@ repositories {
 //}
 
 dependencies {
-    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.1'
-    compile group: 'org.codehaus.groovy', name: 'groovy-cli-picocli', version: '3.0.1'
-    compile 'info.picocli:picocli:4.0.4'
+    implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.1'
+    implementation group: 'org.codehaus.groovy', name: 'groovy-cli-picocli', version: '3.0.1'
+    implementation 'info.picocli:picocli:4.0.4'
 
-    compile group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
-    compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
-    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    implementation group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
+    implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
 //    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.2'
 
 	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.1'
@@ -432,9 +432,9 @@ if ( osName.contains("windows")) {
 task fatJar(type: Jar) {
     manifest {
         attributes 'Implementation-Title': 'dict_uk classes',
-            'Implementation-Version': version
+            'Implementation-Version': archiveVersion
     }
-    baseName = project.name + '-all'
+    archiveBaseName = project.name + '-all'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
