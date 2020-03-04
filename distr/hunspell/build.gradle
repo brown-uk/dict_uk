@@ -13,11 +13,11 @@ repositories {
 
 
 dependencies {
-    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.5.5'
+    implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.1'
 
-    compile group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
-    compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
-    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    implementation group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
+    implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
 }
 
 
@@ -57,8 +57,8 @@ task hunspellZip (type: Zip, dependsOn: hunspell) {
    from "$outDir"
    include 'uk_UA.aff'
    include 'uk_UA.dic'
-   archiveName "hunspell-uk_UA_${version}.zip"
-   destinationDir(file("$outDir"))
+   archiveFileName = "hunspell-uk_UA_${project.version}.zip"
+   destinationDirectory = file("$outDir")
 }
 
 task hunspellForSearch (type: JavaExec, dependsOn: classes) {
