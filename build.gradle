@@ -387,7 +387,7 @@ task expandInteractive(type: JavaExec, dependsOn: reverseAffix) {
 
 
 task runTool(type: JavaExec, dependsOn: compileGroovy) {
-    classpath = sourceSets.main.output + configurations.runtime
+    classpath = sourceSets.main.output + configurations.runtimeClasspath
     main = "groovy.ui.GroovyMain"
     args "src/tools/groovy/" + (project.hasProperty('tool') ? project.tool : '')
     if( project.hasProperty('file') ) {
