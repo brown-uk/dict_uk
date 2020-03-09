@@ -63,7 +63,7 @@ class BaseTags {
 		}
 
 		if( affixFlag == "numr" ) {
-		    if( word.endsWith("ин") ) {
+		    if( word.endsWith("ин") || word.endsWith("ен") ) {
 		        tag = ":m:v_naz/v_zn2"
 		    }
 		    else {

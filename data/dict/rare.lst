@@ -205,6 +205,9 @@
 зумисно adv
 зцілювач /n20.a.p.<
 ірій /n20
+їдак /n20.a.p.<
+їден /numr ^adj :&pron:dem:ind
+їстівець /n22.a
 йменований /adj :&adjp:pasv:imperf
 калабалик /n20
 кально adv:&predic
@@ -580,6 +583,7 @@
 успокоєний /adj :&adjp:pasv:perf    # past
 устид adv:&predic
 устидно adv:&predic
+устріть adv
 ухорканий /adj :&adjp:pasv:perf:v-u    # past
 ученик /n20.a.p.<
 учительний /adj
@@ -603,6 +607,8 @@
 цего noun:inanim:n:v_rod:&pron:dem  #> цього
 ци conj:coord:subord        #> чи
 циганів циган noun:anim:p:v_rod/v_zna
+цилюрник /n20.a.p.<
+цилюрня /n10.p2
 цирулик /n20.a.p.<
 цифір /n32
 цукриця /n10
@@ -616,6 +622,7 @@
 чорт-мало noninfl:&predic
 чорт-матиме noninfl:&predic
 чуткість /n30
+широчиня /n10
 шияка /n10
 шкварко adv:&predic
 шкло /n2n                      #> скло

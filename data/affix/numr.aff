@@ -35,3 +35,23 @@ group numr
 ин      ні       # одні один    @ numr:p:v_naz/v_zn2
 ин      них      # одних один    @ numr:p:v_rod/v_zn1/v_mis
 ин      ними     # одними один    @ numr:p:v_oru
+
+
+ен:
+#їден їден numr:m:v_naz/v_zn2
+ен      ного     # їдного їден    @ numr:m:v_rod/v_zn1//n:v_rod
+ен      ному     # їдному їден    @ numr:m:v_dav/v_mis//n:v_dav/v_mis
+ен      ним      # їдним їден    @ numr:m:v_oru//n:v_oru//p:v_dav
+ен      нім      # їднім їден    @ numr:m:v_mis//n:v_mis
+ен      на       # їдна їден    @ numr:f:v_naz
+ен      ної      # їдної їден    @ numr:f:v_rod
+ен      нієї     # їднієї їден    @ numr:f:v_rod
+ен      ній      # їдній їден    @ numr:f:v_dav/v_mis
+ен      нією     # їднією їден    @ numr:f:v_oru
+ен      ною      # їдною їден    @ numr:f:v_oru
+ен      ну       # їдну їден    @ numr:f:v_zna
+ен      не       # їдне їден    @ numr:n:v_naz/v_zna
+ен      но       # їдно їден    @ numr:n:v_naz/v_zna
+ен      ні       # їдні їден    @ numr:p:v_naz/v_zn2
+ен      них      # їдних їден    @ numr:p:v_rod/v_zn1/v_mis
+ен      ними     # їдними їден    @ numr:p:v_oru
