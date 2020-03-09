@@ -229,7 +229,9 @@
 коц /n20.a.p
 кріпость /n32.p
 лапоть /n22.a.p
+ледаякий /adj
 леда-який /adj :&pron:ind
+ледь-не-ледь adv
 ломлення /n2n
 лотр /n20.a.p.ke.<
 любля noninfl:&predic
@@ -246,6 +248,8 @@
 метанина /n10
 мізок /n22.p
 міліард /n20.a.p
+мінька adv
+міньки adv
 мість prep        # rv_rod
 мо adv:&insert
 можний /adj
@@ -254,6 +258,7 @@
 моторити /v1 :imperf
 моцний /adj \
  +cs=моцніший
+муравлиний /adj
 мусів мусіти verb:imperf:past:m
 мусівши мусівши advp:imperf
 мусіла мусіти verb:imperf:past:f
@@ -276,6 +281,7 @@
 нагородженість /n30
 надійсь adv:&insert
 надісь adv:&insert
+надогад adv
 надцять /numr
 наклонити /v1 :perf
 намість намість adv
@@ -283,7 +289,9 @@
 нанашка /n10.p2.<
 напружливий /adj
 нарід /n21
+наскінчу adv
 настарчити /v1 :perf
+научити /v1.is0.it1 :perf
 начальний /adj
 нашо adv                    #> нащо
 невміч adv:&predic
@@ -299,6 +307,7 @@
 неоглядком adv
 неохая /n10.< :+m
 неперечний /adj
+непутити /v1.cf.advp :imperf
 нестямливий /adj
 неякась неякийсь adj:f:v_naz:&pron:neg
 неякесь неякийсь adj:n:v_naz/v_zna:&pron:neg
@@ -314,6 +323,7 @@
 неякомусь неякийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:neg
 неякоюсь неякийсь adj:f:v_oru:&pron:neg
 неякусь неякийсь adj:f:v_zna:&pron:neg
+нівець /n22.a
 нігде adv:&pron:emph
 нігде adv:&pron:neg
 ніже conj:coord
@@ -346,7 +356,10 @@
 одміна /n10
 однакий /adj
 однако adv:&predic
+одсіч /n32
 озутий /adj :&adjp:pasv:perf    # past
+околяса adv
+околясом adv
 окроме prep        # rv_rod
 окропіте окропити verb:perf:impr:p:2
 олтар /n24.a.p.ke
@@ -409,8 +422,15 @@
 отцю отцей adj:f:v_zna:&pron:dem
 отця отцей adj:f:v_naz:&pron:dem
 памка /n10
+панянство /n2n
+пасажирний /adj
 пашпорт /n20.a.p
 пеняти /v2.cf.advp :imperf
+переіначений /adj :&adjp:pasv:perf
+переіначення /n2n
+переіначити /v1.is0.it0 :perf
+переіначування /n2n
+переіначувати /v1.cf.advp :imperf
 переселянин /n20.a.pyn.<
 перстінь /n23.p
 пестієчка /n10.<
@@ -426,15 +446,26 @@
 підогрівний /adj
 підогрітий /adj :&adjp:pasv:perf    # past
 підсичувати /v1.cf.advp :imperf
+плоскоденка /n10.p2
+плоскоденний /adj
+плястер /n22.a.p.ke
 побідити /v1 :perf
+побойовисько /n2n
+повозовий /adj
+поворітний /adj
+погибати /v2.cf.advp :imperf
 подовш adv|prep        # rv_rod
+позавгорідно adv
 познимкуватися /vr1 :perf
 покійно adv
 полегша /n10.p1
 поломання /n2n
+полумінь /n23.a
 помісь conj:subord
 помісь part
 помісь /n32.p
+попереіначуваний /adj :&adjp:pasv:perf
+попереіначувати /v1.isNo :perf
 попоштувати /v1 :perf
 попоштуватися /vr1 :perf
 попроз попроз prep        # rv_zna
@@ -451,12 +482,14 @@
 поуз поуз prep        # rv_rod:rv_zna
 почерез prep        # rv_zna
 пощо adv:&pron:int:rel
+правобіч adv
 празничанин /n20.a.pyn.<
 приводець /n22.a.p.<
 придверний /adj
 приказ /n20.p
 притім conj:subord:bad
 прищіпляти /v2.cf.advp :imperf
+прітьма adv
 пріч prep|adv:&predic        # rv_rod
 простибі adv:&insert
 простибіг adv:&insert
