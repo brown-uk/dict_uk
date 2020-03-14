@@ -3,7 +3,7 @@
 
 ## Оновлення з останньої офіційної версії
 
-* Стягнути архів https://github.com/brown-uk/dict_uk/releases/download/v4.8.0/chrome_dict_uk-UA-4.8.0.zip
+* Стягнути архів https://github.com/brown-uk/dict_uk/releases/download/v4.9.0/chrome_dict_uk-UA-4.9.0.zip
 * Розпакувати архів в каталог "Chrome/User Data":
 ** на Windows, c:\Users\<Ім'я користувача>\AppData\Local\Google\Chrome\User Data\)
 ** на Linux - $HOME/.config/google-chrome/Dictionaries
@@ -21,7 +21,7 @@ https://chromium.googlesource.com/chromium/src/+/master/docs/linux/build_instruc
 Нам потрібні лише convert_tool, тому крок побудови має команду
 ```autoninja -C out/Default/ chrome/tools/convert_dict```
 
-### Побудувати словник hunspell
+### Побудувати словник hunspell в dict_uk
 ```sh
 ../../gradlew -b ../hunspell/build.gradle hunspell
 ```
