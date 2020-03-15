@@ -51,6 +51,8 @@ task prepareDict() {
     def outFile="${tmpDir}/all.tagged.nlp.tmp"
     def splitter = '\t'
     def tagSplitter = '|'
+    def cnt = 0
+	def forceSquashLemmas = true
 
     inputs.file srcDict
     outputs.file outFile
@@ -65,25 +67,52 @@ task prepareDict() {
         // to lower memory footprint we collect by lemmas
 
         def prevLemma = ""
-        def tagMap = [:].withDefault{[]}
+        def tagMap = [:].withDefault{new LinkedHashSet<>()}
 
-        new File(srcDict).eachLine { line ->
+        def gKeys = new HashSet<>()
+        def currGKeys = new HashSet<>()
+
+        new File(srcDict).eachLine { String line ->
           line = line.replace('ґ', 'г').replace('Ґ', 'Г')
-
+		  
           def (word, lemma, tagStr) = line.split()
 
+		  tagStr = tagStr.replaceAll(/:(ua_[0-9]{4}|alt|bad|coll|slang|rare|xp[0-9])/, '')
+		  if( forceSquashLemmas ) {
+			  tagStr = tagStr.replaceAll(/:(prop|geo|.name)/, '')
+//			  lemma = lemma.toLowerCase()
+		  }
+
           def wordKey = word.toLowerCase() + splitter + lemma
+
+          boolean withG = lemma.contains('г') || lemma.contains('Г')
+          if( withG ) {
+            if( wordKey in gKeys ) {
+              return
+            }
+          }
+
           if( lemma != prevLemma ) {
             tagMap.each { key, tags ->
               def outLine = key + splitter + tags.join(tagSplitter) + "\n"
               outF.append(outLine, dstEncoding)
+              if( ++cnt % 100000 == 0 ) println "$cnt"
             }
             tagMap.clear()
 
+            if( currGKeys ) {
+                gKeys.addAll( currGKeys )
+                currGKeys.clear()
+            }
+
             prevLemma = lemma
           }
+		  
+		  if( withG ) {
+			  currGKeys << wordKey
+		  }
 
-          tagMap[wordKey]  << tagStr
+          tagMap[wordKey] << tagStr
         }
 
         tagMap.each { key, tags ->
