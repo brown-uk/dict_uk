@@ -28,14 +28,14 @@ https://chromium.googlesource.com/chromium/src/+/master/docs/linux/build_instruc
 
 ### Копіювати файли для словника в chromium
 ```sh
-cp ../hunspell/build/hunspell/uk_UA.dic $CHROMIUM_DIR/chromium/src/third_party/hunspell_dictionaries/
-grep -v "IGNORE" ../hunspell/build/hunspell/uk_UA.aff > $CHROMIUM_DIR/chromium/src/third_party/hunspell_dictionaries/uk_UA.aff
+cp ../hunspell/build/hunspell/uk_UA.dic $CHROMIUM_DIR/src/third_party/hunspell_dictionaries/
+grep -v "IGNORE" ../hunspell/build/hunspell/uk_UA.aff > $CHROMIUM_DIR/src/third_party/hunspell_dictionaries/uk_UA.aff
 ```
 
 ### Конвертувати словник hunspell у формат bdic
 ```sh
-$CHROMIUM_DIR/chromium/src/chrome/tools/convert_dict/out/Default/convert_dict $CHROMIUM_DIR/chromium/src/third_party/hunspell_dictionaries/uk_UA
-mv $CHROMIUM_DIR/chromium/src/third_party/hunspell_dictionaries/uk_UA.bdic $CHROMIUM_DIR/chromium/src/third_party/hunspell_dictionaries/uk-UA-3-0.bdic
+$CHROMIUM_DIR/src/chrome/tools/convert_dict/out/Default/convert_dict $CHROMIUM_DIR/src/third_party/hunspell_dictionaries/uk_UA
+mv $CHROMIUM_DIR/src/third_party/hunspell_dictionaries/uk_UA.bdic $CHROMIUM_DIR/src/third_party/hunspell_dictionaries/uk-UA-3-0.bdic
 ```
 
 ### Скопіювати словник в каталог браузера
@@ -43,6 +43,6 @@ mv $CHROMIUM_DIR/chromium/src/third_party/hunspell_dictionaries/uk_UA.bdic $CHRO
 ** на Windows, c:\Users\<Ім'я користувача>\AppData\Local\Google\Chrome\User Data\)
 ** на Linux - $HOME/.config/google-chrome/Dictionaries
 ```sh
-cp $CHROMIUM_DIR/chromium/src/third_party/hunspell_dictionaries/uk-UA-3-0.bdic $HOME/.config/google-chrome/Dictionaries
+cp $CHROMIUM_DIR/src/third_party/hunspell_dictionaries/uk-UA-3-0.bdic $HOME/.config/google-chrome/Dictionaries
 ```
 * перезапустити Chrome
