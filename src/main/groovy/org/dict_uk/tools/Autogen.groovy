@@ -15,11 +15,18 @@ class Autogen {
 	static String[][] replaceLetters(String[] lines) {
 		def outLines = []
 		def outReplaceLines = []
+		def errors = []
 		
 		lines
 		.findAll { line -> line =~ /проек[тц]|хіміо/ }
 		.each { line ->
 			assert ! line.contains('#>')
+			
+			if( line =~ /проек[тц]/ ) {
+				if( ! line.contains(":ua_1992") ) {
+					errors << line
+				}
+			}
 
 			String newLine = line.replaceFirst(/проек([тц])/, 'проєк$1').replace('хіміо', 'хіміє')
 			newLine = newLine.replace('ua_1992', 'ua_2019')
@@ -30,6 +37,11 @@ class Autogen {
 
 			outLines << newLine
 		}
+		
+		if( errors ) {
+			System.err.println "-проект- without :ua_1992\n" + errors.join("\n")
+			System.exit(1)
+		}
 
 		[ outLines, outReplaceLines ]
 	}
@@ -37,7 +49,8 @@ class Autogen {
 	static String[][] replaceMain(String[] lines) {
 		def outLines = []
 		def outReplaceLines = []
-
+		def errors = []
+		
 		// two regexes to handle екс-віце-спікер
 		def pattern1 = ~ /([а-яіїєґ']+-)(анти|архі|архи|боді|віце|гіпер|диско|екс|екстра|камер|макро|контр|лейб|максі|міді|мікро|міні|мульти|нано|обер|полі|прес|преміум|супер|топ|ультра|штабс|унтер)-([^ ]+)(.*)/
 		def pattern2 = ~ /(^|[а-яіїєґ']+-)(анти|архі|архи|боді|віце|гіпер|диско|екс|екстра|камер|макро|контр|лейб|максі|міді|мікро|міні|мульти|нано|обер|полі|прес|преміум|супер|топ|ультра|штабс|унтер)-([^ ]+)(.*)/
@@ -50,6 +63,10 @@ class Autogen {
 				line = line.replaceFirst(/ *#>.*/, '')
 			}
 
+			if( ! (line =~ /прес-(ніж|ножиц)|ультра-сі/) )
+				if( ! line.contains(":ua_1992") )
+					errors << line
+			
 			String newLine = pattern1.matcher(line).replaceFirst('$1$2$3$4')
 			newLine = pattern2.matcher(newLine).replaceFirst('$1$2$3$4')
 			// TODO: make generic
@@ -63,6 +80,11 @@ class Autogen {
 			outLines << newLine
 		}
 
+		if( errors ) {
+			System.err.println "анти-, архі-... without :ua_1992\n" + errors.join("\n")
+			System.exit(1)
+		}
+
 		[ outLines, outReplaceLines ]
 	}
 		
@@ -70,7 +92,8 @@ class Autogen {
 	static String[][] replaceArtBlitz(String[] lines) {
 		def outLines = []
 		def outReplaceLines = []
-
+		def errors = []
+		
 		def pattern3 = ~ /(^|-)(арт|бліц|веб|етно|кібер|компакт|мас|медіа|поп|прес|флеш|фоль?к|шоу)-/
 		
 		lines
@@ -81,11 +104,19 @@ class Autogen {
 						line = line.replaceFirst(/ *#>.*/, '')
 					}
 
+					if( ! line.contains(":ua_1992") )
+						errors << line
+
 					String newLine = pattern3.matcher(line).replaceFirst('$1$2')
 					newLine = newLine.replace('ua_1992', 'ua_2019')
-					
+
 					outLines << newLine
 				}
+
+		if( errors ) {
+			System.err.println "WARN: арт-, бліц-... without :ua_1992\n" + errors.join("\n")
+//			System.exit(1)
+		}
 
 		[ outLines, outReplaceLines ]
 	}
@@ -122,7 +153,7 @@ class Autogen {
 	static void autogen(String inputFile1, String inputFile2, String outputFile) {
 		
 		String[] lines = file(inputFile1).readLines("UTF-8")
-				.findAll { line -> line.contains(":ua_1992") }
+				//.findAll { line -> line.contains(":ua_1992") }
 
 	    def repl = replaceLetters(lines)
 				
