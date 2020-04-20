@@ -16,6 +16,7 @@ import groovy.swing.impl.ListWrapperListModel
 import groovy.transform.Field
 import java.awt.event.ActionListener
 import java.awt.event.InputEvent
+import java.awt.Font
 
 
 @Field
@@ -28,20 +29,24 @@ def newWords = []
 def expand = new Expand(false)
 
 @Field
-def dictLines = new File('data/dict')
-	.listFiles()
-	.collect { File file ->
-		if( file.name.endsWith('.lst') ) {
-//		println "adding file ${file.name}"
-			file.readLines("UTF-8")
+def dictLines = [:]
+
+println "Loading existing words..."
+
+new File('data/dict')
+.listFiles()
+.each { File file ->
+	if( file.name.endsWith('.lst') ) {
+        def tag = file.name != "base.lst" ? file.name : ""
+        file.readLines("UTF-8").each {
+		    dictLines[it] = tag
 		}
-		else {
-			[]
-		}
-	}.flatten()
+	}
+}
 
 def newLemmaFile = new File('out/toadd/media_src.txt')
 if( newLemmaFile.exists() ) {
+	println "Loading media_src..."
 	media = newLemmaFile.readLines("UTF-8").collectEntries {
 		def parts = it.split('@@@')
 		[ (parts[0]): parts.length > 1 ? parts[1..-1] : ["---"] ]
@@ -257,15 +262,18 @@ def findInDict(word) {
 
 	println "searching for existing: $ending in ${dictLines.size}"
 	def ptrn = ~"(?ui)^[^#]*$ending "
-	def similars = dictLines.findAll{ ptrn.matcher(it) }
+	def similars = dictLines.findAll{ k,v -> ptrn.matcher(k) }
 //	def similars = dictLines.findAll{ it =~ "(?i)^[а-яіїєґА-ЯІЇЄҐ'-]*$ending " }
 	if( similars.size() > 100 ) {
 		similars = similars[0..100]
 	}
 	
-	similars = similars.collect {
+	similars = similars.collect { it,tag ->
 	    def parts = it.split(/ /, 2)
 	    def right = parts.length > 1 ? parts[1] : ""
+	    if( tag ) {
+	        right += " - $tag"
+	    }
 	    parts[0].padRight(25) + right
 	}
 	
@@ -440,7 +448,7 @@ swing.edt {
 										inflect()
 									}
 								)
-
+	
 						def btnL = button(
 								text: 'lname',
 								actionPerformed: {
@@ -532,6 +540,24 @@ swing.edt {
 										text.text = text.text.replaceFirst(/ :perf/, '.it0 :perf')
 										inflect()
 									}
+								)
+						button(
+								text: '1992',
+								actionPerformed: {
+									if( text.text =~ /^екс-/ ) {
+										text.text = text.text.replaceFirst(/^(екс)([а-яїієґ])(.*)/, '$1-$2$3 :ua_1992')
+									}
+									else {
+										if (text.text.contains(':') ) {
+											text.text = text.text.replaceFirst(/:[^ ]+/, '$0:ua_1992')
+										}
+										else {
+											text.text = text.text.replaceFirst(/\/[^ ]+/, '$0 :ua_1992')
+										}
+									}
+									inflect()
+									findInDict(text.text)
+								}
 								)
 						button(
 								text: 'NoP',
@@ -652,6 +678,8 @@ swing.edt {
 								)
 						vesumList.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
 						vesumList.setVisibleRowCount(50);
+						def font = vesumList.getFont()
+						vesumList.setFont(new Font("monospaced", font.getStyle(), font.getSize()+1));
 //							vesumList.setPreferredSize(new Dimension(200, 300))
 					}
 

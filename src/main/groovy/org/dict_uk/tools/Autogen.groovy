@@ -94,7 +94,7 @@ class Autogen {
 		def outReplaceLines = []
 		def errors = []
 		
-		def pattern3 = ~ /(^|-)(арт|бліц|веб|етно|кібер|компакт|мас|медіа|поп|прес|флеш|фоль?к|шоу)-/
+		def pattern3 = ~ /(^|-)(арт|бліц|веб|етно|кібер|компакт|мас|медіа|поп|флеш|фоль?к|шоу)-/
 		
 		lines
 				.findAll { line -> pattern3.matcher(line).find() }
