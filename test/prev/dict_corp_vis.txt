@@ -268,6 +268,7 @@
   Адамишину noun:anim:f:v_zna:prop:lname
   Адамишиною noun:anim:f:v_oru:prop:lname
   Адамишиній noun:anim:f:v_mis:prop:lname
+  Адамишина noun:anim:f:v_kly:prop:lname
 азотистоводневий adj:m:v_naz
   азотистоводневого adj:m:v_rod
   азотистоводневому adj:m:v_dav
@@ -350,6 +351,20 @@
   акулами-молотами noun:anim:p:v_oru
   акулах-молотах noun:anim:p:v_mis
   акули-молоти noun:anim:p:v_kly
+арт-акція noun:inanim:f:v_naz:ua_1992
+  арт-акції noun:inanim:f:v_rod:ua_1992
+  арт-акції noun:inanim:f:v_dav:ua_1992
+  арт-акцію noun:inanim:f:v_zna:ua_1992
+  арт-акцією noun:inanim:f:v_oru:ua_1992
+  арт-акції noun:inanim:f:v_mis:ua_1992
+  арт-акціє noun:inanim:f:v_kly:ua_1992
+  арт-акції noun:inanim:p:v_naz:ua_1992
+  арт-акцій noun:inanim:p:v_rod:ua_1992
+  арт-акціям noun:inanim:p:v_dav:ua_1992
+  арт-акції noun:inanim:p:v_zna:ua_1992
+  арт-акціями noun:inanim:p:v_oru:ua_1992
+  арт-акціях noun:inanim:p:v_mis:ua_1992
+  арт-акції noun:inanim:p:v_kly:ua_1992
 Архангельськ noun:inanim:m:v_naz:prop:geo    # місто
   Архангельська noun:inanim:m:v_rod:prop:geo
   Архангельську noun:inanim:m:v_dav:prop:geo
@@ -986,6 +1001,20 @@
   вбоїськами noun:inanim:p:v_oru
   вбоїськах noun:inanim:p:v_mis
   вбоїська noun:inanim:p:v_kly
+веб-адреса noun:inanim:f:v_naz:ua_1992
+  веб-адреси noun:inanim:f:v_rod:ua_1992
+  веб-адресі noun:inanim:f:v_dav:ua_1992
+  веб-адресу noun:inanim:f:v_zna:ua_1992
+  веб-адресою noun:inanim:f:v_oru:ua_1992
+  веб-адресі noun:inanim:f:v_mis:ua_1992
+  веб-адресо noun:inanim:f:v_kly:ua_1992
+  веб-адреси noun:inanim:p:v_naz:ua_1992
+  веб-адрес noun:inanim:p:v_rod:ua_1992
+  веб-адресам noun:inanim:p:v_dav:ua_1992
+  веб-адреси noun:inanim:p:v_zna:ua_1992
+  веб-адресами noun:inanim:p:v_oru:ua_1992
+  веб-адресах noun:inanim:p:v_mis:ua_1992
+  веб-адреси noun:inanim:p:v_kly:ua_1992
 ведучий adj:m:v_naz
   ведучого adj:m:v_rod
   ведучому adj:m:v_dav
@@ -1777,6 +1806,23 @@
   вітрищем noun:inanim:m:v_oru
   вітрищі noun:inanim:m:v_mis
   вітрище noun:inanim:m:v_kly
+віце-адмірал noun:anim:m:v_naz:ua_1992
+  віце-адмірала noun:anim:m:v_rod:ua_1992
+  віце-адміралові noun:anim:m:v_dav:ua_1992
+  віце-адміралу noun:anim:m:v_dav:ua_1992
+  віце-адмірала noun:anim:m:v_zna:ua_1992
+  віце-адміралом noun:anim:m:v_oru:ua_1992
+  віце-адміралі noun:anim:m:v_mis:ua_1992
+  віце-адміралові noun:anim:m:v_mis:ua_1992
+  віце-адміралу noun:anim:m:v_mis:ua_1992
+  віце-адмірале noun:anim:m:v_kly:ua_1992
+  віце-адмірали noun:anim:p:v_naz:ua_1992
+  віце-адміралів noun:anim:p:v_rod:ua_1992
+  віце-адміралам noun:anim:p:v_dav:ua_1992
+  віце-адміралів noun:anim:p:v_zna:ua_1992
+  віце-адміралами noun:anim:p:v_oru:ua_1992
+  віце-адміралах noun:anim:p:v_mis:ua_1992
+  віце-адмірали noun:anim:p:v_kly:ua_1992
 вовчище noun:anim:m:v_naz
   вовчища noun:anim:m:v_rod
   вовчищеві noun:anim:m:v_dav
@@ -2288,6 +2334,23 @@
   дітиськами noun:anim:p:v_oru:ns
   дітиськах noun:anim:p:v_mis:ns
   дітиська noun:anim:p:v_kly:ns
+економ-блок noun:inanim:m:v_naz:ua_1992
+  економ-блоку noun:inanim:m:v_rod:ua_1992
+  економ-блокові noun:inanim:m:v_dav:ua_1992
+  економ-блоку noun:inanim:m:v_dav:ua_1992
+  економ-блок noun:inanim:m:v_zna:ua_1992
+  економ-блоком noun:inanim:m:v_oru:ua_1992
+  економ-блокові noun:inanim:m:v_mis:ua_1992
+  економ-блоку noun:inanim:m:v_mis:ua_1992
+  економ-блоці noun:inanim:m:v_mis:ua_1992
+  економ-блоку noun:inanim:m:v_kly:ua_1992
+  економ-блоки noun:inanim:p:v_naz:ua_1992
+  економ-блоків noun:inanim:p:v_rod:ua_1992
+  економ-блокам noun:inanim:p:v_dav:ua_1992
+  економ-блоки noun:inanim:p:v_zna:ua_1992
+  економ-блоками noun:inanim:p:v_oru:ua_1992
+  економ-блоках noun:inanim:p:v_mis:ua_1992
+  економ-блоки noun:inanim:p:v_kly:ua_1992
 екс-суддя noun:anim:m:v_naz
   екс-судді noun:anim:m:v_rod
   екс-судді noun:anim:m:v_dav

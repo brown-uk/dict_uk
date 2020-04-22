@@ -89,12 +89,14 @@ task autogen (type: JavaExec, dependsOn: classes) {
 
 	String inputFile1 = "$dataDir/base.lst"
     String inputFile2 = "$dataDir/base-compound.lst"
-
+	String inputFile3 = "$dataDir/base-compound_1992.lst"
+	
     inputs.file inputFile1
     inputs.file inputFile2
+    inputs.file inputFile3
     outputs.file "$dataDir/base-autogen.lst"
 
-	args inputFile1, inputFile2, "$dataDir/base-autogen.lst"
+	args inputFile1, inputFile2, inputFile3, "$dataDir/base-autogen.lst"
 }
 
 task reverseAffix (dependsOn: [reverseVerbs, reverseAdvp]) {
