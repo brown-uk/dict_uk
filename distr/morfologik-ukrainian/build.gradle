@@ -182,52 +182,46 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
     def outFile="$outRulesDir/replace.txt"
 
-    inputs.files "$srcDir/twisters.lst", "$srcDir/ignored.lst", "$srcDir/subst.lst", "$srcDir/base-composite.lst"
+    inputs.files "$srcDir/twisters.lst", "$srcDir/invalid.lst", "$srcDir/invalid-auto-replace.txt", "$srcDir/subst.lst", "$srcDir/base-composite.lst"
     outputs.file outFile
 
     doLast {
 
-    def headText =
-'''# Simple replace table
-# Format: word=suggestion1|suggestion2|suggestion3...
+		def headText =
+		'''# Simple replace table
+		# Format: word=suggestion1|suggestion2|suggestion3...
+		
+		'''
+		def lines = []
+		inputs.files.each { File file ->
+		    if( file.name.contains("composite") )
+		        return
+		    lines += file.readLines("UTF-8")
+		}
+		
+		def outLines = lines.findAll {
+		    ! it.startsWith('#') && it.contains(' #>')
+		}
+		.collect {
+		    it = it.replace(' +cs=', '')
+		    it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
+		}
+		
+		lines += new File("$srcDir/base-composite.lst").readLines("UTF-8")
+		
+		def compOutLines = lines.findAll {
+		    ! it.startsWith('#') && it.contains(' #>')
+		}
+		.collect {
+		    it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*? - ([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)/, '$1-$2=$3')
+		}
+		
+		outLines += compOutLines
+		
+		new File(outFile).text = headText + outLines.join("\n") + '\n'
+		println "Wrote ${outLines.size} replacements"
 
-'''
-
-    def inText = new File("$srcDir/twisters.lst").text
-    def lines = inText.split("\n")
-
-    def inText1 = new File("$srcDir/ignored.lst").text
-    lines += inText1.split("\n")
-
-    def inText2 = new File("$srcDir/subst.lst").text
-    lines += inText2.split("\n")
-
-    def outLines = lines.findAll {
-        ! it.startsWith('#') && it.contains(' #>')
-    }
-    .collect {
-        it = it.replace(' +cs=', '')
-        it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
-    }
-
-    inText = new File("$srcDir/base-composite.lst").text
-    lines = inText.split("\n")
-
-    def compOutLines = lines.findAll {
-        ! it.startsWith('#') && it.contains(' #>')
-    }
-    .collect {
-        it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*? - ([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)/, '$1-$2=$3')
-    }
-
-    println "W: $compOutLines"
-
-    outLines += compOutLines
-
-    new File(outFile).text = headText + outLines.join("\n") + '\n'
-    println "Wrote $outLines.size replacements"
-
-    }
+	}
 
 }
 
@@ -245,16 +239,16 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
 
     doLast {
 
-		def headText =
+        def headText =
 '''# Simple replace table for soft suggestions
 # Format: word=suggestion1|suggestion2|suggestion3...
 
 '''
-		def outLines = getReplacements(srcDir, srcFiles, { ! it.contains('ua_1992')})
-		
-        println "Wrote $outLines.size replacements"
-		new File(outFile).text = headText + outLines.join('\n') + "\n"
-	}
+        def outLines = getReplacements(srcDir, srcFiles, { ! it.contains('ua_1992')})
+
+        println "Wrote ${outLines.size} replacements"
+        new File(outFile).text = headText + outLines.join('\n') + "\n"
+    }
 }
 
 
@@ -264,7 +258,7 @@ task createNewSpellingReplacementDict(dependsOn: createOutRulesDir) {
     def allFiles = Arrays.asList(new File(srcDir).listFiles())
     def srcFiles = allFiles.findAll{ 
         (it.name.endsWith('.lst') 
-                && ! (it.name in ['twisters.lst', 'base-composite.lst', 'subst.lst'])) \
+                && ! (it.name in ['twisters.lst', 'base-composite.lst', 'subst.lst', 'names-other.lst'])) \
             || it.name.endsWith("-auto-replace.txt") }
 
     inputs.files srcFiles
@@ -280,7 +274,7 @@ task createNewSpellingReplacementDict(dependsOn: createOutRulesDir) {
 '''
         def outLines = getReplacements(srcDir, srcFiles, {it.contains('ua_1992')})
 
-        println "Wrote $outLines.size replacements"
+        println "Wrote ${outLines.size} replacements"
         new File(outFile).text = headText + outLines.join('\n') + "\n"
     }
 }

@@ -5,6 +5,8 @@ import java.text.Collator
 import org.dict_uk.expand.TaggedWordlist
 import org.junit.Test
 
+import groovy.transform.CompileStatic
+
 class Autogen {
 	
 	private static File file(String name) { new File(name) }
@@ -13,7 +15,7 @@ class Autogen {
 		autogen(args[0], args[1], args[2], args[3])
 	}
 	
-	static String[][] replaceLetters(String[] lines) {
+	static String[][] replaceLetters_2019(String[] lines) {
 		def outLines = []
 		def outReplaceLines = []
 		def errors = []
@@ -48,19 +50,19 @@ class Autogen {
 		[ outLines, outReplaceLines ]
 	}
 
-	static String[][] replaceMain(String[] lines) {
+	static String[][] enforceNoDash_2019(String[] lines) {
 		def outLines = []
 		def outReplaceLines = []
 		def errors = []
 		
 		// notes:
 		// арт - ще від артилерійський, було разом в 1992
-		// етно - (неофіційно), але було разом, бо скор. від етнологічний
 		// бод[иі] - зроблено вручну
 		// не було унормовано: диско-, економ-
 		
-		//TODO: етно-, кібер-, медіа-
-
+		//TODO: етно-
+		// етно - (неофіційно), але було разом, бо скор. від етнологічний
+		
 		// писалися офіційно з дефісом в 1992:
 		// віце-, екс-, лейб-, максі-, міді-, міні-, обер-
 				
@@ -80,8 +82,8 @@ class Autogen {
 				line = line.replaceFirst(/ *#>.*/, '')
 			}
 
-			if( ! (line =~ /прес-(ніж|ножиц)/) ) {
-				if( ! line.contains(":ua_1992") ) {
+			if( ! line.contains(":ua_1992") ) {
+				if( ! (line =~ /прес-(ніж|ножиц)/) ) {
 					errors << line
 				}
 			}
@@ -116,7 +118,7 @@ class Autogen {
 		}
 
 		if( errors ) {
-			System.err.println "should not have dashes even in 1992:\n" + errors.join("\n")
+			System.err.println "should not have dash even in 1992:\n" + errors.join("\n")
 			System.exit(1)
 		}
 
@@ -124,149 +126,81 @@ class Autogen {
 	}
 		
 
-	static String[][] onlyWithDash2019(String[] lines) {
+	// onlyWithDash2019
+	// it's hard to verify words without dash as many are correct, e.g. бізнесовий
+	// def pattern2019 = ~ /(^|-)(альфа|бета|дельта|бізнес|блок|генерал|дизель|допінг|інтернет|кіловат|караоке|компакт|крекінг|піар|прем'єр|суші|фан|фітнес)-/
+		
+	
+	static String[][] enforceAlwaysDash(String[] lines) {
 		def outLines = []
 		def outReplaceLines = []
-		def errors = []
-		
-		// ?? блок-пост, блок-флейта, бізнес-вуман, мінівен/мінібус, блок-шот, поп-корн
-		// етно-культурний, етно-історичний, етно-конфесійний
-		
-		def pattern2019 = ~ /(^|-)(альфа|бета|дельта|бізнес|блок|генерал|дизель|допінг|інтернет|кіловат|караоке|компакт|крекінг|піар|прем'єр|суші|фан|фітнес)-/
-		
+
+		// we only generate dash-less for prefixes that happen frequently
+		def pattern = ~ /(^|-)(інтернет|компакт|мас|піар|фан|фітнес|шоу)-/
+
 		lines
-				.findAll { line -> pattern2019.matcher(line).find() }
-				.each { line ->
-					if( line.contains('#>') ) {
-						println "Skipping replace in: $line"
-						line = line.replaceFirst(/ *#>.*/, '')
-					}
+		.findAll { line -> pattern.matcher(line).find() }
+		.each { line ->
+			if( line.contains('#>') ) {
+				println "Skipping line with replace: $line"
+				return
+			}
 
-					if( ! line.contains("-") )
-						errors << line
+			if( line =~ /авто-?фан/ ) {
+				println "TODO: skipping: $line"
+				return
+			}
+			
+			String newLine = pattern.matcher(line).replaceFirst('$1$2')
+			String newLemma = newLine
+			def oldLemma = line.replaceFirst(/^([^ ]+).*/, '$1')
+			def newReplLine = newLemma.padRight(64) + "#> " + oldLemma
+			outReplaceLines << newReplLine
 
-					outLines << newLine
-				}
-
-		if( errors ) {
-			System.err.println "WARN: бізнес-, бліц-... without dash\n" + errors.join("\n")
-			System.exit(1)
+			outLines << newLine
 		}
 
 		[ outLines, outReplaceLines ]
 	}
-
 	
-	static String[][] onlyWithDashSoft(String[] lines) {
-		def outLines = []
-		def outReplaceLines = []
-		def errors = []
-		
-		def pattern = ~ /(^|-)(мас|секс|шоу)-/
-		
-		lines
-				.findAll { line -> pattern.matcher(line).find() }
-				.each { line ->
-					if( line.contains('#>') ) {
-						println "Skipping replace in: $line"
-						line = line.replaceFirst(/ *#>.*/, '')
-					}
-
-					if( ! line.contains(":ua_1992") )
-						errors << line
-
-					String newLine = pattern.matcher(line).replaceFirst('$1$2')
-					newLine = newLine.replace('ua_1992', 'ua_2019')
-
-					outLines << newLine
-				}
-
-		if( errors ) {
-			System.err.println "WARN: арт-, бліц-... without :ua_1992\n" + errors.join("\n")
-//			System.exit(1)
-		}
-
-		[ outLines, outReplaceLines ]
-	}
-
-//	static String[][] replaceAllowingBoth(String[] lines) {
-//		def outLines = []
-//		def outReplaceLines = []
-//
-//		def pattern4 = ~ /(^|-)(інтернет|піар|секс|фан|фітнес)-/
-//		
-//		lines.findAll { line -> pattern4.matcher(line).find() }
-//		.each { line ->
-//			if( line.contains('#>') ) {
-//				println "Skipping replace in: $line"
-//				line = line.replaceFirst(/ *#>.*/, '')
-//			}
-//
-//			String newLine = pattern4.matcher(line).replaceFirst('$1$2')
-//			//                newLine = newLine.replace('ua_1992', 'ua_2019')
-//
-//			String newLemma = pattern4.matcher(line).replaceFirst('$1$2')
-//			def newReplLine = newLemma.padRight(64) + "#> " + line.replaceFirst(/^([^ ]+).*/, '$1')
-//			outReplaceLines << newReplLine
-//
-//			outLines << newLine
-//		}
-//
-//		[ outLines, outReplaceLines ]
-//	}
 	
 		
-	static void autogen(String inputFile1, String inputFile2, String inputFile3, String outputFile) {
+	static void autogen(String baseFile, String compoundFile, String compound1992File, String outputFile) {
 		
-		String[] lines = file(inputFile1).readLines("UTF-8")
-				//.findAll { line -> line.contains(":ua_1992") }
+		String[] lines = file(baseFile).readLines("UTF-8")
 
-	    def repl = replaceLetters(lines)
+	    def repl = replaceLetters_2019(lines)
 				
 		def outReplaceLines = repl[1]
 		String[] outLines1 =  repl[0]
 
-		lines += file(inputFile2).readLines("UTF-8")
+		String[] compoundLines = file(compoundFile).readLines("UTF-8")
+		lines += compoundLines
 		
-		String[] compound1992Lines = new TaggedWordlist().processInput([inputFile3])
+		String[] compound1992Lines = new TaggedWordlist().processInput([compound1992File])
 		lines += compound1992Lines
 		
-		repl = replaceMain(lines)
+		repl = enforceNoDash_2019(lines)
 		
 		String[] outLines2 = repl[0]
 		outReplaceLines += repl[1]
 		
 		outLines1 += outLines2
 
-		if( false ) {
-			lines = file(inputFile2).readLines("UTF-8")
-			//            .findAll { line -> line.contains(":ua_1992") }
-
-			repl = replaceArtBlitz(lines)
-
-			String[] outLines3 = repl[0]
-			outReplaceLines += repl[1]
-
-			outLines1 += outLines3
-		}
-
-		// allow both forms
-
-		if( false ) {
-			repl = replaceAllowingBoth(lines)
-			String[] outLines4 = repl[0]
-			outReplaceLines += repl[1]
-
-			outLines1 += outLines4
-		}
-
-
-		Collator collator = Collator.getInstance(new Locale("uk", "UA"));
-		file(outputFile).setText(outLines1.toSorted(collator).join("\n"), "UTF-8")
-
-		new File('data/dict/base-auto-replace.txt').setText(outReplaceLines.toSorted(collator).join('\n'), "UTF-8")
+		writeListToFile(file(outputFile), outLines1)
+		writeListToFile(new File('data/dict/base-auto-replace.txt'), outReplaceLines)
+		
+		repl = enforceAlwaysDash(compoundLines)
+		
+		writeListToFile(new File('data/dict/invalid-autogen.lst'), repl[0])
+		writeListToFile(new File('data/dict/invalid-auto-replace.txt'), repl[1])
 	}
 
+	private static void writeListToFile(File file, def list) {
+		Collator collator = Collator.getInstance(new Locale("uk", "UA"));
+		file.setText(list.toSorted(collator).join("\n"), "UTF-8")
+	}
+	
 	
 //	@org.junit.jupiter.api.Test
 //	void testName() {

@@ -253,9 +253,9 @@ new File('build/hunspell/uk_UA.aff').text = fileHeader + '\n' + out
 
 def dictDir = new File("../../data/dict")
 
-def IGNORED_FILES = /composite|dot-abbr|twisters|ignored|alt|rare|add_tag/
+def IGNORED_FILES = /composite|dot-abbr|twisters|invalid|alt|rare|add_tag/
 if( "-forSearch" in args ) {
-    IGNORED_FILES = IGNORED_FILES.replace('|twisters', '')
+    IGNORED_FILES = IGNORED_FILES.replace('|twisters|invalid', '')
 }
 
 def files = dictDir.listFiles().findAll {
