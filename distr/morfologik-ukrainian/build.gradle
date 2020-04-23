@@ -12,7 +12,7 @@ group = 'ua.net.nlp'
 String artifactId = 'morfologik-ukrainian-lt'
 archivesBaseName = artifactId
 
-String ltToolsVersion = '4.9-SNAPSHOT'
+String ltToolsVersion = '5.0-SNAPSHOT'
 
 String langCode="uk"
 
@@ -188,39 +188,30 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
     doLast {
 
 		def headText =
-		'''# Simple replace table
-		# Format: word=suggestion1|suggestion2|suggestion3...
-		
-		'''
-		def lines = []
+'''# Simple replace table
+# Format: word=suggestion1|suggestion2|suggestion3...
+
+'''
+		def outLines = []
 		inputs.files.each { File file ->
-		    if( file.name.contains("composite") )
-		        return
-		    lines += file.readLines("UTF-8")
+			file.eachLine "UTF-8", {
+				if( it.startsWith('#') || ! it.contains(' #>') )
+					return
+
+				if( file.name.contains('composite') ) {
+					it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*? - ([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)/, '$1-$2=$3')
+					outLines << it
+				}	
+				else {
+					it = it.replace(' +cs=', '')
+					it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
+					outLines << it
+				}			
+			}
 		}
-		
-		def outLines = lines.findAll {
-		    ! it.startsWith('#') && it.contains(' #>')
-		}
-		.collect {
-		    it = it.replace(' +cs=', '')
-		    it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
-		}
-		
-		lines += new File("$srcDir/base-composite.lst").readLines("UTF-8")
-		
-		def compOutLines = lines.findAll {
-		    ! it.startsWith('#') && it.contains(' #>')
-		}
-		.collect {
-		    it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*? - ([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)/, '$1-$2=$3')
-		}
-		
-		outLines += compOutLines
 		
 		new File(outFile).text = headText + outLines.join("\n") + '\n'
 		println "Wrote ${outLines.size} replacements"
-
 	}
 
 }

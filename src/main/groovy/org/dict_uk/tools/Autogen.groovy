@@ -113,7 +113,7 @@ class Autogen {
 		lines
 		.findAll { line -> pattern3.matcher(line).find() }
 		.each { line ->
-			if( ! (line =~ /ультра-сі/) )
+			if( ! (line =~ /ультра-сі|супер-пупер/) )
 				errors << line
 		}
 
@@ -126,7 +126,7 @@ class Autogen {
 	}
 		
 
-	// onlyWithDash2019
+	// forceWithDash2019
 	// it's hard to verify words without dash as many are correct, e.g. бізнесовий
 	// def pattern2019 = ~ /(^|-)(альфа|бета|дельта|бізнес|блок|генерал|дизель|допінг|інтернет|кіловат|караоке|компакт|крекінг|піар|прем'єр|суші|фан|фітнес)-/
 		
@@ -136,7 +136,7 @@ class Autogen {
 		def outReplaceLines = []
 
 		// we only generate dash-less for prefixes that happen frequently
-		def pattern = ~ /(^|-)(інтернет|компакт|мас|піар|фан|фітнес|шоу)-/
+		def pattern = ~ /(^|-)(інтернет|компакт|мас|секс|піар|фан|фітнес|шоу)-/
 
 		lines
 		.findAll { line -> pattern.matcher(line).find() }
