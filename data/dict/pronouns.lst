@@ -612,6 +612,10 @@
 
 один /numr
 один /numr ^adj :&pron:dem:ind
+оден один numr:m:v_naz/v_zn2:alt
+оден один adj:m:v_naz:&pron:dem:ind:alt
+оден один adj:m:v_zna:rinanim:&pron:dem:ind:alt
+
 
 один-два один-два numr:p:v_naz/v_zna                  # rg_m
 одного-двох один-два numr:p:v_rod/v_zna               # rg_m:rg_n

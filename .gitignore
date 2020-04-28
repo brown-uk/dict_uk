@@ -7,6 +7,8 @@ out/prev/*
 out/*.txt
 out/toadd/*
 .*
+*autogen.lst
+*auto-replace.txt
 .classpath
 .project
 bin

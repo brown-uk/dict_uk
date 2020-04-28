@@ -24,12 +24,14 @@
 блигомий /adj
 боднар /n24.a.p.ke.<
 босячка /n10.p2.ko.<
+бритійський /adj
 бублій /n20.a.p.<
 бюрко /n2n.piv
 вагадло /n2n.p1
 ваганки /np2
 вазка /n10.p2
 варівко adv:&predic
+варстат /n20.a.p
 варцаб /n20.a.p
 варцаба /n10.p1
 вдвійці adv:v-u
@@ -144,6 +146,7 @@
 завідателька /n10.p2.<
 заводня /n10
 загомзатися /vr2 :perf
+заєдно adv
 зазлісно adv
 зазлість /n30
 зазнимкований /adj :&adjp:pasv:perf
@@ -152,6 +155,7 @@
 заки conj:subord
 заким conj:subord
 замісто prep        # rv_rod
+замісць prep
 запевне adv:&insert
 запросний /adj
 зарівно adv:&predic
@@ -192,6 +196,7 @@
 злотник /n20.a.p.<
 змаг /n20
 змирятися /vr2.cf.advp :imperf
+знакомець /n22.a.p.<
 знимка /n10.p2
 знимкування /n2n
 знимкувати /v1.cf.advp :imperf
@@ -204,6 +209,8 @@
 зсилатися /vr2.cf.advp :imperf
 зумисно adv
 зцілювач /n20.a.p.<
+ізвідки adv:&pron:int:rel
+ізнадвору adv
 ірій /n20
 їдак /n20.a.p.<
 їден /numr ^adj :&pron:dem:ind
@@ -234,6 +241,7 @@
 лапоть /n22.a.p
 ледаякий /adj
 леда-який /adj :&pron:ind
+ледви adv
 ломлення /n2n
 лотр /n20.a.p.ke.<
 любля noninfl:&predic
@@ -531,6 +539,7 @@
 сількось adv:&insert
 сім сей adj:m:v_mis//n:v_mis:&pron:dem
 скілька numr:p:v_naz/v_zna
+скількість /n30
 скілько numr:p:v_naz/v_zna
 сливе adv
 сопух /n20.a
@@ -547,6 +556,7 @@
 суперека /n10.p1
 сутяжно adv
 сього сей adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
+сьогодня adv
 сьому сей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
 сю сей adj:f:v_zna:&pron:dem
 ся сей adj:f:v_naz:&pron:dem
