@@ -155,7 +155,7 @@
 заки conj:subord
 заким conj:subord
 замісто prep        # rv_rod
-замісць prep
+замісць prep                         # rv_rod:rv_inf
 запевне adv:&insert
 запросний /adj
 зарівно adv:&predic
@@ -174,7 +174,7 @@
 зачеркувати /v1.cf.advp :imperf
 зашанувати /v1 :perf
 зверх зверх adv
-зверх зверх prep        # rv_rod
+зверх зверх prep                     # rv_rod
 звідколи adv:&pron:int:rel
 звідома adv
 згиблий /adj
@@ -210,6 +210,7 @@
 зумисно adv
 зцілювач /n20.a.p.<
 ізвідки adv:&pron:int:rel
+ізгадатися /vr2 :perf p=4
 ізнадвору adv
 ірій /n20
 їдак /n20.a.p.<
