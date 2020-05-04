@@ -323,7 +323,7 @@ class Expand {
 		String extra_flags = get_extra_flags(flags)
 
 
-		if( extra_flags) {
+		if( extra_flags ) {
 			boolean first_name_base = util.firstname(lines[0].word, flags)
 
 			List<DicEntry> out_lines = []
@@ -397,11 +397,49 @@ class Expand {
 
 			out_lines.addAll(extra_out_lines)
 
-			return out_lines
+			lines = out_lines
 		}
+
+		lines = adjustForGeo2019(lines, flags)
+				
 		return lines
 	}
 
+	static final Pattern GEO_ONLY_A = ~/([сц]ьк|ець|бур[гґ]|град|город|піль|поль|мир|слав|фурт)$/
+	static final Pattern GEO_POSS_DUAL = ~/([ії]в|[еєо]в|[иі]н|[аи]ч)$/
+	
+	@CompileStatic
+	List<DicEntry> adjustForGeo2019(List<DicEntry> lines, String flags) {
+		// правопис-2019: назви міст р.в. з -у
+		if( lines[0].tagStr =~ /noun:m:.*?:geo/ ) { 
+			if( GEO_POSS_DUAL.matcher(lines[0].lemma).find() ) {
+				// лише присвійні суфікси не мають подвійного р.в.
+				if( flags.contains(".a.u") ) {
+					lines = lines.collect { l ->
+						if( l.tagStr.contains("v_rod") && l.word =~ /[ую]$/ ) {
+							new DicEntry(l.word, l.lemma, l.tagStr + ":ua_2019")
+						}
+						else {
+							l
+						}
+					}
+				}
+			}
+			else if( ! GEO_ONLY_A.matcher(lines[0].lemma).find() ) {
+				def vRod = lines.find { l -> l.tagStr =~ /noun:m:v_rod.*?:geo/ && l.word.endsWith("а") }
+				if( vRod ) {
+					def tag = vRod.tagStr
+					if( ! tag.contains(":ua_2019") ) {
+						tag += ":ua_2019"
+					}
+					def word = vRod.word.replaceFirst(/а$/, 'у').replaceFirst(/я$/, 'ю')
+					lines.add(new DicEntry(word, vRod.lemma, tag))
+				}
+			}
+		}
+		return lines
+	}
+	
 	@CompileStatic
 	private List<DicEntry> adjust_affix_tags(List<DicEntry> lines, String main_flag, String flags, Map<String,String> modifiers) {
 		List<DicEntry> lines2 = []

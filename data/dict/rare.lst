@@ -299,7 +299,7 @@
 намість намість prep        # rv_rod
 нанашка /n10.p2.<
 напружливий /adj
-нарід /n21
+нарід noun:n:v_naz/v_zna
 наскінчу adv
 настарчити /v1 :perf
 научити /v1.is0.it1 :perf
@@ -320,20 +320,7 @@
 неперечний /adj
 непутити /v1.cf.advp :imperf
 нестямливий /adj
-неякась неякийсь adj:f:v_naz:&pron:neg
-неякесь неякийсь adj:n:v_naz/v_zna:&pron:neg
-неякийсь неякийсь adj:m:v_naz/v_zn2:&pron:neg
-неякимись неякийсь adj:p:v_oru:&pron:neg
-неякимось неякийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:neg
-неякимсь неякийсь adj:m:v_oru:&pron:neg
-неякихось неякийсь adj:p:v_rod/v_zn1/v_mis:&pron:neg
-неякійсь неякийсь adj:f:v_dav/v_mis:&pron:neg
-неякісь неякийсь adj:p:v_naz/v_zn2:&pron:neg
-неякогось неякийсь adj:m:v_rod/v_zn1//n:v_rod:&pron:neg
-неякоїсь неякийсь adj:f:v_rod:&pron:neg
-неякомусь неякийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:neg
-неякоюсь неякийсь adj:f:v_oru:&pron:neg
-неякусь неякийсь adj:f:v_zna:&pron:neg
+неякийсь /adj :&pron:ind
 нівець /n22.a
 нігде adv:&pron:emph
 нігде adv:&pron:neg
