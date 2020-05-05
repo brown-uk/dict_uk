@@ -68,8 +68,6 @@
 чим що noun:inanim:n:v_oru:&pron:int:rel
 чім що noun:inanim:n:v_mis:&pron:int:rel
 
-шо conj:subord:subst|noun:inanim:n:v_naz/v_zna:&pron:int:rel:subst
-
 що-що що-що conj:subord
 що-що що-що noun:inanim:n:v_naz/v_zna:&pron:int:rel
 чого-чого що-що noun:inanim:n:v_rod:&pron:int:rel

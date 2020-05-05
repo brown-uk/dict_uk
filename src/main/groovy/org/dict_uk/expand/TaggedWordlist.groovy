@@ -15,6 +15,7 @@ class TaggedWordlist {
 		"twisters.lst": ":bad",
 		"invalid-autogen.lst": ":bad",
 		"invalid.lst": ":bad",
+		"invalid-compound.lst": ":bad",
 		"rare.lst": ":rare",
 		"slang.lst": ":slang",
 		"alt.lst": ":alt",

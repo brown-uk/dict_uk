@@ -182,7 +182,7 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
     def outFile="$outRulesDir/replace.txt"
 
-    inputs.files "$srcDir/twisters.lst", "$srcDir/invalid.lst", "$srcDir/invalid-auto-replace.txt", "$srcDir/subst.lst", "$srcDir/base-composite.lst"
+    inputs.files "$srcDir/twisters.lst", "$srcDir/invalid.lst", "$srcDir/invalid-compound.lst", "$srcDir/invalid-auto-replace.txt", "$srcDir/subst.lst", "$srcDir/base-composite.lst"
     outputs.file outFile
 
     doLast {
@@ -339,7 +339,7 @@ task createRenamedReplacementDict(dependsOn: createOutRulesDir) {
 task caseGovernmentDict() {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outResDir}/case_government.txt"
-    def srcFiles=["base.lst", "twisters.lst", "slang.lst", "exceptions.lst", "pronouns.lst", "rare.lst"]
+    def srcFiles=["base.lst", "twisters.lst", "invalid-compound.lst", "slang.lst", "exceptions.lst", "pronouns.lst", "rare.lst"]
 
     inputs.files srcFiles.collect{ "$srcDir/$it" }
     outputs.file outFile
