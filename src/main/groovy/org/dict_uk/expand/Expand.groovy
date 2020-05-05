@@ -3,6 +3,7 @@
 package org.dict_uk.expand
 
 import java.util.regex.*
+import java.util.stream.Collectors
 
 import org.dict_uk.common.*
 
@@ -11,7 +12,6 @@ import org.slf4j.LoggerFactory
 
 import groovy.transform.CompileStatic
 import groovy.transform.TypeChecked
-import groovyx.gpars.ParallelEnhancer
 
 
 class Expand {
@@ -426,13 +426,14 @@ class Expand {
 				}
 			}
 			else if( ! GEO_ONLY_A.matcher(lines[0].lemma).find() ) {
-				def vRod = lines.find { l -> l.tagStr =~ /noun:m:v_rod.*?:geo/ && l.word.endsWith("а") }
+				def vRod = lines.find { l -> l.tagStr =~ /noun:m:v_rod.*?:geo/ && !( l.tagStr.contains(":nv")) && l.word.endsWith("а") }
 				if( vRod ) {
 					def tag = vRod.tagStr
 					if( ! tag.contains(":ua_2019") ) {
 						tag += ":ua_2019"
 					}
 					def word = vRod.word.replaceFirst(/а$/, 'у').replaceFirst(/я$/, 'ю')
+//					System.err.println ":: " + word
 					lines.add(new DicEntry(word, vRod.lemma, tag))
 				}
 			}
@@ -1368,15 +1369,11 @@ class Expand {
 		return sortAndPostProcess(allEntries)
 	}
 
-	private List<DicEntry> processInParallel(List<LineGroup> prepared_lines) {
-		ParallelEnhancer.enhanceInstance(prepared_lines)
-		List<DicEntry> allEntries = prepared_lines.collectParallel { LineGroup lineGroup ->
-//		List<DicEntry> allEntries = prepared_lines.collect { LineGroup lineGroup ->
+	@CompileStatic
+	private List<DicEntry> processInParallel(List<LineGroup> preparedLines) {
+		List<DicEntry> allEntries = preparedLines.parallelStream().map { LineGroup lineGroup ->
 
 			try {
-//				if( lineGroup.comment )
-//					System.err.println("expand_line: " + lineGroup)
-
 				List<DicEntry> taggedEntries = expand_line(lineGroup)
 
 				if( validator.checkEntries(taggedEntries) > 0 ) {
@@ -1390,7 +1387,9 @@ class Expand {
 				return null
 			}
 
-		}.flatten()
+		}
+		.flatMap{ s -> s.stream() }
+		.collect(Collectors.toList())
 	}
 
 
