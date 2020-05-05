@@ -222,7 +222,7 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outRulesDir}/replace_soft.txt"
     def allFiles = Arrays.asList(new File(srcDir).listFiles())
-    def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! (it.name in ['twisters.lst', 'base-composite.lst', 'subst.lst']) }
+    def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! (it.name =~ /(twisters|base-composite|subst|invalid.*)\.lst/) }
 
     inputs.files srcFiles
     outputs.file outFile

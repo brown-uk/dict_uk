@@ -156,7 +156,14 @@ task checkReplacements {
 	def replWords = files.collect { it.text.split("\n")  } \
 	    .flatten() \
 	    .findAll { it.contains(" #> ") }
-	    .collect { it.split(" #> ")[1].trim().split(/[;, \|]+/) }
+	    .collect { 
+			def repls = it.split(" #> ")[1].trim().split(/[;, \|]+/)
+			def word = it.split(' ', 2)[0]
+			if( word in repls ) {
+				println "Replacement is same as word: $word"
+			} 
+			repls
+		}
 	    .flatten()
 	    .collect { it.replaceAll(/[()]/, '').replaceFirst(/-таки$/, '') }
 	    .findAll { it =~ /[а-яіїєґ]/ }
