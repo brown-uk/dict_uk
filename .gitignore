@@ -6,6 +6,7 @@ test/*.txt
 out/prev/*
 out/*.txt
 out/toadd/*
+_work
 .*
 *autogen.lst
 *auto-replace.txt
