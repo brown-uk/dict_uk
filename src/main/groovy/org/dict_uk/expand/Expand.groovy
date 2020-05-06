@@ -484,6 +484,9 @@ class Expand {
 							}
                         */
 							if( util.person(flags) ) {
+								if( line.tagStr.contains("noun:p:v_zna") )
+									continue
+
 								line.tagStr = line.tagStr.replace("p:v_naz/v_zna", "p:v_naz")
 							}
 						}

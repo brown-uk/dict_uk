@@ -436,6 +436,13 @@
   багатії noun:anim:m:v_mis
   багатію noun:anim:m:v_mis
   багатію noun:anim:m:v_kly
+багатодітні noun:anim:p:v_naz:ns
+  багатодітних noun:anim:p:v_rod:ns
+  багатодітним noun:anim:p:v_dav:ns
+  багатодітних noun:anim:p:v_zna:ns
+  багатодітними noun:anim:p:v_oru:ns
+  багатодітних noun:anim:p:v_mis:ns
+  багатодітні noun:anim:p:v_kly:ns
 бар noun:inanim:m:v_naz:xp1    # одиниця виміру
   бара noun:inanim:m:v_rod:xp1
   барові noun:inanim:m:v_dav:xp1
@@ -3955,33 +3962,41 @@
   Франко noun:anim:m:v_oru:nv:prop:lname:xp3
   Франко noun:anim:m:v_mis:nv:prop:lname:xp3
   Франко noun:anim:m:v_kly:nv:prop:lname:xp3
-хабар noun:inanim:m:v_naz:ua_2019
+хабар noun:inanim:m:v_naz:ua_1992
+  хабар noun:inanim:m:v_naz:ua_2019
   хабара noun:inanim:m:v_rod:ua_1992
   хабаря noun:inanim:m:v_rod:ua_2019
   хабареві noun:inanim:m:v_dav:ua_2019
   хабарові noun:inanim:m:v_dav:ua_1992
   хабару noun:inanim:m:v_dav:ua_1992
   хабарю noun:inanim:m:v_dav:ua_2019
+  хабар noun:inanim:m:v_zna:ua_1992
   хабар noun:inanim:m:v_zna:ua_2019
   хабара noun:inanim:m:v_zna:var:ua_1992
   хабаря noun:inanim:m:v_zna:var:ua_2019
   хабарем noun:inanim:m:v_oru:ua_2019
   хабаром noun:inanim:m:v_oru:ua_1992
   хабареві noun:inanim:m:v_mis:ua_2019
+  хабарі noun:inanim:m:v_mis:ua_1992
   хабарі noun:inanim:m:v_mis:ua_2019
   хабарові noun:inanim:m:v_mis:ua_1992
   хабару noun:inanim:m:v_mis:ua_1992
   хабарю noun:inanim:m:v_mis:ua_2019
+  хабаре noun:inanim:m:v_kly:ua_1992
   хабаре noun:inanim:m:v_kly:ua_2019
+  хабарі noun:inanim:p:v_naz:ua_1992
   хабарі noun:inanim:p:v_naz:ua_2019
+  хабарів noun:inanim:p:v_rod:ua_1992
   хабарів noun:inanim:p:v_rod:ua_2019
   хабарам noun:inanim:p:v_dav:ua_1992
   хабарям noun:inanim:p:v_dav:ua_2019
+  хабарі noun:inanim:p:v_zna:ua_1992
   хабарі noun:inanim:p:v_zna:ua_2019
   хабарами noun:inanim:p:v_oru:ua_1992
   хабарями noun:inanim:p:v_oru:ua_2019
   хабарах noun:inanim:p:v_mis:ua_1992
   хабарях noun:inanim:p:v_mis:ua_2019
+  хабарі noun:inanim:p:v_kly:ua_1992
   хабарі noun:inanim:p:v_kly:ua_2019
 хірт noun:anim:m:v_naz
   хорта noun:anim:m:v_rod

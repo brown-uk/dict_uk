@@ -2,6 +2,7 @@ package org.dict_uk.expand
 
 import java.util.Map
 import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
 import java.util.regex.*
 
 import org.dict_uk.common.DicEntry
@@ -9,7 +10,6 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
 import groovy.transform.CompileStatic
-import groovyx.gpars.GParsExecutorsPool
 
 
 class Util {
@@ -307,17 +307,18 @@ class Util {
 			tags.add(dicEntry.tagStr)
 		}
 
-		GParsExecutorsPool.withPool {ExecutorService executorService ->
-			executorService << { 
+		ExecutorService executor = Executors.newWorkStealingPool();
+		
+		executor.submit(  { 
 				def lemmaList = DictSorter.quickUkSort(lemmas)
 				new File("lemmas.txt").withWriter("utf-8") { f ->
 					for(lemma in lemmaList) {
 						f << lemma << "\n"
 					}
 				}
-			}
+			})
 
-			executorService << { 
+		executor.submit( { 
 				def wordList = DictSorter.quickUkSort(words)
 
 				new File("words.txt").withWriter("utf-8") { f ->
@@ -326,9 +327,9 @@ class Util {
 					}
 				}
 				log.info("{} total word forms", wordList.size())
-			}
+			})
 
-			executorService << { 
+			executor.submit( { 
 				def spellWordList = DictSorter.quickUkSort(spell_words)
 
 				new File("words_spell.txt").withWriter("utf-8") { f ->
@@ -337,7 +338,7 @@ class Util {
 					}
 				}
 				log.info("{} spelling word forms", spellWordList.size())
-			}
+			})
 
 //			executorService << { 
 //				def tagList = tags.toList().toSorted()
@@ -347,7 +348,7 @@ class Util {
 //					}
 //				}
 //			}
-		}
+		executor.shutdown()
 
 	}
 

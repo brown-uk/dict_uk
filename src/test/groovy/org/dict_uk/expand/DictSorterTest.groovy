@@ -3,14 +3,14 @@ package org.dict_uk.expand
 import static org.junit.Assert.*;
 
 import org.dict_uk.common.DicEntry
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
 
-public class DictSorterTest extends GroovyTestCase {
+public class DictSorterTest {
 	
 	DictSorter dictSorter
 	
-//	@Setup
-	@Override
+	@BeforeEach
 	void setUp() {
 		dictSorter = new DictSorter()
 	} 

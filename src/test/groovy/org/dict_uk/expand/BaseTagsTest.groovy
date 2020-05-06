@@ -1,15 +1,14 @@
 package org.dict_uk.expand
 
 import static org.junit.Assert.*;
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
 
-import org.junit.Test;
-
-public class BaseTagsTest extends GroovyTestCase {
+public class BaseTagsTest {
 	
 	BaseTags baseTags
 	
-//	@Setup
-	@Override
+	@BeforeEach
 	void setUp() {
 		baseTags = new BaseTags()
 	} 

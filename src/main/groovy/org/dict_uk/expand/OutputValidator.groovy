@@ -94,8 +94,6 @@ class OutputValidator {
 		List<String> lastVerbTags = null
 		int nonFatalErrorCount = 0
 		
-		//		ParallelEnhancer.enhanceInstance(lines)
-
 		lines.each { String line ->
 			if( ! line.startsWith(" ") ) {
 				if (gender) {

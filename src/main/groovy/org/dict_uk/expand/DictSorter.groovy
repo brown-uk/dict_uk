@@ -1,6 +1,7 @@
 package org.dict_uk.expand
 
 import java.util.regex.Pattern
+import java.util.stream.Collectors
 
 import org.dict_uk.common.DicEntry
 import org.dict_uk.common.UkDictComparator
@@ -8,7 +9,6 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
 import groovy.transform.CompileStatic
-import groovyx.gpars.ParallelEnhancer
 
 
 class DictSorter {
@@ -267,34 +267,28 @@ class DictSorter {
 		}
 	}
 
+	@CompileStatic
 	List<DicEntry> sortEntries(Collection<DicEntry> allEntries) {
-		ParallelEnhancer.enhanceInstance(allEntries)
-		
-		def entryMap = allEntries.collectParallel { entry ->
-			[(line_key(entry)): entry]
-		}
+		List<DicEntry> list = allEntries.parallelStream()
+			.map { (Map.Entry)new MapEntry(line_key(it), it) }
+			.sorted(Map.Entry.comparingByKey())
+			.map { Map.Entry it -> it.getValue() }
+			.distinct()
+			.collect(Collectors.toList())
 
-		def map = entryMap.collectEntries {
-			it
-		}
-
-		map = map.sort()
-
-		return map.values().toList()
+		return list
 	}
 
-	static def quickUkSort(collection) {
-		ParallelEnhancer.enhanceInstance(collection)
+	@CompileStatic
+	static List<String> quickUkSort(List<String> collection) {
 
-		def entries = collection.collectParallel {
-			[ (UkDictComparator.getSortKey(it)): it]
-		}
-
-		def map = entries.collectEntries {
-			it
-		}
-
-		return map.sort().values()
+		List<String> list = collection.parallelStream()
+			.map { (Map.Entry)new MapEntry(UkDictComparator.getSortKey(it), it) }
+			.sorted(Map.Entry.comparingByKey())
+			.map { Map.Entry it -> it.getValue() }
+			.collect(Collectors.toList()) 
+			
+		return list
 	}
 
 }

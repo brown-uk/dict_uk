@@ -584,6 +584,36 @@
 
 стіп стопа noun:p:v_rod:xp1
 
+# хабар /n20.a.ke.p4.@ :ua_1992
+# хабар /n24.a.ke.p.@ :ua_2019
+хабар хабар noun:inanim:m:v_naz/v_zna
+хабара хабар noun:inanim:m:v_rod:ua_1992
+хабаря хабар noun:inanim:m:v_rod:ua_2019
+хабареві хабар noun:inanim:m:v_dav:ua_2019
+хабарові хабар noun:inanim:m:v_dav:ua_1992
+хабару хабар noun:inanim:m:v_dav:ua_1992
+хабарю хабар noun:inanim:m:v_dav:ua_2019
+хабара хабар noun:inanim:m:v_zna:var:ua_1992
+хабаря хабар noun:inanim:m:v_zna:var:ua_2019
+хабарем хабар noun:inanim:m:v_oru:ua_2019
+хабаром хабар noun:inanim:m:v_oru:ua_1992
+хабареві хабар noun:inanim:m:v_mis:ua_2019
+хабарі хабар noun:inanim:m:v_mis
+хабарові хабар noun:inanim:m:v_mis:ua_1992
+хабару хабар noun:inanim:m:v_mis:ua_1992
+хабарю хабар noun:inanim:m:v_mis:ua_2019
+хабаре хабар noun:inanim:m:v_kly
+хабарі хабар noun:inanim:p:v_naz/v_zna
+хабарів хабар noun:inanim:p:v_rod
+хабарам хабар noun:inanim:p:v_dav:ua_1992
+хабарям хабар noun:inanim:p:v_dav:ua_2019
+хабарами хабар noun:inanim:p:v_oru:ua_1992
+хабарями хабар noun:inanim:p:v_oru:ua_2019
+хабарах хабар noun:inanim:p:v_mis:ua_1992
+хабарях хабар noun:inanim:p:v_mis:ua_2019
+хабарі хабар noun:inanim:p:v_kly
+
+
 'дно один adj:n:v_naz:&pron:dem:ind:coll
 
 вітця отець noun:anim:m:v_rod/v_zna:rare

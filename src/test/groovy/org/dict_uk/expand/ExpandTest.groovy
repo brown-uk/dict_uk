@@ -5,9 +5,10 @@ package org.dict_uk.expand
 import org.dict_uk.common.DicEntry
 import org.junit.Before
 import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
 
-public class ExpandTest extends GroovyTestCase {
+public class ExpandTest {
 	
 	static Expand expand
 	
@@ -21,7 +22,7 @@ public class ExpandTest extends GroovyTestCase {
 		expand.affix.load_affixes(affixDir)
 	}
 	
-	@Override
+	@BeforeEach
 	void setUp() {
 //		expand = new Expand()
 //		expand.affix.load_affixes("../data/affix")

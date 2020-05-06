@@ -3,13 +3,14 @@ package org.dict_uk.expand
 import static org.junit.Assert.*;
 
 import org.dict_uk.common.DicEntry
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
 
-public class ExpandCompsTest extends GroovyTestCase {
+public class ExpandCompsTest {
 	
 	ExpandComps expandComps
 	
-	@Override
+	@BeforeEach
 	void setUp() {
 		def affixDir = new File("data/affix").isDirectory() ? "data/affix" : "../../../data/affix"
 		Args.parse(["-aff", affixDir, "-dict", ""].toArray(new String[0]))

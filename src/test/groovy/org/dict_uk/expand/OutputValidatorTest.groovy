@@ -3,11 +3,9 @@
 package org.dict_uk.expand
 
 import org.dict_uk.common.DicEntry
-import org.junit.Before
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Test
 
-public class OutputValidatorTest extends GroovyTestCase {
+public class OutputValidatorTest {
 	
 	static OutputValidator outputValidator = new OutputValidator()
 	

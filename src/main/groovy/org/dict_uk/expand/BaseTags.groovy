@@ -99,7 +99,7 @@ class BaseTags {
 			    tag = ":f:v_naz/v_kly"
 			}
 		    else if( word.endsWith("і") ) {
-			    tag = ":p:v_naz/v_kly"
+			    tag = ":p:v_naz/v_kly:ns"
 			}
 			else {
     			tag = ":m:v_naz/v_kly" + v_zna_for_inanim
@@ -127,7 +127,6 @@ class BaseTags {
 			assert "Unkown base for " + word + " " + allAffixFlags
 
 		return tag
-
 	}
 
 }
