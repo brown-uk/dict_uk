@@ -154,7 +154,12 @@ class TaggedWordlist {
 							if( fn.startsWith('geo') ) {
 								extra_tags2 += ":geo"
 							}
-
+							
+							if( fn == "geo-ukr-koatuu.lst" ) {
+								if( line =~ / \/n2[0-4]/ && ! line.contains(":town") ) {
+									extra_tags2 += ":town"
+								}
+							}
 						}
 					}
 //					else if ( fn == "base.lst" ) {

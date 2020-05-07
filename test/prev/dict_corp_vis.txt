@@ -2752,6 +2752,17 @@
   лікаревими adj:p:v_oru
   лікаревих adj:p:v_mis
   лікареві adj:p:v_kly
+Лондон noun:inanim:m:v_naz:prop:geo
+  Лондона noun:inanim:m:v_rod:prop:geo
+  Лондону noun:inanim:m:v_rod:prop:geo:ua_2019
+  Лондонові noun:inanim:m:v_dav:prop:geo
+  Лондону noun:inanim:m:v_dav:prop:geo
+  Лондон noun:inanim:m:v_zna:prop:geo
+  Лондоном noun:inanim:m:v_oru:prop:geo
+  Лондоні noun:inanim:m:v_mis:prop:geo
+  Лондонові noun:inanim:m:v_mis:prop:geo
+  Лондону noun:inanim:m:v_mis:prop:geo
+  Лондоне noun:inanim:m:v_kly:prop:geo
 людяність noun:inanim:f:v_naz
   людяності noun:inanim:f:v_rod
   людяности noun:inanim:f:v_rod:ua_2019

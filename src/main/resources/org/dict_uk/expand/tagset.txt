@@ -76,6 +76,7 @@ short
 slang
 subord
 subst
+town
 ua_1992
 ua_2019
 unanim

@@ -410,33 +410,40 @@ class Expand {
 	
 	@CompileStatic
 	List<DicEntry> adjustForGeo2019(List<DicEntry> lines, String flags) {
-		// правопис-2019: назви міст р.в. з -у
-		if( lines[0].tagStr =~ /noun:m:.*?:geo/ ) { 
-			if( GEO_POSS_DUAL.matcher(lines[0].lemma).find() ) {
-				// лише присвійні суфікси не мають подвійного р.в.
-				if( flags.contains(".a.u") ) {
-					lines = lines.collect { l ->
-						if( l.tagStr.contains("v_rod") && l.word =~ /[ую]$/ ) {
-							new DicEntry(l.word, l.lemma, l.tagStr + ":ua_2019")
-						}
-						else {
-							l
+		if( lines[0].tagStr.contains(':town') ) {
+			// правопис-2019: назви міст р.в. з -у
+			if( lines[0].tagStr =~ /noun:m:.*?:geo.*/ ) { 
+				if( GEO_POSS_DUAL.matcher(lines[0].lemma).find() ) {
+					// лише присвійні суфікси не мають подвійного р.в.
+					if( flags.contains(".a.u") ) {
+						lines = lines.collect { l ->
+							if( l.tagStr.contains("v_rod") && l.word =~ /[ую]$/ ) {
+								new DicEntry(l.word, l.lemma, l.tagStr + ":ua_2019")
+							}
+							else {
+								l
+							}
 						}
 					}
 				}
-			}
-			else if( ! GEO_ONLY_A.matcher(lines[0].lemma).find() ) {
-				def vRod = lines.find { l -> l.tagStr =~ /noun:m:v_rod.*?:geo/ && !( l.tagStr.contains(":nv")) && l.word.endsWith("а") }
-				if( vRod ) {
-					def tag = vRod.tagStr
-					if( ! tag.contains(":ua_2019") ) {
-						tag += ":ua_2019"
+				else if( ! lines[0].tagStr.contains(':towna') && ! GEO_ONLY_A.matcher(lines[0].lemma).find() ) {
+					def vRod = lines.find {
+						l -> l.tagStr =~ /noun:m:v_rod.*?:geo.*/ \
+							&& ! l.tagStr.contains(":nv") \
+							&& ! l.lemma.endsWith("о") \
+							&& l.word =~ /[ая]$/
 					}
-					def word = vRod.word.replaceFirst(/а$/, 'у').replaceFirst(/я$/, 'ю')
-//					System.err.println ":: " + word
-					lines.add(new DicEntry(word, vRod.lemma, tag))
+					if( vRod ) {
+						def tag = vRod.tagStr
+						if( ! tag.contains(":ua_2019") ) {
+							tag += ":ua_2019"
+						}
+						def word = vRod.word.replaceFirst(/а$/, 'у').replaceFirst(/я$/, 'ю')
+						lines.add(new DicEntry(word, vRod.lemma, tag))
+					}
 				}
 			}
+			lines = lines.collect { l -> new DicEntry(l.word, l.lemma, l.tagStr.replaceFirst(/:towna?/, '')) }
 		}
 		return lines
 	}
