@@ -4,6 +4,6 @@
     <identifier value="org.openoffice.uk.dictionaries.UA"/>
     <version value="5.0.1" />
     <update-download>
-        <src xlink:href="https://extensions.libreoffice.org/extensions/ukrainian-spelling-dictionary-and-thesaurus/4-9.0/@@download/file/dict-uk_UA-5.0.1.oxt"/>
+        <src xlink:href="https://extensions.libreoffice.org/extensions/ukrainian-spelling-dictionary-and-thesaurus/5-0.1/@@download/file/dict-uk_UA-5.0.1.oxt"/>
     </update-download>
 </description>
