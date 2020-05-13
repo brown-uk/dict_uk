@@ -21,7 +21,7 @@ class Autogen {
 		def errors = []
 		
 		lines
-		.findAll { line -> line =~ /проек[тц]|хіміо/ }
+		.findAll { line -> line =~ /проек[тц]|хіміо|^(двох|трьох|чотирьох)/ }
 		.each { line ->
 			if( line.contains('#>') )
 				return
@@ -31,15 +31,25 @@ class Autogen {
 					errors << line
 				}
 			}
+			if( line =~ /^(двох|трьох|чотирьох)/ ) {
+				if( ! line.contains(":ua_1992") ) {
+					return
+				}
+			}
+			else {
+				String newLine = line.replaceFirst(/проек([тц])/, 'проєк$1').replace('хіміо', 'хіміє')
+				newLine = newLine.replace('ua_1992', 'ua_2019')
 
-			String newLine = line.replaceFirst(/проек([тц])/, 'проєк$1').replace('хіміо', 'хіміє')
-			newLine = newLine.replace('ua_1992', 'ua_2019')
-
-			String newLemma = line.replaceFirst(/(.*?) .*/, '$1').replaceFirst(/проек([тц])/, 'проєк$1').replace('хіміо', 'хіміє')
+				outLines << newLine
+			}
+			
+			String newLemma = line.replaceFirst(/(.*?) .*/, '$1')
+				.replaceFirst(/проек([тц])/, 'проєк$1')
+				.replace('хіміо', 'хіміє')
+				.replaceFirst(/^(дво)х'?/, '$1')
+				.replaceFirst(/^(тр|чотир)ь?ох'?/, '$1и')
 			def newReplLine = line.padRight(64) + "#> $newLemma"
 			outReplaceLines << newReplLine
-
-			outLines << newLine
 		}
 		
 		if( errors ) {
@@ -95,8 +105,10 @@ class Autogen {
 			newLine = newLine.replace('ua_1992', 'ua_2019')
 			newLine = newLine.replace('камерю', 'камер\'ю')
 
-			String newLemma = pattern2.matcher(line).replaceFirst('$1$2$3')
+			String newLemma = pattern1.matcher(line).replaceFirst('$1$2$3')
+			newLemma = pattern2.matcher(newLemma).replaceFirst('$1$2$3')
 			def newReplLine = line.padRight(64) + "#> $newLemma"
+			newReplLine = newReplLine.replace('камерю', 'камер\'ю')
 			outReplaceLines << newReplLine
 
 			outLines << newLine

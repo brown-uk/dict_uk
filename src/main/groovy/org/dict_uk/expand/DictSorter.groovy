@@ -280,7 +280,7 @@ class DictSorter {
 	}
 
 	@CompileStatic
-	static List<String> quickUkSort(List<String> collection) {
+	static List<String> quickUkSort(Collection<String> collection) {
 
 		List<String> list = collection.parallelStream()
 			.map { (Map.Entry)new MapEntry(UkDictComparator.getSortKey(it), it) }

@@ -147,7 +147,7 @@ task checkReplacements {
   doLast {
 	def dictDir = file("data/dict")
 	
-	def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') }
+	def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') || it.name.endsWith('replace.txt') }
 	
 	def replWords = files.collect { it.text.split("\n")  } \
 	    .flatten() \

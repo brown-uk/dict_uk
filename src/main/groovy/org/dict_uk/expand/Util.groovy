@@ -3,6 +3,7 @@ package org.dict_uk.expand
 import java.util.Map
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
+import java.util.concurrent.TimeUnit
 import java.util.regex.*
 
 import org.dict_uk.common.DicEntry
@@ -278,14 +279,14 @@ class Util {
 	}
 
 
-//	@TypeChecked
+	@CompileStatic
 	void print_word_list(List<DicEntry> sortedEntries) {
 		log.info("Collecting words and lemmas...")
 
 		def time1 = System.currentTimeMillis()
 
 		HashSet<String> words = new HashSet<>()
-		HashSet<String> spell_words = new HashSet<>()
+		HashSet<String> spellWords = new HashSet<>()
 		HashSet<String> lemmas = new HashSet<>()
 		HashSet<String> tags = new HashSet<>()
 
@@ -301,7 +302,7 @@ class Util {
 					&& ! word.endsWith(".")
 					//&& ! (tag.contains(":inanim") && tag.contains(":v_kly") )
 					 ) {
-				spell_words.add(word)
+				spellWords.add(word)
 			}
 
 			tags.add(dicEntry.tagStr)
@@ -309,47 +310,52 @@ class Util {
 
 		ExecutorService executor = Executors.newWorkStealingPool();
 		
-		executor.submit(  { 
-				def lemmaList = DictSorter.quickUkSort(lemmas)
-				new File("lemmas.txt").withWriter("utf-8") { f ->
-					for(lemma in lemmaList) {
-						f << lemma << "\n"
-					}
+		executor.execute( { 
+			def lemmaList = DictSorter.quickUkSort(lemmas)
+			new File("lemmas.txt").withWriter("utf-8") { f ->
+				for(lemma in lemmaList) {
+					f << lemma << "\n"
 				}
-			})
+			}
+			log.info("{} total unique lemmas", lemmaList.size())
+		})
 
-		executor.submit( { 
-				def wordList = DictSorter.quickUkSort(words)
+		executor.execute( { 
+			def wordList = DictSorter.quickUkSort(words)
 
-				new File("words.txt").withWriter("utf-8") { f ->
-					for(word in wordList) {
-						f << word << "\n"
-					}
+			new File("words.txt").withWriter("utf-8") { f ->
+				for(word in wordList) {
+					f << word << "\n"
 				}
-				log.info("{} total word forms", wordList.size())
-			})
+			}
+			log.info("{} total word forms", wordList.size())
+		})
 
-			executor.submit( { 
-				def spellWordList = DictSorter.quickUkSort(spell_words)
+		executor.execute( {
+			def spellWordList = DictSorter.quickUkSort(spellWords)
 
-				new File("words_spell.txt").withWriter("utf-8") { f ->
-					for(word in spellWordList) {
-						f << word << "\n"
-					}
+			new File("words_spell.txt").withWriter("utf-8") { f ->
+				for(word in spellWordList) {
+					f << word << "\n"
 				}
-				log.info("{} spelling word forms", spellWordList.size())
-			})
+			}
+			log.info("{} spelling word forms", spellWordList.size())
+		})
 
-//			executorService << { 
-//				def tagList = tags.toList().toSorted()
-//				new File("tags.txt").withWriter("utf-8") { f ->
-//					for(tag in tagList) {
-//						f << tag << "\n"
-//					}
-//				}
-//			}
+		
+		//			executor.execute( {
+		//				def tagList = tags.toList().toSorted()
+		//				new File("tags.txt").withWriter("utf-8") { f ->
+		//					for(tag in tagList) {
+		//						f << tag << "\n"
+		//					}
+		//				}
+		//			}
+		
 		executor.shutdown()
-
+		executor.awaitTermination(300, TimeUnit.SECONDS)
+		
+		log.info("Done collecting words")
 	}
 
 	void log_usage(Affix affix) {
