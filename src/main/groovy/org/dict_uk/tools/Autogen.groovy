@@ -23,8 +23,10 @@ class Autogen {
 		lines
 		.findAll { line -> line =~ /проек[тц]|хіміо|^(двох|трьох|чотирьох)/ }
 		.each { line ->
-			if( line.contains('#>') )
+			if( line.contains('#>') ) {
+				println "Skipping line with replace: $line"
 				return
+			}
 			
 			if( line =~ /проек[тц]/ ) {
 				if( ! line.contains(":ua_1992") ) {
