@@ -29,7 +29,7 @@ repositories {
 dependencies {
     implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.3'
     implementation group: 'org.codehaus.groovy', name: 'groovy-cli-picocli', version: '3.0.3'
-    implementation 'info.picocli:picocli:4.0.4'
+    implementation 'info.picocli:picocli:4.3.2'
 
 //    implementation group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
