@@ -143,7 +143,7 @@ class VerbReverse {
     
     new File(argv[1]).withWriter("UTF-8") { output ->
     
-    input.readLines("UTF-8").each { line ->
+    input.readLines("UTF-8").each { String line ->
         
         try {
         if( convert ) {
@@ -156,7 +156,7 @@ class VerbReverse {
 
         // v5 is special - don't generate reverse affixes for it
         if( line.contains("group ") )
-            convert = ! line.contains(" v5")
+            convert = ! line.contains(" v5") && ! line.contains("shrt")
         }
         catch(ex) {
             throw new Exception("Failed at " + it, ex)

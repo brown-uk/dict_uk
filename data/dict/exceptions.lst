@@ -727,8 +727,6 @@
 будьте бути verb:impr:p:3:imperf
 бувши бути advp:imperf
 
-бува бувати verb:imperf:pres:s:3:&insert:coll
-
 жити-бути жити-бути verb:inf:imperf             # lim
 жив-був жити-бути verb:past:m:imperf
 жила-була жити-бути verb:past:f:imperf
@@ -843,6 +841,12 @@
 
 # лише наказова
 щасти щастити verb:imperf:impr:s:2
+
+дава давати verb:imperf:pres:s:3:short
+передава передавати verb:imperf:pres:s:3:short
+віддава віддавати verb:imperf:pres:s:3:short
+настава наставати verb:imperf:pres:s:3:short
+відіграва відігравати verb:imperf:pres:s:3:short
 
 славімо славити verb:imperf:impr:p:1
 славіть славити verb:imperf:impr:p:2:rare

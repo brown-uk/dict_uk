@@ -129,6 +129,7 @@
 дрожка /n10.p2
 дряглий /adj
 дряглість /n30
+єден /numr ^adj :&numr
 жалуватися /vr1.cf.advp :imperf
 жантильний /adj
 жартовливий /adj.adv
@@ -576,7 +577,6 @@
 урадуваний /adj :&adjp:pasv:perf    # past
 уряджений /adj :&adjp:pasv:perf    # past
 успокоєний /adj :&adjp:pasv:perf    # past
-устид adv:&predic
 устидно adv:&predic
 устріть adv
 ухорканий /adj :&adjp:pasv:perf:v-u    # past
