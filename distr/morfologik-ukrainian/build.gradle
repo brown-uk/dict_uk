@@ -149,7 +149,7 @@ task spellDict(type: JavaExec, dependsOn: prepareSpellWords) {
     def outFile="${spellOutDir}/uk_UA.dict"
     def freqFile="src/main/data/uk_wordlist.xml"
 
-    inputs.files tasks.prepareSpellWords.outputs.files
+    inputs.files tasks.prepareSpellWords.outputs.files, "src/data/uk_wordlist.xml"
     outputs.file outFile
 
     workingDir "$projectDir"

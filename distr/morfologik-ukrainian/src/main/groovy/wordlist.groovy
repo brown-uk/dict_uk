@@ -42,7 +42,7 @@ words.toSorted{ -it.value }.each {
     if( it.value < freqMin )
         return
 
-    out << "<w f=\"${it.value}\">${it.key}</w>\n"
+    out << "<w f=\"" + Math.round(it.value) + "\">${it.key}</w>\n"
 }
 
 out << '</wordlist>\n'
