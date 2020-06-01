@@ -93,6 +93,11 @@ class Expand {
 
 		DicEntry base_word = new DicEntry(word, word, pos + base_tag)
 		List<DicEntry> words = [base_word]
+		
+		if( affixFlags.contains(".shri") ) {
+			String shortWord = word.replaceFirst(/ти(ся)?$/, 'ть$1')
+			words.add( new DicEntry(shortWord, word, pos + base_tag + ":short") )
+		}
 
 		if( affixFlags[0] == "<" )
 			return words
@@ -107,6 +112,9 @@ class Expand {
 				continue
 
 			if( affixFlag2 == "ku" && affixFlags ==~ /n2[04].*/ )
+				continue
+	
+			if( affixFlag2 == "shri" )
 				continue
 	
 			if( affixFlag2 != mainGroup ) {

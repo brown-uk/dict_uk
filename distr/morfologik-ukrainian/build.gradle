@@ -460,6 +460,8 @@ publishing {
 
 
 uploadArchives {
+  inputs.files "$projectDir/../../VERSION"
+
   repositories {
 
     mavenDeployer {

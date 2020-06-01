@@ -705,6 +705,7 @@
 # !verb
 
 бути бути verb:inf:imperf
+буть бути verb:inf:imperf:short
 буду бути verb:futr:s:1:imperf
 будеш бути verb:futr:s:2:imperf
 буде бути verb:futr:s:3:imperf
@@ -756,7 +757,7 @@
 боронь боронити verb:impr:s:2:imperf:coll
 
 диви дивитися verb:rev:imperf:impr:s:2:coll
-
+дивіть дивитися verb:rev:imperf:impr:p:2:coll
 
 # паралельна: кляну - клену
 кленім клясти verb:impr:p:1:imperf:rare
