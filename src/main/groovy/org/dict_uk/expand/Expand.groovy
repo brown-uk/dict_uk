@@ -94,7 +94,7 @@ class Expand {
 		DicEntry base_word = new DicEntry(word, word, pos + base_tag)
 		List<DicEntry> words = [base_word]
 		
-		if( affixFlags.contains(".shri") ) {
+		if( affixFlags.startsWith("v") ) {
 			String shortWord = word.replaceFirst(/ти(ся)?$/, 'ть$1')
 			words.add( new DicEntry(shortWord, word, pos + base_tag + ":short") )
 		}
@@ -112,9 +112,6 @@ class Expand {
 				continue
 
 			if( affixFlag2 == "ku" && affixFlags ==~ /n2[04].*/ )
-				continue
-	
-			if( affixFlag2 == "shri" )
 				continue
 	
 			if( affixFlag2 != mainGroup ) {
@@ -1046,8 +1043,8 @@ class Expand {
 //				":v-u",
 				":prop",
 				":geo", ":abbr", ":fname", ":lname", ":pname",
-				":bad", ":subst", ":slang", ":rare", ":coll", ":alt", ":ua_2019", ":ua_1992",
-				":xp1", ":xp2", ":xp3", ":xp4"
+				":bad", ":subst", ":slang", ":rare", ":coll", ":alt", ":ua_2019", ":ua_1992", ":short",
+				":xp1", ":xp2", ":xp3", ":xp4",
 			]
 
 	@CompileStatic

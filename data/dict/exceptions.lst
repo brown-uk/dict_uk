@@ -756,8 +756,8 @@
 
 боронь боронити verb:impr:s:2:imperf:coll
 
-диви дивитися verb:rev:imperf:impr:s:2:coll
-дивіть дивитися verb:rev:imperf:impr:p:2:coll
+диви дивитися verb:rev:imperf:impr:s:2:coll:short
+дивіть дивитися verb:rev:imperf:impr:p:2:coll:short
 
 # паралельна: кляну - клену
 кленім клясти verb:impr:p:1:imperf:rare
@@ -801,6 +801,7 @@
 хочемо хтіти verb:imperf:pres:p:1
 хочете хтіти verb:imperf:pres:p:2
 хочуть хтіти verb:imperf:pres:p:3
+хтять хтіти verb:imperf:pres:p:3:subst
 хтітиму хтіти verb:imperf:futr:s:1
 хтітимеш хтіти verb:imperf:futr:s:2
 хтітиме хтіти verb:imperf:futr:s:3
@@ -812,6 +813,8 @@
 хтіла хтіти verb:imperf:past:f
 хтіло хтіти verb:imperf:past:n
 хтіли хтіти verb:imperf:past:p
+
+хотять хотіти verb:imperf:pres:p:3:subst
 
 забракнути забракнути verb:perf:inf             # lim
 забракне забракнути verb:perf:futr:s:3
@@ -826,6 +829,7 @@
 можемо могти verb:pres:p:1:imperf
 можете могти verb:pres:p:2:imperf
 можуть могти verb:pres:p:3:imperf
+могуть могти verb:pres:p:3:imperf:subst
 міг могти verb:past:m:imperf
 могла могти verb:past:f:imperf
 могло могти verb:past:n:imperf
