@@ -10,6 +10,7 @@ base-compound_1992.lst -- compounds with 1992 spelling
 base-composite.lst -- слова через дефіс, в яких відмінюються обидві частини
 colors.lst  -- colors
 dot-abbr.lst -- abbreviations with dots
+extra.lst -- entity names that include non-letter characters
 exceptions.lst -- words that decline under unknown/undefined rules (not sorted)
 lang.lst -- language names
 geo-ukr-hydro.lst -- гідроніми України

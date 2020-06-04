@@ -237,7 +237,7 @@
 комбід /n20.p
 комбідівець /n22.a.p.<
 користання /n2n
-которий /adj :&pron:int:rel
+которий /adj.long :&pron:int:rel
 коц /n20.a.p
 кріпость /n32.p
 лапоть /n22.a.p
@@ -511,20 +511,10 @@
 свіжистий /adj
 світач /n20.a.p
 святешний /adj
-се сей adj:n:v_naz/v_zna:&pron:dem
-сего сей adj:n:v_rod:&pron:dem
-сей сей adj:m:v_naz/v_zn2:&pron:dem
+сей /adj_pron.long :&pron:dem
 сербіянин /n20.a.pyn.<
 силяти /v2.cf.advp :imperf
-сим сей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
-сими сей adj:p:v_oru:&pron:dem
-сих сей adj:p:v_rod/v_zn1/v_mis:&pron:dem
-сі сей adj:p:v_naz/v_zn2/v_mis:&pron:dem
-сієї сей adj:f:v_rod:&pron:dem
-сією сей adj:f:v_oru:&pron:dem
-сій сей adj:f:v_dav/v_mis:&pron:dem
 сількось adv:&insert
-сім сей adj:m:v_mis//n:v_mis:&pron:dem
 скілька numr:p:v_naz/v_zna
 скількість /n30
 скілько numr:p:v_naz/v_zna
@@ -542,11 +532,7 @@
 стосувати /v1.cf.advp :imperf
 суперека /n10.p1
 сутяжно adv
-сього сей adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
 сьогодня adv
-сьому сей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
-сю сей adj:f:v_zna:&pron:dem
-ся сей adj:f:v_naz:&pron:dem
 ся part
 таж conj:subord|part
 таже conj:subord|part

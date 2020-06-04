@@ -316,21 +316,17 @@
 
 наші /n2adj1.< :&pron:pos
 
-цей /adj_pron :&pron:dem
-оцей /adj_pron :&pron:dem
+цей /adj_pron.long :&pron:dem
+оцей /adj_pron.long :&pron:dem
 
-той /adj_pron :&pron:dem
-позатой /adj_pron :&pron:dem
-тамтой /adj_pron :&pron:dem
-отой /adj_pron :&pron:dem
-
-теє той adj:n:v_naz/v_zna:&pron:dem:coll
-тая той adj:f:v_naz/v_zna:&pron:dem:coll
-тії той adj:p:v_naz/v_zna:&pron:dem:coll
+той /adj_pron.long :&pron:dem
+позатой /adj_pron.long :&pron:dem
+тамтой /adj_pron.long :&pron:dem
+отой /adj_pron.long :&pron:dem
 
 весь /adj_pron :&pron:gen
-увесь /adj_pron :&pron:gen
-ввесь /adj_pron :&pron:gen
+увесь /adj_pron.long :&pron:gen
+ввесь /adj_pron.long :&pron:gen
 
 все adv:v-u|conj:coord:v-u|part:v-u
 усе adv:v-u|conj:coord:v-u|part:v-u

@@ -94,7 +94,7 @@ class Expand {
 		DicEntry base_word = new DicEntry(word, word, pos + base_tag)
 		List<DicEntry> words = [base_word]
 		
-		if( affixFlags.startsWith("v") ) {
+		if( affixFlags.startsWith("v") && word =~ /.[аеєиіїоуюя]ти(ся)?$/ ) {
 			String shortWord = word.replaceFirst(/ти(ся)?$/, 'ть$1')
 			words.add( new DicEntry(shortWord, word, pos + base_tag + ":short") )
 		}
@@ -123,6 +123,9 @@ class Expand {
 					else if( affixFlag2 == "v3.it0" ) {
 						affixFlag2 = "v1.it0"
 					}
+//					else if ( affixFlag2 == "adj_pron.long" ) {
+//						affixFlag2 = "adj.long"
+//					}
 //				}
 
 				affixFlag2 = adjustCommonFlag(affixFlag2)
@@ -1043,7 +1046,7 @@ class Expand {
 //				":v-u",
 				":prop",
 				":geo", ":abbr", ":fname", ":lname", ":pname",
-				":bad", ":subst", ":slang", ":rare", ":coll", ":alt", ":ua_2019", ":ua_1992", ":short",
+				":bad", ":subst", ":slang", ":rare", ":coll", ":alt", ":ua_2019", ":ua_1992", ":short", ":long",
 				":xp1", ":xp2", ":xp3", ":xp4",
 			]
 
@@ -1053,7 +1056,7 @@ class Expand {
 	}
 
 	@CompileStatic
-	private List<DicEntry> expand_subposition(String main_word, String line, String extra_tags, int idx_) {
+	private List<DicEntry> expand_subposition(String main_word, String line, String extra_tags, int idx_, String extraFlags) {
 		String idx = ""
 
 		if( line.startsWith(" +cs") ) {
@@ -1084,18 +1087,18 @@ class Expand {
             List<DicEntry> forms = []
 
             if( word.startsWith('най') ) {
-			    forms += expand(word, "/adj :comps" + idx + extra_tags)
+			    forms += expand(word, "/adj$extraFlags :comps" + idx + extra_tags)
             }
             else {
-			    forms += expand(word, "/adj :compc" + idx + extra_tags)
+			    forms += expand(word, "/adj$extraFlags :compc" + idx + extra_tags)
 
 			    word = "най" + word
-			    forms += expand(word, "/adj :comps" + idx + extra_tags)
+			    forms += expand(word, "/adj$extraFlags :comps" + idx + extra_tags)
 		    }
 
-            forms += expand("що" + word, "/adj :comps" + idx + extra_tags)
-			forms += expand("як" + word, "/adj :comps" + idx + extra_tags)
-			forms += expand("щояк" + word, "/adj :comps" + idx + extra_tags)
+            forms += expand("що" + word, "/adj$extraFlags :comps" + idx + extra_tags)
+			forms += expand("як" + word, "/adj$extraFlags :comps" + idx + extra_tags)
+			forms += expand("щояк" + word, "/adj$extraFlags :comps" + idx + extra_tags)
 
 			if( "comp" in Args.args.lemmaForTags ) {
 				forms = forms.collect { DicEntry entry -> 
@@ -1259,26 +1262,28 @@ class Expand {
 
 			if( sub_lines ) {
 				def idx = 0
+				def extraFlags = lineGroup2.line.contains(".long") ? ".long" : ""
+				
 				for(String sub_line in sub_lines) {
 					
-					String extra_flags = ""
+					String extraTags = ""
 					if( flags.startsWith("adv:")) {
-						extra_flags = flags[3..-1].replace(":compb", "")
+						extraTags = flags[3..-1].replace(":compb", "")
 						//                util.dbg("sub_lines: %s, %s", flags, extra_flags)
 					}
 					else if( flags.contains(" :") || flags.startsWith(":") ) {
 						def matcher = Pattern.compile("(^| )(:[^ ]+)").matcher(flags)
 						matcher.find()
-						extra_flags = matcher.group(2).replace(":compb", "")
+						extraTags = matcher.group(2).replace(":compb", "")
 						//                 util.dbg("===", extra_flags)
 					}
 
 					List<DicEntry> sublines
 					if( lineGroup2.line.contains(" adv") ) {
-						sublines = expand_subposition_adv_main(main_word, sub_line, extra_flags)
+						sublines = expand_subposition_adv_main(main_word, sub_line, extraTags)
 					}
 					else {
-						sublines = expand_subposition(main_word, sub_line, extra_flags, idx)
+						sublines = expand_subposition(main_word, sub_line, extraTags, idx, extraFlags)
 					}
 					outEntries.addAll( sublines )
 
@@ -1286,7 +1291,7 @@ class Expand {
 						for( inflected_line in inflected_lines) {
 							if( inflected_line.tagStr.startsWith("adv") ) {
 								def last_adv = inflected_line.word
-								def cs_lines = expand_subposition_adv(last_adv, sub_line, extra_flags, main_word)
+								def cs_lines = expand_subposition_adv(last_adv, sub_line, extraTags, main_word)
 								outEntries.addAll(cs_lines)
 								break
 								//                    print(".adv", last_adv, file=sys.stderr)

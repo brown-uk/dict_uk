@@ -39,6 +39,7 @@ inf
 int
 latin
 lname
+long
 m
 n
 neg

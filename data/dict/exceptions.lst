@@ -502,7 +502,7 @@
 осени осінь noun:inanim:f:v_rod:ua_2019
 соли сіль noun:inanim:f:v_rod:ua_2019
 Білоруси Білорусь noun:inanim:f:v_rod:prop:geo:ua_2019
-Руси Русь noun:f:v_rod:prop:ua_2019
+Руси Русь noun:f:v_rod:prop:geo:ua_2019
 
 піхв піхва noun:inanim:p:v_rod
 подруж подружжя noun:inanim:p:v_rod
@@ -614,7 +614,7 @@
 хабарі хабар noun:inanim:p:v_kly
 
 
-'дно один adj:n:v_naz:&pron:dem:ind:coll
+'дно один adj:n:v_naz:&pron:dem:ind:short:coll
 
 вітця отець noun:anim:m:v_rod/v_zna:rare
 вітцю отець noun:anim:m:v_dav:rare
@@ -633,8 +633,7 @@
 чудесами чудо noun:p:v_oru:xp2
 чудесах чудо noun:p:v_mis:xp2
 
-те-се те-се noun:inanim:n:v_naz:&pron:dem
-те-се те-се noun:inanim:n:v_zna:&pron:dem
+те-се те-се noun:inanim:n:v_naz/v_zna:&pron:dem
 
 
 # давні форми
@@ -659,24 +658,6 @@
 фон фон part:pers
 бен бен part:pers
 делла делла part:pers
-
-Ростов-на-Дону Ростов-на-Дону noun:inanim:m:v_naz:prop
-Ростова-на-Дону Ростов-на-Дону noun:inanim:m:v_rod:prop
-Ростову-на-Дону Ростов-на-Дону noun:inanim:m:v_dav:prop
-Ростов-на-Дону Ростов-на-Дону noun:inanim:m:v_zna:prop
-Ростовом-на-Дону Ростов-на-Дону noun:inanim:m:v_oru:prop
-Ростові-на-Дону Ростов-на-Дону noun:inanim:m:v_mis:prop
-Ростову-на-Дону Ростов-на-Дону noun:inanim:m:v_mis:prop
-Ростове-на-Дону Ростов-на-Дону noun:inanim:m:v_kly:prop
-
-Франкфурт-на-Майні Франкфурт-на-Майні noun:inanim:m:v_naz:prop
-Франкфурта-на-Майні Франкфурт-на-Майні noun:inanim:m:v_rod:prop
-Франкфурту-на-Майні Франкфурт-на-Майні noun:inanim:m:v_dav:prop
-Франкфурт-на-Майні Франкфурт-на-Майні noun:inanim:m:v_zna:prop
-Франкфуртом-на-Майні Франкфурт-на-Майні noun:inanim:m:v_oru:prop
-Франкфурті-на-Майні Франкфурт-на-Майні noun:inanim:m:v_mis:prop
-Франкфурту-на-Майні Франкфурт-на-Майні noun:inanim:m:v_mis:prop
-Франкфурте-на-Майні Франкфурт-на-Майні noun:inanim:m:v_kly:prop
 
 кадівб кадівб noun:inanim:m:v_naz:rare
 кадовба кадівб noun:inanim:m:v_rod:rare
@@ -756,8 +737,13 @@
 
 боронь боронити verb:impr:s:2:imperf:coll
 
-диви дивитися verb:rev:imperf:impr:s:2:coll:short
-дивіть дивитися verb:rev:imperf:impr:p:2:coll:short
+диви дивитися verb:rev:imperf:impr:s:2:short
+дивіть дивитися verb:rev:imperf:impr:p:2:short
+
+многий многий adj:m:v_naz/v_zn2:rare
+многая многий adj:p:v_naz/v_zn2:rare
+многії многий adj:p:v_naz/v_zn2:rare
+
 
 # паралельна: кляну - клену
 кленім клясти verb:impr:p:1:imperf:rare
@@ -814,7 +800,12 @@
 хтіло хтіти verb:imperf:past:n
 хтіли хтіти verb:imperf:past:p
 
+захтять захтіти verb:perf:futr:p:3:subst:rare
+
+біжуть бігти verb:imperf:pres:p:3:subst
+
 хотять хотіти verb:imperf:pres:p:3:subst
+захотять захотіти verb:perf:futr:p:3:subst
 
 забракнути забракнути verb:perf:inf             # lim
 забракне забракнути verb:perf:futr:s:3
@@ -1131,4 +1122,3 @@
 чотирьох- noninfl
 шоу- noninfl
 
-Ла noninfl

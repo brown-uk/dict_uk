@@ -480,6 +480,7 @@
 бачачи advp:imperf
 бачивши advp:imperf
 бачити verb:imperf:inf
+  бачить verb:imperf:inf:short
   бач verb:imperf:impr:s:2
   бачмо verb:imperf:impr:p:1
   бачте verb:imperf:impr:p:2:&insert
@@ -514,6 +515,7 @@
   безчерепні noun:anim:p:v_kly:ns
 бентеживши advp:imperf
 бентежити verb:imperf:inf
+  бентежить verb:imperf:inf:short
   бентеж verb:imperf:impr:s:2
   бентежмо verb:imperf:impr:p:1
   бентежте verb:imperf:impr:p:2
@@ -924,28 +926,37 @@
   вбогому adj:m:v_mis:compb
   вбогий adj:m:v_kly:compb
   вбога adj:f:v_naz:compb
+  вбогая adj:f:v_naz:compb:long
   вбогої adj:f:v_rod:compb
   вбогій adj:f:v_dav:compb
   вбогу adj:f:v_zna:compb
+  вбогую adj:f:v_zna:compb:long
   вбогою adj:f:v_oru:compb
   вбогій adj:f:v_mis:compb
   вбога adj:f:v_kly:compb
+  вбогая adj:f:v_kly:compb:long
   вбоге adj:n:v_naz:compb
+  вбогеє adj:n:v_naz:compb:long
   вбогого adj:n:v_rod:compb
   вбогому adj:n:v_dav:compb
   вбоге adj:n:v_zna:compb
+  вбогеє adj:n:v_zna:compb:long
   вбогим adj:n:v_oru:compb
   вбогім adj:n:v_mis:compb
   вбогому adj:n:v_mis:compb
   вбоге adj:n:v_kly:compb
+  вбогеє adj:n:v_kly:compb:long
   вбогі adj:p:v_naz:compb
+  вбогії adj:p:v_naz:compb:long
   вбогих adj:p:v_rod:compb
   вбогим adj:p:v_dav:compb
   вбогих adj:p:v_zna:ranim:compb
   вбогі adj:p:v_zna:rinanim:compb
+  вбогії adj:p:v_zna:rinanim:compb:long
   вбогими adj:p:v_oru:compb
   вбогих adj:p:v_mis:compb
   вбогі adj:p:v_kly:compb
+  вбогії adj:p:v_kly:compb:long
 вбогіше adv:compc
 вбогіший adj:m:v_naz:compc
   вбогішого adj:m:v_rod:compc
@@ -957,28 +968,37 @@
   вбогішому adj:m:v_mis:compc
   вбогіший adj:m:v_kly:compc
   вбогіша adj:f:v_naz:compc
+  вбогішая adj:f:v_naz:compc:long
   вбогішої adj:f:v_rod:compc
   вбогішій adj:f:v_dav:compc
   вбогішу adj:f:v_zna:compc
+  вбогішую adj:f:v_zna:compc:long
   вбогішою adj:f:v_oru:compc
   вбогішій adj:f:v_mis:compc
   вбогіша adj:f:v_kly:compc
+  вбогішая adj:f:v_kly:compc:long
   вбогіше adj:n:v_naz:compc
+  вбогішеє adj:n:v_naz:compc:long
   вбогішого adj:n:v_rod:compc
   вбогішому adj:n:v_dav:compc
   вбогіше adj:n:v_zna:compc
+  вбогішеє adj:n:v_zna:compc:long
   вбогішим adj:n:v_oru:compc
   вбогішім adj:n:v_mis:compc
   вбогішому adj:n:v_mis:compc
   вбогіше adj:n:v_kly:compc
+  вбогішеє adj:n:v_kly:compc:long
   вбогіші adj:p:v_naz:compc
+  вбогішії adj:p:v_naz:compc:long
   вбогіших adj:p:v_rod:compc
   вбогішим adj:p:v_dav:compc
   вбогіших adj:p:v_zna:ranim:compc
   вбогіші adj:p:v_zna:rinanim:compc
+  вбогішії adj:p:v_zna:rinanim:compc:long
   вбогішими adj:p:v_oru:compc
   вбогіших adj:p:v_mis:compc
   вбогіші adj:p:v_kly:compc
+  вбогішії adj:p:v_kly:compc:long
 вбого adv:compb
 вбоїсько noun:inanim:n:v_naz
   вбоїська noun:inanim:n:v_rod
@@ -1228,6 +1248,7 @@
 верифікувавши advp:imperf
 верифікувавши advp:perf
 верифікувати verb:imperf:inf
+  верифікувать verb:imperf:inf:short
   верифікуй verb:imperf:impr:s:2
   верифікуймо verb:imperf:impr:p:1
   верифікуйте verb:imperf:impr:p:2
@@ -1251,6 +1272,7 @@
   верифікували verb:imperf:past:p
   верифіковано verb:imperf:impers
 верифікувати verb:perf:inf
+  верифікувать verb:perf:inf:short
   верифікуй verb:perf:impr:s:2
   верифікуймо verb:perf:impr:p:1
   верифікуйте verb:perf:impr:p:2
@@ -1337,11 +1359,13 @@
   вело verb:imperf:past:n
   вели verb:imperf:past:p
 вечоріти verb:imperf:inf
+  вечоріть verb:imperf:inf:short
   вечорить verb:imperf:pres:s:3
   вечорітиме verb:imperf:futr:s:3
   вечоріло verb:imperf:past:n
 вжаливши advp:perf
 вжалити verb:perf:inf
+  вжалить verb:perf:inf:short
   вжаль verb:perf:impr:s:2
   вжальмо verb:perf:impr:p:1
   вжальте verb:perf:impr:p:2
@@ -1429,6 +1453,7 @@
 взувавшися advp:rev:imperf:rare
 взуватися verb:rev:imperf:inf
   взуватись verb:rev:imperf:inf
+  взуваться verb:rev:imperf:inf:short
   взувайсь verb:rev:imperf:impr:s:2
   взувайся verb:rev:imperf:impr:s:2
   взуваймось verb:rev:imperf:impr:p:1
@@ -1469,6 +1494,7 @@
 взувшись advp:rev:perf
 взувшися advp:rev:perf:rare
 взути verb:perf:inf
+  взуть verb:perf:inf:short
   взуй verb:perf:impr:s:2
   взуймо verb:perf:impr:p:1
   взуйте verb:perf:impr:p:2
@@ -1486,6 +1512,7 @@
   взуто verb:perf:impers
 взутися verb:rev:perf:inf
   взутись verb:rev:perf:inf
+  взуться verb:rev:perf:inf:short
   взуйсь verb:rev:perf:impr:s:2
   взуйся verb:rev:perf:impr:s:2
   взуймось verb:rev:perf:impr:p:1
@@ -2022,9 +2049,11 @@
   гладших adj:p:v_mis:compc
   гладші adj:p:v_kly:compc
 годний adj:m:v_naz:coll
+  годен adj:m:v_naz:coll:short
   годного adj:m:v_rod:coll
   годному adj:m:v_dav:coll
   годного adj:m:v_zna:ranim:coll
+  годен adj:m:v_zna:coll:short
   годний adj:m:v_zna:rinanim:coll
   годним adj:m:v_oru:coll
   годнім adj:m:v_mis:coll
@@ -2053,8 +2082,6 @@
   годними adj:p:v_oru:coll
   годних adj:p:v_mis:coll
   годні adj:p:v_kly:coll
-  годен adj:m:v_naz:short:coll
-  годен adj:m:v_zna:short:coll
 горнична noun:anim:f:v_naz:bad
   горничної noun:anim:f:v_rod:bad
   горничній noun:anim:f:v_dav:bad
@@ -2435,6 +2462,7 @@
 задихавшися advp:rev:perf:rare
 задихатися verb:rev:perf:inf
   задихатись verb:rev:perf:inf
+  задихаться verb:rev:perf:inf:short
   задихайсь verb:rev:perf:impr:s:2
   задихайся verb:rev:perf:impr:s:2
   задишся verb:rev:perf:impr:s:2
@@ -2489,10 +2517,12 @@
   залізках noun:inanim:p:v_mis
   залізка noun:inanim:p:v_kly
 засвітати verb:imperf:inf
+  засвітать verb:imperf:inf:short
   засвітає verb:imperf:pres:s:3
   засвітатиме verb:imperf:futr:s:3
   засвітало verb:imperf:past:n
 засвітати verb:perf:inf
+  засвітать verb:perf:inf:short
   засвітає verb:perf:futr:s:3
   засвітало verb:perf:past:n
 затаєний adj:m:v_naz:&adjp:pasv:perf:compb
@@ -2566,6 +2596,7 @@
   коні noun:anim:p:v_kly
 колисавши advp:imperf
 колисати verb:imperf:inf
+  колисать verb:imperf:inf:short
   колисай verb:imperf:impr:s:2
   колиши verb:imperf:impr:s:2
   колисаймо verb:imperf:impr:p:1
@@ -2848,28 +2879,37 @@
   найвбогішому adj:m:v_mis:comps
   найвбогіший adj:m:v_kly:comps
   найвбогіша adj:f:v_naz:comps
+  найвбогішая adj:f:v_naz:comps:long
   найвбогішої adj:f:v_rod:comps
   найвбогішій adj:f:v_dav:comps
   найвбогішу adj:f:v_zna:comps
+  найвбогішую adj:f:v_zna:comps:long
   найвбогішою adj:f:v_oru:comps
   найвбогішій adj:f:v_mis:comps
   найвбогіша adj:f:v_kly:comps
+  найвбогішая adj:f:v_kly:comps:long
   найвбогіше adj:n:v_naz:comps
+  найвбогішеє adj:n:v_naz:comps:long
   найвбогішого adj:n:v_rod:comps
   найвбогішому adj:n:v_dav:comps
   найвбогіше adj:n:v_zna:comps
+  найвбогішеє adj:n:v_zna:comps:long
   найвбогішим adj:n:v_oru:comps
   найвбогішім adj:n:v_mis:comps
   найвбогішому adj:n:v_mis:comps
   найвбогіше adj:n:v_kly:comps
+  найвбогішеє adj:n:v_kly:comps:long
   найвбогіші adj:p:v_naz:comps
+  найвбогішії adj:p:v_naz:comps:long
   найвбогіших adj:p:v_rod:comps
   найвбогішим adj:p:v_dav:comps
   найвбогіших adj:p:v_zna:ranim:comps
   найвбогіші adj:p:v_zna:rinanim:comps
+  найвбогішії adj:p:v_zna:rinanim:comps:long
   найвбогішими adj:p:v_oru:comps
   найвбогіших adj:p:v_mis:comps
   найвбогіші adj:p:v_kly:comps
+  найвбогішії adj:p:v_kly:comps:long
 найвживаніше adv:comps
 найвживаніший adj:m:v_naz:comps
   найвживанішого adj:m:v_rod:comps
@@ -3254,6 +3294,7 @@
 оскірившися advp:rev:perf:rare
 оскіритися verb:rev:perf:inf:rare
   оскіритись verb:rev:perf:inf:rare
+  оскіриться verb:rev:perf:inf:rare:short
   оскірся verb:rev:perf:impr:s:2:rare
   оскірмось verb:rev:perf:impr:p:1:rare
   оскірмося verb:rev:perf:impr:p:1:rare
@@ -3368,6 +3409,7 @@
   Посаде-Покровське noun:inanim:m:v_kly:prop
 пострілявши advp:perf
 постріляти verb:perf:inf
+  пострілять verb:perf:inf:short
   постріляй verb:perf:impr:s:2
   постріляймо verb:perf:impr:p:1
   постріляйте verb:perf:impr:p:2
@@ -3384,6 +3426,7 @@
   постріляли verb:perf:past:p
 приключитися verb:rev:perf:inf:bad
   приключитись verb:rev:perf:inf:bad
+  приключиться verb:rev:perf:inf:bad:short
   приключись verb:rev:perf:impr:s:2:bad
   приключися verb:rev:perf:impr:s:2:bad
   приключіться verb:rev:perf:impr:p:2:bad
@@ -3447,6 +3490,7 @@
   проєктах noun:inanim:p:v_mis:alt
   проєкти noun:inanim:p:v_kly:alt
 прощавати verb:imperf:inf
+  прощавать verb:imperf:inf:short
   прощавай verb:imperf:impr:s:2
   прощаваймо verb:imperf:impr:p:1
   прощавайте verb:imperf:impr:p:2
@@ -3465,6 +3509,14 @@
   псищами noun:anim:p:v_oru
   псищах noun:anim:p:v_mis
   псища noun:anim:p:v_kly
+Ростов-на-Дону noun:inanim:m:v_naz:prop
+  Ростова-на-Дону noun:inanim:m:v_rod:prop
+  Ростову-на-Дону noun:inanim:m:v_dav:prop
+  Ростов-на-Дону noun:inanim:m:v_zna:prop
+  Ростовом-на-Дону noun:inanim:m:v_oru:prop
+  Ростові-на-Дону noun:inanim:m:v_mis:prop
+  Ростову-на-Дону noun:inanim:m:v_mis:prop
+  Ростове-на-Дону noun:inanim:m:v_kly:prop
 Рудня-Фасова noun:inanim:f:v_naz:prop
   Рудні-Фасової noun:inanim:f:v_rod:prop
   Рудні-Фасовій noun:inanim:f:v_dav:prop
@@ -3605,6 +3657,7 @@
   Склодовська-Кюрі noun:anim:f:v_kly:prop:lname
 сопівши advp:imperf
 сопіти verb:imperf:inf
+  сопіть verb:imperf:inf:short
   сопи verb:imperf:impr:s:2
   сопім verb:imperf:impr:p:1
   сопімо verb:imperf:impr:p:1
@@ -3647,6 +3700,7 @@
   стафілококах noun:unanim:p:v_mis
   стафілококи noun:unanim:p:v_kly
 стривати verb:imperf:inf
+  стривать verb:imperf:inf:short
   стривай verb:imperf:impr:s:2
   стриваймо verb:imperf:impr:p:1
   стривайте verb:imperf:impr:p:2
@@ -3654,6 +3708,7 @@
 стрілявшись advp:rev:imperf
 стрілявшися advp:rev:imperf:rare
 стріляти verb:imperf:inf
+  стрілять verb:imperf:inf:short
   стріляй verb:imperf:impr:s:2
   стріляймо verb:imperf:impr:p:1
   стріляйте verb:imperf:impr:p:2
@@ -3678,6 +3733,7 @@
   стріляно verb:imperf:impers
 стрілятися verb:rev:imperf:inf
   стрілятись verb:rev:imperf:inf
+  стріляться verb:rev:imperf:inf:short
   стріляйсь verb:rev:imperf:impr:s:2
   стріляйся verb:rev:imperf:impr:s:2
   стріляймось verb:rev:imperf:impr:p:1
@@ -3926,6 +3982,7 @@
 уточнювавшися advp:rev:imperf:rare
 уточнюватися verb:rev:imperf:inf
   уточнюватись verb:rev:imperf:inf
+  уточнюваться verb:rev:imperf:inf:short
   уточнюйсь verb:rev:imperf:impr:s:2
   уточнюйся verb:rev:imperf:impr:s:2
   уточнюйтесь verb:rev:imperf:impr:p:2
@@ -4236,28 +4293,37 @@
   щонайвбогішому adj:m:v_mis:comps
   щонайвбогіший adj:m:v_kly:comps
   щонайвбогіша adj:f:v_naz:comps
+  щонайвбогішая adj:f:v_naz:comps:long
   щонайвбогішої adj:f:v_rod:comps
   щонайвбогішій adj:f:v_dav:comps
   щонайвбогішу adj:f:v_zna:comps
+  щонайвбогішую adj:f:v_zna:comps:long
   щонайвбогішою adj:f:v_oru:comps
   щонайвбогішій adj:f:v_mis:comps
   щонайвбогіша adj:f:v_kly:comps
+  щонайвбогішая adj:f:v_kly:comps:long
   щонайвбогіше adj:n:v_naz:comps
+  щонайвбогішеє adj:n:v_naz:comps:long
   щонайвбогішого adj:n:v_rod:comps
   щонайвбогішому adj:n:v_dav:comps
   щонайвбогіше adj:n:v_zna:comps
+  щонайвбогішеє adj:n:v_zna:comps:long
   щонайвбогішим adj:n:v_oru:comps
   щонайвбогішім adj:n:v_mis:comps
   щонайвбогішому adj:n:v_mis:comps
   щонайвбогіше adj:n:v_kly:comps
+  щонайвбогішеє adj:n:v_kly:comps:long
   щонайвбогіші adj:p:v_naz:comps
+  щонайвбогішії adj:p:v_naz:comps:long
   щонайвбогіших adj:p:v_rod:comps
   щонайвбогішим adj:p:v_dav:comps
   щонайвбогіших adj:p:v_zna:ranim:comps
   щонайвбогіші adj:p:v_zna:rinanim:comps
+  щонайвбогішії adj:p:v_zna:rinanim:comps:long
   щонайвбогішими adj:p:v_oru:comps
   щонайвбогіших adj:p:v_mis:comps
   щонайвбогіші adj:p:v_kly:comps
+  щонайвбогішії adj:p:v_kly:comps:long
 щонайвживаніше adv:comps
 щонайвживаніший adj:m:v_naz:comps
   щонайвживанішого adj:m:v_rod:comps
@@ -4530,28 +4596,37 @@
   щоякнайвбогішому adj:m:v_mis:comps
   щоякнайвбогіший adj:m:v_kly:comps
   щоякнайвбогіша adj:f:v_naz:comps
+  щоякнайвбогішая adj:f:v_naz:comps:long
   щоякнайвбогішої adj:f:v_rod:comps
   щоякнайвбогішій adj:f:v_dav:comps
   щоякнайвбогішу adj:f:v_zna:comps
+  щоякнайвбогішую adj:f:v_zna:comps:long
   щоякнайвбогішою adj:f:v_oru:comps
   щоякнайвбогішій adj:f:v_mis:comps
   щоякнайвбогіша adj:f:v_kly:comps
+  щоякнайвбогішая adj:f:v_kly:comps:long
   щоякнайвбогіше adj:n:v_naz:comps
+  щоякнайвбогішеє adj:n:v_naz:comps:long
   щоякнайвбогішого adj:n:v_rod:comps
   щоякнайвбогішому adj:n:v_dav:comps
   щоякнайвбогіше adj:n:v_zna:comps
+  щоякнайвбогішеє adj:n:v_zna:comps:long
   щоякнайвбогішим adj:n:v_oru:comps
   щоякнайвбогішім adj:n:v_mis:comps
   щоякнайвбогішому adj:n:v_mis:comps
   щоякнайвбогіше adj:n:v_kly:comps
+  щоякнайвбогішеє adj:n:v_kly:comps:long
   щоякнайвбогіші adj:p:v_naz:comps
+  щоякнайвбогішії adj:p:v_naz:comps:long
   щоякнайвбогіших adj:p:v_rod:comps
   щоякнайвбогішим adj:p:v_dav:comps
   щоякнайвбогіших adj:p:v_zna:ranim:comps
   щоякнайвбогіші adj:p:v_zna:rinanim:comps
+  щоякнайвбогішії adj:p:v_zna:rinanim:comps:long
   щоякнайвбогішими adj:p:v_oru:comps
   щоякнайвбогіших adj:p:v_mis:comps
   щоякнайвбогіші adj:p:v_kly:comps
+  щоякнайвбогішії adj:p:v_kly:comps:long
 щоякнайвживаніший adj:m:v_naz:comps
   щоякнайвживанішого adj:m:v_rod:comps
   щоякнайвживанішому adj:m:v_dav:comps
@@ -4865,28 +4940,37 @@
   якнайвбогішому adj:m:v_mis:comps
   якнайвбогіший adj:m:v_kly:comps
   якнайвбогіша adj:f:v_naz:comps
+  якнайвбогішая adj:f:v_naz:comps:long
   якнайвбогішої adj:f:v_rod:comps
   якнайвбогішій adj:f:v_dav:comps
   якнайвбогішу adj:f:v_zna:comps
+  якнайвбогішую adj:f:v_zna:comps:long
   якнайвбогішою adj:f:v_oru:comps
   якнайвбогішій adj:f:v_mis:comps
   якнайвбогіша adj:f:v_kly:comps
+  якнайвбогішая adj:f:v_kly:comps:long
   якнайвбогіше adj:n:v_naz:comps
+  якнайвбогішеє adj:n:v_naz:comps:long
   якнайвбогішого adj:n:v_rod:comps
   якнайвбогішому adj:n:v_dav:comps
   якнайвбогіше adj:n:v_zna:comps
+  якнайвбогішеє adj:n:v_zna:comps:long
   якнайвбогішим adj:n:v_oru:comps
   якнайвбогішім adj:n:v_mis:comps
   якнайвбогішому adj:n:v_mis:comps
   якнайвбогіше adj:n:v_kly:comps
+  якнайвбогішеє adj:n:v_kly:comps:long
   якнайвбогіші adj:p:v_naz:comps
+  якнайвбогішії adj:p:v_naz:comps:long
   якнайвбогіших adj:p:v_rod:comps
   якнайвбогішим adj:p:v_dav:comps
   якнайвбогіших adj:p:v_zna:ranim:comps
   якнайвбогіші adj:p:v_zna:rinanim:comps
+  якнайвбогішії adj:p:v_zna:rinanim:comps:long
   якнайвбогішими adj:p:v_oru:comps
   якнайвбогіших adj:p:v_mis:comps
   якнайвбогіші adj:p:v_kly:comps
+  якнайвбогішії adj:p:v_kly:comps:long
 якнайвживаніше adv:comps
 якнайвживаніший adj:m:v_naz:comps
   якнайвживанішого adj:m:v_rod:comps
