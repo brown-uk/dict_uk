@@ -529,11 +529,11 @@ class Expand {
 				if( ! main_flag.contains("np") && ! main_flag.contains(".p") \
 				        && ! flags.contains("n2adj") && ! main_flag.contains("numr") ) {
 					if( line.tagStr.contains(":p:") ) {
-						// log.debug("skipping line with p: " + line)
+						// log.debug("skipping line with p: {} ", line)
 					}
 					else if( line.tagStr.contains("//p:") ) {
 						line.setTagStr( line.tagStr.replaceAll("//p:.*", "") )
-						// log.debug("removing //p from: " + line)
+						// log.debug("removing //p from: {}", line)
 					}
 				}
 				
@@ -1071,7 +1071,9 @@ class Expand {
 				matcher.find()
 				word = matcher.group(1)
 				
-				if( word.endsWith('е') && main_word.endsWith('й') ) {
+//				if( word.endsWith('е') && main_word.endsWith('й') ) {
+				if( ! word.endsWith('ий') && main_word.endsWith('й') 
+					|| ! (word =~ /[іеш]$/) && main_word =~ /[ео]$/ ) {
 					log.error "bad +cs: $word for $main_word"
 					System.exit(1)
 				}
@@ -1086,25 +1088,34 @@ class Expand {
 
             List<DicEntry> forms = []
 
+			List<DicEntry> nayForms
             if( word.startsWith('най') ) {
-			    forms += expand(word, "/adj$extraFlags :comps" + idx + extra_tags)
+				nayForms = expand(word, "/adj$extraFlags :comps" + idx + extra_tags)
+			    forms += nayForms
             }
             else {
 			    forms += expand(word, "/adj$extraFlags :compc" + idx + extra_tags)
 
-			    word = "най" + word
-			    forms += expand(word, "/adj$extraFlags :comps" + idx + extra_tags)
+				if( ! word.startsWith("й") ) {
+					word = "най" + word
+					nayForms = expand(word, "/adj$extraFlags :comps" + idx + extra_tags)
+			    	forms += nayForms
+				}
 		    }
 
-            forms += expand("що" + word, "/adj$extraFlags :comps" + idx + extra_tags)
-			forms += expand("як" + word, "/adj$extraFlags :comps" + idx + extra_tags)
-			forms += expand("щояк" + word, "/adj$extraFlags :comps" + idx + extra_tags)
-
-			if( "comp" in Args.args.lemmaForTags ) {
-				forms = forms.collect { DicEntry entry -> 
-					replace_base(entry, main_word) 
-				}
+//            forms += expand("що" + word, "/adj$extraFlags :comps" + idx + extra_tags)
+//			forms += expand("як" + word, "/adj$extraFlags :comps" + idx + extra_tags)
+//			forms += expand("щояк" + word, "/adj$extraFlags :comps" + idx + extra_tags)
+			
+			if( nayForms ) {
+				forms += createSimilar(nayForms, "що")
+				forms += createSimilar(nayForms, "як")
+				forms += createSimilar(nayForms, "щояк")
 			}
+			
+//			forms = forms.collect { DicEntry entry -> 
+//				replace_base(entry, main_word) 
+//			}
 
 			return forms
 		}
@@ -1113,17 +1124,13 @@ class Expand {
 	}
 
 	@CompileStatic
-	private DicEntry compose_compar(String word, String main_word, String tags) {
-		if( ! ("comp" in Args.args.lemmaForTags) ) {
-			main_word = word
-		}
-		
-		return new DicEntry(word, main_word, tags)
+	private List<DicEntry> createSimilar(List<DicEntry> forms, String prefix) {
+		forms.collect{ DicEntry it -> new DicEntry(prefix+it.word, prefix+it.lemma, it.tagStr) }
 	}
-
+	
 	@CompileStatic
 	private List<DicEntry> expand_subposition_adv_main(String main_word, String line, String extra_tags) {
-		log.debug("expanding sub " + main_word + ": " + line + " extra tags: " + extra_tags)
+		log.debug("expanding sub {}: {} extra tags: {}", main_word, line, extra_tags)
 		
 		if( line.startsWith(" +cs")) {
 			String word
@@ -1131,28 +1138,60 @@ class Expand {
 				def matcher = Pattern.compile(" \\+cs=([^ ]+)").matcher(line)
 				matcher.find()
 				word = matcher.group(1)
+				
+				if( ! (word =~ /[іеш]$/) ) {
+					log.error("invalid +cs for adv: " + line)
+					System.exit(1)
+				}
 			}
 			else {
 				word = main_word[0..<-1] + "іше"
 			}
 
-            List<DicEntry> forms = []
-
-            if( word.startsWith('най') ) {
-    			forms += compose_compar(word, main_word, "adv:comps" + extra_tags.replaceAll(':&insert', ''))
-            }
-            else {
-			    forms += compose_compar(word, main_word, "adv:compc" + extra_tags.replaceAll(':&insert', ''))
-			    word = 'най' + word
-    			forms += compose_compar(word, main_word, "adv:comps" + extra_tags.replaceAll(':&insert', ''))
-			}
-			forms += compose_compar("що" + word, main_word, "adv:comps" + extra_tags.replaceAll(':&(insert|predic)', ''))
-			forms += compose_compar("як" + word, main_word, "adv:comps" + extra_tags.replaceAll(':&(insert|predic)', ''))
+            List<DicEntry> forms = expandSubposAdv(word, extra_tags)
 
 			return forms
 		}
 
 		throw new Exception("Unknown subposition for " + line + "(" + main_word + ")")
+	}
+
+	private List expandSubposAdv(String word, String extraTags) {
+		List<DicEntry> forms = []
+		String origWord = word
+
+		String newExtraTags = extraTags.replace(':&insert', '')
+		if( word.endsWith('ш') ) {
+			newExtraTags += ":short"
+		}
+
+		if( word.startsWith('най') ) {
+			forms += composeComparAdv(word, "adv:comps" + newExtraTags)
+		}
+		else {
+			forms += composeComparAdv(word, "adv:compc" + newExtraTags)
+			if( ! word.startsWith("й") ) {
+				word = 'най' + word
+				forms += composeComparAdv(word, "adv:comps" + newExtraTags)
+			}
+		}
+
+		newExtraTags = newExtraTags.replace(':&predic', '')
+		forms += composeComparAdv("що" + word, "adv:comps" + newExtraTags)
+		forms += composeComparAdv("як" + word, "adv:comps" + newExtraTags)
+		
+		//			if( word =~ /[^тд]ше$/ ) {
+		if( origWord.endsWith('ше') ) {
+			String advIsh = origWord.replaceFirst(/ше$/, 'ш')
+			forms += expandSubposAdv(advIsh, extraTags)
+		}
+		
+		return forms
+	}
+	
+	@CompileStatic
+	private DicEntry composeComparAdv(String word, String tags) {
+		return new DicEntry(word, word, tags)
 	}
 
 	@CompileStatic
@@ -1163,6 +1202,12 @@ class Expand {
 			def matcher = Pattern.compile(/ \+cs=([^ ]+)/).matcher(line)
 			matcher.find()
 			word = matcher.group(1)
+			
+			if( ! (word =~ /ий$/) ) {
+				log.error("invalid +cs for adj: " + line)
+				System.exit(1)
+			}
+			
 			word = word[0..<-2] + "е"
 		}
 		else {
@@ -1173,20 +1218,7 @@ class Expand {
 			extra_tags = and_adjp_pattern.matcher(extra_tags).replaceFirst('')
 		}
 
-		List<DicEntry> forms = []
-
-        if( word.startsWith('най') ) {
-		    forms += compose_compar(word, last_adv, "adv:comps" + extra_tags)
-        }
-        else {
-		    forms +=  compose_compar(word, last_adv, "adv:compc" + extra_tags)
-		    word = 'най' + word
-		    forms += compose_compar(word, last_adv, "adv:comps" + extra_tags)
-		}
-
-
-		forms += compose_compar("що" + word, last_adv, "adv:comps" + extra_tags)
-		forms += compose_compar("як" + word, last_adv, "adv:comps" + extra_tags)
+		List<DicEntry> forms = expandSubposAdv(word, extra_tags)
 
 		return forms
 	}

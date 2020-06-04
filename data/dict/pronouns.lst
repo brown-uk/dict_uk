@@ -610,6 +610,8 @@
 оден один adj:m:v_naz:&pron:dem:ind:alt
 оден один adj:m:v_zna:rinanim:&pron:dem:ind:alt
 
+'дин /numr ^adj :&pron:dem:ind:short:coll
+
 
 один-два один-два numr:p:v_naz/v_zna                  # rg_m
 одного-двох один-два numr:p:v_rod/v_zna               # rg_m:rg_n
