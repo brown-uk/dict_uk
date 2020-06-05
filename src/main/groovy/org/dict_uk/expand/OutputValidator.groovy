@@ -93,6 +93,7 @@ class OutputValidator {
 		String lemmaLine
 		List<String> lastVerbTags = null
 		int nonFatalErrorCount = 0
+		String prevLine
 		
 		lines.each { String line ->
 			if( ! line.startsWith(" ") ) {
@@ -115,6 +116,19 @@ class OutputValidator {
 				}
 				else {
 					lastVerbTags = null
+				}
+			}
+			else {
+				if( ! (line =~ / (noun|adj|verb|numr)/ ) ) {
+					log.warn("inflection for non-iflecting POS " + line)
+					nonFatalErrorCount++
+				}
+				else
+				if( ! prevLine.startsWith(" ") ) { // prev is lemma start
+					if( line.contains(":bad") && ! prevLine.contains(":bad") ) {
+						log.warn("mix of bad and normal lemma " + line)
+						nonFatalErrorCount++
+					}
 				}
 			}
 
@@ -148,6 +162,8 @@ class OutputValidator {
 					lastVerbTags.remove(tagg[0])
 				}
 			}
+			
+			prevLine = line
 		}
 		
 		return nonFatalErrorCount
