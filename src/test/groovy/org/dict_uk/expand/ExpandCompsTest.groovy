@@ -1,6 +1,7 @@
 package org.dict_uk.expand
 
-import static org.junit.Assert.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals
 
 import org.dict_uk.common.DicEntry
 import org.junit.jupiter.api.BeforeEach
@@ -13,7 +14,7 @@ public class ExpandCompsTest {
 	@BeforeEach
 	void setUp() {
 		def affixDir = new File("data/affix").isDirectory() ? "data/affix" : "../../../data/affix"
-		Args.parse(["-aff", affixDir, "-dict", ""].toArray(new String[0]))
+		Args.parse(["--aff", affixDir, "--dict", ""].toArray(new String[0]))
 		
 		def expand = new Expand(false)
 		expand.affix.load_affixes(affixDir)
@@ -24,6 +25,7 @@ public class ExpandCompsTest {
 	def fullComps =
 '''
 Афанасьєв-Чужбинський Афанасьєв-Чужбинський noun:anim:m:v_naz:prop:lname
+Афанасьєве-Чужбинський Афанасьєв-Чужбинський noun:anim:m:v_kly:prop:lname
 Афанасьєва-Чужбинського Афанасьєв-Чужбинський noun:anim:m:v_rod:prop:lname
 Афанасьєва-Чужбинського Афанасьєв-Чужбинський noun:anim:m:v_zna:prop:lname
 Афанасьєву-Чужбинському Афанасьєв-Чужбинський noun:anim:m:v_dav:prop:lname
@@ -59,45 +61,18 @@ public class ExpandCompsTest {
 такім-сякім такий-сякий adj:m:v_mis
 такім-сякім такий-сякий adj:n:v_mis
 така-сяка такий-сякий adj:f:v_naz
-такая-сяка такий-сякий adj:f:v_naz
 така-сяка такий-сякий adj:f:v_kly
-такая-сяка такий-сякий adj:f:v_kly
-така-сякая такий-сякий adj:f:v_naz
-такая-сякая такий-сякий adj:f:v_naz
-така-сякая такий-сякий adj:f:v_kly
-такая-сякая такий-сякий adj:f:v_kly
 такої-сякої такий-сякий adj:f:v_rod
 такій-сякій такий-сякий adj:f:v_dav
 такій-сякій такий-сякий adj:f:v_mis
 таку-сяку такий-сякий adj:f:v_zna
-такую-сяку такий-сякий adj:f:v_zna
-таку-сякую такий-сякий adj:f:v_zna
-такую-сякую такий-сякий adj:f:v_zna
 такою-сякою такий-сякий adj:f:v_oru
 таке-сяке такий-сякий adj:n:v_naz
-такеє-сяке такий-сякий adj:n:v_naz
 таке-сяке такий-сякий adj:n:v_zna
-такеє-сяке такий-сякий adj:n:v_zna
 таке-сяке такий-сякий adj:n:v_kly
-такеє-сяке такий-сякий adj:n:v_kly
-таке-сякеє такий-сякий adj:n:v_naz
-такеє-сякеє такий-сякий adj:n:v_naz
-таке-сякеє такий-сякий adj:n:v_zna
-такеє-сякеє такий-сякий adj:n:v_zna
-таке-сякеє такий-сякий adj:n:v_kly
-такеє-сякеє такий-сякий adj:n:v_kly
 такі-сякі такий-сякий adj:p:v_naz
-такії-сякі такий-сякий adj:p:v_naz
 такі-сякі такий-сякий adj:p:v_zna:rinanim
-такії-сякі такий-сякий adj:p:v_zna:rinanim
 такі-сякі такий-сякий adj:p:v_kly
-такії-сякі такий-сякий adj:p:v_kly
-такі-сякії такий-сякий adj:p:v_naz
-такії-сякії такий-сякий adj:p:v_naz
-такі-сякії такий-сякий adj:p:v_zna:rinanim
-такії-сякії такий-сякий adj:p:v_zna:rinanim
-такі-сякії такий-сякий adj:p:v_kly
-такії-сякії такий-сякий adj:p:v_kly
 таких-сяких такий-сякий adj:p:v_rod
 таких-сяких такий-сякий adj:p:v_zna:ranim
 таких-сяких такий-сякий adj:p:v_mis

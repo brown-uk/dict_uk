@@ -1,10 +1,10 @@
-//import static org.junit.Assert
 
 package org.dict_uk.expand
 
+import static org.junit.jupiter.api.Assertions.assertEquals
+
 import org.dict_uk.common.DicEntry
-import org.junit.Before
-import org.junit.Ignore;
+import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
@@ -12,9 +12,9 @@ public class ExpandTest {
 	
 	static Expand expand
 	
-	static
-	{
-		def args = ["-corp", "-aff", ".", "-dict", "."].toArray(new String[0])
+	@BeforeAll
+	static void classSetUp() {
+		String[] args = ["--corp", "--aff", ".", "--dict", "."].toArray(new String[0])
 		Args.parse(args)
 		
 		expand = new Expand(false)
@@ -116,12 +116,13 @@ public class ExpandTest {
 Аверянову Аверянова noun:anim:f:v_zna:prop:lname
 Аверяновою Аверянова noun:anim:f:v_oru:prop:lname
 Аверяновій Аверянова noun:anim:f:v_mis:prop:lname
+Аверянова Аверянова noun:anim:f:v_kly:prop:lname
 '''.trim()
 
 	@Test
 	void testAdjLastName() {
 		def lines = ["Аверянова /n2adj1.<+"]
-		assert join(expand.process_input(lines)) == adjLastName
+		assertEquals(join(expand.process_input(lines)), adjLastName)
 //		assertEquals(DicEntry.fromLines(adjLastName.split(/\n/)), join(expand.process_input(lines)))
 	}
 
@@ -135,7 +136,7 @@ def aFull =
 	@Test
 	void testFullAlt() {
 		def lines = ["а conj:coord|part|intj"]
-		assert join(expand.process_input(lines)) == aFull
+		assertEquals(join(expand.process_input(lines)), aFull)
 	}
 
 def multilineFull =
@@ -345,12 +346,15 @@ def multilineFull =
 	
 	def multilineFull2 =
 	'''
+вагоміш вагоміш adv:compc:short
 вагоміше вагоміше adv:compc
 вагомо вагомо adv:compb
+найвагоміш найвагоміш adv:comps:short
 найвагоміше найвагоміше adv:comps
+щонайвагоміш щонайвагоміш adv:comps:short
 щонайвагоміше щонайвагоміше adv:comps
-якнайвагоміше якнайвагоміше adv:comps
-'''.trim()
+якнайвагоміш якнайвагоміш adv:comps:short
+якнайвагоміше якнайвагоміше adv:comps'''.trim()
 //TODO: щоякнайвагоміше щоякнайвагоміше adv:comps
 
 		
@@ -420,7 +424,8 @@ def taggedOut =
 	def strilyatyFull =
 '''
 стрілявши стрілявши advp:imperf
-стріляти стріляти verb:imperf:inf # comment
+стріляти стріляти verb:imperf:inf
+стрілять стріляти verb:imperf:inf:short
 стріляй стріляти verb:imperf:impr:s:2
 стріляймо стріляти verb:imperf:impr:p:1
 стріляйте стріляти verb:imperf:impr:p:2
@@ -448,7 +453,7 @@ def taggedOut =
 	@Test
 	void testStrilyaty() {
 		def lines = ["стріляти /v2.cf.isNo :imperf    # comment"]
-		assert join(expand.process_input(lines)) == strilyatyFull
+		assertEquals(strilyatyFull, join(expand.process_input(lines)))
 	}
 
 	
@@ -456,6 +461,7 @@ def taggedOut =
 '''
 стрілявши advp:imperf
 стріляти verb:imperf:inf    # comment
+  стрілять verb:imperf:inf:short
   стріляй verb:imperf:impr:s:2
   стріляймо verb:imperf:impr:p:1
   стріляйте verb:imperf:impr:p:2
@@ -488,9 +494,10 @@ def taggedOut =
 
 
 	
-	def stryvatyFull =
+	String stryvatyFull =
 '''
 стривати стривати verb:imperf:inf
+стривать стривати verb:imperf:inf:short
 стривай стривати verb:imperf:impr:s:2
 стриваймо стривати verb:imperf:impr:p:1
 стривайте стривати verb:imperf:impr:p:2
@@ -498,13 +505,13 @@ def taggedOut =
 
 	@Test
 	void testStryvaty() {
-		def lines = ["стривати /v2 tag=:impr|:inf :imperf"]
-		assert join(expand.process_input(lines)) == stryvatyFull
+		List<String> lines = ["стривати /v2 tag=:impr|:inf :imperf"]
+		assertEquals(stryvatyFull, join(expand.process_input(lines)))
 	}
 
 
-	static final String join(def entries) {
-		return entries.join("\n").replaceAll(/[<>]/, '')
+	static final String join(List<DicEntry> entries) {
+		return entries.collect{ it.toFlatString() }.join("\n") //.replaceAll(/[<>]/, '')
 	}
 
 	
