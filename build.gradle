@@ -31,10 +31,9 @@ dependencies {
     implementation group: 'org.codehaus.groovy', name: 'groovy-cli-picocli', version: '3.0.3'
     implementation 'info.picocli:picocli:4.3.2'
 
-//    implementation group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
     implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
-	
+
 //    groovyScript localGroovy()
 }
 
@@ -180,7 +179,7 @@ task checkReplacements {
 
 task showExpandCommand {
   doLast {
-    def opts = " --corp --indent --mfl --stats --wordlist --time"
+    def opts = " --indent --mfl --stats --wordlist --time"
     opts += " -aff data/affix"
     opts += " -dict data/dict"
 
@@ -211,7 +210,7 @@ task testExpand(type: JavaExec, dependsOn: [reverseAffix, autogen, classes]) {
 
     workingDir = file('test')
 
-    def opts = "--corp --indent --mfl --stats --wordlist"
+    def opts = " --indent --mfl --stats --wordlist"
     args "--aff", "../data/affix"
     args "--dict", "dict"
     args opts.split()
@@ -243,8 +242,8 @@ task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, autogen/*, testExpa
 
     workingDir = file(outputDir)
 
-    def opts = "--corp --indent --mfl --stats --wordlist --time"
-    // opts += "--removeWithRegex verb.*:inf.*:coll"            // remove colloquial verb forms
+    def opts = "--indent --mfl --stats --wordlist --time"
+    // opts += "--removeWithRegex verb.*:inf:short"            // remove colloquial short verb forms
 
     args "--aff", "../data/affix"
     args "--dict", "../data/dict"
@@ -289,7 +288,7 @@ task expandInteractive(type: JavaExec, dependsOn: reverseAffix) {
     workingDir = file(outputDir)
     standardInput = System.in
 
-    def opts = "--corp -f"
+    def opts = "-f"
     if( ! project.hasProperty('flat') ) {
         opts += " --indent"
     }

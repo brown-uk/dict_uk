@@ -14,7 +14,7 @@ public class ExpandTest {
 	
 	@BeforeAll
 	static void classSetUp() {
-		String[] args = ["--corp", "--aff", ".", "--dict", "."].toArray(new String[0])
+		String[] args = ["--aff", ".", "--dict", "."].toArray(new String[0])
 		Args.parse(args)
 		
 		expand = new Expand(false)

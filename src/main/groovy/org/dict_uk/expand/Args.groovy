@@ -20,15 +20,15 @@ class Args {
 	String dictDir
 	List<String> removeWithTags = []
 	Pattern removeWithRegex
-	List<String> removeTags = []
+	List<String> removeTags = ["v-u", "np"]
 	List<String> removeTagsWithColons = []
-	List<String> lemmaForTags = []
+	List<String> lemmaForTags = ["advp"]
 
 
 	public static Args args = new Args();
 	
 	static {
-		args.removeWithTags = ["uncontr", "inf:coll"]
+		args.removeWithTags = []
 		args.lemmaForTags = ["advp"]
 		args.removeTags = ["v-u", "np"]
 	}
@@ -40,9 +40,7 @@ class Args {
 		cli._(longOpt:'aff', args:1, required: true, 'Affix dir')
 		cli._(longOpt:'dict', args:1, required: true, 'Dictionary dir')
 
-		cli._(longOpt:'corp', 'Generate corpus version of the dictionary (implies: --lemmaWithTags advp,compr,super)')
 		cli._(longOpt:'mfl', 'Generate morfologik format of the dictionary')
-		
 		cli._(longOpt:'indent', 'Generate indented format of the dictionary')
 
 		cli._(longOpt:'stats', 'Generate dictionary statistics')
@@ -70,7 +68,6 @@ class Args {
 
 		args = new Args()
 		args.with {
-			corp = options.corp
 			mfl = options.mfl
 			indent = options.indent
 			time = options.time
@@ -81,12 +78,6 @@ class Args {
 
 			affixDir = options.aff
 			dictDir = options.dict
-
-			if( corp ) {
-				removeWithTags = ["uncontr", "inf:coll"]
-				lemmaForTags = ["advp"]
-				removeTags = ["v-u", "np"]
-			}
 			
 			if( options.removeWithTags ) {
 				removeWithTags = options.removeWithTags.split(",")
