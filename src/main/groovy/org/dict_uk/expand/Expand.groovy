@@ -94,10 +94,10 @@ class Expand {
 		DicEntry base_word = new DicEntry(word, word, pos + base_tag)
 		List<DicEntry> words = [base_word]
 		
-		if( affixFlags.startsWith("v") && word =~ /.[аеєиіїоуюя]ти(ся)?$/ ) {
-			String shortWord = word.replaceFirst(/ти(ся)?$/, 'ть$1')
-			words.add( new DicEntry(shortWord, word, pos + base_tag + ":short") )
-		}
+//		if( affixFlags.startsWith("v") && word =~ /.[аеєиіїоуюя]ти(ся)?$/ ) {
+//			String shortWord = word.replaceFirst(/ти(ся)?$/, 'ть$1')
+//			words.add( new DicEntry(shortWord, word, pos + base_tag + ":short") )
+//		}
 
 		if( affixFlags[0] == "<" )
 			return words
