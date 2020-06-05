@@ -644,8 +644,6 @@
 визиваючий /adj :&adjp:actv:imperf
 визискуючий /adj :&adjp:actv:imperf
 визначаючий /adj :&adjp:actv:imperf         #> що визначає|що означає|визначальний|означальний
-визначеніше adv:compc                       #> виразніше|чіткіше|ясніше|певніше
-визначеніший /adj :compc                    #> виразніший|чіткіший|ясніший|певніший
 визнаючий /adj :&adjp:actv:imperf
 визріваючий /adj :&adjp:actv:imperf
 виїжджаючий /adj :&adjp:actv:imperf
@@ -1193,6 +1191,7 @@
 всевідаючий /adj :&adjp:actv:imperf
 всевловлюючий /adj :&adjp:actv:imperf
 вседістаючий /adj :&adjp:actv:imperf
+все'дно adv:coll:v-u                        #> все 'дно
 вседозволяючий /adj :&adjp:actv:imperf
 вседолаючий /adj :&adjp:actv:imperf
 вседомінуючий /adj :&adjp:actv:imperf
@@ -1420,7 +1419,7 @@
 головотяпський /adj                         #> головотеський
 головуючий /adj :&adjp:actv:imperf # rv_rod #> що головує|голова
 головуючий /n2adj1.<
-голодати голодувати verb:imperf:inf         #> голодувати
+голодати /v2.cf.advp :imperf                #> голодувати
 голодаючий /adj :&adjp:actv:imperf
 голодовка /n10.p2                           #> голодування
 голодуючий /adj :&adjp:actv:imperf          #> що голодує|голодняк|голодник|голодюк
@@ -2041,7 +2040,8 @@
 завфермою /<                                #> завферми
 завфінвідділом noun:m:nv:anim|noun:f:nv:anim #> завфінвідділу
 завшколою /<                                #> завшколи
-зав'южений /adj                             #> занесений (заметений, завіяний) снігом
+зав'юга /n10.p1
+зав'южений /adj :&adjp:pasv:perf            #> занесений (заметений, завіяний) снігом
 завюрвідділом noun:m:nv:anim|noun:f:nv:anim #> завюрвідділу
 загаджений /adj :&adjp:pasv:perf
 загадити /v1.is0 :perf
@@ -2849,7 +2849,7 @@
 керосинщик /n20.a.p.<                       #> гасівник
 керсправами noun:m:nv                       #> керівник справ
 керуючий /adj :&adjp:actv:imperf  # rv_oru  #> що керує|керівник|управитель|адміністратор|провідник|лідер|керманич|стерновий|керівний|провідний|адміністративний|кермовий
-кесаревий кесарів adj:m:v_naz|adj:m:v_zna:rinanim   #> кесарів
+кесаревий кесарів adj:m:v_naz/v_zn2         #> кесарів
 кешуючий /adj :&adjp:actv:imperf
 киваючий /adj :&adjp:actv:imperf
 кидаючий /adj :&adjp:actv:imperf
@@ -7464,6 +7464,7 @@
 усвідомляючий /adj :&adjp:actv:imperf
 усевідаючий /adj :&adjp:actv:imperf
 усеграбуючий /adj :&adjp:actv:imperf
+усе'дно adv:coll:v-u                        #> усе 'дно
 уседозволяючий /adj :&adjp:actv:imperf
 усезагальний /adj :v-u                      #> загальний|спільний
 усезагальність /n30                         #> загальність
