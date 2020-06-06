@@ -1454,7 +1454,7 @@
 вздовж вздовж adv
 вздовж вздовж prep
 взувавшись взувавшись advp:rev:imperf
-взувавшися взувавшися advp:rev:imperf:rare
+взувавшися взувавшись advp:rev:imperf:long
 взуватися взуватися verb:rev:imperf:inf
 взуватись взуватися verb:rev:imperf:inf
 взуваться взуватися verb:rev:imperf:inf:short
@@ -1493,10 +1493,10 @@
 взувались взуватися verb:rev:imperf:past:p
 взувалися взуватися verb:rev:imperf:past:p
 взуваючись взуваючись advp:rev:imperf
-взуваючися взуваючися advp:rev:imperf:rare
+взуваючися взуваючись advp:rev:imperf:long
 взувши взувши advp:perf
 взувшись взувшись advp:rev:perf
-взувшися взувшися advp:rev:perf:rare
+взувшися взувшись advp:rev:perf:long
 взути взути verb:perf:inf
 взуть взути verb:perf:inf:short
 взуй взути verb:perf:impr:s:2
@@ -1677,7 +1677,7 @@
 вимисли вимисел noun:inanim:p:v_kly
 вимівши вимівши advp:perf
 вимівшись вимівшись advp:rev:perf
-вимівшися вимівшися advp:rev:perf:rare
+вимівшися вимівшись advp:rev:perf:long
 вимниста вимниста adj:f:v_naz
 вимнистої вимниста adj:f:v_rod
 вимнистій вимниста adj:f:v_dav
@@ -2468,7 +2468,7 @@
 заанґажованості заанґажованість noun:inanim:f:v_mis:alt
 заанґажованосте заанґажованість noun:inanim:f:v_kly:alt
 задихавшись задихавшись advp:rev:perf
-задихавшися задихавшися advp:rev:perf:rare
+задихавшися задихавшись advp:rev:perf:long
 задихатися задихатися verb:rev:perf:inf
 задихатись задихатися verb:rev:perf:inf
 задихаться задихатися verb:rev:perf:inf:short
@@ -3315,7 +3315,7 @@
 одною-півтори один-півтори numr:f:v_oru
 одній-півтори один-півтори numr:f:v_mis
 оскірившись оскірившись advp:rev:perf:rare
-оскірившися оскірившися advp:rev:perf:rare
+оскірившися оскірившись advp:rev:perf:rare:long
 оскіритися оскіритися verb:rev:perf:inf:rare
 оскіритись оскіритися verb:rev:perf:inf:rare
 оскіриться оскіритися verb:rev:perf:inf:rare:short
@@ -3733,7 +3733,7 @@
 стривайте стривати verb:imperf:impr:p:2
 стрілявши стрілявши advp:imperf
 стрілявшись стрілявшись advp:rev:imperf
-стрілявшися стрілявшися advp:rev:imperf:rare
+стрілявшися стрілявшись advp:rev:imperf:long
 стріляти стріляти verb:imperf:inf
 стрілять стріляти verb:imperf:inf:short
 стріляй стріляти verb:imperf:impr:s:2
@@ -3796,7 +3796,7 @@
 стрілялись стрілятися verb:rev:imperf:past:p
 стрілялися стрілятися verb:rev:imperf:past:p
 стріляючись стріляючись advp:rev:imperf
-стріляючися стріляючися advp:rev:imperf:rare
+стріляючися стріляючись advp:rev:imperf:long
 суміш суміш noun:inanim:f:v_naz
 суміші суміш noun:inanim:f:v_rod
 суміші суміш noun:inanim:f:v_dav
@@ -4007,7 +4007,7 @@
 усюдах усюди noun:inanim:p:v_mis:ns
 усюди усюди noun:inanim:p:v_kly:ns
 уточнювавшись уточнювавшись advp:rev:imperf
-уточнювавшися уточнювавшися advp:rev:imperf:rare
+уточнювавшися уточнювавшись advp:rev:imperf:long
 уточнюватися уточнюватися verb:rev:imperf:inf
 уточнюватись уточнюватися verb:rev:imperf:inf
 уточнюваться уточнюватися verb:rev:imperf:inf:short
@@ -4028,7 +4028,7 @@
 уточнювались уточнюватися verb:rev:imperf:past:p
 уточнювалися уточнюватися verb:rev:imperf:past:p
 уточнюючись уточнюючись advp:rev:imperf
-уточнюючися уточнюючися advp:rev:imperf:rare
+уточнюючися уточнюючись advp:rev:imperf:long
 Федорів Федорів noun:anim:m:v_naz:prop:lname
 Федоріва Федорів noun:anim:m:v_rod:prop:lname
 Федорова Федорів noun:anim:m:v_rod:prop:lname

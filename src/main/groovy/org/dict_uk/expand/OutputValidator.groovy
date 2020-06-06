@@ -119,7 +119,7 @@ class OutputValidator {
 				}
 			}
 			else {
-				if( ! (line =~ / (noun|adj|verb|numr)/ ) ) {
+				if( ! (line =~ / (noun|adj|verb|numr)/ ) && ! line.contains(":long") ) {
 					log.warn("inflection for non-iflecting POS " + line)
 					nonFatalErrorCount++
 				}

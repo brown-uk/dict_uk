@@ -1,4 +1,4 @@
-Всього лем: 416171
+Всього лем: 393729
   словникових лем (без advp/bad/slang/alt, без омонімів imperf/perf) 319438
 
 Частоти за тегами:
@@ -10,9 +10,9 @@ adj 99270
 adv 22562
      compb 1675
      imperf 2
-advp 84735
-     imperf 53371
-     perf 31364
+advp 62293
+     imperf 38641
+     perf 23652
 conj 128
 foreign 2
 intj 552

@@ -942,8 +942,10 @@ class Expand {
 
 	@CompileStatic
 	private DicEntry promote(DicEntry line) {
-		//    System.err.printf("promote %s -> %s\n", line, lemma)
-		return new DicEntry(line.word, line.word, line.tagStr, line.comment)
+		String lemma = line.tagStr.startsWith("advp:rev") && line.tagStr.contains(":long") 
+			? line.word[0..-3]+"сь" 
+			: line.word
+		return new DicEntry(line.word, lemma, line.tagStr, line.comment)
 	}
 
 	@CompileStatic
