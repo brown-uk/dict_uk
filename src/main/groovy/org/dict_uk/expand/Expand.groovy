@@ -690,8 +690,8 @@ class Expand {
 		}
 		.collect {
 			String tag = it.tagStr
-			if( ! tag.contains(':rare') ) {
-				tag += ':rare'
+			if( ! tag.contains(':long') ) {
+				tag += ':long'
 			}
 			String word = it.word.replaceFirst(/сь$/, 'ся')
 			new DicEntry(word, it.lemma, tag)
