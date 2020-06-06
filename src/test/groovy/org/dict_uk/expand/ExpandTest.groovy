@@ -346,8 +346,8 @@ def multilineFull =
 	
 	def multilineFull2 =
 	'''
-вагоміш вагоміш adv:compc:short
 вагоміше вагоміше adv:compc
+вагоміш вагоміше adv:compc:short
 вагомо вагомо adv:compb
 найвагоміш найвагоміш adv:comps:short
 найвагоміше найвагоміше adv:comps

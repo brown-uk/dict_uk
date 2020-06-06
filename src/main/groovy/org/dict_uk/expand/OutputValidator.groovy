@@ -119,13 +119,15 @@ class OutputValidator {
 				}
 			}
 			else {
-				if( ! (line =~ / (noun|adj|verb|numr)/ ) && ! line.contains(":long") ) {
+				if( ! (line =~ / (noun|adj|verb|numr)/ ) && ! line.contains(":long") && ! line.contains(":short") ) {
 					log.warn("inflection for non-iflecting POS " + line)
 					nonFatalErrorCount++
 				}
 				else
 				if( ! prevLine.startsWith(" ") ) { // prev is lemma start
-					if( line.contains(":bad") && ! prevLine.contains(":bad") ) {
+					if( line.contains(":bad") 
+							&& ! line.contains("v_rod")		// we fold вебсайта :bad into вебсайт lemma 
+							&& ! prevLine.contains(":bad") ) {
 						log.warn("mix of bad and normal lemma " + line)
 						nonFatalErrorCount++
 					}

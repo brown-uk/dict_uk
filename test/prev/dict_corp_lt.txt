@@ -503,8 +503,8 @@
 бачило бачити verb:imperf:past:n
 бачили бачити verb:imperf:past:p
 бачено бачити verb:imperf:impers
-безпечніш безпечніш adv:compc:&predic:short
 безпечніше безпечніше adv:compc:&predic
+безпечніш безпечніше adv:compc:&predic:short
 безпечно безпечно adv:compb:&predic
 безчерепні безчерепні noun:anim:p:v_naz:ns
 безчерепних безчерепні noun:anim:p:v_rod:ns
@@ -721,8 +721,8 @@
 вагомими вагомий adj:p:v_oru:compb
 вагомих вагомий adj:p:v_mis:compb
 вагомі вагомий adj:p:v_kly:compb
-вагоміш вагоміш adv:compc:short
 вагоміше вагоміше adv:compc
+вагоміш вагоміше adv:compc:short
 вагоміший вагоміший adj:m:v_naz:compc
 вагомішого вагоміший adj:m:v_rod:compc
 вагомішому вагоміший adj:m:v_dav:compc
@@ -959,8 +959,8 @@
 вбогих вбогий adj:p:v_mis:compb
 вбогі вбогий adj:p:v_kly:compb
 вбогії вбогий adj:p:v_kly:compb:long
-вбогіш вбогіш adv:compc:short
 вбогіше вбогіше adv:compc
+вбогіш вбогіше adv:compc:short
 вбогіший вбогіший adj:m:v_naz:compc
 вбогішого вбогіший adj:m:v_rod:compc
 вбогішому вбогіший adj:m:v_dav:compc
@@ -1416,8 +1416,8 @@
 вживаними вживаний adj:p:v_oru:compb:&&adjp:pasv:imperf
 вживаних вживаний adj:p:v_mis:compb:&&adjp:pasv:imperf
 вживані вживаний adj:p:v_kly:compb:&&adjp:pasv:imperf
-вживаніш вживаніш adv:compc:short
 вживаніше вживаніше adv:compc
+вживаніш вживаніше adv:compc:short
 вживаніший вживаніший adj:m:v_naz:compc
 вживанішого вживаніший adj:m:v_rod:compc
 вживанішому вживаніший adj:m:v_dav:compc
@@ -1953,8 +1953,8 @@
 гирлами гирло noun:inanim:p:v_oru
 гирлах гирло noun:inanim:p:v_mis
 гирла гирло noun:inanim:p:v_kly
-гірш гірш adv:compc:&predic:short
 гірше гірше adv:compc:&predic
+гірш гірше adv:compc:&predic:short
 гладкий гладкий adj:m:v_naz:compb
 гладкого гладкий adj:m:v_rod:compb
 гладкому гладкий adj:m:v_dav:compb
@@ -1987,8 +1987,8 @@
 гладкими гладкий adj:p:v_oru:compb
 гладких гладкий adj:p:v_mis:compb
 гладкі гладкий adj:p:v_kly:compb
-гладкіш гладкіш adv:compc:short
 гладкіше гладкіше adv:compc
+гладкіш гладкіше adv:compc:short
 гладкіший гладкіший adj:m:v_naz:compc
 гладкішого гладкіший adj:m:v_rod:compc
 гладкішому гладкіший adj:m:v_dav:compc
@@ -2022,8 +2022,8 @@
 гладкіших гладкіший adj:p:v_mis:compc
 гладкіші гладкіший adj:p:v_kly:compc
 гладко гладко adv:compb
-гладш гладш adv:compc:short
 гладше гладше adv:compc
+гладш гладше adv:compc:short
 гладший гладший adj:m:v_naz:compc
 гладшого гладший adj:m:v_rod:compc
 гладшому гладший adj:m:v_dav:compc
@@ -2237,8 +2237,8 @@
 дивні дивний adj:p:v_kly:compb
 дивен дивний adj:m:v_naz:short
 дивен дивний adj:m:v_zna:short
-дивніш дивніш adv:compc:short
 дивніше дивніше adv:compc
+дивніш дивніше adv:compc:short
 дивніший дивніший adj:m:v_naz:compc
 дивнішого дивніший adj:m:v_rod:compc
 дивнішому дивніший adj:m:v_dav:compc
@@ -3402,8 +3402,8 @@
 парканами паркан noun:inanim:p:v_oru
 парканах паркан noun:inanim:p:v_mis
 паркани паркан noun:inanim:p:v_kly
-поганіш поганіш adv:compc:&predic:short
 поганіше поганіше adv:compc:&predic
+поганіш поганіше adv:compc:&predic:short
 погано погано adv:compb:&predic
 породілля породілля noun:anim:f:v_naz
 породіллі породілля noun:anim:f:v_rod
@@ -3913,8 +3913,8 @@
 тюрмами тюрма noun:inanim:p:v_oru
 тюрмах тюрма noun:inanim:p:v_mis
 тюрми тюрма noun:inanim:p:v_kly
-удатніш удатніш adv:compc:short
 удатніше удатніше adv:compc
+удатніш удатніше adv:compc:short
 удатно удатно adv:compb
 уже уже adv
 уживаний уживаний adj:m:v_naz:compb:&&adjp:pasv:imperf

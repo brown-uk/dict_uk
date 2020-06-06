@@ -942,9 +942,14 @@ class Expand {
 
 	@CompileStatic
 	private DicEntry promote(DicEntry line) {
-		String lemma = line.tagStr.startsWith("advp:rev") && line.tagStr.contains(":long") 
-			? line.word[0..-3]+"сь" 
-			: line.word
+		String lemma = line.word
+		if( line.tagStr.startsWith("advp:rev") && line.tagStr.contains(":long") ) {
+			lemma = lemma[0..-3]+"сь" 
+		}
+//		else if( line.tagStr.startsWith("adv:compc") && line.tagStr.contains(":short") ) {
+//			lemma = lemma + "е"
+//		}
+//		log.info("lemma: ${lemma}")
 		return new DicEntry(line.word, lemma, line.tagStr, line.comment)
 	}
 
@@ -992,11 +997,16 @@ class Expand {
 
 		for(DicEntry line in lines) {
 
-			if( line.tagStr.startsWith("adv") 
-					&& ! line.tagStr.contains("advp") 
-					&& ! line.tagStr.contains(":compc") 
-					&& ! line.tagStr.contains(":comps") ) {
-				line = promote(line)
+			if( line.tagStr.startsWith("adv") ) {
+				if( ! line.tagStr.contains("advp") 
+						&& ! line.tagStr.contains(":compc") 
+						&& ! line.tagStr.contains(":comps") ) {
+					line = promote(line)
+				}
+				// fold довш into довше lemma
+				if( line.tagStr.startsWith("adv:compc") && line.tagStr.contains(":short") ) {
+					line.lemma = line.lemma + "е"
+				}
 			}
 
 			if( isRemoveLine(line) )

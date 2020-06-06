@@ -53,7 +53,7 @@ class DictSorter {
 	static final Pattern re_xv_sub = Pattern.compile("^([^:]+)(.*)(:x.[1-9])")
 	static final Pattern re_pron_sub = Pattern.compile("^([^:]+)(.*)(:&pron:[^:]+)")
 
-	static final Pattern LOWERING_TAGS_RE = Pattern.compile(/:(alt|rare|coll|subst|bad|var|short|long|ua_....)/)  // |:short
+	static final Pattern LOWERING_TAGS_RE = Pattern.compile(/:(alt|rare|coll|subst|bad|var|short|long|ua_....)/)
 	static final Pattern GEN_RE = Pattern.compile(/:([mfnsp])(:|$)/)
 	static final Pattern VIDM_RE = Pattern.compile(/:(v_...)/)
 
@@ -142,7 +142,10 @@ class DictSorter {
 			hasGender = true
 			hasVidm = true
 		}
-		
+		else if( tags.startsWith("adv:compc") ) {
+			tags += ':' + offset
+		}
+
 		if( hasGender ) {
 			def gen_match = GEN_RE.matcher(tags)
 
