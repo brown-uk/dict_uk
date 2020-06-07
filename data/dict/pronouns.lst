@@ -148,6 +148,11 @@
 будлі-чим будлі-що noun:inanim:n:v_oru:&pron:ind:rare
 будлі-чім будлі-що noun:inanim:n:v_mis:&pron:ind:rare
 
+бозна noninfl:&predic
+бозна-котрий /adj :&pron:ind
+бозна-чий /adj_pron :&pron:ind
+бозна-який /adj :&pron:ind
+
 бозна-хто бозна-хто noun:anim:m:v_naz:&pron:ind
 бозна-кого бозна-хто noun:anim:m:v_rod/v_zna:&pron:ind
 бозна-кому бозна-хто noun:anim:m:v_dav/v_mis:&pron:ind
@@ -160,6 +165,11 @@
 бозна-чим бозна-що noun:inanim:n:v_oru:&pron:ind
 бозна-чім бозна-що noun:inanim:n:v_mis:&pron:ind
 
+чортзна noninfl:&predic:coll
+чортзна-котрий /adj :&pron:ind
+чортзна-чий /adj_pron :&pron:ind
+чортзна-який /adj :&pron:ind
+
 чортзна-хто чортзна-хто noun:anim:m:v_naz:&pron:ind:coll
 чортзна-кого чортзна-хто noun:anim:m:v_rod/v_zna:&pron:ind:coll
 чортзна-кому чортзна-хто noun:anim:m:v_dav/v_mis:&pron:ind:coll
@@ -171,6 +181,11 @@
 чортзна-чому чортзна-що noun:inanim:n:v_dav/v_mis:&pron:ind:coll
 чортзна-чим чортзна-що noun:inanim:n:v_oru:&pron:ind:coll
 чортзна-чім чортзна-що noun:inanim:n:v_mis:&pron:ind:coll
+
+хтозна noninfl:&predic:coll
+хтозна-котрий /adj :&pron:ind:coll
+хтозна-чий /adj_pron :&pron:ind:coll
+хтозна-який /adj :&pron:ind:coll
 
 хтозна-що хтозна-що noun:inanim:n:v_naz/v_zna:&pron:ind:coll
 хтозна-чого хтозна-що noun:inanim:n:v_rod:&pron:ind:coll
@@ -195,6 +210,11 @@
 невідь-кому невідь-хто noun:anim:m:v_dav/v_mis:&pron:ind
 невідь-ким невідь-хто noun:anim:m:v_oru:&pron:ind
 невідь-кім невідь-хто noun:anim:m:v_mis:&pron:ind
+
+казна noninfl:&predic
+
+казна-чий /adj_pron :&pron:ind:coll
+казна-який /adj :&pron:ind:coll
 
 казна-що казна-що noun:inanim:n:v_naz/v_zna:&pron:ind:coll
 казна-чого казна-що noun:inanim:n:v_rod:&pron:ind:coll

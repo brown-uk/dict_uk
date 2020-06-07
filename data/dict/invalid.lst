@@ -51,6 +51,7 @@
 біґ-борд /n20.a.p
 біткоін /n20.a.p                            #> біткоїн
 богородиця /n10.p1.<
+бо-зна noninfl:&predic
 Бразілія /n10 :prop:geo
 будьякий /adj :&pron:ind
 буйвол noun:anim:m:v_naz                    # lim
@@ -196,7 +197,7 @@
 дорожний /adj
 достаточний /adj
 досьогодні adv
-доход дохід noun:inanim:m:v_naz/v_zna
+доход доход noun:inanim:m:v_naz/v_zna       # lim
 доходний /adj
 доходність /n30
 дригати /v2.cf.advp.shrt :imperf
@@ -321,6 +322,7 @@
 казацький /adj
 казачество /n2n
 казачок /n22.a.p.<
+ка-зна noninfl:&predic
 ка-зна-що adv
 кам'янсько-бузький /adj                     #> кам'янка-бузький
 канський /adj
@@ -680,6 +682,7 @@
 хмельниччанин /n20.a.pyn.<
 ходімте ходити verb:imperf:impr:p:1
 хостінг /n20.p
+хто-зна noninfl:&predic:coll
 ХХ number:latin
 ХХІ number:latin
 ХХІІ number:latin
@@ -703,6 +706,7 @@
 чіпси /np2
 член-кореспондент /n20.a.p.<                # відмінюються обидві частини
 чорнетка /n10.p2
+чорт-зна noninfl:&predic:coll
 шахид /n20.a.p.<
 шахидка /n10.p2.<
 Швайцарія /n10 :prop:geo
