@@ -702,6 +702,7 @@
 мкВ noun:m:nv
 мкг noun:m:nv
 мкл noun:m:nv                               # мікролітр
+мкМ noun:m:nv                               # мікромоль
 мкм noun:m:nv
 МКП noun:f:nv:np:prop                       # Міжнародна конфедерація профспілок
 мкР noun:m:nv                               # мікрорентген
@@ -714,6 +715,7 @@
 мл noun:m:nv
 млн noun:m:nv|numr:p:nv
 млрд noun:m:nv|numr:p:nv
+мМ noun:m:nv                                # мілімоль
 мм noun:m:nv
 ММА noun:f:nv:np:prop:xp1                   # Міжнародна мінералогічна асоціація
 ММА noun:m:nv:xp2                           # метилметакрилат
