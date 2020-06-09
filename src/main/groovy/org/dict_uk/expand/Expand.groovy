@@ -2,6 +2,9 @@
 
 package org.dict_uk.expand
 
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
+import java.util.concurrent.TimeUnit
 import java.util.regex.*
 import java.util.stream.Collectors
 
@@ -144,7 +147,7 @@ class Expand {
 			for(Map.Entry<String, SuffixGroup> ent in affixGroupMap.entrySet() ) {
 				def match = ent.key
 				SuffixGroup affixGroup = ent.value
-
+	
 				if( affixGroup.matches(word) ) {
 
 					for(Suffix affixItem in affixGroup.affixes) {
@@ -158,6 +161,14 @@ class Expand {
 							continue
 						}
 
+						// do not generate :coll and :rare forms for :bad
+//						if( extra.contains(":bad") 
+//								&& word == "заняти"
+//								&& affixItem.tags =~ /:(short|long|subst)/ ) {
+//							appliedCnts[affixFlag2] += 1
+//							continue
+//						}
+		
 						String deriv = affixItem.apply(word)
 						String tags = affixItem.tags
 
@@ -1514,54 +1525,63 @@ class Expand {
 		}
 
 		log.info("Writing output files...")
-
+		
+		ExecutorService executor = Executors.newWorkStealingPool();
+		
 		if( Args.args.mfl ) {
-			new File("dict_corp_lt.txt").withWriter("utf-8") { Writer f ->
-				sortedEntries.each{
-					f.write(it.toFlatString())
-					f.write('\n')
+			executor.execute( {
+				new File("dict_corp_lt.txt").withWriter("utf-8") { Writer f ->
+					sortedEntries.each {
+						f.write(it.toFlatString())
+						f.write('\n')
+					}
 				}
-			}
-			if( Args.args.time ) {
-				def time = System.currentTimeMillis()
-				log.info("Write dict_corp_lt time: {}", (time-times[-1]))
-				times << time
-			}
+				if( Args.args.time ) {
+					def time = System.currentTimeMillis()
+					log.info("Write dict_corp_lt time: {}", (time-times[-1]))
+					times << time
+				}
+			})
 		}
 
 		if( Args.args.indent ) {
 
-			List<String> indentedLines = dictSorter.indent_lines(sortedEntries)
-
-			validator.check_indented_lines(indentedLines, limitedVerbLemmas)
-
-			if( Args.args.time ) {
-				def time = System.currentTimeMillis()
-				log.info("Indent lines time: {}", (time-times[-1]))
-				times << time
-			}
-
-			if( nonFatalErrorCount > 0 ) {
-				log.error("{} non-fatal errors found, see above", nonFatalErrorCount)
-			}
-
-			new File("dict_corp_vis.txt").withWriter("utf-8") { Writer f ->
-				indentedLines.each { String it ->
-					f.write(it)
-					f.write('\n')
+			executor.execute( { exe ->
+				List<String> indentedLines = dictSorter.indent_lines(sortedEntries)
+	
+				validator.check_indented_lines(indentedLines, limitedVerbLemmas)
+	
+				if( Args.args.time ) {
+					def time = System.currentTimeMillis()
+					log.info("Indent lines time: {}", (time-times[-1]))
+					times << time
 				}
-			}
-
-			if( Args.args.time ) {
-				def time = System.currentTimeMillis()
-				log.info("Write dict_corp_vis time: {}", (time-times[-1]))
-				times << time
-			}
-
-			if( Args.args.stats ) {
-				util.print_stats(indentedLines, double_form_cnt)
-			}
+	
+				if( nonFatalErrorCount > 0 ) {
+					log.error("{} non-fatal errors found, see above", nonFatalErrorCount)
+				}
+	
+				new File("dict_corp_vis.txt").withWriter("utf-8") { Writer f ->
+					indentedLines.each { String it ->
+						f.write(it)
+						f.write('\n')
+					}
+				}
+	
+				if( Args.args.time ) {
+					def time = System.currentTimeMillis()
+					log.info("Write dict_corp_vis time: {}", (time-times[-1]))
+					times << time
+				}
+	
+				if( Args.args.stats ) {
+					util.print_stats(indentedLines, double_form_cnt)
+				}
+			})
 		}
+		
+		executor.shutdown()
+		executor.awaitTermination(300, TimeUnit.SECONDS)
 
 		if( Args.args.log_usage ) {
 			util.log_usage(affix)

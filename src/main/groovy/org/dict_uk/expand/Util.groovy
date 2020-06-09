@@ -298,7 +298,7 @@ class Util {
 			words.add(dicEntry.word)
 			lemmas.add(dicEntry.lemma)
 
-			if( ! (tag =~ /:(bad|alt|subst|uncontr|short|long|slang)/)
+			if( ! (tag =~ /:(bad|alt|subst|short|long|slang)/)
 					&& ! word.endsWith(".")
 					//&& ! (tag.contains(":inanim") && tag.contains(":v_kly") )
 					 ) {

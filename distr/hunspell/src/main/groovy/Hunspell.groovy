@@ -49,7 +49,7 @@ affixMap.each { flag, affixGroupMap ->
 	if( flag == 'patr' )
 		return
 	
-	if( flag =~ /\.ku|n2[0-9].*\.u|patr_pl|/ + reMapFlagsRe )
+	if( flag =~ /\.ku|n2[0-9].*\.u|patr_pl|shrt|/ + reMapFlagsRe )
 		return
 
 	if( (int)hunFlag == 0x7F ) {

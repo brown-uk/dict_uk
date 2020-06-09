@@ -132,36 +132,34 @@ class VerbReverse {
     
   static void main(argv) {
 
-//if __name__ == "__main__":
+		def cnv = new VerbReverse()
+		def input = argv.size() > 0 ? new File(argv[0]).newInputStream() : System.in
+		
+		def convert = true
 
-    def cnv = new VerbReverse()
+		new File(argv[1]).withWriter("UTF-8") { output ->
 
-    def convert = true
-    
-    def input = argv.size() > 0 ? new File(argv[0]).newInputStream() : System.in
-    //def output = argv.size() > 1 ? new File(argv[1]).newOutputStream() : System.out
-    
-    new File(argv[1]).withWriter("UTF-8") { output ->
-    
-    input.readLines("UTF-8").each { String line ->
-        
-        try {
-        if( convert ) {
-            line = cnv.generate_rev(line)
-            output.println(line)
-        }
-        else
-            if( line.contains("ся ") )
-                output.println(line)
+			input.readLines("UTF-8").each { String line ->
 
-        // v5 is special - don't generate reverse affixes for it
-        if( line.contains("group ") )
-            convert = ! line.contains(" v5") && ! line.contains("shrt")
-        }
-        catch(ex) {
-            throw new Exception("Failed at " + it, ex)
-        }
-    }
-    }
-  }
+				try {
+					if( line.contains("group ") ) {
+						convert = ! line.contains("shrt")
+						if( ! convert ) println "no: " +line
+					}
+
+					if( convert ) {
+						line = cnv.generate_rev(line)
+						output.println(line)
+					}
+					else if( line.contains("ся ") ) {
+						output.println(line)
+					}
+
+				}
+				catch(ex) {
+					throw new Exception("Failed at " + it, ex)
+				}
+			}
+		}
+	}
 }

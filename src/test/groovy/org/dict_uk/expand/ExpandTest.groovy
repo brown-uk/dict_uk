@@ -509,6 +509,33 @@ def taggedOut =
 		assertEquals(stryvatyFull, join(expand.process_input(lines)))
 	}
 
+	
+//	def strilyatyBad =
+//	'''
+//стрілявши advp:imperf:bad
+//стріляти verb:imperf:inf:bad
+//  стріляй verb:imperf:impr:s:2:bad
+//  стріляймо verb:imperf:impr:p:1:bad
+//  стріляйте verb:imperf:impr:p:2:bad
+//  стріляю verb:imperf:pres:s:1:bad
+//  стріляєш verb:imperf:pres:s:2:bad
+//  стріляє verb:imperf:pres:s:3:bad
+//  стріляємо verb:imperf:pres:p:1:bad
+//  стріляєте verb:imperf:pres:p:2:bad
+//  стріляють verb:imperf:pres:p:3:bad
+//  стріляв verb:imperf:past:m:bad
+//  стріляла verb:imperf:past:f:bad
+//  стріляло verb:imperf:past:n:bad
+//  стріляли verb:imperf:past:p:bad
+//'''.trim()
+//	
+//	@Test
+//	void testStrilyatyBad() {
+//		def lines = ["стріляти /v2 :imperf:bad"]
+//		assertEquals(strilyatyBad, new DictSorter().indent_lines(expand.process_input(lines)).join("\n"))
+//	}
+	
+	
 
 	static final String join(List<DicEntry> entries) {
 		return entries.collect{ it.toFlatString() }.join("\n") //.replaceAll(/[<>]/, '')
