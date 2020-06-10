@@ -290,7 +290,7 @@ class Util {
 		HashSet<String> lemmas = new HashSet<>()
 		HashSet<String> tags = new HashSet<>()
 
-		for(DicEntry dicEntry in sortedEntries ) {
+		for(DicEntry dicEntry in sortedEntries) {
 			def word = dicEntry.word
 			def lemma = dicEntry.lemma
 			def tag = dicEntry.tagStr
@@ -298,8 +298,10 @@ class Util {
 			words.add(dicEntry.word)
 			lemmas.add(dicEntry.lemma)
 
-			if( ! (tag =~ /:(bad|alt|subst|short|long|slang)/)
-					&& ! word.endsWith(".")
+			if( ! word.endsWith(".")
+				&& ( ! (tag =~ /:(bad|alt|subst|short|long|slang)/) \
+				|| tag =~ /&insert:short/ \
+				|| word =~ /^((що(як)?)?най)?(більш|менш|скоріш|перш)$/)
 					//&& ! (tag.contains(":inanim") && tag.contains(":v_kly") )
 					 ) {
 				spellWords.add(word)
@@ -310,15 +312,15 @@ class Util {
 
 		ExecutorService executor = Executors.newWorkStealingPool();
 		
-		executor.execute( { 
-			def lemmaList = DictSorter.quickUkSort(lemmas)
-			new File("lemmas.txt").withWriter("utf-8") { f ->
-				for(lemma in lemmaList) {
-					f << lemma << "\n"
-				}
-			}
-			log.info("{} total unique lemmas", lemmaList.size())
-		})
+//		executor.execute( { 
+//			def lemmaList = DictSorter.quickUkSort(lemmas)
+//			new File("lemmas.txt").withWriter("utf-8") { f ->
+//				for(lemma in lemmaList) {
+//					f << lemma << "\n"
+//				}
+//			}
+//			log.info("{} total unique lemmas", lemmaList.size())
+//		})
 
 		executor.execute( { 
 			def wordList = DictSorter.quickUkSort(words)
@@ -341,16 +343,15 @@ class Util {
 			}
 			log.info("{} spelling word forms", spellWordList.size())
 		})
-
 		
-		//			executor.execute( {
-		//				def tagList = tags.toList().toSorted()
-		//				new File("tags.txt").withWriter("utf-8") { f ->
-		//					for(tag in tagList) {
-		//						f << tag << "\n"
-		//					}
-		//				}
-		//			}
+//			executor.execute( {
+//				def tagList = tags.toList().toSorted()
+//				new File("tags.txt").withWriter("utf-8") { f ->
+//					for(tag in tagList) {
+//						f << tag << "\n"
+//					}
+//				}
+//			}
 		
 		executor.shutdown()
 		executor.awaitTermination(300, TimeUnit.SECONDS)

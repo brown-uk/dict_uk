@@ -83,7 +83,7 @@ new File('build/mapping.txt').text = revFlagMap*.toString().join("\n")
 
 println("Negative matches:\n\t" + negativeMatchFlags*.toString().join("\n\t"))
 
-def NONSPELL_TAG_LIST = ":(alt|bad|subst|uncontr|verb.*?coll|advp:rev.*?coll|slang)"
+def NONSPELL_TAG_LIST = ":(alt|bad|subst|slang|short|long)"
 
 if( "-forSearch" in args ) {
     println "Дозволяємо ненормативні форми для пошуку..."
@@ -387,7 +387,7 @@ def lines = files.collect { file->
 
 
 			def uniqForms = expanded.findAll{
-			    ! (it =~ /:(uncontr|alt|bad|subst|verb.*?:coll|advp:rev.*?:coll)/ )
+			    ! (it =~ /:(alt|bad|subst|slang|short|long)/ )
 			}.collect {
 			    it.word
 			}.unique() // + ' # TODO: inflect'

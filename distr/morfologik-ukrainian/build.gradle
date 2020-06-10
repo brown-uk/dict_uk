@@ -127,7 +127,7 @@ task synthDict(type: JavaExec, dependsOn: prepareDict) {
 
 task prepareSpellWords(type: Exec) {
     def srcDict="${inputDir}/words_spell.txt"
-    def outFile="${tmpDir}/all.words.tmp"
+    def outFile="${tmpDir}/spell.words.tmp"
 
     inputs.file srcDict
     outputs.file outFile
@@ -157,7 +157,7 @@ task spellDict(type: JavaExec, dependsOn: prepareSpellWords) {
     classpath = files(configurations.provided.files)
     main = 'org.languagetool.tools.SpellDictionaryBuilder'
 
-    args "-i", "${tmpDir}/all.words.tmp"
+    args "-i", "${tmpDir}/spell.words.tmp"
     args "-info", "${resourceDir}/hunspell/uk_UA.info"
     args "-o", "${outFile}"
     args "-freq", "${freqFile}"

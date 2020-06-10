@@ -3,13 +3,16 @@
 def freqMin = 10
 def words = [:].withDefault{0}
 
-def allTagged = new File('../../../build/tmp/all.tagged.tmp').readLines()
-	.findAll{ ! (it =~ /:(bad|slang|subst|short|long)/) \
-	    || it =~ /&insert:short/ \
-	    || it =~ /^((що(як)?)?най)?(більш|менш|скоріш|перш)\s/
-	    }
-	.collect{ it.split(/\t/, 2)[0] } as Set
-println "Unqiue tagged: " + allTagged.size()
+//def allTagged = new File('../../../build/tmp/all.tagged.tmp').readLines()
+//	.findAll{ ! (it =~ /:(bad|slang|subst|short|long)/) \
+//	    || it =~ /&insert:short/ \
+//	    || it =~ /^((що(як)?)?най)?(більш|менш|скоріш|перш)\s/
+//	    }
+//	.collect{ it.split(/\t/, 2)[0] } as Set
+//println "Unqiue tagged: " + allTagged.size()
+
+def spellWords = new File('../../../build/tmp/spell.words.tmp').readLines() as Set
+println "Spell words: " + spellWords.size()
 
 new File('all.tagged.freq.txt').eachLine { String line ->
     if( ! line.trim() )
@@ -25,11 +28,11 @@ new File('all.tagged.freq.txt').eachLine { String line ->
 
     int f = parts[0] as int
 
-    if( w in allTagged ) {
+    if( w in spellWords ) {
         words[w] += f
     }
     w = w.toLowerCase()
-    if( w in allTagged ) {
+    if( w in spellWords ) {
         words[w] += f
     }
     }
@@ -58,7 +61,7 @@ if( "-f" in args || "--full" in args ) {
 	
 		out << "<w f=\"" + Math.round(it.value) + "\">${it.key}</w>\n"
 	}
-	allTagged.each {
+	spellWords.each {
 		if( ! (it in words) ) {
 			out << "<w f=\"0\">${it}</w>\n"
 		}	
