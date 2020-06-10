@@ -3,7 +3,8 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-version=new File("${projectDir}/../../VERSION").text.trim()
+String versionFile="${projectDir}/../../VERSION"
+version=new File(versionFile).text.trim()
 
 println "Version: $version"
 
@@ -418,6 +419,8 @@ task deployLtDict(dependsOn: [publish, deployHelperDictsToLT])
 
 
 jar {
+    inputs.file versionFile
+
     manifest {
         attributes 'Implementation-Title': 'Ukrainian binary Morfologik dictionaries for LanguageTool',
                    'Implementation-Version': version
