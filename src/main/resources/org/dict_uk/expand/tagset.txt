@@ -11,6 +11,7 @@ adv
 advp
 alt
 anim
+arch
 bad
 coll
 compb
@@ -81,10 +82,10 @@ town
 ua_1992
 ua_2019
 unanim
-uncontr
 var
 v_dav
 verb
+vulg
 v_kly
 v_mis
 v_naz
