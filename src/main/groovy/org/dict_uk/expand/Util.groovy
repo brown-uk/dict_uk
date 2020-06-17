@@ -301,6 +301,7 @@ class Util {
 			if( ! word.endsWith(".")
 				&& ( ! (tag =~ /:(bad|alt|subst|short|long|slang)/) \
 				|| tag =~ /&insert:short/ \
+				|| tag =~ /adj:m:v_(naz|zna).*:short/ \
 				|| word =~ /^((що(як)?)?най)?(більш|менш|скоріш|перш)$/)
 					//&& ! (tag.contains(":inanim") && tag.contains(":v_kly") )
 					 ) {

@@ -48,7 +48,8 @@ def newLemmaFile = new File('out/toadd/media_src.txt')
 if( newLemmaFile.exists() ) {
 	println "Loading media_src..."
 	media = newLemmaFile.readLines("UTF-8").collectEntries {
-		def parts = it.split('@@@')
+//		def parts = it.split('@@@')
+		def parts = it.split(/ +/, 2)
 		[ (parts[0]): parts.length > 1 ? parts[1..-1] : ["---"] ]
 	}
 }
@@ -257,7 +258,7 @@ def findInDict(word) {
 	}
     ending = ending.replaceFirst(/(и|і)$/, '(и|і|а)?')
     ending = ending.replaceFirst(/иця$/, '(иця|ик)')
-    ending = ending.replaceFirst(/вачка$/, '(вач|вачка)')
+    ending = ending.replaceFirst(/ка$/, '(ка)?')
 	ending = ending.replaceFirst(/[гґ]/, '[гґ]')
 
 	println "searching for existing: $ending in ${dictLines.size}"

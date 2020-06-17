@@ -20,15 +20,15 @@
 якорях якір noun:p:v_mis
 
 # 0 - о
-Великдень Великдень noun:m:v_naz/v_zna:prop
-Великодня Великдень noun:m:v_rod:prop
-Великодню Великдень noun:m:v_dav/v_mis/v_kly:prop
-Великоднем Великдень noun:m:v_oru:prop
-Великодні Великдень noun:p:v_naz/v_zna/v_kly:prop
-Великоднів Великдень noun:p:v_rod:prop
-Великодням Великдень noun:p:v_dav:prop
-Великоднями Великдень noun:p:v_oru:prop
-Великоднях Великдень noun:p:v_mis:prop
+великдень великдень noun:m:v_naz/v_zna:prop
+великодня великдень noun:m:v_rod:prop
+великодню великдень noun:m:v_dav/v_mis/v_kly:prop
+великоднем великдень noun:m:v_oru:prop
+великодні великдень noun:p:v_naz/v_zna/v_kly:prop
+великоднів великдень noun:p:v_rod:prop
+великодням великдень noun:p:v_dav:prop
+великоднями великдень noun:p:v_oru:prop
+великоднях великдень noun:p:v_mis:prop
 
 Лев Лев noun:anim:m:v_naz:prop:fname
 Льва Лев noun:anim:m:v_rod:prop:fname
@@ -893,6 +893,8 @@
 
 в'ючи вити advp:imperf
 
+попсуто попсуто verb:perf:impers        # lim
+
 в'ючись витися advp:rev:imperf
 
 велено веліти verb:imperf:impers
@@ -1011,7 +1013,6 @@
 навчіте навчити verb:perf:impr:p:2:long
 назвіте назвати verb:perf:impr:p:2:long
 напишіте написати verb:perf:impr:p:2:long
-навчіте навчити verb:perf:impr:p:2:long
 научіте научити verb:perf:impr:p:2:long
 несіте нести verb:imperf:impr:p:2:long
 носіте носити verb:imperf:impr:p:2:long
