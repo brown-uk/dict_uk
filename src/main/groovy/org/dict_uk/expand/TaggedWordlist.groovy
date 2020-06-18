@@ -16,10 +16,11 @@ class TaggedWordlist {
 		"invalid-autogen.lst": ":bad",
 		"invalid.lst": ":bad",
 		"invalid-compound.lst": ":bad",
-		"rare.lst": ":arch",
+		"arch.lst": ":arch",
 		"slang.lst": ":slang",
 		"alt.lst": ":alt",
-		"subst.lst": ":subst"
+		"subst.lst": ":subst",
+		"vulgar.lst": ":vulg"
 	]
 
 

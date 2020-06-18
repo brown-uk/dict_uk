@@ -1,12 +1,24 @@
+баче бачити verb:imperf:pres:s:3                            #> робить
 бозна-шо noun:inanim:n:v_naz/v_zna:&pron:ind                #> бозна-що
 всьо adv|conj:coord|noun:inanim:n:v_naz/v_zna:&pron:gen|part #> все
+зара adv                                                    #> зараз
+зато conj:coord                                             #> зате
 казна-шо noun:inanim:n:v_naz/v_zna:&pron:ind                #> казна-що
+мона noninfl:&predic                                        #> можна
 нашо adv                                                    #> нащо
+покишо noninfl                                              #> поки що
+робе робити verb:imperf:pres:s:3                            #> робить
+сьодні adv                                                  #> сьогодні
+такшо noninfl                                               #> тому|тож
+тама adv:&pron:dem|part                                     #> там
+хібашо noninfl                                              #> хіба що
 хтозна-шо noun:inanim:n:v_naz/v_zna:&pron:ind               #> хтозна-що
 чортзна-шо noun:inanim:n:v_naz/v_zna:&pron:ind              #> чортзна-що
 ше adv|part                                                 #> ще
 шо conj:subord|noun:inanim:n:v_naz/v_zna:&pron:int:rel      #> що
 шоб conj:subord|part                                        #> щоб
+шоби conj:subord|part                                       #> щоб|щоби
+шодо prep              # rv_rod                             #> щодо
 шось noun:inanim:n:v_naz/v_zna:&pron:int                    #> щось
 шо-шо conj:subord|noun:inanim:n:v_naz/v_zna:&pron:int:rel   #> що-що
 штані /np3                                                  #> штани
