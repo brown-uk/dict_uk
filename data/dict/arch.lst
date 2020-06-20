@@ -43,7 +43,6 @@
 боясть /n32
 бритійський /adj
 бублій /n20.a.p.<
-бюрко /n2n.piv
 вагадло /n2n.p1
 ваганки /np2
 вагом adv
@@ -127,7 +126,6 @@
 гиндик /n20.a.p.<>
 глагол /n20.p
 глибочиня /n10
-глупий /adj :xp1            # xv1
 гнічений /adj
 головочка /n10
 громадно adv
@@ -191,6 +189,7 @@
 заводня /n10
 загомзатися /vr2 :perf
 заєдно adv
+заздрування /n2n
 зазлісно adv
 зазлість /n30
 зазнимкований /adj :&adjp:pasv:perf
@@ -226,7 +225,6 @@
 зв'язь /n32
 згиблий /adj
 зглибока adv
-згрубша adv
 згук /n20.p
 зґарда /n10.p1
 здійманий /adj
@@ -366,14 +364,18 @@
 немать noninfl:&predic
 неможний /adj
 немощний /adj
+неньо /n20.<
 необавки adv
 неоглядки adv
 неоглядком adv
 неохая /n10.< :+m
 неперечний /adj
+неправно adv
 непутити /v1.cf.advp :imperf
+несогірше adv
 нестямливий /adj
 неякийсь /adj :&pron:ind
+ниньки adv
 нівець /n22.a
 нігде adv:&pron:emph
 нігде adv:&pron:neg
@@ -390,10 +392,12 @@
 обіт /n20.p
 обітування /n2n
 обманити /v1.it1 :perf
+обов'язувати /v1.cf.advp :imperf
 обруч adv
 обсіч adv
 обутритися /vr1 :perf p=3
 оглав /n20.p
+огник /n20.a.p
 огонь /n22.p
 одвір adv
 одвіт /n20
@@ -422,6 +426,8 @@
 опостін adv|prep        # rv_rod
 опріче adv|prep        # rv_rod
 опроче adv|prep        # rv_rod
+опуст /n20
+оріх /n20.a.p
 орудка /n10.p2
 оселець /n22.a.p.<
 осьмий /adj
@@ -483,6 +489,7 @@
 переіначити /v1.is0.it0 :perf
 переіначування /n2n
 переіначувати /v1.cf.advp :imperf
+перелім noun:m:v_naz/v_zna                  # lim
 переселянин /n20.a.pyn.<
 перстінь /n23.p
 пестієчка /n10.<
@@ -506,7 +513,9 @@
 плястер /n22.a.p.ke
 побідити /v1 :perf
 побойовисько /n2n
+поверховно adv
 повідання /n2n
+повновласник /n20.a.p.<
 повозовий /adj
 поворітний /adj
 погибати /v2.cf.advp :imperf
@@ -525,8 +534,10 @@
 попоштувати /v1 :perf
 попоштуватися /vr1 :perf
 попроз попроз prep        # rv_zna
+поряду adv
 посереду prep        # rv_rod
 посланіє /n2n.p1
+посполу adv
 поставець /n22.a.p
 постанець /n22.a.p.<>
 постілець /n22.a.p
@@ -542,25 +553,31 @@
 правобіч adv
 празничанин /n20.a.pyn.<
 придверний /adj
+призвід /n21
 приказ /n20.p
 притім conj:subord:bad
 прищіпляти /v2.cf.advp :imperf
 прітьма adv
 пріч prep|adv:&predic        # rv_rod
+прозвисько /n2n.p2
 простибі adv:&insert
 простибіг adv:&insert
+простирядно /n2n
 против prep        # rv_rod
 прочитний /adj
 райця /n10.piv.<m
 регістратор /n20.a.p.ke.<
 реферантеса /n10.p1.<
+рівнання /n2n.p1
 рівновартний /adj
 рік-річно рік-річно adv
+робіння /n2n
 роботизна /n10
 рожденний /adj
 розповінь /n32
 розповня /n10
 розслідити /v1.is0.it1 :perf
+рура /n10
 рушатися /vr2.cf.advp :imperf
 салган /n20.p
 самовластя /n2n
@@ -575,44 +592,59 @@
 сербіянин /n20.a.pyn.<
 силяти /v2.cf.advp :imperf
 сількось adv:&insert
+скіко numr:p:v_naz/v_zna
 скілька numr:p:v_naz/v_zna
 скількість /n30
 скілько numr:p:v_naz/v_zna
+скочки adv
 сливе adv
 сопух /n20.a
 сояшник /n20.a.p
 сояшниковий /adj
+сперед adv
 сплоха adv
 сподоба /n10
 споміж prep        # rv_rod
 спосеред prep        # rv_rod
+статочний /adj
+стежі /np2
 стерятися /vr2 :perf
+стіки adv:&pron:dem
 сторонка /n10.p2
 стосувати /v1.cf.advp :imperf
+стріл /n20
 суперека /n10.p1
 сутяжно adv
 сьогодня adv
 ся part
 таж conj:subord|part
 таже conj:subord|part
+тепера adv:&pron:dem
+теперка adv:&pron:dem
 тіко adv
 тілько adv|conj:subord|part
+толкування /n2n.p1
+толкувати /v1.cf.advp :imperf
 тотой /adj_pron :&pron:dem  #> той
 тра noninfl:&predic
 трансфлюксор /n20.a.p.ke
+трачиння /n2n
 тридесять numr:p:v_naz/v_zna
 трясцяма noninfl:&predic
 тя noun:anim:s:v_rod/v_zna:&pron:pers:2     #> тебе
 тяготіти /v2.cf.advp :imperf
 удвійці adv:v-u
 удвурядь adv
+узад adv
 узгіднювати /v1.cf.advp :imperf
 уздогін adv
 уїжно adv:&predic
 уїхати /v4 :perf
 уйматися /vr2 :imperf
 укруть adv
+улиця /n10.p1
 уліжно adv:&predic
+умкнути /v1 :perf
 упоминати /v2.cf.advp :imperf
 упоминатися /vr2.cf.advp :imperf
 упомки noninfl:&predic
@@ -620,6 +652,8 @@
 упруг /n20.a.p
 урадуваний /adj :&adjp:pasv:perf    # past
 уряджений /adj :&adjp:pasv:perf    # past
+урядово adv
+усамперед adv
 успокоєний /adj :&adjp:pasv:perf    # past
 устидно adv:&predic
 устріть adv
@@ -649,6 +683,7 @@
 цилюрник /n20.a.p.<
 цилюрня /n10.p2
 цирулик /n20.a.p.<
+цитаделя noun:f:v_naz                   # lim
 цифір /n32
 цукриця /n10
 цьоця /n10.ku.<
@@ -661,6 +696,7 @@
 чорт-мало noninfl:&predic
 чорт-матиме noninfl:&predic
 чуткість /n30
+швидче adv
 широчиня /n10
 шияка /n10
 шкварко adv:&predic

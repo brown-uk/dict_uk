@@ -612,14 +612,36 @@
 яких-не-яких який-не-який adj:p:v_mis:&pron:ind
 
 
+свому свій adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos:subst
+мому мій adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos:subst
+твому твій adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos:subst
+свойому свій adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos:subst
+мойому мій adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos:subst
+твойому твій adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos:subst
+свойму свій adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos:subst
+мойму мій adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos:subst
+твойму твій adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:pos:subst
+по-твому adv:subst
+по-мому adv:subst
+по-свому adv:subst
+по-твойому adv:subst
+по-мойому adv:subst
+по-свойому adv:subst
+по-твойму adv:subst
+по-мойму adv:subst
+по-свойму adv:subst
+
 
 годину-дві adv
 годину-другу adv
+день-два adv
+день-другий adv
 місяць-другий adv
+місяць-два adv
 тиждень-другий adv
+тиждень-два adv
 рік-другий adv
 вдвічі-втричі adv
-день-два adv
 
 
 # Числівники
@@ -1225,4 +1247,3 @@
 доперва adv:rare|part:rare
 суціль adv:rare
 долів adv:rare
-

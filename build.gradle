@@ -164,8 +164,10 @@ task checkReplacements {
 	    .findAll { it =~ /[а-яіїєґ]/ }
 	    .unique().sort()
 
-    def spellWords = new File("out/words_spell.txt").text.split("\n")
-    
+    def spellWords = new File("out/words_spell.txt").text.split('\n')
+    spellWords += new File("data/dict/slang.lst").text.split('\n').collect{ it.replaceFirst(/ .*/, '') }
+	spellWords += new File("data/dict/arch.lst").text.split('\n').collect{ it.replaceFirst(/ .*/, '') }
+	
     println "Unique replacement words: ${replWords.size}"
     
     replWords.removeAll(spellWords)
