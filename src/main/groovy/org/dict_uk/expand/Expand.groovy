@@ -1463,7 +1463,11 @@ class Expand {
 			}
 
 		}
-		.flatMap{ s -> s.stream() }
+		.flatMap{ s-> 
+			if( ! s ) 
+				System.exit(1)
+			s.stream() 
+		}
 		.collect(Collectors.toList())
 	}
 

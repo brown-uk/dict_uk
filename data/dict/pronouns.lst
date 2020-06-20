@@ -1163,7 +1163,7 @@
 так adv:&pron:dem|part|conj:coord:subord
 там-то adv:&pron:dem
 та conj:coord|part
-теє part
+теє part:coll
 теж adv|part
 тим adv:rare|conj:subord
 тим-то conj:subord
@@ -1197,23 +1197,17 @@
 а-ля conj:subord
 
 ге part|intj
-се part
-осе part
-отсе part
 так-таки part
-ачей part
 так-так part|intj
 всього-на-всього part
 усього-на-всього part
 но part|intj
-онно part
-оно part
+онно part:coll
+оно part:coll
 так-то part|adv
 то-то part
-отто part
-осісьо part
+осісьо part:coll
 угу part
-чень part
 як-таки part
 
 # рідковживані
@@ -1221,7 +1215,6 @@
 з-між з-між prep        # rv_rod
 ві ві prep                  # rv_zna:rv_mis
 звиш звиш prep:rare        # rv_rod:rv_zna
-поконець поконець prep:rare        # rv_rod
 межи межи prep:rare        # rv_oru:rv_rod:rv_zna
 помежи помежи prep:rare        # rv_oru:rv_rod:rv_zna
 пред пред prep:rare        # rv_oru:rv_zna
@@ -1244,6 +1237,3 @@
 кількадесятеро numr:p:v_naz/v_zna:coll
 кільканадцятеро numr:p:v_naz/v_zna:coll
 
-доперва adv:rare|part:rare
-суціль adv:rare
-долів adv:rare

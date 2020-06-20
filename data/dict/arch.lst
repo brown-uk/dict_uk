@@ -16,9 +16,13 @@
 антипко /n20.<
 арідник /n20.a.p.ke.<
 атентат /n20.p
+ачей part
 ачень part
+багатоцінний /adj
 банно adv:&predic
+баталіон /n20.p
 баяти /v1.cf :imperf
+безкомпромісово adv
 безлічно adv
 березіль /n21.a
 беседа /n10.p1                          # бе́седа
@@ -40,6 +44,7 @@
 благущий /adj
 блигомий /adj
 боднар /n24.a.p.ku.<
+босака adv
 боясть /n32
 бритійський /adj
 бублій /n20.a.p.<
@@ -52,6 +57,8 @@
 варцаб /n20.a.p
 варцаба /n10.p1
 вдвійці adv:v-u
+вдолину adv
+веларій /n20.a.p.<
 велико adv
 вельон /n20.p
 венгерське /n2adj1
@@ -76,6 +83,7 @@
 вичути /v2 :perf
 вишній /adj
 відгал /n20
+віддалеку adv
 відзискати /v2 :perf
 відіткати /v2 :perf
 відки adv
@@ -90,6 +98,7 @@
 вісьта intj
 вітець /n22.a.p.ke.<
 вітців /adj_ev
+вітчина /n10.p1
 в'їжно в'їжно adv:&predic
 в'їздовий /adj
 вколо вколо prep|adv        # rv_rod
@@ -103,6 +112,7 @@
 вовкодух /n20.a.p.<
 воздавати /v1.cf.advp :imperf
 воздати /v3.isNo :perf
+волити /v1.cf.advp :imperf
 володільник /n20.a.p.<
 вольно adv
 воркотливий /adj
@@ -114,6 +124,7 @@
 втіки /np2
 вуголь /n22
 вуй /n20.a.<
+вуйна /n10.p1.<
 вхорканий /adj :&adjp:pasv:perf:v-u    # past
 вчиття /n2n
 гайстер /n20.a.p.ke.<>
@@ -123,6 +134,7 @@
 гаслування /n2n
 гаслувати /v1.cf.advp :imperf
 гейби conj:subord
+гибіти /v2.cf.advp :imperf
 гиндик /n20.a.p.<>
 глагол /n20.p
 глибочиня /n10
@@ -142,13 +154,15 @@
 двайдцять /numr
 дворець /n22.p.a
 д'горі adv
+дебра /n10.p1
 дев'ятдесят /numr
 де-інде adv
 дей intj
 дейко noninfl:&predic
 декуди adv
 деревляний /adj
-дідо /n20.<
+дивогляд /n20
+дідо noun:m:v_naz:anim                  # lim
 дільчий /adj
 дневник /n20.a.p
 довг /n20
@@ -161,6 +175,8 @@
 докіль adv|conj:subord
 доконувати /v1.cf.advp :imperf
 докраю adv
+долів adv
+доперва adv|part
 доправди adv
 доста adv:&predic
 доставати /v1.cf.advp :imperf
@@ -169,6 +185,7 @@
 дрожка /n10.p2
 дряглий /adj
 дряглість /n30
+дукиня /n10.p1.<
 єден /numr ^adj :&numr
 жалуватися /vr1.cf.advp :imperf
 жалько adv
@@ -182,6 +199,7 @@
 жупа /n10.p1                # солеварня
 жупанат /n20
 жупний /adj
+забарва /n10
 завгорити /v1 :perf
 завгорювати /v1.cf.advp :imperf
 завідатель /n20.a.p.<
@@ -228,6 +246,7 @@
 згук /n20.p
 зґарда /n10.p1
 здійманий /adj
+здобича noun:f:v_naz        # lim
 здогонити /v1 :perf
 здоровля /n2n
 здрінка /n10.p2
@@ -239,6 +258,7 @@
 зірно adv:&predic
 зіставатися /vr1.cf.advp :imperf
 зістатися /vr3 :perf
+злато /n2n
 зложення /n2n
 злотник /n20.a.p.<
 змаг /n20
@@ -260,6 +280,7 @@
 ізвідки adv:&pron:int:rel
 ізгадатися /vr2 :perf p=4
 ізнадвору adv
+інструменталь /n20
 ірій /n20
 їдак /n20.a.p.<
 їден /numr ^adj :&pron:dem:ind
@@ -271,6 +292,7 @@
 капельмайстер /n20.a.p.ke.<
 касарня /n10.p2
 катмає noninfl:&predic
+кватиря /n10
 ке intj:&predic
 керовничий /adj
 кете intj:&predic
@@ -281,9 +303,11 @@
 когут /n20.a.p.<>
 кождий /adj :&pron:gen
 колгоспівський /adj
+колет /n20.a.p.@
 коляса /n10.p1
 комбід /n20.p
 комбідівець /n22.a.p.<
+компромісово adv
 користання /n2n
 которий /adj.long :&pron:int:rel
 коц /n20.a.p
@@ -307,8 +331,10 @@
 манастир /n24.a.p.ku
 маняк /n20.a.p
 масакра /n10.p1
+мебля /n10
 метанина /n10
-мізок /n22.p
+милостина /n10.p1
+мізок /n22
 міліард /n20.a.p
 мінька adv
 міньки adv
@@ -387,6 +413,7 @@
 ніц noun:n:inanim:v_rod/v_zna:&pron:neg
 нумер /n20.a.p.ke
 оба numr:m:v_naz/v_zna
+оберст /n20.a.p.<
 обичай /n20.p
 обі numr:f:v_naz/v_zna
 обіт /n20.p
@@ -396,6 +423,7 @@
 обруч adv
 обсіч adv
 обутритися /vr1 :perf p=3
+овид /n20
 оглав /n20.p
 огник /n20.a.p
 огонь /n22.p
@@ -406,11 +434,13 @@
 одзняти /v1.isTo :perf
 одзнятий /adj :&adjp:pasv:perf
 одіж /n32
+одіслати /v1.isNo :perf
 одітий /adj :&adjp:pasv:perf    # past
 одкривати /v2.cf.advp :imperf
 одкрити /v2.isTo :perf
 одкритися /vr2 :perf
 одміна /n10
+одмовитися /vr1 :perf
 однакий /adj
 однако adv:&predic
 одружіння /n2n
@@ -419,6 +449,7 @@
 околяса adv
 околясом adv
 окроме prep        # rv_rod
+окуп /n20.p
 олтар /n24.a.p.ke
 омочений /adj :&adjp:pasv:perf              #> обмочений
 онакий /adj :&pron:def
@@ -429,9 +460,11 @@
 опуст /n20
 оріх /n20.a.p
 орудка /n10.p2
+осе part
 оселець /n22.a.p.<
 осьмий /adj
 осьо part
+отсе part
 отсе отсей adj:n:v_naz/v_zna:&pron:dem
 отсей отсей adj:m:v_naz/v_zn2:&pron:dem
 отсим отсей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
@@ -457,6 +490,7 @@
 оттією оттой adj:f:v_oru:&pron:dem
 оттій оттой adj:f:v_dav/v_mis:&pron:dem
 оттім оттой adj:m:v_mis//n:v_mis:&pron:dem
+отто part
 оттого оттой adj:m:v_rod/v_zn1//n:v_rod:&pron:dem
 оттої оттой adj:f:v_rod:&pron:dem
 оттой оттой adj:m:v_naz/v_zn2:&pron:dem
@@ -489,6 +523,7 @@
 переіначити /v1.is0.it0 :perf
 переіначування /n2n
 переіначувати /v1.cf.advp :imperf
+перекладчик /n20.a.p.<
 перелім noun:m:v_naz/v_zna                  # lim
 переселянин /n20.a.pyn.<
 перстінь /n23.p
@@ -519,21 +554,26 @@
 повозовий /adj
 поворітний /adj
 погибати /v2.cf.advp :imperf
+подобати /v2.cf.advp :imperf
 подовш adv|prep        # rv_rod
 позавгорідно adv
 познимкуватися /vr1 :perf
 покійно adv
+поконець prep        # rv_rod
+полагода /n10
 полегша /n10.p1
 поломання /n2n
 полумінь /n23.a
 помісь conj:subord
 помісь part
 помісь /n32.p
+понеже conj:subord
 попереіначуваний /adj :&adjp:pasv:perf
 попереіначувати /v1.isNo :perf
 попоштувати /v1 :perf
 попоштуватися /vr1 :perf
 попроз попроз prep        # rv_zna
+порозуміти /v2 :perf
 поряду adv
 посереду prep        # rv_rod
 посланіє /n2n.p1
@@ -571,6 +611,7 @@
 рівнання /n2n.p1
 рівновартний /adj
 рік-річно рік-річно adv
+рішений /adj :&adjp:pasv:perf
 робіння /n2n
 роботизна /n10
 рожденний /adj
@@ -588,6 +629,7 @@
 світач /n20.a.p
 святешний /adj
 святешно adv
+се part
 сей /adj_pron.long :&pron:dem
 сербіянин /n20.a.pyn.<
 силяти /v2.cf.advp :imperf
@@ -606,15 +648,20 @@
 сподоба /n10
 споміж prep        # rv_rod
 спосеред prep        # rv_rod
+старати /v2.cf.advp :imperf
 статочний /adj
+стежа /n10.p1
 стежі /np2
 стерятися /vr2 :perf
+стійковий /adj
 стіки adv:&pron:dem
 сторонка /n10.p2
+сторонництво /n2n
 стосувати /v1.cf.advp :imperf
 стріл /n20
 суперека /n10.p1
 сутяжно adv
+суціль adv
 сьогодня adv
 ся part
 таж conj:subord|part
@@ -633,6 +680,7 @@
 трясцяма noninfl:&predic
 тя noun:anim:s:v_rod/v_zna:&pron:pers:2     #> тебе
 тяготіти /v2.cf.advp :imperf
+увидіти /v1 :perf
 удвійці adv:v-u
 удвурядь adv
 узад adv
@@ -661,6 +709,7 @@
 ученик /n20.a.p.<
 учительний /adj
 фашистівський /adj
+ферії /np1
 фершалка /n10.p2.ko.<
 фестини /np1
 фіра /n10.p1
@@ -688,6 +737,7 @@
 цукриця /n10
 цьоця /n10.ku.<
 часть /n32.p
+чень part
 чимборше adv
 чміль /n20.a.p.<>
 чортма noninfl:&predic

@@ -522,7 +522,6 @@
 хліба хліб noun:p:v_naz/v_zna
 
 тат тато noun:anim:p:v_rod
-дідо дід noun:anim:m:v_naz:coll
 
 раз раз noun:inanim:p:v_rod
 корогов корогва noun:f:v_naz/v_zna
@@ -742,6 +741,7 @@
 многая многий adj:p:v_naz/v_zn2:rare
 многії многий adj:p:v_naz/v_zn2:rare
 
+бракло бракнути verb:imperf:past:n
 
 # паралельна: кляну - клену
 кленім клясти verb:impr:p:1:imperf:rare
