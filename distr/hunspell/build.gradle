@@ -13,7 +13,7 @@ repositories {
 
 
 dependencies {
-    implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.1'
+    implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.3'
 
     implementation group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
@@ -111,8 +111,8 @@ task getSpellWords (type: Exec) {
 }
 
 
-task testHunspellDirect (type: Exec, dependsOn: getSpellWords) { //, dependsOn: hunspell) {
-    def cmd = "hunspell -d $outDir/uk_UA -l ${projectDir}/build/words_spell.txt > hunspell.unknown.txt; wc -l hunspell.unknown.txt"
+task testHunspellDirect (type: Exec/*, dependsOn: getSpellWords*/) { //, dependsOn: hunspell) {
+    def cmd = "hunspell -d $outDir/uk_UA -l ${projectDir}/../../out/words_spell.txt > hunspell.unknown.txt; wc -l hunspell.unknown.txt"
 
     commandLine "sh", "-c", "${cmd}"
 }

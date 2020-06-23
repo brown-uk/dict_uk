@@ -4,18 +4,14 @@ import java.text.Collator
 
 import org.dict_uk.expand.*
 
+import groovy.transform.Field
+
 
 def AFFIX_DIR = "../../data/affix"
-
-Args.args = new Args()
-Args.args.removeWithTags = ["uncontr"]
 
 def expand = new Expand(false)
 
 def affixMap = expand.affix.load_affixes(AFFIX_DIR)
-
-//Affix affixLoader = new Affix()
-//affixLoader.load_affixes(AFFIX_DIR)
 
 char hunFlag = (int)' '+1
 
@@ -24,8 +20,8 @@ def reMapFlags = [
     'vr': 'v',
     'adj_ev': 'n40',
     'adj_pron': 'n40',
-    'numr': 'n40',
-    'n2adj3': 'n40'
+    'numr': 'n40'
+//    'n2adj3': 'n40'
 ]
 
 
@@ -37,6 +33,10 @@ def negativeMatchFlags = [:].withDefault{ [] }
 affixMap.each { flag, affixGroupMap ->
     reMapFlags.each { k,v ->
     	if( flag.startsWith(k) ) {
+			if( affixMap[ flag.replace(k, v) ] == null ) {
+				println "skipping: " + flag //flag.replace(k, v)
+				return
+			}
 	    	affixMap[ flag.replace(k, v) ].putAll(affixGroupMap)
     	}
     }
@@ -49,7 +49,7 @@ affixMap.each { flag, affixGroupMap ->
 	if( flag == 'patr' )
 		return
 	
-	if( flag =~ /\.ku|n2[0-9].*\.u|patr_pl|shrt|/ + reMapFlagsRe )
+	if( flag =~ /\.ku|n2[0-9].*\.u|patr_pl|shrt|long|/ + reMapFlagsRe )
 		return
 
 	if( (int)hunFlag == 0x7F ) {
@@ -83,16 +83,17 @@ new File('build/mapping.txt').text = revFlagMap*.toString().join("\n")
 
 println("Negative matches:\n\t" + negativeMatchFlags*.toString().join("\n\t"))
 
-def NONSPELL_TAG_LIST = ":(alt|bad|subst|slang|short|long)"
+@Field
+static String NONSPELL_TAG_LIST = ":(alt|bad|subst|slang|vulg|arch|short|long)"
 
 if( "-forSearch" in args ) {
     println "Дозволяємо ненормативні форми для пошуку..."
     NONSPELL_TAG_LIST.replace('|bad', '')
     NONSPELL_TAG_LIST.replace('|subst', '')
     NONSPELL_TAG_LIST.replace('|slang', '')
+    NONSPELL_TAG_LIST.replace('|vulg', '')
+    NONSPELL_TAG_LIST.replace('|arch', '')
 }
-
-def NONSPELL_TAGS = ~ NONSPELL_TAG_LIST
 
 
 def out = ''
@@ -109,8 +110,8 @@ flagMap.each{ flag, affixGroupItems ->
 		
 		item.affixGroup.affixes.each { affix ->
 
-			if( NONSPELL_TAGS.matcher(affix.tags) ) {
-//					println 'Skipping uncontr: ' + affix
+			if( ! spellWord(affix.tags) ) {
+//					println 'Skipping non-spell: ' + affix
 				return
 			}
 
@@ -253,7 +254,7 @@ new File('build/hunspell/uk_UA.aff').text = fileHeader + '\n' + out
 
 def dictDir = new File("../../data/dict")
 
-def IGNORED_FILES = /composite|dot-abbr|twisters|invalid|alt|rare|add_tag/
+def IGNORED_FILES = /composite|dot-abbr|twisters|invalid|alt|arch|add_tag/
 if( "-forSearch" in args ) {
     IGNORED_FILES = IGNORED_FILES.replace('|twisters|invalid', '')
 }
@@ -298,7 +299,7 @@ def lines = files.collect { file->
 	if( ! it )
 		return ''
 
-    if( it =~ NONSPELL_TAG_LIST )
+    if( ! spellWord(it) )
         return ''
 
 	assert ! it.contains('patr'), "patr in $it !!!"
@@ -387,7 +388,8 @@ def lines = files.collect { file->
 
 
 			def uniqForms = expanded.findAll{
-			    ! (it =~ /:(alt|bad|subst|slang|short|long)/ )
+                if( ! spellWord(it) ) return ''
+				it
 			}.collect {
 			    it.word
 			}.unique() // + ' # TODO: inflect'
@@ -416,7 +418,7 @@ def lines = files.collect { file->
 
 
 				if( ! toHunFlagMap.containsKey(f) ) {
-					println 'cant find ' + parts[0] + '/' + f
+					println "can't find " + parts[0] + '/' + f
 				}
 
 				outFlags += toHunFlagMap[f]
@@ -502,4 +504,11 @@ new File("build/hunspell/uk_UA.dic").text = txt
 
 static boolean hasInanimVkly(line, propName) {
     return propName || line.contains('.ikl')
+}
+
+static boolean spellWord(it) {
+	return !( it =~ NONSPELL_TAG_LIST \
+		&& ! it =~ /&insert:short/ \
+		&& ! it =~ /adj:m:v_(naz|zna).*:short/ \
+		&& ! it =~ /^((що(як)?)?най)?(більш|менш|скоріш|перш)$/)
 }
