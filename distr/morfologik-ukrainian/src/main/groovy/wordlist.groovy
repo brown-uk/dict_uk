@@ -42,8 +42,9 @@ new File('all.tagged.freq.txt').eachLine { String line ->
     }
 }
 
+boolean all = "-f" in args || "--full" in args
 
-def out = new File('uk_wordlist.xml')
+def out = new File(all ? 'uk_wordlist_all.xml' : 'uk_wordlist.xml')
 out.text = '<wordlist locale="uk_UA" description="Ukrainian" date="'+new Date().getTime()+'" version="1">\n'
 
 def sortedWords = words.toSorted{ -it.value }
@@ -54,7 +55,7 @@ sortedWords.each {
     out << "<w f=\"" + Math.round(it.value) + "\">${it.key}</w>\n"
 }
 
-if( "-f" in args || "--full" in args ) {
+if( all ) {
 	sortedWords.each {
 		if( it.value >= freqMin )
 			return
