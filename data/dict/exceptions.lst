@@ -632,9 +632,10 @@
 
 те-се те-се noun:inanim:n:v_naz/v_zna:&pron:dem
 
+мосьпане мосьпане noun:m:v_kly:anim         # lim
 
 # давні форми
-бельмеса бельмеса noun:m:v_rod          # lim
+бельмеса бельмеса noun:m:v_rod              # lim
 язицех язик noun:p:v_mis
 
 світа світ noun:m:v_rod:rare
@@ -647,7 +648,7 @@
 кінця-краю кінця-краю noun:m:v_rod                  # lim
 предку-віку предку-віку noun:m:v_zna                # lim
 
-галай-балай галай-балай noun:m:v_naz/v_zna                      # lim
+галай-балай галай-балай noun:m:v_naz/v_zna          # lim
 усюди /np2 /np1
 
 ван ван part:pers
@@ -1127,6 +1128,67 @@
 учітеся учитися verb:rev:imperf:impr:p:2:long
 хвалітеся хвалитися verb:rev:imperf:impr:p:2:long
 хрестітеся хреститися verb:rev:imperf:impr:p:2:long
+
+броде бродити verb:imperf:pres:s:3:subst
+вводе вводити verb:imperf:pres:s:3:subst
+виносе виносити verb:imperf:pres:s:3:subst:xp1
+випале випалити verb:perf:futr:s:3:subst
+виходе виходити verb:imperf:pres:s:3:subst:&insert:xp1
+встеле встелити verb:perf:futr:s:3:subst
+входе входити verb:imperf:pres:s:3:subst
+глаголе глаголити verb:imperf:pres:s:3:subst:rare
+говоре говорити verb:imperf:pres:s:3:subst
+гомоне гомоніти verb:imperf:pres:s:3:subst
+дзвоне дзвонити verb:imperf:pres:s:3:subst
+доводе доводити verb:imperf:pres:s:3:subst
+доходе доходити verb:imperf:pres:s:3:subst:xp1
+дуре дурити verb:imperf:pres:s:3:subst
+заводе заводити verb:imperf:pres:s:3:subst
+закруте закрутити verb:perf:futr:s:3:subst
+заморе заморити verb:perf:futr:s:3:subst
+заставе заставити verb:perf:futr:s:3:subst
+заходе заходити verb:imperf:pres:s:3:subst:xp1
+зачепе зачепити verb:perf:futr:s:3:subst
+зачине зачинити verb:perf:futr:s:3:subst
+зваре зварити verb:perf:futr:s:3:subst
+зводе зводити verb:imperf:pres:s:3:subst
+зносе зносити verb:imperf:pres:s:3:subst:xp1
+зове звати verb:imperf:pres:s:3:subst
+зупине зупинити verb:perf:futr:s:3:subst
+капле капати verb:imperf:pres:s:3:subst
+крише кришити verb:imperf:pres:s:3:subst
+ломе ломити verb:imperf:pres:s:3:subst
+носе носити verb:imperf:pres:s:3:subst
+опусте опустити verb:perf:futr:s:3:subst
+пале палити verb:imperf:pres:s:3:subst
+перекупе перекупити verb:perf:futr:s:3:subst
+перепине перепинити verb:perf:futr:s:3:subst
+переходе переходити verb:imperf:pres:s:3:subst:xp1
+підводе підводити verb:imperf:pres:s:3:subst
+підходе підходити verb:imperf:pres:s:3:subst
+плате платити verb:imperf:pres:s:3:subst
+побіле побілити verb:perf:futr:s:3:subst
+попусте попустити verb:perf:futr:s:3:subst
+посаде посадити verb:perf:futr:s:3:subst
+поставе поставити verb:perf:futr:s:3:subst
+постеле постелити verb:perf:futr:s:3:subst
+посуде посудити verb:perf:futr:s:3:subst
+приводе приводити verb:imperf:pres:s:3:subst
+прикусе прикусити verb:perf:futr:s:3:subst
+приносе приносити verb:imperf:pres:s:3:subst
+приходе приходити verb:imperf:pres:s:3:subst
+проводе проводити verb:imperf:pres:s:3:subst
+проходе проходити verb:imperf:pres:s:3:subst:xp1
+роде родити verb:imperf:pres:s:3:subst
+розгоне розгонити verb:imperf:pres:s:3:subst
+розсуде розсудити verb:perf:futr:s:3:subst
+суде судити verb:imperf:pres:s:3:subst
+сходе сходити verb:imperf:pres:s:3:subst:xp1
+уводе уводити verb:imperf:pres:s:3:subst
+ходе ходити verb:imperf:pres:s:3:subst
+
+хочте хотіти verb:imperf:pres:p:2:short
+
 
 
 # короткі прикметники

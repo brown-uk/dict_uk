@@ -217,6 +217,9 @@
 замісто prep        # rv_rod
 замісць prep                         # rv_rod:rv_inf
 запевне adv:&insert
+заплинути /v1 :perf
+заповідуваний /adj :&adjp:pasv:imperf
+заповідувати /v1.cf.advp :imperf
 запросний /adj
 зарівно adv:&predic
 засов /n20
@@ -264,6 +267,7 @@
 з-межи prep             # rv_rod
 змирятися /vr2.cf.advp :imperf
 знакомець /n22.a.p.<
+знезнавки adv
 знимка /n10.p2
 знимкування /n2n
 знимкувати /v1.cf.advp :imperf
@@ -286,6 +290,7 @@
 їмосць /n32.<
 їстівець /n22.a
 йменований /adj :&adjp:pasv:imperf
+йото part
 калабалик /n20
 кально adv:&predic
 капельмайстер /n20.a.p.ke.<
@@ -332,6 +337,7 @@
 масакра /n10.p1
 мебля /n10
 метанина /n10
+меценас /n20.a.p.<
 милостина /n10.p1
 мізок /n22
 міліард /n20.a.p
@@ -376,12 +382,15 @@
 намість намість adv
 намість намість prep        # rv_rod
 нанашка /n10.p2.<
+напруго adv
 напружливий /adj
 нарід noun:m:v_naz/v_zna            # lim
+нарошне adv
 наскінчу adv
 настарчити /v1 :perf
 научити /v1.is0.it1 :perf
 начальний /adj
+небір /n21.a.ke.<
 невміч adv:&predic
 невпотріб noninfl:&predic
 невправка /n10
@@ -389,6 +398,7 @@
 немать noninfl:&predic
 неможний /adj
 немощний /adj
+ненарошне adv
 неньо /n20.<
 необавки adv
 неоглядки adv
@@ -397,6 +407,7 @@
 неперечний /adj
 неправно adv
 непутити /v1.cf.advp :imperf
+нерозрадний /adj
 несогірше adv
 нестямливий /adj
 неякийсь /adj :&pron:ind
@@ -561,6 +572,7 @@
 полагода /n10
 полегша /n10.p1
 поломання /n2n
+полудне /n2adj1
 полумінь /n23.a
 помісь conj:subord
 помісь part
@@ -593,6 +605,7 @@
 придверний /adj
 призвід /n21
 приказ /n20.p
+принайменше adv
 притім conj:subord:bad
 прищіпляти /v2.cf.advp :imperf
 прітьма adv
@@ -602,6 +615,7 @@
 простибіг adv:&insert
 простирядно /n2n
 против prep        # rv_rod
+протяжко adv
 прочитний /adj
 райця /n10.piv.<m
 регістратор /n20.a.p.ke.<
@@ -664,6 +678,7 @@
 ся part
 таж conj:subord|part
 таже conj:subord|part
+тайно adv
 тепера adv:&pron:dem
 теперка adv:&pron:dem
 тіко adv
