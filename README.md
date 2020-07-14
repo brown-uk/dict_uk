@@ -60,7 +60,10 @@
 
 Зауваження: [похідні проекти](distr/) мають свої ліцензії
 
-Copyright (c) 2019 Андрій Рисін (arysin@gmail.com), Василь Старко, команда БрУК
+Окрім цього матеріали цього проєкту дозволено використовувати у проєктах https://voice.mozilla.org/uk і https://common-voice.github.io/sentence-collector/#/ відповідно до їх ліцензій.
+
+
+Copyright (c) 2020 Андрій Рисін (arysin@gmail.com), Василь Старко, команда БрУК
 
 ### Похідні проекти ###
 
@@ -113,8 +116,10 @@ Software is distributed under GPLv3.
 
 Note: [derivative projects](distr/) have different licenses
 
+Besides that materials in this project are allowed to be used in https://voice.mozilla.org/uk and https://common-voice.github.io/sentence-collector/#/ according to their licenses.
 
-Copyright (c) 2019 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
+
+Copyright (c) 2020 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
 
 ### Derivative Projects ###
 
