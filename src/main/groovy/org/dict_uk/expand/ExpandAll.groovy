@@ -29,27 +29,32 @@ class ExpandAll {
 		List<String> outLines = []
 
 		def dictFilePattern = ~/.*\.lst/
-		new File(Args.args.dictDir).eachFileMatch(dictFilePattern) { dic_file ->
-
+		new File(Args.args.dictDir).eachFileMatch(dictFilePattern) { file ->
 
 			List<String> out
-			if( dic_file.getName().contains('composite.lst') ) {
+			if( file.getName().contains('composite.lst') ) {
 				def expand_comps = new ExpandComps(expand)
-				def dic_file_reader = dic_file.withReader("utf-8") { reader ->
+				def fileReader = file.withReader("utf-8") { reader ->
 					def lines = reader.readLines()
 					def entries = expand_comps.process_input(lines)
 					out = entries.collect { DicEntry it ->
-						 it.toFlatString() 
+						if( file.getName().contains("invalid") ) {
+							if( ! it.tagStr.contains(":bad") ) {
+								it.tagStr += ":bad"
+							}
+						}
+						
+						it.toFlatString() 
 					}
 				}
 				//                out = sorted(out, key=locale.strxfrm)   // just to have consistent output in word_list.txt
 			}
 			else {
 				def tagged_wordlist = new TaggedWordlist()
-				out = tagged_wordlist.processInput([dic_file.getAbsolutePath()])
+				out = tagged_wordlist.processInput([file.getAbsolutePath()])
 			}
 
-			log.info("Processing file {}, {} lines", dic_file.getName(), out.size())
+			log.info("Processing file {}, {} lines", file.getName(), out.size())
 
 			outLines.addAll(out)
 		}

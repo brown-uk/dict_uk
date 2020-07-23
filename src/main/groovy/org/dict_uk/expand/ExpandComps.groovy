@@ -135,8 +135,9 @@ class ExpandComps {
 		else {
 			parts_all = [line]
 		}
-
-		String[] parts = line.split(" - ")
+		
+		String[] parts = line.split(" - ", 2)
+		assert parts.length == 2, "Line does not have \" - \":\n$line"
 
 		if( parts_all.size() > 1 ) {
 			def extra_tags = parts_all[1]
