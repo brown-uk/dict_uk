@@ -62,6 +62,10 @@ class DictSorter {
 //		if( tags.contains(":v-u") ) {
 //			tags = tags.replace(":v-u", "")
 //		}
+		
+		if( tags.indexOf('&') > 0 ) {
+			tags = tags.replaceAll(/:&(insert|predic)/, '')
+		}
 
 		def offset = 0
 
