@@ -120,11 +120,12 @@ task dups {
 	def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') \
 	    && ! (it.name in ['dot-abbr.lst', 'geo-ukr-hydro.lst', 'geo-ukr-koatuu.lst']) }
 	
-	def lines = files.collect {  it.text.split("\n")  }.flatten() \
+	def lines = files.collect {  it.readLines()  }.flatten() \
 	    .collect { it
 	        .trim()
 	        .replaceAll(/\s*#.*/, '')
-	        .replaceAll(/\.[^< ]+/, '...')
+	        .replaceAll(/( \/[a-z0-9]+)(\s+|$)/, '$1... ')
+	        .replaceAll(/\.[^<.: ]+/, '...')
 	        .replaceAll(/:&adjp:(actv|pasv)(:(imperf|perf))+/, '') } \
 	    .grep { it && ! it.startsWith("+cs") }
 
