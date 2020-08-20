@@ -96,7 +96,7 @@ class Autogen {
 			}
 
 			if( ! line.contains(":ua_1992") ) {
-				if( ! (line =~ /прес-(ніж|ножиц)/) ) {
+				if( ! (line =~ /прес-(ніж|ножиц)|міді-файл/) ) {
 					errors << line
 				}
 			}
