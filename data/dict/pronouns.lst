@@ -283,7 +283,7 @@
 ніким ніхто noun:anim:m:v_oru:&pron:neg
 нікім ніхто noun:anim:m:v_mis:&pron:neg
 
-нічого нічого adv
+#нічого нічого adv
 
 нікого нікого noun:anim:m:v_rod/v_zna:&pron:emph        # rv_inf   # ні́кого
 нікому нікого noun:anim:m:v_dav/v_mis:&pron:emph
@@ -1143,6 +1143,7 @@
 ось part
 отже part:&insert|conj:subord
 отож-то conj:subord
+отож-бо conj:subord
 отож part|conj:subord
 ото part
 от part

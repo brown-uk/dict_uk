@@ -703,8 +703,8 @@
 було бути verb:past:n:imperf:&insert
 були бути verb:past:p:imperf
 будь бути verb:impr:s:2:imperf
-будьмо бути verb:impr:p:2:imperf
-будьте бути verb:impr:p:3:imperf
+будьмо бути verb:impr:p:1:imperf
+будьте бути verb:impr:p:2:imperf
 бувши бути advp:imperf
 
 жити-бути жити-бути verb:inf:imperf             # lim
