@@ -253,12 +253,21 @@ class Expand {
 			if( modifiers["pers"] == "3" ) {
 				prs = ":s" + prs
 			}
-			else { // p=4
+			else if( modifiers["pers"] == "4" ) {
 				prs = ":3|:past|:impr:[sp]:2"
 				if( flags.contains('.advp') ) {
 				    prs += '|advp'
 				}
 			}
+			else if( modifiers["pers"] == "5" ) {
+				prs = ":3|:past|:futr:(p:|s:3)|:impr:p|advp"
+//				if( flags.contains('.advp') ) {
+//				    prs += '|advp'
+//				}
+			}
+			else
+				throw new IllegalArgumentException("invalid p= in " + entry.tagStr)
+				
 			if( ! (tagStr =~ prs) )
 				return false
 		}
