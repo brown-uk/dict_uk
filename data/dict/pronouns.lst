@@ -128,7 +128,7 @@
 будь-ким будь-хто noun:anim:m:v_oru:&pron:ind
 будь-кім будь-хто noun:anim:m:v_mis:&pron:ind
 
-будь-що будь-що adv:&pron:ind
+будь-що будь-що adv:&pron:ind                               # бу́дь-що
 будь-що будь-що noun:inanim:n:v_naz/v_zna:&pron:ind
 будь-чого будь-що noun:inanim:n:v_rod:&pron:ind
 будь-чому будь-що noun:inanim:n:v_dav/v_mis:&pron:ind
@@ -632,15 +632,6 @@
 по-свойму adv:subst
 
 
-годину-дві adv
-годину-другу adv
-день-два adv
-день-другий adv
-місяць-другий adv
-місяць-два adv
-тиждень-другий adv
-тиждень-два adv
-рік-другий adv
 вдвічі-втричі adv
 
 
@@ -826,6 +817,17 @@
 півтораста numr:p:nv
 півстільки numr:p:nv:coll
 
+
+#година-дві година-дві noun:p:v_naz
+#годину-дві година-дві noun:p:v_naz
+#годину-другу adv
+#день-два adv
+#день-другий adv
+#місяць-другий adv
+#місяць-два adv
+#тиждень-другий adv
+#тиждень-два adv
+#рік-другий adv
 
 
 # Прислівники
