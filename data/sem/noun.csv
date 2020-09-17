@@ -1,0 +1,553 @@
+автор,1:conc:hum
+акт xp1,1:conc:text
+акт xp2,1:abst:part:2:abst:quantum
+акція,1:abst:event:2:conc:doc:3:abst
+аналіз,1:abst:ment:2:conc
+армія,1:conc:collect
+бажання,1:abst:psych:vol
+база,1:abst:2:conc:org&&build:surface:3:conc:part
+батько,1:conc:hum:kin:2:conc:hum:3:conc:animal
+безпека,1:abst:state
+березень,1:conc:time:month
+бік,1:conc:body:part:2:conc:surface
+біль,1:abst:physio
+більшість,1:conc:part
+бог,1:conc:supernat
+боротьба,1:abst:interact:conflict:2:abst&effort:3:abst:sport
+брат,1:conc:hum:kin
+будинок,1:conc:build:container
+будівництво,1:abst:create&impact:2:conc:loc:surface
+бюджет,1:conc
+варіант,1:abst:2:conc
+вартість,1:abst
+вересень,1:conc:time:month
+вечір,1:abst:time:part:2:abst:event
+вибір,1:abst:ment
+вибори,1:abst:event
+вивчення,1:abst:ment
+вигляд,1:abst:physqual:vis
+вид,1:abst:2:abst:physqual:vis:3:conc:body:hum:part
+видання,1:conc:text:2:abst:create
+визначення,1:abst:ment:2:abst:speech
+виконання,1:abst:act
+використання,1:abst:use
+вимога,1:abst:speech:2:abst:ment:3:conc:text
+випадок,1:abst:quantum
+виробництво,1:abst:create&impact:2:abst
+висновок,1:abst:ment
+витрата,1:abst
+вихід,1:abst:move&loc:2:abst:appear:3:conc:loc&part:4:abst:quantit:5:abst
+відділ,1:conc:org:part:2:conc:part:3:conc:loc:room:part&container:5:abst:part
+відносини,1:abst:interact
+відповідальність,1:abst
+відповідь,1:abst:speech
+відраза,1:abst:psych:emot
+відсоток,1:abst:unit&part
+відсутність,1:abst:exist&loc:2:abst:exist
+відчуття,1:abst:psych:2:abst:percept:3:abst:ment
+війна,1:abst:interact:conflict
+військо,1:conc:hum:group:collect
+вік,1:abst:time:age:2:abst:time:period:3:abst:time:period:abs
+вікно,1:conc:loc:room:part:2:conc:part:3:abst:time
+віко,1:conc:part:contain
+вірш,1:conc:text:2:conc:text:part
+вітер,1:abst:weather
+влада,1:abst
+власник,1:conc:hum&poss
+власність,1:conc:poss:2:abst:poss
+вогонь,1:conc:stuff
+вода,1:conc:stuff
+волосся,1:conc:stuff
+ворог,1:conc:hum&conflict:2:conc:hum:collect&conflict
+вплив,1:abst:effect
+вулиця,1:conc:loc:surface:2:conc:hum:collect
+вухо,1:conc:body:part:2:conc:tool:part:3:conc:part
+вчений,1:conc:hum:prof
+г (грам),1:abst:unit
+газ,1:conc:stuff
+газета,1:conc:text
+герой,1:conc:hum
+гість,1:conc:hum
+година,1:abst:time:period&unit:2:abst:time:period:3:abst:weather
+гол,1:abst
+голова xp1,1:conc:hum&hierar
+голова xp2,1:conc:body:part:2:abst:ment:3:abst:unit
+голос,1:conc:sound:2:abst:3:abst:ment:4:abst:physqual:sound
+гора,1:conc:loc:2:conc&&abst:quantit:max:3:conc:form
+господарство,1:abst:2:conc
+гостя,1:conc:hum
+гра,1:abst:game:2:abst:sport
+гривня,1:conc:money
+гріш,1:conc:money
+грн,1:conc:money
+громада,1:conc:hum:collect:2:conc&size:max
+громадянин,1:conc:hum
+гроші,1:conc:money:collect
+грудень,1:conc:time:month
+група,1:conc:collect:2:conc:hum:collect:3:abst:higherclass
+даль,1:conc:loc:container
+дані,1:abst:collect:2:abst:abst:humqual&collect
+дата,1:abst:time
+двері,1:conc:loc:room:part
+день,1:abst:time:period&unit:2:abst:time:period&part
+депутат,1:conc:hum
+дерево,1:conc:plant:higherclass:2:conc:stuff
+держава,1:conc:org&loc:2:abst
+джерело,1:conc:loc:2:abst&begin:3:conc:tool:device:4:conc:text
+директор,1:conc:hum&hierar
+дитина,1:conc:hum:kin:2:conc:hum
+дівчина,1:conc:hum 
+ділянка,1:conc:loc:part&surface:2:abst:part
+дім,1:conc:build:container:2:conc:loc:3:conc:org:4:conc:group
+дія,1:abst&act:2:abst&effect:3:abst:func:4:abst:5:conc:part
+діяльність,1:abst&act
+дно,1:conc:loc:part&surface:2:conc:part&surface:3:abst:negat
+доба,1:time:period
+добро,1:abst:posit:2:conc:poss
+договір,1:conc:doc
+документ,1:conc:doc:higherclass
+долар,1:conc:money
+доля,1:abst
+допомога,1:abst:effect:2:conc:org
+дорога,1:conc:loc:surface&line:2:abst
+досвід,1:abst
+дослідження,1:abst:ment:2:conc:doc
+дослідник,1:conc:hum:prof
+доха,1:conc:cloth
+друг,1:conc:hum 
+друге,1:conc:food:part
+дружина xp1,1:conc:hum:kin
+дружина xp2,1:conc:hum:group
+думка,1:abst:ment:2:conc:work
+дух xp1,1:conc:supernat:2:abst:physio
+дух xp2,1:abst:2:abst:physqual:smell
+душ,1:conc:tool
+душа,1:abst:2:conc:hum
+економіка,1:abst
+елемент xp1,1:abst:ment:collect:2:conc:hum:collect
+елемент xp2,1:conc:part:2:conc:hum:3:conc:stuff
+етап,1:conc&&abst:part:2:conc:loc
+жаль,1:abst:psych:emot
+жертва xp1,1:conc:hum
+жертва xp2,1:conc:2:abst
+життя,1:abst:exist:2:abst:time:3:abst
+жінка,1:conc:hum:2:conc:hum:kin
+жовтень,1:conc:time:month
+журналіст,1:conc:hum:prof
+забезпечення,1:abst:2:conc
+завдання,1:abst
+загал,1:conc:collect
+заклад,1:conc:org:2:abst:3:conc:poss
+закон,1:conc:text:2:abst
+законодавство,1:abst:set
+запитання,1:conc:speech
+зараза,1:abst:disease:2:conc:hum:negat:3:conc:negat
+засіб,1:abst&tool:2:conc:tool
+засідання,1:abst:event:2:abst
+застосування,1:abst
+заступник,1:conc:hum&hierar:2:conc:hum
+захист,1:abst:interact:conflict:2:abst:3:conc&&abst:loc:4:conc:hum:group
+захід xp1,1:abst:event:2:abst&tool
+захід xp2,1:abst&orient:2:conc:loc:3:abst
+заява,1:abst:speech:2:conc:text
+зброя,1:conc:tool:weapon
+зв'язка,1:conc:body:part:2:conc:stuff:3:conc
+зв'язок,1:abst:interact:3:abst
+здоров'я,1:abst:physio
+земля,1:conc:surface:2:conc:loc:ball:3:conc:stuff
+злочин,1:abst
+зміна,1:abst:chstate:2:abst:3:abst:time:period:4:conc:hum:group
+зміст,1:abst:2:conc:text:part
+змога,1:abst&able:2:abst
+знак xp1,1:conc
+знак xp2,1:abst
+знання,1:abst:ment
+значення,1:abst
+зона,1:conc:loc:container
+зустріч,1:abst:2:abst:event
+ідея,1:abst:ment
+ім'я,1:conc:2:abst
+інститут,1:conc:org&&build:container:2:abst:collect
+інтерес,1:abst:ment:2:abst
+інформація,1:abst:ment:collect
+існування,1:abst:exist
+історія,1:abst:2:conc:text
+кабінет,1:conc:loc:room:container:2:conc:hum:group
+кандидат,1:conc:hum
+картина,1:conc:work:2:abst:3:conc:part
+категорія,1:abst:higherclass
+квартира,1:conc:loc:room:container&build:part
+квітень,1:conc:time:month
+керівник,1:conc:hum&hierar
+керівництво,1:abst:2:conc:hum:collect
+кілька,1:conc:animal&food
+кількість,1:abst:param
+кімната,1:conc:loc:room:container&build:part
+кінець,1:conc:part:2:abst:part:3:abst:disappear:4:conc:tool
+кінь,1:conc:animal:2:conc:tool
+клас,1:abst:higherclass:2:conc:hum:group&part:3:conc:loc:room:container:4:abst:hierar:5:abst
+клуб xp1,1:conc:form:2:conc:body:part
+клуб xp2,1:conc:org:2:conc:org&&build:container
+книга,1:conc:work&text
+книжка,1:conc:work&text:2:conc:doc:3:conc:text:part
+князь,1:conc:hum&hierar
+колір,1:abst:physqual:color
+команда,1:conc:hum:group:2:abst:speech
+комісія,1:conc:hum:group&org:2:abst
+комітет,1:conc:org&hum:group
+компанія,1:conc:org:2:conc:hum:group
+комплекс,1:abst&set:2:conc:build:container&set
+конкурс,1:abst:event
+контекст,1:conc:text:2:abst
+контроль,1:abst:2:conc:hum:group
+конфлікт,1:abst:interact:conflict
+кордон,1:conc:loc:line
+король,1:conc:hum&hierar:2:conc:hum:3:conc
+край,1:conc:loc:part:line:2:abst&stop:3:abst:disappear
+країна,1:conc:loc:container&org:2:loc:container
+кров,1:conc:stuff:2:abst
+крок,1:abst:move:body&quantum:2:abst:3:abst:unit
+культура,1:abst:collect:2:abst:abst:humqual:3:abst:conc:plant:4:conc:animal
+курс,1:abst&orient:2:abst:set:3:abst:4:conc:hum:group
+липень,1:conc:time:month
+лист xp1,1:conc:doc:2:conc:plant:part:2:conc
+лист xp2,1:conc:plant:part&collect
+листопад xp1,1:conc:time:month
+листопад xp2,1:abst&time
+лідер,1:conc:hum&hierar:3:conc:org&hierar
+ліжко,1:conc:furnit
+лікар,1:conc:hum:prof
+лікарня,1:conc:org&&build:container
+лінія,1:conc:loc:line:2:conc:form:line:3:conc:line:4:abst
+ліс,1:conc:loc:2:conc:plant:set
+література,1:conc:work&collect
+любов,1:abst:psych:emot
+людина,1:conc:hum:2:conc:hum:higherclass
+лютий,1:conc:time:month
+м (метр),1:abst:unit
+майбутнє,1:abst:time
+мама,1:conc:hum:kin
+мат,1:abst:2:conc:tool:surface:3:conc:speech:negat:4:abst:abst
+матеріал,1:conc:stuff:2:abst:collect
+мати,1:conc:hum:kin:2:conc:animal
+матч,1:abst:event&sport
+машина,1:conc:vehicle:2:conc:tool:device:3:abst
+межа,1:conc:loc:part:line:2:abst
+мережа,1:conc:collect:2:conc:tool
+мета,1:abst:ment
+метр xp1,1:conc:hum
+метр xp2,1:abst:unit:2:abst:3:conc:tool
+механізм,1:conc:tool:device:2:abst:collect
+минуле,1:abst:time
+мистецтво,1:abst
+миття,1:abst:impact&act
+мить,1:abst:time:moment 
+міліція,1:conc:org:2:conc:hum:collect
+мільйон,1:abst:quantit
+міністерство,1:abst:org&&build:container
+міністр,1:conc:hum
+міра,1:abst:unit
+місто,1:conc:loc:container
+місце,1:conc:loc:2:abst
+місцеві,1:conc:hum:group
+місяць,1:abst:time:period&unit:2:conc
+млн,1:abst:quantit
+мова,1:abst:speech
+модель xp1,1:conc:hum:prof
+модель xp2,1:conc:2:abst
+можливість,1:abst
+молодий,1:conc:hum 
+момент,1:time:moment:2:abst
+море,1:conc:loc:2:abst:quantit:max
+музей,1:conc:org&&build:container
+музика xp1,1:conc:hum:prof
+музика xp2,1:abst:physqual:sound:2:abst
+навчання,1:abst
+назва,1:conc:text
+наказ,1:abst:speech:2:conc:doc
+напрямок,1:abst&orient:2:abst:3:conc:loc:part
+нарід,1:conc:hum:group:higherclass 
+народ,1:conc:hum:group:higherclass
+народження,1:abst:exit&begin
+населення,1:conc:hum:collect:2:abst
+наслідок,1:abst
+наука,1:abst
+нація,1:abst:hum:group
+начальник,1:conc:hum&hierar
+наявність,1:abst:exist
+небо,1:conc:loc:2:abst:loc
+незалежність,1:abst
+необхідність,1:abst&modal
+ніж,1:conc:tool:instr:2:conc:tool:weapon 
+ніч,1:abst:time:period&part
+нога,1:conc:part:body:2:conc:tool:part:3:conc:part
+номер,1:abst:2:conc:3:conc:loc:room:container
+норма,1:abst:2:abst:quantit
+об'єкт,1:conc:thing:2:abst
+область,1:conc:loc:part:container:2:abst
+обличчя,1:conc:body:hum:part:2:abst:vis:3:abst
+обов'язок,1:abst
+образ xp1,1:conc:work
+образ xp2,1:abst:vis:2:abst
+образа,1:abst:2:abst:psych:emot
+обставина,1:abst
+обсяг,1:abst:quantit:2:abst
+ознака,1:abst:ment
+око,1:conc:body:part:2:abst
+операція,1:abst&act:2:abst:impact
+орган xp1,1:conc:body:part:2:conc:tool:music:part
+орган xp2,1:conc:org
+організація,1:conc:org:2:abst
+освіта,1:abst
+основа,1:abst:2:conc:part
+особа xp1,
+особа xp2,1:abst
+особливість,1:abst:abst
+останнє,1:abst
+охорона,1:conc:2:abst
+оцінка,1:conc:2:abst:ment
+палець,1:conc:body:part:2:conc:tool:part
+пам'ять,1:abst:ment:2:abst
+пан,1:conc:hum
+пані,1:conc:hum
+паня xp1,1:conc:hum
+паня xp2,1:conc:hum
+папір xp1,1:conc:stuff
+папір xp2,1:conc:text:2:conc
+парламент,1:conc:org
+партія,1:conc:org:2:conc:set:3:abst:part:4:conc:part:game:5:conc:hum:group
+перед,1:conc:part&&loc:2:abst:part
+перемога,1:abst&inter:conflict:2:abst&effort
+період,1:abst:time:period:2:abst
+перше,1:conc:food
+письменник,1:conc:hum:prof
+питання,1:abst:speech:2:abst:ment:3:abst
+підготовка,1:abst&act:2:abst:ment
+підприємство,1:conc:org
+підрозділ,1:conc:org:part:2:conc:text:part
+підстава,1:abst:2:conc:part
+підтримка,1:abst:effect
+підхід,1:abst:2:conc:loc
+пісня,1:conc:work
+план,1:abst:ment:2:abst:3:conc:work:4:abst:part
+плече,1:conc:body:part
+площа,1:conc:loc:surface:2:abst:param
+поведінка,1:abst:behave
+повідомлення,1:abst:speech:2:conc:text:3:conc:doc
+повітря,1:conc:stuff:2:conc:loc:container
+погляд,1:abst:percept:2:abst:ment
+податок,1:abst:money
+подія,1:abst:event
+позиція,1:conc:loc:2:abst:ment:3:abst:loc:body:3:abst
+показник,1:abst:ment:2:conc
+поле,1:conc:loc:surface:2:abst:3:conc
+політик,1:conc:hum:prof
+політика,1:abst
+поліція,1:conc:org:2:conc:hum:collect
+половина,1:conc:part:2:abst:part:3:conc:hum
+положення,1:abst:loc:2:abst:3:abst:loc:body:4:abst:doc:5:abst:ment
+поняття,1:abst:ment
+порушення,1:abst
+порядок,1:abst
+посада,1:abst
+послуга,1:abst
+потреба,1:abst
+початок xp1,1:conc:plant:part
+початок xp2,1:abst:part&begin:2:abst:appear&begin:3:conc:part
+почуття,1:abst:psych:emot:2:abst:ment:3:abst:percept
+пошук,1:abst&act
+правда,1:abst:ment:2:modal
+право,1:abst
+працівник,1:conc:hum
+праця,1:abst:2:conc:work
+предмет,1:conc:thing:2:abst:ment
+представник,1:conc:hum:2:conc
+президент,1:conc:hum&hierar
+приклад xp1,1:conc:tool:weapon:part
+приклад xp2,1:abst
+приміщення,1:conc:loc:contain
+принцип,1:abst
+природа,1:conc:loc:2:abst
+причина,1:abst
+проблема,1:abst:ment 
+проведення,1:abst&act
+програма,1:abst:ment:set:2:conc:text:3:abst:set:4:abst
+продукт,1:conc:food:2:conc:thing:3:abst
+продукція,1:conc:thing:collect
+проект,1:abst:ment:2:conc:text:3:conc:work
+проєкт,1:abst:ment:2:conc:text:3:conc:work
+пропозиція,1:abst:speech:2:abst
+протяг,1:abst:weather:2:abst:loc
+професор,1:conc:hum:prof
+процес,1:abst
+пункт,1:conc:loc:2:conc:build:container:2:conc:text:part:3:abst
+рад,1:abst:unit
+рада,1:conc:org:2:abst:event:3:abst:speech
+раз,1:abst:quantum
+район,1:conc:loc:part:container:2:conc:loc:container
+рахунок xp1,1:conc:doc
+рахунок xp2,1:abst:ment
+реалізація,1:abst&act
+революція,1:abst:event:2:abst
+регіон,1:conc:loc:part:container
+режим,1:abst
+результат,1:abst
+ресурс,1:abst
+решта,1:conc:part:2:abst:part
+ринка,1:conc:dish:container
+ринок,1:abst:2:conc:loc
+рис,1:conc:food:2:conc:plant
+рис.,1:conc
+риса,1:conc&vis:2:abst:3:conc:form
+рівень,1:abst:2:abst&degree:3:conc:tool:device
+рід,1:conc:hum:group:2:abst:higherclass:3:conc:higherclass:4:abst
+різня,1:abst:destr
+рік,1:abst:time:period&unit
+ріка,1:conc:loc:line&container:2:abst:quantit:max
+річ,1:conc:thing:2:conc:poss:collect:3:conc:higherclass:4:abst:5:conc:work
+річка,1:conc:loc:line&container:2:abst:quantit:max
+рішення,1:abst:psych:vol:2:abst:ment:3:conc:doc
+робот,1:conc:tool:device
+робота,1:abst&act&&loc:2:abst:3:conc:work
+родина,1:conc:hum:group:2:abst:higherclass:3:conc:animal&group
+розвиток,1:abst:2:abst:ment
+розмір,1:abst:param:2:abst:quntit:3:abst
+розмова,1:abst:speech&interact
+розуміння,1:abst:ment
+рок,1:abst
+роль,1:abst:2:conc:text
+роман,1:conc:work&text:2:abst:interact
+рр.,1:abst:time:period&unit
+рука,1:conc:part:body:2:abst:3:conc:tool:device:part
+рух,1:abst:move:2:abst:move:body:3:conc:hum:collect
+ряд,1:conc:set:2:conc:loc:line:3:abst&form:4:abst:set:5:abst:quantit:6:abst:higherclass
+свідомість,1:abst:ment
+світ,1:conc:loc:2:conc:hum:collect:3:abst:4:abst:light
+світло,1:abst:light
+свобода,1:abst
+святий ,1:conc:hum:2:conc:work
+село,1:conc:loc:container:2:conc:loc:surface:2:conc:hum:collect
+селянин,1:conc:hum&&conc:hum:collect
+середовище,1:abst:loc:2:conc:hum:collect:3:conc:stuff
+серпень,1:conc:time:month
+серце,1:conc:body:part:2:abst:psych:emot:3:abst:4:conc:hum:posit
+сестра,1:conc:hum:kin:2:conc:hum
+сила,1:abst&able:2:abst:physio&able:3:abst:4:abst:param:5:conc:hum:collect:6:abst:quantit:max
+син,1:conc:hum:kin:2:conc:hum
+система,1:abst:set:2:abst:3:conc:collect:4:conc:tool:device
+ситуація,1:abst
+сім'я xp1,1:conc:hum:collect:2:abst:collect&higherclass:2:conc:animal:collect
+сім'я xp2,1:conc:plant:part:2:conc:stuff
+січень,1:conc:time:month
+склад,1:conc:loc:surface:2:abst:3:conc:hum:collect:4:conc:collect
+слід,1:conc:loc:2:conc&vis:3:abst
+слідчий,1:conc:hum:prof
+слово,1:conc:speech:2:abst:speech:3:conc:text
+служба,1:abst:2:conc:org
+смерть,1:abst:disappear:2:abst:physio
+сон xp1,1:abst:physio:2:abst:physqual:vis:3:abst
+сон xp2,1:conc:plant
+сон xp3,1:abst:unit
+сонце,1:conc:loc:surface&ball:2:abst:light:3:conc:loc:4:conc:hum:posit:5:abst
+сотня,1:abst:quantit:2:conc:money:3:conc:hum:group:part
+союз,1:conc:org:collect:2:abst:set
+список,1:conc:text:2:conc:doc
+спосіб,1:abst
+справа,1:abst:2:conc:org
+спроба,1:abst&effort:2:abst:3:conc:work
+стала,1:abst:param
+стан xp1,1:conc:tool:device:2:conc:tool:device:part:3:conc
+стан xp2,1:abst:psych:emot&&ment:2:abst:3:abst:physio:4:conc:body:hum:part:5:conc:loc:6:conc:hum:group:collect
+старий,1:conc:hum:2:conc:hum:kin
+стаття,1:conc:text:2:conc:text:part:3:abst
+статус,1:abst
+створення,1:abst:create&impact
+стіл,1:conc:furnit:surface:2:conc:food:3:conc:org:4:conc:loc
+стіна,1:conc:loc:room:part:2:conc:form:3:abst
+столиця,1:conc:loc:container
+століття,1:abst:time:period&unit
+сторінка,1:conc:part:2:abst:time:period
+сторона,1:conc:loc:part:2:conc:part:3:conc:loc:4:abst:part:5:conc:hum:collect:6:abst:ment
+стосунок,1:abst:interact:2:abst
+страх,1:abst:psych:emot
+структура,1:abst:2:conc:org
+студент,1:conc:hum
+суб'єкт,1:abst:2:conc:hum:3:conc
+суд,1:conc:org&&build:container:2:abst:3:abst:ment
+суддя,1:conc:hum:prof:2:conc:hum
+суспільство,1:conc:hum:collect
+сфера,1:abst:2:conc:form:ball
+сцена,1:conc:loc:surface:2:abst:3:abst:part:4:abst:speech&interact
+табір,1:conc:loc:container:2:conc:hum:group
+тварина xp1,1:conc:animal:collect
+тварина xp2,1:conc:animal:2:conc:hum:negat
+твір,1:conc:work:2:conc:text
+творчість,1:abst&create:2:conc:work&collect
+театр,1:conc:org&&build:container:2:abst:3:conc:loc
+текст,1:conc:text
+телефон,1:conc:tool:device:2:conc:text:3:abst
+тема,1:abst
+теорія,1:abst:ment:2:abst:ment:collect
+територія,1:conc:loc:surface
+термін xp1,1:conc:text
+термін xp2,1:abst:time:period:2:abst:time:moment
+тиждень,1:abst:time:period&unit
+тип xp1,1:conc:hum
+тип xp2,1:abst:2:abst:higherclass
+тис.,1:abst:quantit
+тисяча,1:abst:quantit:2:abst:quantit&max:3:conc:hum:group:part
+тіло,1:conc:body:2:conc:thing:3:conc:body:part:4:conc:part
+товар,1:conc:thing:2:conc:collect:3:conc:stuff
+товариство,1:conc:org:2:conc:hum:group:3:conc:hum:collect:4:abst:5:abst:interact
+точка,1:conc:2:conc:loc:3:abst:loc:4:abst
+травень,1:conc:time:month
+традиція,1:abst
+увага,1:abst:ment:2:abst:3:conc:text
+угода,1:conc:text:2:abst:speech&interact
+українець,1:conc:hum&&conc:hum:group
+умова,1:abst:2:abst:speech&interact
+університет,1:conc:org&&build:container:2:abst
+управління,1:abst:2:conc:org
+уряд,1:conc:org:2:conc:hum:group
+успіх,1:abst:posit
+установа,1:conc:org&&build:container:2:abst
+учасник,1:conc:hum
+участь,1:abst:interact
+факт,1:abst:2:modal
+фільм,1:conc:work:2:conc:stuff:3:conc:thing
+фонд,1:conc:collect:2:conc:org
+форма,1:abst:2:conc:tool:part 
+формування,1:abst:appear:2:abst:effect:3:abst:impact:4:conc:hum:group
+фото,1:conc:thing:surface&work
+функція,1:abst
+характер,1:abst:psych:2:abst
+хата,1:conc:build:container
+хвилина,1:abst:time:period&unit:2:abst:time:moment:3:abst:time:period
+хвиля,1:conc:2:abst:move&form:3:conc:move&form:4:abst:5:abst:time:moment
+хворий,1:conc:hum&disease
+хвороба,1:abst:disease
+хліб,1:conc:stuff&food:2:conc:food:3:conc:plant:part:4:conc:plant:collect:5:abst
+хлопець,1:conc:hum 
+центр xp1,1:conc:loc:part:2:conc:tool:device:part
+центр xp2,1:conc:part:2:abst:part:3:conc:loc:4:conc:org:5:conc:body:part
+церква,1:conc:org&&build:container:2:conc:hum:group
+ціна,1:abst:param&money:2:abst
+цінність,1:abst:abst:2:conc:thing
+час,1:abst:time&param:2:abst:time:period:3:abst:time:moment:4:abst
+частина,1:conc:part:2:conc:tool:part:3:abst:part:4:conc:hum:group
+чемпіонат,1:abst:2:abst:event
+червень,1:conc:time:month
+черга,1:abst:set:2:abst:3:conc:hum:group:4:conc
+черговий,1:conc:hum
+чин xp1,1:conc:hum&hierar
+чин xp2,1:abst&hierar
+чин xp3,1:abst&act:2:abst
+число,1:abst:2:abst:quantit
+читач,1:conc:hum
+член xp1,1:conc:hum
+член xp2,1:conc:body:part:2:conc:part
+чоловік,1:conc:hum:2:conc:hum:kin
+школа,1:conc:org&&build:container:2:abst
+шлях,1:conc:loc:surface&line:2:abst:3:conc:body:part
+явище,1:abst
+якість,1:abst:abst
