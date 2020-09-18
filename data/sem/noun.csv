@@ -300,7 +300,7 @@
 організація,1:conc:org:2:abst
 освіта,1:abst
 основа,1:abst:2:conc:part
-особа xp1,
+особа xp1,1:conc:hum
 особа xp2,1:abst
 особливість,1:abst:abst
 останнє,1:abst
