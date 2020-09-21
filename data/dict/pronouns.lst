@@ -894,32 +894,49 @@
 щодесять adv
 
 # Прийменники
-без без prep        # rv_rod
-біля біля prep        # rv_rod
-в в prep:v-u        # rv_zna:rv_mis:rv_rod
-у у prep:v-u        # rv_zna:rv_mis:rv_rod
-уві уві prep:v-u        # rv_zna:rv_mis:rv_rod
-вві вві prep:v-u        # rv_zna:rv_mis:rv_rod
-від від prep        # rv_rod
-відповідно відповідно prep        # rv_dav
+без prep                            # rv_rod
+біля prep                           # rv_rod
+близько prep                        # rv_rod
+в в prep:v-u                        # rv_zna:rv_mis:rv_rod
+у у prep:v-u                        # rv_zna:rv_mis:rv_rod
+уві уві prep:v-u                    # rv_zna:rv_mis:rv_rod
+вві вві prep:v-u                    # rv_zna:rv_mis:rv_rod
+від від prep                        # rv_rod
+відповідно prep                     # rv_dav
+всередині prep:v-u                  # rv_rod
+усередині prep:v-u                  # rv_rod
+всередину prep:v-u                  # rv_rod
+усередину prep:v-u                  # rv_rod
+неподалік prep:v-u                  # rv_rod
+збоку prep:v-u                      # rv_rod
+внизу prep:v-u                      # rv_rod
+унизу prep:v-u                      # rv_rod
+вглиб prep:v-u                      # rv_rod
+углиб prep:v-u                      # rv_rod
+вгорі prep:v-u                      # rv_rod
+угорі prep:v-u                      # rv_rod
+відносно prep                       # rv_dav
 внаслідок внаслідок prep:v-u        # rv_rod
 унаслідок унаслідок prep:v-u        # rv_rod
-вподовж вподовж prep:v-u        # rv_rod
-уподовж уподовж prep:v-u        # rv_rod
-впродовж впродовж prep:v-u|adv        # rv_rod
-упродовж упродовж prep:v-u|adv        # rv_rod
-вздовж вздовж prep:v-u|adv        # rv_rod
-уздовж уздовж prep:v-u|adv        # rv_rod
-впоперек впоперек prep:v-u|adv        # rv_rod
-упоперек упоперек prep:v-u|adv        # rv_rod
-вслід вслід prep:v-u        # rv_dav
-услід услід prep:v-u        # rv_dav
-всупереч всупереч prep:v-u        # rv_dav
-усупереч усупереч prep:v-u        # rv_dav
-для для prep        # rv_rod
-до до prep        # rv_rod
-довкола довкола prep        # rv_rod
-з з prep        # rv_rod:rv_zna:rv_oru
+вподовж вподовж prep:v-u            # rv_rod
+уподовж уподовж prep:v-u            # rv_rod
+впродовж впродовж prep:v-u|adv      # rv_rod
+упродовж упродовж prep:v-u|adv      # rv_rod
+вздовж вздовж prep:v-u|adv          # rv_rod
+уздовж уздовж prep:v-u|adv:v-u      # rv_rod
+вдовж adv:v-u|prep:v-u              # rv_rod
+удовж adv:v-u|prep:v-u              # rv_rod
+впоперек впоперек prep:v-u|adv:v-u  # rv_rod
+упоперек упоперек prep:v-u|adv:v-u  # rv_rod
+вслід вслід prep:v-u                # rv_dav
+услід услід prep:v-u                # rv_dav
+всупереч всупереч prep:v-u          # rv_dav
+усупереч усупереч prep:v-u          # rv_dav
+для для prep                        # rv_rod
+до до prep                          # rv_rod
+довкола довкола prep                # rv_rod
+довкруг prep                        # rv_rod
+з з prep          # rv_rod:rv_zna:rv_oru
 за за prep        # rv_rod:rv_zna:rv_oru
 із із prep        # rv_rod:rv_zna:rv_oru
 зі зі prep        # rv_rod:rv_zna:rv_oru
@@ -957,6 +974,7 @@
 крім крім prep        # rv_rod:rv_inf
 круг круг prep        # rv_rod
 кругом кругом prep        # rv_rod
+мимо prep               # rv_rod
 між між prep        # rv_rod:rv_zna:rv_oru
 проміж проміж prep        # rv_rod:rv_zna:rv_oru
 поміж поміж prep        # rv_rod:rv_zna:rv_oru
@@ -965,6 +983,7 @@
 навкруг prep        # rv_rod
 навпаки навпаки prep        # rv_dav
 навперейми навперейми prep        # rv_dav
+назустріч prep                  # rv_dav
 напротивагу prep            # rv_dav
 над над prep        # rv_oru:rv_zna
 наді наді prep        # rv_oru
@@ -1033,6 +1052,7 @@
 пізніше пізніше prep        # rv_rod
 серед серед prep        # rv_rod
 спереду спереду prep        # rv_rod
+стосовно prep               # rv_rod
 супроти супроти prep        # rv_rod
 супротив супротив prep|adv        # rv_rod
 через через prep        # rv_zna

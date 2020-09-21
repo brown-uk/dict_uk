@@ -44,6 +44,7 @@
 благущий /adj
 блигомий /adj
 боднар /n24.a.p.ku.<
+болярин /n20.a.pyn.<
 босака adv
 боясть /n32
 бритійський /adj
@@ -56,7 +57,7 @@
 варстат /n20.a.p
 варцаб /n20.a.p
 варцаба /n10.p1
-ввечорі adv
+ввечорі adv:v-u
 вдвійці adv:v-u
 вдолину adv
 веларій /n20.a.p.<
@@ -130,6 +131,7 @@
 впирскувати /v1.cf.advp :imperf
 впирснути /v1 :perf
 вправді adv
+врем'я /n2n
 втіки /np2
 вуголь /n22
 вуй /n20.a.<
@@ -199,6 +201,7 @@
 дряглий /adj
 дряглість /n30
 дукиня /n10.p1.<
+ефектовність /n30
 єден /numr ^adj :&numr
 жалуватися /vr1.cf.advp :imperf
 жалько adv
@@ -206,8 +209,10 @@
 жартовливий /adj.adv
 жаскуватий /adj.adv
 жеби conj:subord
+женщина /n10.p1.<
 живжик /n20.a.p.<
 животатий /adj
+жиє жити verb:imperf:pres:s:3
 жовняр /n20.a.p.ke.<
 жупа /n10.p1                # солеварня
 жупанат /n20
@@ -464,11 +469,16 @@
 обутритися /vr1 :perf p=3
 овид /n20
 оглав /n20.p
+оглядітися /vr1 :perf
 огник /n20.a.p
 огонь /n22.p
+одвзаємнити /v1 :perf
+одвзаємнитися /vr1 :perf
 одвір adv
 одвіт /n20
+одгонити /v1 :imperf
 оддаля adv
+одділ /n20
 одже part:&insert|conj:subord
 одзивний /adj
 одзняти /v1.isTo :perf
@@ -480,6 +490,8 @@
 одкрити /v2.isTo :perf
 одкритися /vr2 :perf
 одміна /n10
+одмітити /v1.is0 :perf
+одмічати /v2.cf.advp :imperf
 одмовитися /vr1 :perf
 однакий /adj
 однако adv:&predic
@@ -487,6 +499,7 @@
 одсіч /n32
 одставка /n10.p2
 озутий /adj :&adjp:pasv:perf    # past
+оказуватися /vr1.cf.advp :imperf
 околяса adv
 околясом adv
 окроме prep        # rv_rod
@@ -499,6 +512,7 @@
 опріче adv|prep        # rv_rod
 опроче adv|prep        # rv_rod
 опуст /n20
+оп'ять adv
 оріх /n20.a.p
 орудка /n10.p2
 осе part
@@ -507,6 +521,7 @@
 осьо part
 осяг /n20
 осяги /np2
+отворити /v1.is0 :perf
 отсе part
 отсе отсей adj:n:v_naz/v_zna:&pron:dem
 отсей отсей adj:m:v_naz/v_zn2:&pron:dem
@@ -556,6 +571,8 @@
 отцю отцей adj:f:v_zna:&pron:dem
 отця отцей adj:f:v_naz:&pron:dem
 отьмарений /adj :&adjp:pasv:perf          # :past
+охітніше adv:compc
+очами око noun:inanim:p:v_oru
 памка /n10
 панянство /n2n
 пасажирний /adj
@@ -588,6 +605,8 @@
 підход /n20.p
 підчинити /v1.it1 :perf
 підчинитися /vr1 :perf
+пімста /n10
+післанець /n22.a.p.<
 піяцтво /n2n
 платничий /n2adj1.<
 плоскоденка /n10.p2
@@ -647,6 +666,7 @@
 празничанин /n20.a.pyn.<
 предложити /v1 :perf
 предсідник /n20.a.p.<
+претенсія /n10.p1
 придверний /adj
 призвід /n21
 приказ /n20.p
@@ -688,9 +708,12 @@
 саф'янець /n22.a.p
 свіжистий /adj
 світач /n20.a.p
+свойого свій adj:m:v_rod/v_zn1:&pron:pos
+свойого свій adj:n:v_rod:&pron:pos
 святешний /adj
 святешно adv
 се part
+сеї сей adj:f:v_rod:&pron:dem
 сей /adj_pron.long :&pron:dem
 сельбудинок /n22.a.p
 селькор /n20.a.p.ke.<
@@ -726,6 +749,7 @@
 стріл /n20
 сукенька /n10.p2
 суперека /n10.p1
+сутий /adj
 сутяжно adv
 суціль adv
 сьогодня adv
@@ -737,6 +761,8 @@
 теперка adv:&pron:dem
 тіко adv
 тілько adv|conj:subord|part
+тогди adv:&pron:dem
+тогді adv:&pron:dem
 толкування /n2n.p1
 толкувати /v1.cf.advp :imperf
 тотой /adj_pron :&pron:dem  #> той
@@ -747,6 +773,7 @@
 трясцяма noninfl:&predic
 тя noun:anim:s:v_rod/v_zna:&pron:pers:2     #> тебе
 тяготіти /v2.cf.advp :imperf
+увечорі adv:v-u
 увидіти /v1 :perf
 удвійці adv:v-u
 удвурядь adv
@@ -770,6 +797,7 @@
 уряджений /adj :&adjp:pasv:perf    # past
 урядово adv
 усамперед adv
+усіми усі noun:anim:p:v_oru:&pron:gen
 успокоєний /adj :&adjp:pasv:perf    # past
 устидно adv:&predic
 устійнення /n2n
@@ -806,6 +834,7 @@
 хургон /n20.a.p
 цвітник /n20.a.p
 цего noun:inanim:n:v_rod:&pron:dem  #> цього
+цеї цей adj:f:v_rod:&pron:dem
 ци conj:coord:subord        #> чи
 циганів циган noun:anim:p:v_rod/v_zna
 цилюрник /n20.a.p.<
@@ -816,6 +845,7 @@
 цукриця /n10
 цьоця /n10.ku.<
 часть /n32.p
+чей part
 чень part
 чимборше adv
 чміль /n20.a.p.<>
@@ -841,3 +871,4 @@
 шутер /n22.ke
 шушон /n20.a.p
 щіль /n32.p
+ювілят /n20.a.p.<
