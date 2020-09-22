@@ -936,38 +936,38 @@
 до до prep                          # rv_rod
 довкола довкола prep                # rv_rod
 довкруг prep                        # rv_rod
-з з prep          # rv_rod:rv_zna:rv_oru
-за за prep        # rv_rod:rv_zna:rv_oru
-із із prep        # rv_rod:rv_zna:rv_oru
-зі зі prep        # rv_rod:rv_zna:rv_oru
-зо зо prep        # rv_rod:rv_zna:rv_oru
-завдяки завдяки prep        # rv_dav
-задля задля prep        # rv_rod
-замість замість prep         # rv_rod:rv_inf
-заради заради prep        # rv_rod:rv_inf
-#згідно згідно prep        # rv_rod
-зверху зверху prep        # rv_rod
-здовж здовж prep|adv        # rv_rod
-з-за з-за prep        # rv_rod
-із-за із-за prep        # rv_rod
-з-над з-над prep        # rv_rod
-з-перед з-перед prep        # rv_rod
-з-під з-під prep        # rv_rod
-з-попід з-попід prep        # rv_rod
-з-позад з-позад prep        # rv_rod
-із-під із-під prep        # rv_rod
-з-поза з-поза prep        # rv_rod
-з-поміж з-поміж prep        # rv_rod
-із-поміж із-поміж prep        # rv_rod
-з-понад з-понад prep        # rv_rod
-з-поперед з-поперед prep        # rv_rod
-з-посеред з-посеред prep        # rv_rod
-з-проміж з-проміж prep        # rv_rod
-з-серед з-серед prep        # rv_rod
-ззаду ззаду prep        # rv_rod
-зсередини зсередини prep        # rv_rod
-ізсередини ізсередини prep        # rv_rod
-кінець кінець prep        # rv_rod
+з з prep                            # rv_rod:rv_zna:rv_oru
+за за prep                          # rv_rod:rv_zna:rv_oru
+із із prep                          # rv_rod:rv_zna:rv_oru
+зі зі prep                          # rv_rod:rv_zna:rv_oru
+зо зо prep                          # rv_rod:rv_zna:rv_oru
+завдяки завдяки prep                # rv_dav
+задля задля prep                    # rv_rod
+замість замість prep                # rv_rod:rv_inf
+заради заради prep                  # rv_rod:rv_inf
+#згідно згідно prep                 # rv_rod
+зверху зверху prep                  # rv_rod
+здовж здовж prep|adv                # rv_rod
+з-за з-за prep                      # rv_rod
+із-за із-за prep                    # rv_rod
+з-над з-над prep                    # rv_rod
+з-перед з-перед prep                # rv_rod
+з-під з-під prep                    # rv_rod
+з-попід з-попід prep                # rv_rod
+з-позад з-позад prep                # rv_rod
+із-під із-під prep                  # rv_rod
+з-поза з-поза prep                  # rv_rod
+з-поміж з-поміж prep                # rv_rod
+із-поміж із-поміж prep              # rv_rod
+з-понад з-понад prep                # rv_rod
+з-поперед з-поперед prep            # rv_rod
+з-посеред з-посеред prep            # rv_rod
+з-проміж з-проміж prep              # rv_rod
+з-серед з-серед prep                # rv_rod
+ззаду ззаду prep                    # rv_rod
+зсередини зсередини prep            # rv_rod
+ізсередини ізсередини prep          # rv_rod
+кінець кінець prep                  # rv_rod
 коло коло prep        # rv_rod
 край край prep        # rv_rod
 крізь крізь prep        # rv_zna
@@ -1061,6 +1061,19 @@
 
 незважаючи незважаючи prep
 
+
+# рідковживані
+ув ув prep                      # rv_zna:rv_mis:rv_rod
+з-між з-між prep                # rv_rod
+ві ві prep                      # rv_zna:rv_mis
+звиш звиш prep:rare             # rv_rod:rv_zna
+межи межи prep:rare             # rv_oru:rv_rod:rv_zna
+помежи помежи prep:rare         # rv_oru:rv_rod:rv_zna
+пред пред prep:rare             # rv_oru:rv_zna
+передо передо prep:rare         # rv_oru:rv_zna
+предо предо prep:rare           # rv_oru:rv_zna
+підо підо prep                  # rv_oru:rv_zna
+во во prep:rare                 # rv_zna:rv_mis
 
 # частки і сполучники
 # Однолітерні слова
@@ -1233,19 +1246,6 @@
 угу part
 як-таки part
 
-# рідковживані
-ув ув prep                  # rv_zna:rv_mis:rv_rod
-з-між з-між prep        # rv_rod
-ві ві prep                  # rv_zna:rv_mis
-звиш звиш prep:rare        # rv_rod:rv_zna
-межи межи prep:rare        # rv_oru:rv_rod:rv_zna
-помежи помежи prep:rare        # rv_oru:rv_rod:rv_zna
-пред пред prep:rare        # rv_oru:rv_zna
-передо передо prep:rare        # rv_oru:rv_zna
-предо предо prep:rare        # rv_oru:rv_zna
-підо підо prep        # rv_oru:rv_zna
-во во prep:rare        # rv_zna:rv_mis
-
 обойко numr:p:nv:coll
 обоєчко numr:p:nv:coll
 двойко numr:p:nv:coll
@@ -1259,4 +1259,3 @@
 декілько numr:p:v_naz/v_zna:coll
 кількадесятеро numr:p:v_naz/v_zna:coll
 кільканадцятеро numr:p:v_naz/v_zna:coll
-
