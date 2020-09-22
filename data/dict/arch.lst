@@ -57,6 +57,7 @@
 варстат /n20.a.p
 варцаб /n20.a.p
 варцаба /n10.p1
+вашець /n32.<
 ввечорі adv:v-u
 вдвійці adv:v-u
 вдолину adv
@@ -122,6 +123,7 @@
 воєвідство /n2n.p1
 воздавати /v1.cf.advp :imperf
 воздати /v3.isNo :perf
+возьме взяти verb:perf:futr:s:3
 волити /v1.cf.advp :imperf
 володільник /n20.a.p.<
 вольно adv
@@ -132,6 +134,7 @@
 впирснути /v1 :perf
 вправді adv
 врем'я /n2n
+встид /n20
 втіки /np2
 вуголь /n22
 вуй /n20.a.<
@@ -205,6 +208,7 @@
 єден /numr ^adj :&numr
 жалуватися /vr1.cf.advp :imperf
 жалько adv
+жандар /n24.a.p.ke.< /n20.a.p.ke.<
 жантильний /adj
 жартовливий /adj.adv
 жаскуватий /adj.adv
@@ -279,6 +283,7 @@
 здрянка /n10.p2
 землевпорядковання /n2n
 зиськати /v2 :imperf
+зідхання /n2n.p1
 зіпсути /v2.isTo :perf
 зіпсутися /vr2 :perf
 зірний /adj
@@ -345,6 +350,7 @@
 комбідівець /n22.a.p.<
 компромісово adv
 користання /n2n
+коршма /n10
 которий /adj.long :&pron:int:rel
 коц /n20.a.p
 кріпость /n32.p
@@ -429,6 +435,7 @@
 невпотріб noninfl:&predic
 невправка /n10
 неке part
+некористь /n32
 немать noninfl:&predic
 неможний /adj
 немощний /adj
@@ -440,6 +447,7 @@
 неохая /n10.< :+m
 неперечний /adj
 неправно adv
+непремінно adv
 непутити /v1.cf.advp :imperf
 нерозрадний /adj
 несогірше adv
@@ -474,6 +482,7 @@
 огонь /n22.p
 одвзаємнити /v1 :perf
 одвзаємнитися /vr1 :perf
+одвикнути /v3 :perf                            # rv_inf
 одвір adv
 одвіт /n20
 одгонити /v1 :imperf
@@ -484,21 +493,26 @@
 одзняти /v1.isTo :perf
 одзнятий /adj :&adjp:pasv:perf
 одіж /n32
+одізвати /v2.isNo :perf:rare
+одізватися /vr1 :perf
 одіслати /v1.isNo :perf
 одітий /adj :&adjp:pasv:perf    # past
 одкривати /v2.cf.advp :imperf
 одкрити /v2.isTo :perf
 одкритися /vr2 :perf
+одлягти /v1 :perf
 одміна /n10
 одмітити /v1.is0 :perf
 одмічати /v2.cf.advp :imperf
 одмовитися /vr1 :perf
 однакий /adj
 однако adv:&predic
+одпустити /v1.it1.is0 :perf
 одружіння /n2n
 одсіч /n32
 одставка /n10.p2
 озутий /adj :&adjp:pasv:perf    # past
+ойчизна /n10
 оказуватися /vr1.cf.advp :imperf
 околяса adv
 околясом adv
@@ -507,6 +521,7 @@
 олтар /n24.a.p.ke
 омочений /adj :&adjp:pasv:perf              #> обмочений
 онакий /adj :&pron:def
+опізнитися /vr1.it1 :perf
 опірений /adj :&adjp:pasv:perf    # past
 опостін adv|prep        # rv_rod
 опріче adv|prep        # rv_rod
@@ -674,6 +689,7 @@
 приступлення /n2n
 притім conj:subord:bad
 прищіпляти /v2.cf.advp :imperf
+приявність /n30
 прітьма adv
 пріч prep|adv:&predic        # rv_rod
 прозвисько /n2n.p2
@@ -747,6 +763,7 @@
 сторонництво /n2n
 стосувати /v1.cf.advp :imperf
 стріл /n20
+стрільно /n2n                               # снаряд
 сукенька /n10.p2
 суперека /n10.p1
 сутий /adj
@@ -855,6 +872,7 @@
 чортмає noninfl:&predic
 чорт-мало noninfl:&predic
 чорт-матиме noninfl:&predic
+чура /n10.<m
 чуткість /n30
 шаговий /adj
 швидче adv
