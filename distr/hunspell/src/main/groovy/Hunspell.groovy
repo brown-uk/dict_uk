@@ -398,7 +398,7 @@ def lines = files.collect { file->
 		}
 		else {
 			flgs.each { flg ->
-				if( flg.startsWith('<') || flg == 'u' || flg == 'ku' || flg == '@' )
+				if( flg.startsWith('<') || flg == 'u' || flg == 'ku' || flg == '@' || flg == 'shrt' || flg == 'long' )
 					return
 
 				def f = flg == mainFlg ? flg : mainFlg + '.' + flg
@@ -418,7 +418,7 @@ def lines = files.collect { file->
 
 
 				if( ! toHunFlagMap.containsKey(f) ) {
-					println "can't find " + parts[0] + '/' + f
+					println "Can't find hunspell flag for $f, word: " + parts[0]
 				}
 
 				outFlags += toHunFlagMap[f]
