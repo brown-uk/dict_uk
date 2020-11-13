@@ -254,7 +254,7 @@ new File('build/hunspell/uk_UA.aff').text = fileHeader + '\n' + out
 
 def dictDir = new File("../../data/dict")
 
-def IGNORED_FILES = /composite|dot-abbr|twisters|invalid|alt|arch|add_tag/
+def IGNORED_FILES = /composite|dot-abbr|twisters|invalid|alt|arch|slang|add_tag/
 if( "-forSearch" in args ) {
     IGNORED_FILES = IGNORED_FILES.replace('|twisters|invalid', '')
 }
@@ -299,6 +299,8 @@ def lines = files.collect { file->
 	if( ! it )
 		return ''
 
+	it = it.replaceAll(/\.(shrt|long)/, '')
+		
     if( ! spellWord(it) )
         return ''
 

@@ -66,6 +66,18 @@
 стеклами скло noun:p:v_oru          #> склами
 стеклах скло noun:p:v_mis           #> склах
 
+малечку noninfl                      # з самого малечку
+
+# однина в twisters.lst
+плечики плечико noun:inanim:p:v_naz
+плечиків плечико noun:inanim:p:v_rod
+плечикам плечико noun:inanim:p:v_dav
+плечика плечико noun:inanim:p:v_zna
+плечиками плечико noun:inanim:p:v_oru
+плечиках плечико noun:inanim:p:v_mis
+плечика плечико noun:inanim:p:v_kly
+
+
 зябра зябра noun:inanim:f:v_naz:rare
 зябри зябра noun:inanim:f:v_rod:rare
 зябрі зябра noun:inanim:f:v_dav:rare

@@ -1,5 +1,7 @@
 #!/bin/env groovy
 
+package org.dict_uk.tools;
+
 def dict_uk_all = new File('../dict_corp_lt.txt').text.split("\n")
 
 def pts = []

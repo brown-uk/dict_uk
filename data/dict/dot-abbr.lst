@@ -22,6 +22,7 @@
 біол. adj:nv                    # біологічний
 бл. adv                         # близько
 близьк. adv                     # близько
+болг. adj:nv                    # болгарський
 бр. noun:m:nv:anim              # брат(и)
 буд. noun:m:nv                  # будинок
 бул. noun:m:nv                  # бульвар
@@ -203,6 +204,7 @@
 род. adj:nv|noun:f:nv|noun:n:nv # родовий; родини; родовище
 родов. noun:n:nv                # родовище
 розд. noun:m:nv                 # розділ
+розм. adj:nv                    # розмовний
 рр. noun:p:nv:ns                # роки
 рт. adj:nv                      # ртутний
 руб. noun:n:nv                  # рубль
@@ -239,6 +241,7 @@
 техн. adj:nv                    # технічний
 тиж. noun:f:nv                  # тиждень, тижні
 тис. noun:f:nv:&&numr           # тисяча
+тов. noun:m:nv:anim|noun:f:nv:anim             # товариш
 тр. noun:m:nv|noun:f:nv|adj:nv  # тролейбус; трудовий; траса; третина
 тт. noun:p:nv                   # томи
 уд. noun:m:nv                   # ударів
