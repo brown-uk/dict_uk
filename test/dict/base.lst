@@ -208,8 +208,7 @@
 стріляти /v2.cf.isNo :imperf
 стрілятися /vr2.cf.advp :imperf
 постріляти /v2 :perf
-засвітати /v2.cf p=3 :imperf # TODO: advp?? засвітавши, засвітаючи
-засвітати /v2 p=3 :perf
+засвітати /v2.cf p=3 :imperf
 вечоріти /v1.cf :imperf p=3
 взуватися /vr2.cf.advp :imperf:v-u
 взути /v2.isTo :perf:v-u
@@ -279,3 +278,5 @@
 
 хабар /n20.a.ke.p4.@ :ua_1992
 хабар /n24.a.ke.p.@ :ua_2019
+
+надоїти /v1.is0 :perf

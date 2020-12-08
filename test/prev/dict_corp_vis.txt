@@ -2530,10 +2530,6 @@
   засвітає verb:imperf:pres:s:3
   засвітатиме verb:imperf:futr:s:3
   засвітало verb:imperf:past:n
-засвітати verb:perf:inf
-  засвітать verb:perf:inf:short
-  засвітає verb:perf:futr:s:3
-  засвітало verb:perf:past:n
 затаєний adj:m:v_naz:&adjp:pasv:perf:compb
   затаєного adj:m:v_rod:&adjp:pasv:perf:compb
   затаєному adj:m:v_dav:&adjp:pasv:perf:compb
@@ -2843,6 +2839,36 @@
   міняйлах noun:anim:p:v_mis
   міняйли noun:anim:p:v_kly
 мусіти verb:imperf:inf:bad    # lim
+надоївши advp:perf:xp1    # від надоїти
+надоївши advp:perf:bad:xp2    # від надоїсти
+надоїсти verb:perf:inf:bad
+  надоїж verb:perf:impr:s:2:bad
+  надоїжмо verb:perf:impr:p:1:bad
+  надоїжте verb:perf:impr:p:2:bad
+  надоїм verb:perf:futr:s:1:bad
+  надоїси verb:perf:futr:s:2:bad
+  надоїсть verb:perf:futr:s:3:bad
+  надоїмо verb:perf:futr:p:1:bad
+  надоїсте verb:perf:futr:p:2:bad
+  надоїдять verb:perf:futr:p:3:bad
+  надоїв verb:perf:past:m:bad
+  надоїла verb:perf:past:f:bad
+  надоїло verb:perf:past:n:bad
+  надоїли verb:perf:past:p:bad
+надоїти verb:perf:inf
+  надоїть verb:perf:inf:short
+  надою verb:perf:futr:s:1
+  надоїш verb:perf:futr:s:2
+  надоїть verb:perf:futr:s:3
+  надоїмо verb:perf:futr:p:1
+  надоїм verb:perf:futr:p:1:subst
+  надоїте verb:perf:futr:p:2
+  надоять verb:perf:futr:p:3
+  надоїв verb:perf:past:m
+  надоїла verb:perf:past:f
+  надоїло verb:perf:past:n
+  надоїли verb:perf:past:p
+  надоєно verb:perf:impers
 найбезпечніш adv:comps:&predic:short
 найбезпечніше adv:comps:&predic
 найвагоміш adv:comps:short
@@ -3330,7 +3356,7 @@
   оскіриться verb:rev:perf:futr:s:3:rare
   оскіримось verb:rev:perf:futr:p:1:rare
   оскіримося verb:rev:perf:futr:p:1:rare
-  оскіримся verb:rev:perf:futr:p:1:subst:rare
+  оскіримся verb:rev:perf:futr:p:1:rare:subst
   оскіритесь verb:rev:perf:futr:p:2:rare
   оскіритеся verb:rev:perf:futr:p:2:rare
   оскіряться verb:rev:perf:futr:p:3:rare

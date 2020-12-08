@@ -119,11 +119,6 @@ class OutputValidator {
 				}
 			}
 			else {
-				if( ! (line =~ / (noun|adj|verb|numr)/ ) && ! line.contains(":long") && ! line.contains(":short") ) {
-					log.warn("inflection for non-iflecting POS " + line)
-					nonFatalErrorCount++
-				}
-				else
 				if( ! prevLine.startsWith(" ") ) { // prev is lemma start
 					if( line.contains(":bad") 
 							&& ! line.contains("v_rod")		// we fold вебсайта :bad into вебсайт lemma 
@@ -131,6 +126,10 @@ class OutputValidator {
 						log.warn("mix of bad and normal lemma " + line)
 						nonFatalErrorCount++
 					}
+				}
+				else if( ! (line =~ / (noun|adj|verb|numr)/ ) && ! line.contains(":long") && ! line.contains(":short") ) {
+					log.warn("inflection for non-iflecting POS " + line)
+					nonFatalErrorCount++
 				}
 			}
 

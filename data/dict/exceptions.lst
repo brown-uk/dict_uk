@@ -647,7 +647,9 @@
 мосьпане мосьпане noun:m:v_kly:anim         # lim
 
 # давні форми
-бельмеса бельмеса noun:m:v_rod              # lim
+бельмес бельмес noun:m:v_naz               # lim
+бельмеса бельмес noun:m:v_rod              # lim
+
 язицех язик noun:p:v_mis
 
 світа світ noun:m:v_rod:rare

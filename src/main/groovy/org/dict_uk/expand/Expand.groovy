@@ -28,7 +28,8 @@ class Expand {
 	private final Map<String, List<String>> additionalTags = [:]
 	private final List<String> additionalTagsUnused = []
 	final Affix affix = new Affix()
-	
+	private final Map<String, Set<String>> derivs = [:].withDefault { new HashSet<String>() }
+		
 
 	static final Pattern cf_flag_pattern = ~ /(vr?)[1-6]\.cf/	 // no v5
 	static final Pattern is_pattern = ~ /(vr?)[1-9]\.is/
@@ -171,8 +172,43 @@ class Expand {
 		
 						String deriv = affixItem.apply(word)
 						String tags = affixItem.tags
+						String comment = null
 
-						words.add(new DicEntry(deriv, word, tags))
+						// надоїсти та надоїти генерують надоївши, але від першого має бути :bad
+						// TODO: we should also add comment to the original advp too - and this does not work with multithreading :(
+//						if( tags.startsWith("advp") 
+//								&& ! affixFlags.contains(":imperf:perf") && ! affixFlags.contains(":xp") ) {
+//							int toPos = tags.indexOf("perf")+4
+//							String key = deriv + "/" + tags[0..<toPos]
+//
+//							if( derivs.containsKey(key) ) {
+//								if( ! derivs[key].contains("від " + word) ) {
+//									tags += ":xp" + derivs[key].size()
+//									comment = "від " + word
+//									derivs[key] << "від " + word 
+//								}
+//							}
+//							else {
+//								derivs[key] << "від " + word
+//							} 
+//						}
+
+						// using a hack instead
+						if( tags.startsWith("advp") && deriv == "надоївши" ) {
+							if( word == "надоїти" ) {
+								tags += ":xp1"
+							}
+							else {
+								tags += ":xp2"
+							}
+							comment = "від " + word	
+						}
+						// TODO: do it better
+						else if( tags == "noun:anim:m:v_naz:bad" && deriv == "член-кореспондент" ) {
+							continue
+						}
+												
+						words.add(new DicEntry(deriv, word, tags, comment))
 						appliedCnt += 1
 						appliedCnts[affixFlag2] += 1
 
