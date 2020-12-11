@@ -153,10 +153,10 @@ flagMap.each{ flag, affixGroupItems ->
 					
 //    					    println "\t $item.ending -> $ending / " + matcher[0] + " / " + matcher[1]
 
-				if( affix.to.contains('$2') ) {
-//					println '[2] Skipping complex regex: ' + affix
-					return
-				}
+							if( affix.to.contains('$2') ) {
+			//					println '[2] Skipping complex regex: ' + affix
+								return
+							}
 
 
 							body += "SFX $flag $fromm $to $ending"
@@ -165,7 +165,6 @@ flagMap.each{ flag, affixGroupItems ->
 						}
 					}
 					return
-	
 				}
 
 //				if( matcher.size() == 2 && affix.fromm.startsWith('.') && ! affix.fromm.contains('(') ) {
@@ -202,11 +201,10 @@ flagMap.each{ flag, affixGroupItems ->
 //					}
 
 
-				if( affix.to.contains('$2') ) {
-//					println '[1] Skipping complex regex: ' + affix
-					return
-				}
-
+					if( affix.to.contains('$2') ) {
+	//					println '[1] Skipping complex regex: ' + affix
+						return
+					}
 
 					body += "SFX $flag $fromm $to $ending"
 					body += '\n'
@@ -223,7 +221,11 @@ flagMap.each{ flag, affixGroupItems ->
 				def fromm = affix.fromm ? affix.fromm : '0'
 				def to = affix.to ? affix.to : '0'
 				def ending = item.affixGroup.match
-
+	
+				// hunspell does not support real regex, need to adjust
+				if( ending == "^весь" ) {
+					ending = "(^весь)"
+				}
 				
 				body += "SFX $flag $fromm $to $ending"
 				body += '\n'
