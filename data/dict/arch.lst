@@ -58,6 +58,7 @@
 блигомий /adj
 бликавка /n10.p2
 блиндар /n24.a.p.ke.<
+блудилище /n2n.p1
 боднар /n24.a.p.ku.<
 бокло /n2n
 болярин /n20.a.pyn.<
@@ -398,6 +399,7 @@
 жаскуватий /adj.adv
 жеби conj:subord
 женщина /n10.p1.<
+жерело /n2n.p1
 живжик /n20.a.p.<
 животатий /adj
 жиє жити verb:imperf:pres:s:3
@@ -545,6 +547,8 @@
 коршма /n10
 которий /adj.long :&pron:int:rel
 коц /n20.a.p
+кравчий /n2adj1.p.<
+крайчий /n2adj1.p.<
 кріпость /n32.p
 кружляк /n20.a.p                            # корабель
 лапоть /n22.a.p
@@ -552,6 +556,8 @@
 леда-який /adj :&pron:ind
 ледви adv
 ледво adv
+лещетар /n24.a.p.ku.<
+лещетарський /adj
 ломлення /n2n
 лотр /n20.a.p.ke.<
 любля noninfl:&predic
@@ -636,6 +642,7 @@
 невправка /n10
 неке part
 некористь /n32
+неложний /adj
 немать noninfl:&predic
 неможний /adj
 немощний /adj
@@ -653,6 +660,7 @@
 несогірше adv
 нестямливий /adj
 неякийсь /adj :&pron:ind
+нинька adv
 ниньки adv
 нищильник /n20.a.p
 нівець /n22.a
@@ -682,15 +690,24 @@
 оглядітися /vr1 :perf
 огник /n20.a.p
 огонь /n22.p
+одбігти /v1 :perf
+одважуватися /vr1.cf.advp :imperf
 одвзаємнити /v1 :perf
 одвзаємнитися /vr1 :perf
 одвикнути /v3 :perf                            # rv_inf
+одвідувач /n20.a.p.<
 одвір adv
 одвіт /n20
+одвітити /v1 :perf
+одвітувати /v1 :perf
+одводити /v1.it0.cf.advp :imperf
 одгонити /v1 :imperf
+одгукнутися /vr1 :perf
 оддаля adv
 одділ /n20
+одділятися /vr2.cf.advp :imperf
 одже part:&insert|conj:subord
+оджибве noninfl
 одзивний /adj
 одзняти /v1.isTo :perf
 одзнятий /adj :&adjp:pasv:perf
@@ -700,21 +717,34 @@
 одіслати /v1.isNo :perf
 одітий /adj :&adjp:pasv:perf    # past
 одкривати /v2.cf.advp :imperf
+одкриватися /vr2.cf.advp :imperf
 одкрити /v2.isTo :perf
 одкритися /vr2 :perf
 одлюбити /v1.it1 :perf                          # rv_inf
 одлягти /v1 :perf
+одмахнутися /vr1 :perf
 одміна /n10
+одмінитися /vr1 :perf                          # xv2
 одмітити /v1.is0 :perf
 одмічати /v2.cf.advp :imperf
 одмовитися /vr1 :perf
 однакий /adj
 однако adv:&predic
+одправити /v1.it0.is0 :perf
 одпустити /v1.it1.is0 :perf
+одробити /v1.it1.is0 :perf
 одружіння /n2n
+одсахнутися /vr1 :perf
+одсвіт /n20.p
 одсіч /n32
 одставка /n10.p2
+одступати /v2.cf.advp.shrt :imperf
+одступитися /vr1.it1 :perf
 одушевлення /n2n.p1
+одходити /v1.it1 :perf:xp2                     # одходи́ти
+одходити /v1.it0.cf.advp :imperf:xp1           # одхо́дити
+одцуратися /vr2 :perf
+одчувати /v2.cf.advp.shrt.isNo :imperf
 одшумілий /adj :&adjp:actv:perf
 озутий /adj :&adjp:pasv:perf    # past
 ойчизна /n10
@@ -723,6 +753,7 @@
 околясом adv
 окроме prep        # rv_rod
 окуп /n20.p
+олжа /n10
 олтар /n24.a.p.ke
 омочений /adj :&adjp:pasv:perf              #> обмочений
 онакий /adj :&pron:def
@@ -830,7 +861,10 @@
 підчинити /v1.it1 :perf
 підчинитися /vr1 :perf
 пімста /n10
+пірвати /v1.isNo :perf
 післанець /n22.a.p.<
+післаний /adj :&adjp:pasv:perf                  # :past rv_dav
+післанництво /n2n
 піяцтво /n2n
 платничий /n2adj1.<
 плоскоденка /n10.p2
@@ -898,9 +932,10 @@
 правобіч adv
 предложити /v1 :perf
 предсідник /n20.a.p.<
+предстати /v3 :perf
 преображений /adj :&adjp:pasv:perf    # :past
-претенсія /n10.p1
 придверний /adj
+придверник /n20.a.p.<
 призвід /n21
 приказ /n20.p
 принайменше adv
@@ -938,7 +973,6 @@
 розповінь /n32
 розповня /n10
 розслідити /v1.is0.it1 :perf
-рура /n10
 рушатися /vr2.cf.advp :imperf
 салган /n20.p
 салдат /n20.a.p.<
@@ -955,6 +989,7 @@
 се part
 сеї сей adj:f:v_rod:&pron:dem
 сей /adj_pron.long :&pron:dem
+сельбище /n2n.p1
 сельбудинок /n22.a.p
 селькор /n20.a.p.ke.<
 сельрада /n10.p1
@@ -969,6 +1004,7 @@
 скілько numr:p:v_naz/v_zna
 скочки adv
 сливе adv
+слуп /n20.a.p.ke
 сопух /n20.a
 сояшник /n20.a.p
 сояшниковий /adj
@@ -1048,6 +1084,7 @@
 упомку noninfl:&predic
 упруг /n20.a.p
 урадуваний /adj :&adjp:pasv:perf    # past
+урем'я /n40.yu
 урікати /v2.cf :imperf
 урльоп /n20.p
 уряджений /adj :&adjp:pasv:perf    # past
@@ -1089,6 +1126,7 @@
 хотя part
 хресійбо intj
 хургон /n20.a.p
+цаль /n20.a.p
 цвітник /n20.a.p
 цего noun:inanim:n:v_rod:&pron:dem  #> цього
 цеї цей adj:f:v_rod:&pron:dem
