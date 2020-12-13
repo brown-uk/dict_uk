@@ -111,7 +111,6 @@ flagMap.each{ flag, affixGroupItems ->
 		item.affixGroup.affixes.each { affix ->
 
 			if( ! spellWord(affix.tags) ) {
-//					println 'Skipping non-spell: ' + affix
 				return
 			}
 
@@ -511,8 +510,8 @@ static boolean hasInanimVkly(line, propName) {
 }
 
 static boolean spellWord(it) {
-	return !( it =~ NONSPELL_TAG_LIST \
-		&& ! it =~ /&insert:short/ \
-		&& ! it =~ /adj:m:v_(naz|zna).*:short/ \
-		&& ! it =~ /^((що(як)?)?най)?(більш|менш|скоріш|перш)$/)
+	return ! ( it =~ NONSPELL_TAG_LIST )
+		|| it =~ /&insert:short/ \
+		|| it =~ /adj:m:v_(naz|zna).*:short/ \
+		|| it =~ /^((що(як)?)?най)?(більш|менш|скоріш|перш)$/
 }

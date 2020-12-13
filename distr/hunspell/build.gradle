@@ -86,13 +86,16 @@ task testHunspell1(type: Exec) { //, dependsOn: hunspell) {
     txt += " Абакумовича Абакумівни Абакума"
     txt += " Білгород-Дністровського Захер-Мазоха Захера-Мазоха"
     txt += " відіб\\'ю"
+    txt += " всього усього"
 
     def cmd = "echo $txt | hunspell -d $outDir/uk_UA | grep -E '^&'" + '; [ $? == 1 ]'
     commandLine "sh", "-c", "${cmd}"
 }
 
 task testHunspell2 (type: Exec) { //, dependsOn: hunspell) {
-    def txt = " білолицого пілі відб\\'ю кккк"
+    def txt = " кккк білолицого пілі відб\\'ю"
+    txt += " увсього"
+    txt += " ніштяк сміючися гарная пірвати стріляючий підем"
 
     def cmd = "echo $txt | hunspell -d $outDir/uk_UA | grep -E '^(\\+|\\*)'" + '; [ $? == 1 ]'
     commandLine "sh", "-c", "${cmd}"
