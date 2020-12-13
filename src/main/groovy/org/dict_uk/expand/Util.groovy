@@ -112,7 +112,7 @@ class Util {
 		"v_mis",
 		"v_kly"
 	]
-	static final Pattern re_nv_vidm = Pattern.compile("(noun):[mfn]:(.*)")
+	static final Pattern re_nv_vidm = Pattern.compile("(noun(?::anim)?):[mfn]:(.*)")
 
 	@CompileStatic
 	List<DicEntry> expand_nv(List<DicEntry> in_lines) {

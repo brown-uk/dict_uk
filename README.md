@@ -21,7 +21,7 @@
 
 ### Вимоги до програмних засобів ###
 * java (JDK >= 8)
-* 4Гб вільної пам'яті
+* 5Гб вільної пам'яті
 
 
 ### Застосування ###
@@ -80,7 +80,7 @@ Copyright (c) 2020 Андрій Рисін (arysin@gmail.com), Василь Ст
 
 ### Required software ###
 * java (JDK >= 8)
-* 4G of free RAM
+* 5G of free RAM
 
 
 ### How to run ###

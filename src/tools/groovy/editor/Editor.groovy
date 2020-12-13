@@ -396,6 +396,8 @@ swing.edt {
 						}
 					})
 				}
+//				sp.setMaximumSize(new Dimension(200, 0))
+				sp.setMinimumSize(new Dimension(200, 0))
 
 				label('  ---  ')
 

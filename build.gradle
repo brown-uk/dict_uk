@@ -252,7 +252,7 @@ task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, autogen/*, testExpa
     args "--dict", "../data/dict"
     args opts.split()
 
-    jvmArgs "-Xms4000m -Xmx4800m".split()
+    jvmArgs "-Xms4000m -Xmx5000m".split()
     // JDK8
 //    jvmArgs "-XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:FlightRecorderOptions=defaultrecording=true,dumponexit=true,dumponexitpath=dumponexit.jfr".split()
     // JDK11
