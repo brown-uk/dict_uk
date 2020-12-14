@@ -996,6 +996,7 @@
 селяне селянин noun:anim:p:v_naz
 сербіянин /n20.a.pyn.<
 сестрінка /n10.p2.<
+сильветка /n10.p2
 силяти /v2.cf.advp :imperf
 сількось adv:&insert
 скіко numr:p:v_naz/v_zna
@@ -1014,17 +1015,21 @@
 сподоба /n10
 споміж prep        # rv_rod
 спосеред prep        # rv_rod
+сродний /adj
+сродність /n30
 старати /v2.cf.advp :imperf
 статочний /adj
 стежа /n10.p1
 стежі /np2.<
-стейт /n20                          # діаспорне слово
+стейт /n20.p                          # діаспорне слово
+стейтовий /adj
 стерятися /vr2 :perf
 стійковий /adj
 стіки adv:&pron:dem
 сторонка /n10.p2
 сторонництво /n2n
 стосувати /v1.cf.advp :imperf
+страм /n20
 стрийна /n10.<
 стріл /n20
 стрільно /n2n                               # снаряд
@@ -1062,6 +1067,7 @@
 туточки adv
 тя noun:anim:s:v_rod/v_zna:&pron:pers:2     #> тебе
 тяготіти /v2.cf.advp :imperf
+убійник /n20.a.p.<
 увечорі adv:v-u
 увидіти /v1 :perf
 удвійці adv:v-u
@@ -1078,6 +1084,7 @@
 уліжно adv:&predic
 уложений /adj :&adjp:pasv:perf
 умкнути /v1 :perf
+умоцований /adj
 упоминати /v2.cf.advp :imperf
 упоминатися /vr2.cf.advp :imperf
 упомки noninfl:&predic
@@ -1134,9 +1141,12 @@
 циганів циган noun:anim:p:v_rod/v_zna
 цилюрник /n20.a.p.<
 цилюрня /n10.p2
+цина /n10
+циновий /adj
 цирулик /n20.a.p.<
 цитаделя noun:f:v_naz                   # lim
 цифір /n32
+цілево adv
 цукриця /n10
 цьоця /n10.ku.<
 часть /n32.p
