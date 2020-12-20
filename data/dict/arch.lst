@@ -6,7 +6,7 @@
 адміраліція /n10.p1
 айбо айбо conj:coord
 акі conj:subord
-алілуйко /n20.<
+алілуйко /n20.p.<
 альбо conj:coord
 алькир /n20.a.p.ke
 аляр /n20.ke
@@ -338,7 +338,7 @@
 громадяне громадянин noun:anim:p:v_naz
 гряничний /adj
 губземуправління /n2n.p1
-гумно /n2n
+гумно /n2n.p2
 ґердан /n20.p
 ґрунь /n20.a.p
 Даждьбог /n20.a.<
@@ -435,7 +435,7 @@
 заповідувати /v1.cf.advp :imperf
 запросний /adj
 зарівно adv:&predic
-засов /n20
+засов /n20.a.u.p
 засовець /n22.a
 заспорити /v1 :perf
 застужати /v2.cf.advp :imperf
@@ -451,7 +451,7 @@
 захорування /n2n.p1
 зацний /adj
 зачеркувати /v1.cf.advp :imperf
-зачувати /v2 :imperf
+зачувати /v2.cf :imperf
 зашанувати /v1 :perf
 збігці /np2.<
 збірати /v2.cf.advp :imperf
@@ -633,7 +633,6 @@
 наскінчу adv
 настарчити /v1 :perf
 настрічу adv
-научити /v1.is0.it1 :perf
 начальний /adj
 небір /n21.a.ke.<
 невіста /n10.p1.<
@@ -675,6 +674,7 @@
 нічтоже noninfl
 нумер /n20.a.p.ke
 оба numr:m:v_naz/v_zna
+обезвічений /adj :&adjp:pasv:perf
 обичай /n20.p
 обі numr:f:v_naz/v_zna
 обіт /n20.p
@@ -687,7 +687,7 @@
 овид /n20
 огірчити /v1 :perf
 оглав /n20.p
-оглядітися /vr1 :perf
+оглядітися /vr1.it0 :perf
 огник /n20.a.p
 огонь /n22.p
 одбігти /v1 :perf
@@ -747,7 +747,7 @@
 одчувати /v2.cf.advp.shrt.isNo :imperf
 одшумілий /adj :&adjp:actv:perf
 озутий /adj :&adjp:pasv:perf    # past
-ойчизна /n10
+ойчизна /n10.p1
 оказуватися /vr1.cf.advp :imperf
 околяса adv
 околясом adv
@@ -831,6 +831,7 @@
 памка /n10
 панянство /n2n
 пасажирний /adj
+пахати /v2.cf :xp2:imperf                   # па́хати
 пашпорт /n20.a.p
 пеняти /v2.cf.advp :imperf
 переіначений /adj :&adjp:pasv:perf
