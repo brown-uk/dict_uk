@@ -16,7 +16,7 @@ def advpMap = [:]
 def impersMap = [:]
 def dicEntryMap = [:]
 
-def corpus = new File("../../../../out/toadd/unknown_table.u.txt").readLines().collect { it.replaceFirst(/\s.*/, '') } as Set
+def corpus = [] // new File("../../../../out/toadd/unknown_table.u.txt").readLines().collect { it.replaceFirst(/\s.*/, '') } as Set
 
 
 def add(String line, Map<String, List> theMap) {
