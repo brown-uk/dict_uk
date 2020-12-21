@@ -948,7 +948,7 @@
 прітьма adv
 пріч prep|adv:&predic        # rv_rod
 пробуття /n2n
-прозвисько /n2n.p2
+прозвисько /n2n.p1
 промфінплян /n20
 просмик /n20
 простибі adv:&insert
@@ -1079,7 +1079,7 @@
 уздогін adv
 уїжно adv:&predic
 уїхати /v4 :perf
-уйматися /vr2 :imperf
+уйматися /vr2.cf.advp :imperf
 укруть adv
 улиця /n10.p1
 уліжно adv:&predic
@@ -1155,7 +1155,7 @@
 чень part
 черлений /adj
 чимборше adv
-чміль /n20.a.p.<>
+чміль /n23.a.p.<>
 човно /n2n
 чортма noninfl:&predic
 чорт-ма noninfl:&predic
