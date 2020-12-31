@@ -2,8 +2,8 @@
 <description xmlns="http://openoffice.org/extensions/update/2006" 
              xmlns:xlink="http://www.w3.org/1999/xlink">
     <identifier value="org.openoffice.uk.dictionaries.UA"/>
-    <version value="5.0.1" />
+    <version value="5.2.0" />
     <update-download>
-        <src xlink:href="https://extensions.libreoffice.org/extensions/ukrainian-spelling-dictionary-and-thesaurus/5-0.1/@@download/file/dict-uk_UA-5.0.1.oxt"/>
+        <src xlink:href="https://github.com/brown-uk/dict_uk/releases/download/v5.2.0/dict-uk_UA-5.2.0.oxt"/>
     </update-download>
 </description>
