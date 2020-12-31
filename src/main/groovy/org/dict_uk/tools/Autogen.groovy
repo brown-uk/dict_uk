@@ -1,6 +1,7 @@
 package org.dict_uk.tools
 
 import java.text.Collator
+import java.util.regex.Pattern
 
 import org.dict_uk.expand.TaggedWordlist
 import org.junit.Test
@@ -14,14 +15,16 @@ class Autogen {
 	static void main(String[] args) {
 		autogen(args[0], args[1], args[2], args[3])
 	}
-	
-	static String[][] replaceLetters_2019(String[] lines) {
+
+	static String[][] replaceLetters(String[] lines) {
 		def outLines = []
 		def outReplaceLines = []
 		def errors = []
 		
 		lines
-		.findAll { line -> line =~ /проек[тц]|хіміо|^(двох|трьох|чотирьох)/ }
+		.findAll { line -> 
+			line =~ /^[^#]*(проек[тц]|хіміо|хімі[чкя])|^(двох|трьох|чотирьох)/ 
+		}
 		.each { line ->
 			if( line.contains('#>') ) {
 				println "Skipping line with replace: $line"
@@ -33,10 +36,21 @@ class Autogen {
 					errors << line
 				}
 			}
+
 			if( line =~ /^(двох|трьох|чотирьох)/ ) {
 				if( ! line.contains(":ua_1992") ) {
 					return
 				}
+			}
+			else if( line =~ /^[^#]*хімі[ячк]/ ){
+				String newLine = line.replaceFirst(/хімі([ячк])/, 'хемі$1')
+				if( ! newLine.contains(":alt") ) {
+					newLine = newLine.replaceFirst(/^(.*? \/[^ ]+( (:[a-z_0-9]+)+)?)( *.*)$/, '$1 :alt$2')
+					newLine = newLine.replaceFirst(/(:[a-z_0-9]) (:alt)/, '$1$2')
+				}
+
+				outLines << newLine
+				return
 			}
 			else {
 				String newLine = line.replaceFirst(/проек([тц])/, 'проєк$1').replace('хіміо', 'хіміє')
@@ -61,34 +75,59 @@ class Autogen {
 
 		[ outLines, outReplaceLines ]
 	}
+	
+	static String addReplace(String line, String repl) {
+		line.padRight(64) + "#> " + repl
+	}
 
-	static String[][] enforceNoDash_2019(String[] lines) {
+	// Notes:
+	// арт - ще від артилерійський, було разом в 1992
+	// бод[иі] - зроблено вручну
+	// не було унормовано: диско-, економ-
+	
+	//TODO: етно-
+	// етно - (неофіційно), але було разом, бо скор. від етнологічний
+	
+	// писалися офіційно з дефісом в 1992:
+	// віце-, екс-, лейб-, максі-, міді-, міні-, обер-
+			
+	// писалися без дефісу і з 1992:
+	static String lev1prefixes1992 = "анти|архі|архи|етно|мікро|макро|мульти|нано|полі|ультра"
+	static String lev1prefixes1992Apo = "гіпер|пан|супер"
+	// нове без дефісу з 2019:
+	static String lev1prefixes = "віце|диско|екстра|максі|медіа|міді|міні"
+	static String lev1prefixesApo = "арт|бліц|веб|економ|екс|камер|кібер|контр|лейб|обер|поп|прес|преміум|смарт|топ|унтер|флеш|фоль?к|штабс"
+	
+	// two regexes to handle екс-віце-спікер
+	static Pattern pattern1 = ~ /([а-яіїєґ']+-)($lev1prefixes)-([^ ]+)(.*)/
+	static Pattern pattern2 = ~ /(^|[а-яіїєґ']+-)($lev1prefixes)-([^ ]+)(.*)/
+	static Pattern pattern2All = ~ /(^|[а-яіїєґ']+-)($lev1prefixes|$lev1prefixesApo)-([^ ]+)(.*)/
+	static Pattern pattern1NoApo = ~ /([а-яіїєґ']+-)($lev1prefixesApo)-([^єїюя][^ ]+)(.*)/
+	static Pattern pattern2NoApo = ~ /(^|[а-яіїєґ']+-)($lev1prefixesApo)-([^єїюя][^ ]+)(.*)/
+	static Pattern pattern1Apo = ~ /([а-яіїєґ']+-)($lev1prefixesApo)-([єїюя][^ ]+)(.*)/
+	static Pattern pattern2Apo = ~ /(^|[а-яіїєґ']+-)($lev1prefixesApo)-([єїюя][^ ]+)(.*)/
+
+	static String removeHyphen(String line) {
+		String newLine = pattern1.matcher(line).replaceFirst('$1$2$3$4')
+		newLine = pattern2.matcher(newLine).replaceFirst('$1$2$3$4')
+
+		newLine = pattern1NoApo.matcher(newLine).replaceFirst('$1$2$3$4')
+		newLine = pattern2NoApo.matcher(newLine).replaceFirst('$1$2$3$4')
+
+		newLine = pattern1Apo.matcher(newLine).replaceFirst('$1$2\'$3$4')
+		newLine = pattern2Apo.matcher(newLine).replaceFirst('$1$2\'$3$4')
+	}
+	
+
+	static String[][] enforceNoDash2019(String[] lines) {
 		def outLines = []
 		def outReplaceLines = []
 		def errors = []
 		
-		// notes:
-		// арт - ще від артилерійський, було разом в 1992
-		// бод[иі] - зроблено вручну
-		// не було унормовано: диско-, економ-
-		
-		//TODO: етно-
-		// етно - (неофіційно), але було разом, бо скор. від етнологічний
-		
-		// писалися офіційно з дефісом в 1992:
-		// віце-, екс-, лейб-, максі-, міді-, міні-, обер-
-				
-		// писалися без дефісу і з 1992:
-		def lev1prefixes_1992 = "анти|архі|архи|гіпер|етно|мікро|макро|мульти|нано|пан|полі|супер|ультра"
-		// нове без дефісу з 2019:
-		def lev1prefixes = "арт|бліц|веб|віце|диско|економ|екс|екстра|камер|кібер|контр|лейб|максі|медіа|міді|міні|обер|поп|прес|преміум|смарт|топ|унтер|флеш|фоль?к|штабс"
-		
-		// two regexes to handle екс-віце-спікер
-		def pattern1 = ~ /([а-яіїєґ']+-)($lev1prefixes)-([^ ]+)(.*)/
-		def pattern2 = ~ /(^|[а-яіїєґ']+-)($lev1prefixes)-([^ ]+)(.*)/
-		
 		lines
-		.findAll { line -> pattern2.matcher(line).find() }
+		.findAll { line -> 
+			pattern2All.matcher(line).find() 
+		}
 		.each { line ->
 			if( line.contains('#>') ) {
 				println "Skipping replace in: $line"
@@ -100,20 +139,41 @@ class Autogen {
 					errors << line
 				}
 			}
-			
-			String newLine = pattern1.matcher(line).replaceFirst('$1$2$3$4')
-			newLine = pattern2.matcher(newLine).replaceFirst('$1$2$3$4')
-			// TODO: make generic
-			newLine = newLine.replace('ua_1992', 'ua_2019')
-			newLine = newLine.replace('камерю', 'камер\'ю')
 
-			String newLemma = pattern1.matcher(line).replaceFirst('$1$2$3')
-			newLemma = pattern2.matcher(newLemma).replaceFirst('$1$2$3')
-			def newReplLine = line.padRight(64) + "#> $newLemma"
-			newReplLine = newReplLine.replace('камерю', 'камер\'ю')
-			outReplaceLines << newReplLine
+			if( line =~ /проект/ ) {
+				// add арт-проєкт
+				def newLine = line.replace('проект', 'проєкт').replace('ua_1992', 'ua_2019')
+				outLines << newLine
+
+				// repl: арт-проєкт -> артпроєкт
+				outReplaceLines << addReplace(newLine, removeHyphen(newLine.replaceFirst(/ .*/, '')))
+
+				// repl: артпроект -> артпроєкт
+				outReplaceLines << addReplace(removeHyphen(line), removeHyphen(newLine.replaceFirst(/ .*/, '')))
+			}
+
+			String newLine = removeHyphen(line)
+
+			if( newLine =~ /проект/ ) {
+				// артпроект still as :ua_1992
+				outLines << newLine
+				
+				newLine = newLine.replace('проект', 'проєкт')
+			}
+			
+			newLine = newLine.replace('ua_1992', 'ua_2019')
 
 			outLines << newLine
+
+			// generate replacements
+			
+			String replLemma = newLine.replaceFirst(/ .*/, '')
+
+			// repl: арт-проект -> артпроєкт
+			replLemma = replLemma.replace('проект', 'проєкт')
+			
+			def newReplLine = addReplace(line, replLemma)
+			outReplaceLines << newReplLine
 		}
 		
 		if( errors ) {
@@ -123,7 +183,7 @@ class Autogen {
 
 		// check old words without dash
 		errors = []
-		def pattern3 = ~ /(^|[а-яіїєґ']+-)($lev1prefixes_1992)-([^ ]+)(.*)/
+		def pattern3 = ~ /(^|[а-яіїєґ']+-)($lev1prefixes1992)-([^ ]+)(.*)/
 		
 		lines
 		.findAll { line -> pattern3.matcher(line).find() }
@@ -168,11 +228,12 @@ class Autogen {
 			
 			String newLine = pattern.matcher(line).replaceFirst('$1$2')
 			String newLemma = newLine
+			outLines << newLine
+
 			def oldLemma = line.replaceFirst(/^([^ ]+).*/, '$1')
 			def newReplLine = newLemma.padRight(64) + "#> " + oldLemma
 			outReplaceLines << newReplLine
 
-			outLines << newLine
 		}
 
 		[ outLines, outReplaceLines ]
@@ -184,7 +245,7 @@ class Autogen {
 		
 		String[] lines = file(baseFile).readLines("UTF-8")
 
-	    def repl = replaceLetters_2019(lines)
+	    def repl = replaceLetters(lines)
 				
 		def outReplaceLines = repl[1]
 		String[] outLines1 =  repl[0]
@@ -195,7 +256,7 @@ class Autogen {
 		String[] compound1992Lines = new TaggedWordlist().processInput([compound1992File])
 		lines += compound1992Lines
 		
-		repl = enforceNoDash_2019(lines)
+		repl = enforceNoDash2019(lines)
 		
 		String[] outLines2 = repl[0]
 		outReplaceLines += repl[1]
