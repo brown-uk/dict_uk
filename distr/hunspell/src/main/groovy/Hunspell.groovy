@@ -2,9 +2,13 @@
 import java.util.regex.Matcher
 import java.text.Collator
 
+import org.dict_uk.common.DicEntry
 import org.dict_uk.expand.*
 
 import groovy.transform.Field
+
+@Field
+boolean fullDict = "-forSearch" in args
 
 
 def AFFIX_DIR = "../../data/affix"
@@ -49,9 +53,12 @@ affixMap.each { flag, affixGroupMap ->
 	if( flag == 'patr' )
 		return
 	
-	if( flag =~ /\.ku|n2[0-9].*\.u|patr_pl|shrt|long|/ + reMapFlagsRe )
+	if( flag =~ /\.ku|n2[0-9].*\.u|patr_pl|/ + reMapFlagsRe )
 		return
 
+	if( !fullDict && flag =~ /shrt|long/ )
+		return
+	
 	if( (int)hunFlag == 0x7F ) {
 	    System.err.println("WARNING: using hunspel flag > 0x7F, this may not work")
 	}
@@ -86,13 +93,13 @@ println("Negative matches:\n\t" + negativeMatchFlags*.toString().join("\n\t"))
 @Field
 static String NONSPELL_TAG_LIST = ":(alt|bad|subst|slang|vulg|arch|short|long)"
 
-if( "-forSearch" in args ) {
+@Field
+static String subFolder = ""
+
+if( fullDict ) {
     println "Дозволяємо ненормативні форми для пошуку..."
-    NONSPELL_TAG_LIST.replace('|bad', '')
-    NONSPELL_TAG_LIST.replace('|subst', '')
-    NONSPELL_TAG_LIST.replace('|slang', '')
-    NONSPELL_TAG_LIST.replace('|vulg', '')
-    NONSPELL_TAG_LIST.replace('|arch', '')
+	NONSPELL_TAG_LIST = "::"
+	subFolder = "/_full"
 }
 
 
@@ -246,7 +253,8 @@ flagMap.each{ flag, affixGroupItems ->
 }
 
 def fileHeader = new File('header/affix_header.txt').text
-new File('build/hunspell/uk_UA.aff').text = fileHeader + '\n' + out
+new File("build/hunspell/$subFolder/").mkdirs()
+new File("build/hunspell/$subFolder/uk_UA.aff").text = fileHeader + '\n' + out
 
 
 
@@ -255,9 +263,9 @@ new File('build/hunspell/uk_UA.aff').text = fileHeader + '\n' + out
 
 def dictDir = new File("../../data/dict")
 
-def IGNORED_FILES = /composite|dot-abbr|twisters|invalid|alt|arch|slang|add_tag/
-if( "-forSearch" in args ) {
-    IGNORED_FILES = IGNORED_FILES.replace('|twisters|invalid', '')
+def IGNORED_FILES = /add_tag|composite|dot-abbr|invalid|twisters|alt|arch|slang/
+if( fullDict ) {
+    IGNORED_FILES = /add_tag|composite|dot-abbr|invalid/
 }
 
 def files = dictDir.listFiles().findAll {
@@ -292,7 +300,7 @@ def lines = files.collect { file->
 	return it
 }
 .flatten()
-.collect {
+.collect { String it ->
     def propName = it.contains('#@ :prop')
 
 	it = it.replaceFirst(/ *#.*/, '').trim()
@@ -300,7 +308,9 @@ def lines = files.collect { file->
 	if( ! it )
 		return ''
 
-	it = it.replaceAll(/\.(shrt|long)/, '')
+	if( ! fullDict ) {
+		it = it.replaceAll(/\.(shrt|long)/, '')
+	}
 		
     if( ! spellWord(it) )
         return ''
@@ -390,8 +400,9 @@ def lines = files.collect { file->
             .flatten()
 
 
-			def uniqForms = expanded.findAll{
-                if( ! spellWord(it) ) return ''
+			def uniqForms = expanded.findAll { DicEntry d ->
+                if( ! spellWord(d.toFlatString()) )
+					return ''
 				it
 			}.collect {
 			    it.word
@@ -401,7 +412,9 @@ def lines = files.collect { file->
 		}
 		else {
 			flgs.each { flg ->
-				if( flg.startsWith('<') || flg == 'u' || flg == 'ku' || flg == '@' || flg == 'shrt' || flg == 'long' )
+				if( flg.startsWith('<') || flg == 'u' || flg == 'ku' || flg == '@' )
+					return
+				if( ! fullDict && (flg == 'shrt' || flg == 'long') )
 					return
 
 				def f = flg == mainFlg ? flg : mainFlg + '.' + flg
@@ -486,7 +499,9 @@ def dic_file = new File("../../data/dict").eachFile{ file ->
 println "Got $comps.size comps"
 
 
-comps = comps.findAll{ ! (it =~ NONSPELL_TAG_LIST + /|inanim:.:v_kly/ ) }
+comps = comps.findAll { DicEntry dic ->
+	spellWord(dic.toFlatString()) && ! (dic.tagStr =~ /inanim:.:v_kly/)
+}
 
 lines.addAll(comps.collect{ it.word })
 
@@ -502,16 +517,16 @@ Collator collator = Collator.getInstance(new Locale("uk", "UA"));
 
 txt += words.toSorted(collator).join("\n")
 
-new File("build/hunspell/uk_UA.dic").text = txt
+new File("build/hunspell/$subFolder/uk_UA.dic").text = txt
 
 
 static boolean hasInanimVkly(line, propName) {
     return propName || line.contains('.ikl')
 }
 
-static boolean spellWord(it) {
-	return ! ( it =~ NONSPELL_TAG_LIST )
-		|| it =~ /&insert:short/ \
-		|| it =~ /adj:m:v_(naz|zna).*:short/ \
-		|| it =~ /^((що(як)?)?най)?(більш|менш|скоріш|перш)$/
+static boolean spellWord(String line) {
+	return ! ( line =~ NONSPELL_TAG_LIST )
+		|| line =~ /&insert:short/ \
+		|| line =~ /adj:m:v_(naz|zna).*:short/ \
+		|| line =~ /^((що(як)?)?най)?(більш|менш|скоріш|перш)$/
 }

@@ -3,14 +3,16 @@ import org.apache.tools.ant.filters.ReplaceTokens
 version=new File("${projectDir}/../../VERSION").text.trim()
 def hunspellDir="${projectDir}/../hunspell/build/hunspell"
 
+def subname = project.hasProperty("full") ? "_full" : ""
+
 println "Version: $version"
 
 task prepareFiles {
 
   doLast() {
     copy {
-        from "$hunspellDir/uk_UA.aff"
-        from "$hunspellDir/uk_UA.dic"
+        from "$hunspellDir/$subname/uk_UA.aff"
+        from "$hunspellDir/$subname/uk_UA.dic"
         from "thesaurus"
         from "hyphen"
         from "spell"
@@ -41,7 +43,7 @@ task prepareFiles {
 
 task oxt (type: Zip, dependsOn: prepareFiles) {
     from 'build/oxt'
-    archiveBaseName = "dict-uk_UA-${project.version}"
+    archiveBaseName = "dict-uk_UA$subname-${project.version}"
     archiveExtension = "oxt"
     destinationDirectory = file("build")
 }

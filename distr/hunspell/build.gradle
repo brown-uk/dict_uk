@@ -104,6 +104,14 @@ task testHunspell2 (type: Exec) { //, dependsOn: hunspell) {
 task testHunspell(dependsOn: [testHunspell1, testHunspell2]) {
 }
 
+task testHunspellFull(type: Exec) { //, dependsOn: hunspell) {
+    def txt = "добрії алярм розженем головуючий всії даючися"
+
+    def cmd = "echo $txt | hunspell -d $outDir/_full/uk_UA | grep -E '^&'" + '; [ $? == 1 ]'
+    commandLine "sh", "-c", "${cmd}"
+}
+
+
 task getSpellWords (type: Exec) {
     inputs.files "${projectDir}/../../out/dict_corp_lt.txt"
     outputs.files "${projectDir}/build/words_spell.txt"
