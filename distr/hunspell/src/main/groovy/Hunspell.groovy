@@ -237,6 +237,18 @@ flagMap.each{ flag, affixGroupItems ->
 				body += '\n'
 				cnt += 1
 			}
+			
+			if( /* fullDict && */ affix.tags.startsWith("advp:rev") && affix.to.endsWith("ись") ) {
+				def fromm = affix.fromm ? affix.fromm : '0'
+				def to = affix.to ? affix.to : '0'
+				def ending = item.affixGroup.match
+
+				def to2 = to.replaceFirst(/ись$/, 'ися')
+				
+				body += "SFX $flag $fromm $to2 $ending ###"
+				body += '\n'
+				cnt += 1
+			}
 
 		}
 	}

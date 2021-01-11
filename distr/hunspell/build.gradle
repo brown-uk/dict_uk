@@ -61,7 +61,7 @@ task hunspellZip (type: Zip, dependsOn: hunspell) {
    destinationDirectory = file("$outDir")
 }
 
-task hunspellForSearch (type: JavaExec, dependsOn: classes) {
+task hunspellFull (type: JavaExec, dependsOn: classes) {
     outputs.files "$outDir/uk_UA.aff", "$outDir/uk_UA.dic"
 
     doFirst {
@@ -87,6 +87,7 @@ task testHunspell1(type: Exec) { //, dependsOn: hunspell) {
     txt += " Білгород-Дністровського Захер-Мазоха Захера-Мазоха"
     txt += " відіб\\'ю"
     txt += " всього усього"
+    txt += " раніш"
 
     def cmd = "echo $txt | hunspell -d $outDir/uk_UA | grep -E '^&'" + '; [ $? == 1 ]'
     commandLine "sh", "-c", "${cmd}"
@@ -105,7 +106,7 @@ task testHunspell(dependsOn: [testHunspell1, testHunspell2]) {
 }
 
 task testHunspellFull(type: Exec) { //, dependsOn: hunspell) {
-    def txt = "добрії алярм розженем головуючий всії даючися"
+    def txt = "добрії алярм головуючий абонуєм розженем всії даючися"
 
     def cmd = "echo $txt | hunspell -d $outDir/_full/uk_UA | grep -E '^&'" + '; [ $? == 1 ]'
     commandLine "sh", "-c", "${cmd}"
