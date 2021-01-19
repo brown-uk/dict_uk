@@ -118,8 +118,12 @@ Note: [derivative projects](distr/) have different licenses
 
 Besides that materials in this project are allowed to be used in https://voice.mozilla.org/uk and https://common-voice.github.io/sentence-collector/#/ according to their licenses.
 
+Copyright (c) 2021 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
 
-Copyright (c) 2020 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
+Просимо посилатися на ресурс так:
+
+Рисін А., Старко В. Великий  електронний  словник  української  мови  (ВЕСУМ). 2005-2021. URL: https://github.com/brown-uk/dict_uk
+Rysin, A., Starko, V. Large Electronic Dictionary of Ukrainian (VESUM). 2005-2021. Available at: https://github.com/brown-uk/dict_uk
 
 ### Derivative Projects ###
 
