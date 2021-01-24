@@ -644,6 +644,18 @@
 
 те-се те-се noun:inanim:n:v_naz/v_zna:&pron:dem
 
+оний оний adj:m:v_naz/v_zna:&pron:dem       # lim
+оній оний adj:f:v_dav/v_mis:&pron:dem
+оного оний adj:m:v_rod/v_zna:ranim:&pron:dem
+оного оний adj:n:v_rod:&pron:dem
+онеє оний adj:n:v_naz/v_zn2:&pron:dem:long
+оних оний adj:p:v_rod/v_zn1/v_mis:&pron:dem:arch
+онім оний adj:m:v_mis:&pron:dem:arch
+онім оний adj:n:v_mis:&pron:dem:arch
+оної оний adj:f:v_rod:&pron:dem:arch
+
+ласочка ласочка noun:f:v_naz                # lim
+
 мосьпане мосьпане noun:m:v_kly:anim         # lim
 
 # давні форми

@@ -317,9 +317,9 @@
 нічогісінько нічогісінько noun:inanim:n:v_rod:&pron:neg
 анічогісінько анічогісінько noun:inanim:n:v_rod:&pron:neg
 
-себе себе noun:v_rod/v_zna:&pron:refl
-собі себе noun:v_dav/v_mis:&pron:refl
-собою себе noun:v_oru:&pron:refl
+себе себе noun:unanim:s:v_rod/v_zna:&pron:refl
+собі себе noun:unanim:s:v_dav/v_mis:&pron:refl
+собою себе noun:unanim:s:v_oru:&pron:refl
 
 
 # Прикметникові займенники

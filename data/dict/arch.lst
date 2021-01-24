@@ -385,7 +385,6 @@
 дихавиця /n10
 дівство /n2n
 дільчий /adj
-дітва /n10
 дневник /n20.a.p
 довг /n20
 довг /n20.p
@@ -462,6 +461,7 @@
 заповідуваний /adj :&adjp:pasv:imperf
 заповідувати /v1.cf.advp :imperf
 запросний /adj
+зарев /n20
 зарівно adv:&predic
 засов /n20.a.u.p
 засовець /n22.a
@@ -755,6 +755,7 @@
 одіж /n32
 одізвати /v2.isNo :perf
 одізватися /vr1 :perf
+одісланий /adj :&adjp:pasv:perf
 одіслати /v1.isNo :perf
 одітий /adj :&adjp:pasv:perf    # past
 одкривати /v2.cf.advp :imperf
@@ -798,8 +799,6 @@
 олтар /n24.a.p.ke
 омочений /adj :&adjp:pasv:perf              #> обмочений
 онакий /adj :&pron:def
-онеє noun:n:v_naz/v_zna:&pron:dem
-оний /adj :&pron:dem
 опізнитися /vr1.it1 :perf
 опізнюватися /vr1.cf.advp :imperf
 опірений /adj :&adjp:pasv:perf    # past
@@ -877,7 +876,6 @@
 пахати /v2.cf :xp2:imperf                   # па́хати
 пашпорт /n20.a.p
 пеняти /v2.cf.advp :imperf
-передпекло /n2n
 переіначений /adj :&adjp:pasv:perf
 переіначення /n2n
 переіначити /v1.is0.it0 :perf
@@ -934,6 +932,7 @@
 подобати /v2.cf.advp :imperf
 подовш adv|prep        # rv_rod
 подячно adv
+поєдині adv
 пожитний /adj
 позавгорідно adv
 познимкуватися /vr1 :perf
@@ -1086,7 +1085,6 @@
 стежі /np2.<
 стейт /n20.p                          # діаспорне слово
 стейтовий /adj
-стеменно adv
 стерятися /vr2 :perf
 стійковий /adj
 стіки adv:&pron:dem
