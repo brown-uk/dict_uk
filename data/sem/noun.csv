@@ -6,7 +6,7 @@
 армія,1:conc:collect
 бажання,1:abst:psych:vol
 база,1:abst:2:conc:org&&build:surface:3:conc:part
-батько,1:conc:hum:kin:2:conc:hum:3:conc:animal
+батько,1:conc:hum:kin:2:conc:hum
 безпека,1:abst:state
 березень,1:conc:time:month
 бік,1:conc:body:part:2:conc:surface
@@ -551,3 +551,2729 @@
 шлях,1:conc:loc:surface&line:2:abst:3:conc:body:part
 явище,1:abst
 якість,1:abst:abst
+абісофіли,1:conc:animal
+авксотроф xp1,1:conc:animal
+австралопітек,1:conc:animal
+автохтон xp2,1:conc:animal
+ага xp2,1:conc:animal
+агама,1:conc:animal
+агнець,1:conc:hum
+агробактерія,1:conc:animal
+агутієві,1:conc:animal
+аеробіонт xp1,1:conc:animal
+азотобактер,1:conc:animal
+азотобактерія,1:conc:animal
+айршир,1:conc:animal
+акантод,1:conc:animal
+акантоцефал,1:conc:animal
+акарин,1:conc:animal
+акіта,1:conc:animal
+акрида,1:conc:animal
+аксис,1:conc:animal
+акула,1:conc:animal
+акула-мако,1:conc:animal
+акула-молот,1:conc:animal
+акуленя,1:conc:animal
+акулисько,1:conc:animal
+алабай,1:conc:animal
+алігатор,1:conc:animal
+алоза,1:conc:animal
+алохтон xp1,1:conc:animal
+альбатрос,1:conc:animal
+альбінос xp2,1:conc:animal
+альбіноска xp2,1:conc:animal
+альпака xp1,1:conc:animal
+амадина,1:conc:animal
+амбістомові,1:conc:animal
+амеба,1:conc:animal
+амебоподібні,1:conc:animal
+амієві,1:conc:animal
+амієподібні,1:conc:animal
+амніоти,1:conc:animal
+амур,1:conc:animal
+амфібіонт,1:conc:animal
+амфібія xp1,1:conc:animal
+амфідиплоїд,1:conc:animal
+амфіпод,1:conc:animal
+амфісбена,1:conc:animal
+амфісбенові,1:conc:animal
+амфітрих,1:conc:animal
+амфіума,1:conc:animal
+анабас,1:conc:animal
+анаеробіонт,1:conc:animal
+анаконда,1:conc:animal
+анамнія,1:conc:animal
+анаплазми,1:conc:animal
+ангора xp1,1:conc:animal
+ангорець,1:conc:animal
+ангорка,1:conc:animal
+анкілостоміди,1:conc:animal
+аноксибіонт,1:conc:animal
+анофелес,1:conc:animal
+антилопа,1:conc:animal
+анчоус,1:conc:animal
+апатозавр,1:conc:animal
+аполлон,1:conc:animal
+арахніди,1:conc:animal
+аргентина,1:conc:animal
+аргус xp2,1:conc:animal
+ареосцелідія,1:conc:animal
+армадил,1:conc:animal
+архебактерії,1:conc:animal
+архібактерія,1:conc:animal
+архозавр,1:conc:animal
+аскарида,1:conc:animal
+аскаридоподібні,1:conc:animal
+аспід xp1,1:conc:animal
+астерія,1:conc:animal
+асцидія,1:conc:animal
+атрихія,1:conc:animal
+ауксотроф xp1,1:conc:animal
+афаліна,1:conc:animal
+ахалтекінець,1:conc:animal
+ацидофіли,1:conc:animal
+бабак xp2,1:conc:animal
+бабача,1:conc:animal
+бабаченя,1:conc:animal
+бабачиха,1:conc:animal
+бабачок,1:conc:animal
+бабезія,1:conc:animal
+бабець-головач,1:conc:animal
+бабіруса,1:conc:animal
+бабка xp2,1:conc:animal
+бабуїн,1:conc:animal
+бабцеві,1:conc:animal
+багатоколінчасті,1:conc:animal
+багатоніжка,1:conc:animal
+багатощетинкові,1:conc:animal
+бадя,1:conc:animal
+базифіл,1:conc:animal
+байбак xp2,1:conc:animal
+байбачок,1:conc:animal
+баклан,1:conc:animal
+бактерія,1:conc:animal
+бактероїд,1:conc:animal
+бактріан,1:conc:animal
+балабан xp1,1:conc:animal
+баланоглос,1:conc:animal
+балантидій,1:conc:animal
+балобан,1:conc:animal
+бананоїд,1:conc:animal
+бандарлог,1:conc:animal
+бандар-лог,1:conc:animal
+бантенг,1:conc:animal
+барабулька,1:conc:animal
+барабуля,1:conc:animal
+баракудка,1:conc:animal
+баракудові,1:conc:animal
+баран xp2,1:conc:animal
+баранець,1:conc:animal
+баранисько,1:conc:animal
+баранище,1:conc:animal
+баранча,1:conc:animal
+баранчик,1:conc:animal
+бараня,1:conc:animal
+барбос,1:conc:animal
+барбус,1:conc:animal
+барліжник,1:conc:animal
+барс,1:conc:animal
+барсеня,1:conc:animal
+басет,1:conc:animal
+батибіонт,1:conc:animal
+батрахозавр,1:conc:animal
+бацила,1:conc:animal
+бацилоносій xp2,1:conc:animal
+бджілка,1:conc:animal
+бджілонька,1:conc:animal
+бджілочка,1:conc:animal
+бджола,1:conc:animal
+бджоленя,1:conc:animal
+бджолині,1:conc:animal
+бджоловидка,1:conc:animal
+бджолоїд,1:conc:animal
+бджолоїдка,1:conc:animal
+бджоломатка,1:conc:animal
+бегемот,1:conc:animal
+бегемотик,1:conc:animal
+бегемотиха,1:conc:animal
+бедрик,1:conc:animal
+беззубка,1:conc:animal
+безкрилі,1:conc:animal
+безхвості,1:conc:animal
+безхребетні,1:conc:animal
+безчерепні,1:conc:animal
+безщелепні,1:conc:animal
+бекас,1:conc:animal
+бекасик,1:conc:animal
+белемніт,1:conc:animal
+бендюг,1:conc:animal
+бентозух,1:conc:animal
+берегівка,1:conc:animal
+беркут,1:conc:animal
+беркутятко,1:conc:animal
+беркшир,1:conc:animal
+бестер,1:conc:animal
+бик xp1,1:conc:animal
+биндюг,1:conc:animal
+бистрянка xp1,1:conc:animal
+биця,1:conc:animal
+бичечок,1:conc:animal
+бичисько xp1,1:conc:animal
+бичище,1:conc:animal
+бичкові,1:conc:animal
+бичок xp1,1:conc:animal
+бишак,1:conc:animal
+бігль,1:conc:animal
+бізон,1:conc:animal
+білан,1:conc:animal
+білик,1:conc:animal
+білиця,1:conc:animal
+білка,1:conc:animal
+білобока,1:conc:animal
+білогривець,1:conc:animal
+білодеревець,1:conc:animal
+білозір xp2,1:conc:animal
+білозубка,1:conc:animal
+білокрилка,1:conc:animal
+білоочка,1:conc:animal
+білорибиця,1:conc:animal
+білочка,1:conc:animal
+білуга,1:conc:animal
+білуха,1:conc:animal
+білченя,1:conc:animal
+біляк xp2,1:conc:animal
+бітинія,1:conc:animal
+біфідобактерія,1:conc:animal
+бладхаунд,1:conc:animal
+блищак,1:conc:animal
+блішка,1:conc:animal
+блоха,1:conc:animal
+блощиця,1:conc:animal
+бобер,1:conc:animal
+бобир,1:conc:animal
+бобреня,1:conc:animal
+бобренятко,1:conc:animal
+бобриха,1:conc:animal
+бобтейл,1:conc:animal
+богатирка,1:conc:animal
+бокоплав,1:conc:animal
+бокоплави,1:conc:animal
+болонка,1:conc:animal
+бонелія,1:conc:animal
+бородавник xp1,1:conc:animal
+бородавчатка,1:conc:animal
+борозенний,1:conc:animal
+борозний,1:conc:animal
+борозняк,1:conc:animal
+борсук,1:conc:animal
+борсуча,1:conc:animal
+борсученя,1:conc:animal
+борсучиха,1:conc:animal
+борсучище,1:conc:animal
+борсучок,1:conc:animal
+босерон,1:conc:animal
+боцюн,1:conc:animal
+боцян,1:conc:animal
+брабансон,1:conc:animal
+браконіда,1:conc:animal
+браула,1:conc:animal
+брахіозавр,1:conc:animal
+брахіопод,1:conc:animal
+брахіоподи,1:conc:animal
+брижач,1:conc:animal
+бріар,1:conc:animal
+бройлер,1:conc:animal
+бронтозавр,1:conc:animal
+бронтотерій,1:conc:animal
+бруднокровець,1:conc:animal
+бруднокровка,1:conc:animal
+брунькоїд,1:conc:animal
+бруцела,1:conc:animal
+бубличниця,1:conc:animal
+бугай,1:conc:animal
+бугайчик,1:conc:animal
+бузівок,1:conc:animal
+бузьок,1:conc:animal
+буйвіл,1:conc:animal
+буйволеня,1:conc:animal
+буйволиця,1:conc:animal
+буйволя,1:conc:animal
+буйволяка,1:conc:animal
+букарка,1:conc:animal
+буланий,1:conc:animal
+бульдог,1:conc:animal
+бульмастиф,1:conc:animal
+бультер'єр,1:conc:animal
+буревісник,1:conc:animal
+буревісникоподібні,1:conc:animal
+бурозубка,1:conc:animal
+бурсачище,1:conc:animal
+бурундук,1:conc:animal
+бурундученя,1:conc:animal
+бурундучиха,1:conc:animal
+бурундучок,1:conc:animal
+бусел,1:conc:animal
+бусленя,1:conc:animal
+буслик,1:conc:animal
+буслиха,1:conc:animal
+бусько,1:conc:animal
+буфон,1:conc:animal
+бушель xp1,1:conc:animal
+вабець xp2,1:conc:animal
+ваговіз xp1,1:conc:animal
+ваговоз xp1,1:conc:animal
+вальдшнеп,1:conc:animal
+валюш,1:conc:animal
+валюшень,1:conc:animal
+варакушка,1:conc:animal
+варан,1:conc:animal
+варанчик,1:conc:animal
+василіск,1:conc:supernat:2:conc:animal
+вахня,1:conc:animal
+вевірка,1:conc:animal
+ведмеденя,1:conc:animal
+ведмедик,1:conc:animal
+ведмедиха,1:conc:animal
+ведмедицеві,1:conc:animal
+ведмедиця,1:conc:animal
+ведмедище,1:conc:animal
+ведмедка,1:conc:animal
+ведмедча,1:conc:animal
+ведмедько,1:conc:animal
+ведмедюка,1:conc:animal
+ведмедяка,1:conc:animal
+ведмедяра,1:conc:animal
+ведмедятко,1:conc:animal
+ведмежа,1:conc:animal
+ведмежатко,1:conc:animal
+ведмежатник xp2,1:conc:animal
+ведмідь,1:conc:animal:2:conc:hum
+вепер,1:conc:animal
+вепр,1:conc:animal
+вепреня,1:conc:animal
+веприк,1:conc:animal
+веприха,1:conc:animal
+веприця,1:conc:animal
+веприще,1:conc:animal
+верблюд,1:conc:animal
+верблюденя,1:conc:animal
+верблюдиха,1:conc:animal
+верблюдиця,1:conc:animal
+верблюжатко,1:conc:animal
+веретенниця,1:conc:animal
+веретільник,1:conc:animal
+веретільницеві,1:conc:animal
+веретільниця,1:conc:animal
+верметида,1:conc:animal
+верметус,1:conc:animal
+вертигузка,1:conc:hum:2:conc:animal
+вертун xp2,1:conc:animal
+вертячка xp1,1:conc:animal
+верховка,1:conc:animal
+верховод xp2,1:conc:animal
+верховодка xp1,1:conc:animal
+верхочут,1:conc:animal
+веселик,1:conc:animal
+веслоніс,1:conc:animal
+веснянка xp1,1:conc:animal
+вивільга,1:conc:animal
+вивільгові,1:conc:animal
+вивірка xp1,1:conc:animal
+видниха,1:conc:animal
+видра,1:conc:animal:2:conc:hum:negat
+видреня,1:conc:animal
+вижель,1:conc:animal
+вижленя,1:conc:animal
+вижлиця,1:conc:animal
+виз,1:conc:animal
+вилоріг,1:conc:animal
+вимниста,1:conc:animal
+винозірка xp2,1:conc:animal
+винохід,1:conc:animal
+виноходець,1:conc:animal
+випороток xp1,1:conc:animal
+випорток,1:conc:animal
+вирезуб,1:conc:animal
+вислокрилі,1:conc:animal
+віандот,1:conc:animal
+вібріон,1:conc:animal
+вівера,1:conc:animal
+вівериця,1:conc:animal
+віверові,1:conc:animal
+вівіпари,1:conc:animal
+вівсянка xp1,1:conc:animal
+вівсянкові,1:conc:animal
+вівсяночка,1:conc:animal
+вівцебик,1:conc:animal
+вівцематка,1:conc:animal
+вівця,1:conc:animal:2:conc:hum:negat
+вівчарик,1:conc:animal
+вівчарка,1:conc:animal
+вівчарочка,1:conc:animal
+вівчур,1:conc:animal
+вігонь xp1,1:conc:animal
+відгулень,1:conc:animal
+віз xp2,1:conc:animal
+війчасті,1:conc:animal
+вікунья xp1,1:conc:animal
+віл,1:conc:animal
+вірлиця,1:conc:animal
+вірля,1:conc:animal
+віскаша,1:conc:animal
+вісленя,1:conc:animal
+віслюк,1:conc:animal:2:conc:hum:negat
+віслючиха,1:conc:animal
+віслючка,1:conc:animal
+віслючок,1:conc:animal
+віялокрилі,1:conc:animal
+вобла,1:conc:animal
+вова,1:conc:animal
+вовк,1:conc:animal:2:conc:hum
+вовкодав,1:conc:animal
+вовкособака,1:conc:animal
+вовкулак,1:conc:supernat:2:conc:hum:3:conc:animal
+вовкулака,1:conc:supernat:2:conc:hum:3:conc:animal
+вовцюга,1:conc:animal
+вовцюган,1:conc:animal
+вовча,1:conc:animal
+вовчатко,1:conc:animal
+вовченько,1:conc:animal
+вовченя,1:conc:animal
+вовченятко,1:conc:animal
+вовчик,1:conc:animal
+вовчисько,1:conc:animal
+вовчиця,1:conc:animal
+вовчище,1:conc:animal
+вовчок xp1,1:conc:animal
+вовчук,1:conc:animal
+вогнівка,1:conc:animal
+водовозка xp1,1:conc:animal
+водомороз,1:conc:animal
+водосвинка,1:conc:animal
+водосвинкові,1:conc:animal
+волик,1:conc:animal
+волосові,1:conc:animal
+волосоголовець,1:conc:animal
+волосоїдові,1:conc:animal
+волосянка xp1,1:conc:animal
+волохокрилі,1:conc:animal
+волочниця,1:conc:animal
+вомбат,1:conc:animal
+вомбатові,1:conc:animal
+вонючка xp1,1:conc:animal
+воркіт,1:conc:animal
+воркотик,1:conc:animal
+ворон xp1,1:conc:animal
+ворона,1:conc:animal:2:conc:hum:negat
+вороненький,1:conc:animal
+вороненя,1:conc:animal
+вороненятко,1:conc:animal
+воронець xp1,1:conc:animal
+вороний,1:conc:animal
+вороня,1:conc:animal
+воронятко,1:conc:animal
+восьминіг,1:conc:animal
+восьмирукі,1:conc:animal
+воша,1:conc:animal
+вошва,1:conc:animal
+вошка,1:conc:animal
+вториннобезкрилі,1:conc:animal
+вториннороті,1:conc:animal
+вуалехвіст,1:conc:animal
+вугор xp1,1:conc:animal
+вугреня,1:conc:animal
+вугренятко,1:conc:animal
+вугриця,1:conc:animal
+вудвуд,1:conc:animal
+вуж,1:conc:animal
+вужак,1:conc:animal
+вужака,1:conc:animal
+вужачкові,1:conc:animal
+вуженя,1:conc:animal
+вужик,1:conc:animal
+вужище,1:conc:animal
+вусач xp2,1:conc:animal
+вусоногі,1:conc:animal
+вустриця,1:conc:animal
+вутінка,1:conc:animal
+вутка,1:conc:animal
+вутя,1:conc:animal
+вутятко,1:conc:animal
+вухастик,1:conc:animal
+вуховертка,1:conc:animal
+вухоногі,1:conc:animal
+в'юн xp2,1:conc:animal
+в'юрок,1:conc:animal
+в'ючак,1:conc:animal
+в'язь xp1,1:conc:animal
+гавеня,1:conc:animal
+гавіал,1:conc:animal
+гавкун xp2,1:conc:animal
+гавчик,1:conc:animal
+гага,1:conc:animal
+гагара,1:conc:animal
+гагарка,1:conc:animal
+гагарові,1:conc:animal
+гад xp2,1:conc:animal
+гаденя,1:conc:animal
+гадина xp2,1:conc:animal
+гадинка,1:conc:animal
+гадрозавр,1:conc:animal
+гадюка xp2,1:conc:animal
+гадюкові,1:conc:animal
+гадюра,1:conc:animal
+гадюча xp2,1:conc:animal
+гадюченя xp2,1:conc:animal
+гадючище,1:conc:animal
+гадючка,1:conc:animal
+гадя xp2,1:conc:animal
+газель xp1,1:conc:animal
+гайворон,1:conc:animal
+гайвороненя,1:conc:animal
+гайвороня,1:conc:animal
+гайворонятко,1:conc:animal
+гайстер,1:conc:animal
+галагаз,1:conc:animal
+галеня,1:conc:animal
+галеопітек,1:conc:animal
+галиці,1:conc:animal
+галка,1:conc:animal
+галонька,1:conc:animal
+галофіли,1:conc:animal
+галочка xp2,1:conc:animal
+галча,1:conc:animal
+галченя,1:conc:animal
+галченятко,1:conc:animal
+гамадрил,1:conc:animal
+гамазиди,1:conc:animal
+гамбузія,1:conc:animal
+гаплоспоридії,1:conc:animal
+гарч,1:conc:animal
+гаршнеп,1:conc:animal
+гаял,1:conc:animal
+гвоздичники,1:conc:animal
+геконові,1:conc:animal
+гелікобактер,1:conc:animal
+геліобактер,1:conc:animal
+геліцела,1:conc:animal
+гемоспоридія,1:conc:animal
+геогельмінт,1:conc:animal
+гепард,1:conc:animal
+гергелі,1:conc:animal
+гессенка xp2,1:conc:animal
+гиндик,1:conc:animal
+гібон,1:conc:animal
+гібонові,1:conc:animal
+гігантозавр,1:conc:animal
+гігантопітек,1:conc:animal
+гідра,1:conc:supernat:2:conc:animal
+гідробіонт,1:conc:animal
+гідробіонт xp1,1:conc:animal
+гідроїд,1:conc:animal
+гідромедуза,1:conc:animal
+гідроподібні,1:conc:animal
+гієна,1:conc:animal
+гієнові,1:conc:animal
+гінчак,1:conc:animal
+гіперпаразит,1:conc:animal
+глист,1:conc:animal
+глистюк,1:conc:animal
+глистяк,1:conc:animal
+глось,1:conc:animal
+глухар xp2,1:conc:animal
+глушець,1:conc:animal
+гнида,1:conc:animal:2:conc:hum:negat
+гнідий,1:conc:animal
+гнідко,1:conc:animal
+гнойовик,1:conc:animal
+гнотобіонт,1:conc:animal
+гоацин,1:conc:animal
+гоблін,1:conc:supernat:2:conc:hum:negat
+гоголь,1:conc:animal
+голанка xp1,1:conc:animal
+голендерка,1:conc:animal
+голець,1:conc:animal
+голіаф xp2,1:conc:animal
+голінасті,1:conc:animal
+голкошкірі,1:conc:animal
+голобельний,1:conc:animal
+головань xp2,1:conc:animal
+головастик,1:conc:animal
+головатиця,1:conc:animal
+головач xp2,1:conc:animal
+головачка,1:conc:animal
+головень,1:conc:animal
+головоногі,1:conc:animal
+головохордові,1:conc:animal
+голонасінні,1:conc:animal
+голопуцьок xp2,1:conc:animal
+голотурія,1:conc:animal
+голошийка,1:conc:animal
+голуб xp2,1:conc:animal
+голубеня,1:conc:animal
+голубенятко,1:conc:animal
+голубець xp1,1:conc:animal
+голубиця,1:conc:animal
+голубка,1:conc:animal:2:conc:hum:posit
+голубок,1:conc:animal
+голубонька,1:conc:animal:2:conc:hum:posit
+голубонько,1:conc:animal
+голубоподібні,1:conc:animal
+голубочка,1:conc:animal:2:conc:hum:posit
+голубочок,1:conc:animal
+голуб'я,1:conc:animal
+голуб'янкові,1:conc:animal
+голуб'ятко,1:conc:animal
+голуб'ятник xp2,1:conc:animal
+голуб'яточко,1:conc:animal
+гольян,1:conc:animal
+гомінід,1:conc:animal
+гониця xp2,1:conc:animal
+гонокок,1:conc:animal
+гонча,1:conc:animal
+гончак,1:conc:animal
+горбоконик,1:conc:animal
+горбуша,1:conc:animal
+горгона,1:conc:supernat:2:conc:hum:negat
+гордон,1:conc:animal
+гордон-сетер,1:conc:animal
+горила,1:conc:animal
+горихвістка,1:conc:animal
+горіхівка,1:conc:animal
+горіхотворка,1:conc:animal
+горлач xp2,1:conc:animal
+горленя,1:conc:animal
+горлиця,1:conc:animal:2:conc:hum:posit
+горличка,1:conc:animal:2:conc:hum:posit
+горлопері,1:conc:animal
+горностай xp1,1:conc:animal
+горобеня,1:conc:animal
+горобенятко,1:conc:animal
+горобець,1:conc:animal
+горобка,1:conc:animal
+горобцеподібні,1:conc:animal
+горобчик,1:conc:animal
+горобчиха,1:conc:animal
+гороб'я,1:conc:animal
+гострик,1:conc:animal
+грайворон,1:conc:animal
+грак,1:conc:animal
+грач xp2,1:conc:animal
+граченя,1:conc:animal
+грачиха,1:conc:animal
+гребенезубі,1:conc:animal
+грейхаунд,1:conc:animal
+греко-римлянин,1:conc:animal
+гризун,1:conc:animal
+гринда,1:conc:animal
+гриф xp1,1:conc:animal
+грифон,1:conc:animal
+гробак,1:conc:animal
+гробачок,1:conc:animal
+громак xp1,1:conc:animal
+губанові,1:conc:animal
+губоногі,1:conc:animal
+гуменник,1:conc:animal
+гусак xp1,1:conc:animal
+гусачок,1:conc:animal
+гусениця xp1,1:conc:animal
+гусеня,1:conc:animal
+гусенятко,1:conc:animal
+гусеподібні,1:conc:animal
+гуси,1:conc:animal
+гусінь xp1,1:conc:animal
+гуска,1:conc:animal
+гусонька,1:conc:animal
+гусочка,1:conc:animal
+густера,1:conc:animal
+гусь,1:conc:animal
+гуся,1:conc:animal
+гусятко,1:conc:animal
+гюрза,1:conc:animal
+ґава,1:conc:animal:2:conc:hum:negat
+ґавеня,1:conc:animal
+ґавенятко,1:conc:animal
+ґалаґан xp1,1:conc:animal
+ґедз,1:conc:animal
+ґедзик,1:conc:animal
+ґедзь,1:conc:animal
+ґерґелі,1:conc:animal
+далматин,1:conc:animal
+далматинець,1:conc:animal
+далматинка,1:conc:animal
+дамани,1:conc:animal
+дафнія,1:conc:animal
+дводишні,1:conc:animal
+двозяброві,1:conc:animal
+двокопиті,1:conc:animal
+двокрилі,1:conc:animal
+двопарноногі,1:conc:animal
+двопарнорізцеві,1:conc:animal
+дворняга,1:conc:animal
+дворняжка,1:conc:animal
+двортер'єр,1:conc:animal
+декаподи,1:conc:animal
+дельфін,1:conc:animal
+дельфінчик,1:conc:animal
+демодекс,1:conc:animal
+демон,1:conc:supernat
+деревоточець,1:conc:animal
+дерихвіст,1:conc:animal
+деркач xp1,1:conc:animal
+деркаченя,1:conc:animal
+деркачик xp1,1:conc:animal
+деряба,1:conc:animal
+джгутикові,1:conc:animal
+джгутиконосець,1:conc:animal
+джек,1:conc:animal
+джерелянка,1:conc:animal
+джеркотун xp2,1:conc:animal
+джмелик,1:conc:animal
+джміль,1:conc:animal
+дзиз,1:conc:animal
+дзьобоголові,1:conc:animal
+дзюрчалкові,1:conc:animal
+дикобраз,1:conc:animal
+дикуша,1:conc:animal
+динозавр,1:conc:animal:2:conc:hum
+динозаврик,1:conc:animal
+динотерій,1:conc:animal
+диплодок,1:conc:animal
+диплокок,1:conc:animal
+дифтероїд,1:conc:animal
+диявол,1:conc:supernat
+доберман,1:conc:animal
+доберман-пінчер,1:conc:animal
+довгокрил,1:conc:animal
+довгомір,1:conc:animal
+довгоніг,1:conc:animal
+довгоніжка,1:conc:animal
+довгоніс,1:conc:animal
+довгоносик,1:conc:animal
+довгоносикові,1:conc:animal
+дог,1:conc:animal
+дойда xp2,1:conc:animal
+дохлятина xp2,1:conc:animal
+драбиняк xp1,1:conc:animal
+дракон,1:conc:supernat:2:conc:animal
+дракончик,1:conc:animal
+дратхаар,1:conc:animal
+дрил,1:conc:animal
+дрізд,1:conc:animal
+дрік xp1,1:conc:animal
+дрімлюга,1:conc:animal
+дріопітек,1:conc:animal
+дрозд,1:conc:animal
+дрозденя,1:conc:animal
+дроздиха,1:conc:animal
+дрозофіла,1:conc:animal
+дромадер,1:conc:animal
+дромедар,1:conc:animal
+дротяник,1:conc:animal
+дротянка xp1,1:conc:animal
+дрохвеня,1:conc:animal
+дрохвич,1:conc:animal
+дубоніс,1:conc:animal
+дудак,1:conc:animal
+дундук xp2,1:conc:animal
+дупель,1:conc:animal
+дюгонь,1:conc:animal
+дятел,1:conc:animal:2:conc:hum:negat
+дятленя,1:conc:animal
+дятленятко,1:conc:animal
+дятлик,1:conc:animal
+евглена,1:conc:animal
+еврибіонт xp1,1:conc:animal
+евриптерид,1:conc:animal
+еврифаг,1:conc:animal
+евфаузієві,1:conc:animal
+ектопаразит,1:conc:animal
+емболотерій,1:conc:animal
+ендемік xp1,1:conc:animal
+ентелодон,1:conc:animal
+ентеробактерія,1:conc:animal
+ентерокок,1:conc:animal
+ентомофаг,1:conc:animal
+еогіпус,1:conc:animal
+епіорніс,1:conc:animal
+еструс xp1,1:conc:animal
+еубактерія,1:conc:animal
+еублефар,1:conc:animal
+ефа,1:conc:animal
+ефемерида xp1,1:conc:animal
+ехінокок,1:conc:animal
+ехіноринх,1:conc:animal
+ехіуриди,1:conc:animal
+єдиноріг,1:conc:supernat:2:conc:animal
+єловега,1:conc:animal
+єнот,1:conc:animal
+єнотик,1:conc:animal
+єхидна,1:conc:animal
+жаба xp1,1:conc:animal
+жабеня,1:conc:animal
+жабенятко,1:conc:animal
+жабище,1:conc:animal
+жабка xp1,1:conc:animal
+жабонька,1:conc:animal
+жайвір,1:conc:animal
+жайворон,1:conc:animal
+жайворонкові,1:conc:animal
+жайворонок,1:conc:animal:2:conc:hum
+жайворонча,1:conc:animal
+жайвороня,1:conc:animal
+жайворонятко,1:conc:animal
+жак xp1,1:conc:animal
+жар-птиця,1:conc:supernat
+жеребець,1:conc:animal:2:conc:hum
+жеребна,1:conc:animal
+жеребчик,1:conc:animal
+жереб'я,1:conc:animal
+жереб'ятко,1:conc:animal
+жеретія,1:conc:animal
+жерлянка,1:conc:animal
+живець xp1,1:conc:animal
+живородка,1:conc:animal
+животина,1:conc:animal
+жигалка,1:conc:animal
+жираф,1:conc:animal
+жирафа,1:conc:animal
+жирафеня,1:conc:animal
+жирафка,1:conc:animal
+жирафчик,1:conc:animal
+житник,1:conc:animal
+жовна,1:conc:animal
+жовтецеві,1:conc:animal
+жовтобрюх,1:conc:animal
+жовтобрюха,1:conc:animal
+жовтобрюшка,1:conc:animal
+жовтодзьоб,1:conc:animal
+жовтодзьобик,1:conc:animal
+жовтодзюб,1:conc:animal
+жовтопуз,1:conc:animal
+жовтопузик,1:conc:animal
+жовторотик,1:conc:hum:negat:2:conc:animal
+жовтохвіст,1:conc:animal
+жовтцеві,1:conc:animal
+жужелицеві,1:conc:animal
+жужелиця xp1,1:conc:animal
+жуйні,1:conc:animal
+жук xp2,1:conc:animal
+жук-гнойовик,1:conc:animal
+жук-носоріг,1:conc:animal
+жук-олень,1:conc:animal
+жук-рогач,1:conc:animal
+журавель xp1,1:conc:animal
+журавка,1:conc:animal
+журавленя,1:conc:animal
+журавлеподібні,1:conc:animal
+журавлик,1:conc:animal
+журавлиха,1:conc:animal
+журавлиця,1:conc:animal
+журавочка,1:conc:animal
+журавчик,1:conc:animal
+жученя,1:conc:animal
+жучище,1:conc:animal
+жучок xp1,1:conc:animal
+заєць,1:conc:animal:2:conc:hum
+зайка,1:conc:animal:2:conc:hum
+зайцеподібні,1:conc:animal
+зайча,1:conc:animal
+зайчатко,1:conc:animal
+зайченя,1:conc:animal
+зайченятко,1:conc:animal
+зайчик xp1,1:conc:animal
+зайчисько,1:conc:animal
+зайчиха,1:conc:animal
+зайчиця,1:conc:animal
+зайчук,1:conc:animal
+заїнько,1:conc:animal
+залізобактерія,1:conc:animal
+затулка xp1,1:conc:animal
+звір xp1,1:conc:animal:2:conc:hum
+звіреня,1:conc:animal
+звіренятко,1:conc:animal
+звірина,1:conc:animal
+звіринка,1:conc:animal
+звірозубі,1:conc:animal
+звірок,1:conc:animal
+звірюга,1:conc:animal:2:conc:hum
+звірюка,1:conc:animal:2:conc:hum
+звірючка,1:conc:animal
+звіря,1:conc:animal
+звіряка,1:conc:animal
+звірятко,1:conc:animal
+здохлятина xp1,1:conc:animal
+зебоїд,1:conc:animal
+зебра xp1,1:conc:animal
+зеброїд,1:conc:animal
+зеленоочка,1:conc:animal
+зеленуха,1:conc:animal
+зеленяк,1:conc:animal
+земледух,1:conc:animal
+землерийка,1:conc:animal
+землерийкові,1:conc:animal
+земноводні,1:conc:animal
+зенненхунд,1:conc:animal
+зерноїд,1:conc:animal
+зигзиця,1:conc:animal
+зимородок,1:conc:animal
+зіркоглядові,1:conc:animal
+змієголов,1:conc:animal
+змієїд,1:conc:animal
+змієня,1:conc:animal
+змієхвостка,1:conc:animal
+змієшийка,1:conc:animal
+змій xp1,1:conc:animal
+змійка xp1,1:conc:animal
+зміюка,1:conc:animal:2:con:hum:negat
+зміючка,1:conc:animal
+змія,1:conc:animal:2:con:hum:negat
+зміячка,1:conc:animal
+зозуленька,1:conc:animal:2:conc:hum:posit
+зозуленя,1:conc:animal
+зозуленятко,1:conc:animal
+зозулеподібні,1:conc:animal
+зозулечка,1:conc:animal:2:conc:hum:posit
+зозулиця,1:conc:animal
+зозулька,1:conc:animal:2:conc:hum:posit
+зозуля,1:conc:animal
+золотогуз,1:conc:animal
+золотогузка,1:conc:animal
+золотоочка,1:conc:animal
+зоонекрофаг,1:conc:animal
+зоофаг,1:conc:animal
+зоофіт,1:conc:animal
+зубастик,1:conc:animal
+зубатка,1:conc:animal
+зубр,1:conc:animal
+зубреня,1:conc:animal
+зубренятко,1:conc:animal
+зубриха,1:conc:animal
+зубробізон,1:conc:animal
+зубря,1:conc:animal
+зяблик,1:conc:animal
+зябродишні,1:conc:animal
+зяброногі,1:conc:animal
+индик,1:conc:animal
+йорж xp1,1:conc:animal
+йоржик xp1,1:conc:animal
+йорк,1:conc:animal
+ібіс,1:conc:animal
+іволга,1:conc:animal
+іглиця,1:conc:animal
+ігрунка,1:conc:animal
+ігрункові,1:conc:animal
+ігуана,1:conc:animal
+ігуанові,1:conc:animal
+ігуанодонт,1:conc:animal
+їжак xp1,1:conc:animal
+їжак-риба,1:conc:animal
+їжатець,1:conc:animal
+їжаченя,1:conc:animal
+їжачисько,1:conc:animal
+їжачиха,1:conc:animal
+їжачоголівкові,1:conc:animal
+їжачок,1:conc:animal
+ізозома,1:conc:animal
+ізюбр,1:conc:animal
+індик,1:conc:animal
+індикачка,1:conc:animal
+індича,1:conc:animal
+індичатко,1:conc:animal
+індиченя,1:conc:animal
+індиченятко,1:conc:animal
+індичка,1:conc:animal
+індрикотерій,1:conc:animal
+інокулятор,1:conc:animal
+іноходець,1:conc:animal
+інсект,1:conc:animal
+інфузорія,1:conc:animal
+інфузорія-туфелька,1:conc:animal
+істота,1:conc:hum&animal
+іхневмон,1:conc:animal
+іхтіозавр,1:conc:animal
+іхтіорніс,1:conc:animal
+іхтіостега,1:conc:animal
+іхтіофаг,1:conc:animal
+ішак,1:conc:animal
+ішачок,1:conc:animal
+ішхан,1:conc:animal
+кабан xp1,1:conc:animal
+кабанець,1:conc:animal
+кабанисько,1:conc:animal
+кабаниха,1:conc:animal
+кабанище,1:conc:animal
+кабанча,1:conc:animal
+кабанчик,1:conc:animal
+кабанюга,1:conc:animal
+кабаняка,1:conc:animal
+кабарга,1:conc:animal
+кажан,1:conc:animal
+кажанок,1:conc:animal
+кажанчик,1:conc:animal
+каженя,1:conc:animal
+казарка,1:conc:animal
+казуар,1:conc:animal
+кайман,1:conc:animal
+кайра,1:conc:animal
+калан,1:conc:animal
+каланіди,1:conc:animal
+каліфориди,1:conc:animal
+калкан,1:conc:animal
+калонг,1:conc:animal
+калуга,1:conc:animal
+кальмар,1:conc:animal
+кальмарові,1:conc:animal
+камбала,1:conc:animal
+камінка,1:conc:animal
+камса,1:conc:animal
+каналія xp2,1:conc:animal
+канарейка,1:conc:animal
+канарейко,1:conc:animal
+канарка,1:conc:animal
+канарочка,1:conc:animal
+кандиба,1:conc:animal
+канна xp1,1:conc:animal
+канюк,1:conc:animal
+канюка xp2,1:conc:animal
+каня,1:conc:animal
+капібара,1:conc:animal
+каплун,1:conc:animal
+капусниця,1:conc:animal
+капустянка,1:conc:animal
+капуцин xp2,1:conc:animal
+карадрина,1:conc:animal
+каракал,1:conc:animal
+каракатиця,1:conc:animal
+каракуль xp1,1:conc:animal
+каракурт,1:conc:animal
+карасик,1:conc:animal
+карась,1:conc:animal
+карий,1:conc:animal
+карнозавр,1:conc:animal
+карп,1:conc:animal
+катран xp1,1:conc:animal
+кача,1:conc:animal
+качатко,1:conc:animal
+качаточко,1:conc:animal
+качачі,1:conc:animal
+каченя,1:conc:animal
+каченятко,1:conc:animal
+качечка,1:conc:animal
+качині,1:conc:animal
+качка xp1,1:conc:animal
+качкодзьоб,1:conc:animal
+качконіс,1:conc:animal
+качур,1:conc:animal
+кашалот,1:conc:animal
+квага,1:conc:animal
+квак,1:conc:animal
+квакша,1:conc:animal
+квакшеві,1:conc:animal
+квіткогриз,1:conc:animal
+квіткоїд,1:conc:animal
+квітогриз,1:conc:animal
+квітозавр,1:conc:supernat
+квітозавриха,1:conc:supernat
+квоктуха,1:conc:animal
+квочка,1:conc:animal
+кедрівка,1:conc:animal
+кенгуреня,1:conc:animal
+кенгурятко,1:conc:animal
+кета,1:conc:animal
+кетсаль xp1,1:conc:animal
+кефалеподібні,1:conc:animal
+кефаль,1:conc:animal
+киргик,1:conc:animal
+кистепері,1:conc:animal
+кит xp1,1:conc:animal
+китеня,1:conc:animal
+китоподібні,1:conc:animal
+киценька,1:conc:animal
+кицька,1:conc:animal
+кицюня,1:conc:animal
+киця,1:conc:animal
+кишководишні,1:conc:animal
+кишковозяброві,1:conc:animal
+кібець,1:conc:animal
+кібченя,1:conc:animal
+кібчик,1:conc:animal
+кізка,1:conc:animal
+кізонька,1:conc:animal
+кізочка,1:conc:animal
+кілька,1:conc:animal
+кінь xp1,1:conc:animal
+кіт,1:conc:animal
+кітна,1:conc:animal
+кішечка,1:conc:animal
+кішка xp1,1:conc:animal
+клебсієла,1:conc:animal
+клептопаразит,1:conc:animal
+кликун xp2,1:conc:animal
+клинтух,1:conc:animal
+клишоногий,1:conc:animal
+кліщ,1:conc:animal
+кліщик,1:conc:animal
+клоакові,1:conc:animal
+клоп,1:conc:animal
+клостридія,1:conc:animal
+кляча,1:conc:animal
+кнур,1:conc:animal
+кнурець,1:conc:animal
+кнуряка,1:conc:animal
+коала,1:conc:animal
+кобель,1:conc:animal
+кобила xp1,1:conc:animal:2:conc:hum:negat
+кобилиця xp1,1:conc:animal
+кобилка xp1,1:conc:animal
+кобилочка,1:conc:animal
+кобилчина,1:conc:animal
+кобильчина,1:conc:animal
+кобилятина,1:conc:animal
+коблик,1:conc:animal
+кобра,1:conc:animal
+ковалик xp2,1:conc:animal
+ковблик,1:conc:animal
+когут,1:conc:animal
+коза,1:conc:animal:2:conc:hum
+коза-дереза,1:conc:animal
+козарка,1:conc:animal
+козел xp1,1:conc:animal
+козеня,1:conc:animal
+козенятко,1:conc:animal
+козеняточко,1:conc:animal
+козлик,1:conc:animal
+козлище,1:conc:animal
+козля,1:conc:animal
+козлятко,1:conc:animal
+козоріг,1:conc:animal
+козулька,1:conc:animal
+козуля,1:conc:animal
+козуня,1:conc:animal
+козявка,1:conc:animal
+козятко,1:conc:animal
+козяточко,1:conc:animal
+койот,1:conc:animal
+кок xp2,1:conc:animal
+кокер-спанієль,1:conc:animal
+коклюшка,1:conc:animal
+коконопряд,1:conc:animal
+колібрієві,1:conc:animal
+коловертка,1:conc:animal
+коловодник,1:conc:animal
+колючкоголові,1:conc:animal
+колючопері,1:conc:animal
+комар,1:conc:animal
+комар-дзвінець,1:conc:animal
+комарик,1:conc:animal
+комариха,1:conc:animal
+комарище,1:conc:animal
+комаха,1:conc:animal
+комахоїдні,1:conc:animal
+комашечка,1:conc:animal
+комашинка,1:conc:animal
+комашка,1:conc:animal
+кондор,1:conc:animal
+конематка,1:conc:animal
+коненя,1:conc:animal
+коник xp1,1:conc:animal
+конисько,1:conc:animal
+коничка,1:conc:animal
+коничок,1:conc:animal
+конище,1:conc:animal
+коноплянка,1:conc:animal
+коняка,1:conc:animal
+конячинка,1:conc:animal
+конячка,1:conc:animal
+копитні,1:conc:animal
+копрофаги,1:conc:animal
+корал xp1,1:conc:animal
+коринебактерія,1:conc:animal
+корівка,1:conc:animal
+корівонька,1:conc:animal
+корівчина,1:conc:animal
+корінебактерія,1:conc:animal
+корінний,1:conc:animal
+корінник,1:conc:animal
+корова,1:conc:animal:2:conc:hum:negat
+коровайка,1:conc:animal
+коровисько,1:conc:animal:2:conc:hum:negat
+короїд,1:conc:animal
+королик xp2,1:conc:animal
+короп,1:conc:animal
+коропець,1:conc:animal
+коропище,1:conc:animal
+коропові,1:conc:animal
+корсак,1:conc:animal
+коршак,1:conc:animal
+корюка,1:conc:animal
+костогриз xp1,1:conc:animal
+костолуза,1:conc:animal
+коструб xp2,1:conc:animal
+косуля,1:conc:animal
+котеня,1:conc:animal
+котенятко,1:conc:animal
+котеняточко,1:conc:animal
+котик xp1,1:conc:animal
+котилозавр,1:conc:animal
+котисько,1:conc:animal
+котище,1:conc:animal
+котко,1:conc:animal
+коток xp1,1:conc:animal
+коточок xp1,1:conc:animal
+котусь,1:conc:animal
+котюга,1:conc:animal
+котя,1:conc:animal
+котяра,1:conc:animal
+котятко,1:conc:animal
+котячі,1:conc:animal
+кохінхіна,1:conc:animal
+кохінхінка,1:conc:animal
+кошеня,1:conc:animal
+кошенятко,1:conc:animal
+кошеняточко,1:conc:animal
+краб xp1,1:conc:animal
+крабеня,1:conc:animal
+крабик,1:conc:animal
+кравчик xp2,1:conc:animal
+крак xp1,1:conc:animal
+краснопір xp1,1:conc:animal
+краснопірка,1:conc:animal
+креветка,1:conc:animal
+крем'яшник,1:conc:animal
+креодонт,1:conc:animal
+крех,1:conc:animal
+кречет,1:conc:animal
+кречітка,1:conc:animal
+кривоніс xp2,1:conc:animal
+крижавка,1:conc:animal
+крижак xp2,1:conc:animal
+крижень,1:conc:animal
+криженя,1:conc:animal
+крилан,1:conc:animal
+крилатка,1:conc:animal
+крилозяброві,1:conc:animal
+крилоногі,1:conc:animal
+крілик,1:conc:animal
+кріль,1:conc:animal
+крільчиха,1:conc:animal
+кріофіли,1:conc:animal
+кріт,1:conc:animal
+кровопаразит,1:conc:animal
+крокодил,1:conc:animal
+крокодилиха,1:conc:animal
+крокодилиця,1:conc:animal
+крокодильчик,1:conc:animal
+кролематка,1:conc:animal
+кроленя,1:conc:animal
+кролик,1:conc:animal
+кролиця,1:conc:animal
+кроля,1:conc:animal
+кропивник,1:conc:animal
+кропивниця xp1,1:conc:animal
+кропив'янка xp1,1:conc:animal
+кротеня,1:conc:animal
+крохаль,1:conc:animal
+круглоголовка,1:conc:animal
+круглороті,1:conc:animal
+крук,1:conc:animal
+крутиголовка xp1,1:conc:animal
+круторогі,1:conc:animal
+кряк,1:conc:animal
+кряква,1:conc:animal
+крякуша,1:conc:animal
+кряча,1:conc:animal
+крячка,1:conc:animal
+крячок,1:conc:animal
+кугуар,1:conc:animal
+кудлай,1:conc:animal
+кудлатик,1:conc:animal
+кудлач xp2,1:conc:animal
+кузька,1:conc:animal
+кукабара,1:conc:animal
+кукушка,1:conc:animal
+кулан,1:conc:animal
+кулик xp1,1:conc:animal
+куликоподібні,1:conc:animal
+куличок,1:conc:animal
+кульга xp2,1:conc:animal
+кумжа,1:conc:animal
+кумка,1:conc:animal
+куна xp1,1:conc:animal
+кунджа,1:conc:animal
+куницеві,1:conc:animal
+куниця,1:conc:animal
+куниченя,1:conc:animal
+кури,1:conc:animal
+курій xp2,1:conc:animal
+куріпка,1:conc:animal
+куріпочка,1:conc:animal
+куріп'я,1:conc:animal
+курка,1:conc:animal
+куропатва,1:conc:animal
+куропатка,1:conc:animal
+куроподібні,1:conc:animal
+курочка,1:conc:animal
+курча,1:conc:animal
+курчатко,1:conc:animal
+курчаточко,1:conc:animal
+курятко,1:conc:animal
+кутора,1:conc:animal
+куций,1:conc:animal
+куцохвостий,1:conc:animal
+лабіринтові,1:conc:animal
+лабіринтодонт,1:conc:animal
+лабрадор xp1,1:conc:animal
+лаврак,1:conc:animal
+лазуни,1:conc:animal
+лайка xp1,1:conc:animal
+лактобактерія,1:conc:animal
+лактобацила,1:conc:animal
+лама xp2,1:conc:animal
+ламантин,1:conc:animal
+лангуст,1:conc:animal
+лангуста,1:conc:animal
+ландрас,1:conc:animal
+лань,1:conc:animal
+ларга,1:conc:animal
+ласиця,1:conc:animal
+ласка xp1,1:conc:animal
+ласочка,1:conc:animal
+ластівка xp1,1:conc:animal
+ластівкові,1:conc:animal
+ластівонька,1:conc:animal
+ластівочка,1:conc:animal
+ластів'я,1:conc:animal
+ластів'ятко,1:conc:animal
+ластовеня,1:conc:animal
+ластовенятко,1:conc:animal
+ластоногі,1:conc:animal
+лахтак,1:conc:animal
+лебеденя,1:conc:animal
+лебеденятко,1:conc:animal
+лебедець,1:conc:animal
+лебедик,1:conc:animal:2:conc:hum:posit
+лебедин,1:conc:animal
+лебедиця,1:conc:animal
+лебедонька,1:conc:animal
+лебедя,1:conc:animal
+лебедятко,1:conc:animal
+лебідка xp1,1:conc:animal:2:conc:hum:posit
+лебідонька,1:conc:animal:2:conc:hum:posit
+лебідочка,1:conc:animal:2:conc:hum:posit
+лебідь,1:conc:animal
+лев xp1,1:conc:animal
+левеня,1:conc:animal
+левенятко,1:conc:animal
+левисько,1:conc:animal
+левиця,1:conc:animal:2:conc:hum
+левище,1:conc:animal
+левіафан,1:conc:supernat
+левретка,1:conc:animal
+левчик,1:conc:animal
+лев'я,1:conc:animal
+леггорн,1:conc:animal
+лелека,1:conc:animal
+лелекові,1:conc:animal
+лелекоподібні,1:conc:animal
+лелеча,1:conc:animal
+лелеченя,1:conc:animal
+лелечиха,1:conc:animal
+лемінг,1:conc:animal
+лемур,1:conc:animal
+лемурові,1:conc:animal
+лемуроподібні,1:conc:animal
+леопард,1:conc:animal
+леопардик,1:conc:animal
+лепідосирен,1:conc:animal
+лептоспіра,1:conc:animal
+летяга xp2,1:conc:animal
+лжекороїди,1:conc:animal
+лилик,1:conc:animal
+лимонниця,1:conc:animal
+лин,1:conc:animal
+линок,1:conc:animal
+линочок,1:conc:animal
+линча,1:conc:animal
+лис,1:conc:animal:2:conc:hum:negat
+лисак,1:conc:animal
+лисеня,1:conc:animal
+лисенятко,1:conc:animal
+лисиця,1:conc:animal:2:conc:hum:negat
+лисича,1:conc:animal
+лисиченя,1:conc:animal
+лисичка xp1,1:conc:animal
+лиска,1:conc:animal
+лисовин,1:conc:animal
+листоблішка,1:conc:animal
+листовертка,1:conc:animal
+листовійка,1:conc:animal
+листовійкові,1:conc:animal
+листогриз,1:conc:animal
+листоїд,1:conc:animal
+листоїдові,1:conc:animal
+листокрутка,1:conc:animal
+лисун xp2,1:conc:animal
+лисуха,1:conc:animal
+личинка,1:conc:animal
+лінивець xp2,1:conc:animal
+лінивцеві,1:conc:animal
+лірохвіст,1:conc:animal
+лістерія,1:conc:animal
+лобань,1:conc:animal
+лобстер,1:conc:animal
+лопатоніс,1:conc:animal
+лопатоногі,1:conc:animal
+лорієві,1:conc:animal
+лосеня,1:conc:animal
+лосенятко,1:conc:animal
+лосиха,1:conc:animal
+лосиця,1:conc:animal
+лососеві,1:conc:animal
+лосось,1:conc:animal
+лось,1:conc:animal
+лох xp1,1:conc:animal
+лоша,1:conc:animal
+лошак,1:conc:animal
+лошатко,1:conc:animal
+лошачок,1:conc:animal
+лошиця,1:conc:animal
+лошичка,1:conc:animal
+лубоїд,1:conc:animal
+лунка xp1,1:conc:animal
+лунь,1:conc:animal
+лускаті,1:conc:animal
+лускокрилі,1:conc:animal
+луфар,1:conc:animal
+льоха,1:conc:animal
+лямблія,1:conc:animal
+лящ xp1,1:conc:animal
+лящик,1:conc:animal
+мавпа,1:conc:animal:2:conc:hum:negat
+мавпеня,1:conc:animal
+мавпенятко,1:conc:animal
+мавпочка,1:conc:animal
+магот,1:conc:animal
+майка xp1,1:conc:animal
+макак,1:conc:animal
+макака,1:conc:animal
+макака-резус,1:conc:animal
+макака-резус,1:conc:animal
+макак-резус,1:conc:animal
+макрель,1:conc:animal
+макросимбіонт,1:conc:animal
+малинівка xp1,1:conc:animal
+малощетинкові,1:conc:animal
+мальок,1:conc:animal
+малявка xp2,1:conc:animal
+мамба,1:conc:animal
+мамонт,1:conc:animal
+мамонтеня,1:conc:animal
+мамонтенятко,1:conc:animal
+мамут,1:conc:animal
+мангуста,1:conc:animal
+мандрил,1:conc:animal
+манта xp1,1:conc:animal
+манул,1:conc:animal
+марал,1:conc:animal
+марена xp1,1:conc:animal
+маринка,1:conc:animal
+марліна,1:conc:animal
+марсилієві,1:conc:animal
+мартин,1:conc:animal
+мартишка,1:conc:animal
+мастиф,1:conc:animal
+мастодонт,1:conc:animal
+матка xp2,1:conc:animal
+махаон,1:conc:animal
+мева,1:conc:animal
+мегалозавр,1:conc:animal
+мегатерій,1:conc:animal
+медведка,1:conc:animal
+медвідь,1:conc:animal
+меделян,1:conc:animal
+медосос,1:conc:animal
+медуза,1:conc:animal
+медяниця,1:conc:animal
+мезозавр,1:conc:animal
+мезофіл,1:conc:animal
+мейн-кун,1:conc:animal
+менінгокок,1:conc:animal
+мерин,1:conc:animal
+меринос xp1,1:conc:animal
+мерлан,1:conc:animal
+мерлуза,1:conc:animal
+мертвоїд,1:conc:animal
+метелик xp1,1:conc:animal
+метеликові,1:conc:animal
+метеличок,1:conc:animal
+метениця,1:conc:animal
+метіль xp1,1:conc:animal
+мечоніс,1:conc:animal
+мечохвіст,1:conc:animal
+меч-риба,1:conc:animal
+минтай,1:conc:animal
+минь,1:conc:animal
+миньок,1:conc:animal
+миш,1:conc:animal
+миша,1:conc:animal
+мишастий,1:conc:animal
+мишачі,1:conc:animal
+мишеня,1:conc:animal
+мишенятко,1:conc:animal
+мишівка,1:conc:animal
+мишка xp1,1:conc:animal
+мишодав,1:conc:animal
+мишоїд,1:conc:animal
+мідицеві,1:conc:animal
+мідія,1:conc:animal
+мідяниця,1:conc:animal
+мідянка xp2,1:conc:animal
+мідянчик,1:conc:animal
+мікобактерія,1:conc:animal
+мікоплазма,1:conc:animal
+мікроаерофіл,1:conc:animal
+мікроб,1:conc:animal
+мікробактерія,1:conc:animal
+мікрокок,1:conc:animal
+мікросимбіонт,1:conc:animal
+міксобактерія,1:conc:animal
+мілька,1:conc:animal
+мінорка,1:conc:animal
+мінотавр,1:conc:supernat
+мітельшнауцер,1:conc:animal
+мозазавр,1:conc:animal
+мозоленогі,1:conc:animal
+мойва,1:conc:animal
+мокриця,1:conc:animal
+молот-риба,1:conc:animal
+молох xp2,1:conc:animal
+молюск,1:conc:animal
+монотрих,1:conc:animal
+монофаг,1:conc:animal
+мопс,1:conc:animal
+морж,1:conc:animal:2:conc:hum
+морженя,1:conc:animal
+моржиха,1:conc:animal
+морянка,1:conc:animal
+москіт,1:conc:animal
+моська,1:conc:animal
+мотиль,1:conc:animal
+моховатки,1:conc:animal
+мошка xp1,1:conc:animal
+муксун,1:conc:animal
+мул xp1,1:conc:animal
+мулиця,1:conc:animal
+муравка xp1,1:conc:animal
+муравочка xp1,1:conc:animal
+мураха,1:conc:animal
+мурахоїд,1:conc:animal
+мурахоїдові,1:conc:animal
+мурашка,1:conc:animal
+мурашкові,1:conc:animal
+мурашкоїд,1:conc:animal
+мурена,1:conc:animal
+Мурка,1:conc:animal
+мурчик,1:conc:animal
+мустанг,1:conc:animal
+мутазиліти,1:conc:animal
+муфлон,1:conc:animal
+муха,1:conc:animal
+мухоїдка,1:conc:animal
+муцик,1:conc:animal
+мушка xp1,1:conc:animal
+м'якотілкові,1:conc:animal
+м'якун,1:conc:animal
+нагніздні,1:conc:animal
+назимок,1:conc:animal
+налим,1:conc:animal
+наметник,1:conc:animal
+нанобактерія,1:conc:animal
+напівмавпа,1:conc:animal
+напівпаразити,1:conc:animal
+напівтварина,1:conc:animal
+напівтвердокрилі,1:conc:animal
+напівхордові,1:conc:animal
+нарвал,1:conc:animal
+наривник,1:conc:animal
+наркоспрут,1:conc:animal
+насіннєїд,1:conc:animal
+наутилус,1:conc:animal
+нежуйні,1:conc:animal
+неістота,1:conc:animal
+некрофаг,1:conc:animal
+нектарка,1:conc:animal
+нектарниця,1:conc:animal
+нельма,1:conc:animal
+нематод,1:conc:animal
+немертина,1:conc:animal
+неоцератод,1:conc:animal
+непарнокопитні,1:conc:animal
+непентес,1:conc:animal
+нереїда xp2,1:conc:animal
+нереїдові,1:conc:animal
+нереїсові,1:conc:animal
+нерка,1:conc:animal
+нерозлучник,1:conc:animal
+нерпа,1:conc:animal
+нерпуха,1:conc:animal
+нетля,1:conc:animal
+нетопир,1:conc:animal
+нирець xp2,1:conc:animal
+німина,1:conc:animal
+німфаліда,1:conc:animal
+німфалідові,1:conc:animal
+нітробактерія,1:conc:animal
+нічниця,1:conc:animal
+норець xp2,1:conc:animal
+нориця xp1,1:conc:animal
+норцеподібні,1:conc:animal
+носай,1:conc:animal
+носаль,1:conc:animal
+носар,1:conc:animal
+носач xp2,1:conc:animal
+носоріг,1:conc:animal
+носорогові,1:conc:animal
+носуха,1:conc:animal
+нототенія,1:conc:animal
+ночесвітка,1:conc:animal
+нумуліт,1:conc:animal
+нурець,1:conc:animal
+нутрець xp1,1:conc:animal
+нутрія,1:conc:animal
+нутряк xp1,1:conc:animal
+ньюфаундленд,1:conc:animal
+нявка,1:conc:animal
+нявчик,1:conc:animal
+овеча,1:conc:animal
+овечка,1:conc:animal:2:conc:hum:negat
+овід,1:conc:animal
+оводня,1:conc:animal
+огар,1:conc:animal
+огир,1:conc:animal
+огнівка,1:conc:animal
+одноденка xp1,1:conc:animal
+одноднівка xp1,1:conc:animal
+однопрохідні,1:conc:animal
+одноріг,1:conc:animal
+одноходець,1:conc:animal
+одуд,1:conc:animal
+озимок xp1,1:conc:animal
+окуневі,1:conc:animal
+окунеподібні,1:conc:animal
+окунець,1:conc:animal
+окунь,1:conc:animal
+оленеві,1:conc:animal
+олениха,1:conc:animal
+олениця,1:conc:animal
+оленка,1:conc:animal
+олень,1:conc:animal
+оленя,1:conc:animal
+оленятко,1:conc:animal
+олігофаг,1:conc:animal
+олійниця xp1,1:conc:animal
+омар,1:conc:animal
+омелюх,1:conc:animal
+омуль,1:conc:animal
+онагр,1:conc:animal
+онагрові,1:conc:animal
+ондатра,1:conc:animal
+ондатря,1:conc:animal
+опариш,1:conc:animal
+опир,1:conc:animal
+опосум,1:conc:animal
+орангутанг,1:conc:animal
+орел,1:conc:animal:2:conc:hum:posit
+орлан,1:conc:animal
+орлан-білохвіст,1:conc:animal
+орленя,1:conc:animal
+орлик,1:conc:animal
+орлиця,1:conc:animal
+орличок,1:conc:animal
+орлюк,1:conc:animal
+орля,1:conc:animal
+орлятко,1:conc:animal
+оса,1:conc:animal
+осел,1:conc:animal:2:conc:hum:negat
+оселедець xp1,1:conc:animal
+оселедцеві,1:conc:animal
+оселедчик,1:conc:animal
+осетер,1:conc:animal
+осетрові,1:conc:animal
+осище xp1,1:conc:animal
+ослик,1:conc:animal
+ослиця,1:conc:animal
+ослюк,1:conc:animal
+осля,1:conc:animal
+ослятко,1:conc:animal
+особина,1:conc:animal
+осоїд,1:conc:animal
+остракоди,1:conc:animal
+оцелот,1:conc:animal
+очеретянка,1:conc:animal
+пава,1:conc:animal
+павич,1:conc:animal
+павичка,1:conc:animal
+павіан,1:conc:animal
+павонька,1:conc:animal
+павочка,1:conc:animal
+павук,1:conc:animal
+павукоподібні,1:conc:animal
+павур,1:conc:animal
+павурка,1:conc:animal
+павученя,1:conc:animal
+павучиха,1:conc:animal
+павучище,1:conc:animal
+павучок,1:conc:animal
+пагри,1:conc:animal
+паламида,1:conc:animal
+палеозавр,1:conc:animal
+палеопітек,1:conc:animal
+палеотерій,1:conc:animal
+паличка xp1,1:conc:animal
+паличник,1:conc:animal
+палтус,1:conc:animal
+пальцехідні,1:conc:animal
+пангасіус,1:conc:animal
+панголін,1:conc:animal
+панда,1:conc:animal
+пандочка,1:conc:animal
+пантач,1:conc:animal
+пантера,1:conc:animal
+панцирник xp2,1:conc:animal
+папуга,1:conc:animal:2:conc:hum:negat
+папужка,1:conc:animal
+паразит,1:conc:animal:2:conc:hum:negat
+пардус,1:conc:animal
+парнокопиті,1:conc:animal
+парусникові,1:conc:animal
+пастерела,1:conc:animal
+пастушок xp2,1:conc:animal
+патика xp1,1:conc:animal
+пахіподи,1:conc:animal
+пацюк,1:conc:animal
+пацюченя,1:conc:animal
+пацючисько,1:conc:animal
+пацючок,1:conc:animal
+паця xp1,1:conc:animal
+паця xp2,1:conc:animal
+пегас,1:conc:animal
+пекінес,1:conc:animal
+пеламіда,1:conc:animal
+пеленгас,1:conc:animal
+пелікан,1:conc:animal
+пелікозавр,1:conc:animal
+первістка xp2,1:conc:animal
+первісточка xp2,1:conc:animal
+перволіток xp2,1:conc:animal
+передньозяброві,1:conc:animal
+передньоязичні,1:conc:animal
+перезимча,1:conc:animal
+перелітка,1:conc:animal
+перепел,1:conc:animal
+перепеленя,1:conc:animal
+перепеленятко,1:conc:animal
+перепелиця,1:conc:animal
+перепеличенька,1:conc:animal
+перепеля,1:conc:animal
+перепелятко,1:conc:animal
+перепілка,1:conc:animal
+перепілонька,1:conc:animal
+перепілочка,1:conc:animal
+перепряжні,1:conc:animal
+пересмішник xp2,1:conc:animal
+перестрига xp1,1:conc:animal
+перетинчастокрилі,1:conc:animal
+переярок xp1,1:conc:animal
+перистокрилка,1:conc:animal
+перитриха,1:conc:animal
+перламутрівка,1:conc:animal
+перлівниця,1:conc:animal
+пернаті,1:conc:animal
+перцеїд,1:conc:animal
+першерон,1:conc:animal
+пес,1:conc:animal:2:conc:hum:negat
+песеня,1:conc:animal
+песець,1:conc:animal
+песиголовець,1:conc:animal
+песик,1:conc:animal
+пеструшка,1:conc:animal
+пестрюга,1:conc:animal
+песюга,1:conc:animal
+пижик,1:conc:animal
+пильщик,1:conc:animal
+писклятко xp2,1:conc:animal
+пищуха,1:conc:animal
+півмавпа,1:conc:animal
+півник xp1,1:conc:animal
+півникові,1:conc:animal
+півничок,1:conc:animal
+півня,1:conc:animal
+підковоніс,1:conc:animal
+підліток xp2,1:conc:animal
+підлящ,1:conc:animal
+підлящик,1:conc:animal
+підорлик,1:conc:animal
+підпряжний,1:conc:animal
+підсвинок,1:conc:animal
+підсоколик,1:conc:animal
+підуст,1:conc:animal
+під'ярок,1:conc:animal
+пікша,1:conc:animal
+піленгас,1:conc:animal
+пінгвинятко,1:conc:animal
+пінгвін,1:conc:animal
+пінгвіненя,1:conc:animal
+пінгвіниха,1:conc:animal
+пінгвіноподібні,1:conc:animal
+пінгвінчик,1:conc:animal
+пінгвінятко,1:conc:animal
+пінчер,1:conc:animal
+піранья,1:conc:animal
+пірникоза,1:conc:animal
+пір'ястозяброві,1:conc:animal
+піскорий,1:conc:animal
+піскорийка,1:conc:animal
+пісочник,1:conc:animal
+пітбуль,1:conc:animal
+пітбультер'єр,1:conc:animal
+пітекантроп,1:conc:animal&hum
+пітон,1:conc:animal
+пітончик,1:conc:animal
+пічкур xp2,1:conc:animal
+пічкурик,1:conc:animal
+піщаник xp1,1:conc:animal
+піщанка xp1,1:conc:animal
+плавунець,1:conc:animal
+плавунцеві,1:conc:animal
+плаз xp1,1:conc:animal
+плазмодій xp1,1:conc:animal
+плазун xp2,1:conc:animal
+пластинчастовусі,1:conc:animal
+пластинчастодзьобі,1:conc:animal
+пластинчастозяброві,1:conc:animal
+пластунець,1:conc:animal
+плацентарні,1:conc:animal
+плащоносець,1:conc:animal
+плезіантроп,1:conc:animal
+плезіозавр,1:conc:animal
+плечоногі,1:conc:animal
+плигун xp2,1:conc:animal
+плигунець xp2,1:conc:animal
+плиска,1:conc:animal
+плідник xp1,1:conc:animal
+плімутрок,1:conc:animal
+плітка xp1,1:conc:animal
+плодожерка,1:conc:animal
+плоскирка,1:conc:animal
+плосконіс,1:conc:animal
+плотва,1:conc:animal
+плотвиця,1:conc:animal
+плотвичка,1:conc:animal
+плотиця,1:conc:animal
+пляшконіс,1:conc:animal
+пневмокок,1:conc:animal
+побережник xp2,1:conc:animal
+повзик,1:conc:animal
+поденка,1:conc:animal
+пойнтер,1:conc:animal
+покруч xp2,1:conc:animal
+покруч xp4,1:conc:animal
+полівка xp1,1:conc:animal
+поліфаг,1:conc:animal
+поліхети,1:conc:animal
+половик,1:conc:animal
+полоз xp1,1:conc:animal
+полоскун,1:conc:animal
+попелиця,1:conc:animal
+попелюха xp1,1:conc:animal
+попелюшка xp2,1:conc:animal
+поповзень,1:conc:animal
+порожнисторогі,1:conc:animal
+поросна,1:conc:animal
+порося,1:conc:animal
+поросятко,1:conc:animal
+поручайник,1:conc:animal
+посмітюха xp2,1:conc:animal
+постанець,1:conc:animal
+постільга,1:conc:animal
+потя,1:conc:animal
+праістота,1:conc:animal&hum
+пратварина,1:conc:animal
+пригулень,1:conc:animal
+примат xp1,1:conc:animal
+припряжний,1:conc:animal
+припутень,1:conc:animal
+присмеркові,1:conc:animal
+пристипома,1:conc:animal
+пристяжний,1:conc:animal
+приховановусі,1:conc:animal
+прихованохвості,1:conc:animal
+причепа xp2,1:conc:animal
+пробконіс,1:conc:animal
+променепері,1:conc:animal
+пропліопітек,1:conc:animal
+просянка xp1,1:conc:animal
+протей xp1,1:conc:animal
+протей xp2,1:conc:animal
+прус xp2,1:conc:animal
+прусак,1:conc:animal
+прямокрилі,1:conc:animal
+псевдопаразити,1:conc:animal
+псевдоскорпіони,1:conc:animal
+псевдотрофеус,1:conc:animal
+псина xp1,1:conc:animal
+псисько,1:conc:animal
+псище,1:conc:animal
+пструг,1:conc:animal
+псюга,1:conc:animal
+псюка,1:conc:animal
+псюра,1:conc:animal
+псяка,1:conc:animal
+псяра,1:conc:animal
+птах,1:conc:animal
+птаха,1:conc:animal
+птахоїд,1:conc:animal
+пташа,1:conc:animal
+пташатко,1:conc:animal
+пташеня,1:conc:animal
+пташенятко,1:conc:animal
+пташечка,1:conc:animal
+пташина,1:conc:animal
+пташинка,1:conc:animal
+пташиночка,1:conc:animal
+пташка,1:conc:animal:2:conc:hum
+птеранодон,1:conc:animal
+птеродактиль,1:conc:animal
+птерозавр,1:conc:animal
+птиця xp1,1:conc:animal
+птичка,1:conc:animal
+пуга xp1,1:conc:animal
+пугач xp1,1:conc:animal
+пуголовок,1:conc:animal
+пудель,1:conc:animal
+пузанок,1:conc:animal
+пукцинія,1:conc:animal
+пулярдка,1:conc:animal
+пулярка,1:conc:animal
+пума,1:conc:animal
+пуменятко,1:conc:animal
+пухироногі,1:conc:animal
+пухнастик,1:conc:animal
+пухоїд,1:conc:animal
+пухокрилі,1:conc:animal
+пуцьверінок,1:conc:animal
+пучкозяброві,1:conc:animal
+п'явиця,1:conc:animal
+п'явка,1:conc:animal
+п'явочка,1:conc:animal
+п'явушник,1:conc:animal
+п'ядак,1:conc:animal
+п'ядун,1:conc:animal
+равлик,1:conc:animal
+райдужниця,1:conc:animal
+рак xp1,1:conc:animal
+ракоподібні,1:conc:animal
+ракша,1:conc:animal
+рамапітек,1:conc:animal
+рапана,1:conc:animal
+раса xp1,1:conc:animal
+раченя,1:conc:animal
+рачок,1:conc:animal
+реброплави,1:conc:animal
+ревун xp2,1:conc:animal
+резус xp1,1:conc:animal
+рекс,1:conc:animal
+ремез,1:conc:animal
+ремінь-риба,1:conc:animal
+реофіли,1:conc:animal
+репродуцент,1:conc:animal
+рептилія,1:conc:animal
+ретривер,1:conc:animal
+риба,1:conc:animal
+риба-голка,1:conc:animal
+рибалка xp2,1:conc:animal
+рибалочка xp2,1:conc:animal
+риба-меч,1:conc:animal
+рибенятко,1:conc:animal
+рибина,1:conc:animal
+рибинка,1:conc:animal
+рибисько,1:conc:animal
+рибка,1:conc:animal:2:conc:hum:posit
+рибоїд,1:conc:animal
+рибонька xp2,1:conc:animal
+рибочка,1:conc:animal
+рибчина,1:conc:animal
+рибчинка,1:conc:animal
+рибчинонька xp2,1:conc:animal
+риб'я,1:conc:animal
+ризеншнауцер,1:conc:animal
+ризобактерія,1:conc:animal
+ризобія,1:conc:animal
+рикетсія,1:conc:animal
+рипус,1:conc:animal
+рисак,1:conc:animal
+рисачка,1:conc:animal
+рисеня,1:conc:animal
+рисенятко,1:conc:animal
+рисиха,1:conc:animal
+рись xp1,1:conc:animal
+рівнокрилі,1:conc:animal
+різеншнауцер,1:conc:animal
+різобря,1:conc:animal
+річнячок xp1,1:conc:animal
+робак,1:conc:animal
+рогаль xp1,1:conc:animal
+рогач xp1,1:conc:animal
+рогачка xp1,1:conc:animal
+рогозуб,1:conc:animal
+рогохвости,1:conc:animal
+родобактерія,1:conc:animal
+роздільноголові,1:conc:animal
+ронжа,1:conc:animal
+ропуха,1:conc:animal
+Росінант,1:conc:animal
+рослиноїдні,1:conc:animal
+росомаха,1:conc:animal
+ротвейлер,1:conc:animal
+ротоногі,1:conc:animal
+рукокрилі,1:conc:animal
+руконіжка,1:conc:animal
+румак,1:conc:animal
+русак xp2,1:conc:animal
+рухомогруді,1:conc:animal
+рябенький,1:conc:animal
+рябець,1:conc:animal
+рябий,1:conc:animal
+рябко,1:conc:animal
+рябкоподібні,1:conc:animal
+рябокрилий,1:conc:animal
+рябуха xp1,1:conc:animal
+рябушка xp1,1:conc:animal
+рябчик xp1,1:conc:animal
+ряпушка,1:conc:animal
+саджа,1:conc:animal
+сазан,1:conc:animal
+сайга,1:conc:animal
+сайгак,1:conc:animal
+сайгача,1:conc:animal
+сайда,1:conc:animal
+сайка xp1,1:conc:animal
+сайра,1:conc:animal
+салака,1:conc:animal
+саламандра,1:conc:animal
+саламандрові,1:conc:animal
+сальмонела,1:conc:animal
+самка,1:conc:animal
+сапроби,1:conc:animal
+сапробіонт,1:conc:animal
+сапрофаг,1:conc:animal
+сапсан,1:conc:animal
+сарана,1:conc:animal
+саранові,1:conc:animal
+саранча,1:conc:animal
+сарган,1:conc:animal
+сарганові,1:conc:animal
+сарделька xp1,1:conc:animal
+сардина,1:conc:animal
+сардинела,1:conc:animal
+сардинка xp2,1:conc:animal
+сарич,1:conc:animal
+саркодові,1:conc:animal
+сарна,1:conc:animal
+сарненя,1:conc:animal
+сарненятко,1:conc:animal
+сарнобик,1:conc:animal
+сарнонька,1:conc:animal
+сарночка,1:conc:animal
+сарнюк,1:conc:animal
+сарцина,1:conc:animal
+свердлильникові,1:conc:animal
+свиненя,1:conc:animal
+свинка xp1,1:conc:animal
+свиноматка,1:conc:animal
+свиночка,1:conc:animal
+свинчатко,1:conc:animal
+свинюка xp2,1:conc:animal
+свиня,1:conc:animal:2:conc:hum
+свірка xp1,1:conc:animal
+світляк,1:conc:animal
+світлячок,1:conc:animal
+севрюга,1:conc:animal
+севрюжка,1:conc:animal
+сейвал,1:conc:animal
+сейсмозавр,1:conc:animal
+секретар xp2,1:conc:animal
+селезень,1:conc:animal
+селява,1:conc:animal
+семеряжка,1:conc:animal
+семиряжка,1:conc:animal
+сенбернар,1:conc:animal
+сепія xp1,1:conc:animal
+сервал,1:conc:animal
+серна,1:conc:animal
+серненя,1:conc:animal
+серненятко,1:conc:animal
+серобактерія,1:conc:animal
+серпокрилець,1:conc:animal
+сетер,1:conc:animal
+сибас,1:conc:animal
+сивак xp2,1:conc:animal
+сивець,1:conc:animal
+сивий xp2,1:conc:animal
+сивка,1:conc:animal
+сивкові,1:conc:animal
+сивкоподібні,1:conc:animal
+сивограк,1:conc:animal
+сиворакша,1:conc:animal
+сивуч,1:conc:animal
+сивученя,1:conc:animal
+сиг,1:conc:animal
+сигові,1:conc:animal
+сизоперка,1:conc:animal
+сиква,1:conc:animal
+сикофант xp2,1:conc:animal
+симбіонт,1:conc:animal
+симентал,1:conc:animal
+сименталка,1:conc:animal
+сингіль,1:conc:animal
+синиця,1:conc:animal
+синичка,1:conc:animal
+синявець,1:conc:animal
+сипуха,1:conc:animal
+сирена xp1,1:conc:animal
+сиренові,1:conc:animal
+сирин,1:conc:animal
+сирок xp1,1:conc:animal
+сисун,1:conc:animal
+сисунець,1:conc:animal
+сич,1:conc:animal
+сиченя,1:conc:animal
+сікач xp1,1:conc:animal
+сінниця,1:conc:animal
+сірий,1:conc:animal
+сірко,1:conc:animal
+сіркобактерія,1:conc:animal
+сіроман,1:conc:animal
+сіроманець,1:conc:animal
+сітчастокрилі,1:conc:animal
+скайтер'єр,1:conc:animal
+скакун,1:conc:animal
+скакунець,1:conc:animal
+скакунчик,1:conc:animal
+скалярія,1:conc:animal
+скарабей,1:conc:animal
+скарабеоїдні,1:conc:animal
+скат xp1,1:conc:animal
+складчастокрилі,1:conc:animal
+скойка xp1,1:conc:animal
+сколопендра,1:conc:animal
+скопа,1:conc:animal
+скорпена,1:conc:animal
+скорпіон,1:conc:animal
+скорпіонниця,1:conc:animal
+скорпіоноподібні,1:conc:animal
+скорпіончик,1:conc:animal
+скотинка,1:conc:animal
+скотч-тер'єр,1:conc:animal
+скрекотушка,1:conc:animal
+скумбрієві,1:conc:animal
+скумбрія,1:conc:animal
+скунс,1:conc:animal
+славка,1:conc:animal
+славкові,1:conc:animal
+слиж xp1,1:conc:animal
+слизик,1:conc:animal
+слизняк,1:conc:animal:2:conc:hum:negat
+слимак,1:conc:animal:2:conc:hum:negat
+слимачок,1:conc:animal
+сліпак xp2,1:conc:animal
+сліпень,1:conc:animal
+сліпняк,1:conc:animal
+сліпозмійкові,1:conc:animal
+слон,1:conc:animal
+слоненя,1:conc:animal
+слоненятко,1:conc:animal
+слоник,1:conc:animal
+слониха,1:conc:animal
+слоня,1:conc:animal
+слонятко,1:conc:animal
+слуква,1:conc:animal
+смарида,1:conc:animal
+смердючка xp2,1:conc:animal
+смеречнюк,1:conc:animal
+смітюх,1:conc:animal
+смовзик,1:conc:animal
+смугастик xp1,1:conc:animal
+смугач,1:conc:animal
+снігур,1:conc:animal
+собака,1:conc:animal:2:conc:hum:negat
+собакоголові,1:conc:animal
+собацюга,1:conc:animal
+собацюра,1:conc:animal
+собача,1:conc:animal
+собачатко,1:conc:animal
+собаченя,1:conc:animal
+собаченятко,1:conc:animal
+собачина xp1,1:conc:animal
+собачище,1:conc:animal
+собачі,1:conc:animal
+собачка,1:conc:animal
+собачка xp1,1:conc:animal
+соболеня,1:conc:animal
+соболенятко,1:conc:animal
+соболиця,1:conc:animal
+соболь,1:conc:animal
+соболятко,1:conc:animal
+сова,1:conc:animal:2:conc:hum
+совеня,1:conc:animal
+совенятко,1:conc:animal
+совка,1:conc:animal
+совкові,1:conc:animal
+совоподібні,1:conc:animal
+сов'ятко,1:conc:animal
+сойка,1:conc:animal
+сокіл xp1,1:conc:animal
+соколеня,1:conc:animal
+соколенятко,1:conc:animal
+соколик xp2,1:conc:animal
+соколині,1:conc:animal
+соколиха,1:conc:animal
+соколиця,1:conc:animal
+соколонько,1:conc:animal
+соколочок,1:conc:animal
+соколя,1:conc:animal
+соколятко,1:conc:animal
+сокотуха,1:conc:animal
+солітер xp1,1:conc:animal
+соловеєчко,1:conc:animal
+соловей,1:conc:animal
+соловейко xp2,1:conc:animal
+соловеня,1:conc:animal
+соловенятко,1:conc:animal
+солов'їха,1:conc:animal
+солов'ятко,1:conc:animal
+сом xp1,1:conc:animal
+соменя,1:conc:animal
+соменятко,1:conc:animal
+сомик,1:conc:animal
+сомисько,1:conc:animal
+сомище,1:conc:animal
+сомові,1:conc:animal
+сомоподібні,1:conc:animal
+сонечко xp1,1:conc:animal
+сонцевик,1:conc:animal
+соня xp2,1:conc:animal
+сорока,1:conc:animal:2:conc:hum
+сороконіжка,1:conc:animal
+сорокопуд,1:conc:animal
+сороча,1:conc:animal
+сороченя,1:conc:animal
+сорочиця,1:conc:animal
+сохатий,1:conc:animal
+спанієль,1:conc:animal
+спиноріг,1:conc:animal
+спичак xp1,1:conc:animal
+спірила,1:conc:animal
+спірохета,1:conc:animal
+сплюшка,1:conc:animal
+спрут,1:conc:animal
+ссавець,1:conc:animal
+ставрида,1:conc:animal
+ставридка,1:conc:animal
+ставридові,1:conc:animal
+старка xp1,1:conc:animal
+стафілінід,1:conc:animal
+стафілокок,1:conc:animal
+створіннячко,1:conc:animal
+стегозавр,1:conc:animal
+стегоцефал,1:conc:animal
+стенобіонт xp1,1:conc:animal
+стенофаг,1:conc:animal
+стервоїдні,1:conc:animal
+стерв'ятник,1:conc:animal
+стерлядь,1:conc:animal
+стінолаз,1:conc:animal
+стоніжка,1:conc:animal
+стонога,1:conc:animal
+стопохідні,1:conc:animal
+страус,1:conc:animal
+страусеня,1:conc:animal
+страусиха,1:conc:animal
+страусові,1:conc:animal
+страуся,1:conc:animal
+стрепетеня,1:conc:animal
+стрептобацила,1:conc:animal
+стрептокок,1:conc:animal
+стрибайчик,1:conc:animal
+стрибунець xp2,1:conc:animal
+стригун,1:conc:animal
+стригунець,1:conc:animal
+стриж,1:conc:animal
+стриженя,1:conc:animal
+стрижча,1:conc:animal
+струг xp1,1:conc:animal
+стручняк,1:conc:animal
+ступак xp1,1:conc:animal
+сугак,1:conc:animal
+судак,1:conc:animal
+судачок,1:conc:animal
+сула,1:conc:animal
+сумчасті,1:conc:animal
+супербактерія,1:conc:animal
+суперістота,1:conc:animal
+супермікроб,1:conc:animal
+суперсобака,1:conc:animal
+сурикат,1:conc:animal
+сухоніс,1:conc:animal
+сучечка,1:conc:animal
+сучище,1:conc:animal
+суягна,1:conc:animal
+сфінкс xp2,1:conc:animal
+схованозябровикові,1:conc:animal
+сцифоїдні,1:conc:animal
+сцифомедуза,1:conc:animal
+сьомга,1:conc:animal
+таймень,1:conc:animal
+такса xp1,1:conc:animal
+тапір,1:conc:animal
+таракан,1:conc:animal
+таранник,1:conc:animal
+тарантул,1:conc:animal
+таранька,1:conc:animal
+тараня,1:conc:animal
+тарбаган,1:conc:animal
+тарган,1:conc:animal
+тарганові,1:conc:animal
+тарганоподібні,1:conc:animal
+тарганчик,1:conc:animal
+таркач,1:conc:animal
+тарпан,1:conc:animal
+тарпон,1:conc:animal
+тахінові,1:conc:animal
+твар xp1,1:conc:animal
+тварюка,1:conc:animal
+тварючка,1:conc:animal
+твердокрилі,1:conc:animal
+текінець xp2,1:conc:animal
+телантроп,1:conc:animal
+теленомус,1:conc:animal
+телеозавр,1:conc:animal
+телець,1:conc:animal
+телиця,1:conc:animal
+теличка,1:conc:animal
+теля,1:conc:animal:2:conc:hum
+телятко,1:conc:animal
+телятонько,1:conc:animal
+теляточко,1:conc:animal
+темнодонтозавр,1:conc:animal
+теплокровні,1:conc:animal
+тер'єр,1:conc:animal
+теріодонт,1:conc:animal
+терміт xp1,1:conc:animal
+термофіл xp1,1:conc:animal
+термофоб xp1,1:conc:animal
+терняк xp1,1:conc:animal
+тероподи,1:conc:animal
+тест-мікроб,1:conc:animal
+тетервак,1:conc:animal
+тетерев,1:conc:animal
+тетерев'ятник,1:conc:animal
+тетериця,1:conc:animal
+тетерка,1:conc:animal
+тетерук,1:conc:animal
+тетерукові,1:conc:animal
+тетерюк,1:conc:animal
+тетерюкові,1:conc:animal
+тетерючка,1:conc:animal
+тетеря xp2,1:conc:animal
+тетерячі,1:conc:animal
+тетракок,1:conc:animal
+тетраплоїд,1:conc:animal
+тигр,1:conc:animal
+тигреня,1:conc:animal
+тигренятко,1:conc:animal
+тигриня,1:conc:animal
+тигрисько,1:conc:animal
+тигриця,1:conc:animal
+тигря,1:conc:animal
+тиляпія,1:conc:animal
+тинівка,1:conc:animal
+типограф xp2,1:conc:animal
+тиранозавр,1:conc:animal
+тирка,1:conc:animal
+тільна,1:conc:animal
+тіобактерія,1:conc:animal
+ткачик,1:conc:animal
+ткачикові,1:conc:animal
+тля xp1,1:conc:animal
+товарина,1:conc:animal
+товаряка,1:conc:animal
+товарятко,1:conc:animal
+товкунчикові,1:conc:animal
+товстолоб,1:conc:animal
+товстолобик,1:conc:animal
+товстоніжка,1:conc:animal
+товсторіг,1:conc:animal
+той-тер'єр,1:conc:animal
+тонкопанцирні,1:conc:animal
+тонкопряд,1:conc:animal
+тонкопрядові,1:conc:animal
+топірець xp1,1:conc:animal
+торішняк,1:conc:animal
+травник xp2,1:conc:animal
+травоїд,1:conc:animal
+травоїдний,1:conc:animal
+трахейнодишні,1:conc:animal
+трач xp2,1:conc:animal
+трематоди,1:conc:animal
+трепанг,1:conc:animal
+трепонема,1:conc:animal
+третяк,1:conc:animal
+триліток,1:conc:animal
+трилобіт,1:conc:animal
+трипс,1:conc:animal
+тритон xp1,1:conc:animal
+трихіна,1:conc:animal
+трихінела,1:conc:animal
+трихобактерія,1:conc:animal
+трихомонада,1:conc:animal
+трихоцефали,1:conc:animal
+трицератопс,1:conc:animal
+тріска xp1,1:conc:animal
+тріскові,1:conc:animal
+тріскоподібні,1:conc:animal
+трубковерт,1:conc:animal
+трубкозуб,1:conc:animal
+трубкозубі,1:conc:animal
+трубконіс,1:conc:animal
+трубконосі,1:conc:animal
+трупоїд,1:conc:animal
+трут xp1,1:conc:animal
+трутень,1:conc:animal
+трухляк xp1,1:conc:animal
+трясихвіст,1:conc:animal
+трясихвістка,1:conc:animal
+трясогузка,1:conc:animal
+тукан,1:conc:animal
+тумак xp1,1:conc:animal
+тундрянка,1:conc:animal
+тунець,1:conc:animal
+тунцеві,1:conc:animal
+тунчик,1:conc:animal
+тур xp1,1:conc:animal
+турач,1:conc:animal
+туриця,1:conc:animal
+турище,1:conc:animal
+турман,1:conc:animal
+турпан,1:conc:animal
+турун,1:conc:animal
+турухтан,1:conc:animal
+тушканчик,1:conc:animal
+тхір,1:conc:animal
+тхореня,1:conc:animal
+тхорик,1:conc:animal
+тюлень,1:conc:animal
+тюлька,1:conc:animal
+удав,1:conc:animal
+удавчик,1:conc:animal
+удонеліди,1:conc:animal
+улар,1:conc:animal
+ультрамікроб,1:conc:animal
+унчик,1:conc:animal
+уробактерія,1:conc:animal
+уроборос,1:conc:animal
+устриця,1:conc:animal
+фазан,1:conc:animal
+фазаненя,1:conc:animal
+фазаниха,1:conc:animal
+фазанка,1:conc:animal
+фазанові,1:conc:animal
+фазанча,1:conc:animal
+фазанчик,1:conc:animal
+фізалія,1:conc:animal
+філант,1:conc:animal
+філоксера,1:conc:animal
+фіна,1:conc:animal
+фінвал,1:conc:animal
+фірчак,1:conc:animal
+фітономус,1:conc:animal
+фітофаг,1:conc:animal
+фокстер'єр,1:conc:animal
+фолади,1:conc:animal
+фотобактерія,1:conc:animal
+фретка,1:conc:animal
+фузобактерія,1:conc:animal
+хабета,1:conc:animal
+хальциди,1:conc:animal
+хамелеон,1:conc:animal
+хамелеонові,1:conc:animal
+хамса,1:conc:animal
+харза,1:conc:animal
+харіус,1:conc:animal
+харіусові,1:conc:animal
+хвостаті,1:conc:animal
+хвостокол,1:conc:animal
+хек xp1,1:conc:animal
+хелікобактерія,1:conc:animal
+хижак,1:conc:animal:2:conc:hum
+хірт,1:conc:animal
+хлопунці,1:conc:animal
+хлоробактерія,1:conc:animal
+хоботні,1:conc:animal
+ховрах,1:conc:animal
+ховрашеня,1:conc:animal
+ховрашок,1:conc:animal
+ходуличник,1:conc:animal
+хом'як,1:conc:animal
+хом'якові,1:conc:animal
+хом'ячок,1:conc:animal
+хордові,1:conc:animal
+хорт,1:conc:animal
+хортеня,1:conc:animal
+хортик,1:conc:animal
+хортиця,1:conc:animal
+хортище,1:conc:animal
+хохітва,1:conc:animal
+хохуля,1:conc:animal
+хребетні,1:conc:animal
+хрестовик,1:conc:animal
+хризаліда,1:conc:animal
+хробак,1:conc:animal
+хробачисько,1:conc:animal
+хробачок,1:conc:animal
+хрунь,1:conc:animal
+хрущ,1:conc:animal
+хрущак,1:conc:animal
+хрущик,1:conc:animal
+хрюша,1:conc:animal
+хрюшка,1:conc:animal
+хряк,1:conc:animal
+хрящові,1:conc:animal
+худобина,1:conc:animal
+цап,1:conc:animal
+цап-відбувайло,1:conc:animal
+цапеня,1:conc:animal
+цапенятко,1:conc:animal
+цапик,1:conc:animal
+цапище,1:conc:animal
+цапок,1:conc:animal
+цапусенько,1:conc:animal
+цвіркун,1:conc:animal
+цвіркунець,1:conc:animal
+цвіркунча,1:conc:animal
+цвіркунчик,1:conc:animal
+целакант,1:conc:animal
+церіодафнія,1:conc:animal
+цесарка,1:conc:animal
+цесарочка,1:conc:animal
+цесаря,1:conc:animal
+цикада,1:conc:animal
+цикадка,1:conc:animal
+цикадкові,1:conc:animal
+ціанобактерія,1:conc:animal
+цільнокісткові,1:conc:animal
+ціпка,1:conc:animal
+ціпонька,1:conc:animal
+ціпочка,1:conc:animal
+ціп'як,1:conc:animal
+цукролітики,1:conc:animal
+цуценя,1:conc:animal
+цуценятко,1:conc:animal
+цуцик,1:conc:animal
+цьоголіток,1:conc:animal
+цюця,1:conc:animal
+чабак,1:conc:animal
+чаєня,1:conc:animal
+чаєнятко,1:conc:animal
+чаєчка,1:conc:animal
+чайка xp1,1:conc:animal
+чайкові,1:conc:animal
+чалий,1:conc:animal
+чаплеві,1:conc:animal
+чапленя,1:conc:animal
+чапленятко,1:conc:animal
+чапля,1:conc:animal
+чеглик,1:conc:animal
+чекан xp1,1:conc:animal
+червак,1:conc:animal
+червець xp2,1:conc:animal
+черви,1:conc:animal
+червиця,1:conc:animal
+червононіжка,1:conc:animal
+червоноперка,1:conc:animal
+червонопірка,1:conc:animal
+червчик,1:conc:animal
+черв'як xp1,1:conc:animal
+черв'ячок,1:conc:animal
+черевоногі,1:conc:animal
+черевоногі xp2,1:conc:animal
+черепаха,1:conc:animal
+черепашеня,1:conc:animal
+черепашка,1:conc:animal
+черепні,1:conc:animal
+чернь xp1,1:conc:animal
+четвероногі,1:conc:animal
+чехоня,1:conc:animal
+чечітка xp1,1:conc:animal
+чечуга,1:conc:animal
+чечужка,1:conc:animal
+чиж,1:conc:animal
+чижик,1:conc:animal
+чижиха,1:conc:animal
+чирка xp1,1:conc:animal
+чирок xp1,1:conc:animal
+чиря,1:conc:animal
+чирянка,1:conc:animal
+чирятко,1:conc:animal
+чистик xp1,1:conc:animal
+чистикоподібні,1:conc:animal
+чистокровка,1:conc:animal
+чистун xp2,1:conc:animal
+чистунові,1:conc:animal
+чіп xp1,1:conc:animal
+чіпкохвості,1:conc:animal
+членисті,1:conc:animal
+членистоногі,1:conc:animal
+чміль,1:conc:animal
+чорниш xp1,1:conc:animal
+чорнобурка,1:conc:animal
+чорногривий,1:conc:animal
+чорногрудка,1:conc:animal
+чорногуз,1:conc:animal
+чорногузеня,1:conc:animal
+чорногузик,1:conc:animal
+чорногузка,1:conc:animal
+чорнокрилець,1:conc:animal
+чорнопірка,1:conc:animal
+чортенятко,1:conc:animal
+чортятко,1:conc:animal
+чортяточко,1:conc:animal
+чотиризяброві,1:conc:animal
+чотирилапий,1:conc:animal
+чотирилапик,1:conc:animal
+чубайка xp1,1:conc:animal
+чубарка,1:conc:animal
+чубарочка,1:conc:animal
+чудерство,1:conc:animal
+чудо xp1,1:conc:animal
+чудо-юдо,1:conc:animal
+чупакабра,1:conc:supernat
+чушка xp1,1:conc:animal
+шавка,1:conc:animal
+шакал,1:conc:animal
+шакаленя,1:conc:animal
+шалашник,1:conc:animal
+шарпей,1:conc:animal
+шар-пей,1:conc:animal
+шашіль,1:conc:animal
+швидкохвості,1:conc:animal
+шевляга,1:conc:animal
+шелихвіст,1:conc:animal
+шемая,1:conc:animal
+шерстокрил,1:conc:animal
+шершень,1:conc:animal
+шигела,1:conc:animal
+шилодзьобка,1:conc:animal
+шилохвіст,1:conc:animal
+шилохвість,1:conc:animal
+шиншила,1:conc:animal
+шип xp1,1:conc:animal
+шипун,1:conc:animal
+широконіска,1:conc:animal
+шишконіс,1:conc:animal
+шкапеня,1:conc:animal
+шкапина,1:conc:animal
+шкапійка,1:conc:animal
+шкапійчина,1:conc:animal
+шкапка,1:conc:animal
+шкап'я,1:conc:animal
+шкідник xp2,1:conc:animal
+шкіроїди,1:conc:animal
+шльонка xp1,1:conc:animal
+шнауцер,1:conc:animal
+шовковик,1:conc:animal
+шовкопряд,1:conc:animal
+шортгорн,1:conc:animal
+шпак,1:conc:animal
+шпанка xp1,1:conc:animal
+шпача,1:conc:animal
+шпаченя,1:conc:animal
+шпачисько,1:conc:animal
+шпачиха,1:conc:animal
+шпачок,1:conc:animal
+шпіц,1:conc:animal
+шпрот,1:conc:animal
+шпротина,1:conc:animal
+шримс,1:conc:animal
+шуліка,1:conc:animal
+шуліченя,1:conc:animal
+шуляк,1:conc:animal
+щебеташка,1:conc:animal
+щебетун,1:conc:animal
+щебетунчик,1:conc:animal
+щебетуха,1:conc:animal
+щебетушечка,1:conc:animal
+щебетушка,1:conc:animal
+щеврик,1:conc:animal
+щедрик xp1,1:conc:animal
+щелепнороті,1:conc:animal
+щеня,1:conc:animal
+щенятко,1:conc:animal
+щиглик xp1,1:conc:animal
+щиглиха,1:conc:animal
+щигля,1:conc:animal
+щиглятко,1:conc:animal
+щиголь xp1,1:conc:animal
+щипак,1:conc:animal
+щитень,1:conc:animal
+щитівка,1:conc:animal
+щитник xp2,1:conc:animal
+щитомордик,1:conc:animal
+щитоноска,1:conc:animal
+щука,1:conc:animal
+щукові,1:conc:animal
+щупак,1:conc:animal
+щур,1:conc:animal
+щуреня,1:conc:animal
+щурик,1:conc:animal
+щурисько,1:conc:animal
+щурка,1:conc:animal
+щуря,1:conc:animal
+щуряка,1:conc:animal
+щурятко,1:conc:animal
+щученя,1:conc:animal
+щучка,1:conc:animal
+юрок xp1,1:conc:animal
+ягдтер'єр,1:conc:animal
+ягниця,1:conc:animal
+ягничка,1:conc:animal
+ягня,1:conc:animal
+ягнятко,1:conc:animal
+ягнятник xp2,1:conc:animal
+ягняточко,1:conc:animal
+ягуар,1:conc:animal
+ядозуб,1:conc:animal
+язичкові,1:conc:animal
+яйцеїд,1:conc:animal
+як,1:conc:animal
+ялець,1:conc:animal
+ялівка,1:conc:animal
+ялівочка,1:conc:animal
+ялівчина,1:conc:animal
+яловиця,1:conc:animal
+ярка,1:conc:animal
+ярча,1:conc:animal
+ясочка,1:conc:animal:2:conc:hum:posit
+яструб,1:conc:animal:2:conc:hum
+яструбеня,1:conc:animal
+яструбенятко,1:conc:animal
+яструбець,1:conc:animal
+яструбові,1:conc:animal
+яструбок,1:conc:animal
+яструб'я,1:conc:animal
+яструб'ятко,1:conc:animal
+ящір,1:conc:animal
+ящірка,1:conc:animal
+ящірочка,1:conc:animal
+ящур xp1,1:conc:animal
