@@ -13,6 +13,8 @@ group = 'ua.net.nlp'
 String artifactId = 'morfologik-ukrainian-lt'
 archivesBaseName = artifactId
 
+sourceCompatibility = 1.8
+
 String ltToolsVersion = '5.2-SNAPSHOT'
 
 String langCode="uk"
