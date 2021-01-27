@@ -1,4 +1,4 @@
-автор,1:conc:hum
+﻿автор,1:conc:hum
 акт xp1,1:conc:text
 акт xp2,1:abst:part:2:abst:quantum
 акція,1:abst:event:2:conc:doc:3:abst
@@ -554,7 +554,7 @@
 абісофіли,1:conc:animal
 авксотроф xp1,1:conc:animal
 австралопітек,1:conc:animal
-автохтон xp2,1:conc:animal
+автохтон xp1,1:conc:hum:2:conc:animal
 ага xp2,1:conc:animal
 агама,1:conc:animal
 агнець,1:conc:hum
@@ -580,8 +580,8 @@
 алоза,1:conc:animal
 алохтон xp1,1:conc:animal
 альбатрос,1:conc:animal
-альбінос xp2,1:conc:animal
-альбіноска xp2,1:conc:animal
+альбінос,1:conc:animal:2:conc:hum
+альбіноска,1:conc:animal:2:conc:hum
 альпака xp1,1:conc:animal
 амадина,1:conc:animal
 амбістомові,1:conc:animal
@@ -632,7 +632,7 @@
 афаліна,1:conc:animal
 ахалтекінець,1:conc:animal
 ацидофіли,1:conc:animal
-бабак xp2,1:conc:animal
+бабак,1:conc:animal:2:conc:hum:negat
 бабача,1:conc:animal
 бабаченя,1:conc:animal
 бабачиха,1:conc:animal
@@ -666,7 +666,7 @@
 барабуля,1:conc:animal
 баракудка,1:conc:animal
 баракудові,1:conc:animal
-баран xp2,1:conc:animal
+баран,1:conc:animal:2:conc:hum:negat
 баранець,1:conc:animal
 баранисько,1:conc:animal
 баранище,1:conc:animal
@@ -682,7 +682,7 @@
 батибіонт,1:conc:animal
 батрахозавр,1:conc:animal
 бацила,1:conc:animal
-бацилоносій xp2,1:conc:animal
+бацилоносій xp2,1:conc:animal:2:conc:hum
 бджілка,1:conc:animal
 бджілонька,1:conc:animal
 бджілочка,1:conc:animal
@@ -951,6 +951,7 @@
 водомороз,1:conc:animal
 водосвинка,1:conc:animal
 водосвинкові,1:conc:animal
+водяник,1:conc:supernat
 волик,1:conc:animal
 волосові,1:conc:animal
 волосоголовець,1:conc:animal
@@ -1014,7 +1015,7 @@
 гагара,1:conc:animal
 гагарка,1:conc:animal
 гагарові,1:conc:animal
-гад xp2,1:conc:animal
+гад,1:conc:animal:2:conc:hum:negat
 гаденя,1:conc:animal
 гадина xp2,1:conc:animal
 гадинка,1:conc:animal
@@ -1080,7 +1081,7 @@
 глистюк,1:conc:animal
 глистяк,1:conc:animal
 глось,1:conc:animal
-глухар xp2,1:conc:animal
+глухар xp1,1:conc:animal:2:conc:hum
 глушець,1:conc:animal
 гнида,1:conc:animal:2:conc:hum:negat
 гнідий,1:conc:animal
@@ -1093,7 +1094,7 @@
 голанка xp1,1:conc:animal
 голендерка,1:conc:animal
 голець,1:conc:animal
-голіаф xp2,1:conc:animal
+голіаф,1:conc:animal
 голінасті,1:conc:animal
 голкошкірі,1:conc:animal
 голобельний,1:conc:animal
@@ -1106,10 +1107,10 @@
 головоногі,1:conc:animal
 головохордові,1:conc:animal
 голонасінні,1:conc:animal
-голопуцьок xp2,1:conc:animal
+голопуцьок,1:conc:animal:2:conc:hum
 голотурія,1:conc:animal
 голошийка,1:conc:animal
-голуб xp2,1:conc:animal
+голуб,1:conc:animal:2:conc:hum
 голубеня,1:conc:animal
 голубенятко,1:conc:animal
 голубець xp1,1:conc:animal
@@ -1227,7 +1228,7 @@
 джгутиконосець,1:conc:animal
 джек,1:conc:animal
 джерелянка,1:conc:animal
-джеркотун xp2,1:conc:animal
+джеркотун,1:conc:animal
 джмелик,1:conc:animal
 джміль,1:conc:animal
 дзиз,1:conc:animal
@@ -1253,7 +1254,7 @@
 довгоносикові,1:conc:animal
 дог,1:conc:animal
 дойда xp2,1:conc:animal
-дохлятина xp2,1:conc:animal
+дохлятина xp1,1:conc:animal:2:conc:hum:negat
 драбиняк xp1,1:conc:animal
 дракон,1:conc:supernat:2:conc:animal
 дракончик,1:conc:animal
@@ -1275,7 +1276,7 @@
 дрохвич,1:conc:animal
 дубоніс,1:conc:animal
 дудак,1:conc:animal
-дундук xp2,1:conc:animal
+дундук,1:conc:hum:negat:2:conc:animal
 дупель,1:conc:animal
 дюгонь,1:conc:animal
 дятел,1:conc:animal:2:conc:hum:negat
@@ -1527,7 +1528,7 @@
 камбала,1:conc:animal
 камінка,1:conc:animal
 камса,1:conc:animal
-каналія xp2,1:conc:animal
+каналія,1:conc:hum:negat
 канарейка,1:conc:animal
 канарейко,1:conc:animal
 канарка,1:conc:animal
@@ -1788,7 +1789,7 @@
 кугуар,1:conc:animal
 кудлай,1:conc:animal
 кудлатик,1:conc:animal
-кудлач xp2,1:conc:animal
+кудлач,1:conc:animal:2:conc:hum
 кузька,1:conc:animal
 кукабара,1:conc:animal
 кукушка,1:conc:animal
@@ -1796,7 +1797,7 @@
 кулик xp1,1:conc:animal
 куликоподібні,1:conc:animal
 куличок,1:conc:animal
-кульга xp2,1:conc:animal
+кульга,1:conc:hum:2:conc:animal
 кумжа,1:conc:animal
 кумка,1:conc:animal
 куна xp1,1:conc:animal
@@ -1916,7 +1917,7 @@
 лисун xp2,1:conc:animal
 лисуха,1:conc:animal
 личинка,1:conc:animal
-лінивець xp2,1:conc:animal
+лінивець xp1,1:conc:animal:2:conc:hum:negat
 лінивцеві,1:conc:animal
 лірохвіст,1:conc:animal
 лістерія,1:conc:animal
@@ -2263,9 +2264,9 @@
 пеленгас,1:conc:animal
 пелікан,1:conc:animal
 пелікозавр,1:conc:animal
-первістка xp2,1:conc:animal
-первісточка xp2,1:conc:animal
-перволіток xp2,1:conc:animal
+первістка,1:conc:hum:kin:2:conc:animal
+первісточка,1:conc:hum:kin:2:conc:animal
+перволіток,1:conc:animal:2:conc:hum
 передньозяброві,1:conc:animal
 передньоязичні,1:conc:animal
 перезимча,1:conc:animal
@@ -2302,7 +2303,7 @@
 песюга,1:conc:animal
 пижик,1:conc:animal
 пильщик,1:conc:animal
-писклятко xp2,1:conc:animal
+писклятко,1:conc:hum:2:conc:animal
 пищуха,1:conc:animal
 півмавпа,1:conc:animal
 півник xp1,1:conc:animal
@@ -2310,7 +2311,7 @@
 півничок,1:conc:animal
 півня,1:conc:animal
 підковоніс,1:conc:animal
-підліток xp2,1:conc:animal
+підліток,1:conc:hum:2:conc:animal
 підлящ,1:conc:animal
 підлящик,1:conc:animal
 підорлик,1:conc:animal
@@ -2377,8 +2378,8 @@
 повзик,1:conc:animal
 поденка,1:conc:animal
 пойнтер,1:conc:animal
-покруч xp2,1:conc:animal
-покруч xp4,1:conc:animal
+покруч xp1,1:conc:hum:negat:2:conc:animal
+покруч xp2,1:conc:hum:negat:2:conc:animal
 полівка xp1,1:conc:animal
 поліфаг,1:conc:animal
 поліхети,1:conc:animal
@@ -2501,11 +2502,11 @@
 рибисько,1:conc:animal
 рибка,1:conc:animal:2:conc:hum:posit
 рибоїд,1:conc:animal
-рибонька xp2,1:conc:animal
-рибочка,1:conc:animal
+рибонька,1:conc:animal:2:conc:hum:posit
+рибочка,1:conc:animal:2:conc:hum:posit
 рибчина,1:conc:animal
 рибчинка,1:conc:animal
-рибчинонька xp2,1:conc:animal
+рибчинонька,1:conc:animal:2:conc:hum:posit
 риб'я,1:conc:animal
 ризеншнауцер,1:conc:animal
 ризобактерія,1:conc:animal
@@ -2595,7 +2596,7 @@
 свиночка,1:conc:animal
 свинчатко,1:conc:animal
 свинюка xp2,1:conc:animal
-свиня,1:conc:animal:2:conc:hum
+свиня,1:conc:animal:2:conc:hum:negat
 свірка xp1,1:conc:animal
 світляк,1:conc:animal
 світлячок,1:conc:animal
@@ -2700,7 +2701,7 @@
 слонятко,1:conc:animal
 слуква,1:conc:animal
 смарида,1:conc:animal
-смердючка xp2,1:conc:animal
+смердючка xp1,1:conc:hum:negat:2:conc:animal
 смеречнюк,1:conc:animal
 смітюх,1:conc:animal
 смовзик,1:conc:animal
@@ -2736,7 +2737,7 @@
 сокіл xp1,1:conc:animal
 соколеня,1:conc:animal
 соколенятко,1:conc:animal
-соколик xp2,1:conc:animal
+соколик,1:conc:animal:2:conc:hum:posit
 соколині,1:conc:animal
 соколиха,1:conc:animal
 соколиця,1:conc:animal
@@ -2748,7 +2749,7 @@
 солітер xp1,1:conc:animal
 соловеєчко,1:conc:animal
 соловей,1:conc:animal
-соловейко xp2,1:conc:animal
+соловейко,1:conc:animal:2:conc:hum:posit
 соловеня,1:conc:animal
 соловенятко,1:conc:animal
 солов'їха,1:conc:animal
@@ -2806,7 +2807,7 @@
 стрептобацила,1:conc:animal
 стрептокок,1:conc:animal
 стрибайчик,1:conc:animal
-стрибунець xp2,1:conc:animal
+стрибунець,1:conc:animal:2:conc:hum
 стригун,1:conc:animal
 стригунець,1:conc:animal
 стриж,1:conc:animal
@@ -2829,7 +2830,7 @@
 сучечка,1:conc:animal
 сучище,1:conc:animal
 суягна,1:conc:animal
-сфінкс xp2,1:conc:animal
+сфінкс,1:conc:animal:2:conc:hum
 схованозябровикові,1:conc:animal
 сцифоїдні,1:conc:animal
 сцифомедуза,1:conc:animal
@@ -2886,6 +2887,7 @@
 тетерюк,1:conc:animal
 тетерюкові,1:conc:animal
 тетерючка,1:conc:animal
+тетеря xp1,1:conc:animal:2:conc:hum:negat
 тетеря xp2,1:conc:animal
 тетерячі,1:conc:animal
 тетракок,1:conc:animal
@@ -3188,7 +3190,7 @@
 шкапійчина,1:conc:animal
 шкапка,1:conc:animal
 шкап'я,1:conc:animal
-шкідник xp2,1:conc:animal
+шкідник,1:conc:hum:negat:2:conc:animal
 шкіроїди,1:conc:animal
 шльонка xp1,1:conc:animal
 шнауцер,1:conc:animal
