@@ -163,8 +163,7 @@ flagMap.each{ flag, affixGroupItems ->
 			//					println '[2] Skipping complex regex: ' + affix
 								return
 							}
-
-
+							
 							body += "SFX $flag $fromm $to $ending"
 							body += '\n'
 							cnt += 1
@@ -198,6 +197,8 @@ flagMap.each{ flag, affixGroupItems ->
 					else if ( ! affix.fromm ) {
 						fromm = '0'
 					}
+
+					fromm = fromm.replace('(', '').replace(')', '')
 					
 					def to = affix.to ? affix.to.replaceFirst(/\$1/, ''+it) : 0
 					def ending = item.ending.replaceFirst(/\[($matcherGroup|\^жш)\]/, ''+it)
@@ -323,6 +324,8 @@ def lines = files.collect { file->
 	if( ! fullDict ) {
 		it = it.replaceAll(/\.(shrt|long)/, '')
 	}
+	
+	it = it.replace('.it0b', '')	// bad verb forms
 		
     if( ! spellWord(it) )
         return ''
