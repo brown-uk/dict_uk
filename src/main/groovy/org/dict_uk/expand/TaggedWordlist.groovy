@@ -129,9 +129,9 @@ class TaggedWordlist {
 					return
 
 				if( line.startsWith(" +") ) {
-					if( extra_tags ) {
-						line += " " + extra_tags
-					}
+//					if( extra_tags ) {
+//						line += " " + extra_tags
+//					}
 					outLines.add( line )
 					return
 				}

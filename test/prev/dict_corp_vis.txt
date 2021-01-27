@@ -2686,38 +2686,38 @@
   крутими adj:p:v_oru:compb
   крутих adj:p:v_mis:compb
   круті adj:p:v_kly:compb
-крутіший adj:m:v_naz:compc
-  крутішого adj:m:v_rod:compc
-  крутішому adj:m:v_dav:compc
-  крутішого adj:m:v_zna:ranim:compc
-  крутіший adj:m:v_zna:rinanim:compc
-  крутішим adj:m:v_oru:compc
-  крутішім adj:m:v_mis:compc
-  крутішому adj:m:v_mis:compc
-  крутіший adj:m:v_kly:compc
-  крутіша adj:f:v_naz:compc
-  крутішої adj:f:v_rod:compc
-  крутішій adj:f:v_dav:compc
-  крутішу adj:f:v_zna:compc
-  крутішою adj:f:v_oru:compc
-  крутішій adj:f:v_mis:compc
-  крутіша adj:f:v_kly:compc
-  крутіше adj:n:v_naz:compc
-  крутішого adj:n:v_rod:compc
-  крутішому adj:n:v_dav:compc
-  крутіше adj:n:v_zna:compc
-  крутішим adj:n:v_oru:compc
-  крутішім adj:n:v_mis:compc
-  крутішому adj:n:v_mis:compc
-  крутіше adj:n:v_kly:compc
-  крутіші adj:p:v_naz:compc
-  крутіших adj:p:v_rod:compc
-  крутішим adj:p:v_dav:compc
-  крутіших adj:p:v_zna:ranim:compc
-  крутіші adj:p:v_zna:rinanim:compc
-  крутішими adj:p:v_oru:compc
-  крутіших adj:p:v_mis:compc
-  крутіші adj:p:v_kly:compc
+крутіший adj:m:v_naz:compc:coll
+  крутішого adj:m:v_rod:compc:coll
+  крутішому adj:m:v_dav:compc:coll
+  крутішого adj:m:v_zna:ranim:compc:coll
+  крутіший adj:m:v_zna:rinanim:compc:coll
+  крутішим adj:m:v_oru:compc:coll
+  крутішім adj:m:v_mis:compc:coll
+  крутішому adj:m:v_mis:compc:coll
+  крутіший adj:m:v_kly:compc:coll
+  крутіша adj:f:v_naz:compc:coll
+  крутішої adj:f:v_rod:compc:coll
+  крутішій adj:f:v_dav:compc:coll
+  крутішу adj:f:v_zna:compc:coll
+  крутішою adj:f:v_oru:compc:coll
+  крутішій adj:f:v_mis:compc:coll
+  крутіша adj:f:v_kly:compc:coll
+  крутіше adj:n:v_naz:compc:coll
+  крутішого adj:n:v_rod:compc:coll
+  крутішому adj:n:v_dav:compc:coll
+  крутіше adj:n:v_zna:compc:coll
+  крутішим adj:n:v_oru:compc:coll
+  крутішім adj:n:v_mis:compc:coll
+  крутішому adj:n:v_mis:compc:coll
+  крутіше adj:n:v_kly:compc:coll
+  крутіші adj:p:v_naz:compc:coll
+  крутіших adj:p:v_rod:compc:coll
+  крутішим adj:p:v_dav:compc:coll
+  крутіших adj:p:v_zna:ranim:compc:coll
+  крутіші adj:p:v_zna:rinanim:compc:coll
+  крутішими adj:p:v_oru:compc:coll
+  крутіших adj:p:v_mis:compc:coll
+  крутіші adj:p:v_kly:compc:coll
 ладо noun:anim:m:v_naz
   лада noun:anim:m:v_rod
   ладові noun:anim:m:v_dav
@@ -3120,38 +3120,38 @@
   найзатаєнішими adj:p:v_oru:comps
   найзатаєніших adj:p:v_mis:comps
   найзатаєніші adj:p:v_kly:comps
-найкрутіший adj:m:v_naz:comps
-  найкрутішого adj:m:v_rod:comps
-  найкрутішому adj:m:v_dav:comps
-  найкрутішого adj:m:v_zna:ranim:comps
-  найкрутіший adj:m:v_zna:rinanim:comps
-  найкрутішим adj:m:v_oru:comps
-  найкрутішім adj:m:v_mis:comps
-  найкрутішому adj:m:v_mis:comps
-  найкрутіший adj:m:v_kly:comps
-  найкрутіша adj:f:v_naz:comps
-  найкрутішої adj:f:v_rod:comps
-  найкрутішій adj:f:v_dav:comps
-  найкрутішу adj:f:v_zna:comps
-  найкрутішою adj:f:v_oru:comps
-  найкрутішій adj:f:v_mis:comps
-  найкрутіша adj:f:v_kly:comps
-  найкрутіше adj:n:v_naz:comps
-  найкрутішого adj:n:v_rod:comps
-  найкрутішому adj:n:v_dav:comps
-  найкрутіше adj:n:v_zna:comps
-  найкрутішим adj:n:v_oru:comps
-  найкрутішім adj:n:v_mis:comps
-  найкрутішому adj:n:v_mis:comps
-  найкрутіше adj:n:v_kly:comps
-  найкрутіші adj:p:v_naz:comps
-  найкрутіших adj:p:v_rod:comps
-  найкрутішим adj:p:v_dav:comps
-  найкрутіших adj:p:v_zna:ranim:comps
-  найкрутіші adj:p:v_zna:rinanim:comps
-  найкрутішими adj:p:v_oru:comps
-  найкрутіших adj:p:v_mis:comps
-  найкрутіші adj:p:v_kly:comps
+найкрутіший adj:m:v_naz:comps:coll
+  найкрутішого adj:m:v_rod:comps:coll
+  найкрутішому adj:m:v_dav:comps:coll
+  найкрутішого adj:m:v_zna:ranim:comps:coll
+  найкрутіший adj:m:v_zna:rinanim:comps:coll
+  найкрутішим adj:m:v_oru:comps:coll
+  найкрутішім adj:m:v_mis:comps:coll
+  найкрутішому adj:m:v_mis:comps:coll
+  найкрутіший adj:m:v_kly:comps:coll
+  найкрутіша adj:f:v_naz:comps:coll
+  найкрутішої adj:f:v_rod:comps:coll
+  найкрутішій adj:f:v_dav:comps:coll
+  найкрутішу adj:f:v_zna:comps:coll
+  найкрутішою adj:f:v_oru:comps:coll
+  найкрутішій adj:f:v_mis:comps:coll
+  найкрутіша adj:f:v_kly:comps:coll
+  найкрутіше adj:n:v_naz:comps:coll
+  найкрутішого adj:n:v_rod:comps:coll
+  найкрутішому adj:n:v_dav:comps:coll
+  найкрутіше adj:n:v_zna:comps:coll
+  найкрутішим adj:n:v_oru:comps:coll
+  найкрутішім adj:n:v_mis:comps:coll
+  найкрутішому adj:n:v_mis:comps:coll
+  найкрутіше adj:n:v_kly:comps:coll
+  найкрутіші adj:p:v_naz:comps:coll
+  найкрутіших adj:p:v_rod:comps:coll
+  найкрутішим adj:p:v_dav:comps:coll
+  найкрутіших adj:p:v_zna:ranim:comps:coll
+  найкрутіші adj:p:v_zna:rinanim:comps:coll
+  найкрутішими adj:p:v_oru:comps:coll
+  найкрутіших adj:p:v_mis:comps:coll
+  найкрутіші adj:p:v_kly:comps:coll
 найперш adv:comps:short
 найперше adv:comps
 найпоганіш adv:comps:&predic:short
@@ -4553,38 +4553,38 @@
   щонайзатаєнішими adj:p:v_oru:comps
   щонайзатаєніших adj:p:v_mis:comps
   щонайзатаєніші adj:p:v_kly:comps
-щонайкрутіший adj:m:v_naz:comps
-  щонайкрутішого adj:m:v_rod:comps
-  щонайкрутішому adj:m:v_dav:comps
-  щонайкрутішого adj:m:v_zna:ranim:comps
-  щонайкрутіший adj:m:v_zna:rinanim:comps
-  щонайкрутішим adj:m:v_oru:comps
-  щонайкрутішім adj:m:v_mis:comps
-  щонайкрутішому adj:m:v_mis:comps
-  щонайкрутіший adj:m:v_kly:comps
-  щонайкрутіша adj:f:v_naz:comps
-  щонайкрутішої adj:f:v_rod:comps
-  щонайкрутішій adj:f:v_dav:comps
-  щонайкрутішу adj:f:v_zna:comps
-  щонайкрутішою adj:f:v_oru:comps
-  щонайкрутішій adj:f:v_mis:comps
-  щонайкрутіша adj:f:v_kly:comps
-  щонайкрутіше adj:n:v_naz:comps
-  щонайкрутішого adj:n:v_rod:comps
-  щонайкрутішому adj:n:v_dav:comps
-  щонайкрутіше adj:n:v_zna:comps
-  щонайкрутішим adj:n:v_oru:comps
-  щонайкрутішім adj:n:v_mis:comps
-  щонайкрутішому adj:n:v_mis:comps
-  щонайкрутіше adj:n:v_kly:comps
-  щонайкрутіші adj:p:v_naz:comps
-  щонайкрутіших adj:p:v_rod:comps
-  щонайкрутішим adj:p:v_dav:comps
-  щонайкрутіших adj:p:v_zna:ranim:comps
-  щонайкрутіші adj:p:v_zna:rinanim:comps
-  щонайкрутішими adj:p:v_oru:comps
-  щонайкрутіших adj:p:v_mis:comps
-  щонайкрутіші adj:p:v_kly:comps
+щонайкрутіший adj:m:v_naz:comps:coll
+  щонайкрутішого adj:m:v_rod:comps:coll
+  щонайкрутішому adj:m:v_dav:comps:coll
+  щонайкрутішого adj:m:v_zna:ranim:comps:coll
+  щонайкрутіший adj:m:v_zna:rinanim:comps:coll
+  щонайкрутішим adj:m:v_oru:comps:coll
+  щонайкрутішім adj:m:v_mis:comps:coll
+  щонайкрутішому adj:m:v_mis:comps:coll
+  щонайкрутіший adj:m:v_kly:comps:coll
+  щонайкрутіша adj:f:v_naz:comps:coll
+  щонайкрутішої adj:f:v_rod:comps:coll
+  щонайкрутішій adj:f:v_dav:comps:coll
+  щонайкрутішу adj:f:v_zna:comps:coll
+  щонайкрутішою adj:f:v_oru:comps:coll
+  щонайкрутішій adj:f:v_mis:comps:coll
+  щонайкрутіша adj:f:v_kly:comps:coll
+  щонайкрутіше adj:n:v_naz:comps:coll
+  щонайкрутішого adj:n:v_rod:comps:coll
+  щонайкрутішому adj:n:v_dav:comps:coll
+  щонайкрутіше adj:n:v_zna:comps:coll
+  щонайкрутішим adj:n:v_oru:comps:coll
+  щонайкрутішім adj:n:v_mis:comps:coll
+  щонайкрутішому adj:n:v_mis:comps:coll
+  щонайкрутіше adj:n:v_kly:comps:coll
+  щонайкрутіші adj:p:v_naz:comps:coll
+  щонайкрутіших adj:p:v_rod:comps:coll
+  щонайкрутішим adj:p:v_dav:comps:coll
+  щонайкрутіших adj:p:v_zna:ranim:comps:coll
+  щонайкрутіші adj:p:v_zna:rinanim:comps:coll
+  щонайкрутішими adj:p:v_oru:comps:coll
+  щонайкрутіших adj:p:v_mis:comps:coll
+  щонайкрутіші adj:p:v_kly:comps:coll
 щонайпоганіш adv:comps:short
 щонайпоганіше adv:comps
 щонайудатніш adv:comps:short
@@ -4854,38 +4854,38 @@
   щоякнайзатаєнішими adj:p:v_oru:comps
   щоякнайзатаєніших adj:p:v_mis:comps
   щоякнайзатаєніші adj:p:v_kly:comps
-щоякнайкрутіший adj:m:v_naz:comps
-  щоякнайкрутішого adj:m:v_rod:comps
-  щоякнайкрутішому adj:m:v_dav:comps
-  щоякнайкрутішого adj:m:v_zna:ranim:comps
-  щоякнайкрутіший adj:m:v_zna:rinanim:comps
-  щоякнайкрутішим adj:m:v_oru:comps
-  щоякнайкрутішім adj:m:v_mis:comps
-  щоякнайкрутішому adj:m:v_mis:comps
-  щоякнайкрутіший adj:m:v_kly:comps
-  щоякнайкрутіша adj:f:v_naz:comps
-  щоякнайкрутішої adj:f:v_rod:comps
-  щоякнайкрутішій adj:f:v_dav:comps
-  щоякнайкрутішу adj:f:v_zna:comps
-  щоякнайкрутішою adj:f:v_oru:comps
-  щоякнайкрутішій adj:f:v_mis:comps
-  щоякнайкрутіша adj:f:v_kly:comps
-  щоякнайкрутіше adj:n:v_naz:comps
-  щоякнайкрутішого adj:n:v_rod:comps
-  щоякнайкрутішому adj:n:v_dav:comps
-  щоякнайкрутіше adj:n:v_zna:comps
-  щоякнайкрутішим adj:n:v_oru:comps
-  щоякнайкрутішім adj:n:v_mis:comps
-  щоякнайкрутішому adj:n:v_mis:comps
-  щоякнайкрутіше adj:n:v_kly:comps
-  щоякнайкрутіші adj:p:v_naz:comps
-  щоякнайкрутіших adj:p:v_rod:comps
-  щоякнайкрутішим adj:p:v_dav:comps
-  щоякнайкрутіших adj:p:v_zna:ranim:comps
-  щоякнайкрутіші adj:p:v_zna:rinanim:comps
-  щоякнайкрутішими adj:p:v_oru:comps
-  щоякнайкрутіших adj:p:v_mis:comps
-  щоякнайкрутіші adj:p:v_kly:comps
+щоякнайкрутіший adj:m:v_naz:comps:coll
+  щоякнайкрутішого adj:m:v_rod:comps:coll
+  щоякнайкрутішому adj:m:v_dav:comps:coll
+  щоякнайкрутішого adj:m:v_zna:ranim:comps:coll
+  щоякнайкрутіший adj:m:v_zna:rinanim:comps:coll
+  щоякнайкрутішим adj:m:v_oru:comps:coll
+  щоякнайкрутішім adj:m:v_mis:comps:coll
+  щоякнайкрутішому adj:m:v_mis:comps:coll
+  щоякнайкрутіший adj:m:v_kly:comps:coll
+  щоякнайкрутіша adj:f:v_naz:comps:coll
+  щоякнайкрутішої adj:f:v_rod:comps:coll
+  щоякнайкрутішій adj:f:v_dav:comps:coll
+  щоякнайкрутішу adj:f:v_zna:comps:coll
+  щоякнайкрутішою adj:f:v_oru:comps:coll
+  щоякнайкрутішій adj:f:v_mis:comps:coll
+  щоякнайкрутіша adj:f:v_kly:comps:coll
+  щоякнайкрутіше adj:n:v_naz:comps:coll
+  щоякнайкрутішого adj:n:v_rod:comps:coll
+  щоякнайкрутішому adj:n:v_dav:comps:coll
+  щоякнайкрутіше adj:n:v_zna:comps:coll
+  щоякнайкрутішим adj:n:v_oru:comps:coll
+  щоякнайкрутішім adj:n:v_mis:comps:coll
+  щоякнайкрутішому adj:n:v_mis:comps:coll
+  щоякнайкрутіше adj:n:v_kly:comps:coll
+  щоякнайкрутіші adj:p:v_naz:comps:coll
+  щоякнайкрутіших adj:p:v_rod:comps:coll
+  щоякнайкрутішим adj:p:v_dav:comps:coll
+  щоякнайкрутіших adj:p:v_zna:ranim:comps:coll
+  щоякнайкрутіші adj:p:v_zna:rinanim:comps:coll
+  щоякнайкрутішими adj:p:v_oru:comps:coll
+  щоякнайкрутіших adj:p:v_mis:comps:coll
+  щоякнайкрутіші adj:p:v_kly:comps:coll
 щоякнайуживаніший adj:m:v_naz:comps
   щоякнайуживанішого adj:m:v_rod:comps
   щоякнайуживанішому adj:m:v_dav:comps
@@ -5213,38 +5213,38 @@
   якнайзатаєнішими adj:p:v_oru:comps
   якнайзатаєніших adj:p:v_mis:comps
   якнайзатаєніші adj:p:v_kly:comps
-якнайкрутіший adj:m:v_naz:comps
-  якнайкрутішого adj:m:v_rod:comps
-  якнайкрутішому adj:m:v_dav:comps
-  якнайкрутішого adj:m:v_zna:ranim:comps
-  якнайкрутіший adj:m:v_zna:rinanim:comps
-  якнайкрутішим adj:m:v_oru:comps
-  якнайкрутішім adj:m:v_mis:comps
-  якнайкрутішому adj:m:v_mis:comps
-  якнайкрутіший adj:m:v_kly:comps
-  якнайкрутіша adj:f:v_naz:comps
-  якнайкрутішої adj:f:v_rod:comps
-  якнайкрутішій adj:f:v_dav:comps
-  якнайкрутішу adj:f:v_zna:comps
-  якнайкрутішою adj:f:v_oru:comps
-  якнайкрутішій adj:f:v_mis:comps
-  якнайкрутіша adj:f:v_kly:comps
-  якнайкрутіше adj:n:v_naz:comps
-  якнайкрутішого adj:n:v_rod:comps
-  якнайкрутішому adj:n:v_dav:comps
-  якнайкрутіше adj:n:v_zna:comps
-  якнайкрутішим adj:n:v_oru:comps
-  якнайкрутішім adj:n:v_mis:comps
-  якнайкрутішому adj:n:v_mis:comps
-  якнайкрутіше adj:n:v_kly:comps
-  якнайкрутіші adj:p:v_naz:comps
-  якнайкрутіших adj:p:v_rod:comps
-  якнайкрутішим adj:p:v_dav:comps
-  якнайкрутіших adj:p:v_zna:ranim:comps
-  якнайкрутіші adj:p:v_zna:rinanim:comps
-  якнайкрутішими adj:p:v_oru:comps
-  якнайкрутіших adj:p:v_mis:comps
-  якнайкрутіші adj:p:v_kly:comps
+якнайкрутіший adj:m:v_naz:comps:coll
+  якнайкрутішого adj:m:v_rod:comps:coll
+  якнайкрутішому adj:m:v_dav:comps:coll
+  якнайкрутішого adj:m:v_zna:ranim:comps:coll
+  якнайкрутіший adj:m:v_zna:rinanim:comps:coll
+  якнайкрутішим adj:m:v_oru:comps:coll
+  якнайкрутішім adj:m:v_mis:comps:coll
+  якнайкрутішому adj:m:v_mis:comps:coll
+  якнайкрутіший adj:m:v_kly:comps:coll
+  якнайкрутіша adj:f:v_naz:comps:coll
+  якнайкрутішої adj:f:v_rod:comps:coll
+  якнайкрутішій adj:f:v_dav:comps:coll
+  якнайкрутішу adj:f:v_zna:comps:coll
+  якнайкрутішою adj:f:v_oru:comps:coll
+  якнайкрутішій adj:f:v_mis:comps:coll
+  якнайкрутіша adj:f:v_kly:comps:coll
+  якнайкрутіше adj:n:v_naz:comps:coll
+  якнайкрутішого adj:n:v_rod:comps:coll
+  якнайкрутішому adj:n:v_dav:comps:coll
+  якнайкрутіше adj:n:v_zna:comps:coll
+  якнайкрутішим adj:n:v_oru:comps:coll
+  якнайкрутішім adj:n:v_mis:comps:coll
+  якнайкрутішому adj:n:v_mis:comps:coll
+  якнайкрутіше adj:n:v_kly:comps:coll
+  якнайкрутіші adj:p:v_naz:comps:coll
+  якнайкрутіших adj:p:v_rod:comps:coll
+  якнайкрутішим adj:p:v_dav:comps:coll
+  якнайкрутіших adj:p:v_zna:ranim:comps:coll
+  якнайкрутіші adj:p:v_zna:rinanim:comps:coll
+  якнайкрутішими adj:p:v_oru:comps:coll
+  якнайкрутіших adj:p:v_mis:comps:coll
+  якнайкрутіші adj:p:v_kly:comps:coll
 якнайпоганіш adv:comps:short
 якнайпоганіше adv:comps
 якнайудатніш adv:comps:short

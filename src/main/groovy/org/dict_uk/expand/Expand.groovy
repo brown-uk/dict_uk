@@ -1135,9 +1135,14 @@ class Expand {
             }
 
 			if( line.contains(" +cs=") ) {
-				Matcher matcher = (line =~ / \+cs=([^ ]+)/)
+				Matcher matcher = (line =~ / \+cs=([^ ]+)( (:[^ ]+))?/)
 				matcher.find()
 				word = matcher.group(1)
+				
+				String compExtraTags = matcher.group(3)
+				if( compExtraTags ) {
+					extra_tags += compExtraTags
+				}
 				
 //				if( word.endsWith('е') && main_word.endsWith('й') ) {
 				if( ! word.endsWith('ий') && main_word.endsWith('й') 
@@ -1203,10 +1208,15 @@ class Expand {
 		if( line.startsWith(" +cs")) {
 			String word
 			if( line.contains(" +cs=") ) {
-				def matcher = Pattern.compile(" \\+cs=([^ ]+)").matcher(line)
+				Matcher matcher = (line =~ / \+cs=([^ ]+)( (:[^ ]+))?/)
 				matcher.find()
 				word = matcher.group(1)
-				
+
+				String compExtraTags = matcher.group(3)
+				if( compExtraTags ) {
+					extra_tags += compExtraTags
+				}
+
 				if( ! (word =~ /[іеш]$/) ) {
 					log.error("invalid +cs for adv: " + line)
 					System.exit(1)

@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals
 import org.dict_uk.common.DicEntry
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
 public class ExpandTest {
@@ -363,6 +364,26 @@ def multilineFull =
 			def lines = ["вагомо adv \\", " +cs=вагоміше"]
 			assertEquals(multilineFull2, join(expand.process_input(lines)))
 		}
+
+		def multilineFull21 =
+		'''
+вагоміше вагоміше adv:compc:coll
+вагоміш вагоміше adv:compc:coll:short
+вагомо вагомо adv:compb
+найвагоміш найвагоміш adv:comps:coll:short
+найвагоміше найвагоміше adv:comps:coll
+щонайвагоміш щонайвагоміш adv:comps:coll:short
+щонайвагоміше щонайвагоміше adv:comps:coll
+якнайвагоміш якнайвагоміш adv:comps:coll:short
+якнайвагоміше якнайвагоміше adv:comps:coll
+'''.trim()
+
+			
+			@Test
+			void testMultilineWithExtraTag2() {
+				def lines = ["вагомо adv \\", " +cs=вагоміше :coll"]
+				assertEquals(multilineFull21, join(expand.process_input(lines)))
+			}
 	
 	
 def taggedIn = 
@@ -493,7 +514,7 @@ def taggedOut =
 	}
 
 
-	
+
 	String stryvatyFull =
 '''
 стривати стривати verb:imperf:inf
@@ -503,9 +524,23 @@ def taggedOut =
 стривайте стривати verb:imperf:impr:p:2
 '''.trim()
 
+@Test
+void testStryvaty() {
+	List<String> lines = ["стривати /v2 tag=:impr|:inf :imperf"]
+	assertEquals(stryvatyFull, join(expand.process_input(lines)))
+}
+
+	
+	String adjNv =
+'''
+TBD
+'''.trim()
+
+
+	@Disabled
 	@Test
-	void testStryvaty() {
-		List<String> lines = ["стривати /v2 tag=:impr|:inf :imperf"]
+	void testAdjAd() {
+		List<String> lines = ["супер-пупер adj:nv:coll|adv:coll"]
 		assertEquals(stryvatyFull, join(expand.process_input(lines)))
 	}
 

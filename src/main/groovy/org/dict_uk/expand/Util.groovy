@@ -102,7 +102,7 @@ class Util {
 		}
 	}
 
-	private static final List<String> GEN_LIST = ["m", "f", "n", "p"]
+	private static final String GEN_LIST = "mfnp"
 	private static final List<String> VIDM_LIST = [
 		"v_naz",
 		"v_rod",
@@ -155,7 +155,7 @@ class Util {
 			else if (lineTagStr.startsWith("adj") && ! lineTagStr.contains(":v_") ) {
 				def parts = lineTagStr.split(":nv")
 
-				def gens
+				String gens
 				if( parts[0] ==~ /.*:[mnfp]/) {
 					gens = parts[0][-1..-1]
 					parts[0] = parts[0][0..<-2]

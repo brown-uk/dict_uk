@@ -40,6 +40,16 @@ public class AutogenTest {
 			]
 		assertEquals(expected[0].toString(), res[0].toString())
 		assertEquals(expected[1].toString(), res[1].toString())
+
+		words = ["хімічити /v1 :imperf:coll"]
 		
+		res = Autogen.replaceLetters(words)
+		expected = [
+			["хемічити /v1 :imperf:coll:alt"],
+			[]
+			]
+		assertEquals(expected[0].toString(), res[0].toString())
+		assertEquals(expected[1].toString(), res[1].toString())
+
 	}
 }

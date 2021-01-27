@@ -45,8 +45,13 @@ class Autogen {
 			else if( line =~ /^[^#]*хімі[ячк]/ ){
 				String newLine = line.replaceFirst(/хімі([ячк])/, 'хемі$1')
 				if( ! newLine.contains(":alt") ) {
-					newLine = newLine.replaceFirst(/^(.*? \/[^ ]+( (:[a-z_0-9]+)+)?)( *.*)$/, '$1 :alt$2')
-					newLine = newLine.replaceFirst(/(:[a-z_0-9]) (:alt)/, '$1$2')
+					if( newLine.contains(" :") ) {
+						newLine = newLine.replaceFirst(/^(.*? \/[^ ]+( (:[a-z_0-9-]+)+))( *.*)$/, '$1:alt$4')
+					}
+					else {
+						newLine = newLine.replaceFirst(/^(.*? \/[^ ]+)( *.*)$/, '$1 :alt$2')
+					}
+//					newLine = newLine.replaceFirst(/(:[a-z_0-9]) (:alt)/, '$1$2')
 				}
 
 				outLines << newLine

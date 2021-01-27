@@ -121,7 +121,7 @@ class ExpandComps {
 //			return [line]
 			throw new IllegalArgumentException("Only composite lines are supported here, was: " + line)
 
-		def parts_all
+		String[] parts_all
 		if( line.contains(" :") ) {
 			parts_all = line.split(" :")
 			line = parts_all[0]
