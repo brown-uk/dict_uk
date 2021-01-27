@@ -20,10 +20,10 @@ noninfl 430
      compb 1
      prop 1
 noun 168392
-     anim 55716
+     anim 55717
      fname 3643
      geo 19664
-     inanim 112588
+     inanim 112587
      lname 28066
      nv 13817
      pname 1007
