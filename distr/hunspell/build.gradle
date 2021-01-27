@@ -13,7 +13,7 @@ repositories {
 
 
 dependencies {
-    implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.3'
+    implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.+'
 
     implementation group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
@@ -88,6 +88,7 @@ task testHunspell1(type: Exec) { //, dependsOn: hunspell) {
     txt += " відіб\\'ю"
     txt += " всього усього"
     txt += " більш найменш якнайскоріш перш"
+    txt += " кури курей гуси гусей"
 
     def cmd = "echo $txt | hunspell -d $outDir/uk_UA | grep -E '^&'" + '; [ $? == 1 ]'
     commandLine "sh", "-c", "${cmd}"
@@ -118,14 +119,15 @@ task getSpellWords (type: Exec) {
     inputs.files "${projectDir}/../../out/dict_corp_lt.txt"
     outputs.files "${projectDir}/build/words_spell.txt"
 
-    def cmd = "grep -vE 'noun:inanim:.:v_kly|:(bad|slang|verb.*?coll|advp:rev.*?rare|alt|subst|rare)|\\. ' ${projectDir}/../../out/dict_corp_lt.txt | cut -d ' ' -f 1 | sort | uniq -u > ${projectDir}/build/words_spell.txt"
+    def cmd = "grep -vE \"noun:inanim:.:v_kly|(:inf|:3).*:short|:2:long|advp.*long|adv.*:comp.*:short|adj.*:long|:(bad|slang|alt|subst|arch|rare)|[.'] \""
+    cmd += " ${projectDir}/../../out/dict_corp_lt.txt | cut -d ' ' -f 1 | sort -u > ${projectDir}/build/words_spell.txt"
 
     commandLine "sh", "-c", "${cmd}"
 }
 
 
 task testHunspellDirect (type: Exec/*, dependsOn: getSpellWords*/) { //, dependsOn: hunspell) {
-    def cmd = "hunspell -d $outDir/uk_UA -l ${projectDir}/../../out/words_spell.txt > hunspell.unknown.txt; wc -l hunspell.unknown.txt"
+    def cmd = "hunspell -d $outDir/uk_UA -l ${projectDir}/build/words_spell.txt > hunspell.unknown.txt; wc -l hunspell.unknown.txt"
 
     commandLine "sh", "-c", "${cmd}"
 }
