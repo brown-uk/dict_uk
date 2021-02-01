@@ -533,7 +533,7 @@
 
 хліба хліб noun:p:v_naz/v_zna
 
-тат тато noun:anim:p:v_rod
+тат тато noun:anim:p:v_rod:ua_1992
 
 раз раз noun:inanim:p:v_rod
 корогов корогва noun:f:v_naz/v_zna
@@ -542,6 +542,13 @@
 дровець дрівця noun:p:v_rod:ns
 плахіт плахта noun:p:v_rod
 плахот плахта noun:p:v_rod
+
+автів авто noun:inanim:p:v_rod:alt:subst
+псевдів псевдо noun:inanim:p:v_rod:alt:subst
+бюрків бюрко noun:inanim:p:v_rod:rare:subst
+цеберків цеберко noun:inanim:p:v_rod:subst
+іклів ікло noun:inanim:p:v_rod:subst
+древків древко noun:inanim:p:v_rod:bad:subst
 
 чоловік чоловік noun:anim:p:v_rod/v_zna:bad
 

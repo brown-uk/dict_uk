@@ -154,13 +154,15 @@ subgroup n20.p
 subgroup n20.po
 
 ло:
-о	а		  #  громило громила 	                    @ noun:p:v_naz
+о	а		#  громило громила 	                    @ noun:p:v_naz
 о	0		#  громило громил 	                    @ noun:p:v_rod
 
 сько:
-о	а		  #  дідиська 	                    @ noun:p:v_naz
-о	0		#  дідиськ 	                    @ noun:p:v_rod
-ко	ок		#  дідисьок 	                    @ noun:p:v_rod
+о	а		#  дідиська 	                    @ noun:p:v_naz
+о   ів      #  дідиськів                        @ noun:p:v_rod
+# дві наступні форми для подвійних родів є в с.р.
+#о	0		#  дідиськ 	                        @ noun:p:v_rod
+#ко	ок		#  дідисьок                         @ noun:p:v_rod
 
 о:
 о	ам			#  громилам 	            @ noun:p:v_dav
