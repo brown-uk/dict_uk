@@ -23,7 +23,7 @@ class Autogen {
 		
 		lines
 		.findAll { line -> 
-			line =~ /^[^#]*(проек[тц]|хіміо|хімі[чкя])|^(двох|трьох|чотирьох)/ 
+			line =~ /^[^#]*(проек[тц]|хіміо|хімі[чкя])|марафон|^(двох|трьох|чотирьох)/ 
 		}
 		.each { line ->
 			if( line.contains('#>') ) {
@@ -52,6 +52,19 @@ class Autogen {
 						newLine = newLine.replaceFirst(/^(.*? \/[^ ]+)( *.*)$/, '$1 :alt$2')
 					}
 //					newLine = newLine.replaceFirst(/(:[a-z_0-9]) (:alt)/, '$1$2')
+				}
+
+				outLines << newLine
+				return
+			}
+			else if( line =~ /марафон/ ) {
+				String newLine = line.replaceFirst(/марафон/, 'маратон')
+
+				if( newLine.contains(" :") ) {
+					newLine = newLine.replaceFirst(/^(.*? \/[^ ]+( (:[a-z_0-9-]+)+))( *.*)$/, '$1:ua_2019$4')
+				}
+				else {
+					newLine = newLine.replaceFirst(/^(.*? \/[^ ]+)( *.*)$/, '$1 :ua_2019$2')
 				}
 
 				outLines << newLine

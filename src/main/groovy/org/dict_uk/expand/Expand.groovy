@@ -127,6 +127,12 @@ class Expand {
 					else if( affixFlag2 == "v3.it0" ) {
 						affixFlag2 = "v1.it0"
 					}
+					else if( affixFlag2 == "n2nm.ovi" ) {
+						affixFlag2 = "n2n.ovi"
+					}
+					else if( affixFlag2 == "n2nf.ovi" ) {
+						affixFlag2 = "n2n.ovi"
+					}
 //					else if ( affixFlag2 == "adj_pron.long" ) {
 //						affixFlag2 = "adj.long"
 //					}
