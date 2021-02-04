@@ -547,10 +547,13 @@
 псевдів псевдо noun:inanim:p:v_rod:alt:subst
 бюрків бюрко noun:inanim:p:v_rod:rare:subst
 цеберків цеберко noun:inanim:p:v_rod:subst
-іклів ікло noun:inanim:p:v_rod:subst
 древків древко noun:inanim:p:v_rod:bad:subst
 
+батяри батяр noun:anim:p:v_naz:subst
+батярові батяр noun:anim:m:v_dav/v_mis:subst
+
 чоловік чоловік noun:anim:p:v_rod/v_zna:bad
+
 
 царька царьок noun:anim:m:v_rod/v_zna:bad
 царькові царьок noun:anim:m:v_dav:bad

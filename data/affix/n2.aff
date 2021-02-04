@@ -4,9 +4,12 @@ group n20
 
 [^ь]о:
 о		а			#  батька 	                @ noun:m:v_rod
-о		у			#  батьку 	            @ noun:m:v_dav/v_mis/v_kly
+о		у			#  батьку 	            @ noun:m:v_dav/v_mis
 о		ові			#  батькові                     @ noun:m:v_dav/v_mis
 о		ом			#  батьком 	                @ noun:m:v_oru
+
+о   у   [^лрь]о     #  батьку                   @ noun:m:v_kly
+о   е   ло          #  Вавиле                   @ noun:m:v_kly
 
 [^гкь]о:
 о	і			#  вайлі 	                @ noun:m:v_mis
