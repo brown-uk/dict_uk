@@ -111,7 +111,7 @@
 бодун /n20.a
 бодяжити /v1.cf.advp.it0 :imperf
 бодяжний /adj
-бойз foreign
+бойз noninfl:foreign
 боксінг /n20
 бомбезний /adj.adv \
  +cs=бомбезніший
@@ -173,6 +173,8 @@
 вирулити /v1.it1 :perf
 вирулювання /n2n
 вирулювати /v1.cf.advp :imperf
+висновковувати /v1.cf.advp :imperf
+висновковуватися /vr1.cf.advp :imperf
 висяк /n20.p
 вишибала /n10.p1.piv.<m
 вишиватництво /n2n
@@ -599,7 +601,6 @@
 кльовий /adj
 кльово intj|adv
 клюб /n20.p
-кнопкодав /n20.a.p.ke.<
 ковбасити /v1.cf.advp :imperf
 ковбаситися /vr1.cf.advp.it0 :imperf
 коворкінг /n20.p
@@ -615,7 +616,7 @@
 комп'ютинг /n20
 комсюк /n20.a.p.<
 комуняка /n10.p1.ko.<m
-комьюніті foreign:noninfl
+комьюніті noninfl:foreign
 ком'юніті noun:n:nv
 конектитися /vr1.cf.advp.it0 :imperf
 конєшно adv:compb:&insert
@@ -754,7 +755,7 @@
 махіна /n10
 мда intj
 мдя intj
-мейд foreign
+мейд noninfl:foreign
 мейкап /n20
 мейкер /n20.a.p.ke.<
 мейл /n20.p
@@ -878,11 +879,11 @@
 новобуд /n20.p
 носибельний /adj \
  +cs=носибельніший
-ноу foreign
+ноу noninfl:foreign
 ноут /n20.a.p
 ноутпед /n20.a.p
 нулячий /adj
-ньюз foreign
+ньюз noninfl:foreign
 ньюзмейкер /n20.a.p.ke.<
 ньюзмейкерський /adj
 ньюзрум /n20.p
@@ -1020,6 +1021,7 @@
 потусити /v1.it1 :perf
 поул /n20.p
 поул-позишн /n20
+по-фєнє adv
 пофіг adv
 пофігізм /n20
 пофігіст /n20.a.p.<
@@ -1558,6 +1560,7 @@
 штиняти /v2.cf.advp :imperf
 шугатися /vr2.cf.advp :imperf
 шурупати /v2.cf.advp :imperf
+шутер /n20.a :xp2                            # гра-стрілялка
 шухер /n20.ke
 ща noninfl
 щас noninfl

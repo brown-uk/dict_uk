@@ -3,7 +3,6 @@
 
 # з тегами
 
-Ігоре Ігор noun:anim:m:v_kly:prop:fname:bad
 
 
 # і - о + ь в кінці
@@ -488,21 +487,24 @@
 гребневі гребінь noun:inanim:m:v_mis:bad
 
 
-ясла-садок ясла-садок noun:inanim:p:v_naz:ns
-ясел-садка ясла-садок noun:inanim:p:v_rod:ns
-яслам-садку ясла-садок noun:inanim:p:v_dav:ns
-ясла-садок ясла-садок noun:inanim:p:v_zna:ns
-яслами-садком ясла-садок noun:inanim:p:v_oru:ns
-яслах-садку ясла-садок noun:inanim:p:v_mis:ns
-ясла-садок ясла-садок noun:inanim:p:v_kly:ns
+ясла-садок ясла-садок noun:m:v_naz
+ясел-садка ясла-садок noun:m:v_rod
+яслам-садку ясла-садок noun:m:v_dav
+ясла-садок ясла-садок noun:m:v_zna
+яслами-садком ясла-садок noun:m:v_oru
+яслах-садку ясла-садок noun:m:v_mis
+ясла-садок ясла-садок noun:m:v_kly
+ясла-садки ясла-садок noun:p:v_naz/v_zna/v_kly
+ясел-садків ясла-садок noun:p:v_rod
+яслам-садкам ясла-садок noun:p:v_dav
+яслами-садками ясла-садок noun:p:v_oru
+яслах-садках ясла-садок noun:p:v_mis
 
-ясла-садочок ясла-садочок noun:inanim:p:v_naz:ns
+ясла-садочок ясла-садочок noun:inanim:p:v_naz/v_zna/v_kly:ns
 ясел-садочка ясла-садочок noun:inanim:p:v_rod:ns
 яслам-садочку ясла-садочок noun:inanim:p:v_dav:ns
-ясла-садочок ясла-садочок noun:inanim:p:v_zna:ns
 яслами-садочком ясла-садочок noun:inanim:p:v_oru:ns
 яслах-садочку ясла-садочок noun:inanim:p:v_mis:ns
-ясла-садочок ясла-садочок noun:inanim:p:v_kly:ns
 
 
 
@@ -515,6 +517,8 @@
 соли сіль noun:inanim:f:v_rod:ua_2019
 Білоруси Білорусь noun:inanim:f:v_rod:prop:geo:ua_2019
 Руси Русь noun:f:v_rod:prop:geo:ua_2019
+України-Руси Україна-Русь noun:f:v_rod:prop:geo:ua_2019
+Руси-України Русь-Україна noun:f:v_rod:prop:geo:ua_2019
 
 піхв піхва noun:inanim:p:v_rod
 подруж подружжя noun:inanim:p:v_rod
@@ -549,8 +553,6 @@
 цеберків цеберко noun:inanim:p:v_rod:subst
 древків древко noun:inanim:p:v_rod:bad:subst
 
-батяри батяр noun:anim:p:v_naz:subst
-батярові батяр noun:anim:m:v_dav/v_mis:subst
 
 чоловік чоловік noun:anim:p:v_rod/v_zna:bad
 
