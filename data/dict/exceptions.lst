@@ -500,11 +500,11 @@
 яслами-садками ясла-садок noun:p:v_oru
 яслах-садках ясла-садок noun:p:v_mis
 
-ясла-садочок ясла-садочок noun:inanim:p:v_naz/v_zna/v_kly:ns
-ясел-садочка ясла-садочок noun:inanim:p:v_rod:ns
-яслам-садочку ясла-садочок noun:inanim:p:v_dav:ns
-яслами-садочком ясла-садочок noun:inanim:p:v_oru:ns
-яслах-садочку ясла-садочок noun:inanim:p:v_mis:ns
+ясла-садочок ясла-садочок noun:p:v_naz/v_zna/v_kly:ns
+ясел-садочка ясла-садочок noun:p:v_rod:ns
+яслам-садочку ясла-садочок noun:p:v_dav:ns
+яслами-садочком ясла-садочок noun:p:v_oru:ns
+яслах-садочку ясла-садочок noun:p:v_mis:ns
 
 
 
@@ -525,6 +525,7 @@
 
 смерти смерть noun:inanim:f:v_rod:rare
 
+Йсу Йсус noun:m:v_dav:prop:fname:anim
 
 болиш боліти verb:imperf:pres:s:2:xp2
 

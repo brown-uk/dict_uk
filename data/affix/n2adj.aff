@@ -265,7 +265,7 @@ group n2adj2
 
 group n2adj3
 
-[^жчшщ]ів:
+[^жшщ]ів:
 ів	ева		#  Кравців  Кравцева		            @ noun:m:v_rod/v_zna
 ів	еву		#  Кравців  Кравцеву		            @ noun:m:v_dav/v_mis
 ів	евим	#  Кравців  Кравцевим		        @ noun:m:v_oru
