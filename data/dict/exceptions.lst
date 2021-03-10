@@ -543,6 +543,8 @@
 раз раз noun:inanim:p:v_rod
 корогов корогва noun:f:v_naz/v_zna
 
+раза раз noun:inanim:m:v_rod                        # лише після дробових + півтора
+
 сосон сосна noun:p:v_rod
 дровець дрівця noun:p:v_rod:ns
 плахіт плахта noun:p:v_rod
