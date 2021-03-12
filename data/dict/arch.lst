@@ -737,64 +737,737 @@
 оглядітися /vr1.it0 :perf
 огник /n20.a.p
 огонь /n22.p
+одати /v2.cf.advp.shrt :imperf
+одбивання /n2n.p1
+одбирання /n2n.p1
+одбиток /n22.a.p
+одбиття /n2n.p2
+одбігання /n2n
 одбігти /v1 :perf
+одбій /n21.p
+одбілити /v1.is0 :perf
+одбілитися /vr1 :perf
+одбір /n21.p.ke
+одблиск /n20.p
+одборонити /v1.is0 :perf
+одборонитися /vr1 :perf
+одбороняти /v2.cf.advp :imperf
+одборонятися /vr2.cf.advp :imperf
+одбрехатися /vr1 :perf
+одбрикуватися /vr1.cf.advp :imperf
+одбрити /v2.isTo :perf
+одбріхуватися /vr1.cf.advp :imperf
+одбування /n2n.p1
+одбуватися /vr2.cf.advp :imperf
+одбудовування /n2n.p1
+одбудовувати /v1.cf.advp.isNo :imperf
+одбудування /n2n.p1
+одбудувати /v1.is0 :perf
+одбутися /vr1 :perf
+одбуток /n22
+одвадити /v1.it0 :perf
+одважений /adj :&adjp:pasv:perf                # :past
+одважити /v1.it0.is0 :perf
+одважувати /v1.cf.advp :imperf
 одважуватися /vr1.cf.advp :imperf
+одвал /n20 :xp2                                # дія
+одвал /n20.p :xp1                              # насип
+одвалений /adj :&adjp:pasv:perf                # :past
+одвалити /v1.it1.is0 :perf
+одвалюватися /vr1.cf.advp :imperf
+одвантаження /n2n.p1
+одвар /n20.p.ke
+одварити /v1.it1.is0 :perf
+одведення /n2n.p1
+одвернення /n2n.p1
+одвертання /n2n
+одвестися /vr4 :perf
 одвзаємнити /v1 :perf
 одвзаємнитися /vr1 :perf
+одвикання /n2n
+одвикати /v2.cf.advp :imperf                   # rv_inf
+одвиклий /adj :&adjp:actv:perf
 одвикнути /v3 :perf                            # rv_inf
+одвисати /v2.cf.advp :imperf
+одвихнутися /vr1 :perf
+одвичка /n10
+одвід /n21.p
+одвідання /n2n.p1
+одвідач /n20.a.p.<
+одвідний /adj
+одвідування /n2n.p1
 одвідувач /n20.a.p.<
+одвідувачка /n10.p2.ko.<
+одвійки /np3
 одвір adv
+одвісити /v1.is0 :perf
 одвіт /n20
 одвітити /v1 :perf
 одвітний /adj
 одвітувати /v1 :perf
+одвіювати /v1.cf.advp.isNo :imperf
+одвіяти /v1.isNo :perf
 одводити /v1.it0.cf.advp :imperf
+одводитися /vr1.it0.cf.advp :imperf
+одвойований /adj :&adjp:pasv:perf              # :past
+одвойовувати /v1.cf.advp.isNo :imperf
+одволікання /n2n.p1
+одволікати /v2.cf.advp :imperf                 # rv_inf
+одволікатися /vr2.cf.advp :imperf
+одволікти /v1 :perf                            # rv_inf
+одволога /n10
+одвологлий /adj :&adjp:actv:perf
+одволодати /v2 :perf
+одволожений /adj :&adjp:pasv:perf              # :past
+одволожити /v1.is0 :perf
+одволожувати /v1.cf.advp :imperf
+одволокти /v1.is0 :perf
+одворожувати /v1.cf.advp :imperf
+одвоювати /v1.is0 :perf
+одвоюватися /vr1 :perf
+одв'язатися /vr1 :perf
+одв'язувати /v1.cf.advp.isNo :imperf
+одгадати /v2.isNo :perf
+одгадка /n10.p2
+одгадування /n2n.p1
+одгадувати /v1.cf.advp :imperf
+одгалуження /n2n.p1
+одганяти /v2.cf.advp :imperf
+одгвинтити /v1.is0.it1 :perf
+одгвинчувати /v1.cf.advp.isNo :imperf
+одгін /n21 :xp2                                # дія
+одгін /n21.p :xp1                              # продукт
+одговітися /vr2 :perf
+одговорити /v1.is0 :perf
+одговоритися /vr1 :perf
+одговорювати /v1.cf.advp :imperf
+одговоряти /v2.cf.advp :imperf:rare
+одгодований /adj :&adjp:pasv:perf              # :past
+одгодованість /n30
+одгодовування /n2n.p1
+одгодовувати /v1.cf.advp :imperf
+одголос /n20.p
+одгомін /n21.p
 одгонити /v1 :imperf
+одгорнути /v1.is0.isTo :perf
+одгорнутий /adj :&adjp:pasv:perf               # :past
+одгороджений /adj :&adjp:pasv:perf             # :past
+одгороджуватися /vr1.cf.advp :imperf
+одгородити /v1.it1.is0 :perf
+одгородитися /vr1.it1 :perf
+одгортання /n2n
+одгортати /v2.cf.advp.shrt :imperf
+одгравати /v1.cf.advp :imperf
+одгребти /v1 :perf
+одгребтися /vr1 :perf
+одгризання /n2n
+одгризати /v2.cf.advp :imperf
+одгризти /v1.is0 :perf
+одгризтися /vr1 :perf
+одгриміти /v1 :perf
+одгрібати /v2.cf.advp :imperf
+одгрібатися /vr2.cf.advp :imperf
+одгук /n20.p.zi
 одгукнутися /vr1 :perf
+одгул /n20 :xp2:np                             # відгомін
+одгул /n20.p :xp1                              # звільнення від роботи
+одгуляти /v2.isNo :perf
+оддавання /n2n
+оддаватися /vr1.cf.advp :imperf
+оддавен adv
+оддавити /v1.it1.is0 :perf
+оддалений /adj.adv :&&adjp:pasv:perf           # :past
+оддалі adv
+оддаль /n32.p
 оддаля adv
+оддаляти /v2.cf.advp :imperf
+оддалятися /vr2.cf.advp :imperf
+одданиця /n10.p1.<
+оддання /n2n.p1
+оддарування /n2n
+оддарувати /v1.is0 :perf
+оддатися /vr3 :perf
+оддерти /v1.isTo :perf
+оддертий /adj :&adjp:pasv:perf                 # :past
+оддзвеніти /v1 :perf
+оддзвонити /v1 :perf
+оддирати /v2.cf.advp :imperf
+оддих /n20.p
+оддихання /n2n.p1
+оддихати /v2 :perf:xp2                         # відди́хати
+оддихати /v2.cf.advp :imperf:xp1               # віддиха́ти
+оддихатися /vr2 :perf:xp2                      # відди́хатися
+оддихатися /vr2.cf.advp :imperf:xp1            # віддиха́тися
+оддихнути /v1 :perf
 одділ /n20
+одділений /adj :&adjp:pasv:perf                # :past
+одділення /n2n.p1
+одділити /v1.it1.is0 :perf
+одділитися /vr1.it1 :perf
+одділовий /adj
+одділяти /v2.cf.advp :imperf
 одділятися /vr2.cf.advp :imperf
+оддубасити /v1 :perf
+оддуватися /vr2.cf.advp :imperf
+оддухопелити /v1.it0 :perf
+оддячити /v1.it0.is0 :perf
+оддячитися /vr1 :perf
+оддячувати /v1.cf.advp :imperf
+од'єднаний /adj :&adjp:pasv:perf               # :past
+од'єднатися /vr2 :perf
+од'ємний /adj
+од'ємно adv
+оджартуватися /vr1 :perf
+оджатися /vr4 :perf
+оджахнути /v1 :perf
+оджбурнути /v1 :perf
 одже part:&insert|conj:subord
 оджибве noninfl
+одживати /v2.cf.advp.shrt :imperf
+одживлення /n2n
+одзвичаїти /v1.is0 :perf
+одзвичаїтися /vr1 :perf
+одзвичаюватися /vr1.cf.advp :imperf
+одзвітувати /v1.is0 :perf
+одзволити /v1.it1 :perf:rare
+одземок /n22.a.p
+одзиватися /vr2.cf.advp :imperf
 одзивний /adj
+одзимки /np2
+одзнака /n10.p1
+одзначений /adj :&adjp:pasv:perf               # :past
+одзначення /n2n.p1
+одзначити /v1.it0.is0 :perf:xp1                # відзна́чити
+одзначити /v1.it1.is0 :perf:xp2                # відзначи́ти
+одзначувати /v1.cf.advp.isNo :imperf
 одзняти /v1.isTo :perf
 одзнятий /adj :&adjp:pasv:perf
+одібрання /n2n.p1
+одігнання /n2n
+одігнатися /vr3 :perf
+одігнути /v1.isTo :perf
+одігнутий /adj :&adjp:pasv:perf                # :past
+одіграний /adj :&adjp:pasv:perf                # :past
+одіграти /v2.isNo :perf
+одігратися /vr2 :perf
+одігрівати /v2.cf.advp :imperf
+одігріти /v2.isTo :perf
+одігрітий /adj :&adjp:pasv:perf                # :past
+одігрітися /vr2 :perf
+одігруватися /vr1.cf.advp :imperf
+одідрати /v3.isNo :perf
 одіж /n32
+одізвання /n2n :rare
 одізвати /v2.isNo :perf
 одізватися /vr1 :perf
+одіймати /v2.cf.advp :imperf
+одійняти /v1 :perf
+одімстити /v1.is0.it1 :perf
+одімщати /v2.cf.advp :imperf:rare
+одіпрати /v3.isNo :perf
+одіпхнутий /adj :&adjp:pasv:perf               # :past
+одіпхнутися /vr1 :perf
+одірвання /n2n
 одісланий /adj :&adjp:pasv:perf
+одіслання /n2n
 одіслати /v1.isNo :perf
+одіспатися /vr1 :perf
 одітий /adj :&adjp:pasv:perf    # past
+одіткнути /v1.isTo :perf
+одітхнути /v1 :perf
+од'їдати /v2.cf.advp :imperf
+од'їжджати /v2.cf.advp :imperf
+од'їзд /n20
+од'їздити /v1 :perf:xp2                        # од'ї́здити
+од'їздити /v1.cf :imperf:xp1                   # од'їзди́ти
+од'їстися /vr4 :perf
+од'їхати /v4 :perf
+одказ /n20
+одказуватися /vr1.cf.advp :imperf
+одкалатати /v2.isNo :perf
+одкараскатися /vr2 :perf
+одкарбувати /v1.is0 :perf
+одкасник /n20.a
+одкачувати /v1.cf.advp :imperf
+одкашлятися /vr2 :perf
+одквітнути /v3 :perf
+одкид /n20.p
+одкиданий /adj :&adjp:pasv:imperf              # :past
+одкидання /n2n.p1
+одкидатися /vr2.cf.advp :imperf
+одкинення /n2n
+одкіль adv
+одклад /n20.p
+одкладати /v2.cf.advp :imperf
+одкладений /adj :&adjp:pasv:perf               # :past
+одклеєний /adj :&adjp:pasv:perf                # :past
+одклеюватися /vr1.cf.advp :imperf
+одкликання /n2n.p1
+одкликатися /vr2.cf.advp :imperf               # відклика́ти
+одкол /n20.p
+одколоти /v1.is0.isTo :perf
+одколошматити /v1.it0 :perf
+одколупнути /v1.isTo :perf
+одколупувати /v1.cf.advp.isNo :imperf
+одколювати /v1.cf.advp.isNo :imperf
+одкопати /v2.isNo :perf
+одкопування /n2n.p1
+одкопувати /v1.cf.advp.isNo :imperf
+одкоркувати /v1.is0 :perf
+одкотити /v1.it1.is0 :perf
+одкотитися /vr1.it1 :perf
+одкочувати /v1 :perf:xp2                       # відкочува́ти
+одкочувати /v1.cf.advp.isNo :imperf:xp1        # відко́чувати
+одкраювати /v1.cf.advp.isNo :imperf
+одкраяний /adj :&adjp:pasv:perf                # :past
+одкраяти /v1.isNo :perf
+одкреслити /v1.it0.it1.is0 :perf
 одкривати /v2.cf.advp :imperf
 одкриватися /vr2.cf.advp :imperf
 одкрити /v2.isTo :perf
 одкритися /vr2 :perf
+одкриття /n2n.p2
+одкрутити /v1.it1.is0 :perf
+одкрутитися /vr1.it1 :perf
+одкручений /adj :&adjp:pasv:perf               # :past
+одкручувати /v1.cf.advp.isNo :imperf
+одкуп /n20.p
+одкупатися /vr2.cf.advp :imperf
+одкупити /v1.it1.is0 :perf
+одкупитися /vr1.it1 :perf
+одкупляти /v2.cf.advp :imperf
+одкуплятися /vr2.cf.advp :imperf
+одкуповуватися /vr1.cf.advp :imperf
+одкушений /adj :&adjp:pasv:perf                # :past
+одлакований /adj :&adjp:pasv:perf              # :past
+одламаний /adj :&adjp:pasv:perf                # :past
+одламати /v2.isNo :perf
+одламувати /v1.cf.advp :imperf
+одлатати /v2.isNo :perf
+одлеглість /n30
+одлежаний /adj :&adjp:pasv:perf                # :past
+одлежатися /vr1.it0 :perf
+одлежувати /v1.cf.advp :imperf
+одлежуватися /vr1.cf.advp :imperf
+одливання /n2n.p1
+одливати /v2.cf.advp.isNo :imperf
+одлига /n10.p1
+одлинути /v1 :perf
+одлитий /adj :&adjp:pasv:perf                  # :past
+одліпити /v1.it1.is0 :perf
+одліплений /adj :&adjp:pasv:perf               # :past
+одлітати /v2.shrt :perf:xp2                    # закінчити літати
+одлітати /v2.cf.advp :imperf:xp1               # летіти геть; зникати; відскакувати
+одлічувати /v1.cf.advp.isNo :imperf
+одломити /v1.is0 :perf
+одломлювати /v1.cf.advp :imperf
+одлунати /v2 :perf
+одлуння /n2n.p1
+одлупити /v1.is0 :perf
+одлупцьований /adj :&adjp:pasv:perf
+одлупцювати /v1.is0 :perf
+одлучати /v2.cf.advp :imperf
+одлучатися /vr2.cf.advp :imperf
+одлучений /adj :&adjp:pasv:perf                # :past
+одлучення /n2n.p1
+одлучити /v1.it1.is0 :perf
+одлучитися /vr1.it1 :perf
 одлюбити /v1.it1 :perf                          # rv_inf
+одлюдник /n20.a.p.<
+одлюдок /n22.a.p.<
+одлюдько /n20.p.<
+одлягати /v2.cf.advp :imperf
 одлягти /v1 :perf
+одлякати /v2.isNo :perf
+одлякувати /v1.cf.advp :imperf
+одляск /n20.p
+одмагання /n2n
+одмагатися /vr2.cf.advp :imperf
+одмалку adv
+одмалювати /v1.is0 :perf
+одманити /v1 :perf
+одмах /n20
+одмахати /v2 :perf
+одмахатися /vr2 :perf
+одмахнути /v1 :perf
 одмахнутися /vr1 :perf
+одмахування /n2n.p1
+одмахуватися /vr1.cf.advp :imperf
+одмежований /adj :&adjp:pasv:perf              # :past
+одмежовування /n2n.p1
+одмежовувати /v1.cf.advp.isNo :imperf
+одмежування /n2n.p1
+одмежувати /v1.is0 :perf
+одмежуватися /vr1 :perf
+одмерлий /adj :&adjp:actv:perf
+одмерти /v1 :perf
+одмести /v1.is1 :perf
+одметений /adj :&adjp:pasv:perf                # :past
+одмивання /n2n.p1
+одмивати /v2.cf.advp :imperf
+одмиватися /vr2.cf.advp :imperf
+одмикати /v2.cf.advp.isNo :imperf
+одмирання /n2n.p1
+одмирати /v2.cf.advp :imperf
+одмити /v2.isTo :perf
+одмитися /vr2 :perf
 одміна /n10
+одмінений /adj :&adjp:pasv:perf                # :past
 одмінитися /vr1 :perf                          # xv2
+одмінно noun:n:nv
+одмінок /n22.a.p
+одмінюватися /vr1.cf.advp :imperf              # xv2
+одміняти /v2.cf.advp :imperf
+одмінятися /vr2.cf.advp :imperf                # xv2
+одмірювати /v1.cf.advp.isNo :imperf
+одмітати /v2.cf.advp.shrt :imperf
+одмітина /n10.p1
 одмітити /v1.is0 :perf
 одмічати /v2.cf.advp :imperf
+одмічений /adj :&adjp:pasv:perf                # :past
 одмовитися /vr1 :perf
+одмовлення /n2n.p1
+одмовляння /n2n.p1
+одмовляти /v2.cf.advp.isNo :imperf             # rv_inf
+одмовлятися /vr2.cf.advp :imperf               # rv_inf
+одмогтися /vr1 :perf
+одмолити /v1.it1.is0 :perf
+одмолювати /v1.cf.advp.isNo :imperf
+одморожений /adj :&adjp:pasv:perf              # :past
+одмороження /n2n.p1
+одморожувати /v1.cf.advp.isNo :imperf
+одморозити /v1.it0.is0 :perf
+одмотувати /v1.cf.advp.isNo :imperf
+однайти /v4.is0 :perf
 однакий /adj
 однако adv:&predic
+однедавна adv
+одниця /n10.p1
+однімання /n2n.p1
+однімати /v2.cf.advp.isNo.shrt :imperf
+одновити /v1.it1.is0 :perf
+одновлювання /n2n
+односини /np1
+односитися /vr1.cf.it0.advp :imperf
+одношення /n2n.p1
+одокремитися /vr1.it0 :perf
+одокремлення /n2n.p1
+одокремлювати /v1.cf.advp.isNo :imperf
+одомстити /v1.it1.is0 :perf
+одпадати /v2.cf.advp :imperf
+одпадіння /n2n
+одпарити /v1.it0.is0 :perf
+одпарювати /v1.cf.advp.isNo :imperf
+одпасти /v4 :perf:xp2                          # од: па́дати
+одпасти /v2 :perf:xp1                          # пасучи, вгодувати худобу
+одпасувати /v1.cf :imperf:xp1                  # одпа́сувати
+одпасувати /v1.is0 :perf:xp2                   # одпасува́ти
+одпаювати /v1.is0 :perf:xp2                    # одпаюва́ти
+одпаювати /v1.cf.advp.isNo :imperf:xp1         # одпа́ювати
+одпекуватися /vr1.cf.advp :imperf
+одперти /v1.isTo :perf
+одпертий /adj :&adjp:pasv:perf                 # :past
+одпивати /v2.cf.advp :imperf
+одпилювати /v1.cf.advp :imperf
+одпиляти /v2.isNo :perf
+одпирання /n2n.p1                              # xv2
+одпиратися /vr2.cf.advp :imperf                # xv2
+одписка /n10.p2
+одписування /n2n
+одпихати /v2.cf.advp.shrt :imperf
+одпихатися /vr2.cf.advp :imperf
+одплатити /v1.it1.is0 :perf
+одплачувати /v1.cf.advp :imperf
+одплачуватися /vr1.cf.advp :imperf
+одплив /n20.p
+одпливати /v2.cf.advp.shrt :imperf
+одпливти /v1 :perf
+одплисти /v4 :perf
+одплиття /n2n.p2
+одплюватися /vr1 :perf
+одповзати /v2.cf.advp :imperf
+одповзти /v1 :perf
+одповідальний /adj
+одповідання /n2n
+одповідність /n30.p
+одпокутувати /v1.cf.advp :imperf
+одполірований /adj :&adjp:pasv:perf            # :past
+одпочивальня /n10.p2
+одпочивання /n2n
+одпочивок /n22 :coll
+одпоювати /v1.cf.advp :imperf
 одправити /v1.it0.is0 :perf
+одправитися /vr1.it0 :perf
+одправлений /adj :&adjp:pasv:perf              # :past rv_dav
+одправлення /n2n.p1
+одправляти /v2.cf.advp :imperf
+одпроваджений /adj :&adjp:pasv:perf
+одпровадити /v1.it0.is0 :perf
+одпросити /v1.it1.is0 :perf
+одпроситися /vr1.it1 :perf
+одпрошувати /v1.cf.advp.isNo :imperf
+одпрошуватися /vr1.cf.advp :imperf
+одпрягати /v2.cf.advp :imperf
+одпряжений /adj :&adjp:pasv:perf               # :past
+одпуск /n20
+одпускний /adj
+одпускні /n2adj1
+одпуст /n20.p :rare
 одпустити /v1.it1.is0 :perf
+одпущений /adj :&adjp:pasv:perf                # :past rv_dav
+одпущеник /n20.a.p.< :rare
+одпущення /n2n.p1
+одрада /n10
+одраджувати /v1.cf.advp.isNo :imperf                # rv_inf
+одрадити /v1.is0.it0 :perf                         # rv_inf
+одрадісно adv:rare
+одрадість /n30 :rare
+одрапортувати /v1.is0 :perf
+одраховувати /v1.cf.advp :imperf
+одрахувати /v1.is0 :perf
+одраювати /v1.cf.advp :imperf:rare
+одраяти /v1 :perf
+одрекомендувати /v1.is0 :perf
+одрекомендуватися /vr1 :perf
+одректи /v1 :perf
+одректися /vr1 :perf
+одремонтований /adj :&adjp:pasv:perf           # :past
+одремонтувати /v1.is0 :perf
+одречення /n2n.p1
+одрив /n20.p
+одривання /n2n                                 # xv2
+одригувати /v1.cf.advp.isNo :imperf
+одрижка /n10.p2
+одріз /n20 :xp2                                # відрізання
+одріз /n20.a.p :xp1                            # шматок тканини; обрізана гвинтівка
+одрізання /n2n.p1
+одрізнення /n2n
+одрізнити /v1.it1.is0 :perf
+одрізнитися /vr1.it1 :perf
+одрізнювання /n2n
+одрізок /n22.a.p
+одрізувати /v1.cf.advp.isNo :imperf
+одрікатися /vr2.cf.advp :imperf
+одро /n2n.p2
 одробити /v1.it1.is0 :perf
+одробіток /n22.p
+одробляти /v2.cf.advp :imperf
+одроджений /adj :&adjp:pasv:perf               # :past
+одродження /n2n.p1
+одроду adv
+одрослий /adj :&adjp:actv:perf
+одростати /v2.cf.advp :imperf
+одрости /v1 :perf
+одруб /n20 :xp2                                # дія
+одруб /n20.p :xp1                              # переріз дерева; ділянка землі
+одрубність /n30.p
+одрубно adv
+одрубок /n22.a.p
+одрубом adv
+одрубування /n2n.p1
+одрубувати /v1.cf.advp.isNo :imperf
 одружіння /n2n
+одрух /n20.zi.p
+одрухово adv
+одряджений /adj :&adjp:pasv:perf               # :past
+одрядити /v1.it1.is0 :perf
+одсапати /v2.isNo :perf
+одсапатися /vr2 :perf
+одсапнути /v1.isTo :perf
 одсахнутися /vr1 :perf
+одсвіжити /v1.is0 :perf
 одсвіт /n20.p
+одсвітити /v1.is0 :perf
+одсвічений /adj :&adjp:pasv:perf               # :past
+одсвічування /n2n.p1
+одсвічувати /v1.cf.advp :imperf
+одсвяткований /adj :&adjp:pasv:perf            # :past
+одсвяткувати /v1.is0 :perf
+одсиджування /n2n.p1
+одсиджувати /v1.cf.advp :imperf
+одсиджуватися /vr1.cf.advp :imperf
+одсидіти /v1.it0.is0 :perf
+одсидітися /vr1.it0 :perf
+одсилання /n2n.p1
+одсилати /v2.cf.advp.isNo :imperf
+одсипати /v1.isNo :perf:xp2                    # одси́пати
+одсипати /v2.cf.advp :imperf:xp1               # одсипа́ти
+одсипатися /vr1 :perf:xp2                      # одси́патися
+одсипатися /vr2.cf.advp :imperf:xp1            # одсипа́тися xv2
+одсихати /v2.cf.advp :imperf
+одсів /n20
+одсік /n20.p.zi
+одсікати /v2.cf.advp :imperf
+одсікти /v1.is0 :perf
+одсіль adv
 одсіч /n32
+одсічений /adj :&adjp:pasv:perf                # :past
+одсіяти /v1.isNo :perf
+одскакувати /v1.cf.advp :imperf
+одслонення /n2n.p1
+одслонити /v1.it1.is0 :perf
+одслужити /v1.it1.is0 :perf
+одслужувати /v1 :imperf
+одсмикнути /v1 :perf
+одсмикувати /v1.cf.advp :imperf
+одсовувати /v1.cf.advp.isNo :imperf
+одсовуватися /vr1.cf.advp :imperf
+одспівати /v2.isNo :perf
+одспівувати /v1.cf.advp.isNo :imperf
+одставання /n2n.p1
+одставити /v1.it0.is0 :perf                    # rv_inf
 одставка /n10.p2
+одставлений /adj :&adjp:pasv:perf              # :past
+одставляти /v2.cf.advp :imperf                 # rv_inf
+одставний /adj
+одсталий /adj :&&adjp:actv:perf
+одсталість /n30.p
+одстань /n32.p
+одстати /v3 :perf
+одстебнути /v1.isTo :perf
+одстібати /v2.cf.advp :imperf
+одстібнутися /vr1 :perf
+одстовбурчений /adj :&adjp:pasv:perf           # :past
+одсторонений /adj.adv :&&adjp:pasv:perf        # :past
+одсторонитися /vr1.it1 :perf
+одсторонь adv
+одстоювання /n2n.p1
+одстоювати /v1.cf.advp.isNo :imperf
+одстояний /adj :&adjp:pasv:perf                # :past
+одстояти /v1.isNo :perf
+одстрашити /v1.it1.is0 :perf
+одстрелюватися /vr1.cf.advp :imperf
+одстріл /n20.p
+одстрілювання /n2n
+одстрілюватися /vr1.cf.advp :imperf
+одстріляти /v2.isNo :perf
+одстрілятися /vr2 :perf
+одстрочення /n2n.p1
+одстрочити /v1.is0 :perf
+одстрочка /n10.p2
+одступання /n2n
 одступати /v2.cf.advp.shrt :imperf
+одступатися /vr2.cf.advp :imperf
 одступитися /vr1.it1 :perf
+одступлення /n2n
+одступник /n20.a.p.<
+одступництво /n2n.p1
+одступство /n2n
+одсування /n2n
+одсувати /v2.cf.advp.shrt.isNo :imperf
+одсуджувати /v1.cf.advp.isNo :imperf
+одсунення /n2n
+одсутність /n30.p
+одсьогодні adv
+одтавати /v1.cf.advp :imperf
+одтак adv
+одталь /n32
+одтанцювати /v1 :perf
+одтарабанений /adj :&adjp:pasv:perf
+одтарабанити /v1.it1.is0 :perf
+одтворити /v1.it1.is0 :perf
+одтепер adv:&pron:dem
+одтерпіти /v1 :perf
+одтерти /v1.isTo :perf
+одтикати /v1.isNo :perf:xp2                    # одти́кати
+одтикати /v2.cf.advp :imperf:xp1               # одтика́ти
+одтин /n20
+одтинати /v2.cf.advp :imperf
+одтирання /n2n
+одтирати /v2.cf.advp :imperf
+одтиск /n20.p
+одтиснений /adj :&adjp:pasv:perf               # :past
+одтиснення /n2n.p1
+одтиснути /v1.is0.isTo :perf
+одтиснутий /adj :&adjp:pasv:perf               # :past
+одтінити /v1.is0.it1 :perf
+одтінок /n22.p
+одтінь /n32
+одтіснити /v1.is0 :perf
+одтісняти /v2.cf.advp :imperf
+одтоді adv:&pron:dem
+одторгнути /v1.is0.isTo :perf
+одторгнутий /adj :&adjp:pasv:perf              # :past
+одточування /n2n.p1
+одточувати /v1.cf.advp.isNo :imperf
+одтрутити /v1.is0 :perf
+одтручувати /v1.cf.advp :imperf
+одтягати /v2.cf.advp :imperf
+одтягнути /v1.is0.isTo :perf
+одтягти /v3 :perf
+одтягувати /v1.cf.advp :imperf
+одусіль adv
+одучити /v1.it1.is0 :perf
 одушевлення /n2n.p1
+одхаючувати /v1.cf.advp :imperf:rare
+одхилення /n2n.p1
+одхиляння /n2n.p1
+одхиляти /v2.cf.advp :imperf
+одхилятися /vr2.cf.advp :imperf
+одхитнутися /vr1 :perf
+одхід /n21.p
+одхідливий /adj
+одхлинути /v1 :perf                            # xv2
+одходжувати /v1.cf.advp.isNo :imperf
 одходити /v1.it1 :perf:xp2                     # одходи́ти
 одходити /v1.it0.cf.advp :imperf:xp1           # одхо́дити
+одхопити /v1.it1.is0 :perf
+одхреститися /vr1.it1 :perf
+одхрещування /n2n
+одхрещуватися /vr1.cf.advp :imperf
+одцвітання /n2n
+одцвітати /v2.cf.advp.shrt :imperf
+одцурання /n2n
 одцуратися /vr2 :perf
+одчайний /adj.adv
+одчайність /n30
+одчаровувати /v1.cf.advp :imperf
+одчарувати /v1 :perf
+одчахнути /v1.isTo :perf
+одчаяка /n10.p1.ko.< :+m
+одчеплювати /v1.cf.advp :imperf
+одчепно adv
+одчикрижити /v1.is0.it0 :perf
+одчинення /n2n
+одчитати /v2.isNo :perf
+одчитування /n2n
+одчитувати /v1.cf.advp.isNo :imperf
+одчищення /n2n
+одчіплювати /v1.cf.advp.isNo :imperf
+одчіплятися /vr2.cf.advp :imperf
+одчування /n2n.p1
 одчувати /v2.cf.advp.shrt.isNo :imperf
+одчуження /n2n.p1
+одчужувати /v1.cf.advp.isNo :imperf
+одчути /v2.isTo :perf
+одчуття /n2n.p2
+одчухрати /v2.isNo :perf
+одшептати /v1 :perf
+одшиб /n20
+одшити /v2.isTo :perf
+одшіптувати /v1.cf.advp.isNo :imperf
+одшкодовання /n2n
+одшліфований /adj :&&adjp:pasv:perf            # :past
+одшліфувати /v1.is0 :perf
+одшліхтований /adj :&adjp:pasv:perf            # :past
+одшмагати /v2.isNo :perf
+одшпарити /v1.it0 :perf
+одшпилювати /v1.cf.advp.isNo :imperf
+одшпурнути /v1 :perf
+одштовхнути /v1.is0.isTo :perf
+одштовхнутися /vr1 :perf
+одштовхувати /v1.cf.advp.isNo :imperf
+одштовхуватися /vr1.cf.advp :imperf
+одшукання /n2n.p1
+одшукати /v2.isNo.shrt :perf
+одшукатися /vr2 :perf
+одшукування /n2n
+одшукувати /v1.cf.advp.isNo :imperf
 одшумілий /adj :&adjp:actv:perf
+одшуміти /v1 :perf
+одщеплення /n2n.p1
+одщепнути /v1.isTo :perf
+одщипнути /v1.is0.isTo :perf
 озутий /adj :&adjp:pasv:perf    # past
 ойчизна /n10.p1
 оказуватися /vr1.cf.advp :imperf
@@ -875,6 +1548,7 @@
 отця отцей adj:f:v_naz:&pron:dem
 отьмарений /adj :&adjp:pasv:perf          # :past
 охітніше adv:compc
+охоронитель /n20.a.<
 очами око noun:inanim:p:v_oru
 пакілля /n2n
 памка /n10
