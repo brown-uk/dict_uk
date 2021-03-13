@@ -701,7 +701,6 @@
 неправно adv
 непремінно adv
 непутити /v1.cf.advp :imperf
-нераз adv
 нерозрадний /adj
 несогірше adv
 нестямливий /adj
@@ -737,7 +736,6 @@
 оглядітися /vr1.it0 :perf
 огник /n20.a.p
 огонь /n22.p
-одати /v2.cf.advp.shrt :imperf
 одбивання /n2n.p1
 одбирання /n2n.p1
 одбиток /n22.a.p
@@ -1217,6 +1215,7 @@
 одпущений /adj :&adjp:pasv:perf                # :past rv_dav
 одпущеник /n20.a.p.< :rare
 одпущення /n2n.p1
+одр /n20.a
 одрада /n10
 одраджувати /v1.cf.advp.isNo :imperf                # rv_inf
 одрадити /v1.is0.it0 :perf                         # rv_inf
@@ -1248,7 +1247,6 @@
 одрізок /n22.a.p
 одрізувати /v1.cf.advp.isNo :imperf
 одрікатися /vr2.cf.advp :imperf
-одро /n2n.p2
 одробити /v1.it1.is0 :perf
 одробіток /n22.p
 одробляти /v2.cf.advp :imperf

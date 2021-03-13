@@ -545,6 +545,10 @@
 
 раза раз noun:inanim:m:v_rod                        # лише після дробових + півтора
 
+перче перець noun:m:v_kly
+
+нічого-нічого noun:inanim:n:v_rod:&pron:neg:&predic
+
 сосон сосна noun:p:v_rod
 дровець дрівця noun:p:v_rod:ns
 плахіт плахта noun:p:v_rod
