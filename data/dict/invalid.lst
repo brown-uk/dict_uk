@@ -943,7 +943,9 @@
 тшінецький /adj
 уїкенд /n20.p
 Уїмблдон /n20 :prop
+Украіна /n10 :prop:geo
 умертвлюючи advp:imperf
+УНСоюз /n20 :prop
 УССР noun:f:nv:np:prop:geo:abbr             #> УРСР
 фараонський /adj
 фейсбука фейсбук noun:m:v_rod               #> фейсбуку
@@ -959,6 +961,9 @@
 форм-фактор /n20.a.p.ke
 форсмажор /n20.p.ke
 форсмажорний /adj
+Франтішка Франтішек noun:anim:m:v_rod/v_zna:prop:lname
+Франтішком Франтішек noun:anim:m:v_oru:prop:lname
+Франтішку Франтішек noun:anim:m:v_dav/v_mis:prop:lname
 французський /adj
 фрісбі noun:m:nv                            #> фрисбі
 фрістайліст /n20.a.p.<
@@ -977,10 +982,12 @@
 хеловінський /adj                           #> гелловінський
 хелоуїн /n20                                #> Гелловін
 хелоуїнський /adj                           #> гелловінський
+Хельсінкі noun:n:nv
 хеппі-енд /n20.p
 ХІ number:latin
 ХІІ number:latin
 ХІІІ number:latin
+ХІУ number:latin
 ХІХ number:latin
 хлібо-булочний /adj
 хлопчиськи хлопчисько noun:p:v_naz:anim
@@ -991,6 +998,10 @@
 хостінг /n20.p
 хрестово-купольний /adj
 хто-зна noninfl:&predic:coll
+ХУІ number:latin
+ХУІІ number:latin
+ХУІІІ number:latin
+ХУШ number:latin
 ХХ number:latin
 ХХІ number:latin
 ХХІІ number:latin
@@ -1050,6 +1061,7 @@
 щодев'ять adv
 щодесять adv                                #> що десять
 щож noninfl                                 #> що ж
+щождо noninfl
 щоп'ятнадцять adv                           #> що п'ятнадцять
 щоп'ять adv                                 #> що п'ять
 щосім adv
