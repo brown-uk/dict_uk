@@ -1043,6 +1043,7 @@
 посередині посередині prep        # rv_rod
 при при prep        # rv_mis
 про про prep        # rv_zna
+промежи промежи prep        # rv_rod:rv_zna:rv_oru
 протягом протягом prep|adv        # rv_rod
 просто просто prep|part        # rv_rod
 проти проти prep        # rv_rod
@@ -1055,7 +1056,9 @@
 супротив супротив prep|adv        # rv_rod
 через через prep        # rv_zna
 шляхом шляхом prep        # rv_rod
-щодо щодо prep        # rv_rod
+щодо щодо prep              # rv_rod
+що-до що-до prep:bad        # rv_rod
+нащот нащот prep:bad        # rv_rod
 
 незважаючи незважаючи prep
 
