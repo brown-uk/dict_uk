@@ -43,6 +43,11 @@ class ExpandAll {
 								it.tagStr += ":bad"
 							}
 						}
+						if( file.getName().contains("geo") ) {
+							if( ! it.tagStr.contains(":geo") ) {
+								it.tagStr += ":geo"
+							}
+						}
 						
 						it.toFlatString() 
 					}

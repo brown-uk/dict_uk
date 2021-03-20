@@ -21,7 +21,7 @@ noninfl 463
 noun 172789
      anim 59026
      fname 4767
-     geo 19845
+     geo 20158
      inanim 113675
      lname 30101
      nv 15110
