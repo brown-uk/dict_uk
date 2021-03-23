@@ -162,7 +162,7 @@
 вдовш adv
 вдовшки adv
 вдолину adv
-веларій /n20.a.p.<
+веларій /n20.a.p
 велебно adv
 велико adv
 великодень noun:m:v_naz/v_zna               # lim
@@ -830,7 +830,7 @@
 мо adv:&insert
 могучість /n30
 можний /adj
-можний /n2adj1.p.<
+можні /n2adj1.<
 морехід /n21.a.p.<
 мосьпан /n20.a.<
 мосьпані /<f
@@ -1251,7 +1251,6 @@
 оджахнути /v1 :perf
 оджбурнути /v1 :perf
 одже part:&insert|conj:subord
-оджибве noninfl
 одживати /v2.cf.advp.shrt :imperf
 одживлення /n2n
 одзвичаїти /v1.is0 :perf
