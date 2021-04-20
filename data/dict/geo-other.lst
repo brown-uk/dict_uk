@@ -90,7 +90,8 @@
 Аджарія /n10
 аджарка /n10.p2.ko.<
 адиг /n20.a.p.<
-адиге noun:m:nv:anim|noun:f:nv:anim
+адиге noun:m:nv:anim:xp1
+адиге noun:f:nv:anim:xp2
 адигеєць /n22.a.p.<
 адигейка /n10.p2.ko.<
 адигейський /adj
@@ -103,7 +104,9 @@
 адріатичний /adj
 Азавад /n20                                 # самопроголошена, невизнана держава в західній Африці
 Азанде noun:n:nv:np
-азанде noun:f:nv:np|noun:m:nv:anim|noun:f:nv:anim
+азанде noun:f:nv:np:xp3                         # мова
+азанде noun:m:nv:anim:xp1                   # представник/група
+азанде noun:f:nv:anim:xp2                   # представник
 Азарівка /n10
 Азербайджан /n20
 азербайджанець /n22.p.a.<
@@ -139,7 +142,7 @@
 аймара noun:m:nv:anim:xp1                   # представник
 аймара noun:f:nv:anim:xp1                   # представниця
 аймарський /adj
-айни /np2
+айни /np2.<
 айнський /adj
 Айова /n10
 Ай-Петрі noun:f:nv:np
@@ -170,7 +173,7 @@
 аландський /adj
 Аланія /n10 :town
 аланка /n10.p2.ko.<
-Алатау noun:f:nv:np|noun:m:nv:np
+Алатау noun:m:nv:np
 алатауський /adj
 албанець /n22.p.a.<
 Албанія /n10
@@ -261,9 +264,10 @@
 амудар'їнський /adj
 Амудар'я /n10
 Амур /n20.ke :xp2                           # річка
-амхара noun:m:nv:np|noun:f:nv:np
+амхара noun:m:nv:anim:np:xp1                # представник/група
+амхара noun:f:nv:anim:np:xp2                # представниця
 амхарський /adj
-Анадир /n20.a.ke :xp1:town                       # місто
+Анадир /n20.a.ke :xp1:town                  # місто
 Анадир /n20.ke :xp2                         # річка
 Анаконда /n10
 Ананурі noun:f:nv:np
@@ -440,7 +444,7 @@
 Аоминь /n20.a :xp1:town                          # місто
 Аоминь /n20 :xp2                            # район
 Аоморі noun:n:nv:np
-апачі /np2
+апачі /np2.<
 апеннінець /n22.a.p.<
 Апенніни /np1
 апеннінський /adj
@@ -466,7 +470,7 @@
 арамеєць /n22.a.p.<
 арамеї /np2.<
 арамейський /adj
-арапахо noun:n:nv:np
+арапахо noun:n:nv:np:anim
 Арарат /n20 :xp2                            # гора
 Арарат /n20.a :xp1:town                          # місто
 араратський /adj
@@ -692,7 +696,9 @@
 бангладешський /adj                         #> бангладеський
 Бані noun:f:nv:np
 Банк /n20
-банту noun:m:nv:anim|noun:f:nv:anim|noun:f:nv:np
+банту noun:m:nv:anim:xp1                    # представник/група
+банту noun:f:nv:anim:xp2                    # представниця
+банту noun:f:nv:np:xp3                      # мова
 Баня-Лука /n10
 баня-луцький /adj
 Баранники /np2                              # колишн. нас. п.
@@ -758,7 +764,8 @@
 белізець /n22.p.a.<
 белізка /n10.p2.ko.<
 белізький /adj
-белуджі noun:m:nv:anim|noun:f:nv:anim
+белуджі noun:m:nv:anim                     # представник/група
+белуджі noun:f:nv:anim                      # представниця
 белуджський /adj
 Белфаст /n20.a :town
 белфастський /adj
@@ -1039,8 +1046,8 @@
 Бретань /n32
 бретонець /n22.a.p.<
 бретонський /adj
-бреттон-вдський /adj
 Бреттон-Вудс /n20.a :town
+бреттон-вудський /adj
 Брешіа noun:n:nv                            #> Брешія
 Брешія /n10
 Брисбен /n20.a :town
@@ -1232,7 +1239,8 @@
 Васильєвський /adj :xp2                     # острів
 васильківець /n22.a.p
 васильківчанин /n20.a.pyn.<
-васуахілі noun:p:nv:ns
+васуахілі noun:p:nv:ns:xp1                  # група
+васуахілі noun:f:nv:np:xp2                  # мова
 Ватерлоо noun:n:nv:np
 Ватикан /n20
 ватиканець /n22.p.a.<
@@ -1749,7 +1757,6 @@
 гімалаєць /n22.a.p.<
 Гімалаї /np2
 гімалайський /adj
-гінді noun:p:nv:ns
 Гіндукуш /n20
 Гіндустан /n20
 гіндустанець /n22.a.p.<
@@ -2573,7 +2580,8 @@
 Замоскворіччя /n2n
 Замошня /n10                                # колишн.
 зангезурський /adj
-занде noun:m:nv:anim|noun:f:nv:anim
+занде noun:m:nv:anim:xp1
+занде noun:f:nv:anim:xp2
 Занзібар /n20.a.ke :xp1:town                     # місто
 Занзібар /n20.ke :xp2                       # острів; регіон
 занзібарський /adj
@@ -2673,7 +2681,9 @@
 Золочівщина /n10
 зубрицький /adj
 Зугдіді noun:n:nv:np
-зулу noun:f:nv:np|noun:m:nv:anim|noun:f:nv:anim
+зулу noun:f:nv:np:xp3                       # мова
+зулу noun:m:nv:anim:xp1                     # представник/група
+зулу noun:f:nv:anim:xp2                     # представниця
 зулуський /adj
 ібер /n20.a.p.ke.<
 іберієць /n22.a.p.<
@@ -2691,7 +2701,9 @@
 івер /n20.a.p.ke.<
 івуарієць /n22.a.p.<
 івуарійський /adj
-ігбо noun:f:nv:np|noun:m:nv:anim|noun:f:nv:anim
+ігбо noun:f:nv:np:xp3                       # мова
+ігбо noun:m:nv:anim:xp1                     # представник/група
+ігбо noun:f:nv:anim:xp2                     # представниця
 Ігнатівка /n10
 ігренський /adj
 Ігрень /n32
@@ -2873,8 +2885,9 @@
 йоркський /adj
 Йоркшир /n20.ke
 йоркширський /adj
-йоруба noun:f:nv:np:xp2
-йоруба noun:m:nv:anim:xp1|noun:f:nv:anim:xp1
+йоруба noun:f:nv:np:xp3                     # мова
+йоруба noun:m:nv:anim:xp1
+йоруба noun:f:nv:anim:xp1
 Йосеміті noun:m:nv:np
 Йошкар-Ола /n10
 кабардинець /n22.a.p.<
@@ -3023,8 +3036,9 @@
 Каносса /n10
 Кантемири /np2
 Кантон /n20.a :town                               # місто в США та Китаї
-канурі noun:f:nv:np:xp2
-канурі noun:m:nv:anim:xp1|noun:f:nv:anim:xp1
+канурі noun:f:nv:np:xp3
+канурі noun:m:nv:anim:xp1
+канурі noun:f:nv:anim:xp2
 Каппадокія /n10
 Капрі noun:m:nv:np
 капський /adj
@@ -3310,7 +3324,9 @@
 Койвісто noun:n:nv:xp2
 Коканд /n20.a :xp1:town                          # місто
 Коканд /n20 :xp2                            # держава
-кокні noun:m:nv:anim:xp1|noun:f:nv:anim:xp1
+кокні noun:m:nv:anim:xp1
+кокні noun:f:nv:anim:xp2
+кокні noun:f:nv:np                          # діалект
 Кокора /n10
 коктебелець /n22.a.p.<
 Колгуєв /n20.a                              # острів
@@ -3324,7 +3340,8 @@
 коломиянин /n20.a.pyn.<
 коломиянка /n10.p2.<
 Коломна /n10
-Колорадо noun:m:nv:np|noun:n:nv:np
+Колорадо noun:m:nv:np:xp1                   # штат
+Колорадо noun:f:nv:np:xp2                   # річка
 колочавець /n22.a.p.<
 колумбієць /n22.p.a.<
 колумбійка /n10.p2.ko.<
@@ -3338,7 +3355,9 @@
 комарнівський /adj
 Комі noun:f:nv:np
 Комі noun:n:nv:np
-комі noun:m:nv:np:anim:xp1|noun:f:nv:np:anim:xp2|noun:f:nv:np
+комі noun:m:nv:np:anim:xp1
+комі noun:f:nv:np:anim:xp2
+комі noun:f:nv:np:xp3                       # мова
 комі-зирянин /n20.a.pyn.<
 комі-перм'як /n20.a.p.<
 комі-перм'яцький /adj
@@ -3896,8 +3915,9 @@
 Майорськ /n20.a :town
 Майотта /n10
 майоттський /adj
-майя noun:f:nv:np:xp2:ua_1992   # мова      #> мая
-майя noun:m:nv:anim:xp1:ua_1992|noun:f:nv:anim:xp1:ua_1992
+майя noun:f:nv:np:xp3:ua_1992   # мова      #> мая
+майя noun:m:nv:anim:xp1:ua_1992             #> мая
+майя noun:f:nv:anim:xp2:ua_1992             #> мая
 майянець /n22.a.p.< :ua_1992                #> маянець
 майянка /n10.p2.< :ua_1992                  #> маянка
 майянський /adj :ua_1992                    #> маянський
@@ -3933,7 +3953,8 @@
 Малакка /n10
 малаккська /adj
 малаялам noun:f:nv:np
-малаялі noun:m:nv:anim|noun:f:nv:anim
+малаялі noun:m:nv:anim:xp1
+малаялі noun:f:nv:anim:xp2
 малаяльський /adj
 Маленівка /n10                              # колишн.
 Малинка /n10                                # колишн.
@@ -3978,7 +3999,9 @@
 Мангуп /n20.a :town
 Мангуп-Кале noun:n:nv:np
 мангупський /adj
-мандинго noun:m:nv:anim:xp1|noun:f:nv:anim:xp1|noun:f:nv:np:xp2
+мандинго noun:m:nv:anim:xp1
+мандинго noun:f:nv:anim:xp2
+мандинго noun:f:nv:np:xp3                   # мова
 Маніла /n10
 манільський /adj
 маніпурі noun:p:nv:ns
@@ -4002,14 +4025,18 @@
 маньчжурець /n22.a.p.<
 Маньчжурія /n10                             # xv2
 маньчжурський /adj
-маорі noun:m:nv:anim:xp1|noun:f:nv:anim:xp1|noun:f:nv:np:xp2
+маорі noun:m:nv:anim:xp1
+маорі noun:f:nv:anim:xp2
+маорі noun:f:nv:np:xp3                      # мова
 маорійський /adj
 Мапуту noun:n:nv:np
 Маракайбо noun:n:nv:np
 Мараморош noun:f:nv:np
 Мараморощина /n10
 Марамуреш /n20                              # повіт
-маратхі noun:f:nv:np:xp2|noun:m:nv:anim:xp1|noun:f:nv:anim:xp1
+маратхі noun:f:nv:np:xp3                    # мова
+маратхі noun:m:nv:anim:xp1
+маратхі noun:f:nv:anim:xp2
 Марафон /n20.a :town
 Марбелья /n10
 Марбург /n20.a.ke :town
@@ -4059,8 +4086,9 @@
 массачусетський /adj
 Махачкала /n10
 махачкалинський /adj
-мая noun:f:nv:np:xp2:ua_2019                # мова
-мая noun:m:nv:anim:xp1:ua_2019|noun:f:nv:anim:xp1:ua_2019
+мая noun:f:nv:np:xp3:ua_2019                # мова
+мая noun:m:nv:anim:xp1:ua_2019
+мая noun:f:nv:anim:xp2:ua_2019
 Маямі noun:n:nv:np
 Маямі-Біч noun:n:nv:np
 маянець /n22.a.p.<
@@ -4112,7 +4140,8 @@
 Месопотамія /n10
 месопотамський /adj
 Мессіна /n10
-Мессіні noun:n:nv:np|noun:m:nv:np
+Мессіні noun:n:nv:np:xp1
+Мессіні noun:m:nv:np:xp2
 месхетинець /n22.a.p.<
 Метапонт /n20.a :town
 Метохія /n10
@@ -4285,8 +4314,9 @@
 мукденський /adj
 Мумбай /n20.a :town
 мумбайський /adj
-мунда noun:f:nv:np:xp2
-мунда noun:m:nv:anim:xp1|noun:f:nv:anim:xp1
+мунда noun:f:nv:np:xp3
+мунда noun:m:nv:anim:xp1
+мунда noun:f:nv:anim:xp2
 Мур /n20.ke
 Муравйово /n2n
 Муравський /adj                             # муравський шлях
@@ -5741,7 +5771,8 @@
 роттердамець /n22.a.p.<
 роттердамський /adj
 Рохан /n20
-рохінджа noun:m:nv:anim|noun:f:nv:anim
+рохінджа noun:m:nv:anim:xp1
+рохінджа noun:f:nv:anim:xp2
 Рочестер /n20.a.ke :town
 Рошаль /n20.a :town
 Роше noun:m:nv:np
@@ -5795,7 +5826,8 @@
 Ряшів /n23.a :town
 ряшівський /adj
 саам /n20.a.p.ke.<
-саамі noun:m:nv:anim|noun:f:nv:anim
+саамі noun:m:nv:anim:xp1
+саамі noun:f:nv:anim:xp2
 саамський /adj
 Саар /n20.ke :xp2
 Саарбрюкен /n20.a :ua_2019:town
@@ -5851,7 +5883,8 @@
 самбірщина /n10
 самбірянин /n20.a.pyn.<
 самбірянка /n10.p2.<
-Самоа noun:n:nv:np|noun:f:nv:np
+Самоа noun:n:nv:np:xp1
+Самоа noun:f:nv:np:xp2
 самоанець /n22.p.a.<
 самоанський /adj
 самоїд /n20.a.p.ke.<
@@ -5982,7 +6015,7 @@
 Свалявщина /n10
 сван /n20.a.p.ke.<
 Сванеті noun:f:nv:np
-сванетія /n10
+Сванетія /n10
 сванка /n10.p2.ko.<
 сванський /adj
 Сватівщина /n10
@@ -6428,7 +6461,7 @@
 Струма /n10
 Ступне /n2adj1
 суахілець /n22.a.p.<
-суахілі noun:p:nv:ns:xp1                    # народ
+суахілі noun:p:nv:anim:ns:xp1                    # народ
 суахілі noun:f:nv:np:xp2                    # мова
 суахілійський /adj
 субальпійський /adj
@@ -6461,8 +6494,10 @@
 сум'янка /n10.p2.ko.<
 Сунгарі noun:f:nv:np
 сунданський /adj
-Суомі noun:f:nv:np
-суомі noun:m:nv:anim|noun:f:nv:anim
+Суомі noun:f:nv:np:prop:xp4                      # країна
+суомі noun:f:nv:np:xp3                      # мова
+суомі noun:m:nv:anim:xp1
+суомі noun:f:nv:anim:xp2
 Суонсі noun:n:nv:np
 Сургут /n20.a :town
 сургутський /adj
@@ -6828,7 +6863,8 @@
 трускавчанка /n10.p2.ko.<
 Трьохсвятительська /n2adj1
 тсвана noun:p:nv:ns
-тсонга noun:p:nv:ns|noun:f:nv:np
+тсонга noun:p:nv:ns:xp1                     # народність
+тсонга noun:f:nv:np:xp2                     # мова
 Туапсе noun:n:nv:np
 Тувалу noun:n:nv:np
 тувалуанець /n22.a.p.<
@@ -7259,7 +7295,7 @@
 Хатанга /n10
 Хатинь /n32
 хатський /adj
-хауса noun:n:nv:np:xp2                      # мова
+хауса noun:n:nv:np:xp3                      # мова
 хауса noun:m:nv:anim:xp1|noun:f:nv:anim:xp2
 хашимітський /adj
 Хвар /n20.ke
@@ -7288,7 +7324,8 @@
 Хімки /np3
 хімкинський /adj
 хіндустанець /n22.a.p.<
-хіндустані noun:m:nv:anim|noun:f:nv:anim
+хіндустані noun:m:nv:anim:xp1
+хіндустані noun:f:nv:anim:xp2
 хіндустанка /n10.p2.<
 хінський /adj
 Хіос /n20 :xp2                              # острів
