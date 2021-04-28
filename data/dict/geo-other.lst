@@ -2887,7 +2887,7 @@
 йоркширський /adj
 йоруба noun:f:nv:np:xp3                     # мова
 йоруба noun:m:nv:anim:xp1
-йоруба noun:f:nv:anim:xp1
+йоруба noun:f:nv:anim:xp2
 Йосеміті noun:m:nv:np
 Йошкар-Ола /n10
 кабардинець /n22.a.p.<
@@ -4140,8 +4140,8 @@
 Месопотамія /n10
 месопотамський /adj
 Мессіна /n10
-Мессіні noun:n:nv:np:xp1
-Мессіні noun:m:nv:np:xp2
+Мессіні noun:n:nv:np:xp1                    # місто
+Мессіні noun:m:nv:np:xp2                    # муніц.
 месхетинець /n22.a.p.<
 Метапонт /n20.a :town
 Метохія /n10
