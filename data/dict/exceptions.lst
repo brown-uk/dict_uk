@@ -955,38 +955,21 @@
 зіпрано зіпрати verb:perf:impers
 
 
-бережіте берегти verb:imperf:impr:p:2:long
 беріте брати verb:imperf:impr:p:2:long
-біжіте бігти verb:imperf:impr:p:2:long
-благоволіте благоволити verb:imperf:impr:p:2:long
-благословіте благословити verb:perf:impr:p:2:long
-бороніте боронити verb:imperf:impr:p:2:long
 брешіте брехати verb:imperf:impr:p:2:long
-будіте будити verb:imperf:impr:p:2:long
 ведіте вести verb:imperf:impr:p:2:long
 везіте везти verb:imperf:impr:p:2:long
 веліте веліти verb:perf:impr:p:2:long
-верніте вернути verb:perf:impr:p:2:long:xp1
-вдягніте вдягнути verb:perf:impr:p:2:long
-витягніте витягнути verb:perf:impr:p:2:long
-виходіте виходити verb:imperf:impr:p:2:long:xp1
 вишліте вислати verb:perf:impr:p:2:long:xp1
-вловіте вловити verb:perf:impr:p:2:long
-відімкніте відімкнути verb:perf:impr:p:2:long
-відірвіте відірвати verb:perf:impr:p:2:long
-відпустіте відпустити verb:perf:impr:p:2:long
-відчиніте відчинити verb:perf:impr:p:2:long
 візьміте взяти verb:perf:impr:p:2:long
 вкладіте вкласти verb:perf:impr:p:2:long
 внесіте внести verb:perf:impr:p:2:long
-возлюбіте возлюбити verb:perf:impr:p:2:long
 вознесіте вознести  verb:perf:impr:p:2:long:bad
 возносіте возносити verb:imperf:impr:p:2:long:bad
 вточіте вточити verb:perf:impr:p:2:long
 вчиніте вчинити verb:perf:impr:p:2:long
 вчіте вчити verb:imperf:impr:p:2:long
 в'яжіте в'язати verb:imperf:impr:p:2:long
-ганьбіте ганьбити verb:imperf:impr:p:2:long
 гасіте гасити verb:imperf:impr:p:2:long
 глядіте глядіти verb:imperf:impr:p:2:long
 говоріте говорити verb:imperf:impr:p:2:long
@@ -1016,12 +999,10 @@
 захистіте захистити verb:perf:impr:p:2:long
 зачепіте зачепити verb:perf:impr:p:2:long
 збагніти збагнути verb:perf:impr:p:2:long
-збудіте збудити verb:perf:impr:p:2:long
 зберіте зібрати verb:perf:impr:p:2:long
 звістіте звістити verb:perf:impr:p:2:long
 зв'яжіте зв'язати verb:perf:impr:p:2:long
 здійміте здійняти verb:perf:impr:p:2:long
-зганьбіте зганьбити verb:perf:impr:p:2:long
 зійдіте зійти verb:perf:impr:p:2:long
 знайдіте знайти verb:perf:impr:p:2:long
 зніміте зняти verb:perf:impr:p:2:long
@@ -1040,7 +1021,6 @@
 летіте летіти verb:imperf:impr:p:2:long
 ловіте ловити verb:imperf:impr:p:2:long
 ломіте ломити verb:imperf:impr:p:2:long
-любіте любити verb:imperf:impr:p:2:long
 мовчіте мовчати verb:imperf:impr:p:2:long
 моліте молити  verb:imperf:impr:p:2:long
 молотіте молотити verb:imperf:impr:p:2:long
@@ -1071,15 +1051,13 @@
 покажіте показати verb:perf:impr:p:2:long
 покладіте покласти verb:perf:impr:p:2:long
 покропіте покропити verb:perf:impr:p:2:long
-полюбіте полюбити verb:perf:impr:p:2:long
+#полюбіте полюбити verb:perf:impr:p:2:long
 положіте положити verb:perf:impr:p:2:long
 поможіте помогти verb:perf:impr:p:2:long
-#помоліте помолити verb:perf:impr:p:2:long
 пом'яніте пом'янути verb:perf:impr:p:2:long
 понесіте понести verb:perf:impr:p:2:long
 попаліте попалити verb:perf:impr:p:2:long
 попросіте попросити verb:perf:impr:p:2:long
-порвіте окропити verb:perf:impr:p:2:long
 потерпіте потерпіти verb:perf:impr:p:2:long
 почніте почати verb:perf:impr:p:2:long 
 приведіте привести verb:perf:impr:p:2:long
@@ -1089,7 +1067,6 @@
 приступіте приступити verb:perf:impr:p:2:long
 присягніте присягнути verb:perf:impr:p:2:long
 пришліте прислати verb:perf:impr:p:2:long
-пробудіте пробудити verb:perf:impr:p:2:long
 проведіте провести verb:perf:impr:p:2:long
 пропадіте пропасти verb:perf:impr:p:2:long
 пропустіте пропустити verb:perf:impr:p:2:long
@@ -1105,7 +1082,6 @@
 розсудіте розсудити verb:perf:impr:p:2:long
 скажіте сказати verb:perf:impr:p:2:long
 скверніте сквернити verb:imperf:impr:p:2:long
-славіте славити verb:imperf:impr:p:2:long
 служіте служити verb:imperf:impr:p:2:long
 спаліте спалити verb:perf:impr:p:2:long
 спасіте спасти verb:perf:impr:p:2:long:xp2
@@ -1122,7 +1098,6 @@
 терпіте терпіти verb:imperf:impr:p:2:long
 топчіте топтати verb:imperf:impr:p:2:long
 тремтіте тремтіти verb:imperf:impr:p:2:long
-умріте умерти verb:perf:impr:p:2:long
 утопіте утопити verb:perf:impr:p:2:long
 учиніте учинити verb:perf:impr:p:2:long
 хваліте хвалити verb:imperf:impr:p:2:long
@@ -1130,9 +1105,6 @@
 чиніте чинити verb:imperf:impr:p:2:long
 #ячіте ячити verb:imperf:impr:p:2:long
 
-борітеся боротися verb:rev:imperf:impr:p:2:long
-вернітеся вернутися verb:rev:perf:impr:p:2:long
-веселітеся веселитися verb:rev:imperf:impr:p:2:long
 вклонітеся вклонитися verb:rev:perf:impr:p:2:long
 вчітеся вчитися verb:rev:imperf:impr:p:2:long
 візьмітеся взятися verb:rev:perf:impr:p:2:long

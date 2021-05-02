@@ -1079,7 +1079,7 @@
 одбілитися /vr1 :perf
 одбір /n21.p.ke
 одблиск /n20.p
-одборонити /v1.is0 :perf
+одборонити /v1.is0.it1l :perf
 одборонитися /vr1 :perf
 одбороняти /v2.cf.advp :imperf
 одборонятися /vr2.cf.advp :imperf
@@ -1402,7 +1402,7 @@
 одлучення /n2n.p1
 одлучити /v1.it1.is0 :perf
 одлучитися /vr1.it1 :perf
-одлюбити /v1.it1 :perf                          # rv_inf
+одлюбити /v1.it1.it1l :perf                          # rv_inf
 одлюдник /n20.a.p.<
 одлюдок /n22.a.p.<
 одлюдько /n20.p.<
@@ -1817,6 +1817,7 @@
 олтар /n24.a.p.ke
 омочений /adj :&adjp:pasv:perf              #> обмочений
 онакий /adj :&pron:def
+опаска /n10
 опізнитися /vr1.it1 :perf
 опізнюватися /vr1.cf.advp :imperf
 опірений /adj :&adjp:pasv:perf    # past

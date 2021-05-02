@@ -256,12 +256,13 @@
 тех. adj:nv                     # технічний
 техн. adj:nv                    # технічний
 тиж. noun:f:nv                  # тиждень, тижні
-тис. noun:f:nv:&&numr           # тисяча
+тис. numr:p:nv                  # тисяча
 тов. noun:m:nv:anim:xp1         # товариш
 тов. noun:f:nv:anim:xp2         # товаришка
 тр. noun:m:nv:xp1               # тролейбус
 тр. noun:f:nv:xp2               # траса; третина
 тр. adj:nv                      # трудовий
+трлн. numr:p:nv:bad             # трильйон
 тт. noun:p:nv                   # томи
 уд. noun:m:nv                   # ударів
 укр. adj:nv                     # український
