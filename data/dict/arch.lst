@@ -1068,8 +1068,10 @@
 огник /n20.a.p
 огонь /n22.p
 ограбувати /v1.is0 :perf
+одбатувати /v1 :perf
 одбивання /n2n.p1
 одбирання /n2n.p1
+одбиратися /vr2.cf.advp :imperf
 одбиток /n22.a.p
 одбиття /n2n.p2
 одбігання /n2n
@@ -1104,6 +1106,7 @@
 одвал /n20.p :xp1                              # насип
 одвалений /adj :&adjp:pasv:perf                # :past
 одвалити /v1.it1.is0 :perf
+одвалитися /vr1 :perf
 одвалюватися /vr1.cf.advp :imperf
 одвантаження /n2n.p1
 одвар /n20.p.ke
@@ -1121,6 +1124,7 @@
 одвисати /v2.cf.advp :imperf
 одвихнутися /vr1 :perf
 одвичка /n10
+одвівати /v2.cf.advp :imperf
 одвід /n21.p
 одвідання /n2n.p1
 одвідач /n20.a.p.<
@@ -1131,10 +1135,12 @@
 одвійки /np3
 одвір adv
 одвісити /v1.is0 :perf
+одвістити /v1 :perf
 одвіт /n20
 одвітити /v1 :perf
 одвітний /adj
 одвітувати /v1 :perf
+одвічати /v2.cf.advp :imperf
 одвіювати /v1.cf.advp.isNo :imperf
 одвіяти /v1.isNo :perf
 одводити /v1.it0.cf.advp :imperf
@@ -1147,6 +1153,7 @@
 одволікти /v1 :perf                            # rv_inf
 одволога /n10
 одвологлий /adj :&adjp:actv:perf
+одвологти /v3 :perf
 одволодати /v2 :perf
 одволожений /adj :&adjp:pasv:perf              # :past
 одволожити /v1.is0 :perf
@@ -1157,6 +1164,7 @@
 одвоюватися /vr1 :perf
 одв'язатися /vr1 :perf
 одв'язувати /v1.cf.advp.isNo :imperf
+одв'язуватися /vr2.cf.advp :imperf
 одгадати /v2.isNo :perf
 одгадка /n10.p2
 одгадування /n2n.p1
@@ -1167,6 +1175,7 @@
 одгвинчувати /v1.cf.advp.isNo :imperf
 одгін /n21 :xp2                                # дія
 одгін /n21.p :xp1                              # продукт
+одговіти /v2 :perf
 одговітися /vr2 :perf
 одговорити /v1.is0 :perf
 одговоритися /vr1 :perf
@@ -1179,9 +1188,11 @@
 одголос /n20.p
 одгомін /n21.p
 одгонити /v1 :imperf
+одгоріти /v1 :perf
 одгорнути /v1.is0.isTo :perf
 одгорнутий /adj :&adjp:pasv:perf               # :past
 одгороджений /adj :&adjp:pasv:perf             # :past
+одгороджувати /v1.cf.advp :imperf
 одгороджуватися /vr1.cf.advp :imperf
 одгородити /v1.it1.is0 :perf
 одгородитися /vr1.it1 :perf
@@ -1192,16 +1203,20 @@
 одгребтися /vr1 :perf
 одгризання /n2n
 одгризати /v2.cf.advp :imperf
+одгризатися /vr2.cf.advp :imperf
 одгризти /v1.is0 :perf
 одгризтися /vr1 :perf
 одгриміти /v1 :perf
 одгрібати /v2.cf.advp :imperf
 одгрібатися /vr2.cf.advp :imperf
+одгрохати /v2 :perf
 одгук /n20.p.zi
 одгукнутися /vr1 :perf
+одгукуватися /vr1.cf.advp :imperf
 одгул /n20 :xp2:np                             # відгомін
 одгул /n20.p :xp1                              # звільнення від роботи
 одгуляти /v2.isNo :perf
+одгусти /v1 :perf
 оддавання /n2n
 оддаватися /vr1.cf.advp :imperf
 оддавен adv
@@ -1248,12 +1263,15 @@
 од'ємний /adj
 од'ємно adv
 оджартуватися /vr1 :perf
+оджати /v4.isTo :perf
 оджатися /vr4 :perf
 оджахнути /v1 :perf
 оджбурнути /v1 :perf
 одже part:&insert|conj:subord
 одживати /v2.cf.advp.shrt :imperf
+одживити /v1 :perf
 одживлення /n2n
+оджимати /v2.cf.advp :imperf
 одзвичаїти /v1.is0 :perf
 одзвичаїтися /vr1 :perf
 одзвичаюватися /vr1.cf.advp :imperf
@@ -1264,6 +1282,8 @@
 одзивний /adj
 одзимки /np2
 одзнака /n10.p1
+одзначати /v2.cf.advp :imperf
+одзначатися /vr2.cf.advp :imperf
 одзначений /adj :&adjp:pasv:perf               # :past
 одзначення /n2n.p1
 одзначити /v1.it0.is0 :perf:xp1                # відзна́чити
@@ -1276,6 +1296,7 @@
 одігнатися /vr3 :perf
 одігнути /v1.isTo :perf
 одігнутий /adj :&adjp:pasv:perf                # :past
+одігравати /v2.cf.advp :imperf
 одіграний /adj :&adjp:pasv:perf                # :past
 одіграти /v2.isNo :perf
 одігратися /vr2 :perf
@@ -1292,6 +1313,7 @@
 одізватися /vr1 :perf
 одіймати /v2.cf.advp :imperf
 одійняти /v1 :perf
+одікласти /v6.is3 :perf
 одімстити /v1.is0.it1 :perf
 одімщати /v2.cf.advp :imperf:rare
 одіпрати /v3.isNo :perf
@@ -1310,15 +1332,21 @@
 од'їзд /n20
 од'їздити /v1 :perf:xp2                        # од'ї́здити
 од'їздити /v1.cf :imperf:xp1                   # од'їзди́ти
+од'їсти /v4.is3 :perf
 од'їстися /vr4 :perf
 од'їхати /v4 :perf
 одказ /n20
+одказатися /vr1 :perf
+одказатися /vr1 :perf
 одказуватися /vr1.cf.advp :imperf
 одкалатати /v2.isNo :perf
 одкараскатися /vr2 :perf
 одкарбувати /v1.is0 :perf
 одкасник /n20.a
+одкаснутися /vr1 :perf
+одкачати /v2.isNo :perf
 одкачувати /v1.cf.advp :imperf
+одкашлюватися /vr1.cf.advp :imperf
 одкашлятися /vr2 :perf
 одквітнути /v3 :perf
 одкид /n20.p
@@ -1329,11 +1357,13 @@
 одкіль adv
 одклад /n20.p
 одкладати /v2.cf.advp :imperf
+одкладатися /vr2.cf.advp :imperf
 одкладений /adj :&adjp:pasv:perf               # :past
 одклеєний /adj :&adjp:pasv:perf                # :past
 одклеюватися /vr1.cf.advp :imperf
 одкликання /n2n.p1
 одкликатися /vr2.cf.advp :imperf               # відклика́ти
+одключитися /vr1 :perf
 одкол /n20.p
 одколоти /v1.is0.isTo :perf
 одколошматити /v1.it0 :perf
@@ -1369,6 +1399,7 @@
 одкуплятися /vr2.cf.advp :imperf
 одкуповуватися /vr1.cf.advp :imperf
 одкушений /adj :&adjp:pasv:perf                # :past
+одкушувати /v1.cf.advp :imperf
 одлакований /adj :&adjp:pasv:perf              # :past
 одламаний /adj :&adjp:pasv:perf                # :past
 одламати /v2.isNo :perf
@@ -1381,6 +1412,7 @@
 одлежуватися /vr1.cf.advp :imperf
 одливання /n2n.p1
 одливати /v2.cf.advp.isNo :imperf
+одливатися /vr2.cf.advp :imperf
 одлига /n10.p1
 одлинути /v1 :perf
 одлитий /adj :&adjp:pasv:perf                  # :past
@@ -1393,6 +1425,7 @@
 одломлювати /v1.cf.advp :imperf
 одлунати /v2 :perf
 одлуння /n2n.p1
+одлунювати /v1.cf.advp :imperf
 одлупити /v1.is0 :perf
 одлупцьований /adj :&adjp:pasv:perf
 одлупцювати /v1.is0 :perf
@@ -1437,6 +1470,8 @@
 одмивати /v2.cf.advp :imperf
 одмиватися /vr2.cf.advp :imperf
 одмикати /v2.cf.advp.isNo :imperf
+одмикатися /vr2.cf.advp :imperf
+одмикувати /v1.cf.advp :imperf
 одмирання /n2n.p1
 одмирати /v2.cf.advp :imperf
 одмити /v2.isTo :perf
@@ -1462,18 +1497,21 @@
 одмовлятися /vr2.cf.advp :imperf               # rv_inf
 одмогтися /vr1 :perf
 одмолити /v1.it1.is0 :perf
+одмолодіти /v2 :perf
 одмолювати /v1.cf.advp.isNo :imperf
 одморожений /adj :&adjp:pasv:perf              # :past
 одмороження /n2n.p1
 одморожувати /v1.cf.advp.isNo :imperf
 одморозити /v1.it0.is0 :perf
 одмотувати /v1.cf.advp.isNo :imperf
+одмучитися /vr1 :perf
 однайти /v4.is0 :perf
 однакий /adj
 однако adv:&predic
 однедавна adv
 однімання /n2n.p1
 однімати /v2.cf.advp.isNo.shrt :imperf
+одніматися /vr2.cf.advp :imperf
 одновити /v1.it1.is0 :perf
 одновлювання /n2n
 однораз adv
@@ -1507,6 +1545,8 @@
 одписування /n2n
 одпихати /v2.cf.advp.shrt :imperf
 одпихатися /vr2.cf.advp :imperf
+одпихнути /v1 :perf
+одпихнути /v1 :perf
 одплатити /v1.it1.is0 :perf
 одплачувати /v1.cf.advp :imperf
 одплачуватися /vr1.cf.advp :imperf
@@ -1515,6 +1555,7 @@
 одпливти /v1 :perf
 одплисти /v4 :perf
 одплиття /n2n.p2
+одпльовуватися /vr1.cf.advp :imperf
 одплюватися /vr1 :perf
 одповзати /v2.cf.advp :imperf
 одповзти /v1 :perf
@@ -1526,6 +1567,7 @@
 одпочивальня /n10.p2
 одпочивання /n2n
 одпочивок /n22 :coll
+одпочинути /v1 :perf
 одпоювати /v1.cf.advp :imperf
 одправити /v1.it0.is0 :perf
 одправитися /vr1.it0 :perf
@@ -1536,6 +1578,7 @@
 одпровадити /v1.it0.is0 :perf
 одпросити /v1.it1.is0 :perf
 одпроситися /vr1.it1 :perf
+одпрохатися /vr2 :perf
 одпрошувати /v1.cf.advp.isNo :imperf
 одпрошуватися /vr1.cf.advp :imperf
 одпрягати /v2.cf.advp :imperf
@@ -1559,6 +1602,7 @@
 одрахувати /v1.is0 :perf
 одраювати /v1.cf.advp :imperf:rare
 одраяти /v1 :perf
+одреагувати /v1 :perf
 одрекомендувати /v1.is0 :perf
 одрекомендуватися /vr1 :perf
 одректи /v1 :perf
@@ -1569,8 +1613,12 @@
 одрив /n20.p
 одривання /n2n                                 # xv2
 одривчасто adv
+одригнути /v1 :perf
 одригувати /v1.cf.advp.isNo :imperf
 одрижка /n10.p2
+одріжнити /v1 :perf
+одріжняти /v2.cf.advp :imperf
+одріжнятися /vr2.cf.advp :imperf
 одріз /n20 :xp2                                # відрізання
 одріз /n20.a.p :xp1                            # шматок тканини; обрізана гвинтівка
 одрізання /n2n.p1
@@ -1578,8 +1626,10 @@
 одрізнити /v1.it1.is0 :perf
 одрізнитися /vr1.it1 :perf
 одрізнювання /n2n
+одрізнятися /vr2.cf.advp :imperf
 одрізок /n22.a.p
 одрізувати /v1.cf.advp.isNo :imperf
+одрікати /v2.cf.advp :imperf
 одрікатися /vr2.cf.advp :imperf
 одробити /v1.it1.is0 :perf
 одробіток /n22.p
@@ -1603,9 +1653,12 @@
 одрухово adv
 одряджений /adj :&adjp:pasv:perf               # :past
 одрядити /v1.it1.is0 :perf
+одрятувати /v1 :perf
 одсапати /v2.isNo :perf
 одсапатися /vr2 :perf
 одсапнути /v1.isTo :perf
+одсапувати /v1.cf.advp :imperf
+одсапуватися /vr2.cf.advp :imperf
 одсахнутися /vr1 :perf
 одсвіжити /v1.is0 :perf
 одсвіт /n20.p
@@ -1615,6 +1668,7 @@
 одсвічувати /v1.cf.advp :imperf
 одсвяткований /adj :&adjp:pasv:perf            # :past
 одсвяткувати /v1.is0 :perf
+одсердитися /vr1 :perf
 одсиджування /n2n.p1
 одсиджувати /v1.cf.advp :imperf
 одсиджуватися /vr1.cf.advp :imperf
@@ -1638,12 +1692,13 @@
 одскакувати /v1.cf.advp :imperf
 одслонення /n2n.p1
 одслонити /v1.it1.is0 :perf
-одслужити /v1.it1.is0 :perf
+одслужити /v1.it1.is0.it1l :perf
 одслужувати /v1 :imperf
 одсмикнути /v1 :perf
 одсмикувати /v1.cf.advp :imperf
 одсовувати /v1.cf.advp.isNo :imperf
 одсовуватися /vr1.cf.advp :imperf
+одсохнути /v1 :perf
 одспівати /v2.isNo :perf
 одспівувати /v1.cf.advp.isNo :imperf
 одставання /n2n.p1
@@ -1661,6 +1716,7 @@
 одстібнутися /vr1 :perf
 одстовбурчений /adj :&adjp:pasv:perf           # :past
 одсторонений /adj.adv :&&adjp:pasv:perf        # :past
+одсторонити /v1.is0 :perf
 одсторонитися /vr1.it1 :perf
 одсторонь adv
 одстоювання /n2n.p1
@@ -1691,6 +1747,7 @@
 одсунення /n2n
 одсутність /n30.p
 одсьогодні adv
+одсьорбнути /v1 :perf
 одтавати /v1.cf.advp :imperf
 одтак adv
 одталь /n32
@@ -1723,7 +1780,9 @@
 одточування /n2n.p1
 одточувати /v1.cf.advp.isNo :imperf
 одтрутити /v1.is0 :perf
+одтрутитися /vr1 :perf
 одтручувати /v1.cf.advp :imperf
+одтулити /v1.is0 :perf
 одтягати /v2.cf.advp :imperf
 одтягнути /v1.is0.isTo :perf
 одтягти /v3 :perf
@@ -1757,9 +1816,11 @@
 одчаровувати /v1.cf.advp :imperf
 одчарувати /v1 :perf
 одчахнути /v1.isTo :perf
+одчахнутися /vr1 :perf
 одчаяка /n10.p1.ko.< :+m
 одчеплювати /v1.cf.advp :imperf
 одчепно adv
+одчесати /v1 :perf
 одчикрижити /v1.is0.it0 :perf
 одчинення /n2n
 одчитати /v2.isNo :perf
@@ -1770,6 +1831,7 @@
 одчіплятися /vr2.cf.advp :imperf
 одчування /n2n.p1
 одчувати /v2.cf.advp.shrt.isNo :imperf
+одчуватися /vr2.cf.advp :imperf
 одчуження /n2n.p1
 одчужувати /v1.cf.advp.isNo :imperf
 одчути /v2.isTo :perf
