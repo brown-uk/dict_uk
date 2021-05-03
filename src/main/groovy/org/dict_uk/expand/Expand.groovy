@@ -327,7 +327,7 @@ class Expand {
 		if( modifiers.size() == 0)
 			return lines
 
-		def out = []
+		List<DicEntry> out = []
 		for(DicEntry line in lines) {
 
 			if( ! filter_word(line, modifiers, flags)) {
@@ -698,7 +698,7 @@ class Expand {
 		sfx_lines = AffixUtil.expand_alts(sfx_lines, "/")
 
 		if( flags.contains("/adj") ) {
-			def out_lines = []
+			List<DicEntry> out_lines = []
 			for( line in sfx_lines) {
 				if( line.tagStr.contains("v_zn1") ) { // v_zna == v_rod
                     if( flags.contains("<") ) {
@@ -852,7 +852,7 @@ class Expand {
 			lineGroups = [lineGroup]
 		}
 
-		def out_lines = []
+		List<LineGroup> out_lines = []
 		for(LineGroup lineGroup2 in lineGroups) {
 			out_lines.addAll(
 				preprocess2(lineGroup2.line)
@@ -966,7 +966,7 @@ class Expand {
 	
 	@CompileStatic
 	private List<DicEntry> post_process_sorted(List<DicEntry> lines) {
-		def out_lines = []
+		List<DicEntry> out_lines = []
 
 		def prev_line = ""
 		def last_lemma

@@ -144,6 +144,12 @@ class OutputValidator {
 				if( gen != gender ) {
 					if (gender) {
 						checkVTagSet(gender, subtagSet, lemmaLine)
+
+// we merge lemmas with different genders for some cases for practical reasons						
+//                        if( line.contains(" noun") && gen != "p" ) {
+//                            log.warn("gender mix ${gen} & ${gender} for $line")
+//                            nonFatalErrorCount++
+//                        }
 					}
 					if( line.contains(":short") ) {
 					    gender = ''

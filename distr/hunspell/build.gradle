@@ -14,8 +14,6 @@ repositories {
 
 dependencies {
     implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.+'
-
-    implementation group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
     implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
 }

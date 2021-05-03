@@ -53,10 +53,10 @@ affixMap.each { flag, affixGroupMap ->
 	if( flag == 'patr' )
 		return
 	
-	if( flag =~ /\.ku|n2[0-9].*\.u|patr_pl|/ + reMapFlagsRe )
+	if( flag =~ /\.ku|n2[0-9].*\.u|patr_pl|it0b|/ + reMapFlagsRe )
 		return
 
-	if( !fullDict && flag =~ /shrt|long/ )
+	if( !fullDict && flag =~ /shrt|long|it1l/ )
 		return
 	
 	if( (int)hunFlag == 0x7F ) {
@@ -86,9 +86,9 @@ affixMap.each { flag, affixGroupMap ->
 
 }
 
-new File('build/mapping.txt').text = revFlagMap*.toString().join("\n")
+new File('build/mapping.txt').text = revFlagMap.collect{k,v -> "$k=$v"}.join("\n")
 
-println("Negative matches:\n\t" + negativeMatchFlags*.toString().join("\n\t"))
+println("Negative matches:\n\t" + negativeMatchFlags.collect{k,v -> "$k=$v"}.join("\n\t"))
 
 @Field
 static String NONSPELL_TAG_LIST = ":(alt|bad|subst|slang|vulg|arch|short|long)"
@@ -292,7 +292,7 @@ def MULTIFLAG_PATTERN = ~ ' /[nv][^#]+ /[nv]'
 
 def superlatives = []
 
-def lines = files.collect { file->
+List<String> lines = files.collect { file->
 	def lns = file.readLines()
 	if( file.name =~ /geo-.*\.lst/ ) {
 	    lns = lns.collect{ Character.isUpperCase(it.charAt(0)) ? it + '   #@ :prop' : it }
@@ -322,7 +322,7 @@ def lines = files.collect { file->
 		return ''
 
 	if( ! fullDict ) {
-		it = it.replaceAll(/\.(shrt|long)/, '')
+		it = it.replaceAll(/\.(shrt|long|it1l)/, '')
 	}
 	
 	it = it.replace('.it0b', '')	// bad verb forms
@@ -408,7 +408,7 @@ def lines = files.collect { file->
 //			def expandFlags = parts.size() > 2 ? parts[1] + ' ' + parts[2] : parts[1]
 //            def expanded = expand.expand(parts[0], expandFlags)
 
-            def expanded = expand.preprocess2(it).collect { ln ->
+            List<DicEntry> expanded = expand.preprocess2(it).collect { ln ->
                 def pp = ln.split(/ /, 2)
                 expand.expand(pp[0], pp[1])
             }
@@ -470,7 +470,7 @@ def lines = files.collect { file->
 
 lines += superlatives
 
-def lineMap = [:]
+Map<String,String> lineMap = [:]
 lines.each {
     if( ! it.contains('/') ) {
         if( ! (it in lineMap) ) {
@@ -481,7 +481,7 @@ lines.each {
 
     def (word, flags) = it.split('/')
     if( word in lineMap ) {
-        lineMap[word] = (Arrays.asList(lineMap[word].toCharArray()) + Arrays.asList(flags.toCharArray())).unique().join()
+        lineMap[word] = (Arrays.asList(lineMap[word].toCharArray()) + Arrays.asList(flags.toCharArray())).unique().join('')
     }
     else {
         lineMap[word] = flags
@@ -498,7 +498,7 @@ def extraWords = getClass().getResource( '/extra_words.txt' ).text
 
 lines.addAll(extraWords.split())
 
-def comps = []
+List<DicEntry> comps = []
 
 def dic_file = new File("../../data/dict").eachFile{ file ->
     if( ! file.name.contains("composite") )
@@ -511,7 +511,7 @@ def dic_file = new File("../../data/dict").eachFile{ file ->
     }
 }
 
-println "Got $comps.size comps"
+println "Got ${comps.size()} comps"
 
 
 comps = comps.findAll { DicEntry dic ->
@@ -521,11 +521,11 @@ comps = comps.findAll { DicEntry dic ->
 lines.addAll(comps.collect{ it.word })
 
 
-println "Found ${lines.size} total lines"
+println "Found ${lines.size()} total lines"
 
-def words = lines
+List<String> words = lines
 
-def txt = "${words.size}\n"
+def txt = "${words.size()}\n"
 
 
 Collator collator = Collator.getInstance(new Locale("uk", "UA"));
@@ -540,8 +540,8 @@ static boolean hasInanimVkly(line, propName) {
 }
 
 static boolean spellWord(String line) {
-	return ! ( line =~ NONSPELL_TAG_LIST )
+	return ! ( line =~ NONSPELL_TAG_LIST ) \
 		|| line =~ /&insert:short/ \
 		|| line =~ /adj:m:v_(naz|zna).*:short/ \
-		|| line =~ /^((що(як)?)?най)?(більш|менш|скоріш|перш)$/
+		|| line =~ /^((що(як)?)?най)?(більш|менш|скоріш|перш) /
 }

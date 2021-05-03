@@ -116,7 +116,7 @@ class Util {
 
 	@CompileStatic
 	List<DicEntry> expand_nv(List<DicEntry> in_lines) {
-		def lines = []
+		List<DicEntry> lines = []
 
 		for(DicEntry entry in in_lines) {
 			String lineTagStr = entry.tagStr

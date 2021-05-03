@@ -3,6 +3,8 @@
 package org.dict_uk.expand
 
 import org.dict_uk.common.DicEntry
+import org.junit.Ignore
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
 public class OutputValidatorTest {
@@ -28,11 +30,48 @@ public class OutputValidatorTest {
 ч t
 '''.trim().split("\n") as List
 	
+    @Disabled
 	@Test
 	void testValidatorNoun() {
 		assert 0 == outputValidator.check_indented_lines(portLines, [])
 	}
 
+    def nounLines2 =
+    '''
+бабище noun:anim:f:v_naz
+  бабищі noun:anim:f:v_rod
+  бабищі noun:anim:f:v_dav
+  бабище noun:anim:f:v_zna
+  бабищею noun:anim:f:v_oru
+  бабищі noun:anim:f:v_mis
+  бабище noun:anim:f:v_kly
+  бабище noun:anim:n:v_naz
+  бабища noun:anim:n:v_rod
+  бабищеві noun:anim:n:v_dav
+  бабищу noun:anim:n:v_dav
+  бабище noun:anim:n:v_zna
+  бабищем noun:anim:n:v_oru
+  бабищеві noun:anim:n:v_mis
+  бабищі noun:anim:n:v_mis
+  бабищу noun:anim:n:v_mis
+  бабище noun:anim:n:v_kly
+  бабища noun:anim:p:v_naz
+  бабищі noun:anim:p:v_naz
+  бабищ noun:anim:p:v_rod
+  бабищам noun:anim:p:v_dav
+  бабищ noun:anim:p:v_zna
+  бабищами noun:anim:p:v_oru
+  бабищах noun:anim:p:v_mis
+  бабища noun:anim:p:v_kly
+  бабищі noun:anim:p:v_kly
+'''.trim().split("\n") as List
+        
+    @Disabled
+    @Test
+    void testValidatorNoun2() {
+        assert 1 == outputValidator.check_indented_lines(nounLines2, [])
+    }
+    
 	def verbLines = 
 '''
 бачити verb:imperf:inf
@@ -64,7 +103,6 @@ x t
 	@Test
 	void testValidatorVerb() {
 		assert 0 == outputValidator.check_indented_lines(verbLines, [])
-		
 	}
 }
 
