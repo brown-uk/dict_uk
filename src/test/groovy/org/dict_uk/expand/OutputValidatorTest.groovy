@@ -3,7 +3,6 @@
 package org.dict_uk.expand
 
 import org.dict_uk.common.DicEntry
-import org.junit.Ignore
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 

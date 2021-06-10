@@ -27,7 +27,7 @@ repositories {
 //}
 
 dependencies {
-    implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.+'
+    implementation group: 'org.codehaus.groovy', name: 'groovy', version: '3.0.+'
     implementation group: 'org.codehaus.groovy', name: 'groovy-cli-picocli', version: '3.0.+'
     implementation 'info.picocli:picocli:4.3.2'
 
@@ -40,6 +40,12 @@ dependencies {
 //    groovyScript localGroovy()
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
 //compileGroovy {
 //    exclude '**/tools/other/*.groovy'
 //}
@@ -47,6 +53,15 @@ dependencies {
 eclipse {
   classpath {
     defaultOutputDir = file('build')
+        file.whenMerged {
+            entries.each { entry ->
+                if (entry.kind == 'src' && entry.hasProperty('output')) {
+                    entry.output = entry.output ? entry.output.replace('bin/', "build_/")
+                                    : entry.path.replaceFirst(/src\/(main\/).*/, 'build_/$1')
+//                    logger.lifecycle ":: $entry -- ${entry.output}"
+                }
+            }
+        }
   }
 }
 

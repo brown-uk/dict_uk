@@ -1,6 +1,6 @@
 package org.dict_uk.expand
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals
 
 import org.dict_uk.common.DicEntry
 import org.junit.jupiter.api.BeforeEach

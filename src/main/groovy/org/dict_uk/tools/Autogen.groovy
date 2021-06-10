@@ -4,9 +4,9 @@ import java.text.Collator
 import java.util.regex.Pattern
 
 import org.dict_uk.expand.TaggedWordlist
-import org.junit.Test
 
 import groovy.transform.CompileStatic
+
 
 class Autogen {
 	

@@ -356,30 +356,30 @@ class Expand {
 	
 	@CompileStatic
 	private String get_extra_flags(String flags) {
-		def extra_flags = ""
+		StringBuilder extra_flags = new StringBuilder()
 
 		if( flags.contains(" :") ) {
 			def matcher = extraFlagsPattern.matcher(flags)
 			if( ! matcher.find() )
 				throw new Exception("Not found extra flags in " + flags)
 
-			extra_flags = matcher.group(1)
+			extra_flags.append(matcher.group(1))
 		}
 		
 		if( flags.contains("<") ) {
 		    if( flags.contains(">>") ) {
-    			extra_flags += ":unanim"
+    			extra_flags.append(":unanim")
 			}
 			else {
-			    extra_flags += ":anim"
+			    extra_flags.append(":anim")
 			}
 		}
 		
 		if( flags.contains("<+") ) {
-			extra_flags += ":prop:lname"
+			extra_flags.append(":prop:lname")
 		}
 
-		return extra_flags
+		return extra_flags.toString()
 	}
 	
 	private static final Pattern perf_imperf_pattern = ~ ":(im)?perf"

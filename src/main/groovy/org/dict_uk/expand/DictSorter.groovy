@@ -67,7 +67,7 @@ class DictSorter {
 			tags = tags.replaceAll(/:&(insert|predic)/, '')
 		}
 
-		def offset = 0
+		int offset = 0
 
 		// moving alt, rare, coll... after standard forms
 		def loweringMatch = LOWERING_TAGS_RE.matcher(tags)
@@ -205,30 +205,30 @@ class DictSorter {
 			String word = line.word
 			String lemma = line.lemma
 			String tags = line.tagStr
-			String key
+			StringBuilder key = new StringBuilder(32)
 
 			try {
 				if( tags.contains("name") ) {
 					def key_rr = re_key_name.matcher(line.tagStr)
 					key_rr.find()
-					key = lemma + " " + key_rr.group(1) + key_rr.group(2)
+					key.append(lemma).append(" ").append(key_rr.group(1)).append(key_rr.group(2))
 				}
 				else {
 					def key_rr = re_key.matcher(line.tagStr)
 					key_rr.find()
-					key = lemma + " " + key_rr.group(0)
+					key.append(lemma).append(" ").append(key_rr.group(0))
 					
 					if( tags.contains(":&pron:") ) {
 					    def pron_rr = re_key_pron.matcher(line.tagStr)
 					    pron_rr.find()
-					    key += pron_rr.group(0)
+					    key.append(pron_rr.group(0))
 					}
 					
 				}
 
 				int x_idx = line.tagStr.indexOf(":x")
 				if( x_idx != -1 ) {
-					key += line.tagStr[x_idx..<x_idx+4]
+					key.append(line.tagStr[x_idx..<x_idx+4])
 				}
 			}
 			catch(Exception e) {
@@ -236,19 +236,20 @@ class DictSorter {
 			}
 
 			if( line.tagStr.contains(":nv") ) {
-				key += ":nv"
+				key.append(":nv")
 			}
 
+			String keyStr = key.toString()
 			String outLine
-			if( key != prev_key && ! derived_plural(key, prev_key) ) {
-				prev_key = key
-				outLine = word + " " + tags
+			if( keyStr != prev_key && ! derived_plural(keyStr, prev_key) ) {
+				prev_key = keyStr
+				outLine = "$word $tags"
 			} else {
-				outLine = DERIV_PADDING + word + " " + tags
+				outLine = DERIV_PADDING + "$word $tags"
 			}
 
 			if( line.comment ) {
-				outLine += "    # " + line.comment
+				outLine += "    # ${line.comment}"
 			}
 			
 			out_lines.add(outLine)
