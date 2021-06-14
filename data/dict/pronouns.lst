@@ -1035,7 +1035,7 @@
 попереду попереду prep|adv        # rv_rod
 попід попід prep        # rv_zna:rv_oru
 попліч попліч prep        # rv_rod:rv_oru
-попри попри prep        # rv_zna
+попри попри prep        # rv_zna:rv_mis:rv_rod
 поруч поруч prep        # rv_rod
 поряд поряд prep        # rv_rod
 посеред посеред prep|adv        # rv_rod
