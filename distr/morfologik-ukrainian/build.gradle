@@ -15,7 +15,7 @@ archivesBaseName = artifactId
 
 sourceCompatibility = 1.8
 
-String ltToolsVersion = '5.3-SNAPSHOT'
+String ltToolsVersion = '5.4-SNAPSHOT'
 
 String langCode="uk"
 

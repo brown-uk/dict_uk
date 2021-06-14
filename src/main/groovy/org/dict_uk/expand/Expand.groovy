@@ -28,7 +28,7 @@ class Expand {
 	private final Map<String, List<String>> additionalTags = [:]
 	private final List<String> additionalTagsUnused = []
 	final Affix affix = new Affix()
-	private final Map<String, Set<String>> derivs = [:].withDefault { new HashSet<String>() }
+	private final Map<String, Set<String>> derivs = [:].withDefault { new HashSet<>() }
 		
 
 	static final Pattern cf_flag_pattern = ~ /(vr?)[1-6]\.cf/	 // no v5
@@ -207,7 +207,7 @@ class Expand {
 							else {
 								tags += ":xp2"
 							}
-							comment = "від " + word	
+							comment = "від $word"	
 						}
 						// TODO: do it better
 						else if( tags == "noun:anim:m:v_naz:bad" && deriv == "член-кореспондент" ) {
@@ -227,14 +227,14 @@ class Expand {
 			}
 
 			if( appliedCnts[ affixFlag2 ] == 0 ) {
-				throw new Exception("Flag " + affixFlag2 + " of " + affixFlags + " not applicable to " + word)
+				throw new Exception("Flag $affixFlag2 of $affixFlags not applicable to $word")
 			}
 		}
 
 		List<DicEntry> dups = words.findAll { words.count(it) > 1 }.unique()
 		if( dups.size() > 0 ) {
 		    if( ! (affixFlags =~ /p1\.p2|p[12]\.piv/) ) {
-			    log.warn("duplicates: " + dups + " for " + word + " " + affixFlags)
+			    log.warn("duplicates: $dups for $word $affixFlags")
 			}
 		}
 
@@ -1018,7 +1018,7 @@ class Expand {
 	@CompileStatic
 	private boolean isRemoveLine(DicEntry line) {
 		for( removeWithTag in Args.args.removeWithTags ) {
-			if( line.tagStr.contains(":" + removeWithTag) )
+			if( line.tagStr.contains(":$removeWithTag") )
 				return true
 		}
 		
@@ -1152,7 +1152,7 @@ class Expand {
 				
 //				if( word.endsWith('е') && main_word.endsWith('й') ) {
 				if( ! word.endsWith('ий') && main_word.endsWith('й') 
-					|| ! (word =~ /[іеш]$/) && main_word =~ /[ео]$/ ) {
+					    || ! (word =~ /[іеш]$/) && main_word =~ /[ео]$/ ) {
 					log.error "bad +cs: $word for $main_word"
 					System.exit(1)
 				}
@@ -1224,7 +1224,7 @@ class Expand {
 				}
 
 				if( ! (word =~ /[іеш]$/) ) {
-					log.error("invalid +cs for adv: " + line)
+					log.error("invalid +cs for adv: {}", line)
 					System.exit(1)
 				}
 			}
@@ -1237,7 +1237,7 @@ class Expand {
 			return forms
 		}
 
-		throw new Exception("Unknown subposition for " + line + "(" + main_word + ")")
+		throw new Exception("Unknown subposition for $line ($main_word)")
 	}
 
 	private List expandSubposAdv(String word, String extraTags) {
@@ -1499,7 +1499,7 @@ class Expand {
             return allEntries
 
 		if( additionalTagsUnused ) {
-			log.error("Additional tags not used: " + additionalTagsUnused)
+			log.error("Additional tags not used: {}", additionalTagsUnused)
 		}
 			
 		return sortAndPostProcess(allEntries)
@@ -1519,7 +1519,7 @@ class Expand {
 				return taggedEntries
 			}
 			catch(Exception e) {
-				log.error("Failed to expand: \"" + lineGroup.line + "\": " + e.getMessage())
+				log.error("Failed to expand: \"${lineGroup.line}\": {}", e.getMessage())
 				return null
 			}
 
