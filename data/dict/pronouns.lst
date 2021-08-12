@@ -325,7 +325,9 @@
 
 # Присвійні займенники його, її є незмінними
 його adj:m:nv//f:nv//n:nv:&pron:pos
+його adj:p:nv:&pron:pos
 її adj:m:nv//f:nv//n:nv:&pron:pos
+її adj:p:nv:&pron:pos
 
 сам /adj_pron :&pron:def
 наш /adj_pron :&pron:pos

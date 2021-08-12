@@ -13,3 +13,5 @@ _work
 .classpath
 .project
 bin
+/build_test/
+/build_

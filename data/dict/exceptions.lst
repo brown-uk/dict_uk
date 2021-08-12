@@ -3,7 +3,11 @@
 
 # з тегами
 
-
+житє житє noun:inanim:n:v_naz/v_zna/v_kly:arch
+житя житє noun:inanim:n:v_rod:arch
+житю житє noun:inanim:n:v_dav/v_mis:arch
+житєм житє noun:inanim:n:v_oru:arch
+житі житє noun:inanim:n:v_mis:arch
 
 # і - о + ь в кінці
 якір якір noun:m:v_naz/v_zna

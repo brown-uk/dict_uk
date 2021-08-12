@@ -344,6 +344,7 @@
 вомпити /v1.cf.advp :imperf
 вонпити /v1 :perf
 воплотитися /vr1.it1 :perf
+воплочений /adj :&adjp:pasv:perf
 воплощатися /vr1.cf.advp :imperf
 воркотливий /adj
 воркотливість /n30
@@ -469,6 +470,7 @@
 двічи adv
 двоєвір'я /n2n
 дворець /n22.p.a
+двужон /n20.a.p.<
 д'горі adv
 дебра /n10.p1
 дев'ятдесят /numr
@@ -604,6 +606,7 @@
 заплинути /v1 :perf
 заповідуваний /adj :&adjp:pasv:imperf
 заповідувати /v1.cf.advp :imperf
+запражка /n10
 запросний /adj
 зарев /n20
 зарівно adv:&predic
@@ -689,6 +692,7 @@
 знимкувати /v1.cf.advp :imperf
 знимкуватися /vr1.cf.advp :imperf
 зобижати /v2.cf.advp :imperf
+зобувати /v1.cf.advp :imperf
 з-позаду з-позаду adv
 зрабований /adj :&adjp:pasv:perf
 зрадувати /v1 :perf
@@ -2282,6 +2286,7 @@
 розтіч /n30
 розторощити /v1.is0 :perf
 роняти /v2.cf.advp :imperf
+росіл /n21.p
 роскіш /n30
 руч-об-руч adv
 рушатися /vr2.cf.advp :imperf
@@ -2346,6 +2351,7 @@
 сояшник /n20.a.p
 сояшниковий /adj
 сперед adv
+спилити /v1 :perf
 співдіяння /n2n
 сповістя /n2n
 сподібний /adj \
