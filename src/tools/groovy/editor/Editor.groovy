@@ -54,7 +54,7 @@ if( newLemmaFile.exists() ) {
 	}
 }
 
-println "Input data: ${inputData.size}, dict lines: ${dictLines.size}"
+println "Input data: ${inputData.size()}, dict lines: ${dictLines.size()}"
 
 expand.affix.load_affixes('data/affix')
 
@@ -261,7 +261,7 @@ def findInDict(word) {
     ending = ending.replaceFirst(/ка$/, '(ка)?')
 	ending = ending.replaceFirst(/[гґ]/, '[гґ]')
 
-	println "searching for existing: $ending in ${dictLines.size}"
+	println "searching for existing: $ending in ${dictLines.size()}"
 	def ptrn = ~"(?ui)^[^#]*$ending "
 	def similars = dictLines.findAll{ k,v -> ptrn.matcher(k) }
 //	def similars = dictLines.findAll{ it =~ "(?i)^[а-яіїєґА-ЯІЇЄҐ'-]*$ending " }
@@ -316,7 +316,7 @@ def addWord() {
 			addedList.ensureIndexIsVisible(sz-1)
 		}
 
-		textlabel.text = "Added ${newWords.size} words."
+		textlabel.text = "Added ${newWords.size()} words."
 		
 		mainList.setSelectionInterval(selIdx + 1, selIdx + 1)
 //		mainList.getSelectionModel().fireValueChanged(selIdx, selIdx)
@@ -410,7 +410,7 @@ swing.edt {
 							minimumSize: new Dimension(220, 70)
 							)
 
-					textlabel = label("${newWords.size} new words")
+					textlabel = label("${newWords.size()} new words")
 
 					hbox {
 						def btn1 = button(

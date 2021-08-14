@@ -28,6 +28,7 @@ repositories {
 
 dependencies {
     implementation group: 'org.codehaus.groovy', name: 'groovy', version: '3.0.+'
+    implementation group: 'org.codehaus.groovy', name: 'groovy-swing', version: '3.0.+'
     implementation group: 'org.codehaus.groovy', name: 'groovy-cli-picocli', version: '3.0.+'
     implementation 'info.picocli:picocli:4.3.2'
 

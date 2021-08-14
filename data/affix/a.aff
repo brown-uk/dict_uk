@@ -63,7 +63,7 @@ group adj
 ийсь	ихось			#   якихось 	        @ adj:p:v_rod/v_zn1/v_mis
 ийсь	имись			#   якимись 	        @ adj:p:v_oru
 
-ій:
+[^жчшщ]ій:
 ій	ього			#   синього 	                    @ adj:m:v_rod/v_zn1//n:v_rod
 ій	ьому			#   синьому 	                    @ adj:m:v_dav/v_mis//n:v_dav/v_mis
 ій	ім			#   синім 		     @ adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
@@ -75,6 +75,20 @@ group adj
 ій	ьою			#   синьою		            @ adj:f:v_oru
 ій	є			#   синє 		                    @ adj:n:v_naz/v_zna/v_kly
 #ій	єє			#   синєє 		                    @ adj:n:v_naz/v_zna/v_kly:uncontr
+
+# покручі
+[жчшщ]ій:
+ій	ого			#   смотрящого 	                    @ adj:m:v_rod/v_zn1//n:v_rod
+ій	ому			#   смотрящому 	                    @ adj:m:v_dav/v_mis//n:v_dav/v_mis
+ій	ім			#   смотрящім 		     @ adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
+ій	я			#   смотрящя 		                    @ adj:f:v_naz/v_kly
+#ій	яя			#   смотрящяя 		                    @ adj:f:v_naz/v_kly:uncontr
+ій	ої			#   смотрящої		            @ adj:f:v_rod
+ій	ю			#   смотрящю 		                    @ adj:f:v_zna
+#ій	юю			#   смотрящюю 		                    @ adj:f:v_zna:uncontr
+ій	ою			#   смотрящою		            @ adj:f:v_oru
+ій	є			#   смотрящє 		                    @ adj:n:v_naz/v_zna/v_kly
+#ій	єє			#   смотрящєє 		                    @ adj:n:v_naz/v_zna/v_kly:uncontr
 
 [ії]й:
 й	0			#   сині 		                    @ adj:p:v_naz/v_zn2/v_kly
