@@ -3,11 +3,11 @@
 
 # з тегами
 
-житє житє noun:inanim:n:v_naz/v_zna/v_kly:arch
-житя житє noun:inanim:n:v_rod:arch
-житю житє noun:inanim:n:v_dav/v_mis:arch
-житєм житє noun:inanim:n:v_oru:arch
-житі житє noun:inanim:n:v_mis:arch
+житє житє noun:inanim:n:v_naz/v_zna/v_kly:alt
+житя житє noun:inanim:n:v_rod:alt
+житю житє noun:inanim:n:v_dav/v_mis:alt
+житєм житє noun:inanim:n:v_oru:alt
+житі житє noun:inanim:n:v_mis:alt
 
 # і - о + ь в кінці
 якір якір noun:m:v_naz/v_zna
@@ -165,6 +165,7 @@
 
 окові око noun:n:v_dav
 очі око noun:p:v_naz/v_zna/v_kly
+очу око noun:p:v_mis:arch
 очей око noun:p:v_rod
 очам око noun:p:v_dav
 очима око noun:p:v_oru
@@ -372,6 +373,14 @@
 першолюдях першолюдина noun:anim:p:v_mis
 першолюди першолюдина noun:anim:p:v_kly
 
+недолюди недолюдина noun:anim:p:v_naz
+недолюдей недолюдина noun:anim:p:v_rod
+недолюдям недолюдина noun:anim:p:v_dav
+недолюдей недолюдина noun:anim:p:v_zna
+недоюдьми недолюдина noun:anim:p:v_oru
+недоюдях недолюдина noun:anim:p:v_mis
+недолюди недолюдина noun:anim:p:v_kly
+
 кіберлюди кіберлюдина noun:anim:p:v_naz
 кіберлюдей кіберлюдина noun:anim:p:v_rod
 кіберлюдям кіберлюдина noun:anim:p:v_dav
@@ -524,10 +533,14 @@
 України-Руси Україна-Русь noun:f:v_rod:prop:geo:ua_2019
 Руси-України Русь-Україна noun:f:v_rod:prop:geo:ua_2019
 
-вітра вітер noun:inanim:m:v_rod:var
+ма мама noun:anim:f:v_kly:short
+мам мама noun:anim:f:v_kly:short
+тат тато noun:anim:m:v_kly:short
+тьоть тьотя noun:anim:f:v_kly:short
+дядь дядя noun:anim:m:v_kly:short:coll
+# баб баба noun:anim:f:v_kly:short
 
-піхв піхва noun:inanim:p:v_rod
-подруж подружжя noun:inanim:p:v_rod
+вітра вітер noun:inanim:m:v_rod:var
 
 Йсу Йсус noun:m:v_dav:prop:fname:anim
 
@@ -724,6 +737,17 @@
 кадовбах кадівб noun:inanim:p:v_mis:rare
 кадовби кадівб noun:inanim:p:v_kly:rare
 
+# сучасн. - молодіжі, в старих словниках - молодежи
+молодежі молодіж noun:inanim:f:v_rod:rare
+молодежі молодіж noun:inanim:f:v_dav:rare
+молодежжю молодіж noun:inanim:f:v_oru:rare
+молодежі молодіж noun:inanim:f:v_mis:rare
+молодеже молодіж noun:inanim:f:v_kly:rare
+
+передні передні noun:anim:p:v_naz/v_kly:ns
+передніх передні noun:anim:p:v_rod/v_zna/v_mis:ns
+переднім передні noun:anim:p:v_dav:ns
+передніми передні noun:anim:p:v_oru:ns
 
 хріна noninfl
 
@@ -783,6 +807,7 @@
 пробувши пробути advp:perf
 
 боронь боронити verb:impr:s:2:imperf:coll
+жиймо жити verb:imperf:impr:p:1:arch
 
 диви дивитися verb:rev:imperf:impr:s:2:short
 дивіть дивитися verb:rev:imperf:impr:p:2:short
@@ -792,14 +817,6 @@
 многії многий adj:p:v_naz/v_zn2:rare
 
 бракло бракнути verb:imperf:past:n
-
-# сучасн. - молодіжі, в старих словниках - молодежи
-молодежі молодіж noun:inanim:f:v_rod:rare
-молодежі молодіж noun:inanim:f:v_dav:rare
-молодежжю молодіж noun:inanim:f:v_oru:rare
-молодежі молодіж noun:inanim:f:v_mis:rare
-молодеже молодіж noun:inanim:f:v_kly:rare
-
 
 хтітися хтітися verb:rev:imperf:inf             # lim
 хтітись хтітися verb:rev:imperf:inf

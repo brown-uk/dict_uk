@@ -50,6 +50,13 @@ class Util {
 			&& ! allAffixFlags.contains(":prop")    // Всевишній - :prop but not :fname
 	}
 
+    @CompileStatic
+    boolean animalname(String word, String allAffixFlags) {
+        return allAffixFlags.contains("<>") \
+            && word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase() \
+            && ! allAffixFlags.contains(":prop")
+    }
+
 	static final Pattern DUAL_LAST_NAME_PATTERN = ~ ".*(о|ій|ай|ич|ач|ик|ук|юк|як|ак|аш|яш|ар|яр|ун|ян|ин|[їі]в|[сцтн]ь|сон|сен|ес|ез) "
 
 	@CompileStatic
@@ -133,7 +140,7 @@ class Util {
 				for( v in VIDM_LIST ){
 					if( v == "v_kly" && entry.word.endsWith(".") )
 						continue
-
+                        
 					String tag = parts[0] + ":" + v + ":nv" + part2
 					lines.add(new DicEntry(entry.word, entry.lemma, tag, entry.comment))
 				}
@@ -153,7 +160,17 @@ class Util {
 				}
 			}
 			else if (lineTagStr.startsWith("adj") && ! lineTagStr.contains(":v_") ) {
-				def parts = lineTagStr.split(":nv")
+                def req = ""
+                if( lineTagStr.contains(":rinanim") ) {
+                      req = "rinanim"
+                      lineTagStr = lineTagStr.replace(":rinanim", "")
+                }
+                else if( lineTagStr.contains(":ranim") ) {
+                      req = "ranim"
+                      lineTagStr = lineTagStr.replace(":ranim", "")
+                }
+
+                List<String> parts = lineTagStr.split(":nv") as List
 
 				String gens
 				if( parts[0] ==~ /.*:[mnfp]/) {
@@ -167,15 +184,30 @@ class Util {
 				else {
 					gens = GEN_LIST
 				}
-
-				for(def g in gens) {
+                
+				for(def gen in gens) {
 					for(String v in VIDM_LIST){
         				if( v == "v_kly" && (entry.word.endsWith(".") || lineTagStr.contains("&pron")) )
 							continue
-						def newTagStr = parts[0] + ":" + g + ":" + v + ":nv" + (parts.size()>1 ? parts[1] :"")
-						
-						String comment = entry.comment && DicEntry.isPossibleLemma(newTagStr) && g == gens[0] ? entry.comment : null
-						lines.add(new DicEntry(entry.word, entry.lemma, newTagStr, comment))
+                            
+                        if( v == "v_zna" && "mp".contains(gen) ) {
+                            v += ":rinanim"
+                        }
+    
+                        String newTagStr = parts[0] + ":" + gen + ":" + v + ":nv" + (parts.size()>1 ? parts[1] :"")
+                        String comment = entry.comment && DicEntry.isPossibleLemma(newTagStr) && gen == gens[0] ? entry.comment : null
+
+                        if( req != "ranim" || ! v.contains("rinanim") ) {
+                            lines.add(new DicEntry(entry.word, entry.lemma, newTagStr, comment))
+                        }
+                    
+                        if( v == "v_zna:rinanim") {
+                            if( req != "rinanim" ) {
+                                v = "v_zna:ranim"
+                                newTagStr = parts[0] + ":" + gen + ":" + v + ":nv" + (parts.size()>1 ? parts[1] :"")
+                                lines.add(new DicEntry(entry.word, entry.lemma, newTagStr, comment))
+                            }
+                        }
 					}
 				}
 			}

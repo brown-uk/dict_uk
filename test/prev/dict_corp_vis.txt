@@ -2318,10 +2318,10 @@
   дідисько noun:anim:n:v_kly
   дідиська noun:anim:p:v_naz
   дідиськ noun:anim:p:v_rod
-  дідисьок noun:anim:p:v_rod
+  дідиськів noun:anim:p:v_rod
   дідиськам noun:anim:p:v_dav
   дідиськ noun:anim:p:v_zna
-  дідисьок noun:anim:p:v_zna
+  дідиськів noun:anim:p:v_zna
   дідиськами noun:anim:p:v_oru
   дідиськах noun:anim:p:v_mis
   дідиська noun:anim:p:v_kly
@@ -2563,6 +2563,36 @@
   затаєних adj:p:v_mis:&adjp:pasv:perf:compb
   затаєні adj:p:v_kly:&adjp:pasv:perf:compb
 затаєно adv:compb
+його adj:m:v_naz:nv
+  його adj:m:v_rod:nv
+  його adj:m:v_dav:nv
+  його adj:m:v_zna:ranim:nv
+  його adj:m:v_zna:rinanim:nv
+  його adj:m:v_oru:nv
+  його adj:m:v_mis:nv
+  його adj:m:v_kly:nv
+  його adj:f:v_naz:nv
+  його adj:f:v_rod:nv
+  його adj:f:v_dav:nv
+  його adj:f:v_zna:nv
+  його adj:f:v_oru:nv
+  його adj:f:v_mis:nv
+  його adj:f:v_kly:nv
+  його adj:n:v_naz:nv
+  його adj:n:v_rod:nv
+  його adj:n:v_dav:nv
+  його adj:n:v_zna:nv
+  його adj:n:v_oru:nv
+  його adj:n:v_mis:nv
+  його adj:n:v_kly:nv
+  його adj:p:v_naz:nv
+  його adj:p:v_rod:nv
+  його adj:p:v_dav:nv
+  його adj:p:v_zna:ranim:nv
+  його adj:p:v_zna:rinanim:nv
+  його adj:p:v_oru:nv
+  його adj:p:v_mis:nv
+  його adj:p:v_kly:nv
 кайдани noun:inanim:p:v_naz:ns
   кайданів noun:inanim:p:v_rod:ns
   кайданам noun:inanim:p:v_dav:ns
@@ -3649,7 +3679,8 @@
 свв. adj:p:v_naz:nv:abbr    # святі
   свв. adj:p:v_rod:nv:abbr
   свв. adj:p:v_dav:nv:abbr
-  свв. adj:p:v_zna:nv:abbr
+  свв. adj:p:v_zna:ranim:nv:abbr
+  свв. adj:p:v_zna:rinanim:nv:abbr
   свв. adj:p:v_oru:nv:abbr
   свв. adj:p:v_mis:nv:abbr
 синій adj:m:v_naz
@@ -3897,6 +3928,8 @@
   сутяжищами noun:anim:p:v_oru:xp2
   сутяжищах noun:anim:p:v_mis:xp2
   сутяжища noun:anim:p:v_kly:xp2
+так conj:coord
+так conj:subord
 такий-то adj:m:v_naz:&pron:dem
   такого-то adj:m:v_rod:&pron:dem
   такому-то adj:m:v_dav:&pron:dem
@@ -4182,7 +4215,8 @@
   чайн. adj:p:v_naz:nv:abbr
   чайн. adj:p:v_rod:nv:abbr
   чайн. adj:p:v_dav:nv:abbr
-  чайн. adj:p:v_zna:nv:abbr
+  чайн. adj:p:v_zna:ranim:nv:abbr
+  чайн. adj:p:v_zna:rinanim:nv:abbr
   чайн. adj:p:v_oru:nv:abbr
   чайн. adj:p:v_mis:nv:abbr
 чапленя noun:anim:n:v_naz
@@ -4927,7 +4961,7 @@
   Ягайлі noun:anim:m:v_mis:prop:fname
   Ягайлові noun:anim:m:v_mis:prop:fname
   Ягайлу noun:anim:m:v_mis:prop:fname
-  Ягайлу noun:anim:m:v_kly:prop:fname
+  Ягайле noun:anim:m:v_kly:prop:fname
 якийсь adj:m:v_naz:&pron:int:rel:def
   якогось adj:m:v_rod:&pron:int:rel:def
   якомусь adj:m:v_dav:&pron:int:rel:def

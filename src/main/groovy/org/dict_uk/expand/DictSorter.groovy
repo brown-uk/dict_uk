@@ -192,7 +192,7 @@ class DictSorter {
 	}
 
 
-	static final Pattern re_key = Pattern.compile("^[^:]+(?::rev)?(?::(?:anim|inanim|perf|imperf))?")
+	static final Pattern re_key = Pattern.compile("^[^:]+(?::rev)?(?::(?:anim|inanim|perf|imperf|coord|subord))?")
 	static final Pattern re_key_pron = Pattern.compile(":&pron:[^:]+")
 	static final Pattern re_key_name = Pattern.compile("^(noun:anim:[fmnp]:).*?([flp]name)")
 

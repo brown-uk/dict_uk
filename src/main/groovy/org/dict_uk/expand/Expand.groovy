@@ -405,6 +405,9 @@ class Expand {
 				if( first_name_base && ! line.tagStr.contains("pname") && ! flags.contains(":pname") ) {
 					extra_flags2 += ":prop:fname"
 				}
+                else if( util.animalname(lines[0].word, flags) ) {
+                    extra_flags2 += ":prop"
+                }
 				if( line.tagStr.startsWith("advp") ) {
 					if( line.tagStr.contains(":imperf") )
 						extra_flags2 = perf_imperf_pattern.matcher(extra_flags2).replaceFirst("")

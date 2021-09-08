@@ -1,68 +1,70 @@
 # див. також http://lib.npu.edu.ua/full_txt/DSTU_3582_2013.pdf
 абз. noun:m:nv                  # абзац
-австр. adj:nv                   # австрійський
+австр. adj:nv:rinanim           # австрійський
 авт. noun:m:v_naz:anim          # автор, напр. "Сьогодні (у четвер.  Авт.), вранці."
 автореф. noun:m:nv              # автореферат
-акад. noun:m:nv:anim|noun:f:nv|adj:nv     # академік, академія
-академ. noun:m:nv:anim|adj:nv   # академік, академічний
-ам. adj:nv                      # американський
-амер. adj:nv                    # американський
-англ. adj:nv                    # англійський
+акад. noun:m:nv:anim|noun:f:nv  # академік, академія
+акад. adj:nv:rinanim            # академічний
+академ. noun:m:nv:anim          # академік
+академ. adj:nv:rinanim          # академічний
+ам. adj:nv:rinanim              # американський
+амер. adj:nv:rinanim            # американський
+англ. adj:nv:rinanim            # англійський
 апп. noun:p:nv:anim             # апостолів
 арк. noun:m:nv                  # аркуш
 арт. noun:m:nv                  # артикул
 арт. noun:m:nv:anim             # артист
 арх. noun:m:nv:anim|noun:m:nv   # архітектор, архів
-архіт. adj:nv                   # архітектурний
+архіт. adj:nv:rinanim           # архітектурний
 асист. noun:m:nv:anim           # асистент
 атм. noun:f:nv                  # атмосфера
 ауд. noun:f:nv                  # аудиторія
-бібл. adj:nv                    # біблійний, бібліографічний, бібліотечний
-біл. adj:nv                     # білоруський
-біол. adj:nv                    # біологічний
+бібл. adj:nv:rinanim            # біблійний, бібліографічний, бібліотечний
+біл. adj:nv:rinanim             # білоруський
+біол. adj:nv:rinanim            # біологічний
 бл. adv                         # близько
 близьк. adv                     # близько
-болг. adj:nv                    # болгарський
+болг. adj:nv:rinanim            # болгарський
 бр. noun:m:nv:anim              # брат(и)
 буд. noun:m:nv                  # будинок
 бул. noun:m:nv                  # бульвар
 бульв. noun:m:nv                # бульвар
-бурж. adj:nv                    # буржуазний
+бурж. adj:nv:rinanim            # буржуазний
 в. noun:m:nv:anim               # виконувач (в.о.)
 вед. noun:m:nv:anim             # ведучий
 вел. adj:nv                     # великий
 викл. noun:m:nv:anim            # викладач
-викон. adj:nv                   # виконавчий
+викон. adj:nv:rinanim           # виконавчий
 вип. noun:m:nv                  # випуск
-вироб. adj:nv                   # виробничий
-виробн. adj:nv                  # виробничий
+вироб. adj:nv:rinanim           # виробничий
+виробн. adj:nv:rinanim          # виробничий
 відс. noun:m:nv                 # відсоток
-вірм. adj:nv                    # вірменський
+вірм. adj:nv:rinanim            # вірменський
 вкл. advp:imperf                # включаючи
-вл. noun:m:nv:anim|adj:nv       # владика; власний
-вн. adj:nv                      # внутрішній
-внутр. adj:nv                   # внутрішній
+вл. noun:m:nv:anim|adj:nv:rinanim      # владика; власний
+вн. adj:nv:rinanim              # внутрішній
+внутр. adj:nv:rinanim           # внутрішній
 вул. noun:f:nv                  # вулиця
-вх. adj:nv                      # вхідний
+вх. adj:nv:rinanim              # вхідний
 вч. noun:f:nv:anim              # вчителька
-гв. adj:nv                      # гвардійський
-геогр. adj:nv                   # географічний
+гв. adj:nv:rinanim              # гвардійський
+геогр. adj:nv:rinanim           # географічний
 гл. noun:f:nv                   # глава
 гр. noun:m:nv:anim:xp1          # громадянин (також помилково: грам)
 гр. noun:f:nv:anim:xp2          # громадянка (також помилково: гривня)
-гр. adj:nv                      # грецький
-грец. adj:nv                    # грецький
-грецьк. adj:nv                  # грецький
-грош. adj:nv                    # грошовий
+гр. adj:nv:rinanim              # грецький
+грец. adj:nv:rinanim            # грецький
+грецьк. adj:nv:rinanim          # грецький
+грош. adj:nv:rinanim            # грошовий
 губ. noun:f:nv                  # губернія
-давньогрец. adj:nv              # давньогрецький
-держ. adj:nv                    # державний
+давньогрец. adj:nv:rinanim      # давньогрецький
+держ. adj:nv:rinanim            # державний
 дес. noun:f:nv                  # десятина
 Дж. noun:m:nv:anim:prop:fname   # Джорж
 див. verb:rev:imperf:impr:s:2   # дивись
 дир. noun:m:nv:anim             # директор
 дис. noun:f:nv                  # дисертація
-діал. adj:nv                    # діалектний
+діал. adj:nv:rinanim            # діалектний
 дн. noun:p:nv                   # днів
 дод. noun:m:nv                  # додаток
 докт. noun:m:nv:anim            # доктор
@@ -72,50 +74,50 @@
 доц. noun:m:nv:anim             # доцент
 е. noun:f:nv                    # ера
 екз. noun:m:nv                  # екземпляр
-екон. adj:nv                    # економічний
-ел. adj:nv                      # електронний
-жін. adj:nv                     # жіночий
+екон. adj:nv:rinanim            # економічний
+ел. adj:nv:rinanim              # електронний
+жін. adj:nv:rinanim             # жіночий
 жовт. noun:m:nv                 # жовтня
 журн. noun:m:nv                 # журнал
 зав. noun:m:nv:anim:xp1         # завідувач
 зав. noun:f:nv:anim:xp2         # завідувачка
 заст. noun:m:nv                 # заступник
-заст. adj:nv                    # застарілий
-зах. adj:nv                     # західний
+заст. adj:nv:rinanim            # застарілий
+зах. adj:nv:rinanim             # західний
 зб. noun:m:nv                   # збірник
 зв. adj:m:nv|adv                # (так) званий, на звороті
 зл. noun:m:nv                   # злотий
 зн. noun:m:nv                   # знаків тощо
-зневаж. adj:nv                  # зневажливий
-зневажл. adj:nv                 # зневажливий
-зовн. adj:nv                    # зовнішній
+зневаж. adj:nv:rinanim          # зневажливий
+зневажл. adj:nv:rinanim         # зневажливий
+зовн. adj:nv:rinanim            # зовнішній
 Ів. noun:m:nv:anim:prop:fname   # Іван
 іл. noun:f:nv                   # ілюстрація
 ім. noun:n:v_rod                # імені
 ін. noun:n:nv                   # інше
-інв. adj:nv                     # інвентарний
-інд. adj:nv                     # індивідуальний, індійський
+інв. adj:nv:rinanim             # інвентарний
+інд. adj:nv:rinanim             # індивідуальний, індійський
 інж. noun:m:nv:anim             # інженер
 інф. noun:f:nv:np               # інформація
 інш. adj:nv                     # інше тощо
-ірл. adj:nv                     # ірландський
-Іс. noun:m:nv:anim              # Ісаї
-ісп. adj:nv                     # іспанський
-іст. adj:nv                     # історичний
-істор. adj:nv                   # історичний
-італ. adj:nv                    # італійський
+ірл. adj:nv:rinanim             # ірландський
+Іс. noun:m:nv:anim:prop:fname   # Ісая
+ісп. adj:nv:rinanim             # іспанський
+іст. adj:nv:rinanim             # історичний
+істор. adj:nv:rinanim           # історичний
+італ. adj:nv:rinanim            # італійський
 к. noun:n:nv                    # копійка (при цифрах)
 каб. noun:m:nv                  # кабінет
 канд. noun:m:nv:anim            # кандидат
 каф. noun:f:nv                  # кафедра
-кв. adj:nv|noun:f:nv:np         # квадратний, квартира
+кв. adj:nv:rinanim|noun:f:nv:np         # квадратний, квартира
 кімн. noun:f:nv                 # кімната
 кл. noun:m:nv
 кн. noun:f:nv                   # книга
 кн. noun:m:nv:anim              # князь
 коеф. noun:m:nv                 # коефіцієнт
-коз. adj:nv                     # козацький
-козац. adj:nv                   # козацький
+коз. adj:nv:rinanim             # козацький
+козац. adj:nv:rinanim           # козацький
 кол. adj:nv|noun:f:nv           # колишній, колегія
 конф. noun:f:nv                 # конференція
 коп. noun:f:nv                  # копійка
@@ -124,32 +126,34 @@
 корп. noun:m:nv                 # корпус
 кр. noun:m:nv                   # кредит; крейцар
 кр. noun:f:nv:xp2               # крона
-куб. adj:nv                     # кубічний
-лат. adj:nv                     # латинський
-лит. adj:nv                     # литовський
+куб. adj:nv:rinanim             # кубічний
+лат. adj:nv:rinanim             # латинський
+латин. adj:nv:rinanim           # латинський
+лит. adj:nv:rinanim             # литовський
+Лк. noun:anim:m:v_naz:prop:fname     # Лука
 м. noun:n:nv:np                 # місто
 мал. noun:m:nv                  # малюнок
 Ман. noninfl:prop               # Манчестер (ФК)
-мат. adj:nv                     # математичний
-мех. adj:nv                     # механічний
-мист. adj:nv                    # мистецький
-міжнар. adj:nv                  # міжнародний
-місц. adj:nv                    # місцевий
-міськ. adj:nv                   # міський
+мат. adj:nv:rinanim             # математичний
+мех. adj:nv:rinanim             # механічний
+мист. adj:nv:rinanim            # мистецький
+міжнар. adj:nv:rinanim          # міжнародний
+місц. adj:nv:rinanim            # місцевий
+міськ. adj:nv:rinanim           # міський
 млн. numr:p:nv:bad              # мільйон
 млрд. numr:p:nv:bad             # мільярд
 мн. noun:f:nv                   # множини
-моб. adj:nv                     # мобільний
-моск. adj:nv                    # московський
-н. adj:f:nv                     # наша (ера)
-навч. adj:nv                    # навчальний
-наз. adj:nv                     # називний (можна подати скорочення всіх відмінків)
+моб. adj:nv:rinanim             # мобільний
+моск. adj:nv:rinanim            # московський
+н. adj:f:nv:rinanim             # наша (ера)
+навч. adj:nv:rinanim            # навчальний
+наз. adj:nv:rinanim             # називний (можна подати скорочення всіх відмінків)
 напр. adv:&insert               # наприклад
 нар. verb:rev:perf:past:m/f     # народився, народилась
 наук. adj:nv                    # науковий
-нац. adj:nv                     # національний
+нац. adj:nv:rinanim             # національний
 нач. noun:m:nv:anim             # начальник
-н.-д. adj:nv                    # науково-дослідний
+н.-д. adj:nv:rinanim            # науково-дослідний
 о. noun:m:nv:np:anim            # отець (о. Павло)
 о. noun:m:nv:np                 # острів
 о. noun:p:v_rod                 # в.о. - обов'язків
@@ -157,17 +161,17 @@
 обр. noun:f:nv                  # обробка/оброблення?
 одн. noun:f:nv                  # однини
 оз. noun:n:nv                   # озеро
-окр. adj:nv                     # окремий
+окр. adj:nv:rinanim             # окремий
 оп. noun:m:nv                   # опис
 опубл. adj:nv:&adjp:pasv:perf   # опублікований
 орг. noun:f:nv                  # організація
-осн. adj:nv                     # основний
+осн. adj:nv:rinanim             # основний
 оф. noun:m:nv                   # офіс
 п. noun:m:nv
-пд. noun:n:nv:np|adj:nv         # південь, південний
-пд.-зах. adj:nv                 # південно-західний
-пд.-сх. adj:nv                  # південно-східний
-пед. adj:nv                     # педагогічний
+пд. noun:n:nv:np|adj:nv:rinanim         # південь, південний
+пд.-зах. adj:nv:rinanim                 # південно-західний
+пд.-сх. adj:nv:rinanim                  # південно-східний
+пед. adj:nv:rinanim             # педагогічний
 перев. adv                      # переважно
 перекл. noun:m:nv:np            # переклад
 перен. adv                      # переносно
@@ -176,13 +180,13 @@
 підрзд. noun:m:nv               # підрозділ
 пл. noun:f:nv:np                # площа
 пн. noun:n:nv:nv:np|adj:nv      # північ, північний
-пн.-зах. adj:nv                 # північно-західний
-пн.-сх. adj:nv                  # північно-східний
+пн.-зах. adj:nv:rinanim                 # північно-західний
+пн.-сх. adj:nv:rinanim                  # північно-східний
 пов. noun:m:nv                  # повіт
-под. adj:n:nv                   # подібне
-пок. noun:m:nv|adj:nv           # показник; покійний
+под. adj:n:nv:rinanim                   # подібне
+пок. noun:m:nv|adj:nv:ranim           # показник; покійний
 пол. noun:f:nv:np               # половина
-польс. adj:nv                   # польський
+польс. adj:nv:rinanim                   # польський
 пом. verb:rev:perf:past:m/f     # помер, померла
 пор. verb:perf:impr:p:2         # порівняйте
 посіб. noun:m:nv                # посібник
@@ -190,49 +194,50 @@
 пп. noun:p:nv                   # пункти
 Пр. noun:p:nv|adj:nv            # Приповісті|Пресвятої
 пр. noun:m:nv                   # проспект, примірник, праць (зб. наук. пр.)
-практ. adj:nv                   # практичний
-преп. adj:nv                    # преподобний
+практ. adj:nv:rinanim           # практичний
+преп. adj:nv:ranim              # преподобний
 прибл. adv                      # приблизно
 прикм. noun:m:nv                # прикметник
 присл. noun:m:nv                # прислівник
 пров. noun:m:nv                 # провулок
-пром. adj:nv                    # промисловий
+пром. adj:nv:rinanim            # промисловий
 просп. noun:m:nv:np             # проспект
 проф. noun:m:nv:anim            # професор (при прізвищі)
 проц. noun:m:nv                 # процентів, процента
-психол. adj:nv                  # психологічний
+психол. adj:nv:rinanim          # психологічний
 р. noun:m:nv:np:xp1             # рік
 р. noun:f:nv:np:xp2             # річка
 рах. noun:m:nv                  # рахунок
-революц. adj:nv                 # революційний
+революц. adj:nv:rinanim         # революційний
 ред. noun:m:v_naz|noun:f:nv:np  # редактор, напр. "Сьогодні (у четвер.  Ред.), вранці.", редакція
 реж. noun:m:nv                  # режисер
 респ. noun:f:nv|adj:nv          # республіка, республіканський
 рис. noun:m:nv                  # рисунок
-робітн. adj:nv                  # робітничий
-род. adj:nv                     # родовий
+робітн. adj:nv:rinanim          # робітничий
+род. adj:nv:rinanim             # родовий
 род. noun:f:nv:xp1              # родина
 род. noun:n:nv:xp2              # родовище
 родов. noun:n:nv                # родовище
 розд. noun:m:nv                 # розділ
-розм. adj:nv                    # розмовний
+розм. adj:nv:rinanim            # розмовний
 РР. noun:p:nv:ns                # роки
 рр. noun:p:nv:ns                # роки
-рт. adj:nv                      # ртутний
+рт. adj:nv:rinanim              # ртутний
 руб. noun:n:nv                  # рубль
-рум. adj:nv                     # румунський
+рум. adj:nv:rinanim             # румунський
 с. noun:n:nv:np                 # село, сторінка (секунда - без крапки)
 санскр. noun:m:nv               # санскрит
-св. adj:nv                      # святий
-свв. adj:p:nv                   # святі
-с.-г. adj:nv                    # сільсько-господарський
+св. adj:nv:ranim                # святий
+свв. adj:p:nv:ranim             # святі
+свт. adj:nv                     # святий
+с.-г. adj:nv:rinanim            # сільсько-господарський
 сел. noun:n:nv:np               # село
-середн. adj:nv                  # середній
+середн. adj:nv:rinanim          # середній
 сільс. adj:nv                   # сільський
 скор. noun:n:nv                 # скорочення
-слов. adj:nv                    # слов'янський
+слов. adj:nv:rinanim            # слов'янський
 #Сол. noun                      # (послання до) Солунян
-соц. adj:nv                     # соціальний
+соц. adj:nv:rinanim             # соціальний
 співавт. noun:m:nv:anim:xp1         # співавтор
 співавт. noun:f:nv:anim:xp2         # співавторка
 співавт. noun:n:nv:np:xp3       # співавторство
@@ -243,26 +248,26 @@
 ст. noun:f:nv:xp1               # стаття, станція
 ст. noun:n:nv:xp2               # століття
 ст. adj:nv                      # столовий, старший
-стол. adj:nv                    # столовий
+стол. adj:nv:rinanim            # столовий
 стор. noun:f:nv                 # сторінка
 студ. noun:m:nv                 # студент
-сусп. adj:nv                    # суспільний
-суч. adj:nv                     # сучасний
-сх. adj:nv                      # східний
+сусп. adj:nv:rinanim            # суспільний
+суч. adj:nv:rinanim             # сучасний
+сх. adj:nv:rinanim              # східний
 т. noun:m:nv                    # том
 т. adv                          # так (званий)
 таб. noun:f:nv                  # таблиця
 табл. noun:f:nv                 # таблиця
 тел. noun:m:nv                  # телефон
-тех. adj:nv                     # технічний
-техн. adj:nv                    # технічний
+тех. adj:nv:rinanim             # технічний
+техн. adj:nv:rinanim            # технічний
 тиж. noun:f:nv                  # тиждень, тижні
-тис. numr:p:nv                  # тисяча
+тис. numr:f/p:nv                  # тисяча
 тов. noun:m:nv:anim:xp1         # товариш
 тов. noun:f:nv:anim:xp2         # товаришка
 тр. noun:m:nv:xp1               # тролейбус
 тр. noun:f:nv:xp2               # траса; третина
-тр. adj:nv                      # трудовий
+тр. adj:nv:rinanim              # трудовий
 трлн. numr:p:nv:bad             # трильйон
 тт. noun:p:nv                   # томи
 уд. noun:m:nv                   # ударів
@@ -270,24 +275,24 @@
 упоряд. noun:m:nv:anim          # упорядник (при прізвищі)
 упр. noun:n:nv                  # управління
 уч. noun:m:nv:anim              # учень
-фіз. adj:nv                     # фізичний
-філол. adj:nv                   # філологічний
-філос. adj:nv                   # філософський
-фр. adj:nv                      # французький
-франц. adj:nv                   # французький
+фіз. adj:nv:rinanim             # фізичний
+філол. adj:nv:rinanim           # філологічний
+філос. adj:nv:rinanim           # філософський
+фр. adj:nv:rinanim              # французький
+франц. adj:nv:rinanim           # французький
 Хр. noun:m:nv:np:anim           # Христа
-худож. adj:nv                   # художній
-церк. adj:nv                    # церковний
+худож. adj:nv:rinanim           # художній
+церк. adj:nv:rinanim            # церковний
 цит. noun:f:nv                  # цитата, цитовано
 ч. noun:f:nv                    # частина
-ч. adj:fp:nv                    # чайна
-чайн. adj:fp:nv                 # чайна
+ч. adj:fp:nv:rinanim            # чайна
+чайн. adj:fp:nv:rinanim         # чайна
 част. noun:f:nv                 # частина
 чл.-кор. noun:m:nv:anim         # член-кореспондент (при назві установи або прізвищі)
 чол. noun:m:nv                  # чоловік
-чол. adj:nv                     # чоловічий
-шотл. adj:nv                    # шотландський
+чол. adj:nv:rinanim             # чоловічий
+шотл. adj:nv:rinanim            # шотландський
 шт. noun:f:nv                   # штука
-юр. adj:nv                      # юридичний
-юрид. adj:nv                    # юридичний
-яп. adj:nv                      # японський
+юр. adj:nv:rinanim              # юридичний
+юрид. adj:nv:rinanim            # юридичний
+яп. adj:nv:rinanim              # японський

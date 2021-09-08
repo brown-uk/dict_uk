@@ -289,7 +289,7 @@
 ніким нікого noun:anim:m:v_oru:&pron:emph
 
 ніщо ніщо noun:inanim:n:v_naz/v_zna:&pron:neg
-нічого ніщо noun:inanim:n:v_rod:&pron:neg:&predic
+нічого ніщо noun:inanim:n:v_rod:&pron:neg:&predic                   # нічо́го
 нічому ніщо noun:inanim:n:v_dav/v_mis:&pron:neg
 нічим ніщо noun:inanim:n:v_oru:&pron:neg
 нічім ніщо noun:inanim:n:v_mis:&pron:neg
@@ -320,6 +320,7 @@
 собі себе noun:unanim:s:v_dav/v_mis:&pron:refl
 собою себе noun:unanim:s:v_oru:&pron:refl
 
+собі part:coll
 
 # Прикметникові займенники
 
@@ -328,11 +329,14 @@
 його adj:p:nv:&pron:pos
 її adj:m:nv//f:nv//n:nv:&pron:pos
 її adj:p:nv:&pron:pos
+#їх adj:m:nv//f:nv//n:nv:&pron:pos
+#їх adj:p:nv:&pron:pos
 
 сам /adj_pron :&pron:def
 наш /adj_pron :&pron:pos
 ваш /adj_pron :&pron:pos
 
+саміський /adj :&pron:def
 саменький /adj :&pron:def
 
 наші /n2adj1.< :&pron:pos
@@ -1203,7 +1207,10 @@
 сиріч conj:subord
 справді adv:&insert|part
 також adv:&insert|conj:coord
-так adv:&pron:dem|part|conj:coord:subord
+так adv:&pron:dem
+так part
+так conj:coord
+так conj:subord
 там-то adv:&pron:dem
 та conj:coord|part
 теє part:coll

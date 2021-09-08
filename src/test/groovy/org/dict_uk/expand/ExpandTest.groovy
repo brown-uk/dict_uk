@@ -531,19 +531,118 @@ void testStryvaty() {
 }
 
 	
-	String adjNv =
+	String adjNvFull =
 '''
-TBD
+супер-пупер супер-пупер adj:m:v_naz:nv:coll
+супер-пупер супер-пупер adj:m:v_rod:nv:coll
+супер-пупер супер-пупер adj:m:v_dav:nv:coll
+супер-пупер супер-пупер adj:m:v_zna:ranim:nv:coll
+супер-пупер супер-пупер adj:m:v_zna:rinanim:nv:coll
+супер-пупер супер-пупер adj:m:v_oru:nv:coll
+супер-пупер супер-пупер adj:m:v_mis:nv:coll
+супер-пупер супер-пупер adj:m:v_kly:nv:coll
+супер-пупер супер-пупер adj:f:v_naz:nv:coll
+супер-пупер супер-пупер adj:f:v_rod:nv:coll
+супер-пупер супер-пупер adj:f:v_dav:nv:coll
+супер-пупер супер-пупер adj:f:v_zna:nv:coll
+супер-пупер супер-пупер adj:f:v_oru:nv:coll
+супер-пупер супер-пупер adj:f:v_mis:nv:coll
+супер-пупер супер-пупер adj:f:v_kly:nv:coll
+супер-пупер супер-пупер adj:n:v_naz:nv:coll
+супер-пупер супер-пупер adj:n:v_rod:nv:coll
+супер-пупер супер-пупер adj:n:v_dav:nv:coll
+супер-пупер супер-пупер adj:n:v_zna:nv:coll
+супер-пупер супер-пупер adj:n:v_oru:nv:coll
+супер-пупер супер-пупер adj:n:v_mis:nv:coll
+супер-пупер супер-пупер adj:n:v_kly:nv:coll
+супер-пупер супер-пупер adj:p:v_naz:nv:coll
+супер-пупер супер-пупер adj:p:v_rod:nv:coll
+супер-пупер супер-пупер adj:p:v_dav:nv:coll
+супер-пупер супер-пупер adj:p:v_zna:ranim:nv:coll
+супер-пупер супер-пупер adj:p:v_zna:rinanim:nv:coll
+супер-пупер супер-пупер adj:p:v_oru:nv:coll
+супер-пупер супер-пупер adj:p:v_mis:nv:coll
+супер-пупер супер-пупер adj:p:v_kly:nv:coll
+супер-пупер супер-пупер adv:coll
 '''.trim()
 
 
-	@Disabled
 	@Test
 	void testAdjAd() {
 		List<String> lines = ["супер-пупер adj:nv:coll|adv:coll"]
-		assertEquals(stryvatyFull, join(expand.process_input(lines)))
+		assertEquals(adjNvFull, join(expand.process_input(lines)))
 	}
 
+    String adjNvFull2 =
+'''
+кв. кв. adj:m:v_naz:nv
+кв. кв. adj:m:v_rod:nv
+кв. кв. adj:m:v_dav:nv
+кв. кв. adj:m:v_zna:rinanim:nv
+кв. кв. adj:m:v_oru:nv
+кв. кв. adj:m:v_mis:nv
+кв. кв. adj:f:v_naz:nv
+кв. кв. adj:f:v_rod:nv
+кв. кв. adj:f:v_dav:nv
+кв. кв. adj:f:v_zna:nv
+кв. кв. adj:f:v_oru:nv
+кв. кв. adj:f:v_mis:nv
+кв. кв. adj:n:v_naz:nv
+кв. кв. adj:n:v_rod:nv
+кв. кв. adj:n:v_dav:nv
+кв. кв. adj:n:v_zna:nv
+кв. кв. adj:n:v_oru:nv
+кв. кв. adj:n:v_mis:nv
+кв. кв. adj:p:v_naz:nv
+кв. кв. adj:p:v_rod:nv
+кв. кв. adj:p:v_dav:nv
+кв. кв. adj:p:v_zna:rinanim:nv
+кв. кв. adj:p:v_oru:nv
+кв. кв. adj:p:v_mis:nv
+'''.trim()
+    
+    
+    @Test
+    void testAdj2() {
+        List<String> lines = ["кв. adj:nv:rinanim"]
+        assertEquals(adjNvFull2, join(expand.process_input(lines)))
+    }
+        
+    String adjNvFull3 =
+'''
+преп. преп. adj:m:v_naz:nv
+преп. преп. adj:m:v_rod:nv
+преп. преп. adj:m:v_dav:nv
+преп. преп. adj:m:v_zna:ranim:nv
+преп. преп. adj:m:v_oru:nv
+преп. преп. adj:m:v_mis:nv
+преп. преп. adj:f:v_naz:nv
+преп. преп. adj:f:v_rod:nv
+преп. преп. adj:f:v_dav:nv
+преп. преп. adj:f:v_zna:nv
+преп. преп. adj:f:v_oru:nv
+преп. преп. adj:f:v_mis:nv
+преп. преп. adj:n:v_naz:nv
+преп. преп. adj:n:v_rod:nv
+преп. преп. adj:n:v_dav:nv
+преп. преп. adj:n:v_zna:nv
+преп. преп. adj:n:v_oru:nv
+преп. преп. adj:n:v_mis:nv
+преп. преп. adj:p:v_naz:nv
+преп. преп. adj:p:v_rod:nv
+преп. преп. adj:p:v_dav:nv
+преп. преп. adj:p:v_zna:ranim:nv
+преп. преп. adj:p:v_oru:nv
+преп. преп. adj:p:v_mis:nv
+'''.trim()
+        
+        
+    @Test
+    void testAdj3() {
+        List<String> lines = ["преп. adj:nv:ranim"]
+        assertEquals(adjNvFull3, join(expand.process_input(lines)))
+    }
+    
 	
 //	def strilyatyBad =
 //	'''
