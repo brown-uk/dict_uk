@@ -101,6 +101,11 @@ class DictSorter {
 				offset += 1
 			}
 
+			if( tags.contains(":&adjp:pasv") ) {
+				tags = tags.replace('adj:', 'adj:' + (tags =~ /imperf|perf/)[0] + ":").replaceFirst(/:&adjp.*/, '')
+//				println ":: $tags"
+			}
+
 			hasGender = true
 			hasVidm = true
 		}
@@ -193,6 +198,7 @@ class DictSorter {
 
 
 	static final Pattern re_key = Pattern.compile("^[^:]+(?::rev)?(?::(?:anim|inanim|perf|imperf|coord|subord))?")
+	static final Pattern re_key_adjp = Pattern.compile("adjp:pasv:(perf|imperf)")
 	static final Pattern re_key_pron = Pattern.compile(":&pron:[^:]+")
 	static final Pattern re_key_name = Pattern.compile("^(noun:anim:[fmnp]:).*?([flp]name)")
 
@@ -205,13 +211,20 @@ class DictSorter {
 			String word = line.word
 			String lemma = line.lemma
 			String tags = line.tagStr
-			StringBuilder key = new StringBuilder(32)
+			StringBuilder key = new StringBuilder(40)
 
 			try {
-				if( tags.contains("name") ) {
+				if( tags.startsWith("noun:anim") && tags.contains("name") ) {
 					def key_rr = re_key_name.matcher(line.tagStr)
 					key_rr.find()
 					key.append(lemma).append(" ").append(key_rr.group(1)).append(key_rr.group(2))
+				}
+				else if( tags.startsWith("adj") && tags.contains("adjp:pasv") ) {
+					def key_rr = re_key_adjp.matcher(tags)
+					key_rr.find()
+//					println ":: $tags :: $lemma :: ${key_rr.group(1)}"
+					key.append(lemma).append(" ").append("adj").append(key_rr.group(1))
+//					println ":: $key"
 				}
 				else {
 					def key_rr = re_key.matcher(line.tagStr)

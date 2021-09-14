@@ -356,16 +356,18 @@ task caseGovernmentDict() {
 
         srcFiles.each{ srcFile ->
 
-            def rvLines = new File("$srcDir/$srcFile").text.split('\n').findAll{
-                (it =~ ' /(adj|n[0-4])| prep' || it.contains("+cs=")) && it.contains(' rv_')
-            }.collect{
+            def rvLines = new File("$srcDir/$srcFile")
+                .readLines('UTF-8')
+                .findAll{
+                    (it =~ ' /(adj|n[0-4])| (prep|noninfl:&predic)' || it.contains("+cs=")) && it.contains(' rv_')
+                }.collect{
 //                def out = it.contains(" +cs=") ? it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2\nнай$1 $2') \
-                def out = it.contains(" +cs=") ? it.contains("rv-най") \
+                    def out = it.contains(" +cs=") ? it.contains("rv-най") \
                                                  ? it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2\nнай$1 $2') \
                                                  : it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2') \
                                                : it.replaceFirst(/^(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2')
-                out.replace("rv_", "v_")
-            }
+                   out.replace("rv_", "v_")
+                }
 
             outLines.addAll(rvLines)
         }

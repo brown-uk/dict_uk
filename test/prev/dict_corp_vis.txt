@@ -269,6 +269,70 @@
   Адамишиною noun:anim:f:v_oru:prop:lname
   Адамишиній noun:anim:f:v_mis:prop:lname
   Адамишина noun:anim:f:v_kly:prop:lname
+аерований adj:m:v_naz:&adjp:pasv:imperf
+  аерованого adj:m:v_rod:&adjp:pasv:imperf
+  аерованому adj:m:v_dav:&adjp:pasv:imperf
+  аерованого adj:m:v_zna:ranim:&adjp:pasv:imperf
+  аерований adj:m:v_zna:rinanim:&adjp:pasv:imperf
+  аерованим adj:m:v_oru:&adjp:pasv:imperf
+  аерованім adj:m:v_mis:&adjp:pasv:imperf
+  аерованому adj:m:v_mis:&adjp:pasv:imperf
+  аерований adj:m:v_kly:&adjp:pasv:imperf
+  аерована adj:f:v_naz:&adjp:pasv:imperf
+  аерованої adj:f:v_rod:&adjp:pasv:imperf
+  аерованій adj:f:v_dav:&adjp:pasv:imperf
+  аеровану adj:f:v_zna:&adjp:pasv:imperf
+  аерованою adj:f:v_oru:&adjp:pasv:imperf
+  аерованій adj:f:v_mis:&adjp:pasv:imperf
+  аерована adj:f:v_kly:&adjp:pasv:imperf
+  аероване adj:n:v_naz:&adjp:pasv:imperf
+  аерованого adj:n:v_rod:&adjp:pasv:imperf
+  аерованому adj:n:v_dav:&adjp:pasv:imperf
+  аероване adj:n:v_zna:&adjp:pasv:imperf
+  аерованим adj:n:v_oru:&adjp:pasv:imperf
+  аерованім adj:n:v_mis:&adjp:pasv:imperf
+  аерованому adj:n:v_mis:&adjp:pasv:imperf
+  аероване adj:n:v_kly:&adjp:pasv:imperf
+  аеровані adj:p:v_naz:&adjp:pasv:imperf
+  аерованих adj:p:v_rod:&adjp:pasv:imperf
+  аерованим adj:p:v_dav:&adjp:pasv:imperf
+  аерованих adj:p:v_zna:ranim:&adjp:pasv:imperf
+  аеровані adj:p:v_zna:rinanim:&adjp:pasv:imperf
+  аерованими adj:p:v_oru:&adjp:pasv:imperf
+  аерованих adj:p:v_mis:&adjp:pasv:imperf
+  аеровані adj:p:v_kly:&adjp:pasv:imperf
+аерований adj:m:v_naz:&adjp:pasv:perf
+  аерованого adj:m:v_rod:&adjp:pasv:perf
+  аерованому adj:m:v_dav:&adjp:pasv:perf
+  аерованого adj:m:v_zna:ranim:&adjp:pasv:perf
+  аерований adj:m:v_zna:rinanim:&adjp:pasv:perf
+  аерованим adj:m:v_oru:&adjp:pasv:perf
+  аерованім adj:m:v_mis:&adjp:pasv:perf
+  аерованому adj:m:v_mis:&adjp:pasv:perf
+  аерований adj:m:v_kly:&adjp:pasv:perf
+  аерована adj:f:v_naz:&adjp:pasv:perf
+  аерованої adj:f:v_rod:&adjp:pasv:perf
+  аерованій adj:f:v_dav:&adjp:pasv:perf
+  аеровану adj:f:v_zna:&adjp:pasv:perf
+  аерованою adj:f:v_oru:&adjp:pasv:perf
+  аерованій adj:f:v_mis:&adjp:pasv:perf
+  аерована adj:f:v_kly:&adjp:pasv:perf
+  аероване adj:n:v_naz:&adjp:pasv:perf
+  аерованого adj:n:v_rod:&adjp:pasv:perf
+  аерованому adj:n:v_dav:&adjp:pasv:perf
+  аероване adj:n:v_zna:&adjp:pasv:perf
+  аерованим adj:n:v_oru:&adjp:pasv:perf
+  аерованім adj:n:v_mis:&adjp:pasv:perf
+  аерованому adj:n:v_mis:&adjp:pasv:perf
+  аероване adj:n:v_kly:&adjp:pasv:perf
+  аеровані adj:p:v_naz:&adjp:pasv:perf
+  аерованих adj:p:v_rod:&adjp:pasv:perf
+  аерованим adj:p:v_dav:&adjp:pasv:perf
+  аерованих adj:p:v_zna:ranim:&adjp:pasv:perf
+  аеровані adj:p:v_zna:rinanim:&adjp:pasv:perf
+  аерованими adj:p:v_oru:&adjp:pasv:perf
+  аерованих adj:p:v_mis:&adjp:pasv:perf
+  аеровані adj:p:v_kly:&adjp:pasv:perf
 азотистоводневий adj:m:v_naz
   азотистоводневого adj:m:v_rod
   азотистоводневому adj:m:v_dav
