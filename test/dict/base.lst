@@ -286,4 +286,5 @@
 так conj:coord
 так conj:subord
 
-аерований /adj :&adjp:pasv:imperf:perf
+аерований /adj.adv :&adjp:pasv:imperf:perf \
+ +cs=аерованіший

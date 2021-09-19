@@ -857,11 +857,13 @@ class Expand {
 
 		List<LineGroup> out_lines = []
 		for(LineGroup lineGroup2 in lineGroups) {
+            // for adjp..:imperf:perf only :perf gets compb and .adv(:compb) 
+            boolean imperPerfAdj = lineGroup2.line =~ /adj.*:imperf:perf/
 			out_lines.addAll(
 				preprocess2(lineGroup2.line)
-				.collect { String line ->
-					new LineGroup(lineGroup2, line)
-				}
+    				.collect { String line ->
+    					imperPerfAdj && line.contains(":imperf") ? new LineGroup(line) : new LineGroup(lineGroup2, line)
+    				}
 			)
 		}
 
@@ -954,8 +956,9 @@ class Expand {
 			out_lines = [line]
 		}
 		else if( lineParts.length > 2 /*&& ! line.contains("adjp")*/ && line.contains(":imperf:perf") ) {
-			def line1 = line.replace(":perf", "")
-			def line2 = line.replace(":imperf", "").replace(".cf", "").replace(".adv ", " ") // so we don't duplicate cf and adv
+            // so we don't duplicate cf and adv
+			def line1 = line.replace(":perf", "").replace(".adv ", " ")
+			def line2 = line.replace(":imperf", "").replace(".cf", "")
 			out_lines = [line1, line2]
 		}
 		else {
@@ -1038,6 +1041,10 @@ class Expand {
 				line.tagStr = line.tagStr.replace(removeTag, "")
 			}
 		}
+        if( line.tagStr.contains("&&") ) {
+            line.tagStr = line.tagStr.replace("&&", "&")
+        }
+        
 		return line
 	}
 

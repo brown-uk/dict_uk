@@ -1187,7 +1187,7 @@
 он part
 оскільки conj:subord
 ось part
-отже part:&insert|conj:subord
+отже part|conj:subord:&insert
 отож-то conj:subord
 отож-бо conj:subord
 отож part|conj:subord
@@ -1206,7 +1206,7 @@
 себто conj:subord
 сиріч conj:subord
 справді adv:&insert|part
-також adv:&insert|conj:coord
+також adv|conj:coord
 так adv:&pron:dem
 так part
 так conj:coord
