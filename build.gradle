@@ -30,10 +30,10 @@ dependencies {
     implementation group: 'org.codehaus.groovy', name: 'groovy', version: '3.0.+'
     implementation group: 'org.codehaus.groovy', name: 'groovy-swing', version: '3.0.+'
     implementation group: 'org.codehaus.groovy', name: 'groovy-cli-picocli', version: '3.0.+'
-    implementation 'info.picocli:picocli:4.3.2'
+    implementation 'info.picocli:picocli:4.6.1'
 
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
-    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.6'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.+'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.+'
@@ -271,7 +271,7 @@ task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, autogen/*, testExpa
     args "--dict", "../data/dict"
     args opts.split()
 
-    jvmArgs "-Xms4000m -Xmx5000m".split()
+    jvmArgs "-Xms4000m -Xmx5200m".split()
     // JDK8
 //    jvmArgs "-XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:FlightRecorderOptions=defaultrecording=true,dumponexit=true,dumponexitpath=dumponexit.jfr".split()
     // JDK11
