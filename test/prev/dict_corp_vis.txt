@@ -3642,7 +3642,6 @@
   постріляли verb:perf:past:p
 приключитися verb:rev:perf:inf:bad
   приключитись verb:rev:perf:inf:bad
-  приключиться verb:rev:perf:inf:bad:short
   приключись verb:rev:perf:impr:s:2:bad
   приключися verb:rev:perf:impr:s:2:bad
   приключіться verb:rev:perf:impr:p:2:bad

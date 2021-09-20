@@ -1030,7 +1030,12 @@ class Expand {
 		
 		if( Args.args.removeWithRegex && Args.args.removeWithRegex.matcher(line.tagStr) )
 			return true
-			
+		
+        if( line.tagStr.contains(":bad") ) { 
+            if( line.tagStr.contains(":inf:short") ) // || line.tagStr.contains(":subst") )
+                return true
+        }
+    
 		return false
 	}
 
@@ -1044,7 +1049,7 @@ class Expand {
         if( line.tagStr.contains("&&") ) {
             line.tagStr = line.tagStr.replace("&&", "&")
         }
-        
+
 		return line
 	}
 
