@@ -12,6 +12,5 @@ _work
 *auto-replace.txt
 .classpath
 .project
-bin
 /build_test/
 /build_
