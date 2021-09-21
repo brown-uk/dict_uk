@@ -2614,7 +2614,7 @@
 цвітник /n20.a.p
 цего noun:inanim:n:v_rod:&pron:dem  #> цього
 цеї цей adj:f:v_rod:&pron:dem
-ци conj:coord:subord        #> чи
+ци conj:coord|conj:subord               # чи
 циганів циган noun:anim:p:v_rod/v_zna
 цилюрник /n20.a.p.<
 цилюрня /n10.p2
