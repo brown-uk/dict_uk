@@ -124,7 +124,7 @@
 Кор. noun:m:nv:np:anim          # Коринтян
 кор. noun:m:nv:anim|adj:nv      # кореспондент; король; королівський
 корп. noun:m:nv                 # корпус
-кр. noun:m:nv                   # кредит; крейцар
+кр. noun:m:nv:xp1               # кредит; крейцар
 кр. noun:f:nv:xp2               # крона
 куб. adj:nv:rinanim             # кубічний
 лат. adj:nv:rinanim             # латинський
