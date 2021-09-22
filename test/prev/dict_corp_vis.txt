@@ -2917,6 +2917,16 @@
   лікаревими adj:p:v_oru
   лікаревих adj:p:v_mis
   лікареві adj:p:v_kly
+Лондон noun:inanim:m:v_naz:prop    # напр клуб
+  Лондона noun:inanim:m:v_rod:prop
+  Лондонові noun:inanim:m:v_dav:prop
+  Лондону noun:inanim:m:v_dav:prop
+  Лондон noun:inanim:m:v_zna:prop
+  Лондоном noun:inanim:m:v_oru:prop
+  Лондоні noun:inanim:m:v_mis:prop
+  Лондонові noun:inanim:m:v_mis:prop
+  Лондону noun:inanim:m:v_mis:prop
+  Лондоне noun:inanim:m:v_kly:prop
 Лондон noun:inanim:m:v_naz:prop:geo
   Лондона noun:inanim:m:v_rod:prop:geo
   Лондону noun:inanim:m:v_rod:prop:geo:ua_2019

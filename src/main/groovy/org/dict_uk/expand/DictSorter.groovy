@@ -110,25 +110,35 @@ class DictSorter {
 			hasVidm = true
 		}
 		else if( tags.startsWith("noun") ) {
-			if( tags.startsWith("noun:anim") && tags.contains("name") ) {
-				tags = re_person_name_key_tag.matcher(tags).replaceAll('$1$3$2')
-				// move feminine last name to its own lemma
-				// to put Адамишин :f: after Адамишини :p)
-				if ( (tags.contains("lname") || tags.contains("pname"))
-						&& tags.contains(":f:") ) {
-						// && ! tags.contains(":nv") {
-					tags = tags.replace(":f:", ":90:")
-				}
+			if( tags.startsWith("noun:anim") ) {
+                if( tags.contains("name") ) {
+                    tags = re_person_name_key_tag.matcher(tags).replaceAll('$1$3$2')
+                    // move feminine last name to its own lemma
+                    // to put Адамишин :f: after Адамишини :p)
+                    if ( (tags.contains("lname") || tags.contains("pname"))
+                            && tags.contains(":f:") ) {
+                        // && ! tags.contains(":nv") {
+                        tags = tags.replace(":f:", ":90:")
+                    }
+                }
 			}
+            else {
+                if( tags.contains(":geo") ) {
+                    tags = tags.replace(":geo", "").replace("inanim", "inanim:geo")
+                }
+            }
 
 			// sort nv and non-nv separately (e.g. авто)
 			if( tags.contains(":nv") ) {
 				tags = tags.replace(":nv", "").replace("anim", "anim:nv")
 			}
 
-			if( tags.contains(":np") || tags.contains(":ns") ) {
-				tags = tags.replace(":np", "").replace(":ns", "")
+			if( tags.contains(":np") ) {
+				tags = tags.replace(":np", "")
 			}
+            if( tags.contains(":ns") ) {
+                tags = tags.replace(":ns", "")
+            }
 
 			hasGender = true
 			hasVidm = true
@@ -183,7 +193,7 @@ class DictSorter {
 		if( tags.contains(":&pron:") ) {
 			tags = re_pron_sub.matcher(tags).replaceAll('$1$3$2')
 		}
-
+        
 		return tags
 	}
 
@@ -201,7 +211,8 @@ class DictSorter {
 	static final Pattern re_key_adjp = Pattern.compile("adjp:pasv:(perf|imperf)")
 	static final Pattern re_key_pron = Pattern.compile(":&pron:[^:]+")
 	static final Pattern re_key_name = Pattern.compile("^(noun:anim:[fmnp]:).*?([flp]name)")
-
+    static final Pattern re_key_geo = Pattern.compile("^(noun:inanim:).*?(geo)")
+    
 	@CompileStatic
 	List<String> indent_lines(List<DicEntry> lines) {
 		List<String> out_lines = []
@@ -219,6 +230,11 @@ class DictSorter {
 					key_rr.find()
 					key.append(lemma).append(" ").append(key_rr.group(1)).append(key_rr.group(2))
 				}
+                if( tags.startsWith("noun:inanim") && tags.contains("geo") ) {
+                    def key_rr = re_key_geo.matcher(line.tagStr)
+                    key_rr.find()
+                    key.append(lemma).append(" ").append(key_rr.group(1)).append(key_rr.group(2))
+                }
 				else if( tags.startsWith("adj") && tags.contains("adjp:pasv") ) {
 					def key_rr = re_key_adjp.matcher(tags)
 					key_rr.find()
