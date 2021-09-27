@@ -1203,9 +1203,11 @@ class Expand {
 //			forms += expand("щояк" + word, "/adj$extraFlags :comps" + idx + extra_tags)
 			
 			if( nayForms ) {
-				forms += createSimilar(nayForms, "що")
-				forms += createSimilar(nayForms, "як")
-				forms += createSimilar(nayForms, "щояк")
+                if( ! word.startsWith("й") ) {
+    				forms += createSimilar(nayForms, "що")
+    				forms += createSimilar(nayForms, "як")
+    				forms += createSimilar(nayForms, "щояк")
+                }
 			}
 			
 //			forms = forms.collect { DicEntry entry -> 
@@ -1277,10 +1279,11 @@ class Expand {
 		}
 
 		newExtraTags = newExtraTags.replace(':&predic', '')
-		forms += composeComparAdv("що" + word, "adv:comps" + newExtraTags)
-		forms += composeComparAdv("як" + word, "adv:comps" + newExtraTags)
-		
-		//			if( word =~ /[^тд]ше$/ ) {
+        if( ! word.startsWith("й") ) {
+            forms += composeComparAdv("що" + word, "adv:comps" + newExtraTags)
+            forms += composeComparAdv("як" + word, "adv:comps" + newExtraTags)
+        }
+        //			if( word =~ /[^тд]ше$/ ) {
 		if( origWord.endsWith('ше') ) {
 			String advIsh = origWord.replaceFirst(/ше$/, 'ш')
 			forms += expandSubposAdv(advIsh, extraTags)

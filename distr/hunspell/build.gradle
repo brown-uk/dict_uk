@@ -117,7 +117,7 @@ task getSpellWords (type: Exec) {
     inputs.files "${projectDir}/../../out/dict_corp_lt.txt"
     outputs.files "${projectDir}/build/words_spell.txt"
 
-    def cmd = "grep -vE \"noun:inanim:.:v_kly|(:inf|:3).*:short|:2:long|advp.*long|adv.*:comp.*:short|adj.*:long|:(bad|slang|alt|subst|arch|rare)|[.'] \""
+    def cmd = "grep -vE \"noun:inanim:.:v_kly|(:inf|:3).*:short|:2:long|advp.*long|adv.*:short|adj.*:long|:(bad|slang|alt|subst|arch|rare)|[.'] \""
     cmd += " ${projectDir}/../../out/dict_corp_lt.txt | cut -d ' ' -f 1 | sort -u > ${projectDir}/build/words_spell.txt"
 
     commandLine "sh", "-c", "${cmd}"

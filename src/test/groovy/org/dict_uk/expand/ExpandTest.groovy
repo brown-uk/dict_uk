@@ -379,12 +379,26 @@ def multilineFull =
 '''.trim()
 
 			
-			@Test
-			void testMultilineWithExtraTag2() {
-				def lines = ["вагомо adv \\", " +cs=вагоміше :coll"]
-				assertEquals(multilineFull21, join(expand.process_input(lines)))
-			}
-	
+	@Test
+	void testMultilineWithExtraTag2() {
+		def lines = ["вагомо adv \\", " +cs=вагоміше :coll"]
+		assertEquals(multilineFull21, join(expand.process_input(lines)))
+	}
+
+            
+def multilineFull22 =
+'''
+ймовірніше ймовірніше adv:compc
+ймовірніш ймовірніше adv:compc:short
+ймовірно ймовірно adv:compb
+'''.trim()
+    
+    @Test
+    void testMultilineWithException() {
+        def lines = ["ймовірно adv \\", " +cs=ймовірніше"]
+        assertEquals(multilineFull22, join(expand.process_input(lines)))
+    }
+
 	
 def taggedIn = 
 '''
