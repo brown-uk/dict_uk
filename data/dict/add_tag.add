@@ -13,7 +13,7 @@
 вважай verb:&insert
 вважайте verb:&insert
 #видати verb:&insert
-виходить verb:xp1:&insert
+виходить verb:imperf:&insert
 виявляється verb:&insert
 віриш verb:&insert
 гляди verb:&insert
@@ -55,7 +55,7 @@
 пас noun:&predic
 первина noun:&predic
 переказують verb:&insert
-повідають verb:xp1:&insert
+повідають verb:imperf:&insert
 повір verb:&insert
 повіриш verb:&insert
 повірте verb:&insert

@@ -1283,10 +1283,10 @@
 оддирати /v2.cf.advp :imperf
 оддих /n20.p
 оддихання /n2n.p1
-оддихати /v2 :perf:xp2                         # відди́хати
-оддихати /v2.cf.advp :imperf:xp1               # віддиха́ти
-оддихатися /vr2 :perf:xp2                      # відди́хатися
-оддихатися /vr2.cf.advp :imperf:xp1            # віддиха́тися
+оддихати /v2 :perf                         # :xp2 відди́хати
+оддихати /v2.cf.advp :imperf               # :xp1 віддиха́ти
+оддихатися /vr2 :perf                      # :xp2 відди́хатися
+оддихатися /vr2.cf.advp :imperf            # :xp1 віддиха́тися
 оддихнути /v1 :perf
 одділ /n20
 одділений /adj :&adjp:pasv:perf                # :past
@@ -1374,8 +1374,8 @@
 од'їдати /v2.cf.advp :imperf
 од'їжджати /v2.cf.advp :imperf
 од'їзд /n20
-од'їздити /v1 :perf:xp2                        # од'ї́здити
-од'їздити /v1.cf :imperf:xp1                   # од'їзди́ти
+од'їздити /v1 :perf                        # :xp2 од'ї́здити
+од'їздити /v1.cf :imperf                   # :xp1 од'їзди́ти
 од'їсти /v4.is3 :perf
 од'їстися /vr4 :perf
 од'їхати /v4 :perf
@@ -1419,8 +1419,8 @@
 одкоркувати /v1.is0 :perf
 одкотити /v1.it1.is0 :perf
 одкотитися /vr1.it1 :perf
-одкочувати /v1 :perf:xp2                       # відкочува́ти
-одкочувати /v1.cf.advp.isNo :imperf:xp1        # відко́чувати
+одкочувати /v1 :perf                       # :xp2 відкочува́ти
+одкочувати /v1.cf.advp.isNo :imperf        # :xp1 відко́чувати
 одкраювати /v1.cf.advp.isNo :imperf
 одкраяний /adj :&adjp:pasv:perf                # :past
 одкраяти /v1.isNo :perf
@@ -1461,8 +1461,8 @@
 одлитий /adj :&adjp:pasv:perf                  # :past
 одліпити /v1.it1.is0 :perf
 одліплений /adj :&adjp:pasv:perf               # :past
-одлітати /v2.shrt :perf:xp2                    # закінчити літати
-одлітати /v2.cf.advp :imperf:xp1               # летіти геть; зникати; відскакувати
+одлітати /v2.shrt :perf                    # :xp2 закінчити літати
+одлітати /v2.cf.advp :imperf               # :xp1 летіти геть; зникати; відскакувати
 одлічувати /v1.cf.advp.isNo :imperf
 одломити /v1.is0 :perf
 одломлювати /v1.cf.advp :imperf
@@ -1572,10 +1572,10 @@
 одпарювати /v1.cf.advp.isNo :imperf
 одпасти /v4 :perf:xp2                          # од: па́дати
 одпасти /v2 :perf:xp1                          # пасучи, вгодувати худобу
-одпасувати /v1.cf :imperf:xp1                  # одпа́сувати
-одпасувати /v1.is0 :perf:xp2                   # одпасува́ти
-одпаювати /v1.is0 :perf:xp2                    # одпаюва́ти
-одпаювати /v1.cf.advp.isNo :imperf:xp1         # одпа́ювати
+одпасувати /v1.cf :imperf                  # :xp1 одпа́сувати
+одпасувати /v1.is0 :perf                   # :xp2 одпасува́ти
+одпаювати /v1.is0 :perf                    # :xp2 одпаюва́ти
+одпаювати /v1.cf.advp.isNo :imperf         # :xp1 одпа́ювати
 одпекуватися /vr1.cf.advp :imperf
 одперти /v1.isTo :perf
 одпертий /adj :&adjp:pasv:perf                 # :past
@@ -1718,10 +1718,10 @@
 одсидітися /vr1.it0 :perf
 одсилання /n2n.p1
 одсилати /v2.cf.advp.isNo :imperf
-одсипати /v1.isNo :perf:xp2                    # одси́пати
-одсипати /v2.cf.advp :imperf:xp1               # одсипа́ти
-одсипатися /vr1 :perf:xp2                      # одси́патися
-одсипатися /vr2.cf.advp :imperf:xp1            # одсипа́тися xv2
+одсипати /v1.isNo :perf                    # :xp2 одси́пати
+одсипати /v2.cf.advp :imperf               # :xp1 одсипа́ти
+одсипатися /vr1 :perf                      # :xp2 одси́патися
+одсипатися /vr2.cf.advp :imperf            # :xp1 одсипа́тися xv2
 одсихати /v2.cf.advp :imperf
 одсів /n20
 одсік /n20.p.zi
@@ -1800,8 +1800,8 @@
 одтепер adv:&pron:dem
 одтерпіти /v1 :perf
 одтерти /v1.isTo :perf
-одтикати /v1.isNo :perf:xp2                    # одти́кати
-одтикати /v2.cf.advp :imperf:xp1               # одтика́ти
+одтикати /v1.isNo :perf                    # :xp2 одти́кати
+одтикати /v2.cf.advp :imperf               # :xp1 одтика́ти
 одтин /n20
 одтинати /v2.cf.advp :imperf
 одтирання /n2n
@@ -1843,8 +1843,8 @@
 одхідливий /adj
 одхлинути /v1 :perf                            # xv2
 одходжувати /v1.cf.advp.isNo :imperf
-одходити /v1.it1 :perf:xp2                     # одходи́ти
-одходити /v1.it0.cf.advp :imperf:xp1           # одхо́дити
+одходити /v1.it1 :perf                     # :xp2 одходи́ти
+одходити /v1.it0.cf.advp :imperf           # :xp1 одхо́дити
 одхопити /v1.it1.is0 :perf
 одхреститися /vr1.it1 :perf
 одхрещування /n2n
