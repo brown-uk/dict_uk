@@ -549,6 +549,8 @@
 постелею постіль noun:inanim:f:v_oru
 серць серце noun:p:v_rod
 
+братця браття noun:anim:p:v_naz/v_kly:ns
+
 людини людина noun:p:v_naz/v_zna:anim
 боголюдини боголюдина noun:p:v_naz/v_zna:anim
 дитини дитина noun:p:v_naz/v_zna:anim
@@ -629,8 +631,6 @@
 ушима вухо noun:p:v_oru
 ушах вухо noun:p:v_mis
 
-стіп стопа noun:p:v_rod:xp1
-
 # хабар /n20.a.ke.p4.@ :ua_1992
 # хабар /n24.a.ke.p.@ :ua_2019
 хабар хабар noun:inanim:m:v_naz/v_zna
@@ -672,11 +672,11 @@
 
 панове пан noun:p:v_kly:anim
 
-чудеса чудо noun:p:v_naz/v_zna:xp2
-чудес чудо noun:p:v_rod:xp2
-чудесам чудо noun:p:v_dav:xp2
-чудесами чудо noun:p:v_oru:xp2
-чудесах чудо noun:p:v_mis:xp2
+чудеса чудо noun:p:v_naz/v_zna
+чудес чудо noun:p:v_rod
+чудесам чудо noun:p:v_dav
+чудесами чудо noun:p:v_oru
+чудесах чудо noun:p:v_mis
 
 те-се те-се noun:inanim:n:v_naz/v_zna:&pron:dem
 
