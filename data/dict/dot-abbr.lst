@@ -240,9 +240,9 @@
 слов. adj:nv:rinanim            # слов'янський
 #Сол. noun                      # (послання до) Солунян
 соц. adj:nv:rinanim             # соціальний
-співавт. noun:m:nv:anim:xp1         # співавтор
-співавт. noun:f:nv:anim:xp2         # співавторка
-співавт. noun:n:nv:np:xp3       # співавторство
+співавт. noun:m:nv:anim         # співавтор
+співавт. noun:f:nv:anim         # співавторка
+співавт. noun:n:nv:np           # співавторство
 спр. noun:f:nv:np               # справа
 СТ. noun:f:nv:xp1               # стаття, станція
 СТ. noun:n:nv:xp2               # століття
@@ -264,9 +264,9 @@
 тех. adj:nv:rinanim             # технічний
 техн. adj:nv:rinanim            # технічний
 тиж. noun:f:nv                  # тиждень, тижні
-тис. numr:f/p:nv                  # тисяча
-тов. noun:m:nv:anim:xp1         # товариш
-тов. noun:f:nv:anim:xp2         # товаришка
+тис. numr:f/p:nv                # тисяча
+тов. noun:m:nv:anim             # товариш
+тов. noun:f:nv:anim             # товаришка
 тр. noun:m:nv:xp1               # тролейбус
 тр. noun:f:nv:xp2               # траса; третина
 тр. adj:nv:rinanim              # трудовий
