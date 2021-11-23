@@ -1,4 +1,4 @@
-﻿ніде,1:place:quantif,:xp1
+ніде,1:place:quantif,:xp1
 ніде,1:place:quantif,:xp2
 антиізраїльськи,1:manner,
 антиросійськи,1:manner,
@@ -532,9 +532,8 @@
 аніде,1:place:quantif,
 анізащо,1:cause,
 аніколи,1:time:quantif,
-нізвідкіля,1:orient,
-нізвідкіль,1:orient,
-нізвідкіль,1:orient,
+нізвідкіля,1:orient,:neg
+нізвідкіль,1:orient,:emph
 бозна-де,1:place,
 бозна-як,1:manner,
 бозна-коли,1:time:quantif,

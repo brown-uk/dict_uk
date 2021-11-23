@@ -657,6 +657,20 @@ void testStryvaty() {
         assertEquals(adjNvFull3, join(expand.process_input(lines)))
     }
     
+def expectedNvNumr = """
+півчвертаста півчвертаста numr:p:v_naz:nv:rare
+півчвертаста півчвертаста numr:p:v_rod:nv:rare
+півчвертаста півчвертаста numr:p:v_dav:nv:rare
+півчвертаста півчвертаста numr:p:v_zna:nv:rare
+півчвертаста півчвертаста numr:p:v_oru:nv:rare
+півчвертаста півчвертаста numr:p:v_mis:nv:rare
+півчвертаста півчвертаста numr:p:v_kly:nv:rare
+""".trim()
+    
+    @Test
+    void testNvNumr() {
+        assertEquals(expectedNvNumr, join(expand.process_input(Arrays.asList("півчвертаста numr:p:nv:rare"))))
+    }
 	
 //	def strilyatyBad =
 //	'''

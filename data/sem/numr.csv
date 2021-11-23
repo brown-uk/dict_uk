@@ -1,4 +1,4 @@
-﻿аніскільки,1:quantif
+аніскільки,1:quantif
 багато,1:quantif
 бозна-скільки,1:quantif
 вісім,1:abst:quantity:absol
@@ -7,8 +7,6 @@
 вісімнадцять,1:abst:quantity:absol
 вісімсот,1:abst:quantity:absol
 восьмеро,1:abst:quantity:absol
-восьмиста,1:abst:quantity:absol
-восьмистами,1:abst:quantity:absol
 два,1:abst:quantity:absol
 двадцятеро,1:abst:quantity:absol
 двадцять,1:abst:quantity:absol
@@ -33,7 +31,7 @@
 дев'ять,1:abst:quantity:absol
 декілька,1:quantif
 декілько,1:quantif
-десятер,1:abst:quantity:absol
+десятеро,1:abst:quantity:absol
 десять,1:abst:quantity:absol
 'дин,1:abst:quantity:absol
 єден,1:abst:quantity:absol
@@ -85,7 +83,6 @@
 п'ятдесят,1:abst:quantity:absol
 п'ятдесять,1:abst:quantity:absol
 п'ятеро,1:abst:quantity:absol
-п'ятиста,1:abst:quantity:absol
 п'ятірко,1:abst:quantity:absol
 п'ятнадцятеро,1:abst:quantity:absol
 п'ятнадцять,1:abst:quantity:absol
@@ -93,7 +90,6 @@
 п'ять,1:abst:quantity:absol
 семерко,1:abst:quantity:absol
 семеро,1:abst:quantity:absol
-семиста,1:abst:quantity:absol
 сім,1:abst:quantity:absol
 сімдесят,1:abst:quantity:absol
 сімдесять,1:abst:quantity:absol
@@ -125,7 +121,6 @@
 трлн.,1:abst:quantity
 троє,1:abst:quantity:absol
 тройко,1:abst:quantity:absol
-трьохста,1:abst:quantity:absol
 хтозна-скільки,1:quantif
 четверо,1:abst:quantity:absol
 четвірко,1:abst:quantity:absol
@@ -134,9 +129,7 @@
 чотириста,1:abst:quantity:absol
 чотирнадцятеро,1:abst:quantity:absol
 чотирнадцять,1:abst:quantity:absol
-чотирьохста,1:abst:quantity:absol
 шестеро,1:abst:quantity:absol
-шестиста,1:abst:quantity:absol
 шістдесят,1:abst:quantity:absol
 шістнадцятеро,1:abst:quantity:absol
 шістнадцять,1:abst:quantity:absol

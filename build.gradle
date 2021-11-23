@@ -235,6 +235,18 @@ task checkReplacements {
   }
 }
 
+task checkSemtags(type: JavaExec){ 
+    classpath = sourceSets.test.runtimeClasspath
+    main = "org.dict_uk.check.CheckSemtags"
+
+    workingDir = projectDir
+
+//    def opts = " --indent --mfl --stats --wordlist"
+//    args "--aff", "../data/affix"
+//    args "--dict", "dict"
+//    args opts.split()
+  }
+  
 
 task showExpandCommand {
   doLast {

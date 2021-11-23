@@ -1,0 +1,43 @@
+arch.lst:себ-то conj:subord
+twisters.lst:накінець-то adv                             #> нарешті
+base-abbr.lst:ф-но noun:n:nv                              # фортепіано
+pronouns.lst:стільки-то adv:&pron:dem
+pronouns.lst:аби-но conj:subord
+pronouns.lst:все-таки conj:coord:v-u
+pronouns.lst:усе-таки conj:coord:v-u
+pronouns.lst:все-таки part:v-u
+pronouns.lst:усе-таки part:v-u
+pronouns.lst:геть-то adv
+pronouns.lst:нехай-но part|conj:subord
+pronouns.lst:хай-но part|conj:subord
+pronouns.lst:отож-то conj:subord
+pronouns.lst:отож-бо conj:subord
+pronouns.lst:там-то adv:&pron:dem
+pronouns.lst:тим-то conj:subord
+pronouns.lst:тільки-но adv|part|conj:subord
+pronouns.lst:як-от part
+pronouns.lst:так-таки part
+pronouns.lst:так-то part|adv
+pronouns.lst:то-то part
+pronouns.lst:як-таки part
+base.lst:аби-то adv
+base.lst:взагалі-то adv:&insert:v-u
+base.lst:десь-то adv
+base.lst:досить-таки adv
+base.lst:єй-бо intj
+base.lst:загалом-то adv
+base.lst:зараз-таки adv
+base.lst:знов-таки adv
+base.lst:знову-таки adv
+base.lst:їй-бо intj:&insert
+base.lst:колись-то adv:&pron:ind
+base.lst:коли-то adv
+base.lst:мабуть-таки adv:&insert
+base.lst:ну-бо intj
+base.lst:от-от adv
+base.lst:ото-то intj
+base.lst:от-от-от adv
+base.lst:просто-таки adv
+base.lst:тому-то тому-то conj:subord
+base.lst:узагалі-то adv:&insert:v-u
+base.lst:якось-то adv:&pron:ind

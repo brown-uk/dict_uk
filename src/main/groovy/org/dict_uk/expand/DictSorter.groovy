@@ -222,54 +222,10 @@ class DictSorter {
 			String word = line.word
 			String lemma = line.lemma
 			String tags = line.tagStr
-			StringBuilder key = new StringBuilder(40)
 
-			try {
-				if( tags.startsWith("noun:anim") && tags.contains("name") ) {
-					def key_rr = re_key_name.matcher(line.tagStr)
-					key_rr.find()
-					key.append(lemma).append(" ").append(key_rr.group(1)).append(key_rr.group(2))
-				}
-                if( tags.startsWith("noun:inanim") && tags.contains("geo") ) {
-                    def key_rr = re_key_geo.matcher(line.tagStr)
-                    key_rr.find()
-                    key.append(lemma).append(" ").append(key_rr.group(1)).append(key_rr.group(2))
-                }
-				else if( tags.startsWith("adj") && tags.contains("adjp:pasv") ) {
-					def key_rr = re_key_adjp.matcher(tags)
-					key_rr.find()
-//					println ":: $tags :: $lemma :: ${key_rr.group(1)}"
-					key.append(lemma).append(" ").append("adj").append(key_rr.group(1))
-//					println ":: $key"
-				}
-				else {
-					def key_rr = re_key.matcher(line.tagStr)
-					key_rr.find()
-					key.append(lemma).append(" ").append(key_rr.group(0))
-					
-					if( tags.contains(":&pron:") ) {
-					    def pron_rr = re_key_pron.matcher(line.tagStr)
-					    pron_rr.find()
-					    key.append(pron_rr.group(0))
-					}
-					
-				}
+            String keyStr = getLineKey(lemma, tags, line)
 
-				int x_idx = line.tagStr.indexOf(":x")
-				if( x_idx != -1 ) {
-					key.append(line.tagStr[x_idx..<x_idx+4])
-				}
-			}
-			catch(Exception e) {
-				throw new RuntimeException("Failed to find tag key in " + line, e)
-			}
-
-			if( line.tagStr.contains(":nv") ) {
-				key.append(":nv")
-			}
-
-			String keyStr = key.toString()
-			String outLine
+            String outLine
 			if( keyStr != prev_key && ! derived_plural(keyStr, prev_key) ) {
 				prev_key = keyStr
 				outLine = "$word $tags"
@@ -286,6 +242,58 @@ class DictSorter {
 
 		return out_lines
 	}
+
+    @CompileStatic
+    public String getLineKey(String lemma, String tags, DicEntry line) {
+        StringBuilder key = new StringBuilder(40)
+
+        try {
+            if( tags.startsWith("noun:anim") && tags.contains("name") ) {
+                def key_rr = re_key_name.matcher(tags)
+                key_rr.find()
+                key.append(lemma).append(" ").append(key_rr.group(1)).append(key_rr.group(2))
+            }
+            else if( tags.startsWith("noun:inanim") && tags.contains("geo") ) {
+                def key_rr = re_key_geo.matcher(tags)
+                key_rr.find()
+                key.append(lemma).append(" ").append(key_rr.group(1)).append(key_rr.group(2))
+            }
+            else if( tags.startsWith("adj") && tags.contains("adjp:pasv") ) {
+                def key_rr = re_key_adjp.matcher(tags)
+                key_rr.find()
+                //					println ":: $tags :: $lemma :: ${key_rr.group(1)}"
+                key.append(lemma).append(" ").append("adj:").append(key_rr.group(1))
+                //					println ":: $key"
+            }
+            else {
+                def key_rr = re_key.matcher(tags)
+                key_rr.find()
+                key.append(lemma).append(" ").append(key_rr.group(0))
+
+                if( tags.contains(":&pron:") ) {
+                    def pron_rr = re_key_pron.matcher(tags)
+                    pron_rr.find()
+                    key.append(pron_rr.group(0))
+                }
+
+            }
+
+            int x_idx = tags.indexOf(":x")
+            if( x_idx != -1 ) {
+                key.append(tags[x_idx..<x_idx+4])
+            }
+        }
+        catch(Exception e) {
+            throw new RuntimeException("Failed to find tag key in $line", e)
+        }
+
+        if( tags.contains(":nv") ) {
+            key.append(":nv")
+        }
+
+        String keyStr = key.toString()
+        return keyStr
+    }
 
 	@CompileStatic
 	String line_key(DicEntry entry) {
