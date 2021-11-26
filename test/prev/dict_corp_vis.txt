@@ -450,6 +450,20 @@
   акулами-молотами noun:anim:p:v_oru
   акулах-молотах noun:anim:p:v_mis
   акули-молоти noun:anim:p:v_kly
+АПБ noun:inanim:m:v_naz:nv    # агропромисловий банк
+  АПБ noun:inanim:m:v_rod:nv
+  АПБ noun:inanim:m:v_dav:nv
+  АПБ noun:inanim:m:v_zna:nv
+  АПБ noun:inanim:m:v_oru:nv
+  АПБ noun:inanim:m:v_mis:nv
+  АПБ noun:inanim:m:v_kly:nv
+АПБ noun:inanim:f:v_naz:nv:prop    # Академія пожежної безпеки
+  АПБ noun:inanim:f:v_rod:nv:prop
+  АПБ noun:inanim:f:v_dav:nv:prop
+  АПБ noun:inanim:f:v_zna:nv:prop
+  АПБ noun:inanim:f:v_oru:nv:prop
+  АПБ noun:inanim:f:v_mis:nv:prop
+  АПБ noun:inanim:f:v_kly:nv:prop
 Архангельськ noun:inanim:m:v_naz:prop:geo    # місто
   Архангельська noun:inanim:m:v_rod:prop:geo
   Архангельську noun:inanim:m:v_dav:prop:geo
@@ -1116,6 +1130,20 @@
   вбоїськами noun:inanim:p:v_oru
   вбоїськах noun:inanim:p:v_mis
   вбоїська noun:inanim:p:v_kly
+ВВ noun:inanim:p:v_naz:nv:ns    # внутрішні війська
+  ВВ noun:inanim:p:v_rod:nv:ns
+  ВВ noun:inanim:p:v_dav:nv:ns
+  ВВ noun:inanim:p:v_zna:nv:ns
+  ВВ noun:inanim:p:v_oru:nv:ns
+  ВВ noun:inanim:p:v_mis:nv:ns
+  ВВ noun:inanim:p:v_kly:nv:ns
+ВВ noun:inanim:p:v_naz:nv:ns:prop    # Воплі Відоплясова
+  ВВ noun:inanim:p:v_rod:nv:ns:prop
+  ВВ noun:inanim:p:v_dav:nv:ns:prop
+  ВВ noun:inanim:p:v_zna:nv:ns:prop
+  ВВ noun:inanim:p:v_oru:nv:ns:prop
+  ВВ noun:inanim:p:v_mis:nv:ns:prop
+  ВВ noun:inanim:p:v_kly:nv:ns:prop
 ведучий adj:m:v_naz
   ведучого adj:m:v_rod
   ведучому adj:m:v_dav
@@ -2662,6 +2690,9 @@
   затаєних adj:p:v_mis:&adjp:pasv:perf:compb
   затаєні adj:p:v_kly:&adjp:pasv:perf:compb
 затаєно adv:compb
+ймовірніше adv:compc
+  ймовірніш adv:compc:short
+ймовірно adv:compb:&insert
 його adj:m:v_naz:nv
   його adj:m:v_rod:nv
   його adj:m:v_dav:nv
@@ -3714,6 +3745,43 @@
   проєктами noun:inanim:p:v_oru:alt
   проєктах noun:inanim:p:v_mis:alt
   проєкти noun:inanim:p:v_kly:alt
+протей noun:anim:m:v_naz    # земноводна тварина
+  протея noun:anim:m:v_rod
+  протеєві noun:anim:m:v_dav
+  протею noun:anim:m:v_dav
+  протея noun:anim:m:v_zna
+  протеєм noun:anim:m:v_oru
+  протеєві noun:anim:m:v_mis
+  протеї noun:anim:m:v_mis
+  протею noun:anim:m:v_mis
+  протею noun:anim:m:v_kly
+  протеї noun:anim:p:v_naz
+  протеїв noun:anim:p:v_rod
+  протеям noun:anim:p:v_dav
+  протеї noun:anim:p:v_zna
+  протеїв noun:anim:p:v_zna
+  протеями noun:anim:p:v_oru
+  протеях noun:anim:p:v_mis
+  протеї noun:anim:p:v_kly
+протей noun:unanim:m:v_naz    # бактерія
+  протея noun:unanim:m:v_rod
+  протеєві noun:unanim:m:v_dav
+  протею noun:unanim:m:v_dav
+  протей noun:unanim:m:v_zna
+  протея noun:unanim:m:v_zna
+  протеєм noun:unanim:m:v_oru
+  протеєві noun:unanim:m:v_mis
+  протеї noun:unanim:m:v_mis
+  протею noun:unanim:m:v_mis
+  протею noun:unanim:m:v_kly
+  протеї noun:unanim:p:v_naz
+  протеїв noun:unanim:p:v_rod
+  протеям noun:unanim:p:v_dav
+  протеї noun:unanim:p:v_zna
+  протеїв noun:unanim:p:v_zna
+  протеями noun:unanim:p:v_oru
+  протеях noun:unanim:p:v_mis
+  протеї noun:unanim:p:v_kly
 прощавати verb:imperf:inf
   прощавать verb:imperf:inf:short
   прощавай verb:imperf:impr:s:2

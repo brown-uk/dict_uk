@@ -123,8 +123,14 @@ class DictSorter {
                 }
 			}
             else {
-                if( tags.contains(":geo") ) {
-                    tags = tags.replace(":geo", "").replace("inanim", "inanim:geo")
+                if( tags.contains(":prop") ) {
+                    tags = tags.replace(":prop", "").replace("inanim", "inanim:prop")
+                    if( tags.contains(":geo") ) {
+                        tags = tags.replace(":geo", "").replace("prop", "prop:geo")
+                    }
+//                    if( tags.contains(":f:") ) {
+//                        tags = tags.replace(":f:", ":90:")
+//                    }
                 }
             }
 
@@ -211,7 +217,7 @@ class DictSorter {
 	static final Pattern re_key_adjp = Pattern.compile("adjp:pasv:(perf|imperf)")
 	static final Pattern re_key_pron = Pattern.compile(":&pron:[^:]+")
 	static final Pattern re_key_name = Pattern.compile("^(noun:anim:[fmnp]:).*?([flp]name)")
-    static final Pattern re_key_geo = Pattern.compile("^(noun:inanim:).*?(geo)")
+    static final Pattern re_key_prop = Pattern.compile("^(noun:inanim:).*?(prop(:geo)?)")
     
 	@CompileStatic
 	List<String> indent_lines(List<DicEntry> lines) {
@@ -253,8 +259,8 @@ class DictSorter {
                 key_rr.find()
                 key.append(lemma).append(" ").append(key_rr.group(1)).append(key_rr.group(2))
             }
-            else if( tags.startsWith("noun:inanim") && tags.contains("geo") ) {
-                def key_rr = re_key_geo.matcher(tags)
+            else if( tags.startsWith("noun:inanim") && tags.contains("prop") ) {
+                def key_rr = re_key_prop.matcher(tags)
                 key_rr.find()
                 key.append(lemma).append(" ").append(key_rr.group(1)).append(key_rr.group(2))
             }

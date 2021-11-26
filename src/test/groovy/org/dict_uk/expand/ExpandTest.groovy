@@ -528,6 +528,37 @@ def taggedOut =
 	}
 
 
+    def strilyatyFullIndentedWithProp =
+    '''
+АПБ noun:inanim:f:v_naz:nv:abbr:prop    # Академія пожежної безпеки
+  АПБ noun:inanim:f:v_rod:nv:abbr:prop
+  АПБ noun:inanim:f:v_dav:nv:abbr:prop
+  АПБ noun:inanim:f:v_zna:nv:abbr:prop
+  АПБ noun:inanim:f:v_oru:nv:abbr:prop
+  АПБ noun:inanim:f:v_mis:nv:abbr:prop
+  АПБ noun:inanim:f:v_kly:nv:abbr:prop
+АПБ noun:inanim:m:v_naz:nv:abbr    # агропромисловий банк
+  АПБ noun:inanim:m:v_rod:nv:abbr
+  АПБ noun:inanim:m:v_dav:nv:abbr
+  АПБ noun:inanim:m:v_zna:nv:abbr
+  АПБ noun:inanim:m:v_oru:nv:abbr
+  АПБ noun:inanim:m:v_mis:nv:abbr
+  АПБ noun:inanim:m:v_kly:nv:abbr
+'''.trim()
+
+
+    @Disabled
+    @Test
+    void testIndentedWithProp() {
+        def lines = [
+'''
+АПБ noun:f:nv:np:prop:abbr:xp2                       # Академія пожежної безпеки
+АПБ noun:m:nv:np:abbr:xp1                        # агропромисловий банк
+'''.trim()
+                ]
+            assertEquals(strilyatyFullIndentedWithProp, new DictSorter().indent_lines(expand.process_input(lines)).join("\n"))
+        }
+    
 
 	String stryvatyFull =
 '''
