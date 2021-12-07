@@ -123,8 +123,17 @@ class BaseTags {
 		else if( affixFlag[0..<2] == "n3" ) {
 			tag = ":f:v_naz/v_zna"
 		}
-		else
-			assert "Unkown base for " + word + " " + allAffixFlags
+        else if( affixFlag.startsWith("n_pron") ) {
+            if( word.startsWith("що") || word.endsWith("що") ) {
+                tag = ":n:v_naz" + v_zna_for_inanim + ":inanim"
+            }
+            else {
+                tag = ":m:v_naz" + v_zna_for_inanim
+            }
+        }
+		else if( ! affixFlag.startsWith("patr") ) {
+			assert false, "Unkown base for $word $allAffixFlags"
+		}
 
 		return tag
 	}

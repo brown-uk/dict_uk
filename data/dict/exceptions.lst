@@ -23,15 +23,33 @@
 якорях якір noun:p:v_mis
 
 # 0 - о
-великдень великдень noun:m:v_naz/v_zna:prop
-великодня великдень noun:m:v_rod:prop
-великодню великдень noun:m:v_dav/v_mis/v_kly:prop
-великоднем великдень noun:m:v_oru:prop
-великодні великдень noun:p:v_naz/v_zna/v_kly:prop
-великоднів великдень noun:p:v_rod:prop
-великодням великдень noun:p:v_dav:prop
-великоднями великдень noun:p:v_oru:prop
-великоднях великдень noun:p:v_mis:prop
+великдень великдень noun:m:v_naz/v_zna
+великодня великдень noun:m:v_rod
+великодню великдень noun:m:v_dav/v_mis/v_kly
+великоднем великдень noun:m:v_oru
+великодні великдень noun:p:v_naz/v_zna/v_kly
+великоднів великдень noun:p:v_rod
+великодням великдень noun:p:v_dav
+великоднями великдень noun:p:v_oru
+великоднях великдень noun:p:v_mis
+
+переддень переддень noun:inanim:m:v_naz
+передодня переддень noun:inanim:m:v_rod
+передодневі переддень noun:inanim:m:v_dav
+передодню переддень noun:inanim:m:v_dav
+переддень переддень noun:inanim:m:v_zna
+передоднем переддень noun:inanim:m:v_oru
+передодневі переддень noun:inanim:m:v_mis
+передодні переддень noun:inanim:m:v_mis
+передодню переддень noun:inanim:m:v_mis
+передодню переддень noun:inanim:m:v_kly
+передодні переддень noun:inanim:p:v_naz
+передоднів переддень noun:inanim:p:v_rod
+передодням переддень noun:inanim:p:v_dav
+передодні переддень noun:inanim:p:v_zna
+передоднями переддень noun:inanim:p:v_oru
+передоднях переддень noun:inanim:p:v_mis
+передодні переддень noun:inanim:p:v_kly
 
 Лев Лев noun:anim:m:v_naz:prop:fname
 Льва Лев noun:anim:m:v_rod:prop:fname
@@ -198,34 +216,16 @@
 очками очко noun:p:v_oru:xp2
 очках очко noun:p:v_mis:xp2
 
-переддень переддень noun:inanim:m:v_naz
-передодня переддень noun:inanim:m:v_rod
-передодневі переддень noun:inanim:m:v_dav
-передодню переддень noun:inanim:m:v_dav
-переддень переддень noun:inanim:m:v_zna
-передоднем переддень noun:inanim:m:v_oru
-передодневі переддень noun:inanim:m:v_mis
-передодні переддень noun:inanim:m:v_mis
-передодню переддень noun:inanim:m:v_mis
-передодню переддень noun:inanim:m:v_kly
-передодні переддень noun:inanim:p:v_naz
-передоднів переддень noun:inanim:p:v_rod
-передодням переддень noun:inanim:p:v_dav
-передодні переддень noun:inanim:p:v_zna
-передоднями переддень noun:inanim:p:v_oru
-передоднях переддень noun:inanim:p:v_mis
-передодні переддень noun:inanim:p:v_kly
 
-
-
-господь господь noun:m:v_naz:anim:prop
-господа господь noun:m:v_rod/v_zna:anim:prop
-господові господь noun:m:v_dav/v_mis:anim:prop
-господеві господь noun:m:v_dav/v_mis:anim:prop
-господу господь noun:m:v_dav:anim:prop
-господом господь noun:m:v_oru:anim:prop
-господі господь noun:m:v_mis:anim:prop
-господи господь noun:m:v_kly:anim:prop
+господь господь noun:m:v_naz:anim
+господа господь noun:m:v_rod/v_zna:anim
+господові господь noun:m:v_dav/v_mis:anim
+господеві господь noun:m:v_dav/v_mis:anim
+господу господь noun:m:v_dav:anim
+господом господь noun:m:v_oru:anim
+господі господь noun:m:v_mis:anim
+господи господь noun:m:v_kly:anim
+господе господь noun:m:v_kly:anim:arch
 
 Христос Христос noun:m:v_naz:anim:prop:fname
 Христа Христос noun:m:v_rod/v_zna:anim:prop:fname
@@ -252,9 +252,11 @@
 матір мати noun:anim:f:v_naz:rare
 матері мати noun:anim:f:v_rod
 матері мати noun:anim:f:v_dav
-матір мати noun:anim:f:v_zna:rare
+мати мати noun:anim:f:v_zna:rare
+матір мати noun:anim:f:v_zna
 матір'ю мати noun:anim:f:v_oru
 матері мати noun:anim:f:v_mis
+матір мати noun:anim:f:v_kly:rare
 матері мати noun:anim:p:v_naz/v_kly
 матерів мати noun:anim:p:v_rod
 матерям мати noun:anim:p:v_dav

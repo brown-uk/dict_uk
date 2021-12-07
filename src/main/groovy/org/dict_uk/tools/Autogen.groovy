@@ -113,7 +113,7 @@ class Autogen {
 	static String lev1prefixes1992 = "анти|архі|архи|етно|мікро|макро|мульти|нано|полі|ультра"
 	static String lev1prefixes1992Apo = "гіпер|пан|супер"
 	// нове без дефісу з 2019:
-	static String lev1prefixes = "віце|диско|екстра|максі|медіа|міді|міні"
+	static String lev1prefixes = "віце|диско|екстра|максі|медіа|міді|міні|шоу|промо"
 	static String lev1prefixesApo = "арт|бліц|веб|економ|екс|камер|кібер|контр|лейб|обер|поп|прес|преміум|смарт|топ|унтер|флеш|фоль?к|штабс"
 	
 	// two regexes to handle екс-віце-спікер

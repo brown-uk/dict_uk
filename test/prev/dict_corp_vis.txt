@@ -4409,6 +4409,13 @@
   хрону noun:inanim:m:v_mis
   хріне noun:inanim:m:v_kly
   хроне noun:inanim:m:v_kly
+хто noun:anim:m:v_naz:&pron:int:rel
+  кого noun:anim:m:v_rod:&pron:int:rel
+  кому noun:anim:m:v_dav:&pron:int:rel
+  кого noun:anim:m:v_zna:&pron:int:rel
+  ким noun:anim:m:v_oru:&pron:int:rel
+  кім noun:anim:m:v_mis:&pron:int:rel
+  кому noun:anim:m:v_mis:&pron:int:rel
 Хутори-Кривошиїнецькі noun:inanim:p:v_naz:ns:prop
   Хуторів-Кривошиїнецьких noun:inanim:p:v_rod:ns:prop
   Хуторам-Кривошиїнецьким noun:inanim:p:v_dav:ns:prop
@@ -4546,6 +4553,14 @@
   щенятками noun:anim:p:v_oru
   щенятках noun:anim:p:v_mis
   щенятка noun:anim:p:v_kly
+що noun:inanim:n:v_naz:&pron:int:rel
+  чого noun:inanim:n:v_rod:&pron:int:rel
+  чому noun:inanim:n:v_dav:&pron:int:rel
+  що noun:inanim:n:v_zna:&pron:int:rel
+  віщо noun:inanim:n:v_zna:&pron:int:rel:rare
+  чим noun:inanim:n:v_oru:&pron:int:rel
+  чім noun:inanim:n:v_mis:&pron:int:rel
+  чому noun:inanim:n:v_mis:&pron:int:rel
 щонайаерованіш adv:comps:short
 щонайаерованіше adv:comps
 щонайаерованіший adj:m:v_naz:comps

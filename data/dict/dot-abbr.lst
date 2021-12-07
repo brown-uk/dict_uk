@@ -167,7 +167,8 @@
 орг. noun:f:nv                  # організація
 осн. adj:nv:rinanim             # основний
 оф. noun:m:nv                   # офіс
-п. noun:m:nv
+п. noun:m:nv                    # пункт
+п. noun:m:nv:anim|noun:f:nv:anim    # пан, пані
 пд. noun:n:nv:np|adj:nv:rinanim         # південь, південний
 пд.-зах. adj:nv:rinanim                 # південно-західний
 пд.-сх. adj:nv:rinanim                  # південно-східний

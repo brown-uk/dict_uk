@@ -1,0 +1,37 @@
+# Іменникові займенники
+
+group n_pron
+
+хто:
+#хто хто            # @ noun:m:v_naz
+хто кого            # @ noun:m:v_rod/v_zna
+хто кому            # @ noun:m:v_dav/v_mis
+хто ким             # @ noun:m:v_oru
+хто кім             # @ noun:m:v_mis
+
+хтось:
+#хтось хтось            # @ noun:m:v_naz
+хтось когось            # @ noun:m:v_rod/v_zna
+хтось комусь            # @ noun:m:v_dav/v_mis
+хтось кимсь             # @ noun:m:v_oru
+хтось кимось             # @ noun:m:v_oru
+хтось кімсь             # @ noun:m:v_mis
+хтось кімось             # @ noun:m:v_mis
+
+що:
+#що що              # @ noun:n:v_naz/v_zna:inanim
+що чого             # @ noun:n:v_rod:inanim
+що чому             # @ noun:n:v_dav/v_mis:inanim
+#що віщо             # @ noun:n:v_zna:inanim:rare
+що чим              # @ noun:n:v_oru:inanim
+що чім              # @ noun:n:v_mis:inanim
+
+щось:
+#щось щось              # @ noun:n:v_naz/v_zna:inanim
+щось чогось             # @ noun:n:v_rod:inanim
+щось чомусь             # @ noun:n:v_dav/v_mis:inanim
+#щось віщось             # @ noun:n:v_zna:inanim:rare
+щось чимсь              # @ noun:n:v_oru:inanim
+щось чимось              # @ noun:n:v_oru:inanim
+щось чімсь              # @ noun:n:v_mis:inanim
+щось чімось              # @ noun:n:v_mis:inanim
