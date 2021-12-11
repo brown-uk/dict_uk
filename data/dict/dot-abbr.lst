@@ -207,6 +207,7 @@
 просп. noun:m:nv:np             # проспект
 проф. noun:m:nv:anim            # професор (при прізвищі)
 проц. noun:m:nv                 # процентів, процента
+прп. adj:m:nv                   # преподобний
 психол. adj:nv:rinanim          # психологічний
 р. noun:m:nv:np:xp1             # рік
 р. noun:f:nv:np:xp2             # річка
@@ -284,6 +285,7 @@
 фр. adj:nv:rinanim              # французький
 франц. adj:nv:rinanim           # французький
 Хр. noun:m:nv:np:anim           # Христа
+худ. adj:nv:rinanim             # художній
 худож. adj:nv:rinanim           # художній
 церк. adj:nv:rinanim            # церковний
 цит. noun:f:nv                  # цитата, цитовано
