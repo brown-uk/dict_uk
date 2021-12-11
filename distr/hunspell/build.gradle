@@ -124,7 +124,8 @@ task getSpellWords (type: Exec) {
 }
 
 
-task testHunspellDirect (type: Exec/*, dependsOn: getSpellWords*/) { //, dependsOn: hunspell) {
+task testHunspellDirect (type: Exec) {
+    dependsOn 'getSpellWords', "hunspell"
     def cmd = "hunspell -d $outDir/uk_UA -l ${projectDir}/build/words_spell.txt > hunspell.unknown.txt; wc -l hunspell.unknown.txt"
 
     commandLine "sh", "-c", "${cmd}"
