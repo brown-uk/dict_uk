@@ -4,6 +4,6 @@
     <identifier value="org.openoffice.uk.dictionaries.UA"/>
     <version value="5.6.0" />
     <update-download>
-        <src xlink:href="https://github.com/brown-uk/dict_uk/releases/download/v5.6.0/hunspell-uk_UA_5.6.0.zip"/>
+        <src xlink:href="https://cfhcable.dl.sourceforge.net/project/aoo-extensions/975/17/dict-uk_ua-5.6.0.oxt"/>
     </update-download>
 </description>
