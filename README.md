@@ -20,7 +20,7 @@
 
 
 ### Вимоги до програмних засобів ###
-* java (JDK >= 8)
+* java (JDK >= 11)
 * 5Гб вільної пам'яті
 
 
@@ -31,7 +31,7 @@
 
 
 ### Як встановити ###
-* Встановити java (JDK 8 або новішу)
+* Встановити java (JDK 11 або новішу)
 * (Лише для Windows) встановити і запустити git bash
 * Клонувати проект: `git clone https://github.com/brown-uk/dict_uk.git`
 * Зайти в теку проекту: cd dict_uk
@@ -79,7 +79,7 @@ Copyright (c) 2020 Андрій Рисін (arysin@gmail.com), Василь Ст
 
 
 ### Required software ###
-* java (JDK >= 8)
+* java (JDK >= 11)
 * 5G of free RAM
 
 
