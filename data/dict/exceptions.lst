@@ -820,41 +820,41 @@
 
 бракло бракнути verb:imperf:past:n
 
-хтітися хтітися verb:rev:imperf:inf             # lim
-хтітись хтітися verb:rev:imperf:inf
-хочеться хтітися verb:rev:imperf:pres:s:3
-хтітиметься хтітися verb:rev:imperf:futr:s:3
-хтілось хтітися verb:rev:imperf:past:n
-хтілося хтітися verb:rev:imperf:past:n
+хтітися хтітися verb:rev:imperf:inf:coll             # lim
+хтітись хтітися verb:rev:imperf:inf:coll
+хочеться хтітися verb:rev:imperf:pres:s:3:coll
+хтітиметься хтітися verb:rev:imperf:futr:s:3:coll
+хтілось хтітися verb:rev:imperf:past:n:coll
+хтілося хтітися verb:rev:imperf:past:n:coll
 
 хтівши хтівши advp:imperf
 
-хтіти хтіти verb:imperf:inf
-хоти хтіти verb:imperf:impr:s:2
-хотім хтіти verb:imperf:impr:p:1
-хотімо хтіти verb:imperf:impr:p:1
-хотіть хтіти verb:imperf:impr:p:2
-хочу хтіти verb:imperf:pres:s:1
-хочеш хтіти verb:imperf:pres:s:2
-хоче хтіти verb:imperf:pres:s:3
-хочем хтіти verb:imperf:pres:p:1
-хочемо хтіти verb:imperf:pres:p:1
-хочете хтіти verb:imperf:pres:p:2
-хочуть хтіти verb:imperf:pres:p:3
-хтять хтіти verb:imperf:pres:p:3:subst
-хтітиму хтіти verb:imperf:futr:s:1
-хтітимеш хтіти verb:imperf:futr:s:2
-хтітиме хтіти verb:imperf:futr:s:3
-хтітимем хтіти verb:imperf:futr:p:1
-хтітимемо хтіти verb:imperf:futr:p:1
-хтітимете хтіти verb:imperf:futr:p:2
-хтітимуть хтіти verb:imperf:futr:p:3
-хтів хтіти verb:imperf:past:m
-хтіла хтіти verb:imperf:past:f
-хтіло хтіти verb:imperf:past:n
-хтіли хтіти verb:imperf:past:p
+хтіти хтіти verb:imperf:inf:coll
+хоти хтіти verb:imperf:impr:s:2:coll
+хотім хтіти verb:imperf:impr:p:1:coll
+хотімо хтіти verb:imperf:impr:p:1:coll
+хотіть хтіти verb:imperf:impr:p:2:coll
+хочу хтіти verb:imperf:pres:s:1:coll
+хочеш хтіти verb:imperf:pres:s:2:coll
+хоче хтіти verb:imperf:pres:s:3:coll
+хочем хтіти verb:imperf:pres:p:1:coll
+хочемо хтіти verb:imperf:pres:p:1:coll
+хочете хтіти verb:imperf:pres:p:2:coll
+хочуть хтіти verb:imperf:pres:p:3:coll
+хтять хтіти verb:imperf:pres:p:3:subst:coll
+хтітиму хтіти verb:imperf:futr:s:1:coll
+хтітимеш хтіти verb:imperf:futr:s:2:coll
+хтітиме хтіти verb:imperf:futr:s:3:coll
+хтітимем хтіти verb:imperf:futr:p:1:coll
+хтітимемо хтіти verb:imperf:futr:p:1:coll
+хтітимете хтіти verb:imperf:futr:p:2:coll
+хтітимуть хтіти verb:imperf:futr:p:3:coll
+хтів хтіти verb:imperf:past:m:coll
+хтіла хтіти verb:imperf:past:f:coll
+хтіло хтіти verb:imperf:past:n:coll
+хтіли хтіти verb:imperf:past:p:coll
 
-захтять захтіти verb:perf:futr:p:3:subst:rare
+захтять захтіти verb:perf:futr:p:3:subst:rare:coll
 
 біжуть бігти verb:imperf:pres:p:3:subst
 

@@ -485,8 +485,8 @@
 'дин /numr ^adj :&pron:dem:ind:short:coll
 
 
-один-два один-два numr:p:v_naz/v_zna                  # rg_m
-одного-двох один-два numr:p:v_rod/v_zna               # rg_m:rg_n
+один-два один-два numr:p:v_naz/v_zna                  # rg_m        # :v_zna:rinanim
+одного-двох один-два numr:p:v_rod/v_zna               # rg_m:rg_n   # :v_zna:ranim
 одному-двом один-два numr:p:v_dav                     # rg_m:rg_n
 одним-двома один-два numr:p:v_oru                     # rg_m:rg_n
 одному-двох один-два numr:p:v_mis                     # rg_m:rg_n
@@ -503,37 +503,12 @@
 одній-двох один-два numr:p:v_mis                      # rg_f
 
 
-обоє обоє numr:p:v_naz/v_zna
-обох обоє numr:p:v_rod/v_zna/v_mis
-обом обоє numr:p:v_dav
-обома обоє numr:p:v_oru
-
-обидвоє обидвоє numr:p:v_naz/v_zna:rare
-обидвох обидвоє numr:p:v_rod/v_zna/v_mis:rare
-обидвом обидвоє numr:p:v_dav:rare
-обидвома обидвоє numr:p:v_oru:rare
-
-обидва обидва numr:p:v_naz/v_zna        # rg_m:rg_n
-обидві обидва numr:p:v_naz/v_zna        # rg_f
-обох обидва numr:p:v_rod/v_zna/v_mis
-обом обидва numr:p:v_dav
-обома обидва numr:p:v_oru
-
 два два numr:p:v_naz/v_zna                  # rg_m:rg_n
 дві два numr:p:v_naz/v_zna                  # rg_f
 двох два numr:p:v_rod/v_zna/v_mis
 двом два numr:p:v_dav
 двома два numr:p:v_oru
 
-двоє двоє numr:p:v_naz/v_zna
-двох двоє numr:p:v_rod/v_zna/v_mis
-двом двоє numr:p:v_dav
-двома двоє numr:p:v_oru
-
-троє троє numr:p:v_naz/v_zna
-трьом троє numr:p:v_dav
-трьох троє numr:p:v_rod/v_zna/v_mis
-трьома троє numr:p:v_oru
 
 три три numr:p:v_naz/v_zna
 трьом три numr:p:v_dav
@@ -563,20 +538,44 @@
 вісьма вісім numr:p:v_oru
 вісьмома вісім numr:p:v_oru
 
+# збірні числівники
+
+обоє обоє numr:p:v_naz/v_zna                          # :v_zna:rinanim
+обох обоє numr:p:v_rod/v_zna/v_mis                    # :v_zna:ranim
+обом обоє numr:p:v_dav
+обома обоє numr:p:v_oru
+
+обидвоє обидвоє numr:p:v_naz/v_zna:rare
+обидвох обидвоє numr:p:v_rod/v_zna/v_mis:rare
+обидвом обидвоє numr:p:v_dav:rare
+обидвома обидвоє numr:p:v_oru:rare
+
+обидва обидва numr:p:v_naz/v_zna        # rg_m:rg_n
+обидві обидва numr:p:v_naz/v_zna        # rg_f
+обох обидва numr:p:v_rod/v_zna/v_mis
+обом обидва numr:p:v_dav
+обома обидва numr:p:v_oru
+
+двоє двоє numr:p:v_naz/v_zna
+двох двоє numr:p:v_rod/v_zna/v_mis
+двом двоє numr:p:v_dav
+двома двоє numr:p:v_oru
+
+троє троє numr:p:v_naz/v_zna
+трьом троє numr:p:v_dav
+трьох троє numr:p:v_rod/v_zna/v_mis
+трьома троє numr:p:v_oru
+
 четверо четверо numr:p:v_naz/v_zna
-чотирма четверо numr:p:v_oru
-чотирьох четверо numr:p:v_rod/v_zna/v_mis
-чотирьом четверо numr:p:v_dav
 п'ятеро п'ятеро numr:p:v_naz/v_zna
 шестеро шестеро numr:p:v_naz/v_zna
 семеро семеро numr:p:v_naz/v_zna
 восьмеро восьмеро numr:p:v_naz/v_zna
 дев'ятеро дев'ятеро numr:p:v_naz/v_zna
 десятеро numr:p:v_naz/v_zna
-
 одинадцятеро одинадцятеро numr:p:v_naz/v_zna
 дванадцятеро дванадцятеро numr:p:v_naz/v_zna
-тринадцятеро numr:p:v_naz/v_zna
+тринадцятеро тринадцятеро numr:p:v_naz/v_zna
 чотирнадцятеро чотирнадцятеро numr:p:v_naz/v_zna
 п'ятнадцятеро п'ятнадцятеро numr:p:v_naz/v_zna
 шістнадцятеро шістнадцятеро numr:p:v_naz/v_zna
@@ -593,18 +592,18 @@
 
 сто сто numr:p:v_naz/v_zna
 ста сто numr:p:v_rod/v_dav/v_oru/v_mis
-двісті двісті numr:p:v_naz
-двохсот двісті numr:p:v_rod/v_zna
+двісті двісті numr:p:v_naz/v_zna
+двохсот двісті numr:p:v_rod
 двомстам двісті numr:p:v_dav
 двомастами двісті numr:p:v_oru
 двохстах двісті numr:p:v_mis
 триста триста numr:p:v_naz/v_zna
-трьохсот триста numr:p:v_rod/v_zna
+трьохсот триста numr:p:v_rod
 трьомстам триста numr:p:v_dav
 трьомастами триста numr:p:v_oru
 трьохстах триста numr:p:v_mis
 чотириста чотириста numr:p:v_naz/v_zna
-чотирьохсот чотириста numr:p:v_rod/v_zna
+чотирьохсот чотириста numr:p:v_rod
 чотирьомстам чотириста numr:p:v_dav
 чотирмастами чотириста numr:p:v_oru
 чотирьохстах чотириста numr:p:v_mis
@@ -1110,3 +1109,6 @@
 декілько numr:p:v_naz/v_zna:coll
 кількадесятеро numr:p:v_naz/v_zna:coll
 кільканадцятеро numr:p:v_naz/v_zna:coll
+
+чимало numr:p:nv
+мало numr:p:nv
