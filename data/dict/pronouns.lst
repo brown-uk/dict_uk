@@ -46,6 +46,7 @@
 них вони noun:unanim:p:v_rod/v_zna/v_mis:&pron:pers:3
 їм вони noun:unanim:p:v_dav:&pron:pers:3
 ними вони noun:unanim:p:v_oru:&pron:pers:3
+їми вони noun:unanim:p:v_oru:&pron:pers:3:subst
 
 
 себе себе noun:unanim:s:v_rod/v_zna:&pron:refl
@@ -55,7 +56,6 @@
 собі part:coll
 
 
-хто хто conj:subord
 хто /n_pron.< :&pron:int:rel
 
 хто-хто хто-хто conj:subord
@@ -159,8 +159,8 @@
 його adj:p:nv:&pron:pos
 її adj:m:nv//f:nv//n:nv:&pron:pos
 її adj:p:nv:&pron:pos
-#їх adj:m:nv//f:nv//n:nv:&pron:pos
-#їх adj:p:nv:&pron:pos
+їх adj:m:nv//f:nv//n:nv:&pron:pos:bad
+їх adj:p:nv:&pron:pos:bad
 
 сам /adj_pron :&pron:def
 наш /adj_pron :&pron:pos
@@ -744,6 +744,7 @@
 уві уві prep:v-u                    # rv_zna:rv_mis:rv_rod
 вві вві prep:v-u                    # rv_zna:rv_mis:rv_rod
 від від prep                        # rv_rod
+відо відо prep:arch                 # rv_rod
 відповідно prep                     # rv_dav
 всередині prep:v-u                  # rv_rod
 усередині prep:v-u                  # rv_rod
@@ -841,7 +842,7 @@
 насупроти насупроти prep        # rv_rod
 невважаючи невважаючи prep        # rv_zna
 вище вище prep        # rv_zna
-нижче нижче prep        # rv_zna
+нижче нижче prep        # rv_rod
 о о prep        # rv_zna:rv_mis
 о о intj
 об об prep        # rv_zna:rv_mis
@@ -974,7 +975,7 @@
 геть adv|intj|part
 геть-то adv
 дедалі adv|part
-де adv:&pron:int:rel|part|noninfl:foreign
+де adv:&pron:int:rel|part|part:pers|conj:subord 
 доки adv:&pron:int:rel|conj:subord
 допоки adv|conj:subord
 еге part|intj
@@ -1036,9 +1037,10 @@
 прецінь part|adv:&insert|conj:coord
 причім adv|conj:subord
 причому adv|conj:subord
-проте conj:coord|adv
+проте conj:coord|adv:&insert
 раз adv|conj:subord
 саме adv|part
+саме conj:subord                # у спол. «а саме»
 себто conj:subord
 сиріч conj:subord
 справді adv:&insert|part
@@ -1053,13 +1055,13 @@
 теж adv|part
 тим adv:rare|conj:subord
 тим-то conj:subord
-тільки adv|conj:subord|part
+тільки adv|conj:subord|conj:coord|part
 тільки-но adv|part|conj:subord
 тобто conj:subord|part
 тож conj:subord|part
 тому conj:subord|adv
 тощо part
-то conj:subord
+то conj:subord|part
 утім adv:v-u|conj:coord:v-u
 хай part|conj:subord
 хіба conj:subord|part

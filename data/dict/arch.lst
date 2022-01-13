@@ -1360,7 +1360,7 @@
 одідичити /v1 :perf
 одідрати /v3.isNo :perf
 одіж /n32
-одізвання /n2n :rare
+одізвання /n2n
 одізвати /v2.isNo :perf
 одізватися /vr1 :perf
 одіймати /v2.cf.advp :imperf
@@ -1616,7 +1616,7 @@
 одполірований /adj :&adjp:pasv:perf            # :past
 одпочивальня /n10.p2
 одпочивання /n2n
-одпочивок /n22 :coll
+одпочивок /n22
 одпочинути /v1 :perf
 одпоювати /v1.cf.advp :imperf
 одправити /v1.it0.is0 :perf
@@ -1636,17 +1636,17 @@
 одпуск /n20
 одпускний /adj
 одпускні /n2adj1
-одпуст /n20.p :rare
+одпуст /n20.p
 одпустити /v1.it1.is0 :perf
 одпущений /adj :&adjp:pasv:perf                # :past rv_dav
-одпущеник /n20.a.p.< :rare
+одпущеник /n20.a.p.<
 одпущення /n2n.p1
 одр /n20.a.p
 одрада /n10
 одраджувати /v1.cf.advp.isNo :imperf                # rv_inf
 одрадити /v1.is0.it0 :perf                         # rv_inf
 одрадісно adv:rare
-одрадість /n30 :rare
+одрадість /n30
 одрапортувати /v1.is0 :perf
 одраховувати /v1.cf.advp :imperf
 одрахувати /v1.is0 :perf
@@ -2604,8 +2604,8 @@
 хібащо conj:subord
 хлост /n20
 хляпавка /n10
-холєра noninfl:&insert:coll
-холєра /n10 :coll
+холєра noninfl:&insert
+холєра /n10
 холоднаво adv:&predic
 хорий /adj
 хорість /n30

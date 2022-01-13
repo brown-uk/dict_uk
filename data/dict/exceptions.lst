@@ -715,11 +715,13 @@
 галай-балай галай-балай noun:m:v_naz/v_zna          # lim
 усюди /np2 /np1
 
-ван ван part:pers
-дель дель part:pers
-фон фон part:pers
-бен бен part:pers
-делла делла part:pers
+ван part:pers
+дель part:pers
+фон part:pers
+бен part:pers
+делла part:pers
+ді part:pers                                # ді Капріо, ді Сальва
+ла part:pers                                # де ла Круа
 
 кадівб кадівб noun:inanim:m:v_naz:rare
 кадовба кадівб noun:inanim:m:v_rod:rare
@@ -750,6 +752,8 @@
 передніх передні noun:anim:p:v_rod/v_zna/v_mis:ns
 переднім передні noun:anim:p:v_dav:ns
 передніми передні noun:anim:p:v_oru:ns
+
+заняттів заняття noun:inanim:p:v_rod:rare
 
 хріна noninfl
 
@@ -854,7 +858,7 @@
 хтіло хтіти verb:imperf:past:n:coll
 хтіли хтіти verb:imperf:past:p:coll
 
-захтять захтіти verb:perf:futr:p:3:subst:rare:coll
+захтять захтіти verb:perf:futr:p:3:subst:coll
 
 біжуть бігти verb:imperf:pres:p:3:subst
 

@@ -37,8 +37,8 @@ invalid-autogen.lst
 
 Additional flags:
   affix "<" creature, live being, person
-  affix "<>" creature, live being
-  affix "<>>" bacteria, live being
+  affix "<>" creature, live being, animal
+  affix "<>>" bacteria, undefined for anim/inanim
   affix "+" last name
   affix "@" другий знахідний із закінченням -а/-я
   affix :+m додатковий чоловічий рід

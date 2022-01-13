@@ -1372,6 +1372,12 @@ class Expand {
 
 				continue
 			}
+            
+            // validate
+            assert ! (lineGroup2.line =~ /[^.\/]</)
+            String normLine = lineGroup2.line.replaceAll(/\^[^ ]+|tag=[^ ]+/, '') 
+            assert ! (normLine =~ /^[^^]+:.* :/)
+            
 
 			// word tags
 			// word /flags [mods] [tags]

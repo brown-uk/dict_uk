@@ -61,11 +61,17 @@ class OutputValidator {
 
 			def dup_tags = tagList.findAll { tagList.count(it) > 1 }.unique()
 			if( dup_tags ) {
-				log.error("Duplicate tags " + dup_tags.join(":") + ": " + dicEntry)
+				log.error("Duplicate tags: " + dup_tags.join(":") + ": " + dicEntry)
 				if( !("coll" in dup_tags) ) {
 					fatalErrorCount++
 				}
 			}
+            
+            def dup_tags2 = tagList.findAll { tagList.count { it ==~ /alt|rare|coll|bad|slang/ } > 1 }.unique()
+            if( dup_tags2 /*&& dup_tags2 != ['alt', 'coll'] as Set*/ && ! (lemma ==~ /Приват|.*хеміч.*|римар/) ) {
+                log.error("Redundant tags: " + dup_tags2.join(":") + ": " + dicEntry)
+//                fatalErrorCount++
+            }
 		}
 		
 		return fatalErrorCount

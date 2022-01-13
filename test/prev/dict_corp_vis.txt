@@ -1703,6 +1703,13 @@
   викидайлові noun:anim:m:v_mis
   викидайлу noun:anim:m:v_mis
   викидайле noun:anim:m:v_kly
+  викидайли noun:anim:p:v_naz
+  викидайлів noun:anim:p:v_rod
+  викидайлам noun:anim:p:v_dav
+  викидайлів noun:anim:p:v_zna
+  викидайлами noun:anim:p:v_oru
+  викидайлах noun:anim:p:v_mis
+  викидайли noun:anim:p:v_kly
 викриття noun:inanim:n:v_naz
   викриття noun:inanim:n:v_rod
   викриттю noun:inanim:n:v_dav
@@ -4557,10 +4564,16 @@
   чого noun:inanim:n:v_rod:&pron:int:rel
   чому noun:inanim:n:v_dav:&pron:int:rel
   що noun:inanim:n:v_zna:&pron:int:rel
-  віщо noun:inanim:n:v_zna:&pron:int:rel:rare
   чим noun:inanim:n:v_oru:&pron:int:rel
   чім noun:inanim:n:v_mis:&pron:int:rel
   чому noun:inanim:n:v_mis:&pron:int:rel
+що-будь noun:inanim:n:v_naz:&pron:ind
+  чого-будь noun:inanim:n:v_rod:&pron:ind
+  чому-будь noun:inanim:n:v_dav:&pron:ind
+  що-будь noun:inanim:n:v_zna:&pron:ind
+  чим-будь noun:inanim:n:v_oru:&pron:ind
+  чім-будь noun:inanim:n:v_mis:&pron:ind
+  чому-будь noun:inanim:n:v_mis:&pron:ind
 щонайаерованіш adv:comps:short
 щонайаерованіше adv:comps
 щонайаерованіший adj:m:v_naz:comps

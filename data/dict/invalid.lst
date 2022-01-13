@@ -10,7 +10,6 @@
 ажніяк adv
 академик /n20.a.p.<
 а-капельний /adj.adv
-акаунта акаунт noun:m:v_rod:slang
 Акерман /n20.a :town:prop:geo
 алегретто adv
 Алжір /n20.ke :prop:geo
@@ -330,7 +329,7 @@
 діджиталізований /adj :&adjp:pasv:imperf:perf
 діджиталізувати /v1.cf.advp.is0 :imperf:perf
 діджиталізуватися /vr1.cf.advp :imperf:perf
-діджитальний /adj :slang
+діджитальний /adj
 діджіталізація /n10
 діджіталізувати /v1.cf.advp.is0 :imperf:perf
 діджіталізуватися /vr1.cf.advp :imperf:perf
@@ -383,7 +382,7 @@
 експресо noun:n:nv
 експрессо noun:n:nv
 екстримальний /adj
-екстрім /n20 :coll
+екстрім /n20
 Ельбруса Ельбрус noun:m:v_rod:prop:geo
 Ель-Ніньо noun:m:nv:np                      #> Ель-Ніньйо
 емменталь /n20
@@ -633,7 +632,6 @@
 локоть /n22.p
 ломати /v2.cf.advp :imperf
 лонґселер /n20.a.p.ke
-лохотрона лохотрон noun:m:v_rod:slang
 луїсеньо noun:f:nv:np                       #> луїсеньйо
 лучше лучше adv:compc:&predic
 льєжський /adj                              #> льєзький
@@ -935,7 +933,7 @@
 продезинфікований /adj :&adjp:pasv:perf    # :past
 проплата /n10.p1
 просторо-часовий /adj
-протопоп noun:m:v_naz:anim:rare       # lim
+протопоп noun:m:v_naz:anim          # lim
 профіля профіль noun:m:v_rod
 проффесор /n20.a.p.ke.<
 пружній /adj
@@ -1037,7 +1035,6 @@
 словянський /adj
 слухо-моторний /adj
 сніговобілий /adj
-совєтов совєти noun:p:v_rod:ns:alt
 совєцкій /adj
 сорома сором noun:m:v_rod
 соц-арт /n20
@@ -1163,7 +1160,7 @@
 хостінг /n20.p
 Х-промені /np2                              #> X-промені
 хрестово-купольний /adj
-хто-зна noninfl:&predic:coll
+хто-зна noninfl:&predic
 ХУІ number:latin
 ХУІІ number:latin
 ХУІІІ number:latin
@@ -1207,7 +1204,7 @@
 чіхуахуа noun:f:nv:anim
 член-кореспондент /n20.a.p.< :xp2           # мають відмінюватися обидві частини
 чорнетка /n10.p2
-чорт-зна noninfl:&predic:coll
+чорт-зна noninfl:&predic
 шампіньон /n20.a.p                          #> шампіньйон
 шахид /n20.a.p.<
 шахидка /n10.p2.<
