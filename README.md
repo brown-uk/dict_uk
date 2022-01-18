@@ -63,7 +63,7 @@
 Окрім цього матеріали цього проєкту дозволено використовувати у проєктах https://voice.mozilla.org/uk і https://common-voice.github.io/sentence-collector/#/ відповідно до їх ліцензій.
 
 
-Copyright (c) 2020 Андрій Рисін (arysin@gmail.com), Василь Старко, команда БрУК
+Copyright (c) 2022 Андрій Рисін (arysin@gmail.com), Василь Старко, команда БрУК
 
 ### Похідні проекти ###
 
@@ -118,13 +118,15 @@ Note: [derivative projects](distr/) have different licenses
 
 Besides that materials in this project are allowed to be used in https://voice.mozilla.org/uk and https://common-voice.github.io/sentence-collector/#/ according to their licenses.
 
-Copyright (c) 2021 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
+Copyright (c) 2022 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
 
 #### Просимо посилатися на ресурс так: ####
 
-Рисін А., Старко В. Великий  електронний  словник  української  мови  (ВЕСУМ). 2005-2021. URL: https://github.com/brown-uk/dict_uk
+Просимо посилатися на вебверсію ВЕСУМу так:
 
-Rysin, A., Starko, V. Large Electronic Dictionary of Ukrainian (VESUM). 2005-2021. Available at: https://github.com/brown-uk/dict_uk
+Рисін А., Старко В. Великий електронний словник української мови (ВЕСУМ). Вебверсія 5.6.0. 2005-2022. URL: https://r2u.org.ua/vesum/
+
+Rysin, A., Starko, V. Large Electronic Dictionary of Ukrainian (VESUM). Web version 5.6.0. 2005-2022. Available at: https://r2u.org.ua/vesum/
 
 ### Derivative Projects ###
 
