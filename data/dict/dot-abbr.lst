@@ -260,6 +260,7 @@
 суч. adj:nv:rinanim             # сучасний
 сх. adj:nv:rinanim              # східний
 т. noun:m:nv                    # том
+т. adj:n:nv                     # таке (інше)
 т. adv                          # так (званий)
 таб. noun:f:nv                  # таблиця
 табл. noun:f:nv                 # таблиця
@@ -291,6 +292,7 @@
 церк. adj:nv:rinanim            # церковний
 цит. noun:f:nv                  # цитата, цитовано
 ч. noun:f:nv                    # частина
+ч. noun:n:nv:np                 # (тому) числі
 ч. adj:fp:nv:rinanim            # чайна
 чайн. adj:fp:nv:rinanim         # чайна
 част. noun:f:nv                 # частина
