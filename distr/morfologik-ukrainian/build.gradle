@@ -314,12 +314,15 @@ task createRenamedReplacementDict(dependsOn: createOutRulesDir) {
     doLast {
 		def outLines = []
 
-		srcFiles.each{ srcFile ->
+		srcFiles.each{ File srcFile ->
 			def rvLines = new File("$srcDir/$srcFile.name").text
 			    .split('\n')
 			    .findAll {
                     ! it.startsWith('#') && it.contains(' #>> ')
 			    }.collect{
+                    if( srcFile.name.contains('composite') ) {
+                        it = it.replaceFirst(/ \/.* - /, '-')
+                    }
 //                    it = it.replace(' +cs=', '')
                     it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#>> *(.*)(#ok:.*)?/, '$1=$2')
                     it = it.replaceFirst(/ *# rv_...(\|rv_...)* */, '')
