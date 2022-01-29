@@ -44,7 +44,9 @@ class Util {
 
 	@CompileStatic
 	boolean firstname(String word, String allAffixFlags) {
-		return (allAffixFlags.contains("<") && ! allAffixFlags.contains(">")) \
+        // decided to leave animal names with :fname
+		return (allAffixFlags.contains("<") \
+                /* && ! allAffixFlags.contains(">")*/ ) \
 			&& ! allAffixFlags.contains("<+") \
 			&& word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase() \
 			&& ! allAffixFlags.contains(":prop")    // Всевишній - :prop but not :fname
