@@ -546,8 +546,6 @@
 
 Йсу Йсус noun:m:v_dav:prop:fname:anim
 
-болиш боліти verb:imperf:pres:s:2:xp2
-
 постелею постіль noun:inanim:f:v_oru
 серць серце noun:p:v_rod
 
@@ -558,6 +556,7 @@
 дитини дитина noun:p:v_naz/v_zna:anim
 
 хліба хліб noun:p:v_naz/v_zna
+вуса вус noun:inanim:p:v_naz
 
 тат тато noun:anim:p:v_rod:ua_1992
 
@@ -583,7 +582,6 @@
 
 
 чоловік чоловік noun:anim:p:v_rod/v_zna:bad
-
 
 царька царьок noun:anim:m:v_rod/v_zna:bad
 царькові царьок noun:anim:m:v_dav:bad
@@ -793,7 +791,10 @@
 жили-були жити-бути verb:past:p:imperf
 
 писано-переписано писати-переписати verb:perf:impers        # lim
+
 почавшись початися advp:rev:perf
+
+болиш боліти verb:imperf:pres:s:2:xp2
 
 пробути пробути verb:inf:perf
 пробуду пробути verb:futr:s:1:perf
