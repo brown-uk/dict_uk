@@ -15,8 +15,6 @@ archivesBaseName = artifactId
 
 sourceCompatibility = 1.8
 
-String ltToolsVersion = '5.4-SNAPSHOT'
-
 String langCode="uk"
 
 String packageDir="org/languagetool/resource/" + langCode
