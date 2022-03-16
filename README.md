@@ -1,3 +1,5 @@
+[![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine)
+
 ## Це — великий електронний словник української мови (ВЕСУМ). ##
 
 ## This is a project to generate POS tag dictionary for Ukrainian language. ##
@@ -124,9 +126,9 @@ Copyright (c) 2022 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
 
 Просимо посилатися на вебверсію ВЕСУМу так:
 
-Рисін А., Старко В. Великий електронний словник української мови (ВЕСУМ). Вебверсія 5.6.0. 2005-2022. URL: https://r2u.org.ua/vesum/
+Рисін А., Старко В. Великий електронний словник української мови (ВЕСУМ). Вебверсія 5.6.2. 2005-2022. URL: https://r2u.org.ua/vesum/
 
-Rysin, A., Starko, V. Large Electronic Dictionary of Ukrainian (VESUM). Version 5.6.0. 2005-2022. Available at: https://r2u.org.ua/vesum/
+Rysin, A., Starko, V. Large Electronic Dictionary of Ukrainian (VESUM). Version 5.6.2. 2005-2022. Available at: https://r2u.org.ua/vesum/
 
 ### Derivative Projects ###
 
