@@ -510,6 +510,7 @@
   бабиськ noun:anim:p:v_rod
   бабиськам noun:anim:p:v_dav
   бабиськ noun:anim:p:v_zna
+  бабиська noun:anim:p:v_zna    # з в/у
   бабиськами noun:anim:p:v_oru
   бабиськах noun:anim:p:v_mis
   бабиська noun:anim:p:v_kly
@@ -535,6 +536,8 @@
   бабищ noun:anim:p:v_rod
   бабищам noun:anim:p:v_dav
   бабищ noun:anim:p:v_zna
+  бабища noun:anim:p:v_zna    # з в/у
+  бабищі noun:anim:p:v_zna    # з в/у
   бабищами noun:anim:p:v_oru
   бабищах noun:anim:p:v_mis
   бабища noun:anim:p:v_kly
@@ -553,6 +556,7 @@
   багатодітних noun:anim:p:v_rod:ns
   багатодітним noun:anim:p:v_dav:ns
   багатодітних noun:anim:p:v_zna:ns
+  багатодітні noun:anim:p:v_zna:ns    # з в/у
   багатодітними noun:anim:p:v_oru:ns
   багатодітних noun:anim:p:v_mis:ns
   багатодітні noun:anim:p:v_kly:ns
@@ -739,6 +743,7 @@
   босовил noun:anim:p:v_rod
   босовилам noun:anim:p:v_dav
   босовил noun:anim:p:v_zna
+  босовила noun:anim:p:v_zna    # з в/у
   босовилами noun:anim:p:v_oru
   босовилах noun:anim:p:v_mis
   босовила noun:anim:p:v_kly
@@ -746,6 +751,7 @@
   браттів noun:anim:p:v_rod:ns
   браттям noun:anim:p:v_dav:ns
   браттів noun:anim:p:v_zna:ns
+  браття noun:anim:p:v_zna:ns    # з в/у
   браттями noun:anim:p:v_oru:ns
   браттях noun:anim:p:v_mis:ns
   браття noun:anim:p:v_kly:ns
@@ -782,6 +788,7 @@
   бурмил noun:anim:p:v_rod
   бурмилам noun:anim:p:v_dav
   бурмил noun:anim:p:v_zna
+  бурмила noun:anim:p:v_zna    # з в/у
   бурмилами noun:anim:p:v_oru
   бурмилах noun:anim:p:v_mis
   бурмила noun:anim:p:v_kly
@@ -898,6 +905,7 @@
   важкопоранених noun:anim:p:v_rod
   важкопораненим noun:anim:p:v_dav
   важкопоранених noun:anim:p:v_zna
+  важкопоранені noun:anim:p:v_zna    # з в/у
   важкопораненими noun:anim:p:v_oru
   важкопоранених noun:anim:p:v_mis
   важкопоранені noun:anim:p:v_kly
@@ -921,16 +929,13 @@
   вайлові noun:anim:n:v_mis
   вайлу noun:anim:n:v_mis
   вайло noun:anim:n:v_kly
-  вайла noun:anim:p:v_naz
   вайли noun:anim:p:v_naz
-  вайл noun:anim:p:v_rod
   вайлів noun:anim:p:v_rod
   вайлам noun:anim:p:v_dav
-  вайл noun:anim:p:v_zna
+  вайли noun:anim:p:v_zna    # з в/у
   вайлів noun:anim:p:v_zna
   вайлами noun:anim:p:v_oru
   вайлах noun:anim:p:v_mis
-  вайла noun:anim:p:v_kly
   вайли noun:anim:p:v_kly
 ванька-встанька noun:inanim:m:v_naz:bad
   ваньки-встаньки noun:inanim:m:v_rod:bad
@@ -996,6 +1001,7 @@
   вбивець noun:anim:p:v_rod
   вбивцям noun:anim:p:v_dav
   вбивець noun:anim:p:v_zna
+  вбивці noun:anim:p:v_zna    # з в/у
   вбивцями noun:anim:p:v_oru
   вбивцях noun:anim:p:v_mis
   вбивці noun:anim:p:v_kly
@@ -1188,6 +1194,7 @@
   ведучих noun:anim:p:v_rod
   ведучим noun:anim:p:v_dav
   ведучих noun:anim:p:v_zna
+  ведучі noun:anim:p:v_zna    # з в/у
   ведучими noun:anim:p:v_oru
   ведучих noun:anim:p:v_mis
   ведучі noun:anim:p:v_kly
@@ -1210,6 +1217,7 @@
   величностей noun:anim:p:v_rod
   величностям noun:anim:p:v_dav
   величностей noun:anim:p:v_zna
+  величності noun:anim:p:v_zna    # з в/у
   величностями noun:anim:p:v_oru
   величностях noun:anim:p:v_mis
   величності noun:anim:p:v_kly
@@ -1244,6 +1252,7 @@
   велосипедисти noun:anim:p:v_naz
   велосипедистів noun:anim:p:v_rod
   велосипедистам noun:anim:p:v_dav
+  велосипедисти noun:anim:p:v_zna    # з в/у
   велосипедистів noun:anim:p:v_zna
   велосипедистами noun:anim:p:v_oru
   велосипедистах noun:anim:p:v_mis
@@ -1258,6 +1267,7 @@
   велосипедистки noun:anim:p:v_naz
   велосипедисток noun:anim:p:v_rod
   велосипедисткам noun:anim:p:v_dav
+  велосипедистки noun:anim:p:v_zna    # з в/у
   велосипедисток noun:anim:p:v_zna
   велосипедистками noun:anim:p:v_oru
   велосипедистках noun:anim:p:v_mis
@@ -1274,6 +1284,7 @@
 велярії noun:anim:p:v_naz:ns
   велярій noun:anim:p:v_rod:ns
   веляріям noun:anim:p:v_dav:ns
+  велярії noun:anim:p:v_zna:ns    # з в/у
   велярій noun:anim:p:v_zna:ns
   веляріями noun:anim:p:v_oru:ns
   веляріях noun:anim:p:v_mis:ns
@@ -1439,6 +1450,7 @@
   вертихвости noun:anim:p:v_naz
   вертихвостів noun:anim:p:v_rod
   вертихвостам noun:anim:p:v_dav
+  вертихвости noun:anim:p:v_zna    # з в/у
   вертихвостів noun:anim:p:v_zna
   вертихвостами noun:anim:p:v_oru
   вертихвостах noun:anim:p:v_mis
@@ -1690,6 +1702,7 @@
   видючих noun:anim:p:v_rod
   видючим noun:anim:p:v_dav
   видючих noun:anim:p:v_zna
+  видючі noun:anim:p:v_zna    # з в/у
   видючими noun:anim:p:v_oru
   видючих noun:anim:p:v_mis
   видючі noun:anim:p:v_kly
@@ -1706,6 +1719,7 @@
   викидайли noun:anim:p:v_naz
   викидайлів noun:anim:p:v_rod
   викидайлам noun:anim:p:v_dav
+  викидайли noun:anim:p:v_zna    # з в/у
   викидайлів noun:anim:p:v_zna
   викидайлами noun:anim:p:v_oru
   викидайлах noun:anim:p:v_mis
@@ -1890,6 +1904,7 @@
   військових noun:anim:p:v_rod
   військовим noun:anim:p:v_dav
   військових noun:anim:p:v_zna
+  військові noun:anim:p:v_zna    # з в/у
   військовими noun:anim:p:v_oru
   військових noun:anim:p:v_mis
   військові noun:anim:p:v_kly
@@ -1924,6 +1939,7 @@
   вітренківці noun:anim:p:v_naz:slang
   вітренківців noun:anim:p:v_rod:slang
   вітренківцям noun:anim:p:v_dav:slang
+  вітренківці noun:anim:p:v_zna:slang    # з в/у
   вітренківців noun:anim:p:v_zna:slang
   вітренківцями noun:anim:p:v_oru:slang
   вітренківцях noun:anim:p:v_mis:slang
@@ -2069,6 +2085,7 @@
   гарикал noun:anim:p:v_rod
   гарикалам noun:anim:p:v_dav
   гарикал noun:anim:p:v_zna
+  гарикала noun:anim:p:v_zna    # з в/у
   гарикалами noun:anim:p:v_oru
   гарикалах noun:anim:p:v_mis
   гарикала noun:anim:p:v_kly
@@ -2418,6 +2435,7 @@
   дівки-дзиґи noun:anim:p:v_naz
   дівок-дзиґ noun:anim:p:v_rod
   дівкам-дзиґам noun:anim:p:v_dav
+  дівки-дзиґи noun:anim:p:v_zna
   дівок-дзиґ noun:anim:p:v_zna
   дівками-дзиґами noun:anim:p:v_oru
   дівках-дзиґах noun:anim:p:v_mis
@@ -2431,7 +2449,7 @@
   діді-бабі noun:anim:p:v_mis
   дідові-бабі noun:anim:p:v_mis
   діду-бабі noun:anim:p:v_mis
-  діде-бабо noun:anim:p:v_kly
+  діду-бабо noun:anim:p:v_kly
 дідисько noun:anim:m:v_naz
   дідиська noun:anim:m:v_rod
   дідиськові noun:anim:m:v_dav
@@ -2455,6 +2473,7 @@
   дідиськів noun:anim:p:v_rod
   дідиськам noun:anim:p:v_dav
   дідиськ noun:anim:p:v_zna
+  дідиська noun:anim:p:v_zna    # з в/у
   дідиськів noun:anim:p:v_zna
   дідиськами noun:anim:p:v_oru
   дідиськах noun:anim:p:v_mis
@@ -2463,6 +2482,7 @@
   дітиськ noun:anim:p:v_rod:ns
   дітиськам noun:anim:p:v_dav:ns
   дітиськ noun:anim:p:v_zna:ns
+  дітиська noun:anim:p:v_zna:ns    # з в/у
   дітиськами noun:anim:p:v_oru:ns
   дітиськах noun:anim:p:v_mis:ns
   дітиська noun:anim:p:v_kly:ns
@@ -2483,6 +2503,7 @@
   екс-судді noun:anim:p:v_naz
   екс-суддів noun:anim:p:v_rod
   екс-суддям noun:anim:p:v_dav
+  екс-судді noun:anim:p:v_zna    # з в/у
   екс-суддів noun:anim:p:v_zna
   екс-суддями noun:anim:p:v_oru
   екс-суддях noun:anim:p:v_mis
@@ -2897,23 +2918,22 @@
   ладу noun:anim:m:v_kly
   ладо noun:anim:n:v_naz
   лада noun:anim:n:v_rod
+  ладові noun:anim:n:v_dav
   ладу noun:anim:n:v_dav
   ладо noun:anim:n:v_zna
   ладом noun:anim:n:v_oru
   ладі noun:anim:n:v_mis
+  ладові noun:anim:n:v_mis
   ладу noun:anim:n:v_mis
   ладо noun:anim:n:v_kly
   лада noun:anim:p:v_naz
-  лади noun:anim:p:v_naz
   лад noun:anim:p:v_rod
-  ладів noun:anim:p:v_rod
   ладам noun:anim:p:v_dav
   лад noun:anim:p:v_zna
-  ладів noun:anim:p:v_zna
+  лада noun:anim:p:v_zna    # з в/у
   ладами noun:anim:p:v_oru
   ладах noun:anim:p:v_mis
   лада noun:anim:p:v_kly
-  лади noun:anim:p:v_kly
 лепешняк noun:inanim:m:v_naz
   лепешняка noun:inanim:m:v_rod
   лепешнякові noun:inanim:m:v_dav
@@ -3011,6 +3031,7 @@
   міняйли noun:anim:p:v_naz
   міняйлів noun:anim:p:v_rod
   міняйлам noun:anim:p:v_dav
+  міняйли noun:anim:p:v_zna    # з в/у
   міняйлів noun:anim:p:v_zna
   міняйлами noun:anim:p:v_oru
   міняйлах noun:anim:p:v_mis
@@ -3654,6 +3675,7 @@
   породіль noun:anim:p:v_rod
   породіллям noun:anim:p:v_dav
   породілей noun:anim:p:v_zna
+  породіллі noun:anim:p:v_zna    # з в/у
   породіль noun:anim:p:v_zna
   породіллями noun:anim:p:v_oru
   породіллях noun:anim:p:v_mis
@@ -4128,6 +4150,7 @@
   сутяжищ noun:anim:p:v_rod:xp1
   сутяжищам noun:anim:p:v_dav:xp1
   сутяжищ noun:anim:p:v_zna:xp1
+  сутяжищі noun:anim:p:v_zna:xp1    # з в/у
   сутяжищами noun:anim:p:v_oru:xp1
   сутяжищах noun:anim:p:v_mis:xp1
   сутяжищі noun:anim:p:v_kly:xp1
@@ -4142,6 +4165,7 @@
   сутяжищ noun:anim:p:v_rod:xp2
   сутяжищам noun:anim:p:v_dav:xp2
   сутяжищ noun:anim:p:v_zna:xp2
+  сутяжища noun:anim:p:v_zna:xp2    # з в/у
   сутяжищами noun:anim:p:v_oru:xp2
   сутяжищах noun:anim:p:v_mis:xp2
   сутяжища noun:anim:p:v_kly:xp2
@@ -4270,6 +4294,7 @@
   умільці noun:anim:p:v_naz
   умільців noun:anim:p:v_rod
   умільцям noun:anim:p:v_dav
+  умільці noun:anim:p:v_zna    # з в/у
   умільців noun:anim:p:v_zna
   умільцями noun:anim:p:v_oru
   умільцях noun:anim:p:v_mis
