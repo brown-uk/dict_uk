@@ -2,6 +2,7 @@ package org.dict_uk.expand;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
@@ -55,7 +56,7 @@ public class Affix {
 		List<String> readAllLines;
 		
 		try {
-			readAllLines = Files.readAllLines(Paths.get(aff_file.getAbsolutePath()));
+			readAllLines = Files.readAllLines(Paths.get(aff_file.getAbsolutePath()), StandardCharsets.UTF_8);
 		} catch (IOException e) {
 			throw new RuntimeException("Error reading affix file " + aff_file, e);
 		}
