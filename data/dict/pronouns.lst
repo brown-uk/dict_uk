@@ -738,6 +738,7 @@
 # Прийменники
 без prep                            # rv_rod
 біля prep                           # rv_rod
+побіля prep                         # rv_rod
 близько prep                        # rv_rod
 в в prep:v-u                        # rv_zna:rv_mis:rv_rod
 у у prep:v-u                        # rv_zna:rv_mis:rv_rod
