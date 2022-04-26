@@ -398,6 +398,7 @@
 врем'я /n2n
 врікати /v2.cf :imperf
 врічливий /adj
+вседобрий /adj
 всилу adv:v-u
 всотеро adv
 вспівати /v2.cf.advp :imperf
@@ -1092,10 +1093,10 @@
 новорожденець /n22.a.p.<
 новорожденний /adj
 нумер /n20.a.p.ke
-оба numr:m:v_naz/v_zna
+оба numr:p:v_naz/v_zna                          # :mp:
 обезвічений /adj :&adjp:pasv:perf
 обичай /n20.p
-обі numr:f:v_naz/v_zna
+обі numr:p:v_naz/v_zna                  # :fp:
 обіт /n20.p
 обітування /n2n
 обіцювати /v1.cf.advp :imperf
@@ -2084,7 +2085,7 @@
 питайко /n20.<
 питель /n22.a.p
 півжартом adv
-півночи noun:f:nv:np
+півночи noun:p:nv
 півперек prep        # rv_rod
 піврік /n21
 півтретя /n2adj1
@@ -2216,7 +2217,6 @@
 потверджувальний /adj
 потихо adv
 потрібувати /v1.cf.advp :imperf
-потрібувати /v2.cf.advp :imperf
 потрішку adv
 потурнак /n20.a.p.<
 поуз поуз prep        # rv_rod:rv_zna

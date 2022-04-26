@@ -569,6 +569,18 @@
 
 нічого-нічого noun:inanim:n:v_rod:&pron:neg:&predic
 
+півроку-рік noun:m:v_naz/v_zna
+
+різдва різдво noun:p:v_naz/v_zna
+срібла срібло noun:p:v_naz/v_zna
+золота золото noun:p:v_naz/v_zna
+бронзи бронза noun:p:v_naz/v_zna
+
+ока око noun:p:v_naz:var
+імені ім'я noun:p:v_naz:var
+племені плем'я noun:p:v_naz:var
+друга друг noun:anim:p:v_naz:var
+
 сосон сосна noun:p:v_rod
 дровець дрівця noun:p:v_rod:ns
 плахіт плахта noun:p:v_rod
@@ -580,6 +592,11 @@
 цеберків цеберко noun:inanim:p:v_rod:subst
 древків древко noun:inanim:p:v_rod:bad:subst
 
+мій мій adj:m:v_kly:&pron:pos
+моя мій adj:f:v_kly:&pron:pos
+моє мій adj:n:v_kly:&pron:pos
+
+погибелі погибель noun:p:v_naz
 
 чоловік чоловік noun:anim:p:v_rod/v_zna:bad
 

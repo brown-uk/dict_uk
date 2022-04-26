@@ -347,6 +347,7 @@
 скількомось скількись numr:p:v_dav:&pron:ind
 скількомась скількись numr:p:v_oru:&pron:ind
 
+скільки adv:&pron:dem
 скільки скільки numr:p:v_naz/v_zna:&pron:int
 скількох скільки numr:p:v_rod/v_zna/v_mis:&pron:int
 скільком скільки numr:p:v_dav:&pron:int
@@ -502,6 +503,12 @@
 однією-двома один-два numr:p:v_oru                    # rg_f
 одній-двох один-два numr:p:v_mis                      # rg_f
 
+півтора-два півтора-два numr:p:v_naz/v_zna               # rg_m:rg_n     # :v_zna:rinanim
+півтора-двох півтора-два numr:p:v_rod/v_zna              #      # :v_zna:ranim
+півтора-двом півтора-два numr:p:v_dav                    # 
+півтора-двома півтора-два numr:p:v_oru                   # 
+півтора-двох півтора-два numr:p:v_mis                    # 
+півтори-дві півтора-два numr:p:v_naz/v_zna               # 
 
 два два numr:p:v_naz/v_zna                  # rg_m:rg_n
 дві два numr:p:v_naz/v_zna                  # rg_f
@@ -654,8 +661,8 @@
 
 півтора numr:m:nv//n:nv
 півтори numr:f:nv
-півтора-два numr:p:nv       # rg_m:rg_n
-півтори-дві numr:p:nv       # rg_f
+
+пів numr:p:nv:np
 
 півста numr:p:nv:coll
 півтораста numr:p:nv
@@ -891,7 +898,7 @@
 про про prep        # rv_zna
 промежи промежи prep        # rv_rod:rv_zna:rv_oru
 протягом протягом prep|adv        # rv_rod
-просто просто prep|part        # rv_rod
+просто просто prep        # rv_rod
 проти проти prep        # rv_rod
 раніше раніше prep        # rv_rod
 пізніше пізніше prep        # rv_rod
@@ -975,8 +982,8 @@
 втім adv:v-u|conj:coord:v-u
 геть adv|intj|part
 геть-то adv
-дедалі adv|part
-де adv:&pron:int:rel|part|part:pers|conj:subord 
+дедалі adv                                          # :&part
+де adv:&pron:int:rel|part|part:pers                 # може вжив. як спол. слово
 доки adv:&pron:int:rel|conj:subord
 допоки adv|conj:subord
 еге part|intj
@@ -984,7 +991,7 @@
 зате conj:coord
 затим adv
 ібн part
-коли adv:&pron:int:rel|conj:subord|part
+коли adv:&pron:int:rel|conj:subord
 ледве adv|part|conj:subord
 ледь adv|conj:subord
 лиш part|conj:subord
@@ -1007,9 +1014,9 @@
 немовби conj:subord|part
 немовбито conj:subord|part
 неначебто conj:subord|part
-нехай part|conj:subord
-нехай-но part|conj:subord
-хай-но part|conj:subord
+нехай part
+нехай-но part
+хай-но part
 не part
 ніби conj:subord|part
 нібито conj:subord|part
@@ -1045,7 +1052,7 @@
 себто conj:subord
 сиріч conj:subord
 справді adv:&insert|part
-також adv|conj:coord
+також adv
 так adv:&pron:dem
 так part
 так conj:coord
@@ -1053,18 +1060,18 @@
 там-то adv:&pron:dem
 та conj:coord|part
 теє part:coll
-теж adv|part
+теж adv                                         # :&part
 тим adv:rare|conj:subord
 тим-то conj:subord
 тільки adv|conj:subord|conj:coord|part
 тільки-но adv|part|conj:subord
-тобто conj:subord|part
+тобто conj:subord
 тож conj:subord|part
 тому conj:subord|adv
 тощо part
 то conj:subord|part
 утім adv:v-u|conj:coord:v-u
-хай part|conj:subord
+хай part
 хіба conj:subord|part
 хоча conj:subord|part
 хоч conj:subord|part

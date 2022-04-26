@@ -32,6 +32,7 @@
 аутсорсер /n20.a.p.ke.<
 аутстафінг /n20
 афган /n20
+афтепаті noun:n:nv:np
 ацтой noninfl
 баблішко /n2n
 бабло /n2n
@@ -620,7 +621,7 @@
 кешбек /n20.p
 кидалово /n2n
 кімарнути /v1 :perf
-кінопродакшн noun:n:nv:np
+кінопродакшн noun:m:nv:np
 кінорадіомеханік /n20.a.p.<
 кіпер /n20.a.p.ke.<
 кічевий /adj
@@ -986,7 +987,7 @@
 папєрєднік /n20.a.p.<
 папік /n20.a.p.<
 патамуша noninfl
-паті noun:f:nv
+паті noun:f:nv|noun:n:nv
 пахан /n20.a.p.<
 паханат /n20.p
 паханський /adj
@@ -1246,7 +1247,7 @@
 селебриті noun:p:nv:ns:anim
 селебритіз noun:p:nv:ns:anim
 селебритіс noun:p:nv:ns:anim
-селебріті noun:p:nv:ns:anim
+селебріті noun:m:nv:ns:anim|noun:f:nv:ns:anim
 селебрітіз noun:p:nv:ns:anim
 селебрітіс noun:p:nv:ns:anim
 селфитися /vr1.cf.advp :imperf

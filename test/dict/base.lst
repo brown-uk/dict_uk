@@ -300,3 +300,5 @@
 АПБ noun:m:nv:np                            # агропромисловий банк
 ВВ noun:p:nv:ns                             # внутрішні війська
 ВВ noun:p:nv:ns:prop                        # Воплі Відоплясова
+
+пів numr:m:nv:np|numr:f:nv:np|numr:n:nv:np
