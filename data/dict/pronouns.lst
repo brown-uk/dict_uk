@@ -183,8 +183,8 @@
 увесь /adj_pron.long :&pron:gen
 ввесь /adj_pron.long :&pron:gen
 
-все adv:v-u|conj:coord:v-u|part:v-u
-усе adv:v-u|conj:coord:v-u|part:v-u
+все adv:v-u|part:v-u
+усе adv:v-u|part:v-u
 
 все все noun:inanim:n:v_naz:&pron:gen:v-u
 всього все noun:inanim:n:v_rod:&pron:gen:v-u
@@ -234,7 +234,7 @@
 
 інше /n2adj1 :inanim:&pron:def
 інший /adj :&pron:def
-інший /n2adj1.f.p.< :&pron:def
+інші /n2adj1.< :&pron:def
 кожний /adj :&pron:gen
 кожний /n2adj1.f.p.< :&pron:gen
 
@@ -766,7 +766,7 @@
 углиб prep:v-u                      # rv_rod
 вгорі prep:v-u                      # rv_rod
 угорі prep:v-u                      # rv_rod
-відносно prep                       # rv_dav
+відносно prep                       # rv_rod
 внаслідок внаслідок prep:v-u        # rv_rod
 унаслідок унаслідок prep:v-u        # rv_rod
 вподовж вподовж prep:v-u            # rv_rod
@@ -849,7 +849,7 @@
 насеред насеред prep        # rv_rod
 насупроти насупроти prep        # rv_rod
 невважаючи невважаючи prep        # rv_zna
-вище вище prep        # rv_zna
+вище вище prep        # rv_rod
 нижче нижче prep        # rv_rod
 о о prep        # rv_zna:rv_mis
 о о intj
@@ -864,6 +864,8 @@
 округи округи prep        # rv_rod
 опісля опісля prep        # rv_rod
 опріч опріч prep|adv        # rv_rod
+паралельно prep             # rv_dav
+перпендикулярно prep             # rv_dav
 перед перед prep        # rv_oru:rv_zna
 переді переді prep        # rv_oru:rv_zna
 під під prep        # rv_zna:rv_oru

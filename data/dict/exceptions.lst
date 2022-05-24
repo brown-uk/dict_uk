@@ -596,7 +596,7 @@
 моя мій adj:f:v_kly:&pron:pos
 моє мій adj:n:v_kly:&pron:pos
 
-погибелі погибель noun:p:v_naz
+погибелі погибель noun:p:v_naz/v_zna                      # три погибелі
 
 чоловік чоловік noun:anim:p:v_rod/v_zna:bad
 
