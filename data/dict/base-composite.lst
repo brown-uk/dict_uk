@@ -85,11 +85,9 @@
 музика /n10.p1.<m - любитель /n20.a.p.<
 ненька /n10.< - Україна /n10.<
 обіцянка /n10.p2 - цяцянка /n10.p2
-#один /numr - єдиний /adj
-#один /numr - однісінький /adj
-один /numr - єдиний /adj ^adj:&pron:dem:ind
-один /numr - однісінький /adj ^adj:&pron:dem:ind
-один /numr - другий /adj :&numr
+один /numr ^adj - єдиний /adj :&numr
+один /numr ^adj - однісінький /adj :&numr
+один /numr ^adj - другий /adj :&numr
 один /numr g=m - півтора
 один /numr g=n - півтора
 один /numr g=f - півтори

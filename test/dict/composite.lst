@@ -11,7 +11,7 @@
 грейдер /n20.a.p.ke - елеватор /n20.a.p.ke !u-u
 дівка /n10.p2.< - дзиґа /n10.p1.<
 дід /n20.a.ku.< - баба /n10.< ^noun:p
-один /numr - другий /adj :&numr
+один /numr ^adj - єдиний /adj :&numr
 один /numr g=m - півтора
 один /numr g=n - півтора
 один /numr g=f - півтори
@@ -25,6 +25,4 @@
 такий /adj - то :&pron:dem
 чудо /n2n.p1.<> - юдо /n2n.p1.<> !u-u
 Хутори /np2 - Кривошиїнецькі /n2adj1
-один /numr - єдиний /adj ^adj:&pron:dem:ind
-один /numr - єдиний /adj
 що /n_pron - будь :&pron:ind

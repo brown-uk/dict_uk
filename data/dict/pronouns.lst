@@ -478,12 +478,9 @@
 # Числівники
 
 один /numr
-один /numr ^adj :&pron:dem:ind
 оден один numr:m:v_naz/v_zn2:alt
-оден один adj:m:v_naz:&pron:dem:ind:alt
-оден один adj:m:v_zna:rinanim:&pron:dem:ind:alt
 
-'дин /numr ^adj :&pron:dem:ind:short:coll
+'дин /numr :short:coll
 
 
 один-два один-два numr:p:v_naz/v_zna                  # rg_m        # :v_zna:rinanim
