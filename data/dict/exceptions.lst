@@ -234,7 +234,7 @@
 Христом Христос noun:m:v_oru:anim:prop:fname
 Христі Христос noun:m:v_mis:anim:prop:fname
 Христе Христос noun:m:v_kly:anim:prop:fname
-Христосе Христос noun:m:v_kly:anim:prop:fname:rare
+Христосе Христос noun:m:v_kly:anim:prop:fname
 
 четвер четвер noun:m:v_naz/v_zna
 четверга четвер noun:m:v_rod
@@ -354,7 +354,7 @@
 нічиї нічия noun:inanim:p:v_kly
 
 сінями сіни noun:inanim:p:v_oru:ns
-чоботів чобіт noun:inanim:p:v_rod:rare:ua_2019
+чоботів чобіт noun:inanim:p:v_rod:ua_2019
 
 # нестандартні леми
 
@@ -588,7 +588,7 @@
 
 автів авто noun:inanim:p:v_rod:alt:subst
 псевдів псевдо noun:inanim:p:v_rod:alt:subst
-бюрків бюрко noun:inanim:p:v_rod:rare:subst
+бюрків бюрко noun:inanim:p:v_rod:subst
 цеберків цеберко noun:inanim:p:v_rod:subst
 древків древко noun:inanim:p:v_rod:bad:subst
 
@@ -738,23 +738,23 @@
 ді part:pers                                # ді Капріо, ді Сальва
 ла part:pers                                # де ла Круа
 
-кадівб кадівб noun:inanim:m:v_naz:rare
-кадовба кадівб noun:inanim:m:v_rod:rare
-кадовбові кадівб noun:inanim:m:v_dav:rare
-кадовбу кадівб noun:inanim:m:v_dav:rare
-кадівб кадівб noun:inanim:m:v_zna:rare
-кадовбом кадівб noun:inanim:m:v_oru:rare
-кадовбі кадівб noun:inanim:m:v_mis:rare
-кадовбові кадівб noun:inanim:m:v_mis:rare
-кадовбу кадівб noun:inanim:m:v_mis:rare
-кадовбе кадівб noun:inanim:m:v_kly:rare
-кадовби кадівб noun:inanim:p:v_naz:rare
-кадовбів кадівб noun:inanim:p:v_rod:rare
-кадовбам кадівб noun:inanim:p:v_dav:rare
-кадовби кадівб noun:inanim:p:v_zna:rare
-кадовбами кадівб noun:inanim:p:v_oru:rare
-кадовбах кадівб noun:inanim:p:v_mis:rare
-кадовби кадівб noun:inanim:p:v_kly:rare
+кадівб кадівб noun:inanim:m:v_naz
+кадовба кадівб noun:inanim:m:v_rod
+кадовбові кадівб noun:inanim:m:v_dav
+кадовбу кадівб noun:inanim:m:v_dav
+кадівб кадівб noun:inanim:m:v_zna
+кадовбом кадівб noun:inanim:m:v_oru
+кадовбі кадівб noun:inanim:m:v_mis
+кадовбові кадівб noun:inanim:m:v_mis
+кадовбу кадівб noun:inanim:m:v_mis
+кадовбе кадівб noun:inanim:m:v_kly
+кадовби кадівб noun:inanim:p:v_naz
+кадовбів кадівб noun:inanim:p:v_rod
+кадовбам кадівб noun:inanim:p:v_dav
+кадовби кадівб noun:inanim:p:v_zna
+кадовбами кадівб noun:inanim:p:v_oru
+кадовбах кадівб noun:inanim:p:v_mis
+кадовби кадівб noun:inanim:p:v_kly
 
 # сучасн. - молодіжі, в старих словниках - молодежи
 молодежі молодіж noun:inanim:f:v_rod:rare
@@ -1104,7 +1104,7 @@
 виходе виходити verb:imperf:pres:s:3:subst:&insert            # :xp2
 встеле встелити verb:perf:futr:s:3:subst
 входе входити verb:imperf:pres:s:3:subst
-глаголе глаголити verb:imperf:pres:s:3:subst:rare
+глаголе глаголити verb:imperf:pres:s:3:subst
 говоре говорити verb:imperf:pres:s:3:subst
 гомоне гомоніти verb:imperf:pres:s:3:subst
 дзвоне дзвонити verb:imperf:pres:s:3:subst

@@ -9,16 +9,18 @@ import org.junit.jupiter.api.Test
 
 public class ExpandCompsTest {
 	
-	ExpandComps expandComps
+	static ExpandComps expandComps
 	
 	@BeforeEach
 	void setUp() {
-		def affixDir = new File("data/affix").isDirectory() ? "data/affix" : "../../../data/affix"
-		Args.parse(["--aff", affixDir, "--dict", ""].toArray(new String[0]))
-		
-		def expand = new Expand(false)
-		expand.affix.load_affixes(affixDir)
-		expandComps = new ExpandComps(expand)
+        if( expandComps == null ) {
+            def affixDir = new File("data/affix").isDirectory() ? "data/affix" : "../../../data/affix"
+            Args.parse(["--aff", affixDir, "--dict", ""].toArray(new String[0]))
+
+            def expand = new Expand(false)
+            expand.affix.load_affixes(affixDir)
+            expandComps = new ExpandComps(expand)
+        }
 	}
 	
 	
@@ -37,7 +39,7 @@ public class ExpandCompsTest {
 '''.trim()
 	
 	@Test
-	void test() {
+	void testNounName() {
 		def input = ["Афанасьєв /n2adj2.<+ - Чужбинський /adj.<+ g=m"]
 //		assert expandComps.process_input(input) == fullComps.split(/\n/).collect { DicEntry.fromLine(it) }
 		assertEquals(fullComps, ExpandTest.join(expandComps.process_input(input)))
@@ -79,10 +81,57 @@ public class ExpandCompsTest {
 такими-сякими такий-сякий adj:p:v_oru
 '''.trim()
 		
-		@Test
-		void test2() {
-			def input = ["такий /adj - сякий /adj"]
-			assertEquals(fullComps2, ExpandTest.join(expandComps.process_input(input)))
-		}
-	
+	@Test
+	void testAdjPron() {
+		def input = ["такий /adj - сякий /adj"]
+		assertEquals(fullComps2, ExpandTest.join(expandComps.process_input(input)))
+	}
+
+    def fullComps3 =
+'''
+дівка-дзиґа дівка-дзиґа noun:anim:f:v_naz
+дівки-дзиґи дівка-дзиґа noun:anim:f:v_rod
+дівкою-дзиґою дівка-дзиґа noun:anim:f:v_oru
+дівку-дзиґу дівка-дзиґа noun:anim:f:v_zna
+дівці-дзизі дівка-дзиґа noun:anim:f:v_dav
+дівці-дзизі дівка-дзиґа noun:anim:f:v_mis
+дівці-дзидзі дівка-дзиґа noun:anim:f:v_dav
+дівці-дзидзі дівка-дзиґа noun:anim:f:v_mis
+дівки-дзиґи дівка-дзиґа noun:anim:p:v_naz
+дівки-дзиґи дівка-дзиґа noun:anim:p:v_kly
+дівок-дзиґ дівка-дзиґа noun:anim:p:v_rod
+дівок-дзиґ дівка-дзиґа noun:anim:p:v_zna
+дівкам-дзиґам дівка-дзиґа noun:anim:p:v_dav
+дівками-дзиґами дівка-дзиґа noun:anim:p:v_oru
+дівках-дзиґах дівка-дзиґа noun:anim:p:v_mis
+дівко-дзиґо дівка-дзиґа noun:anim:f:v_kly
+дівки-дзиґи дівка-дзиґа noun:anim:p:v_zna:rare
+'''.trim()
+    
+    @Test
+    void testNounAnimInanim() {
+        def input = ["дівка /n10.p2.< - дзиґа /n10.p1.<"]
+        assertEquals(fullComps3, ExpandTest.join(expandComps.process_input(input)))
+    }
+    
+    def fullComps4 =
+'''
+дід-баба дід-баба noun:anim:p:v_naz
+діда-баби дід-баба noun:anim:p:v_rod
+дідом-бабою дід-баба noun:anim:p:v_oru
+діда-бабу дід-баба noun:anim:p:v_zna
+дідові-бабі дід-баба noun:anim:p:v_dav
+діду-бабі дід-баба noun:anim:p:v_dav
+дідові-бабі дід-баба noun:anim:p:v_mis
+діді-бабі дід-баба noun:anim:p:v_mis
+діду-бабі дід-баба noun:anim:p:v_mis
+діду-бабо дід-баба noun:anim:p:v_kly
+'''.trim()
+    
+    @Test
+    void testNounAnimAnim() {
+        def input = ["дід /n20.a.ku.< - баба /n10.< ^noun:p"]
+        assertEquals(fullComps4, ExpandTest.join(expandComps.process_input(input)))
+    }
+
 }

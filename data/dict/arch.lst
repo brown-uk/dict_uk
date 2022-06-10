@@ -10,7 +10,7 @@
 адміраліція /n10.p1
 адонічний /adj
 адукат /n20.a.p.<
-адьє intj:rare
+адьє intj
 айбо айбо conj:coord
 акі conj:subord
 актьор /n20.a.ke.<
@@ -808,6 +808,7 @@
 колесниця /n10.p1
 колет /n20.a.p.@
 колій /n20.a.p.<
+кольба /n10.p1
 коляса /n10.p1
 комбід /n20.p
 комбідівець /n22.a.p.<
@@ -857,6 +858,7 @@
 малощо adv
 малпа /n10.p1.<>
 манастир /n24.a.p.ku
+мандрованець /n22.a.p.<
 маняк /n20.a.p
 маринарка /n10.p2
 масакра /n10.p1
@@ -885,6 +887,7 @@
 мосьпан /n20.a.<
 мосьпані /<f
 моторити /v1 :imperf
+моторош /n32
 моцний /adj \
  +cs=моцніший
 моцно adv
@@ -1233,7 +1236,7 @@
 одговорити /v1.is0 :perf
 одговоритися /vr1 :perf
 одговорювати /v1.cf.advp :imperf
-одговоряти /v2.cf.advp :imperf:rare
+одговоряти /v2.cf.advp :imperf
 одгодований /adj :&adjp:pasv:perf              # :past
 одгодованість /n30
 одгодовування /n2n.p1
@@ -1329,7 +1332,7 @@
 одзвичаїтися /vr1 :perf
 одзвичаюватися /vr1.cf.advp :imperf
 одзвітувати /v1.is0 :perf
-одзволити /v1.it1 :perf:rare
+одзволити /v1.it1 :perf
 одземок /n22.a.p
 одзиватися /vr2.cf.advp :imperf
 одзивний /adj
@@ -1368,7 +1371,7 @@
 одійняти /v1 :perf
 одікласти /v6.is3 :perf
 одімстити /v1.is0.it1 :perf
-одімщати /v2.cf.advp :imperf:rare
+одімщати /v2.cf.advp :imperf
 одіпрати /v3.isNo :perf
 одіпхнутий /adj :&adjp:pasv:perf               # :past
 одіпхнутися /vr1 :perf
@@ -1646,12 +1649,12 @@
 одрада /n10
 одраджувати /v1.cf.advp.isNo :imperf                # rv_inf
 одрадити /v1.is0.it0 :perf                         # rv_inf
-одрадісно adv:rare
+одрадісно adv
 одрадість /n30
 одрапортувати /v1.is0 :perf
 одраховувати /v1.cf.advp :imperf
 одрахувати /v1.is0 :perf
-одраювати /v1.cf.advp :imperf:rare
+одраювати /v1.cf.advp :imperf
 одраяти /v1 :perf
 одреагувати /v1 :perf
 одрекомендувати /v1.is0 :perf
@@ -1842,7 +1845,7 @@
 одуховлення /n2n
 одучити /v1.it1.is0 :perf
 одушевлення /n2n.p1
-одхаючувати /v1.cf.advp :imperf:rare
+одхаючувати /v1.cf.advp :imperf
 одхилення /n2n.p1
 одхиляння /n2n.p1
 одхиляти /v2.cf.advp :imperf
@@ -2714,4 +2717,5 @@
 якнайлучче adv:comps
 якнайшвидче adv:comps
 якор /n20.a.p
+яриновий /adj
 яскиня /n10.p1

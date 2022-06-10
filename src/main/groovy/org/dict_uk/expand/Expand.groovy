@@ -472,12 +472,29 @@ class Expand {
 
 			lines = out_lines
 		}
+		
+		// з.в. мн. з в/у: кандидат в президенти
+		List<DicEntry> extra_out_lines = []
+		for(DicEntry line in lines) {
+            if( line.tagStr.startsWith('noun')
+                    && line.tagStr.contains(':anim') 
+                    && line.tagStr.contains(':p:v_naz') 
+                    && ! (line.tagStr =~ /prop|abbr|pron/) 
+                    && ! flags.contains('>')
+                    && ! flags.contains('^noun:p') ) { // for composites
+                    
+                def tagsVzna = line.tagStr.replace("p:v_naz", "p:v_zna:rare")
+                extra_out_lines.add(new DicEntry(line.word, line.lemma, tagsVzna, Z_V_U_COMMENT))
+            }
+        }
+        lines += extra_out_lines
 
 		lines = adjustForGeo2019(lines, flags)
 				
 		return lines
 	}
 
+    static final String Z_V_U_COMMENT = 'з в/у'
 	static final Pattern GEO_ONLY_A = ~/([сц]ьк|ець|бур[гґ]|град|город|піль|поль|мир|слав|фурт)$/
 	static final Pattern GEO_POSS_DUAL = ~/([ії]в|[еєо]в|[иі]н|[аи]ч)$/
 	

@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory
 class ExpandComps {
 	private static final Logger log = LoggerFactory.getLogger(ExpandComps.class);
 
-	private static final Pattern tags_re = Pattern.compile("(.*:)[mfnp]:v_...(.*)")
+	private static final Pattern tags_re = Pattern.compile("(.*:)[mfnp]:v_...(?::r(?:in)?anim)?(.*)")
 	private static final Pattern gen_vidm_pattern = Pattern.compile(":(.:v_...(:r(in)?anim)?)")
 	final Expand expand
 
@@ -28,16 +28,13 @@ class ExpandComps {
 	List<DicEntry> matchComps(List<DicEntry> lefts, List<DicEntry> rights, String vMisCheck) {
 		
 		List<DicEntry> outs = []
-		Map<String, List<String>> left_v = [:]
+		Map<String, List<DicEntry>> leftEntryByVidm = [:]
 		String left_gen = ""
 		boolean mixed_gen = false
 
-		def left_wn
-		def left_tags
-
+//		def left_tags
 
 		for(DicEntry ln in lefts) {
-//			def parts = ln.split(" ")
 			def rrr = gen_vidm_pattern.matcher(ln.tagStr)
 			if( ! rrr.find() ) {
 				log.warn("ignoring left {}", ln)
@@ -52,12 +49,11 @@ class ExpandComps {
 				if( left_gen != vidm[0] )
 					mixed_gen = true
 			}
-			if( ! (vidm in left_v) )
-				left_v[vidm] = []
+			if( ! (vidm in leftEntryByVidm) )
+				leftEntryByVidm[vidm] = []
 
-			left_v[vidm].add(ln.word)
-			left_wn = ln.lemma
-			left_tags = ln.tagStr
+			leftEntryByVidm[vidm].add(ln)
+//			left_tags = ln.tagStr
 		}
 
 		if( mixed_gen ) {
@@ -70,13 +66,14 @@ class ExpandComps {
 			}
 		}
 
-//		println 'xx ' +  lefts[0].tagStr
 //		println "+ " + vMisCheck + " / " + (vMisCheck as boolean)
 		
-		for(DicEntry rn in rights) {
-			def rrr = gen_vidm_pattern.matcher(rn.tagStr)
+        List<String> pVnazForms = []
+        
+		for(DicEntry rightEntry in rights) {
+			def rrr = gen_vidm_pattern.matcher(rightEntry.tagStr)
 			if( ! rrr.find() ) {
-				log.warn("composite: ignoring right {}", rn)
+				log.warn("composite: ignoring right {}", rightEntry)
 				continue
 			}
 
@@ -84,17 +81,22 @@ class ExpandComps {
 			if( left_gen != "" && "mfn".contains(vidm[0]) )
 				vidm = left_gen + vidm[1..-1]
 
-			if( !(vidm in left_v) )
+			if( !(vidm in leftEntryByVidm) )
 				continue
 
-			for(String left_wi in left_v[vidm]) {
-				String w_infl = left_wi + "-" + rn.word
-				String lemma = left_wn + "-" + rn.lemma
+			for(DicEntry leftEntry in leftEntryByVidm[vidm]) {
+				String w_infl = leftEntry.word + "-" + rightEntry.word
+				String lemma = leftEntry.lemma + "-" + rightEntry.lemma
 
-				if( vMisCheck && vidm =~ /[nm]:v_mis/ && ! isMascVMisMatch(left_wi, rn.word, vMisCheck) )
+				if( vMisCheck && vidm =~ /[nm]:v_mis/ && ! isMascVMisMatch(leftEntry.word, rightEntry.word, vMisCheck) )
 					continue
-	
-				String tagStr = tags_re.matcher(left_tags).replaceAll('$1'+vidm+'$2')
+                
+                if( (rightEntry.comment == Expand.Z_V_U_COMMENT || leftEntry.comment == Expand.Z_V_U_COMMENT)
+                        &&  rightEntry.comment != leftEntry.comment ) {
+                    continue
+                }
+    
+				String tagStr = tags_re.matcher(leftEntry.tagStr).replaceAll('$1'+vidm+'$2')
 				DicEntry entry = new DicEntry(w_infl, lemma, tagStr)
 				outs.add(entry)
 			}
@@ -103,7 +105,15 @@ class ExpandComps {
 		return outs
 	}
 
-	private static boolean isMascVMisMatch(left, right, vMisCheck) {
+    @CompileStatic
+    private static boolean isAnimPVZnaMatch(left, right) {
+        boolean leftVov = left =~ /[аяиі]$/
+        boolean rightVov = right =~ /[аяиі]$/
+        return leftVov == rightVov
+    }
+    
+    @CompileStatic
+	private static boolean isMascVMisMatch(left, right, String vMisCheck) {
 		if( vMisCheck.startsWith("u-") && left =~ /[ую]$/ && ! (right =~ /[ую]$/) )
 			return false
 		if( vMisCheck.endsWith("-u") && right =~ /[ую]$/ && ! (left =~ /[ую]$/) )

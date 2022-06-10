@@ -80,9 +80,9 @@
 будь-хто /n_pron.< :&pron:ind
 будь-що будь-що adv:&pron:ind                               # бу́дь-що
 будь-що /n_pron :&pron:ind
-будлі-хто /n_pron.< :&pron:ind:rare
-будлі-що /n_pron :&pron:ind:rare
-будлі-що adv:&pron:ind:rare
+будлі-хто /n_pron.< :&pron:ind
+будлі-що /n_pron :&pron:ind
+будлі-що adv:&pron:ind
 бозна noninfl:&predic
 бозна-котрий /adj :&pron:ind
 бозна-чий /adj_pron :&pron:ind
@@ -270,30 +270,30 @@
 будь-куди adv:&pron:ind
 будь-звідки adv:&pron:ind
 
-будлі-де adv:&pron:ind:rare
-будлі-як adv:&pron:ind:rare
-будлі-коли adv:&pron:ind:rare
-будлі-куди adv:&pron:ind:rare
-будлі-звідки adv:&pron:ind:rare
+будлі-де adv:&pron:ind
+будлі-як adv:&pron:ind
+будлі-коли adv:&pron:ind
+будлі-куди adv:&pron:ind
+будлі-звідки adv:&pron:ind
 
-чортзна-де adv:&pron:ind:coll
-чортзна-як adv:&pron:ind:coll
-чортзна-коли adv:&pron:ind:coll
-чортзна-куди adv:&pron:ind:coll
-чортзна-звідки adv:&pron:ind:coll
-чортзна-відкіля adv:&pron:ind:coll
-чортзна-відкіль adv:&pron:ind:coll
-чортзна-відколи adv:&pron:ind:coll
+чортзна-де adv:&pron:ind
+чортзна-як adv:&pron:ind
+чортзна-коли adv:&pron:ind
+чортзна-куди adv:&pron:ind
+чортзна-звідки adv:&pron:ind
+чортзна-відкіля adv:&pron:ind
+чортзна-відкіль adv:&pron:ind
+чортзна-відколи adv:&pron:ind
 
-хтозна-де adv:&pron:ind:coll
-хтозна-як adv:&pron:ind:coll
-хтозна-коли adv:&pron:ind:coll
-хтозна-куди adv:&pron:ind:coll
-хтозна-звідки adv:&pron:ind:coll
-хтозна-чому adv:&pron:ind:coll
-хтозна-відкіля adv:&pron:ind:coll
-хтозна-відкіль adv:&pron:ind:coll
-хтозна-відколи adv:&pron:ind:coll
+хтозна-де adv:&pron:ind
+хтозна-як adv:&pron:ind
+хтозна-коли adv:&pron:ind
+хтозна-куди adv:&pron:ind
+хтозна-звідки adv:&pron:ind
+хтозна-чому adv:&pron:ind
+хтозна-відкіля adv:&pron:ind
+хтозна-відкіль adv:&pron:ind
+хтозна-відколи adv:&pron:ind
 
 невідь-де adv:&pron:ind
 невідь-як adv:&pron:ind
@@ -301,11 +301,11 @@
 невідь-куди adv:&pron:ind
 невідь-звідки adv:&pron:ind
 
-казна-де adv:&pron:ind:coll
-казна-як adv:&pron:ind:coll
-казна-коли adv:&pron:ind:coll
-казна-куди adv:&pron:ind:coll
-казна-звідки adv:&pron:ind:coll
+казна-де adv:&pron:ind
+казна-як adv:&pron:ind
+казна-коли adv:&pron:ind
+казна-куди adv:&pron:ind
+казна-звідки adv:&pron:ind
 
 всяк adv:rare:v-u
 усяк adv:rare:v-u
