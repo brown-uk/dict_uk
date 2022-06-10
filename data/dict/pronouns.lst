@@ -307,8 +307,8 @@
 казна-куди adv:&pron:ind
 казна-звідки adv:&pron:ind
 
-всяк adv:rare:v-u
-усяк adv:rare:v-u
+всяк adv:arch:v-u
+усяк adv:arch:v-u
 
 всяк всякий adj:m:v_naz/v_zn2:short:&pron:gen:v-u
 усяк усякий adj:m:v_naz/v_zn2:short:&pron:gen:v-u
@@ -370,12 +370,6 @@
 стількох стільки numr:p:v_rod/v_zna/v_mis:&pron:dem
 стільком стільки numr:p:v_dav:&pron:dem
 стількома стільки numr:p:v_oru:&pron:dem
-
-стільки-то adv:&pron:dem
-стільки-то стільки-то numr:p:v_naz/v_zna:&pron:dem
-стількох-то стільки-то numr:p:v_rod/v_zna/v_mis:&pron:dem
-стільком-то стільки-то numr:p:v_dav:&pron:dem
-стількома-то стільки-то numr:p:v_oru:&pron:dem
 
 скільки-небудь adv:&pron:ind
 скільки-небудь скільки-небудь numr:p:v_naz/v_zna:&pron:ind
@@ -549,10 +543,10 @@
 обом обоє numr:p:v_dav
 обома обоє numr:p:v_oru
 
-обидвоє обидвоє numr:p:v_naz/v_zna:rare
-обидвох обидвоє numr:p:v_rod/v_zna/v_mis:rare
-обидвом обидвоє numr:p:v_dav:rare
-обидвома обидвоє numr:p:v_oru:rare
+обидвоє обидвоє numr:p:v_naz/v_zna
+обидвох обидвоє numr:p:v_rod/v_zna/v_mis
+обидвом обидвоє numr:p:v_dav
+обидвома обидвоє numr:p:v_oru
 
 обидва обидва numr:p:v_naz/v_zna        # rg_m:rg_n
 обидві обидва numr:p:v_naz/v_zna        # rg_f
@@ -918,15 +912,15 @@
 # рідковживані
 ув ув prep                      # rv_zna:rv_mis:rv_rod
 з-між з-між prep                # rv_rod
-ві ві prep                      # rv_zna:rv_mis
-звиш звиш prep:rare             # rv_rod:rv_zna
-межи межи prep:rare             # rv_oru:rv_rod:rv_zna
-помежи помежи prep:rare         # rv_oru:rv_rod:rv_zna
-пред пред prep:rare             # rv_oru:rv_zna
-передо передо prep:rare         # rv_oru:rv_zna
-предо предо prep:rare           # rv_oru:rv_zna
+ві ві prep:arch                 # rv_zna:rv_mis
+звиш звиш prep:arch             # rv_rod:rv_zna
+межи межи prep                  # rv_oru:rv_rod:rv_zna
+помежи помежи prep              # rv_oru:rv_rod:rv_zna
 підо підо prep                  # rv_oru:rv_zna
-во во prep:rare                 # rv_zna:rv_mis
+пред пред prep:arch             # rv_oru:rv_zna
+передо передо prep:arch         # rv_oru:rv_zna
+предо предо prep:arch           # rv_oru:rv_zna
+во во prep:arch                 # rv_zna:rv_mis
 
 # частки і сполучники
 # Однолітерні слова
@@ -945,7 +939,6 @@
 
 # решта
 аби conj:subord
-аби-но conj:subord
 абощо part
 або conj:coord
 авжеж part
@@ -980,7 +973,6 @@
 усе-таки part:v-u
 втім adv:v-u|conj:coord:v-u
 геть adv|intj|part
-геть-то adv
 дедалі adv                                          # :&part
 де adv:&pron:int:rel|part|part:pers                 # може вжив. як спол. слово
 доки adv:&pron:int:rel|conj:subord
@@ -1014,8 +1006,6 @@
 немовбито conj:subord|part
 неначебто conj:subord|part
 нехай part
-нехай-но part
-хай-но part
 не part
 ніби conj:subord|part
 нібито conj:subord|part
@@ -1032,8 +1022,6 @@
 оскільки conj:subord
 ось part
 отже part|conj:subord:&insert
-отож-то conj:subord
-отож-бо conj:subord
 отож part|conj:subord
 ото part
 от part
@@ -1056,14 +1044,12 @@
 так part
 так conj:coord
 так conj:subord
-там-то adv:&pron:dem
 та conj:coord|part
 теє part:coll
 теж adv                                         # :&part
 тим adv:rare|conj:subord
 тим-то conj:subord
 тільки adv|conj:subord|conj:coord|part
-тільки-но adv|part|conj:subord
 тобто conj:subord
 тож conj:subord|part
 тому conj:subord|adv
@@ -1092,18 +1078,15 @@
 а-ля conj:subord
 
 ге part|intj
-так-таки part
 так-так part|intj
 всього-на-всього part
 усього-на-всього part
 но part|intj
 онно part:coll
 оно part:coll
-так-то part|adv
 то-то part
 осісьо part:coll
 угу part
-як-таки adv
 
 обойко numr:p:nv:coll
 обоєчко numr:p:nv:coll
