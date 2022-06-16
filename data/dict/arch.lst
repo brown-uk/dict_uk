@@ -93,6 +93,7 @@
 блиндар /n24.a.p.ke.<
 блудилище /n2n.p1
 богатий /adj
+богато adv
 богдай part
 боготворення /n2n
 боднар /n24.a.p.ku.<
@@ -747,6 +748,7 @@
 ізсохнути /v3 :perf
 ізсохнутися /vr3 :perf
 ізсунутися /vr1 :perf
+ік adv
 іначе adv
 інструменталь /n20
 ірій /n20
@@ -2379,6 +2381,7 @@
 селяне селянин noun:anim:p:v_naz
 сербіянин /n20.a.pyn.<
 сестрінка /n10.p2.<
+си part
 сильветка /n10.p2
 силяти /v2.cf.advp :imperf
 синовець /n22.a.p.<
@@ -2480,6 +2483,7 @@
 тихомир'я /n2n
 тіко adv
 тілько adv|conj:subord|part
+тоб-то conj:subord
 товмач /n20.a.p.<
 товпа /n10.p1
 тогди adv:&pron:dem
@@ -2631,6 +2635,7 @@
 хургон /n20.a.p
 цаль /n20.a.p
 цвітник /n20.a.p
+цеб-то conj:subord
 цего noun:inanim:n:v_rod:&pron:dem  #> цього
 цеї цей adj:f:v_rod:&pron:dem
 ци conj:coord|conj:subord               # чи
