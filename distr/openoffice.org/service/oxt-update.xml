@@ -2,8 +2,8 @@
 <description xmlns="http://openoffice.org/extensions/update/2006" 
              xmlns:xlink="http://www.w3.org/1999/xlink">
     <identifier value="org.openoffice.uk.dictionaries.UA"/>
-    <version value="5.6.0" />
+    <version value="5.8.0" />
     <update-download>
-        <src xlink:href="https://extensions.libreoffice.org/assets/downloads/521/1639410784/dict-uk_UA-5.6.0.oxt"/>
+        <src xlink:href="https://extensions.libreoffice.org/assets/downloads/521/1655471128/dict-uk_UA-5.8.0.oxt"/>
     </update-download>
 </description>
