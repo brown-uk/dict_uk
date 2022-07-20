@@ -35,7 +35,6 @@
 десять,1:abst:quantity:absol
 'дин,1:abst:quantity:absol
 єден,1:abst:quantity:absol
-їден,1:abst:quantity:absol
 казна-скільки,1:quantif
 кілька,1:quantif
 кількадесят,1:abst:quantity
@@ -60,8 +59,6 @@
 обоє,1:abst:quantity:absol
 обоєчко,1:abst:quantity:absol
 обойко,1:abst:quantity:absol
-оден,1:abst:quantity:absol
-один,1:abst:quantity:absol
 одинадцятеро,1:abst:quantity:absol
 одинадцять,1:abst:quantity:absol
 один-два,1:abst:quantity
@@ -104,7 +101,6 @@
 скількись,1:quantif
 скілько,1:quantif
 сорок,1:abst:quantity:absol
-стільки-то,1:quantif
 сто,1:abst:quantity:absol
 стонадцять,1:abst:quantity
 тис.,1:abst:quantity
