@@ -9,6 +9,7 @@
 ади intj
 адміраліція /n10.p1
 адонічний /adj
+адрес /n20
 адукат /n20.a.p.<
 адьє intj
 айбо айбо conj:coord
@@ -2461,7 +2462,6 @@
 сумняшеся noninfl
 суперека /n10.p1
 супроводжати /v2.cf.advp :imperf
-сусід сусід noun:anim:p:v_rod/v_zna
 сутерени /np2
 сутий /adj
 сутній /adj
@@ -2491,6 +2491,7 @@
 толкування /n2n.p1
 толкувати /v1.cf.advp :imperf
 #топати /v2.cf.advp :imperf
+Тор /n20.a :prop:geo
 тороплений /adj
 торчма adv
 тотой /adj_pron :&pron:dem  #> той
@@ -2639,7 +2640,6 @@
 цего noun:inanim:n:v_rod:&pron:dem  #> цього
 цеї цей adj:f:v_rod:&pron:dem
 ци conj:coord|conj:subord               # чи
-циганів циган noun:anim:p:v_rod/v_zna
 цилюрник /n20.a.p.<
 цилюрня /n10.p2
 цина /n10
