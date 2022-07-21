@@ -479,7 +479,7 @@ class Expand {
             if( line.tagStr.startsWith('noun')
                     && line.tagStr.contains(':anim') 
                     && line.tagStr.contains(':p:v_naz') 
-                    && ! (line.tagStr =~ /prop|abbr|pron/) 
+                    && ! (line.tagStr =~ /prop|abbr|pron|:nv/) 
                     && ! flags.contains('>')
                     && ! flags.contains('^noun:p') ) { // for composites
                     
