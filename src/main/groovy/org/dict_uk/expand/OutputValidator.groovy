@@ -89,7 +89,7 @@ class OutputValidator {
 
 	@CompileStatic
 	private static boolean isLimitedForms(String lemmaLine) {
-		return lemmaLine.matches(".* #.* lim")
+		return lemmaLine.matches(".* #.* lim\\b.*")
 	}
 	
 	@CompileStatic

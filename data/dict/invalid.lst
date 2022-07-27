@@ -21,7 +21,7 @@
 Аргентіна /n10 :prop:geo
 аргентінський /adj
 аренда /n10
-арендований /adj :&adjp:pasv:imperf:perf    # :past
+арендований /adj :&adjp:pasv:imperf:perf
 арендованість /n30
 арендодавець /n22.a.p.<
 арендування /n2n.p1
@@ -110,7 +110,7 @@
 бузка бузок noun:inanim:m:v_rod             #> бузку
 буйвол noun:anim:m:v_naz                    # lim
 буков буква noun:p:v_rod
-буксируваний /adj :&adjp:pasv:imperf            # :past
+буксируваний /adj :&adjp:pasv:imperf
 булоб noninfl                                   #> було б
 бурак /n20.a.p
 Вавілон /n20.a :town:prop:geo
@@ -130,7 +130,7 @@
 веб-сайта веб-сайт noun:m:v_rod:ua_1992
 вестибуль /n20.a.p
 виборок вибірка noun:p:v_rod                #> вибірок
-вигаптований /adj :&adjp:pasv:perf              # :past
+вигаптований /adj :&adjp:pasv:perf
 вигаптовано вигаптувати verb:perf:impers
 виглянсований /adj :&adjp:pasv:perf
 виглянсовано виглянсувати verb:perf:impers
@@ -139,41 +139,41 @@
 вийнятково adv
 викарбований /adj :&adjp:pasv:perf
 викарбовано викарбувати verb:perf:impers        #> викарбувано
-викований /adj :&adjp:pasv:perf                 # :past
+викований /adj :&adjp:pasv:perf
 виковано викувати verb:perf:impers
-виколядований /adj :&adjp:pasv:perf             # :past
+виколядований /adj :&adjp:pasv:perf
 виколядовано виколядувати verb:perf:impers
 викомпонований /adj :&adjp:pasv:perf
 викомпоновано викомпонувати verb:perf:impers
-викорчований /adj :&adjp:pasv:perf              # :past
+викорчований /adj :&adjp:pasv:perf
 Вилково noun:n:nv:prop:geo
-вимудрований /adj :&adjp:pasv:perf              # :past
+вимудрований /adj :&adjp:pasv:perf
 вимудровано вимудрувати verb:perf:impers
-вимуштрований /adj :&adjp:pasv:perf             # :past
+вимуштрований /adj :&adjp:pasv:perf
 вимуштровано вимуштрувати verb:perf:impers
-виполірований /adj :&adjp:pasv:perf             # :past
+виполірований /adj :&adjp:pasv:perf
 виполіровано виполірувати verb:perf:impers
 випомповано випомпувати verb:perf:impers
-випробований /adj :&adjp:pasv:perf              # :past
+випробований /adj :&adjp:pasv:perf
 випробовано випробувати verb:perf:impers        # :xp2
 випродукований /adj :&adjp:pasv:perf
 випродуковано випродукувати verb:perf:impers
-випроменений /adj :&adjp:pasv:perf      # :past     #> випромінений
+випроменений /adj :&adjp:pasv:perf     #> випромінений
 випроменити /v1.is0.it1 :perf                       #> випромінити
 випроменитися /vr1 :perf                            #> випромінитися
 випряг випрягти verb:perf:past:m                    #> випріг
-вирахований /adj :&adjp:pasv:perf               # :past
+вирахований /adj :&adjp:pasv:perf
 вираховано вирахувати verb:perf:impers
-вирихтований /adj :&adjp:pasv:perf              # :past
+вирихтований /adj :&adjp:pasv:perf
 вирихтовано вирихтувати verb:perf:impers
-вирятований /adj :&adjp:pasv:perf               # :past
+вирятований /adj :&adjp:pasv:perf
 вирятовано вирятувати verb:perf:impers
 високодоходний /adj
 високопреосвящений /adj
-виторгований /adj :&adjp:pasv:perf              # :past
+виторгований /adj :&adjp:pasv:perf
 виторговано виторгувати verb:perf:impers
 вихідець вихідець noun:m:v_naz:anim  # lim  #> виходець
-вишліфований /adj :&adjp:pasv:perf              # :past
+вишліфований /adj :&adjp:pasv:perf
 вишліфовано вишліфувати verb:perf:impers
 вищосортний /adj
 відворотній /adj
@@ -279,7 +279,7 @@
 грудима груди noun:p:v_oru
 грунт /n20.p
 грунтівка /n10.p2
-грунтований /adj :&adjp:pasv:imperf    # :past
+грунтований /adj :&adjp:pasv:imperf
 грунтовий /adj
 грунтовний /adj.adv \
  +cs=грунтовніший
@@ -781,7 +781,7 @@
 негречний /adj
 негречність /n30.p
 негречно adv:&predic
-негрунтований /adj :&adjp:pasv:imperf    # :past
+негрунтований /adj :&adjp:pasv:imperf
 недивно adv
 не-Евклідів /adj                            #> неевклідів
 незаможній /adj                             #> незаможний
@@ -794,7 +794,7 @@
 неконкурентноздатний /adj
 неминучо adv
 неможе noninfl                              #> не може
-необгрунтований /adj.adv :&adjp:pasv:perf    # :past
+необгрунтований /adj.adv :&adjp:pasv:perf
 непотрібен непотрібний adj:m:v_naz/v_zn1:short  #> не потрібен
 непринятий /adj
 неприродній /adj
@@ -814,7 +814,7 @@
 ньюсмейкер /n20.a.p.ke.<
 ньюс-мейкер /n20.a.p.ke.<
 ньюсмейкерство /n2n
-обгрунтований /adj.adv :&adjp:pasv:perf \    # :past
+обгрунтований /adj.adv :&adjp:pasv:perf \
  +cs=обгрунтованіший
 обгрунтованість /n30
 обгрунтовання /n2n
@@ -958,7 +958,7 @@
 пріорітет /n20.p
 пріорітетний /adj
 прогавити /v1.it0 :perf
-продезинфікований /adj :&adjp:pasv:perf    # :past
+продезинфікований /adj :&adjp:pasv:perf
 прокрустовий adj:m:v_naz/v_zn2     # lim    #> прокрустів
 проплата /n10.p1
 просторо-часовий /adj
