@@ -354,8 +354,8 @@
 возвістити /v1.is0 :perf
 возвіщати /v2.cf.advp :imperf
 возговорити /v1 :perf
-воздавати /v1.cf.advp :imperf
-воздати /v3.isNo :perf
+воздавати /v1.cf.advp :imperf            # rv_zna:rv_oru:rv_dav
+воздати /v3.isNo :perf     # rv_zna:rv_oru:rv_dav
 возсідати /v2.cf.advp :imperf
 возсміятися /vr1.cf.advp :imperf
 возьме взяти verb:perf:futr:s:3
@@ -735,7 +735,7 @@
 зсилатися /vr2.cf.advp :imperf
 зумисно adv
 зцілювач /n20.a.p.<
-з'являти /v2.cf.advp :imperf
+з'являти /v2.cf.advp :imperf                 # rv_zna:rv_oru:rv_dav
 ізвідки adv:&pron:int:rel
 ізвідтам adv
 ізвір /n21.p
@@ -1008,7 +1008,7 @@
 наступлення /n2n
 наступно adv
 насупір adv
-натовкати /v2.isNo :perf
+натовкати /v2.isNo :perf         # rv_zna:rv_oru:rv_dav
 натомісць adv
 научка /n10
 наущення /n2n
@@ -2417,7 +2417,7 @@
 сояшник /n20.a.p
 сояшниковий /adj
 сперед adv
-спилити /v1 :perf
+спилити /v1 :perf    # rv_zna:rv_oru:rv_dav
 співдіяння /n2n
 сповістя /n2n
 сподібний /adj \

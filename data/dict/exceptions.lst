@@ -777,7 +777,7 @@
 #
 # !verb
 
-бути бути verb:inf:imperf
+бути бути verb:inf:imperf                       # rv_oru:rv_dav
 буть бути verb:inf:imperf:short
 буду бути verb:futr:s:1:imperf
 будеш бути verb:futr:s:2:imperf
@@ -813,7 +813,7 @@
 
 болиш боліти verb:imperf:pres:s:2:xp2
 
-пробути пробути verb:inf:perf
+пробути пробути verb:inf:perf           # rv_oru
 пробуду пробути verb:futr:s:1:perf
 пробудеш пробути verb:futr:s:2:perf
 пробуде пробути verb:futr:s:3:perf
@@ -840,9 +840,9 @@
 многая многий adj:p:v_naz/v_zn2:rare
 многії многий adj:p:v_naz/v_zn2:rare
 
-бракло бракнути verb:imperf:past:n
+бракло бракнути verb:imperf:past:n          # rv_rod
 
-хтітися хтітися verb:rev:imperf:inf:coll             # lim
+хтітися хтітися verb:rev:imperf:inf:coll             # lim  # rv_rod
 хтітись хтітися verb:rev:imperf:inf:coll
 хочеться хтітися verb:rev:imperf:pres:s:3:coll
 хтітиметься хтітися verb:rev:imperf:futr:s:3:coll
@@ -851,7 +851,7 @@
 
 хтівши хтівши advp:imperf
 
-хтіти хтіти verb:imperf:inf:coll
+хтіти хтіти verb:imperf:inf:coll                # rv_zna
 хоти хтіти verb:imperf:impr:s:2:coll
 хотім хтіти verb:imperf:impr:p:1:coll
 хотімо хтіти verb:imperf:impr:p:1:coll
@@ -883,12 +883,12 @@
 хотять хотіти verb:imperf:pres:p:3:subst
 захотять захотіти verb:perf:futr:p:3:subst
 
-забракнути забракнути verb:perf:inf             # lim
+забракнути забракнути verb:perf:inf             # lim  # rv_rod
 забракне забракнути verb:perf:futr:s:3
 забракло забракнути verb:perf:past:n
 
 # наказна фома є зайвою - не має сенсу значно ускладнювати правила???
-могти могти verb:inf:imperf             # rv_inf
+могти могти verb:inf:imperf             # rv_inf:rv_zna
 можу могти verb:pres:s:1:imperf
 можеш могти verb:pres:s:2:imperf
 може могти verb:pres:s:3:imperf:&insert
@@ -922,7 +922,7 @@
 
 славімо славити verb:imperf:impr:p:1
 
-ввити ввити verb:inf:perf
+ввити ввити verb:inf:perf               # rv_zna
 ввий ввити verb:impr:s:2:perf
 ввиймо ввити verb:impr:p:1:perf
 ввийте ввити verb:impr:p:2:perf
@@ -979,7 +979,7 @@
 проклято проклясти verb:perf:impers
 розіп'ято розіп'ясти verb:perf:impers
 
-зіпрати зіпрати verb:perf:inf
+зіпрати зіпрати verb:perf:inf           # rv_zna
 спери зіпрати verb:perf:impr:s:2
 сперім зіпрати verb:perf:impr:p:1
 сперімо зіпрати verb:perf:impr:p:1

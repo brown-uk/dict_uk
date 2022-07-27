@@ -371,8 +371,8 @@
 доходний /adj
 доходність /n30
 дошок дошка noun:p:v_rod                    #> дощок
-дригати /v2.cf.advp.shrt :imperf
-дригатися /vr2.cf.advp :imperf
+дригати /v2.cf.advp.shrt :imperf        # rv_zna:rv_oru:rv_dav
+дригатися /vr2.cf.advp :imperf        # rv_oru
 дригом adv
 дрів дрова noun:p:v_rod:ns
 дріжджевий /adj
