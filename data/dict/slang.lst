@@ -20,9 +20,9 @@
 аморалка /n10
 андердог /n20.a.p.<
 апгрейд /n20.p
-апгрейдити /v1.cf.advp.it0 :imperf
+апгрейдити /v1.cf.advp.it0 :imperf     # rv_zna:rv_oru:rv_dav
 апдейт /n20.p
-апдейтити /v1.cf.advp.it0 :imperf
+апдейтити /v1.cf.advp.it0 :imperf     # rv_zna:rv_oru:rv_dav
 аплікуха /n10.p1
 апофігей /n20
 аська /n10
@@ -37,7 +37,7 @@
 баблішко /n2n
 бабло /n2n
 баг /n20.p
-бадяжити /v1.cf.advp :imperf
+бадяжити /v1.cf.advp :imperf     # rv_zna:rv_oru:rv_dav
 баєр /n20.a.p.ke.< :ua_2019
 базарити /v1.cf.advp :imperf
 базворд /n20.p
@@ -57,7 +57,7 @@
 бандерштадт /n20
 бандьор /n20.a.p.ke.<
 банерка /n10
-банити /v1.cf.advp.it0 :imperf
+банити /v1.cf.advp.it0 :imperf          # rv_zna:rv_oru:rv_dav
 барбершоп /n20.p
 бардзо adv
 барзо adv
@@ -103,7 +103,7 @@
 більд-редакція /n10.p1
 бімба /n10
 біологічка /n10.p2.<
-бісирувати /v1.cf.advp :imperf
+бісирувати /v1.cf.advp :imperf     # rv_zna:rv_oru:rv_dav
 бітл /n20.a.p.<
 біч /n20.a.p.<
 блатар /n24.a.p.ke.<
@@ -117,7 +117,7 @@
 блутус /n20
 бляхер /n20.a.p.ke.<
 бодун /n20.a
-бодяжити /v1.cf.advp.it0 :imperf
+бодяжити /v1.cf.advp.it0 :imperf      # rv_zna:rv_oru:rv_dav
 бодяжний /adj
 бойз noninfl:foreign
 боксінг /n20
@@ -125,7 +125,7 @@
  +cs=бомбезніший
 бомбер /n20.a.p.ke
 бомбічний /adj
-бомбонути /v1 :perf                     # обікрасти
+бомбонути /v1 :perf                     # обікрасти      # rv_zna
 бортанути /v1.it1 :perf
 ботан /n20.a.p.<
 ботанічка /n10.p2.<
@@ -180,11 +180,11 @@
 випендрюватися /vr1.cf.advp :imperf
 випивон /n20
 випивончик /n20
-вирубити /v1.it1 :perf
-вирубитися /vr1.it1 :perf
+вирубити /v1.it1 :perf        # rv_zna:rv_oru:rv_dav
+вирубитися /vr1.it1 :perf        # rv_oru
 вирулити /v1.it1 :perf
 вирулювання /n2n
-вирулювати /v1.cf.advp :imperf
+вирулювати /v1.cf.advp :imperf        # rv_oru
 висновковувати /v1.cf.advp :imperf
 висновковуватися /vr1.cf.advp :imperf
 висяк /n20.p
@@ -192,7 +192,7 @@
 вишиватництво /n2n
 відбиванка /n10
 відбувайло /n20.<
-відгамселити /v1.it0 :perf
+відгамселити /v1.it0 :perf        # rv_zna:rv_oru:rv_dav
 відгрохати /v2 :perf
 відик /n20.a.p
 відкат /n20.p
@@ -229,9 +229,8 @@
 віртуал /n20.a.p.<                  # :xp1 людина
 віртуал /n20                        # :xp2 асбтр.
 віртуалка /n10.p2
-вкурити /v1 :perf
+вкурити /v1 :perf               # rv_zna
 владець /n22.a.p.<
-вламуватися /vr1.cf.advp :imperf
 влом adv
 водяра /n10
 вопше noninfl
@@ -343,6 +342,7 @@
 дембельнутися /vr1 :perf
 дембельський /adj
 демка /n10.p2
+демолювати /v1.cf.advp :imperf      # rv_zna:rv_oru:rv_dav
 депресняк /n20.a.p
 депресуха /n10
 десек'юритизація /n10
@@ -458,15 +458,14 @@
 жужик /n20.a.p.<
 журналюга /n10.p1.<m
 забабаханий /adj :&adjp:pasv:perf
-забабахати /v2.isNo :perf
+забабахати /v2.isNo :perf          # rv_zna:rv_oru:rv_dav
 забакланити /v1 :perf
 забалдіти /v2 :perf
 забанений /adj :&adjp:pasv:perf
-забанити /v1.is0 :perf
-забацаний /adj :&adjp:pasv:perf
+забанити /v1.is0 :perf               # rv_zna
 забашляний /adj :&adjp:pasv:perf
 забашляти /v2.isNo :perf
-забембати /v2 :perf
+забембати /v2 :perf        # rv_zna:rv_oru
 забичений /adj
 забичкувати /v1.cf.advp :imperf
 забімбаний /adj :&adjp:pasv:perf
@@ -491,7 +490,7 @@
 законтачити /v1.is0 :perf
 закусон /n20.p
 закусь /n32.p
-залабати /v2 :perf
+залабати /v2 :perf        # rv_zna:rv_oru:rv_dav
 зальот /n20.p
 замануха /n10.p1
 замаханий /adj :&adjp:pasv:perf
@@ -710,7 +709,7 @@
 кумарити /v1.cf.advp :imperf
 кумпанія /n10.p1
 кучмовоз /n20.a.p
-лабати /v2.cf.advp :imperf
+лабати /v2.cf.advp :imperf       # rv_zna:rv_oru:rv_dav
 лабуда /n10
 лабух /n20.a.p.<
 лавсторі noun:f:nv
@@ -721,9 +720,8 @@
 лажовий /adj
 лайк /n20.p
 лайкання /n2n
-лайкати /v1.cf.advp :imperf
-лайкати /v2.cf.advp :imperf
-лайкнути /v1 :perf
+лайкати /v2.cf.advp :imperf         # rv_zna
+лайкнути /v1 :perf                  # rv_zna
 лайкозалежність /n30
 лайн-ап /n20.p
 лайт noninfl:foreign
@@ -851,8 +849,8 @@
 набанячений /adj :&adjp:pasv:perf
 наблатикатися /vr2 :perf
 навальохати /v2.isNo :perf
-наваяти /v2 :perf
-навігувати /v1.cf.advp :imperf
+наваяти /v2 :perf           # rv_zna:rv_oru:rv_dav
+навігувати /v1.cf.advp :imperf           # rv_oru
 наворот /n20.p
 наворочений /adj \
  +cs=навороченіший
@@ -1004,8 +1002,8 @@
 передоз /n20
 перепихнутися /vr1 :perf
 перепост /n20.p
-перепостити /v1.is0 :perf
-перепощувати /v1.cf.advp :imperf
+перепостити /v1.is0 :perf               # rv_zna:rv_oru:rv_dav
+перепощувати /v1.cf.advp :imperf        # rv_zna:rv_oru:rv_dav
 пересидка /n10
 персьют /n20
 перформер /n20.a.p.ke.<
@@ -1039,7 +1037,7 @@
 побіда /n10
 побутовуха /n10
 побухати /v2 :perf
-повимахуватися /vr1 :perf
+повимахуватися /vr1 :perf       # rv_oru:rv_dav
 повкалувати /v1 :perf
 поворотник /n20.a.p
 поготівля /n10
@@ -1087,7 +1085,7 @@
 похавати /v2 :perf
 пошлятина /n10
 пошлячка /n10.p2.<
-поюзати /v2 :perf
+поюзати /v2 :perf        # rv_zna:rv_oru
 правопохоронець /n22.a.p.<
 правосек /n20.a.p.<
 правосєк /n20.a.p.<
@@ -1130,7 +1128,7 @@
 продакт-плейсмент /n20
 продакшен /n20.p
 продакшн /n20.p
-продинамити /v1 :perf
+продинамити /v1 :perf     # rv_zna:rv_oru:rv_dav
 продюсинг /n20
 проканати /v2 :perf p=3
 промоутинг /n20
@@ -1159,9 +1157,6 @@
 регулярка /n10
 рейдернути /v1 :perf
 рекординг /n20.p
-рекрутер /n20.a.p.ke.<
-рекрутинг /n20
-рекрутинговий /adj
 релакс /n20
 репачина /n10
 репост /n20.p
@@ -1185,7 +1180,7 @@
 рішалово /n2n
 родіна /n10
 розбодяжений /adj :&adjp:pasv:perf
-розбодяжити /v1.is0.it0 :perf
+розбодяжити /v1.is0.it0 :perf      # rv_zna:rv_oru:rv_dav
 розборка /n10.p2
 розважайлівка /n10.p2
 розважалівка /n10.p2
@@ -1200,8 +1195,8 @@
 розпальцьований /adj
 розпальцьовка /n10.p2
 розрулений /adj :&adjp:pasv:perf
-розрулити /v1.is0 :perf
-розрулитися /vr1 :perf p=4
+розрулити /v1.is0 :perf          # rv_zna:rv_oru:rv_dav
+розрулитися /vr1 :perf p=4          # rv_oru
 розрулювання /n2n
 розрулювати /v1.cf.advp :imperf
 розрулюватися /vr1.cf.advp :imperf
@@ -1214,7 +1209,7 @@
 росіянський /adj
 рохля /n10.p2
 ружжо /n2n
-рулити /v1.cf :imperf
+рулити /v1.cf :imperf          # rv_oru
 рульний /adj
 русня /n10
 сабж /n20.p
@@ -1299,6 +1294,7 @@
 совкізм /n20
 совковість /n30.p
 совок /n22.a.p.<
+совок /n22 :xp2
 сольник /n20.a.p
 соляра /n10
 соотєчєствєннік /n20.a.p.<
@@ -1309,7 +1305,6 @@
 софтверний /adj
 софтовий /adj
 спайс /n20
-спамити /v1.cf.advp :imperf
 спацерувати /v1.cf.advp :imperf
 спелчекер /n20.a.p.ke
 спиногриз /n20.a.p.<
@@ -1346,7 +1341,7 @@
 суперсейв /n20.p
 суперфуд /n20.p
 сфолити /v1 :perf
-схавати /v2 :perf
+схавати /v2 :perf             # rv_zna:rv_oru
 схалявити /v1 :perf
 схематоз /n20.p
 схематозний /adj
@@ -1520,7 +1515,7 @@
 хайпувати /v1.cf.advp :imperf
 хай-фай noninfl
 хакати /v2.cf.advp :imperf
-хакнути /v1.isTo :perf
+хакнути /v1.isTo :perf         # rv_zna:rv_oru:rv_dav
 хакнутий /adj :&adjp:pasv:perf
 хактивізм /n20
 хактивіст /n20.a.p.<
@@ -1599,7 +1594,6 @@
 чось noninfl
 чотко adv
 чувіха /n10.p1.<
-чуйка /n10
 чурка /n10.p2.<m
 чучмек /n20.a.p.<
 чьо noninfl
@@ -1664,7 +1658,7 @@
 щурятництво /n2n
 щурятничати /v2.cf.advp :imperf
 юзабіліті noninfl
-юзати /v2.cf.advp :imperf
+юзати /v2.cf.advp :imperf        # rv_zna:rv_oru
 юзер /n20.a.p.ke.<
 юзербар /n20.a.p.ke
 юзерка /n10.p2.<

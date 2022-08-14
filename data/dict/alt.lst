@@ -271,7 +271,7 @@
 деклямація /n10.p1
 деклямований /adj :&adjp:pasv:imperf
 деклямування /n2n.p1
-деклямувати /v1.cf.advp :imperf
+деклямувати /v1.cf.advp :imperf                  # rv_zna:rv_oru:rv_dav
 декляративний /adj
 деклярація /n10.p1
 деклярований /adj :&adjp:pasv:imperf:perf
@@ -285,7 +285,7 @@
 денебудь adv
 депо /n2n
 десовєтизація /n10
-десовєтизувати /v1.cf.advp.is0 :imperf:perf
+десовєтизувати /v1.cf.advp.is0 :imperf:perf      # rv_zna:rv_oru:rv_dav
 десовєтізація /n10
 джигад /n20.p
 дзигарок /n22.a.p
@@ -301,7 +301,7 @@
 діягностований /adj :&adjp:pasv:imperf:perf
 діягностувальний /adj
 діягностування /n2n
-діягностувати /v1.cf.advp :imperf:perf
+діягностувати /v1.cf.advp :imperf:perf     # rv_zna:rv_oru:rv_dav
 діягональ /n32
 діягональний /adj
 діягоналя /n10.p1
@@ -322,8 +322,8 @@
 доляр /n20.a.p.ke
 доляровий /adj
 доміно /n2n
-дусити /v1.cf.advp :imperf
-дуситися /vr1.cf.advp :imperf
+дусити /v1.cf.advp :imperf     # rv_zna:rv_oru:rv_dav
+дуситися /vr1.cf.advp :imperf     # rv_oru:rv_dav
 евразійський /adj
 евроатлантичний /adj
 евроінтеграційний /adj
@@ -363,7 +363,7 @@
 желятиновий /adj
 заанґажований /adj :&adjp:pasv:perf
 заанґажованість /n30
-заанґажувати /v1.is0 :perf
+заанґажувати /v1.is0 :perf     # rv_zna:rv_oru:rv_dav
 забудівник /n20.a.p.<
 загальноевропейський /adj
 задеклярувати /v1.is0 :perf

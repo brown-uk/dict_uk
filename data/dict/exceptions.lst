@@ -851,7 +851,7 @@
 
 хтівши хтівши advp:imperf
 
-хтіти хтіти verb:imperf:inf:coll                # rv_zna
+хтіти хтіти verb:imperf:inf:coll                # rv_zna:rv_rod
 хоти хтіти verb:imperf:impr:s:2:coll
 хотім хтіти verb:imperf:impr:p:1:coll
 хотімо хтіти verb:imperf:impr:p:1:coll
@@ -883,7 +883,7 @@
 хотять хотіти verb:imperf:pres:p:3:subst
 захотять захотіти verb:perf:futr:p:3:subst
 
-забракнути забракнути verb:perf:inf             # lim  # rv_rod
+забракнути забракнути verb:perf:inf             # lim  # rv_rod:rv_dav
 забракне забракнути verb:perf:futr:s:3
 забракло забракнути verb:perf:past:n
 

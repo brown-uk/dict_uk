@@ -197,9 +197,9 @@
 вигибти /v3 :perf
 виговір /n21
 видайність /n30
-видвигнути /v1 :perf
+видвигнути /v1 :perf      # rv_zna:rv_oru:rv_dav
 виділовий /adj
-видіти /v1.cf.advp.is0 :imperf
+видіти /v1.cf.advp.is0 :imperf      # rv_zna:rv_oru
 видітися /vr1 :perf p=3
 виємно adv
 вижаліти /v2 :perf
@@ -219,6 +219,7 @@
 виміна /n10.p1
 вимічати /v2.cf.advp :imperf
 винаймити /v1.it1 :perf
+винозорий /adj
 випечатати /v2.isNo :perf
 вирло /n2n.p1
 виробня /n10
@@ -425,6 +426,7 @@
 вутка /n10.p2.<>
 вхорканий /adj :&adjp:pasv:perf:v-u    # past
 вчиття /n2n
+вчухрати /v2 :perf
 газард /n20
 газівня /n10.p2
 гайстер /n20.a.p.ke.<>
@@ -535,6 +537,7 @@
 докладач /n20.a.p.<
 доконання /n2n
 доконувати /v1.cf.advp :imperf
+доконуватися /vr1.cf.advp :imperf
 докора /n10
 докраю adv
 доладу adv
@@ -560,6 +563,9 @@
 драб /n20.a.<
 дрібничковість /n30
 дрожка /n10.p2
+дрюкований /adj :&adjp:pasv:imperf
+дрюкувати /v1.cf.advp :imperf           # rv_zna:rv_oru:rv_dav
+дрюкуватися /vr1.cf.advp :imperf        # rv_oru
 дряглий /adj
 дряглість /n30
 дукиня /n10.p1.<
@@ -617,8 +623,8 @@
 зазлісно adv
 зазлість /n30
 зазнимкований /adj :&adjp:pasv:perf
-зазнимкувати /v1.is0 :perf
-зазнимкуватися /vr1 :perf
+зазнимкувати /v1.is0 :perf                      # rv_zna:rv_oru:rv_dav
+зазнимкуватися /vr1 :perf       # rv_oru
 заінтересування /n2n
 заки conj:subord
 заким conj:subord
@@ -640,11 +646,18 @@
 зарев /n20
 зарівно adv:&predic
 зарінок /n22
+зармутитися /vr1 :perf
+зармуток /n22
+засатарити /v1 :perf
+заслебезувати /v1 :perf
 засов /n20.a.u.p
 засовець /n22.a
 заспорити /v1 :perf
+засталятися /vr2.cf.advp :imperf
+застривати /v2 :perf
 застужати /v2.cf.advp :imperf
 засуд /n20
+засябрувати /v1 :perf
 засяг /n20
 затанчити /v1 :perf
 затахлувати /v1 :perf
@@ -652,14 +665,18 @@
 затого adv
 затривоження /n2n
 заужати /v2 :perf
+захвабрувати /v1 :perf
 захланник /n20.a.p.<
 захорування /n2n
 захорування /n2n.p1
 захорувати /v1 :perf
 зацний /adj
 зачеркувати /v1.cf.advp :imperf
+зачілябити /v1 :perf p=3
 зачувати /v2.cf :imperf
 зашанувати /v1 :perf
+зашилити /v1 :perf
+збармувати /v1 :perf            # rv_zna:rv_oru:rv_dav
 збігці /np2.<
 збірати /v2.cf.advp :imperf
 збіратися /vr2.cf.advp :imperf
@@ -676,21 +693,35 @@
 звязати /v1 :perf
 зв'язь /n32
 згиблий /adj
+згламати /v2 :perf          # rv_zna:rv_oru:rv_dav
 зглибока adv
+зглобити /v1.is0 :perf          # rv_zna:rv_oru:rv_dav
+згрізний /adj
+згрізність /n30
+згрізнутися /vr1 :perf
+згрошити /v1 :perf
 згук /n20.p
+згусуватися /vr1 :perf
+згучатися /vr1 :perf
 зґарда /n10.p1
 здалеки adv
+здихавичитися /vr1.it0 :perf
 здійманий /adj
 здобича noun:f:v_naz        # lim
 здобіль adv
 здогонити /v1 :perf
 здолу adv
 здоровля /n2n
+здрабисувати /v1.is0 :perf
+здріжати /v1.it1 :perf
 здрінка /n10.p2
 здря adv
 здрянка /n10.p2
 землевпорядковання /n2n
 земнорожденний /adj
+зеріпати /v2 :perf
+з'єдночення /n2n.p1
+з'єдночити /v1 :perf
 зиськати /v2 :imperf
 зідхання /n2n.p1
 зіма /n10
@@ -700,6 +731,7 @@
 зірно adv:&predic
 зіставатися /vr1.cf.advp :imperf
 зістатися /vr3 :perf
+зіхати /v2.cf.advp :imperf
 з'їжа /n10
 златий /adj
 злато /n2n
@@ -711,6 +743,7 @@
 змирятися /vr2.cf.advp :imperf
 змисл /n20.p
 знадвірний /adj
+знадоба /n10
 знакомець /n22.a.p.<
 знам'я /n2n
 знарошне adv
@@ -772,6 +805,8 @@
 каламут /n20.a.p.<
 кально adv:&predic
 капельмайстер /n20.a.p.ke.<
+каптування /n2n
+каптувати /v1.cf.advp :imperf
 касарня /n10.p2
 катеринщик /n20.a.p.<
 катмає noninfl:&predic
@@ -870,6 +905,8 @@
 мертворожденний /adj
 метанина /n10
 меценас /n20.a.p.<
+микулити /v1.cf.advp :imperf
+микулитися /vr1.cf.advp :imperf
 милостина /n10.p1
 мід noun:m:v_naz/v_zna                          # lim
 мізок /n22
@@ -936,6 +973,7 @@
 навстежень adv
 навтеки adv
 нагавиці /np1
+нагодити /v1 :perf
 нагородженість /n30
 надальше adv
 надвишка /n10
@@ -964,6 +1002,8 @@
 назначувати /v1.cf.advp :imperf
 назовний /adj
 наїджений /adj :&adjp:actv:perf
+накасатися /vr2.cf.advp :imperf
+накасуватися /vr1.cf.advp :imperf
 накинення /n2n
 накінці adv
 накликувати /v1.cf.advp :imperf
@@ -1193,7 +1233,7 @@
 одвідувачка /n10.p2.ko.<
 одвійки /np3
 одвір adv
-одвісити /v1.is0 :perf
+одвісити /v1.is0 :perf     # rv_zna:rv_oru:rv_dav
 одвістити /v1 :perf
 одвіт /n20
 одвітити /v1 :perf
@@ -1369,7 +1409,7 @@
 одіж /n32
 одізвання /n2n
 одізвати /v2.isNo :perf
-одізватися /vr1 :perf
+одізватися /vr1 :perf               # rv_oru:rv_dav
 одіймати /v2.cf.advp :imperf
 одійняти /v1 :perf
 одікласти /v6.is3 :perf
@@ -1628,7 +1668,7 @@
 одпоювати /v1.cf.advp :imperf
 одправити /v1.it0.is0 :perf
 одправитися /vr1.it0 :perf
-одправлений /adj :&adjp:pasv:perf rv_dav
+одправлений /adj :&adjp:pasv:perf       # rv_dav
 одправлення /n2n.p1
 одправляти /v2.cf.advp :imperf
 одпроваджений /adj :&adjp:pasv:perf
@@ -1645,7 +1685,7 @@
 одпускні /n2adj1
 одпуст /n20.p
 одпустити /v1.it1.is0 :perf
-одпущений /adj :&adjp:pasv:perf rv_dav
+одпущений /adj :&adjp:pasv:perf         # rv_dav
 одпущеник /n20.a.p.<
 одпущення /n2n.p1
 одр /n20.a.p
@@ -2059,6 +2099,7 @@
 парахвія /n10.p1
 парохіянин /n20.a.pyn.<
 пасажирний /adj
+патрошити /v1.cf.advp :imperf           # rv_zna:rv_oru:rv_dav
 пахати /v2.cf :xp2:imperf                   # па́хати
 пашпорт /n20.a.p
 пенсіон /n20
@@ -2076,6 +2117,7 @@
 перекладчик /n20.a.p.<
 перелім noun:m:v_naz/v_zna                  # lim
 переморгнутися /vr1 :perf
+перемусувати /v1.is0 :perf
 перерішити /v1 :perf
 переселянин /n20.a.pyn.<
 пересправи /np1
@@ -2115,7 +2157,7 @@
 пімста /n10
 пірвати /v1.isNo :perf
 післанець /n22.a.p.<
-післаний /adj :&adjp:pasv:perf rv_dav
+післаний /adj :&adjp:pasv:perf      # rv_dav
 післанництво /n2n
 піяцтво /n2n
 платничий /n2adj1.<
@@ -2148,6 +2190,8 @@
 повстриманість /n30
 повстримність /n30
 #погибати /v2.cf.advp :imperf
+погибіль /n23
+погибіти /v2 :perf
 #погибнути /v3 :perf
 поготовність /n30
 погуба /n10
@@ -2206,6 +2250,7 @@
 посереду prep        # rv_rod
 посестриця /n10.p1.<
 посілля /n2n
+поскліпуватися /vr1 :perf
 посланіє /n2n.p1
 послідок /n22.a
 пословиця /n10.p1
@@ -2287,6 +2332,7 @@
 прогляд /n20
 програ /n10
 проділь /n20.a.p
+проз prep                   # rv_zna
 прозвисько /n2n.p1
 прозурка /n10
 промкнутися /vr1 :perf
@@ -2656,6 +2702,7 @@
 чардак /n20.a.p
 #часопись /n32.p
 часть /n32.p
+часувати /v1.cf.advp :imperf
 чатиння /n2n
 чвірка /n10
 чей part

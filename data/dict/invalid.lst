@@ -159,8 +159,8 @@
 випродукований /adj :&adjp:pasv:perf
 випродуковано випродукувати verb:perf:impers
 випроменений /adj :&adjp:pasv:perf     #> випромінений
-випроменити /v1.is0.it1 :perf                       #> випромінити
-випроменитися /vr1 :perf                            #> випромінитися
+випроменити /v1.is0.it1 :perf                       #> випромінити        # rv_zna:rv_oru:rv_dav
+випроменитися /vr1 :perf                            #> випромінитися        # rv_oru
 випряг випрягти verb:perf:past:m                    #> випріг
 вирахований /adj :&adjp:pasv:perf
 вираховано вирахувати verb:perf:impers
@@ -177,6 +177,7 @@
 вишліфовано вишліфувати verb:perf:impers
 вищосортний /adj
 відворотній /adj
+відломати /v2.isNo :perf       # rv_zna:rv_oru:rv_dav
 візігот /n20.a.p.<                              #> візигот
 військомат /n20.p
 віл-інфекція /n10                 # caps    #> ВІЛ-інфекція
@@ -216,7 +217,6 @@
 гандж /n20.p
 ганок /n22.p                                #> ґанок
 гатунок /n22.p
-гаусівський /adj                            #> Гаусів
 гвалт /n20
 гвалтовно adv
 гвалтування /n2n.p1
@@ -343,12 +343,12 @@
 діджеріду noun:m:nv
 діджиталізація /n10
 діджиталізований /adj :&adjp:pasv:imperf:perf
-діджиталізувати /v1.cf.advp.is0 :imperf:perf
-діджиталізуватися /vr1.cf.advp :imperf:perf
+діджиталізувати /v1.cf.advp.is0 :imperf:perf      # rv_zna:rv_oru:rv_dav
+діджиталізуватися /vr1.cf.advp :imperf:perf      # rv_oru
 діджитальний /adj
 діджіталізація /n10
-діджіталізувати /v1.cf.advp.is0 :imperf:perf
-діджіталізуватися /vr1.cf.advp :imperf:perf
+діджіталізувати /v1.cf.advp.is0 :imperf:perf      # rv_zna:rv_oru:rv_dav
+діджіталізуватися /vr1.cf.advp :imperf:perf      # rv_oru
 ділер /n20.a.p.ke.<
 дірхем /n20.a.p
 діснеєвський /adj
@@ -425,7 +425,7 @@
 єрузалимський /adj
 жеж noninfl                                 #> же ж
 жень-шень /n20
-живописувати /v1.cf.advp :imperf
+живописувати /v1.cf.advp :imperf        # rv_zna
 житловокомунальний /adj
 життєвоважливий /adj
 життєво-важливий /adj
@@ -490,6 +490,7 @@
 зісватати /v2 :perf
 зістарювання /n2n
 зістарювати /v1.cf.advp :imperf
+зломати /v2.isNo :perf       # rv_zna:rv_oru:rv_dav
 знакомий /adj
 зобовязання /n2n.p1
 золотовалютний /adj                         #> золото-валютний
@@ -651,7 +652,7 @@
 лісопасовищний /adj                         #> лісо-пасовищний
 лоббі noun:n:nv
 локоть /n22.p
-ломати /v2.cf.advp :imperf
+ломати /v2.cf.advp :imperf              # rv_zna:rv_oru:rv_dav
 лонґселер /n20.a.p.ke
 луїсеньо noun:f:nv:np                       #> луїсеньйо
 лучше лучше adv:compc:&predic
