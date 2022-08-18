@@ -935,7 +935,6 @@
 а-а-а intj
 а-а-а-а intj
 
-най най part:rare
 
 # решта
 аби conj:subord
@@ -949,7 +948,7 @@
 аж part|conj:subord
 аж-аж part|conj:subord
 аж-аж-аж part|conj:subord
-але conj:coord|intj|part:rare
+але conj:coord|intj|part
 аніж conj:subord
 ані-ні part
 ані conj:coord|part
@@ -1047,7 +1046,6 @@
 та conj:coord|part
 теє part:coll
 теж adv                                         # :&part
-тим adv:rare|conj:subord
 тим-то conj:subord
 тільки adv|conj:subord|conj:coord|part
 тобто conj:subord
@@ -1066,15 +1064,12 @@
 щоби conj:subord|part
 щоб conj:subord|part
 щойно adv|conj:subord|part
-іно adv:rare|conj:subord:rare
-йно adv:rare|conj:subord:rare
 щоправда conj:subord
 якби conj:subord
 як-от part
 якраз adv|part
 якщо conj:subord
 як adv:&pron:int:rel|conj:subord|part
-яко conj:subord:rare
 а-ля conj:subord
 
 ге part|intj

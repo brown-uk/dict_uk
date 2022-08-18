@@ -343,7 +343,7 @@ task createRenamedReplacementDict(dependsOn: createOutRulesDir) {
 task caseGovernmentDict() {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outResDir}/case_government.txt"
-    def srcFiles=["base.lst", "twisters.lst", "invalid-compound.lst", "slang.lst", "exceptions.lst", "pronouns.lst", "arch.lst", "subst.lst"]
+    def srcFiles=["base.lst", "twisters.lst", "invalid-compound.lst", "slang.lst", "exceptions.lst", "pronouns.lst", "arch.lst", "subst.lst", "base-autogen.lst"]
 
     inputs.files srcFiles.collect{ "$srcDir/$it" }
     outputs.file outFile
@@ -360,17 +360,21 @@ task caseGovernmentDict() {
             def rvLines = new File("$srcDir/$srcFile")
                 .readLines('UTF-8')
                 .findAll{
-                    (it =~ ' /(adj|n[0-4]|vr?[1-5])| (prep|verb|noninfl:&predic)' || it.contains("+cs=")) && it.contains(' rv_')
+                    (it =~ ' /(adj|n[0-4]|vr?[1-9])| (prep|verb|noninfl:&predic)' || it.contains("+cs=")) && it.contains(' rv_')
                 }.collect{
+                    it.split('\n').each {
+                        assert it.replace(' rv-най', '') ==~ /.* # rv_(inf|rod|dav|zna|oru|mis)(:rv_(inf|rod|dav|zna|oru|mis))*(\s+#.*)?/
+                    }
+
 //                def out = it.contains(" +cs=") ? it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2\nнай$1 $2') \
                     def out = it.contains(" +cs=") ? it.contains("rv-най") \
                                                  ? it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2\nнай$1 $2') \
                                                  : it.replaceFirst(/^ \+cs=(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2') \
                                                : it.replaceFirst(/^(.*?) .* (rv_...(:rv_...)*).*?$/, '$1 $2')
                    
-                        out.split('\n').each {
-                            assert it ==~ /#?[а-яіїєґ'-]+ rv_(inf|rod|dav|zna|oru|mis)(:rv_(inf|rod|dav|zna|oru|mis))*/
-                        }
+//                        out.split('\n').each {
+//                            assert it ==~ /#?[а-яіїєґ'-]+ rv_(inf|rod|dav|zna|oru|mis)(:rv_(inf|rod|dav|zna|oru|mis))*/
+//                        }
                    out.replace("rv_", "v_")
                 }
 
@@ -432,15 +436,15 @@ jar {
 
     manifest {
         attributes 'Implementation-Title': 'Ukrainian binary Morfologik dictionaries for LanguageTool',
-                   'Implementation-Version': version
+                   'Implementation-Version': project.version
     }
 
-    setArchiveName "${artifactId}-${version}.jar"
+    setArchiveFileName "${artifactId}-${project.version}.jar"
 
-      include 'org/languagetool/**/*.dict'
-      include 'org/languagetool/**/*.info'
-      include 'org/languagetool/**/README*'
-      include 'org/languagetool/**/*tags*.txt'
+    include 'org/languagetool/**/*.dict'
+    include 'org/languagetool/**/*.info'
+    include 'org/languagetool/**/README*'
+    include 'org/languagetool/**/*tags*.txt'
 
     includeEmptyDirs false
 }
