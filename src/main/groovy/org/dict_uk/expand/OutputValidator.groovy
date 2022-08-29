@@ -67,7 +67,7 @@ class OutputValidator {
 				}
 			}
             
-            def dup_tags2 = tagList.findAll { tagList.count { it ==~ /alt|coll|bad|slang/ } > 1 }.unique()
+            def dup_tags2 = tagList.findAll { tagList.count { it ==~ /alt|arch|coll|bad|slang/ } > 1 }.unique()
             if( dup_tags2 /*&& dup_tags2 != ['alt', 'coll'] as Set*/ && ! (lemma ==~ /Приват|.*хеміч.*|римар/) ) {
                 log.error("Redundant tags: " + dup_tags2.join(":") + ": " + dicEntry)
 //                fatalErrorCount++

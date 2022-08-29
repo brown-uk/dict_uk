@@ -82,7 +82,7 @@ def inflect() {
 			
 			def inflectedForms = forms.collect{it.word.padRight(30) + it.tagStr}
 
-			if( txt =~ / \/vr?[1-5]/ ) {
+			if( txt =~ / \/vr?[1-6]/ ) {
 				if( inflectedForms.count({ it =~ /:impr/}) == 0 ) {
 					inflectedForms.add(0, '-- No imperative --')
 				}

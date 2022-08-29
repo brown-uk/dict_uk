@@ -12,26 +12,41 @@ import org.dict_uk.common.DicEntry
 
 
 def adjpMap = [:]
+def adjp2Map = [:]
 def advpMap = [:]
 def impersMap = [:]
+def impersLemmaMap = [:]
 def dicEntryMap = [:]
 
-def corpus = [] // new File("../../../../out/toadd/unknown_table.u.txt").readLines().collect { it.replaceFirst(/\s.*/, '') } as Set
+def corpus = new File("../../../../out/toadd/unknown_table.u.txt").readLines()
+    .findAll{ it =~ /\t[а-яіїєґ][а-яіїєґ'-]+$/ }
+    .collect { it.replaceFirst(/\s*\d+\s*/, '') } as Set
 
+println ":: " + corpus.take(10)
 
 def add(String line, Map<String, List> theMap) {
     def dicEntry = DicEntry.fromLine(line)
 
     theMap[dicEntry.word] = dicEntry.tags.grep(["imperf", "perf"])
+    if( dicEntry.tags.contains('adjp') )
+        adjp2[dicEntry.word] = dicEntry.tags.grep(["actv", "pasv"])
 
     return dicEntry
 }
 
 
+String inf = ""
 System.in.readLines().each {
+    if( it.contains(":inf" ) ) {
+        inf = it
+    }
+    
     if( it.contains("impers" ) ) {
         def dicEntry = add(it, impersMap)
         dicEntryMap[dicEntry.word] = dicEntry
+        
+        def dicEntryLemma = DicEntry.fromLine(inf)
+        impersLemmaMap[dicEntry.word] = dicEntryLemma 
     }
 
     if( it.contains("adjp") && it.contains("m:v_naz") ) {
@@ -58,7 +73,7 @@ for ( item in adjpMap ) {
       def advp = item.key[0..<-1]
       def advpRev = advp + "сь"
 
-      if( advpMap[advp] || advpRev ) {
+      if( advpMap[advp] || advpMap[advpRev] ) {
         for( form in item.value ) {
             if( advpMap[advp] && ! advpMap[advp].contains(form) 
                 || advpMap[advpRev] && ! advpMap[advpRev].contains(form) ) {
@@ -94,11 +109,13 @@ for ( item in impersMap ) {
     def imp = item.key
     def adj = item.key[0..<-1] + "ий"
 
+    DicEntry verbLemmaEntry = impersLemmaMap[item.key]
+    
     if( adjpMap[adj] ) {
         for( form in item.value ) {
             if( ! adjpMap[adj].contains(form) ) {
-                if( item.key in corpus ) print "* "
-                println "not found impers " + item.key + " : " + form + " in adj"
+                if( imp in corpus ) print "* "
+                println "not found impers ${item.key} : $form in adj"
             }
         }
     }
@@ -109,6 +126,11 @@ for ( item in impersMap ) {
         if( imp in corpus ) print "* "
         println "== not found adjp for impers " + imp + " / " + dicEntryMap[imp].lemma + " ==> " + suggestion
     }
+    
+    if( verbLemmaEntry.comment.contains("rv_") ) {
+        
+    }
+    
 }
 
 //for ( item in advpMap ) {
