@@ -314,6 +314,8 @@
 будлі-який /adj :&pron:ind
 будовання /n2n.p1
 будучий /adj
+будучина /n10
+будуччина /n10
 будущина /n10.p1
 бузівок /n22.a.p.<>
 бузьковий /adj
@@ -513,8 +515,8 @@
 винохід /n21.a.p.<>
 виноходець /n22.a.p.<>
 винуватник /n20.a.p.<
-виображувати /v1.cf.advp :imperf
-виображуватися /vr1.cf.advp :imperf
+виображувати /v1.cf.advp :imperf                                # rv_zna:rv_oru:rv_dav
+виображуватися /vr1.cf.advp :imperf                             # rv_oru
 випечатати /v2.isNo :perf
 виповіджений /adj :&adjp:pasv:perf
 виповідження /n2n.p1
@@ -1560,8 +1562,8 @@
 зопсуватися /vr1 :perf
 зопсутий /adj
 зопсуття /n2n
-зоставити /v1.is0.it0 :perf
-зоставляти /v2.cf.advp :imperf             # rv_inf
+зоставити /v1.is0.it0 :perf                   # rv_zna:rv_oru:rv_dav
+зоставляти /v2.cf.advp :imperf                # rv_inf:rv_zna:rv_oru:rv_dav
 з-позаду з-позаду adv
 зрабований /adj :&adjp:pasv:perf
 зрадувати /v1 :perf
@@ -1902,7 +1904,7 @@
 метанина /n10
 меценас /n20.a.p.<
 мидзатий /adj
-микатися /vr2.cf.advp :imperf
+микатися /vr2.cf.advp :imperf                   # rv_oru
 микулити /v1.cf.advp :imperf
 микулитися /vr1.cf.advp :imperf
 милоданка /n10.p2.ko.<
@@ -3936,7 +3938,7 @@
 приступлення /n2n
 присяглий /adj
 притин /n20
-притім conj:subord:bad
+притім conj:subord
 притуга /n10
 приучувати /v1.cf.advp.isNo :imperf
 прихватком adv
