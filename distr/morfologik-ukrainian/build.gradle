@@ -343,7 +343,7 @@ task createRenamedReplacementDict(dependsOn: createOutRulesDir) {
 task caseGovernmentDict() {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outResDir}/case_government.txt"
-    def srcFiles=["base.lst", "twisters.lst", "invalid-compound.lst", "slang.lst", "exceptions.lst", "pronouns.lst", "arch.lst", "subst.lst", "base-autogen.lst"]
+    def srcFiles=["base.lst", "twisters.lst", "invalid-compound.lst", "slang.lst", "exceptions.lst", "pronouns.lst", "arch.lst", "subst.lst", "base-autogen.lst", "vulgar.lst"]
 
     inputs.files srcFiles.collect{ "$srcDir/$it" }
     outputs.file outFile
@@ -360,7 +360,7 @@ task caseGovernmentDict() {
             def rvLines = new File("$srcDir/$srcFile")
                 .readLines('UTF-8')
                 .findAll{
-                    (it =~ ' /(adj|n[0-4]|vr?[1-9])| (prep|verb|noninfl:&predic)' || it.contains("+cs=")) && it.contains(' rv_')
+                    (it =~ ' /(adj|n[0-4]|vr?[1-9])| (prep|adv|verb|noninfl:&predic)' || it.contains("+cs=")) && it.contains(' rv_')
                 }.collect{
                     it.split('\n').each {
                         assert it.replace(' rv-най', '') ==~ /.* # rv_(inf|rod|dav|zna|oru|mis)(:rv_(inf|rod|dav|zna|oru|mis))*(\s+#.*)?/

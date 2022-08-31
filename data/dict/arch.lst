@@ -214,7 +214,6 @@
 благоліпність /n30
 благоподібний /adj
 благоподібність /n30
-благоприємний /adj
 благопристойний /adj.adv \
  +cs=благопристойніший
 благопристойність /n30
@@ -556,7 +555,7 @@
 вистріл /n20.p
 вистроєний /adj :&adjp:pasv:perf           # :past
 вистроїти /v1.it0.is0 :perf
-вистроїтися /vr1.it0 :perf
+вистроїтися /vr1.it0 :perf                      # rv_oru
 виступач /n20.a.p.<
 виступлення /n2n
 витворки /np2
@@ -1176,7 +1175,7 @@
 дукиня /n10.p1.<
 духовида /n10.p1.ko.< :+m
 дучка /n10.p2
-дхнути /v1.cf :imperf
+дхнути /v1.cf :imperf                           # rv_oru:rv_dav
 електричність /n30
 електрівня /n10.p2
 епітрахиль /n20
@@ -1236,7 +1235,7 @@
 завгорити /v1 :perf
 завгорювати /v1.cf.advp :imperf
 завдруге adv
-завершати /v2.cf.advp :imperf
+завершати /v2.cf.advp :imperf                       # rv_zna:rv_oru
 завидка adv
 зависний /adj
 зависність /n30
@@ -1493,7 +1492,7 @@
 з'єдночити /v1 :perf
 зиськати /v2 :imperf
 зідхання /n2n.p1
-зідхнути /v1 :perf
+зідхнути /v1 :perf                          # rv_oru
 зізнати /v2 :perf
 зіма /n10
 зіпсути /v2.isTo :perf
@@ -1541,7 +1540,7 @@
 знеобачка adv
 знетямки adv
 знехочу adv
-знижати /v2.cf.advp :imperf
+знижати /v2.cf.advp :imperf                 # rv_zna
 знижатися /vr2.cf.advp :imperf
 знимка /n10.p2
 знимкування /n2n
@@ -1552,8 +1551,8 @@
 зобижати /v2.cf.advp :imperf
 зобувати /v1.cf.advp :imperf
 зогнивати /v2.cf.advp.shrt :imperf
-зогнути /v1.isTo :perf
-зогнутися /vr1 :perf
+зогнути /v1.isTo :perf                      # rv_zna:rv_oru:rv_dav
+зогнутися /vr1 :perf                        # rv_oru
 зогрівальний /adj
 золотопогонник /n20.a.p.<
 зопсований /adj :&adjp:pasv:perf           # :past
@@ -4164,7 +4163,7 @@
 скомпромітувати /v1.is0 :perf
 скоропада /n10.p1.ko.< :+m
 скочки adv
-скоштувати /v1 :perf
+скоштувати /v1 :perf                # rv_zna
 скривати /v2.cf.advp :imperf
 скрипник /n20.a.p.<
 скриптура /n10.p1
@@ -4719,12 +4718,12 @@
 шпаргалля /n2n
 шпацер /n20.p.ke
 шпацерування /n2n
-шпацерувати /v1.cf.advp :imperf
+шпацерувати /v1.cf.advp :imperf                 # rv_oru
 шпацирування /n2n
-шпацирувати /v1.cf.advp :imperf
+шпацирувати /v1.cf.advp :imperf                 # rv_oru
 шпацір /n20.ke
 шпацірування /n2n
-шпацірувати /v1.cf.advp :imperf
+шпацірувати /v1.cf.advp :imperf                 # rv_oru
 шпетний /adj
 шпихлір /n20.a.p.ke
 шпільман /n20.a.p.<
