@@ -1,3 +1,4 @@
+# вишник /n20.a.p.<                          # :xp1 дама в картах (дуже рідко)
 аби-м adv
 абись conj:subord
 аби-сь adv
@@ -269,7 +270,7 @@
 болізний /adj.adv
 боляк /n20.a.p
 болярин /n20.a.pyn.<
-бомага /n10
+бомага /n10.p1
 бомбаковий /adj
 бомбастичний /adj
 борикатися /vr2.cf.advp :imperf
@@ -875,7 +876,9 @@
 встидно adv:&predic
 встрінути /v1 :perf
 встрінутися /vr1 :perf
-встріти /v3 :perf
+проз prep                                                     # rv_zna
+встріти /v3 :perf                                             # rv_zna:rv_oru
+встрітися /vr3 :perf                                          # rv_oru
 вступлення /n2n
 всупір adv
 всяково adv
@@ -1223,7 +1226,7 @@
 жупний /adj
 забагнений /adj :&adjp:pasv:perf           # :past
 забагнити /v1.is0 :perf
-забагнитися /vr1 :perf
+забагнитися /vr1 :perf                              # rv_oru
 забарва /n10
 забезпека /n10
 забіжний /adj
@@ -1361,7 +1364,7 @@
 засуд /n20
 засябрувати /v1 :perf
 засяг /n20
-засяти /v2 :perf
+засяти /v2 :perf                                # rv_oru
 затанчити /v1 :perf
 затахлувати /v1 :perf
 затемно adv
@@ -2343,7 +2346,8 @@
 огурний /adj
 одбатувати /v1 :perf
 одбивання /n2n.p1
-одбиватися /vr2.cf.advp :imperf
+одбиватися /vr2.cf.advp :imperf                               # rv_oru
+одбивати /v2.cf.advp :imperf                                  # rv_zna:rv_oru:rv_dav
 одбивний /adj
 одбирання /n2n.p1
 одбиратися /vr2.cf.advp :imperf
@@ -2631,8 +2635,9 @@
 одкид /n20.p
 одкиданий /adj :&adjp:pasv:imperf
 одкидання /n2n.p1
-одкидати /v2.cf.advp.shrt :imperf               # одкида́ти
-одкидатися /vr2.cf.advp :imperf
+одкидати /v2.cf.advp.shrt :imperf               # одкида́ти     # rv_zna:rv_oru:rv_dav
+одкидатися /vr2.cf.advp :imperf                                 # rv_oru
+меж prep                                                        # rv_rod:rv_zna:rv_oru
 одкинення /n2n
 одкіль adv
 одклад /n20.p
@@ -4773,3 +4778,5 @@
 ясачник /n20.a.p.<
 яскиня /n10.p1
 ясмин /n20
+зараній /adj
+зарані adv
