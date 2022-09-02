@@ -199,6 +199,8 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
 				if( it.startsWith('#') || ! it.contains(' #>') )
 					return
 
+                it = it.replaceFirst(/\s*# rv[^\s]+/, '')
+                    
 				if( file.name.contains('composite') ) {
 					it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*? - ([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)/, '$1-$2=$3')
 					outLines << it

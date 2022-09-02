@@ -182,7 +182,7 @@
 бересклетовий /adj
 берковець /n24.a.p
 берковецький /adj
-бесаг /n20.a.p
+бесаг /n20.a
 бесаги /np2
 беседа /n10.p1                          # бе́седа
 бескидник /n20.a.p.<
@@ -555,7 +555,7 @@
 вистілковий /adj
 вистреляти /v2 :perf
 вистріл /n20.p
-вистроєний /adj :&adjp:pasv:perf           # :past
+вистроєний /adj :&adjp:pasv:perf
 вистроїти /v1.it0.is0 :perf
 вистроїтися /vr1.it0 :perf                      # rv_oru
 виступач /n20.a.p.<
@@ -567,7 +567,7 @@
 витолковувати /v1.cf.advp :imperf
 витрудити /v1 :perf
 витрутити /v1.is0 :perf
-витручений /adj :&adjp:pasv:perf           # :past
+витручений /adj :&adjp:pasv:perf
 витхатися /vr2 :perf
 виховавчий /adj
 виховзнути /v1 :perf
@@ -661,7 +661,7 @@
 відранку adv
 відрання adv
 відривок /n22.a.p
-відринутий /adj :&adjp:pasv:perf           # :past
+відринутий /adj :&adjp:pasv:perf
 відрібок /n22
 відрізан /n20
 відрікати /v2.cf.advp :imperf
@@ -747,7 +747,7 @@
 вказівець /n22.a
 вкмічати /v2.cf.advp :imperf
 вколо вколо prep|adv        # rv_rod
-вконтентований /adj :&adjp:pasv:perf:v-u    # past
+вконтентований /adj :&adjp:pasv:perf:v-u
 вконтентовувати /v1.cf.advp :imperf
 вконтентовуватися /vr1.cf.advp :imperf
 вконтентувати /v1.is0 :perf
@@ -826,7 +826,6 @@
 воцарити /v1 :perf
 воцаряти /v2.cf.advp :imperf
 вош noun:f:v_naz:anim                   # lim
-впад /n20 :v-u
 вперве adv
 впервину adv
 вперебіжку adv
@@ -904,7 +903,7 @@
 вутінка /n10.p2.<>
 вутка /n10.p2.<>
 вутя /n40.p.<>
-вхорканий /adj :&adjp:pasv:perf:v-u    # past
+вхорканий /adj :&adjp:pasv:perf:v-u
 вчиття /n2n
 вчухрати /v2 :perf
 габіт /n20.p
@@ -1013,6 +1012,7 @@
 гутарити /v1.cf.advp :imperf
 ґвара /n10
 ґвер /n20.a.ke
+ґвер /n20.a.u.p
 ґелетка /n10.p2
 ґердан /n20.p
 ґилавий /adj
@@ -1226,13 +1226,13 @@
 жупа /n10.p1
 жупанат /n20
 жупний /adj
-забагнений /adj :&adjp:pasv:perf           # :past
+забагнений /adj :&adjp:pasv:perf
 забагнити /v1.is0 :perf
 забагнитися /vr1 :perf                              # rv_oru
 забарва /n10
 забезпека /n10
 забіжний /adj
-забратий /adj :&adjp:pasv:perf             # :past
+забратий /adj :&adjp:pasv:perf
 завалистий /adj
 завалистість /n30
 завбачний /adj.adv
@@ -1294,7 +1294,7 @@
 закульбачений /adj
 закупно /n2n
 закуштраний /adj
-заложити /v1.is0 :perf
+заложити /v1.is0 :perf                  # rv_zna:rv_oru:rv_dav
 залубниці /np1
 залубні /np3
 зальопаний /adj
@@ -1388,7 +1388,7 @@
 заужати /v2 :perf
 зафактований /adj :&adjp:pasv:perf
 зафактувати /v1.is0 :perf
-зафалдований /adj :&adjp:pasv:perf         # :past
+зафалдований /adj :&adjp:pasv:perf
 захаяти /v1 :perf
 захвабрувати /v1 :perf
 захвощатися /vr2 :perf
@@ -1564,7 +1564,7 @@
 зогнутися /vr1 :perf                        # rv_oru
 зогрівальний /adj
 золотопогонник /n20.a.p.<
-зопсований /adj :&adjp:pasv:perf           # :past
+зопсований /adj :&adjp:pasv:perf
 зопсованість /n30
 зопсувати /v1.is0 :perf
 зопсуватися /vr1 :perf
@@ -1861,7 +1861,8 @@
 льокайський /adj
 льокаль /n20.p
 любас /n20.a.p.<
-любаска /n10.p2.ko.<
+любаска /n10.p2.<
+любасок /n22.a.p.<
 любленець /n22.a.p.<
 люблениця /n10.p1.<
 любля noninfl:&predic
@@ -2621,7 +2622,7 @@
 одіслання /n2n
 одіслати /v1.isNo :perf
 одіспатися /vr1 :perf
-одітий /adj :&adjp:pasv:perf    # past
+одітий /adj :&adjp:pasv:perf
 одіткнути /v1.isTo :perf
 одітхнути /v1 :perf
 од'їдати /v2.cf.advp :imperf
@@ -3191,7 +3192,7 @@
 ознаймляти /v2.cf.advp :imperf                                # rv_zna:rv_oru:rv_dav
 ознаймований /adj :&adjp:pasv:perf
 ознаймувати /v1 :perf                                         # rv_zna:rv_oru:rv_dav
-озутий /adj :&adjp:pasv:perf    # past
+озутий /adj :&adjp:pasv:perf
 ойчизна /n10.p1
 окадкуватий /adj
 окадькуватий /adj
@@ -3242,7 +3243,7 @@
 опівднішний /adj
 опізнитися /vr1.it1 :perf
 опізнюватися /vr1.cf.advp :imperf
-опірений /adj :&adjp:pasv:perf    # past
+опірений /adj :&adjp:pasv:perf
 опішний /adj
 оплатка /n10.p2
 оплескувати /v1.cf.advp :imperf
@@ -3578,7 +3579,7 @@
 підогрів /n20
 підогрівальний /adj
 підогрівний /adj
-підогрітий /adj :&adjp:pasv:perf    # past
+підогрітий /adj :&adjp:pasv:perf
 підождати /v1 :perf
 підосавул /n20.a.p.<
 підотаманчий /adj
@@ -3725,8 +3726,6 @@
 покраса /n10.p1
 покревний /adj
 покритка /n10.p2.ko.<
-покровитель /n20.a.p.<
-покровителька /n10.p2.ko.<
 покулити /v1 :perf p=3
 #покушати /v2 :perf
 полагода /n10
@@ -3747,6 +3746,7 @@
 половиця /n10
 половниця /n10.p1.ko.<                # :xp1 людина
 половниця /n10                        # :xp2 полуниця
+полокати /v1.cf.advp.isNo :imperf
 поломання /n2n
 полонистий /adj
 полоняник /n20.a.p.<
@@ -3782,6 +3782,7 @@
 поплатний /adj
 поплужне /n2adj1
 попогибіти /v2 :perf
+попополоскати /v1.isNo :perf
 попоштувати /v1 :perf
 попоштуватися /vr1 :perf
 поправа /n10
@@ -3979,7 +3980,6 @@
 програ /n10
 проділь /n20.a.p
 проз prep                                                     # rv_zna
-проз prep                   # rv_zna
 прозвисько /n2n.p1
 прозурка /n10
 прокид /n20
@@ -3998,6 +3998,8 @@
 против prep        # rv_rod
 противенство /n2n.p1
 протопіп /n21.a.p.<
+протопопівна /n10.<
+протопопія /n10.p1
 протостратор /n20.a.p.ke.<
 протяжко adv
 прохідка /n10.p2
@@ -4247,7 +4249,7 @@
 справуватися /vr1.cf.advp :imperf
 спразнити /v1 :perf
 сприт /n20
-спуджений /adj :&adjp:pasv:perf            # :past
+спуджений /adj :&adjp:pasv:perf
 сродний /adj
 сродність /n30
 стайничий /n2adj1.p.<
@@ -4343,6 +4345,7 @@
 теперички adv
 теперка adv:&pron:dem
 теперки adv
+теплина /n10
 #теряти /v2.cf.advp :imperf
 тестамент /n20.p
 тета /n10.p1.<                            # :xp1 тітка
@@ -4397,6 +4400,7 @@
 трясцяма noninfl:&predic
 тузінь /n20.a.p
 туй-туй adv
+тулько adv
 турбація /n10.p1
 туркус /n20
 туркусовий /adj
@@ -4455,10 +4459,10 @@
 уїхати /v4 :perf
 уймак /n20.a.p.<
 уйматися /vr2.cf.advp :imperf
-укараний /adj :&adjp:pasv:perf             # :past
+укараний /adj :&adjp:pasv:perf
 укінчений /adj
 укландати /v2.isNo :perf
-уконтентований /adj :&adjp:pasv:perf:v-u   # past
+уконтентований /adj :&adjp:pasv:perf:v-u
 уконтентовання /n2n :v-u
 уконтентовування /n2n :v-u
 уконтентовувати /v1.cf.advp :imperf:v-u
@@ -4500,7 +4504,7 @@
 управський /adj
 упруг /n20.a.p
 уп'ять adv
-урадуваний /adj :&adjp:pasv:perf    # past
+урадуваний /adj :&adjp:pasv:perf
 урвитель /n20.a.p.<
 урем'я /n40.yu
 урікати /v2.cf :imperf
@@ -4509,7 +4513,7 @@
 уродження /n2n
 урус /n20.a.p.<
 уруський /adj
-уряджений /adj :&adjp:pasv:perf    # past
+уряджений /adj :&adjp:pasv:perf
 урядово adv
 усамперед adv
 усилу adv:v-u
@@ -4519,7 +4523,7 @@
 услуга /n10.p1
 услуговувати /v1.cf.advp :imperf
 услужний /adj.adv
-успокоєний /adj :&adjp:pasv:perf    # past
+успокоєний /adj :&adjp:pasv:perf
 успокоїти /v1.it0.is0 :perf:v-u
 успокоїтися /vr1.it0 :perf:v-u
 успокоювати /v1.cf.advp :imperf
@@ -4535,7 +4539,7 @@
 уходник /n20.a.p.<
 уходництво /n2n
 уходницький /adj
-ухорканий /adj :&adjp:pasv:perf:v-u    # past
+ухорканий /adj :&adjp:pasv:perf:v-u
 ученик /n20.a.p.<
 учительний /adj
 ушкал /n20.a.p.<
@@ -4586,7 +4590,6 @@
 хибань part
 хібащо conj:subord
 хлібник /n20.a.p.<
-хлопак /n20.a.p.<
 хлост /n20
 хляпавка /n10
 хованець /n22.a.p.<
@@ -4620,6 +4623,7 @@
 хромолаба /n10.p1.ko.< :+m
 хронікар /n24.a.p.ke.<
 хрунь /n20.a.p.<>
+хтосічок /n22.a
 хургон /n20.a.p
 цаль /n20.a.p
 царедворка /n10.p2.ko.<
@@ -4647,9 +4651,9 @@
 цілево adv
 цілопалення /n2n.p1
 ціляти /v2.cf.advp :imperf
+цімбор /n20.a.p.ke.<
 цмоковина /n10
 цофати /v2.cf.advp :imperf
-цофатися /vr2.cf.advp :imperf
 цофатися /vr2.cf.advp :imperf
 цофнути /v1 :perf
 цофнутися /vr1 :perf

@@ -145,6 +145,7 @@ task dups {
 	        .replaceAll(/\s*#.*/, '')
 	        .replaceAll(/( \/[a-z0-9]+)(\s+|$)/, '$1... ')
 	        .replaceAll(/\.[^<.: ]+/, '...')
+	        .replaceAll(/\s*:coll/, '')
 	        .replaceAll(/:&adjp:(actv|pasv)(:(imperf|perf))+/, '') } \
 	    .grep { it && ! it.startsWith("+cs") }
 

@@ -25,7 +25,7 @@
 обісрати /v1.isNo :perf
 обісцяний /adj :&adjp:pasv:perf
 обісцяти /v1.isNo :perf
-обсирати /v2.cf.advp :imperf
+обсирати /v2.cf.advp :imperf                # rv_zna
 охрініти /v1 :perf
 пердіння /n2n
 пердіти /v1.cf.advp :imperf
@@ -40,10 +40,12 @@
 срака /n10.p1
 сраний /adj
 срати /v1.cf.advp :imperf
+сратися /vr1.cf.advp :imperf
 срач /n20.p
 срачка /n10.p2
 срачкуватий /adj
 старпер /n20.a.p.ke.<
+сцикло /n2n.<
 сцяки /np2
 урод /n20.a.p.<
 усратися /vr1 :perf:v-u

@@ -1,5 +1,6 @@
 баче бачити verb:imperf:pres:s:3                            #> робить
 бозна-шо noun:inanim:n:v_naz/v_zna:&pron:ind                #> бозна-що
+будь-шо noun:inanim:n:v_naz:&pron:ind                       #> будь-що
 всьо adv|conj:coord|noun:inanim:n:v_naz/v_zna:&pron:gen|part #> все
 гамериканський /adj
 дивові диво noun:n:v_dav/v_mis
@@ -9,6 +10,7 @@
 мона noninfl:&predic                                        #> можна
 наскіке noninfl
 нашо adv                                                    #> нащо
+отово part                                                  #> ото
 покишо noninfl                                              #> поки що
 Путінові Путін noun:anim:m:v_dav/v_mis:prop:lname
 робе робити verb:imperf:pres:s:3                            #> робить
@@ -24,6 +26,8 @@
 тьотка /n10.p2.ko.<
 хібашо noninfl                                              #> хіба що
 хтозна-шо noun:inanim:n:v_naz/v_zna:&pron:ind               #> хтозна-що
+цево noun:inanim:n:v_naz:&pron:dem                          #> це
+цео part                                                    #> це
 чортзна-шо noun:inanim:n:v_naz/v_zna:&pron:ind              #> чортзна-що
 ше adv|part                                                 #> ще
 шо conj:subord|noun:inanim:n:v_naz/v_zna:&pron:int:rel      #> що

@@ -166,9 +166,9 @@
 випродукований /adj :&adjp:pasv:perf
 випродуковано випродукувати verb:perf:impers
 випроменений /adj :&adjp:pasv:perf     #> випромінений
-випроменити /v1.is0.it1 :perf                       #> випромінити        # rv_zna:rv_oru:rv_dav
-випроменитися /vr1 :perf                            #> випромінитися        # rv_oru
-випряг випрягти verb:perf:past:m                    #> випріг
+випроменити /v1.is0.it1 :perf                             # rv_zna:rv_oru:rv_dav    #> випромінити
+випроменитися /vr1 :perf                                  # rv_oru                  #> випромінитися 
+випряг випрягти verb:perf:past:m                                                    #> випріг
 вирахований /adj :&adjp:pasv:perf
 вираховано вирахувати verb:perf:impers
 вирихтований /adj :&adjp:pasv:perf
