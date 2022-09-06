@@ -206,6 +206,7 @@
 біжка adv
 біжки adv
 білиця /n10.p1.<>
+білля /n2n
 більшина /n10
 біляр /n20.a.p.ke.<
 бісиця /n10.p1.ko.<
@@ -1991,7 +1992,7 @@
 мусіли мусіти verb:imperf:past:p
 мусіло мусіти verb:imperf:past:n
 мусімо мусіти verb:imperf:impr:p:1
-мусіти мусіти verb:imperf:inf                   # lim
+мусіти мусіти verb:imperf:inf                   # lim       # rv_inf
 мусітиме мусіти verb:imperf:futr:s:3
 мусітимем мусіти verb:imperf:futr:p:1
 мусітимемо мусіти verb:imperf:futr:p:1
@@ -2102,7 +2103,8 @@
 наокруг adv
 наокруги adv
 наостатку adv
-напастувати /v1.cf :imperf
+напастування /n2n
+напастувати /v1.cf :imperf                  # rv_zna:rv_oru
 напечатати /v2.isNo :perf
 напоминати /v2.cf.advp :imperf
 напоперек adv
