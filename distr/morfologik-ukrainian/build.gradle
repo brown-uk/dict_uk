@@ -1,7 +1,10 @@
-apply plugin: 'java'
-apply plugin: 'maven'
-apply plugin: 'maven-publish'
-apply plugin: 'signing'
+plugins {
+    id 'java'
+//    id 'groovy'
+    id 'eclipse'
+    id 'maven-publish'
+    id 'signing'
+}
 
 String versionFile="${projectDir}/../../VERSION"
 version=new File(versionFile).text.trim()
@@ -419,12 +422,12 @@ task deployCaseGovernment(type: Copy, dependsOn: caseGovernmentDict) {
     doFirst() {
         logger.lifecycle "Deploying to LT dir: ${languagetoolResDestDir}"
     }
-//        from outResDir
-        from caseGovernmentDict
-        into "${languagetoolResDestDir}"
-//        include "**/case_*.txt"
+//    from outResDir
+    from caseGovernmentDict
+    into "${languagetoolResDestDir}"
+//    include "**/case_*.txt"
 
-        includeEmptyDirs = false
+    includeEmptyDirs = false
 }
 
 task deployHelperDictsToLT(dependsOn: [deployReplacements, deployCaseGovernment])
@@ -441,7 +444,7 @@ jar {
                    'Implementation-Version': project.version
     }
 
-    setArchiveFileName "${artifactId}-${project.version}.jar"
+    setArchiveName "${artifactId}-${project.version}.jar"
 
     include 'org/languagetool/**/*.dict'
     include 'org/languagetool/**/*.info'
@@ -452,15 +455,89 @@ jar {
 }
 
 
-processResources.dependsOn(posDict, synthDict, tagList, spellDict, caseGovernmentDict, createReplacementDict)
+processResources.dependsOn(posDict, synthDict, tagList, spellDict)
 compileJava.enabled = false
 
 
+/*
+task sourceJar(type: Jar) {
+    classifier "sources"
+    from sourceSets.main.all
+}
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier "javadoc"
+    from javadoc.destinationDir
+}
+*/
 signing {
     sign configurations.archives
+    sign publishing.publications
 }
 
 
+publishing {
+ //   inputs.files "$projectDir/../../VERSION"
+
+    publications {
+        maven(MavenPublication) {
+//            groupId = group
+            artifactId = artifactId
+//            version = version
+            from components.java
+
+//            artifact(sourceJar) {
+//                classifier = 'sources'
+//            }
+//            artifact(javadocJar) {
+//                classifier = 'javadoc'
+//            }
+            
+            pom {
+                name = 'Ukrainian Morfologik dictionaries for LanguageTool'
+                description = 'Ukrainian part-of-speech dictionaries in Morfologik binary format'
+                url = 'https://github.com/brown-uk/dict_uk'
+                
+                licenses {
+                  license {
+                    name = 'GNU Lesser General Public License'
+                    url = 'http://www.gnu.org/licenses/lgpl.txt'
+                  }
+                }
+                
+                developers {
+                  developer {
+                    id = 'arysin'
+                    name = 'Andriy Rysin'
+                    email = 'arysin@gmail.com'
+                  }
+                }
+                
+                scm {
+                  url = "https://github.com/brown-uk/nlp_uk.git"
+                }
+            }
+        }
+    }
+
+    repositories {
+//        mavenLocal()
+
+        maven {
+            credentials {
+                username = getProperty('ossrhUsername')
+                password = getProperty('ossrhPassword')
+            }
+
+         //   url = "https://oss.sonatype.org/service/local/staging/deploy/maven2"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+    }
+}
+
+/*
+uploadArchives {
+    inputs.files "$projectDir/../../VERSION"
+}
 
 publishing {
     repositories {
@@ -475,7 +552,6 @@ publishing {
         }
     }
 }
-
 
 uploadArchives {
   inputs.files "$projectDir/../../VERSION"
@@ -527,3 +603,4 @@ uploadArchives {
     }
   }
 }
+*/

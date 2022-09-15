@@ -1,8 +1,10 @@
 import java.text.Collator
 
-apply plugin: 'java'
-apply plugin: 'groovy'
-apply plugin: 'eclipse'
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'eclipse'
+}
 
 compileJava.options.encoding = 'UTF-8'
 
@@ -27,25 +29,26 @@ repositories {
 //}
 
 dependencies {
-    implementation group: 'org.codehaus.groovy', name: 'groovy', version: '3.0.+'
-    implementation group: 'org.codehaus.groovy', name: 'groovy-swing', version: '3.0.+'
-    implementation group: 'org.codehaus.groovy', name: 'groovy-cli-picocli', version: '3.0.+'
+    implementation group: 'org.apache.groovy', name: 'groovy', version: '4.0.+'
+    implementation group: 'org.apache.groovy', name: 'groovy-swing', version: '4.0.+'
+    implementation group: 'org.apache.groovy', name: 'groovy-cli-picocli', version: '4.0.+'
     implementation 'info.picocli:picocli:4.6.1'
 
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
-    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.10'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.+'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.+'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.+'
 
 //    groovyScript localGroovy()
 }
-
+/*
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(11)
     }
 }
+*/
 
 //compileGroovy {
 //    exclude '**/tools/other/*.groovy'

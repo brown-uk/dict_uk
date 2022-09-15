@@ -51,7 +51,7 @@ class TaggedWordlist {
 			line = comment_re.matcher(line).replaceFirst("") // remove comments
 			comment = commentMatcher.group(0)
 
-			comment = comment.replaceAll(/\s*#(>.*|\s*TODO.*|\s*?(:?past|:?pres|rv_...|-ший)[^#]*)/, '')
+			comment = comment.replaceAll(/\s*#(>.*|\s*TODO.*|\s*?(:?past|:?pres|-ший)[^#]*)/, '')
 			if( ! comment.trim() ) {
 				comment = null
 			}

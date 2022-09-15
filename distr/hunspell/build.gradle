@@ -13,9 +13,10 @@ repositories {
 
 
 dependencies {
-    implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.+'
+    implementation group: 'org.apache.groovy', name: 'groovy', version: '4.0.+'
+    implementation group: 'org.apache.groovy', name: 'groovy-cli-picocli', version: '4.0.+'
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
-    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.+'
 }
 
 
@@ -35,8 +36,8 @@ sourceSets {
   }
 }
 
-compileGroovy {
-    exclude '**/tools/other/*.groovy'
+processResources {
+    duplicatesStrategy = DuplicatesStrategy.WARN
 }
 
 
@@ -85,7 +86,7 @@ task testHunspell1(type: Exec) { //, dependsOn: hunspell) {
     txt += " Білгород-Дністровського Захер-Мазоха Захера-Мазоха"
     txt += " відіб\\'ю"
     txt += " всього усього"
-    txt += " більш найменш якнайскоріш перш"
+    txt += " більш найменш перш" //  якнайскоріш
     txt += " кури курей гуси гусей"
 
     def cmd = "echo $txt | hunspell -d $outDir/uk_UA | grep -E '^&'" + '; [ $? == 1 ]'
