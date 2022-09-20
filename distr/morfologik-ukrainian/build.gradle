@@ -432,7 +432,7 @@ task deployCaseGovernment(type: Copy, dependsOn: caseGovernmentDict) {
 
 task deployHelperDictsToLT(dependsOn: [deployReplacements, deployCaseGovernment])
 
-task deployLtDict(dependsOn: [publish, deployHelperDictsToLT])
+task deployLtDict(dependsOn: [publishToMavenLocal, deployHelperDictsToLT])
 
 
 
@@ -459,16 +459,6 @@ processResources.dependsOn(posDict, synthDict, tagList, spellDict)
 compileJava.enabled = false
 
 
-/*
-task sourceJar(type: Jar) {
-    classifier "sources"
-    from sourceSets.main.all
-}
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier "javadoc"
-    from javadoc.destinationDir
-}
-*/
 signing {
     sign configurations.archives
     sign publishing.publications
@@ -528,79 +518,16 @@ publishing {
                 password = getProperty('ossrhPassword')
             }
 
-         //   url = "https://oss.sonatype.org/service/local/staging/deploy/maven2"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+         url = "https://oss.sonatype.org/service/local/staging/deploy/maven2"
+         //    url = "https://oss.sonatype.org/content/repositories/snapshots/"
         }
     }
 }
 
-/*
-uploadArchives {
-    inputs.files "$projectDir/../../VERSION"
+publish {
+   inputs.files "$projectDir/../../VERSION"
+}
+publishToMavenLocal {
+   inputs.files "$projectDir/../../VERSION"
 }
 
-publishing {
-    repositories {
-        mavenLocal()
-    }
-
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-            //artifact dictJar
-            //artifact ltJar
-        }
-    }
-}
-
-uploadArchives {
-  inputs.files "$projectDir/../../VERSION"
-
-  repositories {
-
-    mavenDeployer {
-      beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
-
-      repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
-        authentication(userName: ossrhUsername, password: ossrhPassword)
-      }
-
-      snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
-        authentication(userName: getProperty('ossrhUsername') ?: '', password: getProperty('ossrhPassword') ?: '')
-      }
-
-
-      pom.project {
-        name 'Ukrainian Morfologik dictionaries for LanguageTool'
-        packaging 'jar'
-        artifactId = "${artifactId}-${version}"
-//        artifactId = "xxx-${version}"
-        // optionally artifactId can be defined here 
-        description 'Ukrainian part-of-speech dictionaries in Morfologik binary format'
-        url 'https://github.com/brown-uk/dict_uk'
-
-        scm {
-          url 'https://github.com/brown-uk/dict_uk.git'
-        }
-
-        licenses {
-          license {
-            name 'GNU Lesser General Public License'
-            url 'http://www.gnu.org/licenses/lgpl.txt'
-          }
-        }
-
-        developers {
-          developer {
-            id 'arysin'
-            name 'Andriy Rysin'
-            email 'arysin@gmail.com'
-          }
-        }
-      }
-
-
-    }
-  }
-}
-*/

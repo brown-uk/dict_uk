@@ -839,6 +839,7 @@
 многий многий adj:m:v_naz/v_zn2:rare
 многая многий adj:p:v_naz/v_zn2:rare
 многії многий adj:p:v_naz/v_zn2:rare
+многі многий adj:p:v_naz/v_zn2:arch
 
 бракло бракнути verb:imperf:past:n          # rv_rod
 
@@ -1233,6 +1234,7 @@
 немощен немощний adj:m:v_naz/v_zn2:short
 ненавиден ненавидний adj:m:v_naz/v_zn2:short
 ненавистен ненависний adj:m:v_naz/v_zn2:short
+непевен непевний adj:m:v_naz/v_zn2:short
 неспроможен неспроможний adj:m:v_naz/v_zn2:short
 певен певний adj:m:v_naz/v_zn2:short
 повен повний adj:m:v_naz/v_zn2:short

@@ -10,6 +10,7 @@
 ам. adj:nv:rinanim              # американський
 амер. adj:nv:rinanim            # американський
 англ. adj:nv:rinanim            # англійський
+ап. noun:m:nv:anim              # апостол
 апп. noun:p:nv:anim             # апостолів
 арк. noun:m:nv                  # аркуш
 арт. noun:m:nv                  # артикул
@@ -94,7 +95,7 @@
 Ів. noun:m:nv:anim:prop:fname   # Іван
 іл. noun:f:nv                   # ілюстрація
 ім. noun:n:v_rod                # імені
-ін. noun:n:nv                   # інше
+ін. noun:n:nv|noun:p:nv         # інше,інші
 інв. adj:nv:rinanim             # інвентарний
 інд. adj:nv:rinanim             # індивідуальний, індійський
 інж. noun:m:nv:anim             # інженер
