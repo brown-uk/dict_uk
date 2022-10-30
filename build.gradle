@@ -80,7 +80,7 @@ task reverseVerbs (type: JavaExec, dependsOn: classes) {
     outputs.file "$affixDir/vr.aff"
 
     classpath = sourceSets.main.runtimeClasspath
-    main = "org.dict_uk.expand.VerbReverse"
+    mainClass = "org.dict_uk.expand.VerbReverse"
     args file(inputFile), file(outputs.files[0])
 
 //    standardInput = file(inputFile).newInputStream()
@@ -93,7 +93,7 @@ task reverseAdvp (type: JavaExec, dependsOn: classes) {
     outputs.file "$affixDir/vr_advp.aff"
 
     classpath = sourceSets.main.runtimeClasspath
-    main = "org.dict_uk.expand.VerbReverse"
+    mainClass = "org.dict_uk.expand.VerbReverse"
 
     args file(inputFile), file(outputs.files[0])
 }
@@ -102,7 +102,7 @@ task reverseAdvp (type: JavaExec, dependsOn: classes) {
 
 task autogen (type: JavaExec, dependsOn: classes) {
 	classpath = sourceSets.main.runtimeClasspath
-	main = "org.dict_uk.tools.Autogen"
+	mainClass = "org.dict_uk.tools.Autogen"
 
 	String inputFile1 = "$dataDir/base.lst"
     String inputFile2 = "$dataDir/base-compound.lst"
@@ -122,7 +122,7 @@ task reverseAffix (dependsOn: [reverseVerbs, reverseAdvp]) {
 
 task sortDict(type: JavaExec) {
 	classpath = sourceSets.main.runtimeClasspath
-	main = "org.dict_uk.tools.Sort"
+	mainClass = "org.dict_uk.tools.Sort"
 
 	workingDir = file("data/dict")
 	
@@ -241,7 +241,7 @@ task checkReplacements {
 
 task checkSemtags(type: JavaExec){ 
     classpath = sourceSets.test.runtimeClasspath
-    main = "org.dict_uk.check.CheckSemtags"
+    mainClass = "org.dict_uk.check.CheckSemtags"
 
     workingDir = projectDir
 
@@ -281,7 +281,7 @@ def getAdjustedText(filename) {
 
 task testExpand(type: JavaExec, dependsOn: [reverseAffix, autogen, classes]) {
     classpath = sourceSets.main.runtimeClasspath
-    main = "org.dict_uk.expand.ExpandAll"
+    mainClass = "org.dict_uk.expand.ExpandAll"
 
     workingDir = file('test')
 
@@ -313,7 +313,7 @@ task testExpand(type: JavaExec, dependsOn: [reverseAffix, autogen, classes]) {
 
 task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, autogen/*, testExpand*/, dups]) {
     classpath = sourceSets.main.runtimeClasspath
-    main = "org.dict_uk.expand.ExpandAll"
+    mainClass = "org.dict_uk.expand.ExpandAll"
 
     workingDir = file(outputDir)
 
@@ -358,7 +358,7 @@ task expand(dependsOn: expandForCorp) {
 
 task expandInteractive(type: JavaExec, dependsOn: reverseAffix) {
     classpath = sourceSets.main.runtimeClasspath
-    main = "org.dict_uk.expand.Expand"
+    mainClass = "org.dict_uk.expand.Expand"
 
     workingDir = file(outputDir)
     standardInput = System.in
@@ -376,7 +376,7 @@ task expandInteractive(type: JavaExec, dependsOn: reverseAffix) {
 
 task runTool(type: JavaExec, dependsOn: compileGroovy) {
     classpath = sourceSets.main.output + configurations.runtimeClasspath
-    main = "groovy.ui.GroovyMain"
+    mainClass = "groovy.ui.GroovyMain"
     args "src/tools/groovy/" + (project.hasProperty('tool') ? project.tool : '')
     if( project.hasProperty('file') ) {
         println "Reading word list from: " + project.file

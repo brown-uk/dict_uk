@@ -132,6 +132,11 @@ class DictSorter {
 //                        tags = tags.replace(":f:", ":90:")
 //                    }
                 }
+                else {
+                    if( tags.contains(":&numr") ) {
+                        tags = tags.replace(":&numr", '').replace("inanim", "inanim:&numr")
+                    }
+                }
             }
 
 			// sort nv and non-nv separately (e.g. авто)
@@ -281,7 +286,6 @@ class DictSorter {
                     pron_rr.find()
                     key.append(pron_rr.group(0))
                 }
-
             }
 
             int x_idx = tags.indexOf(":x")
@@ -295,6 +299,10 @@ class DictSorter {
 
         if( tags.contains(":nv") ) {
             key.append(":nv")
+        }
+        
+        if( tags.contains(":&numr") ) {
+            key.append(":&numr")
         }
 
         String keyStr = key.toString()

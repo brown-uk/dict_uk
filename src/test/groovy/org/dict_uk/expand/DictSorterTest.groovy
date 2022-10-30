@@ -17,18 +17,28 @@ public class DictSorterTest {
 	
 	@Test
 	void testTagSortKey() {
-		assert dictSorter.tag_sort_key("noun:inanim:m:v_dav", "порт") == "noun:inanim:0030"
-		assert dictSorter.tag_sort_key("noun:inanim:m:v_dav:rare", "порт") == "noun:inanim:0031"
-		assert dictSorter.tag_sort_key("noun:anim:m:v_naz:lname", "Адамишин") == "noun:anim:lname:0010"
-		assert dictSorter.tag_sort_key("noun:anim:f:v_naz:lname", "Адамишин") == "noun:anim:lname:9010"
-		assert dictSorter.tag_sort_key("numr:f:v_naz", "один") == "numr:1010"
-		assert dictSorter.tag_sort_key("adj:m:v_zna:ranim", "азотистоводневого") == "adj:compb:0040"
-		assert dictSorter.tag_sort_key("adj:m:v_zna:rinanim", "азотистоводневий") == "adj:compb:0041"
-		assert dictSorter.tag_sort_key("verb:imperf:inf", "порт") == "verb:imperf:10:0"
-		assert dictSorter.tag_sort_key("verb:imperf:inf:coll:rare", "порт") == "verb:imperf:10:2"
-		assert dictSorter.tag_sort_key("verb:perf:past:m:xp1", "вернув") == "verb:xp1:perf:80:00:0"
-		assert dictSorter.tag_sort_key("verb:perf:inf:xp1", "вернути") == "verb:xp1:perf:10:0"
+		assertEquals "noun:inanim:0030", dictSorter.tag_sort_key("noun:inanim:m:v_dav", "порт")
+		assertEquals "noun:inanim:0031", dictSorter.tag_sort_key("noun:inanim:m:v_dav:rare", "порт")
+		assertEquals "noun:anim:lname:0010", dictSorter.tag_sort_key("noun:anim:m:v_naz:lname", "Адамишин")
+		assertEquals "noun:anim:lname:9010", dictSorter.tag_sort_key("noun:anim:f:v_naz:lname", "Адамишин")
+		assertEquals "numr:1010", dictSorter.tag_sort_key("numr:f:v_naz", "один")
+		assertEquals "adj:compb:0040", dictSorter.tag_sort_key("adj:m:v_zna:ranim", "азотистоводневого")
+		assertEquals "adj:compb:0041", dictSorter.tag_sort_key("adj:m:v_zna:rinanim", "азотистоводневий")
+		assertEquals "verb:imperf:10:0", dictSorter.tag_sort_key("verb:imperf:inf", "порт")
+		assertEquals "verb:imperf:10:2", dictSorter.tag_sort_key("verb:imperf:inf:coll:rare", "порт")
+		assertEquals "verb:xp1:perf:80:00:0", dictSorter.tag_sort_key("verb:perf:past:m:xp1", "вернув")
+		assertEquals "verb:xp1:perf:10:0", dictSorter.tag_sort_key("verb:perf:inf:xp1", "вернути")
+        assertEquals "noun:inanim:nv:&numr:1010:abbr", dictSorter.tag_sort_key("noun:inanim:f:v_naz:nv:&numr:abbr", "тис.")
+        assertEquals "noun:inanim:nv:&numr:5010:abbr", dictSorter.tag_sort_key("noun:inanim:p:v_naz:nv:&numr:abbr", "тис.")
+        assertEquals "noun:inanim:nv:3010:abbr", dictSorter.tag_sort_key("noun:inanim:n:v_naz:nv:abbr", "тис.")
+        assertEquals "noun:inanim:nv:5010:abbr", dictSorter.tag_sort_key("noun:inanim:p:v_naz:nv:abbr", "тис.")
 	}
+    
+    @Test
+    void testGetLineKey() {
+        assertEquals "тис. noun:inanim:nv:&numr", dictSorter.getLineKey("тис.", "noun:inanim:f:v_naz:nv:&numr:abbr", new DicEntry("", "", ""))
+        assertEquals "тис. noun:inanim:nv", dictSorter.getLineKey("тис.", "noun:inanim:n:v_naz:nv:abbr", new DicEntry("", "", ""))
+    }
 
 	def linesToSort =
 '''
@@ -55,6 +65,12 @@ public class DictSorterTest {
 азотистоводневого азотистоводневий adj:m:v_rod
 азотисто-водневий азотисто-водневий adj:m:v_naz
 азотисто-водневого азотисто-водневий adj:m:v_rod
+тис. тис. noun:inanim:f:v_naz:nv:&numr:abbr
+тис. тис. noun:inanim:f:v_rod:nv:&numr:abbr
+тис. тис. noun:inanim:p:v_naz:nv:&numr:abbr
+тис. тис. noun:inanim:n:v_naz:nv:abbr
+тис. тис. noun:inanim:n:v_rod:nv:abbr
+тис. тис. noun:inanim:p:v_naz:nv:abbr
 '''.trim().split("\n")
 	
 	
@@ -73,5 +89,4 @@ public class DictSorterTest {
 		def entries = DicEntry.fromLines(["а а part", "а а intj"])
 		assertEquals(["а а intj", "а а part"].join('\n'), ExpandTest.join(dictSorter.sortEntries(entries)))
 	}
-	
 }
