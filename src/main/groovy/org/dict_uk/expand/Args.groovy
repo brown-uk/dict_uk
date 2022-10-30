@@ -20,7 +20,7 @@ class Args {
 	String dictDir
 	List<String> removeWithTags = []
 	Pattern removeWithRegex
-	List<String> removeTags = ["v-u", "np"]
+	List<String> removeTags = ["v-u", "np", "coll"]
 	List<String> removeTagsWithColons = []
 	List<String> lemmaForTags = ["advp"]
 
@@ -30,7 +30,7 @@ class Args {
 	static {
 		args.removeWithTags = []
 		args.lemmaForTags = ["advp"]
-		args.removeTags = ["v-u", "np"]
+		args.removeTags = ["v-u", "np", "coll"]
 	}
 
 	
