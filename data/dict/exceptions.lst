@@ -561,7 +561,6 @@
 тат тато noun:anim:p:v_rod:ua_1992
 
 раз раз noun:inanim:p:v_rod
-корогов корогва noun:f:v_naz/v_zna
 
 раза раз noun:inanim:m:v_rod                        # лише після дробових + півтора
 
@@ -1241,7 +1240,7 @@
 повинен повинний adj:m:v_naz/v_zn2:short
 потрібен потрібний adj:m:v_naz/v_zn2:short
 прекрасен прекрасний adj:m:v_naz/v_zn2:short
-привинен привинний adj:m:v_naz/v_zn2:short
+привинен привинний adj:m:v_naz/v_zn2:short:arch
 придатен придатний adj:m:v_naz/v_zn2:short
 провинен провинний adj:m:v_naz/v_zn2:short
 рад радий adj:m:v_naz/v_zn2:short

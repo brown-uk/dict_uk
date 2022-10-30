@@ -162,7 +162,10 @@
 їх adj:m:nv//f:nv//n:nv:&pron:pos:bad
 їх adj:p:nv:&pron:pos:bad
 
-сам /adj_pron :&pron:def
+сам /adj_pron :&pron:def                    # сам, сами́й
+самий сам adj:m:v_naz:&pron:def             # сами́й
+самий сам adj:m:v_zna:rinanim:&pron:def
+
 наш /adj_pron :&pron:pos
 ваш /adj_pron :&pron:pos
 
@@ -207,6 +210,7 @@
 всім всі noun:anim:p:v_dav:&pron:gen:v-u
 всіх всі noun:anim:p:v_zna:&pron:gen:v-u
 всіма всі noun:anim:p:v_oru:&pron:gen:v-u
+всіми всі noun:anim:p:v_oru:&pron:gen:v-u:arch
 всіх всі noun:anim:p:v_mis:&pron:gen:v-u
 
 усі усі noun:anim:p:v_naz:&pron:gen:v-u
@@ -231,6 +235,14 @@
 тим те noun:inanim:n:v_oru:&pron:dem
 тім те noun:inanim:n:v_mis:&pron:dem
 тому те noun:inanim:n:v_mis:&pron:dem
+
+се се noun:inanim:n:v_naz:&pron:dem:arch
+сього се noun:inanim:n:v_rod:&pron:dem:arch
+сьому се noun:inanim:n:v_dav:&pron:dem:arch
+се се noun:inanim:n:v_zna:&pron:dem:arch
+сим се noun:inanim:n:v_oru:&pron:dem:arch
+сім се noun:inanim:n:v_mis:&pron:dem:arch
+сьому се noun:inanim:n:v_mis:&pron:dem:arch
 
 інше /n2adj1 :inanim:&pron:def
 інший /adj :&pron:def

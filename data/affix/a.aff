@@ -87,8 +87,8 @@ group adj
 ій	у			#   смотрящу 		                    @ adj:f:v_zna
 #ій	ую			#   смотрящую 		                    @ adj:f:v_zna:uncontr
 ій	ою			#   смотрящою		            @ adj:f:v_oru
-ій	е			#   смотрящє 		                    @ adj:n:v_naz/v_zna/v_kly
-#ій	еє			#   смотрящєє 		                    @ adj:n:v_naz/v_zna/v_kly:uncontr
+ій	е			#   смотряще 		                    @ adj:n:v_naz/v_zna/v_kly
+#ій	еє			#   смотрящеє 		                    @ adj:n:v_naz/v_zna/v_kly:uncontr
 
 [ії]й:
 й	0			#   сині 		                    @ adj:p:v_naz/v_zn2/v_kly
@@ -379,7 +379,7 @@ group adj_pron
 ей      ю       # цю цей    @ adj:f:v_zna
 ей      ією     # цією цей    @ adj:f:v_oru
 ей      е       # це цей    @ adj:n:v_naz/v_zna
-ей      і       # ці цей    @ adj:p:v_naz/v_zn2/v_mis
+ей      і       # ці цей    @ adj:p:v_naz/v_zn2
 ей      их      # цих цей    @ adj:p:v_rod/v_zn1/v_mis
 ей      ими     # цими цей    @ adj:p:v_oru
 

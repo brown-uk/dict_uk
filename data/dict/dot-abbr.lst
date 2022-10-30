@@ -141,8 +141,8 @@
 міжнар. adj:nv:rinanim          # міжнародний
 місц. adj:nv:rinanim            # місцевий
 міськ. adj:nv:rinanim           # міський
-млн. numr:p:nv:bad              # мільйон
-млрд. numr:p:nv:bad             # мільярд
+млн. numr:m/p:nv:bad              # мільйон
+млрд. numr:m/p:nv:bad             # мільярд
 мн. noun:f:nv                   # множини
 моб. adj:nv:rinanim             # мобільний
 моск. adj:nv:rinanim            # московський
@@ -271,12 +271,13 @@
 техн. adj:nv:rinanim            # технічний
 тиж. noun:f:nv                  # тиждень, тижні
 тис. numr:f/p:nv                # тисяча
+тис. noun:n:nv                  # тисячоліття
 тов. noun:m:nv:anim             # товариш
 тов. noun:f:nv:anim             # товаришка
 тр. noun:m:nv:xp1               # тролейбус
 тр. noun:f:nv:xp2               # траса; третина
 тр. adj:nv:rinanim              # трудовий
-трлн. numr:p:nv:bad             # трильйон
+трлн. numr:m/p:nv:bad             # трильйон
 тт. noun:p:nv                   # томи
 уд. noun:m:nv                   # ударів
 укр. adj:nv                     # український

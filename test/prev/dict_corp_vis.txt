@@ -3422,7 +3422,7 @@
   найуживанішими adj:p:v_oru:comps
   найуживаніших adj:p:v_mis:comps
   найуживаніші adj:p:v_kly:comps
-ніде adv:&pron:emph    # ні́де
+ніде adv:&pron:emph    # rv_inf    # ні́де
 ніде adv:&pron:neg    # ніде́
 ніжність noun:inanim:f:v_naz
   ніжності noun:inanim:f:v_rod
