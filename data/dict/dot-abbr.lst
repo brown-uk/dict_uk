@@ -146,6 +146,7 @@
 мн. noun:f:nv                   # множини
 моб. adj:nv:rinanim             # мобільний
 моск. adj:nv:rinanim            # московський
+Мт. noun:anim:m:v_naz:prop:fname     # Матвей
 н. noun:n:v_rod                 # (року) народження
 н. adj:f:nv:rinanim             # наша (ера)
 навч. adj:nv:rinanim            # навчальний
