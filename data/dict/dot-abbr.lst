@@ -3,6 +3,7 @@
 австр. adj:nv:rinanim           # австрійський
 авт. noun:m:v_naz:anim          # автор, напр. "Сьогодні (у четвер.  Авт.), вранці."
 автореф. noun:m:nv              # автореферат
+ак. noun:m:nv:anim              # академік
 акад. noun:m:nv:anim|noun:f:nv  # академік, академія
 акад. adj:nv:rinanim            # академічний
 академ. noun:m:nv:anim          # академік
@@ -73,6 +74,7 @@
 доп. noun:n:nv|adj:nv           # доповнення, доповнений
 досл. adv                       # дослівно
 доц. noun:m:nv:anim             # доцент
+др. noun:m:nv:anim              # доктор
 е. noun:f:nv                    # ера
 екз. noun:m:nv                  # екземпляр
 екон. adj:nv:rinanim            # економічний
@@ -157,6 +159,7 @@
 нац. adj:nv:rinanim             # національний
 нач. noun:m:nv:anim             # начальник
 н.-д. adj:nv:rinanim            # науково-дослідний
+нпр. adv:&insert               # наприклад
 о. noun:m:nv:np:anim            # отець (о. Павло)
 о. noun:m:nv:np                 # острів
 о. noun:p:v_rod                 # в.о. - обов'язків
@@ -279,8 +282,9 @@
 тр. noun:m:nv:xp1               # тролейбус
 тр. noun:f:nv:xp2               # траса; третина
 тр. adj:nv:rinanim              # трудовий
-трлн. numr:m/p:nv:bad             # трильйон
+трлн. numr:m/p:nv:bad           # трильйон
 тт. noun:p:nv                   # томи
+тт. noun:p:nv:anim              # товариші
 уд. noun:m:nv                   # ударів
 укр. adj:nv                     # український
 упоряд. noun:m:nv:anim          # упорядник (при прізвищі)
