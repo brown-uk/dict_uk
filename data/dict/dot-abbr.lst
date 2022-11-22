@@ -155,11 +155,13 @@
 наз. adj:nv:rinanim             # називний (можна подати скорочення всіх відмінків)
 напр. adv:&insert               # наприклад
 нар. verb:rev:perf:past:m/f     # народився, народилась
+нар. adj:nv                     # народний
+нар. noun:n:v_rod               # народження
 наук. adj:nv                    # науковий
 нац. adj:nv:rinanim             # національний
 нач. noun:m:nv:anim             # начальник
 н.-д. adj:nv:rinanim            # науково-дослідний
-нпр. adv:&insert               # наприклад
+нпр. adv:&insert                # наприклад
 о. noun:m:nv:np:anim            # отець (о. Павло)
 о. noun:m:nv:np                 # острів
 о. noun:p:v_rod                 # в.о. - обов'язків
