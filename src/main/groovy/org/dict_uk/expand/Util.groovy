@@ -133,6 +133,12 @@ class Util {
 			if( ! lineTagStr.contains(":nv") ) {
 				lines << entry
 			}
+            else {
+                if( lineTagStr =~ /:v_...:nv/ ) {
+                    lines << entry
+                    continue
+                }
+            }
 			
 			if ( ( lineTagStr.startsWith("noun") || lineTagStr.startsWith("numr") ) && ! lineTagStr.contains(":v_") ) {
 				def parts = lineTagStr.split(":nv")

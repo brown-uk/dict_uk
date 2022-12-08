@@ -367,15 +367,15 @@ def multilineFull =
 
 		def multilineFull21 =
 		'''
-вагоміше вагоміше adv:compc:coll
-вагоміш вагоміше adv:compc:coll:short
+вагоміше вагоміше adv:compc
+вагоміш вагоміше adv:compc:short
 вагомо вагомо adv:compb
-найвагоміш найвагоміш adv:comps:coll:short
-найвагоміше найвагоміше adv:comps:coll
-щонайвагоміш щонайвагоміш adv:comps:coll:short
-щонайвагоміше щонайвагоміше adv:comps:coll
-якнайвагоміш якнайвагоміш adv:comps:coll:short
-якнайвагоміше якнайвагоміше adv:comps:coll
+найвагоміш найвагоміш adv:comps:short
+найвагоміше найвагоміше adv:comps
+щонайвагоміш щонайвагоміш adv:comps:short
+щонайвагоміше щонайвагоміше adv:comps
+якнайвагоміш якнайвагоміш adv:comps:short
+якнайвагоміше якнайвагоміше adv:comps
 '''.trim()
 
 			
@@ -578,37 +578,37 @@ void testStryvaty() {
 	
 	String adjNvFull =
 '''
-супер-пупер супер-пупер adj:m:v_naz:nv:coll
-супер-пупер супер-пупер adj:m:v_rod:nv:coll
-супер-пупер супер-пупер adj:m:v_dav:nv:coll
-супер-пупер супер-пупер adj:m:v_zna:ranim:nv:coll
-супер-пупер супер-пупер adj:m:v_zna:rinanim:nv:coll
-супер-пупер супер-пупер adj:m:v_oru:nv:coll
-супер-пупер супер-пупер adj:m:v_mis:nv:coll
-супер-пупер супер-пупер adj:m:v_kly:nv:coll
-супер-пупер супер-пупер adj:f:v_naz:nv:coll
-супер-пупер супер-пупер adj:f:v_rod:nv:coll
-супер-пупер супер-пупер adj:f:v_dav:nv:coll
-супер-пупер супер-пупер adj:f:v_zna:nv:coll
-супер-пупер супер-пупер adj:f:v_oru:nv:coll
-супер-пупер супер-пупер adj:f:v_mis:nv:coll
-супер-пупер супер-пупер adj:f:v_kly:nv:coll
-супер-пупер супер-пупер adj:n:v_naz:nv:coll
-супер-пупер супер-пупер adj:n:v_rod:nv:coll
-супер-пупер супер-пупер adj:n:v_dav:nv:coll
-супер-пупер супер-пупер adj:n:v_zna:nv:coll
-супер-пупер супер-пупер adj:n:v_oru:nv:coll
-супер-пупер супер-пупер adj:n:v_mis:nv:coll
-супер-пупер супер-пупер adj:n:v_kly:nv:coll
-супер-пупер супер-пупер adj:p:v_naz:nv:coll
-супер-пупер супер-пупер adj:p:v_rod:nv:coll
-супер-пупер супер-пупер adj:p:v_dav:nv:coll
-супер-пупер супер-пупер adj:p:v_zna:ranim:nv:coll
-супер-пупер супер-пупер adj:p:v_zna:rinanim:nv:coll
-супер-пупер супер-пупер adj:p:v_oru:nv:coll
-супер-пупер супер-пупер adj:p:v_mis:nv:coll
-супер-пупер супер-пупер adj:p:v_kly:nv:coll
-супер-пупер супер-пупер adv:coll
+супер-пупер супер-пупер adj:m:v_naz:nv
+супер-пупер супер-пупер adj:m:v_rod:nv
+супер-пупер супер-пупер adj:m:v_dav:nv
+супер-пупер супер-пупер adj:m:v_zna:ranim:nv
+супер-пупер супер-пупер adj:m:v_zna:rinanim:nv
+супер-пупер супер-пупер adj:m:v_oru:nv
+супер-пупер супер-пупер adj:m:v_mis:nv
+супер-пупер супер-пупер adj:m:v_kly:nv
+супер-пупер супер-пупер adj:f:v_naz:nv
+супер-пупер супер-пупер adj:f:v_rod:nv
+супер-пупер супер-пупер adj:f:v_dav:nv
+супер-пупер супер-пупер adj:f:v_zna:nv
+супер-пупер супер-пупер adj:f:v_oru:nv
+супер-пупер супер-пупер adj:f:v_mis:nv
+супер-пупер супер-пупер adj:f:v_kly:nv
+супер-пупер супер-пупер adj:n:v_naz:nv
+супер-пупер супер-пупер adj:n:v_rod:nv
+супер-пупер супер-пупер adj:n:v_dav:nv
+супер-пупер супер-пупер adj:n:v_zna:nv
+супер-пупер супер-пупер adj:n:v_oru:nv
+супер-пупер супер-пупер adj:n:v_mis:nv
+супер-пупер супер-пупер adj:n:v_kly:nv
+супер-пупер супер-пупер adj:p:v_naz:nv
+супер-пупер супер-пупер adj:p:v_rod:nv
+супер-пупер супер-пупер adj:p:v_dav:nv
+супер-пупер супер-пупер adj:p:v_zna:ranim:nv
+супер-пупер супер-пупер adj:p:v_zna:rinanim:nv
+супер-пупер супер-пупер adj:p:v_oru:nv
+супер-пупер супер-пупер adj:p:v_mis:nv
+супер-пупер супер-пупер adj:p:v_kly:nv
+супер-пупер супер-пупер adv
 '''.trim()
 
 
@@ -703,6 +703,14 @@ def expectedNvNumr = """
         assertEquals(expectedNvNumr, join(expand.process_input(Arrays.asList("півчвертаста numr:p:nv:rare"))))
     }
 	
+    
+    @Test
+    void testNvAbbr() {
+        List<String> lines = ["авт. noun:m:v_naz:nv:anim"]
+        assertEquals('авт. авт. noun:anim:m:v_naz:nv', join(expand.process_input(lines)))
+    }
+
+    
 //	def strilyatyBad =
 //	'''
 //стрілявши advp:imperf:bad
@@ -734,6 +742,7 @@ def expectedNvNumr = """
 		return entries.collect{ it.toFlatString() }.join("\n") //.replaceAll(/[<>]/, '')
 	}
 
-	
+
+    	
 }
 

@@ -213,7 +213,7 @@ class Expand {
 						else if( tags == "noun:anim:m:v_naz:bad" && deriv == "член-кореспондент" ) {
 							continue
 						}
-												
+
 						words.add(new DicEntry(deriv, word, tags, comment))
 						appliedCnt += 1
 						appliedCnts[affixFlag2] += 1
