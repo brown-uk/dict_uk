@@ -575,7 +575,7 @@
 золота золото noun:p:v_naz/v_zna
 бронзи бронза noun:p:v_naz/v_zna
 
-ока око noun:p:v_naz:var
+ока око noun:p:v_naz/v_zna:var
 імені ім'я noun:p:v_naz:var
 племені плем'я noun:p:v_naz:var
 друга друг noun:anim:p:v_naz:var
@@ -773,6 +773,25 @@
 
 хріна noninfl
 
+# bad
+щонебудь щонебудь noun:inanim:n:v_naz:&pron:ind:bad
+чогонебудь щонебудь noun:inanim:n:v_rod:&pron:ind:bad
+чомунебудь щонебудь noun:inanim:n:v_dav:&pron:ind:bad
+щонебудь щонебудь noun:inanim:n:v_zna:&pron:ind:bad
+чимнебудь щонебудь noun:inanim:n:v_oru:&pron:ind:bad
+чімнебудь щонебудь noun:inanim:n:v_mis:&pron:ind:bad
+чомунебудь щонебудь noun:inanim:n:v_mis:&pron:ind:bad
+
+хтонебудь хтонебудь noun:anim:m:v_naz:&pron:ind:bad
+когонебудь хтонебудь noun:anim:m:v_rod:&pron:ind:bad
+комунебудь хтонебудь noun:anim:m:v_dav:&pron:ind:bad
+когонебудь хтонебудь noun:anim:m:v_zna:&pron:ind:bad
+кимнебудь хтонебудь noun:anim:m:v_oru:&pron:ind:bad
+кімнебудь хтонебудь noun:anim:m:v_mis:&pron:ind:bad
+комунебудь хтонебудь noun:anim:m:v_mis:&pron:ind:bad
+
+
+
 #
 # Дієслова
 #
@@ -836,6 +855,7 @@
 
 диви дивитися verb:rev:imperf:impr:s:2:short
 дивіть дивитися verb:rev:imperf:impr:p:2:short
+біга бігати verb:imperf:pres:s:3:short
 
 многий многий adj:m:v_naz/v_zn2:rare
 многая многий adj:p:v_naz/v_zn2:rare

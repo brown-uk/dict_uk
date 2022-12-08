@@ -1,7 +1,7 @@
 # див. також http://lib.npu.edu.ua/full_txt/DSTU_3582_2013.pdf
 абз. noun:m:nv                  # абзац
 австр. adj:nv:rinanim           # австрійський
-авт. noun:m:v_naz:anim          # автор, напр. "Сьогодні (у четвер.  Авт.), вранці."
+авт. noun:m:v_naz:nv:anim       # автор, напр. "Сьогодні (у четвер.  Авт.), вранці."
 автореф. noun:m:nv              # автореферат
 ак. noun:m:nv:anim              # академік
 акад. noun:m:nv:anim|noun:f:nv  # академік, академія
@@ -96,7 +96,7 @@
 зовн. adj:nv:rinanim            # зовнішній
 Ів. noun:m:nv:anim:prop:fname   # Іван
 іл. noun:f:nv                   # ілюстрація
-ім. noun:n:v_rod                # імені
+ім. noun:n:v_rod:nv             # імені
 ін. noun:n:nv|noun:p:nv         # інше,інші
 інв. adj:nv:rinanim             # інвентарний
 інд. adj:nv:rinanim             # індивідуальний, індійський
@@ -133,7 +133,7 @@
 лат. adj:nv:rinanim             # латинський
 латин. adj:nv:rinanim           # латинський
 лит. adj:nv:rinanim             # литовський
-Лк. noun:anim:m:v_naz:prop:fname     # Лука
+Лк. noun:anim:m:v_naz:nv:prop:fname     # Лука
 м. noun:n:nv:np                 # місто
 мал. noun:m:nv                  # малюнок
 Ман. noninfl:prop               # Манчестер (ФК)
@@ -148,15 +148,15 @@
 мн. noun:f:nv                   # множини
 моб. adj:nv:rinanim             # мобільний
 моск. adj:nv:rinanim            # московський
-Мт. noun:anim:m:v_naz:prop:fname     # Матвей
-н. noun:n:v_rod                 # (року) народження
+Мт. noun:anim:m:v_naz:nv:prop:fname     # Матвей
+н. noun:n:v_rod:nv              # (року) народження
 н. adj:f:nv:rinanim             # наша (ера)
 навч. adj:nv:rinanim            # навчальний
 наз. adj:nv:rinanim             # називний (можна подати скорочення всіх відмінків)
 напр. adv:&insert               # наприклад
 нар. verb:rev:perf:past:m/f     # народився, народилась
 нар. adj:nv                     # народний
-нар. noun:n:v_rod               # народження
+нар. noun:n:v_rod:nv            # народження
 наук. adj:nv                    # науковий
 нац. adj:nv:rinanim             # національний
 нач. noun:m:nv:anim             # начальник
@@ -164,7 +164,7 @@
 нпр. adv:&insert                # наприклад
 о. noun:m:nv:np:anim            # отець (о. Павло)
 о. noun:m:nv:np                 # острів
-о. noun:p:v_rod                 # в.о. - обов'язків
+о. noun:p:v_rod:nv              # в.о. - обов'язків
 обл. noun:f:nv                  # область
 обр. noun:f:nv                  # обробка/оброблення?
 одн. noun:f:nv                  # однини
