@@ -334,6 +334,7 @@
 аерованих аерований adj:p:v_mis:&adjp:pasv:perf:compb
 аеровані аерований adj:p:v_kly:&adjp:pasv:perf:compb
 аерованіше аерованіше adv:compc
+аерованіш аерованіше adv:compc:short
 аерованіший аерованіший adj:m:v_naz:compc
 аерованішого аерованіший adj:m:v_rod:compc
 аерованішому аерованіший adj:m:v_dav:compc
@@ -620,6 +621,7 @@
 бачили бачити verb:imperf:past:p
 бачено бачити verb:imperf:impers
 безпечніше безпечніше adv:compc:&predic
+безпечніш безпечніше adv:compc:&predic:short
 безпечно безпечно adv:compb:&predic
 безчерепні безчерепні noun:anim:p:v_naz:ns
 безчерепних безчерепні noun:anim:p:v_rod:ns
@@ -1077,6 +1079,7 @@
 вбогі вбогий adj:p:v_kly:compb
 вбогії вбогий adj:p:v_kly:compb:long
 вбогіше вбогіше adv:compc
+вбогіш вбогіше adv:compc:short
 вбогіший вбогіший adj:m:v_naz:compc
 вбогішого вбогіший adj:m:v_rod:compc
 вбогішому вбогіший adj:m:v_dav:compc
@@ -1553,6 +1556,7 @@
 вживаних вживаний adj:p:v_mis:&adjp:pasv:imperf:compb
 вживані вживаний adj:p:v_kly:&adjp:pasv:imperf:compb
 вживаніше вживаніше adv:compc
+вживаніш вживаніше adv:compc:short
 вживаніший вживаніший adj:m:v_naz:compc
 вживанішого вживаніший adj:m:v_rod:compc
 вживанішому вживаніший adj:m:v_dav:compc
@@ -2101,6 +2105,7 @@
 гирлах гирло noun:inanim:p:v_mis
 гирла гирло noun:inanim:p:v_kly
 гірше гірше adv:compc:&predic
+гірш гірше adv:compc:&predic:short
 гладкий гладкий adj:m:v_naz:compb
 гладкого гладкий adj:m:v_rod:compb
 гладкому гладкий adj:m:v_dav:compb
@@ -2134,6 +2139,7 @@
 гладких гладкий adj:p:v_mis:compb
 гладкі гладкий adj:p:v_kly:compb
 гладкіше гладкіше adv:compc
+гладкіш гладкіше adv:compc:short
 гладкіший гладкіший adj:m:v_naz:compc
 гладкішого гладкіший adj:m:v_rod:compc
 гладкішому гладкіший adj:m:v_dav:compc
@@ -2168,6 +2174,7 @@
 гладкіші гладкіший adj:p:v_kly:compc
 гладко гладко adv:compb
 гладше гладше adv:compc
+гладш гладше adv:compc:short
 гладший гладший adj:m:v_naz:compc
 гладшого гладший adj:m:v_rod:compc
 гладшому гладший adj:m:v_dav:compc
@@ -2382,6 +2389,7 @@
 дивен дивний adj:m:v_naz:short
 дивен дивний adj:m:v_zna:short
 дивніше дивніше adv:compc
+дивніш дивніше adv:compc:short
 дивніший дивніший adj:m:v_naz:compc
 дивнішого дивніший adj:m:v_rod:compc
 дивнішому дивніший adj:m:v_dav:compc
@@ -2711,6 +2719,7 @@
 затаєні затаєний adj:p:v_kly:&adjp:pasv:perf:compb
 затаєно затаєно adv:compb
 ймовірніше ймовірніше adv:compc
+ймовірніш ймовірніше adv:compc:short
 ймовірно ймовірно adv:compb:&insert
 його його adj:m:v_naz:nv
 його його adj:m:v_rod:nv
@@ -3059,6 +3068,7 @@
 надоїли надоїти verb:perf:past:p
 надоєно надоїти verb:perf:impers
 найаерованіше найаерованіше adv:comps
+найаерованіш найаерованіше adv:comps:short
 найаерованіший найаерованіший adj:m:v_naz:comps
 найаерованішого найаерованіший adj:m:v_rod:comps
 найаерованішому найаерованіший adj:m:v_dav:comps
@@ -3092,6 +3102,7 @@
 найаерованіших найаерованіший adj:p:v_mis:comps
 найаерованіші найаерованіший adj:p:v_kly:comps
 найбезпечніше найбезпечніше adv:comps:&predic
+найбезпечніш найбезпечніше adv:comps:&predic:short
 найвагоміше найвагоміше adv:comps
 найвагоміш найвагоміше adv:comps:short
 найвагоміший найвагоміший adj:m:v_naz:comps
@@ -3127,6 +3138,7 @@
 найвагоміших найвагоміший adj:p:v_mis:comps
 найвагоміші найвагоміший adj:p:v_kly:comps
 найвбогіше найвбогіше adv:comps
+найвбогіш найвбогіше adv:comps:short
 найвбогіший найвбогіший adj:m:v_naz:comps
 найвбогішого найвбогіший adj:m:v_rod:comps
 найвбогішому найвбогіший adj:m:v_dav:comps
@@ -3169,6 +3181,7 @@
 найвбогіші найвбогіший adj:p:v_kly:comps
 найвбогішії найвбогіший adj:p:v_kly:comps:long
 найвживаніше найвживаніше adv:comps
+найвживаніш найвживаніше adv:comps:short
 найвживаніший найвживаніший adj:m:v_naz:comps
 найвживанішого найвживаніший adj:m:v_rod:comps
 найвживанішому найвживаніший adj:m:v_dav:comps
@@ -3202,7 +3215,9 @@
 найвживаніших найвживаніший adj:p:v_mis:comps
 найвживаніші найвживаніший adj:p:v_kly:comps
 найгірше найгірше adv:comps:&predic
+найгірш найгірше adv:comps:&predic:short
 найгладкіше найгладкіше adv:comps
+найгладкіш найгладкіше adv:comps:short
 найгладкіший найгладкіший adj:m:v_naz:comps
 найгладкішого найгладкіший adj:m:v_rod:comps
 найгладкішому найгладкіший adj:m:v_dav:comps
@@ -3236,6 +3251,7 @@
 найгладкіших найгладкіший adj:p:v_mis:comps
 найгладкіші найгладкіший adj:p:v_kly:comps
 найгладше найгладше adv:comps
+найгладш найгладше adv:comps:short
 найгладший найгладший adj:m:v_naz:comps
 найгладшого найгладший adj:m:v_rod:comps
 найгладшому найгладший adj:m:v_dav:comps
@@ -3269,6 +3285,7 @@
 найгладших найгладший adj:p:v_mis:comps
 найгладші найгладший adj:p:v_kly:comps
 найдивніше найдивніше adv:comps
+найдивніш найдивніше adv:comps:short
 найдивніший найдивніший adj:m:v_naz:comps
 найдивнішого найдивніший adj:m:v_rod:comps
 найдивнішому найдивніший adj:m:v_dav:comps
@@ -3302,6 +3319,7 @@
 найдивніших найдивніший adj:p:v_mis:comps
 найдивніші найдивніший adj:p:v_kly:comps
 найзатаєніше найзатаєніше adv:comps
+найзатаєніш найзатаєніше adv:comps:short
 найзатаєніший найзатаєніший adj:m:v_naz:comps
 найзатаєнішого найзатаєніший adj:m:v_rod:comps
 найзатаєнішому найзатаєніший adj:m:v_dav:comps
@@ -3369,7 +3387,9 @@
 найперше найперше adv:comps
 найперш найперше adv:comps:short
 найпоганіше найпоганіше adv:comps:&predic
+найпоганіш найпоганіше adv:comps:&predic:short
 найудатніше найудатніше adv:comps
+найудатніш найудатніше adv:comps:short
 найуживаніший найуживаніший adj:m:v_naz:comps
 найуживанішого найуживаніший adj:m:v_rod:comps
 найуживанішому найуживаніший adj:m:v_dav:comps
@@ -3590,6 +3610,7 @@
 пів пів numr:n:v_mis:nv
 пів пів numr:n:v_kly:nv
 поганіше поганіше adv:compc:&predic
+поганіш поганіше adv:compc:&predic:short
 погано погано adv:compb:&predic
 породілля породілля noun:anim:f:v_naz
 породіллі породілля noun:anim:f:v_rod
@@ -4142,6 +4163,7 @@
 тюрмах тюрма noun:inanim:p:v_mis
 тюрми тюрма noun:inanim:p:v_kly
 удатніше удатніше adv:compc
+удатніш удатніше adv:compc:short
 удатно удатно adv:compb
 уже уже adv
 уживаний уживаний adj:m:v_naz:&adjp:pasv:imperf:compb
@@ -4527,6 +4549,7 @@
 чім-будь що-будь noun:inanim:n:v_mis:&pron:ind
 чому-будь що-будь noun:inanim:n:v_mis:&pron:ind
 щонайаерованіше щонайаерованіше adv:comps
+щонайаерованіш щонайаерованіше adv:comps:short
 щонайаерованіший щонайаерованіший adj:m:v_naz:comps
 щонайаерованішого щонайаерованіший adj:m:v_rod:comps
 щонайаерованішому щонайаерованіший adj:m:v_dav:comps
@@ -4560,6 +4583,7 @@
 щонайаерованіших щонайаерованіший adj:p:v_mis:comps
 щонайаерованіші щонайаерованіший adj:p:v_kly:comps
 щонайбезпечніше щонайбезпечніше adv:comps
+щонайбезпечніш щонайбезпечніше adv:comps:short
 щонайвагоміше щонайвагоміше adv:comps
 щонайвагоміш щонайвагоміше adv:comps:short
 щонайвагоміший щонайвагоміший adj:m:v_naz:comps
@@ -4595,6 +4619,7 @@
 щонайвагоміших щонайвагоміший adj:p:v_mis:comps
 щонайвагоміші щонайвагоміший adj:p:v_kly:comps
 щонайвбогіше щонайвбогіше adv:comps
+щонайвбогіш щонайвбогіше adv:comps:short
 щонайвбогіший щонайвбогіший adj:m:v_naz:comps
 щонайвбогішого щонайвбогіший adj:m:v_rod:comps
 щонайвбогішому щонайвбогіший adj:m:v_dav:comps
@@ -4637,6 +4662,7 @@
 щонайвбогіші щонайвбогіший adj:p:v_kly:comps
 щонайвбогішії щонайвбогіший adj:p:v_kly:comps:long
 щонайвживаніше щонайвживаніше adv:comps
+щонайвживаніш щонайвживаніше adv:comps:short
 щонайвживаніший щонайвживаніший adj:m:v_naz:comps
 щонайвживанішого щонайвживаніший adj:m:v_rod:comps
 щонайвживанішому щонайвживаніший adj:m:v_dav:comps
@@ -4670,7 +4696,9 @@
 щонайвживаніших щонайвживаніший adj:p:v_mis:comps
 щонайвживаніші щонайвживаніший adj:p:v_kly:comps
 щонайгірше щонайгірше adv:comps
+щонайгірш щонайгірше adv:comps:short
 щонайгладкіше щонайгладкіше adv:comps
+щонайгладкіш щонайгладкіше adv:comps:short
 щонайгладкіший щонайгладкіший adj:m:v_naz:comps
 щонайгладкішого щонайгладкіший adj:m:v_rod:comps
 щонайгладкішому щонайгладкіший adj:m:v_dav:comps
@@ -4704,6 +4732,7 @@
 щонайгладкіших щонайгладкіший adj:p:v_mis:comps
 щонайгладкіші щонайгладкіший adj:p:v_kly:comps
 щонайгладше щонайгладше adv:comps
+щонайгладш щонайгладше adv:comps:short
 щонайгладший щонайгладший adj:m:v_naz:comps
 щонайгладшого щонайгладший adj:m:v_rod:comps
 щонайгладшому щонайгладший adj:m:v_dav:comps
@@ -4737,6 +4766,7 @@
 щонайгладших щонайгладший adj:p:v_mis:comps
 щонайгладші щонайгладший adj:p:v_kly:comps
 щонайдивніше щонайдивніше adv:comps
+щонайдивніш щонайдивніше adv:comps:short
 щонайдивніший щонайдивніший adj:m:v_naz:comps
 щонайдивнішого щонайдивніший adj:m:v_rod:comps
 щонайдивнішому щонайдивніший adj:m:v_dav:comps
@@ -4770,6 +4800,7 @@
 щонайдивніших щонайдивніший adj:p:v_mis:comps
 щонайдивніші щонайдивніший adj:p:v_kly:comps
 щонайзатаєніше щонайзатаєніше adv:comps
+щонайзатаєніш щонайзатаєніше adv:comps:short
 щонайзатаєніший щонайзатаєніший adj:m:v_naz:comps
 щонайзатаєнішого щонайзатаєніший adj:m:v_rod:comps
 щонайзатаєнішому щонайзатаєніший adj:m:v_dav:comps
@@ -4835,7 +4866,9 @@
 щонайкрутіших щонайкрутіший adj:p:v_mis:comps
 щонайкрутіші щонайкрутіший adj:p:v_kly:comps
 щонайпоганіше щонайпоганіше adv:comps
+щонайпоганіш щонайпоганіше adv:comps:short
 щонайудатніше щонайудатніше adv:comps
+щонайудатніш щонайудатніше adv:comps:short
 щонайуживаніший щонайуживаніший adj:m:v_naz:comps
 щонайуживанішого щонайуживаніший adj:m:v_rod:comps
 щонайуживанішому щонайуживаніший adj:m:v_dav:comps
@@ -5242,6 +5275,7 @@
 якихось якийсь adj:p:v_mis:&pron:int:rel:def
 якихсь якийсь adj:p:v_mis:&pron:int:rel:def
 якнайаерованіше якнайаерованіше adv:comps
+якнайаерованіш якнайаерованіше adv:comps:short
 якнайаерованіший якнайаерованіший adj:m:v_naz:comps
 якнайаерованішого якнайаерованіший adj:m:v_rod:comps
 якнайаерованішому якнайаерованіший adj:m:v_dav:comps
@@ -5275,6 +5309,7 @@
 якнайаерованіших якнайаерованіший adj:p:v_mis:comps
 якнайаерованіші якнайаерованіший adj:p:v_kly:comps
 якнайбезпечніше якнайбезпечніше adv:comps
+якнайбезпечніш якнайбезпечніше adv:comps:short
 якнайвагоміше якнайвагоміше adv:comps
 якнайвагоміш якнайвагоміше adv:comps:short
 якнайвагоміший якнайвагоміший adj:m:v_naz:comps
@@ -5310,6 +5345,7 @@
 якнайвагоміших якнайвагоміший adj:p:v_mis:comps
 якнайвагоміші якнайвагоміший adj:p:v_kly:comps
 якнайвбогіше якнайвбогіше adv:comps
+якнайвбогіш якнайвбогіше adv:comps:short
 якнайвбогіший якнайвбогіший adj:m:v_naz:comps
 якнайвбогішого якнайвбогіший adj:m:v_rod:comps
 якнайвбогішому якнайвбогіший adj:m:v_dav:comps
@@ -5352,6 +5388,7 @@
 якнайвбогіші якнайвбогіший adj:p:v_kly:comps
 якнайвбогішії якнайвбогіший adj:p:v_kly:comps:long
 якнайвживаніше якнайвживаніше adv:comps
+якнайвживаніш якнайвживаніше adv:comps:short
 якнайвживаніший якнайвживаніший adj:m:v_naz:comps
 якнайвживанішого якнайвживаніший adj:m:v_rod:comps
 якнайвживанішому якнайвживаніший adj:m:v_dav:comps
@@ -5385,7 +5422,9 @@
 якнайвживаніших якнайвживаніший adj:p:v_mis:comps
 якнайвживаніші якнайвживаніший adj:p:v_kly:comps
 якнайгірше якнайгірше adv:comps
+якнайгірш якнайгірше adv:comps:short
 якнайгладкіше якнайгладкіше adv:comps
+якнайгладкіш якнайгладкіше adv:comps:short
 якнайгладкіший якнайгладкіший adj:m:v_naz:comps
 якнайгладкішого якнайгладкіший adj:m:v_rod:comps
 якнайгладкішому якнайгладкіший adj:m:v_dav:comps
@@ -5419,6 +5458,7 @@
 якнайгладкіших якнайгладкіший adj:p:v_mis:comps
 якнайгладкіші якнайгладкіший adj:p:v_kly:comps
 якнайгладше якнайгладше adv:comps
+якнайгладш якнайгладше adv:comps:short
 якнайгладший якнайгладший adj:m:v_naz:comps
 якнайгладшого якнайгладший adj:m:v_rod:comps
 якнайгладшому якнайгладший adj:m:v_dav:comps
@@ -5452,6 +5492,7 @@
 якнайгладших якнайгладший adj:p:v_mis:comps
 якнайгладші якнайгладший adj:p:v_kly:comps
 якнайдивніше якнайдивніше adv:comps
+якнайдивніш якнайдивніше adv:comps:short
 якнайдивніший якнайдивніший adj:m:v_naz:comps
 якнайдивнішого якнайдивніший adj:m:v_rod:comps
 якнайдивнішому якнайдивніший adj:m:v_dav:comps
@@ -5485,6 +5526,7 @@
 якнайдивніших якнайдивніший adj:p:v_mis:comps
 якнайдивніші якнайдивніший adj:p:v_kly:comps
 якнайзатаєніше якнайзатаєніше adv:comps
+якнайзатаєніш якнайзатаєніше adv:comps:short
 якнайзатаєніший якнайзатаєніший adj:m:v_naz:comps
 якнайзатаєнішого якнайзатаєніший adj:m:v_rod:comps
 якнайзатаєнішому якнайзатаєніший adj:m:v_dav:comps
@@ -5550,7 +5592,9 @@
 якнайкрутіших якнайкрутіший adj:p:v_mis:comps
 якнайкрутіші якнайкрутіший adj:p:v_kly:comps
 якнайпоганіше якнайпоганіше adv:comps
+якнайпоганіш якнайпоганіше adv:comps:short
 якнайудатніше якнайудатніше adv:comps
+якнайудатніш якнайудатніше adv:comps:short
 якнайуживаніший якнайуживаніший adj:m:v_naz:comps
 якнайуживанішого якнайуживаніший adj:m:v_rod:comps
 якнайуживанішому якнайуживаніший adj:m:v_dav:comps

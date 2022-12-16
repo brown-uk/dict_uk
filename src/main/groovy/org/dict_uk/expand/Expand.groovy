@@ -1267,7 +1267,7 @@ class Expand {
 				word = main_word[0..<-1] + "іше"
 			}
 
-            List<DicEntry> forms = expandSubposAdv(word, extra_tags)
+            List<DicEntry> forms = expandSubposAdv(word, extra_tags, line)
 
 			return forms
 		}
@@ -1275,7 +1275,8 @@ class Expand {
 		throw new Exception("Unknown subposition for $line ($main_word)")
 	}
 
-	private List expandSubposAdv(String word, String extraTags) {
+    @CompileStatic
+	private List expandSubposAdv(String word, String extraTags, String line) {
 		List<DicEntry> forms = []
 		String origWord = word
 
@@ -1301,10 +1302,10 @@ class Expand {
             forms += composeComparAdv("як" + word, "adv:comps" + newExtraTags)
         }
         //			if( word =~ /[^тд]ше$/ ) {
-//		if( origWord.endsWith('ше') ) {
-//			String advIsh = origWord.replaceFirst(/ше$/, 'ш')
-//			forms += expandSubposAdv(advIsh, extraTags)
-//		}
+		if( origWord.endsWith('ше') && ! (line =~ /slang|alt|arch|vulr|bad/) ) {
+			String advIsh = origWord.replaceFirst(/ше$/, 'ш')
+			forms += expandSubposAdv(advIsh, extraTags, line)
+		}
 		
 		return forms
 	}
@@ -1338,7 +1339,7 @@ class Expand {
 			extra_tags = and_adjp_pattern.matcher(extra_tags).replaceFirst('')
 		}
 
-		List<DicEntry> forms = expandSubposAdv(word, extra_tags)
+		List<DicEntry> forms = expandSubposAdv(word, extra_tags, line)
 
 		return forms
 	}

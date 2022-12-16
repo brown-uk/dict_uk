@@ -405,6 +405,7 @@ def multilineFull =
 def multilineFull22 =
 '''
 ймовірніше ймовірніше adv:compc
+ймовірніш ймовірніше adv:compc:short
 ймовірно ймовірно adv:compb
 '''.trim()
     
