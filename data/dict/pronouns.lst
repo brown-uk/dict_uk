@@ -821,7 +821,7 @@
 ззаду ззаду prep                    # rv_rod
 зсередини зсередини prep            # rv_rod
 ізсередини ізсередини prep          # rv_rod
-кінець кінець prep                  # rv_rod
+кінець кінець prep:arch             # rv_rod
 коло коло prep        # rv_rod
 край край prep        # rv_rod
 крізь крізь prep        # rv_zna

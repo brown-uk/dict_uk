@@ -350,46 +350,61 @@ def multilineFull =
 вагоміше вагоміше adv:compc
 вагоміш вагоміше adv:compc:short
 вагомо вагомо adv:compb
-найвагоміш найвагоміш adv:comps:short
 найвагоміше найвагоміше adv:comps
-щонайвагоміш щонайвагоміш adv:comps:short
+найвагоміш найвагоміше adv:comps:short
 щонайвагоміше щонайвагоміше adv:comps
-якнайвагоміш якнайвагоміш adv:comps:short
-якнайвагоміше якнайвагоміше adv:comps'''.trim()
+щонайвагоміш щонайвагоміше adv:comps:short
+якнайвагоміше якнайвагоміше adv:comps
+якнайвагоміш якнайвагоміше adv:comps:short
+'''.trim()
 //TODO: щоякнайвагоміше щоякнайвагоміше adv:comps
 
 		
-		@Test
-		void testMultilineWithTag() {
-			def lines = ["вагомо adv \\", " +cs=вагоміше"]
-			assertEquals(multilineFull2, join(expand.process_input(lines)))
-		}
+    @Test
+    void testMultilineWithTag() {
+        def lines = ["вагомо adv \\", " +cs=вагоміше \\", " +cs=вагоміш"]
+        assertEquals(multilineFull2, join(expand.process_input(lines)))
+    }
 
-		def multilineFull21 =
-		'''
-вагоміше вагоміше adv:compc
-вагоміш вагоміше adv:compc:short
-вагомо вагомо adv:compb
-найвагоміш найвагоміш adv:comps:short
-найвагоміше найвагоміше adv:comps
-щонайвагоміш щонайвагоміш adv:comps:short
-щонайвагоміше щонайвагоміше adv:comps
-якнайвагоміш якнайвагоміш adv:comps:short
-якнайвагоміше якнайвагоміше adv:comps
+	def multilineIndent =
+'''
+вагоміше adv:compc
+  вагоміш adv:compc:short
+вагомо adv:compb
+найвагоміше adv:comps
+  найвагоміш adv:comps:short
+щонайвагоміше adv:comps
+  щонайвагоміш adv:comps:short
+якнайвагоміше adv:comps
+  якнайвагоміш adv:comps:short
 '''.trim()
-
 			
 	@Test
-	void testMultilineWithExtraTag2() {
-		def lines = ["вагомо adv \\", " +cs=вагоміше :coll"]
-		assertEquals(multilineFull21, join(expand.process_input(lines)))
+	void testMultilineWithIndent() {
+		def lines = ["вагомо adv \\", " +cs=вагоміше \\", " +cs=вагоміш"]
+		assertEquals(multilineIndent, new DictSorter().indent_lines(expand.process_input(lines)).join("\n"))
 	}
+
+    
+    def multilineFull21 =
+'''
+вагоміше вагоміше adv:compc:slang
+вагомо вагомо adv:compb
+найвагоміше найвагоміше adv:comps:slang
+щонайвагоміше щонайвагоміше adv:comps:slang
+якнайвагоміше якнайвагоміше adv:comps:slang
+'''.trim()
+            
+    @Test
+    void testMultilineWithExtraTag2() {
+        def lines = ["вагомо adv \\", " +cs=вагоміше :slang"]
+        assertEquals(multilineFull21, join(expand.process_input(lines)))
+    }
 
             
 def multilineFull22 =
 '''
 ймовірніше ймовірніше adv:compc
-ймовірніш ймовірніше adv:compc:short
 ймовірно ймовірно adv:compb
 '''.trim()
     

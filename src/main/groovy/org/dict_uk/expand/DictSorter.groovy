@@ -77,6 +77,7 @@ class DictSorter {
 		if( offset ) {
 			tags = loweringMatch.replaceAll('')
 		}
+//        println "$word $tags: $offset"
 
 		boolean hasGender = false
 		boolean hasVidm = false
@@ -172,7 +173,7 @@ class DictSorter {
 			hasGender = true
 			hasVidm = true
 		}
-		else if( tags.startsWith("adv:compc") ) {
+		else if( tags.startsWith("adv:comp") ) {
 			tags += ':' + offset
 		}
 

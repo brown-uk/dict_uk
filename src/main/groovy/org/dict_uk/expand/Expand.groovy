@@ -1098,7 +1098,7 @@ class Expand {
 					line = promote(line)
 				}
 				// fold довш into довше lemma
-				if( line.tagStr.startsWith("adv:compc") && line.tagStr.contains(":short") ) {
+				if( line.tagStr.startsWith("adv:comp") && line.tagStr.contains(":short") ) {
 					line.lemma = line.lemma + "е"
 				}
 			}
@@ -1301,10 +1301,10 @@ class Expand {
             forms += composeComparAdv("як" + word, "adv:comps" + newExtraTags)
         }
         //			if( word =~ /[^тд]ше$/ ) {
-		if( origWord.endsWith('ше') ) {
-			String advIsh = origWord.replaceFirst(/ше$/, 'ш')
-			forms += expandSubposAdv(advIsh, extraTags)
-		}
+//		if( origWord.endsWith('ше') ) {
+//			String advIsh = origWord.replaceFirst(/ше$/, 'ш')
+//			forms += expandSubposAdv(advIsh, extraTags)
+//		}
 		
 		return forms
 	}
