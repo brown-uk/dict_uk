@@ -2824,6 +2824,16 @@
 колисали колисати verb:imperf:past:p
 колисаючи колисаючи advp:imperf
 колишучи колишучи advp:imperf
+королева-консорт королева-консорт noun:anim:f:v_naz
+королеви-консорта королева-консорт noun:anim:f:v_rod
+королеві-консортові королева-консорт noun:anim:f:v_dav
+королеві-консорту королева-консорт noun:anim:f:v_dav
+королеву-консорта королева-консорт noun:anim:f:v_zna
+королевою-консортом королева-консорт noun:anim:f:v_oru
+королеві-консорті королева-консорт noun:anim:f:v_mis
+королеві-консортові королева-консорт noun:anim:f:v_mis
+королеві-консорту королева-консорт noun:anim:f:v_mis
+королево-консорте королева-консорт noun:anim:f:v_kly
 край край noun:inanim:m:v_naz:&predic
 краю край noun:inanim:m:v_rod
 краєві край noun:inanim:m:v_dav
@@ -3542,7 +3552,7 @@
 папараці папараці noun:anim:f:v_oru:nv
 папараці папараці noun:anim:f:v_mis:nv
 папараці папараці noun:anim:f:v_kly:nv
-пара пара noun:inanim:f:v_naz:&predic:xp1
+пара пара noun:inanim:f:v_naz:xp1
 пари пара noun:inanim:f:v_rod:xp1
 парі пара noun:inanim:f:v_dav:xp1
 пару пара noun:inanim:f:v_zna:xp1

@@ -2824,6 +2824,16 @@
   колисали verb:imperf:past:p
 колисаючи advp:imperf
 колишучи advp:imperf
+королева-консорт noun:anim:f:v_naz
+  королеви-консорта noun:anim:f:v_rod
+  королеві-консортові noun:anim:f:v_dav
+  королеві-консорту noun:anim:f:v_dav
+  королеву-консорта noun:anim:f:v_zna
+  королевою-консортом noun:anim:f:v_oru
+  королеві-консорті noun:anim:f:v_mis
+  королеві-консортові noun:anim:f:v_mis
+  королеві-консорту noun:anim:f:v_mis
+  королево-консорте noun:anim:f:v_kly
 край noun:inanim:m:v_naz:&predic
   краю noun:inanim:m:v_rod
   краєві noun:inanim:m:v_dav
@@ -3542,7 +3552,7 @@
   папараці noun:anim:f:v_oru:nv
   папараці noun:anim:f:v_mis:nv
   папараці noun:anim:f:v_kly:nv
-пара noun:inanim:f:v_naz:&predic:xp1    # газ
+пара noun:inanim:f:v_naz:xp1    # газ
   пари noun:inanim:f:v_rod:xp1
   парі noun:inanim:f:v_dav:xp1
   пару noun:inanim:f:v_zna:xp1

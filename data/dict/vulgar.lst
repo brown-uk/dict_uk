@@ -22,7 +22,9 @@
 курвити /v1.cf.advp :imperf
 курвитися /vr1.cf.advp :imperf
 насрати /v1.isNo :imperf
+нахер adv
 обісрати /v1.isNo :perf
+обісратися /vr1 :perf
 обісцяний /adj :&adjp:pasv:perf
 обісцяти /v1.isNo :perf
 обсирати /v2.cf.advp :imperf                # rv_zna
@@ -30,6 +32,7 @@
 пердіння /n2n
 пердіти /v1.cf.advp :imperf
 перднути /v1 :perf
+пипець intj
 підар /n20.a.p.ke.<
 підарас /n20.a.p.<
 підісрати /v1.isNo :perf
