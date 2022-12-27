@@ -256,6 +256,7 @@
 вперьод adv
 вписка /n10
 впіндюрити /v1.is0.it0 :perf
+впрочім adv:&insert|conj:coord
 всігда adv:&pron:gen
 втарабанити /v1 :perf
 вторинка /n10
@@ -403,6 +404,7 @@
 драйвити /v1.cf :imperf
 драмеді noun:f:nv
 драмер /n20.a.p.ke.<
+драстуйте intj
 дредлок /n20.a.p
 дрифтинг /n20
 дрищ /n20.a.p.<
@@ -1463,6 +1465,7 @@
 тіпа noninfl:&insert
 тобіш noninfl
 тоддлер /n20.a.p.ke.<
+тольки adv|conj:subord|conj:coord|part
 топтун /n20.a.p.ke.<
 тормозок /n22.a.p
 торчок /n22.a.p.<

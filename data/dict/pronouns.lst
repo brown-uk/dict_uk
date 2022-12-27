@@ -55,7 +55,6 @@
 
 собі part:coll
 
-
 хто /n_pron.< :&pron:int:rel
 
 хто-хто хто-хто conj:subord
@@ -949,7 +948,7 @@
 
 
 # решта
-аби conj:subord
+аби conj:subord|conj:coord
 абощо part
 або conj:coord
 авжеж part
@@ -1064,12 +1063,12 @@
 тож conj:subord|part
 тому conj:subord|adv
 тощо part
-то conj:subord|part
+то conj:subord|conj:coord|part
 утім adv:v-u|conj:coord:v-u
 хай part
 хіба conj:subord|part
 хоча conj:subord|part
-хоч conj:subord|part
+хоч conj:subord|conj:coord|part
 цебто conj:subord|part
 чи conj:coord|conj:subord|part
 чим conj:subord
