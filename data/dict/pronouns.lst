@@ -185,8 +185,8 @@
 увесь /adj_pron.long :&pron:gen
 ввесь /adj_pron.long :&pron:gen
 
-все adv:v-u|part:v-u
-усе adv:v-u|part:v-u
+все adv:v-u
+усе adv:v-u
 
 все все noun:inanim:n:v_naz:&pron:gen:v-u
 всього все noun:inanim:n:v_rod:&pron:gen:v-u
@@ -977,10 +977,8 @@
 буцім conj:subord|part
 буцімто conj:subord|part
 відколи adv:&pron:int:rel|conj:subord
-все-таки conj:coord:v-u
-усе-таки conj:coord:v-u
-все-таки part:v-u
-усе-таки part:v-u
+все-таки adv:v-u
+усе-таки adv:v-u
 втім adv:v-u|conj:coord:v-u
 геть adv|intj|part
 дедалі adv                                          # :&part

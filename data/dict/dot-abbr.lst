@@ -60,6 +60,7 @@
 грош. adj:nv:rinanim            # грошовий
 губ. noun:f:nv                  # губернія
 гуманітар. adj:nv               # гуманітарний
+д. adv                          # далі (і т. д.)
 давньогрец. adj:nv:rinanim      # давньогрецький
 держ. adj:nv:rinanim            # державний
 дес. noun:f:nv                  # десятина
@@ -141,6 +142,7 @@
 лит. adj:nv:rinanim             # литовський
 Лк. noun:anim:m:v_naz:nv:prop:fname     # Лука
 м. noun:n:nv:np                 # місто
+м. noun:m:nv                    # (прожитковий) мінімум
 мал. noun:m:nv                  # малюнок
 Ман. noninfl:prop               # Манчестер (ФК)
 мат. adj:nv:rinanim             # математичний
@@ -187,6 +189,7 @@
 оф. noun:m:nv                   # офіс
 п. noun:m:nv                    # пункт
 п. noun:m:nv:anim|noun:f:nv:anim    # пан, пані
+п. adj:m:nv                     # погонний (метр); прожитковий (мінімум)
 пд. noun:n:nv:np|adj:nv:rinanim         # південь, південний
 пд.-зах. adj:nv:rinanim                 # південно-західний
 пд.-сх. adj:nv:rinanim                  # південно-східний

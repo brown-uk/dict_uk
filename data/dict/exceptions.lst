@@ -545,6 +545,7 @@
 вітра вітер noun:inanim:m:v_rod:var
 
 Йсу Йсус noun:m:v_dav:prop:fname:anim
+Франкфурту-на-Майні Франкфурт-на-Майні noun:inanim:m:v_rod:prop:geo:ua_2019
 
 постелею постіль noun:inanim:f:v_oru
 серць серце noun:p:v_rod
@@ -641,11 +642,16 @@
 гістьми гість noun:p:v_oru:anim
 свиньми свиня noun:p:v_oru:anim
 
-уші вухо noun:p:v_naz/v_zna
-ушей вухо noun:p:v_rod
-ушам вухо noun:p:v_dav
-ушима вухо noun:p:v_oru
-ушах вухо noun:p:v_mis
+уші ухо noun:p:v_naz/v_zna/v_kly:arch
+ушей ухо noun:p:v_rod:arch
+ушам ухо noun:p:v_dav:arch
+ушима ухо noun:p:v_oru:arch
+ушах ухо noun:p:v_mis:arch
+
+твойого твій adj:m:v_rod:&pron:pos:arch
+твойого твій adj:m:v_zna:ranim:&pron:pos:arch
+твойого твій adj:n:v_rod:&pron:pos:arch
+
 
 # хабар /n20.a.ke.p4.@ :ua_1992
 # хабар /n24.a.ke.p.@ :ua_2019

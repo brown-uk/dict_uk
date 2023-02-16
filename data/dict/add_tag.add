@@ -6,6 +6,7 @@
 бачся verb:&insert
 бачте verb:&insert
 бачу verb:&insert
+біда noun:&predic
 благодать noun:&predic
 бува verb:&insert
 буває verb:&insert
@@ -17,6 +18,7 @@
 виявляється verb:&insert
 віриш verb:&insert
 гляди verb:&insert
+гріх noun:&predic
 даруйте verb:&insert
 #див noun:&predic        # :rare
 дивись verb:&insert
@@ -37,6 +39,7 @@
 зрозумійте verb:&insert
 кажуть verb:&insert
 край noun:&predic
+лихо noun:&predic
 лінь noun:xp2:&predic
 мовляли verb:&insert
 мовляють verb:&insert
@@ -65,7 +68,7 @@
 подумаєш verb:&insert
 помилуй verb:&insert
 помилуйте verb:&insert
-пора noun:&predic
+пора noun:xp2:&predic
 правда noun:&insert
 привілля noun:&predic
 пригадую verb:&insert
@@ -100,3 +103,8 @@
 щастя noun:&predic
 умільче noun:ua_2019
 вмільче noun:ua_2019
+#повинний adj:&predic
+#повинен adj:&predic
+#повинна adj:&predic
+#повинне adj:&predic
+#повинні adj:&predic
