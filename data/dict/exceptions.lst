@@ -64,22 +64,28 @@
 
 
 чернець чернець noun:anim:m:v_naz
-ченця чернець noun:anim:m:v_rod
-ченцеві чернець noun:anim:m:v_dav
-ченцю чернець noun:anim:m:v_dav
-ченця чернець noun:anim:m:v_zna
+ченця чернець noun:anim:m:v_rod/v_zna
+ченцеві чернець noun:anim:m:v_dav/v_mis
+ченцю чернець noun:anim:m:v_dav/v_mis
 ченцем чернець noun:anim:m:v_oru
-ченцеві чернець noun:anim:m:v_mis
 ченці чернець noun:anim:m:v_mis
-ченцю чернець noun:anim:m:v_mis
 ченче чернець noun:anim:m:v_kly
-ченці чернець noun:anim:p:v_naz
-ченців чернець noun:anim:p:v_rod
+ченці чернець noun:anim:p:v_naz/v_kly
+ченців чернець noun:anim:p:v_rod/v_zna
 ченцям чернець noun:anim:p:v_dav
-ченців чернець noun:anim:p:v_zna
 ченцями чернець noun:anim:p:v_oru
 ченцях чернець noun:anim:p:v_mis
-ченці чернець noun:anim:p:v_kly
+черця чернець noun:anim:m:v_rod/v_zna:arch
+черцеві чернець noun:anim:m:v_dav/v_mis:arch
+черцю чернець noun:anim:m:v_dav/v_mis:arch
+черцем чернець noun:anim:m:v_oru:arch
+черці чернець noun:anim:m:v_mis:arch
+черче чернець noun:anim:m:v_kly:arch
+черці чернець noun:anim:p:v_naz/v_kly:arch
+черців чернець noun:anim:p:v_rod/v_zna:arch
+черцям чернець noun:anim:p:v_dav:arch
+черцями чернець noun:anim:p:v_oru:arch
+черцях чернець noun:anim:p:v_mis:arch
 
 стекла скло noun:p:v_naz/v_zna/v_kly      #> скла
 стекол скло noun:p:v_rod            #> скел
@@ -738,6 +744,7 @@
 аль part:pers
 ван part:pers
 дель part:pers
+дельї part:pers
 фон part:pers
 бен part:pers
 делла part:pers
@@ -1149,6 +1156,7 @@
 зваре зварити verb:perf:futr:s:3:subst
 зводе зводити verb:imperf:pres:s:3:subst
 зносе зносити verb:imperf:pres:s:3:subst                    # :xp1
+зробе зробити verb:perf:futr:s:3:subst
 зове звати verb:imperf:pres:s:3:subst
 зупине зупинити verb:perf:futr:s:3:subst
 капле капати verb:imperf:pres:s:3:subst
@@ -1175,6 +1183,7 @@
 приходе приходити verb:imperf:pres:s:3:subst
 проводе проводити verb:imperf:pres:s:3:subst
 проходе проходити verb:imperf:pres:s:3:subst                # :xp1
+робе робити verb:imperf:pres:s:3:subst
 роде родити verb:imperf:pres:s:3:subst
 розгоне розгонити verb:imperf:pres:s:3:subst
 розсуде розсудити verb:perf:futr:s:3:subst
