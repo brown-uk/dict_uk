@@ -255,7 +255,8 @@
 рт. adj:nv:rinanim              # ртутний
 руб. noun:n:nv                  # рубль
 рум. adj:nv:rinanim             # румунський
-с. noun:n:nv:np                 # село, сторінка (секунда - без крапки)
+с. noun:n:nv:np                 # село
+с. noun:f:nv:np                 # сторінка (секунда має бути без крапки)
 санскр. noun:m:nv               # санскрит
 св. adj:nv:ranim                # святий
 свв. adj:p:nv:ranim             # святі

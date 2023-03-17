@@ -72,51 +72,6 @@
 чому-чому що-що noun:inanim:n:v_dav/v_mis:&pron:int:rel
 чим-чим що-що noun:inanim:n:v_oru:&pron:int:rel
 
-абихто /n_pron.< :&pron:ind
-абищо /n_pron :&pron:ind
-аніхто /n_pron.< :&pron:neg
-аніщо /n_pron :&pron:neg
-будь-хто /n_pron.< :&pron:ind
-будь-що будь-що adv:&pron:ind                               # бу́дь-що
-будь-що /n_pron :&pron:ind
-будлі-хто /n_pron.< :&pron:ind
-будлі-що /n_pron :&pron:ind
-будлі-що adv:&pron:ind
-бозна noninfl:&predic
-бозна-котрий /adj :&pron:ind
-бозна-чий /adj_pron :&pron:ind
-бозна-який /adj :&pron:ind
-бозна-хто /n_pron.< :&pron:ind
-бозна-що /n_pron :&pron:ind
-казна noninfl:&predic
-казна-чий /adj_pron :&pron:ind:coll
-казна-який /adj :&pron:ind:coll
-казна-що /n_pron :&pron:ind:coll
-казна-хто /n_pron.< :&pron:ind:coll
-небагато-хто /n_pron.< :&pron:ind
-невість-хто /n_pron.< :&pron:ind
-невість-що /n_pron :&pron:ind
-невіть-хто /n_pron.< :&pron:ind
-невідь-що /n_pron. :&pron:ind
-невідь-хто /n_pron.< :&pron:ind
-невість-де adv:&pron:ind
-невість-як adv:&pron:ind
-невість-коли adv:&pron:ind
-невість-куди adv:&pron:ind
-невість-звідки adv:&pron:ind
-невість-скільки adv:&pron:ind
-хтозна noninfl:&predic:coll
-хтозна-котрий /adj :&pron:ind:coll
-хтозна-чий /adj_pron :&pron:ind:coll
-хтозна-який /adj :&pron:ind:coll
-хтозна-що /n_pron :&pron:ind:coll
-хтозна-хто /n_pron.< :&pron:ind:coll
-чортзна noninfl:&predic:coll
-чортзна-котрий /adj :&pron:ind
-чортзна-чий /adj_pron :&pron:ind
-чортзна-який /adj :&pron:ind
-чортзна-хто /n_pron.< :&pron:ind:coll
-чортзна-що /n_pron :&pron:ind:coll
 
 хтось /n_pron.< :&pron:ind
 щось /n_pron :&pron:ind
@@ -269,24 +224,81 @@
 нізвідкіль adv:&pron:neg:coll
 нізвідкіль adv:&pron:emph:coll
 
-бозна-де adv:&pron:ind:coll
-бозна-як adv:&pron:ind:coll
-бозна-коли adv:&pron:ind:coll
-бозна-куди adv:&pron:ind:coll
-бозна-звідки adv:&pron:ind:coll
 
+абихто /n_pron.< :&pron:ind
+абищо /n_pron :&pron:ind
+аніхто /n_pron.< :&pron:neg
+аніщо /n_pron :&pron:neg
+
+небагато-хто /n_pron.< :&pron:ind
+небагато-що /n_pron.< :&pron:ind
+
+будь-хто /n_pron.< :&pron:ind
+будь-що будь-що adv:&pron:ind                               # бу́дь-що
+будь-що /n_pron :&pron:ind
 будь-де adv:&pron:ind
 будь-як adv:&pron:ind
 будь-коли adv:&pron:ind
 будь-куди adv:&pron:ind
 будь-звідки adv:&pron:ind
+будь-котрий /adj :&pron:ind
+будь-чий /adj_pron :&pron:ind
+будь-який /adj :&pron:ind
 
+будлі-хто /n_pron.< :&pron:ind
+будлі-що /n_pron :&pron:ind
+будлі-що adv:&pron:ind
 будлі-де adv:&pron:ind
 будлі-як adv:&pron:ind
 будлі-коли adv:&pron:ind
 будлі-куди adv:&pron:ind
 будлі-звідки adv:&pron:ind
+будлі-котрий /adj :&pron:ind
+будлі-який /adj :&pron:ind
 
+бозна noninfl:&predic
+бозна-хто /n_pron.< :&pron:ind
+бозна-що /n_pron :&pron:ind
+бозна-котрий /adj :&pron:ind
+бозна-чий /adj_pron :&pron:ind
+бозна-який /adj :&pron:ind
+бозна-де adv:&pron:ind
+бозна-як adv:&pron:ind
+бозна-коли adv:&pron:ind
+бозна-куди adv:&pron:ind
+бозна-звідки adv:&pron:ind
+бозна-відколи adv:&pron:ind
+бозна-відкіля adv:&pron:ind
+бозна-звідкіля adv:&pron:ind
+бозна-звідкіль adv:&pron:ind
+бозна-звідколи adv:&pron:ind
+бозна-кудою adv:&pron:ind
+бозна-навіщо adv:&pron:ind
+бозна-нащо adv:&pron:ind
+бозна-вкотре adv:&pron:ind
+бозна-колишній /adj
+
+казна noninfl:&predic
+казна-хто /n_pron.< :&pron:ind
+казна-що /n_pron :&pron:ind
+казна-чий /adj_pron :&pron:ind
+казна-який /adj :&pron:ind
+казна-де adv:&pron:ind
+казна-як adv:&pron:ind
+казна-коли adv:&pron:ind
+казна-куди adv:&pron:ind
+казна-звідки adv:&pron:ind
+казна-навіщо adv:&pron:ind
+казна-нащо adv:&pron:ind
+казна-вкотре adv:&pron:ind
+казна-колишній /adj
+
+чортзна noninfl:&predic
+чортзна-хто /n_pron.< :&pron:ind
+чортзна-що /n_pron :&pron:ind
+чортзна-котрий /adj :&pron:ind
+чортзна-чий /adj_pron :&pron:ind
+чортзна-який /adj :&pron:ind
 чортзна-де adv:&pron:ind
 чортзна-як adv:&pron:ind
 чортзна-коли adv:&pron:ind
@@ -295,7 +307,16 @@
 чортзна-відкіля adv:&pron:ind
 чортзна-відкіль adv:&pron:ind
 чортзна-відколи adv:&pron:ind
+чортзна-навіщо adv:&pron:ind
+чортзна-нащо adv:&pron:ind
+чортзна-колишній /adj
 
+хтозна noninfl:&predic
+хтозна-хто /n_pron.< :&pron:ind
+хтозна-що /n_pron :&pron:ind
+хтозна-котрий /adj :&pron:ind
+хтозна-чий /adj_pron :&pron:ind
+хтозна-який /adj :&pron:ind
 хтозна-де adv:&pron:ind
 хтозна-як adv:&pron:ind
 хтозна-коли adv:&pron:ind
@@ -305,18 +326,58 @@
 хтозна-відкіля adv:&pron:ind
 хтозна-відкіль adv:&pron:ind
 хтозна-відколи adv:&pron:ind
+хтозна-звідкіля adv:&pron:ind
+хтозна-навіщо adv:&pron:ind
+хтозна-наскільки adv:&pron:ind
+хтозна-звідкіль adv:&pron:ind
+хтозна-вкотре adv:&pron:ind
+хтозна-доки adv:&pron:ind
+хтозна-колишній /adj
 
+невість-хто /n_pron.< :&pron:ind
+невість-що /n_pron :&pron:ind
+невість-де adv:&pron:ind
+невість-як adv:&pron:ind
+невість-коли adv:&pron:ind
+невість-куди adv:&pron:ind
+невість-звідки adv:&pron:ind
+невість-чий /adj_pron :&pron:ind
+невість-який /adj :&pron:ind
+
+невіть-хто /n_pron.< :&pron:ind
+невіть-що /n_pron :&pron:ind
+невіть-де adv:&pron:ind
+невіть-як adv:&pron:ind
+невіть-коли adv:&pron:ind
+невіть-куди adv:&pron:ind
+невіть-звідки adv:&pron:ind
+невіть-чий /adj_pron :&pron:ind
+невіть-який /adj :&pron:ind
+
+невідь-що /n_pron :&pron:ind
+невідь-хто /n_pron.< :&pron:ind
+невідь-чому adv:&pron:int:rel
 невідь-де adv:&pron:ind
 невідь-як adv:&pron:ind
 невідь-коли adv:&pron:ind
 невідь-куди adv:&pron:ind
 невідь-звідки adv:&pron:ind
+невідь-звідкіля adv:&pron:int:rel
+невідь-чий /adj_pron :&pron:ind
+невідь-який /adj :&pron:ind
 
-казна-де adv:&pron:ind
-казна-як adv:&pron:ind
-казна-коли adv:&pron:ind
-казна-куди adv:&pron:ind
-казна-звідки adv:&pron:ind
+незвідь-що /n_pron :&pron:ind:arch
+незвідь-хто /n_pron.< :&pron:ind:arch
+незвідь-чому adv:&pron:int:rel:arch
+незвідь-де adv:&pron:ind:arch
+незвідь-як adv:&pron:ind:arch
+незвідь-коли adv:&pron:ind:arch
+незвідь-куди adv:&pron:ind:arch
+незвідь-звідки adv:&pron:ind:arch
+незвідь-звідкіля adv:&pron:int:rel:arch
+незвідь-чий /adj_pron :&pron:ind:arch
+незвідь-який /adj :&pron:ind:arch
+
 
 всяк adv:arch:v-u
 усяк adv:arch:v-u
@@ -423,6 +484,19 @@
 невідь-скількох невідь-скільки numr:p:v_rod/v_zna/v_mis:&pron:ind
 невідь-скільком невідь-скільки numr:p:v_dav:&pron:ind
 невідь-скількома невідь-скільки numr:p:v_oru:&pron:ind
+
+невіть-скільки adv:&pron:ind
+невіть-скільки невіть-скільки numr:p:v_naz/v_zna:&pron:ind
+невіть-скількох невіть-скільки numr:p:v_rod/v_zna/v_mis:&pron:ind
+невіть-скільком невіть-скільки numr:p:v_dav:&pron:ind
+невіть-скількома невіть-скільки numr:p:v_oru:&pron:ind
+
+невість-скільки adv:&pron:ind
+невість-скільки невість-скільки numr:p:v_naz/v_zna:&pron:ind
+невість-скількох невість-скільки numr:p:v_rod/v_zna/v_mis:&pron:ind
+невість-скільком невість-скільки numr:p:v_dav:&pron:ind
+невість-скількома невість-скільки numr:p:v_oru:&pron:ind
+
 
 який-не-який який-не-який adj:m:v_naz:&pron:ind
 якого-не-якого який-не-який adj:m:v_rod:&pron:ind
