@@ -135,6 +135,7 @@
 буллінг /n20
 булоб noninfl                                   #> було б
 бурак /n20.a.p
+бюстгалтер /n20.a.p.ke
 Вавілон /n20.a :town:prop:geo
 вагів ваги noun:p:v_rod:ns
 ВАКівський /adj
@@ -947,6 +948,7 @@
 об'єктно-орієнтований /adj
 обійм обійми noun:p:v_rod:ns         #> обіймів
 облрибкомбінат /n20.p
+обновлювати /v1.cf.advp :imperf                 # rv_zna:rv_oru:rv_dav
 обовязковий /adj.adv
 обовязок /n22.p
 овоча овоч noun:m:v_rod
@@ -976,6 +978,7 @@
 оцетові оцет noun:m:v_dav/v_mis
 оцетом оцет noun:m:v_oru
 оцету оцет noun:m:v_rod/v_dav/v_mis
+очисьок очиська noun:inanim:p:v_rod:ns
 очків очко noun:p:v_rod:xp2
 падли падло noun:anim:p:v_naz
 паливноенергетичний /adj
