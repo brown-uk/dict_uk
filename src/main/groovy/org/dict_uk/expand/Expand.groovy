@@ -1654,7 +1654,7 @@ class Expand {
 
 		if( Args.args.indent ) {
 
-			executor.execute( { exe ->
+			executor.execute( { 
 				List<String> indentedLines = dictSorter.indent_lines(sortedEntries)
 	
 				validator.check_indented_lines(indentedLines, limitedVerbLemmas)
@@ -1670,8 +1670,8 @@ class Expand {
 				}
 	
 				new File("dict_corp_vis.txt").withWriter("utf-8") { Writer f ->
-					indentedLines.each { String it ->
-						f.write(it)
+					indentedLines.each { String line ->
+						f.write(line)
 						f.write('\n')
 					}
 				}
