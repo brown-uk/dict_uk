@@ -128,7 +128,7 @@ task sortDict(type: JavaExec) {
 	
 	def files = "alt.lst base-abbr.lst base.lst base-compound.lst colors.lst dot-abbr.lst"
 	files += " geo-ukr-hydro.lst geo-other.lst"  //  geo-ukr-koatuu.lst
-	files += " slang.lst twisters.lst invalid.lst invalid-compound.lst names-anim.lst names-other.lst arch.lst"
+	files += " slang.lst twisters.lst invalid.lst invalid-compound.lst names-anim.lst names-other.lst arch.lst base-compound_1992.lst"
 	files += " names-composite.lst base-composite.lst subst.lst vulgar.lst"
 
 	args files.split()
