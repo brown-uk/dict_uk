@@ -10,7 +10,6 @@
       "id": "uk-ua@dictionaries.addons.mozilla.org"
     }
   },
-  "default_locale": "en",
   "author": "Andriy Rysin",
   "homepage_url": "https://github.com/brown-uk/dict_uk",
   "manifest_version": 2
