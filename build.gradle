@@ -142,17 +142,27 @@ task dups {
 	def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') \
 	    && ! (it.name in ['dot-abbr.lst', 'geo-ukr-hydro.lst', 'geo-ukr-koatuu.lst']) }
 	
-	def lines = files.collect {  it.readLines()  }.flatten() \
-	    .collect { it
-	        .trim()
-	        .replaceAll(/\s*#.*/, '')
-	        .replaceAll(/( \/[a-z0-9]+)(\s+|$)/, '$1... ')
-	        .replaceAll(/\.[^<.: ]+/, '...')
-	        .replaceAll(/\s*:coll/, '')
-	        .replaceAll(/:&adjp:(actv|pasv)(:(imperf|perf))+/, '') } \
-	    .grep { it && ! it.startsWith("+cs") }
+	def lines = files.collect { File f ->
+            boolean geo = f.name.contains('geo')
+            f.readLines()
+            .findAll { ! it.startsWith('#') && ! it.startsWith(' +cs=') } 
+            .collect { it
+//            .replaceFirst(/^ \+cs=/, '')
+                .trim()
+                .replaceAll(/\s*#.*/, '')
+                .replaceAll(/( \/[a-z0-9]+)(\s+|$)/, '$1... ')
+                .replaceAll(/\.[^<.: ]+/, '...')
+                .replaceAll(/\s*:coll/, '')
+                .replaceAll(/:&adjp:(actv|pasv)(:(imperf|perf))+/, '') 
+            }
+            .collect { line ->
+                geo ? "$line :geo" : line 
+            }
+        }
+        .flatten()
+	    .grep { it }
 
-    lines = lines.grep { ! it.startsWith('#') }
+//    lines = lines.grep { ! it.startsWith('#') }
 
     def dups = lines.countBy{it}.grep{it.value > 1 }.collect{it.key}
 

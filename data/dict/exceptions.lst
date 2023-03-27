@@ -576,12 +576,11 @@
 
 нічого-нічого noun:inanim:n:v_rod:&pron:neg:&predic
 
-півроку-рік noun:m:v_naz/v_zna
+півроку-рік noun:p:v_naz/v_zna                  # lim
 
 різдва різдво noun:p:v_naz/v_zna
 срібла срібло noun:p:v_naz/v_zna
 золота золото noun:p:v_naz/v_zna
-бронзи бронза noun:p:v_naz/v_zna
 
 ока око noun:p:v_naz/v_zna:var
 імені ім'я noun:p:v_naz:var
@@ -602,8 +601,6 @@
 мій мій adj:m:v_kly:&pron:pos
 моя мій adj:f:v_kly:&pron:pos
 моє мій adj:n:v_kly:&pron:pos
-
-погибелі погибель noun:p:v_naz/v_zna                      # три погибелі
 
 чоловік чоловік noun:anim:p:v_rod/v_zna:bad
 
