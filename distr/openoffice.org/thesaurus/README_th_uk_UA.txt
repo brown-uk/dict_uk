@@ -4,7 +4,7 @@ This thesaurus is based on:
 П. М. Деркач, Короткий словник синонімів української мови, Радянська школа, Київ, 1960
 С. Караванський, Пошук українського слова
 
-Copyright (C) 2009, 2016
+Copyright (C) 2009-2023
     Andriy Rysin
 
-This thesaurus is licensed under GPL, LGPL and MPL (Mozilla Public License) licenses.
+This thesaurus is licensed under GPL v3, LGPL v3 and MPL (Mozilla Public License) licenses.

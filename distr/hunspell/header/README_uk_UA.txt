@@ -21,8 +21,8 @@ Copyright (C) 2005
     Eugeniy Meshcheryakov
     Dmytro Kovalyov
 
-Copyright (C) 2006-2020
+Copyright (C) 2006-2023
     Andriy Rysin
     Vasyl Starko
 
-This dictionary is licensed under GPL 2.0 or above, LGPL 2.1 or above and MPL (Mozilla Public License) 1.1 licenses.
+This dictionary is licensed under GPL 3.0 or above, LGPL 2.1 or above and MPL (Mozilla Public License) 1.1 licenses.
