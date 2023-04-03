@@ -7,4 +7,4 @@ This thesaurus is based on:
 Copyright (C) 2009-2023
     Andriy Rysin
 
-This dictionary is licensed under GPL 3.0 or above, LGPL 2.1 or above and MPL (Mozilla Public License) 1.1 licenses.
+This thesaurus is licensed under GPL 3.0 or above, LGPL 2.1 or above and MPL (Mozilla Public License) 1.1 licenses.
