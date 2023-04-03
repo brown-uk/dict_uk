@@ -2,7 +2,7 @@
 
 morfologik-ukrainian-lt-{версія}.jar - словники у форматі Morfologik для модуля української в LanguageTool
 
-Поширюється за умов LGPL
+Поширюється за умов LGPL 2.1 або вище
 
 build.gradle генерує всі словники для LanguageTool і створює артефакт morfologik-ukrainian-lt
 

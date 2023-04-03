@@ -58,7 +58,7 @@
 
 Дані словника доступні для використання згідно з умовами ліцензії "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Програмні засоби вільно розповсюджується за умов ліцензії GPL версії 3.
+Програмні засоби вільно розповсюджується за умов ліцензії GPL 3.0 або вище.
 
 Зауваження: [похідні проекти](distr/) мають свої ліцензії
 
@@ -114,7 +114,7 @@ sudo docker stop dict_uk
 
 Dictionary data are distributed under "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Software is distributed under GPLv3.
+Software is distributed under GPL 3.0 or above.
 
 Note: [derivative projects](distr/) have different licenses
 
