@@ -17,6 +17,7 @@ import groovy.transform.CompileStatic
 import groovy.transform.TypeChecked
 
 
+@CompileStatic
 class Expand {
 	static Logger log = LoggerFactory.getLogger(Expand.class);
 
@@ -72,7 +73,7 @@ class Expand {
 	}
 
 	@CompileStatic
-	private String adjustCommonFlag(String affixFlag2) {
+	String adjustCommonFlag(String affixFlag2) {
 		if( affixFlag2.contains(".cf") ) {
 			affixFlag2 = cf_flag_pattern.matcher(affixFlag2).replaceFirst('$1.cf')
 		}
@@ -1417,7 +1418,10 @@ class Expand {
 			}
 			
 			List<DicEntry> inflected_lines = expand(word, flags)
-			inflected_lines[0].comment = lineGroup.comment
+            
+            DicEntry lemmaLine = inflected_lines.find{ it.tagStr =~ /^noun.*:m:v_naz/ }
+            lemmaLine = lemmaLine ?: inflected_lines[0]
+            lemmaLine.comment = lineGroup.comment
 
 			if( sub_lines ) {
 				def idx = 0

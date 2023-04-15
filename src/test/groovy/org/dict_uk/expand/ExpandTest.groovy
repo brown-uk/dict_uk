@@ -9,6 +9,9 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
+import groovy.transform.CompileStatic
+
+@CompileStatic
 public class ExpandTest {
 	
 	static Expand expand
@@ -81,7 +84,7 @@ public class ExpandTest {
 		def lines = ["порт /n20.p :rare"]
 		assert join(expand.process_input(lines)) == portFull
 	}
-	
+
 	def zhabaFull =
 	'''
 жаба жаба noun:anim:m:v_naz
@@ -101,12 +104,43 @@ public class ExpandTest {
 жаби жаба noun:anim:p:v_kly
 '''.trim() //.split("\n")
 
-	@Test
-	void testZhaba() {
-		def lines = ["жаба /n10.p1.<> ^noun:m"]
-		assert expand.process_input(lines).join("\n").replaceAll(/[<>]/, '') == zhabaFull
-	}
+    @Test
+    void testZhaba() {
+        def lines = ["жаба /n10.p1.<> ^noun:m"]
+        assert expand.process_input(lines).join("\n").replaceAll(/[<>]/, '') == zhabaFull
+    }
 
+    def golovaFull =
+    '''
+голова голова noun:anim:m:v_naz # посада
+голови голова noun:anim:m:v_rod
+голові голова noun:anim:m:v_dav
+голову голова noun:anim:m:v_zna
+головою голова noun:anim:m:v_oru
+голові голова noun:anim:m:v_mis
+голово голова noun:anim:m:v_kly
+голова голова noun:anim:f:v_naz
+голови голова noun:anim:f:v_rod
+голові голова noun:anim:f:v_dav
+голову голова noun:anim:f:v_zna
+головою голова noun:anim:f:v_oru
+голові голова noun:anim:f:v_mis
+голово голова noun:anim:f:v_kly
+голови голова noun:anim:p:v_naz
+голів голова noun:anim:p:v_rod
+головам голова noun:anim:p:v_dav
+голів голова noun:anim:p:v_zna
+голови голова noun:anim:p:v_zna:rare # з в/у
+головами голова noun:anim:p:v_oru
+головах голова noun:anim:p:v_mis
+голови голова noun:anim:p:v_kly'''.trim() //.split("\n")
+
+
+    @Test
+    void testGolova() {
+        def lines = ["голова /n10.p2.< :+m      # посада"]
+        assertEquals golovaFull, expand.process_input(lines).join("\n").replaceAll(/[<>]/, '')
+    }
 
 	
 	def adjLastName =
@@ -416,7 +450,7 @@ def multilineFull22 =
     }
 
 	
-def taggedIn = 
+String[] taggedIn = 
 '''
 абичий абичий adj:m:v_naz/v_zna:&pron:ind
 абичийого абичий adj:m:v_rod/v_zna//n:v_rod:&pron:ind
