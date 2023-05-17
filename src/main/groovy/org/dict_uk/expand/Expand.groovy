@@ -246,7 +246,7 @@ class Expand {
 	@CompileStatic
 	private Map<String,String> get_modifiers(String mod_flags, String flags, String word) {
 
-		def mods = [:]
+		Map<String,String> mods = [:]
 
 		String[] mod_set = mod_flags.split(" ")
 
@@ -1277,7 +1277,7 @@ class Expand {
 	}
 
     @CompileStatic
-	private List expandSubposAdv(String word, String extraTags, String line) {
+	private List<DicEntry> expandSubposAdv(String word, String extraTags, String line) {
 		List<DicEntry> forms = []
 		String origWord = word
 
