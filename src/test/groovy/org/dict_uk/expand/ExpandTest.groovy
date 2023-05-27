@@ -760,6 +760,11 @@ def expectedNvNumr = """
         assertEquals('авт. авт. noun:anim:m:v_naz:nv', join(expand.process_input(lines)))
     }
 
+    @Test
+    void testTagOrder() {
+        List<String> lines = ["ладен ладний adj:m:v_naz:short:&predic"]
+        assertEquals('ладен ладний adj:m:v_naz:short:&predic', join(expand.process_input(lines)))
+    }
     
 //	def strilyatyBad =
 //	'''

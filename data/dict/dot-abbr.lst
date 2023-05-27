@@ -92,7 +92,7 @@
 заст. adj:nv:rinanim            # застарілий
 зах. adj:nv:rinanim             # західний
 зб. noun:m:nv                   # збірник
-зв. adj:m:nv|adv                # (так) званий, на звороті
+зв. adj:nv                      # (так) званий, на звороті
 зл. noun:m:nv                   # злотий
 зн. noun:m:nv                   # знаків тощо
 зневаж. adj:nv:rinanim          # зневажливий
@@ -252,7 +252,7 @@
 рос. adj:nv                     # російський
 РР. noun:p:nv:ns                # роки
 рр. noun:p:nv:ns                # роки
-рт. adj:nv:rinanim              # ртутний
+рт. adj:m:nv:rinanim            # ртутний
 руб. noun:n:nv                  # рубль
 рум. adj:nv:rinanim             # румунський
 с. noun:n:nv:np                 # село
@@ -278,6 +278,7 @@
 СТ. adj:nv                      # столовий, старший
 ст. noun:f:nv:xp1               # стаття, станція
 ст. noun:n:nv:xp2               # століття
+ст. noun:m:nv:xp3               # (рт.) стовпчик
 ст. adj:nv                      # столовий, старший
 стол. adj:nv:rinanim            # столовий
 стор. noun:f:nv                 # сторінка

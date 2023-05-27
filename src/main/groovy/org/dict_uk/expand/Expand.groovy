@@ -953,7 +953,10 @@ class Expand {
 		}
 		else if( flags.startsWith("/n10") || flags.startsWith("/n3") ) {
 			if( ! flags.contains(".k") ) {
-			    lineParts[1] += flags.startsWith("/n10") ? ".ko" : ".ke"
+			    lineParts[1] += flags.startsWith("/n10") 
+                    ? word =~ /ся$/ 
+                        ? ".ku" : ".ko" 
+                    : ".ke"
 			    line = lineParts.join(" ")
 			}
 			out_lines = [line]
@@ -1148,13 +1151,13 @@ class Expand {
 	
 	private static final List<String> tagsOrdered = [
 	            ":&numr",
-	            ":&insert",
-	            ":&predic",
 //				":v-u",
                 ":abbr",
 				":prop",
 				":geo", ":fname", ":lname", ":pname",
-				":bad", ":slang", ":rare", ":arch", ":vulg", ":subst", ":coll", ":alt", ":ua_2019", ":ua_1992", ":short", ":long",
+                ":ua_2019", ":ua_1992", ":short", ":long",
+                ":&insert", ":&predic",
+				":bad", ":slang", ":rare", ":arch", ":vulg", ":subst", ":coll", ":alt",
 				":xp1", ":xp2", ":xp3", ":xp4",
 			]
 
