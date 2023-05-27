@@ -621,7 +621,7 @@
   бачили verb:imperf:past:p
   бачено verb:imperf:impers
 безпечніше adv:compc:&predic
-  безпечніш adv:compc:&predic:short
+  безпечніш adv:compc:short:&predic
 безпечно adv:compb:&predic
 безчерепні noun:anim:p:v_naz:ns
   безчерепних noun:anim:p:v_rod:ns
@@ -2105,7 +2105,7 @@
   гирлах noun:inanim:p:v_mis
   гирла noun:inanim:p:v_kly
 гірше adv:compc:&predic
-  гірш adv:compc:&predic:short
+  гірш adv:compc:short:&predic
 гладкий adj:m:v_naz:compb
   гладкого adj:m:v_rod:compb
   гладкому adj:m:v_dav:compb
@@ -2616,7 +2616,7 @@
   жита noun:inanim:p:v_kly:ns
 заанґажованість noun:inanim:f:v_naz:alt
   заанґажованості noun:inanim:f:v_rod:alt
-  заанґажованости noun:inanim:f:v_rod:alt:ua_2019
+  заанґажованости noun:inanim:f:v_rod:ua_2019:alt
   заанґажованості noun:inanim:f:v_dav:alt
   заанґажованість noun:inanim:f:v_zna:alt
   заанґажованістю noun:inanim:f:v_oru:alt
@@ -3112,7 +3112,7 @@
   найаерованіших adj:p:v_mis:comps
   найаерованіші adj:p:v_kly:comps
 найбезпечніше adv:comps:&predic
-  найбезпечніш adv:comps:&predic:short
+  найбезпечніш adv:comps:short:&predic
 найвагоміше adv:comps
   найвагоміш adv:comps:short
 найвагоміший adj:m:v_naz:comps
@@ -3225,7 +3225,7 @@
   найвживаніших adj:p:v_mis:comps
   найвживаніші adj:p:v_kly:comps
 найгірше adv:comps:&predic
-  найгірш adv:comps:&predic:short
+  найгірш adv:comps:short:&predic
 найгладкіше adv:comps
   найгладкіш adv:comps:short
 найгладкіший adj:m:v_naz:comps
@@ -3397,7 +3397,7 @@
 найперше adv:comps
   найперш adv:comps:short
 найпоганіше adv:comps:&predic
-  найпоганіш adv:comps:&predic:short
+  найпоганіш adv:comps:short:&predic
 найудатніше adv:comps
   найудатніш adv:comps:short
 найуживаніший adj:m:v_naz:comps
@@ -3511,10 +3511,10 @@
   одною-півтори numr:f:v_oru
   одній-півтори numr:f:v_mis
 оскірившись advp:rev:perf:rare
-  оскірившися advp:rev:perf:rare:long
+  оскірившися advp:rev:perf:long:rare
 оскіритися verb:rev:perf:inf:rare
   оскіритись verb:rev:perf:inf:rare
-  оскіриться verb:rev:perf:inf:rare:short
+  оскіриться verb:rev:perf:inf:short:rare
   оскірся verb:rev:perf:impr:s:2:rare
   оскірмось verb:rev:perf:impr:p:1:rare
   оскірмося verb:rev:perf:impr:p:1:rare
@@ -3552,7 +3552,7 @@
   папараці noun:anim:f:v_oru:nv
   папараці noun:anim:f:v_mis:nv
   папараці noun:anim:f:v_kly:nv
-пара noun:inanim:f:v_naz:xp1    # газ
+пара noun:inanim:f:v_naz:&predic:xp1    # газ
   пари noun:inanim:f:v_rod:xp1
   парі noun:inanim:f:v_dav:xp1
   пару noun:inanim:f:v_zna:xp1
@@ -3620,7 +3620,7 @@
   пів numr:n:v_mis:nv
   пів numr:n:v_kly:nv
 поганіше adv:compc:&predic
-  поганіш adv:compc:&predic:short
+  поганіш adv:compc:short:&predic
 погано adv:compb:&predic
 породілля noun:anim:f:v_naz
   породіллі noun:anim:f:v_rod

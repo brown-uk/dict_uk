@@ -621,7 +621,7 @@
 бачили бачити verb:imperf:past:p
 бачено бачити verb:imperf:impers
 безпечніше безпечніше adv:compc:&predic
-безпечніш безпечніше adv:compc:&predic:short
+безпечніш безпечніше adv:compc:short:&predic
 безпечно безпечно adv:compb:&predic
 безчерепні безчерепні noun:anim:p:v_naz:ns
 безчерепних безчерепні noun:anim:p:v_rod:ns
@@ -2105,7 +2105,7 @@
 гирлах гирло noun:inanim:p:v_mis
 гирла гирло noun:inanim:p:v_kly
 гірше гірше adv:compc:&predic
-гірш гірше adv:compc:&predic:short
+гірш гірше adv:compc:short:&predic
 гладкий гладкий adj:m:v_naz:compb
 гладкого гладкий adj:m:v_rod:compb
 гладкому гладкий adj:m:v_dav:compb
@@ -2616,7 +2616,7 @@
 жита жита noun:inanim:p:v_kly:ns
 заанґажованість заанґажованість noun:inanim:f:v_naz:alt
 заанґажованості заанґажованість noun:inanim:f:v_rod:alt
-заанґажованости заанґажованість noun:inanim:f:v_rod:alt:ua_2019
+заанґажованости заанґажованість noun:inanim:f:v_rod:ua_2019:alt
 заанґажованості заанґажованість noun:inanim:f:v_dav:alt
 заанґажованість заанґажованість noun:inanim:f:v_zna:alt
 заанґажованістю заанґажованість noun:inanim:f:v_oru:alt
@@ -3112,7 +3112,7 @@
 найаерованіших найаерованіший adj:p:v_mis:comps
 найаерованіші найаерованіший adj:p:v_kly:comps
 найбезпечніше найбезпечніше adv:comps:&predic
-найбезпечніш найбезпечніше adv:comps:&predic:short
+найбезпечніш найбезпечніше adv:comps:short:&predic
 найвагоміше найвагоміше adv:comps
 найвагоміш найвагоміше adv:comps:short
 найвагоміший найвагоміший adj:m:v_naz:comps
@@ -3225,7 +3225,7 @@
 найвживаніших найвживаніший adj:p:v_mis:comps
 найвживаніші найвживаніший adj:p:v_kly:comps
 найгірше найгірше adv:comps:&predic
-найгірш найгірше adv:comps:&predic:short
+найгірш найгірше adv:comps:short:&predic
 найгладкіше найгладкіше adv:comps
 найгладкіш найгладкіше adv:comps:short
 найгладкіший найгладкіший adj:m:v_naz:comps
@@ -3397,7 +3397,7 @@
 найперше найперше adv:comps
 найперш найперше adv:comps:short
 найпоганіше найпоганіше adv:comps:&predic
-найпоганіш найпоганіше adv:comps:&predic:short
+найпоганіш найпоганіше adv:comps:short:&predic
 найудатніше найудатніше adv:comps
 найудатніш найудатніше adv:comps:short
 найуживаніший найуживаніший adj:m:v_naz:comps
@@ -3511,10 +3511,10 @@
 одною-півтори один-півтори numr:f:v_oru
 одній-півтори один-півтори numr:f:v_mis
 оскірившись оскірившись advp:rev:perf:rare
-оскірившися оскірившись advp:rev:perf:rare:long
+оскірившися оскірившись advp:rev:perf:long:rare
 оскіритися оскіритися verb:rev:perf:inf:rare
 оскіритись оскіритися verb:rev:perf:inf:rare
-оскіриться оскіритися verb:rev:perf:inf:rare:short
+оскіриться оскіритися verb:rev:perf:inf:short:rare
 оскірся оскіритися verb:rev:perf:impr:s:2:rare
 оскірмось оскіритися verb:rev:perf:impr:p:1:rare
 оскірмося оскіритися verb:rev:perf:impr:p:1:rare
@@ -3552,7 +3552,7 @@
 папараці папараці noun:anim:f:v_oru:nv
 папараці папараці noun:anim:f:v_mis:nv
 папараці папараці noun:anim:f:v_kly:nv
-пара пара noun:inanim:f:v_naz:xp1
+пара пара noun:inanim:f:v_naz:&predic:xp1
 пари пара noun:inanim:f:v_rod:xp1
 парі пара noun:inanim:f:v_dav:xp1
 пару пара noun:inanim:f:v_zna:xp1
@@ -3620,7 +3620,7 @@
 пів пів numr:n:v_mis:nv
 пів пів numr:n:v_kly:nv
 поганіше поганіше adv:compc:&predic
-поганіш поганіше adv:compc:&predic:short
+поганіш поганіше adv:compc:short:&predic
 погано погано adv:compb:&predic
 породілля породілля noun:anim:f:v_naz
 породіллі породілля noun:anim:f:v_rod
