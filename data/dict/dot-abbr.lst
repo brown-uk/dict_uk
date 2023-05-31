@@ -101,7 +101,7 @@
 Ів. noun:m:nv:anim:prop:fname   # Іван
 іл. noun:f:nv                   # ілюстрація
 ім. noun:n:v_rod:nv             # імені
-ін. noun:n:nv|noun:p:nv         # інше,інші
+ін. adj:nv                      # інше,інші
 інв. adj:nv:rinanim             # інвентарний
 інд. adj:nv:rinanim             # індивідуальний, індійський
 інж. noun:m:nv:anim             # інженер
