@@ -191,9 +191,9 @@
 п. noun:m:nv                    # пункт
 п. noun:m:nv:anim|noun:f:nv:anim    # пан, пані
 п. adj:m:nv                     # погонний (метр); прожитковий (мінімум)
-пд. noun:n:nv:np|adj:nv:rinanim         # південь, південний
-пд.-зах. adj:nv:rinanim                 # південно-західний
-пд.-сх. adj:nv:rinanim                  # південно-східний
+пд. noun:n:nv:np|adj:nv:rinanim # південь, південний
+пд.-зах. adj:nv:rinanim         # південно-західний
+пд.-сх. adj:nv:rinanim          # південно-східний
 пед. adj:nv:rinanim             # педагогічний
 перев. adv                      # переважно
 перекл. noun:m:nv:np            # переклад
@@ -203,14 +203,15 @@
 підрзд. noun:m:nv               # підрозділ
 пл. noun:f:nv:np                # площа
 пн. noun:n:nv:nv:np|adj:nv      # північ, північний
-пн.-зах. adj:nv:rinanim                 # північно-західний
-пн.-сх. adj:nv:rinanim                  # північно-східний
+пн.-зах. adj:nv:rinanim         # північно-західний
+пн.-сх. adj:nv:rinanim          # північно-східний
 пов. noun:m:nv                  # повіт
-под. adj:n:nv:rinanim                   # подібне
-пок. noun:m:nv|adj:nv:ranim           # показник; покійний
+под. adj:n:nv:rinanim           # подібне
+пок. noun:m:nv|adj:nv:ranim     # показник; покійний
 пол. noun:f:nv:np               # половина
-польс. adj:nv:rinanim                   # польський
-польськ. adj:nv                # польський
+полов. noun:f:nv:np             # половина
+польс. adj:nv:rinanim           # польський
+польськ. adj:nv                 # польський
 пом. verb:rev:perf:past:m/f     # помер, померла
 пор. verb:perf:impr:p:2         # порівняйте
 порівн. verb:perf:impr:p:2      # порівняйте

@@ -1,4 +1,4 @@
-баче бачити verb:imperf:pres:s:3                            #> робить
+баче бачити verb:imperf:pres:s:3                            #> бачить
 бозна-шо noun:inanim:n:v_naz/v_zna:&pron:ind                #> бозна-що
 будь-шо noun:inanim:n:v_naz:&pron:ind                       #> будь-що
 вівць вівця noun:anim:p:v_rod/v_zna                         #> овець
@@ -15,6 +15,7 @@
 наскіке noninfl
 нашо adv                                                    #> нащо
 отово part                                                  #> ото
+побаче побачити verb:perf:futr:s:3                          #> побачить
 покишо noninfl                                              #> поки що
 Путінові Путін noun:anim:m:v_dav/v_mis:prop:lname
 робе робити verb:imperf:pres:s:3                            #> робить

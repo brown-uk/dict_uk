@@ -83,6 +83,7 @@
 # ніщо /n_pron :&pron:neg                                       # р.в. нічо́го
 ніщо ніщо noun:inanim:n:v_naz/v_zna:&pron:neg
 нічого ніщо noun:inanim:n:v_rod:&pron:neg:&predic                   # нічо́го
+нічо' ніщо noun:inanim:n:v_rod:&pron:neg:&predic:short:coll         # нічо́го
 нічому ніщо noun:inanim:n:v_dav/v_mis:&pron:neg
 нічим ніщо noun:inanim:n:v_oru:&pron:neg
 нічім ніщо noun:inanim:n:v_mis:&pron:neg
@@ -560,6 +561,7 @@
 
 один /numr
 оден один numr:m:v_naz/v_zn2:alt
+одний один numr:m:v_naz/v_zn2:alt
 
 'дин /numr :short:coll
 

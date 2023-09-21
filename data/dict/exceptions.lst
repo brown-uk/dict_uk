@@ -784,23 +784,18 @@
 
 хріна noninfl
 
-# bad
-щонебудь щонебудь noun:inanim:n:v_naz:&pron:ind:bad
-чогонебудь щонебудь noun:inanim:n:v_rod:&pron:ind:bad
-чомунебудь щонебудь noun:inanim:n:v_dav:&pron:ind:bad
-щонебудь щонебудь noun:inanim:n:v_zna:&pron:ind:bad
-чимнебудь щонебудь noun:inanim:n:v_oru:&pron:ind:bad
-чімнебудь щонебудь noun:inanim:n:v_mis:&pron:ind:bad
-чомунебудь щонебудь noun:inanim:n:v_mis:&pron:ind:bad
 
-хтонебудь хтонебудь noun:anim:m:v_naz:&pron:ind:bad
-когонебудь хтонебудь noun:anim:m:v_rod:&pron:ind:bad
-комунебудь хтонебудь noun:anim:m:v_dav:&pron:ind:bad
-когонебудь хтонебудь noun:anim:m:v_zna:&pron:ind:bad
-кимнебудь хтонебудь noun:anim:m:v_oru:&pron:ind:bad
-кімнебудь хтонебудь noun:anim:m:v_mis:&pron:ind:bad
-комунебудь хтонебудь noun:anim:m:v_mis:&pron:ind:bad
-
+чепця чепець noun:inanim:m:v_rod:bad
+чепцеві чепець noun:inanim:m:v_dav:bad
+чепцю чепець noun:inanim:m:v_dav/v_mis:bad
+чепцем чепець noun:inanim:m:v_oru:bad
+чепцеві чепець noun:inanim:m:v_mis:bad
+чепці чепець noun:inanim:m:v_mis:bad
+чепці чепець noun:inanim:p:v_naz/v_zna:bad
+чепців чепець noun:inanim:p:v_rod:bad
+чепцям чепець noun:inanim:p:v_dav:bad
+чепцями чепець noun:inanim:p:v_oru:bad
+чепцях чепець noun:inanim:p:v_mis:bad
 
 
 #
