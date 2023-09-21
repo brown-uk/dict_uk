@@ -104,7 +104,7 @@ task posDict(type: JavaExec, dependsOn: prepareDict) {
     workingDir "$projectDir"
 
     classpath = files(configurations.provided.files)
-    main = 'org.languagetool.tools.POSDictionaryBuilder'
+    mainClass = 'org.languagetool.tools.POSDictionaryBuilder'
 
     args "-i", "${tmpDir}/all.tagged.tmp"
     args "-info", "${resourceDir}/ukrainian.info"
@@ -121,7 +121,7 @@ task synthDict(type: JavaExec, dependsOn: prepareDict) {
     workingDir "$projectDir"
 
     classpath = files(configurations.provided.files)
-    main = 'org.languagetool.tools.SynthDictionaryBuilder'
+    mainClass = 'org.languagetool.tools.SynthDictionaryBuilder'
 
     args "-i", "${tmpDir}/all.tagged.tmp.synth"
     args "-info", "${resourceDir}/ukrainian_synth.info"
@@ -159,7 +159,7 @@ task spellDict(type: JavaExec, dependsOn: prepareSpellWords) {
     workingDir "$projectDir"
 
     classpath = files(configurations.provided.files)
-    main = 'org.languagetool.tools.SpellDictionaryBuilder'
+    mainClass = 'org.languagetool.tools.SpellDictionaryBuilder'
 
     args "-i", "${tmpDir}/spell.words.tmp"
     args "-info", "${resourceDir}/hunspell/uk_UA.info"
@@ -419,6 +419,8 @@ task deployReplacements(type: Copy, dependsOn: [createReplacementDict, createSof
 }
 
 task deployCaseGovernment(type: Copy, dependsOn: caseGovernmentDict) {
+    inputs.files caseGovernmentDict
+
     doFirst() {
         logger.lifecycle "Deploying to LT dir: ${languagetoolResDestDir}"
     }
@@ -444,7 +446,7 @@ jar {
                    'Implementation-Version': project.version
     }
 
-    setArchiveName "${artifactId}-${project.version}.jar"
+    setArchiveFileName "${artifactId}-${project.version}.jar"
 
     include 'org/languagetool/**/*.dict'
     include 'org/languagetool/**/*.info'
