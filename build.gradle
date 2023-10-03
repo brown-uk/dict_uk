@@ -35,7 +35,7 @@ dependencies {
     implementation 'info.picocli:picocli:4.6.1'
 
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
-    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.+'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.+'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.+'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.+'
