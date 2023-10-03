@@ -348,7 +348,8 @@ task createRenamedReplacementDict(dependsOn: createOutRulesDir) {
 task caseGovernmentDict() {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outResDir}/case_government.txt"
-    def srcFiles=["base.lst", "twisters.lst", "invalid-compound.lst", "slang.lst", "exceptions.lst", "pronouns.lst", "arch.lst", "subst.lst", "base-autogen.lst", "vulgar.lst"]
+    def srcFiles=["base.lst", "twisters.lst", "invalid.lst", "invalid-compound.lst", 
+        "slang.lst", "exceptions.lst", "pronouns.lst", "arch.lst", "subst.lst", "base-autogen.lst", "vulgar.lst"]
 
     inputs.files srcFiles.collect{ "$srcDir/$it" }
     outputs.file outFile
@@ -385,9 +386,13 @@ task caseGovernmentDict() {
 
             outLines.addAll(rvLines)
         }
+        
+        java.text.Collator coll = java.text.Collator.getInstance(new Locale("uk", "UA"));
+        coll.setStrength(java.text.Collator.IDENTICAL)
+        coll.setDecomposition(java.text.Collator.NO_DECOMPOSITION)
 
         println "Wrote $outLines.size lines"
-        new File(outFile).text = outLines.join('\n') + '\n'
+        new File(outFile).text = outLines.toSorted(coll).join('\n') + '\n'
     }
 }
 
@@ -419,13 +424,13 @@ task deployReplacements(type: Copy, dependsOn: [createReplacementDict, createSof
 }
 
 task deployCaseGovernment(type: Copy, dependsOn: caseGovernmentDict) {
-    inputs.files caseGovernmentDict
+    inputs.files caseGovernmentDict, "${inputDir}/derivats.txt"
 
     doFirst() {
         logger.lifecycle "Deploying to LT dir: ${languagetoolResDestDir}"
     }
 //    from outResDir
-    from caseGovernmentDict
+    from caseGovernmentDict, "${inputDir}/derivats.txt"
     into "${languagetoolResDestDir}"
 //    include "**/case_*.txt"
 
