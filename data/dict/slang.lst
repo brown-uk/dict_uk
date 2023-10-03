@@ -378,13 +378,13 @@
 двіжуха /n10.p1
 двушка /n10.p2
 девайс /n20.a.p
-деескалувати /v1.cf.advp :imperf:perf
+деескалувати /v1.cf.advp :imperf:perf                           # rv_zna:rv_oru
 деза /n10
 дембель /n20.a              # :xp2 демобілізація
 дембель /n20.a.p.<          # :xp1 людина
 дембельнутися /vr1 :perf
 дембельський /adj
-демолювати /v1.cf.advp :imperf      # rv_zna:rv_oru:rv_dav
+демолювати /v1.cf.advp :imperf                                  # rv_zna:rv_oru:rv_dav
 денс noninfl
 депеушник /n20.a.p.<
 депресняк /n20.a.p
@@ -429,11 +429,12 @@
 довбодятел /n22.a.p.<
 доганятися /vr2.cf.advp :imperf
 догнатися /vr4 :perf
-договірняк /n20.p
+договірняк /n20.a.u.p
+доколє intj
 домушник /n20.a.p.<
 домушниця /n10.p1.<
 донат /n20.p 
-донатити /v1.it0.cf.is0 :imperf
+донатити /v1.it0.cf.is0 :imperf                 # rv_zna:rv_dav
 донейт /n20.p
 донейтити /v1.cf.advp :imperf
 дос-атака /n10.p1
@@ -442,7 +443,7 @@
 дофіга adv
 доходяжний /adj
 драй noninfl:foreign
-драйвити /v1.cf :imperf
+драйвити /v1.cf :imperf                             # rv_zna:rv_oru
 драмеді noun:f:nv
 драмер /n20.a.p.ke.<
 драстуйте intj
@@ -529,6 +530,7 @@
 забичений /adj
 забичкувати /v1.cf.advp :imperf
 забімбаний /adj :&adjp:pasv:perf
+забугорний /adj
 забулдига /n10.p1.<m
 завзятюще adv
 завтикати /v2.isNo :perf
@@ -537,7 +539,7 @@
 задвохсотитися /vr1 :perf
 задвохсочений /adj
 заджавелінити /v1 :perf                         # rv_zna:rv_oru
-задонатити /v1.it1.is0 :perf
+задонатити /v1.it1.is0 :perf                            # rv_zna:rv_dav
 задрафтований /adj :&adjp:pasv:perf
 задрипанськ /n20.a.p
 задрипанський /adj
@@ -851,6 +853,8 @@
 лейба /n10.p1
 лейбл /n20.a.p
 литвинівець /n22.p.a.<
+лібераст /n20.a.p.<
+ліберастка /n10.p2.<
 ліверпуліанець /n22.a.p.<
 лідогенераторка /n10.p2.<
 лінк /n20.p
@@ -897,7 +901,7 @@
 мандраж /n20.p
 маневруха /n10.p1
 марафет /n20
-марафетити /v1.cf.advp :imperf
+марафетити /v1.cf.advp :imperf                              # rv_zna:rv_oru:rv_dav
 маркетплейс /n20.a.p
 мародерити /v1.cf :imperf
 маскот /n20.a.p
@@ -987,7 +991,7 @@
 нагетси /np2
 наголяса adv
 нада noninfl
-надонатити /v1.it1.is0 :perf
+надонатити /v1.it1.is0 :perf                        # rv_dav
 надратися /vr1 :perf
 наївняк /n20.a.p.<
 наївняцький /adj
@@ -1160,7 +1164,7 @@
 петеушниця /n10.p1.<
 печалька /n10
 півасік /n20.a
-підмарафетити /v1 :perf
+підмарафетити /v1 :perf                                 # rv_zna:rv_oru:rv_dav
 підмахувати /v1.cf.advp :imperf
 підрулювати /v1.cf.advp :imperf
 підтанцівка /n10.p2
@@ -1205,6 +1209,7 @@
 поймати /v2.isNo :perf
 пока noninfl
 поковбаситися /vr1.it0 :perf
+полюбе adv
 по-модньому adv
 понт /n20.p
 понтовий /adj.adv \
@@ -1277,8 +1282,8 @@
 прихватизаційний /adj
 прихватизація /n10
 прихватизований /adj :&adjp:pasv:perf
-прихватизувати /v1.cf.advp.is0 :perf
-прихватизуватися /vr1.cf.advp :perf
+прихватизувати /v1.cf.advp.is0 :imperf:perf
+прихватизуватися /vr1.cf.advp :imperf:perf
 прицьомка /n10.p2                           # сленг МЗС, від «при цьому»
 пришизіти /v2 :perf
 прікольно adv
@@ -1378,8 +1383,8 @@
 розрулити /v1.is0 :perf          # rv_zna:rv_oru:rv_dav
 розрулитися /vr1 :perf p=4          # rv_oru
 розрулювання /n2n
-розрулювати /v1.cf.advp :imperf
-розрулюватися /vr1.cf.advp :imperf
+розрулювати /v1.cf.advp :imperf                     # rv_zna:rv_oru:rv_dav
+розрулюватися /vr1.cf.advp :imperf                  # rv_oru
 розслабон /n20
 розслабуха /n10
 розтендерити /v1.is0 :perf                          # rv_zna

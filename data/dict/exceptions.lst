@@ -366,6 +366,7 @@
 
 # люди /np3.<
 люди людина noun:anim:p:v_naz
+люди людина noun:anim:p:v_zna:rare
 людей людина noun:anim:p:v_rod
 людям людина noun:anim:p:v_dav
 людей людина noun:anim:p:v_zna
@@ -456,6 +457,7 @@
 
 # діти /np3.<
 діти дитина noun:anim:p:v_naz
+діти дитина noun:anim:p:v_naz/v_zna:rare
 дітей дитина noun:anim:p:v_rod
 дітям дитина noun:anim:p:v_dav
 дітей дитина noun:anim:p:v_zna
@@ -465,6 +467,7 @@
 
 
 дівчата дівчина noun:anim:p:v_naz
+дівчата дівчина noun:anim:p:v_zna:rare
 дівчат дівчина noun:anim:p:v_rod
 дівчатам дівчина noun:anim:p:v_dav
 дівчат дівчина noun:anim:p:v_zna
@@ -784,6 +787,8 @@
 
 хріна noninfl
 
+бісики бісик noun:anim:p:v_zna                          # для «бісики пускати»
+
 
 чепця чепець noun:inanim:m:v_rod:bad
 чепцеві чепець noun:inanim:m:v_dav:bad
@@ -835,8 +840,6 @@
 
 писано-переписано писати-переписати verb:perf:impers        # lim
 
-почавшись початися advp:rev:perf
-
 болиш боліти verb:imperf:pres:s:2:xp2
 
 пробути пробути verb:inf:perf           # rv_oru
@@ -877,7 +880,8 @@
 хтілось хтітися verb:rev:imperf:past:n:coll
 хтілося хтітися verb:rev:imperf:past:n:coll
 
-хтівши хтівши advp:imperf
+хтівши хтіти advp:imperf
+
 
 хтіти хтіти verb:imperf:inf:coll                # rv_zna:rv_rod
 хоти хтіти verb:imperf:impr:s:2:coll
@@ -966,8 +970,8 @@
 ввила ввити verb:past:f:perf
 ввило ввити verb:past:n:perf
 ввили ввити verb:past:p:perf
-ввивши ввити advp:perf
 ввито ввити verb:impers:perf
+ввивши ввити advp:perf
 
 ввитися ввитися verb:rev:inf:perf
 ввитись ввитися verb:rev:inf:perf
@@ -997,11 +1001,7 @@
 ввилися ввитися verb:rev:past:p:perf
 ввившись ввитися advp:rev:perf
 
-в'ючи вити advp:imperf
-
 попсуто попсуто verb:perf:impers        # lim
-
-в'ючись витися advp:rev:imperf
 
 велено веліти verb:imperf:impers
 проклято проклясти verb:perf:impers
@@ -1254,12 +1254,7 @@
 # дієприслівники
 
 біжачи бігти advp:imperf
-боячись боятися advp:rev:imperf
-бредучи брести advp:imperf
-ведучи вести advp:imperf
-ведучись вестися advp:rev:imperf
 гувши густи advp:imperf
-діявшись діятися advp:perf
 дмучи дути advp:imperf
 ждучи ждати advp:imperf
 женучись гнатися advp:rev:imperf
@@ -1272,15 +1267,11 @@
 їдучи їхати advp:imperf
 йдучи йти advp:imperf
 ймучи йняти advp:imperf
-кладучи класти advp:imperf
-крадучись крастися advp:rev:imperf
-крадучи красти advp:imperf
 мелючись молотися advp:rev:imperf
 мелючи молоти advp:imperf
 мінячись мінятися advp:imperf
-мнучись мнутися advp:rev:imperf
-мнучи мнути advp:imperf
-несучи нести advp:imperf
+мнучись м'ятися advp:rev:imperf
+мнучи м'яти advp:imperf
 ржучи ржати advp:imperf
 ссучи ссати advp:imperf
 стогнучи стогнати advp:imperf
@@ -1342,6 +1333,7 @@
 північно- noninfl
 поп- noninfl
 право- noninfl
+псевдо- noninfl
 радіо- noninfl
 римо- noninfl
 рок- noninfl

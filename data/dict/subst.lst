@@ -14,6 +14,8 @@
 мона noninfl:&predic                                        #> можна
 наскіке noninfl
 нашо adv                                                    #> нащо
+нє part                                                     #> ні
+нічо adv                                                    #> нічого
 отово part                                                  #> ото
 побаче побачити verb:perf:futr:s:3                          #> побачить
 покишо noninfl                                              #> поки що
@@ -26,8 +28,10 @@
 сюда adv
 такшо noninfl                                               #> тому|тож
 тама adv:&pron:dem|part                                     #> там
+тіки adv                                                    #> тільки
 тікі noninfl
 тойво noninfl
+тута adv                                                    #> тут
 тьотка /n10.p2.ko.<
 хібашо noninfl                                              #> хіба що
 хтозна-шо noun:inanim:n:v_naz/v_zna:&pron:ind               #> хтозна-що
