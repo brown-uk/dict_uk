@@ -29,8 +29,9 @@ class Expand {
 	private final Map<String, List<String>> additionalTags = [:]
 	private final List<String> additionalTagsUnused = []
 	final Affix affix = new Affix()
-	private final Map<String, Set<String>> derivs = [:].withDefault { new HashSet<>() }
-		
+//	private final Map<String, Set<String>> derivs = [:].withDefault { new HashSet<>() }
+    private final Map<String, Set<String>> derivatives = java.util.Collections.synchronizedMap([:].withDefault { new HashSet<>() })
+    
 
 	static final Pattern cf_flag_pattern = ~ /(vr?)[1-6]\.cf/	 // no v5
 	static final Pattern is_pattern = ~ /(vr?)[1-9]\.is/
@@ -708,6 +709,7 @@ class Expand {
 			def inflection_flag = main_flag[1..-1]
 			sfx_lines = expand_suffixes(word, inflection_flag, modifiers, extra)
 			sfx_lines = adjust_affix_tags(sfx_lines, main_flag, flags, modifiers)
+            registerDerivatives(sfx_lines, word)
 		}
 		else {
 			sfx_lines = [
@@ -764,6 +766,14 @@ class Expand {
 		return entries
 	}
 
+    void registerDerivatives(List<DicEntry> entries, String word) {
+        if( entries[0].tagStr =~ /verb.*inf/ ) {
+            def derivAdvp = entries.findAll { e -> e.tags[0] == "advp" }
+            derivAdvp.each{ e -> derivatives[e.word] << entries[0].word }
+//            println ":: deriv: ${entries[0]} -> $derivAdvp"
+        }
+    }
+    
 	// Дієприслівники, утворені від зворотних дієслів, мають постфікс -сь сміючи́сь, узя́вшись; рідше — -ся: сміючи́ся, узя́вшися.
 	// https://r2u.org.ua/pravopys/pravXXI/93.html
 	@CompileStatic
@@ -875,6 +885,11 @@ class Expand {
 
 		List<LineGroup> out_lines = []
 		for(LineGroup lineGroup2 in lineGroups) {
+		
+          if( lineGroup2.line =~ /\.(advp|cf)/ && ! lineGroup2.line.contains(":imperf") ) {
+            throw new IllegalArgumentException(".advp or .cf without :imperf for ${lineGroup2.line}")
+          }
+
             // for adjp..:imperf:perf only :perf gets compb and .adv(:compb) 
             boolean imperPerfAdj = lineGroup2.line =~ /adj.*:imperf:perf/
 			out_lines.addAll(
@@ -1694,7 +1709,23 @@ class Expand {
 				}
 			})
 		}
-		
+
+        new File("../data/dict/exceptions.lst").readLines('utf-8')
+            .findAll{ line -> line.contains(" advp:") }
+            .each { line ->
+                String[] parts = line.split(" ")
+                derivatives[parts[0]] << parts[1]
+            }
+
+        new File("derivats.txt").withWriter("utf-8") { Writer f ->
+            def comparator = new UkDictComparator()
+            derivatives.toSorted{ e1,e2 -> comparator.compare(e1.key,e2.key) }
+            .each { String k, v ->
+                String s = v.join(":")
+                f.write("$k $s\n")
+            }
+        }
+
 		executor.shutdown()
 		executor.awaitTermination(300, TimeUnit.SECONDS)
 
