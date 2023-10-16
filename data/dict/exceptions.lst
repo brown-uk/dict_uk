@@ -457,13 +457,16 @@
 
 # діти /np3.<
 діти дитина noun:anim:p:v_naz
-діти дитина noun:anim:p:v_naz/v_zna:rare
+діти дитина noun:anim:p:v_zna:rare
 дітей дитина noun:anim:p:v_rod
 дітям дитина noun:anim:p:v_dav
 дітей дитина noun:anim:p:v_zna
 дітьми дитина noun:anim:p:v_oru
 дітях дитина noun:anim:p:v_mis
 діти дитина noun:anim:p:v_kly
+
+дитини дитина noun:anim:p:v_naz
+дитини дитина noun:anim:p:v_zna
 
 
 дівчата дівчина noun:anim:p:v_naz
@@ -560,10 +563,6 @@
 серць серце noun:p:v_rod
 
 братця браття noun:anim:p:v_naz/v_kly:ns
-
-людини людина noun:p:v_naz/v_zna:anim
-боголюдини боголюдина noun:p:v_naz/v_zna:anim
-дитини дитина noun:p:v_naz/v_zna:anim
 
 хліба хліб noun:p:v_naz/v_zna
 вуса вус noun:inanim:p:v_naz/v_zna
@@ -689,11 +688,6 @@
 хабарях хабар noun:inanim:p:v_mis:ua_2019
 хабарі хабар noun:inanim:p:v_kly
 
-
-вітця отець noun:anim:m:v_rod/v_zna:rare
-вітцю отець noun:anim:m:v_dav:rare
-вітцем отець noun:anim:m:v_oru:rare
-
 воротям ворота noun:p:v_dav:ns
 воротях ворота noun:p:v_mis:ns
 
@@ -709,19 +703,17 @@
 
 те-се те-се noun:inanim:n:v_naz/v_zna:&pron:dem
 
-оний оний adj:m:v_naz/v_zna:&pron:dem       # lim
-оній оний adj:f:v_dav/v_mis:&pron:dem
-оного оний adj:m:v_rod/v_zna:ranim:&pron:dem
-оного оний adj:n:v_rod:&pron:dem
-онеє оний adj:n:v_naz/v_zn2:&pron:dem:long
+оний оний adj:m:v_naz/v_zna:&pron:dem:arch       # lim
+оній оний adj:f:v_dav/v_mis:&pron:dem:arch
+оного оний adj:m:v_rod/v_zna:ranim:&pron:dem:arch
+оного оний adj:n:v_rod:&pron:dem:arch
+онеє оний adj:n:v_naz/v_zn2:&pron:dem:long:arch
 оних оний adj:p:v_rod/v_zn1/v_mis:&pron:dem:arch
 онім оний adj:m:v_mis:&pron:dem:arch
 онім оний adj:n:v_mis:&pron:dem:arch
 оної оний adj:f:v_rod:&pron:dem:arch
 
 ласочка ласочка noun:f:v_naz                # lim
-
-мосьпане мосьпане noun:m:v_kly:anim         # lim
 
 # давні форми
 бельмес бельмес noun:m:v_naz               # lim
@@ -772,11 +764,11 @@
 кадовби кадівб noun:inanim:p:v_kly
 
 # сучасн. - молодіжі, в старих словниках - молодежи
-молодежі молодіж noun:inanim:f:v_rod:rare
-молодежі молодіж noun:inanim:f:v_dav:rare
-молодежжю молодіж noun:inanim:f:v_oru:rare
-молодежі молодіж noun:inanim:f:v_mis:rare
-молодеже молодіж noun:inanim:f:v_kly:rare
+молодежі молодіж noun:inanim:f:v_rod:arch
+молодежі молодіж noun:inanim:f:v_dav:arch
+молодежжю молодіж noun:inanim:f:v_oru:arch
+молодежі молодіж noun:inanim:f:v_mis:arch
+молодеже молодіж noun:inanim:f:v_kly:arch
 
 передні передні noun:anim:p:v_naz/v_kly:ns
 передніх передні noun:anim:p:v_rod/v_zna/v_mis:ns
