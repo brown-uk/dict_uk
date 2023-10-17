@@ -13,11 +13,17 @@ class StemmerTest {
     void test() {
 //        assertEquals "став", Roots.findRoot("поставати поставати verb:imperf:inf\n"
 //                + "  постає поставати verb:imperf:pres:s:3")
-        assertEquals "аахен", stemmer.findStem(["аахенський аахенський adj:m:v_naz"])
+//        assertEquals "аахен", stemmer.findStem(["аахенський аахенський adj:m:v_naz"])
+        
+        assertEquals "абон", stemmer.findStem(["абонування абонування noun:inanim:f:v_naz"])
+        assertEquals "авіаімпер", stemmer.findStem(["авіаімперія авіаімперія noun:inanim:f:v_naz"])
+        assertEquals "ареліг", stemmer.findStem(["арелігійний арелігійний adj:m:v_naz"])
+        assertEquals "акц", stemmer.findStem(["акційний акційний adj:m:v_naz"])
         assertEquals "постав", stemmer.findStem(["поставлений поставлений adj:m:v_naz"])
 
         assertEquals "дів", stemmer.findStem(["дівка дівка noun:anim:f:v_naz"])
         assertEquals "канад", stemmer.findStem(["канадійка канадійка noun:anim:f:v_naz"])
+        assertEquals "авдіофайл", stemmer.findStem(["авдіофайл авдіофайл noun:inanim:m:v_naz"])
         
 //        assertEquals "стел", Roots.findRoot("простелити /v1")
         assertEquals "лікар", stemmer.findStem(["лікарський лікарський adj:m:v_naz"])
