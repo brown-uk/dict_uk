@@ -8,36 +8,44 @@ import java.nio.file.StandardCopyOption;
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
+import groovy.transform.CompileStatic
+
 
 class Stemmer {
-    def roots = [:].withDefault { [] as Set }
+    Map<String, Set<String>> roots = [:].withDefault { [] as Set }
+    Map<String, Set<String>> rootsPref = [:].withDefault { [] as Set }
     def preStems = [:]
     def props = [] as Set
+    def baseDir = new File(".").absolutePath.replaceFirst(/(dict_uk).*/, '$1')
     
     Stemmer() {
+        println "Base dir: $baseDir"
         loadPre()
     }
     
     static void main(String[] args) {
-        def file = new File("out/dict_corp_vis.txt")
-//        def outFile = new File("out/roots.txt")
-        
-        new Stemmer().findRoots(file)
-        println "Getting roots for ${file.name}..."
+        new Stemmer().findRoots()
 	}
     
     void loadPre() {
         new File(getClass().getResource('stems.txt').toURI()).readLines()
             .each { line ->
+                try {
                 def (stem, words) = line.split(/ - /)
                 words.split(/ /).each { w -> preStems[w] = stem }
+                }
+                catch(e) {
+                    System.err.println "Failed to parse $line"
+                    System.exit(1)
+                }
+                
             }
     }
     
     void readGeos() {
         def geoFiles = ["geo-other.lst", "geo-ukr-koatuu.lst", "lang.lst", "geo-ukr-hydro.lst", "names-anim.lst", "names-other.lst"]
         geoFiles.each { f ->
-            def lst = new File("data/dict/$f").readLines('utf-8')
+            def lst = new File(baseDir, "data/dict/$f").readLines('utf-8')
                 .collect{ line -> line.replaceFirst(/ .*/, '') } as Set
             props += lst
         }
@@ -45,7 +53,8 @@ class Stemmer {
         println "props: ${props.size()}: \"${props[0]}\""
     }
     
-	void findRoots(File file) {
+	void findRoots() {
+        def file = new File(baseDir, "out/dict_corp_vis.txt")
         readGeos()
         
 		def dir = Paths.get(file.getAbsolutePath())
@@ -76,32 +85,37 @@ class Stemmer {
 //            def vvv = v.collect { it -> it in props ? "$it*" : it }.join(" ")
 //            outFile << "$k -$sss ${vvv}\n"
             def vvv = v.join(" ")
-            outFile << "$k - ${vvv}\n"
+            outFile << "$k - ${vvv}"
+            def withpref = rootsPref[k]
+            if( withpref ) outFile << "    ${withpref.join(' ')}" 
+            outFile << "\n"
         }
 //        println "ges: $cntGes"
 	}
 
-    static String noprefixes = "автор|автоген|авіатор|антипод"
-    static String prefixes = "авто|а[ву]діо|авіа|анти|багато"
+    static String noprefixes = "автор|автоміст|автоген|авіарій|авіатор|антипод|супереч|суперни[кц]"
+    static String prefixes = "авто|а[ву]діо|авіа|анти|багато|вело|взаємо|відео|віце|напів'?|кібер|кіно|фото|нео(?=[аеєиіїоуюя])|супер|чотир(и|ьох)|п'ят(и|ьох)|не"
     static String preReg = /^($prefixes)?+/
     
 //    static Pattern PREFIX = Pattern.compile(/^(по|над|про|за)/)
     static Map<String, Map<Pattern, String>> SUFFIXES = Map.of(
         " adj", [
-                (Pattern.compile(/(.{3,}?)(((?<![аеєиіїоуюя])н)?[ую]ва[нт]ий|(из|й)?ований|(из)?(ув)?альний|а?т[уо]рний)$/)): '$1', // дивакуватий
-                (Pattern.compile(/(.{3,}?)(((ер)?из)?[а]ційний|ерний|ерський|ез(н|ійн|[іи]чн)ий|(ист)?ійний|(ат|ист)?[іи][вч]ний|[еі]йський|ейний|иний)$/)): '$1', // дивакуватий
+                (Pattern.compile(/(.{3,}?)(((?<![аеєиіїоуюя])н)?[ую]ва[нт]ий|([іи]з|й)?ований|([іи]з)?(ув)?альний|[іи]зат[уо]рний|а?т[уо]рний)$/)): '$1', // дивакуватий
+                (Pattern.compile(/(.{3,}?)(((ер)?[іи]з)?[а]ційний|ерний|ерський|ез(н|ійн|[іи]чн)ий|(ист)?ійний|(ат|[іи]ст)?[іи][вч]ний|[еі]йський|ейний|иний|лив(еньк)?ий)$/)): '$1', // дивакуватий
                 (Pattern.compile(/(.{3,}?)(н?ісінький|н?(ес)?енький)$/)): '$1', // дивнесенький
                 (Pattern.compile(/(.{3,}?)((?<![аеєиіїоуюя])н(ений|івський)|івницький)$/)): '$1', // вивласнений
-                (Pattern.compile(/(.{3,}?)(л?ен|[іоеу]вськ|ь?[цс]ьк|к?ов|ь?ницьк|инський|іоністськ|ійськ|[иії]стськ|ст|яч|ь?[нчк]|н|ер)?([іи]й)$/)) : '$1',
+                (Pattern.compile(/(.{3,}?)(аний|((?<![аеєиіїоуюя])к)?овий)$/)): '$1', // намотаний
+                (Pattern.compile(/(.{3,}?)(((?<![аеєиіїоуюя])л)?ен|[іоеу]вськ|ь?[цс]ьк|к?ов|ь?ницьк|инський|іоністськ|ійськ|[иії]стськ|ст|яч|ь?[нчк]|н|ер)?([іи]й)$/)) : '$1',
                 (Pattern.compile(/(.{3,}?)ч?ів$/)) : '$1'
 //                (Pattern.compile(/(нин)$/)) : 'а'
                 ],
         " noun", [
-                (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])ле(ність|ння)$/)): '$1', // надщербленість
-                (Pattern.compile(/(.{3,}?)(((?<![аеєиіїоуюя])н)?[ую]ва[тн]ість|(из|й)?ованість|иність|(из|ер)?(іон)?[ую]вання|((?<![аеєиіїоуюя])н)?[ую]вання|а?ння)$/)): '$1', // дивакуватість, байкерство
+                (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])[нл]е(ність|ння)$/)): '$1', // надщербленість
+                (Pattern.compile(/(.{3,}?)ли(вість|виця|вець|вка|вчик|вство)$/)): '$1',
+                (Pattern.compile(/(.{3,}?)(((?<![аеєиіїоуюя])н)?[ую]ва[тн]ість|([іи]з|й)?ованість|[аи]ність|([іи]з|ер)?(іон)?[ую]вання|((?<![аеєиіїоуюя])н)?[ую]вання|а?ння)$/)): '$1', // дивакуватість, байкерство
                 (Pattern.compile(/(.{3,}?)(ез(ія|ійність|ичність)?)$/)): '$1', // біогенез
-                (Pattern.compile(/(.{3,}?)([ую]вальни(к|ця)|ерка|ат(ка)?|((ер)?из)?[ая]?ція|[еі]йник|[еі]йство|(ер)?ь?ство|'ятко|еня(тко)?)$/)): '$1', // дивакуватість, байкерство
-                (Pattern.compile(/(.{3,}?)(а)ч$/)): '$1',
+                (Pattern.compile(/(.{3,}?)([ую]вальни(к|ця)|ерка|ат(ка)?|((ер)?[иі]з)?[ая]?ція|[еі]йник|[еі]йство|(ер)?ь?ство|'ятко|еня(тко)?)$/)): '$1', // дивакуватість, байкерство
+                (Pattern.compile(/(.{3,}?)(ач|онька|істика)$/)): '$1',
                 (Pattern.compile(/(.{3,}?)(ів(ня|ник|ниця)?)$/)): '$1', // мандрівник
                 (Pattern.compile(/(.{3,}?)(ер(ня|ник|ниця|ія)?)$/)): '$1', // швагер, парфумерія
                 (Pattern.compile(/(.{3,}?)(ист)?(очка|ика|ія)$/)): '$1',
@@ -122,8 +136,9 @@ class Stemmer {
         )
 
     int inflCnt = 0
-    def todo = []
+    List<String> todo = []
     
+//    @CompileStatic
     String findStem(List<String> lines) {
         
         def line1 = lines[0]
@@ -146,7 +161,7 @@ class Stemmer {
             return null
             
         if( w in preStems ) {
-//            println "predef: $w"
+            addRoot(preStems[w], w)
             return preStems[w]
         }
         
@@ -163,17 +178,17 @@ class Stemmer {
         
         if( w.length() < 4 ) {
             def root = pref + w
-            roots[root.toLowerCase()] << origW
+            addRoot(root, origW)
             return origW
         }
 
         Map<Pattern, String> replPair = SUFFIXES.find{ k, v -> line1.contains(k) }.value
 
-        def pToS1 = null
+        Map.Entry<Matcher, String> pToS1 = null
         for(def e: replPair.entrySet()) {
             def m = e.key.matcher(w)
             if( m ) { 
-                pToS1 = [(m): e.value]
+                pToS1 = Map.entry(m, e.value)
                 break
             }
         }
@@ -188,7 +203,7 @@ class Stemmer {
             return null
         }
         
-        def pToS = pToS1.iterator().next()
+        Map.Entry<Matcher, String> pToS = pToS1 //.iterator().next()
         String root = pToS.key.replaceFirst(pToS.value)
 
         if( ! root ) {
@@ -202,10 +217,33 @@ class Stemmer {
 //                w = "$w/geo"
 //            }
             root = pref + root
-            roots[root.toLowerCase()] << origW
+            addRoot(root, origW)
         }
                 
 //        println "$line1 => $root"
+        return root
+    }
+
+    @CompileStatic    
+    private void addRoot(String root, String origW) {
+        if( root.endsWith("'") )
+            root = root.substring(0, root.length()-1)
+        
+        def root2 = removePrefixes(root)
+        if( root2 != root ) {
+            rootsPref[root2.toLowerCase()] << origW
+        }
+        else {
+            roots[root2.toLowerCase()] << origW
+        }
+    }
+
+    @CompileStatic    
+    private String removePrefixes(String root) {
+        if( ! (/^($noprefixes)/ =~ root ) ) {
+            def p = Pattern.compile(/^(авіа|взаємо|напів'?|кібер|кіно|фото|нео(?=[аеєиіїоуюя])|супер|чотир(и|ьох)|п'ят(и|ьох)|не)/)
+            root = p.matcher(root).replaceFirst('')
+        } 
         return root
     }
 }
