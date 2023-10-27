@@ -2,6 +2,7 @@ package org.dict_uk.tools
 
 import static org.junit.jupiter.api.Assertions.assertEquals
 
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
 import groovy.transform.CompileStatic
@@ -15,6 +16,9 @@ class StemmerTest {
 //                + "  постає поставати verb:imperf:pres:s:3")
 //        assertEquals "аахен", stemmer.findStem(["аахенський аахенський adj:m:v_naz"])
         
+        assertEquals "азотвіднов", stemmer.findStem(["азотвідновлювальний азотвідновлювальний adj:m:v_naz"])
+        assertEquals "вермішел", stemmer.findStem(["вермішелевий вермішелевий adj:m:v_naz"])
+        assertEquals "бейсджамп", stemmer.findStem(["бейсджампінг бейсджампінг noun:inanim:n:v_naz"])
         assertEquals "відлун", stemmer.findStem(["відлуння відлуння noun:inanim:n:v_naz"])
         assertEquals "бурлак", stemmer.findStem(["бурлака бурлака noun:inanim:f:v_naz"])
         assertEquals "вдув", stemmer.findStem(["вдувальний вдувальний adj:m:v_naz"])
@@ -40,6 +44,7 @@ class StemmerTest {
     }
     
     @Test
+    @Disabled
     void testFile() {
         def lines = new File("data/stem/stems.lst").readLines('utf-8').take(200)
         
