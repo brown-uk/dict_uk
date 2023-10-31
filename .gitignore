@@ -14,3 +14,4 @@ _work
 .project
 /build_test/
 /build_
+*.bz2
