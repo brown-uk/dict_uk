@@ -16,6 +16,7 @@ class StemmerTest {
 //                + "  постає поставати verb:imperf:pres:s:3")
 //        assertEquals "аахен", stemmer.findStem(["аахенський аахенський adj:m:v_naz"])
         
+        assertEquals "спал", stemmer.findStem(["газоспалювальний газоспалювальний adj:m:v_naz"])
         assertEquals "біонік", stemmer.findStem(["біоніка біоніка noun:inanim:f:v_naz"])
         assertEquals "контрар", stemmer.findStem(["контрарний контрарний adj:m:v_naz"])
         assertEquals "кейнсіан", stemmer.findStem(["неокейнсіанець неокейнсіанець noun:anim:m:v_naz"])

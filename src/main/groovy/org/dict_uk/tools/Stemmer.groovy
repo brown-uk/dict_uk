@@ -36,7 +36,7 @@ class Stemmer {
                     words.split(/ /).each { w -> preStems[w] = stem }
                 }
                 catch(e) {
-                    System.err.println "Failed to parse $line"
+                    System.err.println "Failed to parse \"$line\""
                     System.exit(1)
                 }
             }
@@ -127,6 +127,20 @@ class Stemmer {
     
 //    static Pattern PREFIX = Pattern.compile(/^(по|над|про|за)/)
     static Map<String, Map<Pattern, String>> SUFFIXES = Map.of(
+        // TODO: актуальнішати/актуальніший + ішання
+        // дж -> д, жч -> ж, тч -> т
+        // [бвдпс]л -> $1
+        // ст -> щ
+        // [бд]н - приладнаний, [бдтч]н - блідніти
+        // виняток для кльов
+        " verb", [
+            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])н?ішати(ся)?$/)): '$1',
+            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])онути(ся)?$/)): '$1',
+            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])[у]ювати(ся)?$/)): '$1',
+            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(і)ювати(ся)?$/)): '$1$2й',
+            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])ствувати(ся)?$/)): '$1',
+            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(([иі]з)?(ов)?ува|л?юва|ну|[аеєиіїоуюя])?ти(ся)?$/)): '$1'
+            ],
         " adj", [
             (Pattern.compile(/(річний)$/)): 'річ',
             (Pattern.compile(/(руськ|поган|багат)(е(се)?ньк)?ий$/)): '$1',
@@ -322,6 +336,7 @@ class Stemmer {
             
         if( line1.contains(" noun") ) counts['noun'] += 1
         else if( line1.contains(" adj") ) counts['adj'] += 1
+        else if( line1.contains(" verb") ) counts['verb'] += 1
         else return null
         
         inflCnt++
@@ -334,7 +349,7 @@ class Stemmer {
             return null
             
         if( w in preStems ) {
-            addRoot(preStems[w], w, false)
+            addRoot(preStems[w], w, true)
             return preStems[w]
         }
         
@@ -351,7 +366,7 @@ class Stemmer {
         
         if( w.length() < 4 ) {
             def root = pref + w
-            addRoot(root, origW, true)
+            addRoot(root, origW, false)
             return origW
         }
 
@@ -394,23 +409,28 @@ class Stemmer {
             root = w
         }
         root = pref + root
-        addRoot(root, origW, true)
+        addRoot(root, origW, false)
                 
 //        println "$line1 => $root"
         return root
     }
 
     @CompileStatic    
-    private void addRoot(String root, String origW, boolean removePref) {
-        if( root =~ /['ь]$/ )
+    private void addRoot(String root, String origW, boolean prestem) {
+        if( root =~ /['ь]$/ ) {
             root = root.substring(0, root.length()-1)
-            
-        def root2 = removePref ? removePrefixes(root) : root
-        if( root2 != root ) {
-            rootsPref[root2.toLowerCase()] << origW
+        }
+        else if( !prestem && root =~ /(?<!мене|коле)(дж)$/ ) {
+            root = root.substring(0, root.length()-1)
+        }
+    
+        def root2 = !prestem ? removePrefixes(root) : root
+        def root2Lower = root2.toLowerCase()
+        if( root2 != root || root.take(2) != origW.take(2) ) { //2nd for predef with prefix
+            rootsPref[root2Lower] << origW
         }
         else {
-            roots[root2.toLowerCase()] << origW
+            roots[root2Lower] << origW
         }
     }
 
