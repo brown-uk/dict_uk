@@ -69,10 +69,9 @@ class Stemmer {
         outFileBad.text = ''
 
 		file.readLines('UTF-8')
+            .findAll { line -> ! line.startsWith(" ") }
             .each { line ->
-                if( ! line.startsWith(" ") ) {
-                    findStem([line])
-                }
+                findStem([line])
             }
 
         println "Found roots: ${roots.size()} (total infl: ${inflCnt})"
@@ -110,7 +109,7 @@ class Stemmer {
 
     static String noprefixes = /автор|автоміст|автоген|авіарій|авіатор|антипод|міністер|мотор|спеціаліст|супереч|суперни[кц]/
 
-    // TODO: над, про, фін
+    // TODO: над, про, фін, пра
     static String prefixesBase = /авіа|авто|а[ву]діо|агро|аеро|аква|анти|багато|біло|біо|бого/ \
         + /|важко|велико|вело|вібро|взаємо|високо|відео|віце|внутрішньо|водо|вугле|вузько/ \
         + /|газо|гідро|гіро|гіпер|держ|еко(?!ном|лог)|екс(?!порт|нен|ном|тен[зс]|тер|тра|трем)|електро|етно|енерго/ \
@@ -128,11 +127,8 @@ class Stemmer {
 //    static Pattern PREFIX = Pattern.compile(/^(по|над|про|за)/)
     static Map<String, Map<Pattern, String>> SUFFIXES = Map.of(
         // TODO: актуальнішати/актуальніший + ішання
-        // дж -> д, жч -> ж, тч -> т
-        // [бвдпс]л -> $1
         // ст -> щ
-        // [бд]н - приладнаний, [бдтч]н - блідніти
-        // виняток для кльов
+        // изна
         " verb", [
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])н?ішати(ся)?$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])онути(ся)?$/)): '$1',
@@ -145,7 +141,7 @@ class Stemmer {
             (Pattern.compile(/(річний)$/)): 'річ',
             (Pattern.compile(/(руськ|поган|багат)(е(се)?ньк)?ий$/)): '$1',
             (Pattern.compile(/([мр]отор|креатив|мистець|турець|грець|хвост)([кн]ий)$/)): '$1',
-            (Pattern.compile(/(креац)ій([кн]ий)$/)): '$1',
+            (Pattern.compile(/(креац|над)ій([кн]ий)$/)): '$1',
             (Pattern.compile(/((?<!бо)реал)ьний$/)): '$1',
             (Pattern.compile(/([нгрх])еальний$/)): '$1',
             (Pattern.compile(/(бу|секре|компози|зекуц|бі|ди|ститу|моц)(ційний|торний)$/)): '$1т',
@@ -206,7 +202,7 @@ class Stemmer {
                 ],
         " noun", [
             (Pattern.compile(/([рм]отор|креатив)(ність|ник|ниця)?$/)): '$1',
-            (Pattern.compile(/(креац)(ій(ність|ник|ниця)|ія)?$/)): '$1',
+            (Pattern.compile(/(креац|над)(ій(ність|ник|ниця)|ія)?$/)): '$1',
             (Pattern.compile(/(мистец)(ь|тво)?$/)): '$1',
             (Pattern.compile(/(річка)$/)): 'річ',
             (Pattern.compile(/(еат)(ка|ство)?$/)): '$1',
@@ -217,6 +213,7 @@ class Stemmer {
 
             (Pattern.compile(/(.{3,}?)([тн])\2є(вість|вик)$/)): '$1$2',
             (Pattern.compile(/(?<![аеєиіїоуюя])ну(тість|ття)$/)): '',
+            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(івна|чук)$/)): '$1',
 //            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(ант(ка)?|ативність|аційність)$/)): '$1',
             
             (Pattern.compile(/(.{3,}?)ю([щч]ість|ча|чок|ченя|чисько|чиння|чище|чник|ччя)$/)): '$1',
@@ -227,6 +224,7 @@ class Stemmer {
 
             (Pattern.compile(/(.{3,}?)(?<!міт)[іи]нг(іст(ка)?|ізм|ування)?$/)): '$1',
             (Pattern.compile(/(?<![аеєиіїоуюя])ці(оніст(ка)?|онізм)$/)): '',
+//            (Pattern.compile(/(.{3,}?)изна$/)): '$1',
             
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])[лн]?[еія](ння(чко)?)$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])[лн][ея](ність)$/)): '$1',
@@ -241,7 +239,7 @@ class Stemmer {
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])іюва(ння|(ль)?ність)$/)): '$1',
             (Pattern.compile(/(.{2,}?)([оеа])[ую]ва(ння|ність)$/)): '$1$2й',
             
-            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])[лн][ея](ник|н(оч)?ка)$/)): '$1',
+            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])[лн][ея](ни(чо)?к|н(оч)?ка)$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])н[ую]вач$/)): '$1',
             (Pattern.compile(/(.{3,}?)([лмн])(?<!пл)ічка$/)): '$1$2',
 
@@ -308,7 +306,8 @@ class Stemmer {
 
             (Pattern.compile(/(.{2,}?)(?<![аеєиіїоуюя])(к)а$/)): '$1',
             (Pattern.compile(/(.{2,}?)(к)а$/)): '$1$2',
-
+            (Pattern.compile(/(.{3,}?)ичок$/)): '$1',
+            
             (Pattern.compile(/((ен)?(?<![аеєиіїоуюя])ь?[нчщ]?ик|ин|ич|ок|ко|ія|а|ор|няк|ій|ий|ит/
                     +/|ья|ь|ив|вля|ця|ьо)$/)): '',
             (Pattern.compile(/(.{2,}?)(ів|ент|є[нмрф]|ант|[аеоуюя]й/
@@ -410,23 +409,38 @@ class Stemmer {
         }
         root = pref + root
         addRoot(root, origW, false)
-                
+
 //        println "$line1 => $root"
         return root
     }
 
-    @CompileStatic    
+    @CompileStatic
     private void addRoot(String root, String origW, boolean prestem) {
         if( root =~ /['ь]$/ ) {
-            root = root.substring(0, root.length()-1)
+            root = root[0..-2]
         }
-        else if( !prestem && root =~ /(?<!мене|коле)(дж)$/ ) {
-            root = root.substring(0, root.length()-1)
-        }
-    
+
         def root2 = !prestem ? removePrefixes(root) : root
+        def prefixRemoved = root2.take(3) != origW.take(3)
+
+        if( ! prestem ) {
+          if(  root2 =~ /(?<!мене|коле)(дж)$/ ) {
+             root2 = root2[0..-2]
+          }
+          else if( root2 =~ /[жт]ч$/
+              && ! (root2 =~ /(диспетч|дзижч|матч|отч|притч|бряжч)$/) ) {
+            root2 = root2[0..-2]
+          }
+          else if( root2.length() > 3
+              && root2 =~ /[бвгґджзклмнпрстфхцчшщ]н$/
+              && ! (root2 =~ /(асиг|баг|маг|валтор|вап|вес|верес|вестер|відчиз|вов|єд|зер|зна|гар|гі[мв]|гор|дог|естер|ет|ет|із|іс|пір|тем|фав|чор|яс)н$/)
+              && root2[-2..-1] != origW[-2..-1] ) {
+            root2 = root2[0..-2]
+          }
+        }
+
         def root2Lower = root2.toLowerCase()
-        if( root2 != root || root.take(2) != origW.take(2) ) { //2nd for predef with prefix
+        if( prefixRemoved ) { //2nd for predef with prefix
             rootsPref[root2Lower] << origW
         }
         else {
@@ -434,7 +448,7 @@ class Stemmer {
         }
     }
 
-    @CompileStatic    
+    @CompileStatic
     private String removePrefixes(String root) {
         if( ! (/^($noprefixes)/ =~ root ) ) {
 //        if( ! (NON_PREFIXES_PATTERN.matcher(root).find()) ) {
