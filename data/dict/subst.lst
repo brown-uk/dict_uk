@@ -39,10 +39,12 @@
 цео part                                                    #> це
 чортзна-шо noun:inanim:n:v_naz/v_zna:&pron:ind              #> чортзна-що
 ше adv|part                                                 #> ще
+шиїсят /numr                                                #> шістдесят
 шо conj:subord|noun:inanim:n:v_naz/v_zna:&pron:int:rel      #> що
 шоб conj:subord|part                                        #> щоб
 шоби conj:subord|part                                       #> щоб|щоби
 шодо prep              # rv_rod                             #> щодо
+шо-небудь noun:inanim:n:v_naz/v_zna:&pron:ind               #> що-небудь
 шось noun:inanim:n:v_naz/v_zna:&pron:int                    #> щось
 шо-шо noun:inanim:n:v_naz/v_zna:&pron:int:rel               #> що-що
 штані /np3                                                  #> штани

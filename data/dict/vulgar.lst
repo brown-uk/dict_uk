@@ -29,8 +29,9 @@
 обісрати /v1.isNo :perf
 обісратися /vr1 :perf
 обісцяний /adj :&adjp:pasv:perf
-обісцяти /v1.isNo :perf
-обсирати /v2.cf.advp :imperf                # rv_zna
+обісцяти /v1.isNo :perf                     # rv_zna:rv_dav
+обісцятися /vr1 :perf
+обсирати /v2.cf.advp :imperf                # rv_zna:rv_dav
 охрініти /v1 :perf
 пердіння /n2n
 пердіти /v1.cf.advp :imperf
