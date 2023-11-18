@@ -16,6 +16,7 @@ class StemmerTest {
 //                + "  постає поставати verb:imperf:pres:s:3")
 //        assertEquals "аахен", stemmer.findStem(["аахенський аахенський adj:m:v_naz"])
         
+        assertEquals "віст", stemmer.findStem(["вістовець noun:inanim:n:v_naz"])
         assertEquals "спал", stemmer.findStem(["газоспалювальний газоспалювальний adj:m:v_naz"])
         assertEquals "біонік", stemmer.findStem(["біоніка біоніка noun:inanim:f:v_naz"])
         assertEquals "контрар", stemmer.findStem(["контрарний контрарний adj:m:v_naz"])
@@ -34,7 +35,7 @@ class StemmerTest {
         assertEquals "бад", stemmer.findStem(["баддя баддя noun:inanim:f:v_naz"])
         assertEquals "автомит", stemmer.findStem(["автомито автомито noun:inanim:n:v_naz"])
         assertEquals "абон", stemmer.findStem(["абонування абонування noun:inanim:f:v_naz"])
-        assertEquals "авіаімпер", stemmer.findStem(["авіаімперія авіаімперія noun:inanim:f:v_naz"])
+        assertEquals "імпер", stemmer.findStem(["авіаімперія авіаімперія noun:inanim:f:v_naz"])
         assertEquals "ареліг", stemmer.findStem(["арелігійний арелігійний adj:m:v_naz"])
         assertEquals "акц", stemmer.findStem(["акційний акційний adj:m:v_naz"])
         assertEquals "поставл", stemmer.findStem(["поставлений поставлений adj:m:v_naz"])

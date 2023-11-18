@@ -5,6 +5,7 @@ package org.dict_uk.tools
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.nio.file.StandardCopyOption;
+import java.util.concurrent.CompletableFuture
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
@@ -12,12 +13,12 @@ import groovy.transform.CompileStatic
 
 
 class Stemmer {
-    Map<String, Set<String>> roots = [:].withDefault { [] as Set }
-    Map<String, Set<String>> rootsPref = [:].withDefault { [] as Set }
-    def preStems = [:]
-    def props = [] as Set
+    Map<String, Set<String>> roots = [:].withDefault { [] as Set }.asSynchronized()
+    Map<String, Set<String>> rootsPref = [:].withDefault { [] as Set }.asSynchronized()
+    Map<String, String> preStems = [:]
+    Set<String> props = [] as Set
     def baseDir = new File(".").absolutePath.replaceFirst(/(dict_uk).*/, '$1')
-    def counts = [:].withDefault { 0 }
+    Map<String, Integer> counts = [:].withDefault { 0 }
     
     Stemmer() {
 //        println "Base dir: $baseDir"
@@ -29,14 +30,26 @@ class Stemmer {
 	}
     
     void loadPre() {
+        Set<String> stemSet = new HashSet<>()
         new File(getClass().getResource('stems.txt').toURI()).readLines()
             .each { line ->
                 try {
                     def (stem, words) = line.split(/ - /)
-                    words.split(/ /).each { w -> preStems[w] = stem }
+                    if( stem in stemSet ) { 
+                        println "Duplicate stem: $stem" 
+                    } 
+                    else { 
+                        stemSet << stem 
+                    }
+
+                    words.split(/ /).findAll{ it }.each { w ->
+                        if( w in preStems ) println "duplicate word: $w"
+                        preStems[w] = stem 
+                    }
                 }
                 catch(e) {
                     System.err.println "Failed to parse \"$line\""
+                    e.printStackTrace()
                     System.exit(1)
                 }
             }
@@ -44,7 +57,7 @@ class Stemmer {
         assert 'біоніка' in preStems
     }
     
-    void readGeos() {
+    void readProps() {
         def geoFiles = ["geo-other.lst", "geo-ukr-koatuu.lst", "lang.lst", "geo-ukr-hydro.lst", "names-anim.lst", "names-other.lst", "pharm.lst"]
         geoFiles.each { f ->
             def lst = new File(baseDir, "data/dict/$f").readLines('utf-8')
@@ -56,8 +69,9 @@ class Stemmer {
     }
     
 	void findRoots() {
+        def readGeosF = CompletableFuture.supplyAsync{ readProps() }
+
         def file = new File(baseDir, "out/dict_corp_vis.txt")
-        readGeos()
         
 		def dir = Paths.get(file.getAbsolutePath())
 		def inFile = dir.resolve(file.name)
@@ -68,10 +82,13 @@ class Stemmer {
         def outFileBad = new File(file.name + ".roots.bad")
         outFileBad.text = ''
 
-		file.readLines('UTF-8')
+		def lines = file.readLines('UTF-8')
             .findAll { line -> ! line.startsWith(" ") }
-            .each { line ->
-                findStem([line])
+            
+        readGeosF.whenComplete{}
+        
+        lines.parallelStream().forEach { line ->
+                findStem(line)
             }
 
         println "Found roots: ${roots.size()} (total infl: ${inflCnt})"
@@ -92,14 +109,14 @@ class Stemmer {
 //            if( sss ) cntGes++
 //            def vvv = v.collect { it -> it in props ? "$it*" : it }.join(" ")
 //            outFile << "$k -$sss ${vvv}\n"
-            def vvv = v.join(" ")
+            def vvv = v.toSorted(coll).join(" ")
             outFile << "$root - ${vvv}"
             
             if( root.length() > 3 && root =~ /[аеєиіїоуюяь\']$/ ) {
                 outFileBad << "Invalid root $root - ${vvv}\n"
             }
             
-            def withpref = rootsPref[root]
+            def withpref = rootsPref[root].toSorted(coll)
             if( withpref ) outFile << "    ${withpref.join(' ')}" 
             outFile << "\n"
         }
@@ -130,6 +147,7 @@ class Stemmer {
         // ст -> щ
         // изна
         " verb", [
+            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(?<!сол)овіти(ся)?$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])н?ішати(ся)?$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])онути(ся)?$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])[у]ювати(ся)?$/)): '$1',
@@ -146,9 +164,11 @@ class Stemmer {
             (Pattern.compile(/([нгрх])еальний$/)): '$1',
             (Pattern.compile(/(бу|секре|компози|зекуц|бі|ди|ститу|моц)(ційний|торний)$/)): '$1т',
             (Pattern.compile(/((?<!нс)тру)(юва(ль)?ний|й(ова)?ний)$/)): '$1й',
-            (Pattern.compile(/(.{3})[ое]подібний$/)): '$1',
+            (Pattern.compile(/(.{3})((ов)?о|е)подібний$/)): '$1',
 
             (Pattern.compile(/(.{3,}?)([нт])\2євий$/)): '$1$2',
+
+            (Pattern.compile(/(.{3})(?<!гот)овчий$/)): '$1',
             
             (Pattern.compile(/(.{3,}?)(ивістський|ивістичний|ивізова?ний)$/)): '$1',
             (Pattern.compile(/(ст)иційний|(?<![аеєиіїоуюя])ці(йний|оністський)$/)): '$1',
@@ -185,7 +205,7 @@ class Stemmer {
             (Pattern.compile(/(.{3,}?)((?<![аеєиіїоуюя])(([іи]з)?і?[яеа])?тор(ний|ський)|іатурний)$/)): '$1',
             (Pattern.compile(/(.{3,}?)(((?<![аеєиіїоуюя])н)?[ую]ва[нт]ий|іюваний|іюватий)$/)): '$1',
             (Pattern.compile(/(.{3,}?)(([іи]з|й|ь)?ований|([іи]з|(?<![аеєиіїоуюя])(л|і))?([ую]в)?альний)$/)): '$1',
-            (Pattern.compile(/(.{3,}?)(((ер)?[іи]з)?[а]ційний|ез(н|ійн|[іи]чн)ий|(ист)?ійний|[іия]стий|(ат|а?[іїи]ст)?[іи][вч]ний|лив(еньк)?ий)$/)): '$1',
+            (Pattern.compile(/(.{3,}?)(((ер)?[іи]з)?[а]ційний|ез(н|ійн|[іи]чн)ий|(ист)?ійний|[іия]стий|(а?[іїи]ст)?[іи][вч]ний|лив(еньк)?ий)$/)): '$1',
             (Pattern.compile(/(.{3,}?)(ерний|ейний|ерський|[еі]йський|иний)$/)): '$1',
             (Pattern.compile(/(.{3,}?)(((?<![аеєиіїоуюя])н)?([ію]сінький|(ат)?(ес)?енький))$/)): '$1', // дивнесенький
             (Pattern.compile(/(.{3,}?)((?<![аеєиіїоуюя])н(ений|івський)|івницький)$/)): '$1',
@@ -196,6 +216,7 @@ class Stemmer {
             (Pattern.compile(/(.{3,}?)(ік)?(?<!ом)овний$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])н?и[сц]ький$/)): '$1',
             (Pattern.compile(/(.{3,}?)ерий$/)): '$1',
+//            (Pattern.compile(/(.{3,}?)(?<!кам')яний$/)): '$1',
             (Pattern.compile(/(.{3,}?)([іоеу]вськ|ь?[цс]ьк|к?ов|ь?ницьк|инський|іоністськ|[иії]стськ|істов|ст|яч|(?<![аеєиіїоуюя])ь?[нчк])?([іи]й)$/)) : '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])ч?ів$/)) : '$1'
 //                (Pattern.compile(/(нин)$/)) : 'а'
@@ -207,9 +228,10 @@ class Stemmer {
             (Pattern.compile(/(річка)$/)): 'річ',
             (Pattern.compile(/(еат)(ка|ство)?$/)): '$1',
             (Pattern.compile(/(поган)е$/)): '$1',
+            (Pattern.compile(/(буд)ова$/)): '$1',
             (Pattern.compile(/(реал)(іст(ка)?|ізм|ьність)$/)): '$1',
             (Pattern.compile(/((?<!нс)тру)(юваність|й(ова)?ність)$/)): '$1й',
-            (Pattern.compile(/(.{3})[ео]подібність$/)): '$1',
+            (Pattern.compile(/(.{3})((ов)?о|е)подібність$/)): '$1',
 
             (Pattern.compile(/(.{3,}?)([тн])\2є(вість|вик)$/)): '$1$2',
             (Pattern.compile(/(?<![аеєиіїоуюя])ну(тість|ття)$/)): '',
@@ -219,7 +241,7 @@ class Stemmer {
             (Pattern.compile(/(.{3,}?)ю([щч]ість|ча|чок|ченя|чисько|чиння|чище|чник|ччя)$/)): '$1',
 //            (Pattern.compile(/(ор(юв)?)ане$/)): '$0',
             (Pattern.compile(/(а)(не)$/)): '', // спродане
-            (Pattern.compile(/(.{2,}?)((ени)цтво|ество|еньк[ао]|енко)$/)): '$1',
+            (Pattern.compile(/(.{3,}?)((ени)цтво|ество|еньк[ао]|енко)$/)): '$1',
             (Pattern.compile(/(.{3,}?)(уація|уйованість|уювання|уатор(ка)?)$/)): '$1',
 
             (Pattern.compile(/(.{3,}?)(?<!міт)[іи]нг(іст(ка)?|ізм|ування)?$/)): '$1',
@@ -234,6 +256,9 @@ class Stemmer {
             (Pattern.compile(/(.{2,}?)([джлстч])\2я(чко)?$/)): '$1$2',
             (Pattern.compile(/(.{2,}?)[єї](ння|стість)$/)): '$1й',
             (Pattern.compile(/(.{2,}?)([іо])ян(ня|ість|(оч)?ка|ин)$/)): '$1$2й',
+
+            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])чин((онь|оч)?к)?а$/)): '$1',
+//            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])яник$/)): '$1',
             
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])люва(ння|(ль)?ність)$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])іюва(ння|(ль)?ність)$/)): '$1',
@@ -247,15 +272,15 @@ class Stemmer {
             (Pattern.compile(/(.{3,}?)((?<![аеєиіїоуюя])((ів)?н)?и[сц]тво|ивність|ивіст(ка)?|ивістика|ивізм|ивізація|ивізатор(ка)?|ивчик)$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(ь?щина|атина)$/)): '$1',
             (Pattern.compile(/(.{2,}?)ея$/)): '$1ей',
-
-            (Pattern.compile(/(.{2,}?)(?<![аеєиіїоуюя])ч((а|еня)(т(оч)?ко)?|ище)$/)): '$1',
-            (Pattern.compile(/(.{3,}?)('ятко|еня(тко)?|исько)$/)): '$1',
             
-            (Pattern.compile(/(.{3,}?)(овуван(ість|ня)|овувач(ка)?|овання)$/)): '$1',
+            // TODO:  обстановочка, угодовство
+            // TODO: ніяковісінький, духовницький, народовецький, тусовковий
+            (Pattern.compile(/(.{3})(?<!устан|гол|гот|зам|засн|стан|здор|підк)о(вн?ик|вн?ичок|вичка|вн?иця|вець|вка|вня|вщина)$/)): '$1',
+            (Pattern.compile(/(.{3,}?)о(вуван(ість|ня)|вувач(ка)?|вання|вість)$/)): '$1',
+
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(л?([юу]в)?[аеяю](цтво|ч(ка)?))$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])([яію]ка?)$/)): '$1',
-            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(((ен|')?я|а)т(оч)?ко|ечко|овиння)$/)): '$1',
-            (Pattern.compile(/(.{3,}?)[уе](я|їст(ка)?|їстика|їстичність|їзм)$/)): '$1',
+            (Pattern.compile(/(.{3,}?)[уе](їст(ка)?|їстика|їстичність|їзм)$/)): '$1',
             (Pattern.compile(/(.{3,}?)([еоя])(їст(ка)?|їстика|їстичність|їзм)$/)): '$1$2й',
 //            (Pattern.compile(/(.{3,}?)([ая])ка$/)): '$1',
             (Pattern.compile(/(.{3,}?)ли(вість|виця|вець|вка|вчик|вство)$/)): '$1',
@@ -264,18 +289,16 @@ class Stemmer {
             (Pattern.compile(/(.{3,}?)(ичка|иха|юга|юра|ятина)$/)): '$1',
             
             (Pattern.compile(/(.{3,}?)(а)юватість$/)): '$1$2й',
+            (Pattern.compile(/(.{2,}?)([оа])йованість$/)): '$1$2й',
             (Pattern.compile(/(.{3,}?)((?<![аеєиіїоуюя])[ін]?[ую]в)?атість$/)): '$1',
             (Pattern.compile(/(.{3,}?)([уо]н)ня$/)): '$1$2',
-            (Pattern.compile(/(.{2,}?)([оа])йованість$/)): '$1$2й',
             (Pattern.compile(/(.{3,}?)(((?<![аеєиіїоуюя])[ні])?[ую]ва([тн]ість|льність|ння)|([іи]з|і?й)?ованість|([іи]з|ер)?(іон)?[ую]вання|(а?[іїи]ст)?[іи]чність|[аи]ність)$/)): '$1',
             (Pattern.compile(/(.{3,}?)(ез(ія|ійність|ичність)?)$/)): '$1', // біогенез
             (Pattern.compile(/(.{3,}?)(ік)?(?<!ом)овність$/)): '$1',
             (Pattern.compile(/(бу|б'ю|секре|компози|зекуц|бі|ди|ститу|моц)(ція|ційність|тор)$/)): '$1т',
             (Pattern.compile(/(ст)иц(ія|ійність)$/)): '$1', // інвестиція
 
-            (Pattern.compile(/(.{3,}?)[иа]?ння(чко)?$/)): '$1',
-            
-            (Pattern.compile(/(.{3,}?)(еса|ерка|ікат|(?<![аеєиіїоуюя])і?ат(ка)?)$/)): '$1',
+            (Pattern.compile(/(.{3,}?)(еса|ерка|ікат|(?<![аеєиіїоуюя])іат(ка)?)$/)): '$1',
             (Pattern.compile(/(.{3,}?)((?<![аеєиіїоуюя])ція|((ер)?[иі]з|і)?[ая]ція|(яц)?[еі](йник|йність))$/)): '$1',
             (Pattern.compile(/(.{3,}?)((?<![аеєиіїоуюя])(([іи]з)?і?[яеа])?тор(ка|ство|ій|ник|ниця)?|ей|ерик|ік(иня)?)$/)): '$1',
             (Pattern.compile(/(.{3,}?)([еі]йство|(ер)?ь?ство|(ів)?(ни)?[цс]?тво)$/)): '$1', // байкерство
@@ -286,15 +309,20 @@ class Stemmer {
             (Pattern.compile(/(.{3,}?)(ер(ня|ник|ниця|ія)?)$/)): '$1', // швагер, парфумерія
             (Pattern.compile(/(.{3,}?)([аеєиіїоуюя]ц)ія$/)): '$1$2',
             (Pattern.compile(/(.{3,}?)(і[вй]ка)$/)): '$1',
-            (Pattern.compile(/(.{3,}?)((іон|і|а)?[іиї]ст((оч)?ка)?|(іон|і|а)?[іиї]ст(ика|ія)|(іон|і|а)?[иії]зм)$/)): '$1',
+            (Pattern.compile(/(.{3,}?)(іон|і|а)?[іиї](ст((оч)?ка)?|ст(ика|ія)|зм)$/)): '$1',
             (Pattern.compile(/(.{3,}?)ика$/)): '$1',
             (Pattern.compile(/(.{3,}?)([аоія])ч(ок|ка|атура)$/)): '$1',
-            (Pattern.compile(/(.{3,}?)(івець|ець|ієць)$/)): '$1',
 
-            (Pattern.compile(/(.{3,}?)(єць)$/)): '$1й', // малаєць
-            (Pattern.compile(/(.{2,}?)(?<![аеєиіїоуюя'])ячко$/)): '$1',
-            (Pattern.compile(/(.{3,}?)(ько|[чт]ко|е?н[еє]|[і]стя|'я|[иі]ще|ь?це|іше)$/)): '$1', // :n:
-            (Pattern.compile(/(.{3,}?)(иса|ч?иня|(ій)?(?<![аеєиіїоуюя])ь?[нчщ]?иця|(?<![аеєиіїоуюя])чка|ька)$/)): '$1', // :f:
+            
+            (Pattern.compile(/(.{3})(івець|ець|ієць)$/)): '$1',
+            (Pattern.compile(/(.{2})(єць)$/)): '$1й', // боєць
+            (Pattern.compile(/(.{3})(?<![аеєиіїоуюя])(ечко|ов[іи]ння|овість|овисько|(?<!сх)овище)$/)): '$1',
+            (Pattern.compile(/(.{2})(?<![аеєиіїоуюя])ч((а|еня)(т(оч)?ко)?|ище)$/)): '$1',
+            (Pattern.compile(/(.{3})(?<![аеєиіїоуюя])(((ен|')?я|а)т(оч)?ко)$/)): '$1',
+            (Pattern.compile(/(.{3})(?<![аеєиіїоуюя])('яга|еня(тко)?|ч?исько)$/)): '$1',
+            (Pattern.compile(/(.{3})[иа]?ння(чко)?$/)): '$1',
+            (Pattern.compile(/(.{3})(ячко|ько|[чт]ко|е?н[еє]|[і]стя|'я|[иі]ще|ь?це|іше)$/)): '$1', // :n:
+            (Pattern.compile(/(.{3})(?<![аеєиіїоуюя])(иса|ч?иня|(ій)?ь?[нчщ]?и(к|ця)|чка|ька)$/)): '$1', // :f:
             
             (Pattern.compile(/(.{2,}?)([дзлнстчш])\2я$/)): '$1$2',
             (Pattern.compile(/(.{2,}?[аеєиіїоуюя])(ня)$/)): '$1н',
@@ -308,25 +336,28 @@ class Stemmer {
             (Pattern.compile(/(.{2,}?)(к)а$/)): '$1$2',
             (Pattern.compile(/(.{3,}?)ичок$/)): '$1',
             
-            (Pattern.compile(/((ен)?(?<![аеєиіїоуюя])ь?[нчщ]?ик|ин|ич|ок|ко|ія|а|ор|няк|ій|ий|ит/
-                    +/|ья|ь|ив|вля|ця|ьо)$/)): '',
-            (Pattern.compile(/(.{2,}?)(ів|ент|є[нмрф]|ант|[аеоуюя]й/
-                + /|[бвгґджзйклмнпртсхфчшь][бвгґджзклмнпрстфхцчшщ]|[аеуиіїоуюя][бвдгґзжнклмнпрстфцчхшщ])$/)): '$1$2',
+            (Pattern.compile(/((ен)?(?<![аеєиіїоуюя])ь?[нчщ]?ик|ин|ич|ок|ко|ія|а|ор|няк|[иі]й|ит|ья|ь|ив|вля|ця|ьо)$/)): '',
+            (Pattern.compile(/(.{2,}?)(ів|ент|є[нмрф]|ант|[аеиоуюя]й)$/)): '$1$2',
+            (Pattern.compile(/(.{2,}?)([бвгґджзйклмнпртсхфчшь][бвгґджзклмнпрстфхцчшщ]|[аеуиіїоуюя][бвдгґзжнклмнпрстфцчхшщ])$/)): '$1$2',
 
 //            (Pattern.compile(/(.{1,}?[^аеєиіїоуюя])(ка)$/)): '$1',
                 ],
 //        " noun", [Pattern.compile(/(ен)$/), '$1'],
         )
     final Pattern NON_PREFIXES_PATTERN = Pattern.compile(/^($noprefixes)/)
-    final PREFIXES_PATTERN = Pattern.compile(/^($prefixes)/)
+    final Pattern PREFIXES_PATTERN = Pattern.compile(/^($prefixes)/)
     
     int inflCnt = 0
     List<String> todo = []
-    
-//    @CompileStatic
+
+    @CompileStatic
     String findStem(List<String> lines) {
+        findStem(lines[0])
+    }
         
-        def line1 = lines[0]
+    @CompileStatic
+    String findStem(String line1) {
+        
         if( (line1 =~ /-|abbr|&pron|alt|arch|bad|slang|subst|[lp]name|comp[cs]|:nv|:ns/) )
             return null
 
@@ -341,9 +372,9 @@ class Stemmer {
         inflCnt++
         
 //        lines = lines.collect{ it.replaceFirst(/ *#.*/, '') }
-        line1 = lines[0].replaceFirst(/ *#.*/, '')
+        line1 = line1.replaceFirst(/ *#.*/, '')
 
-        def w = line1.replaceFirst(/ .*/, '')
+        String w = line1.replaceFirst(/ .*/, '')
         if( w in props )
             return null
             
@@ -358,7 +389,7 @@ class Stemmer {
         if( ! NON_PREFIXES_PATTERN.matcher(w).find() ) {
             def m = PREFIXES_PATTERN.matcher(w)
             if( m ) {
-                pref = m[0][0]
+                pref = m.group(0)
                 w = m.replaceFirst('')
             }
         }
