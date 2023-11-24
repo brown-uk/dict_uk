@@ -8,6 +8,7 @@ import java.nio.file.StandardCopyOption;
 import java.util.concurrent.CompletableFuture
 import java.util.regex.Matcher
 import java.util.regex.Pattern
+import java.util.stream.Collectors
 
 import groovy.transform.CompileStatic
 
@@ -17,6 +18,8 @@ class Stemmer {
     Map<String, Set<String>> rootsPref = [:].withDefault { [] as Set }.asSynchronized()
     Map<String, String> preStems = [:]
     Set<String> props = [] as Set
+    Set<String> lemmas = [] as Set
+    Set<String> lemmasPl = [] as Set
     def baseDir = new File(".").absolutePath.replaceFirst(/(dict_uk).*/, '$1')
     Map<String, Integer> counts = [:].withDefault { 0 }
     
@@ -33,6 +36,7 @@ class Stemmer {
         Set<String> stemSet = new HashSet<>()
         new File(getClass().getResource('stems.txt').toURI()).readLines()
             .each { line ->
+                if( ! line ) return
                 try {
                     def (stem, words) = line.split(/ - /)
                     if( stem in stemSet ) { 
@@ -68,11 +72,47 @@ class Stemmer {
         println "props: ${props.size()}: \"${props[0]}\""
     }
     
-	void findRoots() {
+    Set<String> readWords() {
         def readGeosF = CompletableFuture.supplyAsync{ readProps() }
 
         def file = new File(baseDir, "out/dict_corp_vis.txt")
+
+        Pattern discardPattern = Pattern.compile(/-|abbr|&pron|alt|arch|bad|slang|subst|[lp]name|comp[cs]|:nv/)
+
+        def allLines = file.readLines('UTF-8')
+
+        def readLemmasPl = CompletableFuture.supplyAsync{ 
+            allLines.parallelStream()
+                .filter{ line ->
+                    line =~ / noun.*:p:/ && \
+                        ! discardPattern.matcher(line).find()
+                }
+                .map { line -> line.trim().split(/ /)[0] }
+                .collect(Collectors.toSet())
+        }
+
+        def lines = allLines.parallelStream()
+            .filter { line -> 
+                if( line.startsWith(" ") ) return false
+                line = line.replaceFirst(/#.*/, '')
+                if( discardPattern.matcher(line).find() )
+                    return false
+                return true
+            }
+            .toList()
         
+        lemmas = lines.collect { line -> line.split(/ /)[0] } as Set
+        readGeosF.whenComplete{}
+        lemmasPl = readLemmasPl.get()
+        println "lemmas: ${lemmas.size()}, lemmasPl: ${lemmasPl.size()}"
+        assert "витрати" in lemmasPl
+        
+        lines
+   }
+    
+	void findRoots() {
+        
+        def file = new File(baseDir, "out/dict_corp_vis.txt")
 		def dir = Paths.get(file.getAbsolutePath())
 		def inFile = dir.resolve(file.name)
         def outFile = new File(file.name + ".roots")
@@ -82,11 +122,8 @@ class Stemmer {
         def outFileBad = new File(file.name + ".roots.bad")
         outFileBad.text = ''
 
-		def lines = file.readLines('UTF-8')
-            .findAll { line -> ! line.startsWith(" ") }
-            
-        readGeosF.whenComplete{}
-        
+        def lines = readWords()
+         
         lines.parallelStream().forEach { line ->
                 findStem(line)
             }
@@ -125,9 +162,13 @@ class Stemmer {
 	}
 
     static String noprefixes = /автор|автоміст|автоген|авіарій|авіатор|антипод|міністер|мотор|спеціаліст|супереч|суперни[кц]/
+    
+    // TODO: без, багато
+    static String prefixesBaseStrong = /без|багато|багато|біло|без/
+    static final Pattern PREFIX_REMOVE_STRONG = Pattern.compile(/^($prefixesBaseStrong)/)
 
     // TODO: над, про, фін, пра
-    static String prefixesBase = /авіа|авто|а[ву]діо|агро|аеро|аква|анти|багато|біло|біо|бого/ \
+    static String prefixesBase = /авіа|авто|а[ву]діо|агро|аеро|аква|анти|біо|бого/ \
         + /|важко|велико|вело|вібро|взаємо|високо|відео|віце|внутрішньо|водо|вугле|вузько/ \
         + /|газо|гідро|гіро|гіпер|держ|еко(?!ном|лог)|екс(?!порт|нен|ном|тен[зс]|тер|тра|трем)|електро|етно|енерго/ \
         + /|євро|загально|звуко|зоо|квазі|кібер|кіно|контр|коротко|легко|лже/ \
@@ -135,10 +176,14 @@ class Stemmer {
         + /|навколо|нано|напів'?|нафто|низько|ново|одно|пара|парт|пізньо|після|пневмо|полі|пост|псевдо|проти|прото/ \
         + /|радіо|ранньо|рівно|різно|само|середньо|слабк?о|соц(іо)?|спец|спів|старо|стерео|суб|теле|тепло|термо|тех|тонко|турбо/ \
         + /|ультра|фіто|фото|чорно/ \
-        + /|нео(?=[аеєиіїоуюя])|супер|двох?|тр(и|ьох)|чотир(и|ьох)|п'ят(и|ьох)|шести|семи|восьми|дев'яти|без|не/
+        + /|нео(?=[аеєиіїоуюя])|супер|двох?|тр(и|ьох)|чотир(и|ьох)|п'ят(и|ьох)|шести|семи|восьми|дев'яти|не/
     static String prefixes = "все|усе|$prefixesBase"
     static final Pattern PREFIX_REMOVE = Pattern.compile(/^($prefixesBase)/)
 
+    static String prefixesBaseSoft = /агіт|адмін|арт|архі|броне|веб|вет|вибухо|вітро|вогне|волого|все|гастро|геліо|гемо|гео|гетеро|гіпо/
+    static final Pattern PREFIX_REMOVE_SOFT = Pattern.compile(/^($prefixesBaseSoft)'?/)
+    
+    
     static String preReg = /^($prefixes)?+/
     
 //    static Pattern PREFIX = Pattern.compile(/^(по|над|про|за)/)
@@ -150,8 +195,10 @@ class Stemmer {
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(?<!сол)овіти(ся)?$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])н?ішати(ся)?$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])онути(ся)?$/)): '$1',
+            (Pattern.compile(/(.{3,}?)([вм])л([яи]|юва)ти(ся)?$/)): '$1$2',
+//            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])янути(ся)?$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])[у]ювати(ся)?$/)): '$1',
-            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(і)ювати(ся)?$/)): '$1$2й',
+            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])([іояае])ювати(ся)?$/)): '$1$2й',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])ствувати(ся)?$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(([иі]з)?(ов)?ува|л?юва|ну|[аеєиіїоуюя])?ти(ся)?$/)): '$1'
             ],
@@ -162,6 +209,7 @@ class Stemmer {
             (Pattern.compile(/(креац|над)ій([кн]ий)$/)): '$1',
             (Pattern.compile(/((?<!бо)реал)ьний$/)): '$1',
             (Pattern.compile(/([нгрх])еальний$/)): '$1',
+//            (Pattern.compile(/(мебл|магл)ьований/)): '$1',
             (Pattern.compile(/(бу|секре|компози|зекуц|бі|ди|ститу|моц)(ційний|торний)$/)): '$1т',
             (Pattern.compile(/((?<!нс)тру)(юва(ль)?ний|й(ова)?ний)$/)): '$1й',
             (Pattern.compile(/(.{3})((ов)?о|е)подібний$/)): '$1',
@@ -170,14 +218,17 @@ class Stemmer {
 
             (Pattern.compile(/(.{3})(?<!гот)овчий$/)): '$1',
             (Pattern.compile(/(.{3})уш(ков|ечн|н)ий?$/)): '$1',
-            (Pattern.compile(/(.{3})нісний?$/)): '$1',
-            
+            (Pattern.compile(/(.{3})(нісний|ущий)$/)): '$1',
+//            (Pattern.compile(/(.{3})ярний$/)): '$1',
+//            (Pattern.compile(/(.{3})атичний$/)): '$1',
+            (Pattern.compile(/(.{3})час?тий$/)): '$1',
+
             (Pattern.compile(/(.{3})ив(істський|істичний|ізова?ний)$/)): '$1',
             (Pattern.compile(/(ст)иційний|(?<![аеєиіїоуюя])ці(йний|оністський)$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<!міт)[іи]нг(ов(ан)?ий|увальний)$/)): '$1',
             (Pattern.compile(/(.{3,}?)[і]євий$/)): '$1',
             (Pattern.compile(/(.{3,}?)(ю[щч]ий)$/)): '$1',
-            (Pattern.compile(/(.{2,}?)([іо])ян(ий)$/)): '$1$2й',
+            (Pattern.compile(/(.{2,}?)([іоае])[яє]н(ий)$/)): '$1$2й',
             (Pattern.compile(/(.{3,}?)(л)яційний$/)): '$1$2',
             (Pattern.compile(/(.{3,}?)[уі][ая](льний|тивний|ційний)$/)): '$1',
             (Pattern.compile(/(.{3,}?)[ауіе]їст(ичний|ський)$/)): '$1',
@@ -209,12 +260,14 @@ class Stemmer {
             (Pattern.compile(/(.{3,}?)(((ер)?[іи]з)?[а]ційний|ез(н|ійн|[іи]чн)ий|(ист)?ійний|[іия]стий|(а?[іїи]ст)?[іи][вч]ний|лив(еньк)?ий)$/)): '$1',
             
             (Pattern.compile(/(.{3,}?)(ерний|ейний|ерський|[еі]йський|иний)$/)): '$1',
-            (Pattern.compile(/(.{3,}?)ерий$/)): '$1',
+            (Pattern.compile(/(.{3})ерий$/)): '$1',
             (Pattern.compile(/(.{3,}?)(((?<![аеєиіїоуюя])н)?([ію]сінький|(ат)?(ес)?енький))$/)): '$1', // дивнесенький
             (Pattern.compile(/(.{3,}?)((?<![аеєиіїоуюя])н(ений|івський)|івницький)$/)): '$1',
             (Pattern.compile(/(.{3,}?)((?<![аеєиіїоуюя])л)?ений$/)): '$1',
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])лий$/)): '$1', // (еньк|ов)? - too many FP
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])ев(еньк|уват)?ий$/)): '$1',
+
+            (Pattern.compile(/(.{3})(?<![аеєиіїоуюя])(?<!м'|сц|слов')ян(ськ|ков)?ий$/)): '$1',
             
             (Pattern.compile(/(.{3,}?)(аний|((?<![аеєиіїоуюя])к|ь)?овий)$/)): '$1',
             (Pattern.compile(/(.{3,}?)(ік)?(?<!ом)овний$/)): '$1',
@@ -239,17 +292,27 @@ class Stemmer {
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(івна|чук)$/)): '$1',
 //            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])(ант(ка)?|ативність|аційність)$/)): '$1',
             
+            (Pattern.compile(/(.{3,}?)нша$/)): '$1н',
             (Pattern.compile(/(.{3,}?)ю([щч]ість|ча|чок|ченя|чисько|чиння|чище|чник|ччя)$/)): '$1',
 //            (Pattern.compile(/(ор(юв)?)ане$/)): '$0',
             (Pattern.compile(/(а)(не)$/)): '', // спродане
+//            (Pattern.compile(/(.{3})ема$/)): '$1',
             (Pattern.compile(/(.{3,}?)((ени)цтво|ество|еньк[ао]|енко)$/)): '$1',
             (Pattern.compile(/(.{3,}?)у(ація|йованість|ювання|атор(ка)?)$/)): '$1',
 
             (Pattern.compile(/(.{3,}?)(?<!міт)[іи]нг(іст(ка)?|ізм|ування)?$/)): '$1',
             (Pattern.compile(/(?<![аеєиіїоуюя])ціон(іст(ка)?|ізм)$/)): '',
+            (Pattern.compile(/(.{3})(ущість)$/)): '$1',
+            (Pattern.compile(/(.{3})(?<![аеєиіїоуюя])(ськість|ська)$/)): '$1',
 //            (Pattern.compile(/(.{3,}?)изна$/)): '$1',
 
-            (Pattern.compile(/(.{3,}?)уш(еч)?ка$/)): '$1',
+            (Pattern.compile(/(.{3})час?тість$/)): '$1',
+            
+            // :ns
+            (Pattern.compile(/(.{2})(?<![аеєиіїоуюя])([ое]ньки|чики|[іи]вки|[аи]?ки|[ео]чки|(ин)?и|енята|ц?ята)$/)): '$1',
+            
+            (Pattern.compile(/(.{3})(уш(еч)?ка|анина|икиня|(?<![аеєиіїоуюя])нішання)$/)): '$1', // |ун(чик|ець|ка|ство)
+//            (Pattern.compile(/(.{3})ат$/)): '$1',
             
             // вл/ея
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])[лн][ея](ність)$/)): '$1',
@@ -263,11 +326,12 @@ class Stemmer {
             
             // й
             (Pattern.compile(/(.{2,}?)[єї](ння|стість)$/)): '$1й',
-            (Pattern.compile(/(.{2,}?)([іо])ян(ня|ість|(оч)?ка|ин)$/)): '$1$2й',
+            (Pattern.compile(/(.{2,}?)([іоае])[яє]н(ня|ість|(оч)?ка|ин)$/)): '$1$2й',
             (Pattern.compile(/(.{2})([оеа])[ую]ва(ння|ність)$/)): '$1$2й',
 
-            (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])н[ую]вач$/)): '$1',
-
+            (Pattern.compile(/(.{3})(?<![аеєиіїоуюя])н[ую]вач$/)): '$1',
+            (Pattern.compile(/(.{3})(?<![аеєиіїоуюя])айло$/)): '$1',
+            
             (Pattern.compile(/(.{2})ея$/)): '$1ей',
 
             (Pattern.compile(/(.{3,}?)(?<![аеєиіїоуюя])чин((онь|оч)?к)?а$/)): '$1',
@@ -275,7 +339,8 @@ class Stemmer {
             (Pattern.compile(/(.{3})(?<![аеєиіїоуюя])[лі]юва(ння|(ль)?ність)$/)): '$1',
             
             (Pattern.compile(/(.{3,}?)([лмн])(?<!пл)ічка$/)): '$1$2',
-
+            (Pattern.compile(/(.{3})(?<![аеєиіїоуюя])(?<!м'|сц|слов')ян((оч)?ка|иця|ик|ин|ість|ство)$/)): '$1',
+            
             (Pattern.compile(/(.{3})(?<![аеєиіїоуюя])((ів)?н)?и[сц]тво$/)): '$1',
             // ив
             (Pattern.compile(/(.{3})(?<![аеєиіїоуюя])ив(ність|іст(ка)?|істика|ізм|ізація|ізатор(ка)?|чик)$/)): '$1',
@@ -336,7 +401,7 @@ class Stemmer {
             (Pattern.compile(/([еиоудзжлнртсшч])я$/)): '$1',
 
             (Pattern.compile(/(.{2})([вдзгжклмнрстхцчшщ])[ео]$/)): '$1$2',
-
+            
             (Pattern.compile(/(.{2})(?<![аеєиіїоуюя])(к)а$/)): '$1',
             (Pattern.compile(/(.{2})(к)а$/)): '$1$2',
             (Pattern.compile(/(.{3})ичок$/)): '$1',
@@ -359,9 +424,6 @@ class Stemmer {
         
     @CompileStatic
     String findStem(String line1) {
-        
-        if( (line1 =~ /-|abbr|&pron|alt|arch|bad|slang|subst|[lp]name|comp[cs]|:nv|:ns/) )
-            return null
 
 //        if( lines[0] =~ /^((що)?як)?най.*? adj/ )
 //            return null
@@ -441,19 +503,19 @@ class Stemmer {
             root = w
         }
         root = pref + root
-        addRoot(root, origW, false)
+        root = addRoot(root, origW, false)
 
 //        println "$line1 => $root"
         return root
     }
 
     @CompileStatic
-    private void addRoot(String root, String origW, boolean prestem) {
+    private String addRoot(String root, String origW, boolean prestem) {
         if( root =~ /['ь]$/ ) {
             root = root[0..-2]
         }
 
-        def root2 = !prestem ? removePrefixes(root) : root
+        def root2 = !prestem ? removePrefixes(root, origW) : root
         def prefixRemoved = root2.take(3) != origW.take(3)
 
         if( ! prestem ) {
@@ -479,13 +541,40 @@ class Stemmer {
         else {
             roots[root2Lower] << origW
         }
+        return root2Lower
     }
 
     @CompileStatic
-    private String removePrefixes(String root) {
+    private String removePrefixes(String root, String origW) {
         if( ! (/^($noprefixes)/ =~ root ) ) {
-//        if( ! (NON_PREFIXES_PATTERN.matcher(root).find()) ) {
-            root = PREFIX_REMOVE.matcher(root).replaceFirst('')
+            def m = PREFIX_REMOVE_STRONG.matcher(root)
+            if( m ) {
+                root = m.replaceFirst('')
+            }
+            else {
+                m = PREFIX_REMOVE.matcher(origW)
+                if( m ) {
+                    def w2 = m.replaceFirst('')
+                    if( w2.length() > 2 ) {
+                        if( w2 in lemmas || (w2.endsWith("и") && w2 in lemmasPl) ) {
+                            m = PREFIX_REMOVE.matcher(root)
+                            root = m.replaceFirst('')
+                        }
+                    }
+                }
+                else {
+                    m = PREFIX_REMOVE_SOFT.matcher(origW)
+                    if( m ) {
+                        def w2 = m.replaceFirst('')
+                        if( w2.length() > 2 ) {
+                            if( w2 in lemmas || (w2.endsWith("и") && w2 in lemmasPl) ) {
+                                m = PREFIX_REMOVE_SOFT.matcher(root)
+                                root = m.replaceFirst('')
+                            }
+                        }
+                    }
+                }
+            }
         } 
         return root
     }
