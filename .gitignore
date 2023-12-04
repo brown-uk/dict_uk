@@ -15,3 +15,4 @@ _work
 /build_test/
 /build_
 *.bz2
+dict_corp_vis.txt.roots*
