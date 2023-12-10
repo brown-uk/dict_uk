@@ -2,8 +2,11 @@ plugins {
     id 'java'
 //    id 'groovy'
     id 'eclipse'
+    id 'base'
     id 'maven-publish'
     id 'signing'
+
+    id 'org.barfuin.gradle.taskinfo' version '2+'
 }
 
 String versionFile="${projectDir}/../../VERSION"
@@ -14,9 +17,17 @@ println "Version: $version"
 group = 'ua.net.nlp'
 
 String artifactId = 'morfologik-ukrainian-lt'
-archivesBaseName = artifactId
 
-sourceCompatibility = 1.8
+base {
+    archivesName = artifactId
+}
+
+project.ext.javaVersion = JavaVersion.VERSION_11
+
+java {
+    sourceCompatibility = project.javaVersion
+    targetCompatibility = project.javaVersion
+}
 
 String langCode="uk"
 
@@ -58,9 +69,29 @@ dependencies {
     provided 'org.languagetool:languagetool-tools:' + ltToolsVersion
 }
 
+/*
+task copyVersion(type: Copy, dependsOn: processResources) {
+    from(file(versionFile))
+    into(new File(processResources.destinationDir, packageDir))
+}
+
+copyVersion.mustRunAfter processResources
+*/
 
 
-task tagList(type: Exec) {
+processResources {
+    inputs.file versionFile
+    excludes ["**/*Builder*.txt"]
+
+    doLast{
+       copy {
+             from versionFile
+             into new File(destinationDir, packageDir)
+       }
+    }
+}
+
+task tagList(type: Exec, dependsOn: processResources) {
     def srcDict="${inputDir}/$inputDictFile"
     def outFile="${outResDir}/ukrainian_tags.txt"
 
@@ -95,7 +126,7 @@ task prepareDict(type: Exec) {
 }
 
 
-task posDict(type: JavaExec, dependsOn: prepareDict) {
+task posDict(type: JavaExec, dependsOn: [prepareDict, processResources]) {
     def outputDict="${outResDir}/ukrainian.dict"
 
     inputs.files tasks.prepareDict.outputs
@@ -112,7 +143,7 @@ task posDict(type: JavaExec, dependsOn: prepareDict) {
 }
 
 
-task synthDict(type: JavaExec, dependsOn: prepareDict) {
+task synthDict(type: JavaExec, dependsOn: [prepareDict, processResources]) {
     def outputDict="${outResDir}/ukrainian_synth.dict"
 
     inputs.files tasks.prepareDict.outputs.files
@@ -148,7 +179,7 @@ task prepareSpellWords(type: Exec) {
 }
 
 
-task spellDict(type: JavaExec, dependsOn: prepareSpellWords) {
+task spellDict(type: JavaExec, dependsOn: [prepareSpellWords, processResources]) {
     def spellOutDir="${outResDir}/hunspell"
     def outFile="${spellOutDir}/uk_UA.dict"
     def freqFile="src/main/data/uk_wordlist.xml"
@@ -171,8 +202,9 @@ task spellDict(type: JavaExec, dependsOn: prepareSpellWords) {
     }
 }
 
-
-
+// 
+// Rules
+//
 
 task createOutRulesDir {
   doLast() {
@@ -217,7 +249,7 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
 		}
 		
 		new File(outFile).text = headText + outLines.join("\n") + '\n'
-		println "Wrote ${outLines.size} replacements"
+		println "Wrote ${outLines.size()} replacements"
 	}
 
 }
@@ -243,7 +275,7 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
 '''
         def outLines = getReplacements(srcDir, srcFiles, { ! it.contains('ua_1992')})
 
-        println "Wrote ${outLines.size} replacements"
+        println "Wrote ${outLines.size()} replacements"
         new File(outFile).text = headText + outLines.join('\n') + "\n"
     }
 }
@@ -299,7 +331,7 @@ List<String> getReplacements(String srcDir, List<File> files, Closure filter) {
 }
 
 
-task createRenamedReplacementDict(dependsOn: createOutRulesDir) {
+task createRenamedReplacementDict(dependsOn: [processResources, createOutRulesDir]) {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outRulesDir}/replace_renamed.txt"
     def allFiles = Arrays.asList(new File(srcDir).listFiles())
@@ -337,15 +369,13 @@ task createRenamedReplacementDict(dependsOn: createOutRulesDir) {
 		java.text.Collator coll = java.text.Collator.getInstance(new Locale("uk", "UA"))
         Collections.sort(outLines, coll)
 		
-        println "Wrote $outLines.size replacements"
+        println "Wrote ${outLines.size()} replacements"
 		new File(outFile).text = headText + outLines.join('\n') + "\n"
 	}
-
 }
 
 
-
-task caseGovernmentDict() {
+task caseGovernmentDict(dependsOn: processResources) {
     def srcDir="${inputDir}/../data/dict"
     def outFile="${outResDir}/case_government.txt"
     def srcFiles=["base.lst", "twisters.lst", "invalid.lst", "invalid-compound.lst", 
@@ -391,23 +421,12 @@ task caseGovernmentDict() {
         coll.setStrength(java.text.Collator.IDENTICAL)
         coll.setDecomposition(java.text.Collator.NO_DECOMPOSITION)
 
-        println "Wrote $outLines.size lines"
+        println "Wrote ${outLines.size()} lines"
         new File(outFile).text = outLines.toSorted(coll).join('\n') + '\n'
     }
 }
 
-
-task helperDicts (dependsOn: [caseGovernmentDict, createReplacementDict, createSoftReplacementDict, createNewSpellingReplacementDict])
-
-
-task deployDictToLT(type: Copy, dependsOn: resources) {
-    from outResDir
-    into "${languagetoolResDestDir}"
-
-    includeEmptyDirs = false
-
-//    with dataContent
-}
+task buildLtDict(dependsOn: [posDict, synthDict, tagList, spellDict])
 
 
 
@@ -423,7 +442,7 @@ task deployReplacements(type: Copy, dependsOn: [createReplacementDict, createSof
     includeEmptyDirs = false
 }
 
-task deployCaseGovernment(type: Copy, dependsOn: caseGovernmentDict) {
+task deployCaseGovernment(type: Copy, dependsOn: [caseGovernmentDict, processResources]) {
     inputs.files caseGovernmentDict, "${inputDir}/derivats.txt"
 
     doFirst() {
@@ -437,13 +456,24 @@ task deployCaseGovernment(type: Copy, dependsOn: caseGovernmentDict) {
     includeEmptyDirs = false
 }
 
+task helperDicts (dependsOn: [caseGovernmentDict, createReplacementDict, createSoftReplacementDict, createNewSpellingReplacementDict])
+
 task deployHelperDictsToLT(dependsOn: [deployReplacements, deployCaseGovernment])
 
-task deployLtDict(dependsOn: [publishToMavenLocal, deployHelperDictsToLT])
+
+task deployLtDict(type: Copy, dependsOn: [publishToMavenLocal, deployHelperDictsToLT] ) {
+    from outResDir
+    into "${languagetoolResDestDir}"
+
+    includeEmptyDirs = false
+
+//    with dataContent
+}
 
 
 
 jar {
+    dependsOn buildLtDict
     inputs.file versionFile
 
     manifest {
@@ -457,12 +487,14 @@ jar {
     include 'org/languagetool/**/*.info'
     include 'org/languagetool/**/README*'
     include 'org/languagetool/**/*tags*.txt'
+    include 'org/languagetool/**/VERSION'
+    exclude 'ua/**'
 
     includeEmptyDirs false
 }
 
 
-processResources.dependsOn(posDict, synthDict, tagList, spellDict)
+//processResources.dependsOn(posDict, synthDict, tagList, spellDict)
 compileJava.enabled = false
 
 
@@ -517,7 +549,7 @@ publishing {
     }
 
     repositories {
-//        mavenLocal()
+        mavenLocal()
 
         maven {
             credentials {
