@@ -22,10 +22,8 @@ class StemmerTest {
         assertEquals "вціл", stemmer.findStem(["вцілілість вцілілість noun:inanim:n:v_naz"])
         assertEquals "еволюц", stemmer.findStem(["еволюціоністка еволюціоністка noun:anim:f:v_naz"])
         assertEquals "віст", stemmer.findStem(["вістовець вістовець noun:anim:m:v_naz"])
-        assertEquals "спал", stemmer.findStem(["газоспалювальний газоспалювальний adj:m:v_naz"])
         assertEquals "біонік", stemmer.findStem(["біоніка біоніка noun:inanim:f:v_naz"])
         assertEquals "контрар", stemmer.findStem(["контрарний контрарний adj:m:v_naz"])
-        assertEquals "кейнсіан", stemmer.findStem(["неокейнсіанець неокейнсіанець noun:anim:m:v_naz"])
         assertEquals "вріз", stemmer.findStem(["врізувальний врізувальний adj:m:v_naz"])
         assertEquals "ворон", stemmer.findStem(["вороненький вороненький adj:m:v_naz"])
         assertEquals "ворон", stemmer.findStem(["вороненький вороненький noun:anim:m:v_naz"])
@@ -45,16 +43,23 @@ class StemmerTest {
         //        assertEquals "стел", Roots.findRoot("простелити /v1")
         assertEquals "лікар", stemmer.findStem(["лікарський лікарський adj:m:v_naz"])
         assertEquals "морож", stemmer.findStem(["морожений морожений adj:m:v_naz"])
-        
         assertEquals "дів", stemmer.findStem(["дівка дівка noun:anim:f:v_naz"])
         assertEquals "канад", stemmer.findStem(["канадійка канадійка noun:anim:f:v_naz"])
 
         // prefixes
-        assertEquals "плакат", stemmer.findStem(["агітплакат агітплакат noun:inanim:n:v_naz"])
-        assertEquals "мит", stemmer.findStem(["автомито автомито noun:inanim:n:v_naz"])
-        assertEquals "імпер", stemmer.findStem(["авіаімперія авіаімперія noun:inanim:f:v_naz"])
-        assertEquals "файл", stemmer.findStem(["авдіофайл авдіофайл noun:inanim:m:v_naz"])
-        
+        if( Stemmer.REMOVE_PREFIXES ) {
+            assertEquals "спал", stemmer.findStem(["газоспалювальний газоспалювальний adj:m:v_naz"])
+            assertEquals "кейнсіан", stemmer.findStem(["неокейнсіанець неокейнсіанець noun:anim:m:v_naz"])
+            assertEquals "плакат", stemmer.findStem(["агітплакат агітплакат noun:inanim:n:v_naz"])
+            assertEquals "мит", stemmer.findStem(["автомито автомито noun:inanim:n:v_naz"])
+            assertEquals "імпер", stemmer.findStem(["авіаімперія авіаімперія noun:inanim:f:v_naz"])
+            assertEquals "файл", stemmer.findStem(["авдіофайл авдіофайл noun:inanim:m:v_naz"])
+            assertEquals "щит", stemmer.findStem(["щитоподібний щитоподібний adj:m:v_naz"])
+        }
+        else {
+            assertEquals "авдіофайл", stemmer.findStem(["авдіофайл авдіофайл noun:inanim:m:v_naz"])
+            assertEquals "щитоподіб", stemmer.findStem(["щитоподібний щитоподібний adj:m:v_naz"])
+        }
     }
     
     @Test

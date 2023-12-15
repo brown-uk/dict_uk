@@ -14,6 +14,8 @@ import groovy.transform.CompileStatic
 
 
 class Stemmer {
+    public static final boolean REMOVE_PREFIXES = false
+    
     Map<String, Set<String>> roots = [:].withDefault { [] as Set }.asSynchronized()
     Map<String, Set<String>> rootsPref = [:].withDefault { [] as Set }.asSynchronized()
     Map<String, String> preStems = [:]
@@ -49,6 +51,21 @@ class Stemmer {
                         stemSet << stem 
                     }
 
+                    if( ! REMOVE_PREFIXES ) {
+                        def parts = words.split(/  +/)
+                        if( parts.length > 1 ) {
+                            words = parts[0]
+                            def wordsWithPrefix = parts[1]
+                            
+                            wordsWithPrefix.split(/ /).findAll{ it }.each { w ->
+                                if( w in preStems ) println "duplicate word: $w"
+                                int idx = w.indexOf(stem)
+                                def stem2 = w[0..idx] + stem
+                                preStems[w] = stem2
+                            }
+                        }
+                    }
+                    
                     words.split(/ /).findAll{ it }.each { w ->
                         if( w in preStems ) println "duplicate word: $w"
                         preStems[w] = stem 
@@ -219,7 +236,10 @@ class Stemmer {
 //            (Pattern.compile(/(мебл|магл)ьований/)): '$1',
             (Pattern.compile(/(бу|секре|компози|зекуц|бі|ди|ститу|моц)(ційний|торний)$/)): '$1т',
             (Pattern.compile(/((?<!нс)тру)(юва(ль)?ний|й(ова)?ний)$/)): '$1й',
-            (Pattern.compile(/(.{3})((ов)?о|е)подібний$/)): '$1',
+             (REMOVE_PREFIXES ?
+                 (Pattern.compile(/(.{3})((ов)?о|е)подібний$/))
+               : (Pattern.compile(/--------/))) 
+                 : '$1',
 
             (Pattern.compile(/(.{3})([нт])\2євий$/)): '$1$2',
 
@@ -300,7 +320,11 @@ class Stemmer {
             (Pattern.compile(/(буд)ова$/)): '$1',
             (Pattern.compile(/(реал)(іст(ка)?|ізм|ьність)$/)): '$1',
             (Pattern.compile(/((?<!нс)тру)(юваність|й(ова)?ність)$/)): '$1й',
-            (Pattern.compile(/(.{3})((ов)?о|е)подібність$/)): '$1',
+
+            (REMOVE_PREFIXES ?
+                (Pattern.compile(/(.{3})((ов)?о|е)подібність$/))
+                : (Pattern.compile(/--------/))) 
+                  : '$1',
 
             (Pattern.compile(/(.{3})нісність?$/)): '$1',
             (Pattern.compile(/(?<![аеєиіїоуюя])ну(тість|ття)$/)): '',
@@ -566,6 +590,9 @@ class Stemmer {
 
     @CompileStatic
     private String removePrefixes(String root, String origW) {
+        if( ! REMOVE_PREFIXES )
+            return root
+        
         if( ! (/^($noprefixes)/ =~ root ) ) {
             def m = PREFIX_REMOVE_STRONG.matcher(root)
             if( m ) {
