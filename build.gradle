@@ -142,100 +142,25 @@ task checkDups(type: JavaExec) {
     workingDir = projectDir
 }
 
-task checkAnim {
-    doLast {
-      def dictDir = file("data/dict")
-      
-      def files = dictDir.listFiles().findAll { it.name =~ /.*anim.*\.lst/ }
-      
-      def lines = files.collect { File f ->
-              f.readLines()
-              .findAll { it =~ /^[А-ЯІЇЄҐ]'?[а-яіїєґ](?!.*\/adj)/ && ! (it =~ /[.\/]<|-(фонд|фест)/) }
-          }
-          .flatten()
-          .grep { it }
-  
-      java.text.Collator coll = java.text.Collator.getInstance(new Locale("uk", "UA"));
-      coll.setStrength(java.text.Collator.IDENTICAL)
-      coll.setDecomposition(java.text.Collator.NO_DECOMPOSITION)
-  
-      println lines.toSorted(coll).join("\n")
-      println "Found ${lines.size} suspicious anim"
-    }
-  }
-  
+task checkAnim(type: JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "org.dict_uk.check.CheckAnim"
 
-task xps {
-    doLast {
-      def xps = [:].withDefault{ [] }
-      def dictDir = file("data/dict")
-      
-      def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') }
-      
-      def lines = files.collect {  it.readLines()  }.flatten() \
-          .collect { it.replaceFirst(/#.*/, '') }
-          .findAll{ it.contains(":xp") && ! it.startsWith("+cs") && ! it.startsWith('#') }
-          .collect { it
-              it.replaceAll(/^([^ ]+)\h.*?(:xp.).*/, '$1 $2')
-          }
-  
-      lines.each{ 
-          def (base, xp) = it.split(/ /)
-          xps[base] << xp 
-      }
+    workingDir = projectDir
+}  
 
-      xps.each { k,v -> v.sort() }
+task checkXps(type: JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "org.dict_uk.check.CheckXps"
 
-      xps.each { k,v -> 
-          if( v[0] != ':xp1' ) println "out of order: $k: $v"
-          else if( v.size() == 1 ) println "single: $k: $v"
-          else {
-              def dups = v.countBy{it}.grep{it.value > 1}.collect{it.key}
-              if( dups ) println "dups: $k: $dups"
-          } 
-      }
-      
-//      java.text.Collator coll = java.text.Collator.getInstance(new Locale("uk", "UA"));
-//      coll.setStrength(java.text.Collator.IDENTICAL)
-//      coll.setDecomposition(java.text.Collator.NO_DECOMPOSITION)
-  
-  }
+    workingDir = projectDir
 }
 
-task checkReplacements {
-  doLast {
-	def dictDir = file("data/dict")
-	
-	def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') || it.name.endsWith('replace.txt') }
-	
-	def replWords = files.collect { it.text.split("\n")  } \
-	    .flatten() \
-	    .findAll { it.contains(" #> ") }
-	    .collect { 
-			def repls = it.split(" #> ")[1].trim().split(/[;, \|]+/)
-			def word = it.split(' ', 2)[0]
-			if( word in repls ) {
-				println "Replacement is same as word: $word"
-			} 
-			repls
-		}
-	    .flatten()
-	    .collect { it.replaceAll(/[()]/, '').replaceFirst(/-таки$/, '') }
-	    .findAll { it =~ /[а-яіїєґ]/ }
-	    .unique().sort()
+task checkReplacements(type: JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "org.dict_uk.check.CheckReplacements"
 
-    def spellWords = new File("out/words_spell.txt").text.split('\n')
-    spellWords += new File("data/dict/slang.lst").text.split('\n').collect{ it.replaceFirst(/ .*/, '') }
-	spellWords += new File("data/dict/arch.lst").text.split('\n').collect{ it.replaceFirst(/ .*/, '') }
-	
-    println "Unique replacement words: ${replWords.size}"
-    
-    replWords.removeAll(spellWords)
-
-
-    println "Unknown:\n" + replWords.join("\n")
-    println "Total uknown: ${replWords.size}"
-  }
+    workingDir = projectDir
 }
 
 task checkSemtags(type: JavaExec){ 
@@ -243,12 +168,7 @@ task checkSemtags(type: JavaExec){
     mainClass = "org.dict_uk.check.CheckSemtags"
 
     workingDir = projectDir
-
-//    def opts = " --indent --mfl --stats --wordlist"
-//    args "--aff", "../data/affix"
-//    args "--dict", "dict"
-//    args opts.split()
-  }
+}
   
 
 task showExpandCommand {
