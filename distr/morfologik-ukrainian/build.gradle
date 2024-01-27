@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-//    id 'groovy'
+    id 'groovy'
     id 'eclipse'
     id 'base'
     id 'maven-publish'
@@ -214,47 +214,32 @@ task createOutRulesDir {
 }
 
 
-task createReplacementDict(dependsOn: createOutRulesDir) {
-    def srcDir="${inputDir}/../data/dict"
-    def outFile="$outRulesDir/replace.txt"
-
-    inputs.files "$srcDir/twisters.lst", "$srcDir/invalid.lst", "$srcDir/invalid-compound.lst", "$srcDir/invalid-auto-replace.txt", "$srcDir/subst.lst", "$srcDir/invalid-composite.lst"
-    outputs.file outFile
-
-    doLast {
-
-		def headText =
-'''# Simple replace table
+def headText =
+'''# Simple replace table%s
 # Format: word=suggestion1|suggestion2|suggestion3...
 
 '''
-		def outLines = []
-		inputs.files.each { File file ->
-			file.eachLine "UTF-8", {
-				if( it.startsWith('#') || ! it.contains(' #>') )
-					return
 
-                it = it.replaceFirst(/\s*# rv[^\s]+/, '')
-                    
-				if( file.name.contains('composite') ) {
-					it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*? - ([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)/, '$1-$2=$3')
-					outLines << it
-				}	
-				else {
-					it = it.replace(' +cs=', '')
-					it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
-					outLines << it
-				}			
-			}
-		}
-		
+import org.dict_uk.morfologik.Replacements
+
+task createReplacementDict(dependsOn: createOutRulesDir) {
+    def srcDir="${inputDir}/../data/dict"
+    def outFile="$outRulesDir/replace.txt"
+    def allFiles = Arrays.asList(new File(srcDir).listFiles())
+    def srcFiles = allFiles.findAll{ it.name =~ /(twisters|invalid|subst).*\.lst/ }
+
+    inputs.files srcFiles
+    outputs.file outFile
+
+    
+    doLast {
+        def outLines = Replacements.getReplacements(srcDir, srcFiles, { it.contains(' #>') && ! it.contains('ua_1992')})
+        
 		new File(outFile).text = headText + outLines.join("\n") + '\n'
 		println "Wrote ${outLines.size()} replacements"
 	}
 
 }
-
-
 
 task createSoftReplacementDict(dependsOn: createOutRulesDir) {
     def srcDir="${inputDir}/../data/dict"
@@ -267,16 +252,10 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
 
 
     doLast {
+        def outLines = Replacements.getReplacements(srcDir, srcFiles, { it.contains(' #> ') && ! it.contains('ua_1992')})
 
-        def headText =
-'''# Simple replace table for soft suggestions
-# Format: word=suggestion1|suggestion2|suggestion3...
-
-'''
-        def outLines = getReplacements(srcDir, srcFiles, { ! it.contains('ua_1992')})
-
-        println "Wrote ${outLines.size()} replacements"
-        new File(outFile).text = headText + outLines.join('\n') + "\n"
+        println "Wrote ${outLines.size()} soft replacements"
+        new File(outFile).text = String.format(headText, " for soft suggestions") + outLines.join('\n') + "\n"
     }
 }
 
@@ -293,41 +272,12 @@ task createNewSpellingReplacementDict(dependsOn: createOutRulesDir) {
     inputs.files srcFiles
     outputs.file outFile
 
-
     doLast {
+        def outLines = Replacements.getReplacements(srcDir, srcFiles, { it.contains(' #> ') && it.contains('ua_1992') })
 
-        def headText =
-'''# Simple replace table for 2019 spelling suggestions
-# Format: word=suggestion1|suggestion2|suggestion3...
-
-'''
-        def outLines = getReplacements(srcDir, srcFiles, {it.contains('ua_1992')})
-
-        println "Wrote ${outLines.size} replacements"
-        new File(outFile).text = headText + outLines.join('\n') + "\n"
+        println "Wrote ${outLines.size()} ua_2019 replacements"
+        new File(outFile).text = String.format(headText, " for 2019 spelling suggestions") + outLines.join('\n') + "\n"
     }
-}
-
-List<String> getReplacements(String srcDir, List<File> files, Closure filter) {
-    def outLines = []
-
-    files.each{ srcFile ->
-        def rvLines = new File("$srcDir/$srcFile.name").readLines()
-        .findAll {
-            ! it.startsWith('#') && it.contains(' #> ') && filter(it)
-        }.collect{
-            it = it.replace(' +cs=', '')
-            it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#> *(.*)(#ok:.*)?/, '$1=$2')
-            it = it.replaceFirst(/ *# rv_...(\|rv_...)* */, '')
-        }
-
-        outLines.addAll(rvLines)
-    }
-
-    java.text.Collator coll = java.text.Collator.getInstance(new Locale("uk", "UA"))
-    Collections.sort(outLines, coll)
-
-    outLines
 }
 
 
@@ -340,37 +290,11 @@ task createRenamedReplacementDict(dependsOn: [processResources, createOutRulesDi
     inputs.files srcFiles
     outputs.file outFile
 
-
-    def headText =
-'''# Simple replace table for soft suggestions
-# Format: name=replacemet|(optional) explanation
-
-'''
     doLast {
-		def outLines = []
-
-		srcFiles.each{ File srcFile ->
-			def rvLines = new File("$srcDir/$srcFile.name").text
-			    .split('\n')
-			    .findAll {
-                    ! it.startsWith('#') && it.contains(' #>> ')
-			    }.collect{
-                    if( srcFile.name.contains('composite') ) {
-                        it = it.replaceFirst(/ \/.* - /, '-')
-                    }
-//                    it = it.replace(' +cs=', '')
-                    it = it.replaceFirst(/^([а-яіїєґА-ЯІЇЄҐ'-]+).*#>> *(.*)(#ok:.*)?/, '$1=$2')
-                    it = it.replaceFirst(/ *# rv_...(\|rv_...)* */, '')
-			    }
-
-			outLines.addAll(rvLines)
-		}
-
-		java.text.Collator coll = java.text.Collator.getInstance(new Locale("uk", "UA"))
-        Collections.sort(outLines, coll)
-		
-        println "Wrote ${outLines.size()} replacements"
-		new File(outFile).text = headText + outLines.join('\n') + "\n"
+        def outLines = Replacements.getReplacements(srcDir, srcFiles, { it.contains(' #>> ')})
+        
+        println "Wrote ${outLines.size()} rename replacements"
+		new File(outFile).text = String.format(headText, " for toponim renaming") + outLines.join('\n') + "\n"
 	}
 }
 
