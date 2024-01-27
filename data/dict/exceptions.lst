@@ -270,6 +270,23 @@
 матерями мати noun:anim:p:v_oru
 матерях мати noun:anim:p:v_mis
 
+мати-одиначка мати-одиначка noun:anim:f:v_naz
+мати-одиначко мати-одиначка noun:anim:f:v_kly
+матір-одиначка мати-одиначка noun:anim:f:v_naz:rare
+матері-одиначки мати-одиначка noun:anim:f:v_rod
+матері-одиначці мати-одиначка noun:anim:f:v_dav
+мати-одиначка мати-одиначка noun:anim:f:v_zna:rare
+матір-одиначку мати-одиначка noun:anim:f:v_zna
+матір'ю-одиачкою мати-одиначка noun:anim:f:v_oru
+матері-одиначці мати-одиначка noun:anim:f:v_mis
+матір-одиначко мати-одиначка noun:anim:f:v_kly:rare
+матері-одиначки мати-одиначка noun:anim:p:v_naz/v_kly
+матерів-одиначок мати-одиначка noun:anim:p:v_rod
+матерям-одиначкам мати-одиначка noun:anim:p:v_dav
+матерів-одиначок мати-одиначка noun:anim:p:v_zna
+матерями-одиначками мати-одиначка noun:anim:p:v_oru
+матерях-одиначках мати-одиначка noun:anim:p:v_mis
+
 прамати прамати noun:anim:f:v_naz/v_kly
 праматір прамати noun:anim:f:v_naz:rare
 праматері прамати noun:anim:f:v_rod

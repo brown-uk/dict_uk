@@ -42,7 +42,7 @@
 шиїсят /numr                                                #> шістдесят
 шо conj:subord|noun:inanim:n:v_naz/v_zna:&pron:int:rel      #> що
 шоб conj:subord|part                                        #> щоб
-шоби conj:subord|part                                       #> щоб|щоби
+шоби conj:subord|part                                       #> щоб
 шодо prep              # rv_rod                             #> щодо
 шо-небудь noun:inanim:n:v_naz/v_zna:&pron:ind               #> що-небудь
 шось noun:inanim:n:v_naz/v_zna:&pron:int                    #> щось
