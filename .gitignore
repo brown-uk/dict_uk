@@ -5,7 +5,8 @@
 test/*.txt
 out/prev/*
 out/*.txt
-out/toadd/*
+dev/toadd/*
+dev/other/*
 _work
 .*
 *autogen.lst
