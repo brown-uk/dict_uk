@@ -1,14 +1,22 @@
 баче бачити verb:imperf:pres:s:3                            #> бачить
 бозна-шо noun:inanim:n:v_naz/v_zna:&pron:ind                #> бозна-що
 будь-шо noun:inanim:n:v_naz:&pron:ind                       #> будь-що
+видасиш видати verb:perf:futr:s:2
 вівць вівця noun:anim:p:v_rod/v_zna                         #> овець
+віддасиш віддати verb:perf:futr:s:2
+відповісиш відповісти verb:perf:futr:s:2
 всьо adv|conj:coord|noun:inanim:n:v_naz/v_zna:&pron:gen|part #> все
 гамериканський /adj
+дасиш дати verb:perf:futr:s:2
 дивові диво noun:n:v_dav/v_mis
 дохтур /n20.a.p.ke.<
 дохтурка /n10.p2.<
 зара adv                                                    #> зараз
 зато conj:coord                                             #> зате
+здасиш здати verb:perf:futr:s:2
+з'їсиш з'їсти verb:perf:futr:s:2
+їсиш їсти verb:imperf:pres:s:2
+їсиш їсти verb:imperf:pres:s:2
 казна-шо noun:inanim:n:v_naz/v_zna:&pron:ind                #> казна-що
 коридора коридор noun:inanim:m:v_rod
 мона noninfl:&predic                                        #> можна
@@ -16,9 +24,14 @@
 нашо adv                                                    #> нащо
 нє part                                                     #> ні
 нічо adv                                                    #> нічого
+оддасиш оддати verb:perf:futr:s:2
 отово part                                                  #> ото
+передасиш передати verb:perf:futr:s:2
 побаче побачити verb:perf:futr:s:3                          #> побачить
+подасиш подати verb:perf:futr:s:2
+поїсиш поїсти verb:perf:futr:s:2
 покишо noninfl                                              #> поки що
+продасиш продати verb:perf:futr:s:2
 Путінові Путін noun:anim:m:v_dav/v_mis:prop:lname
 робе робити verb:imperf:pres:s:3                            #> робить
 скіке noninfl
