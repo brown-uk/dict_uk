@@ -11,11 +11,11 @@
 дивові диво noun:n:v_dav/v_mis
 дохтур /n20.a.p.ke.<
 дохтурка /n10.p2.<
+дощика дощик noun:m:v_rod
 зара adv                                                    #> зараз
 зато conj:coord                                             #> зате
 здасиш здати verb:perf:futr:s:2
 з'їсиш з'їсти verb:perf:futr:s:2
-їсиш їсти verb:imperf:pres:s:2
 їсиш їсти verb:imperf:pres:s:2
 казна-шо noun:inanim:n:v_naz/v_zna:&pron:ind                #> казна-що
 коридора коридор noun:inanim:m:v_rod
@@ -34,6 +34,7 @@
 продасиш продати verb:perf:futr:s:2
 Путінові Путін noun:anim:m:v_dav/v_mis:prop:lname
 робе робити verb:imperf:pres:s:3                            #> робить
+розповісиш розповісти verb:perf:futr:s:2
 скіке noninfl
 стіки noninfl
 сумнівові сумнів noun:m:v_dav/v_mis

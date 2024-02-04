@@ -78,6 +78,8 @@ task copyVersion(type: Copy, dependsOn: processResources) {
 copyVersion.mustRunAfter processResources
 */
 
+compileGroovy.enabled = false
+
 
 processResources {
     inputs.file versionFile

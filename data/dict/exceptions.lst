@@ -736,6 +736,10 @@
 бельмес бельмес noun:m:v_naz               # lim
 бельмеса бельмес noun:m:v_rod              # lim
 
+тії той adj:f:v_rod:&pron:dem:long
+усії увесь adj:f:v_rod:&pron:gen:long
+всії увесь adj:f:v_rod:&pron:gen:long
+
 язицех язик noun:p:v_mis
 
 світа світ noun:m:v_rod:rare
@@ -746,7 +750,7 @@
 робом роб noun:m:v_oru
 
 кінця-краю кінця-краю noun:m:v_rod                  # lim
-предку-віку предку-віку noun:m:v_zna                # lim
+предку-віку предку-віку noun:m:v_rod                # lim
 
 галай-балай галай-балай noun:m:v_naz/v_zna          # lim
 усюди /np2 /np1
