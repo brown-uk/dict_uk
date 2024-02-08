@@ -386,7 +386,9 @@ task helperDicts (dependsOn: [caseGovernmentDict, createReplacementDict, createS
 
 task deployHelperDictsToLT(dependsOn: [deployReplacements, deployCaseGovernment])
 
-
+task deployLtDict(dependsOn: [publishToMavenLocal, deployHelperDictsToLT] )
+    
+/*
 task deployLtDict(type: Copy, dependsOn: [publishToMavenLocal, deployHelperDictsToLT] ) {
     from outResDir
     into "${languagetoolResDestDir}"
@@ -395,7 +397,7 @@ task deployLtDict(type: Copy, dependsOn: [publishToMavenLocal, deployHelperDicts
 
 //    with dataContent
 }
-
+*/
 
 
 jar {
