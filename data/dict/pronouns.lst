@@ -167,7 +167,7 @@
 всім всі noun:anim:p:v_dav:&pron:gen:v-u
 всіх всі noun:anim:p:v_zna:&pron:gen:v-u
 всіма всі noun:anim:p:v_oru:&pron:gen:v-u
-всіми всі noun:anim:p:v_oru:&pron:gen:v-u:arch
+всіми всі noun:anim:p:v_oru:&pron:gen:v-u:subst
 всіх всі noun:anim:p:v_mis:&pron:gen:v-u
 
 усі усі noun:anim:p:v_naz:&pron:gen:v-u
@@ -710,14 +710,14 @@
 семисот сімсот numr:p:v_rod
 семистам сімсот numr:p:v_dav
 семистах сімсот numr:p:v_mis
-семистами сімсот numr:p:v_oru:bad
+семистами сімсот numr:p:v_oru:subst
 сьомастами сімсот numr:p:v_oru
 сімомастами сімсот numr:p:v_oru
 вісімсот вісімсот numr:p:v_naz/v_zna
 восьмисот вісімсот numr:p:v_rod
 восьмистам вісімсот numr:p:v_dav
 восьмистах вісімсот numr:p:v_mis
-восьмастами вісімсот numr:p:v_oru:bad
+восьмастами вісімсот numr:p:v_oru:subst
 вісьмастами вісімсот numr:p:v_oru
 вісьмомастами вісімсот numr:p:v_oru
 дев'ятсот дев'ятсот numr:p:v_naz/v_zna

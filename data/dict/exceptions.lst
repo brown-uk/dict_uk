@@ -231,7 +231,7 @@
 господом господь noun:m:v_oru:anim
 господі господь noun:m:v_mis:anim
 господи господь noun:m:v_kly:anim
-господе господь noun:m:v_kly:anim:arch
+господе господь noun:m:v_kly:anim:subst
 
 Христос Христос noun:m:v_naz:anim:prop:fname
 Христа Христос noun:m:v_rod/v_zna:anim:prop:fname
@@ -524,11 +524,11 @@
 
 # bad
 
-гребня гребінь noun:inanim:m:v_rod:bad
-гребневі гребінь noun:inanim:m:v_dav:bad
-гребню гребінь noun:inanim:m:v_dav:bad
-гребнем гребінь noun:inanim:m:v_oru:bad
-гребневі гребінь noun:inanim:m:v_mis:bad
+гребня гребінь noun:inanim:m:v_rod:subst
+гребневі гребінь noun:inanim:m:v_dav:subst
+гребню гребінь noun:inanim:m:v_dav:subst
+гребнем гребінь noun:inanim:m:v_oru:subst
+гребневі гребінь noun:inanim:m:v_mis:subst
 
 
 ясла-садок ясла-садок noun:m:v_naz
@@ -611,17 +611,9 @@
 плахіт плахта noun:p:v_rod
 плахот плахта noun:p:v_rod
 
-автів авто noun:inanim:p:v_rod:alt:subst
-псевдів псевдо noun:inanim:p:v_rod:alt:subst
-бюрків бюрко noun:inanim:p:v_rod:subst
-цеберків цеберко noun:inanim:p:v_rod:subst
-древків древко noun:inanim:p:v_rod:bad:subst
-
 мій мій adj:m:v_kly:&pron:pos
 моя мій adj:f:v_kly:&pron:pos
 моє мій adj:n:v_kly:&pron:pos
-
-чоловік чоловік noun:anim:p:v_rod/v_zna:bad
 
 царька царьок noun:anim:m:v_rod/v_zna:bad
 царькові царьок noun:anim:m:v_dav:bad
@@ -796,8 +788,6 @@
 переднім передні noun:anim:p:v_dav:ns
 передніми передні noun:anim:p:v_oru:ns
 
-заняттів заняття noun:inanim:p:v_rod:rare
-
 хріна noninfl
 
 бісики бісик noun:anim:p:v_zna                          # для «бісики пускати»
@@ -908,11 +898,6 @@
 
 захтять захтіти verb:perf:futr:p:3:subst:coll
 
-біжуть бігти verb:imperf:pres:p:3:subst
-
-хотять хотіти verb:imperf:pres:p:3:subst
-захотять захотіти verb:perf:futr:p:3:subst
-
 забракнути забракнути verb:perf:inf             # lim  # rv_rod:rv_dav
 забракне забракнути verb:perf:futr:s:3
 забракло забракнути verb:perf:past:n
@@ -950,7 +935,6 @@
 настава наставати verb:imperf:pres:s:3:short
 відіграва відігравати verb:imperf:pres:s:3:short
 
-славімо славити verb:imperf:impr:p:1
 
 ввити ввити verb:inf:perf               # rv_zna
 ввий ввити verb:impr:s:2:perf
@@ -1055,6 +1039,7 @@
 знайдіте знайти verb:perf:impr:p:2:long
 зніміте зняти verb:perf:impr:p:2:long
 зовіте звати verb:imperf:impr:p:2:long
+озовітеся озватися verb:rev:perf:impr:p:2:long
 зробіте зробити verb:perf:impr:p:2:long
 зупиніте зупинити verb:perf:impr:p:2:long
 ідіте іти verb:imperf:impr:p:2:long
@@ -1123,65 +1108,6 @@
 пасітеся пастися verb:rev:imperf:impr:p:2:long
 стережітеся стерегтися verb:rev:imperf:impr:p:2:long
 
-броде бродити verb:imperf:pres:s:3:subst
-вводе вводити verb:imperf:pres:s:3:subst
-виносе виносити verb:imperf:pres:s:3:subst                    # :xp1
-випале випалити verb:perf:futr:s:3:subst
-виходе виходити verb:imperf:pres:s:3:subst:&insert            # :xp2
-встеле встелити verb:perf:futr:s:3:subst
-входе входити verb:imperf:pres:s:3:subst
-глаголе глаголити verb:imperf:pres:s:3:subst
-говоре говорити verb:imperf:pres:s:3:subst
-гомоне гомоніти verb:imperf:pres:s:3:subst
-дзвоне дзвонити verb:imperf:pres:s:3:subst
-доводе доводити verb:imperf:pres:s:3:subst
-доходе доходити verb:imperf:pres:s:3:subst                    # :xp1
-дуре дурити verb:imperf:pres:s:3:subst
-заводе заводити verb:imperf:pres:s:3:subst
-закруте закрутити verb:perf:futr:s:3:subst
-заморе заморити verb:perf:futr:s:3:subst
-заставе заставити verb:perf:futr:s:3:subst
-заходе заходити verb:imperf:pres:s:3:subst                    # :xp1
-зачепе зачепити verb:perf:futr:s:3:subst
-зачине зачинити verb:perf:futr:s:3:subst
-зваре зварити verb:perf:futr:s:3:subst
-зводе зводити verb:imperf:pres:s:3:subst
-зносе зносити verb:imperf:pres:s:3:subst                    # :xp1
-зробе зробити verb:perf:futr:s:3:subst
-зове звати verb:imperf:pres:s:3:subst
-зупине зупинити verb:perf:futr:s:3:subst
-капле капати verb:imperf:pres:s:3:subst
-крише кришити verb:imperf:pres:s:3:subst
-ломе ломити verb:imperf:pres:s:3:subst
-носе носити verb:imperf:pres:s:3:subst
-опусте опустити verb:perf:futr:s:3:subst
-пале палити verb:imperf:pres:s:3:subst
-перекупе перекупити verb:perf:futr:s:3:subst
-перепине перепинити verb:perf:futr:s:3:subst
-переходе переходити verb:imperf:pres:s:3:subst                # :xp1
-підводе підводити verb:imperf:pres:s:3:subst
-підходе підходити verb:imperf:pres:s:3:subst
-плате платити verb:imperf:pres:s:3:subst
-побіле побілити verb:perf:futr:s:3:subst
-попусте попустити verb:perf:futr:s:3:subst
-посаде посадити verb:perf:futr:s:3:subst
-поставе поставити verb:perf:futr:s:3:subst
-постеле постелити verb:perf:futr:s:3:subst
-посуде посудити verb:perf:futr:s:3:subst
-приводе приводити verb:imperf:pres:s:3:subst
-прикусе прикусити verb:perf:futr:s:3:subst
-приносе приносити verb:imperf:pres:s:3:subst
-приходе приходити verb:imperf:pres:s:3:subst
-проводе проводити verb:imperf:pres:s:3:subst
-проходе проходити verb:imperf:pres:s:3:subst                # :xp1
-робе робити verb:imperf:pres:s:3:subst
-роде родити verb:imperf:pres:s:3:subst
-розгоне розгонити verb:imperf:pres:s:3:subst
-розсуде розсудити verb:perf:futr:s:3:subst
-суде судити verb:imperf:pres:s:3:subst
-сходе сходити verb:imperf:pres:s:3:subst                    # :xp1
-уводе уводити verb:imperf:pres:s:3:subst
-ходе ходити verb:imperf:pres:s:3:subst
 
 хочте хотіти verb:imperf:pres:p:2:short
 

@@ -92,6 +92,12 @@ class Expand {
 
 		def affixSubGroups = affixFlags.split("\\.")
 		def mainGroup = affixSubGroups[0]
+		
+		// sometimes it0 is implicit
+//		if( affixFlags.contains("it1b") )
+//		  assert affixFlags.contains("it0"), "Mismatch it1b/it0 in $word $affixFlags"
+		if( affixFlags.contains("it0b") )
+		  assert affixFlags.contains("it1"), "Mismatch it1b/it0 in $word $affixFlags"
 
 		String pos = util.get_pos(mainGroup, modifiers)
 		assert pos != null, "invalid $word: $mainGroup, $modifiers"
