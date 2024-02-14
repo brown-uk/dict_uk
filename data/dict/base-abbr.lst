@@ -1450,6 +1450,7 @@
 РПР noun:f:nv:prop                          # Реанімаційний Пакет Реформ
 РПЦ noun:f:nv:prop                          # Російська православна церква
 РПЦвУ noun:f:nv:prop
+рр noun:p:nv:ns:bad                         # роки
 РР noun:m:nv:np:prop:bad                    # вітамін РР (кирилицею)
 рРНК noun:f:nv
 РРО noun:m:nv                               # реєстратор розрахункових операцій
