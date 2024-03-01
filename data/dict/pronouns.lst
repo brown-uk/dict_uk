@@ -274,7 +274,6 @@
 бозна-відкіля adv:&pron:ind
 бозна-звідкіля adv:&pron:ind
 бозна-звідкіль adv:&pron:ind
-бозна-звідколи adv:&pron:ind
 бозна-кудою adv:&pron:ind
 бозна-навіщо adv:&pron:ind
 бозна-нащо adv:&pron:ind
@@ -836,10 +835,6 @@
 від від prep                        # rv_rod
 відо відо prep:arch                 # rv_rod
 відповідно prep                     # rv_dav
-всередині prep:v-u                  # rv_rod
-усередині prep:v-u                  # rv_rod
-всередину prep:v-u                  # rv_rod
-усередину prep:v-u                  # rv_rod
 неподалік prep:v-u                  # rv_rod
 збоку prep:v-u                      # rv_rod
 внизу prep:v-u                      # rv_rod
@@ -867,7 +862,8 @@
 усупереч усупереч prep:v-u          # rv_dav
 для для prep                        # rv_rod
 до до prep                          # rv_rod
-довкола довкола prep                # rv_rod
+довкола prep                        # rv_rod
+довкруж prep                        # rv_rod
 довкруг prep                        # rv_rod
 з з prep                            # rv_rod:rv_zna:rv_oru
 за за prep                          # rv_rod:rv_zna:rv_oru
@@ -879,8 +875,6 @@
 замість замість prep                # rv_rod:rv_inf
 заради заради prep                  # rv_rod:rv_inf
 #згідно згідно prep                 # rv_rod
-зверху зверху prep                  # rv_rod
-здовж здовж prep|adv                # rv_rod
 з-за з-за prep                      # rv_rod
 із-за із-за prep                    # rv_rod
 з-над з-над prep                    # rv_rod
@@ -914,6 +908,7 @@
 на на prep        # rv_zna:rv_mis
 навколо prep        # rv_rod
 навкруг prep        # rv_rod
+навкруги prep       # rv_rod
 навпаки навпаки prep        # rv_dav
 навперейми навперейми prep        # rv_dav
 назустріч prep                  # rv_dav
@@ -986,7 +981,9 @@
 просто просто prep        # rv_rod
 проти проти prep        # rv_rod
 раніше раніше prep        # rv_rod
+раніш раніш prep        # rv_rod
 пізніше пізніше prep        # rv_rod
+пізніш пізніш prep        # rv_rod
 серед серед prep        # rv_rod
 спереду спереду prep        # rv_rod
 стосовно prep               # rv_rod
@@ -1070,7 +1067,7 @@
 же part|conj:coord
 зате conj:coord
 затим adv
-ібн part
+ібн part:pers
 коли adv:&pron:int:rel|conj:subord
 ледве adv|part|conj:subord
 ледь adv|conj:subord

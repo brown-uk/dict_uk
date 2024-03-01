@@ -69,12 +69,12 @@
 витлумачіть витлумачити verb:perf:impr:p:2
 виторговано виторгувати verb:perf:impers
 витратіть витратити verb:perf:impr:p:2
+витратіть витратити verb:perf:impr:p:2
 виходе виходити verb:imperf:pres:s:3:&insert            # :xp2
 вихорем вихор noun:inanim:m:v_oru:xp1
 вівць вівця noun:anim:p:v_rod/v_zna                         #> овець
 віддасиш віддати verb:perf:futr:s:2
 відмітіть відмітити verb:perf:impr:p:2
-відморозіть відморозити verb:perf:impr:p:2
 відповідіть відповісти verb:perf:impr:p:2
 відповісиш відповісти verb:perf:futr:s:2
 віруса вірус noun:m:v_rod
@@ -133,12 +133,12 @@
 законопроекта законопроект noun:m:v_rod:ua_1992
 законопроєкта законопроєкт noun:m:v_rod:ua_2019
 закруте закрутити verb:perf:futr:s:3
+залліть залляти verb:perf:impr:p:2
 заморе заморити verb:perf:futr:s:3
 зануріть занурити verb:perf:impr:p:2
 заняттів заняття noun:inanim:p:v_rod
 заплющіть заплющити verb:perf:impr:p:2
 заростів зарість noun:p:v_rod
-зарубіть зарубити verb:perf:impr:p:2
 засвідчіть засвідчити verb:perf:impr:p:2    #> засвідчте
 засиліть засилити verb:perf:impr:p:2
 засиплять засипати verb:perf:futr:p:3        # :xp2
@@ -251,14 +251,15 @@
 налиєш налити verb:perf:futr:s:2
 налию налити verb:perf:futr:s:1
 налиють налити verb:perf:futr:p:3
-наріччів наріччя noun:p:v_rod        #> наріч
+наріччів наріччя noun:p:v_rod                       #> наріч
 наскіке noninfl
 наструнчіть наструнчити verb:perf:impr:p:2
 непотрібен непотрібний adj:m:v_naz:short:&predic    #> не потрібен
 нишпоріть нишпорити verb:imperf:impr:p:2
 нівечіть нівечити verb:imperf:impr:p:2
 носе носити verb:imperf:pres:s:3
-обійм обійми noun:p:v_rod:ns         #> обіймів
+обіда обід noun:inanim:m:v_rod:xp2
+обійм обійми noun:p:v_rod:ns                        #> обіймів
 обнишпоріть обнишпорити verb:perf:impr:p:2
 обчистіть обчистити verb:perf:impr:p:2
 овоча овоч noun:m:v_rod

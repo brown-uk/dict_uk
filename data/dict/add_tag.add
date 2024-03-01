@@ -98,7 +98,7 @@
 цікавий adj:&predic
 час noun:&predic
 чуєте verb:&insert
-чути verb:&insert
+чути verb:&insert:&predic
 шабаш noun:&predic
 щастя noun:&predic
 умільче noun:ua_2019
