@@ -3,13 +3,14 @@ package org.dict_uk.tools
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.nio.file.StandardCopyOption;
+import java.util.stream.Stream
 
 import org.dict_uk.common.UkDictComparator
 
 class Sort {
 
 	static main(args) {
-		args.each { filename ->
+		Stream.of(args).parallel().each { filename ->
 			println "Sorting $filename..."
 			sortFile(filename)
 		}
