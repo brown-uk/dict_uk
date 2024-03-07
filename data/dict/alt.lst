@@ -80,7 +80,7 @@
 амбуляторія /n10.p1
 амнестія /n10
 амнестований /adj :&adjp:pasv:imperf:perf
-амнестувати /v1.cf.advp.is0 :imperf:perf
+амнестувати /v1.cf.advp.is0 :imperf:perf                        # rv_zna:rv_oru
 амоніяк /n20
 амоняк /n20
 амоняковий /adj
@@ -178,10 +178,10 @@
 варіяційний /adj
 варіяція /n10.p1
 вахтмістр /n20.a.p.ke.<
-видусити /v1.it1 :perf
+видусити /v1.it1 :perf                                        # rv_zna:rv_oru:rv_dav
 відеотабло /n2n
-відріжняти /v2.cf.advp :imperf
-відріжнятися /vr2.cf.advp :imperf
+відріжняти /v2.cf.advp :imperf                                # rv_zna:rv_oru
+відріжнятися /vr2.cf.advp :imperf                             # rv_oru
 віольончеля /n10
 владімір /n20.a.ke.< :prop:fname
 Владіміровіч /n20.a.< :prop:pname
@@ -203,8 +203,8 @@
 гард-рок /n20
 геві-метал /n20
 гелгіт /n21
-гелготати /v1.cf.advp :imperf
-гелготіти /v1.cf.advp :imperf
+гелготати /v1.cf.advp :imperf                                   # rv_oru
+гелготіти /v1.cf.advp :imperf                                   # rv_oru
 геніяльний /adj.adv \
  +cs=геніяльніший
 гестапо /n2n
@@ -244,8 +244,8 @@
 ґарантія /n10.p1
 ґарантований /adj :&adjp:pasv:imperf
 ґарантування /n2n
-ґарантувати /v1.cf.advp.is0 :imperf
-ґарантуватися /vr1.cf.advp :imperf
+ґарантувати /v1.cf.advp.is0 :imperf                                      # rv_zna:rv_oru:rv_dav
+ґарантуватися /vr1.cf.advp :imperf                                       # rv_oru:rv_dav
 ґвинт /n20.a.p
 ґвинтик /n20.a.p
 ґвинтовий /adj
@@ -301,10 +301,10 @@
 деклярація /n10.p1
 деклярований /adj :&adjp:pasv:imperf:perf
 деклярування /n2n
-деклярувати /v1.cf.advp.is0 :imperf:perf
+деклярувати /v1.cf.advp.is0 :imperf:perf                     # rv_zna:rv_oru:rv_dav
 деклясований /adj :&adjp:pasv:imperf:perf
-деклясувати /v1.cf.advp.is0 :imperf:perf
-деклясуватися /vr1.cf.advp :imperf:perf
+деклясувати /v1.cf.advp.is0 :imperf:perf                     # rv_zna:rv_oru
+деклясуватися /vr1.cf.advp :imperf:perf                      # rv_oru
 делеґатура /n10
 делєґат /n20.a.p.<
 делєґація /n10.p1
@@ -392,23 +392,23 @@
 желятиновий /adj
 заанґажований /adj :&adjp:pasv:perf
 заанґажованість /n30
-заанґажувати /v1.is0 :perf     # rv_zna:rv_oru:rv_dav
+заанґажувати /v1.is0 :perf                      # rv_zna:rv_oru:rv_dav
 забудівник /n20.a.p.<
 загальноевропейський /adj
-задеклярувати /v1.is0 :perf
-задусити /v1.is0.it1 :perf
+задеклярувати /v1.is0 :perf                     # rv_zna:rv_oru
+задусити /v1.is0.it1 :perf                      # rv_zna:rv_oru
 заиржавілий /adj
 заля /n10
 заплянований /adj
-заплянувати /v1.is0 :perf
+заплянувати /v1.is0 :perf                       # rv_zna:rv_dav
 заплянуватися /vr1 :perf
 зараз-же adv
 затріюмфувати /v1 :perf
 західноевропейський /adj
 західньоевропейський /adj
 західньоукраїнський /adj
-збалянсувати /v1.is0 :perf
-зверещати /v1 :perf
+збалянсувати /v1.is0 :perf                      # rv_zna:rv_oru:rv_dav
+зверещати /v1 :perf                             # rv_oru
 зматеріялізований /adj :&adjp:pasv:perf
 зрезиґновано adv
 зрезиґнувати /v1 :perf
@@ -433,9 +433,9 @@
 иншомовний /adj
 иржа /n10
 иржавіти /v2.cf.advp :imperf
-иржати /v4.cf.advp :imperf
+иржати /v4.cf.advp :imperf                     # rv_oru
 іґнорування /n2n
-іґнорувати /v1.cf.advp :imperf
+іґнорувати /v1.cf.advp :imperf                 # rv_zna
 ієзуїт /n20.a.p.ke.<
 імени ім'я noun:inanim:n:v_rod
 імперіялізм /n20.p
@@ -487,7 +487,7 @@
 клясика /n10
 клясифікація /n10.p1
 клясифікований /adj :&adjp:pasv:imperf:perf
-клясифікувати /v1.cf.advp.is0 :imperf:perf
+клясифікувати /v1.cf.advp.is0 :imperf:perf                     # rv_zna:rv_oru
 клясицизм /n20
 клясицист /n20.a.p.<
 клясичний /adj
@@ -496,7 +496,7 @@
 клясовий /adj
 клясовість /n30
 клясово adv
-кляцнути /v1.isTo :perf
+кляцнути /v1.isTo :perf                                         # rv_oru
 коаксіяльний /adj
 коаксіяльність /n30
 коаліціяда /n10.p1
@@ -506,7 +506,7 @@
 кольонія /n10.p1
 кольоризація /n10
 кольоризований /adj :&adjp:pasv:imperf:perf
-кольоризувати /v1.cf.advp :imperf:perf
+кольоризувати /v1.cf.advp :imperf:perf                          # rv_zna:rv_oru
 кольорит /n20
 кольоритний /adj
 кольорометричний /adj
@@ -526,12 +526,12 @@
 крітський /adj
 крітянин /n20.a.pyn.ke.<
 кухвайка /n10.p2
-леґалізувати /v1.cf.advp.is0 :imperf:perf
+леґалізувати /v1.cf.advp.is0 :imperf:perf                     # rv_zna:rv_oru
 леґальний /adj
 леґендарний /adj
 леґіслятура /n10.p1
 леґітимація /n10
-леґітимізувати /v1.cf.advp.is0 :imperf:perf
+леґітимізувати /v1.cf.advp.is0 :imperf:perf                     # rv_zna:rv_oru
 леґітимний /adj.adv
 леґітимність /n30
 лінґвістичний /adj
@@ -570,8 +570,8 @@
 марґінал /n20.a.p.<
 марґіналізація /n10
 марґіналізований /adj :&adjp:pasv:imperf:perf
-марґіналізувати /v1.cf.advp.is0 :imperf:perf
-марґіналізуватися /vr1.cf.advp :imperf:perf
+марґіналізувати /v1.cf.advp.is0 :imperf:perf                    # rv_zna:rv_oru
+марґіналізуватися /vr1.cf.advp :imperf:perf                     # rv_oru
 марґіналка /n10.p2.<
 марґінальний /adj
 марґінальність /n30
@@ -588,8 +588,8 @@
 матеріял /n20.p
 матеріялізація /n10
 матеріялізований /adj :&adjp:pasv:imperf:perf
-матеріялізувати /v1.cf.advp.is0 :imperf:perf
-матеріялізуватися /vr1.cf.advp :imperf:perf
+матеріялізувати /v1.cf.advp.is0 :imperf:perf                     # rv_zna:rv_oru
+матеріялізуватися /vr1.cf.advp :imperf:perf                      # rv_oru
 матеріяльний /adj
 матер'ял /n20.p
 медведчук /n20.a.<+
@@ -657,10 +657,10 @@
 пелагіянство /n2n
 пелагіянський /adj
 переинакшений /adj :&adjp:pasv:perf
-переинакшити /v1.is0 :perf
-переинакшитися /vr1 :perf
+переинакшити /v1.is0 :perf                     # rv_zna:rv_oru:rv_dav
+переинакшитися /vr1 :perf                      # rv_oru
 перемиський /adj
-переплянувати /v1.is0 :perf
+переплянувати /v1.is0 :perf                    # rv_zna:rv_oru:rv_dav
 першоєрарх /n20.a.p.<
 першоклясник /n20.a.p.<
 піаніно /n2n.p1
@@ -671,7 +671,7 @@
 плагіят /n20
 плягіят /n20
 плякат /n20.a.p
-плякати /v2.cf :imperf
+плякати /v2.cf :imperf                          # rv_oru
 плян /n20.p
 плянета /n10.p1
 плянетарний /adj
@@ -683,8 +683,8 @@
 пляномірно adv
 плянтація /n10.p1
 плянування /n2n
-плянувати /v1.cf.advp.is0 :imperf
-плянуватися /vr1.cf.advp :imperf
+плянувати /v1.cf.advp.is0 :imperf               # rv_zna:rv_oru:rv_dav
+плянуватися /vr1.cf.advp :imperf                # rv_oru
 плястиковий /adj
 плятформа /n10.p1
 пляц /n20.p
@@ -708,7 +708,7 @@
 пріґожин /n2adj2.<+m
 пріґожинський /adj
 проблєма /n10.p1
-продеклямувати /v1.is0 :perf
+продеклямувати /v1.is0 :perf                     # rv_zna:rv_oru:rv_dav
 проевропейський /adj
 проклямація /n10.p1
 пролєтаріят /n20
@@ -730,7 +730,7 @@
 радіяція /n10
 ранґа /n10
 ратунок /n22
-реаґувати /v1.cf.advp :imperf
+реаґувати /v1.cf.advp :imperf                     # rv_oru
 регабілітація /n10
 регабілітувати /v1.cf.advp.is0 :imperf:perf                    # rv_zna:rv_oru:rv_dav
 регабілітуватися /vr1.cf.advp :imperf:perf                     # rv_oru
@@ -743,7 +743,7 @@
 реклямація /n10.p1
 реклямний /adj
 реклямовий /adj
-реклямувати /v1.cf.advp :imperf
+реклямувати /v1.cf.advp :imperf                     # rv_zna:rv_oru:rv_dav
 рентґен /n20.a :xp1                 # одиниця виміру; апарат
 рентґен /n20 :xp2                   # проміння; просвічування
 рентґенівський /adj
@@ -799,7 +799,7 @@
 спонзор /n20.a.p.ke.<
 спонзорований /adj :&adjp:pasv:imperf:perf
 спонзорування /n2n
-спонзорувати /v1.cf.advp.is0 :imperf:perf
+спонзорувати /v1.cf.advp.is0 :imperf:perf                     # rv_zna:rv_oru:rv_dav
 старшоклясник /n20.a.p.<
 струмент /n20.a.p
 суржика суржик noun:m:v_rod

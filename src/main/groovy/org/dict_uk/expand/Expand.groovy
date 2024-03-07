@@ -1212,7 +1212,7 @@ class Expand {
 				if( ! word.endsWith('ий') && main_word.endsWith('й') 
 					    || ! (word =~ /[іеш]$/) && main_word =~ /[ео]$/ ) {
 					log.error "bad +cs: $word for $main_word"
-					System.exit(1)
+					throw new RuntimeException()
 				}
 			}
 			else {
@@ -1285,7 +1285,8 @@ class Expand {
 
 				if( ! (word =~ /[іеш]$/) ) {
 					log.error("invalid +cs for adv: {}", line)
-					System.exit(1)
+                    throw new RuntimeException()
+//					System.exit(1)
 				}
 			}
 			else {
@@ -1351,7 +1352,8 @@ class Expand {
 			
 			if( ! (word =~ /ий$/) ) {
 				log.error("invalid +cs for adj: " + line)
-				System.exit(1)
+                throw new RuntimeException()
+//				System.exit(1)
 			}
 			
 			word = word[0..<-2] + "е"
@@ -1596,8 +1598,10 @@ class Expand {
 
 		}
 		.flatMap{ s-> 
-			if( ! s ) 
-				System.exit(1)
+//			if( ! s ) {
+//                throw new RuntimeException()
+//				System.exit(1)
+//			}
 			s.stream() 
 		}
 		.collect(Collectors.toList())

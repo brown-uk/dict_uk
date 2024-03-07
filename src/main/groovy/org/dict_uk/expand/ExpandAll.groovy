@@ -71,7 +71,12 @@ class ExpandAll {
 		
 		log.info("Expanding {} lines", outLines.size())
 
-		expand.processInputAndPrint(outLines)
+        try {
+            expand.processInputAndPrint(outLines)
+        }
+        catch(Exception e) {
+            log.error("Error: ", e)
+        }
 	}
 
 }

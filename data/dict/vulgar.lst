@@ -1,68 +1,99 @@
-бздіти /v1.cf.it1 :imperf
+бздіти /v1.cf.it1 :imperf                   # rv_oru
+бздун /n20.a.p.<
+бздюха /n10.p1.ko.<
+бичара /n10.p1.ko.< :+m
 бомжара /n10.p1.ko.<
+висер /n20.p
+висратися /vr2 :perf
+всиратися /vr2.cf.advp :imperf
 всирачки adv
+всратий /adj
 всратися /vr1 :perf:v-u
+гамно /n2n
 гівно /n2n
 гівноїд /n20.a.p.<>
 гівнюк /n20.a.p.ke.<
 гівняний /adj
+гівняно adv
 гімно /n2n
 гімноїд /n20.a.p.<
 гімнюк /n20.a.p.<
 гімняний /adj
+довбограй /n20.a.p.<
+дрочер /n20.a.p.<
 дура /n10.p1.<                             #> дурна|дурепа
 дуринда /n10.p1.<
 жопа /n10
+жопа /n10.p1
 залупа /n10.p1
-засирати /v2.cf.advp :imperf
-засрати /v1.isNo :perf
+засирати /v2.cf.advp :imperf               # rv_zna:rv_oru:rv_dav
+засрати /v1.isNo :perf                     # rv_zna:rv_oru:rv_dav
 курва /n10.p1.ko.<
 курваль /n20.a.p.<
 курвити /v1.cf.advp :imperf
 курвитися /vr1.cf.advp :imperf
-насрати /v1.isNo :imperf
+лошара /n10.p1.ko.< :+m
+насрати /v1.isNo :imperf                   # rv_oru:rv_dav
 нахер adv
 нахрен adv
 нахрін adv
+недобдіти /v1 :perf
 ніхера noun:inanim:n:v_rod:&pron:neg:&predic  # lim
 обісраний /adj :&adjp:pasv:perf
-обісрати /v1.isNo :perf
+обісрати /v1.isNo :perf                     # rv_zna:rv_oru:rv_dav
 обісратися /vr1 :perf
 обісцяний /adj :&adjp:pasv:perf
 обісцяти /v1.isNo :perf                     # rv_zna:rv_dav
 обісцятися /vr1 :perf
 обсирати /v2.cf.advp :imperf                # rv_zna:rv_dav
 охрініти /v1 :perf
+пердак /n20.a.p
 пердіння /n2n
 пердіти /v1.cf.advp :imperf
 перднути /v1 :perf
+пердолити /v1.cf.advp :imperf
+перебдіти /v1 :perf
 пипець intj
 підар /n20.a.p.ke.<
 підарас /n20.a.p.<
-підісрати /v1.isNo :perf
+підарюга /n10.p1.< :+m
+підісрати /v1.isNo :perf                     # rv_zna:rv_dav
+підор /n20.a.p.<
+піська /n10.p2
 пісюн /n20.a.p
 посрати /v1.isNo :perf
 потрахатися /vr2 :perf
+похерити /v1.it0.is0 :perf                   # rv_zna:rv_oru:rv_dav
+поц /n20.a.p.<
 пропагандон /n20.a.p.<
-просрати /v1.isNo :perf      # rv_zna:rv_oru:rv_dav
+просрати /v1.isNo :perf                      # rv_zna:rv_oru:rv_dav
 просратися /vr1 :perf
+серун /n20.a.p.<
 сіська /n10.p2
 совкодрочер /n20.a.p.ke.<
 совкодрочерський /adj
 срака /n10.p1
+сральня /n10.p2
 сраний /adj
+срання /n2n
+срань /n32
 срати /v1.cf.advp :imperf
 сратися /vr1.cf.advp :imperf
 срач /n20.p
 срачина /n10
 срачка /n10.p2
 срачкуватий /adj
+сруть срати verb:imperf:pres:p:3:subst
+сруться сратися verb:rev:imperf:pres:p:3:subst
 старпер /n20.a.p.ke.<
 сученя /n40.p.<
 сцикло /n2n.<
 сцяки /np2
 урод /n20.a.p.<
 усратися /vr1 :perf:v-u
-херачити /v1.cf.advp :imperf
+усцятися /vr1 :perf:v-u
+хер /n20.a.p
+херачити /v1.cf.advp :imperf                  # rv_zna:rv_oru:rv_dav
+хитрожопий /adj
 хренація /n10.p1
 хреновина /n10.p1
