@@ -10,8 +10,10 @@
 баристів бариста noun:anim:p:v_rod/v_zna
 баче бачити verb:imperf:pres:s:3                            #> бачить
 бачуть бачити verb:imperf:pres:p:3
+Бешикташа Бешикташ noun:m:v_rod:prop
 біжуть бігти verb:imperf:pres:p:3
 бізнеса бізнес noun:m:v_rod
+біржою біржа noun:inanim:f:v_oru
 блекаута блекаут noun:m:v_rod
 блокчейна блокчейн noun:m:v_rod
 боєприпаса боєприпас noun:m:v_rod
@@ -19,6 +21,7 @@
 боярів боярин noun:anim:p:v_rod/v_zna
 бренда бренд noun:m:v_rod
 броде бродити verb:imperf:pres:s:3
+Брукліна Бруклін noun:m:v_rod:prop:geo
 будинка будинок noun:m:v_rod
 бузка бузок noun:m:v_rod             #> бузку
 буков буква noun:p:v_rod
@@ -106,6 +109,7 @@
 ґратів ґрати noun:p:v_rod:ns
 дасиш дати verb:perf:futr:s:2
 держсектора держсектор noun:m:v_rod
+деталів деталь noun:inanim:p:v_rod
 дзвоне дзвонити verb:imperf:pres:s:3
 дивові диво noun:n:v_dav/v_mis
 діалога діалог noun:m:v_rod
@@ -122,6 +126,7 @@
 дуре дурити verb:imperf:pres:s:3
 Ельбруса Ельбрус noun:m:v_rod:prop:geo
 Енергоатома Енергоатом noun:m:v_rod:prop
+енергосектора енергосектор noun:m:v_rod
 епіцентра епіцентр noun:m:v_rod
 жлуктіть жлуктити verb:imperf:impr:p:2
 жреці жрець noun:anim:p:v_naz

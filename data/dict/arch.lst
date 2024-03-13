@@ -1754,8 +1754,10 @@
 зопсуватися /vr1 :perf
 зопсутий /adj
 зопсуття /n2n
+зорудувати /v1 :perf
 зоставити /v1.is0.it0 :perf                   # rv_zna:rv_oru:rv_dav
 зоставляти /v2.cf.advp :imperf                # rv_inf:rv_zna:rv_oru:rv_dav
+зостати /v3 :perf
 з-позаду з-позаду adv
 зпосеред prep                               # rv_rod
 зрабований /adj :&adjp:pasv:perf
@@ -1767,6 +1769,7 @@
 зрезигнувати /v1 :perf
 зсилати /v2.cf.advp :imperf                   # rv_zna
 зсилатися /vr2.cf.advp :imperf
+зсутеніти /v2 :perf p=3
 з-так adv
 зувсім adv
 зукоса adv
@@ -1864,6 +1867,7 @@
 карачеї /np2.<
 карбівничий /n2adj1.p.<
 кардіоскоп /n20.a.p
+каригідний /adj
 картацький /adj
 касарня /n10.p2
 кастелянка /n10.p2.ko.<
@@ -1991,6 +1995,7 @@
 кревнячка /n10.p2.<
 кремпування /n2n
 кремпуватися /vr1.cf.advp :imperf
+крехкати /v2.cf.advp :imperf
 крижацький /adj
 крийма adv
 крилошан /n20.a.p.<
@@ -2622,6 +2627,8 @@
 обновленський /adj
 обов'язаний /adj :&adjp:pasv:perf
 обов'язувати /v1.cf.advp :imperf                   # rv_zna:rv_oru
+оболок /n20.a.p                         # о́болок (хмара)
+оболока /n10.p1                         # оболо́ка (оболонка)
 оборонський /adj
 оборудувати /v1.cf.advp :imperf                   # rv_zna:rv_oru
 образовий /adj.adv
@@ -3133,6 +3140,7 @@
 однакий /adj
 однако adv:&predic
 однедавна adv
+однії один numr:f:v_rod
 однімання /n2n.p1
 однімати /v2.cf.advp.isNo.shrt :imperf                   # rv_zna:rv_oru
 одніматися /vr2.cf.advp :imperf
@@ -3426,6 +3434,8 @@
 одукований /adj
 одусіль adv
 одуховлення /n2n
+одухотворювати /v1.cf.advp :imperf                              # rv_zna:rv_oru:rv_dav
+одухотворюватися /vr1.cf.advp :imperf                           # rv_oru
 одучити /v1.it1.is0 :perf                             # rv_zna:rv_oru:rv_dav
 одушевлення /n2n.p1
 одхаючувати /v1.cf.advp :imperf
@@ -3510,6 +3520,8 @@
 ознаймляти /v2.cf.advp :imperf                                # rv_zna:rv_oru:rv_dav
 ознаймований /adj :&adjp:pasv:perf
 ознаймувати /v1 :perf                                         # rv_zna:rv_oru:rv_dav
+озовись озватися verb:rev:perf:impr:s:2
+озовися озватися verb:rev:perf:impr:s:2
 озутий /adj :&adjp:pasv:perf
 ойчизна /n10.p1
 окадкуватий /adj
@@ -3733,6 +3745,10 @@
 очайдушний /adj.adv
 очайдушність /n30
 очами око noun:inanim:p:v_oru
+очепити /v1.is0 :perf                                           # rv_zna:rv_oru
+очеплений /adj :&adjp:pasv:perf
+очеплення /n2n.p1
+очепляти /v2.cf.advp :imperf                                    # rv_zna:rv_oru
 очитаний /adj
 #очутитися /vr1 :perf
 очухрати /v2 :perf                   # rv_zna:rv_oru
@@ -3868,6 +3884,7 @@
 печина /n10
 п'єц /n20.a.p
 пинявий /adj
+писаризм /n20
 писарня /n10.p2
 писаршин /adj
 писачок /n22.a.p
@@ -3978,6 +3995,8 @@
 плоскоденний /adj
 плоховитий /adj
 плуганитися /vr1.cf.advp :imperf
+Плужанин /n20 :prop                 # часопис
+плужанин /n20.a.pyn.<
 плястер /n22.a.p.ke
 плястерко /n2n.p2
 плястерок /n22.p
@@ -4499,6 +4518,8 @@
 роботар /n24.a.p.ke.<
 роботизна /n10
 родак /n20.a.p.<
+роджений /adj :&adjp:pasv:imperf
+родження /n2n
 родиво /n2n
 родителька /n10.<
 рождати /v2.cf :imperf                   # rv_zna
@@ -4659,6 +4680,7 @@
 смерд /n20.a.p.<
 смердюк /n20.a.p.<
 смердюх /n20.a.p.<
+смертію смерть noun:inanim:f:v_oru
 сміхотворець /n22.a.p.<
 смуганистий /adj
 собакар /n24.a.p.ke.<
@@ -4875,6 +4897,7 @@
 трафунок /n22.p
 трахтир /n20.a.p.ke
 трачиння /n2n
+требище /n2n
 требувати /v1.cf.advp :imperf                           # rv_zna:rv_rod:rv_dav
 тридесять /numr
 трийцять /numr
