@@ -209,7 +209,6 @@
 
 
 кудись adv:&pron:ind
-кудись-інде adv:&pron:ind
 звідкись adv:&pron:ind
 
 абиде adv:&pron:ind
@@ -232,9 +231,6 @@
 абищо /n_pron :&pron:ind
 аніхто /n_pron.< :&pron:neg
 аніщо /n_pron :&pron:neg
-
-небагато-хто /n_pron.< :&pron:ind
-небагато-що /n_pron.< :&pron:ind
 
 будь-хто /n_pron.< :&pron:ind
 будь-що будь-що adv:&pron:ind                               # бу́дь-що
