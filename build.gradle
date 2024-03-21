@@ -230,7 +230,7 @@ task testExpand(type: JavaExec, dependsOn: [reverseAffix, autogen, classes]) {
 // Main targets
 //
 
-task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, autogen/*, testExpand*/, checkDups]) {
+task expandForCorp(type: JavaExec, dependsOn: [reverseAffix, autogen/*, testExpand*/]) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = "org.dict_uk.expand.ExpandAll"
 

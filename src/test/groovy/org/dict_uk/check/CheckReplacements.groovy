@@ -43,6 +43,8 @@ println "Unique replacement words: ${replWords.size()}"
 
 replWords.removeAll(spellWords)
 
+replWords.removeIf{ w -> (w =~ /[.-]$|'дно|X-/) as Boolean }
+replWords.removeAll(["здавання-приймання", "передання-прийняття", "прийняття-передання"])
 
 println "Unknown:\n" + replWords.join("\n")
 println "Total uknown: ${replWords.size()}"

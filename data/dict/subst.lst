@@ -1,6 +1,7 @@
 автів авто noun:inanim:p:v_rod:alt
 автомобілей автомобіль noun:p:v_rod
 альманаха альманах noun:m:v_rod
+анекдота анекдот noun:inanim:m:v_rod
 антивіруса антивірус noun:m:v_rod
 Арсенала Арсенал noun:m:v_rod:prop
 Балканів Балкани noun:p:v_rod:ns:prop:geo
@@ -10,6 +11,7 @@
 баристів бариста noun:anim:p:v_rod/v_zna
 баче бачити verb:imperf:pres:s:3                            #> бачить
 бачуть бачити verb:imperf:pres:p:3
+берез береза noun:inanim:p:v_rod
 Бешикташа Бешикташ noun:m:v_rod:prop
 біжуть бігти verb:imperf:pres:p:3
 бізнеса бізнес noun:m:v_rod
@@ -101,6 +103,7 @@
 графена графен noun:m:v_rod
 гривнів гривня noun:p:v_rod
 грісі гріх noun:m:v_mis
+гроба гроб noun:inanim:m:v_rod
 громадянини громадянин noun:anim:p:v_naz/v_kly  #> громадяни
 грудима груди noun:p:v_oru
 гугла гугл noun:m:v_rod                     #> гуглу
@@ -131,6 +134,7 @@
 жлуктіть жлуктити verb:imperf:impr:p:2
 жреці жрець noun:anim:p:v_naz
 жреців жрець noun:anim:p:v_rod/v_zna
+журнала журнал noun:inanim:m:v_rod
 забезпечіть забезпечити verb:perf:impr:p:2
 завісіть завісити verb:perf:impr:p:2
 заводе заводити verb:imperf:pres:s:3
@@ -147,6 +151,7 @@
 засиліть засилити verb:perf:impr:p:2
 засиплять засипати verb:perf:futr:p:3        # :xp2
 заскочіть заскочити verb:perf:impr:p:2
+заспокійся заспокоїтися verb:rev:perf:impr:s:2
 заставе заставити verb:perf:futr:s:3
 застреліть застрелити verb:perf:impr:p:2
 заходе заходити verb:imperf:pres:s:3                    # :xp1
@@ -428,6 +433,7 @@
 хлопчиськи хлопчисько noun:p:v_naz:anim
 ходе ходити verb:imperf:pres:s:3
 ходімте ходити verb:imperf:impr:p:1
+хоругв хоругва noun:inanim:p:v_rod
 хоругів хоругва noun:p:v_rod
 хотять хотіти verb:imperf:pres:p:3
 цеберків цеберко noun:inanim:p:v_rod
