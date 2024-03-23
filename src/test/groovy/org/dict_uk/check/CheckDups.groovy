@@ -15,10 +15,10 @@ def lines = files.collect { File f ->
 //            .replaceFirst(/^ \+cs=/, '')
                 .trim()
                 .replaceAll(/\s*#.*/, '')
-                .replaceAll(/( \/[a-z0-9]+)(\s+|$)/, '$1... ')
+                .replaceAll(/( \/[a-z0-9]+)(\s+|$)/, '$1...')
                 .replaceAll(/\.[^<.: ]+/, '...')
                 .replaceAll(/\s*:coll/, '')
-                .replaceAll(/:&adjp:(actv|pasv)(:(imperf|perf))+/, '') 
+                .replaceAll(/:&adjp:(actv|pasv)(:(imperf|perf))+/, '')
             }
             .collect { line ->
                 geo ? "$line :geo" : line 
@@ -28,6 +28,8 @@ def lines = files.collect { File f ->
         .grep { it }
 
 //    lines = lines.grep { ! it.startsWith('#') }
+
+//new File("z_du.txt").text = lines.join("\n")
 
 def dups = lines.countBy{it}.grep{it.value > 1 }.collect{it.key.toString()}
 
