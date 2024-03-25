@@ -122,7 +122,7 @@ task prepareDict(type: Exec) {
         new File("$workingDir/$tmpDir").mkdirs()
     }
 
-    def cmd = "cat ${srcDict} | tr ' ' '\\t' | LC_ALL=POSIX sort -u > ${outFile} && grep -vE ':(subst|vis)' ${outFile} > ${outFile}.synth"
+    def cmd = "cat ${srcDict} | tr ' ' '\\t' | LC_ALL=POSIX sort -u > ${outFile} && grep -vE ':(subst|vulg|obsc|vis)' ${outFile} > ${outFile}.synth"
 
     commandLine "sh", "-c", "${cmd}"
 }
@@ -186,7 +186,7 @@ task spellDict(type: JavaExec, dependsOn: [prepareSpellWords, processResources])
     def outFile="${spellOutDir}/uk_UA.dict"
     def freqFile="src/main/data/uk_wordlist.xml"
 
-    inputs.files tasks.prepareSpellWords.outputs.files, "src/data/uk_wordlist.xml"
+    inputs.files tasks.prepareSpellWords.outputs.files, freqFile
     outputs.file outFile
 
     workingDir "$projectDir"
