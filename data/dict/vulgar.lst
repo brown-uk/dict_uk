@@ -22,13 +22,18 @@
 гімняр /n20.a.p.ke.<
 гімнярка /n10.p2.<
 довбограй /n20.a.p.<
+дохера adv
+дохєра adv
+дохєріща adv
 дрочер /n20.a.p.<
 дура /n10.p1.<                             #> дурна|дурепа
 дуринда /n10.p1.<
 жопа /n10.p1
+задохєра adv
 залупа /n10.p1
 засирати /v2.cf.advp :imperf               # rv_zna:rv_oru:rv_dav
 засрати /v1.isNo :perf                     # rv_zna:rv_oru:rv_dav
+захерачити /v1 :perf                     # rv_zna:rv_oru:rv_dav
 курва /n10.p1.ko.<
 курваль /n20.a.p.<
 курвити /v1.cf.advp :imperf
@@ -39,7 +44,11 @@
 нахрен adv
 нахрін adv
 недобдіти /v1 :perf
+нєхер noninfl:&predic
+нєхєр noninfl:&predic
 ніхера noun:inanim:n:v_rod:&pron:neg:&predic  # lim
+ніхєра adv
+ніхєрашечки intj
 обісраний /adj :&adjp:pasv:perf
 обісрати /v1.isNo :perf                     # rv_zna:rv_oru:rv_dav
 обісратися /vr1 :perf
@@ -47,6 +56,7 @@
 обісцяти /v1.isNo :perf                     # rv_zna:rv_dav
 обісцятися /vr1 :perf
 обсирати /v2.cf.advp :imperf                # rv_zna:rv_dav
+овердохера adv
 охрініти /v1 :perf
 пердак /n20.a.p
 пердіння /n2n
@@ -69,6 +79,8 @@
 пропагандон /n20.a.p.<
 просрати /v1.isNo :perf                      # rv_zna:rv_oru:rv_dav
 просратися /vr1 :perf
+розхерачений /adj :&adjp:pasv:perf
+розхерачити /v1.is0 :perf                    # rv_zna:rv_oru:rv_dav
 серун /n20.a.p.<
 сіська /n10.p2
 совкодрочер /n20.a.p.ke.<
@@ -87,6 +99,7 @@
 сруть срати verb:imperf:pres:p:3:subst
 сруться сратися verb:rev:imperf:pres:p:3:subst
 старпер /n20.a.p.ke.<
+сучара /n10.p1.< :+m
 сученя /n40.p.<
 сцикло /n2n.<
 сцяки /np2
@@ -95,6 +108,22 @@
 усцятися /vr1 :perf:v-u
 хер /n20.a.p
 херачити /v1.cf.advp :imperf                  # rv_zna:rv_oru:rv_dav
+херовий /adj
+херово adv
+хєр /n20.a.ke                       # lim
+хєрак intj
+хєрам хєр noun:p:v_dav
+хєранути /v1 :perf                          # rv_zna:rv_oru:rv_dav
+хєрасє intj
+хєрасобі noninfl
+хєрачити /v1.cf :imperf                     # rv_zna:rv_oru
+хєрити /v1.cf :imperf                       # rv_zna
+хєрня /n2n
+хєровий /adj.adv \
+ +cs=хєровіший
+хєрота /n10
 хитрожопий /adj
 хренація /n10.p1
 хреновина /n10.p1
+хулє adv
+хуліард /n20.a.p
