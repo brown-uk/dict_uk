@@ -1,6 +1,7 @@
 #!/bin/env groovy
 
-def freqMin = 10
+def freqMin = 60
+def freqMinCap = 150
 def words = [:].withDefault{0}
 
 //def allTagged = new File('../../../build/tmp/all.tagged.tmp').readLines()
@@ -49,6 +50,8 @@ out.text = '<wordlist locale="uk_UA" description="Ukrainian" date="'+new Date().
 
 def sortedWords = words.toSorted{ -it.value }
 sortedWords.each {
+    if( it.key =~ /^[А-ЯІЇЄҐ]/ && it.value < freqMinCap )
+        return
     if( it.value < freqMin )
         return
 
