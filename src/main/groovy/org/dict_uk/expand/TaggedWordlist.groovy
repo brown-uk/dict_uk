@@ -20,7 +20,8 @@ class TaggedWordlist {
 		"slang.lst": ":slang",
 		"alt.lst": ":alt",
 		"subst.lst": ":subst",
-		"vulgar.lst": ":vulg"
+		"vulgar.lst": ":vulg",
+		"vulgar_obsc.lst": ":obsc"
 	]
 
 

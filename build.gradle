@@ -130,7 +130,9 @@ task sortDict(type: JavaExec) {
 	files += " geo-ukr-hydro.lst geo-other.lst pharm.lst"  //  geo-ukr-koatuu.lst
 	files += " slang.lst twisters.lst invalid.lst invalid-compound.lst names-anim.lst names-other.lst arch.lst base-compound_1992.lst"
 	files += " names-composite.lst base-composite.lst subst.lst vulgar.lst"
-//	files += " vulgar_obsc.lst"
+	if( new File("${projectDir}/data/dict/vulgar_obsc.lst").isFile() ) {
+	  files += " vulgar_obsc.lst"
+	}
 
 	args files.split()
 }

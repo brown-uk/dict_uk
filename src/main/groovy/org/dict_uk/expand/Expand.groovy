@@ -1178,7 +1178,7 @@ class Expand {
 				":geo", ":fname", ":lname", ":pname",
                 ":ua_2019", ":ua_1992", ":short", ":long",
                 ":&insert", ":&predic",
-				":bad", ":slang", ":rare", ":arch", ":vulg", ":subst", ":coll", ":alt",
+				":bad", ":slang", ":rare", ":arch", ":vulg", ":obsc", ":subst", ":coll", ":alt",
 				":xp1", ":xp2", ":xp3", ":xp4",
 			]
 

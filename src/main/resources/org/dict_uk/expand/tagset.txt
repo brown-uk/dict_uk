@@ -53,6 +53,7 @@ numr
 &&numr
 number
 nv
+obsc
 onomat
 p
 part

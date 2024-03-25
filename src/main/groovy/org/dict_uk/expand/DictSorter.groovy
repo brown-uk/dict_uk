@@ -53,7 +53,7 @@ class DictSorter {
 	static final Pattern re_xv_sub = Pattern.compile("^([^:]+)(.*)(:x.[1-9])")
 	static final Pattern re_pron_sub = Pattern.compile("^([^:]+)(.*)(:&pron:[^:]+)")
 
-	static final Pattern LOWERING_TAGS_RE = Pattern.compile(/:(alt|rare|arch|vulg|coll|subst|bad|var|short|long|ua_....)/)
+	static final Pattern LOWERING_TAGS_RE = Pattern.compile(/:(alt|rare|arch|vulg|obsc|coll|subst|bad|var|short|long|ua_....)/)
 	static final Pattern GEN_RE = Pattern.compile(/:([mfnsp])(:|$)/)
 	static final Pattern VIDM_RE = Pattern.compile(/:(v_...)/)
 

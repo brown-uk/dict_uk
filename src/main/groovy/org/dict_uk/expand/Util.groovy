@@ -339,7 +339,7 @@ class Util {
 			lemmas.add(dicEntry.lemma)
 
 			if( ! word.endsWith(".")
-				&& ( ! (tag =~ /:(bad|alt|subst|short|long|slang|arch|vulg)/) \
+				&& ( ! (tag =~ /:(bad|subst|alt|short|long|slang|arch|vulg|obsc)/) \
 				|| tag =~ /&insert:short/ \
 				|| tag =~ /adj:m:v_(naz|zna).*:short/ \
 				|| word =~ /^((що(як)?|як)?най)?(більш|менш|скоріш|перш)$/)
