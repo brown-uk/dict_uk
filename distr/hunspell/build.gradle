@@ -94,9 +94,9 @@ task testHunspellGood(type: Exec) { //, dependsOn: hunspell) {
 }
 
 task testHunspellBad (type: Exec) { //, dependsOn: hunspell) {
-    def txt = " кккк білолицого пілі відб\\'ю"
-    txt += " увсього визначіть"
-    txt += " ніштяк гарная пірвати стріляючий підем"
+    def txt = " кккк білолицого пілі відб\\'ю бльо хер"
+    txt += " увсього визначіть вимажіть  підем"
+    txt += " ніштяк гарная пірвати стріляючий февдалізм"
     // txt += " сміючися певніш"
 
     def cmd = "echo $txt | hunspell -d $outDir/uk_UA | grep -E '^(\\+|\\*)'" + '; [ $? == 1 ]'
@@ -119,7 +119,7 @@ task getSpellWords (type: Exec) {
     inputs.files "${projectDir}/../../out/dict_corp_lt.txt"
     outputs.files "${projectDir}/build/words_spell.txt"
 
-    def cmd = "grep -vE \"noun:inanim:.:v_kly|(:inf|:3).*:short|:2:long|advp.*long|adv.*:short|adj.*:long|:(bad|slang|alt|subst|arch|rare)|[.'] \""
+    def cmd = "grep -vE \"noun:inanim:.:v_kly|(:inf|:3).*:short|:2:long|advp.*long|adv.*:short|adj.*:long|:(bad|subst|alt|arch|slang|vulg|obsc|rare)|[.'] \""
     cmd += " ${projectDir}/../../out/dict_corp_lt.txt | cut -d ' ' -f 1 | sort -u > ${projectDir}/build/words_spell.txt"
 
     commandLine "sh", "-c", "${cmd}"

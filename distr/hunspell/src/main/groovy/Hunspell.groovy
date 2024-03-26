@@ -91,7 +91,7 @@ new File('build/mapping.txt').text = revFlagMap.collect{k,v -> "$k=$v"}.join("\n
 println("Negative matches:\n\t" + negativeMatchFlags.collect{k,v -> "$k=$v"}.join("\n\t"))
 
 @Field
-static String NONSPELL_TAG_LIST = ":(alt|bad|subst|slang|vulg|arch|short|long)"
+static String NONSPELL_TAG_LIST = ":(bad|subst|alt|arch|slang|vulg|obsc|short|long)"
 
 @Field
 static String subFolder = ""
@@ -276,7 +276,7 @@ new File("build/hunspell/$subFolder/uk_UA.aff").text = fileHeader + '\n' + out
 
 def dictDir = new File("../../data/dict")
 
-def IGNORED_FILES = /add_tag|composite|dot-abbr|invalid|twisters|alt|arch|slang/
+def IGNORED_FILES = /add_tag|composite|dot-abbr|invalid|twisters|subst|alt|arch|slang|vulg/
 if( fullDict ) {
     IGNORED_FILES = /add_tag|composite|dot-abbr|invalid/
 }
