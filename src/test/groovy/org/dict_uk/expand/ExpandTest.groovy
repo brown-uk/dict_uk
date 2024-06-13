@@ -141,6 +141,31 @@ public class ExpandTest {
         def lines = ["голова /n10.p2.< :+m      # посада"]
         assertEquals golovaFull, expand.process_input(lines).join("\n").replaceAll(/[<>]/, '')
     }
+    
+    def adjNounFem =
+'''
+важкопоранена важкопоранена noun:anim:f:v_naz
+важкопораненої важкопоранена noun:anim:f:v_rod
+важкопораненій важкопоранена noun:anim:f:v_dav
+важкопоранену важкопоранена noun:anim:f:v_zna
+важкопораненою важкопоранена noun:anim:f:v_oru
+важкопораненій важкопоранена noun:anim:f:v_mis
+важкопоранена важкопоранена noun:anim:f:v_kly
+важкопоранений важкопоранений noun:anim:m:v_naz
+важкопораненого важкопоранений noun:anim:m:v_rod
+важкопораненому важкопоранений noun:anim:m:v_dav
+важкопораненого важкопоранений noun:anim:m:v_zna
+важкопораненим важкопоранений noun:anim:m:v_oru
+важкопораненім важкопоранений noun:anim:m:v_mis
+важкопораненому важкопоранений noun:anim:m:v_mis
+важкопоранений важкопоранений noun:anim:m:v_kly
+'''.trim()
+
+    @Test
+    void testAdjNounFem() {
+        def lines = ["важкопоранений /n2adj1.f.<"]
+        assertEquals(adjNounFem, join(expand.process_input(lines)))
+    }
 
 	
 	def adjLastName =
@@ -157,7 +182,7 @@ public class ExpandTest {
 	@Test
 	void testAdjLastName() {
 		def lines = ["Аверянова /n2adj1.<+"]
-		assertEquals(join(expand.process_input(lines)), adjLastName)
+		assertEquals(adjLastName, join(expand.process_input(lines)))
 //		assertEquals(DicEntry.fromLines(adjLastName.split(/\n/)), join(expand.process_input(lines)))
 	}
 

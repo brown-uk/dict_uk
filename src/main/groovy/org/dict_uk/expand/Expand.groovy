@@ -972,6 +972,16 @@ class Expand {
 				out_lines = [line]
 			}
 		}
+        // set fem lemma for substantivated adjectives - хвора
+        else if( flags.startsWith("/n2adj1") && flags.contains(".f") ) {
+            def line1 = line.replaceFirst(/\.f\b/, "")
+            out_lines.add(line1)
+            def line2 = line.replace(/\.p\b/, '')
+                .replaceFirst(/ий (\/n2adj1)\.f/, 'а $1')
+                .replaceFirst(/ій (\/n2adj1)\.f/, 'я $1')
+                .replaceFirst(/\.p\b/, '')
+            out_lines.add(line2)
+        }
 		else if( flags.startsWith("/n10") || flags.startsWith("/n3") ) {
 			if( ! flags.contains(".k") ) {
 			    lineParts[1] += flags.startsWith("/n10") 
@@ -1588,7 +1598,7 @@ class Expand {
 				if( validator.checkEntries(taggedEntries) > 0 ) {
 					taggedEntries = null
 				}
-
+                
 				return taggedEntries
 			}
 			catch(Exception e) {

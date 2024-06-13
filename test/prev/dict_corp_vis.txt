@@ -886,6 +886,13 @@
   вагонопотоку noun:inanim:m:v_mis
   вагонопотоці noun:inanim:m:v_mis
   вагонопоточе noun:inanim:m:v_kly
+важкопоранена noun:anim:f:v_naz
+  важкопораненої noun:anim:f:v_rod
+  важкопораненій noun:anim:f:v_dav
+  важкопоранену noun:anim:f:v_zna
+  важкопораненою noun:anim:f:v_oru
+  важкопораненій noun:anim:f:v_mis
+  важкопоранена noun:anim:f:v_kly
 важкопоранений noun:anim:m:v_naz
   важкопораненого noun:anim:m:v_rod
   важкопораненому noun:anim:m:v_dav
@@ -894,13 +901,6 @@
   важкопораненім noun:anim:m:v_mis
   важкопораненому noun:anim:m:v_mis
   важкопоранений noun:anim:m:v_kly
-  важкопоранена noun:anim:f:v_naz
-  важкопораненої noun:anim:f:v_rod
-  важкопораненій noun:anim:f:v_dav
-  важкопоранену noun:anim:f:v_zna
-  важкопораненою noun:anim:f:v_oru
-  важкопораненій noun:anim:f:v_mis
-  важкопоранена noun:anim:f:v_kly
   важкопоранені noun:anim:p:v_naz
   важкопоранених noun:anim:p:v_rod
   важкопораненим noun:anim:p:v_dav
@@ -2298,6 +2298,31 @@
   Гулаку-Артемовськім noun:anim:m:v_mis:prop:lname
   Гулаку-Артемовському noun:anim:m:v_mis:prop:lname
   Гулаче-Артемовський noun:anim:m:v_kly:prop:lname
+дававши advp:imperf
+давати verb:imperf:inf    # rv_inf:rv_zna:rv_rod:rv_oru:rv_dav
+  давать verb:imperf:inf:short
+  давай verb:imperf:impr:s:2
+  даваймо verb:imperf:impr:p:1
+  давайте verb:imperf:impr:p:2
+  даю verb:imperf:pres:s:1
+  даєш verb:imperf:pres:s:2
+  дає verb:imperf:pres:s:3
+  даємо verb:imperf:pres:p:1
+  даєм verb:imperf:pres:p:1:subst
+  даєте verb:imperf:pres:p:2
+  дають verb:imperf:pres:p:3
+  даватиму verb:imperf:futr:s:1
+  даватимеш verb:imperf:futr:s:2
+  даватиме verb:imperf:futr:s:3
+  даватимем verb:imperf:futr:p:1
+  даватимемо verb:imperf:futr:p:1
+  даватимете verb:imperf:futr:p:2
+  даватимуть verb:imperf:futr:p:3
+  давав verb:imperf:past:m
+  давала verb:imperf:past:f
+  давало verb:imperf:past:n
+  давали verb:imperf:past:p
+  давано verb:imperf:impers
 Данаїди noun:anim:p:v_naz:ns:prop:fname
   Данаїд noun:anim:p:v_rod:ns:prop:fname
   Данаїдам noun:anim:p:v_dav:ns:prop:fname
@@ -2305,6 +2330,7 @@
   Данаїдами noun:anim:p:v_oru:ns:prop:fname
   Данаїдах noun:anim:p:v_mis:ns:prop:fname
   Данаїди noun:anim:p:v_kly:ns:prop:fname
+даючи advp:imperf
 двойко numr:p:v_naz:nv
   двойко numr:p:v_rod:nv
   двойко numr:p:v_dav:nv
@@ -3442,6 +3468,15 @@
   ніжністю noun:inanim:f:v_oru
   ніжності noun:inanim:f:v_mis
   ніжносте noun:inanim:f:v_kly
+ніхто-ніхто noun:anim:m:v_naz:&pron:neg
+  нікого-нікого noun:anim:m:v_rod:&pron:neg
+  нікому-нікому noun:anim:m:v_dav:&pron:neg
+  нікого-нікого noun:anim:m:v_zna:&pron:neg
+  ніким-ніким noun:anim:m:v_oru:&pron:neg
+  нікім-нікім noun:anim:m:v_mis:&pron:neg
+  нікім-нікому noun:anim:m:v_mis:&pron:neg
+  нікому-нікім noun:anim:m:v_mis:&pron:neg
+  нікому-нікому noun:anim:m:v_mis:&pron:neg
 нудьга noun:inanim:f:v_naz:&predic
   нудьги noun:inanim:f:v_rod
   нудьзі noun:inanim:f:v_dav
@@ -3552,7 +3587,7 @@
   папараці noun:anim:f:v_oru:nv
   папараці noun:anim:f:v_mis:nv
   папараці noun:anim:f:v_kly:nv
-пара noun:inanim:f:v_naz:&predic:xp1    # газ
+пара noun:inanim:f:v_naz:xp1    # газ
   пари noun:inanim:f:v_rod:xp1
   парі noun:inanim:f:v_dav:xp1
   пару noun:inanim:f:v_zna:xp1
