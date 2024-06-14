@@ -76,6 +76,7 @@ class ExpandAll {
         }
         catch(Exception e) {
             log.error("Error: ", e)
+            System.exit(1)
         }
 	}
 
