@@ -808,7 +808,7 @@ class Expand {
 
 			List<String> addTags = additionalTags[dicEntry.word]
 			if( addTags[0] in ['noun', 'adj']
-					&& ! addTags.contains("ua_2019")
+					&& ! (addTags =~ /ua_/)
 					&& ! (dicEntry.tagStr =~ /(noun|adj).*:[mfn]:v_naz/) )
 				continue
 
