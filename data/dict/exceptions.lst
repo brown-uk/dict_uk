@@ -795,7 +795,7 @@
 
 хріна noninfl
 
-бісики бісик noun:anim:p:v_zna                          # для «бісики пускати»
+# бісики бісик noun:anim:p:v_zna                          # для «бісики пускати» - вже є як v_zna:rare
 
 
 чепця чепець noun:inanim:m:v_rod:bad

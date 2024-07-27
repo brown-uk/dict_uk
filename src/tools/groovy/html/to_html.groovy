@@ -2,6 +2,9 @@
 
 String main=""
 new File('dict_corp_vis.txt').eachLine { String line ->
+    if( line.contains(":obsc") )
+        return
+    
     line = line.replace("'", '\u02BC')   // u02BC
 //    line = line.replaceFirst(/ {4}#/, '&nbsp;&nbsp;&nbsp;&nbsp;#')
 
