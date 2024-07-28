@@ -11,6 +11,7 @@
 баристів бариста noun:anim:p:v_rod/v_zna
 баче бачити verb:imperf:pres:s:3                            #> бачить
 бачуть бачити verb:imperf:pres:p:3
+бек-вокала бек-вокал noun:m:v_rod
 берез береза noun:inanim:p:v_rod
 Бешикташа Бешикташ noun:m:v_rod:prop
 біжуть бігти verb:imperf:pres:p:3
@@ -78,6 +79,7 @@
 вихорем вихор noun:inanim:m:v_oru:xp1
 вівць вівця noun:anim:p:v_rod/v_zna                         #> овець
 віддасиш віддати verb:perf:futr:s:2
+відеоблога відеоблог noun:m:v_rod
 відмітіть відмітити verb:perf:impr:p:2
 відповідіть відповісти verb:perf:impr:p:2
 відповісиш відповісти verb:perf:futr:s:2
@@ -89,6 +91,7 @@
 встеле встелити verb:perf:futr:s:3
 вступе вступити verb:perf:futr:s:3
 вуглепластика вуглепластик noun:m:v_rod
+вушці вушко noun:n:v_mis
 входе входити verb:imperf:pres:s:3
 Газпрома Газпром noun:m:v_rod:prop
 генома геном noun:m:v_rod
@@ -233,6 +236,7 @@
 лейкопластирем лейкопластир noun:m:v_oru
 лівшів лівша noun:anim:p:v_rod/v_zna
 лове ловити verb:imperf:pres:s:3
+локдауна локдаун noun:m:v_rod
 ломе ломити verb:imperf:pres:s:3
 маєтка маєток noun:m:v_rod
 майоріють майоріти verb:imperf:pres:p:3     #> майорять

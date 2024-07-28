@@ -75,6 +75,7 @@
 дод. noun:m:nv                  # додаток
 докт. noun:m:nv:anim            # доктор
 дол. noun:m:nv                  # долар
+дом. adj:m:nv:rinanim           # домашній
 доп. noun:n:nv|adj:nv           # доповнення, доповнений
 досл. adv                       # дослівно
 доц. noun:m:nv:anim             # доцент
@@ -121,6 +122,7 @@
 кв. adj:nv:rinanim|noun:f:nv:np         # квадратний, квартира
 кімн. noun:f:nv                 # кімната
 кін. noun:m:nv:np               # кінець
+Кл. adj:m:nv:rinanim            # кличний
 кл. noun:m:nv
 кн. noun:f:nv                   # книга
 кн. noun:m:nv:anim              # князь
@@ -145,20 +147,23 @@
 Лк. noun:anim:m:v_naz:nv:prop:fname     # Лука
 м. noun:n:nv:np                 # місто
 м. noun:m:nv                    # (прожитковий) мінімум
+макс. adj:nv                    # максимальний
 мал. noun:m:nv                  # малюнок
 Ман. noninfl:prop               # Манчестер (ФК)
 мат. adj:nv:rinanim             # математичний
 мемор. adj:nv                   # меморіальний
 мех. adj:nv:rinanim             # механічний
+мин. adj:m:nv:rinanim           # минулий
 мист. adj:nv:rinanim            # мистецький
 митроп. noun:m:nv               # митрополит
 міжнар. adj:nv:rinanim          # міжнародний
+мін. adj:nv                     # мінімальний
 місц. adj:nv:rinanim            # місцевий
 міськ. adj:nv:rinanim           # міський
 мкрн. noun:m:nv                 # мікрорайон
-млн. numr:m/p:nv:bad              # мільйон
-млрд. numr:m/p:nv:bad             # мільярд
-мн. noun:f:nv                   # множини
+млн. numr:m/p:nv:bad            # мільйон
+млрд. numr:m/p:nv:bad           # мільярд
+мн. noun:f:nv                   # множина
 моб. adj:nv:rinanim             # мобільний
 молд. adj:nv:rinanim            # молдовський
 моск. adj:nv:rinanim            # московський
@@ -245,6 +250,7 @@
 реліг. adj:nv                   # релігійний
 респ. noun:f:nv|adj:nv          # республіка, республіканський
 рис. noun:m:nv                  # рисунок
+роб. adj:m:nv:rinanim           # робочий
 робітн. adj:nv:rinanim          # робітничий
 род. adj:nv:rinanim             # родовий
 род. noun:f:nv:xp1              # родина
@@ -296,6 +302,7 @@
 таб. noun:f:nv                  # таблиця
 табл. noun:f:nv                 # таблиця
 тел. noun:m:nv                  # телефон
+теп. adj:nv                     # теперішній
 тех. adj:nv:rinanim             # технічний
 техн. adj:nv:rinanim            # технічний
 тиж. noun:f:nv                  # тиждень, тижні
