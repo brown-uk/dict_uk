@@ -982,7 +982,7 @@ class Expand {
                 .replaceFirst(/\.p\b/, '')
             out_lines.add(line2)
         }
-		else if( flags.startsWith("/n10") || flags.startsWith("/n3") ) {
+		else if( (flags.startsWith("/n10") || flags.startsWith("/n3")) && ! line.contains(":abbr") ) {
 			if( ! flags.contains(".k") ) {
 			    lineParts[1] += flags.startsWith("/n10") 
                     ? word =~ /ся$/ 
@@ -992,7 +992,7 @@ class Expand {
 			}
 			out_lines = [line]
 		}
-		else if( flags =~ '^/n2[0-4]' && ! flags.contains(".k") ) {
+		else if( flags =~ '^/n2[0-4]' && ! flags.contains(".k") && ! line.contains(":abbr") ) {
 			if( isDefaultKlyE(word, flags) ) {
 //			    System.err.println(" .ke == " + line)
 			    lineParts[1] += ".ke"

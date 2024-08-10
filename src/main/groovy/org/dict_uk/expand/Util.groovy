@@ -146,7 +146,7 @@ class Util {
 
 				// add singular
 				for( v in VIDM_LIST ){
-					if( v == "v_kly" && entry.word.endsWith(".") )
+					if( v == "v_kly" && skipVkly(entry) )
 						continue
                         
 					String tag = parts[0] + ":" + v + ":nv" + part2
@@ -157,7 +157,7 @@ class Util {
 				if( lineTagStr.contains("noun") ) {
 					if( ! lineTagStr.contains(":p") && ! lineTagStr.contains(":np") && ! lineTagStr.contains(":lname") ) {
 						for( v in VIDM_LIST ) {
-        					if( v == "v_kly" && entry.word.endsWith(".") )
+        					if( v == "v_kly" && skipVkly(entry) )
         					    continue
 
 							def newTagStr = re_nv_vidm.matcher(lineTagStr).replaceAll('$1:p:' + v + ':$2')
@@ -195,7 +195,7 @@ class Util {
                 
 				for(def gen in gens) {
 					for(String v in VIDM_LIST){
-        				if( v == "v_kly" && (entry.word.endsWith(".") || lineTagStr.contains("&pron")) )
+        				if( v == "v_kly" && (skipVkly(entry) || lineTagStr.contains("&pron")) )
 							continue
                             
                         if( v == "v_zna" && "mp".contains(gen) ) {
@@ -223,7 +223,10 @@ class Util {
 		return lines
 	}
 
-
+    static boolean skipVkly(DicEntry entry) {
+        entry.word.endsWith(".") || entry.tagStr.contains(":abbr")
+    }
+    
 
 	void sub_stat(String pos, String sub_pos, String line, sub_pos_stat) {
 		if( line.contains(":" + sub_pos) ) {

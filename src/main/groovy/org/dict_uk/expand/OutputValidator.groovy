@@ -191,14 +191,19 @@ class OutputValidator {
 		if( ! subtagSet.containsAll(ALL_V_TAGS) && ! line.contains(". ") ) {
 			def missingVSet = ALL_V_TAGS - subtagSet
 
-			if( missingVSet == ["v_kly"] && (line.contains(":lname") 
-			        || (line.contains(" adj") && line.contains("&pron")) ) )
+			if( missingVSet == ["v_kly"] ) {
+                if (line.contains(":lname") 
+			        || (line.contains(" adj") && line.contains("&pron")) )
 				return nonFatalErrorCount
-			
+
+                if (line.contains(":abbr"))
+                    return 0 
+			}
+                    
 			if( isLimitedForms(line) )
 			    return nonFatalErrorCount
 			
-			log.error("noun lemma is missing " + missingVSet + " on gender " + gender + " for: " + line)
+			log.error("noun lemma is missing $missingVSet on gender $gender for: $line")
 			nonFatalErrorCount++
 		}
 		
