@@ -67,6 +67,8 @@
 що /n_pron :&pron:int:rel
 віщо що noun:inanim:n:v_zna:&pron:int:rel:rare
 
+що-о що noun:inanim:n:v_naz/v_zna:&pron:int:rel:alt
+
 що-що що-що noun:inanim:n:v_naz/v_zna:&pron:int:rel
 чого-чого що-що noun:inanim:n:v_rod:&pron:int:rel
 чому-чому що-що noun:inanim:n:v_dav/v_mis:&pron:int:rel
@@ -134,10 +136,14 @@
 цей /adj_pron.long :&pron:dem
 оцей /adj_pron.long :&pron:dem
 
+цею цей adj:f:v_oru:&pron:dem:arch
+
 той /adj_pron.long :&pron:dem
 позатой /adj_pron.long :&pron:dem
 тамтой /adj_pron.long :&pron:dem
 отой /adj_pron.long :&pron:dem
+
+тоє той adj:n:v_naz:&pron:dem:long
 
 весь /adj_pron :&pron:gen
 увесь /adj_pron.long :&pron:gen
@@ -403,6 +409,8 @@
 декількох декілька numr:p:v_rod/v_zna/v_mis:&pron:ind
 декільком декілька numr:p:v_dav:&pron:ind
 декількома декілька numr:p:v_oru:&pron:ind
+
+декільки декільки numr:p:v_naz/v_zna:&pron:ind:arch      # lim
 
 кілька кілька numr:p:v_naz/v_zna:&pron:ind
 кількох кілька numr:p:v_rod/v_zna/v_mis:&pron:ind
@@ -1126,9 +1134,11 @@
 так part
 так conj:coord
 так conj:subord
+та-ак part
 так-так part|noninfl:onomat
 та conj:coord|part
 теє part:coll
+тоє part:coll
 теж adv                                         # :&part
 тим-то conj:subord
 тільки adv|conj:subord|conj:coord|part

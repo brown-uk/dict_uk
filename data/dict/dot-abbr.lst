@@ -25,7 +25,8 @@
 бібл. adj:nv:rinanim            # біблійний, бібліографічний, бібліотечний
 біл. adj:nv:rinanim             # білоруський
 біол. adj:nv:rinanim            # біологічний
-бл. adv                         # близько
+бл. prep                        # близько           # rv_rod
+бл. adj:m:ranim:nv              # блаженний
 близьк. adv                     # близько
 болг. adj:nv:rinanim            # болгарський
 бр. noun:m:nv:anim              # брат(и)
@@ -190,6 +191,7 @@
 одн. noun:f:nv                  # однини
 оз. noun:n:nv                   # озеро
 окр. adj:nv:rinanim             # окремий
+Ол. noun:m:nv:anim:prop:fname   # Олександр/Олег
 оп. noun:m:nv                   # опис
 опубл. adj:nv:&adjp:pasv:perf   # опублікований
 орг. noun:f:nv                  # організація
@@ -276,6 +278,7 @@
 сільс. adj:nv                   # сільський
 скор. noun:n:nv                 # скорочення
 слов. adj:nv:rinanim            # слов'янський
+слц. adj:nv                     # словацький
 #Сол. noun                      # (послання до) Солунян
 соц. adj:nv:rinanim             # соціальний
 співавт. noun:m:nv:anim         # співавтор

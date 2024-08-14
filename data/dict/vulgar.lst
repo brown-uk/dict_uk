@@ -25,6 +25,7 @@
 дохера adv
 дохєра adv
 дохєріща adv
+дохріна adv
 дрочер /n20.a.p.<
 дура /n10.p1.<                             #> дурна|дурепа
 дуринда /n10.p1.<
@@ -33,7 +34,7 @@
 залупа /n10.p1
 засирати /v2.cf.advp :imperf               # rv_zna:rv_oru:rv_dav
 засрати /v1.isNo :perf                     # rv_zna:rv_oru:rv_dav
-захерачити /v1 :perf                     # rv_zna:rv_oru:rv_dav
+захерачити /v1 :perf                       # rv_zna:rv_oru:rv_dav
 курва /n10.p1.ko.<
 курваль /n20.a.p.<
 курвити /v1.cf.advp :imperf
@@ -45,6 +46,7 @@
 нахер adv
 нахрен adv
 нахрін adv
+нахріна adv
 недобдіти /v1 :perf
 нєхер noninfl:&predic
 нєхєр noninfl:&predic
@@ -66,15 +68,20 @@
 перднути /v1 :perf
 пердолити /v1.cf.advp :imperf
 перебдіти /v1 :perf
+пересрати /v1.isNo :perf                   # rv_zna:rv_oru:rv_dav
 пипець intj
 підар /n20.a.p.ke.<
 підарас /n20.a.p.<
 підарюга /n10.p1.< :+m
 підісрати /v1.isNo :perf                     # rv_zna:rv_dav
 підор /n20.a.p.<
+підсрачник /n20.a.p
+піпець noninfl
+пісєц noninfl
 піська /n10.p2
 пісюн /n20.a.p
 посрати /v1.isNo :perf
+посратися /vr1 :perf
 потрахатися /vr2 :perf
 похерити /v1.it0.is0 :perf                   # rv_zna:rv_oru:rv_dav
 поц /n20.a.p.<
@@ -128,5 +135,6 @@
 хитрожопий /adj
 хренація /n10.p1
 хреновина /n10.p1
+хрєновий /adj
 хулє adv
 хуліард /n20.a.p

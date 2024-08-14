@@ -30,6 +30,8 @@
 бузка бузок noun:m:v_rod             #> бузку
 буков буква noun:p:v_rod
 булгарів булгари noun:anim:p:v_rod/v_zna:ns
+бюлетні бюлетень noun:inanim:m:v_naz/v_zna/v_mis
+бюлетнів бюлетень noun:inanim:p:v_rod
 бюрків бюрко noun:inanim:p:v_rod
 вагів ваги noun:p:v_rod:ns
 вводе вводити verb:imperf:pres:s:3
@@ -141,6 +143,7 @@
 жреців жрець noun:anim:p:v_rod/v_zna
 журнала журнал noun:inanim:m:v_rod
 забезпечіть забезпечити verb:perf:impr:p:2
+завісів завіса noun:inanim:p:v_rod
 завісіть завісити verb:perf:impr:p:2
 заводе заводити verb:imperf:pres:s:3
 законопроекта законопроект noun:m:v_rod:ua_1992
