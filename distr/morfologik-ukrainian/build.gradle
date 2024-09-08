@@ -36,6 +36,7 @@ String resourceDir=sourceSets.main.resources.srcDirs[0].toString() + "/" + packa
 String outResDir=sourceSets.main.output.resourcesDir.toString() + "/" + packageDir
 String outRulesDir=sourceSets.main.output.resourcesDir.toString() + "/org/languagetool/rules/uk"
 String tmpDir="build/tmp"
+String semtagsDir="$projectDir/../../data/sem"
 
 String inputDir="${projectDir}/../../out"
 String inputDictFile="dict_corp_lt.txt"
@@ -82,13 +83,18 @@ compileGroovy.enabled = false
 
 
 processResources {
-    inputs.file versionFile
+    inputs.files versionFile, semtagsDir
     excludes ["**/*Builder*.txt"]
 
     doLast{
        copy {
              from versionFile
              into new File(destinationDir, packageDir)
+       }
+       copy {
+           from semtagsDir
+           into "${sourceSets.main.output.resourcesDir.toString()}/ua/net/nlp/dict_uk/semtags"
+           include '*.csv'
        }
     }
 }
@@ -416,8 +422,10 @@ jar {
     include 'org/languagetool/**/README*'
     include 'org/languagetool/**/*tags*.txt'
     include 'org/languagetool/**/VERSION'
-    exclude 'ua/**'
-
+    include 'ua/net/nlp/dict_uk/**'
+    exclude 'ua/net/nlp/README' 
+    exclude 'ua/net/nlp/ukrainian.info'
+    
     includeEmptyDirs false
 }
 

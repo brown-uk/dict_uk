@@ -42,6 +42,7 @@ dependencies {
 
 //    groovyScript localGroovy()
 }
+
 /*
 java {
     toolchain {
@@ -53,6 +54,14 @@ java {
 //compileGroovy {
 //    exclude '**/tools/other/*.groovy'
 //}
+//
+//task copySemtags(type: Copy) {
+//    from "$projectDir/data/sem"
+//    into 'build/resources/main/ua/net/nlp/dict_uk/semtags'
+//    include '*.csv'
+//}
+//
+//processResources.dependsOn copySemtags
 
 eclipse {
   classpath {
