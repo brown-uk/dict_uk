@@ -63,9 +63,7 @@
 одинадцять,1:abst:quantity:absol
 один-два,1:abst:quantity
 один-півтора,1:abst:quantity
-один-півтори,1:abst:quantity
-одна-дві,1:abst:quantity
-одне-два,1:abst:quantity
+одна-півтори,1:abst:quantity
 півста,1:abst:quantity:absol
 півстільки,1:abst:quantif
 півтора,1:abst:quantity:absol
@@ -74,7 +72,6 @@
 півтораста,1:abst:quantity:absol
 півтори,1:abst:quantity:absol
 півтори-два,1:abst:quantity
-півтори-дві,1:abst:quantity
 півчвертаста,1:abst:quantity:absol
 п'ятдесят,1:abst:quantity:absol
 п'ятдесять,1:abst:quantity:absol
