@@ -7,6 +7,9 @@ import org.dict_uk.common.DicEntry
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
+import groovy.transform.CompileStatic
+
+@CompileStatic
 public class ExpandCompsTest {
 	
 	static ExpandComps expandComps
@@ -87,6 +90,52 @@ public class ExpandCompsTest {
 		assertEquals(fullComps2, ExpandTest.join(expandComps.process_input(input)))
 	}
 
+def fullComps25 = 
+"""
+один-єдиний один-єдиний adj:m:v_naz:&numr
+один-єдиний один-єдиний adj:m:v_zna:rinanim:&numr
+одного-єдиного один-єдиний adj:m:v_rod:&numr
+одного-єдиного один-єдиний adj:m:v_zna:ranim:&numr
+одного-єдиного один-єдиний adj:n:v_rod:&numr
+одному-єдиному один-єдиний adj:m:v_dav:&numr
+одному-єдиному один-єдиний adj:m:v_mis:&numr
+однім-єдиному один-єдиний adj:m:v_mis:&numr
+одному-єдиному один-єдиний adj:n:v_dav:&numr
+одному-єдиному один-єдиний adj:n:v_mis:&numr
+однім-єдиному один-єдиний adj:n:v_mis:&numr
+одним-єдиним один-єдиний adj:m:v_oru:&numr
+одним-єдиним один-єдиний adj:n:v_oru:&numr
+одним-єдиним один-єдиний adj:p:v_dav:&numr
+одному-єдинім один-єдиний adj:m:v_mis:&numr
+однім-єдинім один-єдиний adj:m:v_mis:&numr
+одному-єдинім один-єдиний adj:n:v_mis:&numr
+однім-єдинім один-єдиний adj:n:v_mis:&numr
+одна-єдина один-єдиний adj:f:v_naz:&numr
+одної-єдиної один-єдиний adj:f:v_rod:&numr
+однієї-єдиної один-єдиний adj:f:v_rod:&numr
+одній-єдиній один-єдиний adj:f:v_dav:&numr
+одній-єдиній один-єдиний adj:f:v_mis:&numr
+одну-єдину один-єдиний adj:f:v_zna:&numr
+однією-єдиною один-єдиний adj:f:v_oru:&numr
+одною-єдиною один-єдиний adj:f:v_oru:&numr
+одне-єдине один-єдиний adj:n:v_naz:&numr
+одно-єдине один-єдиний adj:n:v_naz:&numr
+одне-єдине один-єдиний adj:n:v_zna:&numr
+одно-єдине один-єдиний adj:n:v_zna:&numr
+одні-єдині один-єдиний adj:p:v_naz:&numr
+одні-єдині один-єдиний adj:p:v_zna:rinanim:&numr
+одних-єдиних один-єдиний adj:p:v_rod:&numr
+одних-єдиних один-єдиний adj:p:v_zna:ranim:&numr
+одних-єдиних один-єдиний adj:p:v_mis:&numr
+одними-єдиними один-єдиний adj:p:v_oru:&numr
+""".trim()
+
+    @Test
+    void testNumr() {
+        def input = ["один /numr ^adj - єдиний /adj :&numr"]
+        assertEquals(fullComps25, ExpandTest.join(expandComps.process_input(input)))
+    }
+
     def fullComps3 =
 '''
 дівка-дзиґа дівка-дзиґа noun:anim:f:v_naz
@@ -134,4 +183,77 @@ public class ExpandCompsTest {
         assertEquals(fullComps4, ExpandTest.join(expandComps.process_input(input)))
     }
 
+
+def fullComps5 = 
+"""
+Буда-Голубієвичі Буда-Голубієвичі noun:inanim:f:v_naz:prop
+Буду-Голубієвичі Буда-Голубієвичі noun:inanim:f:v_zna:prop
+Будо-Голубієвичі Буда-Голубієвичі noun:inanim:f:v_kly:prop
+Буди-Голубієвичів Буда-Голубієвичі noun:inanim:f:v_rod:prop
+Буді-Голубієвичам Буда-Голубієвичі noun:inanim:f:v_dav:prop
+Будою-Голубієвичами Буда-Голубієвичі noun:inanim:f:v_oru:prop
+Буді-Голубієвичах Буда-Голубієвичі noun:inanim:f:v_mis:prop
+""".trim()
+
+    @Test
+    void testGeoComp() {
+        def input = ["Буда /n10 - Голубієвичі /np2"]
+        assertEquals(fullComps5, ExpandTest.join(expandComps.process_input(input)))
+    }
+
+    def fullComps6 =
+"""
+вежі-близнюки вежі-близнюки noun:inanim:p:v_naz:ns
+вежі-близнюки вежі-близнюки noun:inanim:p:v_zna:ns
+вежі-близнюки вежі-близнюки noun:inanim:p:v_kly:ns
+веж-близнюків вежі-близнюки noun:inanim:p:v_rod:ns
+вежам-близнюкам вежі-близнюки noun:inanim:p:v_dav:ns
+вежами-близнюками вежі-близнюки noun:inanim:p:v_oru:ns
+вежах-близнюках вежі-близнюки noun:inanim:p:v_mis:ns
+""".trim()
+    
+    @Test
+    void testPlural() {
+        def input = ["вежі /np1 - близнюки /np2"]
+        assertEquals(fullComps6, ExpandTest.join(expandComps.process_input(input)))
+    }
+    
+def fullComps7 =
+"""
+Бульба-Боровець Бульба-Боровець noun:anim:m:v_naz:prop:lname
+Бульбі-Боровцю Бульба-Боровець noun:anim:m:v_dav:prop:lname
+Бульбі-Боровцю Бульба-Боровець noun:anim:m:v_mis:prop:lname
+Бульбо-Боровцю Бульба-Боровець noun:anim:m:v_kly:prop:lname
+Бульбі-Боровцеві Бульба-Боровець noun:anim:m:v_dav:prop:lname
+Бульбі-Боровцеві Бульба-Боровець noun:anim:m:v_mis:prop:lname
+Бульбою-Боровцем Бульба-Боровець noun:anim:m:v_oru:prop:lname
+Бульбі-Боровці Бульба-Боровець noun:anim:m:v_mis:prop:lname
+Бульби-Боровця Бульба-Боровець noun:anim:m:v_rod:prop:lname
+Бульбу-Боровця Бульба-Боровець noun:anim:m:v_zna:prop:lname
+""".trim()
+
+    @Test
+    void testLname() {
+        def input = ["Бульба /n10.ko.<+m - Боровець /n22.a.<+m"]
+        assertEquals(fullComps7, ExpandTest.join(expandComps.process_input(input)))
+    }
+
+    def fullComps8 =
+"""
+ясла-садок ясла-садок noun:inanim:p:v_naz:ns
+ясла-садок ясла-садок noun:inanim:p:v_zna:ns
+яслам-садку ясла-садок noun:inanim:p:v_dav:ns
+яслах-садку ясла-садок noun:inanim:p:v_mis:ns
+ясла-садку ясла-садок noun:inanim:p:v_kly:ns
+яслами-садком ясла-садок noun:inanim:p:v_oru:ns
+яслам-садкові ясла-садок noun:inanim:p:v_dav:ns
+яслах-садкові ясла-садок noun:inanim:p:v_mis:ns
+ясел-садка ясла-садок noun:inanim:p:v_rod:ns
+""".trim()
+    
+    @Test
+    void testPluralMix() {
+        def input = ["ясла /np3 - садок /n22.a"]
+        assertEquals(fullComps8, ExpandTest.join(expandComps.process_input(input)))
+    }
 }
