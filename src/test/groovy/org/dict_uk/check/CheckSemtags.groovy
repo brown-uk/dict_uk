@@ -22,9 +22,9 @@ new File("out/dict_corp_vis.txt")
     }
 
     
-def dbg = lemmaKeys.take(15).collect{ "'$it'" }
-println ":: $dbg"
-println ":: " + lemmaKeys["аахенський adj"]
+//def dbg = lemmaKeys.take(15).collect{ "'$it'" }
+//println ":: $dbg"
+//println ":: " + lemmaKeys["аахенський adj"]
 //println ":: " + lemmaKeys[0].getClass()
 
 //System.exit(1)
@@ -69,7 +69,10 @@ files.each { File file ->
             
             if( ! extraTag ) {
                 if( tagBase == "noun" ) {
-                    if( semTag =~ /:hum|:supernat/ ) {
+                    if( semTag =~ /:hum:group|:org/ ) {
+                        extraTag = ":anim|:inanim"
+                    }
+                    else if( semTag =~ /:hum|:supernat/ ) {
                         extraTag = ":anim"
                     }
                     else if( semTag =~ /:animal/ ) {
@@ -90,20 +93,10 @@ files.each { File file ->
             if( extraTag ) {
                 matches = matches.findAll{ it =~ extraTag }
             }
+
             if( ! matches ) {
-//                if( tagBase.startsWith('ad') && (word in lemmas && lemmas[word].find { it =~ "^$word ad[jv](:&pron|:perf|:imperf)" } )  ) {
-//                }
-//                else if( tagBase.startsWith('noun') && (word in lemmas && lemmas[word].find { it =~ "^$word noun(:anim|:inanim|:&pron)" }) ) {
-//                }
-//                else if( tagBase.startsWith('numr') && (word in lemmas && lemmas[word].find { it =~ "^$word numr(:&pron|:nv)" }) ) {
-//                }
-//                else if( tagBase.startsWith('verb') && (word in lemmas && lemmas[word].find { it =~ "^$word verb(:rev)?(:perf|:imperf)" }) ) {
-//                }
-//                else {
-                    println "Unmatched $line ($lemmaKey)"
-                    println "    lemma matches: " + lemmas[word]
-//                }
-//                System.exit 1
+                println "Unmatched $line ($lemmaKey)"
+                println "    lemma matches: " + lemmas[word]
             }
             else {
                 if( semTag.contains('hum') && Character.isUpperCase(word.charAt(0)) ) {
@@ -124,7 +117,11 @@ files.each { File file ->
                 }
 
                 if( matches.size() > 1 ) {
-                    println "Multiple match for $line: " + matches
+                    def matches2 = matches.collect{ it.replaceAll(/:nv|:ua_....|:alt|:imperf|:perf/, '') }.unique()
+                    
+                    if( matches2.size() > 1 ) {
+                        println "Multiple match for $line: " + matches
+                    }
                 }
             } 
         }
