@@ -8,24 +8,29 @@ def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') || it.name.en
 
 assert files
 
-def replWords = files.collect { it.text.split("\n")  } \
+def replWords = files.collect { File file ->
+        file.text.split("\n")  
+    }
     .flatten() \
-    .findAll { it.contains(" #> ") }
-    .collect {
-        def replStr = it.split(" #> ")[1].trim()
+    .findAll { it =~ /^[^#].* #>>? / }
+    .collect { String line ->
+        def replStr = line.split(/ #>>? /)[1].trim()
         def replItems = replStr.split(/\|/)
         if( replItems.size() > 5 && false )
-          println "WARNING: Too many replacements ${replItems.size()} > 5 for\n\t$it"
+          println "WARNING: Too many replacements ${replItems.size()} > 5 for\n\t$line"
         
         def repls = replStr.split(/[;, \|]+/)
-        def word = it.split(' ', 2)[0]
-        if( word in repls && ! (it =~ /(?iu) - [а-яіїєґ].* #> /) ) {
-            println "WARNING: Replacement is same as word: $word:\n\t$it"
+        
+        if( ! line.contains(' - ') ) {
+            def word = line.split(' ', 2)[0]
+            if( word in repls && ! (line =~ /(?iu) - [а-яіїєґ].* #> /) ) {
+                println "WARNING: Replacement is same as word: $word:\n\t$line"
+            }
         }
         
         def dups = replItems.countBy{it}.grep{it.value > 1}.collect{it.key}
         if( dups ) {
-            println "WARNING: Duplicate replacements: $dups:\n\t$it"
+            println "WARNING: Duplicate replacements: $dups:\n\t$line"
         }
         
         repls

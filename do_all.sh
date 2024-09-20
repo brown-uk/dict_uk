@@ -2,6 +2,8 @@
 
 
 function z_dep {
+    ./gradlew $OPTS deployLtDict || exit 1
+
     V=`cat VERSION | head -n 1`
     echo "Dict version: \"$V\""
     cd  ../grammar/languagetool-test
@@ -20,10 +22,6 @@ OPTS="--parallel"
     exit 1
 }
 
-if [ "$1" == "-v" ]; then
-  z_dep
-fi
-
 ./gradlew $OPTS sortDict expand diff || exit 1
 
 ./gradlew checkDups checkReplacements
@@ -32,19 +30,13 @@ if [ "$1" == "-d" ]; then
     exec ./gradlew $OTPS deployLtDict
 fi
 
-
 if [ "$1" == "-z" ]; then
-    ./gradlew $OPTS deployLtDict || exit 1
     sleep 1
     z_dep
 fi
 
 if [ "$1" == "-f" ]; then
-    ./gradlew $OPTS deployLtDict || exit 1
     sleep 1
-    V=`cat VERSION`
-    cd  ../grammar/languagetool-test && \
     z_dep && \
     ./test_all_bg.sh
 fi
-
