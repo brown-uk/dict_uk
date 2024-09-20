@@ -699,28 +699,24 @@
   БМВ noun:inanim:m:v_zna:nv:abbr
   БМВ noun:inanim:m:v_oru:nv:abbr
   БМВ noun:inanim:m:v_mis:nv:abbr
-  БМВ noun:inanim:m:v_kly:nv:abbr
   БМВ noun:inanim:f:v_naz:nv:abbr    # :tm       # BMW
   БМВ noun:inanim:f:v_rod:nv:abbr
   БМВ noun:inanim:f:v_dav:nv:abbr
   БМВ noun:inanim:f:v_zna:nv:abbr
   БМВ noun:inanim:f:v_oru:nv:abbr
   БМВ noun:inanim:f:v_mis:nv:abbr
-  БМВ noun:inanim:f:v_kly:nv:abbr
   БМВ noun:inanim:n:v_naz:nv:abbr    # :tm       # BMW
   БМВ noun:inanim:n:v_rod:nv:abbr
   БМВ noun:inanim:n:v_dav:nv:abbr
   БМВ noun:inanim:n:v_zna:nv:abbr
   БМВ noun:inanim:n:v_oru:nv:abbr
   БМВ noun:inanim:n:v_mis:nv:abbr
-  БМВ noun:inanim:n:v_kly:nv:abbr
   БМВ noun:inanim:p:v_naz:nv:abbr
   БМВ noun:inanim:p:v_rod:nv:abbr
   БМВ noun:inanim:p:v_dav:nv:abbr
   БМВ noun:inanim:p:v_zna:nv:abbr
   БМВ noun:inanim:p:v_oru:nv:abbr
   БМВ noun:inanim:p:v_mis:nv:abbr
-  БМВ noun:inanim:p:v_kly:nv:abbr
 Богородиця noun:anim:f:v_naz:prop
   Богородиці noun:anim:f:v_rod:prop
   Богородиці noun:anim:f:v_dav:prop
@@ -755,6 +751,13 @@
   браттями noun:anim:p:v_oru:ns
   браттях noun:anim:p:v_mis:ns
   браття noun:anim:p:v_kly:ns
+Буда-Голубієвичі noun:inanim:f:v_naz:prop
+  Буди-Голубієвичів noun:inanim:f:v_rod:prop
+  Буді-Голубієвичам noun:inanim:f:v_dav:prop
+  Буду-Голубієвичі noun:inanim:f:v_zna:prop
+  Будою-Голубієвичами noun:inanim:f:v_oru:prop
+  Буді-Голубієвичах noun:inanim:f:v_mis:prop
+  Будо-Голубієвичі noun:inanim:f:v_kly:prop
 Бульба-Боровець noun:anim:m:v_naz:prop:lname
   Бульби-Боровця noun:anim:m:v_rod:prop:lname
   Бульбі-Боровцеві noun:anim:m:v_dav:prop:lname
@@ -764,6 +767,7 @@
   Бульбі-Боровцеві noun:anim:m:v_mis:prop:lname
   Бульбі-Боровці noun:anim:m:v_mis:prop:lname
   Бульбі-Боровцю noun:anim:m:v_mis:prop:lname
+  Бульбо-Боровцю noun:anim:m:v_kly:prop:lname
 бурмило noun:anim:m:v_naz
   бурмила noun:anim:m:v_rod
   бурмилові noun:anim:m:v_dav
@@ -3825,6 +3829,46 @@
   псищами noun:anim:p:v_oru
   псищах noun:anim:p:v_mis
   псища noun:anim:p:v_kly
+риба-меч noun:anim:f:v_naz
+  риби-меча noun:anim:f:v_rod
+  рибі-мечеві noun:anim:f:v_dav
+  рибі-мечу noun:anim:f:v_dav
+  рибу-меча noun:anim:f:v_zna
+  рибою-мечем noun:anim:f:v_oru
+  рибі-мечеві noun:anim:f:v_mis
+  рибі-мечі noun:anim:f:v_mis
+  рибі-мечу noun:anim:f:v_mis
+  рибо-мечу noun:anim:f:v_kly
+  риби-мечі noun:anim:p:v_naz
+  риб-мечів noun:anim:p:v_rod
+  рибам-мечам noun:anim:p:v_dav
+  риби-мечі noun:anim:p:v_zna
+  риби-мечів noun:anim:p:v_zna
+  риб-мечі noun:anim:p:v_zna
+  риб-мечів noun:anim:p:v_zna
+  рибами-мечами noun:anim:p:v_oru
+  рибах-мечах noun:anim:p:v_mis
+  риби-мечі noun:anim:p:v_kly
+риба-молот noun:anim:f:v_naz
+  риби-молота noun:anim:f:v_rod
+  рибі-молотові noun:anim:f:v_dav
+  рибі-молоту noun:anim:f:v_dav
+  рибу-молота noun:anim:f:v_zna
+  рибою-молотом noun:anim:f:v_oru
+  рибі-молоті noun:anim:f:v_mis
+  рибі-молотові noun:anim:f:v_mis
+  рибі-молоту noun:anim:f:v_mis
+  рибо-молоте noun:anim:f:v_kly
+  риби-молоти noun:anim:p:v_naz
+  риб-молотів noun:anim:p:v_rod
+  рибам-молотам noun:anim:p:v_dav
+  риби-молоти noun:anim:p:v_zna
+  риби-молотів noun:anim:p:v_zna
+  риб-молоти noun:anim:p:v_zna
+  риб-молотів noun:anim:p:v_zna
+  рибами-молотами noun:anim:p:v_oru
+  рибах-молотах noun:anim:p:v_mis
+  риби-молоти noun:anim:p:v_kly
 Ростов-на-Дону noun:inanim:m:v_naz:prop
   Ростова-на-Дону noun:inanim:m:v_rod:prop
   Ростову-на-Дону noun:inanim:m:v_dav:prop
@@ -3916,6 +3960,16 @@
   свв. adj:p:v_zna:rinanim:nv:abbr
   свв. adj:p:v_oru:nv:abbr
   свв. adj:p:v_mis:nv:abbr
+сер noun:anim:m:v_naz
+  сера noun:anim:m:v_rod
+  серові noun:anim:m:v_dav
+  серу noun:anim:m:v_dav
+  сера noun:anim:m:v_zna
+  сером noun:anim:m:v_oru
+  сері noun:anim:m:v_mis
+  серові noun:anim:m:v_mis
+  серу noun:anim:m:v_mis
+  сере noun:anim:m:v_kly:ua_1992
 синій adj:m:v_naz
   синього adj:m:v_rod
   синьому adj:m:v_dav

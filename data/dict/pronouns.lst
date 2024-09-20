@@ -207,6 +207,14 @@
 сім се noun:inanim:n:v_mis:&pron:dem:arch
 сьому се noun:inanim:n:v_mis:&pron:dem:arch
 
+оце оце noun:inanim:n:v_naz:&pron:dem
+оцього оце noun:inanim:n:v_rod:&pron:dem
+оцьому оце noun:inanim:n:v_dav:&pron:dem
+оце оце noun:inanim:n:v_zna:&pron:dem
+оцим оце noun:inanim:n:v_oru:&pron:dem
+оцім оце noun:inanim:n:v_mis:&pron:dem
+оцьому оце noun:inanim:n:v_mis:&pron:dem
+
 інше /n2adj1 :inanim:&pron:def
 інший /adj :&pron:def
 інші /n2adj1.< :&pron:def
@@ -1125,7 +1133,7 @@
 проте conj:coord|adv:&insert
 раз adv|conj:subord
 саме adv|part
-саме conj:subord                # у спол. «а саме»
+# саме conj:subord                # у спол. «а саме»
 себто conj:subord
 сиріч conj:subord
 справді adv:&insert|part
