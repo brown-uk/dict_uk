@@ -120,15 +120,15 @@ Note: [derivative projects](distr/) have different licenses
 
 Besides that materials in this project are allowed to be used in https://voice.mozilla.org/uk and https://common-voice.github.io/sentence-collector/#/ according to their licenses.
 
-Copyright (c) 2023 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
+Copyright (c) 2024 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
 
 #### Просимо посилатися на ресурс так: ####
 
 Просимо посилатися на вебверсію ВЕСУМу так:
 
-Рисін А., Старко В. Великий електронний словник української мови (ВЕСУМ). Вебверсія 6.1.0. 2005-2023. URL: https://vesum.nlp.net.ua/
+Рисін А., Старко В. Великий електронний словник української мови (ВЕСУМ). Вебверсія 6.5.2. 2005-2024. URL: https://vesum.nlp.net.ua/
 
-Rysin, A., Starko, V. Large Electronic Dictionary of Ukrainian (VESUM). Version 6.1.0. 2005-2023. Available at: https://vesum.nlp.net.ua/
+Rysin, A., Starko, V. Large Electronic Dictionary of Ukrainian (VESUM). Version 6.5.2. 2005-2024. Available at: https://vesum.nlp.net.ua/
 
 ### Derivative Projects ###
 
