@@ -8,11 +8,16 @@ def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') || it.name.en
 
 assert files
 
+def koatuuIgnore = new File(dictDir, "geo-ukr-koatuu.lst").readLines()
+    .findAll { it.startsWith("#- ") }
+    .collect { it.split()[1] } //as Set
+    
 def replWords = files.collect { File file ->
-        file.text.split("\n")  
+        file.readLines()  
     }
     .flatten() \
     .findAll { it =~ /^[^#].* #>>? / }
+//    .findAll { (! it.contains("#>>")) || (! koatuuIgnore.contains(it.split()[0])) }
     .collect { String line ->
         def replStr = line.split(/ #>>? /)[1].trim()
         def replItems = replStr.split(/\|/)
@@ -47,6 +52,7 @@ spellWords += new File("data/dict/arch.lst").text.split('\n').collect{ it.replac
 println "Unique replacement words: ${replWords.size()}"
 
 replWords.removeAll(spellWords)
+replWords.removeAll(koatuuIgnore)
 
 replWords.removeIf{ w -> (w =~ /[.-]$|'дно|X-/) as Boolean }
 replWords.removeAll(["здавання-приймання", "передання-прийняття", "прийняття-передання"])

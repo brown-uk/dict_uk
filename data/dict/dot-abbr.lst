@@ -62,6 +62,7 @@
 грош. adj:nv:rinanim            # грошовий
 губ. noun:f:nv                  # губернія
 гуманітар. adj:nv               # гуманітарний
+гуманітар. adj:nv               # гуманітарний
 д. adv                          # далі (і т. д.)
 давньогрец. adj:nv:rinanim      # давньогрецький
 держ. adj:nv:rinanim            # державний
@@ -72,6 +73,7 @@
 дис. noun:f:nv                  # дисертація
 діал. adj:nv:rinanim            # діалектний
 діам. noun:m:nv                 # діаметр 
+діам. noun:m:nv                 # діаметр
 дн. noun:p:nv                   # днів
 дод. noun:m:nv                  # додаток
 докт. noun:m:nv:anim            # доктор
@@ -85,6 +87,7 @@
 екз. noun:m:nv                  # екземпляр
 екон. adj:nv:rinanim            # економічний
 ел. adj:nv:rinanim              # електронний
+енцикл. adj:nv                  # енциклопедичний
 енцикл. adj:nv                  # енциклопедичний
 жін. adj:nv:rinanim             # жіночий
 жовт. noun:m:nv                 # жовтня
@@ -132,6 +135,7 @@
 козац. adj:nv:rinanim           # козацький
 кол. adj:nv|noun:f:nv           # колишній, колегія
 комерц. adj:nv                  # комерційний
+комерц. adj:nv                  # комерційний
 конф. noun:f:nv                 # конференція
 коп. noun:f:nv                  # копійка
 Кор. noun:m:nv:np:anim          # Коринтян
@@ -140,9 +144,11 @@
 кр. noun:m:nv:xp1               # кредит; крейцар
 кр. noun:f:nv:xp2               # крона
 кред. adj:nv                    # кредитний
+кред. adj:nv                    # кредитний
 куб. adj:nv:rinanim             # кубічний
 лат. adj:nv:rinanim             # латинський
 латин. adj:nv:rinanim           # латинський
+лекс. adj:nv                    # лексичний
 лекс. adj:nv                    # лексичний
 лит. adj:nv:rinanim             # литовський
 Лк. noun:anim:m:v_naz:nv:prop:fname     # Лука
@@ -153,14 +159,17 @@
 Ман. noninfl:prop               # Манчестер (ФК)
 мат. adj:nv:rinanim             # математичний
 мемор. adj:nv                   # меморіальний
+мемор. adj:nv                   # меморіальний
 мех. adj:nv:rinanim             # механічний
 мин. adj:m:nv:rinanim           # минулий
 мист. adj:nv:rinanim            # мистецький
+митроп. noun:m:nv               # митрополит
 митроп. noun:m:nv               # митрополит
 міжнар. adj:nv:rinanim          # міжнародний
 мін. adj:nv                     # мінімальний
 місц. adj:nv:rinanim            # місцевий
 міськ. adj:nv:rinanim           # міський
+мкрн. noun:m:nv                 # мікрорайон
 мкрн. noun:m:nv                 # мікрорайон
 млн. numr:m/p:nv:bad            # мільйон
 млрд. numr:m/p:nv:bad           # мільярд
@@ -221,6 +230,7 @@
 полов. noun:f:nv:np             # половина
 польс. adj:nv:rinanim           # польський
 польськ. adj:nv                 # польський
+польськ. adj:nv                 # польський
 пом. verb:rev:perf:past:m/f     # помер, померла
 пор. verb:perf:impr:p:2         # порівняйте
 порівн. verb:perf:impr:p:2      # порівняйте
@@ -249,6 +259,7 @@
 революц. adj:nv:rinanim         # революційний
 ред. noun:m:v_naz|noun:f:nv:np  # редактор, напр. "Сьогодні (у четвер.  Ред.), вранці."; редакція
 реж. noun:m:nv                  # режисер
+реліг. adj:nv                   # релігійний
 реліг. adj:nv                   # релігійний
 респ. noun:f:nv|adj:nv          # республіка, республіканський
 рис. noun:m:nv                  # рисунок
