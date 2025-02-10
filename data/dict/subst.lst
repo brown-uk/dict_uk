@@ -128,6 +128,7 @@
 доводіть доводити verb:imperf:impr:p:2
 додаш додати verb:perf:futr:s:2             #> додаси
 дописа допис noun:m:v_rod
+дотепа дотеп noun:m:v_rod
 доходе доходити verb:imperf:pres:s:3                    # :xp1
 дошок дошка noun:p:v_rod                    #> дощок
 дощика дощик noun:m:v_rod
@@ -255,6 +256,7 @@
 Мірчи Мірча noun:anim:m:v_rod/v_dav/v_mis:prop:fname       #> Мірчі
 могорича могорич noun:m:v_rod
 моделів модель noun:p:v_rod                 #> моделей
+МОЗУ МОЗ noun:n:v_rod/v_dav:prop:abbr   # lim    #> МОЗу
 молебня молебень noun:m:v_rod
 молодняка молодняк noun:m:v_rod             #> молодняку
 моніторинга моніторинг noun:m:v_rod
@@ -293,6 +295,7 @@
 освідчіть освідчити verb:perf:impr:p:2
 осередка осередок noun:m:v_rod
 оскаржіть оскаржити verb:perf:impr:p:2
+офсайда офсайд noun:m:v_rod
 оцеті оцет noun:m:v_mis
 оцетові оцет noun:m:v_dav/v_mis
 оцетом оцет noun:m:v_oru
@@ -461,5 +464,6 @@
 ширіть ширити verb:imperf:impr:p:2
 шоці шок noun:m:v_mis                #> шоку
 щелепів щелепа noun:inanim:p:v_rod
+ЮКОСа ЮКОС noun:m:v_rod:prop
 ютуба ютуб noun:m:v_rod                     #> ютубу
 ялівця ялівець noun:m:v_rod
