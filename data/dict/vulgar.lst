@@ -4,17 +4,26 @@
 бичара /n10.p1.ko.< :+m
 бомжара /n10.p1.ko.<
 висер /n20.p
+висрати /v1.isNo :perf                   # rv_zna:rv_oru:rv_dav
 висратися /vr2 :perf
 відтраханий /adj :&adjp:pasv:perf
-відтрахати /v2.isNo :perf                                     # rv_zna:rv_oru:rv_dav
+відтрахати /v2.isNo :perf                                      # rv_zna:rv_oru:rv_dav
+відхєрачити /v1 :perf                       # rv_zna:rv_oru
 всиратися /vr2.cf.advp :imperf
 всирачки adv
+всраний /adj :&adjp:pasv:perf:coll
 всратий /adj
 всратися /vr1 :perf:v-u
+вхерачити /v1 :perf                       # rv_zna:rv_oru:rv_dav
 гамно /n2n
+гандонський /adj
 гівно /n2n
 гівноїд /n20.a.p.<>
+гівноїдство /n2n
+гівноїдський /adj
 гівнюк /n20.a.p.ke.<
+гівнючка /n10.p2.<
+гівнючок /n22.a.p.<
 гівняний /adj
 гівняно adv
 гімно /n2n
@@ -23,22 +32,41 @@
 гімняний /adj
 гімняр /n20.a.p.ke.<
 гімнярка /n10.p2.<
+голожопий /adj
+гомосек /n20.a.p.<
 довбограй /n20.a.p.<
 дохера adv
 дохєра adv
 дохєріща adv
+дохіріща adv
 дохріна adv
+дохуліард /n20.a.p
+дрочений /adj :&adjp:pasv:imperf
 дрочер /n20.a.p.<
+дрочібєльний /adj
+дрочка /n10
 дура /n10.p1.<                             #> дурна|дурепа
 дуринда /n10.p1.<
+еплдрочер /n20.a.p.ke.<
+жидофашист /n20.a.p.<
+жидяра /n10.p1.<m
 жопа /n10.p1
+жопонька /n10
 задохєра adv
+задрочувати /v1.cf.advp :imperf                     # rv_zna:rv_oru
 залупа /n10.p1
 засирати /v2.cf.advp :imperf               # rv_zna:rv_oru:rv_dav
+засранець /n22.a.p.< :coll
+засраний /adj :&adjp:pasv:perf:coll
+засраність /n30
+засранка /n10.p2.ko.< :coll
 засрати /v1.isNo :perf                     # rv_zna:rv_oru:rv_dav
-затраханий /adj :&adjp:pasv:perf # (і протегувати всі наявні слова з -трах- як vulg)
+затраханий /adj :&adjp:pasv:perf
+затраханість /n30
 затрахати /v2.isNo :perf                      # rv_zna:rv_oru
 захерачити /v1 :perf                       # rv_zna:rv_oru:rv_dav
+захєрачити /v1 :perf                        # rv_zna:rv_oru
+зкурвити /v1 :perf
 курва /n10.p1.ko.<
 курваль /n20.a.p.<
 курвити /v1.cf.advp :imperf
@@ -47,7 +75,8 @@
 лошара /n10.p1.ko.< :+m
 манда /n10.<
 манда /n10
-насрати /v1.isNo :imperf                   # rv_oru:rv_dav
+напердохати /v2 :perf                               # rv_rod:rv_oru
+насрати /v1.isNo :perf                   # rv_zna:rv_oru:rv_dav
 нахер adv
 нахрен adv
 нахрін adv
@@ -63,13 +92,19 @@
 ніхера noun:inanim:n:v_rod:&pron:neg:&predic  # lim
 ніхєра adv
 ніхєрашечки intj
+ніхєровий /adj.adv
+обдристанець /n22.a.p.<
+обдристаний /adj
+обдрочитися /vr1.it1 :perf                                    # rv_oru
 обісраний /adj :&adjp:pasv:perf
 обісрати /v1.isNo :perf                     # rv_zna:rv_oru:rv_dav
 обісратися /vr1 :perf
 обісцяний /adj :&adjp:pasv:perf
 обісцяти /v1.isNo :perf                     # rv_zna:rv_dav
 обісцятися /vr1 :perf
+обсирання /n2n
 обсирати /v2.cf.advp :imperf                # rv_zna:rv_dav
+обсцикати /v2.cf.advp :imperf                   # rv_zna:rv_oru:rv_dav
 овердохера adv
 охрініти /v1 :perf
 пердак /n20.a.p
@@ -77,12 +112,18 @@
 пердіти /v1.cf.advp :imperf
 перднути /v1 :perf
 пердолити /v1.cf.advp :imperf
+пердячка /n10
 перебдіти /v1 :perf
+передрочити /v1.it1 :perf                                    # rv_zna:rv_oru
 пересрати /v1.isNo :perf                   # rv_zna:rv_oru:rv_dav
 пересрати /v1 :perf
+перетрахати /v2.isNo :perf                                     # rv_zna:rv_oru:rv_dav
+перетрахатися /vr2 :perf
 пипець intj
 підар /n20.a.p.ke.<
 підарас /n20.a.p.<
+підараска /n10.p2.<
+підарасня /n10
 підарський /adj
 підарюга /n10.p1.< :+m
 підісрати /v1.isNo :perf                     # rv_zna:rv_dav
@@ -93,25 +134,39 @@
 піська /n10.p2
 пісюн /n20.a.p
 пісюнчик /n20.a.p
+повсиратися /vr2 :perf
+повсцикатися /vr2 :perf
+позасирати /v2.isNo :perf                  # rv_zna:rv_oru:rv_dav
 посрати /v1.isNo :perf
 посратися /vr1 :perf
+потрахати /v2 :perf                                            # rv_zna:rv_oru:rv_dav
 потрахатися /vr2 :perf
 похерити /v1.it0.is0 :perf                   # rv_zna:rv_oru:rv_dav
 похрін adv:&predic
 поц /n20.a.p.<
 пропагандон /n20.a.p.<
+просирання /n2n
+просирати /v2.cf.advp :imperf                # rv_zna:rv_oru:rv_dav
+просраний /adj :&adjp:pasv:perf
 просрати /v1.isNo :perf                      # rv_zna:rv_oru:rv_dav
 просратися /vr1 :perf
+прошмандовка /n10.p2.<
 пукан /n20.a.p
+розпідарасити /v1 :perf                              # rv_zna
 розхерачений /adj :&adjp:pasv:perf
 розхерачити /v1.is0 :perf                    # rv_zna:rv_oru:rv_dav
+рукожоп /n20.a.p.<
+рукожопий /adj
+рукожопство /n2n
 серун /n20.a.p.<
+сісєчка /n10.p2
 сіська /n10.p2
 ска intj
 совкодрочер /n20.a.p.ke.<
 совкодрочерський /adj
 срака /n10.p1
 сраколиз /n20.a.p.ke.<
+сракопад /n20.p
 сральник /n20.a.p
 сральня /n10.p2
 сраний /adj
@@ -120,6 +175,7 @@
 срати /v1.cf.advp :imperf
 сратися /vr1.cf.advp :imperf
 срач /n20.p
+срачик /n20.p
 срачина /n10
 срачка /n10.p2
 срачкуватий /adj
@@ -129,7 +185,10 @@
 сучара /n10.p1.< :+m
 сученя /n40.p.<
 сцикло /n2n.<
+сцикотно adv
 сцяки /np2
+сцяний /adj
+трахабельний /adj
 траханий /adj :&adjp:pasv:imperf
 трахання /n2n
 трахати /v2.cf.advp :imperf                                   # rv_zna:rv_oru:rv_dav
@@ -138,12 +197,14 @@
 трахнутися /vr1 :perf                                         # rv_oru
 урод /n20.a.p.<
 усратися /vr1 :perf:v-u
+усрачка /n10
 усцятися /vr1 :perf:v-u
 фак /n20.p
 хер /n20.a.p
 херачити /v1.cf.advp :imperf                  # rv_zna:rv_oru:rv_dav
 херовий /adj
 херово adv
+херота /n10
 хєр /n20.a.ke                       # lim
 хєрак intj
 хєрак noninfl:&predic
@@ -160,6 +221,8 @@
 хитродупий /adj
 хитродупість /n30
 хитрожопий /adj
+хитрожопість /n30
+хитросракий /adj
 хренація /n10.p1
 хреновина /n10.p1
 хрєновий /adj

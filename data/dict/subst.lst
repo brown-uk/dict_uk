@@ -196,6 +196,7 @@
 Ігоре Ігор noun:anim:m:v_kly:prop:fname
 імбирем імбир noun:m:v_oru
 інвентаря інвентар noun:m:v_rod          # р.в. архаїчного значення — список
+Інтера Інтер noun:inanim:m:v_rod:prop
 Ірпіні Ірпінь noun:inanim:m:v_mis:prop:geo
 іспита іспит noun:m:v_rod
 їздіть їздити verb:imperf:impr:p:2
@@ -252,6 +253,7 @@
 Массачусетса Массачусетс noun:m:v_rod:prop:geo
 машіть махати verb:imperf:impr:p:2
 метадона метадон noun:m:v_rod
+метода метод noun:m:v_rod
 міометрія міометрій noun:m:v_rod
 Мірчи Мірча noun:anim:m:v_rod/v_dav/v_mis:prop:fname       #> Мірчі
 могорича могорич noun:m:v_rod
@@ -266,13 +268,6 @@
 наводіть наводити verb:imperf:impr:p:2
 назовіть назвати verb:perf:impr:p:2
 налагодіть налагодити verb:perf:impr:p:2
-налиє налити verb:perf:futr:s:3
-налиєм налити verb:perf:futr:p:1
-налиємо налити verb:perf:futr:p:1
-налиєте налити verb:perf:futr:p:2
-налиєш налити verb:perf:futr:s:2
-налию налити verb:perf:futr:s:1
-налиють налити verb:perf:futr:p:3
 наріччів наріччя noun:p:v_rod                       #> наріч
 наскіке noninfl
 наструнчіть наструнчити verb:perf:impr:p:2
@@ -317,6 +312,7 @@
 періодонта періодонт noun:m:v_rod
 пестіть пестити verb:imperf:impr:p:2
 півчайної півчайної adj:f:v_rod             #> пів чайної
+підвечірка підвечірок noun:m:v_rod
 підвищіть підвищити verb:perf:impr:p:2
 підвод підвода noun:p:v_rod                  #> підвід
 підводе підводити verb:imperf:pres:s:3

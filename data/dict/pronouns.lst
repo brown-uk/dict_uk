@@ -997,6 +997,7 @@
 раніш раніш prep        # rv_rod
 пізніше пізніше prep        # rv_rod
 пізніш пізніш prep        # rv_rod
+ради ради prep                  # rv_rod
 серед серед prep        # rv_rod
 спереду спереду prep        # rv_rod
 стосовно prep               # rv_rod
@@ -1164,7 +1165,7 @@
 цебто conj:subord|part
 чи conj:coord|conj:subord|part
 чим conj:subord
-тим conj:subord
+тим conj:subord:arch
 щоби conj:subord|part
 щоб conj:subord|part
 щойно adv|conj:subord|part

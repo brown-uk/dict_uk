@@ -3077,6 +3077,31 @@
   міняйлах noun:anim:p:v_mis
   міняйли noun:anim:p:v_kly
 мусіти verb:imperf:inf:bad    # lim
+надливши advp:perf
+надлити verb:perf:inf
+  надлить verb:perf:inf:short
+  надлий verb:perf:impr:s:2
+  надлиймо verb:perf:impr:p:1
+  надлийте verb:perf:impr:p:2
+  наділлю verb:perf:futr:s:1
+  надлию verb:perf:futr:s:1:arch
+  наділлєш verb:perf:futr:s:2
+  надлиєш verb:perf:futr:s:2:arch
+  наділлє verb:perf:futr:s:3
+  надлиє verb:perf:futr:s:3:arch
+  наділлємо verb:perf:futr:p:1
+  наділлєм verb:perf:futr:p:1:subst
+  надлиємо verb:perf:futr:p:1:arch
+  надлиєм verb:perf:futr:p:1:arch:subst
+  наділлєте verb:perf:futr:p:2
+  надлиєте verb:perf:futr:p:2:arch
+  наділлють verb:perf:futr:p:3
+  надлиють verb:perf:futr:p:3:arch
+  надлив verb:perf:past:m
+  надлила verb:perf:past:f
+  надлило verb:perf:past:n
+  надлили verb:perf:past:p
+  надлито verb:perf:impers
 надоївши advp:perf:xp1    # від надоїти
 надоївши advp:perf:bad:xp2    # від надоїсти
 надоїсти verb:perf:inf:bad
