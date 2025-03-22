@@ -426,7 +426,7 @@ jar {
     exclude 'ua/net/nlp/README' 
     exclude 'ua/net/nlp/ukrainian.info'
     
-    includeEmptyDirs false
+    includeEmptyDirs = false
 }
 
 

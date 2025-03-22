@@ -809,7 +809,7 @@ class Expand {
 			List<String> addTags = additionalTags[dicEntry.word]
 			if( addTags[0] in ['noun', 'adj']
 					&& ! (addTags =~ /ua_/)
-					&& ! (dicEntry.tagStr =~ /(noun|adj).*:[mfn]:v_naz/) )
+					&& ! (dicEntry.tagStr =~ /(noun|adj).*:[mfn]:v_(naz|oru)/) )
 				continue
 
 			String xpTag = addTags.find { it.startsWith('xp') || (it =~ /perf|imperf/) }
