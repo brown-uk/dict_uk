@@ -24,7 +24,9 @@
 акаем /n20.a.p
 акимат /n20.p                           # мерія
 акімат /n20.p                           # мерія
+активнічати /v2.cf.advp :imperf
 актівіті noun:n:nv
+актівнічати /v2.cf.advp :imperf
 алкан /n20.a.p.<                    # :xp2 людина
 алкаш /n20.a.p.<
 алкашка /n10.p2.ko.< 
@@ -39,6 +41,7 @@
 андердог /n20.a.p.<
 андеркард /n20
 анон /n20.a.p.<
+анонсити /v1.cf :imperf                                 # rv_zna:rv_oru:rv_dav
 анріал adv
 антивакс /n20.a.p.<
 антиваксер /n20.a.p.ke.<
@@ -56,6 +59,8 @@
 апдейтити /v1.cf.advp.it0 :imperf     # rv_zna:rv_oru:rv_dav
 аплікуха /n10.p1
 апофігей /n20
+апрув intj
+апрувити /v1.cf :imperf                                   # rv_zna:rv_oru:rv_dav
 аранж /n20
 арта /n10
 асасинка /n10.p2.<
@@ -376,6 +381,7 @@
 вотсап /n20.p
 вохрівець /n22.a.p.<
 впадло adv
+впахувати /v1.cf :imperf
 вперьод adv
 вписка /n10
 впіндюрити /v1.is0.it0 :perf                      # rv_zna:rv_oru:rv_dav
@@ -713,6 +719,13 @@
 жужик /n20.a.p.<
 жуть /n32
 жучити /v1.it0.cf.advp.is0 :imperf                      # rv_zna:rv_oru
+заагритися /vr1 :perf
+заактивнічати /v2 :perf
+заактівнічати /v2 :perf
+заанонсити /v1 :perf                                    # rv_zna:rv_oru:rv_dav
+заапдейтити /v1 :perf                                   # rv_zna:rv_oru:rv_dav
+заапрувити /v1 :perf                                    # rv_zna:rv_oru:rv_dav
+заапрувлений /adj :&adjp:pasv:perf
 забабаханий /adj :&adjp:pasv:perf
 забабахати /v2.isNo :perf          # rv_zna:rv_oru:rv_dav
 забакланити /v1 :perf
@@ -721,8 +734,13 @@
 забанити /v1.is0.it0.it1b :perf               # rv_zna
 забашляний /adj :&adjp:pasv:perf
 забашляти /v2.isNo :perf                      # rv_zna:rv_dav
+забекапити /v1.is0 :perf                                # rv_zna:rv_oru:rv_dav
+забекаплений /adj :&adjp:pasv:perf
 забембаний /adj :&adjp:pasv:perf
+забембаність /n30
 забембати /v2 :perf                         # rv_zna:rv_oru
+забембатися /vr2 :perf
+забембувати /v1.cf.advp :imperf                         # rv_zna:rv_oru
 забичений /adj
 забичкувати /v1.cf.advp :imperf
 забілдити /v1.it1.is0.it1l :perf                        # rv_zna:rv_oru
@@ -731,10 +749,18 @@
 заборонка /n10.p2
 заброшка /n10.p2
 забугорний /adj
+забуканий /adj :&adjp:pasv:perf
+забукати /v2.isNo :perf                                     # rv_zna:rv_dav
 забулдига /n10.p1.<m
-забулити /v1.is0 :perf                      # rv_zna
+забулити /v1.is0 :perf                                      # rv_zna
 завзятюще adv
+завтик /n20.p
+завтиканий /adj :&adjp:pasv:perf
 завтикати /v2.isNo :perf
+завтикнути /v1 :perf
+завтикування /n2n.p1
+завтикувати /v1.cf :imperf
+завтичити /v1 :perf
 заглючити /v1 :perf
 задвохсотити /v1.is0 :perf                      # rv_zna:rv_oru
 задвохсотитися /vr1 :perf
@@ -743,12 +769,16 @@
 заджавелінити /v1 :perf                         # rv_zna:rv_oru
 задолиз /n20.a.p.<
 задонатити /v1.it0.is0 :perf                            # rv_zna:rv_dav
+задонейтити /v1 :perf                                   # rv_dav
 задофіга adv
 задохіба adv
 задрафтований /adj :&adjp:pasv:perf
 задрипанськ /n20.a.p
 задрипанський /adj
 задрот /n20.a.p.<
+задротити /v1 :perf
+задротка /n10.p2.<
+задротний /adj
 задротство /n2n
 задротський /adj
 заєдинник /n20.a.p.<
@@ -786,6 +816,8 @@
 замовняк /n20.a.p
 заможновладець /n22.a.p.<
 замютити /v1 :perf                                  # rv_zna:rv_oru:rv_dav
+зам'ютити /v1 :perf                                     # rv_zna
+зам'ючений /adj :&adjp:pasv:perf
 занадтий /adj
 заначений /adj :&adjp:pasv:perf
 заначити /v1.is0 :perf                      # rv_zna
