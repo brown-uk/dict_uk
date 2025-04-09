@@ -42,22 +42,22 @@ class Util {
 		return allAffixFlags.contains("<") && ! allAffixFlags.contains(">")
 	}
 
-	@CompileStatic
-	boolean firstname(String word, String allAffixFlags) {
-        // decided to leave animal names with :fname
-		return (allAffixFlags.contains("<") \
-                /* && ! allAffixFlags.contains(">")*/ ) \
-			&& ! allAffixFlags.contains("<+") \
-			&& word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase() \
-			&& ! allAffixFlags.contains(":prop")    // Всевишній - :prop but not :fname
-	}
-
-    @CompileStatic
-    boolean animalname(String word, String allAffixFlags) {
-        return allAffixFlags.contains("<>") \
-            && word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase() \
-            && ! allAffixFlags.contains(":prop")
-    }
+//	@CompileStatic
+//	boolean firstname(String word, String allAffixFlags) {
+//        // decided to leave animal names with :fname
+//		return (allAffixFlags.contains("<") \
+//                /* && ! allAffixFlags.contains(">")*/ ) \
+//			&& ! allAffixFlags.contains("<+") \
+//			&& word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase() \
+//			&& ! allAffixFlags.contains(":prop")    // Всевишній - :prop but not :fname
+//	}
+//
+//    @CompileStatic
+//    boolean animalname(String word, String allAffixFlags) {
+//        return allAffixFlags.contains("<>") \
+//            && word.charAt(0).isUpperCase() && ! word.charAt(1).isUpperCase() \
+//            && ! allAffixFlags.contains(":prop")
+//    }
 
 	static final Pattern DUAL_LAST_NAME_PATTERN = ~ ".*(о|ій|ай|ич|ач|ик|ук|юк|як|ак|аш|яш|ар|яр|ун|ян|ин|[їі]в|[сцтн]ь|сон|сен|ес|ез) "
 

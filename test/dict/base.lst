@@ -226,6 +226,9 @@
 давати /v1.cf.advp.isNo :imperf                               # rv_inf:rv_zna:rv_rod:rv_oru:rv_dav
 надлити /v3.isTo :perf
 
+Богородиця /n10.ko.< :prop
+Всевишній /n2adj1.< :prop
+
 нудьга /n10
 край /n20
 
@@ -306,3 +309,5 @@
 ВВ noun:p:nv:ns:prop                        # Воплі Відоплясова
 
 пів numr:m:nv:np|numr:f:nv:np|numr:n:nv:np
+
+АТОвець /n22.a.p.<

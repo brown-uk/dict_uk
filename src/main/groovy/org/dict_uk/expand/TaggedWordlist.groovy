@@ -148,6 +148,12 @@ class TaggedWordlist {
 					String extra_tags2 = extra_tags
 
 					if( detectProperNoun ) {
+						if( fn =~ /names-(anim|compo)/ ) {
+						    if( Character.isUpperCase(line.charAt(0)) 
+                                    && line =~ /\.<(?!\+)/ ) {
+						        extra_tags2 += ":prop:fname"
+						    }
+						}
 						if( Character.isUpperCase(line.charAt(0))
 								&& ( (line.contains(" /n") && ! line.contains("<") )
 								|| (line.contains(" noun") && line.contains(":nv")) ) ) {
@@ -164,11 +170,6 @@ class TaggedWordlist {
 							}
 						}
 					}
-//					else if ( fn == "base.lst" ) {
-//						if( line.contains(":fname") ) {
-//							line = line.replace(":prop:fname", "")
-//						}
-//					}
 
 					def out_line = process_line(line, extra_tags2)
 					if( out_line.trim() )

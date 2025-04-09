@@ -11,6 +11,7 @@ import groovy.transform.CompileStatic
 
 @CompileStatic
 public class ExpandCompsTest {
+    static final String COMP_FILENAME = "anim-composite.lst"
 	
 	static ExpandComps expandComps
 	
@@ -45,7 +46,7 @@ public class ExpandCompsTest {
 	void testNounName() {
 		def input = ["Афанасьєв /n2adj2.<+ - Чужбинський /adj.<+ g=m"]
 //		assert expandComps.process_input(input) == fullComps.split(/\n/).collect { DicEntry.fromLine(it) }
-		assertEquals(fullComps, ExpandTest.join(expandComps.process_input(input)))
+		assertEquals(fullComps, ExpandTest.join(expandComps.process_input(input, COMP_FILENAME)))
 	}
 	
 	def fullComps2 =
@@ -87,7 +88,7 @@ public class ExpandCompsTest {
 	@Test
 	void testAdjPron() {
 		def input = ["такий /adj - сякий /adj"]
-		assertEquals(fullComps2, ExpandTest.join(expandComps.process_input(input)))
+		assertEquals(fullComps2, ExpandTest.join(expandComps.process_input(input, COMP_FILENAME)))
 	}
 
 def fullComps25 = 
@@ -133,7 +134,7 @@ def fullComps25 =
     @Test
     void testNumr() {
         def input = ["один /numr ^adj - єдиний /adj :&numr"]
-        assertEquals(fullComps25, ExpandTest.join(expandComps.process_input(input)))
+        assertEquals(fullComps25, ExpandTest.join(expandComps.process_input(input, COMP_FILENAME)))
     }
 
     def fullComps3 =
@@ -160,7 +161,7 @@ def fullComps25 =
     @Test
     void testNounAnimInanim() {
         def input = ["дівка /n10.p2.< - дзиґа /n10.p1.<"]
-        assertEquals(fullComps3, ExpandTest.join(expandComps.process_input(input)))
+        assertEquals(fullComps3, ExpandTest.join(expandComps.process_input(input, COMP_FILENAME)))
     }
     
     def fullComps4 =
@@ -180,7 +181,7 @@ def fullComps25 =
     @Test
     void testNounAnimAnim() {
         def input = ["дід /n20.a.ku.< - баба /n10.< ^noun:p"]
-        assertEquals(fullComps4, ExpandTest.join(expandComps.process_input(input)))
+        assertEquals(fullComps4, ExpandTest.join(expandComps.process_input(input, COMP_FILENAME)))
     }
 
 
@@ -198,7 +199,7 @@ def fullComps5 =
     @Test
     void testGeoComp() {
         def input = ["Буда /n10 - Голубієвичі /np2"]
-        assertEquals(fullComps5, ExpandTest.join(expandComps.process_input(input)))
+        assertEquals(fullComps5, ExpandTest.join(expandComps.process_input(input, COMP_FILENAME)))
     }
 
     def fullComps6 =
@@ -215,7 +216,7 @@ def fullComps5 =
     @Test
     void testPlural() {
         def input = ["вежі /np1 - близнюки /np2"]
-        assertEquals(fullComps6, ExpandTest.join(expandComps.process_input(input)))
+        assertEquals(fullComps6, ExpandTest.join(expandComps.process_input(input, COMP_FILENAME)))
     }
     
 def fullComps7 =
@@ -235,7 +236,7 @@ def fullComps7 =
     @Test
     void testLname() {
         def input = ["Бульба /n10.ko.<+m - Боровець /n22.a.<+m"]
-        assertEquals(fullComps7, ExpandTest.join(expandComps.process_input(input)))
+        assertEquals(fullComps7, ExpandTest.join(expandComps.process_input(input, COMP_FILENAME)))
     }
 
     def fullComps8 =
@@ -254,6 +255,6 @@ def fullComps7 =
     @Test
     void testPluralMix() {
         def input = ["ясла /np3 - садок /n22.a"]
-        assertEquals(fullComps8, ExpandTest.join(expandComps.process_input(input)))
+        assertEquals(fullComps8, ExpandTest.join(expandComps.process_input(input, COMP_FILENAME)))
     }
 }

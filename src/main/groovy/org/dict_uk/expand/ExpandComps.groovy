@@ -167,20 +167,25 @@ class ExpandComps {
 		return matchComps(lefts, rights, vmisCheck)
 	}
 	
-	List<DicEntry> process_input(List<String> lines) {
+	List<DicEntry> process_input(List<String> lines, String filename) {
 		List<DicEntry> out = []
 
 		for(String line in lines) {
-
-            line = line.replaceFirst(/ *#.*$/, '')
 
 			line = line.trim()
 			if( ! line || line[0] == "#" )
 				continue
 
+            line = line.replaceFirst(/ *#.*$/, '')
+            
 			try {
 				List<DicEntry> comps = expand_composite_line(line)
 				
+                if( filename =~ /names-(anim|comp)/ && line.contains(".<") && ! line.contains(".<+") ) {
+                    if( Character.isUpperCase(line.charAt(0)) ) {
+                        comps.each { it.tagStr += ":prop:fname" }
+                    }
+                }
 				if( Character.isUpperCase(line.charAt(0)) && ! line.contains("<") ) {
 				    comps.each { it.tagStr += ":prop" }
 				}

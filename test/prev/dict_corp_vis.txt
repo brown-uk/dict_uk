@@ -116,6 +116,24 @@
   абстрагуючими adj:p:v_oru:&adjp:actv:imperf:bad
   абстрагуючих adj:p:v_mis:&adjp:actv:imperf:bad
   абстрагуючі adj:p:v_kly:&adjp:actv:imperf:bad
+августиніанець noun:anim:m:v_naz
+  августиніанця noun:anim:m:v_rod
+  августиніанцеві noun:anim:m:v_dav
+  августиніанцю noun:anim:m:v_dav
+  августиніанця noun:anim:m:v_zna
+  августиніанцем noun:anim:m:v_oru
+  августиніанцеві noun:anim:m:v_mis
+  августиніанці noun:anim:m:v_mis
+  августиніанцю noun:anim:m:v_mis
+  августиніанцю noun:anim:m:v_kly
+  августиніанці noun:anim:p:v_naz
+  августиніанців noun:anim:p:v_rod
+  августиніанцям noun:anim:p:v_dav
+  августиніанців noun:anim:p:v_zna
+  августиніанці noun:anim:p:v_zna:rare    # з в/у
+  августиніанцями noun:anim:p:v_oru
+  августиніанцях noun:anim:p:v_mis
+  августиніанці noun:anim:p:v_kly
 Августо noun:anim:m:v_naz:nv:prop:fname
   Августо noun:anim:m:v_rod:nv:prop:fname
   Августо noun:anim:m:v_dav:nv:prop:fname
@@ -464,6 +482,16 @@
   АПБ noun:inanim:f:v_oru:nv:prop
   АПБ noun:inanim:f:v_mis:nv:prop
   АПБ noun:inanim:f:v_kly:nv:prop
+Арсенал noun:inanim:m:v_naz:prop
+  Арсеналу noun:inanim:m:v_rod:prop
+  Арсеналові noun:inanim:m:v_dav:prop
+  Арсеналу noun:inanim:m:v_dav:prop
+  Арсенал noun:inanim:m:v_zna:prop
+  Арсеналом noun:inanim:m:v_oru:prop
+  Арсеналі noun:inanim:m:v_mis:prop
+  Арсеналові noun:inanim:m:v_mis:prop
+  Арсеналу noun:inanim:m:v_mis:prop
+  Арсенале noun:inanim:m:v_kly:prop
 Архангельськ noun:inanim:m:v_naz:prop:geo    # місто
   Архангельська noun:inanim:m:v_rod:prop:geo
   Архангельську noun:inanim:m:v_dav:prop:geo
@@ -471,6 +499,24 @@
   Архангельськом noun:inanim:m:v_oru:prop:geo
   Архангельську noun:inanim:m:v_mis:prop:geo
   Архангельську noun:inanim:m:v_kly:prop:geo
+АТОвець noun:anim:m:v_naz
+  АТОвця noun:anim:m:v_rod
+  АТОвцеві noun:anim:m:v_dav
+  АТОвцю noun:anim:m:v_dav
+  АТОвця noun:anim:m:v_zna
+  АТОвцем noun:anim:m:v_oru
+  АТОвцеві noun:anim:m:v_mis
+  АТОвці noun:anim:m:v_mis
+  АТОвцю noun:anim:m:v_mis
+  АТОвцю noun:anim:m:v_kly
+  АТОвці noun:anim:p:v_naz
+  АТОвців noun:anim:p:v_rod
+  АТОвцям noun:anim:p:v_dav
+  АТОвців noun:anim:p:v_zna
+  АТОвці noun:anim:p:v_zna:rare    # з в/у
+  АТОвцями noun:anim:p:v_oru
+  АТОвцях noun:anim:p:v_mis
+  АТОвці noun:anim:p:v_kly
 Афанасьєв-Чужбинський noun:anim:m:v_naz:prop:lname
   Афанасьєва-Чужбинського noun:anim:m:v_rod:prop:lname
   Афанасьєву-Чужбинському noun:anim:m:v_dav:prop:lname
@@ -796,6 +842,39 @@
   бурмилами noun:anim:p:v_oru
   бурмилах noun:anim:p:v_mis
   бурмила noun:anim:p:v_kly
+БЮТівець noun:anim:m:v_naz
+  БЮТівця noun:anim:m:v_rod
+  БЮТівцеві noun:anim:m:v_dav
+  БЮТівцю noun:anim:m:v_dav
+  БЮТівця noun:anim:m:v_zna
+  БЮТівцем noun:anim:m:v_oru
+  БЮТівцеві noun:anim:m:v_mis
+  БЮТівці noun:anim:m:v_mis
+  БЮТівцю noun:anim:m:v_mis
+  БЮТівцю noun:anim:m:v_kly
+  БЮТівці noun:anim:p:v_naz
+  БЮТівців noun:anim:p:v_rod
+  БЮТівцям noun:anim:p:v_dav
+  БЮТівців noun:anim:p:v_zna
+  БЮТівці noun:anim:p:v_zna:rare    # з в/у
+  БЮТівцями noun:anim:p:v_oru
+  БЮТівцях noun:anim:p:v_mis
+  БЮТівці noun:anim:p:v_kly
+бютівка noun:anim:f:v_naz
+  бютівки noun:anim:f:v_rod
+  бютівці noun:anim:f:v_dav
+  бютівку noun:anim:f:v_zna
+  бютівкою noun:anim:f:v_oru
+  бютівці noun:anim:f:v_mis
+  бютівко noun:anim:f:v_kly
+  бютівки noun:anim:p:v_naz
+  бютівок noun:anim:p:v_rod
+  бютівкам noun:anim:p:v_dav
+  бютівок noun:anim:p:v_zna
+  бютівки noun:anim:p:v_zna:rare    # з в/у
+  бютівками noun:anim:p:v_oru
+  бютівках noun:anim:p:v_mis
+  бютівки noun:anim:p:v_kly
 Вагнер noun:anim:m:v_naz:prop:lname
   Вагнера noun:anim:m:v_rod:prop:lname
   Вагнерові noun:anim:m:v_dav:prop:lname
@@ -2245,6 +2324,16 @@
   годними adj:p:v_oru
   годних adj:p:v_mis
   годні adj:p:v_kly
+Горбачов-фонд noun:inanim:m:v_naz:prop
+  Горбачов-фонду noun:inanim:m:v_rod:prop
+  Горбачов-фондові noun:inanim:m:v_dav:prop
+  Горбачов-фонду noun:inanim:m:v_dav:prop
+  Горбачов-фонд noun:inanim:m:v_zna:prop
+  Горбачов-фондом noun:inanim:m:v_oru:prop
+  Горбачов-фонді noun:inanim:m:v_mis:prop
+  Горбачов-фондові noun:inanim:m:v_mis:prop
+  Горбачов-фонду noun:inanim:m:v_mis:prop
+  Горбачов-фонде noun:inanim:m:v_kly:prop
 горнична noun:anim:f:v_naz:bad
   горничної noun:anim:f:v_rod:bad
   горничній noun:anim:f:v_dav:bad
@@ -2622,6 +2711,15 @@
   жадними adj:p:v_oru:rare
   жадних adj:p:v_mis:rare
   жадні adj:p:v_kly:rare
+Жак-Анрі noun:anim:m:v_naz:prop:fname
+  Жака-Анрі noun:anim:m:v_rod:prop:fname
+  Жакові-Анрі noun:anim:m:v_dav:prop:fname
+  Жаку-Анрі noun:anim:m:v_dav:prop:fname
+  Жака-Анрі noun:anim:m:v_zna:prop:fname
+  Жаком-Анрі noun:anim:m:v_oru:prop:fname
+  Жакові-Анрі noun:anim:m:v_mis:prop:fname
+  Жаку-Анрі noun:anim:m:v_mis:prop:fname
+  Жаку-Анрі noun:anim:m:v_kly:prop:fname
 жаско adv
 Женя noun:anim:m:v_naz:prop:fname
   Жені noun:anim:m:v_rod:prop:fname
@@ -3015,16 +3113,6 @@
   лікаревими adj:p:v_oru
   лікаревих adj:p:v_mis
   лікареві adj:p:v_kly
-Лондон noun:inanim:m:v_naz:prop    # напр клуб
-  Лондона noun:inanim:m:v_rod:prop
-  Лондонові noun:inanim:m:v_dav:prop
-  Лондону noun:inanim:m:v_dav:prop
-  Лондон noun:inanim:m:v_zna:prop
-  Лондоном noun:inanim:m:v_oru:prop
-  Лондоні noun:inanim:m:v_mis:prop
-  Лондонові noun:inanim:m:v_mis:prop
-  Лондону noun:inanim:m:v_mis:prop
-  Лондоне noun:inanim:m:v_kly:prop
 Лондон noun:inanim:m:v_naz:prop:geo
   Лондона noun:inanim:m:v_rod:prop:geo
   Лондону noun:inanim:m:v_rod:prop:geo:ua_2019
@@ -5751,6 +5839,24 @@
   якнайуживанішими adj:p:v_oru:comps
   якнайуживаніших adj:p:v_mis:comps
   якнайуживаніші adj:p:v_kly:comps
+Ян-Казимир noun:anim:m:v_naz:prop:fname:bad
+  Яна-Казимира noun:anim:m:v_rod:prop:fname:bad
+  Янові-Казимирові noun:anim:m:v_dav:prop:fname:bad
+  Янові-Казимиру noun:anim:m:v_dav:prop:fname:bad
+  Яну-Казимирові noun:anim:m:v_dav:prop:fname:bad
+  Яну-Казимиру noun:anim:m:v_dav:prop:fname:bad
+  Яна-Казимира noun:anim:m:v_zna:prop:fname:bad
+  Яном-Казимиром noun:anim:m:v_oru:prop:fname:bad
+  Яні-Казимирі noun:anim:m:v_mis:prop:fname:bad
+  Яні-Казимирові noun:anim:m:v_mis:prop:fname:bad
+  Яні-Казимиру noun:anim:m:v_mis:prop:fname:bad
+  Янові-Казимирі noun:anim:m:v_mis:prop:fname:bad
+  Янові-Казимирові noun:anim:m:v_mis:prop:fname:bad
+  Янові-Казимиру noun:anim:m:v_mis:prop:fname:bad
+  Яну-Казимирі noun:anim:m:v_mis:prop:fname:bad
+  Яну-Казимирові noun:anim:m:v_mis:prop:fname:bad
+  Яну-Казимиру noun:anim:m:v_mis:prop:fname:bad
+  Яне-Казимире noun:anim:m:v_kly:prop:fname:bad
 ясна noun:inanim:p:v_naz:ns
   ясен noun:inanim:p:v_rod:ns
   яснам noun:inanim:p:v_dav:ns

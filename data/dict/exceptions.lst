@@ -296,20 +296,6 @@
 матерями-одиначками мати-одиначка noun:anim:p:v_oru
 матерях-одиначках мати-одиначка noun:anim:p:v_mis
 
-прамати прамати noun:anim:f:v_naz/v_kly
-праматір прамати noun:anim:f:v_naz:rare
-праматері прамати noun:anim:f:v_rod
-праматері прамати noun:anim:f:v_dav
-праматір прамати noun:anim:f:v_zna
-праматір'ю прамати noun:anim:f:v_oru
-праматері прамати noun:anim:f:v_mis
-праматері прамати noun:anim:p:v_naz/v_kly
-праматерів прамати noun:anim:p:v_rod
-праматерям прамати noun:anim:p:v_dav
-праматерів прамати noun:anim:p:v_zna
-праматерями прамати noun:anim:p:v_oru
-праматерях прамати noun:anim:p:v_mis
-
 батько-мати батько-мати noun:anim:p:v_naz
 батько-матір батько-мати noun:anim:p:v_naz:rare
 батька-матері батько-мати noun:anim:p:v_rod
@@ -320,7 +306,6 @@
 батьку-матері батько-мати noun:anim:p:v_mis
 батькові-матері батько-мати noun:anim:p:v_mis
 батьку-мати батько-мати noun:anim:p:v_kly
-
 
 біомати біомати noun:anim:f:v_naz/v_kly
 біоматір біомати noun:anim:f:v_naz:rare
@@ -335,6 +320,34 @@
 біоматерів біомати noun:anim:p:v_zna
 біоматерями біомати noun:anim:p:v_oru
 біоматерях біомати noun:anim:p:v_mis
+
+богомати богомати noun:anim:f:v_naz/v_kly
+богоматір богомати noun:anim:f:v_naz:rare
+богоматері богомати noun:anim:f:v_rod
+богоматері богомати noun:anim:f:v_dav
+богоматір богомати noun:anim:f:v_zna
+богоматір'ю богомати noun:anim:f:v_oru
+богоматері богомати noun:anim:f:v_mis
+богоматері богомати noun:anim:p:v_naz/v_kly
+богоматерів богомати noun:anim:p:v_rod
+богоматерям богомати noun:anim:p:v_dav
+богоматерів богомати noun:anim:p:v_zna
+богоматерями богомати noun:anim:p:v_oru
+богоматерях богомати noun:anim:p:v_mis
+
+прамати прамати noun:anim:f:v_naz/v_kly
+праматір прамати noun:anim:f:v_naz:rare
+праматері прамати noun:anim:f:v_rod
+праматері прамати noun:anim:f:v_dav
+праматір прамати noun:anim:f:v_zna
+праматір'ю прамати noun:anim:f:v_oru
+праматері прамати noun:anim:f:v_mis
+праматері прамати noun:anim:p:v_naz/v_kly
+праматерів прамати noun:anim:p:v_rod
+праматерям прамати noun:anim:p:v_dav
+праматерів прамати noun:anim:p:v_zna
+праматерями прамати noun:anim:p:v_oru
+праматерях прамати noun:anim:p:v_mis
 
 чоботи чобіт noun:p:v_naz/v_zna/v_kly
 чобіт чобіт noun:p:v_rod
@@ -578,6 +591,10 @@
 України-Руси Україна-Русь noun:f:v_rod:prop:geo:ua_2019
 Руси-України Русь-Україна noun:f:v_rod:prop:geo:ua_2019
 
+ба баба noun:anim:f:v_kly:short
+донь доня noun:anim:f:v_kly:short
+киць киця noun:anim:f:v_kly:short
+коть кіт noun:anim:m:v_kly:short
 ма мама noun:anim:f:v_kly:short
 мам мама noun:anim:f:v_kly:short
 тат тато noun:anim:m:v_kly:short

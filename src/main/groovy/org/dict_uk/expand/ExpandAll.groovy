@@ -25,30 +25,31 @@ class ExpandAll {
 		Expand expand = new Expand()
 		expand.affix.load_affixes(Args.args.affixDir)
 
-
 		List<String> outLines = []
 
 		def dictFilePattern = ~/.*\.lst/
 		new File(Args.args.dictDir).eachFileMatch(dictFilePattern) { file ->
 
 			List<String> out
-			if( file.getName().contains('composite.lst') ) {
+			def filename = file.getName()
+			if( filename.contains('composite.lst') ) {
 				def expand_comps = new ExpandComps(expand)
 				def fileReader = file.withReader("utf-8") { reader ->
 					def lines = reader.readLines()
-					def entries = expand_comps.process_input(lines)
+
+					def entries = expand_comps.process_input(lines, filename)
 					out = entries.collect { DicEntry it ->
-						if( file.getName().contains("invalid") ) {
+						if( filename.contains("invalid") ) {
 							if( ! it.tagStr.contains(":bad") ) {
 								it.tagStr += ":bad"
 							}
 						}
-						if( file.getName().contains("geo") ) {
+						else if( filename.contains("geo") ) {
 							if( ! it.tagStr.contains(":geo") ) {
 								it.tagStr += ":geo"
 							}
 						}
-						
+
 						it.toFlatString() 
 					}
 				}
@@ -59,7 +60,7 @@ class ExpandAll {
 				out = tagged_wordlist.processInput([file.getAbsolutePath()])
 			}
 
-			log.info("Processing file {}, {} lines", file.getName(), out.size())
+			log.info("Processing file {}, {} lines", filename, out.size())
 
 			outLines.addAll(out)
 		}

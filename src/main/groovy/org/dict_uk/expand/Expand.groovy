@@ -402,7 +402,7 @@ class Expand {
 
 
 		if( extra_flags ) {
-			boolean first_name_base = util.firstname(lines[0].word, flags)
+//			boolean first_name_base = util.firstname(lines[0].word, flags)
 
 			List<DicEntry> out_lines = []
 			List<DicEntry> extra_out_lines = []
@@ -410,12 +410,16 @@ class Expand {
 			for(DicEntry line in lines) {
 				String extra_flags2 = extra_flags
 
-				if( first_name_base && ! line.tagStr.contains("pname") && ! flags.contains(":pname") ) {
-					extra_flags2 += ":prop:fname"
+				if( line.tagStr.contains("pname") || flags.contains(":pname") ) {
+					extra_flags2 = extra_flags2.replace(":prop:fname", "")
 				}
-                else if( util.animalname(lines[0].word, flags) ) {
-                    extra_flags2 += ":prop"
-                }
+
+//				if( first_name_base && ! line.tagStr.contains("pname") && ! flags.contains(":pname") ) {
+//					extra_flags2 += ":prop:fname"
+//				}
+//                else if( util.animalname(lines[0].word, flags) ) {
+//                    extra_flags2 += ":prop"
+//                }
 				if( line.tagStr.startsWith("advp") ) {
 					if( line.tagStr.contains(":imperf") )
 						extra_flags2 = perf_imperf_pattern.matcher(extra_flags2).replaceFirst("")
@@ -983,9 +987,9 @@ class Expand {
             out_lines.add(line2)
         }
 		else if( (flags.startsWith("/n10") || flags.startsWith("/n3")) && ! line.contains(":abbr") ) {
-			if( ! flags.contains(".k") ) {
+			if( ! (flags =~ /\.k[oue]/) ) {
 			    lineParts[1] += flags.startsWith("/n10") 
-                    ? word =~ /ся$/ 
+                    ? (line.contains(".<") && word =~ /^[А-ЯІЇЄҐ].*[дзлнртсц]я$/) || word =~ /ся$/  
                         ? ".ku" : ".ko" 
                     : ".ke"
 			    line = lineParts.join(" ")
