@@ -95,6 +95,7 @@
 встеле встелити verb:perf:futr:s:3
 вступе вступити verb:perf:futr:s:3
 вуглепластика вуглепластик noun:m:v_rod
+вушима вухо noun:inanim:p:v_oru
 вушці вушко noun:n:v_mis
 входе входити verb:imperf:pres:s:3
 Газпрома Газпром noun:m:v_rod:prop
@@ -194,6 +195,8 @@
 зчистіть зчистити verb:perf:impr:p:2
 Ігора Ігор noun:anim:m:v_rod/v_zna:prop:fname
 Ігоре Ігор noun:anim:m:v_kly:prop:fname
+Іллє Ілля noun:anim:m:v_kly:prop:fname
+Іллєю Ілля noun:anim:m:v_oru:prop:fname
 імбирем імбир noun:m:v_oru
 інвентаря інвентар noun:m:v_rod          # р.в. архаїчного значення — список
 Інтера Інтер noun:inanim:m:v_rod:prop
@@ -236,6 +239,7 @@
 кулішу куліш noun:m:v_rod/v_dav/v_mis
 Курил Курили noun:p:v_rod:ns:prop:geo
 куріня курінь noun:m:v_rod
+курями кури noun:anim:p:v_oru:ns
 лабет лабети noun:p:v_rod:ns
 Лазара Лазар noun:anim:m:v_rod/v_zna:prop:fname
 ледаре ледар noun:m:v_kly:anim              #> ледарю
@@ -325,6 +329,9 @@
 плагіна плагін noun:m:v_rod
 пластирем пластир noun:m:v_oru
 плате платити verb:imperf:pres:s:3
+плечами плече noun:inanim:p:v_oru
+плечми плече noun:inanim:p:v_oru
+плічми плече noun:inanim:p:v_oru
 побаче побачити verb:perf:futr:s:3                          #> побачить
 побіле побілити verb:perf:futr:s:3
 повідоміть повідомити verb:perf:impr:p:2
