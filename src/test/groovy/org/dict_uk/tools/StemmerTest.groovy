@@ -1,6 +1,7 @@
 package org.dict_uk.tools
 
 import static org.junit.jupiter.api.Assertions.assertEquals
+import static org.junit.jupiter.api.Assumptions.assumeTrue
 
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
@@ -12,6 +13,8 @@ class StemmerTest {
     
     @Test
     void test() {
+        
+        assumeTrue stemmer.getCorpFile().isFile()
         
         stemmer.readWords()
 //        assertEquals "став", Roots.findRoot("поставати поставати verb:imperf:inf\n"

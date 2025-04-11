@@ -92,6 +92,10 @@ class Stemmer {
         println "props: ${props.size()}: \"${props[0]}\""
     }
     
+    File getCorpFile() {
+        new File(baseDir, "out/dict_corp_vis.txt")
+    }
+    
     Set<String> readWords() {
         def readGeosF = CompletableFuture.supplyAsync{ readProps() }
 
