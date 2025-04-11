@@ -37,32 +37,19 @@ dependencies {
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
     implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.+'
 
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.12.+'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.12.+'
-//    testRuntimeOnly 'org.junit.jupiter:junit-platform-launcher:1.12.+'
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.12.+'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.12.+'
+  //  testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.12.+'
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher"
 
 //    groovyScript localGroovy()
 }
 
-/*
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(11)
-    }
-}
-*/
 
-//compileGroovy {
-//    exclude '**/tools/other/*.groovy'
-//}
-//
-//task copySemtags(type: Copy) {
-//    from "$projectDir/data/sem"
-//    into 'build/resources/main/ua/net/nlp/dict_uk/semtags'
-//    include '*.csv'
-//}
-//
-//processResources.dependsOn copySemtags
+test {
+    maxHeapSize = "1g"
+    useJUnitPlatform()
+}
 
 eclipse {
   classpath {
