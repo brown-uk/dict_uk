@@ -507,7 +507,7 @@ def dic_file = new File("../../data/dict").eachFile{ file ->
     def expand_comps = new ExpandComps(expand)
 
     def dic_file_reader = file.withReader("utf-8") { reader ->
-        comps += expand_comps.process_input(reader.readLines())
+        comps += expand_comps.process_input(reader.readLines(), "")
     }
 }
 
