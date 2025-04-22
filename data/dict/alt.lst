@@ -420,6 +420,8 @@
 західньоевропейський /adj
 західньоукраїнський /adj
 збалянсувати /v1.is0 :perf                      # rv_zna:rv_oru:rv_dav
+збірати /v2.cf.advp :imperf                   # rv_zna:rv_oru
+збіратися /vr2.cf.advp :imperf                   # rv_oru
 зверещати /v1 :perf                             # rv_oru
 зконвульсувати /v1 :perf                                     # rv_zna
 зматеріялізований /adj :&adjp:pasv:perf
