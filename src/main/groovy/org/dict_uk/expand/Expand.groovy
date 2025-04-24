@@ -816,7 +816,7 @@ class Expand {
 					&& ! (dicEntry.tagStr =~ /(noun|adj).*:[mfn]:v_(naz|oru)/) )
 				continue
 
-			String xpTag = addTags.find { it.startsWith('xp') || (it =~ /perf|imperf/) }
+			String xpTag = addTags.find { it =~ /^xp|slang|perf|imperf/ }
 			if( xpTag ) {
 				if( ! dicEntry.tagStr.contains(xpTag) )
 					continue

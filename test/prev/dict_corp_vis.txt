@@ -2886,6 +2886,33 @@
   кайданами noun:inanim:p:v_oru:ns
   кайданах noun:inanim:p:v_mis:ns
   кайдани noun:inanim:p:v_kly:ns
+капець noun:inanim:m:v_naz:xp1
+  капця noun:inanim:m:v_rod:xp1
+  капцеві noun:inanim:m:v_dav:xp1
+  капцю noun:inanim:m:v_dav:xp1
+  капець noun:inanim:m:v_zna:xp1
+  капцем noun:inanim:m:v_oru:xp1
+  капцеві noun:inanim:m:v_mis:xp1
+  капці noun:inanim:m:v_mis:xp1
+  капцю noun:inanim:m:v_mis:xp1
+  капцю noun:inanim:m:v_kly:xp1
+  капці noun:inanim:p:v_naz:xp1
+  капців noun:inanim:p:v_rod:xp1
+  капцям noun:inanim:p:v_dav:xp1
+  капці noun:inanim:p:v_zna:xp1
+  капцями noun:inanim:p:v_oru:xp1
+  капцях noun:inanim:p:v_mis:xp1
+  капці noun:inanim:p:v_kly:xp1
+капець noun:inanim:m:v_naz:&predic:slang:xp2
+  капця noun:inanim:m:v_rod:slang:xp2
+  капцеві noun:inanim:m:v_dav:slang:xp2
+  капцю noun:inanim:m:v_dav:slang:xp2
+  капець noun:inanim:m:v_zna:slang:xp2
+  капцем noun:inanim:m:v_oru:slang:xp2
+  капцеві noun:inanim:m:v_mis:slang:xp2
+  капці noun:inanim:m:v_mis:slang:xp2
+  капцю noun:inanim:m:v_mis:slang:xp2
+  капцю noun:inanim:m:v_kly:slang:xp2
 кін noun:inanim:m:v_naz
   кону noun:inanim:m:v_rod
   конові noun:inanim:m:v_dav

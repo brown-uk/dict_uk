@@ -25,7 +25,7 @@ public class DictSorterTest {
 		assertEquals "adj:compb:0040", dictSorter.tag_sort_key("adj:m:v_zna:ranim", "азотистоводневого")
 		assertEquals "adj:compb:0041", dictSorter.tag_sort_key("adj:m:v_zna:rinanim", "азотистоводневий")
 		assertEquals "verb:imperf:10:0", dictSorter.tag_sort_key("verb:imperf:inf", "порт")
-		assertEquals "verb:imperf:10:2", dictSorter.tag_sort_key("verb:imperf:inf:coll:rare", "порт")
+		assertEquals "verb:imperf:10:1", dictSorter.tag_sort_key("verb:imperf:inf:rare", "порт")
 		assertEquals "verb:xp1:perf:80:00:0", dictSorter.tag_sort_key("verb:perf:past:m:xp1", "вернув")
 		assertEquals "verb:xp1:perf:10:0", dictSorter.tag_sort_key("verb:perf:inf:xp1", "вернути")
         assertEquals "noun:inanim:nv:&numr:1010:abbr", dictSorter.tag_sort_key("noun:inanim:f:v_naz:nv:&numr:abbr", "тис.")
@@ -38,6 +38,7 @@ public class DictSorterTest {
     void testGetLineKey() {
         assertEquals "тис. noun:inanim:nv:&numr", dictSorter.getLineKey("тис.", "noun:inanim:f:v_naz:nv:&numr:abbr", new DicEntry("", "", ""))
         assertEquals "тис. noun:inanim:nv", dictSorter.getLineKey("тис.", "noun:inanim:n:v_naz:nv:abbr", new DicEntry("", "", ""))
+        assertEquals "капець noun:inanim:slang", dictSorter.getLineKey("капець", "noun:inanim:v_naz:&predic:slang", new DicEntry("", "", ""))
     }
 
 	def linesToSort =
@@ -65,6 +66,10 @@ public class DictSorterTest {
 азотистоводневого азотистоводневий adj:m:v_rod
 азотисто-водневий азотисто-водневий adj:m:v_naz
 азотисто-водневого азотисто-водневий adj:m:v_rod
+капець капець noun:inanim:m:v_naz
+капця капець noun:inanim:m:v_rod
+капець капець noun:inanim:m:v_naz:&predic:slang
+капця капець noun:inanim:m:v_rod:slang
 тис. тис. noun:inanim:f:v_naz:nv:&numr:abbr
 тис. тис. noun:inanim:f:v_rod:nv:&numr:abbr
 тис. тис. noun:inanim:p:v_naz:nv:&numr:abbr

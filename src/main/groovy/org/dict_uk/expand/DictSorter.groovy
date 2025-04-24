@@ -50,18 +50,16 @@ class DictSorter {
 
 	static final Pattern re_person_name_key_tag = Pattern.compile("^(noun:anim)(.*?)(:[lfp]name)")
 
-	static final Pattern re_xv_sub = Pattern.compile("^([^:]+)(.*)(:x.[1-9])")
+	static final Pattern re_xv_sub = Pattern.compile("^([^:]+)(.*)(:x.[1-9]|:slang)")
 	static final Pattern re_pron_sub = Pattern.compile("^([^:]+)(.*)(:&pron:[^:]+)")
 
-	static final Pattern LOWERING_TAGS_RE = Pattern.compile(/:(alt|rare|arch|vulg|obsc|coll|subst|bad|var|short|long|ua_....)/)
+    // |coll
+	static final Pattern LOWERING_TAGS_RE = Pattern.compile(/:(alt|rare|arch|vulg|obsc|subst|bad|var|short|long|ua_....)/)
 	static final Pattern GEN_RE = Pattern.compile(/:([mfnsp])(:|$)/)
 	static final Pattern VIDM_RE = Pattern.compile(/:(v_...)/)
 
 	@CompileStatic
 	String tag_sort_key(String tags, String word) {
-//		if( tags.contains(":v-u") ) {
-//			tags = tags.replace(":v-u", "")
-//		}
 		
 		if( tags.indexOf('&') > 0 ) {
 			tags = tags.replaceAll(/:&(insert|predic)/, '')
@@ -202,6 +200,9 @@ class DictSorter {
 		if( tags.contains(":x") ) {
 			tags = re_xv_sub.matcher(tags).replaceAll('$1$3$2')
 		}
+		if( tags.contains(":slang") ) {
+			tags = re_xv_sub.matcher(tags).replaceAll('$1$3$2')
+		}
 		if( tags.contains(":&pron:") ) {
 			tags = re_pron_sub.matcher(tags).replaceAll('$1$3$2')
 		}
@@ -304,6 +305,10 @@ class DictSorter {
         
         if( tags.contains(":&numr") ) {
             key.append(":&numr")
+        }
+
+        if( tags.contains(":slang") ) {
+            key.append(":slang")
         }
 
         String keyStr = key.toString()
