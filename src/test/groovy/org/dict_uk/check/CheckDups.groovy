@@ -8,7 +8,9 @@ def files = dictDir.listFiles().findAll { it.name.endsWith('.lst') \
     && ! (it.name in ['dot-abbr.lst', 'geo-ukr-hydro.lst', 'geo-ukr-koatuu.lst']) }
 
 def lines = files.collect { File f ->
-            boolean geo = f.name.contains('geo')
+            String extraTag = f.name.contains('geo') ? " :geo"
+              : f.name.contains('slang') ? " :slang" : ""
+
             f.readLines()
             .findAll { ! it.startsWith('#') && ! it.startsWith(' +cs=') } 
             .collect { it
@@ -21,7 +23,7 @@ def lines = files.collect { File f ->
                 .replaceAll(/:&adjp:(actv|pasv)(:(imperf|perf))+/, '')
             }
             .collect { line ->
-                geo ? "$line :geo" : line 
+                line = "${line}${extraTag}"
             }
         }
         .flatten()
