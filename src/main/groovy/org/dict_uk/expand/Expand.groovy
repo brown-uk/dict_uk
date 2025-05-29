@@ -520,7 +520,7 @@ class Expand {
 					if( flags.contains(".a.u") ) {
 						lines = lines.collect { l ->
 							if( l.tagStr.contains("v_rod") && l.word =~ /[ую]$/ ) {
-								new DicEntry(l.word, l.lemma, l.tagStr + ":ua_2019")
+								new DicEntry(l.word, l.lemma, l.tagStr + ":up19")
 							}
 							else {
 								l
@@ -537,8 +537,8 @@ class Expand {
 					}
 					if( vRod ) {
 						def tag = vRod.tagStr
-						if( ! tag.contains(":ua_2019") ) {
-							tag += ":ua_2019"
+						if( ! tag.contains(":up19") ) {
+							tag += ":up19"
 						}
 						def word = vRod.word.replaceFirst(/а$/, 'у').replaceFirst(/я$/, 'ю')
 						lines.add(new DicEntry(word, vRod.lemma, tag))
@@ -812,7 +812,7 @@ class Expand {
 
 			List<String> addTags = additionalTags[dicEntry.word]
 			if( addTags[0] in ['noun', 'adj']
-					&& ! (addTags =~ /ua_/)
+					&& ! (addTags =~ /up[0-9]/)
 					&& ! (dicEntry.tagStr =~ /(noun|adj).*:[mfn]:v_(naz|oru)/) )
 				continue
 
@@ -1190,7 +1190,7 @@ class Expand {
                 ":abbr",
 				":prop",
 				":geo", ":fname", ":lname", ":pname",
-                ":ua_2019", ":ua_1992", ":short", ":long",
+                ":up19", ":up92", ":short", ":long",
                 ":&insert", ":&predic",
 				":bad", ":slang", ":rare", ":arch", ":vulg", ":obsc", ":subst", ":coll", ":alt",
 				":xp1", ":xp2", ":xp3", ":xp4",

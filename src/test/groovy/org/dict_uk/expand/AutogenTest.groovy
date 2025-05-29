@@ -17,13 +17,13 @@ public class AutogenTest {
 	
 	@Test
 	void test() {
-		String[] words = ["екс-піжон /n20 :ua_1992", "екс-єпископ /n20 :ua_1992", "камер-юнкер /n20 :ua_1992"]
+		String[] words = ["екс-піжон /n20 :up92", "екс-єпископ /n20 :up92", "камер-юнкер /n20 :up92"]
 		String[] expected = [
-			["експіжон /n20 :ua_2019", "екс'єпископ /n20 :ua_2019", "камер'юнкер /n20 :ua_2019"], 
+			["експіжон /n20 :up19", "екс'єпископ /n20 :up19", "камер'юнкер /n20 :up19"], 
 			[
-				Autogen.addReplace("екс-піжон /n20 :ua_1992", "експіжон"), 
-				Autogen.addReplace("екс-єпископ /n20 :ua_1992", "екс'єпископ"), 
-				Autogen.addReplace("камер-юнкер /n20 :ua_1992", "камер'юнкер")]
+				Autogen.addReplace("екс-піжон /n20 :up92", "експіжон"), 
+				Autogen.addReplace("екс-єпископ /n20 :up92", "екс'єпископ"), 
+				Autogen.addReplace("камер-юнкер /n20 :up92", "камер'юнкер")]
 			]
 		def res = Autogen.enforceNoDash2019(words)
 		

@@ -117,7 +117,7 @@ files.each { File file ->
                 }
 
                 if( matches.size() > 1 ) {
-                    def matches2 = matches.collect{ it.replaceAll(/:nv|:ua_....|:alt|:imperf|:perf/, '') }.unique()
+                    def matches2 = matches.collect{ it.replaceAll(/:nv|:up..|:alt|:imperf|:perf/, '') }.unique()
                     
                     if( matches2.size() > 1 ) {
                         println "Multiple match for $line: " + matches

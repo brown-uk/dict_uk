@@ -241,7 +241,7 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
 
     
     doLast {
-        def outLines = Replacements.getReplacements(srcDir, srcFiles, { it.contains(' #>') && ! it.contains('ua_1992')})
+        def outLines = Replacements.getReplacements(srcDir, srcFiles, { it.contains(' #>') && ! it.contains('up92')})
         
 		new File(outFile).text = headText + outLines.join("\n") + '\n'
 		println "Wrote ${outLines.size()} replacements"
@@ -260,7 +260,7 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
 
 
     doLast {
-        def outLines = Replacements.getReplacements(srcDir, srcFiles, { it.contains(' #> ') && ! it.contains('ua_1992')})
+        def outLines = Replacements.getReplacements(srcDir, srcFiles, { it.contains(' #> ') && ! it.contains('up92')})
 
         println "Wrote ${outLines.size()} soft replacements"
         new File(outFile).text = String.format(headText, " for soft suggestions") + outLines.join('\n') + "\n"
@@ -281,9 +281,9 @@ task createNewSpellingReplacementDict(dependsOn: createOutRulesDir) {
     outputs.file outFile
 
     doLast {
-        def outLines = Replacements.getReplacements(srcDir, srcFiles, { it.contains(' #> ') && it.contains('ua_1992') })
+        def outLines = Replacements.getReplacements(srcDir, srcFiles, { it.contains(' #> ') && it.contains('up92') })
 
-        println "Wrote ${outLines.size()} ua_2019 replacements"
+        println "Wrote ${outLines.size()} up19 replacements"
         new File(outFile).text = String.format(headText, " for 2019 spelling suggestions") + outLines.join('\n') + "\n"
     }
 }

@@ -37,8 +37,8 @@
 вагів ваги noun:p:v_rod:ns
 вводе вводити verb:imperf:pres:s:3
 вдаре вдарити verb:perf:futr:s:3
-вебсайта вебсайт noun:m:v_rod:ua_2019
-веб-сайта веб-сайт noun:m:v_rod:ua_1992
+вебсайта вебсайт noun:m:v_rod:up19
+веб-сайта веб-сайт noun:m:v_rod:up92
 виборок вибірка noun:p:v_rod                #> вибірок
 вибудовано вибудувати verb:perf:impers      #> вибудувано
 вибухла вибухнути verb:perf:past:f          #> вибухнула
@@ -150,8 +150,8 @@
 завісів завіса noun:inanim:p:v_rod
 завісіть завісити verb:perf:impr:p:2
 заводе заводити verb:imperf:pres:s:3
-законопроекта законопроект noun:m:v_rod:ua_1992
-законопроєкта законопроєкт noun:m:v_rod:ua_2019
+законопроекта законопроект noun:m:v_rod:up92
+законопроєкта законопроєкт noun:m:v_rod:up19
 закруте закрутити verb:perf:futr:s:3
 залліть залляти verb:perf:impr:p:2
 заморе заморити verb:perf:futr:s:3
@@ -366,8 +366,8 @@
 пришпильте пришпилити verb:perf:impr:p:2    #> пришпиліть
 проводе проводити verb:imperf:pres:s:3
 продасиш продати verb:perf:futr:s:2
-проекта проект noun:m:v_rod:ua_1992
-проєкта проєкт noun:m:v_rod:ua_2019
+проекта проект noun:m:v_rod:up92
+проєкта проєкт noun:m:v_rod:up19
 прополосніть прополоскати verb:perf:impr:p:2
 протестіть протестити verb:perf:impr:p:2:slang
 профіля профіль noun:m:v_rod

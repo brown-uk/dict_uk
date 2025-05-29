@@ -141,33 +141,33 @@
   Августо noun:anim:m:v_oru:nv:prop:fname
   Августо noun:anim:m:v_mis:nv:prop:fname
   Августо noun:anim:m:v_kly:nv:prop:fname
-Авґустин noun:anim:m:v_naz:prop:fname:ua_2019
-  Авґустина noun:anim:m:v_rod:prop:fname:ua_2019
-  Авґустинові noun:anim:m:v_dav:prop:fname:ua_2019
-  Авґустину noun:anim:m:v_dav:prop:fname:ua_2019
-  Авґустина noun:anim:m:v_zna:prop:fname:ua_2019
-  Авґустином noun:anim:m:v_oru:prop:fname:ua_2019
-  Авґустині noun:anim:m:v_mis:prop:fname:ua_2019
-  Авґустинові noun:anim:m:v_mis:prop:fname:ua_2019
-  Авґустину noun:anim:m:v_mis:prop:fname:ua_2019
-  Авґустине noun:anim:m:v_kly:prop:fname:ua_2019
-Авґустинівна noun:anim:f:v_naz:prop:pname:ua_2019
-  Авґустинівни noun:anim:f:v_rod:prop:pname:ua_2019
-  Авґустинівні noun:anim:f:v_dav:prop:pname:ua_2019
-  Авґустинівну noun:anim:f:v_zna:prop:pname:ua_2019
-  Авґустинівною noun:anim:f:v_oru:prop:pname:ua_2019
-  Авґустинівні noun:anim:f:v_mis:prop:pname:ua_2019
-  Авґустинівно noun:anim:f:v_kly:prop:pname:ua_2019
-Авґустинович noun:anim:m:v_naz:prop:pname:ua_2019
-  Авґустиновича noun:anim:m:v_rod:prop:pname:ua_2019
-  Авґустиновичеві noun:anim:m:v_dav:prop:pname:ua_2019
-  Авґустиновичу noun:anim:m:v_dav:prop:pname:ua_2019
-  Авґустиновича noun:anim:m:v_zna:prop:pname:ua_2019
-  Авґустиновичем noun:anim:m:v_oru:prop:pname:ua_2019
-  Авґустиновичеві noun:anim:m:v_mis:prop:pname:ua_2019
-  Авґустиновичі noun:anim:m:v_mis:prop:pname:ua_2019
-  Авґустиновичу noun:anim:m:v_mis:prop:pname:ua_2019
-  Авґустиновичу noun:anim:m:v_kly:prop:pname:ua_2019
+Авґустин noun:anim:m:v_naz:prop:fname:up19
+  Авґустина noun:anim:m:v_rod:prop:fname:up19
+  Авґустинові noun:anim:m:v_dav:prop:fname:up19
+  Авґустину noun:anim:m:v_dav:prop:fname:up19
+  Авґустина noun:anim:m:v_zna:prop:fname:up19
+  Авґустином noun:anim:m:v_oru:prop:fname:up19
+  Авґустині noun:anim:m:v_mis:prop:fname:up19
+  Авґустинові noun:anim:m:v_mis:prop:fname:up19
+  Авґустину noun:anim:m:v_mis:prop:fname:up19
+  Авґустине noun:anim:m:v_kly:prop:fname:up19
+Авґустинівна noun:anim:f:v_naz:prop:pname:up19
+  Авґустинівни noun:anim:f:v_rod:prop:pname:up19
+  Авґустинівні noun:anim:f:v_dav:prop:pname:up19
+  Авґустинівну noun:anim:f:v_zna:prop:pname:up19
+  Авґустинівною noun:anim:f:v_oru:prop:pname:up19
+  Авґустинівні noun:anim:f:v_mis:prop:pname:up19
+  Авґустинівно noun:anim:f:v_kly:prop:pname:up19
+Авґустинович noun:anim:m:v_naz:prop:pname:up19
+  Авґустиновича noun:anim:m:v_rod:prop:pname:up19
+  Авґустиновичеві noun:anim:m:v_dav:prop:pname:up19
+  Авґустиновичу noun:anim:m:v_dav:prop:pname:up19
+  Авґустиновича noun:anim:m:v_zna:prop:pname:up19
+  Авґустиновичем noun:anim:m:v_oru:prop:pname:up19
+  Авґустиновичеві noun:anim:m:v_mis:prop:pname:up19
+  Авґустиновичі noun:anim:m:v_mis:prop:pname:up19
+  Авґустиновичу noun:anim:m:v_mis:prop:pname:up19
+  Авґустиновичу noun:anim:m:v_kly:prop:pname:up19
 авеню noun:inanim:f:v_naz:nv
   авеню noun:inanim:f:v_rod:nv
   авеню noun:inanim:f:v_dav:nv
@@ -259,12 +259,12 @@
 Адамишин noun:anim:m:v_naz:prop:lname
   Адамишина noun:anim:m:v_rod:prop:lname
   Адамишину noun:anim:m:v_dav:prop:lname
-  Адамишинові noun:anim:m:v_dav:prop:lname:ua_2019
+  Адамишинові noun:anim:m:v_dav:prop:lname:up19
   Адамишина noun:anim:m:v_zna:prop:lname
   Адамишиним noun:anim:m:v_oru:prop:lname
   Адамишині noun:anim:m:v_mis:prop:lname
   Адамишину noun:anim:m:v_mis:prop:lname
-  Адамишинові noun:anim:m:v_mis:prop:lname:ua_2019
+  Адамишинові noun:anim:m:v_mis:prop:lname:up19
   Адамишине noun:anim:m:v_kly:prop:lname
   Адамишини noun:anim:p:v_naz:prop:lname
   Адамишиних noun:anim:p:v_rod:prop:lname
@@ -1290,7 +1290,7 @@
   вежі-близнюки noun:inanim:p:v_kly:ns
 величність noun:anim:f:v_naz
   величності noun:anim:f:v_rod
-  величности noun:anim:f:v_rod:ua_2019
+  величности noun:anim:f:v_rod:up19
   величності noun:anim:f:v_dav
   величність noun:anim:f:v_zna
   величністю noun:anim:f:v_oru
@@ -1936,7 +1936,7 @@
   вим'ї noun:inanim:n:v_mis
   вим'ю noun:inanim:n:v_mis
   вим'я noun:inanim:n:v_kly
-  вимене noun:inanim:n:v_kly:ua_2019
+  вимене noun:inanim:n:v_kly:up19
   вим'я noun:inanim:p:v_naz
   вим'їв noun:inanim:p:v_rod
   вим'ям noun:inanim:p:v_dav
@@ -2744,7 +2744,7 @@
   жита noun:inanim:p:v_kly:ns
 заанґажованість noun:inanim:f:v_naz:alt
   заанґажованості noun:inanim:f:v_rod:alt
-  заанґажованости noun:inanim:f:v_rod:ua_2019:alt
+  заанґажованости noun:inanim:f:v_rod:up19:alt
   заанґажованості noun:inanim:f:v_dav:alt
   заанґажованість noun:inanim:f:v_zna:alt
   заанґажованістю noun:inanim:f:v_oru:alt
@@ -3142,7 +3142,7 @@
   лікареві adj:p:v_kly
 Лондон noun:inanim:m:v_naz:prop:geo
   Лондона noun:inanim:m:v_rod:prop:geo
-  Лондону noun:inanim:m:v_rod:prop:geo:ua_2019
+  Лондону noun:inanim:m:v_rod:prop:geo:up19
   Лондонові noun:inanim:m:v_dav:prop:geo
   Лондону noun:inanim:m:v_dav:prop:geo
   Лондон noun:inanim:m:v_zna:prop:geo
@@ -3153,7 +3153,7 @@
   Лондоне noun:inanim:m:v_kly:prop:geo
 людяність noun:inanim:f:v_naz
   людяності noun:inanim:f:v_rod
-  людяности noun:inanim:f:v_rod:ua_2019
+  людяности noun:inanim:f:v_rod:up19
   людяності noun:inanim:f:v_dav
   людяність noun:inanim:f:v_zna
   людяністю noun:inanim:f:v_oru
@@ -3606,7 +3606,7 @@
 ніде adv:&pron:neg    # ніде́
 ніжність noun:inanim:f:v_naz
   ніжності noun:inanim:f:v_rod
-  ніжности noun:inanim:f:v_rod:ua_2019
+  ніжности noun:inanim:f:v_rod:up19
   ніжності noun:inanim:f:v_dav
   ніжність noun:inanim:f:v_zna
   ніжністю noun:inanim:f:v_oru
@@ -3863,38 +3863,38 @@
   приключилося verb:rev:perf:past:n:bad
   приключились verb:rev:perf:past:p:bad
   приключилися verb:rev:perf:past:p:bad
-проектовий adj:m:v_naz:ua_1992
-  проектового adj:m:v_rod:ua_1992
-  проектовому adj:m:v_dav:ua_1992
-  проектового adj:m:v_zna:ranim:ua_1992
-  проектовий adj:m:v_zna:rinanim:ua_1992
-  проектовим adj:m:v_oru:ua_1992
-  проектовім adj:m:v_mis:ua_1992
-  проектовому adj:m:v_mis:ua_1992
-  проектовий adj:m:v_kly:ua_1992
-  проектова adj:f:v_naz:ua_1992
-  проектової adj:f:v_rod:ua_1992
-  проектовій adj:f:v_dav:ua_1992
-  проектову adj:f:v_zna:ua_1992
-  проектовою adj:f:v_oru:ua_1992
-  проектовій adj:f:v_mis:ua_1992
-  проектова adj:f:v_kly:ua_1992
-  проектове adj:n:v_naz:ua_1992
-  проектового adj:n:v_rod:ua_1992
-  проектовому adj:n:v_dav:ua_1992
-  проектове adj:n:v_zna:ua_1992
-  проектовим adj:n:v_oru:ua_1992
-  проектовім adj:n:v_mis:ua_1992
-  проектовому adj:n:v_mis:ua_1992
-  проектове adj:n:v_kly:ua_1992
-  проектові adj:p:v_naz:ua_1992
-  проектових adj:p:v_rod:ua_1992
-  проектовим adj:p:v_dav:ua_1992
-  проектових adj:p:v_zna:ranim:ua_1992
-  проектові adj:p:v_zna:rinanim:ua_1992
-  проектовими adj:p:v_oru:ua_1992
-  проектових adj:p:v_mis:ua_1992
-  проектові adj:p:v_kly:ua_1992
+проектовий adj:m:v_naz:up92
+  проектового adj:m:v_rod:up92
+  проектовому adj:m:v_dav:up92
+  проектового adj:m:v_zna:ranim:up92
+  проектовий adj:m:v_zna:rinanim:up92
+  проектовим adj:m:v_oru:up92
+  проектовім adj:m:v_mis:up92
+  проектовому adj:m:v_mis:up92
+  проектовий adj:m:v_kly:up92
+  проектова adj:f:v_naz:up92
+  проектової adj:f:v_rod:up92
+  проектовій adj:f:v_dav:up92
+  проектову adj:f:v_zna:up92
+  проектовою adj:f:v_oru:up92
+  проектовій adj:f:v_mis:up92
+  проектова adj:f:v_kly:up92
+  проектове adj:n:v_naz:up92
+  проектового adj:n:v_rod:up92
+  проектовому adj:n:v_dav:up92
+  проектове adj:n:v_zna:up92
+  проектовим adj:n:v_oru:up92
+  проектовім adj:n:v_mis:up92
+  проектовому adj:n:v_mis:up92
+  проектове adj:n:v_kly:up92
+  проектові adj:p:v_naz:up92
+  проектових adj:p:v_rod:up92
+  проектовим adj:p:v_dav:up92
+  проектових adj:p:v_zna:ranim:up92
+  проектові adj:p:v_zna:rinanim:up92
+  проектовими adj:p:v_oru:up92
+  проектових adj:p:v_mis:up92
+  проектові adj:p:v_kly:up92
 проєкт noun:inanim:m:v_naz:alt
   проєкту noun:inanim:m:v_rod:alt
   проєктові noun:inanim:m:v_dav:alt
@@ -4109,7 +4109,7 @@
   сері noun:anim:m:v_mis
   серові noun:anim:m:v_mis
   серу noun:anim:m:v_mis
-  сере noun:anim:m:v_kly:ua_1992
+  сере noun:anim:m:v_kly:up92
 синій adj:m:v_naz
   синього adj:m:v_rod
   синьому adj:m:v_dav
@@ -4151,7 +4151,7 @@
   сім'ям noun:inanim:n:v_oru
   сімені noun:inanim:n:v_mis
   сім'я noun:inanim:n:v_kly
-  сімене noun:inanim:n:v_kly:ua_2019
+  сімене noun:inanim:n:v_kly:up19
   сімена noun:inanim:p:v_naz
   сімен noun:inanim:p:v_rod
   сіменам noun:inanim:p:v_dav
@@ -4478,7 +4478,7 @@
   умільцеві noun:anim:m:v_mis
   умільці noun:anim:m:v_mis
   умільцю noun:anim:m:v_mis
-  умільче noun:anim:m:v_kly:ua_2019
+  умільче noun:anim:m:v_kly:up19
   умільці noun:anim:p:v_naz
   умільців noun:anim:p:v_rod
   умільцям noun:anim:p:v_dav
@@ -4547,42 +4547,42 @@
   Франко noun:anim:m:v_oru:nv:prop:lname:xp3
   Франко noun:anim:m:v_mis:nv:prop:lname:xp3
   Франко noun:anim:m:v_kly:nv:prop:lname:xp3
-хабар noun:inanim:m:v_naz:ua_1992
-  хабар noun:inanim:m:v_naz:ua_2019
-  хабара noun:inanim:m:v_rod:ua_1992
-  хабаря noun:inanim:m:v_rod:ua_2019
-  хабареві noun:inanim:m:v_dav:ua_2019
-  хабарові noun:inanim:m:v_dav:ua_1992
-  хабару noun:inanim:m:v_dav:ua_1992
-  хабарю noun:inanim:m:v_dav:ua_2019
-  хабар noun:inanim:m:v_zna:ua_1992
-  хабар noun:inanim:m:v_zna:ua_2019
-  хабара noun:inanim:m:v_zna:var:ua_1992
-  хабаря noun:inanim:m:v_zna:var:ua_2019
-  хабарем noun:inanim:m:v_oru:ua_2019
-  хабаром noun:inanim:m:v_oru:ua_1992
-  хабареві noun:inanim:m:v_mis:ua_2019
-  хабарі noun:inanim:m:v_mis:ua_1992
-  хабарі noun:inanim:m:v_mis:ua_2019
-  хабарові noun:inanim:m:v_mis:ua_1992
-  хабару noun:inanim:m:v_mis:ua_1992
-  хабарю noun:inanim:m:v_mis:ua_2019
-  хабаре noun:inanim:m:v_kly:ua_1992
-  хабаре noun:inanim:m:v_kly:ua_2019
-  хабарі noun:inanim:p:v_naz:ua_1992
-  хабарі noun:inanim:p:v_naz:ua_2019
-  хабарів noun:inanim:p:v_rod:ua_1992
-  хабарів noun:inanim:p:v_rod:ua_2019
-  хабарам noun:inanim:p:v_dav:ua_1992
-  хабарям noun:inanim:p:v_dav:ua_2019
-  хабарі noun:inanim:p:v_zna:ua_1992
-  хабарі noun:inanim:p:v_zna:ua_2019
-  хабарами noun:inanim:p:v_oru:ua_1992
-  хабарями noun:inanim:p:v_oru:ua_2019
-  хабарах noun:inanim:p:v_mis:ua_1992
-  хабарях noun:inanim:p:v_mis:ua_2019
-  хабарі noun:inanim:p:v_kly:ua_1992
-  хабарі noun:inanim:p:v_kly:ua_2019
+хабар noun:inanim:m:v_naz:up92
+  хабар noun:inanim:m:v_naz:up19
+  хабара noun:inanim:m:v_rod:up92
+  хабаря noun:inanim:m:v_rod:up19
+  хабареві noun:inanim:m:v_dav:up19
+  хабарові noun:inanim:m:v_dav:up92
+  хабару noun:inanim:m:v_dav:up92
+  хабарю noun:inanim:m:v_dav:up19
+  хабар noun:inanim:m:v_zna:up92
+  хабар noun:inanim:m:v_zna:up19
+  хабара noun:inanim:m:v_zna:var:up92
+  хабаря noun:inanim:m:v_zna:var:up19
+  хабарем noun:inanim:m:v_oru:up19
+  хабаром noun:inanim:m:v_oru:up92
+  хабареві noun:inanim:m:v_mis:up19
+  хабарі noun:inanim:m:v_mis:up92
+  хабарі noun:inanim:m:v_mis:up19
+  хабарові noun:inanim:m:v_mis:up92
+  хабару noun:inanim:m:v_mis:up92
+  хабарю noun:inanim:m:v_mis:up19
+  хабаре noun:inanim:m:v_kly:up92
+  хабаре noun:inanim:m:v_kly:up19
+  хабарі noun:inanim:p:v_naz:up92
+  хабарі noun:inanim:p:v_naz:up19
+  хабарів noun:inanim:p:v_rod:up92
+  хабарів noun:inanim:p:v_rod:up19
+  хабарам noun:inanim:p:v_dav:up92
+  хабарям noun:inanim:p:v_dav:up19
+  хабарі noun:inanim:p:v_zna:up92
+  хабарі noun:inanim:p:v_zna:up19
+  хабарами noun:inanim:p:v_oru:up92
+  хабарями noun:inanim:p:v_oru:up19
+  хабарах noun:inanim:p:v_mis:up92
+  хабарях noun:inanim:p:v_mis:up19
+  хабарі noun:inanim:p:v_kly:up92
+  хабарі noun:inanim:p:v_kly:up19
 хірт noun:anim:m:v_naz
   хорта noun:anim:m:v_rod
   хортові noun:anim:m:v_dav

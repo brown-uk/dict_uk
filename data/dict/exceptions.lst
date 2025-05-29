@@ -399,7 +399,7 @@
 нічиї нічия noun:inanim:p:v_kly
 
 сінями сіни noun:inanim:p:v_oru:ns
-чоботів чобіт noun:inanim:p:v_rod:ua_2019
+чоботів чобіт noun:inanim:p:v_rod:up19
 
 # нестандартні леми
 
@@ -582,14 +582,14 @@
 
 # додаткові форми
 
-крови кров noun:inanim:f:v_rod:ua_2019
-любови любов noun:inanim:f:v_rod:ua_2019
-осени осінь noun:inanim:f:v_rod:ua_2019
-соли сіль noun:inanim:f:v_rod:ua_2019
-Білоруси Білорусь noun:inanim:f:v_rod:prop:geo:ua_2019
-Руси Русь noun:f:v_rod:prop:geo:ua_2019
-України-Руси Україна-Русь noun:f:v_rod:prop:geo:ua_2019
-Руси-України Русь-Україна noun:f:v_rod:prop:geo:ua_2019
+крови кров noun:inanim:f:v_rod:up19
+любови любов noun:inanim:f:v_rod:up19
+осени осінь noun:inanim:f:v_rod:up19
+соли сіль noun:inanim:f:v_rod:up19
+Білоруси Білорусь noun:inanim:f:v_rod:prop:geo:up19
+Руси Русь noun:f:v_rod:prop:geo:up19
+України-Руси Україна-Русь noun:f:v_rod:prop:geo:up19
+Руси-України Русь-Україна noun:f:v_rod:prop:geo:up19
 
 ба баба noun:anim:f:v_kly:short
 донь доня noun:anim:f:v_kly:short
@@ -605,7 +605,7 @@
 вітра вітер noun:inanim:m:v_rod:var
 
 Йсу Йсус noun:m:v_dav:prop:fname:anim
-Франкфурту-на-Майні Франкфурт-на-Майні noun:inanim:m:v_rod:prop:geo:ua_2019
+Франкфурту-на-Майні Франкфурт-на-Майні noun:inanim:m:v_rod:prop:geo:up19
 
 постелею постіль noun:inanim:f:v_oru
 серць серце noun:p:v_rod
@@ -615,14 +615,14 @@
 хліба хліб noun:p:v_naz/v_zna
 вуса вус noun:inanim:p:v_naz/v_zna
 
-тат тато noun:anim:p:v_rod:ua_1992
+тат тато noun:anim:p:v_rod:up92
 
 раз раз noun:inanim:p:v_rod
 
 раза раз noun:inanim:m:v_rod                        # лише після дробових + півтора
 
-сер сер noun:anim:m:v_kly:ua_2019
-гер гер noun:anim:m:v_kly:ua_2019
+сер сер noun:anim:m:v_kly:up19
+гер гер noun:anim:m:v_kly:up19
 перче перець noun:m:v_kly
 плюгавче плюгавець noun:anim:m:v_kly
 
@@ -701,33 +701,33 @@
 твойого твій adj:n:v_rod:&pron:pos:arch
 
 
-# хабар /n20.a.ke.p4.@ :ua_1992
-# хабар /n24.a.ke.p.@ :ua_2019
+# хабар /n20.a.ke.p4.@ :up92
+# хабар /n24.a.ke.p.@ :up19
 хабар хабар noun:inanim:m:v_naz/v_zna
-хабара хабар noun:inanim:m:v_rod:ua_1992
-хабаря хабар noun:inanim:m:v_rod:ua_2019
-хабареві хабар noun:inanim:m:v_dav:ua_2019
-хабарові хабар noun:inanim:m:v_dav:ua_1992
-хабару хабар noun:inanim:m:v_dav:ua_1992
-хабарю хабар noun:inanim:m:v_dav:ua_2019
-хабара хабар noun:inanim:m:v_zna:var:ua_1992
-хабаря хабар noun:inanim:m:v_zna:var:ua_2019
-хабарем хабар noun:inanim:m:v_oru:ua_2019
-хабаром хабар noun:inanim:m:v_oru:ua_1992
-хабареві хабар noun:inanim:m:v_mis:ua_2019
+хабара хабар noun:inanim:m:v_rod:up92
+хабаря хабар noun:inanim:m:v_rod:up19
+хабареві хабар noun:inanim:m:v_dav:up19
+хабарові хабар noun:inanim:m:v_dav:up92
+хабару хабар noun:inanim:m:v_dav:up92
+хабарю хабар noun:inanim:m:v_dav:up19
+хабара хабар noun:inanim:m:v_zna:var:up92
+хабаря хабар noun:inanim:m:v_zna:var:up19
+хабарем хабар noun:inanim:m:v_oru:up19
+хабаром хабар noun:inanim:m:v_oru:up92
+хабареві хабар noun:inanim:m:v_mis:up19
 хабарі хабар noun:inanim:m:v_mis
-хабарові хабар noun:inanim:m:v_mis:ua_1992
-хабару хабар noun:inanim:m:v_mis:ua_1992
-хабарю хабар noun:inanim:m:v_mis:ua_2019
+хабарові хабар noun:inanim:m:v_mis:up92
+хабару хабар noun:inanim:m:v_mis:up92
+хабарю хабар noun:inanim:m:v_mis:up19
 хабаре хабар noun:inanim:m:v_kly
 хабарі хабар noun:inanim:p:v_naz/v_zna
 хабарів хабар noun:inanim:p:v_rod
-хабарам хабар noun:inanim:p:v_dav:ua_1992
-хабарям хабар noun:inanim:p:v_dav:ua_2019
-хабарами хабар noun:inanim:p:v_oru:ua_1992
-хабарями хабар noun:inanim:p:v_oru:ua_2019
-хабарах хабар noun:inanim:p:v_mis:ua_1992
-хабарях хабар noun:inanim:p:v_mis:ua_2019
+хабарам хабар noun:inanim:p:v_dav:up92
+хабарям хабар noun:inanim:p:v_dav:up19
+хабарами хабар noun:inanim:p:v_oru:up92
+хабарями хабар noun:inanim:p:v_oru:up19
+хабарах хабар noun:inanim:p:v_mis:up92
+хабарях хабар noun:inanim:p:v_mis:up19
 хабарі хабар noun:inanim:p:v_kly
 
 воротям ворота noun:p:v_dav:ns

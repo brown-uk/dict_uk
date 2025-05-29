@@ -77,7 +77,7 @@ task prepareDict() {
 		  
           def (word, lemma, tagStr) = line.split()
 
-		  tagStr = tagStr.replaceAll(/:(ua_[0-9]{4}|alt|bad|coll|slang|rare|xp[0-9])/, '')
+		  tagStr = tagStr.replaceAll(/:(up[0-9]{2}|alt|bad|coll|slang|rare|xp[0-9])/, '')
 		  if( forceSquashLemmas ) {
 			  tagStr = tagStr.replaceAll(/:(prop|geo|.name)/, '')
 //			  lemma = lemma.toLowerCase()

@@ -80,8 +80,8 @@ slang
 subord
 subst
 town
-ua_1992
-ua_2019
+up92
+up19
 unanim
 var
 v_dav

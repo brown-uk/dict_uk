@@ -32,13 +32,13 @@ class Autogen {
 			}
 			
 			if( line =~ /проек[тц]/ ) {
-				if( ! line.contains(":ua_1992") ) {
+				if( ! line.contains(":up92") ) {
 					errors << line
 				}
 			}
 
 			if( line =~ /^(двох|трьох|чотирьох)/ ) {
-				if( ! line.contains(":ua_1992") ) {
+				if( ! line.contains(":up92") ) {
 					return
 				}
 			}
@@ -61,10 +61,10 @@ class Autogen {
 				String newLine = line.replaceFirst(/марафон/, 'маратон')
 
 				if( newLine.contains(" :") ) {
-					newLine = newLine.replaceFirst(/^(.*? \/[^ ]+( (:[a-z_0-9-]+)+))( *.*)$/, '$1:ua_2019$4')
+					newLine = newLine.replaceFirst(/^(.*? \/[^ ]+( (:[a-z_0-9-]+)+))( *.*)$/, '$1:up19$4')
 				}
 				else {
-					newLine = newLine.replaceFirst(/^(.*? \/[^ ]+)( *.*)$/, '$1 :ua_2019$2')
+					newLine = newLine.replaceFirst(/^(.*? \/[^ ]+)( *.*)$/, '$1 :up19$2')
 				}
 
 				outLines << newLine
@@ -72,7 +72,7 @@ class Autogen {
 			}
 			else {
 				String newLine = line.replaceFirst(/проек([тц])/, 'проєк$1').replace('хіміо', 'хіміє')
-				newLine = newLine.replace('ua_1992', 'ua_2019')
+				newLine = newLine.replace('up92', 'up19')
 
 				outLines << newLine
 			}
@@ -87,7 +87,7 @@ class Autogen {
 		}
 		
 		if( errors ) {
-			System.err.println "-проект- without :ua_1992\n" + errors.join("\n")
+			System.err.println "-проект- without :up92\n" + errors.join("\n")
 			System.exit(1)
 		}
 
@@ -152,7 +152,7 @@ class Autogen {
 				line = line.replaceFirst(/ *#>.*/, '')
 			}
 
-			if( ! line.contains(":ua_1992") ) {
+			if( ! line.contains(":up92") ) {
 				if( ! (line =~ /прес-(ніж|ножиц)|міді-файл/) ) {
 					errors << line
 				}
@@ -160,7 +160,7 @@ class Autogen {
 
 			if( line =~ /проект/ ) {
 				// add арт-проєкт
-				def newLine = line.replace('проект', 'проєкт').replace('ua_1992', 'ua_2019')
+				def newLine = line.replace('проект', 'проєкт').replace('up92', 'up19')
 				outLines << newLine
 
 				// repl: арт-проєкт -> артпроєкт
@@ -173,13 +173,13 @@ class Autogen {
 			String newLine = removeHyphen(line)
 
 			if( newLine =~ /проект/ ) {
-				// артпроект still as :ua_1992
+				// артпроект still as :up92
 				outLines << newLine
 				
 				newLine = newLine.replace('проект', 'проєкт')
 			}
 			
-			newLine = newLine.replace('ua_1992', 'ua_2019')
+			newLine = newLine.replace('up92', 'up19')
 
 			outLines << newLine
 
@@ -195,7 +195,7 @@ class Autogen {
 		}
 		
 		if( errors ) {
-			System.err.println "анти-, архі-... without :ua_1992\n" + errors.join("\n")
+			System.err.println "анти-, архі-... without :up92\n" + errors.join("\n")
 			System.exit(1)
 		}
 

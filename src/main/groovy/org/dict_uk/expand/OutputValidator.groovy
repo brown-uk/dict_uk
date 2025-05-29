@@ -28,12 +28,12 @@ class OutputValidator {
 		
 		for(DicEntry dicEntry in lines) {
 
-            // :alt/ua_2019 may come both from the alt.lst and from flags
+            // :alt/up19 may come both from the alt.lst and from flags
             if( dicEntry.tagStr.contains(':alt:alt') ) {
                 dicEntry.tagStr = dicEntry.tagStr.replace(':alt:alt', ':alt')
             }
-			if( dicEntry.tagStr.contains(':ua_2019:ua_2019') ) {
-				dicEntry.tagStr = dicEntry.tagStr.replace(':ua_2019:ua_2019', ':ua_2019')
+			if( dicEntry.tagStr.contains(':up19:up19') ) {
+				dicEntry.tagStr = dicEntry.tagStr.replace(':up19:up19', ':up19')
 			}
 
 			def word = dicEntry.word

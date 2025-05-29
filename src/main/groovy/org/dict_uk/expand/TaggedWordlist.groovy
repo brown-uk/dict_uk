@@ -11,7 +11,7 @@ class TaggedWordlist {
 	Map<String, String> extra_tag_map = [
 		"base-abbr.lst": ":abbr",
 		"dot-abbr.lst": ":abbr",
-		"base-compound_1992.lst": ":ua_1992",
+		"base-compound_1992.lst": ":up92",
 		"twisters.lst": ":bad",
 		"invalid-autogen.lst": ":bad",
 		"invalid.lst": ":bad",
