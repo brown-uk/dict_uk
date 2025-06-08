@@ -76,7 +76,7 @@
 аутплейсмент /n20.p
 аутфіт /n20.p
 афган /n20
-афігевший /adj :&adjp:pasv:perf
+афігевший /adj :adjp:pasv:perf
 афігенний /adj.adv
 афігенність /n30
 афігенський /adj
@@ -186,7 +186,7 @@
 блекаутний /adj
 бленд /n20.p
 блєдіна /n10.p1
-блін noninfl:&insert
+блін noninfl:insert
 блокер /n20.a.p
 блонд /n20
 блонда /n10.<
@@ -326,7 +326,7 @@
 відковбасити /v1 :perf                      # rv_zna
 відлабати /v2 :perf                         # rv_zna
 відлуп /n20
-відмазаний /adj :&adjp:pasv:perf
+відмазаний /adj :adjp:pasv:perf
 відмазати /v1.isNo :perf   # rv_zna:rv_oru
 відмазатися /vr1 :perf   # rv_oru
 відмазка /n10.p2
@@ -339,17 +339,17 @@
 відос /n20.p
 відосик /n20.a.p
 відосік /n20.a.p
-відпанаханий /adj :&adjp:pasv:perf
+відпанаханий /adj :adjp:pasv:perf
 відпанахати /v2.isNo :perf                      # rv_zna:rv_oru
 відстьобнути /v1.isTo :perf                     # rv_zna:rv_oru
 відстьобувати /v1.cf.advp :imperf               # rv_zna:rv_oru
 відфоловити /v1.it1 :perf                      # rv_zna
-відфренджений /adj :&adjp:pasv:perf
+відфренджений /adj :adjp:pasv:perf
 відфрендити /v1.is0.it0 :perf                   # rv_zna
 відхаймарсити /v1 :perf                         # rv_zna:rv_oru
 відюшка /n10.p2
 відяха /n10
-віздє adv:&pron:gen
+віздє adv:pron:gen
 віктимблеймер /n20.a.p.<
 віктимблеймити /v1.it1.cf.advp :imperf
 віктимблеймінг /n20
@@ -366,7 +366,7 @@
 вкраїнчик /n20.a.p.<
 вкурвити /v1.is0 :perf                                   # rv_zna:rv_oru
 вкурвитися /vr1.it1 :perf
-вкурвлений /adj :&adjp:pasv:perf
+вкурвлений /adj :adjp:pasv:perf
 вкурвлення /n2n
 вкурвлювати /v1.cf.advp :imperf                          # rv_zna:rv_oru
 вкурити /v1 :perf               # rv_zna
@@ -387,10 +387,10 @@
 вперьод adv
 вписка /n10
 впіндюрити /v1.is0.it0 :perf                      # rv_zna:rv_oru:rv_dav
-впрочім adv:&insert|conj:coord
+впрочім adv:insert|conj:coord
 врубитися /vr1.it1 :perf
 всандалити /v1.it0 :perf                      # rv_zna:rv_oru:rv_dav
-всігда adv:&pron:gen
+всігда adv:pron:gen
 всрато adv
 втарабанити /v1 :perf                      # rv_zna:rv_oru:rv_dav
 втіхаря adv
@@ -404,7 +404,7 @@
 вшивість /n30
 вшистко adv
 вштирити /v1.is0 :perf                      # rv_zna:rv_oru:rv_dav
-габела noninfl:&predic
+габела noninfl:predic
 газбулька /n10
 газлайтер /n20.a.p.<
 газлайтерка /n10.p2.<
@@ -729,18 +729,18 @@
 заанонсити /v1 :perf                                    # rv_zna:rv_oru:rv_dav
 заапдейтити /v1 :perf                                   # rv_zna:rv_oru:rv_dav
 заапрувити /v1 :perf                                    # rv_zna:rv_oru:rv_dav
-заапрувлений /adj :&adjp:pasv:perf
-забабаханий /adj :&adjp:pasv:perf
+заапрувлений /adj :adjp:pasv:perf
+забабаханий /adj :adjp:pasv:perf
 забабахати /v2.isNo :perf          # rv_zna:rv_oru:rv_dav
 забакланити /v1 :perf
 забалдіти /v2 :perf
-забанений /adj :&adjp:pasv:perf
+забанений /adj :adjp:pasv:perf
 забанити /v1.is0.it0.it1b :perf               # rv_zna
-забашляний /adj :&adjp:pasv:perf
+забашляний /adj :adjp:pasv:perf
 забашляти /v2.isNo :perf                      # rv_zna:rv_dav
 забекапити /v1.is0 :perf                                # rv_zna:rv_oru:rv_dav
-забекаплений /adj :&adjp:pasv:perf
-забембаний /adj :&adjp:pasv:perf
+забекаплений /adj :adjp:pasv:perf
+забембаний /adj :adjp:pasv:perf
 забембаність /n30
 забембати /v2 :perf                         # rv_zna:rv_oru
 забембатися /vr2 :perf
@@ -748,18 +748,18 @@
 забичений /adj
 забичкувати /v1.cf.advp :imperf
 забілдити /v1.it1.is0.it1l :perf                        # rv_zna:rv_oru
-забімбаний /adj :&adjp:pasv:perf
+забімбаний /adj :adjp:pasv:perf
 заблочити /v1.is0 :perf                             # rv_zna:rv_oru:rv_dav
 заборонка /n10.p2
 заброшка /n10.p2
 забугорний /adj
-забуканий /adj :&adjp:pasv:perf
+забуканий /adj :adjp:pasv:perf
 забукати /v2.isNo :perf                                     # rv_zna:rv_dav
 забулдига /n10.p1.<m
 забулити /v1.is0 :perf                                      # rv_zna
 завзятюще adv
 завтик /n20.p
-завтиканий /adj :&adjp:pasv:perf
+завтиканий /adj :adjp:pasv:perf
 завтикати /v2.isNo :perf
 завтикнути /v1 :perf
 завтикування /n2n.p1
@@ -776,7 +776,7 @@
 задонейтити /v1 :perf                                   # rv_dav
 задофіга adv
 задохіба adv
-задрафтований /adj :&adjp:pasv:perf
+задрафтований /adj :adjp:pasv:perf
 задрипанськ /n20.a.p
 задрипанський /adj
 задрот /n20.a.p.<
@@ -800,14 +800,14 @@
 закимарити /v1 :perf
 заковбасити /v1 :imperf p=3                   # rv_zna
 заколупати /v2 :perf                          # rv_zna:rv_oru:rv_dav
-законтачений /adj :&adjp:pasv:perf
+законтачений /adj :adjp:pasv:perf
 законтачити /v1.is0 :perf
 закусон /n20.p
 закусь /n32.p
 залабати /v2 :perf                           # rv_zna:rv_oru:rv_dav
 залайкати /v2 :perf                          # rv_zna:rv_dav
 залахати /v2 :perf
-залогінений /adj :&adjp:pasv:perf
+залогінений /adj :adjp:pasv:perf
 залогінення /n2n
 залогінитися /vr1 :perf                      # rv_oru
 залонгувати /v1 :perf
@@ -815,17 +815,17 @@
 зальотниця /n10.p1.<
 зальотчиця /n10.p1.<
 замануха /n10.p1
-замаханий /adj :&adjp:pasv:perf
+замаханий /adj :adjp:pasv:perf
 замахатися /vr2 :perf
 замовняк /n20.a.p
 заможновладець /n22.a.p.<
 замютити /v1 :perf                                  # rv_zna:rv_oru:rv_dav
 зам'ютити /v1 :perf                                     # rv_zna
-зам'ючений /adj :&adjp:pasv:perf
+зам'ючений /adj :adjp:pasv:perf
 занадтий /adj
-заначений /adj :&adjp:pasv:perf
+заначений /adj :adjp:pasv:perf
 заначити /v1.is0 :perf                      # rv_zna
-заниканий /adj :&adjp:pasv:perf
+заниканий /adj :adjp:pasv:perf
 заникати /v2.isNo :perf                   # :xp2 зани́кати    # rv_zna:rv_oru:rv_dav
 заникатися /vr1 :perf
 заничка /n10.p2
@@ -836,7 +836,7 @@
 западенський /adj
 западло /n2n
 западлянка /n10.p2
-запаролений /adj :&adjp:pasv:perf
+запаролений /adj :adjp:pasv:perf
 запоребрик /n20.a
 запоребриковий /adj
 запостити /v1.it0 :perf              # :xp1 запо́стити                         # rv_zna:rv_oru:rv_dav
@@ -852,15 +852,15 @@
 затусити /v1 :perf
 заукраїнець /n22.a.p.<
 заучка /n10.p2.<
-зафайнтюнений /adj :&adjp:pasv:perf
+зафайнтюнений /adj :adjp:pasv:perf
 зафайнтюнити /v1.is0 :perf                                     # rv_zna:rv_oru:rv_dav
 зафігарити /v1.it0 :perf                      # rv_zna:rv_oru:rv_dav
 зафігачити /v1.it0 :perf                       # rv_zna:rv_oru:rv_dav
 зафолловити /v1.it1 :perf                      # rv_zna
 зафоловити /v1.it1 :perf                       # rv_zna
 зафотошопити /v1.is0 :perf                               # rv_zna:rv_oru:rv_dav
-зафотошоплений /adj :&adjp:pasv:perf
-зафренджений /adj :&adjp:pasv:perf
+зафотошоплений /adj :adjp:pasv:perf
+зафренджений /adj :adjp:pasv:perf
 зафрендити /v1.is0.it0 :perf                   # rv_zna
 захавати /v2 :perf                             # rv_zna
 захейтити /v1.it0 :perf                        # rv_zna
@@ -871,11 +871,11 @@
 зачьотний /adj
 зашибісь intj|adv
 зашквар /n20.p.ke
-зашкварений /adj :&adjp:pasv:perf
+зашкварений /adj :adjp:pasv:perf
 зашкварний /adj.adv
 зашкварювати /v1.cf.advp :imperf
 зашортити /v1.is0 :perf                                        # rv_zna
-заюзаний /adj :&adjp:pasv:perf
+заюзаний /adj :adjp:pasv:perf
 заюзаність /n30
 зблатувати /v1 :perf
 звєзда /n10.p1.<
@@ -984,7 +984,7 @@
 кастомайзерка /n10.p2.<
 кастомер /n20.a.p.ke.<
 кастомізація /n10
-кастомізований /adj :&adjp:pasv:imperf:perf
+кастомізований /adj :adjp:pasv:imperf:perf
 кастомізувати /v1.cf.advp :imperf:perf                      # rv_zna:rv_oru:rv_dav
 кастомний /adj
 кастувати /v1.cf.advp.is0 :imperf:perf
@@ -1055,7 +1055,7 @@
 комьюніті noninfl:foreign
 ком'юніті noun:n:nv
 конектитися /vr1.cf.advp.it0 :imperf                      # rv_oru
-конєшно adv:compb:&insert
+конєшно adv:compb:insert
 конс'юмеризм /n20
 контачити /v1.cf.advp :imperf
 контемп /n20
@@ -1088,7 +1088,7 @@
 кохве noun:m:nv:np
 коцати /v2.cf.advp :imperf                      # rv_zna:rv_oru:rv_dav
 крайняк /n20
-кранти intj:&predic
+кранти intj:predic
 красава /n10.p1
 красівий /adj
 красіво adv
@@ -1377,7 +1377,7 @@
 мухлювати /v1.cf.advp :imperf
 мучачо noun:m:nv:np
 мущіна /n10.<m
-набанячений /adj :&adjp:pasv:perf
+набанячений /adj :adjp:pasv:perf
 наблатикатися /vr2 :perf
 навальохати /v2.isNo :perf
 наваяти /v2 :perf           # rv_zna:rv_oru:rv_dav
@@ -1399,7 +1399,7 @@
 налажати /v2.isNo :perf
 налайкати /v2 :perf
 нальотчиця /n10.p1.<
-намародерений /adj :&adjp:pasv:perf
+намародерений /adj :adjp:pasv:perf
 намародерити /v1.is0 :perf                              # rv_zna:rv_rod:rv_oru:rv_dav
 намахати /v2.isNo :perf                      # rv_zna:rv_oru
 намекатися /vr2 :perf
@@ -1424,7 +1424,7 @@
 нафігачити /v1.it0 :perf                       # rv_zna:rv_oru:rv_dav
 нафігачитися /vr1.it0 :perf                      # rv_oru
 нафік adv
-нахіба adv:&pron:int:rel
+нахіба adv:pron:int:rel
 нацбол /n20.a.p.<
 нацик /n20.a.p.<
 нашенський /adj
@@ -1450,7 +1450,7 @@
 нетворкінг /n20
 нетлінка /n10.p2
 нефарт /n20
-нефіг noninfl:&predic
+нефіг noninfl:predic
 нефіговий /adj
 нефігово adv
 неформат /n20
@@ -1477,8 +1477,8 @@
 ніштяк /n20.p
 ніштячок /n22.a.p
 новобуд /n20.p
-нормас adv:&predic
-нормуль adv:&predic
+нормас adv:predic
+нормуль adv:predic
 носибельний /adj \
  +cs=носибельніший
 ноу noninfl:foreign
@@ -1498,14 +1498,14 @@
 н'юсмейкер /n20.a.p.ke.<
 няшка /n10.p2
 обдирайлівка /n10.p2
-обдовбаний /adj :&adjp:pasv:perf
+обдовбаний /adj :adjp:pasv:perf
 обдовбатися /vr2 :perf                                  # rv_oru
-обдовбашений /adj :&adjp:pasv:perf
+обдовбашений /adj :adjp:pasv:perf
 обеес'єшник /n20.a.p.<
 обично adv
 обідно adv
 обіймашки /np3
-обковбашений /adj :&adjp:pasv:perf
+обковбашений /adj :adjp:pasv:perf
 облажатися /vr2 :perf                                   # rv_oru
 обліківка /n10.p2
 обліковка /n10.p2
@@ -1607,7 +1607,7 @@
 петеушник /n20.a.p.<
 петеушниця /n10.p1.<
 печалька /n10
-пєрвий /adj :&numr
+пєрвий /adj :numr
 півасік /n20.a
 пігдог /n20.a.p.<
 підгон /n20.p
@@ -1738,10 +1738,10 @@
 препродакшн /n20
 пресуха /n10.p1
 прєпод /n20.a.p.<
-прибабаханий /adj :&adjp:pasv:perf
+прибабаханий /adj :adjp:pasv:perf
 прибалдіти /v2 :perf
 прибамбас /n20.p
-прибамбашений /adj :&adjp:pasv:perf
+прибамбашений /adj :adjp:pasv:perf
 прибарахлитися /vr1.it1 :perf                          # rv_oru
 прибудівка /n10.p2
 привілєй /n20.a.p
@@ -1752,11 +1752,11 @@
 прикид /n20.p
 приколдес /n20.p
 прильот /n20.p
-принтований /adj :&adjp:pasv:imperf
+принтований /adj :adjp:pasv:imperf
 принтскрин /n20.p
 принтскрін /n20.p
 припахати /v2 :perf                                     # rv_zna:rv_oru
-присобачений /adj :&adjp:pasv:perf
+присобачений /adj :adjp:pasv:perf
 присобачити /v1.is0.it0 :perf                          # rv_zna:rv_oru:rv_dav
 присутствіє /n2n
 прифігачити /v1.it0 :perf                      # rv_zna:rv_oru:rv_dav
@@ -1764,7 +1764,7 @@
 прихватизатор /n20.a.p.ke.<
 прихватизаційний /adj
 прихватизація /n10
-прихватизований /adj :&adjp:pasv:perf
+прихватизований /adj :adjp:pasv:perf
 прихватизувати /v1.cf.advp.is0 :imperf:perf                          # rv_zna:rv_oru
 прихватизуватися /vr1.cf.advp :imperf:perf                          # rv_oru
 прицьомка /n10.p2                           # сленг МЗС, від «при цьому»
@@ -1858,7 +1858,7 @@
 релакс /n20
 релокація /n10.p1
 релокейт /n20
-релокований /adj :&adjp:pasv:imperf:perf
+релокований /adj :adjp:pasv:imperf:perf
 релокувати /v1.cf.advp.is0 :imperf:perf                          # rv_zna:rv_dav
 релокуватися /vr1.cf.advp :imperf:perf
 ремастер /n20.a.p
@@ -1900,7 +1900,7 @@
 роад-шоу noun:n:nv
 родіна /n10
 розбабахати /v2.isNo :perf                          # rv_zna:rv_oru:rv_dav
-розбодяжений /adj :&adjp:pasv:perf
+розбодяжений /adj :adjp:pasv:perf
 розбодяжити /v1.is0.it0 :perf                       # rv_zna:rv_oru:rv_dav
 розборка /n10.p2
 розважайлівка /n10.p2
@@ -1911,16 +1911,16 @@
 роздуплитися /vr1 :perf
 роздуплятися /vr2.cf.advp :imperf
 розковбас /n20
-розковбашений /adj :&adjp:pasv:perf
-розкурочений /adj :&adjp:pasv:perf
+розковбашений /adj :adjp:pasv:perf
+розкурочений /adj :adjp:pasv:perf
 розкурочити /v1.is0.it0 :perf                          # rv_zna:rv_oru:rv_dav
 розкурочувати /v1.cf.advp :imperf                          # rv_zna:rv_oru:rv_dav
-розмародерений /adj :&adjp:pasv:perf
+розмародерений /adj :adjp:pasv:perf
 розмародерити /v1 :perf                            # rv_zna
 розпальцівка /n10.p2
 розпальцьований /adj
 розпальцьовка /n10.p2
-розрулений /adj :&adjp:pasv:perf
+розрулений /adj :adjp:pasv:perf
 розрулити /v1.is0.it1 :perf          # rv_zna:rv_oru:rv_dav
 розрулитися /vr1.it1 :perf p=4          # rv_oru
 розрулювання /n2n
@@ -2036,7 +2036,7 @@
 скін /n20.p                         # :xp2 в інтерфейсі програм
 скінні noninfl
 скі-пас /n20.p
-скомунячений /adj :&adjp:pasv:perf
+скомунячений /adj :adjp:pasv:perf
 скомунячити /v1.is0.it0 :perf                          # rv_zna
 скрайберка /n10.p2.<
 скрейпінг /n20
@@ -2229,7 +2229,7 @@
 тімбілдинг /n20
 тімбілдінг /n20
 тіммейт /n20.a.p.<
-тіпа noninfl:&insert
+тіпа noninfl:insert
 тіпок /n22.a.p.<
 тобіш noninfl
 товаріщ /n20.a.p.<
@@ -2312,7 +2312,7 @@
 умнік /n20.a.p.<
 унтерменш /n20.a.p.<
 урка /n10.p2.<m
-устаканений /adj :&adjp:pasv:perf
+устаканений /adj :adjp:pasv:perf
 устаканити /v1.is0 :perf                          # rv_zna:rv_oru:rv_dav
 устаканитися /vr1 :perf                           # rv_oru
 устаканюватися /vr1.cf.advp :imperf               # rv_oru
@@ -2378,7 +2378,7 @@
 фіг /n20.a
 фігарити /v1.cf.advp :imperf                          # rv_zna:rv_oru:rv_dav
 фігачити /v1.cf.advp.it0 :imperf                          # rv_zna:rv_oru:rv_dav
-фігзна noninfl:&predic
+фігзна noninfl:predic
 фігнюшка /n10.p2
 фіговенький /adj
 фід /n20.p
@@ -2387,7 +2387,7 @@
 фіксер /n20.a.p.ke.<
 фіксерка /n10.p2.<
 фільммейкер /n20.a.p.ke.<
-фіфті-фіфті noninfl:&predic
+фіфті-фіфті noninfl:predic
 фіча /n10.p1
 фішинг /n20
 фішинговий /adj

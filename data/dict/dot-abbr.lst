@@ -182,7 +182,7 @@
 н. adj:f:nv:rinanim             # наша (ера)
 навч. adj:nv:rinanim            # навчальний
 наз. adj:nv:rinanim             # називний (можна подати скорочення всіх відмінків)
-напр. adv:&insert               # наприклад
+напр. adv:insert               # наприклад
 нар. verb:rev:perf:past:m/f     # народився, народилась
 нар. adj:nv                     # народний
 нар. noun:n:v_rod:nv            # народження
@@ -191,7 +191,7 @@
 нач. noun:m:nv:anim             # начальник
 н.-д. adj:nv:rinanim            # науково-дослідний
 нім. adj:nv:rinanim             # німецький
-нпр. adv:&insert                # наприклад
+нпр. adv:insert                # наприклад
 о. noun:m:nv:np:anim            # отець (о. Павло)
 о. noun:m:nv:np                 # острів
 о. noun:p:v_rod:nv              # в.о. - обов'язків
@@ -202,7 +202,7 @@
 окр. adj:nv:rinanim             # окремий
 Ол. noun:m:nv:anim:prop:fname   # Олександр/Олег
 оп. noun:m:nv                   # опис
-опубл. adj:nv:&adjp:pasv:perf   # опублікований
+опубл. adj:nv:adjp:pasv:perf   # опублікований
 орг. noun:f:nv                  # організація
 осн. adj:nv:rinanim             # основний
 оф. noun:m:nv                   # офіс
@@ -243,7 +243,7 @@
 преп. adj:nv:ranim              # преподобний
 прибл. adv                      # приблизно
 прикм. noun:m:nv                # прикметник
-прим. adv:&insert               # приміром
+прим. adv:insert               # приміром
 прим. noun:f:nv                 # примітка
 присл. noun:m:nv                # прислівник
 пров. noun:m:nv                 # провулок
@@ -320,7 +320,7 @@
 тех. adj:nv:rinanim             # технічний
 техн. adj:nv:rinanim            # технічний
 тиж. noun:f:nv                  # тиждень, тижні
-тис. numr:f/p:nv                # тисяча
+тис. noun:f:nv:numr             # тисяча
 тис. noun:n:nv                  # тисячоліття
 тов. noun:m:nv:anim             # товариш
 тов. noun:f:nv:anim             # товаришка

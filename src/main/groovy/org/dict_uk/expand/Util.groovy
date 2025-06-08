@@ -195,7 +195,7 @@ class Util {
                 
 				for(def gen in gens) {
 					for(String v in VIDM_LIST){
-        				if( v == "v_kly" && (skipVkly(entry) || lineTagStr.contains("&pron")) )
+        				if( v == "v_kly" && (skipVkly(entry) || lineTagStr.contains("pron")) )
 							continue
                             
                         if( v == "v_zna" && "mp".contains(gen) ) {
@@ -343,7 +343,7 @@ class Util {
 
 			if( ! word.endsWith(".")
 				&& ( ! (tag =~ /:(bad|subst|alt|short|long|slang|arch|vulg|obsc)/) \
-				|| tag =~ /&insert:short/ \
+				|| tag =~ /insert:short/ \
 				|| tag =~ /adj:m:v_(naz|zna).*:short/ \
 				|| word =~ /^((що(як)?|як)?най)?(більш|менш|скоріш|перш)$/)
 					//&& ! (tag.contains(":inanim") && tag.contains(":v_kly") )

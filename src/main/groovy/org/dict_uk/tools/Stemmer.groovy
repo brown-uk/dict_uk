@@ -101,7 +101,7 @@ class Stemmer {
 
         def file = new File(baseDir, "out/dict_corp_vis.txt")
 
-        Pattern discardPattern = Pattern.compile(/-|abbr|&pron|alt|arch|bad|slang|subst|[lp]name|comp[cs]|:nv/)
+        Pattern discardPattern = Pattern.compile(/-|abbr|pron|alt|arch|bad|slang|subst|[lp]name|comp[cs]|:nv/)
 
         def allLines = file.readLines('UTF-8')
 

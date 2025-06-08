@@ -51,7 +51,7 @@ class DictSorter {
 	static final Pattern re_person_name_key_tag = Pattern.compile("^(noun:anim)(.*?)(:[lfp]name)")
 
 	static final Pattern re_xv_sub = Pattern.compile("^([^:]+)(.*)(:x.[1-9]|:slang)")
-	static final Pattern re_pron_sub = Pattern.compile("^([^:]+)(.*)(:&pron:[^:]+)")
+	static final Pattern re_pron_sub = Pattern.compile("^([^:]+)(.*)(:pron:[^:]+)")
 
     // |coll
 	static final Pattern LOWERING_TAGS_RE = Pattern.compile(/:(alt|rare|arch|vulg|obsc|subst|bad|var|short|long|up[0-9]{2})/)
@@ -61,9 +61,9 @@ class DictSorter {
 	@CompileStatic
 	String tag_sort_key(String tags, String word) {
 		
-		if( tags.indexOf('&') > 0 ) {
-			tags = tags.replaceAll(/:&(insert|predic)/, '')
-		}
+//		if( tags.indexOf('&') > 0 ) {
+			tags = tags.replaceAll(/:(insert|predic)/, '')
+//		}
 
 		int offset = 0
 
@@ -100,8 +100,8 @@ class DictSorter {
 				offset += 1
 			}
 
-			if( tags.contains(":&adjp:pasv") ) {
-				tags = tags.replace('adj:', 'adj:' + (tags =~ /imperf|perf/)[0] + ":").replaceFirst(/:&adjp.*/, '')
+			if( tags.contains(":adjp:pasv") ) {
+				tags = tags.replace('adj:', 'adj:' + (tags =~ /imperf|perf/)[0] + ":").replaceFirst(/:adjp.*/, '')
 //				println ":: $tags"
 			}
 
@@ -132,8 +132,8 @@ class DictSorter {
 //                    }
                 }
                 else {
-                    if( tags.contains(":&numr") ) {
-                        tags = tags.replace(":&numr", '').replace("inanim", "inanim:&numr")
+                    if( tags.contains(":numr") ) {
+                        tags = tags.replace(":numr", '').replace("inanim", "inanim:numr")
                     }
                 }
             }
@@ -203,7 +203,7 @@ class DictSorter {
 		if( tags.contains(":slang") ) {
 			tags = re_xv_sub.matcher(tags).replaceAll('$1$3$2')
 		}
-		if( tags.contains(":&pron:") ) {
+		if( tags.contains(":pron:") ) {
 			tags = re_pron_sub.matcher(tags).replaceAll('$1$3$2')
 		}
         
@@ -222,7 +222,7 @@ class DictSorter {
 
 	static final Pattern re_key = Pattern.compile("^[^:]+(?::rev)?(?::(?:anim|inanim|perf|imperf|coord|subord))?")
 	static final Pattern re_key_adjp = Pattern.compile("adjp:pasv:(perf|imperf)")
-	static final Pattern re_key_pron = Pattern.compile(":&pron:[^:]+")
+	static final Pattern re_key_pron = Pattern.compile(":pron:[^:]+")
 	static final Pattern re_key_name = Pattern.compile("^(noun:anim:[fmnp]:).*?([flp]name)")
     static final Pattern re_key_prop = Pattern.compile("^(noun:inanim:).*?(prop(:geo)?)")
     
@@ -283,7 +283,7 @@ class DictSorter {
                 key_rr.find()
                 key.append(lemma).append(" ").append(key_rr.group(0))
 
-                if( tags.contains(":&pron:") ) {
+                if( tags.contains(":pron:") ) {
                     def pron_rr = re_key_pron.matcher(tags)
                     pron_rr.find()
                     key.append(pron_rr.group(0))
@@ -303,8 +303,8 @@ class DictSorter {
             key.append(":nv")
         }
         
-        if( tags.contains(":&numr") ) {
-            key.append(":&numr")
+        if( tags.contains(":numr") ) {
+            key.append(":numr")
         }
 
         if( tags.contains(":slang") ) {

@@ -1,7 +1,7 @@
 ааа intj
-аби-хто /n_pron.< :&pron:int:rel
-аби-як adv:&pron:ind
-аби-який /adj :&pron:ind
+аби-хто /n_pron.< :pron:int:rel
+аби-як adv:pron:ind
+аби-який /adj :pron:ind
 авіньонський /adj
 автоділер /n20.a.p.ke.<
 автодорожний /adj
@@ -35,7 +35,7 @@
 Аргентіна /n10 :prop:geo
 аргентінський /adj
 аренда /n10
-арендований /adj :&adjp:pasv:imperf:perf
+арендований /adj :adjp:pasv:imperf:perf
 арендованість /n30
 арендодавець /n22.a.p.<
 арендування /n2n.p1
@@ -68,7 +68,7 @@
 ахіловий adj:m:v_naz/v_zn2        # lim     #> ахіллів
 аятолла /n10.p1.<m
 бавовноторговельний /adj
-багато-хто /n_pron.< :&pron:ind
+багато-хто /n_pron.< :pron:ind
 баггі noun:m:nv                             #> багі
 базедовий adj:m:v_naz/v_zn2  # lim          #> базедів
 байєсівський /adj :up92                  #> баєсівський
@@ -128,8 +128,8 @@
 блоггер /n20.a.p.ke.<                       #> блогер
 бодібілдінг /n20                            #> бодибілдинг
 божествений /adj
-бо-зна noninfl:&predic
-бозна-шо noun:inanim:n:v_naz/v_zna:&pron:ind                #> бозна-що
+бо-зна noninfl:predic
+бозна-шо noun:inanim:n:v_naz/v_zna:pron:ind                #> бозна-що
 болтштихель /n20.a.p
 бонвіан /n20.a.p.<
 борвмісний /adj                             #> боровмісний
@@ -157,11 +157,11 @@
 Брюсель /n20.a :prop:geo
 брюсельський /adj
 буджакський /adj                            #> буджацький
-будь-шо noun:inanim:n:v_naz:&pron:ind                       #> будь-що
+будь-шо noun:inanim:n:v_naz:pron:ind                       #> будь-що
 будьщо adv
-будьякий /adj :&pron:ind
+будьякий /adj :pron:ind
 буйвол noun:anim:m:v_naz                    # lim
-буксируваний /adj :&adjp:pasv:imperf
+буксируваний /adj :adjp:pasv:imperf
 буллінг /n20
 булліт /n20.p
 булоб noninfl                                   #> було б
@@ -191,39 +191,39 @@
 вестибуль /n20.a.p
 взаїмний /adj
 вибухотехник /n20.a.p.<
-вигаптований /adj :&adjp:pasv:perf
-виглянсований /adj :&adjp:pasv:perf
+вигаптований /adj :adjp:pasv:perf
+виглянсований /adj :adjp:pasv:perf
 виїздний /adj                                   #> виїзний
 вийнятковий /adj
 вийнятково adv
-викарбований /adj :&adjp:pasv:perf
-викований /adj :&adjp:pasv:perf
+викарбований /adj :adjp:pasv:perf
+викований /adj :adjp:pasv:perf
 виковано викувати verb:perf:impers
-виколядований /adj :&adjp:pasv:perf
-викомпонований /adj :&adjp:pasv:perf
-викорчований /adj :&adjp:pasv:perf
+виколядований /adj :adjp:pasv:perf
+викомпонований /adj :adjp:pasv:perf
+викорчований /adj :adjp:pasv:perf
 Вилково noun:n:nv:prop:geo
-вимудрований /adj :&adjp:pasv:perf
-вимуштрований /adj :&adjp:pasv:perf
+вимудрований /adj :adjp:pasv:perf
+вимуштрований /adj :adjp:pasv:perf
 виноторговельний /adj
-виполірований /adj :&adjp:pasv:perf
-випробований /adj :&adjp:pasv:perf
-випроменений /adj :&adjp:pasv:perf     #> випромінений
+виполірований /adj :adjp:pasv:perf
+випробований /adj :adjp:pasv:perf
+випроменений /adj :adjp:pasv:perf     #> випромінений
 випроменити /v1.is0.it1 :perf                             # rv_zna:rv_oru:rv_dav    #> випромінити
 випроменитися /vr1 :perf                                  # rv_oru                  #> випромінитися 
-вирахований /adj :&adjp:pasv:perf
-вирихтований /adj :&adjp:pasv:perf
+вирахований /adj :adjp:pasv:perf
+вирихтований /adj :adjp:pasv:perf
 виробничо-торговельний /adj
-вирятований /adj :&adjp:pasv:perf
+вирятований /adj :adjp:pasv:perf
 високодоходний /adj
 високопреосвящений /adj
-виторгований /adj :&adjp:pasv:perf
+виторгований /adj :adjp:pasv:perf
 вихідець вихідець noun:m:v_naz:anim     # lim      #> виходець
-вишліфований /adj :&adjp:pasv:perf
+вишліфований /adj :adjp:pasv:perf
 вишліфовано вишліфувати verb:perf:impers
 вищосортний /adj
 відворотній /adj
-відзеркалений /adj :&adjp:pasv:perf
+відзеркалений /adj :adjp:pasv:perf
 відзеркалення /n2n.p1
 відзеркалити /v1.is0 :perf                                    # rv_zna:rv_oru:rv_dav
 відзеркалитися /vr1 :perf                                     # rv_oru
@@ -271,7 +271,7 @@
 всетаки part
 всеядний /adj
 всеядність /n30
-всьо adv|conj:coord|noun:inanim:n:v_naz/v_zna:&pron:gen|part #> все
+всьо adv|conj:coord|noun:inanim:n:v_naz/v_zna:pron:gen|part #> все
 всюдисущний /adj
 всюдисущність /n30
 вторгення /n2n
@@ -369,7 +369,7 @@
 Громоклея /n10 :prop:geo                    #> Громоклія
 грунт /n20.p
 грунтівка /n10.p2
-грунтований /adj :&adjp:pasv:imperf
+грунтований /adj :adjp:pasv:imperf
 грунтовий /adj
 грунтовний /adj.adv \
  +cs=грунтовніший
@@ -418,7 +418,7 @@
 держземагентство /n2n           # caps      #> Держземагентство
 д'Естен /n20.a.<+
 дефакто adv
-де-який /adj :&pron:ind
+де-який /adj :pron:ind
 дєнікінець /n22.a.p.<
 дєнікінський /adj
 джаган /n20.a.p
@@ -453,7 +453,7 @@
 дігер /n20.a.p.ke.<
 діджеріду noun:m:nv
 діджиталізація /n10
-діджиталізований /adj :&adjp:pasv:imperf:perf
+діджиталізований /adj :adjp:pasv:imperf:perf
 діджиталізувати /v1.cf.advp.is0 :imperf:perf      # rv_zna:rv_oru:rv_dav
 діджиталізуватися /vr1.cf.advp :imperf:perf      # rv_oru
 діджитальний /adj
@@ -566,7 +566,7 @@
 жосткий /adj.adv
 жульвернівський /adj                        #> жуль-вернівський
 заарендувати /v1.is0 :perf
-забов'язаний /adj :&adjp:pasv:perf
+забов'язаний /adj :adjp:pasv:perf
 забов'язання /n2n.p1
 забов'язати /v1.isNo :perf
 забов'язувати /v1.cf.advp :imperf
@@ -579,10 +579,10 @@
 загорання /n2n.p1
 загорати /v2.cf.advp :imperf
 загоратися /vr2.cf.advp :imperf
-загратований /adj :&adjp:pasv:perf
+загратований /adj :adjp:pasv:perf
 загратовувати /v1.cf.advp :imperf
 загратувати /v1.is0 :perf
-загрунтований /adj :&adjp:pasv:perf
+загрунтований /adj :adjp:pasv:perf
 задирикуватий /adj
 задирикуватість /n30
 задирикувато adv
@@ -595,7 +595,7 @@
 зазделегідь adv
 зазняти /v1.isTo :perf
 залюбування /n2n
-замизганий /adj :&adjp:pasv:perf \
+замизганий /adj :adjp:pasv:perf \
  +cs=замизганіший
 заможній /adj                               #> заможний
 заньковчанин /n20.a.pyn.<                   #> заньківчанин
@@ -614,7 +614,7 @@
 західньо-український /adj
 зачіпити /v1.it1.is0.it1l :perf                               # rv_zna:rv_oru:rv_dav
 зачіпитися /vr1.it1 :perf                                     # rv_oru:rv_dav
-зачіплений /adj :&adjp:pasv:perf
+зачіплений /adj :adjp:pasv:perf
 зачіплення /n2n.p1
 защо adv                                    #> за що
 зберігла зберігти verb:perf:past:f
@@ -628,13 +628,13 @@
 зворотньопропорційний /adj
 зворухобити /v1.is0 :perf                                     # rv_zna:rv_oru:rv_dav
 зворухобитися /vr1 :perf                                      # rv_oru
-зворухоблений /adj :&adjp:pasv:perf
+зворухоблений /adj :adjp:pasv:perf
 зворухоблення /n2n
 зворухоблювати /v1.cf.advp :imperf                            # rv_zna:rv_oru:rv_dav
 звязаний /adj
 звязковий /adj
 звязок /n22.p
-згвалтований /adj :&adjp:pasv:perf
+згвалтований /adj :adjp:pasv:perf
 згвалтування /n2n.p1
 згвалтувати /v1.is0 :perf
 здавен adv
@@ -693,7 +693,7 @@
 імплантант /n20.p                           #> імплантат
 імплатант /n20.a.p
 імя noun:n:v_naz/v_zna           # lim
-інавгурований /adj :&adjp:pasv:imperf:perf
+інавгурований /adj :adjp:pasv:imperf:perf
 інвентарізація /n10
 індивідум /n20.a.p.<
 індіанин /n20.a.pyn.<
@@ -705,7 +705,7 @@
 інтепретація /n10.p1
 інтердисциплінарний /adj
 інтердисциплінарність /n30
-інтересно adv:&predic
+інтересно adv:predic
 інтерконнектор /n20.a.p.ke
 інтернетпроект /n20.p                       #> інтернет-проєкт
 інтерпритація /n10.p1
@@ -718,8 +718,8 @@
 ІТ-шник /n20.a.p.<
 ІУ number:latin                             #> IV
 іудео-християнський /adj
-Їй-Богу intj:&insert
-їй-Богу intj:&insert
+Їй-Богу intj:insert
+їй-Богу intj:insert
 їстивний /adj
 йельський /adj                              #> єльський
 йєльський /adj :up92                     #> єльський
@@ -727,8 +727,8 @@
 казацький /adj
 казачество /n2n
 казачок /n22.a.p.<
-ка-зна noninfl:&predic
-казна-шо noun:inanim:n:v_naz/v_zna:&pron:ind                #> казна-що
+ка-зна noninfl:predic
+казна-шо noun:inanim:n:v_naz/v_zna:pron:ind                #> казна-що
 ка-зна-що adv
 камінюка /n10.p1                            #> каменюка
 кам'янсько-бузький /adj                     #> кам'янка-бузький
@@ -827,7 +827,7 @@
 крос-культурний /adj
 крюінговий /adj
 ксеноімплантант /n20.p                      #> ксеноімплантат
-кудись-інде adv:&pron:ind
+кудись-інде adv:pron:ind
 кукурузка /n10
 культурноосвітній /adj
 культурнопросвітницький /adj
@@ -844,7 +844,7 @@
 лезбійка /n10.p2.ko.<
 Лейпціг /n20.a :town:geo
 лейпцігський /adj
-лекше лекше adv:compc:&predic
+лекше лекше adv:compc:predic
 Лєрмонтов /n2adj2.<+m                       #> Лермонтов
 лібретто noun:n:nv
 лікерогорілчаний /adj
@@ -861,12 +861,12 @@
 ломати /v2.cf.advp :imperf              # rv_zna:rv_oru:rv_dav
 лонґселер /n20.a.p.ke
 луїсеньо noun:f:nv:np                       #> луїсеньйо
-лучше лучше adv:compc:&predic
+лучше лучше adv:compc:predic
 льєжський /adj                              #> льєзький
 Любешов /n20.a :town:prop:geo               #> Любешів
 Ляйпціг /n20.a :town:prop:geo
 ляйпцігський /adj
-мабудь adv:&insert
+мабудь adv:insert
 мавп'ятник /n20.a.p                         #> мавпятник
 мавп'ячий /adj                              #> мавпячий
 магдебургський /adj
@@ -895,7 +895,7 @@
 малазійський /adj
 малозабезпеченність /n30
 малоімовірний /adj.adv
-мало-хто /n_pron.< :&pron:ind
+мало-хто /n_pron.< :pron:ind
 Мальдиви /np2 :prop:geo
 Манджурія /n10 :prop:geo                        #> Маньчжурія
 марганцево-кислий /adj
@@ -948,7 +948,7 @@
 молебен /n22.a.u.p
 молочно-кислий /adj
 молочно-товарний /adj
-мона noninfl:&predic                                        #> можна
+мона noninfl:predic                                        #> можна
 Мондіаль /n20                               #> мундіаль
 монсиньйор /n20.a.p.ke.<
 монтморілоніт /n20
@@ -971,18 +971,18 @@
 надприродньо adv                            #> надприродно
 надсилу adv                                 #> над силу
 надурняк adv
-нажаль noninfl:&insert                      #> на жаль
+нажаль noninfl:insert                      #> на жаль
 назло adv                                   #> на зло
 найймовірніший /adj :comps
 наймовірніше adv:comps
-найпізнійше найпізнійше adv:comps:&predic
+найпізнійше найпізнійше adv:comps:predic
 найтяжкий /adj
 накшталт noninfl
 наніч adv
 наплаву adv                                 #> на плаву
 наповну adv
 напостійно adv
-напр adv:&insert                            # втрачена крапка з "напр."
+напр adv:insert                            # втрачена крапка з "напр."
 напротязі prep                              # rv_rod
 нарізко adv                                 #> нарізно
 наркоділер /n20.a.p.ke.<
@@ -998,8 +998,8 @@
 націст /n20.a.p.<
 націстський /adj
 нашо adv                                                    #> нащо
-небагато-хто /n_pron.< :&pron:ind
-небагато-що /n_pron :&pron:ind
+небагато-хто /n_pron.< :pron:ind
+небагато-що /n_pron :pron:ind
 неважно adv                                 #> неважливо|байдуже|однаково|поганенько|так собі
 неварто noninfl                             #> не варто
 невгаваючи adv                              #> не вгаваючи
@@ -1015,8 +1015,8 @@
 негаусівський /adj
 негречний /adj
 негречність /n30.p
-негречно adv:&predic
-негрунтований /adj :&adjp:pasv:imperf
+негречно adv:predic
+негрунтований /adj :adjp:pasv:imperf
 недивлячись недивлячись advp:rev:imperf
 недивно adv
 недовподоби adv
@@ -1033,9 +1033,9 @@
 некон'юктурний /adj
 неминучо adv
 неможе noninfl                              #> не може
-неможна noninfl:&predic                     #> не можна
+неможна noninfl:predic                     #> не можна
 ненарожденний /adj
-необгрунтований /adj.adv :&adjp:pasv:perf
+необгрунтований /adj.adv :adjp:pasv:perf
 непорівняно adv
 непринятий /adj
 неприродній /adj
@@ -1062,7 +1062,7 @@
 ньюсмейкер /n20.a.p.ke.<
 ньюс-мейкер /n20.a.p.ke.<
 ньюсмейкерство /n2n
-обгрунтований /adj.adv :&adjp:pasv:perf \
+обгрунтований /adj.adv :adjp:pasv:perf \
  +cs=обгрунтованіший
 обгрунтованість /n30
 обгрунтовання /n2n
@@ -1159,7 +1159,7 @@
 підножний /adj
 підчас adv                                  #> під час
 підчеплювати /v1.cf.advp :imperf            #> підчіплювати
-пізнійше пізнійше adv:compc:&predic
+пізнійше пізнійше adv:compc:predic
 піккардійський /adj
 Пілзень /n22.a :prop:geo                         #> Плзень
 пілігрім /n20.a.p.<
@@ -1216,7 +1216,7 @@
 по-трохи adv
 по-троху adv
 по-трошки adv
-почилий /adj :&adjp:actv:perf
+почилий /adj :adjp:actv:perf
 праксиологія /n10
 праобраз /n20.p                             #> прообраз
 предімплантаційний /adj
@@ -1235,7 +1235,7 @@
 придорожний /adj
 принаймі adv
 приняти /v1.isTo :perf
-принятий /adj :&adjp:pasv:perf
+принятий /adj :adjp:pasv:perf
 принятися /vr1 :perf
 приняття /n2n
 приоритетний /adj
@@ -1250,7 +1250,7 @@
 пріорітет /n20.p
 пріорітетний /adj
 прогавити /v1.it0 :perf
-продезинфікований /adj :&adjp:pasv:perf
+продезинфікований /adj :adjp:pasv:perf
 продезинфікувати /v1.is0 :perf                      # rv_zna:rv_oru:rv_dav
 прокрустовий adj:m:v_naz/v_zn2     # lim    #> прокрустів
 промислово-торговельний /adj
@@ -1343,7 +1343,7 @@
 священослужитель /n20.a.p.<
 секвойя /n10                                #> секвоя
 сельбуд /n20.p                              #> сільбуд
-семидесятий /adj :&numr                     #> сімдесятий
+семидесятий /adj :numr                     #> сімдесятий
 семинарія /n10.p1
 сепаратиський /adj
 середньостатичний /adj                      #> середньостатистичний
@@ -1412,7 +1412,7 @@
 таксамо adv
 такшо noninfl                                               #> тому|тож
 Таллін /n20.a :town                         #> Таллінн
-тама adv:&pron:dem|part                                     #> там
+тама adv:pron:dem|part                                     #> там
 татовий adj:m:v_naz/v_zn2         # lim     #> татів
 темнозелений /adj
 темносиній /adj
@@ -1467,7 +1467,7 @@
 трікстер /n20.a.p.<
 трікстерство /n2n
 трікстерський /adj
-трільйон /n20.a.p :&&numr
+трільйон /n20.a.p :numr
 троллінг /n20
 троцкізм /n20
 трудоголик /n20.a.p.<
@@ -1478,7 +1478,7 @@
 тшінецький /adj
 тьотка /n10.p2.ko.<
 тюнинг /n20                                 #> тюнінг
-тюнингований /adj :&adjp:pasv:imperf        #> тюнінгований
+тюнингований /adj :adjp:pasv:imperf        #> тюнінгований
 тюнинговий /adj                             #> тюнінговий
 тюрський /adj
 УІІІ number:latin                           #> VIII
@@ -1502,7 +1502,7 @@
 фінансовоекономічний /adj
 фінансовокредитний /adj
 фінансовопромисловий /adj
-фінляндизований /adj :&adjp:pasv:imperf:perf
+фінляндизований /adj :adjp:pasv:imperf:perf
 фінляндизуватися /vr1.cf.advp :imperf:perf
 фінляндізація /n10
 фінн /n20.a.p.<
@@ -1563,8 +1563,8 @@
 Х-промені /np2                              #> X-промені
 хрестово-купольний /adj
 християнськодемократичний /adj
-хто-зна noninfl:&predic
-хтозна-шо noun:inanim:n:v_naz/v_zna:&pron:ind               #> хтозна-що
+хто-зна noninfl:predic
+хтозна-шо noun:inanim:n:v_naz/v_zna:pron:ind               #> хтозна-що
 ХУІ number:latin
 ХУІІ number:latin
 ХУІІІ number:latin
@@ -1573,7 +1573,7 @@
 ХХІ number:latin
 ХХІІ number:latin
 ХХІІІ number:latin
-цево noun:inanim:n:v_naz:&pron:dem                          #> це
+цево noun:inanim:n:v_naz:pron:dem                          #> це
 цедулка /n10.p2
 цео part                                                    #> це
 цетральний /adj
@@ -1606,7 +1606,7 @@
 чілійка /n10.p2.ko.<                        #> чилійка
 чілійський /adj                             #> чилійський
 чіпізація /n10                              #> чипізація
-чіпований /adj :&adjp:pasv:perf             #> чипований
+чіпований /adj :adjp:pasv:perf             #> чипований
 чіповий /adj                                #> чиповий
 чіпсет /n20.a.p                             #> чипсет
 чіпси /np2
@@ -1615,8 +1615,8 @@
 чіхуахуа noun:f:nv:anim|noun:m:nv:anim
 член-кореспондент /n20.a.p.< :xp2           # мають відмінюватися обидві частини
 чорнетка /n10.p2
-чорт-зна noninfl:&predic
-чортзна-шо noun:inanim:n:v_naz/v_zna:&pron:ind              #> чортзна-що
+чорт-зна noninfl:predic
+чортзна-шо noun:inanim:n:v_naz/v_zna:pron:ind              #> чортзна-що
 шампіньон /n20.a.p                          #> шампіньйон
 шансоньєтка /n10.p2.<
 шахид /n20.a.p.<
@@ -1626,7 +1626,7 @@
 швецький /adj
 ше adv|part                                                 #> ще
 шевченковий /adj                            #> Шевченків
-шестидесятий /adj :&numr                    #> шістдесятий
+шестидесятий /adj :numr                    #> шістдесятий
 шестидесятник /n20.a.p.<                    #> шістдесятник
 шестидесятництво /n2n
 шестидесятниця /n10.p1.<                    #> шістдесятниця
@@ -1641,15 +1641,15 @@
 Широкіне /n2adj1 :prop:geo                  #> Широкине
 Широкіно noun:n:nv:prop:geo                 #> Широкине
 шляхо-ремонтний /adj
-шо conj:subord|noun:inanim:n:v_naz/v_zna:&pron:int:rel      #> що
+шо conj:subord|noun:inanim:n:v_naz/v_zna:pron:int:rel      #> що
 шоб conj:subord|part                                        #> щоб
 шоби conj:subord|part                                       #> щоб
 шодо prep              # rv_rod                             #> щодо
-шо-небудь noun:inanim:n:v_naz/v_zna:&pron:ind               #> що-небудь
+шо-небудь noun:inanim:n:v_naz/v_zna:pron:ind               #> що-небудь
 шоппінг /n20
 шосткінський /adj
-шось noun:inanim:n:v_naz/v_zna:&pron:int                    #> щось
-шо-шо noun:inanim:n:v_naz/v_zna:&pron:int:rel               #> що-що
+шось noun:inanim:n:v_naz/v_zna:pron:int                    #> щось
+шо-шо noun:inanim:n:v_naz/v_zna:pron:int:rel               #> що-що
 штабквартира /n10.p1
 штаб-ротмістр /n20.a.p.ke.<                 #> штабс-ротмістр
 штаб-ротмістрський /adj

@@ -25,8 +25,8 @@
 # йоба…ого
 # йобу
 ахєрєнний /adj.adv
-ахуєвающий /adj :&adjp:actv:imperf
-ахуєвший /adj :&adjp:actv:perf
+ахуєвающий /adj :adjp:actv:imperf
+ахуєвший /adj :adjp:actv:perf
 ахуєнний /adj.adv \
  +cs=ахуєнніший
 ахуєнний /adj
@@ -63,10 +63,10 @@
 бляцтво /n2n
 бляцький /adj
 виблядок /n22.a.p.<
-виєбаний /adj :&adjp:pasv:perf
+виєбаний /adj :adjp:pasv:perf
 виєбати /v1 :perf                               # rv_zna:rv_oru
 виєбон /n20.a.p
-виїбаний /adj :&adjp:pasv:perf
+виїбаний /adj :adjp:pasv:perf
 виїбати /v1 :perf                               # rv_zna:rv_oru
 виїбнутися /vr1 :perf                       # rv_oru
 виїбон /n20.a.p
@@ -84,7 +84,7 @@
 відхуярити /v1.is0 :perf                        # rv_zna:rv_oru
 в'їбати /v1 :perf                           # rv_oru:rv_dav
 в'їбатися /vr1 :perf                        # rv_oru
-вйоб noninfl:&predic
+вйоб noninfl:predic
 вйобування /n2n
 вйобувати /v1 :imperf                       # rv_oru
 впиздити /v1 :perf                          # rv_dav:rv_oru
@@ -116,7 +116,7 @@
 єбало /n2n.p1
 єбальник /n20.a.p
 єбанарій /n20.a.p
-єбанутий /adj :&adjp:actv:perf
+єбанутий /adj :adjp:actv:perf
 єбанутися /vr1 :perf                        # rv_oru
 єбанько /n20.p.<
 єбать intj
@@ -139,7 +139,7 @@
 заїбошити /v1 :perf                         # rv_zna:rv_dav:rv_oru
 заїбцовий /adj
 зайоб /n20.p
-зайобаний /adj.adv :&adjp:pasv:perf
+зайобаний /adj.adv :adjp:pasv:perf
 зайобаність /n30
 зайобистий /adj.adv
 зайобування /n2n
@@ -166,7 +166,7 @@
 їбанатство /n2n
 їбанатський /adj
 їбанашка /n10.p2.<
-їбаний /adj :&adjp:pasv:imperf
+їбаний /adj :adjp:pasv:imperf
 їбанина /n10
 їбаніна /n10
 їбаністичний /adj
@@ -195,10 +195,10 @@
 їбстися їбстися  verb:rev:imperf:inf        # lim
 їбтися /vr1 :imperf
 їбучий /adj
-йоб noninfl:&predic
+йоб noninfl:predic
 йоба intj
 йобанаврот intj
-йобаний /adj :&adjp:pasv:imperf
+йобаний /adj :adjp:pasv:imperf
 йобанийстид intj
 йобарь /n20.a.p.<
 йобвашумать intj
@@ -206,7 +206,7 @@
 йобло /n2n.p1
 йобля /n10
 йобнути /v1 :perf                               # rv_zna:rv_oru:rv_dav
-йобнутий /adj.adv :&adjp:pasv:perf
+йобнутий /adj.adv :adjp:pasv:perf
 йобнутися /vr1 :perf                            # rv_oru
 йобнутість /n30
 йобтвоюмать intj
@@ -255,7 +255,7 @@
 нехуйовенький /adj.adv
 нехуйовий /adj
 нехуйово adv
-нєхуй noninfl:&predic
+нєхуй noninfl:predic
 ніхуйовий /adj
 ніхуйово adv
 ніхуя adv
@@ -267,7 +267,7 @@
 ніхуяшечькі intj
 нунахуй intj
 об'їбатися /vr1 :perf                        # rv_oru
-обйобаний /adj :&adjp:pasv:perf
+обйобаний /adj :adjp:pasv:perf
 обйобуватися /vr1.cf.advp :imperf                # rv_oru
 овердохуя adv
 ойбля intj
@@ -278,13 +278,13 @@
 остопиздіти /v1 :perf                       # rv_dav
 охєрєнний /adj.adv
 охтижбля intj
-охуєвающий /adj :&adjp:actv:imperf
+охуєвающий /adj :adjp:actv:imperf
 охуєнний /adj.adv \
  +cs=охуєнніший
 охуєнність /n30
 охуївання /n2n
 охуївати /v2.cf.advp :imperf
-охуївший /adj :&adjp:actv:perf
+охуївший /adj :adjp:actv:perf
 охуїнний /adj.adv \
  +cs=охуїнніший
 охуїння /n2n
@@ -305,7 +305,7 @@
 пиздець intj
 пиздєць /n20.a
 пиздєць intj
-пизджений /adj :&adjp:pasv:imperf
+пизджений /adj :adjp:pasv:imperf
 пиздити /v1.cf.advp :imperf                 # rv_zna:rv_oru
 пиздитися /vr1 :perf                        # rv_oru
 пиздиць noninfl
@@ -389,7 +389,7 @@
 поїбашити /v1 :perf                         # rv_zna:rv_dav:rv_oru
 поїбень /n32
 поїбєнь /n32
-пойобаний /adj :&adjp:pasv:perf
+пойобаний /adj :adjp:pasv:perf
 пойобувати /v1.cf.advp :imperf              # rv_zna:rv_oru
 пойобщик /n20.a.p.<
 поперейобувати /v1 :perf                    # rv_zna:rv_oru
@@ -410,7 +410,7 @@
 похую adv
 приїбатися /vr1 :perf
 прийобуватися /vr1.cf :imperf
-припизджений /adj :&adjp:pasv:perf
+припизджений /adj :adjp:pasv:perf
 припиздити /v1 :perf                        # rv_zna:rv_dav:rv_oru
 припиздячити /v1 :perf                  # rv_zna:rv_oru:rv_dav
 прихуїти /v1 :perf
@@ -420,7 +420,7 @@
 проїбати /v1 :perf                          # rv_zna:rv_oru
 проїбатися /vr1 :perf
 пройоб /n20.p
-пройобаний /adj :&adjp:pasv:perf
+пройобаний /adj :adjp:pasv:perf
 пройобано проїбати verb:perf:impers
 пройобування /n2n
 пройобувати /v1.cf.advp :imperf              # rv_zna:rv_oru
@@ -430,7 +430,7 @@
 прошаройобитися /vr1 :perf
 роз'їбати /v1 :perf                         # rv_zna:rv_oru
 розйоб /n20
-розйобаний /adj :&adjp:pasv:perf
+розйобаний /adj :adjp:pasv:perf
 розйобувати /v1.cf.advp :imperf             # rv_zna:rv_oru:rv_dav
 розпиздітися /vr1 :perf
 розпиздяй /n20.a.p.<
@@ -439,7 +439,7 @@
 розпіздяйство /n2n
 розхуярити /v1.is0 :perf                    # rv_zna:rv_oru:rv_dav
 розхуярювати /v1.cf.advp :imperf            # rv_zna:rv_oru:rv_dav
-розхуячений /adj :&adjp:pasv:perf
+розхуячений /adj :adjp:pasv:perf
 розхуячити /v1.is0 :perf                    # rv_zna:rv_oru:rv_dav
 сйобувати /v1.cf.advp :imperf
 сміхуєчки /np3
@@ -447,7 +447,7 @@
 соціоблядство /n2n
 соціоблядь /n32.p.<
 спизданути /v1 :perf                        # rv_zna:rv_dav
-спизджений /adj :&adjp:pasv:perf
+спизджений /adj :adjp:pasv:perf
 спиздити /v1.is0 :perf
 спиздіти /v1 :perf                          # rv_dav
 спиздонути /v1 :perf                         # rv_oru

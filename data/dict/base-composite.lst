@@ -1,5 +1,5 @@
-# весь /adj_pron - весь /adj_pron :&pron:gen
-# увесь /adj_pron - увесь /adj_pron :&pron:gen
+# весь /adj_pron - весь /adj_pron :pron:gen
+# увесь /adj_pron - увесь /adj_pron :pron:gen
 автомат /n20.a.p - пакувальник /n20.a.p !u-*
 акула /n10.p1.<> - молот /n20.a.p
 акула /n10.p1.<> - мако
@@ -60,8 +60,8 @@
 комар /n20.a.ke.p4.<> - дзвінець /n22.a.p.<
 королева /n10.< - консорт /n20.a.<
 король /n20.a.< - сонце /n2n.ovi
-котрий /adj - небудь :&pron:ind
-котрий /adj - будь :&pron:ind
+котрий /adj - небудь :pron:ind
+котрий /adj - будь :pron:ind
 крісло /n2n.p2 - гойдалка /n10.p2
 купівля /n10 - продаж /n20
 кури /np3 - гриль
@@ -91,11 +91,11 @@
 музика /n10.p1.<m - аматор /n20.a.p.ke.<
 музика /n10.p1.<m - любитель /n20.a.p.<
 ненька /n10.< - Україна /n10.<
-ніхто /n_pron.< - ніхто /n_pron.< :&pron:neg
+ніхто /n_pron.< - ніхто /n_pron.< :pron:neg
 обіцянка /n10.p2 - цяцянка /n10.p2
-один /numr ^adj - єдиний /adj :&numr
-один /numr ^adj - однісінький /adj :&numr
-один /numr ^adj - другий /adj :&numr
+один /numr ^adj - єдиний /adj :numr
+один /numr ^adj - однісінький /adj :numr
+один /numr ^adj - другий /adj :numr
 один /numr g=m - півтора
 один /numr g=n - півтора
 один /numr g=f - півтори
@@ -118,8 +118,8 @@
 риба /n10.p1.<> - меч /n20.a.p
 риба /n10.p1.<> - молот /n20.a.p
 Ростов /n20.a - на-Дону :geo:town
-сам /adj_pron - самісінький /adj :&pron:def
-сам /adj_pron - один /numr ^adj :&pron:def
+сам /adj_pron - самісінький /adj :pron:def
+сам /adj_pron - один /numr ^adj :pron:def
 свинка /n10.p2 - скарбничка /n10.p2
 сила /n10 - силенна /adj g=f
 сила /n10 - силюща /adj g=f
@@ -135,9 +135,9 @@
 сукня /n10.p2 - максі
 сумний /adj - пресумний /adj
 суп /n20.p - пюре
-сякий /adj - такий /adj :&pron:def
-такий /adj - сякий /adj :&pron:def
-такий /adj.long - собі :&pron:dem:bad
+сякий /adj - такий /adj :pron:def
+такий /adj - сякий /adj :pron:def
+такий /adj.long - собі :pron:dem:bad
 тато /n20.< - мама /n10.< ^noun:p
 тендер /n20.a.p.ke - конденсатор /n20.a.p.ke
 тьма /n10 - тьмуща /adj g=f
@@ -146,13 +146,13 @@
 Франкфурт /n20.a - на-Майні :geo:town
 харки /np2 - макогоники /np2 :coll
 хліб /n20.a - сіль /n30 :+m
-хто /n_pron.< - небудь :&pron:ind
-хто /n_pron.< - будь :&pron:ind
+хто /n_pron.< - небудь :pron:ind
+хто /n_pron.< - будь :pron:ind
 цап /n20.a.p.<> - відбувайло /n20.p.<>
 цяця /n10.< - хлопчик /n20.a.<
 чай /n20 - кава /n10
-чий /adj_pron - небудь :&pron:ind
-чий /adj_pron - будь :&pron:ind
+чий /adj_pron - небудь :pron:ind
+чий /adj_pron - будь :pron:ind
 член /n20.a.p.< - кореспондент /n20.a.p.< !u-u          # :xp1
 чудо /n2n.p1.< - юдо /n2n.p1.<
 шапка /n10.p2 - невидимка /n10.p2
@@ -160,7 +160,7 @@
 шура /n10 - буря /n10
 шури /np2 - мури /np2
 шуря /n10 - буря /n10
-що /n_pron - небудь :&pron:ind
-що /n_pron - будь :&pron:ind
-який /adj - небудь :&pron:ind
-який /adj - будь :&pron:ind
+що /n_pron - небудь :pron:ind
+що /n_pron - будь :pron:ind
+який /adj - небудь :pron:ind
+який /adj - будь :pron:ind

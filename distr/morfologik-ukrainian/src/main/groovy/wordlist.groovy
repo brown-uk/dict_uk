@@ -6,7 +6,7 @@ def words = [:].withDefault{0}
 
 //def allTagged = new File('../../../build/tmp/all.tagged.tmp').readLines()
 //	.findAll{ ! (it =~ /:(bad|slang|subst|short|long)/) \
-//	    || it =~ /&insert:short/ \
+//	    || it =~ /insert:short/ \
 //	    || it =~ /^((що(як)?)?най)?(більш|менш|скоріш|перш)\s/
 //	    }
 //	.collect{ it.split(/\t/, 2)[0] } as Set

@@ -79,7 +79,7 @@ class TaggedWordlist {
 				out_line = out_line.replace("|", extra_tags + "|") + extra_tags
 			}
 			else
-			if ( out_line =~ / :[a-z&+]/ ) {
+			if ( out_line =~ / :[a-z+]/ ) {
 				out_line = out_line.replaceFirst(/ :[^ ]*/, '$0'+extra_tags)
 			}
 			else 

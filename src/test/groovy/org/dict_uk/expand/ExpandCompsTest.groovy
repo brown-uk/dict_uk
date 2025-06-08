@@ -93,47 +93,47 @@ public class ExpandCompsTest {
 
 def fullComps25 = 
 """
-один-єдиний один-єдиний adj:m:v_naz:&numr
-один-єдиний один-єдиний adj:m:v_zna:rinanim:&numr
-одного-єдиного один-єдиний adj:m:v_rod:&numr
-одного-єдиного один-єдиний adj:m:v_zna:ranim:&numr
-одного-єдиного один-єдиний adj:n:v_rod:&numr
-одному-єдиному один-єдиний adj:m:v_dav:&numr
-одному-єдиному один-єдиний adj:m:v_mis:&numr
-однім-єдиному один-єдиний adj:m:v_mis:&numr
-одному-єдиному один-єдиний adj:n:v_dav:&numr
-одному-єдиному один-єдиний adj:n:v_mis:&numr
-однім-єдиному один-єдиний adj:n:v_mis:&numr
-одним-єдиним один-єдиний adj:m:v_oru:&numr
-одним-єдиним один-єдиний adj:n:v_oru:&numr
-одним-єдиним один-єдиний adj:p:v_dav:&numr
-одному-єдинім один-єдиний adj:m:v_mis:&numr
-однім-єдинім один-єдиний adj:m:v_mis:&numr
-одному-єдинім один-єдиний adj:n:v_mis:&numr
-однім-єдинім один-єдиний adj:n:v_mis:&numr
-одна-єдина один-єдиний adj:f:v_naz:&numr
-одної-єдиної один-єдиний adj:f:v_rod:&numr
-однієї-єдиної один-єдиний adj:f:v_rod:&numr
-одній-єдиній один-єдиний adj:f:v_dav:&numr
-одній-єдиній один-єдиний adj:f:v_mis:&numr
-одну-єдину один-єдиний adj:f:v_zna:&numr
-однією-єдиною один-єдиний adj:f:v_oru:&numr
-одною-єдиною один-єдиний adj:f:v_oru:&numr
-одне-єдине один-єдиний adj:n:v_naz:&numr
-одно-єдине один-єдиний adj:n:v_naz:&numr
-одне-єдине один-єдиний adj:n:v_zna:&numr
-одно-єдине один-єдиний adj:n:v_zna:&numr
-одні-єдині один-єдиний adj:p:v_naz:&numr
-одні-єдині один-єдиний adj:p:v_zna:rinanim:&numr
-одних-єдиних один-єдиний adj:p:v_rod:&numr
-одних-єдиних один-єдиний adj:p:v_zna:ranim:&numr
-одних-єдиних один-єдиний adj:p:v_mis:&numr
-одними-єдиними один-єдиний adj:p:v_oru:&numr
+один-єдиний один-єдиний adj:m:v_naz:numr
+один-єдиний один-єдиний adj:m:v_zna:rinanim:numr
+одного-єдиного один-єдиний adj:m:v_rod:numr
+одного-єдиного один-єдиний adj:m:v_zna:ranim:numr
+одного-єдиного один-єдиний adj:n:v_rod:numr
+одному-єдиному один-єдиний adj:m:v_dav:numr
+одному-єдиному один-єдиний adj:m:v_mis:numr
+однім-єдиному один-єдиний adj:m:v_mis:numr
+одному-єдиному один-єдиний adj:n:v_dav:numr
+одному-єдиному один-єдиний adj:n:v_mis:numr
+однім-єдиному один-єдиний adj:n:v_mis:numr
+одним-єдиним один-єдиний adj:m:v_oru:numr
+одним-єдиним один-єдиний adj:n:v_oru:numr
+одним-єдиним один-єдиний adj:p:v_dav:numr
+одному-єдинім один-єдиний adj:m:v_mis:numr
+однім-єдинім один-єдиний adj:m:v_mis:numr
+одному-єдинім один-єдиний adj:n:v_mis:numr
+однім-єдинім один-єдиний adj:n:v_mis:numr
+одна-єдина один-єдиний adj:f:v_naz:numr
+одної-єдиної один-єдиний adj:f:v_rod:numr
+однієї-єдиної один-єдиний adj:f:v_rod:numr
+одній-єдиній один-єдиний adj:f:v_dav:numr
+одній-єдиній один-єдиний adj:f:v_mis:numr
+одну-єдину один-єдиний adj:f:v_zna:numr
+однією-єдиною один-єдиний adj:f:v_oru:numr
+одною-єдиною один-єдиний adj:f:v_oru:numr
+одне-єдине один-єдиний adj:n:v_naz:numr
+одно-єдине один-єдиний adj:n:v_naz:numr
+одне-єдине один-єдиний adj:n:v_zna:numr
+одно-єдине один-єдиний adj:n:v_zna:numr
+одні-єдині один-єдиний adj:p:v_naz:numr
+одні-єдині один-єдиний adj:p:v_zna:rinanim:numr
+одних-єдиних один-єдиний adj:p:v_rod:numr
+одних-єдиних один-єдиний adj:p:v_zna:ranim:numr
+одних-єдиних один-єдиний adj:p:v_mis:numr
+одними-єдиними один-єдиний adj:p:v_oru:numr
 """.trim()
 
     @Test
     void testNumr() {
-        def input = ["один /numr ^adj - єдиний /adj :&numr"]
+        def input = ["один /numr ^adj - єдиний /adj :numr"]
         assertEquals(fullComps25, ExpandTest.join(expandComps.process_input(input, COMP_FILENAME)))
     }
 

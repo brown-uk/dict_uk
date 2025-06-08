@@ -76,7 +76,7 @@
 амбулянс /n20
 амбуляторія /n10.p1
 амнестія /n10
-амнестований /adj :&adjp:pasv:imperf:perf
+амнестований /adj :adjp:pasv:imperf:perf
 амнестувати /v1.cf.advp.is0 :imperf:perf                        # rv_zna:rv_oru
 амоніяк /n20
 амоняк /n20
@@ -248,7 +248,7 @@
 ґанґстер /n20.a.p.ke.<
 ґанґстерка /n10.p2.<
 ґарантія /n10.p1
-ґарантований /adj :&adjp:pasv:imperf
+ґарантований /adj :adjp:pasv:imperf
 ґарантування /n2n
 ґарантувати /v1.cf.advp.is0 :imperf                                      # rv_zna:rv_oru:rv_dav
 ґарантуватися /vr1.cf.advp :imperf                                       # rv_oru:rv_dav
@@ -275,7 +275,7 @@
 ґєрасімов /n2adj2.<+m
 ґлузд /n20
 ґльобалізація /n10.p1
-ґльобалізований /adj :&&adjp:pasv:perf
+ґльобалізований /adj :adjp:pasv:perf
 ґльобальний /adj
 ґлянцевий /adj
 ґотика /n10
@@ -300,15 +300,15 @@
 декляматор /n20.a.p.ke.<
 декляматорка /n10.p2.<
 деклямація /n10.p1
-деклямований /adj :&adjp:pasv:imperf
+деклямований /adj :adjp:pasv:imperf
 деклямування /n2n.p1
 деклямувати /v1.cf.advp :imperf                  # rv_zna:rv_oru:rv_dav
 декляративний /adj
 деклярація /n10.p1
-деклярований /adj :&adjp:pasv:imperf:perf
+деклярований /adj :adjp:pasv:imperf:perf
 деклярування /n2n
 деклярувати /v1.cf.advp.is0 :imperf:perf                     # rv_zna:rv_oru:rv_dav
-деклясований /adj :&adjp:pasv:imperf:perf
+деклясований /adj :adjp:pasv:imperf:perf
 деклясувати /v1.cf.advp.is0 :imperf:perf                     # rv_zna:rv_oru
 деклясуватися /vr1.cf.advp :imperf:perf                      # rv_oru
 делеґатура /n10
@@ -330,7 +330,7 @@
 діягноза /n10.p1
 діягнозування /n2n
 діягностичний /adj
-діягностований /adj :&adjp:pasv:imperf:perf
+діягностований /adj :adjp:pasv:imperf:perf
 діягностувальний /adj
 діягностування /n2n
 діягностувати /v1.cf.advp :imperf:perf     # rv_zna:rv_oru:rv_dav
@@ -400,7 +400,7 @@
 жарґон /n20
 желятина /n10
 желятиновий /adj
-заанґажований /adj :&adjp:pasv:perf
+заанґажований /adj :adjp:pasv:perf
 заанґажованість /n30
 заанґажовувальний /adj
 заанґажовуватися /vr1.cf.advp :imperf                               # rv_oru
@@ -424,12 +424,12 @@
 збіратися /vr2.cf.advp :imperf                   # rv_oru
 зверещати /v1 :perf                             # rv_oru
 зконвульсувати /v1 :perf                                     # rv_zna
-зматеріялізований /adj :&adjp:pasv:perf
+зматеріялізований /adj :adjp:pasv:perf
 зрезиґновано adv
 зрезиґнувати /v1 :perf
 зупка /n10.p2
 зусім adv
-зформований /adj :&adjp:pasv:perf
+зформований /adj :adjp:pasv:perf
 зформування /n2n
 идол /n20.a.p.ke.<
 икавка /n10
@@ -480,8 +480,8 @@
 іслям /n20
 іслямський /adj
 ісляндець /n22.a.p.<
-їйбо intj:&insert
-їйбогу intj:&insert
+їйбо intj:insert
+їйбогу intj:insert
 йнакше adv
 кавчук /n20
 кавчуковий /adj
@@ -506,7 +506,7 @@
 клясик /n20.a.p.<
 клясика /n10
 клясифікація /n10.p1
-клясифікований /adj :&adjp:pasv:imperf:perf
+клясифікований /adj :adjp:pasv:imperf:perf
 клясифікувати /v1.cf.advp.is0 :imperf:perf                     # rv_zna:rv_oru
 клясицизм /n20
 клясицист /n20.a.p.<
@@ -525,7 +525,7 @@
 колоніяльність /n30
 кольонія /n10.p1
 кольоризація /n10
-кольоризований /adj :&adjp:pasv:imperf:perf
+кольоризований /adj :adjp:pasv:imperf:perf
 кольоризувати /v1.cf.advp :imperf:perf                          # rv_zna:rv_oru
 кольорит /n20
 кольоритний /adj
@@ -566,7 +566,7 @@
 льоґічний /adj.adv
 льозунґ /n20.p
 льозунґовий /adj
-льокалізований /adj :&adjp:pasv:imperf:perf
+льокалізований /adj :adjp:pasv:imperf:perf
 льокальний /adj
 льокальність /n30
 льотерія /n10.p1
@@ -598,7 +598,7 @@
 маляйзійський /adj
 марґінал /n20.a.p.<
 марґіналізація /n10
-марґіналізований /adj :&adjp:pasv:imperf:perf
+марґіналізований /adj :adjp:pasv:imperf:perf
 марґіналізувати /v1.cf.advp.is0 :imperf:perf                    # rv_zna:rv_oru
 марґіналізуватися /vr1.cf.advp :imperf:perf                     # rv_oru
 марґіналка /n10.p2.<
@@ -616,7 +616,7 @@
 марсіянський /adj
 матеріял /n20.p
 матеріялізація /n10
-матеріялізований /adj :&adjp:pasv:imperf:perf
+матеріялізований /adj :adjp:pasv:imperf:perf
 матеріялізувати /v1.cf.advp.is0 :imperf:perf                     # rv_zna:rv_oru
 матеріялізуватися /vr1.cf.advp :imperf:perf                      # rv_oru
 матеріяльний /adj
@@ -651,7 +651,7 @@
 незаанґажованість /n30
 неначеб conj:subord
 нераз adv
-нігди adv:&pron:emph:&predic
+нігди adv:pron:emph:predic
 нідерляндець /n22.p.a.<
 новеля /n10.p2
 новоросія /n10 :prop:geo
@@ -690,7 +690,7 @@
 пелагіянізм /n20
 пелагіянство /n2n
 пелагіянський /adj
-переинакшений /adj :&adjp:pasv:perf
+переинакшений /adj :adjp:pasv:perf
 переинакшити /v1.is0 :perf                     # rv_zna:rv_oru:rv_dav
 переинакшитися /vr1 :perf                      # rv_oru
 перемиський /adj
@@ -726,7 +726,7 @@
 пляцдарм /n20.p
 подіюм /n20.p
 по-европейському adv
-поки-що adv:&pron:int:rel
+поки-що adv:pron:int:rel
 політантрополог /n20.a.p.<
 Політбюро /n2n
 поратунок /n22
@@ -835,7 +835,7 @@
 совєтизація /n10
 совєтизм /n20.p
 сов'єтизм /n20.p
-совєтизований /adj :&adjp:pasv:perf
+совєтизований /adj :adjp:pasv:perf
 совєтов совєти noun:p:v_rod:anim
 совєтолог /n20.a.p.<
 совєтологія /n10
@@ -860,7 +860,7 @@
 спеціяльний /adj.adv
 сплянований /adj
 спонзор /n20.a.p.ke.<
-спонзорований /adj :&adjp:pasv:imperf:perf
+спонзорований /adj :adjp:pasv:imperf:perf
 спонзорування /n2n
 спонзорувати /v1.cf.advp.is0 :imperf:perf                     # rv_zna:rv_oru:rv_dav
 старшоклясник /n20.a.p.<

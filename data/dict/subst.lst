@@ -80,7 +80,7 @@
 витлумачіть витлумачити verb:perf:impr:p:2
 виторговано виторгувати verb:perf:impers
 витратіть витратити verb:perf:impr:p:2
-виходе виходити verb:imperf:pres:s:3:&insert            # :xp2
+виходе виходити verb:imperf:pres:s:3:insert            # :xp2
 вихорем вихор noun:inanim:m:v_oru:xp1
 вівць вівця noun:anim:p:v_rod/v_zna                         #> овець
 віддасиш віддати verb:perf:futr:s:2
@@ -276,7 +276,7 @@
 наріччів наріччя noun:p:v_rod                       #> наріч
 наскіке noninfl
 наструнчіть наструнчити verb:perf:impr:p:2
-непотрібен непотрібний adj:m:v_naz:short:&predic    #> не потрібен
+непотрібен непотрібний adj:m:v_naz:short:predic    #> не потрібен
 нишпоріть нишпорити verb:imperf:impr:p:2
 нівечіть нівечити verb:imperf:impr:p:2
 носе носити verb:imperf:pres:s:3
@@ -427,7 +427,7 @@
 татарів татарин noun:anim:p:v_rod/v_zna     #> татар
 твіттера твіттер noun:m:v_rod               #> твіттеру
 телеканала телеканал noun:m:v_rod
-тисячів тисяча noun:inanim:p:v_rod:&numr
+тисячів тисяча noun:inanim:p:v_rod:numr
 тіктока тікток noun:m:v_rod                 #> тіктоку
 тік-тока тік-ток noun:m:v_rod                 #> тік-току
 тортурів тортура noun:inanim:p:v_rod

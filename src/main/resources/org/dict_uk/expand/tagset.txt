@@ -5,8 +5,6 @@ abbr
 actv
 adj
 adjp
-&adjp
-&&adjp
 adv
 advp
 alt
@@ -36,7 +34,7 @@ impr
 inanim
 ind
 inf
-&insert
+insert
 int
 latin
 lname
@@ -49,8 +47,6 @@ noninfl
 np
 ns
 numr
-&numr
-&&numr
 number
 nv
 obsc
@@ -63,10 +59,10 @@ pname
 perf
 pers
 pos
-&predic
+predic
 prep
 pres
-&pron
+pron
 prop
 ranim
 rinanim

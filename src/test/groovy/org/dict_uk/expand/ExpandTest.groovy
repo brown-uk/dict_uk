@@ -167,6 +167,57 @@ public class ExpandTest {
         assertEquals(adjNounFem, join(expand.process_input(lines)))
     }
 
+
+    def adjAdjComp =
+    '''
+освічений освічений adj:m:v_naz:adjp:pasv:perf:compb
+освіченого освічений adj:m:v_rod:adjp:pasv:perf:compb
+освіченому освічений adj:m:v_dav:adjp:pasv:perf:compb
+освіченого освічений adj:m:v_zna:ranim:adjp:pasv:perf:compb
+освічений освічений adj:m:v_zna:rinanim:adjp:pasv:perf:compb
+освіченим освічений adj:m:v_oru:adjp:pasv:perf:compb
+освіченім освічений adj:m:v_mis:adjp:pasv:perf:compb
+освіченому освічений adj:m:v_mis:adjp:pasv:perf:compb
+освічений освічений adj:m:v_kly:adjp:pasv:perf:compb
+освічена освічений adj:f:v_naz:adjp:pasv:perf:compb
+освіченая освічений adj:f:v_naz:adjp:pasv:perf:compb:long
+освіченої освічений adj:f:v_rod:adjp:pasv:perf:compb
+освіченій освічений adj:f:v_dav:adjp:pasv:perf:compb
+освічену освічений adj:f:v_zna:adjp:pasv:perf:compb
+освіченую освічений adj:f:v_zna:adjp:pasv:perf:compb:long
+освіченою освічений adj:f:v_oru:adjp:pasv:perf:compb
+освіченій освічений adj:f:v_mis:adjp:pasv:perf:compb
+освічена освічений adj:f:v_kly:adjp:pasv:perf:compb
+освіченая освічений adj:f:v_kly:adjp:pasv:perf:compb:long
+освічене освічений adj:n:v_naz:adjp:pasv:perf:compb
+освіченеє освічений adj:n:v_naz:adjp:pasv:perf:compb:long
+освіченого освічений adj:n:v_rod:adjp:pasv:perf:compb
+освіченому освічений adj:n:v_dav:adjp:pasv:perf:compb
+освічене освічений adj:n:v_zna:adjp:pasv:perf:compb
+освіченеє освічений adj:n:v_zna:adjp:pasv:perf:compb:long
+освіченим освічений adj:n:v_oru:adjp:pasv:perf:compb
+освіченім освічений adj:n:v_mis:adjp:pasv:perf:compb
+освіченому освічений adj:n:v_mis:adjp:pasv:perf:compb
+освічене освічений adj:n:v_kly:adjp:pasv:perf:compb
+освіченеє освічений adj:n:v_kly:adjp:pasv:perf:compb:long
+освічені освічений adj:p:v_naz:adjp:pasv:perf:compb
+освіченії освічений adj:p:v_naz:adjp:pasv:perf:compb:long
+освічених освічений adj:p:v_rod:adjp:pasv:perf:compb
+освіченим освічений adj:p:v_dav:adjp:pasv:perf:compb
+освічених освічений adj:p:v_zna:ranim:adjp:pasv:perf:compb
+освічені освічений adj:p:v_zna:rinanim:adjp:pasv:perf:compb
+освіченії освічений adj:p:v_zna:rinanim:adjp:pasv:perf:compb:long
+освіченими освічений adj:p:v_oru:adjp:pasv:perf:compb
+освічених освічений adj:p:v_mis:adjp:pasv:perf:compb
+освічені освічений adj:p:v_kly:adjp:pasv:perf:compb
+освіченії освічений adj:p:v_kly:adjp:pasv:perf:compb:long'''.trim()
+    
+    @Test
+    void testAdjpComp() {
+        def lines = ["освічений /adj.long :adjp:pasv:perf:compb"]
+        assertEquals(adjAdjComp, join(expand.process_input(lines)))
+    }
+    
 	
 	def adjLastName =
 '''
@@ -477,51 +528,51 @@ def multilineFull22 =
 	
 String[] taggedIn = 
 '''
-абичий абичий adj:m:v_naz/v_zna:&pron:ind
-абичийого абичий adj:m:v_rod/v_zna//n:v_rod:&pron:ind
-абичийому абичий adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-абичиєму абичий adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-абичиїм абичий adj:m:v_mis//n:v_oru//p:v_dav:&pron:ind
-абичия абичий adj:f:v_naz:&pron:ind
-абичиєї абичий adj:f:v_rod:&pron:ind
-абичиїй абичий adj:f:v_dav/v_mis:&pron:ind
-абичию абичий adj:f:v_zna:&pron:ind
-абичиєю абичий adj:f:v_oru:&pron:ind
-абичиї абичий adj:p:v_naz/v_zna:&pron:ind
-абичиїх абичий adj:p:v_rod/v_zna/v_mis:&pron:ind
-абичиїми абичий adj:p:v_oru:&pron:ind
+абичий абичий adj:m:v_naz/v_zna:pron:ind
+абичийого абичий adj:m:v_rod/v_zna//n:v_rod:pron:ind
+абичийому абичий adj:m:v_dav/v_mis//n:v_dav/v_mis:pron:ind
+абичиєму абичий adj:m:v_dav/v_mis//n:v_dav/v_mis:pron:ind
+абичиїм абичий adj:m:v_mis//n:v_oru//p:v_dav:pron:ind
+абичия абичий adj:f:v_naz:pron:ind
+абичиєї абичий adj:f:v_rod:pron:ind
+абичиїй абичий adj:f:v_dav/v_mis:pron:ind
+абичию абичий adj:f:v_zna:pron:ind
+абичиєю абичий adj:f:v_oru:pron:ind
+абичиї абичий adj:p:v_naz/v_zna:pron:ind
+абичиїх абичий adj:p:v_rod/v_zna/v_mis:pron:ind
+абичиїми абичий adj:p:v_oru:pron:ind
 '''.trim().split("\n")
 		
 def taggedOut = 
 '''
-абичий абичий adj:m:v_naz:&pron:ind
-абичийого абичий adj:m:v_rod:&pron:ind
-абичиєму абичий adj:m:v_dav:&pron:ind
-абичийому абичий adj:m:v_dav:&pron:ind
-абичий абичий adj:m:v_zna:&pron:ind
-абичийого абичий adj:m:v_zna:&pron:ind
-абичиєму абичий adj:m:v_mis:&pron:ind
-абичиїм абичий adj:m:v_mis:&pron:ind
-абичийому абичий adj:m:v_mis:&pron:ind
-абичия абичий adj:f:v_naz:&pron:ind
-абичиєї абичий adj:f:v_rod:&pron:ind
-абичиїй абичий adj:f:v_dav:&pron:ind
-абичию абичий adj:f:v_zna:&pron:ind
-абичиєю абичий adj:f:v_oru:&pron:ind
-абичиїй абичий adj:f:v_mis:&pron:ind
-абичийого абичий adj:n:v_rod:&pron:ind
-абичиєму абичий adj:n:v_dav:&pron:ind
-абичийому абичий adj:n:v_dav:&pron:ind
-абичиїм абичий adj:n:v_oru:&pron:ind
-абичиєму абичий adj:n:v_mis:&pron:ind
-абичийому абичий adj:n:v_mis:&pron:ind
-абичиї абичий adj:p:v_naz:&pron:ind
-абичиїх абичий adj:p:v_rod:&pron:ind
-абичиїм абичий adj:p:v_dav:&pron:ind
-абичиї абичий adj:p:v_zna:&pron:ind
-абичиїх абичий adj:p:v_zna:&pron:ind
-абичиїми абичий adj:p:v_oru:&pron:ind
-абичиїх абичий adj:p:v_mis:&pron:ind
+абичий абичий adj:m:v_naz:pron:ind
+абичийого абичий adj:m:v_rod:pron:ind
+абичиєму абичий adj:m:v_dav:pron:ind
+абичийому абичий adj:m:v_dav:pron:ind
+абичий абичий adj:m:v_zna:pron:ind
+абичийого абичий adj:m:v_zna:pron:ind
+абичиєму абичий adj:m:v_mis:pron:ind
+абичиїм абичий adj:m:v_mis:pron:ind
+абичийому абичий adj:m:v_mis:pron:ind
+абичия абичий adj:f:v_naz:pron:ind
+абичиєї абичий adj:f:v_rod:pron:ind
+абичиїй абичий adj:f:v_dav:pron:ind
+абичию абичий adj:f:v_zna:pron:ind
+абичиєю абичий adj:f:v_oru:pron:ind
+абичиїй абичий adj:f:v_mis:pron:ind
+абичийого абичий adj:n:v_rod:pron:ind
+абичиєму абичий adj:n:v_dav:pron:ind
+абичийому абичий adj:n:v_dav:pron:ind
+абичиїм абичий adj:n:v_oru:pron:ind
+абичиєму абичий adj:n:v_mis:pron:ind
+абичийому абичий adj:n:v_mis:pron:ind
+абичиї абичий adj:p:v_naz:pron:ind
+абичиїх абичий adj:p:v_rod:pron:ind
+абичиїм абичий adj:p:v_dav:pron:ind
+абичиї абичий adj:p:v_zna:pron:ind
+абичиїх абичий adj:p:v_zna:pron:ind
+абичиїми абичий adj:p:v_oru:pron:ind
+абичиїх абичий adj:p:v_mis:pron:ind
 '''.trim()	
 
 	@Test
@@ -787,8 +838,8 @@ def expectedNvNumr = """
 
     @Test
     void testTagOrder() {
-        List<String> lines = ["ладен ладний adj:m:v_naz:short:&predic"]
-        assertEquals('ладен ладний adj:m:v_naz:short:&predic', join(expand.process_input(lines)))
+        List<String> lines = ["ладен ладний adj:m:v_naz:short:predic"]
+        assertEquals('ладен ладний adj:m:v_naz:short:predic', join(expand.process_input(lines)))
     }
     
 //	def strilyatyBad =

@@ -328,7 +328,7 @@ task caseGovernmentDict(dependsOn: processResources) {
             def rvLines = new File("$srcDir/$srcFile")
                 .readLines('UTF-8')
                 .findAll{
-                    (it =~ ' /(adj|n[0-4]|vr?[1-9])| (prep|adv|verb|noninfl:&predic)' || it.contains("+cs=")) && it.contains(' rv_')
+                    (it =~ ' /(adj|n[0-4]|vr?[1-9])| (prep|adv|verb|noninfl:predic)' || it.contains("+cs=")) && it.contains(' rv_')
                 }.collect{
                     it.split('\n').each {
                         assert it.replace(' rv-най', '') ==~ /.* # rv_(inf|rod|dav|zna|oru|mis)(:rv_(inf|rod|dav|zna|oru|mis))*(\s+#.*)?/

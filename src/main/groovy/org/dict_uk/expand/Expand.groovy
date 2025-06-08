@@ -391,7 +391,7 @@ class Expand {
 	}
 	
 	private static final Pattern perf_imperf_pattern = ~ ":(im)?perf"
-	private static final Pattern and_adjp_pattern = ~ /:&&?adjp(:pasv|:actv|:perf|:imperf)+/
+	private static final Pattern and_adjp_pattern = ~ /:adjp(:pasv|:actv|:perf|:imperf)+/
 
 	@CompileStatic
 	List<DicEntry> post_expand(List<DicEntry> lines, String flags) {
@@ -674,7 +674,7 @@ class Expand {
 						continue
 				}
 
-				if( flags.contains(":&pron") && ! (line.lemma in ["мій", "твій", "наш", "ваш"]) ) {
+				if( flags.contains(":pron") && ! (line.lemma in ["мій", "твій", "наш", "ваш"]) ) {
 					line.setTagStr( line.tagStr.replace("/v_kly", "") )
 				}
 
@@ -1102,9 +1102,6 @@ class Expand {
 				line.tagStr = line.tagStr.replace(removeTag, "")
 			}
 		}
-        if( line.tagStr.contains("&&") ) {
-            line.tagStr = line.tagStr.replace("&&", "&")
-        }
 
 		return line
 	}
@@ -1121,7 +1118,7 @@ class Expand {
 
 
 	private static final Pattern imperf_move_pattern = ~/(verb(?::rev)?)(.*)(:(im)?perf)/
-	private static final Pattern reorder_comp_with_adjp = ~/^(adj:.:v_...(?::ranim|:rinanim)?)(.*)(:compb)(.*)/
+	private static final Pattern reorder_comp_with_adjp = ~/^(adj:.:v_...(?::ranim|:rinanim)?(?::long)?(?::adjp:....:(?:im)?perf)?)(.*)(:compb)(.*)/
 	private static final Pattern any_anim = ~/:([iu]n)?anim/
 
 	@CompileStatic
@@ -1154,7 +1151,7 @@ class Expand {
 				if( anim_matcher.find() ) {
 					line.tagStr = anim_matcher.replaceFirst("").replace("noun", "noun" + anim_matcher.group(0))
 				}
-                else if( ! line.tagStr.contains("&pron") ) {
+                else if( ! line.tagStr.contains("pron") ) {
                     line.tagStr = line.tagStr.replace("noun:", "noun:inanim:")
                 }
 			}
@@ -1164,7 +1161,7 @@ class Expand {
 			}
 			else
 			if( line.tagStr.startsWith("adj") || line.tagStr.startsWith("numr") ) {
-				if( line.tagStr.contains(":&&adjp") && line.tagStr.contains(":comp") ) {
+				if( line.tagStr.contains(":adjp") && line.tagStr.contains(":comp") ) {
 					line.tagStr = reorder_comp_with_adjp.matcher(line.tagStr).replaceFirst('$1$3$2$4')
 				}
 
@@ -1185,13 +1182,13 @@ class Expand {
 	}
 	
 	private static final List<String> tagsOrdered = [
-	            ":&numr",
+	            ":numr",
 //				":v-u",
                 ":abbr",
 				":prop",
 				":geo", ":fname", ":lname", ":pname",
                 ":up19", ":up92", ":short", ":long",
-                ":&insert", ":&predic",
+                ":insert", ":predic",
 				":bad", ":slang", ":rare", ":arch", ":vulg", ":obsc", ":subst", ":coll", ":alt",
 				":xp1", ":xp2", ":xp3", ":xp4",
 			]
@@ -1208,8 +1205,8 @@ class Expand {
 		if( line.startsWith(" +cs") ) {
 			String word
 
-            if( extra_tags.contains(":&numr") ) {
-                extra_tags = extra_tags.replace(':&numr', '')
+            if( extra_tags.contains(":numr") ) {
+                extra_tags = extra_tags.replace(':numr', '')
             }
 
 			if( line.contains(" +cs=") ) {
@@ -1233,7 +1230,7 @@ class Expand {
 				word = main_word[0..<-2] + "іший"
             }
             
-			if( extra_tags.contains("&adjp") ) {
+			if( extra_tags.contains("adjp") ) {
 				extra_tags = and_adjp_pattern.matcher(extra_tags).replaceFirst('')
 			}
 
@@ -1320,7 +1317,7 @@ class Expand {
 		List<DicEntry> forms = []
 		String origWord = word
 
-		String newExtraTags = extraTags.replace(':&insert', '')
+		String newExtraTags = extraTags.replace(':insert', '')
 		if( word.endsWith('ш') ) {
 			newExtraTags += ":short"
 		}
@@ -1336,7 +1333,7 @@ class Expand {
 			}
 		}
 
-		newExtraTags = newExtraTags.replace(':&predic', '')
+		newExtraTags = newExtraTags.replace(':predic', '')
         if( ! word.startsWith("й") ) {
             forms += composeComparAdv("що" + word, "adv:comps" + newExtraTags)
             forms += composeComparAdv("як" + word, "adv:comps" + newExtraTags)

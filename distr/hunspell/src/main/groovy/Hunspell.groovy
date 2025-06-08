@@ -541,7 +541,7 @@ static boolean hasInanimVkly(line, propName) {
 
 static boolean spellWord(String line) {
 	return ! ( line =~ NONSPELL_TAG_LIST ) \
-		|| line =~ /&insert:short/ \
+		|| line =~ /insert:short/ \
 		|| line =~ /adj:m:v_(naz|zna).*:short/ \
 		|| line =~ /^((що(як)?|як)?най)?(більш|менш|скоріш|перш) /
 }

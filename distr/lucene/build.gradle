@@ -132,7 +132,7 @@ task stopwords () {
 				return
 
 			if( (tags =~ /part|conj|prep/ && ! (tags =~ /:rare|:pers/)) \
-	           || (tags =~ /&pron/ && ! (tags =~ /:rare/)) \
+	           || (tags =~ /pron/ && ! (tags =~ /:rare/)) \
 	           || (lemma in ['бути','могти','можна'] ) ) {
 
 				if( ! (word in stopWords) ) {

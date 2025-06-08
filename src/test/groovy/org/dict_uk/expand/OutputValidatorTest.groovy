@@ -76,13 +76,13 @@ public class OutputValidatorTest {
 бачити verb:imperf:inf
   бач verb:imperf:impr:2
   бачмо verb:imperf:impr:1
-  бачте verb:imperf:impr:2:&insert
-  бачу verb:imperf:pres:s:1:&insert
-  бачиш verb:imperf:pres:s:2:&insert
+  бачте verb:imperf:impr:2:insert
+  бачу verb:imperf:pres:s:1:insert
+  бачиш verb:imperf:pres:s:2:insert
   бачить verb:imperf:pres:s:3
   бачимо verb:imperf:pres:p:1
   бачим verb:imperf:pres:p:1:subst
-  бачите verb:imperf:pres:p:2:&insert
+  бачите verb:imperf:pres:p:2:insert
   бачать verb:imperf:pres:p:3
   бачитиму verb:imperf:futr:1
   бачитимеш verb:imperf:futr:2

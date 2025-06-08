@@ -14,7 +14,7 @@ class OutputValidator {
 	static Logger log = LoggerFactory.getLogger(OutputValidator.class);
 	
 	static final Pattern WORD_RE = Pattern.compile("'?[а-яіїєґА-ЯІЇЄҐ][а-яіїєґА-ЯІЇЄҐ']*(-[а-яіїєґА-ЯІЇЄҐ']*)*|[А-ЯІЇЄҐ][А-ЯІЇЄҐ-]+|[а-яіїєґА-ЯІЇЄҐ][а-яіїєґ]*\\.(-[а-яіїєґ]+\\.)?|[А-ЯІЇЄҐ]+\\.")
-	static final Pattern POS_RE = Pattern.compile("(noun:([iu]n)?anim:|noun:.*:&pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|intj|conj:|onomat|foreign|noninfl|number).*")
+	static final Pattern POS_RE = Pattern.compile("(noun:([iu]n)?anim:|noun:.*:pron|verb(:rev)?:(im)?perf:|advp:(im)?perf|adj:[mfnp]:|adv|numr:|prep|part|intj|conj:|onomat|foreign|noninfl|number).*")
 
 	final List<String> ALLOWED_TAGS = getClass().getResource("tagset.txt").readLines()
 
@@ -139,8 +139,8 @@ class OutputValidator {
 				}
 			}
 
-			if( ( line.contains(" noun") && ! line.contains("&pron") )
-			        || ( line.contains(" adj") && line.contains("&pron") ) ) {
+			if( ( line.contains(" noun") && ! line.contains("pron") )
+			        || ( line.contains(" adj") && line.contains("pron") ) ) {
 				def parts = line.trim().split(" ")
 				def tags = parts[1].split(":")
 
@@ -193,7 +193,7 @@ class OutputValidator {
 
 			if( missingVSet == ["v_kly"] ) {
                 if (line.contains(":lname") 
-			        || (line.contains(" adj") && line.contains("&pron")) )
+			        || (line.contains(" adj") && line.contains("pron")) )
 				return nonFatalErrorCount
 
                 if (line.contains(":abbr"))

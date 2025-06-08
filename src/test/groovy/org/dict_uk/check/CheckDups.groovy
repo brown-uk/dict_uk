@@ -20,7 +20,7 @@ def lines = files.collect { File f ->
                 .replaceAll(/( \/[a-z0-9]+)(\s+|$)/, '$1...')
                 .replaceAll(/\.[^<.: ]+/, '...')
                 .replaceAll(/\s*:coll/, '')
-                .replaceAll(/:&adjp:(actv|pasv)(:(imperf|perf))+/, '')
+                .replaceAll(/:adjp:(actv|pasv)(:(imperf|perf))+/, '')
             }
             .collect { line ->
                 line = "${line}${extraTag}"

@@ -6,12 +6,12 @@
 висер /n20.p
 висрати /v1.isNo :perf                   # rv_zna:rv_oru:rv_dav
 висратися /vr2 :perf
-відтраханий /adj :&adjp:pasv:perf
+відтраханий /adj :adjp:pasv:perf
 відтрахати /v2.isNo :perf                                      # rv_zna:rv_oru:rv_dav
 відхєрачити /v1 :perf                       # rv_zna:rv_oru
 всиратися /vr2.cf.advp :imperf
 всирачки adv
-всраний /adj :&adjp:pasv:perf:coll
+всраний /adj :adjp:pasv:perf:coll
 всратий /adj
 всратися /vr1 :perf:v-u
 вхерачити /v1 :perf                       # rv_zna:rv_oru:rv_dav
@@ -41,7 +41,7 @@
 дохіріща adv
 дохріна adv
 дохуліард /n20.a.p
-дрочений /adj :&adjp:pasv:imperf
+дрочений /adj :adjp:pasv:imperf
 дрочер /n20.a.p.<
 дрочібєльний /adj
 дрочка /n10
@@ -57,11 +57,11 @@
 залупа /n10.p1
 засирати /v2.cf.advp :imperf               # rv_zna:rv_oru:rv_dav
 засранець /n22.a.p.< :coll
-засраний /adj :&adjp:pasv:perf:coll
+засраний /adj :adjp:pasv:perf:coll
 засраність /n30
 засранка /n10.p2.ko.< :coll
 засрати /v1.isNo :perf                     # rv_zna:rv_oru:rv_dav
-затраханий /adj :&adjp:pasv:perf
+затраханий /adj :adjp:pasv:perf
 затраханість /n30
 затрахати /v2.isNo :perf                      # rv_zna:rv_oru
 захерачити /v1 :perf                       # rv_zna:rv_oru:rv_dav
@@ -83,23 +83,23 @@
 нахріна adv
 недобдіти /v1 :perf
 недотрах /n20.p
-недотраханий /adj :&adjp:pasv:perf
+недотраханий /adj :adjp:pasv:perf
 недотраханість /n30
 недотрахати /v2.isNo :perf                                     # rv_zna:rv_oru
 недотрахатися /vr2 :perf
-нєхер noninfl:&predic
-нєхєр noninfl:&predic
-ніхера noun:inanim:n:v_rod:&pron:neg:&predic  # lim
+нєхер noninfl:predic
+нєхєр noninfl:predic
+ніхера noun:inanim:n:v_rod:pron:neg:predic  # lim
 ніхєра adv
 ніхєрашечки intj
 ніхєровий /adj.adv
 обдристанець /n22.a.p.<
 обдристаний /adj
 обдрочитися /vr1.it1 :perf                                    # rv_oru
-обісраний /adj :&adjp:pasv:perf
+обісраний /adj :adjp:pasv:perf
 обісрати /v1.isNo :perf                     # rv_zna:rv_oru:rv_dav
 обісратися /vr1 :perf
-обісцяний /adj :&adjp:pasv:perf
+обісцяний /adj :adjp:pasv:perf
 обісцяти /v1.isNo :perf                     # rv_zna:rv_dav
 обісцятися /vr1 :perf
 обсирання /n2n
@@ -142,18 +142,18 @@
 потрахати /v2 :perf                                            # rv_zna:rv_oru:rv_dav
 потрахатися /vr2 :perf
 похерити /v1.it0.is0 :perf                   # rv_zna:rv_oru:rv_dav
-похрін adv:&predic
+похрін adv:predic
 поц /n20.a.p.<
 пропагандон /n20.a.p.<
 просирання /n2n
 просирати /v2.cf.advp :imperf                # rv_zna:rv_oru:rv_dav
-просраний /adj :&adjp:pasv:perf
+просраний /adj :adjp:pasv:perf
 просрати /v1.isNo :perf                      # rv_zna:rv_oru:rv_dav
 просратися /vr1 :perf
 прошмандовка /n10.p2.<
 пукан /n20.a.p
 розпідарасити /v1 :perf                              # rv_zna
-розхерачений /adj :&adjp:pasv:perf
+розхерачений /adj :adjp:pasv:perf
 розхерачити /v1.is0 :perf                    # rv_zna:rv_oru:rv_dav
 рукожоп /n20.a.p.<
 рукожопий /adj
@@ -189,7 +189,7 @@
 сцяки /np2
 сцяний /adj
 трахабельний /adj
-траханий /adj :&adjp:pasv:imperf
+траханий /adj :adjp:pasv:imperf
 трахання /n2n
 трахати /v2.cf.advp :imperf                                   # rv_zna:rv_oru:rv_dav
 трахатися /vr2.cf.advp :imperf                                # rv_oru
@@ -207,7 +207,7 @@
 херота /n10
 хєр /n20.a.ke                       # lim
 хєрак intj
-хєрак noninfl:&predic
+хєрак noninfl:predic
 хєрам хєр noun:p:v_dav
 хєранути /v1 :perf                          # rv_zna:rv_oru:rv_dav
 хєрасє intj

@@ -82,7 +82,7 @@ files.each { File file ->
                         extraTag = ":geo"
                     }
                     else if( semTag =~ /:deictic/ ) {
-                        extraTag = ":&pron"
+                        extraTag = ":pron"
                     }
                     else {
                         extraTag = ":inanim"

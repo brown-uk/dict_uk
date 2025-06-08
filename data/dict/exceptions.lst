@@ -626,7 +626,7 @@
 перче перець noun:m:v_kly
 плюгавче плюгавець noun:anim:m:v_kly
 
-нічого-нічого noun:inanim:n:v_rod:&pron:neg:&predic
+нічого-нічого noun:inanim:n:v_rod:pron:neg:predic
 
 півроку-рік noun:p:v_naz/v_zna                  # lim
 
@@ -644,9 +644,9 @@
 плахіт плахта noun:p:v_rod
 плахот плахта noun:p:v_rod
 
-мій мій adj:m:v_kly:&pron:pos
-моя мій adj:f:v_kly:&pron:pos
-моє мій adj:n:v_kly:&pron:pos
+мій мій adj:m:v_kly:pron:pos
+моя мій adj:f:v_kly:pron:pos
+моє мій adj:n:v_kly:pron:pos
 
 царька царьок noun:anim:m:v_rod/v_zna:bad
 царькові царьок noun:anim:m:v_dav:bad
@@ -696,9 +696,9 @@
 ушима ухо noun:p:v_oru:arch
 ушах ухо noun:p:v_mis:arch
 
-твойого твій adj:m:v_rod:&pron:pos:arch
-твойого твій adj:m:v_zna:ranim:&pron:pos:arch
-твойого твій adj:n:v_rod:&pron:pos:arch
+твойого твій adj:m:v_rod:pron:pos:arch
+твойого твій adj:m:v_zna:ranim:pron:pos:arch
+твойого твій adj:n:v_rod:pron:pos:arch
 
 
 # хабар /n20.a.ke.p4.@ :up92
@@ -743,17 +743,17 @@
 чудесами чудо noun:p:v_oru
 чудесах чудо noun:p:v_mis
 
-те-се те-се noun:inanim:n:v_naz/v_zna:&pron:dem
+те-се те-се noun:inanim:n:v_naz/v_zna:pron:dem
 
-оний оний adj:m:v_naz/v_zna:&pron:dem:arch       # lim
-оній оний adj:f:v_dav/v_mis:&pron:dem:arch
-оного оний adj:m:v_rod/v_zna:ranim:&pron:dem:arch
-оного оний adj:n:v_rod:&pron:dem:arch
-онеє оний adj:n:v_naz/v_zn2:&pron:dem:long:arch
-оних оний adj:p:v_rod/v_zn1/v_mis:&pron:dem:arch
-онім оний adj:m:v_mis:&pron:dem:arch
-онім оний adj:n:v_mis:&pron:dem:arch
-оної оний adj:f:v_rod:&pron:dem:arch
+оний оний adj:m:v_naz/v_zna:pron:dem:arch       # lim
+оній оний adj:f:v_dav/v_mis:pron:dem:arch
+оного оний adj:m:v_rod/v_zna:ranim:pron:dem:arch
+оного оний adj:n:v_rod:pron:dem:arch
+онеє оний adj:n:v_naz/v_zn2:pron:dem:long:arch
+оних оний adj:p:v_rod/v_zn1/v_mis:pron:dem:arch
+онім оний adj:m:v_mis:pron:dem:arch
+онім оний adj:n:v_mis:pron:dem:arch
+оної оний adj:f:v_rod:pron:dem:arch
 
 ласочка ласочка noun:f:v_naz                # lim
 
@@ -761,9 +761,9 @@
 бельмес бельмес noun:m:v_naz               # lim
 бельмеса бельмес noun:m:v_rod              # lim
 
-тії той adj:f:v_rod:&pron:dem:long
-усії увесь adj:f:v_rod:&pron:gen:long
-всії увесь adj:f:v_rod:&pron:gen:long
+тії той adj:f:v_rod:pron:dem:long
+усії увесь adj:f:v_rod:pron:gen:long
+всії увесь adj:f:v_rod:pron:gen:long
 
 язицех язик noun:p:v_mis
 
@@ -855,13 +855,13 @@
 будуть бути verb:futr:p:3:imperf
 є бути verb:pres:p:1/2/3:imperf
 є бути verb:pres:s:1/2/3:imperf
-єсть бути verb:pres:p:1/2/3:imperf:&predic:rare
-єсть бути verb:pres:s:1/2/3:imperf:&predic:rare
+єсть бути verb:pres:p:1/2/3:imperf:predic:rare
+єсть бути verb:pres:s:1/2/3:imperf:predic:rare
 єси бути verb:pres:s:2:imperf:rare
 суть бути verb:pres:p:3:imperf:rare
 був бути verb:past:m:imperf
 була бути verb:past:f:imperf
-було бути verb:past:n:imperf:&insert
+було бути verb:past:n:imperf:insert
 були бути verb:past:p:imperf
 будь бути verb:impr:s:2:imperf
 будьмо бути verb:impr:p:1:imperf
@@ -939,7 +939,7 @@
 могти могти verb:inf:imperf             # rv_inf:rv_zna
 можу могти verb:pres:s:1:imperf
 можеш могти verb:pres:s:2:imperf
-може могти verb:pres:s:3:imperf:&insert
+може могти verb:pres:s:3:imperf:insert
 можем могти verb:pres:p:1:imperf:subst
 можемо могти verb:pres:p:1:imperf
 можете могти verb:pres:p:2:imperf
@@ -1172,35 +1172,35 @@
 безвинен безвинний adj:m:v_naz/v_zn2/v_kly:short
 благословен благословенний adj:m:v_naz/v_zn2/v_kly:short
 блажен блаженний adj:m:v_naz/v_zn2/v_kly:short
-варт вартий adj:m:v_naz:short:&predic
-винен винний adj:m:v_naz:short:&predic
+варт вартий adj:m:v_naz:short:predic
+винен винний adj:m:v_naz:short:predic
 вістен вістний adj:m:v_naz:short:rare
 владен владний adj:m:v_naz:short
-властен властний adj:m:v_naz:short:&predic:arch         # rv_inf
-годен годний adj:m:v_naz:short:&predic
+властен властний adj:m:v_naz:short:predic:arch         # rv_inf
+годен годний adj:m:v_naz:short:predic
 дивен дивний adj:m:v_naz/v_zn2/v_kly:short
-достоїн достойний adj:m:v_naz:short:&predic
+достоїн достойний adj:m:v_naz:short:predic
 дрібен дрібний adj:m:v_naz/v_zn2/v_kly:short
-дуж дужий adj:m:v_naz:short:&predic
+дуж дужий adj:m:v_naz:short:predic
 єхиден єхидний adj:m:v_naz/v_zn2/v_kly:short
-жаден жадний adj:m:v_naz/v_zn2:short:rare:&pron:neg
+жаден жадний adj:m:v_naz/v_zn2:short:rare:pron:neg
 жив живий adj:m:v_naz:short
-жоден жодний adj:m:v_naz/v_zn2:short:&pron:neg
+жоден жодний adj:m:v_naz/v_zn2:short:pron:neg
 звістен звісний adj:m:v_naz:short
-згоден згодний adj:m:v_naz:short:&predic
-здатен здатний adj:m:v_naz:short:&predic
+згоден згодний adj:m:v_naz:short:predic
+здатен здатний adj:m:v_naz:short:predic
 здоров здоровий adj:m:v_naz/v_zn2:short
 зелен зелений adj:m:v_naz/v_zn2/v_kly:short
 золот золотий adj:m:v_naz/v_zn2/v_kly:short
-кожен кожний adj:m:v_naz/v_zn2:short:&pron:gen
-кожен кожний noun:anim:m:v_naz:short:&pron:gen
+кожен кожний adj:m:v_naz/v_zn2:short:pron:gen
+кожен кожний noun:anim:m:v_naz:short:pron:gen
 красен красний adj:m:v_naz/v_zn2/v_kly:short
-ладен ладний adj:m:v_naz:short:&predic
+ладен ладний adj:m:v_naz:short:predic
 ласкав ласкавий adj:m:v_naz/v_zn2/v_kly:short
 милостив милостивий adj:m:v_naz/v_zn2/v_kly:short
 молод молодий adj:m:v_naz/v_zn2/v_kly:short
-невинен невинний adj:m:v_naz:short:&predic
-негоден негідний adj:m:v_naz:short:&predic
+невинен невинний adj:m:v_naz:short:predic
+негоден негідний adj:m:v_naz:short:predic
 негоден негідний adj:m:v_zn2/v_kly:short
 незгоден незгодний adj:m:v_naz/v_zn2:short
 неладен неладний adj:m:v_naz:short
@@ -1208,23 +1208,23 @@
 ненавиден ненавидний adj:m:v_naz/v_zn2/v_kly:short
 ненавистен ненависний adj:m:v_naz/v_zn2/v_kly:short
 непевен непевний adj:m:v_naz/v_zn2/v_kly:short
-неспроможен неспроможний adj:m:v_naz:short:&predic
+неспроможен неспроможний adj:m:v_naz:short:predic
 певен певний adj:m:v_naz/v_zn2/v_kly:short
 повен повний adj:m:v_naz/v_zn2/v_kly:short
-повинен повинний adj:m:v_naz:short:&predic
-потрібен потрібний adj:m:v_naz:short:&predic
+повинен повинний adj:m:v_naz:short:predic
+потрібен потрібний adj:m:v_naz:short:predic
 прекрасен прекрасний adj:m:v_naz/v_zn2/v_kly:short
-привинен привинний adj:m:v_naz:short:arch:&predic
-придатен придатний adj:m:v_naz:short:&predic
-провинен провинний adj:m:v_naz:short:&predic
-рад радий adj:m:v_naz:short:&predic
+привинен привинний adj:m:v_naz:short:arch:predic
+придатен придатний adj:m:v_naz:short:predic
+провинен провинний adj:m:v_naz:short:predic
+рад радий adj:m:v_naz:short:predic
 рівен рівний adj:m:v_naz/v_zn2/v_kly:short
 самітен самітний adj:m:v_naz/v_zn2/v_kly:short
 свят святий adj:m:v_naz/v_zn2/v_kly:short
 силен сильний adj:m:v_naz/v_zn2/v_kly:short
 славен славний adj:m:v_naz/v_zn2/v_kly:short
 смутен смутний adj:m:v_naz/v_zn2/v_kly:short
-спроможен спроможний adj:m:v_naz:short:&predic
+спроможен спроможний adj:m:v_naz:short:predic
 срібен срібний adj:m:v_naz/v_zn2/v_kly:short
 чорен чорний adj:m:v_naz/v_zn2/v_kly:short
 ясен ясний adj:m:v_naz/v_zn2/v_kly:short
