@@ -979,6 +979,8 @@
 вснути /v1 :perf
 всотеро adv
 вспівати /v2.cf.advp :imperf
+вспіти /v2 :perf
+вспіть вспіти verb:perf:inf:short
 вспокоїти /v1.it0.is0 :perf:v-u                   # rv_zna:rv_oru
 вспокоїтися /vr1.it0 :perf:v-u
 вспомин /n20.p
@@ -1809,6 +1811,9 @@
 зновика adv
 зобабіч adv
 зобиджати /v2.cf.advp.shrt :imperf                             # rv_zna:rv_oru
+зобиджений /adj :adjp:pasv:perf
+зобидити /v1 :perf                                            # rv_zna:rv_oru:rv_dav
+зобидитися /vr1 :perf                                         # rv_oru
 зобидчиця /n10.p1.<
 зобижати /v2.cf.advp :imperf                   # rv_zna:rv_oru
 зобувати /v1.cf.advp :imperf
@@ -4628,6 +4633,8 @@
 призро adv
 прикажчицький /adj
 приказ /n20.p
+приключатися /vr2 :imperf p=4
+приключитися /vr1.it1 :perf p=4
 прикмітити /v1 :perf                   # rv_zna:rv_oru
 прикмітний /adj
 приложити /v1.is0.it1 :perf                                   # rv_zna:rv_oru:rv_dav
