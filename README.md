@@ -126,9 +126,9 @@ Copyright (c) 2024 Andriy Rysin (arysin@gmail.com), Vasyl Starko, BrUK team
 
 Просимо посилатися на вебверсію ВЕСУМу так:
 
-Рисін А., Старко В. Великий електронний словник української мови (ВЕСУМ). Вебверсія 6.5.2. 2005-2024. URL: https://vesum.nlp.net.ua/
+Рисін А., Старко В. Великий електронний словник української мови (ВЕСУМ). Вебверсія 6.6.9. 2005-2025. URL: https://vesum.nlp.net.ua/
 
-Rysin, A., Starko, V. Large Electronic Dictionary of Ukrainian (VESUM). Version 6.5.2. 2005-2024. Available at: https://vesum.nlp.net.ua/
+Rysin, A., Starko, V. Large Electronic Dictionary of Ukrainian (VESUM). Version 6.6.9. 2005-2025. Available at: https://vesum.nlp.net.ua/
 
 ### Derivative Projects ###
 
