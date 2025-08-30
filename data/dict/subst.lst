@@ -265,6 +265,7 @@
 моделів модель noun:p:v_rod                 #> моделей
 МОЗУ МОЗ noun:n:v_rod/v_dav:prop:abbr   # lim    #> МОЗу
 молебня молебень noun:m:v_rod
+молитв молитва noun:p:v_rod
 молодняка молодняк noun:m:v_rod             #> молодняку
 моніторинга моніторинг noun:m:v_rod
 мудили мудило noun:p:v_naz:anim
