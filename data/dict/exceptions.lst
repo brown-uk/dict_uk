@@ -757,6 +757,11 @@
 онім оний adj:n:v_mis:pron:dem:arch
 оної оний adj:f:v_rod:pron:dem:arch
 
+сего сей adj:m:v_zna:ranim:pron:dem:arch
+сего сей adj:m:v_rod:pron:dem:arch
+него він noun:unanim:m:v_rod:pron:pers:3:arch
+него він noun:unanim:m:v_zna:pron:pers:3:arch
+
 ласочка ласочка noun:f:v_naz                # lim
 
 # давні форми
