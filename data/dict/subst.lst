@@ -151,20 +151,29 @@
 забезпечіть забезпечити verb:perf:impr:p:2
 завісів завіса noun:inanim:p:v_rod
 завісіть завісити verb:perf:impr:p:2
+завіта завіт noun:inanim:m:v_rod
 заводе заводити verb:imperf:pres:s:3
+заїдів заїда noun:p:v_rod
+зайдів зайда noun:anim:p:v_rod
 законопроекта законопроект noun:m:v_rod:up92
 законопроєкта законопроєкт noun:m:v_rod:up19
 закруте закрутити verb:perf:futr:s:3
 залліть залляти verb:perf:impr:p:2
 заморе заморити verb:perf:futr:s:3
+заникла заникнути verb:perf:past:f
+заникли заникнути verb:perf:past:p
+заникло заникнути verb:perf:past:n
+заникн заникнути verb:perf:past:m
 зануріть занурити verb:perf:impr:p:2
 заняттів заняття noun:inanim:p:v_rod
 заплющіть заплющити verb:perf:impr:p:2
+заповіта заповіт noun:m:v_zna
 заростів зарість noun:p:v_rod
 засвідчіть засвідчити verb:perf:impr:p:2    #> засвідчте
 засиліть засилити verb:perf:impr:p:2
 засиплять засипати verb:perf:futr:p:3        # :xp2
 заскочіть заскочити verb:perf:impr:p:2
+засновка засновок noun:m:v_rod
 заспокійся заспокоїтися verb:rev:perf:impr:s:2
 заставе заставити verb:perf:futr:s:3
 застреліть застрелити verb:perf:impr:p:2

@@ -90,6 +90,7 @@
 ацтой noninfl
 ачівка /n10.p2
 ачівмент /n20.p
+бабашка /n10.<m                     # батько
 баблішко /n2n
 бабло /n2n
 бавовнятко /n2n
@@ -795,18 +796,24 @@
 заказуха /n10.p1
 заказушність /n30
 заканселити /v1.is0 :perf                     # rv_zna:rv_oru:rv_dav
+закачатися /vr2 :perf
 закенселити /v1.is0 :perf                     # rv_zna:rv_oru:rv_dav
 закидон /n20.p
 закимарити /v1 :perf
+закладчик /n20.a.p.<
 заковбасити /v1 :imperf p=3                   # rv_zna
 заколупати /v2 :perf                          # rv_zna:rv_oru:rv_dav
 законтачений /adj :adjp:pasv:perf
 законтачити /v1.is0 :perf
+закос /n20.p
 закусон /n20.p
 закусь /n32.p
 залабати /v2 :perf                           # rv_zna:rv_oru:rv_dav
 залайкати /v2 :perf                          # rv_zna:rv_dav
 залахати /v2 :perf
+заліпання /n2n
+заліпати /v2.cf.advp :imperf
+заліпнути /v3 :perf
 залогінений /adj :adjp:pasv:perf
 залогінення /n2n
 залогінитися /vr1 :perf                      # rv_oru
@@ -839,7 +846,7 @@
 запаролений /adj :adjp:pasv:perf
 запоребрик /n20.a
 запоребриковий /adj
-запостити /v1.it0 :perf              # :xp1 запо́стити                         # rv_zna:rv_oru:rv_dav
+запостити /v1.it0.it1 :perf              # :xp1 запо́стити                         # rv_zna:rv_oru:rv_dav
 заправдівець /n22.a.p.<
 заруба /n10.p1
 засандалити /v1.it0 :perf                      # rv_zna:rv_dav
@@ -847,6 +854,7 @@
 заселфитися /vr1 :perf
 засідайлівка /n10.p2
 засідалівка /n10.p2
+затестити /v1 :perf
 затрьохсотити /v1.is0 :perf                      # rv_zna:rv_oru
 затрьохсотитися /vr1 :perf
 затусити /v1 :perf
@@ -868,7 +876,9 @@
 зачепер /n20.a.p.ke.<
 зачепінг /n20
 зачотний /adj.adv
+зачьот adv
 зачьотний /adj
+зачьотно adv
 зашибісь intj|adv
 зашквар /n20.p.ke
 зашкварений /adj :adjp:pasv:perf
@@ -877,6 +887,7 @@
 зашортити /v1.is0 :perf                                        # rv_zna
 заюзаний /adj :adjp:pasv:perf
 заюзаність /n30
+заюзати /v2 :perf                   # rv_zna
 зблатувати /v1 :perf
 звєзда /n10.p1.<
 звізда /n10.p1.<
@@ -2215,6 +2226,7 @@
 теплак /n20.a.p
 терорашист /n20.a.p.<
 тест-драйв /n20.p
+тестити /v1.cf :imperf              # rv_zna:rv_oru
 тєжко adv
 тєлєга /n10
 тєлік /n20.a.p

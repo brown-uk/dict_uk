@@ -410,6 +410,9 @@
 задеклярувати /v1.is0 :perf                     # rv_zna:rv_oru
 задусити /v1.is0.it1 :perf                      # rv_zna:rv_oru
 заиржавілий /adj
+заїржавілий /adj :adjp:actv:perf
+заїржавлений /adj :adjp:pasv:perf
+заїржати /v1 :perf                              # rv_oru
 заля /n10.p1
 заплянований /adj
 заплянувати /v1.is0 :perf                       # rv_zna:rv_dav
@@ -483,6 +486,8 @@
 ісляндець /n22.a.p.<
 їйбо intj:insert
 їйбогу intj:insert
+їржа /n10
+їржати /v1.cf :imperf                           # rv_oru
 йнакше adv
 кавчук /n20
 кавчуковий /adj

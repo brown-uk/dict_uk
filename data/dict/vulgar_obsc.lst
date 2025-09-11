@@ -128,7 +128,11 @@
 задохуя adv
 заєбати /v1 :perf                           # rv_zna:rv_oru
 заєбатий /adj
+заєбатися /vr1 :perf
+заєбато adv
+заєбашити /v1 :perf                         # rv_zna:rv_oru:rv_dav
 заєбісь adv|intj
+заєбок adv:predic
 заєбошити /v1 :perf                         # rv_zna:rv_dav:rv_oru
 заєбцовий /adj
 заїбати /v1 :perf                           # rv_zna:rv_oru
