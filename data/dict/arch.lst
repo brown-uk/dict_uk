@@ -448,6 +448,7 @@
 вбивник /n20.a.p.<
 вбийник /n20.a.p.<
 вбиття /n2n
+вбігатися /vr2.cf.advp :imperf:v-u               # вбіга́тися
 вбійний /adj :v-u
 вбійник /n20.a.p.<
 вбійництво /n2n
@@ -457,6 +458,7 @@
 вбійчо adv:v-u
 вбільшки adv
 вбожати /v2.cf.advp :imperf
+вборонений /adj :adjp:pasv:perf
 вбоятися /vr1 :perf                                 # rv_rod
 вбратий /adj :adjp:pasv:perf
 ввечір adv
@@ -466,7 +468,9 @@
 вгаватися /vr2.cf.advp :imperf
 вгадництво /n2n
 вгайка /n10
+вгашення /n2n
 вгідний /adj :v-u
+вгладжений /adj :adjp:pasv:perf
 вглибати /v2.cf.advp :imperf
 вгодний /adj :v-u
 вгодно adv:v-u
@@ -1377,7 +1381,14 @@
 єго він noun:unanim:m:v_rod/v_zna:pron:pers:3
 єгомость /n32.<
 єгомосць /n32.<
+єдамашка /n10.p2.<
+єдамашковий /adj
+єдамашок /n22
 єден /numr
+єдинак /n20.a.p.<
+єдиначка /n10.p2.<
+єдиниця /n10.p1
+єднус /n20.a.p.<                                # = дукач
 єї вона noun:unanim:f:v_rod/v_zna:pron:pers:3
 єк єк adv:pron:int:rel|part|conj:subord
 єловега /n10.<>
@@ -1448,6 +1459,7 @@
 завалистість /n30
 завбачний /adj.adv
 заввиш adv
+завволити /v1 :perf
 завгорити /v1 :perf                         # rv_dav
 завгорювати /v1.cf.advp :imperf             # rv_dav
 завдруге adv
@@ -1475,7 +1487,9 @@
 заворити /v1.is0 :perf
 завсігда adv
 завтрє /n2adj1
+завчора adv
 завширки adv
+завширш adv
 загарливий /adj
 загибіль /n31
 загибнути /v1 :perf
@@ -1505,6 +1519,9 @@
 зажмагом adv
 зазвідати /v2 :perf
 заздалегоди adv
+заздрівання /n2n
+заздрівати /v2.cf.advp :imperf                  # rv_zna
+заздріти /v1 :perf                              # rv_zna
 заздрування /n2n
 зазив /n20.p
 зазлісно adv
@@ -1518,12 +1535,20 @@
 заінтересовання /n2n
 заінтересування /n2n
 заістнувати /v1 :perf
+займити /v1 :perf                                 # rv_zna:rv_oru
+займитися /vr1 :perf                              # rv_oru
 закантика /n10.p1.ko.< :+m
 заки conj:subord
 заким conj:subord
 закови /np3                             # кайдани
+заковів закови noun:p:v_rod:ns
 законнороджений /adj
 законодатний /adj
+закоски /np2
+закотвити /v1 :perf                             # rv_zna:rv_oru
+закотвичений /adj :adjp:pasv:perf
+закотвичити /v1 :perf                           # rv_zna:rv_oru
+закотвичитися /vr1 :perf                        # rv_oru
 закрасувати /v1.is0 :perf
 закритка /n10.p2
 закульбачений /adj
@@ -1534,6 +1559,12 @@
 заледви adv
 заледво adv
 заложити /v1.is0.it1 :perf                  # rv_zna:rv_oru:rv_dav
+заложний /adj
+заломаний /adj :adjp:pasv:perf
+заломати /v2.isNo :perf                         # rv_zna:rv_oru
+заломатися /vr2 :perf                           # rv_oru
+заломувати /v1.cf.advp :imperf                  # rv_zna:rv_oru
+заломуватися /vr2 :perf                         # rv_oru
 залубниці /np1
 залубні /np3
 зальопаний /adj
@@ -1948,6 +1979,8 @@
 інтересант /n20.a.p.<
 інтересантка /n10.p2.<
 інфлуенца /n10
+ірвати /v1.cf :imperf                           # rv_zna:rv_oru
+ірвонути /v1 :perf                              # rv_zna:rv_oru
 ірій /n20
 ірійський /adj
 ісповідниця /n10.p1.<
@@ -5355,11 +5388,13 @@
 тяжар /n20.a.p.ke
 убивник /n20.a.p.<
 убивниця /n10.p1.ko.<
+убігатися /vr2.cf.advp :imperf:v-u               # убіга́тися
 убієнний /adj :adjp:pasv:perf
 убійний /adj :v-u
 убійник /n20.a.p.<
 убійниця /n10.p1.<
 убільшки adv
+уборонений /adj :adjp:pasv:perf
 убоятися /vr1 :perf                 # rv_rod
 увечорі adv:v-u
 увидіти /v1 :perf                                   # rv_zna
@@ -5369,7 +5404,9 @@
 увіччю adv:v-u
 увіщати /v2.cf.advp :imperf                   # rv_zna:rv_oru
 угамівний /adj
+угашення /n2n
 угідний /adj :v-u
+угладжений /adj :adjp:pasv:perf
 углибінь adv
 угурний /adj :v-u
 удання /n2n

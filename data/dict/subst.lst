@@ -158,6 +158,8 @@
 законопроекта законопроект noun:m:v_rod:up92
 законопроєкта законопроєкт noun:m:v_rod:up19
 закруте закрутити verb:perf:futr:s:3
+залишуть залишити verb:perf:futr:p:3            #> залишать
+залишуться залишитися verb:rev:perf:futr:p:3    #> залишаться
 залліть залляти verb:perf:impr:p:2
 заморе заморити verb:perf:futr:s:3
 заникла заникнути verb:perf:past:f

@@ -735,7 +735,14 @@
 забабахати /v2.isNo :perf          # rv_zna:rv_oru:rv_dav
 забакланити /v1 :perf
 забалдіти /v2 :perf
+забамбулений /adj :adjp:pasv:perf
+забамбулити /v1.is0 :perf                       # rv_zna:rv_oru:rv_dav
+забамбулювання /n2n
+забамбулювати /v1.cf.advp :imperf               # rv_zna:rv_oru:rv_dav
+забамбурений /adj :adjp:pasv:perf
+забамбурити /v1.is0 :perf                       # rv_zna:rv_oru:rv_dav
 забанений /adj :adjp:pasv:perf
+забанення /n2n
 забанити /v1.is0.it0.it1b :perf               # rv_zna
 забашляний /adj :adjp:pasv:perf
 забашляти /v2.isNo :perf                      # rv_zna:rv_dav
@@ -787,6 +794,7 @@
 задротство /n2n
 задротський /adj
 заєдинник /n20.a.p.<
+зажигати /v2.cf.advp :imperf                    # rv_oru
 зажилити /v1 :perf                      # rv_zna:rv_oru:rv_dav
 зажраний /adj
 зажратися /vr2 :perf
@@ -795,6 +803,7 @@
 заінстаграмити /v1 :perf                            # rv_zna
 заказуха /n10.p1
 заказушність /n30
+заканати /v2 :perf
 заканселити /v1.is0 :perf                     # rv_zna:rv_oru:rv_dav
 закачатися /vr2 :perf
 закенселити /v1.is0 :perf                     # rv_zna:rv_oru:rv_dav
@@ -806,6 +815,7 @@
 законтачений /adj :adjp:pasv:perf
 законтачити /v1.is0 :perf
 закос /n20.p
+закосплеїти /v1 :perf                           # rv_zna
 закусон /n20.p
 закусь /n32.p
 залабати /v2 :perf                           # rv_zna:rv_oru:rv_dav
@@ -1093,6 +1103,7 @@
 короче noninfl
 корочє noninfl
 корочч noninfl
+косплеїти /v1.cf.advp :imperf                   # rv_zna
 косячити /v1.cf :imperf
 коуч /n20.a.p.<
 коучинг /n20
