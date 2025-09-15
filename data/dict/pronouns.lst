@@ -1024,6 +1024,9 @@
 передо передо prep:arch         # rv_oru:rv_zna
 предо предо prep:arch           # rv_oru:rv_zna
 во во prep:arch                 # rv_zna:rv_mis
+з-від prep                      # rv_rod
+з-навпроти prep                 # rv_rod
+з-назовні prep                  # rv_rod
 
 # частки і сполучники
 # Однолітерні слова

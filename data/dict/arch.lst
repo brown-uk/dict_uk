@@ -1510,11 +1510,15 @@
 задбаний /adj :adjp:pasv:perf
 задержуватися /vr1.cf.advp :imperf
 задлятися /vr2 :imperf
+задовжений /adj :adjp:pasv:perf
+задовженість /n30
+задовження /n2n
 задовольнений /adj
 задовольнення /n2n
 задоволяти /v2.cf.advp :imperf                   # rv_zna:rv_oru
 задоволятися /vr2.cf.advp :imperf                   # rv_oru
 заєдно adv
+зажитковий /adj
 зажиттьовий /adj
 зажмагом adv
 зазвідати /v2 :perf
@@ -1597,6 +1601,7 @@
 запевно adv
 запізвати /v1 :perf                   # rv_zna:rv_oru
 запізватися /vr1 :perf
+запізнити /v1 :perf                     # rv_zna:rv_oru
 запіти /v2 :perf                                # rv_oru
 запіяти /v2 :perf
 заплинути /v1 :perf
