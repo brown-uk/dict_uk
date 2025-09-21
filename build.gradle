@@ -29,9 +29,9 @@ repositories {
 //}
 
 dependencies {
-    implementation group: 'org.apache.groovy', name: 'groovy', version: '4.0.+'
-    //implementation group: 'org.apache.groovy', name: 'groovy-swing', version: '4.0.+'
-    implementation group: 'org.apache.groovy', name: 'groovy-cli-picocli', version: '4.0.+'
+    implementation group: 'org.apache.groovy', name: 'groovy', version: groovyVersion
+    //implementation group: 'org.apache.groovy', name: 'groovy-swing', version: groovyVersion
+    implementation group: 'org.apache.groovy', name: 'groovy-cli-picocli', version: groovyVersion
     implementation 'info.picocli:picocli:4.6.1'
 
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'

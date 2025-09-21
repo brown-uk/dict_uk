@@ -335,9 +335,9 @@ class DictSorter {
 	@CompileStatic
 	List<DicEntry> sortEntries(Collection<DicEntry> allEntries) {
 		List<DicEntry> list = allEntries.parallelStream()
-			.map { (Map.Entry)new MapEntry(line_key(it), it) }
+			.map { (Map.Entry<String,DicEntry>)new MapEntry(line_key(it), it) }
 			.sorted(Map.Entry.comparingByKey())
-			.map { Map.Entry it -> it.getValue() }
+			.map { Map.Entry<String,DicEntry> it -> it.getValue() }
 			.distinct()
 			.collect(Collectors.toList())
 
@@ -348,9 +348,9 @@ class DictSorter {
 	static List<String> quickUkSort(Collection<String> collection) {
 
 		List<String> list = collection.parallelStream()
-			.map { (Map.Entry)new MapEntry(UkDictComparator.getSortKey(it), it) }
+			.map { (Map.Entry<String,String>)new MapEntry(UkDictComparator.getSortKey(it), it) }
 			.sorted(Map.Entry.comparingByKey())
-			.map { Map.Entry it -> it.getValue() }
+			.map { Map.Entry<String,String> it -> it.getValue() }
 			.collect(Collectors.toList()) 
 			
 		return list
