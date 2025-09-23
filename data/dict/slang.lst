@@ -765,7 +765,10 @@
 забукати /v2.isNo :perf                                     # rv_zna:rv_dav
 забулдига /n10.p1.<m
 забулити /v1.is0 :perf                                      # rv_zna
+завалісь adv:predic
 завзятюще adv
+завірусити /v1 :perf
+завірусований /adj :adjp:pasv:perf
 завтик /n20.p
 завтиканий /adj :adjp:pasv:perf
 завтикати /v2.isNo :perf
@@ -800,7 +803,11 @@
 зажратися /vr2 :perf
 зазвіздитися /vr1 :perf
 зазіпувати /v1.is0 :perf                      # rv_zna:rv_oru:rv_dav
+заігнорити /v1 :perf                        # rv_zna
+заігнорований /adj :adjp:pasv:perf
 заінстаграмити /v1 :perf                            # rv_zna
+заінстаграмлений /adj :adjp:pasv:perf
+заінсталити /v1.is0 :perf                   # rv_zna
 заказуха /n10.p1
 заказушність /n30
 заканати /v2 :perf
@@ -821,6 +828,7 @@
 залабати /v2 :perf                           # rv_zna:rv_oru:rv_dav
 залайкати /v2 :perf                          # rv_zna:rv_dav
 залахати /v2 :perf
+залізка /n10                        # залізниця; залізяка
 заліпання /n2n
 заліпати /v2.cf.advp :imperf
 заліпнути /v3 :perf
@@ -834,6 +842,7 @@
 замануха /n10.p1
 замаханий /adj :adjp:pasv:perf
 замахатися /vr2 :perf
+замєс /n20.p
 замовняк /n20.a.p
 заможновладець /n22.a.p.<
 замютити /v1 :perf                                  # rv_zna:rv_oru:rv_dav
@@ -858,12 +867,18 @@
 запоребриковий /adj
 запостити /v1.it0.it1 :perf              # :xp1 запо́стити                         # rv_zna:rv_oru:rv_dav
 заправдівець /n22.a.p.<
+зареганий /adj :adjp:pasv:perf
+зарегати /v2 :perf                          # rv_zna:rv_oru
+зарегатися /vr2 :perf                       # rv_oru
 заруба /n10.p1
 засандалити /v1.it0 :perf                      # rv_zna:rv_dav
 засейвити /v1 :perf
 заселфитися /vr1 :perf
 засідайлівка /n10.p2
 засідалівка /n10.p2
+застопити /v1 :perf                         # rv_zna:rv_oru
+застопитися /vr1 :perf                      # rv_oru
+застоплений /adj :adjp:pasv:perf
 затестити /v1 :perf
 затрьохсотити /v1.is0 :perf                      # rv_zna:rv_oru
 затрьохсотитися /vr1 :perf
@@ -875,26 +890,55 @@
 зафігарити /v1.it0 :perf                      # rv_zna:rv_oru:rv_dav
 зафігачити /v1.it0 :perf                       # rv_zna:rv_oru:rv_dav
 зафолловити /v1.it1 :perf                      # rv_zna
+зафолловлений /adj :adjp:pasv:perf
 зафоловити /v1.it1 :perf                       # rv_zna
+зафоловитися /vr1 :perf
+зафоловлений /adj :adjp:pasv:perf
+зафоловлення /n2n
+зафоловлювати /v1.cf.advp :imperf           # rv_zna
+зафотати /v2 :perf                          # rv_zna:rv_oru
+зафотатися /vr2 :perf
+зафотити /v1 :perf                          # rv_zna
+зафоткатися /vr2 :perf
+зафотобомбити /v1 :perf                     # rv_zna
+зафотобомблений /adj :adjp:pasv:perf
 зафотошопити /v1.is0 :perf                               # rv_zna:rv_oru:rv_dav
 зафотошоплений /adj :adjp:pasv:perf
 зафренджений /adj :adjp:pasv:perf
+зафрендження /n2n
 зафрендити /v1.is0.it0 :perf                   # rv_zna
+зафрендитися /vr1 :perf
 захавати /v2 :perf                             # rv_zna
 захейтити /v1.it0 :perf                        # rv_zna
+захостити /v1 :perf                         # rv_zna
+захоститися /vr1 :perf
 зачекінитися /vr1 :perf
 зачепер /n20.a.p.ke.<
 зачепінг /n20
+зачілити /v1 :perf
 зачотний /adj.adv
 зачьот adv
 зачьотний /adj
 зачьотно adv
+зашеймлений /adj :adjp:pasv:perf
+зашейрити /v1 :perf                         # rv_zna:rv_dav
+зашерити /v1 :perf                          # rv_zna:rv_dav
+зашибати /v2.cf.advp :imperf                # rv_zna:rv_oru
+зашибатися /vr2.cf.advp :imperf
 зашибісь intj|adv
 зашквар /n20.p.ke
 зашкварений /adj :adjp:pasv:perf
+зашквареність /n30
 зашкварний /adj.adv
 зашкварювати /v1.cf.advp :imperf
+зашкварюватися /vr1.cf.advp :imperf         # rv_oru
+зашмонати /v2 :perf                         # rv_zna
 зашортити /v1.is0 :perf                                        # rv_zna
+зашпілити /v1.is0 :perf                     # rv_zna:rv_oru
+заштиняти /v2 :perf                         # rv_oru
+зашугано adv
+зашухерити /v1 :perf
+зашухеритися /vr1 :perf
 заюзаний /adj :adjp:pasv:perf
 заюзаність /n30
 заюзати /v2 :perf                   # rv_zna

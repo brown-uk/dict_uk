@@ -61,6 +61,8 @@
 засраність /n30
 засранка /n10.p2.ko.< :coll
 засрати /v1.isNo :perf                     # rv_zna:rv_oru:rv_dav
+засратий /adj :adjp:pasv:perf
+засратися /vr1 :perf                            # rv_oru
 затраханий /adj :adjp:pasv:perf
 затраханість /n30
 затрахати /v2.isNo :perf                      # rv_zna:rv_oru

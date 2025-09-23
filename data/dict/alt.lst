@@ -410,6 +410,7 @@
 задеклярувати /v1.is0 :perf                     # rv_zna:rv_oru
 задусити /v1.is0.it1 :perf                      # rv_zna:rv_oru
 заиржавілий /adj
+заіменник /n20.a.p
 заїржавілий /adj :adjp:actv:perf
 заїржавлений /adj :adjp:pasv:perf
 заїржати /v1 :perf                              # rv_oru

@@ -161,6 +161,7 @@
 залишуть залишити verb:perf:futr:p:3            #> залишать
 залишуться залишитися verb:rev:perf:futr:p:3    #> залишаться
 залліть залляти verb:perf:impr:p:2
+замасі замах noun:m:v_mis
 заморе заморити verb:perf:futr:s:3
 заникла заникнути verb:perf:past:f
 заникли заникнути verb:perf:past:p
@@ -174,9 +175,19 @@
 засвідчіть засвідчити verb:perf:impr:p:2    #> засвідчте
 засиліть засилити verb:perf:impr:p:2
 засиплять засипати verb:perf:futr:p:3        # :xp2
+заскоче заскочити verb:perf:futr:s:3
 заскочіть заскочити verb:perf:impr:p:2
 засновка засновок noun:m:v_rod
 заспокійся заспокоїтися verb:rev:perf:impr:s:2
+заспокійте заспокоїти verb:perf:impr:p:2
+заспокійтеся заспокоїтися verb:rev:perf:impr:p:2
+засре засрати verb:perf:futr:s:3:vulg
+засрем засрати verb:perf:futr:p:1:vulg
+засремо засрати verb:perf:futr:p:1:vulg
+засри засрати verb:perf:impr:s:2:vulg
+засру засрати verb:perf:futr:s:1:vulg
+засруть засрати verb:perf:futr:p:3:vulg
+засруться засратися verb:rev:perf:futr:p:3:vulg
 заставе заставити verb:perf:futr:s:3
 застреліть застрелити verb:perf:impr:p:2
 заходе заходити verb:imperf:pres:s:3                    # :xp1
@@ -185,6 +196,7 @@
 зачепе зачепити verb:perf:futr:s:3
 зачине зачинити verb:perf:futr:s:3
 зачистіть зачистити verb:perf:impr:p:2
+зашквара зашквар noun:inanim:m:v_rod:slang
 зашморга зашморг noun:m:v_rod
 збільшіть збільшити verb:perf:impr:p:2      #> збільште
 зваре зварити verb:perf:futr:s:3
