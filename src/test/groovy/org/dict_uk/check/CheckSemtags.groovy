@@ -43,86 +43,101 @@ files.each { File file ->
     
     def tagBase = file.name.replace('.csv', '')
     
-        def prevLine = ""
-        lines.eachWithIndex { line, idx ->
-            if( idx == 0 ) it = line.replace('\ufeff', '')
-            line = line.trim().replaceFirst(/\s*#.*/, '')
-            if( prevLine == line ) {
-                println "Duplicate line: $line"
-            }
-            prevLine = line
-                
-            def parts = line.split(',')
-            def word = parts[0]
-            def semTag = parts[1]
-            def extraTag = parts.size() > 2 ? parts[2].trim() : ""
-            
-            if( extraTag && ! extraTag.startsWith(":") ) {
-                System.err.println "Extra tag does not start with : for \"$line\""
-            }
-            
-            def lemmaKey = "$word $tagBase".toString()
+    def prevLine = ""
+    lines.eachWithIndex { line, idx ->
+        if( idx == 0 ) it = line.replace('\ufeff', '')
+        line = line.trim().replaceFirst(/\s*#.*/, '')
+        if( prevLine == line ) {
+            println "Duplicate line: $line"
+        }
+        prevLine = line
 
-//            if( word.endsWith(".") ) lemmaKey += ":nv" 
+        try {            
+            line = parseLine(line, tagBase, lemmaKeys, lemmas)
+        }
+        catch(e) {
+            System.err.println("FAiled to parse line:\n\t$line")
+            e.printStackTrace()
+        }
+    }
+}
 
-            def matches = lemmaKeys[lemmaKey]
-            
-            if( ! extraTag ) {
-                if( tagBase == "noun" ) {
-                    if( semTag =~ /:hum:group|:org/ ) {
-                        extraTag = ":anim|:inanim"
-                    }
-                    else if( semTag =~ /:hum|:supernat/ ) {
-                        extraTag = ":anim"
-                    }
-                    else if( semTag =~ /:animal/ ) {
-                        extraTag = ":anim|:unanim"
-                    }
-                    else if( semTag.contains(':loc') && Character.isUpperCase(word.charAt(0)) ) {
-                        extraTag = ":geo"
-                    }
-                    else if( semTag =~ /:deictic/ ) {
-                        extraTag = ":pron"
-                    }
-                    else {
-                        extraTag = ":inanim"
-                    }
-                }
-            }
-            
-            if( extraTag ) {
-                matches = matches.findAll{ it =~ extraTag }
-            }
+private String parseLine(String line, String tagBase, Map lemmaKeys, Map lemmas) {
+    def parts = line.split(',')
+    def word = parts[0]
+    def semTag = parts[1]
+    def extraTag = parts.size() > 2 ? parts[2].trim() : ""
 
-            if( ! matches ) {
-                println "Unmatched $line ($lemmaKey)"
-                println "    lemma matches: " + lemmas[word]
+    if( extraTag && ! extraTag.startsWith(":") ) {
+        System.err.println "Extra tag does not start with : for \"$line\""
+    }
+
+    if( tagBase == "verb" && word =~ /[чш]и(сь)?$/ ) {
+        tagBase = "advp"
+    }
+    
+    def lemmaKey = "$word $tagBase".toString()
+
+    //            if( word.endsWith(".") ) lemmaKey += ":nv"
+
+    def matches = lemmaKeys[lemmaKey]
+
+    if( ! extraTag ) {
+        if( tagBase == "noun" ) {
+            if( semTag =~ /:hum:group|:org/ ) {
+                extraTag = ":anim|:inanim"
+            }
+            else if( semTag =~ /:hum|:supernat/ ) {
+                extraTag = ":anim"
+            }
+            else if( semTag =~ /:animal/ ) {
+                extraTag = ":anim|:unanim"
+            }
+            else if( semTag.contains(':loc') && Character.isUpperCase(word.charAt(0)) ) {
+                extraTag = ":geo"
+            }
+            else if( semTag =~ /:deictic/ ) {
+                extraTag = ":pron"
             }
             else {
-                if( semTag.contains('hum') && Character.isUpperCase(word.charAt(0)) ) {
-                    if( matches.find { it =~ /^noun:anim:m.*name/ } ) {
-                        matches.removeAll { it =~ /^noun:anim:f.*name/ }
-                    }
-                    if( matches.find { it =~ /^noun:anim:.*fname/ } ) {
-                        matches.removeAll { it =~ /^noun:anim:.*[pl]name/ }
-                    }
-                    if( matches.find { it =~ /^noun:anim:.*lname/ } ) {
-                        matches.removeAll { it =~ /^noun:anim:.*pname/ }
-                    }
-                }
-                else if( semTag.contains('loc') && Character.isUpperCase(word.charAt(0)) ) {
-                    if( matches.find { it =~ /geo:.*xp1/ } ) {
-                        matches.removeAll { it =~ /geo:.*xp2/ }
-                    }
-                }
-
-                if( matches.size() > 1 ) {
-                    def matches2 = matches.collect{ it.replaceAll(/:nv|:up..|:alt|:imperf|:perf/, '') }.unique()
-                    
-                    if( matches2.size() > 1 ) {
-                        println "Multiple match for $line: " + matches
-                    }
-                }
-            } 
+                extraTag = ":inanim"
+            }
         }
+    }
+
+    if( extraTag ) {
+        matches = matches.findAll{ it =~ extraTag }
+    }
+
+    if( ! matches ) {
+        println "Unmatched $line ($lemmaKey)"
+        println "    lemma matches: " + lemmas[word]
+    }
+    else {
+        if( semTag.contains('hum') && Character.isUpperCase(word.charAt(0)) ) {
+            if( matches.find { it =~ /^noun:anim:m.*name/ } ) {
+                matches.removeAll { it =~ /^noun:anim:f.*name/ }
+            }
+            if( matches.find { it =~ /^noun:anim:.*fname/ } ) {
+                matches.removeAll { it =~ /^noun:anim:.*[pl]name/ }
+            }
+            if( matches.find { it =~ /^noun:anim:.*lname/ } ) {
+                matches.removeAll { it =~ /^noun:anim:.*pname/ }
+            }
+        }
+        else if( semTag.contains('loc') && Character.isUpperCase(word.charAt(0)) ) {
+            if( matches.find { it =~ /geo:.*xp1/ } ) {
+                matches.removeAll { it =~ /geo:.*xp2/ }
+            }
+        }
+
+        if( matches.size() > 1 ) {
+            def matches2 = matches.collect{ it.replaceAll(/:nv|:up..|:alt|:imperf|:perf/, '') }.unique()
+
+            if( matches2.size() > 1 ) {
+                println "Multiple match for $line: " + matches
+            }
+        }
+    }
+    return line
 }
