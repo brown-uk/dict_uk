@@ -819,6 +819,8 @@
 закладчик /n20.a.p.<
 заковбасити /v1 :imperf p=3                   # rv_zna
 заколупати /v2 :perf                          # rv_zna:rv_oru:rv_dav
+законектити /v1.is0 :perf                   # rv_zna:rv_oru
+законектитися /vr1 :perf                    # rv_oru
 законтачений /adj :adjp:pasv:perf
 законтачити /v1.is0 :perf
 закос /n20.p
@@ -920,6 +922,7 @@
 зачьот adv
 зачьотний /adj
 зачьотно adv
+зашарити /v1.is0 :perf                      # rv_zna:rv_oru
 зашеймлений /adj :adjp:pasv:perf
 зашейрити /v1 :perf                         # rv_zna:rv_dav
 зашерити /v1 :perf                          # rv_zna:rv_dav
@@ -2579,7 +2582,7 @@
 хелпанути /v1 :perf                                          # rv_dav:rv_oru
 хендмейд /n20
 хенд-мейд /n20
-хепі foreign:noninfl
+хепі noninfl:foreign
 хеппенінг /n20.p
 хеппі noninfl
 хеппіенд /n20.p

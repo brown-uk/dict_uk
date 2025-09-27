@@ -1552,7 +1552,6 @@
 загріти /v2.isTo :perf                   # rv_zna:rv_oru
 загрітися /vr2 :perf                   # rv_oru
 загуба /n10                               # :xp2 загибель
-загугнити /v1 :perf                             # rv_oru
 заґарантований /adj :adjp:pasv:perf
 заґварантувати /v1.is0 :perf                    # rv_zna:rv_dav:rv_oru
 задармо adv:predic
@@ -1570,6 +1569,7 @@
 задосадувати /v1 :perf
 задуріти /v2 :perf
 заєдно adv
+заєчка /n10.<>
 зажитковий /adj
 зажиттьовий /adj
 зажмагом adv
@@ -1588,6 +1588,7 @@
 зазнимкований /adj :adjp:pasv:perf
 зазнимкувати /v1.is0 :perf                      # rv_zna:rv_oru:rv_dav
 зазнимкуватися /vr1 :perf       # rv_oru
+зазябати /v2 :perf
 заіменований /adj :adjp:pasv:perf
 заіменувати /v1.is0 :perf                       # rv_zna:rv_oru
 заімпровізований /adj :adjp:pasv:perf
@@ -1604,6 +1605,7 @@
 заінтересовання /n2n
 заінтересування /n2n
 заістнувати /v1 :perf
+заїдня /n10
 займити /v1 :perf                                 # rv_zna:rv_oru
 займитися /vr1 :perf                              # rv_oru
 закантика /n10.p1.ko.< :+m
@@ -1611,15 +1613,27 @@
 заким conj:subord
 закови /np3                             # кайдани
 заковів закови noun:p:v_rod:ns
+закоєний /adj :adjp:pasv:perf
+закоїти /v1.is0 :perf                       # rv_zna
+заколупити /v1 :perf
+заколупнути /v1 :perf
+законитися /vr1 :perf
 законнороджений /adj
 законодатний /adj
+законюватися /vr1.cf.advp :imperf
+законятися /vr2.cf.advp :imperf
+закопотіти /v1 :perf
 закоски /np2
 закотвити /v1 :perf                             # rv_zna:rv_oru
 закотвичений /adj :adjp:pasv:perf
 закотвичити /v1 :perf                           # rv_zna:rv_oru
 закотвичитися /vr1 :perf                        # rv_oru
+закоштувати /v1 :perf                    # закоштува́ти
 закрасувати /v1.is0 :perf
 закритка /n10.p2
+закукурічений /adj :adjp:pasv:perf
+закукурічення /n2n
+закукурічитися /vr1 :perf
 закульбачений /adj
 закупництво /n2n
 закупницький /adj
@@ -1640,6 +1654,8 @@
 замандюритися /vr1 :perf p=3
 заманячити /v1 :perf
 заманячіти /v2 :perf
+замарний /adj
+замарно adv
 заматерілий /adj
 заматерілість /n30
 заметільниця /n10.p1
@@ -1668,7 +1684,9 @@
 занеже adv
 занехати /v2.isNo :perf                         # rv_zna
 заник /n20                              # занепад
+занівечити /v1.is0 :perf                    # rv_zna:rv_oru
 заніколитися /vr1 :perf p=3
+занімити /v1 :perf                          # rv_zna
 занятися verb:rev:inf:perf          # lim
 заорка /n10
 заосмотрений /adj :adjp:pasv:perf
@@ -1692,6 +1710,12 @@
 запевно adv
 заперестання /n2n
 заперестати /v3 :perf
+запикнутися /vr1 :perf
+запикуватися /vr1 :perf
+запинити /v1 :perf                          # rv_zna:rv_oru
+запинитися /vr1 :perf                       # rv_oru
+запиняти /v2.cf.advp :imperf                # rv_zna:rv_oru
+запинятися /vr2.cf.advp :imperf             # rv_zna:rv_oru
 запізвати /v1 :perf                   # rv_zna:rv_oru
 запізватися /vr1 :perf
 запізнити /v1 :perf                     # rv_zna:rv_oru
@@ -1699,6 +1723,8 @@
 запіяти /v2 :perf
 заплинути /v1 :perf
 заплід /n21
+заплоджувати /v1.cf.advp :imperf            # rv_zna
+заплоджуватися /vr1.cf.advp :imperf
 запобачливий /adj
 заповіджений /adj
 заповідження /n2n
@@ -1708,18 +1734,26 @@
 заповістити /v1 :perf                           # rv_zna:rv_dav
 заповіститися /vr1 :perf
 запозирливий /adj
+запозирливо adv
+запоїти /v1 :perf                           # rv_zna
 запомин /n20
+запоручитися /vr1 :perf
+запоряджувати /v1.cf.advp :imperf           # rv_zna
 запосідати /v2.cf.advp :imperf
 запосісти /v3 :perf
 запостити /v1.it1 :perf             # :xp2
+запоювати /v1.cf.advp :imperf               # rv_zna
 запражка /n10
 запродання /n2n
 запросний /adj
 запрохання /n2n.p1
+запукати /v2 :perf
 запусканка /n10.p2
 запусний /adj
 запусто adv
 зап'яток /n22.a.u.p
+зарана adv
+зараненько adv
 зарані adv
 зараній /adj
 зарання /n2n
@@ -1739,13 +1773,18 @@
 засатарити /v1 :perf
 засвітло adv
 заситарити /v1 :perf
+заситити /v1 :perf                          # rv_zna:rv_oru
 заслебезувати /v1 :perf
 засмучати /v2 :perf                   # rv_zna:rv_oru
 засмучатися /vr2 :perf                   # rv_oru
+заснічування /n2n
+заснічувати /v1.cf.advp :imperf             # rv_zna:rv_oru
+заснічуватися /vr1.cf.advp :imperf          # rv_zna:rv_oru
 засобок /n22
 засов /n20.a.u.p
 засовець /n22.a
 засохляний /adj
+заспіль adv
 заспорити /v1 :perf
 застав /n20
 застайка /n10.p2
@@ -1762,6 +1801,8 @@
 засяти /v2 :perf                                # rv_oru
 затанчити /v1 :perf
 затахлувати /v1 :perf
+затворити /v1 :perf                         # rv_zna
+затворитися /vr1 :perf
 затемно adv
 затемперувати /v1.is0 :perf
 затемрітися /vr2 :perf p=3
@@ -1777,6 +1818,7 @@
 заторкатися /vr2.cf.advp :imperf                    # rv_oru
 заторкнений /adj :adjp:pasv:perf
 заторкнення /n2n
+заторкотіти /v1 :perf
 заторкуваний /adj :adjp:pasv:imperf
 заторкування /n2n
 заторкувати /v1.cf.advp :imperf                 # rv_zna:rv_oru
@@ -1790,6 +1832,8 @@
 затраснутий /adj :adjp:pasv:perf
 затраснутися /vr1 :perf
 затривоження /n2n
+затрімати /v2 :perf                         # rv_zna:rv_oru
+затріматися /vr2 :perf                      # rv_oru
 затроєний /adj :adjp:pasv:perf
 затроїти /v1.is0 :perf                          # rv_zna:rv_oru
 затроїтися /vr1 :perf
@@ -1806,22 +1850,35 @@
 зафактований /adj :adjp:pasv:perf
 зафактувати /v1.is0 :perf                   # rv_zna:rv_oru
 зафрасований /adj :adjp:pasv:perf
+захакатися /vr2 :perf
 захапування /n2n
 захапувати /v1.cf.advp :imperf                  # rv_zna:rv_oru
 захаяти /v1 :perf                           # rv_zna
 захвабрувати /v1 :perf
+захватаний /adj :adjp:pasv:imperf
+захватати /v2 :perf
+захвататися /vr2 :perf
 захвощатися /vr2 :perf
+захихотатися /vr2 :perf
 захланник /n20.a.p.<
+захлипатися /vr2 :perf
 захлющитися /vr2 :perf p=3
+захмуритися /vr1 :perf
 захов /n20.p
 захожати /v2.cf.advp :imperf
+захожувати /v1.cf :imperf
+захожуватися /vr1.cf :imperf
+захолітатися /vr2 :perf
 захорілий /adj :adjp:actv:perf
 захоріти /v2 :perf
 захорування /n2n.p1
 захорувати /v1 :perf
 захорюваність /n30
 захорювання /n2n
+захрокати /v2 :perf                         # rv_oru
 захцянка /n10.p2
+зацепеніння /n2n
+зацепеніти /v2 :perf
 зацний /adj
 зацофаний /adj :adjp:pasv:perf
 зацофаність /n30
@@ -1832,6 +1889,7 @@
 зачім adv
 зачіпенька /n10
 зачувати /v2.cf :imperf
+зачуватися /vr2.cf :imperf
 зачудуваний /adj :adjp:pasv:imperf
 зашамотати /v1 :perf                            # rv_zna:rv_oru:rv_dav
 зашамотатися /vr2 :perf
@@ -1860,6 +1918,7 @@
 защіплювання /n2n
 защіплювати /v1.cf.advp :imperf                 # rv_zna:rv_oru
 защіплюватися /vr1.cf.advp :imperf              # rv_zna:rv_oru
+заюрити /v1 :perf
 заяринитися /vr1 :perf p=3
 заяць noun:anim:m:v_naz           # lim
 заячик /n20.a.p.<>
