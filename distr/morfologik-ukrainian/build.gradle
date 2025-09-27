@@ -236,7 +236,7 @@ task createReplacementDict(dependsOn: createOutRulesDir) {
     def allFiles = Arrays.asList(new File(srcDir).listFiles())
     def srcFiles = allFiles.findAll{ it.name =~ /(twisters|invalid|subst).*\.lst/ }
 
-    inputs.files srcFiles
+    inputs.files srcFiles + file("${inputDir}/derivats.txt")
     outputs.file outFile
 
     
@@ -255,7 +255,7 @@ task createSoftReplacementDict(dependsOn: createOutRulesDir) {
     def allFiles = Arrays.asList(new File(srcDir).listFiles())
     def srcFiles = allFiles.findAll{ it.name.endsWith('.lst') && ! (it.name =~ /(twisters|subst|invalid.*)\.lst/) }
 
-    inputs.files srcFiles
+    inputs.files srcFiles + file("${inputDir}/derivats.txt")
     outputs.file outFile
 
 
