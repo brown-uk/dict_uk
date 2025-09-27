@@ -1,7 +1,13 @@
-FROM ubuntu:20.04
+FROM ubuntu:24.04
 
 RUN apt update
-RUN apt install -y openjdk-11-jdk-headless
+RUN apt install -y openjdk-21-jdk-headless locales
+
 ADD . /src
 WORKDIR /src
-RUN ./gradlew expand
+
+RUN locale-gen uk_UA.UTF-8 && update-locale LANG=uk_UA.UTF-8
+# RUN locale -a
+# RUN LC_ALL=uk_UA.UTF-8 ls -al
+RUN mkdir -p out/stats
+RUN LC_ALL=uk_UA.UTF-8 ./gradlew expand
