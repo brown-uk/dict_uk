@@ -1471,12 +1471,19 @@
 забарва /n10
 забездурно adv
 забезпека /n10
+забендюгувати /v1 :perf
+забідити /v1 :perf
 забіжний /adj
 забірати /v2.cf :imperf                                     # rv_zna
+забликати /v2 :perf                             # rv_oru
+заболений /adj
+заборонитися /vr1 :perf
 заборчий /adj
 заборюкатися /vr1 :perf                   # rv_oru
 забратий /adj :adjp:pasv:perf
 забродчик /n20.a.p.<
+забузований /adj :adjp:pasv:perf
+забузувати /v1 :perf
 завалистий /adj
 завалистість /n30
 завбачний /adj.adv
@@ -1488,15 +1495,23 @@
 завершати /v2.cf.advp :imperf                       # rv_zna:rv_oru
 завидіти /v1 :perf                                            # rv_zna
 завидка adv
+зависимий /adj
+зависити /v1.cf :imperf
+зависливий /adj
+зависливо adv
 зависний /adj
 зависність /n30
+зависно adv
 зависть /n32
 завідатель /n20.a.p.<
 завідателька /n10.p2.<
+завідати /v2.cf :imperf                         # rv_oru
 завідомий /adj
 завідомлення /n2n.p1
 завізваний /adj :adjp:pasv:perf
 завізвати /v1.isNo :perf                        # rv_zna
+завіритися /vr1 :perf
+завістити /v1 :perf
 завішення /n2n
 завіщання /n2n
 завіщати /v2.cf.advp :imperf                    # rv_zna:rv_dav
@@ -1506,17 +1521,26 @@
 завіщувати /v1.cf.advp :imperf                  # rv_zna:rv_dav
 заводня /n10
 завойовання /n2n.p1
+завоняти /v2 :perf                              # rv_oru
+завонятися /vr2 :perf
 заворити /v1.is0 :perf
 завсігда adv
+завсюди adv
 завтрє /n2adj1
+завчас adv
 завчора adv
 завширки adv
 завширш adv
 загарливий /adj
+загарливість /n30
+загарливо adv
+загвоздити /v1 :perf                            # rv_zna:rv_oru
 загибіль /n31
-загибнути /v1 :perf
+загибнути /v3 :perf
 загика /n10.p1.ko.< :+m
 заглада /n10
+загніваний /adj :adjp:actv:perf
+загнівано adv
 заговір /n21
 заговірник /n20.a.p.<
 загоді adv
@@ -1524,15 +1548,18 @@
 загонити /v1 :imperf                   # rv_zna:rv_oru
 загорянин /n20.a.pyn.<
 заготовач /n20.a.p.<
+заграблений /adj :adjp:actv:perf
 загріти /v2.isTo :perf                   # rv_zna:rv_oru
 загрітися /vr2 :perf                   # rv_oru
 загуба /n10                               # :xp2 загибель
+загугнити /v1 :perf                             # rv_oru
 заґарантований /adj :adjp:pasv:perf
 заґварантувати /v1.is0 :perf                    # rv_zna:rv_dav:rv_oru
 задармо adv:predic
 задбаний /adj :adjp:pasv:perf
 задержуватися /vr1.cf.advp :imperf
 задлятися /vr2 :imperf
+заднитися /vr1 :perf p=3
 задовжений /adj :adjp:pasv:perf
 задовженість /n30
 задовження /n2n
@@ -1540,6 +1567,8 @@
 задовольнення /n2n
 задоволяти /v2.cf.advp :imperf                   # rv_zna:rv_oru
 задоволятися /vr2.cf.advp :imperf                   # rv_oru
+задосадувати /v1 :perf
+задуріти /v2 :perf
 заєдно adv
 зажитковий /adj
 зажиттьовий /adj
@@ -1549,7 +1578,9 @@
 заздрівання /n2n
 заздрівати /v2.cf.advp :imperf                  # rv_zna
 заздріти /v1 :perf                              # rv_zna
+заздростити /v1.cf :imperf                      # rv_dav
 заздрування /n2n
+заздрувати /v1.cf :imperf                       # rv_dav
 зазив /n20.p
 зазлісно adv
 зазлість /n30
