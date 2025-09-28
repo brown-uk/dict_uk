@@ -1413,6 +1413,7 @@
 єї вона noun:unanim:f:v_rod/v_zna:pron:pers:3
 єк єк adv:pron:int:rel|part|conj:subord
 єловега /n10.<>
+єм noninfl
 єму він noun:unanim:m:v_dav:pron:pers:3
 єрей /n20.a.p.<
 жадак /n20.a.p.<
@@ -4030,6 +4031,7 @@
 #оказатися /vr1 :perf
 #оказуватися /vr1.cf.advp :imperf
 окаїстий /adj
+окалічити /v1.is0 :perf                     # rv_zna:rv_oru
 окаменіти /v2 :perf
 окладкуватий /adj
 оклецькуватий /adj

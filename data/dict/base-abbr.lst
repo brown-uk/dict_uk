@@ -953,8 +953,8 @@
 мкФ noun:m:nv
 МКЧХ noun:m:nv:prop                         # Міжнародний комітет Червоного Хреста
 мл noun:m:nv
-млн numr:m/p:nv
-млрд numr:m/p:nv
+млн noun:m:nv:numr
+млрд noun:m:nv:numr
 мМ noun:m:nv                                # мілімоль
 мм noun:m:nv
 ММА noun:f:nv:np:prop                       # Міжнародна мінералогічна асоціація
@@ -1689,10 +1689,10 @@
 ТПУ noun:f:nv:prop                          # Трудова Партія України
 ТР noun:m:nv:np                             # технічний регламент
 ТРК noun:f:nv                               # телерадіокомпанія
-трлн numr:m/p:nv
+трлн noun:m:nv:numr
 тРНК noun:f:nv                              # транспортна РНК
-ТРО noun:f:nv:np                            # теооборона
-ТрО noun:f:nv:np                            # теооборона
+ТРО noun:f:nv:np                            # тероборона
+ТрО noun:f:nv:np                            # тероборона
 ТРЦ noun:m:nv                               # Торгово-розважальний центр
 ТСК noun:f:nv                               # Тимчасова слідча/спеціальна комісія
 ТСН noun:f:nv:np:prop                       # Телевізійна Служба Новин
