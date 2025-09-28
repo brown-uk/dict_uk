@@ -255,6 +255,8 @@ class Util {
 		def pos_stat = [:].withDefault { 0 }
 		def sub_pos_stat = [:].withDefault { [:] }
 		def letter_stat = [:].withDefault { 0 }
+        def non_std_stat = [:].withDefault { 0 }
+        def non_std_tags = ['abbr', 'alt', 'bad', 'arch', 'slang', 'vulg', 'obsc'] // 'subst', 'rare' - only forms, not lemmas
 		int cnt = 0
 		int cnt_std = 0
 
@@ -282,6 +284,12 @@ class Util {
 				for( sub_pos in stat_keys ) {
 					sub_stat(pos_tag, sub_pos, line, sub_pos_stat)
 				}
+                
+                for(non_std in non_std_tags) {
+                    if( tags.contains(non_std) ) {
+                        non_std_stat[non_std] += 1
+                    }
+                }
 			}
 			catch(Exception e) {
 				throw new Exception("Choked on " + line, e)
@@ -312,6 +320,10 @@ class Util {
 				}
 			}
 
+            stat_f.print("\nНестандартні леми:\n")
+            non_std_stat.each { k, v ->
+                stat_f.println("$k $v")
+            }
 			//			stat_f.print("\nЧастоти літер на початку слова\n")
 			//
 			//			def letter_map = letter_stat.sort { -it.value }

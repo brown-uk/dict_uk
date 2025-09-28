@@ -34,3 +34,12 @@ prep 227
 verb 48216
      imperf 21678
      perf 26538
+
+Нестандартні леми:
+abbr 2432
+bad 13485
+arch 8201
+slang 3569
+alt 1406
+obsc 761
+vulg 320
