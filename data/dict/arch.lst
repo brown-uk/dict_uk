@@ -1718,6 +1718,7 @@
 запинитися /vr1 :perf                       # rv_oru
 запиняти /v2.cf.advp :imperf                # rv_zna:rv_oru
 запинятися /vr2.cf.advp :imperf             # rv_zna:rv_oru
+запідпідьомкати /v2 :perf
 запізвати /v1 :perf                   # rv_zna:rv_oru
 запізватися /vr1 :perf
 запізнити /v1 :perf                     # rv_zna:rv_oru
@@ -4500,8 +4501,14 @@
 підофіцер /n20.a.p.ke.<
 підпалок /n22.a.p
 підпарубочий /n2adj1.p.<
+підпідьомкання /n2n
+підпідьомкати /v2.cf.advp :imperf
+підпідьомкнути /v1 :perf
 підплатити /v1 :perf
 підповня /n10
+підподьомкання /n2n
+підподьомкати /v2.cf.advp :imperf
+підподьомкнути /v1 :perf
 підпомагати /v2.cf.advp :imperf                   # rv_dav:rv_oru
 підпомогти /v1.is0 :perf                   # rv_dav:rv_oru
 підросток /n22.a.p.<

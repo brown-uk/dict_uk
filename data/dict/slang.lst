@@ -2197,7 +2197,7 @@
 стибрити /v1.is0 :perf                          # rv_zna
 стипуха /n10.p1
 стирити /v1.is0 :perf                           # rv_zna
-стібатися /vr2.cf :imperf                   # :xp2
+стібатися /vr2.cf /vr1 :imperf                   # :xp2
 стіпуха /n10
 столовик /n20.a.p.<
 стопарик /n20.a.p
