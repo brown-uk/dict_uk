@@ -856,7 +856,7 @@
 заначити /v1.is0 :perf                      # rv_zna
 заниканий /adj :adjp:pasv:perf
 заникати /v2.isNo :perf                   # :xp2 зани́кати    # rv_zna:rv_oru:rv_dav
-заникатися /vr1 :perf
+заникатися /vr2 :perf
 заничка /n10.p2
 заничкувати /v1.is0 :perf                      # rv_zna
 занориш /n20.a.p
@@ -1284,7 +1284,7 @@
 лоєр /n20.a.p.ke.<
 локалка /n10.p2
 лол noninfl
-ломанутися /vr1 :imperf
+ломанутися /vr1 :perf
 лонг /n20
 лонгінг /n20
 лонглист /n20.a
@@ -2197,7 +2197,7 @@
 стибрити /v1.is0 :perf                          # rv_zna
 стипуха /n10.p1
 стирити /v1.is0 :perf                           # rv_zna
-стібатися /vr1.cf :imperf                   # :xp2
+стібатися /vr2.cf :imperf                   # :xp2
 стіпуха /n10
 столовик /n20.a.p.<
 стопарик /n20.a.p

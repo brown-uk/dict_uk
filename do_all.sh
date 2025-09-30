@@ -22,9 +22,11 @@ OPTS="--parallel"
     exit 1
 }
 
+./gradlew checkDups checkVerbRevPair
+
 ./gradlew $OPTS sortDict expand diff || exit 1
 
-./gradlew checkDups checkReplacements
+./gradlew checkReplacements
 
 if [ "$1" == "-d" ]; then
     exec ./gradlew $OTPS deployLtDict

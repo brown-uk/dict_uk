@@ -142,6 +142,14 @@ task checkDups(type: JavaExec) {
     workingDir = projectDir
 }
 
+task checkVerbRevPair(type: JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = "org.dict_uk.check.CheckVerbRevPair"
+
+    workingDir = projectDir
+}
+
+
 task checkAnim(type: JavaExec) {
     classpath = sourceSets.test.runtimeClasspath
     mainClass = "org.dict_uk.check.CheckAnim"
