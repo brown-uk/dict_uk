@@ -29,13 +29,13 @@ repositories {
 //}
 
 dependencies {
-    implementation group: 'org.apache.groovy', name: 'groovy', version: groovyVersion
+    implementation "org.apache.groovy:groovy:$groovyVersion"
     //implementation group: 'org.apache.groovy', name: 'groovy-swing', version: groovyVersion
-    implementation group: 'org.apache.groovy', name: 'groovy-cli-picocli', version: groovyVersion
+    implementation "org.apache.groovy:groovy-cli-picocli:$groovyVersion"
     implementation 'info.picocli:picocli:4.6.1'
 
-    implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
-    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.+'
+    implementation 'commons-cli:commons-cli:1.4'
+    implementation 'ch.qos.logback:logback-classic:1.4.+'
 
 //    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.12.+'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.12.+'
