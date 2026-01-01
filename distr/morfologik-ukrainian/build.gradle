@@ -509,3 +509,25 @@ publishToMavenLocal {
    inputs.files "$projectDir/../../VERSION"
 }
 
+task preparePublishZip(type: Exec) {
+    def userHome = System.getProperty("user.home")
+
+    executable "zip"
+
+    args "-b", "$userHome/.m2/repository"
+    args "morfologik-ukrainian-lt-${version}.zip"
+    args "ua/net/nlp/morfologik-ukrainian-lt/$version/*"
+
+    workingDir "$userHome/.m2/repository"
+
+    def standardOutput = new ByteArrayOutputStream()
+    def errorOutput = new ByteArrayOutputStream()
+    standardOutput = standardOutput
+    errorOutput = errorOutput
+
+    // Optional: Access captured output after execution
+    doLast {
+        println("Standard Output: ${standardOutput.toString()}")
+        println("Error Output: ${errorOutput.toString()}")
+    }
+}
