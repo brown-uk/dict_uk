@@ -93,6 +93,9 @@
 вносіть вносити verb:imperf:impr:p:2
 восьмиста вісімсот numr:p:v_rod             #> восьмисот
 восьмистами вісімсот numr:p:v_oru           #> вісьмомастами
+всипе засипати verb:perf:futr:s:3
+всипемо засипати verb:perf:futr:p:1
+всипете засипати verb:perf:futr:p:2
 встеле встелити verb:perf:futr:s:3
 вступе вступити verb:perf:futr:s:3
 вуглепластика вуглепластик noun:m:v_rod
@@ -158,6 +161,7 @@
 законопроекта законопроект noun:m:v_rod:up92
 законопроєкта законопроєкт noun:m:v_rod:up19
 закруте закрутити verb:perf:futr:s:3
+залишка залишок noun:inanim:m:v_rod
 залишуть залишити verb:perf:futr:p:3            #> залишать
 залишуться залишитися verb:rev:perf:futr:p:3    #> залишаться
 залліть залляти verb:perf:impr:p:2
@@ -171,9 +175,18 @@
 заняттів заняття noun:inanim:p:v_rod
 заплющіть заплющити verb:perf:impr:p:2
 заповіта заповіт noun:m:v_zna
+заробе заробити verb:perf:futr:s:3
 заростів зарість noun:p:v_rod
 засвідчіть засвідчити verb:perf:impr:p:2    #> засвідчте
 засиліть засилити verb:perf:impr:p:2
+засипе засипати verb:perf:futr:s:3
+засипемо засипати verb:perf:futr:p:1
+засипемось засипатися verb:rev:perf:futr:p:1
+засипемося засипатися verb:rev:perf:futr:p:1
+засипете засипати verb:perf:futr:p:2
+засипетесь засипатися verb:rev:perf:futr:p:2
+засипетеся засипатися verb:rev:perf:futr:p:2
+засипеться засипатися verb:rev:perf:futr:s:3
 засиплять засипати verb:perf:futr:p:3        # :xp2
 заскоче заскочити verb:perf:futr:s:3
 заскочіть заскочити verb:perf:impr:p:2
@@ -300,6 +313,10 @@
 назовіть назвати verb:perf:impr:p:2
 налагодіть налагодити verb:perf:impr:p:2
 наріччів наріччя noun:p:v_rod                       #> наріч
+насипе засипати verb:perf:futr:s:3
+насипемо засипати verb:perf:futr:p:1
+насипете засипати verb:perf:futr:p:2
+насипеться засипатися verb:rev:perf:futr:s:3
 наскіке noninfl
 наструнчіть наструнчити verb:perf:impr:p:2
 непотрібен непотрібний adj:m:v_naz:short:predic    #> не потрібен
@@ -339,6 +356,10 @@
 переймів перейма noun:p:v_rod
 перекупе перекупити verb:perf:futr:s:3
 перепине перепинити verb:perf:futr:s:3
+пересипе засипати verb:perf:futr:s:3
+пересипемо засипати verb:perf:futr:p:1
+пересипете засипати verb:perf:futr:p:2
+пересипеться засипатися verb:rev:perf:futr:s:3
 переходе переходити verb:imperf:pres:s:3                # :xp1
 переходіть переходити verb:imperf:impr:p:2
 періодонта періодонт noun:m:v_rod

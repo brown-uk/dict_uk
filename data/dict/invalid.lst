@@ -408,7 +408,7 @@
 дед-лайн /n20.p
 дезинфекційний /adj
 дезинфекція /n10
-дезинфікувати /v1.cf.advp :imperf:perf              # rv_zna:rv_oru:rv_dav
+дезинфікувати /v1.cf.advp.is0 :imperf:perf              # rv_zna:rv_oru:rv_dav
 дезинформація /n10
 декретовий /adj
 депаратмент /n20.p
@@ -615,6 +615,7 @@
 Запорожжя /n2n :prop:geo
 запорожський /adj
 зара adv                                                    #> зараз
+заріктися /vr1 :perf tag=inf|impr|futr|past:[fnp]'         #> заректися
 зарін /n20
 заробітня /adj
 зато conj:coord                                             #> зате
@@ -1490,7 +1491,7 @@
 тшінецький /adj
 тьотка /n10.p2.ko.<
 тюнинг /n20                                 #> тюнінг
-тюнингований /adj :adjp:pasv:imperf        #> тюнінгований
+тюнингований /adj :adjp:pasv:imperf         #> тюнінгований
 тюнинговий /adj                             #> тюнінговий
 тюрський /adj
 УІІІ number:latin                           #> VIII

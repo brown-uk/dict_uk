@@ -126,11 +126,13 @@ group n31
 #
 іль	елі	іль		        #  жужіль    жужелі	            @ noun:f:v_rod/v_dav/v_mis//p:v_naz
 ідь	еді	ідь		        #  Либідь    Либеді	            @ noun:f:v_rod/v_dav/v_mis//p:v_naz
+іть	еті	іть		        #  заміть    заметі	            @ noun:f:v_rod/v_dav/v_mis//p:v_naz
 ір	ері	ір		        #  матір    матері	            @ noun:f:v_rod/v_dav/v_mis//p:v_naz
 інь	ені	інь		        #  осінь   осені	            @ noun:f:v_rod/v_dav/v_mis//p:v_naz
 
 ь	лю	[аоуеиіяюєї]ль	#  жужіль 	 жужіллю   	        @ noun:f:v_oru
 ь	дю	[аоуеиіяюєї]дь	#  Либідь 	 Либіддю   	        @ noun:f:v_oru
+ь	тю	[аоуеиіяюєї]ть	#  Либідь 	 Либіддю   	        @ noun:f:v_oru
 0	'ю	ір		        #  матір 	 матір'ю    	    @ noun:f:v_oru
 ь	ню	інь		        #  осінь   осінню   	        @ noun:f:v_oru
 
@@ -159,7 +161,7 @@ subgroup n31.p
 
 subgroup n31.ke
 
-і(.)ь  е\1е  і[длн]ь      # Либеде                            @ noun:f:v_kly
+і(.)ь  е\1е  і[длнт]ь      # Либеде                            @ noun:f:v_kly
 
 0   0   р               #  матір  матір   	            @ noun:f:v_kly
 

@@ -10,4 +10,5 @@ rm -f prev/$FILE1 ; cp -f $FILE1 prev/
 rm -f prev/$FILE2 ; cp -f $FILE2 prev/
 rm -f prev/words_spell.txt; cp -f words_spell.txt prev/
 mv words.txt lemmas.txt prev
+mv derivats.txt derivats.txt prev
 cp derivats.txt prev/derivats.txt

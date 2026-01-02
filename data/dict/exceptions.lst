@@ -1211,8 +1211,8 @@
 негоден негідний adj:m:v_zn2/v_kly:short
 незгоден незгодний adj:m:v_naz/v_zn2:short
 неладен неладний adj:m:v_naz:short
-немощен немощний adj:m:v_naz/v_zn2/v_kly:short
-ненавиден ненавидний adj:m:v_naz/v_zn2/v_kly:short
+немощен немощний adj:m:v_naz/v_zn2/v_kly:short:arch
+ненавиден ненавидний adj:m:v_naz/v_zn2/v_kly:short:rare
 ненавистен ненависний adj:m:v_naz/v_zn2/v_kly:short
 непевен непевний adj:m:v_naz/v_zn2/v_kly:short
 неспроможен неспроможний adj:m:v_naz:short:predic
