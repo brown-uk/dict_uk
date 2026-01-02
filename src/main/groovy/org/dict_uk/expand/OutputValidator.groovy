@@ -129,9 +129,14 @@ class OutputValidator {
 					if( line.contains(":bad") 
 							&& ! line.contains("v_rod")		// we fold вебсайта :bad into вебсайт lemma 
 							&& ! prevLine.contains(":bad") ) {
-						log.warn("mix of bad and normal lemma " + line)
+						log.warn("mix of bad and normal lemma: $line ")
 						nonFatalErrorCount++
 					}
+                    if( line.contains(":arch") 
+                            && ! prevLine.contains(":arch") ) {
+                        log.warn("mix of arch and normal lemma: $line")
+                        nonFatalErrorCount++
+                    }
 				}
 				else if( ! (line =~ / (noun|adj|verb|numr)/ ) && ! line.contains(":long") && ! line.contains(":short") ) {
 					log.warn("inflection for non-iflecting POS " + line)

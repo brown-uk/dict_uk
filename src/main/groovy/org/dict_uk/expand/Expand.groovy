@@ -217,6 +217,10 @@ class Expand {
 							}
 							comment = "від $word"	
 						}
+						// two lemmas: заректися - good & заріктися - bad
+						else if( tags =~ /advp:rev:.*:bad/ && deriv =~ /зарікшис[ья]/ ) {
+							continue
+						}
 						// TODO: do it better
 						else if( tags == "noun:anim:m:v_naz:bad" && deriv == "член-кореспондент" ) {
 							continue
@@ -719,7 +723,6 @@ class Expand {
 			def inflection_flag = main_flag[1..-1]
 			sfx_lines = expand_suffixes(word, inflection_flag, modifiers, extra)
 			sfx_lines = adjust_affix_tags(sfx_lines, main_flag, flags, modifiers)
-            registerDerivatives(sfx_lines, word)
 		}
 		else {
 			sfx_lines = [
@@ -766,6 +769,10 @@ class Expand {
 		
 		sfx_lines = modify(sfx_lines, modifiers, flags)
 
+        if( main_flag[0] == "/" ) {
+            registerDerivatives(sfx_lines, word)
+        }
+        
 		List<DicEntry> entries = post_expand(sfx_lines, flags)
 
 		entries.each {

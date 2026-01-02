@@ -19,6 +19,7 @@ public class Spell {
             .forEach(line -> set.add(line));
         System.err.println("Total words: " + set.size());
 
+        @SuppressWarnings("deprecation")
         Collator collator = Collator.getInstance(new Locale("uk", "UA"));
         
 		Files.lines(Paths.get(argv[0]))

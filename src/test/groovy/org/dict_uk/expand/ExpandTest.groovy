@@ -653,6 +653,20 @@ def taggedOut =
 		assertEquals(strilyatyFullIndented, new DictSorter().indent_lines(expand.process_input(lines)).join("\n"))
 	}
 
+    def verbP3Indented =
+    '''
+вистачити verb:perf:inf
+  вистачить verb:perf:inf:short
+  вистачить verb:perf:futr:s:3
+  вистачило verb:perf:past:n
+'''.trim()
+    
+    @Test
+    void testVerbP3() {
+        def lines = ["вистачити /v1 :perf p=3"]
+        assertEquals(verbP3Indented, new DictSorter().indent_lines(expand.process_input(lines)).join("\n"))
+    }
+
 
     def strilyatyFullIndentedWithProp =
     '''
