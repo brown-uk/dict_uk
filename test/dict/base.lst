@@ -2,8 +2,8 @@
 
 синій /adj
 лікарів /adj_ev
-вбитий /adj :&adjp:pasv:perf
-варений /adj :&&adjp:pasv:imperf    # :past
+вбитий /adj :adjp:pasv:perf
+варений /adj :adjp:pasv:imperf    # :past
 
 # Порівняльні форми
 
@@ -14,9 +14,9 @@
  +cs=гладкіший
 вбогий /adj.adv.long :v-u \
  +cs=вбогіший :v-u
-вживаний /adj.adv :&&adjp:pasv:imperf:v-u \
+вживаний /adj.adv :adjp:pasv:imperf:v-u \
  +cs=вживаніший :v-u
-уживаний /adj :&&adjp:pasv:imperf:v-u \
+уживаний /adj :adjp:pasv:imperf:v-u \
  +cs=уживаніший :v-u
 вагомий /adj \
  +cs=вагоміший
@@ -26,11 +26,11 @@
  +cs=удатніше
 дивний /adj.adv \
  +cs=дивніший
-затаєний /adj.adv :&adjp:pasv:perf \
+затаєний /adj.adv :adjp:pasv:perf \
  +cs=найзатаєніший
-безпечно adv:&predic \
+безпечно adv:predic \
  +cs=безпечніше
-погано adv:&predic \
+погано adv:predic \
  +cs=гірше \
  +cs=поганіше
 
@@ -53,11 +53,11 @@
 годен годний adj:m:v_naz/v_zna:short:coll
 годний /adj :coll
 
-жадний /adj :rare:&pron:neg
-жадний /adj :rare
+жадний /adj :pron:neg
+жадний /adj
 
-що /n_pron :&pron:int:rel
-хто /n_pron.< :&pron:int:rel
+що /n_pron :pron:int:rel
+хто /n_pron.< :pron:int:rel
 
 
 # Відприкметникові іменники
@@ -198,7 +198,7 @@
 
 # Займенники
 
-абиякий /adj :&pron:ind
+абиякий /adj :pron:ind
 
 
 # Числівники
@@ -253,31 +253,31 @@
 азотисто-водневий /adj
 азотистоводневий /adj
 
-якийсь /adj :&pron:int:rel:def
-абичий /adj_pron :&pron:ind
+якийсь /adj :pron:int:rel:def
+абичий /adj_pron :pron:ind
 
-чийсь чийсь adj:m:v_naz/v_zn2:&pron:ind
-чийогось чийсь adj:m:v_rod/v_zn1//n:v_rod:&pron:ind
-чийомусь чийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-чиємусь чийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-чиїмсь чийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
-чиїмось чийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
-чиясь чийсь adj:f:v_naz:&pron:ind
-чиєїсь чийсь adj:f:v_rod:&pron:ind
-чиїйсь чийсь adj:f:v_dav/v_mis:&pron:ind
-чиюсь чийсь adj:f:v_zna:&pron:ind
-чиєюсь чийсь adj:f:v_oru:&pron:ind
-чиєсь чийсь adj:n:v_naz/v_zna:&pron:ind
-чиїсь чийсь adj:p:v_naz/v_zn2:&pron:ind
-чиїхсь чийсь adj:p:v_rod/v_zn1/v_mis:&pron:ind
-чиїхось чийсь adj:p:v_rod/v_zn1/v_mis:&pron:ind
-чиїмись чийсь adj:p:v_oru:&pron:ind
+чийсь чийсь adj:m:v_naz/v_zn2:pron:ind
+чийогось чийсь adj:m:v_rod/v_zn1//n:v_rod:pron:ind
+чийомусь чийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:pron:ind
+чиємусь чийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:pron:ind
+чиїмсь чийсь adj:m:v_oru//n:v_oru//p:v_dav:pron:ind
+чиїмось чийсь adj:m:v_oru//n:v_oru//p:v_dav:pron:ind
+чиясь чийсь adj:f:v_naz:pron:ind
+чиєїсь чийсь adj:f:v_rod:pron:ind
+чиїйсь чийсь adj:f:v_dav/v_mis:pron:ind
+чиюсь чийсь adj:f:v_zna:pron:ind
+чиєюсь чийсь adj:f:v_oru:pron:ind
+чиєсь чийсь adj:n:v_naz/v_zna:pron:ind
+чиїсь чийсь adj:p:v_naz/v_zn2:pron:ind
+чиїхсь чийсь adj:p:v_rod/v_zn1/v_mis:pron:ind
+чиїхось чийсь adj:p:v_rod/v_zn1/v_mis:pron:ind
+чиїмись чийсь adj:p:v_oru:pron:ind
 
 
 уточнюватися /vr1.cf.advp :imperf p=4
 
-ніде adv:&pron:emph     # rv_inf    # ні́де
-ніде adv:&pron:neg                  # ніде́
+ніде adv:pron:emph     # rv_inf    # ні́де
+ніде adv:pron:neg                  # ніде́
 
 бон foreign                             # бон жур, бон діа
 
@@ -298,10 +298,10 @@
 так conj:coord
 так conj:subord
 
-аерований /adj.adv :&adjp:pasv:imperf:perf \
+аерований /adj.adv :adjp:pasv:imperf:perf \
  +cs=аерованіший
 
-ймовірно adv:&insert \
+ймовірно adv:insert \
  +cs=ймовірніше
 
 АПБ noun:f:nv:np:prop                       # Академія пожежної безпеки

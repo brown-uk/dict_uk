@@ -1,14 +1,14 @@
-бачилось verb:&insert
-бачите verb:&insert
-бачиться verb:&insert
-бачиш verb:&insert
-бачся verb:&insert
-бачте verb:&insert
-бачу verb:&insert
-#знать verb:&insert:rare
-капець noun:slang:&predic
-край noun:&predic
-нудьга noun:&predic     # :rare
-пара noun:xp2:&predic
+бачилось verb:insert
+бачите verb:insert
+бачиться verb:insert
+бачиш verb:insert
+бачся verb:insert
+бачте verb:insert
+бачу verb:insert
+#знать verb:insert:rare
+капець noun:slang:predic
+край noun:predic
+нудьга noun:predic     # :rare
+пара noun:xp2:predic
 сере noun:ua_1992
 умільче noun:ua_2019

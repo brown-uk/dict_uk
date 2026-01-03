@@ -10,8 +10,8 @@
 дівка /n10.p2.< - дзиґа /n10.p1.<
 дід /n20.a.ku.< - баба /n10.< ^noun:p
 королева /n10.< - консорт /n20.a.<
-ніхто /n_pron.< - ніхто /n_pron.< :&pron:neg
-один /numr ^adj - єдиний /adj :&numr
+ніхто /n_pron.< - ніхто /n_pron.< :pron:neg
+один /numr ^adj - єдиний /adj :numr
 один /numr g=m - півтора
 один /numr g=n - півтора
 один /numr g=f - півтори
@@ -19,13 +19,13 @@
 риба /n10.p1.<> - молот /n20.a.p.<>
 риба /n10.p1.<> - меч /n20.a.p.<>
 Рудня /n10 - Фасова /n2adj1
-сам /adj_pron - самісінький /adj :&pron:def
-сам /adj_pron - один /numr ^adj :&pron:def
-такий /adj.long - собі :&pron:dem:bad
+сам /adj_pron - самісінький /adj :pron:def
+сам /adj_pron - один /numr ^adj :pron:def
+такий /adj.long - собі :pron:dem:bad
 сумний /adj - пресумний /adj
 шури /np2 - мури /np2
-такий /adj - то :&pron:dem
+такий /adj - то :pron:dem
 чудо /n2n.p1.<> - юдо /n2n.p1.<> !u-u
 Хутори /np2 - Кривошиїнецькі /n2adj1
-що /n_pron - будь :&pron:ind
+що /n_pron - будь :pron:ind
 #ясла /np3 - садок /n22.a
