@@ -60,7 +60,7 @@ class ExpandAll {
 				out = tagged_wordlist.processInput([file.getAbsolutePath()])
 			}
 
-			log.info("Processing file {}, {} lines", filename, out.size())
+			log.debug("Processing file {}, {} lines", filename, out.size())
 
 			outLines.addAll(out)
 		}
@@ -74,6 +74,10 @@ class ExpandAll {
 
         try {
             expand.processInputAndPrint(outLines)
+        }
+        catch(ExpandException e) {
+            log.error("Expand error: ", e.getMessage())
+            System.exit(1)
         }
         catch(Exception e) {
             log.error("Error: ", e)

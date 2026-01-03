@@ -11,7 +11,7 @@ class Sort {
 
 	static main(args) {
 		Stream.of(args).parallel().each { filename ->
-			println "Sorting $filename..."
+			//println "Sorting $filename..."
 			sortFile(filename)
 		}
 	}

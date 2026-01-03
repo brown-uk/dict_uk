@@ -1616,10 +1616,10 @@ class Expand {
 
 		}
 		.flatMap{ s-> 
-//			if( ! s ) {
-//                throw new RuntimeException()
+			if( ! s ) {
+                throw new ExpandException()
 //				System.exit(1)
-//			}
+			}
 			s.stream() 
 		}
 		.collect(Collectors.toList())

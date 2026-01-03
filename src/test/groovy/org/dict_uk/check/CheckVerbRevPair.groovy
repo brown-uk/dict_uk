@@ -4,6 +4,10 @@ package org.dict_uk.check
 
 //assert ["1:imperf", "1:perf"].contains(["1:imperf"])
 
+def toIgnore = ["добігати", "долітати", "дослухати", "дотягати", "задихати", "закупати", "замикати",
+    "звірити", "зміняти", "наганяти", "накупати", "налазити", "наповзати", "наскіпати", "ослизнути",
+    "позбувати", "присікати", "розходити", "скупити", "залупати"]
+
 def dirVerb = [:]
 
 def dictDir = new File("data/dict")
@@ -33,7 +37,7 @@ dictDir.eachFile { file ->
             flags.each { flag ->
                 def dirVerbFlags = dirVerb[lemmaDir]
                 if( dirVerbFlags ) {
-                    if( ! dirVerbFlags.contains(flag) ) {
+                    if( ! dirVerbFlags.contains(flag) && ! toIgnore.contains(lemmaDir)) {
                         //          println " ${dirVerbFlags.class} ${flags.class}"
                         if( ! fileName ) {
                             fileName = file.name
