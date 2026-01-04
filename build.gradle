@@ -39,6 +39,7 @@ dependencies {
 
 //    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.12.+'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.12.+'
+    testImplementation 'org.assertj:assertj-core:3.27.6'
   //  testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.12.+'
     testRuntimeOnly "org.junit.platform:junit-platform-launcher"
 

@@ -1,16 +1,30 @@
+авіапрома авіапром noun:inanim:m:v_rod
+авіасалона авіасалон noun:inanim:m:v_rod
 автів авто noun:inanim:p:v_rod:alt
+автобана автобан noun:inanim:m:v_rod
 автомобілей автомобіль noun:p:v_rod
+аеродрома аеродром noun:inanim:m:v_rod
+аерозолей аерозоль noun:inanim:p:v_rod
+аерозоля аерозоль noun:inanim:m:v_rod
+аеропорта аеропорт noun:inanim:m:v_rod
 альманаха альманах noun:m:v_rod
+анбандлінга анбандлінг noun:inanim:m:v_rod
 анекдота анекдот noun:inanim:m:v_rod
 антивіруса антивірус noun:m:v_rod
+антидепресанта антидепресант noun:inanim:m:v_rod
 Арсенала Арсенал noun:m:v_rod:prop
+артбука артбук noun:inanim:m:v_rod
+аутсорсинга аутсорсинг noun:inanim:m:v_rod
+байопіка байопік noun:inanim:m:v_rod
 Балканів Балкани noun:p:v_rod:ns:prop:geo
 банкнотів банкнота noun:p:v_rod
 барелей барель noun:p:v_rod                 #> барелів
 Баренцова Баренцове adj:n:v_rod
 баристів бариста noun:anim:p:v_rod/v_zna
+батальйона батальйон noun:inanim:m:v_rod
 баче бачити verb:imperf:pres:s:3                            #> бачить
 бачуть бачити verb:imperf:pres:p:3
+безвіза безвіз noun:inanim:m:v_rod
 бек-вокала бек-вокал noun:m:v_rod
 берез береза noun:inanim:p:v_rod
 Бешикташа Бешикташ noun:m:v_rod:prop
@@ -23,22 +37,36 @@
 болгарів болгарин noun:anim:p:v_rod/v_zna   #> болгар
 Боллівуда Боллівуд noun:m:v_rod:prop        #> Боллівуду
 борзі борг noun:m:v_mis
+ботокса ботокс noun:inanim:m:v_rod
 боярів боярин noun:anim:p:v_rod/v_zna
+брелка брелок noun:m:v_rod
+брелками брелок noun:p:v_oru
+брелки брелок noun:p:v_naz
+брелків брелок noun:p:v_rod
+брелком брелок noun:m:v_oru
+брелку брелок noun:m:v_dav/v_mis
 бренда бренд noun:m:v_rod
+брехонь брехня noun:inanim:p:v_rod
+брифінга брифінг noun:inanim:m:v_rod
 броде бродити verb:imperf:pres:s:3
 Брукліна Бруклін noun:m:v_rod:prop:geo
 будинка будинок noun:m:v_rod
 бузка бузок noun:m:v_rod             #> бузку
 буков буква noun:p:v_rod
 булгарів булгари noun:anim:p:v_rod/v_zna:ns
+булінга булінг noun:inanim:m:v_rod
 бюлетні бюлетень noun:inanim:m:v_naz/v_zna/v_mis
 бюлетнів бюлетень noun:inanim:p:v_rod
-бюрків бюрко noun:inanim:p:v_rod
+бюрків бюрко noun:inanim:p:v_rod:arch
 вагів ваги noun:p:v_rod:ns
+вантажа вантаж noun:inanim:m:v_rod
+вантів ванта noun:inanim:p:v_rod             #> вант
+вапняка вапняк noun:inanim:m:v_rod
 вводе вводити verb:imperf:pres:s:3
 вдаре вдарити verb:perf:futr:s:3
 вебсайта вебсайт noun:m:v_rod:up19
 веб-сайта веб-сайт noun:m:v_rod:up92
+верлібра верлібр noun:inanim:m:v_rod
 виборок вибірка noun:p:v_rod                #> вибірок
 вибудовано вибудувати verb:perf:impers      #> вибудувано
 вибухла вибухнути verb:perf:past:f          #> вибухнула
@@ -63,6 +91,7 @@
 вимуштровано вимуштрувати verb:perf:impers
 виносе виносити verb:imperf:pres:s:3                    # :xp1
 виокреміть виокремити verb:perf:impr:p:2
+випадка випадок noun:inanim:m:v_rod
 випале випалити verb:perf:futr:s:3
 випаріть випарити verb:perf:impr:p:2
 виполіровано виполірувати verb:perf:impers
@@ -350,7 +379,11 @@
 пампушків пампушка noun:p:v_rod
 панталонів панталони noun:p:v_rod:ns          #> панталон
 панчох панчоха noun:p:v_rod
+параліча параліч noun:inanim:m:v_rod
+паркінга паркінг noun:inanim:m:v_rod
+парфума парфум noun:inanim:m:v_rod
 пасмів пасмо noun:p:v_rod
+патерна патерн noun:inanim:m:v_rod
 переводе переводити verb:imperf:pres:s:3
 передасиш передати verb:perf:futr:s:2
 переймів перейма noun:p:v_rod
@@ -400,7 +433,9 @@
 поставе поставити verb:perf:futr:s:3
 постеле постелити verb:perf:futr:s:3
 посуде посудити verb:perf:futr:s:3
+потенціала потенціал noun:inanim:m:v_rod
 пофрілансіть пофрілансити verb:perf:impr:p:2
+прекурсора прекурсор noun:inanim:m:v_rod
 Привата Приват noun:m:v_rod:prop:coll
 приводе приводити verb:imperf:pres:s:3
 призначіть призначити verb:perf:impr:p:2
@@ -471,6 +506,7 @@
 Судетів Судети noun:p:v_rod:ns:prop:geo   #> Судет
 султаншо султанша noun:anim:f:v_kly
 сумнівові сумнів noun:m:v_dav/v_mis
+суховантажа суховантаж noun:inanim:m:v_rod
 сходе сходити verb:imperf:pres:s:3                    # :xp1
 татарів татарин noun:anim:p:v_rod/v_zna     #> татар
 твіттера твіттер noun:m:v_rod               #> твіттеру
@@ -516,7 +552,7 @@
 шеклів шекель noun:p:v_rod
 шестиста шістсот numr:p:v_rod               #> шестисот
 ширіть ширити verb:imperf:impr:p:2
-шоці шок noun:m:v_mis                #> шоку
+шоці шок noun:m:v_mis                       #> шоку
 щелепів щелепа noun:inanim:p:v_rod
 ЮКОСа ЮКОС noun:m:v_rod:prop
 ютуба ютуб noun:m:v_rod                     #> ютубу

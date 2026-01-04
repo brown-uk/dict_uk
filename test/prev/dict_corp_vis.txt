@@ -4109,7 +4109,7 @@
   сері noun:anim:m:v_mis
   серові noun:anim:m:v_mis
   серу noun:anim:m:v_mis
-  сере noun:anim:m:v_kly
+  сере noun:anim:m:v_kly:up92
 синій adj:m:v_naz
   синього adj:m:v_rod
   синьому adj:m:v_dav
@@ -4512,7 +4512,7 @@
   умільцеві noun:anim:m:v_mis
   умільці noun:anim:m:v_mis
   умільцю noun:anim:m:v_mis
-  умільче noun:anim:m:v_kly
+  умільче noun:anim:m:v_kly:up19
   умільці noun:anim:p:v_naz
   умільців noun:anim:p:v_rod
   умільцям noun:anim:p:v_dav
