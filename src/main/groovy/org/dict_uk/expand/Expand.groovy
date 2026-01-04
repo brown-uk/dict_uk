@@ -26,8 +26,8 @@ class Expand {
 	private final BaseTags base_tags = new BaseTags()
 	private final OutputValidator validator = new OutputValidator()
 	private final List<String> limitedVerbLemmas = []
-	private final Map<String, List<String>> additionalTags = [:]
-	private final List<String> additionalTagsUnused = []
+	private final Map<String, List<String>> additionalTags = Collections.synchronizedMap([:])
+	private final List<String> additionalTagsUnused = Collections.synchronizedList([])
 	final Affix affix = new Affix()
 //	private final Map<String, Set<String>> derivs = [:].withDefault { new HashSet<>() }
     private final Map<String, Set<String>> derivatives = java.util.Collections.synchronizedMap([:].withDefault { new HashSet<>() })
@@ -66,8 +66,9 @@ class Expand {
 					return
 	
 				def parts = line.split(/[ :]/)
-				additionalTags[parts[0]] = parts[1..-1]
-				additionalTagsUnused << parts[0] + ' ' + parts[1]
+                def word = parts[0]
+				additionalTags[word] = parts[1..-1]
+				additionalTagsUnused << word + ' ' + parts[1]
 			}
 			log.info("Got {} additional tags", additionalTags.size())
 		}
@@ -813,13 +814,13 @@ class Expand {
     private void applyAdditionalTags(List<DicEntry> dicEntries) {
         for(DicEntry dicEntry: dicEntries) {
 
-			if( ! (dicEntry.word in additionalTags) ) {
+            List<String> addTags = additionalTags[dicEntry.word]
+			if( ! addTags ) {
 				continue
 			}
 
-			List<String> addTags = additionalTags[dicEntry.word]
 			if( addTags[0] in ['noun', 'adj']
-					&& ! (addTags =~ /up[0-9]/)
+					&& ! (addTags[-1] =~ /up[0-9]/)
 					&& ! (dicEntry.tagStr =~ /(noun|adj).*:[mfn]:v_(naz|oru)/) )
 				continue
 

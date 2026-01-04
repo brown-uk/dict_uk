@@ -1,6 +1,7 @@
 
 package org.dict_uk.expand
 
+import static org.assertj.core.api.Assertions.assertThat
 import static org.junit.jupiter.api.Assertions.assertEquals
 
 import org.dict_uk.common.DicEntry
@@ -837,7 +838,8 @@ def expectedNvNumr = """
 півчвертаста півчвертаста numr:p:v_mis:nv:rare
 півчвертаста півчвертаста numr:p:v_kly:nv:rare
 """.trim()
-    
+
+
     @Test
     void testNvNumr() {
         assertEquals(expectedNvNumr, join(expand.process_input(Arrays.asList("півчвертаста numr:p:nv:rare"))))
