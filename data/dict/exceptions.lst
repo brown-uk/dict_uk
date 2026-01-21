@@ -1248,14 +1248,14 @@
 жнучи жати advp:imperf
 зболівши зболіти advp:perf
 зовучи звати advp:imperf
-зовучись зватися advp:imperf
+зовучись зватися advp:rev:imperf
 ідучи іти advp:imperf
 їдучи їхати advp:imperf
 йдучи йти advp:imperf
 ймучи йняти advp:imperf
 мелючись молотися advp:rev:imperf
 мелючи молоти advp:imperf
-мінячись мінятися advp:imperf
+мінячись мінятися advp:rev:imperf
 мнучись м'ятися advp:rev:imperf
 мнучи м'яти advp:imperf
 ржучи ржати advp:imperf

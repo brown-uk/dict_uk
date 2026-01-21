@@ -23,6 +23,10 @@
 # бирочка /n10.p2.<>                        # вівця
 # бровар                            # броварня
 # жереб /n20.a.p.<>
+# поставляти /v2.isNo :perf               # rv_zna
+# згучатися /vr1 :perf                  # нема вжитку крім словників
+# покрапати /v2.cf :imperf
+# видатися /vr2 :imperf
 аби-де adv:pron:ind
 аби-коли adv:pron:ind
 аби-куди adv:pron:ind
@@ -610,7 +614,7 @@
 взимі adv
 взнеслий /adj :adjp:pasv:perf
 взрушити /v1.is0.it0 :perf                      # rv_zna:rv_oru:rv_dav
-вибичуватися /vr1 :imperf
+вибичуватися /vr1 :perf                 # ви́бичуватися
 вибірати /v2.cf.advp :imperf                    # rv_zna:rv_oru:rv_dav
 вибіратися /vr2.cf.advp :imperf
 виборний /n2adj1.p.<
@@ -624,8 +628,9 @@
 вигодити /v1 :perf                              # rv_zna:rv_dav
 вигодний /adj \
  +cs=вигодніший
-вигонити /v1 :perf                              # rv_zna:rv_oru
+вигонити /v1 :imperf         # виго́нити          # rv_zna:rv_oru
 видайність /n30
+видати /v2 :imperf                                      # rv_zna
 видвигнути /v1 :perf                            # rv_zna:rv_oru:rv_dav
 видець /n22.a.p.<
 виділовий /adj
@@ -792,7 +797,7 @@
 відіткатися /vr1 :perf                        # rv_oru
 відкаснути /v1 :perf
 відквітати /v2.cf.advp :imperf
-відквітувати /v1.cf.advp :imperf
+відквітувати /v1.is0 :perf
 відки adv
 відкись adv
 відкликнути /v1 :perf
@@ -988,7 +993,7 @@
 возсіяти /v2 :perf                                      # rv_oru
 возславити /v1.is0.it0 :perf                   # rv_zna:rv_oru
 возславитися /vr1.it0 :perf                    # rv_oru
-возсміятися /vr1.cf.advp :imperf
+возсміятися /vr1 :perf
 возьме взяти verb:perf:futr:s:3
 возьми взяти verb:perf:impr:s:2
 возьміть взяти verb:perf:impr:p:2
@@ -1013,7 +1018,7 @@
 вомітування /n2n
 вомітувати /v1.cf.advp :imperf
 вомпити /v1.cf.advp :imperf
-вонпити /v1 :perf
+вонпити /v1.cf :imperf
 вонючий /adj
 воняти /v2.cf.advp :imperf                  # rv_oru
 воплотитися /vr1.it1 :perf
@@ -1071,7 +1076,7 @@
 вслуговування /n2n
 вслуговувати /v1.cf.advp :imperf                # rv_dav:rv_oru
 вслугування /n2n
-вслугувати /v1.cf.advp :imperf                  # rv_dav:rv_oru
+вслугувати /v1 :perf                            # rv_dav:rv_oru
 вслужити /v1.it1 :perf                          # rv_dav:rv_oru
 всмішка /n10.p2
 вснути /v1 :perf
@@ -2132,8 +2137,8 @@
 заслуженина /n10
 засльожений /adj :adjp:pasv:perf
 засмарований /adj :adjp:pasv:perf
-засмучати /v2 :perf                   # rv_zna:rv_oru
-засмучатися /vr2 :perf                   # rv_oru
+засмучати /v2.cf.advp :imperf                   # rv_zna:rv_oru
+засмучатися /vr2.cf.advp :imperf                   # rv_oru
 засниділий /adj :adjp:actv:perf
 заснидіти /v1 :perf
 заснічування /n2n
@@ -2241,6 +2246,7 @@
 затьор /n20.p.ke
 затяжець /n22.a.p.<
 затяжілий /adj
+зауважати /v2.cf.advp :imperf                               # rv_dav
 заужати /v2 :perf                           # rv_zna:rv_oru
 зауряд adv
 зауряд-лікар /n20.a.p.ku.<
@@ -2411,7 +2417,7 @@
 згрошити /v1 :perf
 згук /n20.p
 згусуватися /vr1 :perf
-згучатися /vr1 :perf
+згучати /v2.cf :imperf
 зґарда /n10.p1
 здалеки adv
 здання /n2n.p1
@@ -2861,6 +2867,7 @@
 кумедія /n10.p1
 кумпель /n20.a.p.<
 куншт /n20.a.p
+купитися /vr1.cf.it0 :imperf                # ку́питися
 купля /n10
 кургузий /adj
 куриця /n10.p1.<
@@ -2897,6 +2904,7 @@
 лейбик /n20.a.p
 леквар /n20.ke
 лентвійт /n20.a.p.<
+летяга /n10.<m
 лещатарство /n2n
 лещатарський /adj
 лещетар /n24.a.p.ku.<
@@ -4871,7 +4879,7 @@
 перекінчик /n20.a.p.<
 перекладницький /adj
 перекладчик /n20.a.p.<
-перекрастися /vr4 :imperf
+перекрастися /vr4 :perf
 перекупень /n22.a.p.<
 перелім noun:m:v_naz/v_zna                  # lim
 переложити /v1.is0.it1 :perf                                  # rv_zna:rv_oru:rv_dav
@@ -5249,6 +5257,7 @@
 помало adv:compb
 поманеньку adv
 поменник /n20.a.p
+поменшати /v2.cf.advp :imperf                   # поменша́ти            # rv_zna:rv_oru
 помин /n20
 поміжний /adj
 помік /n21
@@ -5332,6 +5341,7 @@
 посімейство /n2n.p1
 посім'янин /n20.a.pyn.<
 поскліпуватися /vr1 :perf
+поскорятися /vr2.cf.advp :imperf              # поспішатися           # rv_oru
 посланик /n20.a.p.<
 посланіє /n2n.p1
 послідний /adj.long
@@ -5987,6 +5997,7 @@
 спортовка /n10.p2.<
 спосеред prep        # rv_rod
 спосібність /n30
+способитися /vr1 :perf              # спосо́битися
 способний /adj
 спотичка /n10.p2
 справдішній /adj
