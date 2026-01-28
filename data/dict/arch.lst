@@ -139,7 +139,7 @@
 багатовір'я /n2n
 багатоцінний /adj
 багнітований /adj :adjp:pasv:imperf:perf
-багнути /v1.cf :imperf                             # rv_rod:rv_oru
+багнути /v1.cf.advp :imperf                             # rv_rod:rv_oru
 багулля /n2n
 бадійка /n10.p2
 бадіка /n10.<m
@@ -628,7 +628,7 @@
 вигодити /v1 :perf                              # rv_zna:rv_dav
 вигодний /adj \
  +cs=вигодніший
-вигонити /v1 :imperf         # виго́нити          # rv_zna:rv_oru
+вигонити /v1.cf.advp :imperf         # виго́нити          # rv_zna:rv_oru
 видайність /n30
 видати /v2 :imperf                                      # rv_zna
 видвигнути /v1 :perf                            # rv_zna:rv_oru:rv_dav
@@ -1285,6 +1285,7 @@
 дальш дальше adv:compc:short
 дальше adv:compc
 дараба /n10.p1
+дарити /v1.cf.advp :imperf                           # rv_zna:rv_dav
 дармо adv
 дарово adv
 даромщина /n10
@@ -1449,6 +1450,7 @@
 достометний /adj.adv \
  +cs=достометніший
 досяг /n20
+дотепа /n10
 дотинка /n10.p2
 дотіль adv
 дотовп /n20
@@ -1705,7 +1707,7 @@
 заголоджений /adj :adjp:actv:perf
 загомзатися /vr2 :perf
 загонець /n22.a.p
-загонити /v1 :imperf                   # rv_zna:rv_oru
+загонити /v1.cf.advp :imperf                   # rv_zna:rv_oru
 загорілець /n22.a.p.<
 загородь /n32.p
 загорянин /n20.a.pyn.<
@@ -2312,7 +2314,7 @@
 зачілябити /v1 :perf p=3
 зачім adv
 зачіпенька /n10
-зачувати /v2.cf :imperf
+зачувати /v2.cf.advp :imperf
 зачуватися /vr2.cf :imperf
 зачудуваний /adj :adjp:pasv:imperf
 зашамотати /v1 :perf                            # rv_zna:rv_oru:rv_dav
@@ -2565,6 +2567,8 @@
 зрадця /n10.piv.<m
 зразець /n22.a.p
 зрахувати /v1 :perf
+зрезигнований /adj :adjp:pasv:perf
+зрезигновано adv
 зрезигнувати /v1 :perf
 зсилати /v2.cf.advp :imperf                   # rv_zna
 зсилатися /vr2.cf.advp :imperf
