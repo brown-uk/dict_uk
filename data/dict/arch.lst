@@ -1451,6 +1451,7 @@
  +cs=достометніший
 досяг /n20
 дотепа /n10
+дотепа /n10.< :+m
 дотинка /n10.p2
 дотіль adv
 дотовп /n20
@@ -3281,7 +3282,7 @@
 наоспіх adv
 наостатку adv
 напастування /n2n
-напастувати /v1.cf :imperf                  # rv_zna:rv_oru
+напастувати /v1.cf.advp :imperf                  # rv_zna:rv_oru
 наперід adv
 напечатати /v2.isNo :perf                   # rv_zna:rv_oru:rv_dav
 напиток /n22.a.p
@@ -4576,7 +4577,7 @@
 оплескувати /v1.cf.advp :imperf                   # rv_zna:rv_oru
 оподаль adv
 опозиціоніст /n20.a.p.<
-оположитися /vr1 :perf p=4
+оположитися /vr1 :perf
 опорок /n22.a.p
 опостін adv|prep        # rv_rod
 опостінь adv
@@ -4788,7 +4789,7 @@
 пакосниця /n10.p1.<
 пакосність /n30 :coll
 пакосно adv
-пакостити /v1.it1.cf :imperf                                  # rv_zna:rv_oru:rv_dav
+пакостити /v1.it1.cf.advp :imperf                                  # rv_zna:rv_oru:rv_dav
 паланковий /adj
 палатський /adj
 паленина /n10
@@ -5552,7 +5553,7 @@
 прирожденний /adj
 присно adv
 присогласити /v1 :perf                     # rv_inf
-присоглашати /v2 :imperf                   # rv_inf
+присоглашати /v2.cf.advp :imperf                   # rv_inf
 приспособитися /vr1 :perf
 пристаневий /adj
 пристанівок /n22
@@ -5923,7 +5924,7 @@
 скудельник /n20.a.p.<
 скука /n10
 скуток /n22.p
-скушати /v2 :imperf                   # rv_zna:rv_rod
+скушати /v2.cf.advp :imperf                   # rv_zna:rv_rod
 славімо славити verb:imperf:impr:p:1
 славіть славити verb:imperf:impr:p:2
 сливе adv
@@ -6379,7 +6380,7 @@
 уредний /adj
 урем'я /n40.yu
 уривно adv
-урікати /v2.cf :imperf
+урікати /v2.cf.advp :imperf
 урічний /adj :v-u
 урльоп /n20.p
 уродження /n2n
