@@ -481,7 +481,7 @@
 ваканцьовий /adj
 вакаціюватися /vr1.cf :imperf p=3
 валасання /n2n
-валасатися /vr1.cf.advp :imperf                    # rv_oru
+валасатися /vr2.cf.advp :imperf                    # rv_oru
 валчити /v1.it1.cf.advp.is0 :imperf                # rv_zna:rv_oru
 валява /n10
 валящий /adj
@@ -614,6 +614,7 @@
 взимі adv
 взнеслий /adj :adjp:pasv:perf
 взрушити /v1.is0.it0 :perf                      # rv_zna:rv_oru:rv_dav
+вибанітований /adj :adjp:pasv:perf
 вибичуватися /vr1 :perf                 # ви́бичуватися
 вибірати /v2.cf.advp :imperf                    # rv_zna:rv_oru:rv_dav
 вибіратися /vr2.cf.advp :imperf
@@ -687,7 +688,7 @@
 випосажувати /v1.cf.advp :imperf
 виправа /n10.p1
 випсякувати /v1.cf.advp :imperf                     # rv_zna:rv_oru:rv_dav
-випурнати /v1.cf.advp :imperf
+випурнати /v2.cf.advp :imperf
 вирібник /n20.a.p.<
 вирло /n2n.p1
 виробня /n10
@@ -1415,6 +1416,7 @@
 доладу adv
 долів adv
 доліріч adv
+доложений /adj :adjp:pasv:perf
 доложити /v1.is0.it1 :perf                                    # rv_zna:rv_oru:rv_dav
 долошка /n10.p2
 домів adv
@@ -2452,6 +2454,7 @@
 зем'яний /adj
 зеріпати /v2 :perf
 з'єдник /n20.a.p.<
+з'єдночений /adj :adjp:pasv:perf
 з'єдночення /n2n.p1
 з'єдночити /v1 :perf                   # rv_zna:rv_oru
 зимарка /n10.p2
@@ -5526,6 +5529,7 @@
 приличний /adj :compb
 приличність /n30
 прилично adv:compb
+приложений /adj :adjp:pasv:perf
 приложити /v1.is0.it1 :perf                                   # rv_zna:rv_oru:rv_dav
 приложитися /vr1.it1 :perf                  # rv_oru
 приманчивий /adj
