@@ -30,7 +30,7 @@ repositories {
 
 dependencies {
     implementation "org.apache.groovy:groovy:$groovyVersion"
-    //implementation group: 'org.apache.groovy', name: 'groovy-swing', version: groovyVersion
+    implementation "org.apache.groovy:groovy-swing:$groovyVersion"
     implementation "org.apache.groovy:groovy-cli-picocli:$groovyVersion"
     implementation 'info.picocli:picocli:4.6.1'
 

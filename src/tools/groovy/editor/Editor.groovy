@@ -297,7 +297,7 @@ def addWord() {
 			
 		if( txt.contains(' /') ) {
 			try {
-				def forms = expand.expand_line(txt)
+				def forms = expand.expand_line(txt.replaceFirst(/#.*/, ''))
 			} catch ( e ) {
 				inflectedList.getModel().clear()
 				inflectedList.getModel().add(e.getMessage())
@@ -309,7 +309,8 @@ def addWord() {
 //		inputData.removeAt(selIdx)
 //		mainList.invalidate()
 		
-		addedList.getModel().add(text.text.trim())
+        def lineToAdd = text.text.trim().replace(' #>', '            #>').replace( '# rv', '            # rv')
+		addedList.getModel().add(lineToAdd)
 		
 		int sz = addedList.getModel().getSize()
 		if( sz > 0 ) {

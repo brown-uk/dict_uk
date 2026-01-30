@@ -225,6 +225,7 @@
 бачити /v1.it0.cf.advp.is0 :imperf
 давати /v1.cf.advp.isNo :imperf                               # rv_inf:rv_zna:rv_rod:rv_oru:rv_dav
 надлити /v3.isTo :perf
+озватися /vr3.it1l :perf         # подвійні форми - озвуся/озовуся
 
 Богородиця /n10.ko.< :prop
 Всевишній /n2adj1.< :prop

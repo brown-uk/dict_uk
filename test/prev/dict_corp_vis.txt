@@ -2886,7 +2886,7 @@
   кайданами noun:inanim:p:v_oru:ns
   кайданах noun:inanim:p:v_mis:ns
   кайдани noun:inanim:p:v_kly:ns
-капець noun:inanim:m:v_naz
+капець noun:inanim:m:v_naz:predic
   капця noun:inanim:m:v_rod
   капцеві noun:inanim:m:v_dav
   капцю noun:inanim:m:v_dav
@@ -3689,6 +3689,51 @@
   однією-півтори numr:f:v_oru
   одною-півтори numr:f:v_oru
   одній-півтори numr:f:v_mis
+озвавшись advp:rev:perf
+  озвавшися advp:rev:perf:long
+озватися verb:rev:perf:inf    # подвійні форми - озвуся/озовуся
+  озватись verb:rev:perf:inf
+  озваться verb:rev:perf:inf:short
+  озвись verb:rev:perf:impr:s:2
+  озвися verb:rev:perf:impr:s:2
+  озовись verb:rev:perf:impr:s:2
+  озовися verb:rev:perf:impr:s:2
+  озвімось verb:rev:perf:impr:p:1
+  озвімося verb:rev:perf:impr:p:1
+  озвімся verb:rev:perf:impr:p:1
+  озовімось verb:rev:perf:impr:p:1
+  озовімося verb:rev:perf:impr:p:1
+  озовімся verb:rev:perf:impr:p:1
+  озвіться verb:rev:perf:impr:p:2
+  озовіться verb:rev:perf:impr:p:2
+  озвусь verb:rev:perf:futr:s:1
+  озвуся verb:rev:perf:futr:s:1
+  озовусь verb:rev:perf:futr:s:1
+  озовуся verb:rev:perf:futr:s:1
+  озвешся verb:rev:perf:futr:s:2
+  озовешся verb:rev:perf:futr:s:2
+  озветься verb:rev:perf:futr:s:3
+  озоветься verb:rev:perf:futr:s:3
+  озвемось verb:rev:perf:futr:p:1
+  озвемося verb:rev:perf:futr:p:1
+  озовемось verb:rev:perf:futr:p:1
+  озовемося verb:rev:perf:futr:p:1
+  озвемся verb:rev:perf:futr:p:1:subst
+  озовемся verb:rev:perf:futr:p:1:subst
+  озветесь verb:rev:perf:futr:p:2
+  озветеся verb:rev:perf:futr:p:2
+  озоветесь verb:rev:perf:futr:p:2
+  озоветеся verb:rev:perf:futr:p:2
+  озвуться verb:rev:perf:futr:p:3
+  озовуться verb:rev:perf:futr:p:3
+  озвавсь verb:rev:perf:past:m
+  озвався verb:rev:perf:past:m
+  озвалась verb:rev:perf:past:f
+  озвалася verb:rev:perf:past:f
+  озвалось verb:rev:perf:past:n
+  озвалося verb:rev:perf:past:n
+  озвались verb:rev:perf:past:p
+  озвалися verb:rev:perf:past:p
 оскірившись advp:rev:perf:rare
   оскірившися advp:rev:perf:long:rare
 оскіритися verb:rev:perf:inf:rare
