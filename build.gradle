@@ -202,8 +202,8 @@ task showExpandCommand {
 // Testing targets
 //
 
-def getAdjustedText(filename) {
-       new File(filename).text.replace("\r\n", "\n")
+String getAdjustedText(String filename) {
+    new File(filename).text.replace("\r\n", "\n")
 }
 
 

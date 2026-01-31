@@ -57,7 +57,7 @@ replWords.removeAll(koatuuIgnore)
 replWords.removeIf{ w -> (w =~ /[.-]$|'дно|X-/) as Boolean }
 replWords.removeAll(["здавання-приймання", "передання-прийняття", "прийняття-передання"])
 replWords.removeAll(["Вама", "Велика", "Великий", "Гуляй", "Капу", "Крута",
-    "Кьоґенеш", "Нові", "Німецька", "Радісний", "Середня", "Чумацький", "верхньошироківський"])
+    "Кьоґенеш", "Нові", "Німецька", "Радісний", "Середня", "Чумацький", "верхньошироківський", "Дар"])
 
-println "Unknown:\n" + replWords.join("\n")
+if( replWords ) println "Unknown:\n" + replWords.join("\n")
 println "Total uknown: ${replWords.size()}"

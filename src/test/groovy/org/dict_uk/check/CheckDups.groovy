@@ -34,6 +34,7 @@ def lines = files.collect { File f ->
 //new File("z_du.txt").text = lines.join("\n")
 
 def dups = lines.countBy{it}.grep{it.value > 1 }.collect{it.key.toString()}
+dups.removeIf{ (it =~ /один .* - півтора|експрессекретар/) as Boolean }
 
 java.text.Collator coll = java.text.Collator.getInstance(new Locale("uk", "UA"));
 coll.setStrength(java.text.Collator.IDENTICAL)

@@ -2886,7 +2886,7 @@
   кайданами noun:inanim:p:v_oru:ns
   кайданах noun:inanim:p:v_mis:ns
   кайдани noun:inanim:p:v_kly:ns
-капець noun:inanim:m:v_naz:predic
+капець noun:inanim:m:v_naz
   капця noun:inanim:m:v_rod
   капцеві noun:inanim:m:v_dav
   капцю noun:inanim:m:v_dav
@@ -3602,6 +3602,14 @@
   найуживанішими adj:p:v_oru:comps
   найуживаніших adj:p:v_mis:comps
   найуживаніші adj:p:v_kly:comps
+негодяще noun:inanim:n:v_naz:predic
+  негодящого noun:inanim:n:v_rod
+  негодящому noun:inanim:n:v_dav
+  негодяще noun:inanim:n:v_zna
+  негодящим noun:inanim:n:v_oru
+  негодящім noun:inanim:n:v_mis
+  негодящому noun:inanim:n:v_mis
+  негодяще noun:inanim:n:v_kly
 ніде adv:pron:emph    # rv_inf    # ні́де
 ніде adv:pron:neg    # ніде́
 ніжність noun:inanim:f:v_naz
@@ -3706,6 +3714,10 @@
   озовімся verb:rev:perf:impr:p:1
   озвіться verb:rev:perf:impr:p:2
   озовіться verb:rev:perf:impr:p:2
+  озвітесь verb:rev:perf:impr:p:2:long
+  озвітеся verb:rev:perf:impr:p:2:long
+  озовітесь verb:rev:perf:impr:p:2:long
+  озовітеся verb:rev:perf:impr:p:2:long
   озвусь verb:rev:perf:futr:s:1
   озвуся verb:rev:perf:futr:s:1
   озовусь verb:rev:perf:futr:s:1
