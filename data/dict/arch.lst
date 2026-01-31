@@ -2062,7 +2062,7 @@
 запізнити /v1 :perf                     # rv_zna:rv_oru
 запіти /v2 :perf                                # rv_oru
 запіяка /n10.p1.<m
-запіяти /v2 :perf
+запіяти /v1 :perf
 заплачення /n2n
 заплинути /v1 :perf
 заплід /n21
@@ -2956,6 +2956,7 @@
 латунник /n20.a.p.<
 лахавий /adj
 лахманка /n10.p2
+лебедити /v1.cf.advp :imperf
 левар /n24.a.ku.<
 легкома adv
 леговище /n2n.p1
@@ -3993,7 +3994,7 @@
 одіж /n32
 одіжно adv
 одізвання /n2n
-одізвати /v1.isNo :perf              # rv_zna:rv_oru
+одізвати /v3.isNo :perf              # rv_zna:rv_oru
 одізватися /vr3.it1l :perf               # rv_oru:rv_dav
 одіймати /v2.cf.advp :imperf                   # rv_zna:rv_oru
 одійняти /v1 :perf                   # rv_zna:rv_oru
@@ -4588,8 +4589,6 @@
 ознаймляти /v2.cf.advp :imperf                                # rv_zna:rv_oru:rv_dav
 ознаймований /adj :adjp:pasv:perf
 ознаймувати /v1.cf.advp :imperf:perf                                         # rv_zna:rv_oru:rv_dav
-озовись озватися verb:rev:perf:impr:s:2
-озовися озватися verb:rev:perf:impr:s:2
 озутий /adj :adjp:pasv:perf
 ойчизна /n10.p1
 окадкуватий /adj
@@ -5139,7 +5138,7 @@
 післанництво /n2n
 пішохід /n21.p                        # :xp2 тротуар
 піяння /n2n
-піяти /v2.cf :imperf
+піяти /v1.cf.advp :imperf
 піяцтво /n2n
 плавацький /adj
 плазовитий /adj
@@ -5706,7 +5705,7 @@
 промкнутися /vr1 :perf
 промфінплян /n20
 пропагатор /n20.a.p.ke.<
-пропіяти /v2 :perf
+пропіяти /v1 :perf
 прорізь /n32
 просвітно adv
 просвічати /v2.cf.advp :imperf              # rv_zna:rv_oru
