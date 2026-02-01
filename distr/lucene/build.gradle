@@ -34,7 +34,7 @@ dependencies {
 
     compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.1'
     compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
-    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.3'
 }
 
 

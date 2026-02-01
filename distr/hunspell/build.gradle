@@ -16,7 +16,7 @@ dependencies {
     implementation group: 'org.apache.groovy', name: 'groovy', version: '4.0.+'
     implementation group: 'org.apache.groovy', name: 'groovy-cli-picocli', version: '4.0.+'
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
-    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.+'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.+'
 }
 
 
