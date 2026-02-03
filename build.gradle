@@ -35,7 +35,7 @@ dependencies {
     implementation 'info.picocli:picocli:4.6.1'
 
     implementation 'commons-cli:commons-cli:1.4'
-    implementation 'ch.qos.logback:logback-classic:1.4.+'
+    implementation 'ch.qos.logback:logback-classic:1.5.+'
 
 //    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.12.+'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.12.+'
