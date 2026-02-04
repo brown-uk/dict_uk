@@ -115,6 +115,7 @@
 вівць вівця noun:anim:p:v_rod/v_zna                         #> овець
 віддасиш віддати verb:perf:futr:s:2
 відеоблога відеоблог noun:m:v_rod
+відмір відміряти verb:perf:impr:s:2
 відмітіть відмітити verb:perf:impr:p:2
 відповідіть відповісти verb:perf:impr:p:2
 відповісиш відповісти verb:perf:futr:s:2
@@ -170,6 +171,7 @@
 дощика дощик noun:m:v_rod
 древків древко noun:inanim:p:v_rod:bad
 дрів дрова noun:p:v_rod:ns
+дрозофілів дрозофіла noun:anim:p:v_rod/v_zna
 дубняка дубняк noun:m:v_rod
 дуре дурити verb:imperf:pres:s:3
 Ельбруса Ельбрус noun:m:v_rod:prop:geo
@@ -401,6 +403,7 @@
 підвод підвода noun:p:v_rod                  #> підвід
 підводе підводити verb:imperf:pres:s:3
 піддержіть піддержати verb:perf:impr:p:2
+підков підкова noun:p:v_rod
 підносіть підносити verb:imperf:impr:p:2
 підходе підходити verb:imperf:pres:s:3
 підчистіть підчистити verb:perf:impr:p:2

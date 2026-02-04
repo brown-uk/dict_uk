@@ -132,6 +132,7 @@
 саменький /adj :pron:def
 
 наші /n2adj1.< :pron:pos
+ненаші /n2adj1.< :pron:pos
 
 цей /adj_pron.long :pron:dem
 оцей /adj_pron.long :pron:dem
@@ -1196,6 +1197,7 @@
 двойко numr:p:nv:coll
 двоєчко numr:p:nv:coll
 двійко numr:p:nv:coll
+двійко-трійко numr:p:nv:coll
 п'ятірко numr:p:nv:coll
 трійко numr:p:nv:coll
 тройко numr:p:nv:coll

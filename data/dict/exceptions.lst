@@ -33,7 +33,8 @@
 великоднями великдень noun:p:v_oru
 великоднях великдень noun:p:v_mis
 
-переддень переддень noun:inanim:m:v_naz
+# переддень переддень noun:inanim:m:v_naz
+переддень /n20.a.p
 передодня переддень noun:inanim:m:v_rod
 передодневі переддень noun:inanim:m:v_dav
 передодню переддень noun:inanim:m:v_dav
@@ -62,6 +63,7 @@
 Льву Лев noun:anim:m:v_mis:prop:fname
 Леве Лев noun:anim:m:v_kly:prop:fname
 
+підвивом підвив noun:inanim:m:v_oru         # lim
 
 чернець чернець noun:anim:m:v_naz
 ченця чернець noun:anim:m:v_rod/v_zna
