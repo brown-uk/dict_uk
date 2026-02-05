@@ -296,3 +296,16 @@ group n2adj3
 їв	ївим	#  Кравців  Кравцівим		        @ noun:m:v_oru
 їв	їві		#  Кравців  Кравціві			    @ noun:m:v_mis
 їв	їве		#  Кравців  Кравціве			    @ noun:m:v_kly
+
+subgroup n2adj3.p
+
+[^жшщ]ів:
+ів  еви		#  Гринів  Гриневи		            @ noun:p:v_naz/v_kly
+ів  евих	#  Гринів  Гриневих			    @ noun:p:v_rod/v_zna/v_mis
+ів  евим	#  Гринів  Гриневим		            @ noun:p:v_dav
+ів  евими	#  Гринів  Гриневими		        @ noun:p:v_oru
+
+ів  іви		#  Гринів  Гриніви		            @ noun:p:v_naz/v_kly
+ів  івих	#  Гринів  Гринівих			    @ noun:p:v_rod/v_zna/v_mis
+ів  івим	#  Гринів  Гринівим		            @ noun:p:v_dav
+ів  івими	#  Гринів  Гринівими		        @ noun:p:v_oru
