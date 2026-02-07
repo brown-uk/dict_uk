@@ -1,64 +1,27 @@
 #!/bin/env groovy
 
-import groovy.swing.SwingBuilder
-import javax.swing.*
+package editor
+
 import java.awt.*
-import java.awt.BorderLayout
 import java.awt.datatransfer.Clipboard
 import java.awt.datatransfer.StringSelection
 import java.awt.event.ActionEvent
-import java.awt.event.KeyEvent
-
-import org.dict_uk.expand.DictSorter
-import org.dict_uk.expand.Expand
-
-import groovy.swing.impl.ListWrapperListModel
-import groovy.transform.Field
 import java.awt.event.ActionListener
 import java.awt.event.InputEvent
-import java.awt.Font
+import java.awt.event.KeyEvent
+
+import javax.swing.*
+
+import groovy.swing.SwingBuilder
+import groovy.swing.impl.ListWrapperListModel
+import groovy.transform.Field
+
+import org.dict_uk.expand.DictSorter
+import org.dict_uk.expand.LineGroup
 
 
 @Field
-def inputData = new File(args.length >= 1 ? args[0] : 'out/toadd/unknown_lemmas.txt').readLines("UTF-8").collect{ it.trim().replace('\t', '  ') }
-@Field
-def media = []
-@Field
-def newWords = []
-@Field
-def expand = new Expand(false)
-
-@Field
-def dictLines = [:]
-
-println "Loading existing words..."
-
-new File('data/dict')
-.listFiles()
-.each { File file ->
-	if( file.name.endsWith('.lst') ) {
-        def tag = file.name != "base.lst" ? file.name : ""
-        file.readLines("UTF-8").each {
-		    dictLines[it] = tag
-		}
-	}
-}
-
-def newLemmaFile = new File('out/toadd/media_src.txt')
-if( newLemmaFile.exists() ) {
-	println "Loading media_src..."
-	media = newLemmaFile.readLines("UTF-8").collectEntries {
-//		def parts = it.split('@@@')
-		def parts = it.split(/ +/, 2)
-		[ (parts[0]): parts.length > 1 ? parts[1..-1] : ["---"] ]
-	}
-}
-
-println "Input data: ${inputData.size()}, dict lines: ${dictLines.size()}"
-
-expand.affix.load_affixes('data/affix')
-
-
+def EditorData data = new EditorData(args)
 
 def swing = new SwingBuilder()
 
@@ -71,12 +34,17 @@ def sharedPanel = {
 def inflect() {
 	inflectedList.getModel().clear()
 
-
-	def txt = text.text	
+	String txt = text.text	
 	if( txt.contains(' /') || txt.contains(' noun:') ) {
 		
 		try {
-			def forms = expand.expand_line(txt)
+            def parts = txt.split(/#/)
+            def comment = null
+            txt = parts[0].trim()
+            if( parts.size() > 1 ) comment = parts[1].trim()
+            println "Expanding $txt"
+			def forms = data.expand.expand_line(txt)
+            
 			forms = new DictSorter().sortEntries(forms)
 //			println forms
 			
@@ -132,25 +100,19 @@ Closure selChange1 = { e ->
 	if( e.getValueIsAdjusting() || minSelIdx < 0 )
 		return
 
-	def itemParts = inputData[minSelIdx].split(' +')
-	boolean countPresent = (itemParts[0] =~~ /[0-9]+/) as boolean
-	def item = countPresent ? itemParts[1] : itemParts[0]
-	def notes = ! countPresent && itemParts.size() > 1 ? itemParts[1] : ''
+	def entry = data.inputData[minSelIdx] //.split(' +')
 	
-	def word
-	def word_txt
-	
-	if( notes =~ /^(\/[a-z]|noun:.:nv|noninfl|adv|intj|onomat)/ ) {
-		notesLabel.text = ''
-		word = item
-		word_txt = inputData[minSelIdx].replaceFirst(/  +/, ' ')
-	}
-	else {
-		notesLabel.text = notes
+	def word = entry.word
+	def word_txt = entry.flags ? "${entry.word} ${entry.flags}" : entry.word
 
-		word = item.startsWith(' ') ? item.trim().split(/    /, 2)[1].trim() : item.split(/ /, 2)[0]
-		word_txt = item.contains('невідм.') ? word + " noun:m:nv" : getDefaultTxt(word)
-	}
+    notesLabel.text = word
+	
+    if( entry.comment ) {
+        word_txt += "    # ${entry.comment}"
+    }
+    if( ! entry.flags ) {
+        word_txt = EditorData.getDefaultTxt(word)
+    }
 
 	println "word: $word"
 
@@ -163,89 +125,22 @@ Closure selChange1 = { e ->
 		inflect()
 	})
 
-//	if( inputData.contains('lemma') ) {
+    mediaList.setModel(new ListWrapperListModel<String>(entry.context))
+    
+    if( false ) {
 		mediaList.setModel(new ListWrapperListModel<String>(['... шукаємо ...']))
 		SwingUtilities.invokeLater( {
 			findMedia(word)
 		})
-//	}
+    }
 }
 
 
-def getDefaultTxt(word) {
-	def word_txt = word
-	switch( word ) {
-		case ~/.*[иі]й$/:
-			word_txt += ' /adj'
-			break;
-			
-		case ~/.*(ість)$/:
-			word_txt += ' /n30'
-			break;
-		case ~/.*([еє]ць)$/:
-			word_txt += ' /n22.a.p'
-			break;
-		case ~/.*(олог)$/:
-			word_txt += ' /n20.a.p.<'
-			break;
-		case ~/.*(знавство)$/:
-			word_txt += ' /n2n'
-			break;
-		case ~/.*(метр)$/:
-			word_txt += ' /n20.a.p.ke'
-			break;
-		case ~/.*([^аеєиіїоуюя])$/:
-			word_txt += ' /n20.p'
-			if( word.endsWith('р') )
-				word_txt += '.ke'
-			break;
 
-		case ~/.*(ння|ття|сся|ззя|тво|ще)$/:
-			word_txt += ' /n2n.p1'
-			break;
-
-		case ~/.*(ччя)$/:
-			word_txt += ' /n2n'
-			break;
-
-		case ~/.*[ую]вати$/:
-			word_txt += ' /v1 :imperf'
-			break;
-		case ~/.*[ую]ватися$/:
-			word_txt += ' /vr1 :imperf'
-			break;
-		case ~/.*ти$/:
-			word_txt += ' /v1 :imperf'
-			break;
-		case ~/.*тися$/:
-			word_txt += ' /vr1 :imperf'
-			break;
-			
-			
-		case ~/.*(огія)$/:
-			word_txt += ' /n10'
-			break;
-		case ~/.*([аеєиіїоуюя]ка|[^к]а|ія|я)$/:
-			word_txt += ' /n10.p1'
-			break;
-		case ~/.*([^аеєиіїоуюя]ка)$/:
-			word_txt += ' /n10.p2'
-			break;
-			
-		case ~/.*и$/:
-			word_txt += ' /np2'
-			break;
-
-		case ~/.*о$/:
-			word_txt += ' adv'
-			break;
-	}
-
-	word_txt
-}
-
-def findInDict(word) {
+//@CompileStatic
+def findInDict(String word) {
 	word = word.replaceFirst(/.*-/, '')
+    word = word.replace(/ .*/, '')
 	
 	def ending = word.replaceFirst(/^(авіа|авто|агро|аеро|анти|аудіо|багато|без|взаємо|ви|від|високо|відео|гео|гепато|геронто|геліо|гідро|гіпер|держ|еко|екстра|електро|етно|євро|за|кібер|кіно|мало|мега|мета|мікро|моно|мото|над|напів|нейро|не|пере|під|по|проти|про|псевдо|радіо|само|спец|спів|стерео|спорт|старо|супер|термо|теле|транс|фото)/, '')
     ending = ending.replaceFirst(/^ав/, 'а[ву]')
@@ -261,9 +156,9 @@ def findInDict(word) {
     ending = ending.replaceFirst(/ка$/, '(ка)?')
 	ending = ending.replaceFirst(/[гґ]/, '[гґ]')
 
-	println "searching for existing: $ending in ${dictLines.size()}"
+	println "searching for existing: $ending in ${data.dictLines.size()}"
 	def ptrn = ~"(?ui)^[^#]*$ending "
-	def similars = dictLines.findAll{ k,v -> ptrn.matcher(k) }
+	def similars = data.dictLines.findAll{ k,v -> ptrn.matcher(k) }
 //	def similars = dictLines.findAll{ it =~ "(?i)^[а-яіїєґА-ЯІЇЄҐ'-]*$ending " }
 	if( similars.size() > 100 ) {
 		similars = similars[0..100]
@@ -297,7 +192,7 @@ def addWord() {
 			
 		if( txt.contains(' /') ) {
 			try {
-				def forms = expand.expand_line(txt.replaceFirst(/#.*/, ''))
+				def forms = data.expand.expand_line(txt.replaceFirst(/#.*/, ''))
 			} catch ( e ) {
 				inflectedList.getModel().clear()
 				inflectedList.getModel().add(e.getMessage())
@@ -317,14 +212,14 @@ def addWord() {
 			addedList.ensureIndexIsVisible(sz-1)
 		}
 
-		textlabel.text = "Added ${newWords.size()} words."
+		textlabel.text = "Added ${data.newWords.size()} words."
 		
 		mainList.setSelectionInterval(selIdx + 1, selIdx + 1)
 //		mainList.getSelectionModel().fireValueChanged(selIdx, selIdx)
 	}
 }
 
-
+//@CompileStatic
 def lname() {
     if( text.text.contains('єв ') ) {
         text.text = text.text.replaceFirst(/(єв ).*/, '$1/n2adj2.<+')
@@ -344,11 +239,13 @@ def lname() {
         text.text = text.text.replaceFirst(/( \/n10).*/, '$1.<+')
     }
     inflect()
+    text.text = text.text + "    #=> names-anim"
 }
 
 def defaultFlags() {
     def txt = text.text.replaceFirst(/ .*/, '')
-    def word_txt = getDefaultTxt(txt)
+    println "Default flags for $txt"
+    def word_txt = EditorData.getDefaultTxt(txt)
     text.setText(word_txt)
     findInDict(txt)
     inflect()
@@ -356,7 +253,6 @@ def defaultFlags() {
 
 def openUrl(url) {
     if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
-println("--- destop")
         Desktop.getDesktop().browse(new URI(url));
     }
     else {
@@ -375,7 +271,7 @@ swing.edt {
 
 				def sp = scrollPane( verticalScrollBarPolicy:JScrollPane.VERTICAL_SCROLLBAR_ALWAYS ) {
 					mainList = list(
-							listData: inputData,
+							listData: data.inputData.collect { it.flags ? "${it.word} ${it.flags}" : it.word },
 							valueChanged: selChange1
 							)
 					mainList.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
@@ -411,7 +307,7 @@ swing.edt {
 							minimumSize: new Dimension(220, 70)
 							)
 
-					textlabel = label("${newWords.size()} new words")
+					textlabel = label("${data.newWords.size()} new words")
 
 					hbox {
 						def btn1 = button(
@@ -594,7 +490,7 @@ swing.edt {
 						button(
 								text: 'Geo',
 								actionPerformed: {
-										text.text = text.text.padRight(30) + '# geo-other'
+										text.text = text.text.padRight(30) + '#=> geo-other'
 									}
 								)
 						label('     ')
@@ -656,8 +552,7 @@ swing.edt {
 						button(
 								text: 'Save',
 								actionPerformed: {
-									new File('new_words.lst') << newWords.join('\n') + '\n'
-									newWords.clear()
+                                    data.save()
 									textlabel.text = "Just saved"
 								}
 								)
@@ -673,6 +568,7 @@ swing.edt {
 						inflectedList.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
 					}
 
+                    label('ВЕСУМ:')
 					scrollPane(verticalScrollBarPolicy:JScrollPane.VERTICAL_SCROLLBAR_ALWAYS ) {
 						def data2 = []
 
@@ -694,7 +590,7 @@ swing.edt {
 					scrollPane(verticalScrollBarPolicy:JScrollPane.VERTICAL_SCROLLBAR_ALWAYS ) {
 
 						addedList = list(
-							model: new ListWrapperListModel<String>(newWords),
+							model: new ListWrapperListModel<String>(data.newWords),
 							visibleRowCount: 30,
 							minimumSize: new Dimension(220, 500)
 //							preferredSize: new Dimension(200, 200)
