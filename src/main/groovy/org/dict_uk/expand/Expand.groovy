@@ -1575,9 +1575,12 @@ class Expand {
 			if( line.contains("/v") && line.contains(":imperf:perf") ) {
 				double_form_cnt += 1
 			}
-			if( line =~ / \/[a-z].*:bad|:slang|:alt/ ) {
+			else if( line =~ /( \/[a-z]|v_naz|:inf|).*:bad|:alt|:obsc|:vulg|:abbr/ ) {
 				double_form_cnt += 1
 			}
+            else if( line =~ / (\/v.*\.advp|advp)/ ) {
+                double_form_cnt += 1
+            }
 
 			prepared_lines << lineGroup
 		}

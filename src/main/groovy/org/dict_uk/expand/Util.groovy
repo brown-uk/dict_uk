@@ -260,7 +260,7 @@ class Util {
 		int cnt = 0
 		int cnt_std = 0
 
-		for(String line in lines ) {
+		for(String line in lines) {
 			if( line[0] == " ")
 				continue
 
@@ -306,7 +306,7 @@ class Util {
 
 		new File("stats", "dict_stats.txt").withWriter("utf-8") { stat_f ->
 			stat_f.printf("Всього лем: %d\n", cnt)
-			stat_f.printf("  словникових лем (без advp/bad/slang/alt, без омонімів imperf/perf) %s\n", (cnt_std - double_form_cnt))
+			stat_f.printf("  словникових лем (без advp/bad/alt/vulg/obsc/abbr, двовидові дієслова, як одна лема) %s\n", (cnt_std - double_form_cnt))
 			stat_f.print("\nЧастоти за тегами:\n")
 
 			def ordered_pos_freq = pos_stat.keySet().toList().sort()
