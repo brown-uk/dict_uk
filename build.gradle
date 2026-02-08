@@ -267,8 +267,9 @@ def get_diff_cmd(outputDir, file) {
 
 task diff(type: Exec) {
     def dictFile="dict_corp_lt.txt"
-    inputs.file "$outputDir/words.txt"
-    outputs.file "$outputDir/words.txt.diff"
+    outputs.upToDateWhen { false }
+    //inputs.file "$outputDir/words.txt"
+    //outputs.file "$outputDir/words.txt.diff"
 
 //    def cmd = get_diff_cmd(outputDir, dictFile)
 //    cmd += "; " + get_diff_cmd(outputDir, 'words.txt')

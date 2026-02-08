@@ -61,7 +61,7 @@ public class EditorData {
                         if( parts[0] ==~ /[0-9]+/ ) {
                             currentEntry.cnt = parts[0] as Integer
                             idx += 1
-                            firstMetaLine << parts[0]
+                            firstMetaLine.add(0, parts[0])
                         }
                         currentEntry.word = parts[idx]
                         idx += 1
