@@ -42,6 +42,7 @@
 вип. noun:m:nv                  # випуск
 вироб. adj:nv:rinanim           # виробничий
 виробн. adj:nv:rinanim          # виробничий
+відм. noun:m:nv                 # відмінок
 відс. noun:m:nv                 # відсоток
 вірм. adj:nv:rinanim            # вірменський
 вкл. advp:imperf                # включаючи
@@ -91,6 +92,7 @@
 енцикл. adj:nv                  # енциклопедичний
 жін. adj:nv:rinanim             # жіночий
 жовт. noun:m:nv                 # жовтня
+жур. noun:m:nv                  # журнал
 журн. noun:m:nv                 # журнал
 зав. noun:m:nv:anim:xp1         # завідувач
 зав. noun:f:nv:anim:xp2         # завідувачка
@@ -225,6 +227,7 @@
 пн.-зах. adj:nv:rinanim         # північно-західний
 пн.-сх. adj:nv:rinanim          # північно-східний
 пов. noun:m:nv                  # повіт
+пов. noun:f:v_oru               # (з) повагою
 под. adj:n:nv:rinanim           # подібне
 пок. noun:m:nv|adj:nv:ranim     # показник; покійний
 пол. noun:f:nv:np               # половина
@@ -341,9 +344,11 @@
 філос. adj:nv:rinanim           # філософський
 фр. adj:nv:rinanim              # французький
 франц. adj:nv:rinanim           # французький
+хім. adj:nv                     # хімічний
 Хр. noun:m:nv:np:anim           # Христа
 худ. adj:nv:rinanim             # художній
 худож. adj:nv:rinanim           # художній
+хут. noun:m:nv                  # хутір
 церк. adj:nv:rinanim            # церковний
 цит. noun:f:nv                  # цитата, цитовано
 ч. noun:f:nv                    # частина

@@ -161,6 +161,13 @@
 вівцями вівця noun:p:v_oru:anim
 вівцях вівця noun:p:v_mis:anim
 
+добра добра noun:p:v_naz:ns:arch
+дібр добра noun:p:v_rod:ns:arch
+добрам добра noun:p:v_dav:ns:arch
+добра добра noun:p:v_zna:ns:arch
+добрами добра noun:p:v_oru:ns:arch
+добрах добра noun:p:v_mis:ns:arch
+добра добра noun:p:v_kly:ns:arch
 
 ігри гра noun:p:v_naz/v_zna/v_kly
 гри гра noun:p:v_naz/v_zna              # 2,3,4 гри
@@ -977,6 +984,8 @@
 віддава віддавати verb:imperf:pres:s:3:short
 настава наставати verb:imperf:pres:s:3:short
 відіграва відігравати verb:imperf:pres:s:3:short
+
+ма мати verb:imperf:pres:s:3:short
 
 
 ввити ввити verb:inf:perf               # rv_zna

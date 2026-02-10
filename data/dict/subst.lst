@@ -248,6 +248,7 @@
 звірми звір noun:anim:p:v_oru               #> звірами
 звірями звір noun:anim:p:v_oru              #> звірами
 зводе зводити verb:imperf:pres:s:3
+згоне згонити verb:perf:futr:s:3
 здасиш здати verb:perf:futr:s:2
 зілліть злити verb:perf:impr:p:2
 з'їсиш з'їсти verb:perf:futr:s:2
@@ -337,6 +338,7 @@
 моніторинга моніторинг noun:m:v_rod
 мудили мудило noun:p:v_naz:anim
 музиків музика noun:anim:p:v_rod/v_zna      #> музик
+мусе мусити verb:imperf:pres:s:3
 набата набат noun:m:v_rod
 наводіть наводити verb:imperf:impr:p:2
 назовіть назвати verb:perf:impr:p:2
@@ -377,6 +379,7 @@
 падли падло noun:anim:p:v_naz
 пале палити verb:imperf:pres:s:3
 пампушків пампушка noun:p:v_rod
+паннів панна noun:anim:p:v_rod/v_zna
 панталонів панталони noun:p:v_rod:ns          #> панталон
 панчох панчоха noun:p:v_rod
 параліча параліч noun:inanim:m:v_rod
@@ -409,6 +412,7 @@
 підчистіть підчистити verb:perf:impr:p:2
 пісковика пісковик noun:m:v_rod
 піт-стопа піт-стоп noun:m:v_rod             #> піт-стопу
+плавле пливти verb:imperf:pres:s:3
 плагіна плагін noun:m:v_rod
 пластирем пластир noun:m:v_oru
 плате платити verb:imperf:pres:s:3
@@ -417,6 +421,7 @@
 плічми плече noun:inanim:p:v_oru
 побаче побачити verb:perf:futr:s:3                          #> побачить
 побіле побілити verb:perf:futr:s:3
+поверха поверх noun:m:v_rod
 повідоміть повідомити verb:perf:impr:p:2
 погордіть погордити verb:perf:impr:p:2:arch
 подасиш подати verb:perf:futr:s:2
@@ -443,6 +448,7 @@
 прикусе прикусити verb:perf:futr:s:3
 приносе приносити verb:imperf:pres:s:3
 приносіть приносити verb:imperf:impr:p:2
+припине припинити verb:perf:futr:s:3
 прискоріть прискорити verb:perf:impr:p:2
 пристрастів пристрасть noun:p:v_rod         #> пристрастей
 приходе приходити verb:imperf:pres:s:3

@@ -265,7 +265,7 @@ def get_diff_cmd(outputDir, file) {
 }
 
 
-task diff(type: Exec) {
+task diff(type: Exec, dependsOn: expandForCorp) {
     def dictFile="dict_corp_lt.txt"
     outputs.upToDateWhen { false }
     //inputs.file "$outputDir/words.txt"

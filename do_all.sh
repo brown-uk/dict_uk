@@ -15,8 +15,6 @@ function z_dep {
 }
 
 
-OPTS="--parallel"
-
 [ -f "new_words.lst" ] && {
     echo "new_words.lst not merged!"
     exit 1
@@ -24,12 +22,12 @@ OPTS="--parallel"
 
 ./gradlew checkDups checkVerbRevPair
 
-./gradlew $OPTS sortDict expand diff || exit 1
+./gradlew sortDict expand diff || exit 1
 
 ./gradlew checkReplacements
 
 if [ "$1" == "-d" ]; then
-    exec ./gradlew $OTPS deployLtDict
+    exec ./gradlew --parallel deployLtDict
 fi
 
 if [ "$1" == "-z" ]; then

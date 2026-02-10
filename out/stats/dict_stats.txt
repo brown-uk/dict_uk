@@ -1,44 +1,44 @@
-Всього лем: 440898
-  словникових лем (без advp/bad/alt/vulg/obsc/abbr, двовидові дієслова, як одна лема) 333055
+Всього лем: 440948
+  словникових лем (без advp/bad/alt/vulg/obsc/abbr, двовидові дієслова, як одна лема) 333088
 
 Частоти за тегами:
-adj 108553
+adj 108555
      compb 2384
      imperf 7927
-     nv 166
+     nv 168
      perf 12502
-adv 19405
+adv 19409
      compb 1799
-advp 70741
-     imperf 43397
-     perf 27344
+advp 70742
+     imperf 43399
+     perf 27343
 conj 157
-intj 476
-noninfl 1050
+intj 478
+noninfl 1051
      prop 5
-noun 190326
-     anim 68079
-     fname 5723
-     geo 20721
-     inanim 122154
-     lname 33438
-     nv 17474
+noun 190363
+     anim 68092
+     fname 5726
+     geo 20723
+     inanim 122178
+     lname 33444
+     nv 17493
      pname 1041
-     prop 63251
+     prop 63266
 number 17
-numr 140
-     nv 20
-part 205
-prep 230
+numr 141
+     nv 21
+part 206
+prep 231
 verb 49598
-     imperf 22172
-     perf 27426
+     imperf 22173
+     perf 27425
 
 Нестандартні леми:
-abbr 2451
-bad 13802
-arch 9335
-slang 4038
+abbr 2465
+bad 13804
+arch 9352
+slang 4042
 alt 1461
 obsc 761
 vulg 348
