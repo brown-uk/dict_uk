@@ -268,6 +268,7 @@
 Іллєю Ілля noun:anim:m:v_oru:prop:fname
 імбирем імбир noun:m:v_oru
 інвентаря інвентар noun:m:v_rod          # р.в. архаїчного значення — список
+індекса індекс noun:m:v_rod
 Інтера Інтер noun:inanim:m:v_rod:prop
 Ірпіні Ірпінь noun:inanim:m:v_mis:prop:geo
 іспита іспит noun:m:v_rod
@@ -284,6 +285,7 @@
 кіоска кіоск noun:m:v_rod
 клавішів клавіша noun:p:v_rod
 ковіда ковід noun:m:v_rod
+кольор колір noun:m:v_naz/v_zna
 колять колоти verb:imperf:pres:p:3
 консерв консерва noun:p:v_rod
 контура контур noun:m:v_rod                     #> контуру
@@ -312,6 +314,7 @@
 лабет лабети noun:p:v_rod:ns
 Лазара Лазар noun:anim:m:v_rod/v_zna:prop:fname
 ледаре ледар noun:m:v_kly:anim              #> ледарю
+леду лід noun:m:v_rod/v_dav/v_mis
 лежучи лежачи advp:imperf
 лейкопластирем лейкопластир noun:m:v_oru
 лівшів лівша noun:anim:p:v_rod/v_zna
@@ -325,6 +328,7 @@
 Марусе Маруся noun:anim:f:v_kly:prop:fname      #> Марусю
 Массачусетса Массачусетс noun:m:v_rod:prop:geo
 машіть махати verb:imperf:impr:p:2
+мема мем noun:m:v_rod
 метадона метадон noun:m:v_rod
 метода метод noun:m:v_rod
 міометрія міометрій noun:m:v_rod
@@ -458,6 +462,7 @@
 продасиш продати verb:perf:futr:s:2
 проекта проект noun:m:v_rod:up92
 проєкта проєкт noun:m:v_rod:up19
+промисл промисел noun:m:v_naz/v_zna
 прополосніть прополоскати verb:perf:impr:p:2
 протестіть протестити verb:perf:impr:p:2:slang
 профіля профіль noun:m:v_rod
@@ -513,6 +518,7 @@
 Судетів Судети noun:p:v_rod:ns:prop:geo   #> Судет
 султаншо султанша noun:anim:f:v_kly
 сумнівові сумнів noun:m:v_dav/v_mis
+сурем сурма noun:p:v_rod
 суховантажа суховантаж noun:inanim:m:v_rod
 сходе сходити verb:imperf:pres:s:3                    # :xp1
 татарів татарин noun:anim:p:v_rod/v_zna     #> татар
@@ -522,11 +528,16 @@
 тіктока тікток noun:m:v_rod                 #> тіктоку
 тік-тока тік-ток noun:m:v_rod                 #> тік-току
 тортурів тортура noun:inanim:p:v_rod
+Тоттенхема Тоттенхем noun:m:v_rod:prop
 трафіка трафік noun:m:v_rod
 тремтючи тремтючи advp:imperf
 тренінга тренінг noun:m:v_rod
 трьохста триста numr:p:v_rod/v_zna          #> трьохсот
 уводе уводити verb:imperf:pres:s:3
+усим увесь adj:m:v_oru/v_mis:pron:gen
+усим увесь adj:n:v_oru/v_mis:pron:gen
+усим увесь adj:p:v_dav:pron:gen
+усих увесь adj:p:v_rod/v_zn1/v_mis:pron:gen
 файла файл noun:m:v_rod
 фейлетона фейлетон noun:inanim:m:v_rod
 фейсбука фейсбук noun:m:v_rod               #> фейсбуку

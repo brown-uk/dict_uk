@@ -1,3 +1,4 @@
+# єр /n20.a.p                       # перетинається з обирвками слів після апострофа
 # потвір
 # аналіза
 # дук /n20.a
@@ -1312,8 +1313,11 @@
 ґрунь /n20.a
 ґрунь /n20.a.p
 ґустовно adv:compb
-давен noun:p:v_rod                      # lim
+давен давно noun:p:v_rod
+давна давно noun:n:v_rod
+давна давно noun:p:v_naz/v_zna
 давнеколишній /adj
+давно давно noun:n:v_naz/v_zna                    # lim
 дак conj:subord
 далебіг adv:insert
 далековид /n20.a.p
@@ -1614,6 +1618,7 @@
 жупа /n10.p1
 жупанат /n20
 жупний /adj
+жур /n20.a
 заасекурований /adj :adjp:pasv:perf
 заасекурувати /v1.is0 :perf                                      # rv_zna:rv_oru:rv_dav
 заасекуруватися /vr1 :perf                                       # rv_oru
@@ -4622,7 +4627,9 @@
 одщипнути /v1.is0.isTo :perf                   # rv_zna:rv_oru
 одягненький /adj
 одягний /adj
+ож part
 ожвавитися /vr1.it0 :perf                                    # rv_oru
+оже conj:subord                     # що; отже; якщо
 #ожидати /v2.cf.advp :imperf
 ознаймити /v1.it1 :perf                                       # rv_zna:rv_oru:rv_dav
 ознаймляти /v2.cf.advp :imperf                                # rv_zna:rv_oru:rv_dav
@@ -4964,6 +4971,7 @@
 пасьба /n10
 патинок /n22.a.p
 патрахіль /n32.p
+патрет /n20.a.p
 патрошити /v1.cf.advp :imperf           # rv_zna:rv_oru:rv_dav
 пахати /v2.cf.advp :xp2:imperf                   # па́хати
 пахмурний /adj
@@ -5828,6 +5836,8 @@
 рандка /n10.p2
 ранісько adv
 раннім-рано adv
+ранше adv:compc:predic
+ранше prep                                      # rv_rod
 рата /n10.p1
 ратайство /n2n
 рафінерія /n10.p1
@@ -6040,6 +6050,7 @@
 синиха /n10.p1.<
 синовець /n22.a.p.<
 синтакса /n10
+сить /n32
 сіверко adv:predic
 сіверний /adj                           # холодний
 сідець /n22.a.p
@@ -6092,6 +6103,7 @@
 слідно adv
 сліпорожденний /adj
 слічний /adj
+словар /n24.a.p.ku
 слугиня /n10.p1.<
 службовик /n20.a.p.<
 служива /n2adj1.<

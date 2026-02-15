@@ -39,6 +39,7 @@
 вел. adj:nv                     # великий
 викл. noun:m:nv:anim            # викладач
 викон. adj:nv:rinanim           # виконавчий
+Вип. noun:m:nv                  # Випуск
 вип. noun:m:nv                  # випуск
 вироб. adj:nv:rinanim           # виробничий
 виробн. adj:nv:rinanim          # виробничий
@@ -49,6 +50,7 @@
 вл. noun:m:nv:anim|adj:nv:rinanim      # владика; власний
 вн. adj:nv:rinanim              # внутрішній
 внутр. adj:nv:rinanim           # внутрішній
+Вул. noun:f:nv                  # вулиця
 вул. noun:f:nv                  # вулиця
 вх. adj:nv:rinanim              # вхідний
 вч. noun:f:nv:anim              # вчителька
@@ -99,6 +101,7 @@
 заст. noun:m:nv                 # заступник
 заст. adj:nv:rinanim            # застарілий
 зах. adj:nv:rinanim             # західний
+Зб. noun:m:nv                   # збірник
 зб. noun:m:nv                   # збірник
 зв. adj:nv                      # (так) званий, на звороті
 зл. noun:m:nv                   # злотий
@@ -136,8 +139,10 @@
 коз. adj:nv:rinanim             # козацький
 козац. adj:nv:rinanim           # козацький
 кол. adj:nv|noun:f:nv           # колишній, колегія
+кольор. adj:nv                  # кольоровий
 комерц. adj:nv                  # комерційний
 комерц. adj:nv                  # комерційний
+конт. adj:nv                    # контактний
 конф. noun:f:nv                 # конференція
 коп. noun:f:nv                  # копійка
 Кор. noun:m:nv:np:anim          # Коринтян
@@ -147,6 +152,7 @@
 кр. noun:f:nv:xp2               # крона
 кред. adj:nv                    # кредитний
 кред. adj:nv                    # кредитний
+крим. adj:nv                    # кримський, кримінальний
 куб. adj:nv:rinanim             # кубічний
 лат. adj:nv:rinanim             # латинський
 латин. adj:nv:rinanim           # латинський
@@ -251,11 +257,13 @@
 прим. noun:f:nv                 # примітка
 присл. noun:m:nv                # прислівник
 пров. noun:m:nv                 # провулок
+прод. adj:nv                    # продюсер
 пром. adj:nv:rinanim            # промисловий
 просп. noun:m:nv:np             # проспект
 проф. noun:m:nv:anim            # професор (при прізвищі)
 проц. noun:m:nv                 # процентів, процента
 прп. adj:m:nv                   # преподобний
+Пс. noun:m:nv:np                # Псалтир
 психол. adj:nv:rinanim          # психологічний
 р. noun:m:nv:np:xp1             # рік
 р. noun:f:nv:np:xp2             # річка
@@ -335,10 +343,12 @@
 тт. noun:p:nv                   # томи
 тт. noun:p:nv:anim              # товариші
 уд. noun:m:nv                   # ударів
+Укр. adj:nv                     # український
 укр. adj:nv                     # український
 упоряд. noun:m:nv:anim          # упорядник (при прізвищі)
 упр. noun:n:nv                  # управління
 уч. noun:m:nv:anim              # учень
+фам. adj:nv                     # фамільярний
 фіз. adj:nv:rinanim             # фізичний
 філол. adj:nv:rinanim           # філологічний
 філос. adj:nv:rinanim           # філософський

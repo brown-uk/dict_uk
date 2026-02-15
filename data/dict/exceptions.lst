@@ -855,6 +855,9 @@
 чепцями чепець noun:inanim:p:v_oru:bad
 чепцях чепець noun:inanim:p:v_mis:bad
 
+пся noninfl:foreign
+крев noninfl:foreign
+
 
 #
 # Дієслова
@@ -984,6 +987,8 @@
 віддава віддавати verb:imperf:pres:s:3:short
 настава наставати verb:imperf:pres:s:3:short
 відіграва відігравати verb:imperf:pres:s:3:short
+
+гля глянути verb:perf:impr:s:2:short
 
 ма мати verb:imperf:pres:s:3:short
 
