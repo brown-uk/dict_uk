@@ -34,10 +34,8 @@ task prepareFiles {
         }
 	    into "build/oxt"
     }
-    
-    exec {
-        commandLine 'sh', '-c', "bin/th_gen_idx.pl < thesaurus/th_uk_UA.dat > build/oxt/uk_UA/th_uk_UA.idx"
-    }
+
+    ['sh', '-c', "bin/th_gen_idx.pl < thesaurus/th_uk_UA.dat > build/oxt/uk_UA/th_uk_UA.idx"].join(' ').execute()
   }
 }
 
