@@ -631,6 +631,10 @@
 
 раза раз noun:inanim:m:v_rod                        # лише після дробових + півтора
 
+джосу джос noun:m:v_rod         # lim
+
+диво-дивнеє диво-дивне noun:n:v_naz/v_zna:long
+
 сер сер noun:anim:m:v_kly:up19
 гер гер noun:anim:m:v_kly:up19
 перче перець noun:m:v_kly

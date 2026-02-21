@@ -1,5 +1,6 @@
 # див. також http://lib.npu.edu.ua/full_txt/DSTU_3582_2013.pdf
 абз. noun:m:nv                  # абзац
+Авг. noun:m:nv:prop:fname       # Август
 австр. adj:nv:rinanim           # австрійський
 авт. noun:m:v_naz:nv:anim       # автор, напр. "Сьогодні (у четвер.  Авт.), вранці."
 авт. adj:nv                     # авторський
@@ -257,6 +258,7 @@
 прим. noun:f:nv                 # примітка
 присл. noun:m:nv                # прислівник
 пров. noun:m:nv                 # провулок
+провул. noun:m:nv               # провулок
 прод. adj:nv                    # продюсер
 пром. adj:nv:rinanim            # промисловий
 просп. noun:m:nv:np             # проспект
@@ -369,6 +371,7 @@
 чл.-кор. noun:m:nv:anim         # член-кореспондент (при назві установи або прізвищі)
 чол. noun:m:nv                  # чоловік
 чол. adj:nv:rinanim             # чоловічий
+Шевч. noun:m:nv:prop:lname      # Шевченко
 шотл. adj:nv:rinanim            # шотландський
 шт. noun:f:nv                   # штука
 юр. adj:nv:rinanim              # юридичний
