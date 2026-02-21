@@ -65,9 +65,14 @@ public class EditorData {
                         }
                         currentEntry.word = parts[idx]
                         idx += 1
-                        if( parts.size() > idx && parts[idx] =~ / \/|:/ ) {
+                        if( parts.size() > idx && parts[idx] =~ /\/[a-z]|:|adv|noninfl|intj|part/ ) {
                             currentEntry.flags = parts[idx]
                             idx += 1
+                            
+                            if( parts.size() > idx && parts[idx] =~ /:[a-z]/ ) {
+                                currentEntry.flags += " " + parts[idx]
+                                idx += 1
+                            }
                         }
 
                         if( parts.size() > idx && parts[idx] ) {
