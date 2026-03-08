@@ -776,6 +776,8 @@
 него він noun:unanim:m:v_rod:pron:pers:3:arch
 него він noun:unanim:m:v_zna:pron:pers:3:arch
 
+мислію мисль noun:f:v_oru
+
 ласочка ласочка noun:f:v_naz                # lim
 
 # давні форми
@@ -1221,6 +1223,7 @@
 здоров здоровий adj:m:v_naz/v_zn2:short
 зелен зелений adj:m:v_naz/v_zn2/v_kly:short
 золот золотий adj:m:v_naz/v_zn2/v_kly:short
+зугарен зугарний adj:m:v_naz:short:predic
 кожен кожний adj:m:v_naz/v_zn2:short:pron:gen
 кожен кожний noun:anim:m:v_naz:short:pron:gen
 красен красний adj:m:v_naz/v_zn2/v_kly:short
@@ -1231,6 +1234,7 @@
 невинен невинний adj:m:v_naz:short:predic
 негоден негідний adj:m:v_naz:short:predic
 негоден негідний adj:m:v_zn2/v_kly:short
+недуж недужий adj:m:v_naz:short:predic
 незгоден незгодний adj:m:v_naz/v_zn2:short
 неладен неладний adj:m:v_naz:short
 немощен немощний adj:m:v_naz/v_zn2/v_kly:short:arch

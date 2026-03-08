@@ -122,6 +122,7 @@
 вінішко /n2n
 віруса вірус noun:m:v_rod
 вносіть вносити verb:imperf:impr:p:2
+воде водити verb:imperf:pres:s:3
 восьмиста вісімсот numr:p:v_rod             #> восьмисот
 восьмистами вісімсот numr:p:v_oru           #> вісьмомастами
 всипе засипати verb:perf:futr:s:3
@@ -181,8 +182,8 @@
 енергосектора енергосектор noun:m:v_rod
 епіцентра епіцентр noun:m:v_rod
 єврохостела єврохостел noun:m:v_rod
-єгомостя єгомость noun:anim:m:v_rod
 єдин єдиний adj:m:v_naz/v_zn2
+жиєш жити verb:imperf:pres:s:2
 жлуктіть жлуктити verb:imperf:impr:p:2
 жовтецю жовтець noun:m:v_rod
 жреці жрець noun:anim:p:v_naz
@@ -270,6 +271,7 @@
 Ігора Ігор noun:anim:m:v_rod/v_zna:prop:fname
 Ігоре Ігор noun:anim:m:v_kly:prop:fname
 ізолята ізолят noun:m:v_rod
+ікли ікло noun:p:v_naz/v_zna
 Іллє Ілля noun:anim:m:v_kly:prop:fname
 Іллєю Ілля noun:anim:m:v_oru:prop:fname
 імбирем імбир noun:m:v_oru
@@ -279,6 +281,7 @@
 Ірпіні Ірпінь noun:inanim:m:v_mis:prop:geo
 іспита іспит noun:m:v_rod
 їдж їсти verb:imperf:impr:s:2
+їжою їжа noun:inanim:f:v_oru
 їздіть їздити verb:imperf:impr:p:2
 їсиш їсти verb:imperf:pres:s:2
 кабеля кабель noun:m:v_rod
@@ -338,9 +341,11 @@
 Марусе Маруся noun:anim:f:v_kly:prop:fname      #> Марусю
 Массачусетса Массачусетс noun:m:v_rod:prop:geo
 машіть махати verb:imperf:impr:p:2
+медалів медаль noun:p:v_rod
 мема мем noun:m:v_rod
 метадона метадон noun:m:v_rod
 метода метод noun:m:v_rod
+Миколаїва Миколаїв noun:m:v_rod:prop:geo
 миса мис noun:inanim:m:v_rod
 міометрія міометрій noun:m:v_rod
 Мірчи Мірча noun:anim:m:v_rod/v_dav/v_mis:prop:fname       #> Мірчі
@@ -352,6 +357,7 @@
 молитв молитва noun:p:v_rod
 молодняка молодняк noun:m:v_rod             #> молодняку
 моніторинга моніторинг noun:m:v_rod
+мораторія мораторій noun:m:v_rod
 мудили мудило noun:p:v_naz:anim
 музиків музика noun:anim:p:v_rod/v_zna      #> музик
 мусе мусити verb:imperf:pres:s:3
@@ -360,6 +366,7 @@
 надрів надра noun:p:v_rod:ns
 назов назва noun:p:v_rod
 назовіть назвати verb:perf:impr:p:2
+наїсишся наїстися verb:rev:perf:futr:s:2
 налагодіть налагодити verb:perf:impr:p:2
 наріччів наріччя noun:p:v_rod                       #> наріч
 насипе засипати verb:perf:futr:s:3
@@ -445,6 +452,7 @@
 повідоміть повідомити verb:perf:impr:p:2
 погордіть погордити verb:perf:impr:p:2:arch
 подасиш подати verb:perf:futr:s:2
+подорожів подорож noun:inanim:p:v_rod
 поїздіть поїздити verb:perf:impr:p:2
 поїсиш поїсти verb:perf:futr:s:2
 покращіть покращити verb:perf:impr:p:2
@@ -498,6 +506,7 @@
 римара римар noun:anim:m:v_rod/v_zna
 ріпака ріпак noun:m:v_rod
 робе робити verb:imperf:pres:s:3                            #> робить
+рова рів noun:m:v_rod
 роде родити verb:imperf:pres:s:3
 розгоне розгонити verb:imperf:pres:s:3
 роздрібі роздріб noun:m:v_mis
@@ -519,6 +528,7 @@
 сипляться сипатися verb:rev:imperf:pres:p:3
 скіке noninfl
 скрипта скрипт noun:m:v_rod
+слізми сльоза noun:p:v_oru
 сорома сором noun:m:v_rod
 статею стаття noun:f:v_oru
 статтей стаття noun:p:v_rod                 #> статей
@@ -574,6 +584,7 @@
 хлопчиськи хлопчисько noun:p:v_naz:anim
 ходе ходити verb:imperf:pres:s:3
 ходімте ходити verb:imperf:impr:p:1
+ходють ходити verb:imperf:pres:p:3
 хоругв хоругва noun:inanim:p:v_rod
 хоругів хоругва noun:p:v_rod
 хостела хостел noun:m:v_rod
@@ -592,5 +603,6 @@
 щелепів щелепа noun:inanim:p:v_rod
 ЮКОСа ЮКОС noun:m:v_rod:prop
 ютуба ютуб noun:m:v_rod                     #> ютубу
+яблукові яблуко noun:n:v_dav
 якийся якийсь adj:m:v_naz/v_zn2:pron:ind
 ялівця ялівець noun:m:v_rod
