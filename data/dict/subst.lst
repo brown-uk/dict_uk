@@ -21,6 +21,7 @@
 барелей барель noun:p:v_rod                 #> барелів
 Баренцова Баренцове adj:n:v_rod
 баристів бариста noun:anim:p:v_rod/v_zna
+бариша бариш noun:inanim:m:v_rod
 батальйона батальйон noun:inanim:m:v_rod
 баче бачити verb:imperf:pres:s:3                            #> бачить
 бачуть бачити verb:imperf:pres:p:3
@@ -125,6 +126,7 @@
 воде водити verb:imperf:pres:s:3
 восьмиста вісімсот numr:p:v_rod             #> восьмисот
 восьмистами вісімсот numr:p:v_oru           #> вісьмомастами
+впадь впасти verb:perf:impr:s:2:xp2
 всипе засипати verb:perf:futr:s:3
 всипемо засипати verb:perf:futr:p:1
 всипете засипати verb:perf:futr:p:2
@@ -162,6 +164,7 @@
 дзвоне дзвонити verb:imperf:pres:s:3
 дивові диво noun:n:v_dav/v_mis
 діалога діалог noun:m:v_rod
+дівчатьми дівчина noun:anim:p:v_oru
 доводе доводити verb:imperf:pres:s:3
 доводіть доводити verb:imperf:impr:p:2
 додаш додати verb:perf:futr:s:2             #> додаси
@@ -376,8 +379,10 @@
 наскіке noninfl
 наструнчіть наструнчити verb:perf:impr:p:2
 непотрібен непотрібний adj:m:v_naz:short:predic    #> не потрібен
+несамовитіє несамовитіти verb:imperf:pres:s:3
 нишпоріть нишпорити verb:imperf:impr:p:2
 нівечіть нівечити verb:imperf:impr:p:2
+ніздер ніздря noun:inanim:p:v_rod
 носе носити verb:imperf:pres:s:3
 ношів ноші noun:p:v_rod:ns
 обіда обід noun:inanim:m:v_rod:xp2
@@ -390,6 +395,7 @@
 одходе одходити verb:imperf:pres:s:3:arch
 одходе одходити verb:perf:futr:s:3:arch
 озвучіть озвучити verb:perf:impr:p:2
+озьмеш взяти verb:perf:futr:s:2
 омікрона омікрон noun:m:v_rod
 опусте опустити verb:perf:futr:s:3
 освідчіть освідчити verb:perf:impr:p:2
@@ -401,6 +407,7 @@
 оцетом оцет noun:m:v_oru
 оцету оцет noun:m:v_rod/v_dav/v_mis
 очисьок очисько noun:inanim:p:v_rod:ns
+очіх око noun:inanim:p:v_mis
 очків очко noun:p:v_rod:xp2
 падли падло noun:anim:p:v_naz
 пале палити verb:imperf:pres:s:3
