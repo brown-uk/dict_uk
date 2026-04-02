@@ -2476,6 +2476,7 @@
 збоєцький /adj
 збожевільніти /v2 :perf
 збомбардувати /v1.is0 :perf                   # rv_zna:rv_oru
+зборовий /adj
 зборчий /n2adj1.p.<
 збоятися /vr1 :perf                   # rv_rod
 збродня /n10.p2
@@ -3162,7 +3163,7 @@
 лїтописець /n22.a.p.<
 логаза /n10
 лодія /n10.p1
-ложити /v1.cf.it1 :imperf                   # rv_zna:rv_oru:rv_dav
+ложити /v1.cf.it1 :imperf                   # rv_inf:rv_zna:rv_oru:rv_dav
 лозниця /n10.p1
 локша /n10
 ломлення /n2n
@@ -4260,6 +4261,7 @@
 одкликати /v1.isNo :perf                 # :xp2 одкли́кати  # rv_zna:rv_oru:rv_dav
 одкликати /v2.cf.advp :imperf            # :xp1 одклика́ти  # rv_zna:rv_oru:rv_dav
 одкликатися /vr2.cf.advp :imperf               # одклика́ти                   # rv_oru
+одкликнутися /vr1 :perf                         # rv_oru
 одключитися /vr1 :perf
 одкол /n20.p
 одколоти /v1.is0.isTo :perf                   # rv_zna:rv_oru
@@ -7095,7 +7097,6 @@
 цеї цей adj:f:v_rod:pron:dem
 централя /n10.p1.ko
 церегелитися /vr1.cf.advp :imperf
-церегелі /np2
 церегелі /np2
 церківник /n20.a.p.<
 церковище /n2n.p1

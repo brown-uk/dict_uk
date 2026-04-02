@@ -158,6 +158,8 @@
 гуртожитка гуртожиток noun:m:v_rod
 ґаздів ґазда noun:anim:p:v_rod/v_zna
 ґратів ґрати noun:p:v_rod:ns
+ґрунта ґрунт noun:inanim:p:v_naz/v_zna      # заст.
+ґрунти ґрунт noun:inanim:p:v_naz/v_zna
 дасиш дати verb:perf:futr:s:2
 держсектора держсектор noun:m:v_rod
 деталів деталь noun:inanim:p:v_rod

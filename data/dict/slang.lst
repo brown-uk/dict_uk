@@ -158,6 +158,7 @@
 башльовий /adj
 башляти /v2.cf.advp :imperf
 бдлск noninfl
+бдлска noninfl
 бебі-бокс /n20.a.p
 бевушний /adj
 бегінер /n20.a.p.ke.<
@@ -430,9 +431,6 @@
 вкраїнчик /n20.a.p.<
 вкурвити /v1.is0 :perf                                   # rv_zna:rv_oru
 вкурвитися /vr1.it1 :perf
-вкурвлений /adj :adjp:pasv:perf
-вкурвлення /n2n
-вкурвлювати /v1.cf.advp :imperf                          # rv_zna:rv_oru
 вкурити /v1 :perf               # rv_zna
 влом adv
 внєзапно adv
@@ -541,6 +539,7 @@
 грабанути /v1 :perf                      # rv_zna
 гравіцапа /n10.p1
 грамарнацистка /n10.p2.<
+грамарнаці noun:anim:m:nv|noun:anim:f:nv
 грамар-наці noun:m:nv:anim|noun:f:nv:anim
 грандфінал /n20.p
 графітірайтер /n20.a.p.ke.<
@@ -747,6 +746,7 @@
 експіріенс /n20.p
 експірієнс /n20.p
 експлойт /n20.p
+експортнути /v1 :perf                               # rv_zna:rv_oru
 екстракшн /n20
 екшен /n20.p
 екшн /n20.p
@@ -882,7 +882,6 @@
 задвохсотити /v1.is0 :perf                      # rv_zna:rv_oru
 задвохсотитися /vr1 :perf
 задвохсочений /adj
-задеплоїти /v1.is0 :perf                        # rv_zna:rv_oru:rv_dav
 задеплоїти /v1.is0 :perf                                # rv_zna:rv_oru:rv_dav
 задеплоїтися /vr1 :perf                        # rv_oru
 задетектити /v1.is0 :perf                   # rv_zna:rv_oru
@@ -2732,6 +2731,7 @@
 укропівець /n22.a.p.<
 укропівський /adj
 укропський /adj
+укурвитися /vr1.it1 :perf
 ульотість /n30
 ульотний /adj.adv
 умнік /n20.a.p.<
