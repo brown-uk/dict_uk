@@ -1,5 +1,5 @@
-Всього лем: 443173
-  словникових лем (без advp/bad/alt/vulg/obsc/abbr, двовидові дієслова, як одна лема) 334760
+Всього лем: 443177
+  словникових лем (без advp/bad/alt/vulg/obsc/abbr, двовидові дієслова, як одна лема) 334764
 
 Частоти за тегами:
 adj 108740
@@ -16,15 +16,15 @@ conj 160
 intj 498
 noninfl 1093
      prop 5
-noun 191652
-     anim 68456
+noun 191656
+     anim 68460
      fname 5742
      geo 20733
      inanim 123101
-     lname 33517
-     nv 17601
+     lname 33521
+     nv 17603
      pname 1041
-     prop 63376
+     prop 63380
 number 17
 numr 145
      nv 21
