@@ -61,31 +61,96 @@ public class ExpandTest {
 
 	def portFull =
 '''
-порт порт noun:inanim:m:v_naz:rare
-порту порт noun:inanim:m:v_rod:rare
-портові порт noun:inanim:m:v_dav:rare
-порту порт noun:inanim:m:v_dav:rare
-порт порт noun:inanim:m:v_zna:rare
-портом порт noun:inanim:m:v_oru:rare
-порті порт noun:inanim:m:v_mis:rare
-портові порт noun:inanim:m:v_mis:rare
-порту порт noun:inanim:m:v_mis:rare
-порте порт noun:inanim:m:v_kly:rare
-порти порт noun:inanim:p:v_naz:rare
-портів порт noun:inanim:p:v_rod:rare
-портам порт noun:inanim:p:v_dav:rare
-порти порт noun:inanim:p:v_zna:rare
-портами порт noun:inanim:p:v_oru:rare
-портах порт noun:inanim:p:v_mis:rare
-порти порт noun:inanim:p:v_kly:rare
+порт порт noun:inanim:m:v_naz:slang
+порту порт noun:inanim:m:v_rod:slang
+портові порт noun:inanim:m:v_dav:slang
+порту порт noun:inanim:m:v_dav:slang
+порт порт noun:inanim:m:v_zna:slang
+портом порт noun:inanim:m:v_oru:slang
+порті порт noun:inanim:m:v_mis:slang
+портові порт noun:inanim:m:v_mis:slang
+порту порт noun:inanim:m:v_mis:slang
+порте порт noun:inanim:m:v_kly:slang
+порти порт noun:inanim:p:v_naz:slang
+портів порт noun:inanim:p:v_rod:slang
+портам порт noun:inanim:p:v_dav:slang
+порти порт noun:inanim:p:v_zna:slang
+портами порт noun:inanim:p:v_oru:slang
+портах порт noun:inanim:p:v_mis:slang
+порти порт noun:inanim:p:v_kly:slang
 '''.trim() //.split("\n")
 	
 	@Test
 	void testProcessInput() {
-		def lines = ["порт /n20.p :rare"]
-		assert join(expand.process_input(lines)) == portFull
+		def lines = ["порт /n20.p :slang"]
+		assertEquals portFull, join(expand.process_input(lines))
 	}
 
+    def dovbush =
+    '''
+Довбуш Довбуш noun:anim:m:v_naz:prop:lname
+Довбуша Довбуш noun:anim:m:v_rod:prop:lname
+Довбушеві Довбуш noun:anim:m:v_dav:prop:lname
+Довбушу Довбуш noun:anim:m:v_dav:prop:lname
+Довбуша Довбуш noun:anim:m:v_zna:prop:lname
+Довбушем Довбуш noun:anim:m:v_oru:prop:lname
+Довбушеві Довбуш noun:anim:m:v_mis:prop:lname
+Довбуші Довбуш noun:anim:m:v_mis:prop:lname
+Довбушу Довбуш noun:anim:m:v_mis:prop:lname
+Довбуше Довбуш noun:anim:m:v_kly:prop:lname'''.trim() //.split("\n")
+
+def zharmush =
+'''
+Жармуш Жармуш noun:inanim:m:v_naz:prop:geo
+Жармуша Жармуш noun:inanim:m:v_rod:prop:geo
+Жармушу Жармуш noun:inanim:m:v_rod:prop:geo:up19
+Жармушеві Жармуш noun:inanim:m:v_dav:prop:geo
+Жармушу Жармуш noun:inanim:m:v_dav:prop:geo
+Жармуш Жармуш noun:inanim:m:v_zna:prop:geo
+Жармушем Жармуш noun:inanim:m:v_oru:prop:geo
+Жармушеві Жармуш noun:inanim:m:v_mis:prop:geo
+Жармуші Жармуш noun:inanim:m:v_mis:prop:geo
+Жармушу Жармуш noun:inanim:m:v_mis:prop:geo
+Жармуше Жармуш noun:inanim:m:v_kly:prop:geo'''.trim() //.split("\n")
+
+def vasyl =
+'''
+Василівна Василівна noun:anim:f:v_naz:prop:pname
+Василівни Василівна noun:anim:f:v_rod:prop:pname
+Василівні Василівна noun:anim:f:v_dav:prop:pname
+Василівну Василівна noun:anim:f:v_zna:prop:pname
+Василівною Василівна noun:anim:f:v_oru:prop:pname
+Василівні Василівна noun:anim:f:v_mis:prop:pname
+Василівно Василівна noun:anim:f:v_kly:prop:pname
+Василь Василь noun:anim:m:v_naz
+Василя Василь noun:anim:m:v_rod
+Василеві Василь noun:anim:m:v_dav
+Василю Василь noun:anim:m:v_dav
+Василя Василь noun:anim:m:v_zna
+Василем Василь noun:anim:m:v_oru
+Василеві Василь noun:anim:m:v_mis
+Василі Василь noun:anim:m:v_mis
+Василю Василь noun:anim:m:v_mis
+Василю Василь noun:anim:m:v_kly
+Васильович Васильович noun:anim:m:v_naz:prop:pname
+Васильовича Васильович noun:anim:m:v_rod:prop:pname
+Васильовичеві Васильович noun:anim:m:v_dav:prop:pname
+Васильовичу Васильович noun:anim:m:v_dav:prop:pname
+Васильовича Васильович noun:anim:m:v_zna:prop:pname
+Васильовичем Васильович noun:anim:m:v_oru:prop:pname
+Васильовичеві Васильович noun:anim:m:v_mis:prop:pname
+Васильовичі Васильович noun:anim:m:v_mis:prop:pname
+Васильовичу Васильович noun:anim:m:v_mis:prop:pname
+Васильовичу Васильович noun:anim:m:v_kly:prop:pname'''.trim() //.split("\n")
+
+    @Test
+    void testExpandPropShKly() {
+        assertEquals dovbush, join(expand.process_input(["Довбуш /n20.a.<+"]))
+        assertEquals zharmush, join(expand.process_input(["Жармуш /n20.a :town:prop:geo"]))
+        assertEquals vasyl, join(expand.process_input(["Василь /n20.a.<.patr"]))
+    }
+    
+    
 	def zhabaFull =
 	'''
 жаба жаба noun:anim:m:v_naz

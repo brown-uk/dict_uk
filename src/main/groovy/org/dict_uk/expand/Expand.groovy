@@ -932,7 +932,6 @@ class Expand {
 		String flags = lineParts[1]
 		String word = lineParts[0]
 		
-		
 		if( flags.startsWith("/<") ) {
 		
 			def extra_tag = ":anim"
@@ -957,6 +956,11 @@ class Expand {
 			}
 		}
 		else if( flags.startsWith("/n2") && flags.contains("<+") ) {
+//            if( word =~ /[жчш]$/ ) {
+//                lineParts[1] += ".ke"
+//                line = lineParts.join(" ")
+//            }
+
 			if( ! flags.contains("<+m") && util.dual_last_name_ending(line)) {
 				out_lines.add(line)
 				def line_fem_lastname = word + " noun:f:nv:np:anim:prop:lname"
@@ -1005,7 +1009,14 @@ class Expand {
 			out_lines = [line]
 		}
 		else if( flags =~ '^/n2[0-4]' && ! flags.contains(".k") && ! line.contains(":abbr") ) {
-			if( isDefaultKlyE(word, flags) ) {
+//            if( word =~ /[жчш]$/ && ! line.contains('pname')
+//                && ((line.contains(':prop') )
+//                    || (flags.contains("<") && word =~ /^[А-ЯІЇЄҐ]/) && ! flags.contains('patr')) ) {
+//                lineParts[1] += ".ke"
+//                line = lineParts.join(" ")
+//            }
+//            else
+            if( isDefaultKlyE(word, flags) ) {
 //			    System.err.println(" .ke == " + line)
 			    lineParts[1] += ".ke"
 			    line = lineParts.join(" ")

@@ -307,9 +307,9 @@
 колять колоти verb:imperf:pres:p:3
 консерв консерва noun:p:v_rod
 контура контур noun:m:v_rod                     #> контуру
-Кончі-Заспи Конча-Заспа noun:f:v_rod:prop:geo
-Кончі-Заспі Конча-Заспа noun:f:v_mis:prop:geo
-Кончу-Заспу Конча-Заспа noun:f:v_zna:prop:geo
+Конча-Заспи Конча-Заспа noun:f:v_rod:prop:geo
+Конча-Заспі Конча-Заспа noun:f:v_mis:prop:geo
+Конча-Заспу Конча-Заспа noun:f:v_zna:prop:geo
 кооператива кооператив noun:m:v_rod
 коридора коридор noun:inanim:m:v_rod
 коронавіруса коронавірус noun:m:v_rod
@@ -386,6 +386,7 @@
 нівечіть нівечити verb:imperf:impr:p:2
 ніздер ніздря noun:inanim:p:v_rod
 носе носити verb:imperf:pres:s:3
+ночв ночви noun:inanim:p:v_rod:ns
 ношів ноші noun:p:v_rod:ns
 обіда обід noun:inanim:m:v_rod:xp2
 обійм обійми noun:p:v_rod:ns                        #> обіймів
@@ -529,6 +530,7 @@
 Самопомічі Самопоміч noun:f:v_rod/v_dav/v_mis:prop
 санаторія санаторій noun:inanim:m:v_rod
 свобід свобода noun:inanim:p:v_rod
+семидесяти сімдесят numr:p:v_rod/v_dav/v_mis
 семиста сімсот numr:p:v_rod                 #> семисот
 сиквела сиквел noun:m:v_rod
 символа символ noun:m:v_rod

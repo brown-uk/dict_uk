@@ -2605,6 +2605,16 @@
   дітиськами noun:anim:p:v_oru:ns
   дітиськах noun:anim:p:v_mis:ns
   дітиська noun:anim:p:v_kly:ns
+Добвуш noun:anim:m:v_naz:prop:lname
+  Добвуша noun:anim:m:v_rod:prop:lname
+  Добвушеві noun:anim:m:v_dav:prop:lname
+  Добвушу noun:anim:m:v_dav:prop:lname
+  Добвуша noun:anim:m:v_zna:prop:lname
+  Добвушем noun:anim:m:v_oru:prop:lname
+  Добвушеві noun:anim:m:v_mis:prop:lname
+  Добвуші noun:anim:m:v_mis:prop:lname
+  Добвушу noun:anim:m:v_mis:prop:lname
+  Добвуше noun:anim:m:v_kly:prop:lname
 екс-суддя noun:anim:m:v_naz
   екс-судді noun:anim:m:v_rod
   екс-судді noun:anim:m:v_dav
@@ -2720,6 +2730,17 @@
   Жакові-Анрі noun:anim:m:v_mis:prop:fname
   Жаку-Анрі noun:anim:m:v_mis:prop:fname
   Жаку-Анрі noun:anim:m:v_kly:prop:fname
+Жармуш noun:inanim:m:v_naz:prop:geo
+  Жармуша noun:inanim:m:v_rod:prop:geo
+  Жармушу noun:inanim:m:v_rod:prop:geo:up19
+  Жармушеві noun:inanim:m:v_dav:prop:geo
+  Жармушу noun:inanim:m:v_dav:prop:geo
+  Жармуш noun:inanim:m:v_zna:prop:geo
+  Жармушем noun:inanim:m:v_oru:prop:geo
+  Жармушеві noun:inanim:m:v_mis:prop:geo
+  Жармуші noun:inanim:m:v_mis:prop:geo
+  Жармушу noun:inanim:m:v_mis:prop:geo
+  Жармуше noun:inanim:m:v_kly:prop:geo
 жаско adv
 Женя noun:anim:m:v_naz:prop:fname
   Жені noun:anim:m:v_rod:prop:fname
