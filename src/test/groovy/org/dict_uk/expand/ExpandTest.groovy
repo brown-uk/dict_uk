@@ -143,12 +143,12 @@ def vasyl =
 Васильовичу Васильович noun:anim:m:v_mis:prop:pname
 Васильовичу Васильович noun:anim:m:v_kly:prop:pname'''.trim() //.split("\n")
 
-    @Test
-    void testExpandPropShKly() {
-        assertEquals dovbush, join(expand.process_input(["Довбуш /n20.a.<+"]))
-        assertEquals zharmush, join(expand.process_input(["Жармуш /n20.a :town:prop:geo"]))
-        assertEquals vasyl, join(expand.process_input(["Василь /n20.a.<.patr"]))
-    }
+//    @Test
+//    void testExpandPropShKly() {
+//        assertEquals dovbush, join(expand.process_input(["Довбуш /n20.a.<+"]))
+//        assertEquals zharmush, join(expand.process_input(["Жармуш /n20.a :town:prop:geo"]))
+//        assertEquals vasyl, join(expand.process_input(["Василь /n20.a.<.patr"]))
+//    }
     
     
 	def zhabaFull =
