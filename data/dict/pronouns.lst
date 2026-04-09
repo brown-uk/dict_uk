@@ -979,6 +979,8 @@
 побіч побіч prep        # rv_rod
 поблизу поблизу prep        # rv_rod
 поверх поверх prep        # rv_rod
+повище adv
+повище prep                              # rv_rod
 повз повз prep        # rv_zna
 повздовж повздовж prep        # rv_rod
 подовж подовж prep|adv        # rv_rod
