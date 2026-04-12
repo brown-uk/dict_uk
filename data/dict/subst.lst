@@ -84,6 +84,7 @@
 вижий вижити verb:perf:impr:s:2             #> виживи
 викарбовано викарбувати verb:perf:impers        #> викарбувано
 викиніть викинути verb:perf:impr:p:2
+виковано викувати verb:perf:impers
 виколядовано виколядувати verb:perf:impers
 викомпоновано викомпонувати verb:perf:impers
 вилазе вилазити verb:imperf:pres:s:3
@@ -113,6 +114,7 @@
 витратіть витратити verb:perf:impr:p:2
 виходе виходити verb:imperf:pres:s:3:insert            # :xp2
 вихорем вихор noun:inanim:m:v_oru:xp1
+вишліфовано вишліфувати verb:perf:impers
 вівць вівця noun:anim:p:v_rod/v_zna                         #> овець
 віддасиш віддати verb:perf:futr:s:2
 відеоблога відеоблог noun:m:v_rod
@@ -195,6 +197,7 @@
 жреців жрець noun:anim:p:v_rod/v_zna
 журнала журнал noun:inanim:m:v_rod
 забезпечіть забезпечити verb:perf:impr:p:2
+забракнуло забракнути verb:past:s:3:perf
 завісів завіса noun:inanim:p:v_rod
 завісіть завісити verb:perf:impr:p:2
 завіта завіт noun:inanim:m:v_rod
@@ -270,6 +273,7 @@
 знизіть знизити verb:perf:impr:p:2
 знівечіть знівечити verb:perf:impr:p:2
 зносе зносити verb:imperf:pres:s:3                    # :xp1
+зоветься зватися verb:rev:imperf:pres:s:3
 зовуть звати verb:imperf:pres:p:3
 зробе зробити verb:perf:futr:s:3
 зупине зупинити verb:perf:futr:s:3
@@ -355,6 +359,7 @@
 миса мис noun:inanim:m:v_rod
 міометрія міометрій noun:m:v_rod
 Мірчи Мірча noun:anim:m:v_rod/v_dav/v_mis:prop:fname       #> Мірчі
+міщане міщанин noun:anim:p:v_naz/v_kly
 мні я noun:anim:s:v_dav:pron:pers:1
 могорича могорич noun:m:v_rod
 моделів модель noun:p:v_rod                 #> моделей
