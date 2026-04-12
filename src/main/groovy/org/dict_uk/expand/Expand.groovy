@@ -16,6 +16,9 @@ import org.slf4j.LoggerFactory
 import groovy.transform.CompileStatic
 import groovy.transform.TypeChecked
 
+// к.в. -чу для людей і -че для геоназв
+// к.в. -же - для всіх
+// к.в. -ше до всіх власних назв (:anim та :inanim). 
 
 @CompileStatic
 class Expand {
@@ -956,10 +959,10 @@ class Expand {
 			}
 		}
 		else if( flags.startsWith("/n2") && flags.contains("<+") ) {
-//            if( word =~ /[жчш]$/ ) {
-//                lineParts[1] += ".ke"
-//                line = lineParts.join(" ")
-//            }
+            if( word =~ /ш$/ ) {
+                lineParts[1] += ".ke"
+                line = lineParts.join(" ")
+            }
 
 			if( ! flags.contains("<+m") && util.dual_last_name_ending(line)) {
 				out_lines.add(line)
@@ -1009,13 +1012,15 @@ class Expand {
 			out_lines = [line]
 		}
 		else if( flags =~ '^/n2[0-4]' && ! flags.contains(".k") && ! line.contains(":abbr") ) {
-//            if( word =~ /[жчш]$/ && ! line.contains('pname')
-//                && ((line.contains(':prop') )
-//                    || (flags.contains("<") && word =~ /^[А-ЯІЇЄҐ]/) && ! flags.contains('patr')) ) {
-//                lineParts[1] += ".ke"
-//                line = lineParts.join(" ")
-//            }
-//            else
+            if( word =~ /ш$/ && line.contains(':prop') ) {
+                lineParts[1] += ".ke"
+                line = lineParts.join(" ")
+            }
+            if( word =~ /ч$/ && line.contains(':geo') ) {
+                lineParts[1] += ".ke"
+                line = lineParts.join(" ")
+            }
+            else
             if( isDefaultKlyE(word, flags) ) {
 //			    System.err.println(" .ke == " + line)
 			    lineParts[1] += ".ke"
