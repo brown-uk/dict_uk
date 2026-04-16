@@ -41,7 +41,7 @@ class ExpandAll {
 					out = entries.collect { DicEntry it ->
 						if( filename.contains("invalid") ) {
 							if( ! it.tagStr.contains(":bad") ) {
-								it.tagStr += ":bad"
+								it.tagStr += ":bad:err"
 							}
 						}
 						else if( filename.contains("geo") ) {

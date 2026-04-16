@@ -1213,7 +1213,7 @@ class Expand {
 				":geo", ":fname", ":lname", ":pname",
                 ":up19", ":up92", ":short", ":long",
                 ":insert", ":predic",
-				":bad", ":slang", ":rare", ":arch", ":vulg", ":obsc", ":subst", ":coll", ":alt",
+				":bad", ":err", ":slang", ":rare", ":arch", ":vulg", ":obsc", ":subst", ":coll", ":alt",
 				":xp1", ":xp2", ":xp3", ":xp4",
 			]
 

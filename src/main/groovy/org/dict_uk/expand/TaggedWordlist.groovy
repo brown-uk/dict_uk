@@ -13,9 +13,9 @@ class TaggedWordlist {
 		"dot-abbr.lst": ":abbr",
 		"base-compound_1992.lst": ":up92",
 		"twisters.lst": ":bad",
-		"invalid-autogen.lst": ":bad",
-		"invalid.lst": ":bad",
-		"invalid-compound.lst": ":bad",
+		"invalid-autogen.lst": ":bad:err",
+		"invalid.lst": ":bad:err",
+		"invalid-compound.lst": ":bad:err",
 		"arch.lst": ":arch",
 		"slang.lst": ":slang",
 		"alt.lst": ":alt",
@@ -157,7 +157,9 @@ class TaggedWordlist {
 						if( Character.isUpperCase(line.charAt(0))
 								&& ( (line.contains(" /n") && ! line.contains("<") )
 								|| (line.contains(" noun") && line.contains(":nv")) ) ) {
-							extra_tags2 += ":prop"
+                            if( ! line.contains(":prop") ) {
+                                extra_tags2 += ":prop"
+                            }
 
 							if( fn.startsWith('geo') ) {
 								extra_tags2 += ":geo"

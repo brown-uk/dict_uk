@@ -662,30 +662,6 @@
 моя мій adj:f:v_kly:pron:pos
 моє мій adj:n:v_kly:pron:pos
 
-царька царьок noun:anim:m:v_rod/v_zna:bad
-царькові царьок noun:anim:m:v_dav:bad
-царьку царьок noun:anim:m:v_dav:bad
-царьком царьок noun:anim:m:v_oru:bad
-царькові царьок noun:anim:m:v_mis:bad
-царьку царьок noun:anim:m:v_mis/v_kly:bad
-царьки царьок noun:anim:p:v_naz/v_kly:bad
-царьків царьок noun:anim:p:v_rod/v_zna:bad
-царькам царьок noun:anim:p:v_dav:bad
-царьками царьок noun:anim:p:v_oru:bad
-царьках царьок noun:anim:p:v_mis:bad
-
-ларька ларьок noun:m:v_rod:bad
-ларькові ларьок noun:m:v_dav:bad
-ларьку ларьок noun:m:v_dav:bad
-ларьком ларьок noun:m:v_oru:bad
-ларькові ларьок noun:m:v_mis:bad
-ларьку ларьок noun:m:v_mis/v_kly:bad
-ларьки ларьок noun:p:v_naz/v_zna/v_kly:bad
-ларьків ларьок noun:p:v_rod:bad
-ларькам ларьок noun:p:v_dav:bad
-ларьками ларьок noun:p:v_oru:bad
-ларьках ларьок noun:p:v_mis:bad
-
 автосанями автосани noun:inanim:p:v_oru:ns
 аеросанями аеросани noun:inanim:p:v_oru:ns
 мотосанями мотосани noun:inanim:p:v_oru:ns
@@ -847,19 +823,6 @@
 хріна noninfl
 
 # бісики бісик noun:anim:p:v_zna                          # для «бісики пускати» - вже є як v_zna:rare
-
-
-чепця чепець noun:inanim:m:v_rod:bad
-чепцеві чепець noun:inanim:m:v_dav:bad
-чепцю чепець noun:inanim:m:v_dav/v_mis:bad
-чепцем чепець noun:inanim:m:v_oru:bad
-чепцеві чепець noun:inanim:m:v_mis:bad
-чепці чепець noun:inanim:m:v_mis:bad
-чепці чепець noun:inanim:p:v_naz/v_zna:bad
-чепців чепець noun:inanim:p:v_rod:bad
-чепцям чепець noun:inanim:p:v_dav:bad
-чепцями чепець noun:inanim:p:v_oru:bad
-чепцях чепець noun:inanim:p:v_mis:bad
 
 пся noninfl:foreign
 крев noninfl:foreign

@@ -1659,6 +1659,7 @@
 мокап /n20.p
 мокруха /n10.p1
 молодьож /n32
+мона noninfl:predic                                        # можна
 мордокнига /n10
 мордокнижжя /n2n
 мордокнижка /n10
@@ -1749,6 +1750,7 @@
 нацик /n20.a.p.<
 нашенський /adj
 нашист /n20.a.p.<
+нашо adv
 наярювати /v1.cf.advp :imperf                           # rv_zna
 неа part
 небашльовий /adj
@@ -1780,8 +1782,10 @@
 неформат /n20
 нехайповий /adj
 нехилий /adj
+нє part
 нєа noninfl
 нє-а part
+нє-нє part
 нєт noninfl
 нєтлєнка /n10.p2
 нєфіг noninfl
@@ -2539,7 +2543,6 @@
 сторіз noun:p:nv
 сторіс noun:p:nv
 стримити /v1.cf.advp :imperf
-стрім /n20.p
 стрітборд /n20.p
 стріт-воркаут /n20.p
 стрітденс /n20
@@ -3005,6 +3008,7 @@
 чекап /n20.p
 чекін /n20
 чекінитися /vr1.cf.advp :imperf
+чеклист /n20.p
 чек-лист /n20.a.p
 чекліст /n20.p
 чекнути /v1 :perf                                   # rv_zna
@@ -3114,10 +3118,12 @@
 шниряти /v2.cf.advp :imperf                          # rv_oru
 шнобель /n20.a.p
 шняга /n10.p1
+шо conj:subord|noun:inanim:n:v_naz/v_zna:pron:int:rel
 шобла /n10.p1
 шобло /n2n.p1
 шолі noninfl
 шольцування /n2n
+шо-небудь noun:inanim:n:v_naz/v_zna:pron:ind
 шопер /n20.a.p.ke.<
 шопінголік /n20.a.p.<
 шорт /n20

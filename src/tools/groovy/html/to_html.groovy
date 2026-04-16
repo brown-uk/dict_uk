@@ -2,7 +2,7 @@
 
 String main=""
 new File('dict_corp_vis.txt').eachLine { String line ->
-    if( line.contains(":obsc") )
+    if( line.contains(":obsc") || line.contains(":err") )
         return
     
     line = line.replace("'", '\u02BC')   // u02BC
