@@ -207,7 +207,6 @@
 виглянсований /adj :adjp:pasv:perf
 виїздний /adj                                   #> виїзний
 вийнятковий /adj
-вийнятково adv
 викарбований /adj :adjp:pasv:perf
 викований /adj :adjp:pasv:perf
 виколядований /adj :adjp:pasv:perf
@@ -218,12 +217,8 @@
 вимуштрований /adj :adjp:pasv:perf
 виполірований /adj :adjp:pasv:perf
 випробований /adj :adjp:pasv:perf
-випроменений /adj :adjp:pasv:perf               #> випромінений
-випроменити /v1.is0.it1 :perf                             # rv_zna:rv_oru:rv_dav    #> випромінити
-випроменитися /vr1 :perf                                  # rv_oru                  #> випромінитися 
 вирахований /adj :adjp:pasv:perf
 вирихтований /adj :adjp:pasv:perf
-вирятований /adj :adjp:pasv:perf
 високодоходний /adj
 високопреосвящений /adj
 виторгований /adj :adjp:pasv:perf
