@@ -39,7 +39,7 @@ public class ExpandExtraTest {
 
         assertThat(expanded).contains("капець капець noun:inanim:m:v_naz:predic:slang")
 
-        assertThat(expanded).contains("сере сер noun:anim:m:v_kly:up92")
+        assertThat(expanded).contains("сере сер noun:anim:m:v_kly:alt")
     }
     
 

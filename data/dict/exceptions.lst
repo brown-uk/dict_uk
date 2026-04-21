@@ -386,11 +386,11 @@
 війям війя noun:n:v_oru
 війї війя noun:n:v_mis
 
-відом відом noun:m:v_naz/v_zna/v_kly:rare
+відом відом noun:m:v_naz/v_zna      # lim
 відома відом noun:m:v_rod
-відому відом noun:m:v_dav:rare
-відомом відом noun:m:v_oru
-відомі відом noun:m:v_mis:rare
+# відому відом noun:m:v_dav:subst
+# відомом відом noun:m:v_oru
+# відомі відом noun:m:v_mis:rare
 
 нічия нічия noun:inanim:f:v_naz
 нічиєї нічия noun:inanim:f:v_rod
@@ -766,7 +766,7 @@
 
 язицех язик noun:p:v_mis
 
-світа світ noun:m:v_rod:rare
+світа світ noun:m:v_rod:arch
 
 давніх-давен давніх-давен noun:p:v_rod:ns           # lim
 
@@ -844,10 +844,10 @@
 будуть бути verb:futr:p:3:imperf
 є бути verb:pres:p:1/2/3:imperf
 є бути verb:pres:s:1/2/3:imperf
-єсть бути verb:pres:p:1/2/3:imperf:predic:rare
-єсть бути verb:pres:s:1/2/3:imperf:predic:rare
-єси бути verb:pres:s:2:imperf:rare
-суть бути verb:pres:p:3:imperf:rare
+єсть бути verb:pres:p:1/2/3:imperf:predic:arch
+єсть бути verb:pres:s:1/2/3:imperf:predic:arch
+єси бути verb:pres:s:2:imperf:arch
+суть бути verb:pres:p:3:imperf:arch
 був бути verb:past:m:imperf
 була бути verb:past:f:imperf
 було бути verb:past:n:imperf:insert
@@ -876,9 +876,9 @@
 дивіть дивитися verb:rev:imperf:impr:p:2:short
 біга бігати verb:imperf:pres:s:3:short
 
-многий многий adj:m:v_naz/v_zn2:rare
-многая многий adj:p:v_naz/v_zn2:rare
-многії многий adj:p:v_naz/v_zn2:rare
+многий многий adj:m:v_naz/v_zn2:arch
+многая многий adj:p:v_naz/v_zn2:arch
+многії многий adj:p:v_naz/v_zn2:arch
 многі многий adj:p:v_naz/v_zn2:arch
 
 бракло бракнути verb:imperf:past:n          # rv_rod
@@ -1168,7 +1168,7 @@
 блажен блаженний adj:m:v_naz/v_zn2/v_kly:short
 варт вартий adj:m:v_naz:short:predic
 винен винний adj:m:v_naz:short:predic
-вістен вістний adj:m:v_naz:short:rare
+вістен вістний adj:m:v_naz:short
 владен владний adj:m:v_naz:short
 властен властний adj:m:v_naz:short:predic:arch         # rv_inf
 годен годний adj:m:v_naz:short:predic
@@ -1177,7 +1177,7 @@
 дрібен дрібний adj:m:v_naz/v_zn2/v_kly:short
 дуж дужий adj:m:v_naz:short:predic
 єхиден єхидний adj:m:v_naz/v_zn2/v_kly:short
-жаден жадний adj:m:v_naz/v_zn2:short:rare:pron:neg
+жаден жадний adj:m:v_naz/v_zn2:short:pron:neg:arch
 жив живий adj:m:v_naz:short
 жоден жодний adj:m:v_naz/v_zn2:short:pron:neg
 звістен звісний adj:m:v_naz:short
@@ -1201,7 +1201,7 @@
 незгоден незгодний adj:m:v_naz/v_zn2:short
 неладен неладний adj:m:v_naz:short
 немощен немощний adj:m:v_naz/v_zn2/v_kly:short:arch
-ненавиден ненавидний adj:m:v_naz/v_zn2/v_kly:short:rare
+ненавиден ненавидний adj:m:v_naz/v_zn2/v_kly:short:arch
 ненавистен ненависний adj:m:v_naz/v_zn2/v_kly:short
 непевен непевний adj:m:v_naz/v_zn2/v_kly:short
 неспроможен неспроможний adj:m:v_naz:short:predic

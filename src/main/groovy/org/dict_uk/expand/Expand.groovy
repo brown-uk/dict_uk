@@ -1166,6 +1166,11 @@ class Expand {
 			if( isRemoveLine(line) )
 				continue
 
+            line.tagStr = line.tagStr.replace(":up92", ":alt").replace(":up19", "")
+            if( line.tagStr =~ /:(bad|slang)/ ) {
+                line.tagStr = line.tagStr.replace(":alt", "")
+            }
+                
 			line = removeTags(line)
 
 			line = promoteLemmaForTags(line)
@@ -1211,9 +1216,9 @@ class Expand {
                 ":abbr",
 				":prop",
 				":geo", ":fname", ":lname", ":pname",
-                ":up19", ":up92", ":short", ":long",
+                ":up19", ":up92", ":short", ":long", ":rare",
                 ":insert", ":predic",
-				":bad", ":err", ":slang", ":rare", ":arch", ":vulg", ":obsc", ":subst", ":coll", ":alt",
+				":bad", ":err", ":slang", ":arch", ":vulg", ":obsc", ":subst", ":coll", ":alt",
 				":xp1", ":xp2", ":xp3", ":xp4",
 			]
 
