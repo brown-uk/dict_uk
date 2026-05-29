@@ -274,9 +274,9 @@
 знівечіть знівечити verb:perf:impr:p:2
 зносе зносити verb:imperf:pres:s:3                    # :xp1
 зоветься зватися verb:rev:imperf:pres:s:3
-зовуть звати verb:imperf:pres:p:3
 зробе зробити verb:perf:futr:s:3
 зупине зупинити verb:perf:futr:s:3
+зустрічи зустріч noun:inanim:f:v_rod
 зчистіть зчистити verb:perf:impr:p:2
 Ігора Ігор noun:anim:m:v_rod/v_zna:prop:fname
 Ігоре Ігор noun:anim:m:v_kly:prop:fname
@@ -308,6 +308,7 @@
 кітлом котел noun:m:v_oru
 клавішів клавіша noun:p:v_rod
 ковіда ковід noun:m:v_rod
+колектива колектив noun:inanim:m:v_rod
 кольор колір noun:m:v_naz/v_zna
 колять колоти verb:imperf:pres:p:3
 консерв консерва noun:p:v_rod
@@ -612,10 +613,12 @@
 чагарника чагарник noun:m:v_rod
 чистіть чистити verb:imperf:impr:p:2
 чоловік чоловік noun:anim:p:v_rod/v_zna
+чотирі чотири numr:p:v_naz/v_zna
 чотирьохста чотириста numr:p:v_rod/v_zna    #> чотирьохсот
 шеклів шекель noun:p:v_rod
 шестиста шістсот numr:p:v_rod               #> шестисот
 ширіть ширити verb:imperf:impr:p:2
+шости шість numr:p:v_rod/v_dav/v_mis
 шоці шок noun:m:v_mis                       #> шоку
 щелепів щелепа noun:inanim:p:v_rod
 ЮКОСа ЮКОС noun:m:v_rod:prop

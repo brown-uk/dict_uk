@@ -306,7 +306,7 @@ task expandInteractive(type: JavaExec, dependsOn: reverseAffix) {
 
 // e.g. ./gradlew runTool -Ptool=editor/Editor -Pfile=new_words.txt
 task runTool(type: JavaExec, dependsOn: compileGroovy) {
-    classpath = sourceSets.main.output + configurations.runtimeClasspath
+    classpath = files('src/tools') + sourceSets.main.output + configurations.runtimeClasspath
     mainClass = "groovy.ui.GroovyMain"
     args "src/tools/groovy/" + (project.hasProperty('tool') ? project.tool : '')
     if( project.hasProperty('file') ) {

@@ -97,6 +97,7 @@ task testHunspellBad (type: Exec) { //, dependsOn: hunspell) {
     def txt = " кккк білолицого пілі відб\\'ю бльо хер"
     txt += " увсього визначіть вимажіть  підем"
     txt += " ніштяк гарная пірвати стріляючий февдалізм"
+    txt += " півгодини проект"
     // txt += " сміючися певніш"
 
     def cmd = "echo $txt | hunspell -d $outDir/uk_UA | grep -E '^(\\+|\\*)'" + '; [ $? == 1 ]'
