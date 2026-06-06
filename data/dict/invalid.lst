@@ -362,6 +362,7 @@
 данний /adj
 данні /n2adj1
 двохярусний /adj                            #> двоярусний
+двухсотий /adj :numr
 Дебальцево noun:n:v_naz/v_zna:prop:geo           # lim
 де-далі adv
 дед-лайн /n20.p
@@ -518,6 +519,9 @@
 загорати /v2.cf.advp :imperf
 загоратися /vr2.cf.advp :imperf
 загорожений /adj :adjp:pasv:perf            #> загороджений
+задвухсотити /v1.is0 :perf                      # rv_zna:rv_oru
+задвухсотитися /vr1 :perf
+задвухсочений /adj
 задирикуватий /adj
 задирикуватість /n30
 задирикувато adv

@@ -33,6 +33,10 @@ class Sort {
 
 //		lines = lines.toSorted(new UkDictComparator())
 		lines = lines.toSorted {
+            if( it.startsWith("#- ") ) {
+                it = it.substring(3);
+            }
+    
 		    UkDictComparator.getSortKey( it.split()[0] )
 		}
 
