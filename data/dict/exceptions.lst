@@ -526,6 +526,13 @@
 дівчатах дівчина noun:anim:p:v_mis
 дівчата дівчина noun:anim:p:v_kly
 
+слухи слух noun:inanim:p:v_naz:arch
+слухів слух noun:inanim:p:v_rod:arch
+слухам слух noun:inanim:p:v_dav:arch
+слухи слух noun:inanim:p:v_zna:arch
+слухами слух noun:inanim:p:v_oru:arch
+слухах слух noun:inanim:p:v_mis:arch
+слухи слух noun:inanim:p:v_kly:arch
 
 кабельтови кабельтов noun:inanim:p:v_naz/v_zna
 кабельтових кабельтов noun:inanim:p:v_rod

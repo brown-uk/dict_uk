@@ -148079,6 +148079,7 @@
 перетяти /v1.isTo :perf                                       # rv_zna:rv_oru:rv_dav
 перетятий /adj :adjp:pasv:perf
 перетятися /vr1 :perf                                         # rv_oru
+перетятість /n30
 переувімкнути /v1.is0.isTo :perf:v-u                          # rv_zna:rv_oru:rv_dav
 переузгоджений /adj :adjp:pasv:perf
 переузгодження /n2n.p1
@@ -201027,7 +201028,7 @@
 служник /n20.a.p.<
 служниця /n10.p1.ko.<
 слуква /n10.p1.<>
-слух /n20 :xp1
+слух /n20
 слухавка /n10.p2
 слухальний /adj
 слуханий /adj :adjp:pasv:imperf
