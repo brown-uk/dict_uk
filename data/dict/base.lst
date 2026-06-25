@@ -14605,6 +14605,7 @@
 білявенький /adj
 білявець /n22.a.p.<
 білявий /adj.long
+білявиця /n10.p1.<
 білявість /n30
 білявка /n10.p2.ko.<
 білявладний /adj
@@ -22838,8 +22839,8 @@
 вибавлювальний /adj
 вибавлюваний /adj :adjp:pasv:imperf
 вибавляння /n2n
-вибавляти /v2.cf.advp :imperf
-вибавлятися /vr2.cf.advp :imperf
+вибавляти /v2.cf.advp :imperf                                # rv_zna:rv_oru
+вибавлятися /vr2.cf.advp :imperf                             # rv_oru
 вибавляч /n20.a
 вибавний /adj
 вибаганка /n10.p2
@@ -25263,7 +25264,7 @@
 вильце /n2n.p2
 вилюднення /n2n
 вилюднити /v1.is0 :perf                                       # rv_zna:rv_oru:rv_dav
-вилюднитися /vr1 :perf                                        # rv_zna:rv_oru:rv_dav
+вилюднитися /vr1 :perf                                        # rv_oru
 вилюднілий /adj :adjp:actv:perf
 вилюднілість /n30
 вилюдніти /v2 :perf
@@ -25467,8 +25468,8 @@
 виміряння /n2n
 виміряти /v2.cf.advp :imperf              # :xp2 виміря́ти    # rv_zna:rv_oru:rv_dav
 виміряти /v2.isNo :perf                   # :xp1 ви́міряти    # rv_zna:rv_oru:rv_dav
-вимірятися /vr2 :perf                     # :xp2 ви́мірятися  # rv_zna:rv_oru:rv_dav
-вимірятися /vr2.cf.advp :imperf           # :xp1 виміря́тися  # rv_zna:rv_oru:rv_dav
+вимірятися /vr2 :perf                     # :xp2 ви́мірятися  # rv_oru:rv_dav
+вимірятися /vr2.cf.advp :imperf           # :xp1 виміря́тися  # rv_oru:rv_dav
 вимісити /v1.is0.it1 :perf                                    # rv_zna:rv_oru:rv_dav
 виміситися /vr1 :perf                                         # rv_oru
 вимістити /v1.is0 :perf                                       # rv_zna
@@ -28317,6 +28318,7 @@
 витрачення /n2n
 витрачуваний /adj :adjp:pasv:imperf
 витрачувати /v1.cf.advp :imperf                               # rv_zna
+витрачуватися /vr1.cf.advp :imperf
 витребенька /n10.p2
 витребенькувати /v1.cf.advp :imperf
 витребенькуватий /adj
@@ -34990,7 +34992,7 @@
 вламатися /vr2 :perf:v-u                                      # rv_oru
 вламування /n2n
 вламувати /v1.cf.advp :imperf                                 # rv_zna:rv_oru:rv_dav
-вламуватися /vr1.cf.advp :imperf                              # rv_zna:rv_oru:rv_dav
+вламуватися /vr1.cf.advp :imperf                              # rv_oru:rv_dav
 власкавити /v1 :perf:v-u                                      # rv_zna:rv_oru:rv_dav
 власкавитися /vr1.it0 :perf:v-u                               # rv_oru
 власкавлений /adj :adjp:pasv:perf:v-u
@@ -35159,7 +35161,7 @@
 вляпаний /adj :adjp:pasv:perf:v-u
 вляпати /v2.isNo :perf:v-u                                    # rv_zna:rv_oru:rv_dav
 вляпатися /vr2 :perf:v-u                                      # rv_oru
-вляпуватися /vr1.cf.advp :imperf                              # rv_zna:rv_oru:rv_dav
+вляпуватися /vr1.cf.advp :imperf                              # rv_oru:rv_dav
 вмазаний /adj :adjp:pasv:perf:v-u
 вмазати /v1.isNo :perf:v-u                                    # rv_zna:rv_oru:rv_dav
 вмазатися /vr1 :perf:v-u                                      # rv_oru
@@ -42489,6 +42491,7 @@
 гиготати /v1.cf.advp :imperf
 гиготіння /n2n
 гиготіти /v1.cf.advp :imperf
+гиготливий /adj
 гиготнути /v1 :perf
 гид /n20                                  # :xp2 нечисть
 гид /n20.a.p.<                            # :xp1 погана людина
@@ -50036,7 +50039,7 @@
 декатронний /adj
 декваліфікація /n10
 декваліфікований /adj :adjp:pasv:imperf
-декваліфікуватися /vr1.cf.advp :imperf:perf                                  # rv_zna:rv_oru:rv_dav
+декваліфікуватися /vr1.cf.advp :imperf:perf                   # rv_oru
 декель /n20.a.p
 декельний /adj
 декількаметровий /adj
@@ -51403,6 +51406,7 @@
 дерогація /n10.p1
 деромантизація /n10
 дерти /v1.cf.advp :imperf                                     # rv_zna:rv_oru:rv_dav
+дертий /adj :adjp:pasv:imperf
 дертил /n20
 дертися /vr1.cf.advp :imperf                                  # rv_dav:rv_oru
 дертиця /n10
@@ -54909,7 +54913,7 @@
 догромадити /v1.is0 :perf                                     # rv_zna:rv_oru:rv_dav
 догромадянський /adj
 догрудний /adj
-догукатися /vr2 :perf                                         # rv_zna
+догукатися /vr2 :perf                                         # rv_rod
 догукнути /v1 :perf
 догулювати /v1.cf.advp :imperf                                # rv_zna:rv_oru
 догулюватися /vr1.cf.advp :imperf
@@ -57329,7 +57333,7 @@
 доукріплювати /v1.cf.advp :imperf                             # rv_zna:rv_oru:rv_dav
 доумуватися /vr1.cf.advp :imperf
 доуніверситетський /adj
-доупорядковуватися /vr1.cf.advp :imperf                       # rv_zna:rv_oru:rv_dav
+доупорядковуватися /vr1.cf.advp :imperf                       # rv_oru
 доустаткований /adj :adjp:pasv:perf
 доустатковування /n2n
 доустатковувати /v1.cf.advp :imperf                           # rv_zna:rv_oru:rv_dav
@@ -64715,6 +64719,7 @@
 жолоб /n20.a.p
 жолобець /n22.a.p
 жолобильник /n20.a.p
+жолобина /n10.p1
 жолобити /v1.cf.advp :imperf                                  # rv_zna:rv_oru:rv_dav
 жолобитися /vr1.cf.advp :imperf                               # rv_oru
 жолобковий /adj
@@ -67395,8 +67400,8 @@
 загриміти /v1 :perf                                           # rv_oru
 загримкотіти /v1 :perf                                        # rv_oru
 загримований /adj :adjp:pasv:perf
-загримовувати /v1.cf.advp :imperf               # rv_zna:rv_oru
-загримовуватися /vr1.cf.advp :imperf            # rv_zna:rv_oru
+загримовувати /v1.cf.advp :imperf                             # rv_zna:rv_oru
+загримовуватися /vr1.cf.advp :imperf                          # rv_oru
 загримотати /v1 :perf                                         # rv_oru
 загримотіти /v1 :perf                                         # rv_oru
 загримувати /v1.is0 :perf                                     # rv_zna:rv_oru:rv_dav
@@ -68014,7 +68019,7 @@
 задруковуваний /adj :adjp:pasv:imperf
 задруковування /n2n
 задруковувати /v1.cf.advp :imperf               # rv_zna:rv_oru
-задруковуватися /vr1.cf.advp :imperf            # rv_zna:rv_oru
+задруковуватися /vr1.cf.advp :imperf            # rv_oru
 задрукувати /v1.is0 :perf                       # rv_zna:rv_oru
 задряпаний /adj :adjp:pasv:perf
 задряпати /v2 :perf                                           # rv_zna:rv_oru:rv_dav
@@ -69888,7 +69893,7 @@
 заламатися /vr2 :perf                                         # rv_oru
 заламінований /adj :adjp:pasv:perf
 заламіновувати /v1.cf.advp :imperf          # rv_zna:rv_oru
-заламіновуватися /vr1.cf.advp :imperf       # rv_zna:rv_oru
+заламіновуватися /vr1.cf.advp :imperf       # rv_oru
 заламінувати /v1.is0 :perf                                    # rv_zna:rv_oru:rv_dav
 заламний /adj
 заламуваний /adj :adjp:pasv:imperf
@@ -71870,6 +71875,7 @@
 запинання /n2n
 запинати /v2.cf.advp :imperf                                  # rv_zna:rv_oru:rv_dav
 запинатися /vr2.cf.advp :imperf           # xv2               # rv_oru
+запиндючитися /vr1 :perf                                      # rv_oru
 запинка /n10.p2
 запиральний /adj
 запираний /adj :adjp:pasv:imperf
@@ -72527,7 +72533,7 @@
 заприсяження /n2n
 заприсяжний /adj 
 запричастити /v1.it1 :perf                                    # rv_zna:rv_oru:rv_dav
-запричаститися /vr1.it1 :perf                                 # rv_zna:rv_oru:rv_dav
+запричаститися /vr1.it1 :perf                                 # rv_rod:rv_oru:rv_dav
 запричащати /v2.cf.advp :imperf                               # rv_zna:rv_oru:rv_dav
 запричащатися /vr2.cf.advp :imperf                            # rv_oru
 запричащений /adj :adjp:pasv:perf
@@ -76429,7 +76435,7 @@
 заштормувати /v1 :perf
 зашторювання /n2n
 зашторювати /v1.cf.advp :imperf                               # rv_zna:rv_oru:rv_dav
-зашторюватися /vr1.cf.advp :imperf                            # rv_zna
+зашторюватися /vr1.cf.advp :imperf                            # rv_oru
 заштрик /n20.a.u.p.@
 заштрикати /v2 :perf                                          # rv_zna:rv_oru:rv_dav
 заштрикнути /v1.isTo :perf                      # rv_zna:rv_oru
@@ -80802,6 +80808,7 @@
 змозолілий /adj :adjp:pasv:perf
 змозолілість /n30
 змозоліти /v1 :perf
+змокати /v2.cf.advp :imperf
 змоклий /adj :adjp:actv:perf
 змоклість /n30
 змокнути /v1 :perf
@@ -90831,6 +90838,7 @@
 кільчастість /n30
 кільчасто adv
 кільчасто-шпоровий /adj
+кільчатий /adj
 кільчення /n2n
 кільчик /n20.a.p
 кільчиковий /adj
@@ -93462,6 +93470,7 @@
 колінопреклонений /adj
 колінопреклоніння /n2n.p1
 колінопреклонний /adj
+колінуватий /adj
 колінце /n2n.p2
 колінчастий /adj
 колінчасто adv
@@ -96107,6 +96116,7 @@
 кореференція /n10.p1
 корець /n24.a.p /n22.a.p
 корж /n20.a.p.@
+коржавіти /v2.cf.advp :imperf
 коржик /n20.a.p.@
 корзно noun:n:nv                            # плащ
 коригований /adj :adjp:pasv:imperf
@@ -97304,6 +97314,7 @@
 красування /n2n
 красувати /v1.cf.advp :imperf                                 # rv_oru
 красуватися /vr1.cf.advp :imperf                              # rv_oru
+красулька /n10              # росл.
 красун /n20.a.p.< :coll
 красунечка /n10.p2.ko.<
 красунчик /n20.a.p.<
@@ -103374,6 +103385,7 @@
 лучниця /n10.p1.<
 лучно-степовий /adj
 лучок /n22.a.p
+лушпа /n10
 лушпаєчка /n10.p2
 лушпайка /n10.p2
 лушпайковий /adj
@@ -114272,6 +114284,7 @@
 нагнічуватися /vr1.cf.advp :imperf                            # rv_oru
 нагноєний /adj :adjp:pasv:perf
 нагноєння /n2n.p1
+нагноїти /v1 :perf
 нагноїтися /vr1 :perf
 нагноювання /n2n
 нагноюватися /vr1.cf.advp :imperf
@@ -116145,6 +116158,7 @@
 наклепаний /adj :adjp:pasv:perf
 наклепання /n2n
 наклепати /v1.isNo /v2 :perf              # xv2               # rv_zna:rv_rod:rv_oru:rv_dav
+наклепатися /vr1 :perf
 наклепка /n10.p2
 наклепний /adj
 наклепник /n20.a.p.<
@@ -119528,6 +119542,7 @@
 настелювальний /adj
 настелюваний /adj :adjp:pasv:imperf
 настелювання /n2n.p1
+настелювати /v1.cf.advp :imperf                               # rv_zna:rv_oru:rv_dav
 настелювач /n20.a.p.<
 настелювачка /n10.p2.<
 настеляння /n2n
@@ -119875,6 +119890,7 @@
 натовкмачений /adj :adjp:pasv:perf
 натовкмачити /v1.it0 :perf                                    # rv_zna:rv_oru:rv_dav
 натовкмачування /n2n
+натовкмачувати /v1.cf.advp :imperf                            # rv_zna:rv_oru:rv_dav
 натовкти /v1.is0 :perf                                        # rv_zna:rv_oru:rv_dav
 натовктися /vr1 :perf                                         # rv_oru
 натовп /n20.p
@@ -120559,6 +120575,7 @@
 націло adv
 націлований /adj :adjp:pasv:perf
 націлуватися /vr1 :perf
+націльний /adj
 націлюваний /adj :adjp:pasv:imperf
 націлювання /n2n
 націлювати /v1.cf.advp.isNo :imperf                           # rv_zna:rv_oru:rv_dav
@@ -120954,6 +120971,7 @@
 наштурхати /v2 :perf
 нашуканий /adj :adjp:pasv:perf
 нашукати /v2.isNo :perf                                       # rv_zna:rv_oru:rv_dav
+нашукувати /v1.cf.advp :imperf                                # rv_zna:rv_oru:rv_dav
 нашумілий /adj :adjp:actv:perf
 нашуміти /v1 :perf                                            # rv_oru
 нашумітися /vr1 :perf
@@ -121915,6 +121933,7 @@
 невичавлений /adj
 невичерпаний /adj
 невичерпаність /n30
+невичерпанний /adj
 невичерпання /n2n
 невичерпний /adj.adv
 невичерпність /n30
@@ -124285,6 +124304,7 @@
 незабудований /adj
 незабудованість /n30
 незабудь /n32
+незабудька /n10.p2
 незабур'янений /adj
 незабур'яненість /n30
 незабутий /adj
@@ -132686,6 +132706,7 @@
 обкорований /adj :adjp:pasv:perf
 обкорування /n2n
 обкорувати /v1.is0 :perf                                      # rv_zna:rv_oru:rv_dav
+обкосити /v1.is0 :perf                              # rv_zna:rv_oru
 обкочений /adj :adjp:pasv:perf
 обкочення /n2n
 обкочуваний /adj :adjp:pasv:imperf
@@ -145457,6 +145478,7 @@
 переконструювання /n2n.p1
 переконструювати /v1.is0 :perf                                # rv_zna:rv_oru:rv_dav
 переконувальний /adj
+переконуваний /adj :adjp:pasv:imperf
 переконування /n2n.p1
 переконувати /v1.cf.advp.isNo :imperf                         # rv_inf:rv_zna:rv_oru
 переконуватися /vr1.cf.advp :imperf
@@ -145464,7 +145486,7 @@
 переконфігурований /adj :adjp:pasv:perf
 переконфігурування /n2n.p1
 переконфігурувати /v1.cf.advp.is0 :imperf:perf                # rv_zna:rv_oru:rv_dav
-переконфігуруватися /vr1.cf.advp :imperf:perf                 # rv_zna:rv_oru
+переконфігуруватися /vr1.cf.advp :imperf:perf                 # rv_oru
 перекоп /n20
 перекопаний /adj :adjp:pasv:perf
 перекопання /n2n
@@ -148399,6 +148421,7 @@
 перечепитися /vr1.it1 :perf                                   # rv_oru
 перечеплений /adj :adjp:pasv:perf
 перечеплення /n2n.p1
+перечеплювати /v1.cf.advp :imperf                              # rv_zna:rv_oru:rv_dav
 перечерствілий /adj :adjp:actv:perf
 перечерствілість /n30
 перечесаний /adj :adjp:pasv:perf
@@ -148505,6 +148528,7 @@
 перешліфовуватися /vr1.cf.advp :imperf                        # rv_oru
 перешліфування /n2n.p1
 перешліфувати /v1.is0 :perf                                   # rv_zna:rv_oru:rv_dav
+перешмагати /v2.isNo :perf                                      # rv_zna:rv_oru:rv_dav
 перешматований /adj :adjp:pasv:perf
 перешматованість /n30
 перешмигнути /v1 :perf
@@ -151745,6 +151769,7 @@
 підмогоричування /n2n
 підмогоричувати /v1 :imperf                                   # rv_zna:rv_oru:rv_dav
 підмогти /v1 :perf                                            # rv_oru:rv_dav
+підмогтися /vr1 :perf
 підмодель /n32.p
 підмодуль /n20.a.p
 підмодулятор /n20.a.p.ke
@@ -152024,7 +152049,7 @@
 підперезаний /adj :adjp:pasv:perf
 підперезати /v1.isNo :perf                                    # rv_zna:rv_oru:rv_dav
 підперезатися /vr1 :perf                                      # rv_oru
-підперезуватися /vr1.cf.advp :imperf                          # rv_zna:rv_oru:rv_dav
+підперезуватися /vr1.cf.advp :imperf                          # rv_oru
 підперізаний /adj :adjp:pasv:perf
 підперізок /n22.a.p
 підперізування /n2n
@@ -152092,6 +152117,7 @@
 підпічок /n22.a.p
 підпіччя /n2n.p1
 підплатформний /adj
+підплачувати /v1.cf.advp :imperf            # rv_zna:rv_oru
 підплести /v1.is1 :perf                                       # rv_zna:rv_oru:rv_dav
 підплетений /adj :adjp:pasv:perf
 підплетина /n10.p1
@@ -152286,6 +152312,7 @@
 підрешітка /n10.p2
 підрешіток /n22.a.p
 підрив /n20.p
+підриваний /adj :adjp:pasv:imperf
 підривання /n2n.p1
 підривати /v2.cf.advp.shrt :imperf                            # rv_zna:rv_oru:rv_dav
 підриватися /vr2.cf.advp :imperf                              # rv_oru
@@ -153273,6 +153300,7 @@
 підштопувати /v1.cf.advp.isNo :imperf                         # rv_zna:rv_oru:rv_dav
 підштопуватися /vr1.cf.advp :imperf                           # rv_oru
 підштрикнути /v1 :perf                                        # rv_zna:rv_oru:rv_dav
+підштрикувальний /adj
 підштрикуваний /adj :adjp:pasv:imperf
 підштрикування /n2n
 підштрикувати /v1.cf.advp :imperf                             # rv_zna:rv_oru
@@ -155939,6 +155967,7 @@
 повзуха /n10.p1.ko.<
 повзучий /adj
 повзучість /n30.p
+повибавляти /v2 :perf                                        # rv_zna:rv_oru
 повибиваний /adj :adjp:pasv:perf
 повибивати /v2.shrt.isNo :perf                                # rv_zna:rv_oru:rv_dav
 повибиватися /vr2 :perf                                       # rv_oru
@@ -157809,7 +157838,7 @@
 подибуляти /v2 :perf
 подибцяти /v2 :perf
 подив /n20
-подивитися /vr1.it1.it1l :perf                                # rv_zna:rv_oru:rv_dav
+подивитися /vr1.it1.it1l :perf                             # rv_zna:rv_oru:rv_dav
 подивізійний /adj
 подивізіонний /adj
 подивляти /v2.cf.advp :imperf                                 # rv_zna:rv_oru
@@ -159340,7 +159369,7 @@
 позбавлятися /vr2.cf.advp :imperf                             # rv_rod
 позбиваний /adj :adjp:pasv:perf
 позбивати /v2.isNo.shrt :perf                                 # rv_zna:rv_oru:rv_dav
-позбиватися /vr2 :perf                                        # rv_zna:rv_oru:rv_dav
+позбиватися /vr2 :perf                                        # rv_oru
 позбираний /adj :adjp:pasv:perf
 позбирати /v2.isNo.shrt :perf                                 # rv_zna:rv_oru:rv_dav
 позбиратися /vr2 :perf                                        # rv_oru
@@ -163269,7 +163298,7 @@
 пообпарюваний /adj :adjp:pasv:perf
 пообпарювати /v1.isNo :perf                                   # rv_zna:rv_oru:rv_dav
 пообпарюватися /vr1 :perf                                     # rv_oru
-пообпиватися /vr2 :perf                                       # rv_zna:rv_oru:rv_dav
+пообпиватися /vr2 :perf                                       # rv_rod:rv_oru
 пообпилюваний /adj :adjp:pasv:perf
 пообпилювати /v1.isNo :perf                                   # rv_zna:rv_oru:rv_dav
 пообпирати /v2 :perf                                          # rv_zna:rv_oru:rv_dav
@@ -163525,7 +163554,7 @@
 поосипатися /vr2 :perf                                        # rv_oru
 поосідати /v2 :perf                                           # rv_zna:rv_oru:rv_dav
 по-осінньому adv
-пооскалюватися /vr1 :perf                                     # rv_zna
+пооскалюватися /vr1 :perf
 поосліплювати /v1 :perf                                       # rv_zna:rv_oru:rv_dav
 поосмолювати /v1 :perf                                        # rv_zna:rv_oru:rv_dav
 по-особливому adv
@@ -164633,7 +164662,7 @@
 попотинятися /vr2 :perf                                       # rv_oru
 попотіти /v2 :perf
 попотішитися /vr1.it0 :perf                                   # rv_oru
-попотовктися /vr1 :perf                                       # rv_zna:rv_oru:rv_dav
+попотовктися /vr1 :perf                                       # rv_oru
 попотоптати /v1 :perf                                         # rv_zna:rv_oru:rv_dav
 попоторгуватися /vr1 :perf                                    # rv_oru
 попотремтіти /v1 :perf
@@ -165557,7 +165586,7 @@
 пороздавати /v1 :perf                                         # rv_zna:rv_dav
 пороздаровувати /v1.isNo :perf                                # rv_zna:rv_oru:rv_dav
 пороздзвонювати /v1 :perf
-пороздивлятися /vr2 :perf                                     # rv_zna:rv_oru:rv_dav
+пороздивлятися /vr2 :perf                                     # rv_zna
 пороздираний /adj :adjp:pasv:perf
 пороздирати /v2.isNo :perf                                    # rv_zna:rv_oru:rv_dav
 пороздиратися /vr2 :perf                                      # rv_oru
@@ -174480,7 +174509,7 @@
 проблема /n10.p1                                              # rv_inf
 проблематизація /n10
 проблематизувати /v1.cf.advp.is0 :imperf                      # rv_zna:rv_oru:rv_dav
-проблематизуватися /vr1.cf.advp :imperf                 # rv_zna:rv_oru
+проблематизуватися /vr1.cf.advp :imperf                       # rv_oru
 проблематика /n10.p1
 проблематичний /adj \
  +cs=проблематичніший
@@ -177833,7 +177862,7 @@
 простроченість /n30
 прострочення /n2n.p1
 прострочити /v1.it0.it1.is0 :perf         # простро́чити, прострочи́ти  # rv_zna:rv_oru:rv_dav
-прострочитися /vr1.it0.it1 :perf          # простро́читися, прострочи́тися  # rv_zna:rv_oru:rv_dav
+прострочитися /vr1.it0.it1 :perf          # простро́читися, прострочи́тися  # rv_oru
 прострочування /n2n
 прострочувати /v1.cf.advp :imperf                             # rv_zna
 прострочуватися /vr1.cf.advp :imperf
@@ -187488,7 +187517,7 @@
 розгладження /n2n
 розгладжування /n2n
 розгладжувати /v1.cf.advp :imperf                             # rv_zna:rv_oru:rv_dav
-розгладжуватися /vr1.cf.advp :imperf                          # rv_zna
+розгладжуватися /vr1.cf.advp :imperf                          # rv_oru
 розгладити /v1.it0.is0 :perf                                  # rv_zna:rv_oru:rv_dav
 розгладитися /vr1.it0 :perf                                   # rv_oru
 розгладнути /v1 :perf
@@ -191227,11 +191256,11 @@
 розутілення /n2n
 розучений /adj :adjp:pasv:perf
 розучити /v1.it1.is0 :perf                                    # rv_zna
-розучитися /vr1.it1 :perf                                     # rv_inf:rv_zna:rv_rod
+розучитися /vr1.it1 :perf                                     # rv_inf:rv_rod
 розучуваний /adj :adjp:pasv:imperf
 розучування /n2n
 розучувати /v1.cf.advp.isNo :imperf                           # rv_zna
-розучуватися /vr1.cf.advp :imperf                             # rv_zna:rv_rod
+розучуватися /vr1.cf.advp :imperf                             # rv_rod
 розущільнений /adj :adjp:pasv:perf
 розущільненість /n30
 розущільнення /n2n.p1
@@ -200833,6 +200862,7 @@
 слатися /vr3.cf.advp :imperf:xp2          # стелитися         # rv_oru:rv_dav
 слебізування /n2n
 слебізувати /v1.cf.advp :imperf
+слезити /v1.cf :imperf                      # rv_oru
 слем /n20.p
 слемер /n20.a.p.ke.<
 слемерка /n10.p2.<
@@ -205280,7 +205310,9 @@
 спосіб /n21.p                                                 # rv_inf
 спосібний /adj.adv :coll \                                    # rv_inf
  +cs=спосібніший
-способитися /vr1 :imperf            # способи́тися
+способити /v1 :imperf                                     # rv_dav:rv_oru
+способитися /vr1 :imperf              # спосо́битися
+способитися /vr1 :perf            # способи́тися
 способовий /adj
 спостерегти /v1.is0 :perf                                     # rv_zna:rv_oru:rv_dav
 спостерегтися /vr1 :perf
@@ -207025,6 +207057,7 @@
 стишити /v1.it0.is0 :perf                                     # rv_zna:rv_oru:rv_dav
 стишитися /vr1.it0 :perf                                      # rv_oru
 стишовіт /n20
+стишувальний /adj
 стишуваний /adj :adjp:pasv:imperf
 стишування /n2n
 стишувати /v1.cf.advp.isNo :imperf                            # rv_zna:rv_oru:rv_dav
@@ -207778,6 +207811,7 @@
 стрибайчик /n20.a.p.<>
 стрибання /n2n
 стрибати /v2.cf.advp.shrt.isNo :imperf                        # rv_oru
+стрибкий /adj
 стрибковий /adj
 стрибкоподібний /adj.adv
 стрибкоподібність /n30
@@ -216622,6 +216656,7 @@
 тортурований /adj :adjp:pasv:imperf
 тортурування /n2n.p1
 тортурувати /v1.cf.advp.is0 :imperf                           # rv_zna:rv_oru:rv_dav
+торувальний /adj
 торування /n2n
 торувати /v1.cf.advp.is0 :imperf                              # rv_zna:rv_oru:rv_dav
 торуватися /vr1.cf.advp :imperf                               # rv_oru
@@ -220188,7 +220223,7 @@
 увільнитися /vr1.it1 :perf:v-u                                # rv_oru
 увільняння /n2n :v-u
 увільняти /v2.cf.advp :imperf:v-u                             # rv_zna:rv_oru:rv_dav
-увільнятися /vr2.cf.advp :imperf:v-u                          # rv_zna:rv_oru
+увільнятися /vr2.cf.advp :imperf:v-u                          # rv_rod:rv_oru
 увімкнений /adj :adjp:pasv:perf:v-u
 увімкненість /n30 :v-u
 увімкнення /n2n.p1 :v-u
@@ -221189,7 +221224,7 @@
 укорочувати /v1.cf.advp :imperf:v-u                           # rv_zna:rv_oru:rv_dav
 укорочуватися /vr1.cf.advp :imperf:v-u                        # rv_oru
 укосина /n10.p1
-укоситися /vr1 :perf:v-u                                      # rv_zna:rv_oru:rv_dav
+укоситися /vr1 :perf:v-u                                      # rv_oru
 укоськаний /adj :adjp:pasv:perf:v-u
 укоськати /v2.isNo :perf:v-u                                  # rv_zna:rv_oru:rv_dav
 укоськатися /vr2 :perf:v-u                                    # rv_oru
@@ -222994,6 +223029,7 @@
 урезонювання /n2n
 урезонювати /v1.cf.advp.isNo :imperf                          # rv_zna:rv_oru:rv_dav
 урезонюватися /vr1.cf.advp :imperf                            # rv_oru
+уректи /v1 :perf                                              # rv_zna:rv_oru:rv_dav
 урельєфнити /v1.is0.it1 :perf                                 # rv_zna:rv_oru:rv_dav
 урема /n10.p1
 уремічний /adj
@@ -233921,6 +233957,7 @@
 чітко adv \
  +cs=чіткіше
 чічка /n10.p2
+чкурити /v1.cf :imperf                      # rv_oru
 чкурнути /v1 :perf                                            # rv_oru
 член /n20.a.p                             # :xp2 частина
 член /n20.a.p.ke.<                        # :xp1 людина
@@ -236246,6 +236283,7 @@
 шихтуватися /vr1.cf.advp :imperf                              # rv_oru
 шишак /n20.a.p
 шишечка /n10.p2
+шиширхнути /v1 :perf                        # rv_oru
 шишка /n10.p2
 шишкар /n24.a.p.ku.<>                     # птах
 шишкариха /n10.p1.<>                      # птах

@@ -310,6 +310,8 @@
 би-сь part
 би-сьмо part
 би-сьте part
+бичина /n10
+біднитися /vr1.cf :imperf
 бідство /n2n
 бієць noun:anim:m:v_naz         # lim
 біжка adv
@@ -373,6 +375,7 @@
 блудящий /adj
 бляск /n20
 бовкало /n2n.p1
+бовтюк /n20.a.p.<
 богадільний /adj
 богадільня /n10.p2
 богатий /adj
@@ -400,6 +403,7 @@
 бокораш /n20.a.p.<
 болещі /np2
 болізний /adj.adv
+болона /n10.p1
 больниця /n10.p1
 боляк /n20.a.p
 болярин /n20.a.pyn.<
@@ -408,6 +412,7 @@
 бомбастичний /adj
 бонна /n10.p1.<
 борикатися /vr2.cf.advp :imperf
+борікатися /vr1.cf.advp :imperf
 боронений /adj :adjp:pasv:imperf
 бороття /n2n
 босака adv
@@ -460,10 +465,12 @@
 бросквиновий /adj
 бросквиночка /n10.p2
 бросквиня /n10.p1
+бростатися /vr2.cf.advp :imperf
 брузумент /n20
 бруковиця /n10
 бублешниця /n10.p1.<
 бублій /n20.a.p.<
+буддень /n22.a.p
 будовання /n2n.p1
 будовничий /n2adj1.<
 будучий /adj
@@ -478,6 +485,7 @@
 булий /adj
 бунда /n10
 бункр /n20.a.p.ke
+бунтовливий /adj
 бурдій /n20.a.p
 буркувати /v1.cf.advp :imperf
 бурта /n10.p1
@@ -510,6 +518,8 @@
 вакаціюватися /vr1.cf :imperf p=3
 валасання /n2n
 валасатися /vr2.cf.advp :imperf                    # rv_oru
+валений /adj :adjp:pasv:imperf
+валій /n20.a.p.<
 валчити /v1.it1.cf.advp.is0 :imperf                # rv_zna:rv_oru
 валюка /n10.<m
 валява /n10
@@ -643,11 +653,14 @@
 взаводи adv
 взайве adv
 взаочі adv
+вздовш adv
+вздовш prep                 # rv_rod
 вздрівати /v2.cf.advp :imperf                   # rv_zna
 взеленіти /v2 :perf
 взимі adv
 взнеслий /adj :adjp:pasv:perf
 взрушити /v1.is0.it0 :perf                      # rv_zna:rv_oru:rv_dav
+взяха /n10.<m
 вибанітований /adj :adjp:pasv:perf
 вибичуватися /vr1 :perf                 # ви́бичуватися
 вибірати /v2.cf.advp :imperf                    # rv_zna:rv_oru:rv_dav
@@ -718,6 +731,7 @@
 винохід /n21.a.p.<>
 виноходець /n22.a.p.<>
 винуватник /n20.a.p.<
+винувачений /adj :adjp:pasv:imperf
 винувачення /n2n.p1
 виняти /v1 :perf                                        # rv_zna:rv_oru:rv_dav
 виображувати /v1.cf.advp :imperf                                # rv_zna:rv_oru:rv_dav
@@ -744,6 +758,7 @@
 вирячатися /vr2.cf.advp :imperf                     # rv_oru
 висказання /n2n
 вискіт /n21
+вискрібок /n22.a.p.<
 висланник /n20.a.p.<
 висліпати /v2 :perf
 висліпувати /v1.cf.advp :imperf
@@ -751,6 +766,7 @@
 висмик /n20
 висмівати /v2.cf.advp :imperf
 висміватися /vr2.cf.advp :imperf
+виснажати /v2.cf.advp :imperf                       # rv_zna
 високоблагородіє /n2n.p1
 високопреосвященніший /adj
 високорівня /n10
@@ -814,6 +830,7 @@
 вівтарник /n20.a.p.<
 вівтірок /n22.a.p
 відбитка /n10.p2
+відбірати /v2.cf.advp :imperf                       # rv_zna
 відборець /n22.a.p.<
 відборона /n10
 відвзаємний /adj
@@ -1030,6 +1047,7 @@
 водноголос adv
 водовий /adj
 водогрій /n20.a.p
+водохрища /n10
 водянчик /n20.a.p
 воєвідство /n2n.p1
 вожай /n20.a.p.<
@@ -1045,6 +1063,7 @@
 воздаяння /n2n
 воздвиження /n2n
 возильник /n20.a.p.<
+возільник /n20.a.p.<
 возлісся /n2n
 возлюбити /v1.it1l :perf                   # rv_zna:rv_oru
 возлюблений /adj.long :adjp:pasv:perf
@@ -1107,6 +1126,7 @@
 вочоловічення /n2n
 вош noun:f:v_naz:anim                   # lim
 воячня /n10
+впадок /n22.p
 вперве adv
 впервину adv
 вперебіжку adv
@@ -1114,6 +1134,7 @@
 впирскування /n2n.p1
 впирскувати /v1.cf.advp :imperf                   # rv_zna:rv_oru:rv_dav
 впирснути /v1 :perf                   # rv_zna:rv_oru:rv_dav
+впис /n20
 впімнути /v1 :perf
 впімнутися /vr1 :perf
 вповання /n2n.p1
@@ -1201,6 +1222,7 @@
 вчиття /n2n
 вчухрати /v2 :perf
 габіт /n20.p
+гав'яр /n20.ke                  # росл.
 гаджуга /n10.p1
 гадячий /adj
 гаєвий /adj
@@ -1224,11 +1246,14 @@
 гамазея /n10.p1
 гамалик /n20.a
 гандель /n22
+ганчарство /n2n
 ганчарський /adj
+ганчарювати /v1.cf.advp :imperf
 гаптар /n24.a.p.ke.<
 гаптарка /n10.p2.ko.<
 гаратати /v2.cf.advp :imperf                                # rv_zna:rv_oru
 гаратнути /v1 :perf
+гарбарювати /v1.cf.advp :imperf
 гардувати /v1.cf.advp :imperf
 гарець /n22.a.p
 гарма-дарма adv
@@ -1257,6 +1282,7 @@
 гидно adv:compb
 гидроплян /n20.a.p
 гилля /n2n
+гильце /n2n.p2
 гиндик /n20.a.p.<>
 гинший /adj
 гирилиця /n10.p1
@@ -1285,6 +1311,7 @@
 гніздюк /n20.a.p.<
 гнічений /adj
 говорінка /n10
+годиняний /adj
 годун /n20.a.p.<
 годяно adv
 гойкання /n2n
@@ -1305,6 +1332,7 @@
 гонений /adj :adjp:pasv:imperf
 гордіти /v2.cf.advp :imperf                         # rv_oru
 гордота /n10
+горицьвіт /n20
 горі adv
 горівчаний /adj
 горідна adv
@@ -1315,6 +1343,8 @@
 горностайовий /adj
 городовина /n10
 горожанство /n2n
+горохвина /n10
+горувати /v1.cf :imperf
 гостець /n22.a
 гостиний /adj
 гостиниця /n10.p1
@@ -1493,6 +1523,7 @@
 дідовин /n20.a.p.<
 дідовод /n20.a.p.<
 дієпис /n20.p
+дізнаний /adj :adjp:pasv:perf
 діймавий /adj
 ділання /n2n
 ділати /v2.cf.advp :imperf                  # rv_zna:rv_oru
@@ -1535,6 +1566,7 @@
 договорення /n2n
 догодний /adj
 догонити /v1 :imperf                                        # rv_zna
+догорювати /v1.cf.advp :imperf              # дого́рювати
 додатньо adv
 додоми adv
 доживотний /adj
@@ -1545,6 +1577,7 @@
 доїжджачий /adj
 доїжно adv
 дойти /v4.is0 :perf                                           # rv_rod:rv_oru:rv_dav
+доказник /n20.a.p.<
 доказно adv
 докіль adv|conj:subord
 докладач /n20.a.p.<
@@ -1588,6 +1621,7 @@
 дорічний /adj
 дорогше adv:compc
 дороженька /n10.p2
+дорожнета /n10
 досвіта adv
 доси adv
 досіль adv
@@ -1624,6 +1658,7 @@
 дрощі /np2
 други /np2.<
 другиня /n10.p1.<
+дручок /n22.a.p
 дрюкований /adj :adjp:pasv:imperf
 дрюкувати /v1.cf.advp :imperf           # rv_zna:rv_oru:rv_dav
 дрюкуватися /vr1.cf.advp :imperf        # rv_oru
@@ -1822,6 +1857,7 @@
 завідати /v2.cf :imperf                         # rv_oru
 завідомий /adj
 завідомлення /n2n.p1
+завідомляти /v2.cf.advp :imperf                     # rv_zna:rv_oru:rv_dav
 завідця /n10.p1.<m
 завізваний /adj :adjp:pasv:perf
 завізвати /v1.isNo :perf                        # rv_zna
@@ -2063,6 +2099,7 @@
 заліжка /n10.p2
 залізобетоновий /adj
 залінитися /vr1 :perf
+залітки /np2                        # за́літки
 заложений /adj :adjp:pasv:perf
 заложення /n2n.p1
 заложити /v1.is0.it1 :perf                  # rv_zna:rv_oru:rv_dav
@@ -2137,6 +2174,7 @@
 занаряджений /adj :adjp:pasv:perf
 занарядити /v1.is0 :perf                        # rv_zna:rv_oru
 заневолення /n2n
+занедбовувати /v1.cf.advp :imperf                   # rv_zna
 занеже adv
 занепадок /n22.p
 занеханий /adj :adjp:pasv:perf
@@ -2198,7 +2236,7 @@
 запинити /v1 :perf                          # rv_zna:rv_oru
 запинитися /vr1 :perf                       # rv_oru
 запиняти /v2.cf.advp :imperf                # rv_zna:rv_oru
-запинятися /vr2.cf.advp :imperf             # rv_zna:rv_oru
+запинятися /vr2.cf.advp :imperf             # rv_oru
 запитник /n20.a.p
 запівати /v2.cf.advp :imperf
 запідпідьомкати /v2 :perf
@@ -2235,6 +2273,7 @@
 запомин /n20
 запоминати /v2.cf.advp :imperf                          # rv_zna
 запоровий /adj
+запороток /n22.a.p
 запоручатися /vr2.cf.advp :imperf
 запоручений /adj :adjp:pasv:perf
 запоручити /v1.is0 :perf
@@ -2329,7 +2368,7 @@
 заснидіти /v1 :perf
 заснічування /n2n
 заснічувати /v1.cf.advp :imperf             # rv_zna:rv_oru
-заснічуватися /vr1.cf.advp :imperf          # rv_zna:rv_oru
+заснічуватися /vr1.cf.advp :imperf          # rv_oru
 засняділий /adj :adjp:actv:perf
 засняділість /n30
 заснядіти /v1 :perf
@@ -2386,7 +2425,7 @@
 затишитися /vr1 :perf
 затіснення /n2n
 затіснювати /v1.cf.advp :imperf                 # rv_zna:rv_oru
-затіснюватися /vr1.cf.advp :imperf              # rv_zna:rv_oru
+затіснюватися /vr1.cf.advp :imperf              # rv_oru
 заткальниця /n10.p1.ko.<
 затовмистий /adj
 затовщений /adj :adjp:actv:perf
@@ -2529,7 +2568,7 @@
 защіплюваний /adj :adjp:pasv:imperf
 защіплювання /n2n
 защіплювати /v1.cf.advp :imperf                 # rv_zna:rv_oru
-защіплюватися /vr1.cf.advp :imperf              # rv_zna:rv_oru
+защіплюватися /vr1.cf.advp :imperf              # rv_oru
 защораз adv
 заюрити /v1 :perf
 заялозювати /v1.cf.advp :imperf                     # rv_zna:rv_oru
@@ -2722,6 +2761,7 @@
 змаг /n20
 змасакрований /adj :adjp:pasv:perf
 з-межи prep             # rv_rod
+зменшати /v2.cf.advp :imperf                        # rv_zna
 змервлений /adj :adjp:pasv:perf
 змиг /n20
 змирятися /vr2.cf.advp :imperf
@@ -2807,6 +2847,7 @@
 зрезигнований /adj :adjp:pasv:perf
 зрезигновано adv
 зрезигнувати /v1 :perf
+зруч adv
 зрядити /v1 :perf                                   # rv_zna
 зсилати /v2.cf.advp :imperf                   # rv_zna
 зсилатися /vr2.cf.advp :imperf
@@ -3048,6 +3089,7 @@
 камаші /np2
 камергерський /adj
 камза /n10
+камінем камінь noun:inanim:m:v_oru
 каміню камінь noun:m:v_rod/v_dav/v_mis
 камнем камінь noun:m:v_oru
 кандьор /n20.p.ke
@@ -3065,6 +3107,7 @@
 карачеї /np2.<
 карбач /n20.a.p
 карбівничий /n2adj1.p.<
+карбіж /n23
 кардіоскоп /n20.a.p
 каригідний /adj
 карменадлі /np2
@@ -3072,6 +3115,7 @@
 каррозшук /n20.p.zi
 картацький /adj
 картівник /n20.a.p.<
+картник /n20.a.p.<
 карунка /n10.p2
 касарня /n10.p2
 касино noun:n:nv
@@ -3117,6 +3161,7 @@
 киратовий /adj
 кирея /n10.p1
 кирниця /n10.p1
+китяг /n20.p
 кичера /n10.p1
 кишло /n2n
 кібель /n22.a.p
@@ -3127,6 +3172,7 @@
 кінниця /n10.p1
 кітка /n10.p2.<>
 кітловина /n10.p1
+кітляр /n24.a.p.ke.<
 кіточка /n10.<>
 кладь /n32
 кламати /v2.cf.advp :imperf
@@ -3145,6 +3191,7 @@
 клячати /v1.cf :imperf
 кмет /n20.a.p.<
 кметь /n20.a.p.<
+княжецький /adj
 князький /adj
 коби conj:subord
 ковати ковати verb:imperf:inf       # lim
@@ -3212,6 +3259,7 @@
 консуляр /n20.a.p.ke.<
 консумція /n10
 контентувати /v1.cf.advp :imperf                    # rv_zna:rv_oru
+контентуватися /vr1.cf.advp :imperf                     # rv_oru
 контерфект /n20.a.p                     # портрет
 конфітура /n10.p1
 конфузія /n10
@@ -3240,6 +3288,7 @@
 косак /n20.a.p
 костер /n22.a.p
 костокрилий /adj
+костопальня /n10
 котвиця /n10
 которий /adj.long :pron:int:rel
 кохля /n10
@@ -3266,6 +3315,7 @@
 кревняк /n20.a.p.<
 кревнячка /n10.p2.<
 креймах /n20.p
+кремпіль /n23.a.p
 кремпування /n2n
 кремпуватися /vr1.cf.advp :imperf
 кресаня /n10.p1
@@ -3315,6 +3365,7 @@
 купцювати /v1.cf.advp :imperf
 кургузий /adj
 куриця /n10.p1.<
+курохват /n20.a.p.<
 кусінчик /n20.a.p
 кутас /n20.a.p
 кутуляти /v2.cf.advp :imperf
@@ -3349,6 +3400,7 @@
 леговище /n2n.p1
 легуа noun:f:nv                             # міра довжини
 леда adv
+ледай /n20.a.p.<
 ледарь noun:anim:m:v_naz        # lim
 ледаякий /adj
 леда-який /adj :pron:ind
@@ -3531,6 +3583,7 @@
 менджувати /v1.cf.advp :imperf                      # rv_oru
 мення /n2n.p1
 мерва /n10
+мерзенитися /vr1.cf :imperf
 мериторичний /adj
 мериторично adv
 мерлець /n20.a.p.<
@@ -3566,6 +3619,7 @@
 мишкувати /v1.cf.advp :imperf
 мід noun:m:v_naz/v_zna                          # lim
 мідень /n22.a               # горщик
+міждо prep                              # rv_rod:rv_zna:rv_oru
 міжнародній /adj
 міжник /n20.a
 міжчасі noninfl
@@ -3684,6 +3738,7 @@
 набреха /n10.p1.ko.< :+m
 набреханий /adj :adjp:pasv:perf
 наввипинку adv
+навдак adv
 навдаку adv
 навдери adv
 навдокола adv
@@ -3738,7 +3793,9 @@
 надвишка /n10
 надгорода /n10
 наддирайло /n2n.ovi.p1.< /n20.po.<
+наддирати /v2.cf.advp :imperf
 наджидати /v2.cf.advp :imperf                   # rv_zna
+надзвонити /v1 :perf
 надзірний /adj
 надиво adv
 надивовижу adv
@@ -3783,6 +3840,7 @@
 наїжено adv
 най part
 найдальше adv:comps
+наймиток /n22.a.p.<
 найшвидче adv:comps
 накасатися /vr2.cf.advp :imperf
 накаслик /n20.a.p
@@ -3792,6 +3850,7 @@
 накінці adv
 накликувати /v1.cf.advp :imperf                   # rv_zna:rv_oru
 наклонити /v1 :perf                   # rv_zna:rv_oru
+накоренок /n22
 накорінок /n22.a.p
 накульгом adv
 накупчення /n2n
@@ -3800,6 +3859,7 @@
 наложити /v1.it1.is0 :perf                                    # rv_zna:rv_oru:rv_dav
 наложитися /vr1.it1 :perf                                     # rv_oru
 намаль adv
+намащати /v2.cf.advp :imperf                        # rv_zna:rv_oru
 намістник /n20.a.p.<
 намістництво /n2n
 намість намість adv
@@ -3842,6 +3902,7 @@
 напришкувато adv
 напродиво adv
 напруго adv
+напругом adv
 напружливий /adj
 напудитися /vr1.it0 :perf
 напуст /n20
@@ -3882,6 +3943,7 @@
 насхиль adv
 натовкати /v2.isNo :perf                                     # rv_zna:rv_oru:rv_dav
 натомісць adv
+наточіння /n2n
 натроюдити /v1.it0 :perf
 натужки adv
 наузбіч adv
@@ -4138,9 +4200,14 @@
 оба numr:p:v_naz/v_zna                          # :mp:
 обава /n10.p1
 обаполи adv
+обараніти /v2 :perf
+оббірати /v2.cf.advp :imperf
 обвеснитися /vr1 :perf p=3
 обвістити /v1.is0 :perf                         # rv_zna:rv_oru
+обвіщати /v2.cf.advp :imperf
+обголіти /v2 :perf
 обгорода /n10.p1
+обгравати /v2.cf.advp :imperf
 обдемкуватий /adj
 обезвічений /adj :adjp:pasv:perf
 обезглуздіти /v2 :perf
@@ -4161,10 +4228,12 @@
 обітування /n2n
 обіхідливий /adj
 обіхідчастий /adj
+обіходити /v1.cf.advp :imperf
 обіходитися /vr1.cf.advp :imperf                            # rv_oru
 обіходливий /adj
 обіцювати /v1.cf.advp :imperf                   # rv_zna:rv_dav
 обіщати /v2.cf.advp :imperf                 # rv_zna:rv_dav
+обклад /n20
 облагодіяти /v1.isNo :perf                   # rv_zna:rv_oru
 облада /n10
 обладувати /v1.cf.advp :imperf         # :xp1 обла́дувати                   # rv_zna:rv_oru
@@ -4215,6 +4284,7 @@
 обув'я /n2n
 обудження /n2n
 обути /v1.isTo :perf                   # rv_zna
+обутися /vr2 :perf
 обутритися /vr1 :perf p=3
 обутріти /v1 :perf p=3
 обхітний /adj
@@ -4463,7 +4533,7 @@
 од'ємно adv
 оджартуватися /vr1 :perf
 оджати /v4.isTo :perf                   # rv_zna:rv_oru:rv_dav
-оджатися /vr4 :perf                   # rv_zna:rv_oru:rv_dav
+оджатися /vr4 :perf                   # rv_oru:rv_dav
 оджахнути /v1 :perf
 оджбурнути /v1 :perf                   # rv_zna:rv_oru
 одже part:insert|conj:subord
@@ -4538,6 +4608,7 @@
 од'їзд /n20
 од'їздити /v1 :perf                        # :xp2 од'ї́здити
 од'їздити /v1.cf :imperf                   # :xp1 од'їзди́ти
+од'їзжати /v2.cf.advp :imperf
 од'їсти /v4.is3 :perf
 од'їстися /vr4 :perf
 од'їхати /v4 :perf
@@ -5030,7 +5101,7 @@
 одхилення /n2n.p1
 одхиляння /n2n.p1
 одхиляти /v2.cf.advp :imperf                           # rv_zna:rv_oru:rv_dav
-одхилятися /vr2.cf.advp :imperf                           # rv_zna:rv_oru:rv_dav
+одхилятися /vr2.cf.advp :imperf                           # rv_oru
 одхитнутися /vr1 :perf
 одхід /n21.p
 одхідливий /adj
@@ -5163,7 +5234,7 @@
 онучник /n20.a.p.<
 опарювати /v1.cf.advp :imperf                       # rv_zna:rv_oru
 опаска /n10
-опасуватися /vr1.cf.advp :imperf            # rv_zna
+опасуватися /vr1.cf.advp :imperf            # rv_oru
 опачина /n10.p1
 оперовий /adj
 опилий /adj :adjp:actv:perf
@@ -5309,6 +5380,7 @@
 оттакісінький /adj
 оттам adv
 отте оттой adj:n:v_naz/v_zna:pron:dem
+оттепер adv
 оттеперечки adv
 оттим conj:subord
 оттим оттой adj:m:v_oru//n:v_oru//p:v_dav:pron:dem
@@ -5424,6 +5496,7 @@
 палінка /n10.p2
 палькатий /adj
 палюх /n20.a.p
+палянка /n10
 памка /n10
 пан-біг noun:anim:m:v_naz       # lim
 пан-бог noun:anim:m:v_naz       # lim
@@ -5521,6 +5594,7 @@
 передзавзяття /n2n
 передстаречний /adj
 передший /adj
+переиначити /v1 :perf                       # rv_zna
 переіначений /adj :adjp:pasv:perf
 переіначення /n2n
 переіначити /v1.is0.it0 :perf                   # rv_zna:rv_oru
@@ -5649,6 +5723,10 @@
 півтретя /n2adj1
 півчвертаста numr:p:nv
 підбадьорувати /v1.cf.advp :imperf                          # rv_zna:rv_oru
+підбармовувати /v1.cf.advp :imperf
+підбармувати /v1 :perf
+підбільшати /v2.cf.advp :imperf         # підбільша́ти
+підбільшати /v2 :perf                   # підбі́льшати
 підборний /adj
 підбудова /n10.p1
 підвалля /n2n
@@ -5681,6 +5759,7 @@
 підотаманчий /adj
 підофіцер /n20.a.p.ke.<
 підпалок /n22.a.p
+підпальник /n20.a.p
 підпарубочий /n2adj1.p.<
 підписок /n22.a.p.<
 підпідьомкання /n2n
@@ -5721,6 +5800,7 @@
 підчинення /n2n
 підчинити /v1.it1 :perf                   # rv_zna:rv_oru
 підшепти /np2
+піжити /v1.cf :imperf p=3
 пізнитися /vr1.cf :imperf
 пійти /v4 :perf
 пікер /n20.a.p.<
@@ -5730,6 +5810,7 @@
 пімститися /vr1 :perf                                       # rv_dav:rv_oru
 пірваний /adj :adjp:pasv:perf
 пірвати /v1.isNo :perf
+пісковатий /adj
 післанець /n22.a.p.<
 післаний /adj :adjp:pasv:perf      # rv_dav
 післанництво /n2n
@@ -5740,6 +5821,7 @@
 піяння /n2n
 піяти /v1.cf.advp :imperf
 піяцтво /n2n
+піячити /v1.cf :imperf
 плавак /n20.a.p
 плавацький /adj
 плазовитий /adj
@@ -5752,6 +5834,7 @@
 плебанія /n10.p1
 плебанський /adj
 плеский /adj
+плетій /n20.a.<
 пливати /v2.cf.advp :imperf                 # rv_oru
 пливом adv
 плисак /n20.a.p.<
@@ -5858,6 +5941,7 @@
 погребовий /adj
 погрібати /v2.cf.advp :imperf
 погрішення /n2n
+погрожати /v2.cf.advp :imperf
 погуба /n10
 погублення /n2n
 погубляти /v2.cf.advp :imperf
@@ -5867,6 +5951,7 @@
 подаремне adv
 подаремно adv
 подарковий /adj
+подаруйко /n20.p.<
 подення /n2n
 подивити /v1.it1 :perf           # часто в старих текстах + "ся"
 подивугідний /adj
@@ -5932,6 +6017,7 @@
 покійно adv
 покладки /np2
 покладний /adj
+поклейнити /v1 :perf
 покликач /n20.a.p.<
 покмітливий /adj
 поковшовий /adj
@@ -6092,6 +6178,7 @@
 поруха /n10
 поручницький /adj
 порфіроносець /n22.a.p.<
+порядити /v1 :perf
 поряду adv
 посадництво /n2n
 посадницький /adj
@@ -6118,6 +6205,7 @@
 поскуплюватися /vr1 :perf
 посланик /n20.a.p.<
 посланіє /n2n.p1
+послідки /np2
 послідний /adj.long
 послідній /adj
 послідок /n22.a
@@ -6125,6 +6213,7 @@
 посліпий /adj
 пословиця /n10.p1
 послужка /n10.p2
+послухач /n20.a.p.<
 послухняно adv
 послушання /n2n
 послушний /adj
@@ -6133,6 +6222,7 @@
 посмертя /n2n
 посмішний /adj
 пособитися /vr1 :perf p=3
+посовувати /v1.cf.advp :imperf
 посолодкий /adj
 посоромно adv
 посошний /adj
@@ -6291,6 +6381,7 @@
 пречесніший /adj
 пречудно adv
 прибгати /v2 :perf
+прибичовувати /v1.cf.advp :imperf
 прибиш /n20.a.p.<
 прибірати /v2.cf.advp :imperf                   # rv_zna:rv_oru
 прибічний /adj
@@ -6300,9 +6391,11 @@
 привілегія /n10.p1
 привінок /n22.a.p
 привластити /v1.is0 :perf                           # rv_zna
+привлащати /v2.cf.advp :imperf                          # rv_zna
 привозовий /adj
 пригінчий /n2adj1.<
 пригірщ noun:f:v_naz/v_zna                  # lim
+пригніток /n22.a.p
 приголосівка /n10.p2
 пригонич /n20.a.p.<
 приготовання /n2n.p1
@@ -6312,6 +6405,7 @@
 придверник /n20.a.p.<
 придомок /n22.a.p
 призвід /n21
+призвіл /n21
 призвісько /n2n.p1
 призволити /v1.it0 :perf
 призвоління /n2n
@@ -6357,6 +6451,7 @@
 примоцований /adj :adjp:pasv:perf
 примоцовувати /v1.cf.advp :imperf
 примоцувати /v1.cf.advp :imperf
+примушати /v2.cf.advp :imperf                           # rv_zna:rv_oru
 примхати /v2.cf.advp :imperf
 принайменше adv
 приносини /np1
@@ -6372,10 +6467,12 @@
 природній /adj
 природньо adv
 прирожденний /adj
+присівок /n22
 присно adv
 присогласити /v1 :perf                     # rv_inf
 присоглашати /v2.cf.advp :imperf                   # rv_inf
 присочити /v1 :perf                             # rv_zna
+приспа /n10
 приспособитися /vr1 :perf
 приставник /n20.a.p.<
 пристаневий /adj
@@ -6392,12 +6489,14 @@
 прихватити /v1.is0 :perf                                # rv_zna:rv_oru
 прихватком adv
 прихилля /n2n
+прихідько /n20.p.<
 прихмарно adv
 приходжати /v2.cf.advp :imperf
 приходство /n2n.p1
 причинок /n22.p
 причт /n20.p
 пришиб /n20.p
+прищитися /vr1.cf :imperf
 прищіпляти /v2.cf.advp :imperf                   # rv_zna:rv_oru:rv_dav
 приют /n20.p
 приютити /v1.it1 :perf                      # rv_zna
@@ -6466,6 +6565,7 @@
 протопіп /n21.a.p.<
 протопопівна /n10.<
 протопопія /n10.p1
+проторг /n20.a
 протостратор /n20.a.p.ke.<
 протяжко adv
 прохідка /n10.p2
@@ -6487,6 +6587,7 @@
 пуделко /n2n.p2
 пудити /v1.cf.advp :imperf
 пудло /n2n
+пужина /n10
 пулярдка /n10.p2.ko.<>
 пулярес /n20.a.p
 пуринати /v2.cf.advp :imperf                        # rv_oru
@@ -6635,6 +6736,7 @@
 розвільнення /n2n
 розговорювати /v1 :imperf
 розенкройцер /n20.a.p.ke.<
+роззнавати /v1.cf.advp :imperf
 розказ /n20.p
 розлічити /v1 :perf                                 # rv_zna
 розложити /v1.is0.it1 :perf                                   # rv_zna:rv_oru:rv_dav
@@ -6659,6 +6761,7 @@
 розслідження /n2n
 розсліджувати /v1.cf.advp :imperf                   # rv_zna
 розслідити /v1.is0.it1 :perf                   # rv_zna
+розслухати /v2 :perf
 розстрій /n21
 розсудно adv
 розтіч /n30
@@ -6677,6 +6780,7 @@
 росказати /v1 :perf                             # rv_zna:rv_dav:rv_oru
 роскіш /n30
 роскішний /adj
+роскошувати /v1.cf.advp :imperf
 росподіляти /v2.cf.advp :imperf                               # rv_zna:rv_oru:rv_dav
 росподілятися /vr2.cf.advp :imperf                            # rv_oru
 ростинність /n30
@@ -6714,6 +6818,7 @@
 самокатка /n10.p2
 самокидка /n10.p2
 самопас /n20.a.p.ke.<
+самопаски adv
 самостайно adv
 самочуття /n2n
 сантиментально adv:compb
@@ -6752,6 +6857,7 @@
 селькор /n20.a.p.ke.<
 сельрада /n10.p1
 сельський /adj
+сельце /n2n
 селюх /n20.a.p.<
 селяне селянин noun:anim:p:v_naz
 селяньство /n2n
@@ -6763,6 +6869,7 @@
 сербіянин /n20.a.pyn.<
 сердека /n10.<
 серебро /n2n
+серцезворушний /adj
 сестрениця /n10.p1.<
 сестрінка /n10.p2.<
 сетльмент /n20.p
@@ -6803,6 +6910,7 @@
 скілька numr:p:v_naz/v_zna
 скількість /n30
 скілько numr:p:v_naz/v_zna
+скімшитися /vr1 :perf
 скіпець /n22.a.p
 скіпщик /n20.a.p.<
 скіра /n10.p1
@@ -6812,6 +6920,7 @@
 склонитися /vr1 :perf                   # rv_oru
 скнира /n10.p1.ko.< :+m
 скоботати /v1.cf.advp :imperf
+сковзький /adj
 скомплікований /adj
 скомплікованість /n30
 скомпліковано adv:compb
@@ -6850,6 +6959,7 @@
 сліпорожденний /adj
 слічний /adj
 словар /n24.a.p.ku
+словце /n2n.p2
 слугиня /n10.p1.<
 службовик /n20.a.p.<
 служива /n2adj1.<
@@ -6892,6 +7002,7 @@
 соняшниці /np1
 сопівка /n10.p2
 сопух /n20.a
+сороківець /n22.a.p                     # гроші
 сорокувато adv
 соромицький /adj
 соузник /n20.a.p.<
@@ -6905,6 +7016,7 @@
 сперечка /n10.p2
 сперше adv
 спилити /v1 :perf    # rv_zna:rv_oru:rv_dav
+спильна adv
 співболіти /v2.cf.advp :imperf                                # rv_dav
 співдіяння /n2n
 співпредсідниця /n10.p1.<
@@ -6935,7 +7047,6 @@
 спортовка /n10.p2.<
 спосеред prep        # rv_rod
 спосібність /n30
-способитися /vr1 :perf              # спосо́битися
 способний /adj
 спотиньга adv
 спотичка /n10.p2
@@ -6977,6 +7088,7 @@
 стежі /np2.<
 стейт /n20.p                          # діаспорне слово
 стейтовий /adj
+стеряти /v2 :perf                                       # rv_zna
 стерятися /vr2 :perf
 стійковий /adj
 стійно adv
@@ -7079,6 +7191,7 @@
 сьміття /n2n
 сьміятися /vr1.cf :imperf
 сьогодня adv
+сьпів /n20.p
 сьпівати /v2.cf.advp :imperf                    # rv_zna:rv_oru
 ся part
 сябринний /adj
@@ -7103,12 +7216,14 @@
 тано adv:compb
 тарабан /n20.a.p
 тарапата /n10.p1
+тарганити /v1.cf.advp :imperf                           # rv_zna:rv_oru
 татаруватий /adj
 тафля /n10
 таца /n10
 твердоздавець /n22.a.p.<
 творитель /n20.a.p.<
 теї той adj:f:v_rod:pron:dem
+тектура /n10.p1
 телєґрама /n10.p1
 темна /n2adj1
 темник /n20.a.p.<                     # :xp1 татарський воєначальник
@@ -7206,6 +7321,7 @@
 трійло /n2n
 трогати /v2.cf.advp :imperf                 # rv_zna:rv_oru
 тройця /n10.p1
+тройчатий /adj
 тронка /n10.p2
 трудник /n20.a.p.<
 труждатися /vr2.cf.advp :imperf
@@ -7222,10 +7338,12 @@
 туй-туй adv
 тулько adv
 турбація /n10.p1
+турити /v1.cf.advp :imperf                            # rv_zna:rv_oru
 туркус /n20
 туркусовий /adj
 турчин /n20.a.p.<
 турчинка /n10.p2.ko.<
+туряти /v2.cf.advp :imperf                            # rv_zna:rv_oru
 тутай adv
 тутво adv
 тутечка adv
@@ -7257,6 +7375,7 @@
 уборзі adv
 уборонений /adj :adjp:pasv:perf
 убоятися /vr1 :perf                 # rv_rod
+уверед /n20
 увечорі adv:v-u
 увидіти /v1 :perf                                   # rv_zna
 увись adv:v-u
@@ -7294,6 +7413,7 @@
 узгляднювання /n2n
 узгляднювати /v1.cf.advp :imperf
 узглядняти /v2.cf.advp :imperf
+узграничанин /n20.a.p.<
 уздогін adv
 уздогін prep                            # rv_dav
 узи /np1
@@ -7316,6 +7436,8 @@
 укінчити /v1 :perf                          # rv_zna
 укінчитися /vr1 :perf
 укландати /v2.isNo :perf                   # rv_zna:rv_oru
+укликати /v2.cf.advp :imperf        # уклика́ти        # rv_zna:rv_oru
+укликати /v2 :perf                  # укли́кати        # rv_zna:rv_oru
 уконтентований /adj :adjp:pasv:perf:v-u
 уконтентовання /n2n :v-u
 уконтентовування /n2n :v-u
@@ -7328,6 +7450,7 @@
 укруть adv
 уланка /n10.p2
 улегшити /v1.is0 :perf                   # rv_zna:rv_oru:rv_dav
+улик /n20.a.p
 улиця /n10.p1
 уліжно adv:predic
 уліті adv
@@ -7424,6 +7547,7 @@
 устроїти /v1.it0.is0 :perf                      # rv_zna:rv_dav
 устроїтися /vr1 :perf                                          # rv_oru
 усяково adv
+утеряти /v2 :perf                       # rv_zna
 утікти /v1 :perf
 утічка /n10
 утка /n10.p2.<>
@@ -7493,6 +7617,7 @@
 хабаззя /n2n
 хабуззя /n2n
 хавтура /n10.p1
+халаштан /n20.a.p.<
 халащати /v1.cf.advp :imperf                   # rv_zna
 ханька /n10.p2
 хаптура /n10
@@ -7505,8 +7630,10 @@
 хвартух /n20.a.p
 хватаний /adj
 хвецяти /v2.cf.advp :imperf                                    # rv_zna:rv_oru:rv_dav
+хвижа /n10
 хвища /n10
 хибань part
+хибнутися /vr1 :perf
 хильці adv
 хібащо conj:subord
 хлань /n32
@@ -7514,6 +7641,7 @@
 хлописько /n20.<
 хлост /n20
 хлоста /n10
+хлюпощитися /vr1.cf :imperf
 хляпавка /n10
 хованець /n22.a.p.<
 ховзкий /adj
@@ -7662,6 +7790,7 @@
 чень part
 чепа /n10
 червонороска /n10.p2.ko.<
+черговець /n22.a.p.<
 череватіти /v2.cf :imperf
 чередільниця /n10.p1.ko.<
 черлений /adj
@@ -7681,6 +7810,7 @@
 чистяк /n20.a
 чительник /n20.a.p.<
 чісник /n20
+чмара /n10
 чміль /n23.a.p.<>
 чмут /n20.a.p.<
 човно /n2n
