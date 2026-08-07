@@ -40,6 +40,6 @@ err 2222
 bad 11555
 alt 3386
 arch 11423
-slang 4114
+slang 4113
 obsc 763
 vulg 358
