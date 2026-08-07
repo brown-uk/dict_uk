@@ -824,7 +824,8 @@ class Expand {
 
 			if( addTags[0] in ['noun', 'adj']
 					&& ! (addTags[-1] =~ /up[0-9]/)
-					&& ! (dicEntry.tagStr =~ /(noun|adj).*:[mfn]:v_(naz|oru)/) )
+					&& ! (dicEntry.tagStr =~ /(noun|adj).*:[mfn]:v_naz/)
+                    && dicEntry.word != "словом" )
 				continue
 
 			String xpTag = addTags.find { it =~ /^(xp|slang|bad|perf|imperf)/ }
@@ -832,7 +833,7 @@ class Expand {
 				if( ! dicEntry.tagStr.contains(xpTag) )
 					continue
 
-				addTags.remove(xpTag)
+				addTags = addTags - xpTag
 			}
 
 			String addTagsStr = ':' + addTags[1..-1].join(':')

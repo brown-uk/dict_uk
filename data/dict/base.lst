@@ -32732,7 +32732,7 @@
 відступні /n2adj1
 відступство /n2n
 відстьобати /v2.isNo :perf                                    # rv_zna:rv_oru:rv_dav
-відстьобуватися /vr2.cf.advp :imperf                          # rv_oru
+відстьобуватися /vr1.cf.advp :imperf                          # rv_oru
 відсубстантивний /adj
 відсувальний /adj
 відсуваний /adj :adjp:pasv:imperf
@@ -76137,7 +76137,6 @@
 зашантажований /adj :adjp:pasv:perf
 зашантажувати /v1.is0 :perf                         # rv_zna:rv_oru
 зашарений /adj
-зашаритися /vr2 :perf
 зашарілий /adj :adjp:actv:perf
 зашарілість /n30
 зашаріння /n2n
