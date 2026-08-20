@@ -104,6 +104,13 @@ task testHunspellBad (type: Exec) { //, dependsOn: hunspell) {
     commandLine "sh", "-c", "${cmd}"
 }
 
+task testHunspellBadCorr (type: Exec) { //, dependsOn: hunspell) {
+    def txt = "відґємний"
+
+    def cmd = "echo $txt | hunspell -d $outDir/uk_UA | grep -E \"& від'ємний\""
+    commandLine "sh", "-c", "${cmd}"
+}
+
 task testHunspell(dependsOn: [testHunspellGood, testHunspellBad]) {
 }
 
