@@ -17,6 +17,10 @@ dependencies {
     implementation group: 'org.apache.groovy', name: 'groovy-cli-picocli', version: '4.0.+'
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
     implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.5.+'
+
+    testImplementation platform('org.junit:junit-bom:5.14.+') // Or the latest version
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.14.+'
 }
 
 
@@ -52,6 +56,29 @@ task hunspell (type: JavaExec, dependsOn: classes) {
     mainClass = "Hunspell"
 }
 
+task hunspellNoLat (dependsOn: hunspell) {
+    def outDirNoLat = "$outDir/nolat"
+    outputs.files "$outDirNoLat/uk_UA.aff", "$outDirNoLat/uk_UA.dic"
+
+    doFirst {
+        new File(outDirNoLat).mkdirs()
+        copy {
+            from "$outDir/uk_UA.dic"
+            into outDirNoLat
+        }
+        def affIn = file("$outDir/uk_UA.aff")
+        def affOut = file("$outDirNoLat/uk_UA.aff")
+        
+        def lines = affIn.readLines()
+                .findAll { !(it ==~ /^ICONV.*0$/) }
+        def iconvCount = lines.count { it =~ /^ICONV/ } - 1
+        
+        affOut.text = lines
+                .collect { line -> line.replaceFirst(/^(ICONV )[0-9]+$/, '$1'+iconvCount) }
+                .join('\n') + '\n'
+    }
+}
+
 task hunspellZip (type: Zip, dependsOn: hunspell) {
    from "$outDir"
    include 'uk_UA.aff'
@@ -60,6 +87,14 @@ task hunspellZip (type: Zip, dependsOn: hunspell) {
    destinationDirectory = file("$outDir")
 }
 
+task hunspellZipNoLat (type: Zip, dependsOn: hunspell) {
+    from "$outDir/nolat"
+    include 'uk_UA.aff'
+    include 'uk_UA.dic'
+    archiveFileName = "hunspell-uk_UA_${project.version}_nolat.zip"
+    destinationDirectory = file("$outDir")
+ }
+ 
 task hunspellFull (type: JavaExec, dependsOn: classes) {
     outputs.files "$outDir/uk_UA.aff", "$outDir/uk_UA.dic"
 

@@ -3,9 +3,16 @@ import org.apache.tools.ant.filters.ReplaceTokens
 version=new File("${projectDir}/../../VERSION").text.trim()
 def hunspellDir="${projectDir}/../hunspell/build/hunspell"
 
-def subname = project.hasProperty("full") ? "_full" : ""
-
 println "Version: $version"
+
+def subname = ""
+
+if( project.hasProperty("type") ) {
+    if( project.getProperty("type") == "full" ) subname = "full"
+    else if( project.getProperty("type") == "nolat" ) subname = "nolat"
+
+    logger.lifecycle("Building type: ${subname}")
+}
 
 task prepareFiles {
 
@@ -40,10 +47,13 @@ task prepareFiles {
 }
 
 task oxt (type: Zip, dependsOn: prepareFiles) {
+    def infix = subname ? "_${subname}" : ""
     from 'build/oxt'
-    archiveBaseName = "dict-uk_UA$subname-${project.version}"
+    archiveBaseName = "dict-uk_UA$infix-${project.version}"
     archiveExtension = "oxt"
     destinationDirectory = file("build")
+    
+    outputs.files "$archiveBaseName.$archiveExtension"
 }
 
 

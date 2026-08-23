@@ -91,7 +91,7 @@ new File('build/mapping.txt').text = revFlagMap.collect{k,v -> "$k=$v"}.join("\n
 println("Negative matches:\n\t" + negativeMatchFlags.collect{k,v -> "$k=$v"}.join("\n\t"))
 
 @Field
-static String NONSPELL_TAG_LIST = ":(bad|subst|alt|arch|slang|vulg|obsc|short|long)"
+static String NONSPELL_TAG_LIST = ":(bad|subst|alt|up92|arch|slang|vulg|obsc|short|long)"
 
 @Field
 static String subFolder = ""
@@ -99,7 +99,7 @@ static String subFolder = ""
 if( fullDict ) {
     println "Дозволяємо ненормативні форми для пошуку..."
 	NONSPELL_TAG_LIST = "::"
-	subFolder = "/_full"
+	subFolder = "/full"
 }
 
 
@@ -545,3 +545,4 @@ static boolean spellWord(String line) {
 		|| line =~ /adj:m:v_(naz|zna).*:short/ \
 		|| line =~ /^((що(як)?|як)?най)?(більш|менш|скоріш|перш) /
 }
+

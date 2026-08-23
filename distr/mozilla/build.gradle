@@ -5,29 +5,30 @@ def hunspellDir="${projectDir}/../hunspell/build/hunspell"
 
 println "Version: $version"
 
+def subname = ""
+
+if( project.hasProperty("type") ) {
+    if( project.getProperty("type") == "nolat" ) subname = "nolat"
+
+    logger.lifecycle("Building type: ${subname}")
+}
+
 task prepareFiles {
 
   doLast() {
-//    new File("build/xpi/dictionaries").mkdirs()
 
     copy {
-        from("$hunspellDir/uk_UA.aff") {
+        from("$hunspellDir/$subname/uk_UA.aff") {
             rename "uk_UA", "uk-UA"
         }
-        from("$hunspellDir/uk_UA.dic") {
+        from("$hunspellDir/$subname/uk_UA.dic") {
             rename "uk_UA", "uk-UA"
         }
         from "meta-xpi/README_uk_UA.txt"
         into "build/xpi/dictionaries"
     }
 
-//    copy {
-//        from "meta-xpi/_locales"
-//        into "build/xpi/_locales"
-//    }
-
     copy {
-//        from "../LICENSE"
         from("meta-xpi/manifest.json") {
             filter(ReplaceTokens, tokens: [VERSION: project.version])
         }
@@ -40,8 +41,11 @@ task prepareFiles {
 }
 
 task xpi (type: Zip, dependsOn: prepareFiles) {
+    def infix = subname ? "_${subname}" : ""
     from 'build/xpi'
-    archiveBaseName = "ukrainian_dictionary-$project.version-mozilla"
+    archiveBaseName = "ukrainian_dictionary-$project.version-mozilla$infix"
     archiveExtension = "xpi"
     destinationDirectory = file("build")
+
+    outputs.files "$archiveBaseName.$archiveExtension"
 }
