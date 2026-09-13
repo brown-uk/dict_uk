@@ -1627,10 +1627,12 @@ class Expand {
 		List<DicEntry> allEntries = preparedLines.parallelStream().map { LineGroup lineGroup ->
 
 			try {
+//                System.err.println(":: ${lineGroup}")
 				List<DicEntry> taggedEntries = expand_line(lineGroup)
 
 				if( validator.checkEntries(taggedEntries) > 0 ) {
 					taggedEntries = null
+			        log.error("Validation failed: \"${lineGroup.line}\"")
 				}
                 
 				return taggedEntries
@@ -1639,10 +1641,10 @@ class Expand {
 				log.error("Failed to expand: \"${lineGroup.line}\": {}", e.getMessage())
 				return null
 			}
-
 		}
 		.flatMap{ s-> 
 			if( ! s ) {
+                log.error("Failed to expand a line")
                 throw new ExpandException()
 //				System.exit(1)
 			}

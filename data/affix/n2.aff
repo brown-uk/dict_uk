@@ -64,6 +64,15 @@ subgroup n20.a
 . я		#  багатія 	                    @ noun:m:v_rod
 
 
+subgroup n20.sa
+
+[^аєиійоуьюя]:
+0	а		#  ягуара 	                    @ noun:m:v_rod:subst
+
+[йь]:
+. я		#  багатія 	                    @ noun:m:v_rod:subst
+
+
 # Паралельне закінчення -у в р.в. (на додаток до закінчення -а)
 
 subgroup n20.u

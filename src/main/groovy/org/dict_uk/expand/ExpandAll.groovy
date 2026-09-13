@@ -2,17 +2,11 @@
 
 package org.dict_uk.expand
 
-import org.dict_uk.expand.TaggedWordlist
+import org.dict_uk.common.DicEntry
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
 import groovy.transform.CompileStatic
-
-import org.dict_uk.expand.Expand
-import org.dict_uk.expand.ExpandComps
-
-import org.dict_uk.common.DicEntry
-import org.dict_uk.expand.Args
 
 class ExpandAll {
 	static final Logger log = LoggerFactory.getLogger(ExpandAll.class);
@@ -77,6 +71,9 @@ class ExpandAll {
         }
         catch(ExpandException e) {
             log.error("Expand error: ", e.getMessage())
+            if( ! e.getMessage() ) {
+                log.error("Expand error: ", e)
+            }
             System.exit(1)
         }
         catch(Exception e) {

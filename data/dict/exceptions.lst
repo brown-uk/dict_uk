@@ -176,6 +176,13 @@
 іграми гра noun:p:v_oru
 іграх гра noun:p:v_mis
 
+відеоігри відеогра noun:p:v_naz/v_zna/v_kly
+відеогри відеогра noun:p:v_naz/v_zna              # 2,3,4 гри
+відеоігор відеогра noun:p:v_rod
+відеоіграм відеогра noun:p:v_dav
+відеоіграми відеогра noun:p:v_oru
+відеоіграх відеогра noun:p:v_mis
+
 телеігри телегра noun:p:v_naz/v_zna/v_kly
 телегри телегра noun:p:v_naz/v_zna              # 2,3,4 гри
 телеігор телегра noun:p:v_rod
@@ -189,12 +196,6 @@
 суперіграм супергра noun:p:v_dav
 суперіграми супергра noun:p:v_oru
 суперіграх супергра noun:p:v_mis
-
-відеоігри відеогра noun:p:v_naz/v_zna/v_kly
-відеоігор відеогра noun:p:v_rod
-відеоіграм відеогра noun:p:v_dav
-відеоіграми відеогра noun:p:v_oru
-відеоіграх відеогра noun:p:v_mis
 
 квазіігри квазігра noun:p:v_naz/v_zna/v_kly
 квазіігор квазігра noun:p:v_rod
@@ -651,6 +652,8 @@
 нічого-нічого noun:inanim:n:v_rod:pron:neg:predic
 
 півроку-рік noun:p:v_naz/v_zna                  # lim
+
+жарта жарт noun:m:v_zna:var
 
 різдва різдво noun:p:v_naz/v_zna
 срібла срібло noun:p:v_naz/v_zna

@@ -248,8 +248,13 @@
 засре засрати verb:perf:futr:s:3:vulg
 засрем засрати verb:perf:futr:p:1:vulg
 засремо засрати verb:perf:futr:p:1:vulg
+засремося засратися verb:rev:perf:futr:p:1:vulg
+засремся засратися verb:rev:perf:futr:p:1:vulg
+засреться засратися verb:rev:perf:futr:s:3:vulg
 засри засрати verb:perf:impr:s:2:vulg
+засрися засратися verb:rev:perf:impr:s:2:vulg
 засру засрати verb:perf:futr:s:1:vulg
+засруся засратися verb:rev:perf:futr:s:1:vulg
 засруть засрати verb:perf:futr:p:3:vulg
 засруться засратися verb:rev:perf:futr:p:3:vulg
 заставе заставити verb:perf:futr:s:3
@@ -297,6 +302,7 @@
 іспита іспит noun:m:v_rod
 їдж їсти verb:imperf:impr:s:2
 їжою їжа noun:inanim:f:v_oru
+їзде їздити verb:imperf:pres:s:3
 їздіть їздити verb:imperf:impr:p:2
 їсиш їсти verb:imperf:pres:s:2
 кабеля кабель noun:m:v_rod
@@ -632,3 +638,5 @@
 яблукові яблуко noun:n:v_dav
 якийся якийсь adj:m:v_naz/v_zn2:pron:ind
 ялівця ялівець noun:m:v_rod
+фігньою фігня noun:inanim:f:v_oru
+
