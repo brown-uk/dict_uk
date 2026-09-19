@@ -198,8 +198,17 @@
 жиєш жити verb:imperf:pres:s:2
 жлуктіть жлуктити verb:imperf:impr:p:2
 жовтецю жовтець noun:m:v_rod
+жре жерти verb:imperf:pres:s:3
+жрем жерти verb:imperf:pres:p:1
+жремо жерти verb:imperf:pres:p:1
+жрете жерти verb:imperf:pres:p:2
 жреці жрець noun:anim:p:v_naz
 жреців жрець noun:anim:p:v_rod/v_zna
+жреш жерти verb:imperf:pres:s:2
+жри жерти verb:imperf:impr:s:2
+жріть жерти verb:imperf:impr:p:2
+жру жерти verb:imperf:pres:s:1
+жруть жерти verb:imperf:pres:p:3
 журнала журнал noun:inanim:m:v_rod
 забезпечіть забезпечити verb:perf:impr:p:2
 забракнуло забракнути verb:past:s:3:perf
@@ -599,6 +608,7 @@
 файла файл noun:m:v_rod
 фейлетона фейлетон noun:inanim:m:v_rod
 фейсбука фейсбук noun:m:v_rod               #> фейсбуку
+фігньою фігня noun:inanim:f:v_oru
 фінсектора фінсектор noun:inanim:m:v_rod
 фразеологізма фразеологізм noun:m:v_rod
 Франтішка Франтішек noun:anim:m:v_rod/v_zna:prop:lname
@@ -638,5 +648,3 @@
 яблукові яблуко noun:n:v_dav
 якийся якийсь adj:m:v_naz/v_zn2:pron:ind
 ялівця ялівець noun:m:v_rod
-фігньою фігня noun:inanim:f:v_oru
-

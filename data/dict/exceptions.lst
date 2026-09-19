@@ -169,39 +169,39 @@
 добрах добра noun:p:v_mis:ns:arch
 добра добра noun:p:v_kly:ns:arch
 
-ігри гра noun:p:v_naz/v_zna/v_kly
-гри гра noun:p:v_naz/v_zna              # 2,3,4 гри
-ігор гра noun:p:v_rod
-іграм гра noun:p:v_dav
-іграми гра noun:p:v_oru
-іграх гра noun:p:v_mis
+#ігри гра noun:p:v_naz/v_zna/v_kly
+#гри гра noun:p:v_naz/v_zna              # 2,3,4 гри
+#ігор гра noun:p:v_rod
+#іграм гра noun:p:v_dav
+#іграми гра noun:p:v_oru
+#іграх гра noun:p:v_mis
 
-відеоігри відеогра noun:p:v_naz/v_zna/v_kly
-відеогри відеогра noun:p:v_naz/v_zna              # 2,3,4 гри
-відеоігор відеогра noun:p:v_rod
-відеоіграм відеогра noun:p:v_dav
-відеоіграми відеогра noun:p:v_oru
-відеоіграх відеогра noun:p:v_mis
+#відеоігри відеогра noun:p:v_naz/v_zna/v_kly
+#відеогри відеогра noun:p:v_naz/v_zna              # 2,3,4 гри
+#відеоігор відеогра noun:p:v_rod
+#відеоіграм відеогра noun:p:v_dav
+#відеоіграми відеогра noun:p:v_oru
+#відеоіграх відеогра noun:p:v_mis
 
-телеігри телегра noun:p:v_naz/v_zna/v_kly
-телегри телегра noun:p:v_naz/v_zna              # 2,3,4 гри
-телеігор телегра noun:p:v_rod
-телеіграм телегра noun:p:v_dav
-телеіграми телегра noun:p:v_oru
-телеіграх телегра noun:p:v_mis
+#телеігри телегра noun:p:v_naz/v_zna/v_kly
+#телегри телегра noun:p:v_naz/v_zna              # 2,3,4 гри
+#телеігор телегра noun:p:v_rod
+#телеіграм телегра noun:p:v_dav
+#телеіграми телегра noun:p:v_oru
+#телеіграх телегра noun:p:v_mis
 
-суперігри супергра noun:p:v_naz/v_zna/v_kly
-супергри супергра noun:p:v_naz/v_zna              # 2,3,4 гри
-суперігор супергра noun:p:v_rod
-суперіграм супергра noun:p:v_dav
-суперіграми супергра noun:p:v_oru
-суперіграх супергра noun:p:v_mis
+#суперігри супергра noun:p:v_naz/v_zna/v_kly
+#супергри супергра noun:p:v_naz/v_zna              # 2,3,4 гри
+#суперігор супергра noun:p:v_rod
+#суперіграм супергра noun:p:v_dav
+#суперіграми супергра noun:p:v_oru
+#суперіграх супергра noun:p:v_mis
 
-квазіігри квазігра noun:p:v_naz/v_zna/v_kly
-квазіігор квазігра noun:p:v_rod
-квазііграм квазігра noun:p:v_dav
-квазііграми квазігра noun:p:v_oru
-квазііграх квазігра noun:p:v_mis
+#квазіігри квазігра noun:p:v_naz/v_zna/v_kly
+#квазіігор квазігра noun:p:v_rod
+#квазііграм квазігра noun:p:v_dav
+#квазііграми квазігра noun:p:v_oru
+#квазііграх квазігра noun:p:v_mis
 
 торб торба noun:inanim:p:v_rod
 екоторб торба noun:inanim:p:v_rod
@@ -274,39 +274,6 @@
 четвергів четвер noun:p:v_rod
 четвергам четвер noun:p:v_dav
 
-мати мати noun:anim:f:v_naz/v_kly
-матір мати noun:anim:f:v_naz:rare
-матері мати noun:anim:f:v_rod
-матері мати noun:anim:f:v_dav
-мати мати noun:anim:f:v_zna:rare
-матір мати noun:anim:f:v_zna
-матір'ю мати noun:anim:f:v_oru
-матері мати noun:anim:f:v_mis
-матір мати noun:anim:f:v_kly:rare
-матері мати noun:anim:p:v_naz/v_kly
-матерів мати noun:anim:p:v_rod
-матерям мати noun:anim:p:v_dav
-матерів мати noun:anim:p:v_zna
-матерями мати noun:anim:p:v_oru
-матерях мати noun:anim:p:v_mis
-
-мати-одиначка мати-одиначка noun:anim:f:v_naz
-мати-одиначко мати-одиначка noun:anim:f:v_kly
-матір-одиначка мати-одиначка noun:anim:f:v_naz:rare
-матері-одиначки мати-одиначка noun:anim:f:v_rod
-матері-одиначці мати-одиначка noun:anim:f:v_dav
-мати-одиначка мати-одиначка noun:anim:f:v_zna:rare
-матір-одиначку мати-одиначка noun:anim:f:v_zna
-матір'ю-одиачкою мати-одиначка noun:anim:f:v_oru
-матері-одиначці мати-одиначка noun:anim:f:v_mis
-матір-одиначко мати-одиначка noun:anim:f:v_kly:rare
-матері-одиначки мати-одиначка noun:anim:p:v_naz/v_kly
-матерів-одиначок мати-одиначка noun:anim:p:v_rod
-матерям-одиначкам мати-одиначка noun:anim:p:v_dav
-матерів-одиначок мати-одиначка noun:anim:p:v_zna
-матерями-одиначками мати-одиначка noun:anim:p:v_oru
-матерях-одиначках мати-одиначка noun:anim:p:v_mis
-
 батько-мати батько-мати noun:anim:p:v_naz
 батько-матір батько-мати noun:anim:p:v_naz:rare
 батька-матері батько-мати noun:anim:p:v_rod
@@ -317,48 +284,6 @@
 батьку-матері батько-мати noun:anim:p:v_mis
 батькові-матері батько-мати noun:anim:p:v_mis
 батьку-мати батько-мати noun:anim:p:v_kly
-
-біомати біомати noun:anim:f:v_naz/v_kly
-біоматір біомати noun:anim:f:v_naz:rare
-біоматері біомати noun:anim:f:v_rod
-біоматері біомати noun:anim:f:v_dav
-біоматір біомати noun:anim:f:v_zna
-біоматір'ю біомати noun:anim:f:v_oru
-біоматері біомати noun:anim:f:v_mis
-біоматері біомати noun:anim:p:v_naz/v_kly
-біоматерів біомати noun:anim:p:v_rod
-біоматерям біомати noun:anim:p:v_dav
-біоматерів біомати noun:anim:p:v_zna
-біоматерями біомати noun:anim:p:v_oru
-біоматерях біомати noun:anim:p:v_mis
-
-богомати богомати noun:anim:f:v_naz/v_kly
-богоматір богомати noun:anim:f:v_naz:rare
-богоматері богомати noun:anim:f:v_rod
-богоматері богомати noun:anim:f:v_dav
-богоматір богомати noun:anim:f:v_zna
-богоматір'ю богомати noun:anim:f:v_oru
-богоматері богомати noun:anim:f:v_mis
-богоматері богомати noun:anim:p:v_naz/v_kly
-богоматерів богомати noun:anim:p:v_rod
-богоматерям богомати noun:anim:p:v_dav
-богоматерів богомати noun:anim:p:v_zna
-богоматерями богомати noun:anim:p:v_oru
-богоматерях богомати noun:anim:p:v_mis
-
-прамати прамати noun:anim:f:v_naz/v_kly
-праматір прамати noun:anim:f:v_naz:rare
-праматері прамати noun:anim:f:v_rod
-праматері прамати noun:anim:f:v_dav
-праматір прамати noun:anim:f:v_zna
-праматір'ю прамати noun:anim:f:v_oru
-праматері прамати noun:anim:f:v_mis
-праматері прамати noun:anim:p:v_naz/v_kly
-праматерів прамати noun:anim:p:v_rod
-праматерям прамати noun:anim:p:v_dav
-праматерів прамати noun:anim:p:v_zna
-праматерями прамати noun:anim:p:v_oru
-праматерях прамати noun:anim:p:v_mis
 
 чоботи чобіт noun:p:v_naz/v_zna/v_kly
 чобіт чобіт noun:p:v_rod
@@ -413,89 +338,6 @@
 чоботів чобіт noun:inanim:p:v_rod:up19
 
 # нестандартні леми
-
-# люди /np3.<
-люди людина noun:anim:p:v_naz
-люди людина noun:anim:p:v_zna:rare
-людей людина noun:anim:p:v_rod
-людям людина noun:anim:p:v_dav
-людей людина noun:anim:p:v_zna
-людьми людина noun:anim:p:v_oru
-людях людина noun:anim:p:v_mis
-люди людина noun:anim:p:v_kly
-
-першолюди першолюдина noun:anim:p:v_naz
-першолюдей першолюдина noun:anim:p:v_rod
-першолюдям першолюдина noun:anim:p:v_dav
-першолюдей першолюдина noun:anim:p:v_zna
-першолюдьми першолюдина noun:anim:p:v_oru
-першолюдях першолюдина noun:anim:p:v_mis
-першолюди першолюдина noun:anim:p:v_kly
-
-недолюди недолюдина noun:anim:p:v_naz
-недолюдей недолюдина noun:anim:p:v_rod
-недолюдям недолюдина noun:anim:p:v_dav
-недолюдей недолюдина noun:anim:p:v_zna
-недолюдьми недолюдина noun:anim:p:v_oru
-недолюдях недолюдина noun:anim:p:v_mis
-недолюди недолюдина noun:anim:p:v_kly
-
-кіберлюди кіберлюдина noun:anim:p:v_naz
-кіберлюдей кіберлюдина noun:anim:p:v_rod
-кіберлюдям кіберлюдина noun:anim:p:v_dav
-кіберлюдей кіберлюдина noun:anim:p:v_zna
-кіберлюдьми кіберлюдина noun:anim:p:v_oru
-кіберлюдях кіберлюдина noun:anim:p:v_mis
-кіберлюди кіберлюдина noun:anim:p:v_kly
-
-антилюди антилюдина noun:anim:p:v_naz
-антилюдей антилюдина noun:anim:p:v_rod
-антилюдям антилюдина noun:anim:p:v_dav
-антилюдей антилюдина noun:anim:p:v_zna
-антилюдьми антилюдина noun:anim:p:v_oru
-антилюдях антилюдина noun:anim:p:v_mis
-антилюди антилюдина noun:anim:p:v_kly
-
-надлюди надлюдина noun:anim:p:v_naz
-надлюдей надлюдина noun:anim:p:v_rod
-надлюдям надлюдина noun:anim:p:v_dav
-надлюдей надлюдина noun:anim:p:v_zna
-надлюдьми надлюдина noun:anim:p:v_oru
-надлюдях надлюдина noun:anim:p:v_mis
-надлюди надлюдина noun:anim:p:v_kly
-
-пралюди пралюдина noun:anim:p:v_naz
-пралюдей пралюдина noun:anim:p:v_rod
-пралюдям пралюдина noun:anim:p:v_dav
-пралюдей пралюдина noun:anim:p:v_zna
-пралюдьми пралюдина noun:anim:p:v_oru
-пралюдях пралюдина noun:anim:p:v_mis
-пралюди пралюдина noun:anim:p:v_kly
-
-протолюди протолюдина noun:anim:p:v_naz
-протолюдей протолюдина noun:anim:p:v_rod
-протолюдям протолюдина noun:anim:p:v_dav
-протолюдей протолюдина noun:anim:p:v_zna
-протолюдьми протолюдина noun:anim:p:v_oru
-протолюдях протолюдина noun:anim:p:v_mis
-протолюди протолюдина noun:anim:p:v_kly
-
-напівлюди напівлюдина noun:anim:p:v_naz
-напівлюдей напівлюдина noun:anim:p:v_rod
-напівлюдям напівлюдина noun:anim:p:v_dav
-напівлюдей напівлюдина noun:anim:p:v_zna
-напівлюдьми напівлюдина noun:anim:p:v_oru
-напівлюдях напівлюдина noun:anim:p:v_mis
-напівлюди напівлюдина noun:anim:p:v_kly
-
-# боголюди /np3.<
-боголюди боголюдина noun:anim:p:v_naz
-боголюдей боголюдина noun:anim:p:v_rod
-боголюдям боголюдина noun:anim:p:v_dav
-боголюдей боголюдина noun:anim:p:v_zna
-боголюдьми боголюдина noun:anim:p:v_oru
-боголюдях боголюдина noun:anim:p:v_mis
-боголюди боголюдина noun:anim:p:v_kly
 
 хазяї хазяїн noun:anim:p:v_naz:ns
 хазяїв хазяїн noun:anim:p:v_rod:ns

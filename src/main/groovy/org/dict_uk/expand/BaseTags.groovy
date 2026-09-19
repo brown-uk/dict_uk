@@ -121,7 +121,12 @@ class BaseTags {
 			tag = ":n:v_naz/v_zna/v_kly"
 		}
 		else if( affixFlag[0..<2] == "n3" ) {
-			tag = ":f:v_naz/v_zna"
+            if( word.endsWith("мати") ) {
+                tag = ":f:v_naz"
+            }
+			else {
+                tag = ":f:v_naz/v_zna"
+			}
 		}
         else if( affixFlag.startsWith("n_pron") ) {
             if( word.startsWith("що") || word.endsWith("що") ) {

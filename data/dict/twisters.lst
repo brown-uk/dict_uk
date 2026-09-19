@@ -8385,6 +8385,8 @@
 споглядавший /adj :adjp:actv:imperf       # -ший
 споглядаючий /adj :adjp:actv:imperf
 споживаючий /adj :adjp:actv:imperf         #> що вживає|споживач|користувач
+спозорити /v1 :perf                                         # rv_zna:rv_oru
+спозоритися /vr1 :perf                                      # rv_oru
 споконвіків adv                             #> споконвіку|споконвічно|відвіку
 спокутуючий /adj :adjp:actv:imperf         #> що спокутує
 спокушаючий /adj :adjp:actv:imperf
@@ -9710,5 +9712,3 @@
 ясніючий /adj :adjp:actv:imperf
 ятріючий /adj :adjp:actv:imperf
 ячейка /n10.p2                              #> комірка|чарунка|осередок|ланка|елемент
-спозорити /v1 :perf                                         # rv_zna:rv_oru
-спозоритися /vr1 :perf                                      # rv_oru
