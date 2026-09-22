@@ -19,6 +19,6 @@ public class BaseTagsTest {
 		assert baseTags.get_base_tags("готувати", "v1", "v1", "") == ":inf"
 		assert baseTags.get_base_tags("цирк", "n20", "n20.p", "") == ":m:v_naz/v_zna"
 		assert baseTags.get_base_tags("баба", "n10", "n10.p.<", "") == ":f:v_naz"
-        assertEquals(":f:v_naz/v_zna:rare", baseTags.get_base_tags("мати", "n31", "n31.p.<", ""))
+        assertEquals(":f:v_naz", baseTags.get_base_tags("мати", "n31", "n31.p.<", ""))
 	}
 }
