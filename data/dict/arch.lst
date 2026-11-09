@@ -76,8 +76,10 @@
 айриш /n20.a.p.<
 акі conj:subord
 акомпанімент /n20
+акомпаніювати /v1.cf.advp :imperf               # rv_dav:rv_oru
 аксіомат /n20
 актьор /n20.a.ke.<
+акцесорія /n10.p1
 аларм /n20
 алармізм /n20
 аларміст /n20.a.p.<
@@ -323,6 +325,8 @@
 би-сьмо part
 би-сьте part
 бичина /n10
+бібліогнозія /n10
+бібліогност /n20.a.p.ke.<
 біднитися /vr1.cf :imperf
 бідство /n2n
 бієць noun:anim:m:v_naz         # lim
@@ -504,6 +508,8 @@
 бусурменка /n10.p2.ko.<
 бусурменський /adj
 бусько /n20.p.<>
+бутара /n10.p1
+бутіти /v2.cf :imperf
 бутно adv
 буцигарня /n10.p2
 буцик /n20.a.p
@@ -582,7 +588,14 @@
 вбійчий /adj :v-u
 вбійчість /n30 :v-u
 вбійчо adv:v-u
+вбільшати /v2.cf.advp :imperf
+вбільшатися /vr2.cf.advp :imperf
+вбільшений /adj :adjp:pasv:perf
+вбільшення /n2n.p1
+вбільшити /v1.is0 :perf                         # rv_zna:rv_oru
+вбільшитися /vr1 :perf                          # rv_oru
 вбільшки adv
+вбільшувати /v1.cf.advp :imperf                 # rv_zna:rv_oru
 вбіса adv
 вбожати /v2.cf.advp :imperf
 вборзі adv
@@ -705,6 +718,7 @@
 видрюкуваний /adj :adjp:pasv:perf
 виемігрувати /v1 :perf
 виєднувати /v1.cf.advp :imperf                  # rv_zna:rv_oru:rv_dav
+виємний /adj
 виємно adv
 вижаліти /v2 :perf                              # rv_zna:rv_oru
 визбутися /vr1 :perf                            # rv_rod:rv_oru
@@ -2825,6 +2839,8 @@
 злочестя /n2n
 злуда /n10.p1
 злудний /adj
+злудно adv
+злучно adv
 злюб /n20
 злючо adv
 зляку adv
@@ -2837,11 +2853,13 @@
 змиг /n20
 змирятися /vr2.cf.advp :imperf
 змисл /n20.p
+змислено adv
 змисловий /adj
 змисловість /n30
 змислово adv
 змисний /adj
 змисно adv
+змінливо adv
 змішторг /n20.p.zi
 зможність /n30
 змора /n10
@@ -2940,6 +2958,7 @@
 зуспіти /v1 :perf                                   # rv_zna
 зустрівати /v2.cf.advp :imperf                      # rv_zna
 зух /n20.a.p.<
+зухувато adv
 зучити /v1 :perf
 зучитися /vr1 :perf
 зцілювач /n20.a.p.<
@@ -3116,18 +3135,23 @@
 іскликати /v2.cf.advp :imperf
 іскривитися /vr1.it1 :perf
 існий /adj
-ісповідання /n2n
+ісповідання /n2n.p1
 ісповідати /v2.cf.advp :imperf
 ісповідниця /n10.p1.<
 ісповідування /n2n
 ісповідувати /v1.cf.advp :imperf                   # rv_zna:rv_oru:rv_dav
 ісправник /n20.a.p.<
+істий /adj
+істніння /n2n
+істніти /v2.cf :imperf
+істновання /n2n
 істнування /n2n
 істнувати /v1.cf.advp :imperf
 істнуючий /adj :adjp:actv:imperf
 істукан /n20.a.p.<
 ісходити /v1.it0.cf.advp :imperf                               # rv_oru
 іюль /n20.a
+іюнь /n20.a
 їдак /n20.a.p.<
 їден /numr ^adj :pron:dem:ind
 їдження /n2n
@@ -6883,6 +6907,7 @@
 простибіг adv:insert
 простирядно /n2n
 простірно adv:compb
+проступник /n20.a.p.<
 проступство /n2n
 простяком adv
 просю просити verb:imperf:pres:s:1
@@ -8467,4 +8492,3 @@
 яскиня /n10.p1
 ясмин /n20
 яфина /n10.p1
-проступник /n20.a.p.<
