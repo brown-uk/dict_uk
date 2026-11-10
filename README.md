@@ -27,7 +27,7 @@
 
 
 ### Застосування ###
-    зі словником можна робити дві речі:
+зі словником можна робити дві речі:
 1. згенерувати всі можливі словоформи для слів, що вже є в словнику (див. параграф «Як запускати» нижче)
 2. генерувати форми для довільних слів в інтерактивному режимі: [докладніше](doc/interactive_mode.md)
 
@@ -36,23 +36,27 @@
 * Встановити java (JDK 11 або новішу)
 * (Лише для Windows) встановити і запустити git bash
 * Клонувати проект: `git clone https://github.com/brown-uk/dict_uk.git`
-* Зайти в теку проекту: cd dict_uk
+* Зайти в теку проекту: `cd dict_uk`
 
 ### Як запускати ###
 
-    `./gradlew expand`
-    
-    або для Windows:
-    
-    `bin/expand_win.sh`
+```sh
+./gradlew expand
+```
 
-    На виході:
+або для Windows:
 
-* out/dict_corp_vis.txt - словник у візуальному форматі (з відступами, згрупований за лемами) для перегляду, аналізу і опрацьовування
-* out/dict_corp_lt.txt - словник у табличному форматі для використання в ПЗ, зокрема з цього файлу генеруємо словник morfologik, що використовується в LanguageTool
-* out/words.txt - список всіх відомих словоформ
-* out/words_spell.txt - список всіх відомих словоформ, правильних з погляду правопису
-* out/lemmas.txt - список лем
+```sh
+bin/expand_win.sh
+```
+
+На виході:
+
+* `out/dict_corp_vis.txt` - словник у візуальному форматі (з відступами, згрупований за лемами) для перегляду, аналізу і опрацьовування
+* `out/dict_corp_lt.txt` - словник у табличному форматі для використання в ПЗ, зокрема з цього файлу генеруємо словник morfologik, що використовується в LanguageTool
+* `out/words.txt` - список всіх відомих словоформ
+* `out/words_spell.txt` - список всіх відомих словоформ, правильних з погляду правопису
+* `out/lemmas.txt` - список лем
 
 ### Ліцензія ###
 
@@ -76,8 +80,8 @@ Copyright (c) 2023 Андрій Рисін (arysin@gmail.com), Василь Ст
 
 
 ### Description ###
-    For all files in data/dict the project generates all possible word forms with POS tags
-    by using affix rules from files in data/affix.
+For all files in data/dict the project generates all possible word forms with POS tags
+by using affix rules from files in data/affix.
 
 
 ### Required software ###
@@ -86,23 +90,28 @@ Copyright (c) 2023 Андрій Рисін (arysin@gmail.com), Василь Ст
 
 
 ### How to run ###
-    `./gradlew expand`
 
-    or on Windows:
+```sh
+./gradlew expand
+```
 
-    `bin/expand_win.sh`
+or on Windows:
 
-    Output:
+```sh
+bin/expand_win.sh
+```
 
-* out/dict_corp_vis.txt - Dictionary in visual (indented) format for review, analysis or conversion
-* out/dict_corp_lt.txt - Dictionary in flat format (is used for preparing morfologik dictionary that can be used by LanguageTool)
-* out/words.txt - list of all unique known words
-* out/words_spell.txt - words valid for spelling
-* out/lemmas.txt - list of unique lemmas
+Output:
+
+* `out/dict_corp_vis.txt` - Dictionary in visual (indented) format for review, analysis or conversion
+* `out/dict_corp_lt.txt` - Dictionary in flat format (is used for preparing morfologik dictionary that can be used by LanguageTool)
+* `out/words.txt` - list of all unique known words
+* `out/words_spell.txt` - words valid for spelling
+* `out/lemmas.txt` - list of unique lemmas
 
 ### Building under docker ###
 
-```
+```sh
 sudo docker build -t brown-uk/dict_uk .
 sudo docker run -d --name dict_uk brown-uk/dict_uk /bin/bash
 sudo docker cp dict_uk:/src/out/ ./out
