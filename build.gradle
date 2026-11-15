@@ -181,15 +181,14 @@ task checkSemtags(type: JavaExec){
   
 
 task showExpandCommand {
+  def runtimeClasspath = sourceSets.main.runtimeClasspath
   doLast {
     def opts = " --indent --mfl --stats --wordlist --time"
-    opts += " -aff data/affix"
-    opts += " -dict data/dict"
+    opts += " --aff data/affix"
+    opts += " --dict data/dict"
 
     def cmd = "groovy -cp "
-    cmd += sourceSets.main.output.classesDir
-    cmd += ":" + sourceSets.main.output.resourcesDir
-    cmd += ":" + configurations.runtime.asFileTree.files.join(':')
+    cmd += runtimeClasspath.asPath
 //    cmd += " org.dict_uk.expand.ExpandAll"
     cmd += " src/main/groovy/org/dict_uk/expand/ExpandAll.groovy"
     cmd += opts
@@ -357,6 +356,7 @@ task fatJar(type: Jar) {
             'Implementation-Version': archiveVersion
     }
     archiveBaseName = project.name + '-all'
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
